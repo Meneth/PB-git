@@ -1,0 +1,1060 @@
+e_carpathia = {
+	color={ 210 115 35 }
+	color2={ 255 255 255 }
+	
+	capital = 522 # Pest
+	
+	culture = hungarian
+	
+	tengri_pagan_reformed = 100
+	slavic_pagan_reformed = 50 # Crusade target weight
+	
+	k_croatia = {
+		color={ 165 0 15 }
+		color2={ 200 0 0 }
+		
+		orthodox = 300 # Crusade target weight
+		catholic = 300 # Crusade target weight
+		
+		culture = croatian
+		
+		capital = 465 # Zadar
+
+		d_slavonia = {
+			color={ 150 10 10 }
+			color2={ 255 255 255 }
+
+			c_krizevci = {
+				color={ 186 139 139 }
+				color2={ 255 255 255 }
+
+				b_krizevci = {
+				}
+				b_koprivnica = {
+				}
+				b_osijek = {
+				}
+				b_vinkovci = {
+				}
+				b_vukovar = {
+				}
+				b_durdevac = {
+				}
+				b_pozega = {
+				}
+				b_virovitica = {
+				}
+			}
+			c_zagreb = {
+				color={ 189 141 141 }
+				color2={ 255 255 255 }
+
+				b_zagreb = {
+				}
+				b_sisak = {
+				}
+				b_karlovac = {
+				}
+				b_cetin = {
+				}
+				b_zrin = {
+				}
+				b_dreznik = {
+				}
+				b_stenicnjak = {
+				} 
+				b_ozalj = {
+				}
+			}
+			c_varadzin = {
+				color={ 191 143 143 }
+				color2={ 255 255 255 }
+
+				b_varazdin = {
+				}
+				b_cakovec = {
+				}
+				b_ludbreg = {
+				}
+				b_lepoglava = {
+				}
+				b_toplice = {
+				}
+				b_krapina = {
+				}
+				b_donjastubica = {
+				}
+				b_oroslavje = {
+				}
+			}
+		}
+		d_bosnia = {
+			color={ 140 20 30 }
+			color2={ 255 255 255 }
+
+			c_rama = {
+				color={ 197 118 118 }
+				color2={ 255 255 255 }
+
+				b_rama = {
+				}
+				b_samobor = {
+				}
+				b_usice = {
+				}
+				b_borac = {
+				}
+				b_srebrenica = {
+				}
+				b_srebrnik = {
+				}
+				b_zenica = {
+				}
+				b_zvornik = {
+				}
+			}
+			c_usora = {
+				color={ 200 121 121 }
+				color2={ 255 255 255 }
+
+				b_usora = {
+				}
+				b_banjaluka = {
+				} 
+				b_bihac = {
+				}
+				b_jajce = {
+				}
+				b_bocac = {
+				}
+				b_kuljc = {
+				}
+				b_prijedor = {
+				}
+				b_blagaj = {
+				}
+			}
+		}
+		d_croatia = {
+			color={ 170 0 20 }
+			color2={ 255 255 255 }
+
+			c_zachlumia = {
+				color={ 166 57 57 }
+				color2={ 255 255 255 }
+
+				b_mostar = {
+				}
+				b_duvno = {
+				}
+				b_livno = {
+				}
+				b_capljina = {
+				}
+				b_sirokibrijeg = {
+				}
+				b_ljubuski = {
+				}
+				b_drvar = {
+				}
+				b_neretva = {
+				}
+			}
+			c_senj = {
+				color={ 170 61 61 }
+				color2={ 255 255 255 }
+				
+				greek = "Attienities"
+				italian = "Segna"
+				german = "Zengg"
+				hungarian = "Zeng"
+
+				b_senj = {
+					greek = "Attienities"
+					italian = "Segna"
+					german = "Zengg"
+					hungarian = "Zeng"
+				}
+				b_kaseg = {
+				}
+				b_brinje = {
+				}
+				b_karlobag = {
+				}
+				b_perusic = {
+				} 
+				b_donjilapac = {
+				}
+				b_udbina = {
+				}
+				b_otocac = {
+				}
+			}
+			c_veglia = {
+				color={ 174 65 65 }
+				color2={ 255 255 255 }
+				
+				greek = "Kyrikon"
+				german = "Vegl"
+
+				b_veglia = {
+					greek = "Kyrikon"
+					german = "Vegl"
+				}
+				b_krk = {
+				}
+				b_kraljevica = {
+				}
+				b_frankopan = {
+				}
+				b_bakar = {
+				}
+				b_crikvenica = {
+				}
+				b_cres = {
+				}
+				b_vrbovsko = {
+				}
+			}
+		}
+		d_dalmatia = {
+			color={ 180 10 5 }
+			color2={ 255 255 255 }
+
+			c_split = {
+				color={ 186 139 139 }
+				color2={ 255 255 255 }
+				
+				italian = "Spalato"
+				greek = "Spalathos"
+
+				b_split = {
+					italian = "Spalato"
+					greek = "Spalathos"
+				}
+				b_hvar = {
+				}
+				b_trogir = {
+					greek = "Tragyrion"
+					italian = "Trau"
+					hungarian = "Trau"
+				}
+				b_solin = {
+				}
+				b_klis = {
+				}
+				b_makarska = {
+				}
+				b_sinj = {
+				}
+				b_imotski = {
+				}
+			}
+			c_zadar = {
+				color={ 188 141 141 }
+				color2={ 255 255 255 }
+				
+				italian = "Zara"
+				greek = "Diadora"
+
+				b_zadar = {
+					italian = "Zara"
+					greek = "Diadora"
+				}
+				b_nin = {
+				}
+				b_knin = {
+				}
+				b_sibenik = {
+				}
+				b_novigrad = {
+				}
+				b_benkovac = {
+				}
+				b_obrovac = {
+				}
+				b_pag = {
+				}
+			}
+		}
+	}
+	k_hungary = {
+		color={ 187 70 70 }
+		color2={ 255 255 255 }
+		
+		capital	= 444 # Esztergom
+		
+		culture = hungarian
+		
+		catholic = 500 # Crusade target weight
+		
+		d_pecs = {
+			color={ 155 25 65 }
+			color2={ 255 255 255 }
+			
+			c_pecs = {
+				color={ 182 72 72 }
+				color2={ 255 255 255 }
+				
+				b_pecs = {
+				}
+				b_kalocsa = {
+				}
+				b_mohacs = {
+				}
+				b_sasd = {
+				}
+				b_pecsvarad = {
+				}
+				b_siklos = {
+				}
+				b_szentlorinc = {
+				}
+				b_darda = {
+				}
+			}
+			c_szekezfehervar = {
+				color={ 189 74 74 }
+				color2={ 255 255 255 }
+				
+				b_szekezfehervar = {
+				}
+				b_csurgo = {
+				}
+				b_kaposvar = {
+				}
+				b_szigetvar = {
+				}
+				b_barcs = {
+				}
+				b_marcali = {
+				}
+				b_nagyatad = {
+				}
+				b_lengyeltoti = {
+				}
+			}
+			c_vas = {
+				color={ 191 76 76 }
+				color2={ 255 255 255 }
+				
+				b_szombathely = {
+				}
+				b_szentgotthard = {
+				}
+				b_vasvar = {
+				}
+				b_sarvar = {
+				}
+				b_celldomolk = {
+				}
+				b_kormend = {
+				}
+				b_koszeg = {
+				}
+				b_nemetujvar = {
+				}
+			}
+			c_fejer = {
+				color={ 193 78 78 }
+				color2={ 255 255 255 }
+				
+				b_sarbogard = {
+				}
+				b_adony = {
+				}
+				b_mor = {
+				}
+				b_val = {
+				}
+				b_szekszard = {
+				}
+				b_dombovar = {
+				}
+				b_tamasi = {
+				}
+				b_bonyhad = {
+				}
+			}
+		}
+		d_esztergom = {
+			color={ 230 55 55 }
+			color2={ 255 255 255 }
+			
+			c_sopron = {
+				color={ 211 63 63 }
+				color2={ 255 255 255 }
+				
+				b_sopron = {
+				}
+				b_gyor = {
+				}
+				b_csorna = {
+				}
+				b_borsmonostor = {
+				}
+				b_csepreg = {
+				}
+				b_kapuvar = {
+				}
+				b_kismarton = {
+				}
+				b_nagymarton = {
+				}
+			}
+			c_esztergom = {
+				color={ 214 66 66 }
+				color2={ 255 255 255 }
+				
+				b_esztergom = {
+				}
+				b_komarom = {
+				}
+				b_kakath = {
+				}
+				b_tatabanya = {
+				}
+				b_nagyigmand = {
+				}
+				b_nemesocsa = {
+				}
+				b_ogylla = {
+				}
+			}
+			c_pressburg = {
+				color={ 217 69 69 }
+				color2={ 255 255 255 }
+				
+				b_pressburg = {
+				}
+				b_nagyszombat = {
+				}
+				b_bazin = {
+				}
+				b_modor = {
+				}
+				b_szentgyorgy = {
+				}
+				b_dunaszerdahely = {
+				}
+				b_galanta = {
+				}
+				b_somorja = {
+				}
+			}
+		}
+		d_nyitra = {
+			color={ 190 21 21 }
+			color2={ 255 255 255 }
+			
+			c_nitra = {
+				color={ 194 25 25 }
+				color2={ 255 255 255 }
+				
+				b_nyitra = {
+				}
+				b_nagytapolcsany = {
+				}
+				b_stbenedek = {
+				}
+				b_nagysurany = {
+				}
+				b_galgoc = {
+				}
+				b_zabokreky = {
+				}
+				b_postyen = {
+				}
+				b_preuigan = {
+				}
+			}
+			c_trencin = {
+				color={ 198 29 29 }
+				color2={ 255 255 255 }
+				
+				b_trencsen = {
+				}
+				b_zilina = {
+				}
+				b_turoc = {
+				}
+				b_ban = {
+				}
+				b_illava = {
+				}
+				b_povazskabystrica = {
+				}
+				b_congsberg = {
+				}
+				b_puho = {
+				}
+			}
+			c_gemer = {
+				color={ 202 33 33 }
+				color2={ 255 255 255 }
+				
+				b_gomor = {
+				}
+				b_losonc = {
+				}
+				b_dobsina = {
+				}
+				b_rozsnyo = {
+				}
+				b_balassagyarmat = {
+				}
+				b_jolsva = {
+				}
+				b_nagyroce = {
+				}
+				b_nyustya = {
+				}
+			}
+			c_orava = {
+				color={ 205 36 36 }
+				color2={ 255 255 255 }
+				
+				b_arvavara = {
+				}
+				b_nameszto = {
+				}
+				b_liptovskymikulas = {
+				}
+				b_zolyom = {
+				}
+				b_trsztena = {
+				}
+				b_turdossin = {
+				}
+				b_nemetlipcse = {
+				}
+				b_rozsahegy = {
+				}
+			}
+		}
+		d_ungvar = {
+			color={ 156 15 15 }
+			color2={ 255 255 255 }
+			
+			c_saris = {
+				color={ 158 17 17 }
+				color2={ 255 255 255 }
+				
+				b_saris = {
+				}
+				b_bartfa = {
+				}
+				b_kisszeben = {
+				}
+				b_eperjes = {
+				}
+				b_scyuidnyk = {
+				}
+				b_giralth = {
+				}
+				b_hethars = {
+				}
+				b_lemesany = {
+				}
+			}
+			c_bereg = {
+				color={ 160 19 19 }
+				color2={ 255 255 255 }
+				
+				b_beregszasz = {
+				}
+				b_perecseny = {
+				}
+				b_munkacs = {
+				}
+				b_ungvar = {
+				}
+				b_ilosva = {
+				}
+				b_szolyva = {
+				}
+				b_szobranc = {
+				}
+				b_kapos = {
+				}
+			}
+			c_abauj = {
+				color={ 162 21 21 }
+				color2={ 255 255 255 }
+				
+				b_abauj = {
+				}
+				b_satoraljaujhely = {
+				}
+				b_kassa = {
+				}
+				b_szikszo = {
+				}
+				b_turna = {
+				}
+				b_szepsi = {
+				}
+				b_sarospatak = {
+				}
+				b_tokaj = {
+				}
+			}
+			c_marmaros = {
+				color={ 164 23 23 }
+				color2={ 255 255 255 }
+				
+				b_maramarossziget = {
+				}
+				b_nagybanya = {
+				}
+				b_nagykaroly = {
+				}
+				b_huszt = {
+				}
+				b_aknasugatag = {
+				}
+				b_tecso = {
+				}
+				b_raho = {
+				}
+				b_felsoviso = {
+				}
+			}
+		}
+		d_pest = {
+			color={ 150 51 51 }
+			color2={ 255 255 255 }
+			
+			c_heves = {
+				color={ 173 64 64 }
+				color2={ 255 255 255 }
+				
+				b_heves = {
+				}
+				b_eger = {
+				}
+				b_gyongyos = {
+				}
+				b_miskolc = {
+				}
+				b_petervasara = {
+				}
+				b_hatvan = {
+				}
+				b_tiszafured = {
+				}
+				b_mezokovesd = {
+				}
+			}
+			c_pest = {
+				color={ 176 67 67 }
+				color2={ 255 255 255 }
+				
+				b_pest = {
+				}
+				b_vac = {
+					holy_site = tengri_pagan
+					holy_site = tengri_pagan_reformed
+				}
+				b_kecskemet = {
+				}
+				b_kiskunhalas = {
+				}
+				b_szentendre = {
+				}
+				b_cegled = {
+				}
+				b_abrahamtelke = {
+				}
+				b_kiskoros = {
+				}
+			}
+			c_csanad = {
+				color={ 179 70 70 }
+				color2={ 255 255 255 }
+				
+				b_csanad = {
+				}
+				b_szeged = {
+				}
+				b_mako = {
+				}
+				b_battonya = {
+				}
+				b_csongrad = {
+				}
+				b_mindszent = {
+				}
+				b_szentes = {
+				}
+				b_hodmezovasarhely = {
+				}
+			}
+		}
+		d_transylvania = {
+			color={ 255 150 150 }
+			color2={ 255 255 255 }
+			
+			c_szekelyfold = {
+				color={ 237 54 54 }
+				color2={ 255 255 255 }
+				
+				b_csik = {
+				}
+				b_aranyos = {
+				}
+				b_haromszek = {
+				}
+				b_maros = {
+				}
+				b_kezdi = {
+				}
+				b_szekelyudvarhely = {
+				}
+				b_sepsiszentgyorgy = {
+				}
+				b_marosvasarhely = {
+				}
+			}
+			c_bihar = {
+				color={ 241 58 58 }
+				color2={ 255 255 255 }
+				
+				b_bihar = {
+				}
+				b_nagyvarad = {
+				}
+				b_debrecen = {
+				}
+				b_biharkeresztes = {
+				}
+				b_nagybajom = {
+				}
+				b_szalard = {
+				}
+				b_zolonta = {
+				}
+				b_elesd = {
+				}
+			}
+			c_feher = {
+				color={ 245 62 62 }
+				color2={ 255 255 255 }
+				
+				b_feher = {
+				}
+				b_arad = {
+				}
+				b_gyulafehervar = {
+					romanian = "Balgrad"
+				}
+				b_elek = {
+				}
+				b_abrudbanya = {
+				}
+				b_nagyenyed = {
+				}
+				b_vizakna = {
+				}
+				b_tovis = {
+				}
+			}
+		}
+		d_temes = {
+			color={ 150 80 60 }
+			color2={ 255 255 255 }
+			
+			c_temes = {
+				color={ 153 127 64 }
+				color2={ 255 255 255 }
+				
+				b_temesvar = {
+				}
+				b_lugos = {
+				}
+				b_csak = {
+				}
+				b_buzias = {
+				}
+				b_versecz = {
+				}
+				b_detta = {
+				}
+				b_kevevara = {
+				}
+				b_karansebes = {
+				}
+			}
+			c_bacs = {
+				color={ 156 130 67 }
+				color2={ 255 255 255 }
+				
+				b_bacs = {
+				}
+				b_apatin = {
+				}
+				b_szintarev = {
+				}
+				b_baja = {
+				}
+				b_zombor = {
+				}
+				b_bacsalmas = {
+				}
+				b_pancsova = {
+				}
+				b_pardany = {
+				}
+			}
+		}
+	}
+	k_dacia = {
+		color={ 220 132 40 }
+		color2={ 255 255 255 }
+		
+		capital = 515 # Tirgoviste
+		
+		allow = {
+			NOT = { culture = pecheneg }
+		}
+		d_wallachia = {
+			color={ 15 75 25 }
+			color2={ 255 255 255 }
+			
+			capital = 515 # Tirgoviste
+		
+			c_turnu = {
+				color={ 241 195 72 }
+				color2={ 255 255 255 }
+			
+				b_turnu = {
+				}
+				b_giurgiu = {
+				}
+				b_bucuresti = {
+				}
+				b_dristra = {
+				}
+				b_strehaia = {
+				}
+				b_oltenita = {
+				}
+				b_rosiorriidevede = {
+				}
+				b_corabia = {
+				}
+			}
+			c_tirgoviste = {
+				color={ 244 198 75 }
+				color2={ 255 255 255 }
+			
+				b_targoviste = {
+				}
+				b_curteadearges = {
+				}
+				b_pitesti = {
+				}
+				b_campulung = {
+				}
+				b_calimanesti = {
+				}
+				b_poenari = {
+				}
+				b_cotmeana = {
+				}
+				b_ploiesti = {
+				}
+			}
+			c_severin = {
+				color={ 247 201 78 }
+				color2={ 255 255 255 }
+			
+				b_severin = {
+				}
+				b_ursova = {
+				}
+				b_craiova = {
+				}
+				b_ramnic = {
+				}
+				b_tirgujiu = {
+				}
+				b_slatina = {
+				}
+				b_caracal = {
+				}
+				b_bals = {
+				}
+			}
+		}
+		d_moldau = {
+			color={ 0 60 10 }
+			color2={ 255 255 255 }
+			
+			capital = 545 # Torki
+		
+			c_peresechen = {
+				color={ 225 204 147 }
+				color2={ 255 255 255 }
+			
+				b_iasi = {
+				}
+				b_varzaresti = {
+				}
+				b_orhei = {
+				}
+				b_chisinau = {
+				}
+				b_harlau = {
+				}
+				b_tuzara = {
+				}
+				b_baltile = {
+				}
+				b_tutora = {
+				}
+			}
+			c_torki = {
+				color={ 227 206 149 }
+				color2={ 255 255 255 }
+			
+				b_torki = {
+				}
+				b_bogdana = {
+				}
+				b_suceava = {
+				}
+				b_cernauti = {
+				}
+				b_hotin = {
+				}
+				b_lipcani = {
+				}
+				b_herta = {
+				} 
+				b_siret = {
+				}
+			}
+			c_olvia = {
+				color={ 229 208 151 }
+				color2={ 255 255 255 }
+			
+				b_olvia = {
+				}
+				b_ophusia = {
+				}
+				b_cetateaalba = {
+				}
+				b_tighina = {
+				}
+				b_causeni = {
+				}
+				b_cainari = {
+				}
+				b_alibei = {
+				}
+				b_basarabeasca = {
+				}
+			}
+		}
+		d_belgorod = {
+			color={ 30 80 10 }
+			color2={ 255 255 255 }
+			
+			capital = 512 #Belgorod
+			
+			c_belgorod = {
+				color={ 231 210 153 }
+				color2={ 255 255 255 }
+			
+				b_belgorod = {
+				}
+				b_oblucita = {
+				}
+				b_chilia = {
+				}
+				b_palada = {
+				}
+				b_oancea = {
+				}
+				b_scheia = {
+				}
+				b_tigheci = {
+				}
+				b_falciu = {
+				}
+			}
+			c_birlad = {
+				color={ 233 212 155 }
+				color2={ 255 255 255 }
+			
+				b_barlad = {
+				}
+				b_husi = {
+					holy_site = slavic_pagan
+					holy_site = slavic_pagan_reformed
+				}
+				b_vaslui = {
+				}
+				b_galati = {
+				}
+				b_tecuci = {
+				}
+				b_braila = {
+				}
+				b_buzau = {
+				}
+				b_ramnicusarat = {
+				}
+			}
+			c_galaz = {
+				color={ 217 102 253 }
+				color2={ 255 255 255 }
+				
+				b_galaz = {
+				}
+				b_vicina = {
+				}
+				b_aegyssus = {
+				}
+				b_isaccea = {
+				}
+				b_macin = {
+				}
+				b_sulina = {
+				}
+				b_tulcea = {
+				}
+				b_crisan = {
+				}
+			}
+		}
+	}
+	# Creation/usurpation trigger
+	allow = {
+		OR = {
+			culture = romanian
+			culture = hungarian
+			culture = croatian
+		}
+		OR = {
+			has_landed_title = k_hungary
+			completely_controls = k_hungary
+			k_hungary = { is_titular = yes }
+		}
+		OR = {
+			has_landed_title = k_croatia
+			completely_controls = k_croatia
+			k_croatia = { is_titular = yes }
+		}
+		OR = {
+			has_landed_title = k_dacia
+			completely_controls = k_dacia
+			k_dacia = { is_titular = yes }
+		}
+		war = no
+		ruled_years = 5
+		is_adult = yes
+		NOT = { tier = emperor }
+	}
+}

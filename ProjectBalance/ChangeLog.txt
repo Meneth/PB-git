@@ -1,0 +1,1632 @@
+3.2.8
+	Ensured traitors can be executed
+	The center of trade buildings now directly give tech points
+	Updated Sniggles' Bookmarks to the latest version
+	Added a decisions to create the Holy Roman Empire if one's king of both East or West Francia and Italy
+	Put the 1069 bookmark (after the Norman Conquest of England) first. It'll now be the primary balancing point
+	The Karlings can now bypass the restrictions on claim wars against allies
+	Unreformed Pagans can now get Title Revocation
+	Title Revocation Allowed is now the default. The HRE and France starts with revocation banned
+	Made women and people with regents even more likely to hide from besieging armies, and made characters in general more likely to hide from besieging characters from other religious groups
+	You can now hold all of a kingdom's dejure holdings rather than the kingdom title itself in order to meet the requirements for forming empires
+	Armenia is no longer needed to form the Persian Empire
+	Ensured that factions can't be started to remove laws that aren't there
+	Fixed a small issue with Byzantine regnal numbering
+	Fixed the Byzantines getting some modifiers in 867 that they shouldn't
+	Fixed universities not giving economy tech points
+	Fixed some minor issues
+
+3.2.7
+	Fixed various minor bugs
+	Fixed a bug in duel targeting
+	Reduced the chance of duels considerably
+
+3.2.6
+	Removed the ridiculous bonuses defensive pagans get in home territory
+	The AI will never use the subjugation CB or take the Become King ambition if it is a member of a defensive religion and not ambitious
+	The Jewish religion now has a description
+	Fixed an issue with the Tribal Invasion CB
+	Halved the prestige from looting
+	To loot at the maximum rate you now need 1000 soldiers rather than 500
+	Halved the amount of loot boats can carry
+	Doubled the rate of looting, but reduced the amount looted by 25%
+	Lootable gold in a province now replenishes 20% slower
+	Fixed market practices saying it gave "nobuilding"
+	Orthodox characters no longer get the holy war CB for free against the Pechenegs just because they hold Orthodox territory. They have to meet the regular requirements instead
+	Fixed some duplicate holdings issues
+	Prepared Invasion forces can no longer be inherited
+	Made the trait outcomes from staying at a siege, sending your family away, or fleeing more reasonable
+	Made the AI a bit more likely to flee sieges entirely
+	Made the AI a lot more likely to flee sieges if the sieging army is of a different religious group, or a different Pagan religion if the holder is Pagan
+	Made it more likely for women and rulers with a regent to run away from a siege
+	Made the AI more likely to use its cultural retinue rather than generic retinues
+	Changed the color of Denmark back to red
+	Raised base fertility from 35% to 40% (vanilla is 50%)
+	It is now possible to duel anyone leading an enemy flank in battle, rather than just the ruler you're at war with. Adjusted the chance of duels in order to compensate
+	You're now less likely to get the craven trait from running from a duel based on how skilled the enemy you're duelling is
+	Fixed the game crashing when starting campaigns after August 1st, 1072 and before September 17th, 1085
+	Fixed some minor localisation issues
+	Ensured that Lotharingia and East Francia are generally kept as primary titles
+	Vassalized mercenaries, holy orders, and religious rulers' (E.G., ecumenical patriarch) opinion of you can no longer prevent you from imposing laws
+	The province of Viken is now named Ranrike (historical name) when not under Norse rule
+	(867 start) The county of Ranrike is now independent, as there is no reliable evidence it was under Danish rule at the time; Harald Hårfagre was able to invade it without reprisal
+	(867 start) Reduced the size of Bagsecg's scripted army some
+	(867 start) Fixed Venice having two family palaces
+	(867 start) The Byzantines now start with a partially reformed theme system
+
+3.2.5
+	Fixed two of the West African holy sites being unbuilt
+	Fixed a minor position issue
+	Halved the tech gain from attributes and councilor events
+	(867 start) The scripted armies of Ivar and Halfdan now disband once they're at peace
+	Fixed Jews getting the wrong religious icon
+	Minors can no longer host tournaments
+	Improved the localisation for crown law requirements
+	Fixed Gniezno being a republic (vanilla issue)
+	Fixed the Umayyads being a republic in 867
+	Fixed some ownership issues in Ethiopia
+	Fixed an issue with the Tribal Invasion CB which was making the Seljuk conquest of Anatolia impossible
+	The Mongol invasions will now destroy Muslim and Pagan kingdoms
+	The Byzantines can no longer have Crown Authority laws. The Theme System set of laws replaces it
+	The Theme System set of laws is now in three stages, the second stage removing half of the levy/tax penalties and the third stage removing those penalties entirely. Each stage now gives minimum levies (10, 15, 20%)
+	Reforming the Roman Empire is now only possible if the Theme System has been at least partially reformed. Reforming the empire will replace the theme law with the equivalent Crown Levies law
+	Stressed or depressed rulers can no longer declare pagan subjugation wars
+	Added in "is war possible?" checks for the Pagan CBs
+	Halved the chance of duels happening at tournaments
+	Tweaked the tribal invasion requirements. As a general rule Mongol expansion will always stop before Finland and the Catholic world
+	Merged the Pagan Holy War into the regular holy war CB, since there's no functional difference between the two in vanilla. So now all of PB's requirements should properly apply
+	Reduced the galleys from shipyards to two per level. Halved the cost and reduced the building time of all levels to 1 year
+	(Experimental) Removed PB's Tribal Raid CB
+	Gave the county of Ingria some shipyards so Rurik actually has a few ships
+
+3.2.4
+	Fixed an issue with river positions
+	All Pecheneg provinces west of the Dniester are now Vlach and Orthodox
+	Fixed the Cumans not existing
+	The AI will never send their court chaplain to pagans unless they're zealous or the target is Norse
+	You now need four holy sites to reform a pagan religion
+	Pagans no longer get their conversion speed halved if they manage to reform
+	Fixed some character issues
+	Serbia is now dejure Byzantine at the campaign start
+	Added the empire of Carpathia, covering Hungary, Wallachia, and Croatia
+	Added the empire of Tartaria, covering Crimea, Khazaria, and Alania
+	(867 start) Removed the Abbassids' immense claims
+	(867 start) When Hungary is formed the Pechenegs get an event to move into their former territory
+	(867 start) The Magyars no longer gets a second doomstack upon forming Hungary
+
+3.2.3
+	The "Become King" ambition now reduces the Subjugation cooldown to 3 years rather than eliminating it entirely
+	Content, Craven or Slothful rulers can no longer take the Become King ambition, nor use the Subjugation CB
+	Halved the Piety gain from winning a Subjugation war
+	The Subjugation CB now costs 100 prestige
+	The Subjugation CB now only works against titles you border
+	Unless the target you're subjugating is in the same kingdom as your capital, you must be Brave, Ambitious, or Diligent
+	Put the 1066 and 1069 bookmarks above the 867 bookmark as they're the primary start dates of PB
+	Fixed some province issues in the 867 start
+	Halved the levy bonus from low decadence
+	Reduced warscore from battles 30%
+	Subjugating someone now only gives +25 to opinion rather than +75
+	All invasion of England armies are now guaranteed to disband the moment the owner is at peace. Same goes for Robert of Apulia's army, the army the Seljuks get to invade Anatolia, the Cilician/Antiochan independence armies, and the Byzantine army to retake the coast
+	The Invasion CB will no longer apply the "Recently Conquered" modifier
+	Added in the Pagan county conquest CB. You need to be Ambitious, Diligent, Zealous, Wroth, or Brave to use it, and it is on the same cooldown as holy wars. It costs 100 prestige and 50 piety
+	Reduced the retinue gain from tech to 50% per level rather than 150% (vanilla 200%; WTF?)
+	Slightly reduced the retinue gain from military buildings and realm size
+
+3.2.2
+	Finnmark is now independent in the 867 start
+	Added in all the pagan CoAs defined in 1.10
+	Reduced the piety cost of war to 10
+	Reduced the base fort level of castles by 1
+	Retinues now only increase by 50% per tech level (from 100%)
+	Removed the Reformed Baltic pagans' ridiculous bonuses
+	Pagans no longer get bonuses to levy/garrison size. Instead they get a 30% bonus to the strength of the appropriate unit
+	Reduced the troop amounts from the Warrior Cult buildings
+	Reduced the base troop amounts from the 3 main holding types some, as buildings are easier to get in 1.10
+	Increased the tech requirements for most buildings slightly
+	Reduced the number of prebuilt buildings in 1066
+	Fixed Tanistry succession being available to unreformed pagans
+	Slightly reduced the retinuesize bonus military buildings give
+	All west African rulers in 867 are now randomly generated
+	Fixed various province and title errors
+	Tweaked initial technology
+	Fixed Galicia and Badajoz still being dejure parts of Asturias in 1066
+	Reduced the vassal opinion bonus from combat traits
+	Reduced max opinion from tech to 10 (was 16)
+	Reduced max religion flexibility to 25% (was 50%)
+	Reduced max culture flexibility to 40% (was 50%)
+	Reduced max short reign reduction to 4 (was 5)
+	Increased the base short reign length to 8 years (was 5)
+	Reduced the demesne tech bonus for emperors to the same level as kings
+	Reduced the size of the Saxon and Norwegian starting armies in 1066, and increased the size of the Norman army
+
+3.2.1
+	The 867 start should now work
+	Fixed some missing straits
+	Fixed some ownership errors in west and east Africa
+	Added the kingdoms of Khiva and Turkestan from vanilla
+	Fixed a broken plot
+
+3.2.0
+	Updated to work with 1.10 and the Old Gods
+	Removed a few duplicate titles
+	Changed the temp folder (where saves and such are stored) to ProjectBalance instead of Balansegang. If you use a modified settings file you should copy it over to the new location
+	Fixed some minor bugs
+	Added small chances of being wounded, maimed, or rendered incapable upon losing a battle
+	Prevented Pechenegs from switching culture to Vlach
+	Tweaked the chance of standing down from tournaments, in most cases making it rarer
+	Peasant rebels can no longer take prisoners
+	Ensured that the Bulgarian Empire always starts out feudal
+	Patricians can raise retinues again, as 1.10 fixed the CTDs
+
+3.1.28
+	The scripted armies/navies of Harald, Harold, and Robert now disband once they're no longer at war with anyone
+	Factions can no longer try to install claimants with weak claims unless the claim could be pushed normally
+	Removed all random chances of injury or death in battle. This can now only happen via the Duel Engine
+	Made duels in combat slightly (25%) more likely
+	Being brave now makes duels in combat 50% more likely. Being craven makes duels half as likely
+	Fixed some bugs in the Dungeons and Sieges implementation
+	The AI will no longer try to remove/lower one of the crown laws unless it dislikes the liege or is ambitious, deceitful, or envious
+	Catholics that declare war on the Pope will now also lose the Zealous trait
+	Updated the Duel Engine to its latest version
+	Reduced the opinion bonus for crushing a major revolt to 10
+	It is now possible to declare Holy War while having no Emperor's Peace if you've got Title Revokation Allowed
+	Removed the levy penalties tied to Emperor's Peace
+	The Byzantines now start with a "Decayed Theme System" law, reducing their levies and taxes. The system can be reformed with enough political will and ability, and its penalties will disappear entirely if the Roman Empire is reformed
+	Increased the severity of the "Decentralized HRE" a bit to compensate for Emperor's Peace no longer giving any penalties
+	Tweaked the trait outcomes in Dungeons and Sieges. You'll no longer get a bunch of traits at once, but you're generally somewhat more likely to gain/lose individual traits when making imprisonment decisions; chances range from 15% to 30% of a trait change happening. You'll no longer go right from one anti-trait to another (E.G., from being Charitable to being Greedy). Also tweaked the AI weighting for different imprisonment choices to make it more logical
+	Fixed the Ibadi heresy having the wrong icon
+	Having the Agile or Perceptive trait now increases the chance of winning duels. Being ambidextrous now has the same effect as being left-handed on duels. Being absentminded now reduces the chance of winning duels
+	Anyone with a martial education at campaign start will now start with the duel trait of the same tier
+
+3.1.27
+	Fixed the penalties from the Decentralized HRE law affecting HRE vassals
+	The decadence modifiers for high, medium, and low decadence now have icons on the character page
+	The conquest of the Balkans will now end inconclusively if Robert dies
+	Fixed bad siege events being more likely if you had high martial, and vice versa (vanilla issue)
+	Slightly increased the size of Robert of Apulia's starting army
+	Fixed the new traits from VIET Traits lacking icons
+	Vassals will no longer try to install a women without a strong claim
+	Integrated the New Duel Engine mod (credit goes to jordarkelf)
+
+3.1.26
+	Increased the opinion penalty for forcing religious conversion from -10 to -20
+	Ensured that an insignificant French courtier doesn't start with a weak claim on Barcelona
+	The AI will no longer try to form claims on provinces outside its realm unless it is independent or king tier
+	Restored the accidentally removed Barracks building line
+	Made men less likely to pick the "Get Married" ambition over other possible ambitions
+	It is no longer possible to form more than one empire. You now need to be an adult, have ruled for at least five years, and at peace in order to form an empire
+	If the Byzantines manage to retake all of Rum, the kingdom of Iconium is restored dejure, and it and Cilicia becomes dejure Byzantium
+	Reduced city taxes by 5%
+	(Experimental) Removed the extra restrictions to holy war against Pagans
+	Implemented the Dungeons and Sieges mod. Credit goes to waylit1
+	Christian rulers will no longer adopt Arabic cultures
+	Robert of Apulia now starts with a bit more piety so he'll be more likely to create the Kingdom of Sicily
+	If William the Bastard wins the war for England he'll get a 3000-man mercenary company vassalized to him. It will go away once the ruler of England isn't either William or one of his sons
+
+Bulgarian Unrest:
+	Fixed owners of provinces in the Byzantine Empire of non-Greek culture sometimes getting repeat Culture Clash events
+	The Culture Clash modifier now only lasts 20 years, and can randomly get reapplied for ten years at a time
+	The Culture Clash and Bulgarian Unrest modifiers no longer affect the provinces held by characters of the same culture if they are direct vassals to the emperor
+	The Culture Clash modifier will now only affect South Slavic provinces
+	The Culture Clash and Bulgarian Unrest now give a much lower revolt risk (1% and 2% instead of 3% and 5%). The Culture Clash no longer affects taxes
+	Added an option to keep taxes high and use force to get Bulgarian levies. Gives a high risk of a large Bulgarian Uprising within a few decades
+
+3.1.25
+	Fixed two blank, uncloseable events popping up within a month of starting the game
+
+3.1.24
+	Fixed forging claims in some cases being impossible when it should be possible
+	No part of Armenia is required any more to go past tier 1 Imperial Reconquest. The western Armenian duchies can still be conquered using the Imperial Reconquest CB if so desired
+	Ensured that Muslims cannot have female councilors, except for spymasters
+	Fixed the Byzantine Culture Clash not spreading to new conquests, and going away from provinces converted to Greek
+	The Rum Sultanate now starts with protected inheritance to ensure they don't lose titles to the Byzantines via inheritance
+	Fixed a few minor bugs
+	Muslims now convert muslim provinces considerably more slowly
+	Halved the rate of character conversion when sending your court chaplain to convert a province
+	Tweaked some of the opinion modifiers for crown laws
+	Characters now get -40 opinion towards heretics (was -35)
+	Integrated the VIET Traits module (credit goes to Cybrxkhan)
+	The formation of Rum now triggers a global narrative event
+	The Bulgarian unrest now sends an event to all Byzantine vassals to notify them
+	The Byzantine Empire now uses Agnatic succession. This should help reduce the chance of Russians inheriting the throne. Historically there were no female rulers of Byzantium after 1056
+	Barons can no longer have retinues
+	Doubled the penalties for provinces of the wrong culture
+	Doubled the penalties for provinces of a different religion in the same religion group
+	Taking up loans now also gives a small negative modifier to piety. Usury is a sin in most religions after all
+	Merchant republics can no longer use the holy war CB. Their special coastal CBs should be enough for expansion
+	Fixed merchant republics being unable to seize Muslim cities
+	Increased the effect of opinion on trade post costs by 50%. Slightly increased base cost to compensate
+
+3.1.23
+	Patricians can no longer hire retinues as this caused frequent CTDs (vanilla bug)
+	Fixed random characters occasionally becoming immortal when not playing Shattered Balance
+
+3.1.22
+	Sicilian culture will no longer spread via melting pot events to Greek provinces outside Italy
+	Removed the event giving pagans a bit of free piety
+	Fixed Shia muslims being unable to take the Sadaqah decision
+	The events related to the formation of Rum can now fire in campaign starts after Rum is formed. The dejure changes are also reflected, so in campaign starts after the formation of Rum, Rum will be a dejure kingdom
+	You now only need 75% of all an empire's provinces to form it (from 80%)
+	You now only need 60% of all an empire's provinces to usurp it (from 80%)
+	Increased the prestige cost for refusing to join an ally's war by 50%
+	Somewhat increased the frequency of combat event. They now have a chance of happening every 5 days rather than 7
+	The Byzantines will now set Constantinople as their capital even when the Legacy of Rome DLC isn't enabled
+	Changed the limitations on fabricating claims; you now need to share a sea zone or a border with a province in order to forge a claim on it
+
+3.1.21
+	Fixed an event popping up with no way to close it
+
+3.1.20
+	The Elective Succession faction now requires that the realm have no crown laws except at most low crown levies (previously it only required no King's Peace. Vassals should only be able to force Elective in highly decentralized realms
+	It is no longer possible to enact Free Infidel Revokation, Complete King's/Emperor's Peace, No External Inheritance, or High/Maximum Crown Levies when using Feudal Elective succession. If you've got any of those laws you cannot adopt Feudal Elective succession
+	Implemented vanilla's distance restriction on holy war (can't declare holy war if the target is more than two seazones away
+	A few restrictions on dejure claims no longer affect players, only the AI
+	Fixed the Tribal Raid CB applying an absolute reduction in holding income rather than a relative one
+	Slowed down culture conversion by about 20%
+	The Normans now start with generals for their armies in the Norman-Byzantine war
+	The Norman Conquest of the Balkans now targets the dejure kingdom of Epirus, making the AI less stupid about what counties it besieges
+	The AI now won't assault holdings unless it outnumbers the garrisons 10:1 (from 8:1)
+	Implemented the Catholics Can Unite the Schism mini-mod
+	Halved the opinion bonus from Sayyid and Hajajj
+	The Long Reign opinion bonus now starts after 20 years
+	Gave the Fatimid Sultan a few starting traits (content, humble, and slothful) based on how he dealt with the Fatimid famine and civil war
+	Reduced the opinion penalty from ambitious to 30
+
+	Increased the size of the unreinforcable army the Rum Sultanate gets upon its formation to 8000 men
+	Turkish culture now spreads half as quickly to coastal provinces, and thrice as quickly to inland provinces. Turks can no longer spread culture via ports
+	Rum no longer gets the Tribal Invasion CB against Byzantium; the events should be enough
+	Added an event following the formation of Rum that causes the Bulgarian Empire to become a dejure title consisting of Bulgaria and Serbia. It also adds severe negative modifiers to non-Greek provinces in the Byzantine Empire unless the Byzantine Emperor chooses to give them increased autonomy, handing over all titles held by non-Bulgarians in the Bulgarian Empire to a Bulgarian who becomes king of Bulgaria while remaining a vassal
+
+3.1.19
+	Character will no longer attempt to gain independence from dukes
+	You can now only take loans if your yearly income is higher than the interest
+	Doubled the prestige loss from having loans
+	When a Crusade is won, if the target title already exists and is held by someone of a different religion it will be destroyed then recreated by the winner, ensuring that a Crusader State can be created
+	If the target title of a Crusade exists, it must either be held by another catholic or by the target
+	Updated the retinue tooltips with some notes about PB's costs
+	Halved the cost of hiring retinues. Reinforcement and maintenance costs are unaffected
+	Made participating in battles a bit more (25%) important when it comes to gaining war contribution (E.G., in crusades)
+	Rum being formed now prevents the Byzantine Empire from using the Imperial Reconquest CB for 15 years
+	Fixed dejure merchant republics ending up with internal peace laws
+	Decreased the distance factor for trade post costs by 25%
+	Increased the opinion bonus/penalty for trade post costs by 25%
+	Created a Bulgarian Empire that exists from after the Bulgarian revolt in 1185. Dejure lands are Bulgaria and Serbia
+	Reduced the size of liege levies by 10% to more accurately correspond with levy laws
+	(Vanilla bug) Fixed Theodosian Walls being buildable (then immediately destroyed) outside Constantinople
+	Thrace no longer gets extra buildings beyond those set in the history files
+	Liege levies now reinforce half as fast
+	The second Seljuk Invasion now takes all of Anatolia except Trapezous and Cilicia rather than just Iconium
+
+Traits:
+	The Intrigue education traits makes the AI more amoral (more likely to join plots and such)
+	The Diplomacy and Learning education traits makes the AI more moral
+	The first tier of each education trait makes the AI less ambitious. The two last tiers makes the AI more ambitious (except for Learning)
+	Celibate characters now dislike Hedonists -10 rather than -5
+	Reduced the opinion bonus from Born in the Purple from 10 to 3
+	Reduced the opinion bonus from Genius from 5 to 3
+	Halved the opinion bonus of Strong, Diligent, Kind, Brave, and Just to 5
+	Reduced the opinion bonus from Gregarious from 5 to 3 (+2 diplomacy gives extra opinion already)
+	Reduced the opinion bonus lieges get from Content characters from 50 to 30
+
+3.1.18
+	Characters will no longer die "natural" deaths between age 10 and 40
+	Fixed the kingdom of Galicia not being destroyed after inheritance/conquest when titular
+	Ensured the Crusader State event always occurs
+	Tribal Raids now target specific duchies, allowing them to gain warscore quickly by occupying that area. Upon success all counties within the duchy will get a 5-year province modifier reducing income and levies
+	Fixed the Rum Sultanate in some cases not being formed
+	Vassals won't start or join succession law factions if they really like the current heir
+	The AI now waits a bit longer before sending faction ultimatums
+	Made the conditions displayed for "non-dejure holy war" in the "is war possible?" decision clearer
+
+3.1.17
+	The capital of Rum will now be Ikonium
+	Made France less likely to expand via holy war
+	Made the HRE less likely to expand via holy war, except into Pomerania
+	Made the Byzantines less likely to expand via holy war, except in dejure areas
+	The HRE now has a unique law reducing their levies and tax, to represent its heavily decentralized nature. A dedicated player can revoke this law
+	Made the AI more careful about declaring independence wars against the HRE
+	Children can now join the independence faction (regent pushing them into it)
+	Characters entirely surrounded by independence faction members won't refuse to join the faction just because they like their liege
+	Not having title revokation no longer gives a boost to opinion
+	Prestige and Piety now give a max of +15 opinion. Opinion is gained half as slowly from each
+	The short reign modifier now starts at -10 instead of -18
+	Fixed the formation of Rum sometimes not working
+	The AI will now form multiple kingdoms
+	The AI is no longer an idiot when it comes to assaults. It'll wait until it has at least 8 times as many soldiers as the defending garrisons, rather than 6
+	Fixed the former liege sometimes getting claims on independence revolters
+
+3.1.16
+	Updated for 1.092
+	Fixed it sometimes not being possible to do the Forge Claim mission in a county you already have a claim on when your chancellor has a high enough diplomacy skill to claim the duchy (your diplomacy used to be checked instead). Do note that it'll be possible to send your chancellor to claimed provinces even if he doesn't have enough diplomacy to claim it, as there's no good way to check his diplomacy
+	Crusades can now only happen after an event proclaiming the Christian world's quest to reclaim the holy land is triggered. This will generally happen somewhere between year 1090 and 1100, though it can potentially happen later. Campaigns started after the kingdom of Jerusalem has been established don't need this event for Crusades to be possible
+	Ensured the capital of Rum isn't coastal
+	When Rum is formed their capital will now be converted to Turkish culture, giving them a chance of spreading their culture to Anatolia
+
+3.1.15
+	Fixed some issues with the creation of Crusader States
+	Fixed dejure claims not being pushable against the Pentarchy baronies even if you follow a Pentarchy religion in cases where the province holder doesn't follow a Pentarchy religion
+	Envious characters might now also start claimant factions in elective realms
+	Increased the income the trade post buildings give
+	Halved the share of patrician income relatives (except sons, brothers, uncles, and cousins) get
+	Reduced the cost of building new trade posts to 175
+	Fixed the kingdom of Persia being destroyed on campaign start when the empire of Persia doesn't have a holder
+	Fixed the Mongols sometimes not doing anything after spawning their troops
+	Tribal Invasions will now vassalize kingdoms rather than destroying them
+
+3.1.14
+	Made light infantry, archers, knights, and pikemen somewhat more vulnerable during the pursue phase 
+	Made light cavarly 50% more destructive during the pursue phase
+	Made light cavalry twice as destructive as light infantry in the skirmish phase
+	If you refuse to change to Papal Investiture there's a high chance the Pope will excommunicate you
+	If you're catholic and involved in an offensive war against the Pope you will be excommunicated (unless you've got an anti-pope)
+	Fixed king-tier Merchant Republics and dukes/counts unaffected by crown law being unable to appoint generals
+	It is no longer possible to fabricate claims on the capitals merchant republics. It is still possible to fabricate claims on their non-capital provinces
+	The capital of a merchant republic can be conquered using the republican "seize county" CB, but only if it is their last province and they only have 0 or 1 trade-posts left
+	The "Convert a Province" objective now has a unique icon. Credit goes to cybrxkhan
+	Tribal Invasions can now only target kingdoms the attacker borders
+	Fixed PB crashing on campaign start between 1275 and 1300 (approximate dates)
+	Fixed a variety of minor character issues
+	If Galicia is inherited or conquered by Leon or Castille and is titular, the title will be destroyed
+	Galicia now starts as titular
+	Increased the size of the duke of Apulia's starting forces
+	The duke of Apulia is now Ambitious (he tried to conquer the Balkans, if that's not being Ambitious I don't know what is)
+	Did a bit of event optimization, should very slightly improve game speed
+	Increased the infidel opinion penalty to -50
+	Increased the prestige cost of destroying a kingdom title to 500 (was 400)
+	Increased the court size threshold before fertility is reduced to 20; 15 was a bit too strict
+	Sicilian culture now spreads more quickly once the Kingdom of Sicily has been created
+	Increasing crown levies or enacting protected inheritance will no longer make vassals quite so mad (-10 rather than -30)
+
+3.1.13
+	Fixed Cherson being part of Iconium
+	The Seljuk Sultanate now starts with Title Revocation Allowed
+	The Seljuk Sultantate now only holds e_persia, not k_persia
+	Properly fixed Crusade states not becoming Feudal
+	If a Crusade target is given away, the new ruler gets the Formation of Rum character modifier for 25 years (renamed, of course), which gives some temporary bonuses and makes them immune to holy war. They also get a 2500-man army that cannot be reinforced
+	Ensured that Crusader States actually have councilors
+	The capital of the new-formed Crusader States will be instantly converted to their religion
+	Increased the effect of combat on decadence by 25%
+	Reduced the effect of realm size on decadence by 20%
+	Incresed the reduction in decadence gain titles give by 50%
+	Increased the reduction in decadence gain councilors get by 50%
+	Fixed a decision named "allow" appearing at the bottom of the decision list
+	Added an event that gives dejure kingdoms/empires with no internal peace law (that is, not even No Internal Peace) an internal peace law. Whenever possible whatever law is used in the ruler's capital will be used
+	Crusades will no longer be called against any kingdom other than Jerusalem unless Jerusalem is completely controlled by Christians
+	The holder of Jerusalem now gets the Holy War CB for free against Muslim duchies in the dejure kingdom of Jerusalem
+	Added some modifiers for low, medium, and high decadence. If your decadence is below 10% everyone will like you more (+10) and your vassals will provide you more levies. They'll like you less (-10) if your decadence is above 50%, and even less (-20) if it is above 75%
+	Muslims are a lot less likely to support a claimant with a decadence over 50%, and will never support a claimant with a decadence over 75%. The only exception is if they're members of the same dynasty
+	Increased warscore from battles by 25%
+	Made the Christian Iberians more likely to plot to murder one another
+	Reduced the levy increasing effect of "Train Troops" by 40%
+	Reduced the size of the Knights Templar and Knights Hospitallier by 2/7
+	Reduced the size of the Teutonic Order by 1/7
+	Made it more likely for characters with moderately positive opinion of their liege to join factions
+	Non-dejure vassals of an empire will not create claimant factions, as they are more likely to want independence. They're also a lot less likely to support a claimant
+	Reduced the chance of new claimant factions being created if there's already one present for someone else
+	Tweaked some of the weights for independence factions
+	It is now possible for non-Celtic players to switch to Tanistry succession with strict requirements
+	Only Anatolia and Thrace within the Byzantine Empire now start well-developed, with the exception of some holdings set in the history files. Historically almost the entire Byzantine army was drawn from Anatolia
+
+Rum Sultanate
+	Fixed the Formation of Rum event chain not firing if the Seljuks held any province in Iconium
+	Ensured the Formation of Rum event chain won't happen when Rum already exists
+	The Formation of Rum event will now prioritize dyansty members who have male children as rulers of Rum, in order to ensure the title doesn't get inherited by the Seljuk Sultanate
+	If a new character is created to hold Rum due to no suitable character being available, he'll have a wive and a male child
+	Added an event chain for the independence of Antioch and Cilicia after the Rum Sultanate is formed
+	The independence of Antioch and Cilicia causes Rum and Armenia to cease to be dejure parts of Byzantium
+	Added an event causing Rum to invade Nikaea (minimum of 10 years after Rum's formation, but can potentially take quite a bit longer)
+	If the invasion of Nikaea is successful, all of Trebizond (except the duchy of Cherson and the province of Trapezous) will be seized by Rum
+	A couple of random provinces are now converted to Islam when the Sultanate of Rum is formed
+	Increased the length of the character modifier the first Sultan of Rum gets to 15 years
+	The Imperial Reconquest CB is now usable against Rum
+	The Rum Sultanate now gets a 3000-man non-reinforcable army when formed to help them survive
+
+3.1.12
+	Added a new ambition: Convert a Province. Available to any adult ruler with a province of a different religion, as long as they're not cynical and have a positive Piety. Upon success the ruler will gain some extra piety, and potentially a good trait. Having the ambition will speed up province conversion by 25%. Stewardship will be reduced by two until the ambition is complete
+	Fixed the Warrior Cult building not reducing levies by as much as it should
+	The City and Temple Warrior Cults now also reduce levies by 25% (doesn't stack)
+	Reduced the size of retinue units to 250 men (doesn't affect the # of men you can raise, just makes it more precise)
+	Updated Sniggles' Bookmarks to the latest version, adding 16 new bookmarks
+	Increased the cost of maintaining retinues by a factor of 5, so they now cost 1/4th of what they do when reinforcing
+	Increased the retinue cap from buildings by 50%
+	Reduced the retinue gain from tech by 25%
+	Reduced the base retinue from manpower by 1/3
+	Updated the "is war possible?" decisions to account for some recent changes
+	Fixed there being two Kingdoms of Galicia
+	Muslims won't try to gain independence from someone of the same religion if their liege's decadence is below 25%
+	Sicilian castles now start with level 1 walls and stables
+	Fixed the Pechenegs being able to form Wallachia
+	Gave Robert of Apulia claims upon Epirus and Dyrrachion
+	At any campaign start between 1066 and Robert of Apulia's death in 1085 he's attacking the Byzantines in a Claim All war
+	Robert of Apulia now starts with a moderately large force raised in Lecce
+	Added another dejure kingdom in Anatolia; Iconium
+	It is no longer possible to start a claimant war while your liege is at war, as success causes any defensive wars your liege was involved in to end inconclusively
+	Tuned down the severeness of most of the "recently conquered" modifiers. Provinces will no longer provide *no* levies and tax for 30 years
+	Added some events that makes Pecheneg provinces Vlach if the Pechenegs get conquered by a non-Altaic culture. Credit goes to neondt
+	Fixed the Ethiopian culture building not being available to Somalis and Nubians
+	Made the province of Dwin Persian and Sunni (controlled by Muslims since the 8th century)
+	Fixed the East African restrictions on holy war applying to *all* characters of Miaphysite religion
+	Ensured the Byzantines don't start with any Content vassals due to random trait generation
+	Reduced the size of the Varangian Guard to 1800 men. Their function is for the most part fulfilled by retinues
+	The Byzantine starting buildings are now bound to the holder having Greek culture rather than the Byzantine culture group
+	Reduced the size of the Ghilman mercenary band to 3600 men
+	Fixed some law localisation
+
+Sultanate of Rum:
+	Added an event with strict conditions that causes the Seljuks to invade Iconium and them form an independent Sultanate of Rum. Causes Cilicia to cease being dejure Byzantine, and all of Iconium to become dejure Rum instead
+	The Sultanate of Rum gets the Tribal Invasion CB for free against Byzantium until 1150
+	Rulers won't get the Holy War CB for free (due to same-religion provinces) against the Rum Sultanate. If the other conditions are met, Holy War can still be declared
+	The Rum Sultanate gets a large boost to religious conversion until year 1200
+	The Sultan of Rum gets a modifier for 10 years after the formation of Rum which makes them immune to holy wars and gives them some temporary bonuses, making it more likely for them to survive (especially considering half their provinces will have "recently conquered" modifiers)
+	The Ghilman mercenary band is transfered to Rum upon its formation
+
+3.1.11
+	Ensured that if the Crusade target is given away, it remains Feudal
+	Upon winning a Crusade, the option to give the kingdom to a courtier will only ever give it to courtiers with the Crusader trait
+	The AI will now generate a new character with the Crusader trait to rule the Crusade target if it doesn't have anyone else to give it to
+	Implemented Sniggles' Bookmarks, which adds 20 new bookmarks
+	Roughly doubled the warscore value of battles
+	Reduced the levies from walls by 80%
+	Split the kingdom of Bulgaria into Bulgaria and Wallachia. Bulgaria is dejure Byzantine
+	Discouraged huge courts; fertility is reduced once a court has more than 15 members (30 in vanilla)
+	Fixed a number of councilor events not working if the councilor is female
+
+3.1.10
+	Split the Cumans in two, Cumania and Kipchaks. Credit goes to neondt
+	Being Cynical no longer prevents you from using the Holy War, County Conqest, or Muslim Invasion CBs
+	You no longer need any *two* of the traits Wroth, Ambitious, Brave, and Zealous to declare Holy War on non-dejure duchies. One will do
+	Increased the number of troops the Warrior Cult building provides to 225 (from 150), but made it reduce levies from *all* sources by 25%, in order to simulate the Pagans' slow decline
+	Increased the Prestige cost of refusing to join offensive wars to 50 (was 25)
+	Reduced the Piety gain from sieges by 25%
+	Taking a capital in a war now contributes 20% more than a regular holding
+	*All* revolt CBs now let you gain warscore by occupying any attacker's holdings
+	All Holy War restrictions are removed from the Teutonic Order if the target is Pagan
+	All Holy War restrictions are removed from the Knights Templar and Hospitaler if the target is Muslim
+	The Seljuks now get a free tribal invasion CB against the Byzantines until 1100. Credit goes to Cybrxkhan
+	Increased the Piety gain from the Tribal Raid CB to account for wars costing 25 Piety
+	Fixed the game occasionally crashing when an AI character won a crusade
+	Muslims will no longer get the event to give away the kingdom after winning a crusade
+	Tribal Invasions and Muslim Invasions will now vassalize rebelling vassals in the dejure area
+	Crusades will now take the titles of rebelling vassals in the dejure area
+	Tribal Invasions should no longer end inconclusively if all the vassals in the dejure area are rebelling
+	Weakened the Fatimids by having the Caliph start with a much smaller demesne
+	Reduced retinue growth per tech level by 60% (to 4%/level)
+	Reduced base retinue by 40% (to 6%)
+	(Experimental, feedback desired) All military buildings now give +20 to retinue caps for each level (760 total with all buildings in a castle constructed)
+	(Experimental, feedback desired) Gave castles a base retinue of 100
+	Reduced the levy gain from building keeps by 80%
+	Reduced the garrison gain from building keeps by 40%
+	Dejure vassals of Aquitaine will no longer attempt to gain independence from France as long as the French king is Frankish, Occitan, or Norman, and the vassal is Frankish or Occitan and they're the same religion
+	Restored the Byzantine Emperor's vanilla traits
+	Removed the added Envious traits from the Byzantine Emperor's vassals
+	Characters are now a lot less likely to join a Claimant faction if the claimant is a child
+	Further halved the chance of dejure vassals wanting independence
+	Removed the Polish king's mother's claims on several Russian duchies
+	It is now also possible to give a kingdom won via Crusade to a courtier as long as you both have a positive opinion of each other
+
+3.1.9
+	Fixed the ruler designer giving slightly more fertility than it should
+	The Jizya tax now gives -25% levies in the province
+	Fixed loans not being removed when repaid through the interest event
+	Ensured it is impossible to hold both the Novgorod republic and dejure title
+	Ensured various titular titles remain a part of their dejure empire if they become dejure
+	Upon winning a Crusade one now gets the choice to give the title away to a son, brother, or dynasty member. The AI will take this choice unless it is their only kingdom
+	Reduced the vassal opinion bonus from Free Investiture to 5 (was 10)
+	Reduced the bishop opinion bonus from Free Investiture to 15 (was 25)
+	Bribing the Pope so as to keep Free Investiture now costs 200 gold + 2 years' income, rather than just 200 gold
+	Updated the Novgorod Republic mod to the latest version
+	The event that kills useless courtiers will no longer the parents of rulers. It will now kill unimportant characters of any gender that have the old age modifier or no stats above 4
+	You no longer necessarily need Ambitious or Diligent to enact Internal Peace and Title Revokation. Having Genius or one of the top tier education traits now also works
+	Seniority and Ultimogeniture is now easier to attain. Any crown law except the first level of Crown Levies is enough
+	Primogeniture is now easier to attain. You now only need either Internal Peace or Title Revokation, not both
+	Giving in to an Independence faction's demands no longer gives you any claims, because that's just silly
+	Fixed Muslim holy wars being possible against Nubians
+	Galleys now carry 200 men
+	Halved the size of the mercenary galleys
+	Halved the number of galleys William the Bastard starts with
+	Reduced the size of William the Bastard's starting forces
+	Harald Hardråde now starts with galleys off of the coast of York
+	Harald Hardråde's forces are now slightly larger
+	The AI will now be quicker to white peace in stalemates
+	Fixed: "Characters are now twice as likely to join the Independence faction if they only border members of the faction"
+	Characters are now 50% more likely to join the Independence faction if they border another member of the faction
+	Reduced the base chance of starting the Indepencence faction by 25%, and the base chance for joining it by 1/6
+	Further halved the chance of dejure vassals wanting independence
+	Added an event for isolated provinces that spawns a rebellion. If successful it will cause the province to become part of a bordering realm instead
+	(Experimental, feedback desired) You'll now get 0 levies at -50 opinion rather than -25. 
+	(Experimental, feedback desired) Crown Levies now also raises max levies by 5% per level, with no crown Levies giving -5%
+	The Russian dukes now all start with Agnatic Succession
+
+	Implemented from the VIET mod:
+		Trade-post costs go up ~3 times as much by distance
+		Increased the effect each point of Martial has on combat from 5% to 8%
+		Increased the frequency of combat events ~40%
+		Patrician elections are now somewhat less predictable
+		Reduced the effect of the campaign fund on elections by 40%
+		Ambitions can now be changed every 2 years rather than 3
+		Muslim Invasions and Coastal County CB cannot be declared by rulers with the content, slothful, imbecile, or craven traits
+		Pagans can have up to three wives
+		New Bookmarks: Kingdom of Jerusalem (15 July 1099), The Khitan (1 Nov 1141), Scourge of God (2 Dec 1227), Osman’s Dream (1 Jan 1307)
+
+	Affects PB + SWMH only:
+		The Christian Iberians now start with the second level of their cultural building rather than the first
+		The Christian Iberians now start with the first level of stable
+
+3.1.8
+	Added a Hamburg Republic. Credit goes to Thure
+	Added a Novgorod Republic which exists from 1136. An event can establish it if you start before that date. Credit goes to neondt
+	Gave the duke of Novgorod and his son weak claims on the county of Ingria so as to encourage the formation of the Republic of Novgorod
+	Fixed the loan modifiers not having any localisation (E.G., small_loan instead of Small Loan)
+	Gave the loan decisions descriptions
+	Fixed a duplicate barony (b_mora)
+	Fixed the position of troops in the county of Gelre; armies will no longer appear to be outside the province
+	Forming the kingdom of Pomerania now requires holding the duchy of Mecklenburg and either Pomerania or Pomeralia
+	The loan event option to "pay as much as possible" will now only show if you've got at least 110 gold (small loan + interest)
+	Removed conditions that no longer exist from the Is War Possible decisions
+	Emperors can now only push the claims of close relatives and their spouse
+	Removed the Holy Roman Emperor's mother's claim on Aquitaine and Poitou
+	Decreased base fertility to 35% (from 40%). The average family is still too large
+	Increased the fertility penalty of old age to 35%. Old characters won't end up with children unless they've got something boosting their fertility
+	Base retinue cap is now 10% of realm manpower rather than none
+	Retinue cap per tech level is now 10% rather than 15%
+	Made the AI a bit smarter when it comes to raising crown authority (for example, it won't enact Free Infidel Revokation if it has no infidel or heretic vassals)
+	Renamed Russia to Rus
+	Renamed the Arabian Empire to Arabia
+	Added a few more starting holdings in Southern Iberia
+	Made Novgorod a more likely AI primary title
+	Made Chernigov a more likely AI primary title
+
+3.1.7
+	Added a basic loan mechanic. Players can now take up four different loans; 100, 200, 400, and 800, for a total of 1500, allowing precision in 100 gold increments. The 100 loan is available to all players. The 200 loan is available to dukes and higher and patricians. The 400 loan is available to kings and higher and merchant republics. The 800 loan is available to kings and higher. 10% interest has to be paid yearly. When repaying a loan 10% interest is taken on top of the loan amount. By default the Take Loan decisions are hidden so that the decision list isn't cluttered. To show them one simply has to take the Show Loan Decisions decision, after which they can then be hid once more. For every 100 gold loaned you lose 1.5 prestige/year
+	The old age modifier now reduces fertility by 30% (for comparison Chaste reduces it by 15%)
+	Removed the decision to form a Kingdom of Spain
+	Fixed some issues that could potentially cause one not to be able to declare Holy War despite meeting all requirements
+	Removed all opinion-based restrictions from Holy War
+	If the target duchy has provinces of your religion within it, all Holy War restrictions are void
+	Implemented Poland-Lithuania. Empire-tier, but localised as king-tier. Requires holding Poland and Lithuania and Polish or Lithuanian culture in order to form it
+	Moved Prussia from Pommerania to Lithuania
+	Moved Chelmno from Pomeralia to Prussia
+	Holdings under siege now have their income reduced by 50%
+	Looted holdings now have their income reduced by 66% rather than 50%
+	Looted holdings no longer gain reinforcements
+	Removed half of the Pagan holy orders, so there's now only one per religion
+	Reduced base fertility to 40% from 50% (4 children per couple should *not* be the norm)
+	Fixed the AI sometimes prioritising its cultural building line higher than it should
+	Added a low maintenace cost to all military buildings
+	Fixed some duchies having not being part of any dejure kingdom at later start dates
+	Fixed a bug making it impossible to start the campaign after 1268.1.11
+	Fixed Grand Hunt not triggering when it should
+	Fixed the German Realm being formable while the HRE still exists
+	The Republics of Aden and Hormuz now have bigger dynasties. Credit goes to cybrxkhan
+	Added Somali and Nubian culture. Credit goes to cybrxkhan
+	Added a Somali republic. Credit goes to cybrxkhan
+	Renamed the Somali Kingdom to Somalia
+	Reduced the Muslim Republic tax penalty to 40%
+	Only Christian merchant republics can use the seize county CB
+
+3.1.6
+	Updated to work with 1.091
+	Fixed the county of Senoussi having no holdings
+	The decisions to hold summer fairs, feasts, and hunts can now be taken at any time of the year, but the events will only trigger during the appropriate season
+
+3.1.5
+	The patricians of Hormuz now each hold a city
+	The Republic of Aden no longer has dejure territory
+	Reduced the tax income from Centers of Trade by about 60%
+	Reduced the base tax income from cities from 12 to 10
+	Fixed Muslim patricians using Agnatic Open rather than Agnatic Seniority
+	Weakened the Republic of Aden; they no longer hold cities outside their counties, and the 5 counties are split between the 5 patrician families
+	Muslim Trade Republics now get -50% to tax income in order to slow down their growth. Do note that due to how this stacks with Stewardship, it will in practice not be a 50% decrease in income
+	Reduced the tax penalty for being at war to 20% from 40%
+	Increased the upkeep for levies and mercenaries by ~50%. Adjusted retinue caps to compensate
+	Removed the culture restriction from the coastal county CB; no longer needed
+	Retinues now cost 5% of their max maintenance even when not reinforcing
+	Dejure claims can no longer be used on merchant republics in the same realm
+	You can now imprison vassals for free if they attempt to (or succeed at) murder you, your close kin, or your spouse
+	The opinion penalties for murder no longer expire
+	The opinion penalty for executing someone's child no longer expires
+	Removed the Seljuks' claim on Aden (unintended consequence of name-changes in the official patches)
+	Fixed some CBs triggering the wrong flavor event upon the defending leader's death
+	Republics can no longer use crown laws (except Investiture), like in vanilla
+	Removed the port building; coastal cities earn a lot more than inland cities without it due to merchant republics
+	Marketplaces now give galleys, like ports used to
+	Non-pagan coastal cities start with the first level of marketplace
+	Coastal cities with a center of trade start with the second level of marketplace
+	Fixed the port of Sinai being in the Nile Delta rather than the Northern Red Sea
+	Implemented the Old Age mini-mod with the health penalty halved. Credit goes to cybrxkhan
+	Fixed various minor issues caused by the North/South German merge
+	The Tanistry succession law now requires, if you hold a crown law title, to have either Title Revokation or King's/Emperor's Peace
+
+3.1.4
+	Fixed the requirements for forming e_scandinavia and k_finland; accidentally required the non-existing Germanic culture-group
+	Fixed a duplicate character (caused CTDs). If you started your campaign in 3.1.3 you should start a new one
+
+3.1.3
+	Implemented the Icelandic Republic mini-mod. Credit goes to Birdboy2000
+	Implemented the Aden Republic mini-mod. Credit goes to jordarkelf
+	Implemented the Hormuz Republic mini-mod. Credit goes to cybrxkhan
+	Removed the North/South German split as it is no longer needed; other measures destabilize the HRE enough. Saves from earlier versions will still have the culture split
+	Byzantium is now called the Byzantine Empire once more
+	Increased the cost of building trade posts from 150 to 200
+	Reduced the tax income from trade posts from 6 to 5
+	Reduced the tax income from family palances from 10 to 8
+	The "become councilor" ambitions once more require at least 10 points in the relevant skill
+	Women can now take the "become councilor" ambitions as long as the gender laws allow it (true cognatic for chancellor, agnatic-cognatic for treasurer, any for spymaster)
+	Being at war gives a -40% modifier to tax income
+	The Seize Coastal City CB can now only be used if you own a trade-post in the same province
+	Declaring war now costs 50 Prestige and 25 Piety
+	Updated the positions of various ports to correspond to 1.09
+
+3.1.2
+	Titles are now renamed by culture as implemented in 1.09
+	Added Norwegian and Danish names for Austisland
+	Added Scandinavian names for Sudisland
+	Sicilians now have the same graphical culture as Italians, rather than Normans
+	The Persian Empire is now formable by people of Turkish, Iranian, and Persian cultures. All kingdom-tier titles within it have to be either be held by the ruler, or have no dejure territory
+	Fixed some mercenary companies having no soldiers
+	The Byzantine Empire is now called Rhomanía if ruled by Greeks
+	Fixed Patricians not getting their fancy portrait border
+	Fixed Patricians (except the top leaders) having the wrong succession type
+	Patricians are now half as likely to take on the culture of their capital
+
+3.1.1
+	Fixed the Pisan and Genoan republics not existing
+
+3.1
+	Updated to work with 1.9
+	Fixed the war ending inconclusively when trying to install someone else as the leader of an Elective realm
+	Saxon infantry now uses the Scandinavian sprites (except shields) as this is more historical. Credit goes to Sleight of Hand
+	Fixed one of the requirements for holy war not showing up in the Is Holy War Possible decision
+	Removed the alliance restrictions from pushing others' dejure claims
+	Changed the name of e_seljuk_turks to Persia
+
+3.0.10
+	Slowed down the Sicilian melting pot events some
+	Fixed the Sicilian provinces not actually becoming Sicilian in the 1130 start
+	Fixed The Aztecs not being able to use the Tribal Invasion CB
+	Fixed the cost of the final level of the Italian culture building (was 60 rather than 600)
+	Fixed some issues with pushing other people's dejure claims
+	Fixed some issues with pushing other people's claims
+	Fixed the war ending inconclusively when trying to install yourself as the leader of an Elective realm
+	Fixed a number of straits going through the wrong sea provinces
+
+3.0.9
+	Updated to work with 1.08
+	Sicily now becomes Sicilian culture in 1130. Credit goes to cybrxkhan
+	Alexios Komnenos now has a claim upon the Byzantine Empire in 1066 rather than 1072
+	Fixed the Institute Succession by Feudal Elective faction being broken (caused extra icons to show when selecting ambitions)
+	Fixed the Imperial Reconquest CB being usable against Bavaria at times when it shouldn't
+	Rulers of a religion with autocephaly can now use the dejure barony claim CB against the Pentarchy baronies
+
+3.0.8
+	Reduced the chance of characters joining the Remove Protected Inheritance faction by 80%
+	Reduced the chance of Greek Orthodox characters vassalized to a Greek Orthodox Byzantine/Roman Emperor joining crown authority factions by 90%
+	Characters will no longer join crown authority or independence factions if they're in a claimant faction. They can however still join the Independence faction if they're not a dejure vassal
+	Increased the base chance of joining the Independence faction by 50% in order to compensate for the other changes
+	Characters are only a fifth as likely to join the Independence faction if they're a dejure vassal
+	Characters are ten times as likely to join the Independence faction if they consider their liege a heretic
+	Characters are ten times as likely rather than twice as likely to join the Independence faction if their liege is in a different religion group
+	Made the Independence faction wait until it is even stronger before launching its attack
+	The leader of a faction to reduce crown authority will now be imprisoned if the war is lost
+	Reduced the chance of joining the Feudal Elective faction by 50%
+	The Mamlukes no longer start as a vassal of the Fatimids
+	Characters will no longer get dejure barony claims on the Pentarchy baronies
+	Fixed the barony of Huesca not having all the buildings it should
+	Added melting pot events for Norse-Gael. Credit for the culture goes to duinnin
+	The Norwegian provinces in Scotland and Ireland are now Norse-Gael, as are all provinces in the duchy of The Isles
+	Added melting pot events for Sicilian. Credit for the cultures goes to Zaldax
+	Added a 5-year cooldown to the Coastal Republic CB
+	Fixed the "Is Imperial Conquest Possible" decision claiming you need to be a faction leader
+	Harald now properly has a weak claim on England, rather than no claim
+
+3.0.7
+	Characters of North Germanic, Altaic, Arabic, and Iranian cultures now dislike people of other cultures 40% less (E.G., foreigner penalty against different culture groups is 12 instead of 20)
+	Shia Islam is now a heresy of Sunni Islam
+	The Coptic Pope now holds the Bishopric of Alexandria
+	Fixed the county of Sarqihya not becoming Miaphysite on day 2
+	Fixed the Jewish religion having the wrong icon
+	Made almost all of the Shia Fatimid provinces Sunni
+	Harald Hardråde's claim on England is now weak
+	To change succession law one must have sufficient prestige. Counts need 100, dukes 250, kings 500, and emperors 1000
+	Fixed the county of Aprutium appearing to belong to Apulia before starting the campaign
+	The Scheme mission will now properly coerce characters to join your faction (previously it was not possible to get anyone who was in any faction to join)
+	Project Balance's introduction event now triggers on day 1 rather than day 2. This also means that the religion setup is correct from day 1
+	Counts will now no longer start Independence factions unless their liege is a duke. They can still join it
+	The coastal republic CB can no longer be used against Muslims
+	Fixed a potential cause of CTDs (duplicate province history)
+	Imperial Reconquest can now be used against Muslims
+	The Byzantine Empire can now use Imperial Reconquest again, but with strict requirements. The requirements can be seen in-game through the "Is War Possible?" decision
+	Fixed it being impossible to restore the Roman Empire
+	When the Roman Empire is reformed, the Holy Roman Empire becomes the German Realm instead. It is still empire-level, but its rulers will be called Kings
+
+3.0.6
+	Properly fixed a potential cause of CTDs (duplicate event IDs)
+	Fixed another potential cause of CTDs (duplicate character)
+	Characters are now twice as likely to join the Independence faction if they only border members of the faction
+
+3.0.5
+	Updated to work with 1.07b
+	Rebalanced the starting forces of Harald, Harold, and William in order to promote historical results
+	Reintroduced the Imperial Reconquest CB. It is now only available to the restored Roman Empire
+	Fixed the Amass Wealth ambition being repeatable
+	Removed the requirement that the target of the "Fabricate Claim" plot is Feudal
+	Fixed the localisation of King's Peace
+	Fixed a potential cause of CTDs (duplicate event IDs)
+
+3.0.4
+	The war restrictions based on a party being Monophysite now base themselves on being Miaphysite instead
+	Vassals of emperors are now 50% more likely to join the Independence faction
+	Made the AI wait until it is a bit stronger before trying to declare independence. Should lead to fewer Independence revolts, but those that happen will be stronger
+	Fixed the Pentarchy not working
+	The Scheme spy mission can now be sent to anyone who has the same liege as you
+	Install Successor faction wars will no longer instantly end inconclusively
+	Rebalanced the Tribal Raid CB: The victor will now get 30 gold plus two years worth of income (was 5 years of income)
+	Fixed culture conversion via ports not working correctly
+	Provincial culture conversion now happens twice as fast if the province doesn't neighbor any provinces of the same culture
+	You can now forge claims upon islands even if they're held by someone of another religion. A province counts as an island as long as it doesn't border any land-locked provinces or any province that borders a land-locked province
+
+3.0.3
+	The campaign now starts with an event introducing Project Balance
+	Fixed an issue where some people would have African provinces in the Netherlands
+	Fixed William the Conqueror being missing
+	England now starts with a more appropriate army size in 1066 (was initially far too small)
+	Removed the Imperial reconquest CB; it invariably lead to the Byzantine Empire conquering land all over the place
+	Fixed some provinces starting with too low technology
+	Fixed several blank decisions appearing
+	Fixed a localisation issue with Ethiopian duchies
+	Consolidated the paragon of virtue, exalted, and wealth ambitions down to one ambition each but with 3 levels of goals depending on the character's current standard. In practice it works the same as before
+	The event where a city vassal asks for lower taxes now works properly (previously it could fire at any time, and would have no effect upon laws)
+	PB's crown laws now use the faction mechanics rather than plots
+	Dukes and counts can now change their succession laws regardless of crown authority
+	Fixed the localisation for Medium Clergy Obligations
+
+3.0.2
+	Now compatible with 1.07
+
+3.0.1
+	When pushing others' claims the war declaration restrictions are now upon your alliances, not the claimant's
+	The event that changes a ruler's culture and his/her children to the provincial culture will now only affect children of the ruler's dynasty
+	The events that change character culture now take on average 25% longer to happen
+	The event killing off useless courtiers will no longer kill married courtiers
+	The plots to reduce the new crown authority laws now use the icon of the vanilla plot rather than the icon for "Amass Wealth"
+	Fixed some missing localisation for the new laws introduced in 3.0
+	Added a decision letting you request a dejure title from your liege (vanilla has a similar event, but it is rather rare). The AI can only make the request if it is greedy, envious, or ambitious. The decision can only be taken once per character
+	Reduced the size of the Norwegian starting force, as it had become overly large due to the law changes in 3.0
+	Fixed the localisation for dying of gonorrhea (used to say "of syphilis")
+	Fixed the opinion bonus for clergy not being applied when enacting Free Infidel Revokation.
+
+	Prestige:
+		Reduced the prestige for having baron vassals by 25%
+		Halved the prestige for having counts, dukes, and kings as vassals
+		Reduced the prestige for holding a county, duchy, or kingdom by 25%
+		Increased the prestige cost of revoking titles by 50%
+		Newborns now get half as much prestige from their dynasty
+
+3.0
+	Credits to Keanon for making me some CoAs; graphics from Wappenwiki
+	Credits to Rooster for his assistance in making Spain more historical
+
+	Added a small chance of dying upon losing a battle (5 times less common than being imprisoned)
+	Made Jamtland a republic like it was historically
+	Jihads can now only be called if an independent ruler of your religion borders their realm
+	Made an event that kills incapable courtiers and female courtiers over 40 if they have no important dynasty members to help keep courts small
+	The long reign modifier now only starts after reigning for 15 years
+	The requirement of holding each kingdom within an empire in order to create it is now waived if the kingdom does not exist dejure
+	Fixed Muslim invasions being possible against kingdoms with under 6 provinces (vanilla bug)
+	Better Looking Characters content is no longer included
+	Pagans, Zoroastrians, and Jews now convert provinces half as fast
+	Zoroastrian and Jewish provinces now convert half as fast (already applies to Pagan provinces)
+	The Muslim conversion event now fires half as fast in Pagan, Zoroastrian, and Jewish provinces
+	Crown law rank requirements now display properly (E.G., "Rank is lower than Emperor" rather than "'s rank is lower than Emperor")
+	Changed the casus belli used for the Seljuk-Byzantine war to invasion
+	The ruler culture-conversion events can now only fire if the province is of their religion (helps prevent issues such as Armenian/Greek Seljuks, and Levantine Crusaders)
+
+	Map and related changes:
+		Made the Alps look a bit better
+		Added a mountain pass between Tirol and Trent
+		The Nordics:
+			Iceland is now a dejure, unformed kingdom so as to make annexation by Norway less likely
+			Changed the color of Iceland to blue
+			Added a 3rd province to Iceland; Suðisland
+			Updated the coats of arms in Iceland
+			Renamed Ostlandet to Østlandet
+			Moved Viken from Västergötland to Østlandet
+			Added impassable mountains between Norway and Finland, between Lappland and Finland, and between Kemi and Kola
+		Iberia:
+			Valladolid is now a vassal of Castille in 1066
+			Viscaya is now a vassal of Navarre in 1066. Ceded to Castille in 1076
+			Porto is now part of Portugal rather than Galicia
+			Added the new province of Teruel to Navarra
+			Added the new province of Ourense to Galicia
+			Added the new province of Huesco to Aragon
+		Balkans and Anatolia:
+			Gave the Kingdom of Thessalonika a more historical coat of arms
+			Added a kingdom of Cilicia (dejure area: Armenia Minor) which exists from 1199
+			Improved the borders by the intersection of Tarsos, Adana, Tyana, and Lykandos; Tyana and Adana no longer border, while Tarsos and Lykandos now border
+			Amisos no longer border Koloneia
+			Redrew some of the borders in western Byzantium
+			The duchies of Athens and the Aegan Islands are now part of the Kingdom of Thessalonika
+			The duchy of Temes is now part of the kingdom of Hungary
+			The county of Belgrade is now part of Rashka to ensure proper Hungarian-Serbian borders
+			Merged the duchies of Dyrrachion and Vidin to form the duchy of Bulgaria
+			Updated the CoA of Bulgaria (duchy and kingdom)
+			Rashka is now independent from Byzantium in 1066 (conquered by Duklja and given to the ruler's son at some point during the 60s)
+			Bira is now part of the duchy of Edessa
+			Updated the duchy colors in the Balkans to be consistent with the kingdoms they belong to
+
+	Decisions:
+		Added a decision to create random characters for your courtiers to marry, on a per courtier basis
+		Added a decision to marry your courtiers to one another where possible
+		Added a decision that toggles the two decisions above
+		Added decisions to hire soldiers, spies, and diplomats
+		The AI will now use the employment decisions if it can afford it, and does not have a skilled character either filling that position, or available for filling the position
+		Added a decision that lets you check if war upon allies is possible
+
+	Fatimid balance:
+		Halved the size of the Mamluk mercenary band
+		The Mamluks are now Turkish
+		The Fatimids start with 40% decadence
+		Removed the Fatimid ruler's positive traits
+		The Fatimid ruler starts heavily in debt; he could barely afford to pay his army at the time
+		Reduced the Fatimids' diplomacy
+		Gave the Seljuks claims upon the Fatimid duchies east of Sinai
+
+	Reworked laws:
+		Split crown authority into several sets of laws, each law only affecting a single type of privilege
+		Tax and levy laws have been replaced by a tax vs. levies slider which does not affect opinion, and an increased obligations slider which reduces opinion the higher it is set
+		The AI will change the obligation laws based on what traits he has
+		Rebalanced the reduction of imperial levies: Now -10% for cities, -15% for temples, and -20% for castles
+
+2.3.4
+	Tyranny wars will now terminate if the tyrant dies
+	Fixed an issue that potentially could have caused CTDs
+	The Byzantine Emperor can now revoke duchies for free, like in vanilla
+	The dynastic restrictions upon most wars now apply to *all* allies
+	The alliance restrictions upon declaring war no longer apply to heretics, heathens, and excommunicated rulers
+	Fixed some restrictions being stricter than intended upon muslims pushing dejure claims
+	Added a small cost to hiring priests; half the cost of hiring other courtiers
+	Added decisions to hire spies, diplomats, and soldiers
+	Bretons can now form Britanny
+
+2.3.3
+	Updated to work with 1.06b
+	Depose Liege rebellions now terminate if the liege dies
+	Added a 5-year cooldown between holy wars and the special Muslim CBs (when used upon other religious groups)
+	The occupation modifiers now increase construction time by 50 to 200%, depending on the type
+	Holding an empire now gives the same amount of prestige as a kingdom
+	Renamed Italy (empire-tier) to Italia
+	To form Italia you need at least one kingdom-tier title outside Italia
+	Ensured that Toscana is Matilda of Toscana's primary title
+
+Culture buildings
+	There are now six tiers rather than four, one per tech level
+	What culture building is available now depends on province culture, not owner culture
+	Tier one and two are buildable by everyone
+	Tier three and four are buildable by characters of the same culture group as the province
+	Tier five and six are buildable by characters of the same culture as the province
+	Frisians can now build the Dutch cultural building
+
+2.3.2
+Empire changes:
+	Added the 1.06 empires, but left Britanny out of Francia, and Finland out of Scandinavia
+	Creating any of the new empires requires holding all the kingdom-level tiers within them
+	All the empires, except the Arabian Empire, display as kingdom-level (E.G., King of Scandinavia, not Emperor of Scandinavia)
+	All the empires now have short names, E.G., Scandinavia rather than Kingdom of Scandinavia
+	Increased the cost of forming an empire to 1200 prestige
+	Added an Italian empire-tier title
+	Added an Ethiopian empire-tier title
+	Added a Mali empire-tier title (empire-tier name as well)
+
+Other changes:
+	Improved the tech-fix event to make sure it always fires
+	Made it impossible for non-muslims to use the county-conquest CB
+	Moved Chalons from Upper to Lower Burgundy
+	Applied most of the holy war restrictions to the 1.06 muslim CBs. Only applies against non-muslims. Cannot be used against Pagans
+	Tweaked the crusade weights so Muslims typically attack further east when declaring a Jihad upon Byzantium
+	Dejure wars now terminate if the dejure title is lost
+	Fixed an issue casing some sea provinces to be assigned the wrong names
+	Fixed the Golden Horde not existing
+	Women can be appointed as treasurers as long as you don't have agnatic succession
+	Women can be appointed as chancellors as long as you have absolute cognatic succession
+	Reduced the number of holdings at game start in northern Muslim Iberia
+
+2.3.1
+	Updated to work with 1.06
+
+2.3
+	Increased the cost of a level 1 center of trade to 750
+	To construct a center of trade, you need a marketplace and a wall of the same level in the city, and a university one level lower (none for level 1)
+	To construct a center of trade, the province needs City Construction, Trade Practices, and Infrastructure tech of the same level
+	Added a 5th level of trade center
+	Reduced the strength of each level except the first slightly
+	Rebalanced the allocation of trade centers around 5 tiers, and added a lot of missing centers. Full list below
+
+	Thessalia is now Greek
+
+2.2.5
+	Tribal Raid CB can no longer be used if you have a truce with the target
+	Tribal Raid CB can no longer be used if the target doesn't have at least half the money necessary to pay the tribute
+	Fixed the barony of Ndiangue showing up as b_ndiangue
+	The pagan and muslim restrictions on dejure claims upon the same religion group now only applies to the same religion
+	West Africans can no longer build warrior cults
+	All of Muslim-controlled Iberia is now Muslim and Andalusian
+	The map will now properly reflect if Fabricate Claim is possible when the action is selected
+	Province culture changing via a port can now only happen if you have a port in your realm of your culture
+
+2.2.4
+	Added Adana, Kermanshah, and Sabzevar as tier 1 centers of trade
+	Added Santiago, Aleppo, and Rayy as tier 2 centers of trade
+	Added Baghdad as a tier 3 center of trade
+	Fixed Cairo not having its center of trade
+	Fixed the county of Senoussi having no holdings
+	Fixed Syrt and Bulgar having the wrong religion
+	Feher is now Catholic Hungarian, not Orthodox Vlach
+	Increased the cost of declaring war on allies to 150 prestige
+	Made Aleppo and Edessa vassals of the Seljuks, as 1.06 screenshots have shown this to be the case. Edessa returned to its vanilla size
+	Increased the size of the Byz starting forces
+	Reduced the size of the Seljuk starting forces
+	Moved the Seljuk starting forces to Hama
+	Zutphen is now Dutch rather than North German
+
+2.2.3
+Tech overhaul:
+	Starting tech is more reasonably distributed, giving appropriate tech to Ethiopia and Sicily, while fixing a few enclaves of high/low tech. To achieve this, some provinces will have the wrong culture or religion on day 1, but it should be back to normal within a few days
+	Increased the base chance of gaining tech from 1.25% (1.2% in vanilla) to 2.5%
+	Coastal provinces get +80% to tech
+	Increased neighbor spread from 15% to 130%. From 30% to 156% if in the same religion group
+	Reduced the demesne bonus from 30% to 20%
+	Reduced the focus bonus from 100% to 50%
+	Changed the ideal tech years slightly
+	Every holding in a county now gives +8% to tech, to simulate richer provinces growing faster technologically
+	Wall, garrison, town, and port buildings now give a small bonus to tech. The bonus is slightly higher for military tech in castles, and slightly higher for economy and culture in cities and temples
+	All non-pagan counties now start with level 1 ports
+	Any province with a trade center will start with a level 1 marketplace
+	Various provinces start with a trade post building, increasing tech gain by 30% per tier, as well as giving galleys and taxes. A full list available below
+	Gave the Warrior Cult building a 40% penalty to tech
+
+Tier 1:
+	Dublin
+	Sjælland
+	Trøndelag
+	Uppland
+	Novgorod
+	Esztergom
+	Krakow
+	Utrecht
+	Nuremburg
+
+Tier 2:
+	Edinburgh
+	Koln
+	Bordeaux
+	Lisboia
+	Cordoba
+	Barcelona
+	Provence
+	Macon
+	Lubeck
+	Firenze
+	Palermo
+	Praha
+	Athenai
+	Kiev
+	Hormuz
+	Trebizond
+	Damascus
+	Jerusalem
+	Kairwan
+	Fez
+
+Tier 3:
+	London
+	Brugge
+	Paris
+	Sevilla
+	Toledo
+	Genoa
+	Rome
+	Venice
+	Basra
+	Mecca
+	Antioch
+	Cairo
+	Alexandria
+
+Tier 4:
+	Constantinople
+
+Various changes:
+	Added Slovene culture, and made Carinthia Slovene. Credit goes do duinnin
+	Reduced the cooldown between changing a councilor's job action from 183 days to 60
+	Added some more info to the tooltip you get when hovering over a character
+
+2.2.2
+	Fixed Ladoga Lake not showing up properly
+	Fixed some potential graphical issues with the Turks
+	Fixed some of the flags being messed up
+	Completely fixed some African countries showing up in the seas
+
+2.2.1
+	Fixed an issue causing various African nations to appear in the sea rather than in Africa
+
+2.2.0
+Made an installer for the mod, and reduced the file-size about 25-30%
+You can now appoint army commanders at any crown authority level
+Replaced Military Fortifications (increased siege times by 10% per level) tech with Infrastructure tech (increases supply by 1 per level)
+Removed the graphical changes from North African Expansion that don't apply to Africans
+Removed central Africa east of Songhai
+
+2.1.3
+	Updated to work with 1.05f
+
+2.1.2
+	Increased army movement speed a little bit (France to Constantinople historically took 3 to 7 months in the first crusade. Paris to Constantinople now takes 7 months in game as opposed to 11 months in vanilla)
+	Removed the minimum vassal levies law, as it didn't work correctly. It'll persist in save-games, but with no effects
+	Reversed the Corsica exception for the coastal republic CB
+	Made the rulers of Sardinia in 1066 Greek
+
+2.1.1
+Various changes:
+	Fixed an issue prevented pushing some vassal claims
+	Muslims no longer get dejure claims on muslim counts (reduces excessive consolidation)
+	The AI is now considerably less likely to attempt to gain independence from their dejure liege, unless the rebeller's title is king-level. Rebellion odds remain the same, but they'll be more likely to use another CB
+	Added a minimum vassal levy law for counts and dukes to make them more of a force to be reckoned with
+	Renamed North Savoie to Savoie
+	Renamed South Savoie to Piemonte
+	Changed the color of Piemonte a bit to contrast it more with Savoie
+	Corsica can now be taken using the Coastal Republic CB, regardless of culture. Sardinia can be taken afterwards by virtue of being adjacent to Corsica
+	Africans can now use the tribal raid CB
+
+2.1.0
+Various changes:
+	Updated for 1.05e
+	The dynasty opinion penalty for Feudal Elective has been reduced back to -5
+	Added a set of decisions letting you check what requirements for holy war you meet
+	Renamed crown authority for empires to imperial authority
+	Created a Spanish union kingdom, creatable if Castille, Leon, Navarra, and Aragon are held
+	Fixed various small issues
+	A Romuva ruler holding the duchy of Mecklemburg can no longer usurp the duchy of Pomerania if the holder is also Romuva and only has a single duke title
+	Tweaked the mean time to happen for the ruler culture change event, making it rarer for everyone except barons
+
+Warfare changes:
+	Added a Tribal Raid casus belli. This CB lets Altaic realms (namely the Cumans, the Pechenegs, and the Mongols) raid non-Pagan non-Altaic neighbors. Victory will gain them tribute, prestige, and piety. Loss will do the opposite. The CB incurs a 5-year truce
+	Reduced the size of the Turkish starting army somewhat
+	Reduced the levy reinforcement rate by 25%
+	The coastal republic CB can no longer be used against rulers of the same culture group unless they share a border
+	Increased supply bonus for bordering a province to 50%
+	Reduced supply bonus for coastal provinces to 30%
+	Reduced supply bonus for realm holdings to 40%
+	Increased base supply to 6
+	Pagans no longer get dejure county claims upon other Pagans
+
+Map changes:
+	The duchy of Prussia is now part of the Kingdom of Pomerania
+	Wolgast is once more owned by Mecklemburg
+	Split Savoie in two; A Burgundian and an Italian part
+	Redrew Nice and Saluzzo, making Saluzzo border Provence
+	Moved the county of Grisons from Lombardy to Upper Burgundy
+	Fixed several sea provinces having crazy pathfinding
+	Implemented the North African Expansion mod. Saharan provinces excluded. The titles of Abyssinian Empire and Mali Empire are also excluded
+
+Flavor changes:
+	Made the borders of a few provinces in Pomerania follow the rivers more closely
+	Redrew the northern border of Mainz to make the borders in the area less jagged
+	Recolored the duchies of Denmark to match its color
+	Recolored the duchies of Norway to match its color
+	Recolored the duchies in Byzantium to match the color of their kingdoms
+	Muslims will now actually use their coat of arms
+	Linked up a bunch of names, so they'll change appropriately if culture changes, and will count as the same for regnal numbers (E.G, Harold the 1st, then Harald the 2nd)
+
+Name linking:
+	Linked up a bunch of names, so they'll change appropriately if culture changes, and will count as the same for regnal numbers (E.G, Harold the 1st, then Harald the 2nd)
+	Linked Harold and Harald
+	Æthelthryth is now female rather than male
+	Linked Lothar, Hlothere, Lothaire, and Clotaire
+	Linked Alan and Alain
+	Linked Antoon to everything linked to Antoninus
+	Linked Walram, Waelram, Raleran, and Valeran
+	Linked Otokar and Otakar
+	Linked Æthelthryth to Adeltrudis
+	Linked Gytha and Gyda
+	Linked Timotei, Tagd, and Timotheos
+	Linked Barbara and Gormflaith
+	Linked Lochland, Roland, Ragnvald, Reginald, Rhainallt, and Rolando
+	Linked Æthelmær, Ademar, and Adémar
+	Linked Ingram and Enguerrand
+	Linked Ragnailt and Ragnhild
+	Linked Alwin, Ælfwin, and Æthelwine
+	Linked Rutger to Roger
+	Linked Emryr, Ambroos, and Ambrus
+	Linked Ifor and Ivar
+	Linked Seisyll and Sesto
+	Linked Denis and Denise
+	Linked Adrien, Adriano, Adrianos, and Adrian
+	Linked Antonia and Antonija
+	Linked to Hoël and Hywel
+	Linked Boris, Bogoris, and Borisz
+	Linked Kazimierz and Casimir
+	Linked Bran and Brân
+	Linked Seonaid and Siobàn to everyting linked to Joan
+	Linked Frigyes to everything linked to Frederick
+	Linked Turquetil and Thurcytel to everything linked to Torkel
+	Linked Jacob to everything linked to James
+	Linked Fölop to everything that's linked to Philip
+	Linked Gijsbrecht and IJsbrecht to everything linked to Gilbert
+	Linked Daffyd to everything linked to David
+	Linked Gerallt to everything linked to Gerald
+	Linked Gwilym to everything linked to William
+	Linked Ieuan to everything linked to Ewan
+	Linked Iorwerth to everything linked to Edward
+	Linked Pawl to everything linked to Paul
+	Linked Pedr to everything linked to Peter
+	Linked Sion to everything linked to John
+	Linked Tomos to everything linked to Thomas
+	Linked Alice to everything linked to Alice
+	Linked Efa to everything linked to Eva
+	Linked Fflur to everything linked to Flora
+	Linked Ffraid to everything linked to Brigid
+	Linked Mallt to everything linked to Matilda
+	Linked Mair and Marja to evetything linked to Maria
+	Listed Nest and Nesta to everything linked to Agnes
+	Linked Siân and Siwan to everything linked to Joan
+	Linked Ysbail to everything linked to Elisabeth
+	Linked Iago to everything linked to Jacob
+	Linked Dawit to everything linked to David
+	Linked Gebereal and Gabriele to everything linked to Gabriel
+	Linked Tewodros to everything linked to Theodore
+	Linked Yacob to everything linked to Jacob
+	Linked Yohannas to everything linked to John
+	Linked Alisander to everything linked to Alexander
+	Linked Rudolf to everything linked to Ralph
+	Linked Tapani to everything linked to Stephen
+	Linked Niccolò, Nicola, and Nicolaie to everything linked to Nicholas
+	Linked Douwe to everything linked to Dominic
+	Linked Taddeo and Teodoro to everything linked to Theodore
+
+2.0.4
+Various changes:
+	Updated to work with 1.05d
+	Fixed some character errors
+	Fixed some event errors
+	Fixed various small errors
+	Made ruler culture change take 50% longer to happen
+	Made ruler culture change for counts twice as rare
+	Made Denmark yellow
+	Added the duchy of Khwarizm to the kingdom of Persia
+	Put the county of Oleshye back in Crimea. Now owned by Crimeans, and has Cuman culture
+
+2.0.3
+Fixes:
+	Fixed an issue with the pagan piety event
+	Fixed Possession not letting you ignore most holy war CB requirements
+	Fixed some provinces having the wrong name, or lacking a name completely
+	Fixed the common CTD caused by reloading, resigning, or sometimes merely just playing the game
+	Fixed an issue with Baltic heavy inf. camps and Altaic horse breeders
+
+Various changes:
+	Added seas around the Arabian Peninsula. The seas are connected to the Nile Delta to ensure that the AI won't be confused
+	Jihads can no longer be declared against monophysites and orthodox Ethiopians
+	Reduced the Wrong Government Type penalty to -20
+	Increased Elective's vassal opinion bonus to 10
+	Tweaked Norway's color to make it a bit more distinct from other red nations
+	Having content, craven, cynical, or stressed won't prevent holy wars in non-de jure territory as long as you have any two of brave, zealous, ambitious, or wroth
+	Kingdom of Saxony created from southern Pomerania and northern Germany
+	Southern Germany given to Bavaria
+	Germany no longer exists
+	Pomerania removed from de jure HRE
+	Baltic heavy inf. camps and Altaic horse breeders now require lvl 1 Castle Infrastructure (unless you're Pagan for the camps, or Pecheneg for the horse breeders) for to build the first level
+
+2.0.2
+	Updated to work with 1.05c
+
+2.0.1
+	Updated to work with 1.05b
+
+2.0
+	Updated to work with 1.05 - Unless otherwise is stated, anything Balansegang doesn't modify is updated to work like 1.05
+	Modifications to independence CB removed due to 1.05 improvements
+	Assassination base cost lowered to 100 gold, but increases by 75 per tier
+
+1.2.3
+Various changes:
+	Fixed an issue preventing the fabrication of claims
+	Added a Crimean kingdom. Having the duchy of Crimea is required to form/usurp it
+	Changed the colors of the duchies within the Kingdom of Crimea to colors similar to the kingdom itself
+	Made Alania a de jure kingdom
+	Moved the county of Kasogs from Abzhakia to Alania
+
+1.2.2
+Flavor/de jure changes:
+	Changed the name of North Germany to Saxony, and updated its flag and color to something more historical
+	Changed the colors of several German duchies to something more historical
+	Changed the color of the Kingdom of Nikaea to something more historical
+	Changed the color of the Kingdom of Epirus to something more historical
+	Changed the color of the Kingdom of Croatia to something more historical
+	Changed the color of the Duchy of Croatia to something more historical
+	Changed the color of the Kingdom of Serbia to something more historical
+	Changed the color of the Kingdom of Bulgaria to something more historical
+	Changed the color of the Kingdom of Mesopotamia to help differentiate it from Arabia
+	Changed the color of the Duchy of Novgorod to something more historical
+	Changed the color of the Duchy of Kiev to something more historical
+	Divided the Kingdom of Rus into Novgorod and Kiev. The respective duchies are required to form/usurp them
+
+Various changes:
+	Fixed an issue with holy wars
+	You can now once again forge claims on provinces/duchies of another religion, but only if they border your realm
+	The increased chance of childhood cultural conversion now also applies if the child's parents are barons or unlanded
+	Absolute Cognatic can be imposed by a female ruler as long as she has almost any of the positive nicknames, and isn't content
+	Fixed an issue causing the regular provinical culture change event to not work
+	Imprisonment and exile now display their Piety cost
+	Fixed a few localisation issues
+	Fixed a few issues with crown authority
+	Fix various small issues
+	Commander martial contributes two-thirds more to combat
+	Made sieges 25% shorter
+	Made the Norwegian force at campaign start slightly stronger, and increased Harald Hardråde's Martial skill a little
+	Made the Norman force at campaign start slightly stronger
+	Rulers will now become independent from white peace in independence wars as long as they're not a de jure vassal of their liege regardless of what tier their liege is at
+
+Seljuk-Byzantine changes:
+	Made the Sunni Caliphate remain a vassal of the Seljuks upon starting a campaign
+	Made the Sunni Caliphate kingdom-level, and the Seljuk Sultanate empire level
+	The Seljuks start with their army raised in Tabriz
+	The Byzantines start with their army raised in Byzantion
+	Byzantium has a modifier until 1075 reducing their morale and morale recovery by 20%
+	Made the Seljuks a de jure empire, containing Persia, Mesopotamia, Syria, and Armenia. Cannot be created
+	Byzantium is now de jure only Epirus, Thessalonika, Nikaea, and Trebizond
+
+Credits:
+	Humlenerd (http://forum.paradoxplaza.com/forum/member.php?225820-Humlenerd) for the flavor changes
+	CrackdToothGrin(http://forum.paradoxplaza.com/forum/member.php?72051-CrackdToothGrin) for some of the Seljuk changes
+
+1.2.1
+Various changes:
+	Fixed an issue with the castle moat building
+	Provincial culture spread takes 50% longer in empires
+	Provinces change culture 20% faster if they border two or more provinces of the owner's culture with rulers of the same culture
+	Provinces take 25% longer to change culture if they border any province of the same culture
+	Rulers change culture 25% faster if their capital borders no provinces of their culture
+	The prevention of holy war against/instigated by Monophysites only apply if either party is muslim
+	Fixed some localisation errors
+	Fixed some character errors
+	Fixed some province errors
+
+Flavor changes:
+	Irish duchesses and queens are now called queens and high queens
+	Irish ruler-consorts now have their appropriate titles
+	Fixed some cultural titles for females not applying (vanilla bug)
+	Fixed there being no cultural consort titles
+	Most Christian titles (Prince-bishop and similar) now have female versions
+	Russian kings are now called Grand Duke/Duchess
+
+1.2
+Various changes
+	Fixed Byzantium's capital being in Thessalonike rather than Constantinople
+	Kings get de jure CBs on duchies if they're not independent, and the defender is in the same realm. Losing makes you lose twice as much prestige, and 50% more money
+	Kings get de jure CBs on counties within their de jure kingdom if the county's de jure duchy is uncreated, and the king isn't independent, and the defender is in the same realm
+	Reduced the size of the Romuva holy orders by 500
+	Reduced the amount of Piety Pagans get from their Piety event
+	Gave Pommerania the county of Wolgast to reduce Mecklemburg-Pommerania conflict
+	Doubled the time it takes for pagans to fabricate claims
+	Added a city to Pohjanmaa
+
+De Jure changes:
+	Divided the Kingdom of Thessalonika into Thessalonika and Epirus
+	Divided the Kingdom of Nikaea into Nikaea and Trebizond
+	Divided the Duchy of Moldau into Moldau and Belgorod
+
+Crown Authority changes:
+	Split crown authority laws into two, one set for emperors, one set for kings
+	Emperors get 0/5/10/15/20% minimum levies
+	Emperors need high authority to disallow internal warfare and strip heathen/heretic titles
+	Emperors need medium authority to strip titles
+	Emperors need absolute authority to ban inheritance outside the realm
+
+Culture changes:
+	Added a somewhat rare event that changes a ruler's culture to that of his capital. Also changes the culture of any children he has under the age of 16. Its mean time to happen is affected by his age, his rank, and whether or not the new culture is of the same culture group
+	Added a somewhat rare event that changes a child's (under 1 year old) culture to that of the province he's living in. Affected by his parents' rank, and whether or not the new culture is of the same culture group
+
+Plot/Ambition changes:
+	Vassals are more likely to plot to lower crown authority against emperors
+	The Prestige, Wealth, and Piety ambitions are no longer repeatable
+	The Prestige, Wealth, and Piety ambitions now have three tiers, so you're more likely to be able to have the ambition available
+	The councilor ambitions now require a minimum of 10 points in the relevant skill
+	All females can now have becoming spymaster as their ambition
+
+Warfare changes:
+	Characters defending against holy wars that aren't involved in any offensive wars get a 10% boost to minimum and maximum vassal levies
+	Gave horse archers, light cavalry, and heavy cavalry offensive bonuses when attacking plains
+	Gave horse archers, light cavalry, and heavy cavalry offensive penalties when attacking mountains
+	Gave horse archers, light cavalry, and heavy cavalry offensive penalties when attacking hills
+	Gave horse archers and light cavalry offensive penalties attacking forests
+	Tweaked movement times, reducing movetimes in most terrain by about 20%
+
+1.1.3
+	Fixed an issue causing many factions to have the wrong CoA
+	The Kingdom of Nikaea now has a CoA
+	Changed the CoA of the Kingdom of Thessalonika to the same as the duchy of Thessalonika
+	Divided Germany into South and North Germany
+	Divided German culture into South and North German
+	Reduced the size of the Pagan (except Tengri) holy orders by 1000 men
+	Tweaked the colors of Bohemian and Polish culture to make them more distinct
+	Tribal invasions can now only be started against Orthodox, Tengri, Muslim, or Komi factions
+	De jure empires get 10% lower minimum levy
+	De jure empires get 20% less max levy from burghers and bishops, and 30% less from nobles
+	Set Byzantium back to high crown auth, as the above penalty does what lowering crown auth was intended to do
+
+1.1.2
+Various changes:
+	Reduced the Suomenski and Norse holy orders to 4000 men
+	Reduced the Romuva holy orders to 4500 men
+	Increased the Tengri holy orders to 5500 men
+	Rulers below 100 piety cannot start holy wars
+	Fixed an issue where pagan provinces wouldn't convert more slowly than non-pagan provinces
+	Converting a province takes 25% longer if the province borders other provinces of the same religion
+	Made culture changes into province events, so that the number of held provinces doesn't affect the likelihood of culture changes
+	The culture change event for unconnected coastal provinces can now only fire if there are no neighbors of the owner's culture
+	Norman counties outside England are now more likely to become English if their liege is English
+	Pecehenegs can no longer form Bulgaria
+	Removed the Sultan of Marracech's claims
+	Gave the Seljuk Sultan a claim on Derbent
+	Rum no longer has any de jure territory. Its old territory is now the Kingdom of Nikaea
+	Kingdom of Byzantium renamed to Kingdom of Thessalonika
+	Made the county of Abydos part of the duchy of Samos
+	Made the duchy of Cyprus part of the kingdom of Nikaea
+
+Unrest changes:
+	Removed the provincial revolt risk for different culture
+	Removed the provincial revolt risk for different religion, but same religious group
+	Halved the provincial revolt risk for different religious group
+	Halved the provincial revolt risk for heretic religion
+	Provinces in the same culture group as their liege, but different culture, get -2.5% tax, levies, garrisons, and levy reinforcements
+	Provinces in a different culture group than their liege, get -5% tax, levies, garrisons, and levy reinforcements
+	Provinces in the same religion gorup, but a different religion, get -5% tax, levies, garrisons, and levy reinforcements
+	Provinces in a different religion group than their liege, get -20% tax, levies, garrisons, and levy reinforcements
+	Heretic provinces get -20% tax, levies, garrisons, and levy reinforcements
+	Isolated provinces get -50% tax, levies, garrisons, and levy reinforcements
+
+1.1.1
+Byzantine-Seljuk changes:
+	Gave the Seljuk Sultan claims on eastern Anatolia
+	Made the starting Seljuk-Byzantine war a Claim All war
+	Reduced Byzantine crown authority to Medium
+	Only provinces of the Byzantine culture-group starts with walls, castle upgrades, and militia buildings within Byzantium (also applies gives walls to any Byzantine culture-group provinces outside Byzantium). Starting buildings in general are tied to the Byzantine culture-group rather than the empire
+	Gave the Seljuks the provinces of Bira, Taron, and Amida so as to increase their frontage against Byzantium
+	Removed Ambitious from the duke of Mosul
+	Reduced the size of the Varangian Guard to 3600 men
+	Made the duke of Armenia Minor Envious
+	Made the duke of Antioch Envious
+	Made the duke of Charisianon Envious
+	Made the duke of Nikaea Envious
+	Made the duke of Samos Envious
+	Changed the Byzantine emperor's Clubfooted trait to Hunchback
+
+Various changes:
+	The Pagan holy orders now have coat of arms and names - Thanks to http://forum.paradoxplaza.com/forum/member.php?72051-CrackdToothGrin
+	Gave the Iberian culture-group level 1 walls in 1066
+	Fixed an issue where the Ambitious/Content aquisition modifiers from having an Emperor as liege were reversed
+	The Ambitious/Content aquisition modifiers now also apply if the child is the vassal of an emperor, not just if either parent is
+	Counties under siege's reinforce rate reduced by 100% (castles start at 125%)
+	Changed the dynasty of the Hungarian kings' mother so that Hungary won't go crazy in Russia
+	Fixed an issue where white peace in independence wars involving emperors wouldn't result in the revolter gaining independence
+	The Welsh now have access to the longbow archery range
+
+1.1
+Various changes:
+	Increased the Pagan holy order sizes to 5000 men
+	There are now two holy orders per Pagan religion
+	Gave AI Pagans an event that ensures they have enough Piety to hire their holy orders
+	Reduced Religious Defense truce to 1 year
+	Norwegians now have a chance of their children being named after their (grand)parent, the same values as Danes and Swedes have
+	Syphilis renamed to Gonhorrea as there is little evidence Syphilis was present in Europe at the time
+	The Lotharinga and Lowlands mod has been implemented (though Burgundy and Italy has been excluded from de jure HRE)
+	Changed the dynasty of the Duke of Saxony's mother so as to stop the HRE from going crazy in Norway
+	Changed the dynasty of the Holy Roman Emperor's mother so as to stop the HRE from going crazy in Aquitaine
+	Gave the Holy Roman Emperor the Content trait
+
+Warfare changes:
+	Depressed, infirm, or incapable rulers cannot declare holy war
+	Content rulers cannot declare holy war unless they're Brave or Wroth, Zealous, Lunatic, or Possessed
+	Craven rulers cannot declare holy war unless they're Ambitious, Wroth, Zealous, Lunatic, or Possessed
+	Cynical rulers cannot declare holy war unless they're Ambitious, Brave, Wroth, Lunatic, or Possessed
+	Stressed rulers cannot declare holy war unless they're Ambitious, Brave, Wroth, Zealous Lunatic, or Possessed
+	Having any two of Cynical, Craven, Stressed, and Content will prevent rulers from declaring holy war (unless they're Lunatic or Possessed)
+	Rulers cannot declare claim wars upon dynasty members, unless they're Ambitious, Envious, Arbitrary, or Wroth (rebellions excluded)
+	Rulers cannot declare claim wars upon dynasty members if they're Craven, Just, Kind, or Content (rebellions excluded)
+	Possessed or Lunatic rulers can declare claim and holy wars regardless of other traits
+	If the target duchy is not part of a de jure kingdom or empire the ruler holds, he has to be Ambitious, Wroth, Zealous, Lunatic, or Possessed to declare holy war
+	If the target duchy is not part of a de jure kingdom or empire the ruler holds, he cannot be Cynical, Craven, Stressed, and Content (unless they're Possessed or Lunatic)
+
+1.0.6
+	Made the Polish king's mother of the Piast dynasty so that Poland won't go crazy in Russia any more
+	Sweden is Elective once more for historical reasons
+	Crown Authority cannot be increased if the ruler is Content or Slothful (unless they're also Ambitious or Diligent)
+	Crown Authority cannot be increased to Absolute unless the ruler is Ambitious or Diligent (and is neither Content or Slothful)
+	Crown Authority cannot be increased to High in empires unless the ruler is Ambitious or Diligent (and is neither Content or Slothful)
+	Taxes cannot be increased beyond the second level if the ruler is Charitable
+	Fixed High Crown Authority being impossible to attain
+	Made the Pecheneg Company a Tengri religious order, and increased its size to 4200 men
+	Made one religious order for each of the pagan religions. 4200 men each
+
+1.0.5
+	Made the Ambitious childhood personality event twice as common if the child's father or mother is vassal to an emperor
+	Made the Content childhood personality event half as common if the child's father or mother is vassal to an emperor
+	Made the guardian twice as likely to encourage the Ambitious trait if the child's parents are vassal to an emperor
+	Made the guardian half as likely to encourage the Content trait if the child's parents are vassal to an emperor
+
+	Reduced the opinion bonus from defending against infidels to 15
+	Increased max duchies held to 3
+	Gave the Seljuks another castle in Qazwin
+	Gave the Seljuks another castle in Rayy
+	Gave the Seljuks another castle in Mazandaran
+	Gave the Seljuks another castle in Tabaristan
+	Gave the Seljuks level 1 barracks in all cities and temples
+	White peace in independence wars will make the revolter independent if he's revolting from an empire. No prestige will be awarded, and crown authority will be unaffected. His former liege will have claims upon his land.
+	Gave the Byzantine Emperor the Slothful trait
+	Gave the Byzantine Emperor the Content trait to prevent positive traits being generated
+	Increased the Seljuk Sultan's Diplomacy by 4
+	Azerbaijan is now a vassal of the Seljuks
+
+1.0.4
+Building changes:
+	Added a Warrior Cult building to Pagan temples and cities, giving 50 light and heavy infantry, 50 archers, 0.5 fort levels, and -15% garrison size
+	Warrior Cult now gives 60 more light infantry
+	Warrior Cult now gives 100 more heavy infantry
+	Warrior Cult now gives -10% levy size (causes them to have a larger advantage at campaign start, but it slowly declines)
+	Lappish castles start with level 1 walls
+	Fixed Pommeranians not getting access to the Baltic Infantry Camp
+	Fixed the Baltic Infantry Camp not being present in pagan settlements upon campaign start
+
+Other changes:
+	Increased base tech for Pagans to 1.25.
+
+1.0.3
+Various changes:
+	Forests now give the defender 20% higher defense for light infantry, and 10% offense
+	Forests now give the defender 15% higher defense for heavy infantry, and 7.5% offense
+	The Warrior Cult gives a 1.0 increase to fort-level
+	Elective succession's bonus to vassal relations reduced to 5
+	Reduced the Diplomacy of the Polish king by 2 so as to weaken Poland slightly
+	Pagan provinces now take 100% longer to convert (as compared to vanilla)
+	Provinces take twice as long to convert if they don't border any provinces of your religion
+
+Holy War changes:
+	Set Holy War truces back to 10 years
+	Dukes and below cannot declare holy war on provinces they don't border
+	Ensured that imprisoned vassals won't prevent you from going on holy war or increasing crown authority
+	Kings with any dukes at under -10 opinion need Medium Crown Authority to declare holy war on Pagans
+
+De Jure changes:
+	Anatolian Byzantium is now de jure Rum, which will hopefully weaken the Byzantines a little
+	Navarra is now a de jure kingdom
+	Al-Andalus is formable by non-Muslims if they hold every duchy in it
+	Removed the barony of Brzesko from Krakow to weaken Poland slightly
+
+Crown Authority changes:
+	Fixed an issue with crown authority being unchangeable
+	To call a vote for Limited Crown Authority one needs all duke/king vassals above -25 opinion. -20 if one is an emperor.
+	To call a vote for Medium Crown Authority one needs all duke/king vassals above -20 opinion. -15 if one is an emperor.
+	To call a vote for High Crown Authority one needs all duke/king vassals above -15 opinion. -10 if one is an emperor.
+	To call a vote for Absolute Crown Authority one needs all duke/king vassals above -10 opinion. -5 if one is an emperor.
+
+Culture/Religion changes:
+	The Livonian rulers are now the correct culture and religion
+	The Mordevin rulers are now the correct culture and religion
+	The Komi rulers are now the correct culture
+	The Ugric-Baltic rulers are now the correct culture
+	The count of Lappland is now the correct religion
+
+1.0.2
+Various changes:
+	Reduced the Holy Roman Emperor's Diplomacy by 3
+	Limited Crown Authority is required to declare holy war on pagans
+	Emperors with any kings/dukes at under -10 opinion need Medium Crown Authority to declare holy war
+	Kings with any dukes at under -10 opinion need Limited Crown Authority to declare holy war
+	Emperors need to have above -15 relations with all duke/king vassals to increase Crown Authority
+	It is now impossible to forge claims upon a duchy held by someone of another religion (primarily to prevent some silly expansion)
+	Converting pagans takes 50% longer
+	Moved the duchy of Pomerania from Poland to Germany
+	Moved the counties of Yatvyagi and Jacwiez from Mazovia to Lithuania
+	Moved the county of Galaz from Karvuna to Moldau
+	Gave the county of Torki to the Pechenegs
+
+Building changes:
+	Gave all Pecheneg counties the Small Riding Grounds building at campaign start. Removed wall-level 2 requirement for Pechenegs
+	Gave Finno-Ugric cultures access to the Baltic Infantry Camp
+	Gave Pommerians access to the Baltic Infantry Camp
+	Removed wall-level 2 requirement from Small Warrior Gathering Ground for Pagans, thus giving them it at campaign start
+	Reduced light infantry from warrior cult by 50
+	Reduced archers from warrior cult by 20
+	Gave Pagans level 1 military tech at campaign start (was 0)
+	Gave the Warrior Cult building -25% tech growth
+	Gave the Warrior Cult building a 10% offensive and defensive boost to heavy infantry
+	Gave the Warrior Cult building a 25% penalty to garrison size (they're still much larger than everyone else's garrisons)
+	Gave the Altaic Horse Breededs building a 10% offensive and defensive penalty to heavy infantry
+
+1.0.1
+	Added the Council Shuffling mini-mod 
+	Emperors now need Limited Crown Authority to declare holy war
+	Rulers now need Limited Crown Authority to declare holy war on non-bordering duchies. Emperors need Medium
+
+1.0
+General changes:
+	Scandinavian kingdoms now use Primogeniture
+	Norway is now red
+	Culture spreads via ports more reliably
+	Set assassination price to 150 prestige + 10 piety (from 50 prestige)
+	Reduced reinforcement rates by 20%
+	Let Scandinavians use the Baltic Infantry Camp
+	Reduced ratio needed to overrun armies to 15 (from 25)
+	Increased base tech growth to 1.25% (from 1.2%)
+	Reduced the ideal tech years by 10 to 6 years
+	Most truces reduced to 5 years (from 10)
+	Removed revolt risk for same culture group (was 0.5%)
+	All eligible women can now become spymasters (only your spouse or mother could before)
+	Added 5 heavy cavalry to castles
+	Increased warscore gained from battles by 20%. Reduced defender warscore bonus to 40% (was 50%) to compensate a bit
+	Renamed Irish dukes to kings, and Irish kings to high kings
+	Made all religions playable (though non-Christians aren't necessarily interesting to play)
+
+Opinion changes:
+	Upped the length of the 'granted a x' modifiers to 120, 180, 240, 360, 720 (barony, county, duchy, kingdom, empire) (all were 120)
+	Reduced the opinion penalty for feudal taxes by 5
+	Reduced the vassal opinion bonus for Feudal Elective by 10
+	Increased the dynasty opinion penalty for Feudal Elective by 5
+	Increased the dynasty opinion bonus for Seniority by 5
+	Increased the opinion bonus for same dynasty by 5
+	Fixed level 5 of heavy armor being a downgrade
+	Reduced the opinion penalty for having a female heir by 5
+
+Survival changes:
+	Gave the Warrior Cult building 120 less light infantry
+	Gave the Warrior Cult building 80 more heavy infantry
+	Made all Vlach counties Tengri religion and Pecheneg Culture (all but one are owned by the Pecheneg)
+	Made Oleshye part of Moldau rather than Crimea; should reduce # of wars between Pechenegs and Cumans
+	Gave most pagan rulers their primary title 10 years earlier so as to eliminate the short reign penalty (title originally granted at campaign start)
+	Holy Wars do not work against Monophysites or Orthodox Ethiopians (lets Ethiopia survive)
+	Monophysite is no longer a heresy
+	Made the Kama province Komi culture and Suomenski religion (was Tengri/Cuman, surrounded by Komi/Suomenski and Turkish/Sunni)
+	Made the Mozhaysk province Russian culture and Orthodox religion (was Komi/Suomenski, surrounded by Russian/Orthodox)
+	Made the Derbent province Persian culture and Sunni religion (was Armenian/Orthodox, surrounded by various other cultures and religions, with a Persian/Sunni liege)
+	Made the Kuma province Alan culture (was Turkish, primarily done to improve survival) and the Semender province Persian (the change to Kuma made it isolated from Turkish culture)
+
+General changes:
+	Scandinavian kingdoms now use Primogeniture
+	Norway is now red
+	Culture spreads via ports more reliably
+	Set assassination price to 150 gold + 10 piety (from 50 prestige)
+	Reduced reinforcement rates by 20%
+	Let Scandinavians use the Baltic Infantry Camp
+	Reduced ratio needed to overrun armies to 15 (from 25)
+	Increased base tech growth to 1.25% (from 1.2%)
+	Reduced the ideal tech years by 10 to 6 years
+	Most truces reduced to 5 years (from 10)
+	Removed revolt risk for same culture group (was 0.5%)
+	All eligible women can now become spymasters (only your spouse or mother could before)
+	Added 5 heavy cavalry to castles
+	Increased warscore gained from battles by 20%. Reduced defender warscore bonus to 40% (was 50%) to compensate a bit
+	Renamed Irish dukes to kings, and Irish kings to high kings
+	Made all religions playable (though non-Christians aren't necessarily interesting to play)
+
+Opinion changes:
+	Upped the length of the 'granted a x' modifiers to 120, 180, 240, 360, 720 (barony, county, duchy, kingdom, empire) (all were 120)
+	Reduced the opinion penalty for feudal taxes by 5
+	Reduced the vassal opinion bonus for Feudal Elective by 10
+	Increased the dynasty opinion penalty for Feudal Elective by 5
+	Increased the dynasty opinion bonus for Seniority by 5
+	Increased the opinion bonus for same dynasty by 5
+	Fixed level 5 of heavy armor being a downgrade
+	Reduced the opinion penalty for having a female heir by 5
+
+Survival changes:
+	Gave the Warrior Cult building 120 less light infantry
+	Gave the Warrior Cult building 80 more heavy infantry
+	Made all Vlach counties Tengri religion and Pecheneg Culture (all but one are owned by the Pecheneg)
+	Made Oleshye part of Moldau rather than Crimea; should reduce # of wars between Pechenegs and Cumans
+	Gave most pagan rulers their primary title 10 years earlier so as to eliminate the short reign penalty (title originally granted at campaign start)
+	Holy Wars do not work against Monophysites or Orthodox Ethiopians (lets Ethiopia survive)
+	Monophysite is no longer a heresy
+	Made the Kama province Komi culture and Suomenski religion (was Tengri/Cuman, surrounded by Komi/Suomenski and Turkish/Sunni)
+	Made the Mozhaysk province Russian culture and Orthodox religion (was Komi/Suomenski, surrounded by Russian/Orthodox)
+	Made the Derbent province Persian culture and Sunni religion (was Armenian/Orthodox, surrounded by various other cultures and religions, with a Persian/Sunni liege)
+	Made the Kuma province Alan culture (was Turkish, primarily done to improve survival) and the Semender province Persian (the change to Kuma made it isolated from Turkish culture)

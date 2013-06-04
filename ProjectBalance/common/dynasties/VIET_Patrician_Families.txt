@@ -1,0 +1,287 @@
+#Gujarati Last Names/Castes/Clans/Tribes
+1000061300 = {
+	name="Thakkur"
+	culture = gujarati
+}
+1000061301 = {
+	name="Patel"
+	culture = gujarati
+}
+1000061302 = {
+	name="Modi"
+	culture = gujarati
+}	
+1000061303 = {
+	name="Parikh"
+	culture = gujarati
+}
+1000061304 = {
+	name="Porwal"
+	culture = gujarati
+}
+1000061305 = {
+	name="Gupta"
+	culture = gujarati
+}
+1000061306 = {
+	name="Vaish"
+	culture = gujarati
+}
+1000061307 = {
+	name="Lohana"
+	culture = gujarati
+}
+1000061308 = {
+	name="Vanijiya"
+	culture = gujarati
+}
+1000061309 = {
+	name="Vora"
+	culture = gujarati
+}
+1000061310 = {
+	name="Khadayati"
+	culture = gujarati
+}
+1000061311 = {
+	name="Modh"
+	culture = gujarati
+}
+1000061312 = {
+	name="Gandhi"
+	culture = gujarati
+}	
+1000061313 = {
+	name="Bhadala"
+	culture = gujarati
+}
+1000061314 = {
+	name="Jethwa"
+	culture = gujarati
+}
+1000061315 = {
+	name="Ambani"
+	culture = gujarati
+}
+1000061316 = {
+	name="Jhaveri"
+	culture = gujarati
+}
+1000061317 = {
+	name="Sanghani"
+	culture = gujarati
+}
+1000061318 = {
+	name="Parekh"
+	culture = gujarati
+}
+1000061319 = {
+	name="Bhanushali"
+	culture = gujarati
+}
+1000061320 = {
+	name="Damania"
+	culture = gujarati
+}
+1000061321 = {
+	name="Ruparelia"
+	culture = gujarati
+}
+1000061322 = {
+	name="Rao"
+	culture = gujarati
+}	
+1000061323 = {
+	name="Shah"
+	culture = gujarati
+}
+1000061324 = {
+	name="Rami"
+	culture = gujarati
+}
+1000061325 = {
+	name="Pala"
+	culture = gujarati
+}
+1000061326 = {
+	name="Patadiya"
+	culture = gujarati
+}
+1000061327 = {
+	name="Raninga"
+	culture = gujarati
+}
+1000061328 = {
+	name="Khera"
+	culture = gujarati
+}
+1000061329 = {
+	name="Changhada"
+	culture = gujarati
+}
+1000061330 = {
+	name="Hanj"
+	culture = gujarati
+}
+1000061331 = {
+	name="Didani"
+	culture = gujarati
+}
+1000061332 = {
+	name="Rathigara"
+	culture = gujarati
+}	
+1000061333 = {
+	name="Dholakia"
+	culture = gujarati
+}
+1000061334 = {
+	name="Chedia"
+	culture = gujarati
+}
+1000061335 = {
+	name="Kadecha"
+	culture = gujarati
+}
+1000061336 = {
+	name="Solanki"
+	culture = gujarati
+}
+1000061337 = {
+	name="Srimali"
+	culture = gujarati
+}
+1000061338 = {
+	name="Doshi"
+	culture = gujarati
+}
+1000061339 = {
+	name="Sahu"
+	culture = gujarati
+}
+1000061340 = {
+	name="Desai"
+	culture = gujarati
+}
+1000061341 = {
+	name="Raizada"
+	culture = gujarati
+}
+1000061342 = {
+	name="Chudasama"
+	culture = gujarati
+}	
+1000061343 = {
+	name="Jani"
+	culture = gujarati
+}
+1000061344 = {
+	name="Soni"
+	culture = gujarati
+}
+1000061345 = {
+	name="Bhakta"
+	culture = gujarati
+}
+1000061346 = {
+	name="Hirachand"
+	culture = gujarati
+}
+1000061347 = {
+	name="Morarjee"
+	culture = gujarati
+}
+
+#Other Patrician Families
+
+1000061348 = {
+	name="Suren"
+	culture = persian
+}
+1000061349 = {
+	name="Motamedi"
+	culture = persian
+}
+
+#Somalis
+
+1000061350 = {
+	name="Walashma"
+	culture = somali
+}
+1000061351 = {
+	name="Gareen"
+	culture = somali
+}
+1000061352 = {
+	name="Warsangali"
+	culture = somali
+}	
+1000061353 = {
+	name="Gobroon"
+	culture = somali
+}
+1000061354 = {
+	name="Majeerteen"
+	culture = somali
+}
+1000061355 = {
+	name="Ogaden"
+	culture = somali
+}
+1000061356 = {
+	name="Marehan"
+	culture = somali
+}
+1000061357 = {
+	name="Amati"
+	culture = italian
+}
+1000061358 = {
+	name="Sheekhaal"
+	culture = somali
+}
+1000061359 = {
+	name="van Kraft"
+	culture = dutch
+}
+1000061360 = {
+	name="Borluut"
+	culture = dutch
+}
+1000061361 = {
+	name="Vijd"
+	culture = dutch
+}
+1000061362 = {
+	name="Utenhove"
+	culture = dutch
+}	
+1000061363 = {
+	name="van der Geest"
+	culture = dutch
+}
+1000061364 = {
+	name="van Ranesse"
+	culture = dutch
+}
+1000061365 = {
+	name="van Borselen"
+	culture = dutch
+}
+1000061366 = {
+	name="Zannekin"
+	culture = dutch
+}
+1000061367 = {
+	name="van Dyck"
+	culture = italian
+}
+1000061368 = {
+	name="Breydel"
+	culture = dutch
+}
+1000061369 = {
+	name="de Coninck"
+	culture = dutch
+}

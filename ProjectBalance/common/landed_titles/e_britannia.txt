@@ -1,0 +1,1766 @@
+e_britannia = {
+	color={ 172 22 22 }
+	color2={ 255 255 255 }
+	capital = 32 # Middlesex
+	
+	name_tier = king
+	short_name = yes
+	
+	k_england = {
+		color={ 202 26 26 }
+		color2={ 255 255 255 }
+		capital = 32 # Middlesex
+		dignity = 10 # Counted as having this many more counties than it does
+		
+		catholic = 300 # Crusade target weight
+		
+		d_northumberland = {
+			color={ 255 0 0 }
+			color2={ 255 255 255 }
+			
+			c_northumberland = {
+				color={ 255 10 0 }
+				color2={ 255 255 255 }
+			
+				b_morpeth = {
+				}
+				b_bamburgh = {
+					norwegian = "Bamborg"
+					danish = "Bamborg"
+					swedish = "Bamborg"
+				}
+				b_hexham = {
+				}
+				b_newcastle = {
+				}
+				b_alnwick = {
+				}
+				b_norham = {
+				}
+				b_lindisfarne = {
+				}
+				b_mitford = {
+				}
+			}
+			c_durham = {
+				color={ 255 15 0 }
+				color2={ 255 255 255 }
+
+				b_gateshead = {
+				}
+				b_durham = {
+				}
+				b_chester-le-street = {
+				}
+				b_jarrow = {
+				}
+				b_hartlepool = {
+				}
+				b_auckland = {
+				}
+				b_raby = {
+				}
+				b_st_cuthbert = {
+				}
+			}
+			c_cumberland = {
+				color={ 30 185 243 }
+				color2={ 255 255 255 }
+
+				b_carlisle = {
+				}
+				b_burgh = {
+				}
+				b_gilsland = {
+				}
+				b_penrith = {
+				}
+				b_egremont = {
+				}
+				b_papcastlet = {
+				}
+				b_cockermouth = {
+				}
+				b_dacre = {
+				}
+			}
+		}
+		d_lancaster = {
+			color={ 255 48 0 }
+			color2={ 255 255 255 }
+			
+			welsh = Rheged
+			
+			c_lancaster = {
+				color={ 255 50 5 }
+				color2={ 255 255 255 }
+			
+				b_salford = {
+				}
+				b_lancaster = {
+				}
+				b_bolton = {
+				}
+				b_preston = {
+				}
+				b_sawley = {
+				}
+				b_gisburn = {
+				}
+				b_furness = {
+				}
+				b_clitheroe = {
+				}
+			}
+			c_westmorland = {
+				color={ 255 55 10 }
+				color2={ 255 255 255 }
+			
+				b_appleby = {
+				}
+				b_kendal = {
+				}
+				b_lowther = {
+				}
+				b_cartmel = {
+				}
+				b_kirkby = {
+				}
+				b_brough = {
+				}
+				b_shap = {
+				}
+				b_brougham = {
+				}
+			}
+			c_chester = {
+				color={ 255 60 15 }
+				color2={ 255 255 255 }
+			
+				b_chester = {
+				}
+				b_halton = {
+				}
+				b_malpas = {
+				}
+				b_northwich = {
+				}
+				b_macclesfield = {
+				}
+				b_beeston = {
+				}
+				b_sandbach = {
+				}
+				b_nantwich = {
+				}
+			}
+			c_derby = {
+				color={ 255 65 20 }
+				color2={ 255 255 255 }
+				
+				norwegian = "Djuraby"
+				danish = "Djuraby"
+				swedish = "Djuraby"
+			
+				b_derby = {
+					norwegian = "Djuraby"
+					danish = "Djuraby"
+					swedish = "Djuraby"
+				}
+				b_bakewell = {
+				}
+				b_repton = {
+				}
+				b_bolsover = {
+				}
+				b_castleton = {
+				}
+				b_chesterfield = {
+				}
+				b_burton = {
+				}
+				b_wirksworth = {
+				}
+			}
+		}
+		d_york = {
+			color={ 255 90 15 }
+			color2={ 255 255 255 }
+			
+			norwegian = "Jorvik"
+			danish = "Jorvik"
+			swedish = "Jorvik"
+			norse = "Jorvik"
+			
+			pagan_coa = {
+				template = 0
+				layer = {
+					texture = 2
+					texture_internal = 12
+					emblem = 0
+					color = 0
+					color = 0
+					color = 0
+				}
+				religion = "norse_pagan"
+			}
+			
+			c_york = {
+				color={ 255 80 5 }
+				color2={ 255 255 255 }
+				
+				norwegian = "Jorvik"
+				danish = "Jorvik"
+				swedish = "Jorvik"
+	
+				b_york = {
+					norwegian = "Jorvik"
+					danish = "Jorvik"
+					swedish = "Jorvik"
+				}
+				b_richmond = {
+				}
+				b_st_peters = {
+				}
+				b_scarborough = {
+					norwegian = "Skardaborg"
+					danish = "Skardaborg"
+					swedish = "Skardaborg"
+				}
+				b_skipton = {
+				}
+				b_pontefract = {
+				}
+				b_hull = {
+				}
+				b_conisbrough = {
+					norwegian = "Kungsborg"
+					danish = "Kungsborg"
+					swedish = "Kungsborg"
+				}
+			}
+			c_leicester = {
+				color={ 255 85 10 }
+				color2={ 255 255 255 }
+			
+				b_leicester = {
+				}
+				b_nottingham = {
+				}
+				b_southwell = {
+				}
+				b_newark = {
+				}
+				b_hucknall = {
+				}
+				b_tickhill = {
+				}
+				b_worksop = {
+				}
+				b_newstead = {
+				}
+			}
+			c_lincoln = {
+				color={ 255 90 20 }
+				color2={ 255 255 255 }
+				
+				b_gainsborough = {
+				}
+				b_lincoln = {
+				}
+				b_boston = {
+				}
+				b_spalding = {
+				}
+				b_stamford = {
+				}
+				b_grantham = {
+				}
+				b_louth = {
+				}
+				b_bardney = {
+				}
+			}
+		}
+		d_norfolk = {
+			color={ 200 90 0 }
+			color2={ 255 255 255 }
+			
+			saxon = "East Anglia"
+			
+			c_norfolk = {
+				color={ 255 95 5 }
+				color2={ 255 255 255 }
+			
+				b_norwich = {
+				}
+				b_thetford = {
+				}
+				b_buckenham = {
+				}
+				b_lynn = {
+				}
+				b_yarmouth = {
+				}
+				b_elmham = {
+				}
+				b_castle_rising = {
+				}
+				b_chatteris = {
+				}
+			}
+			c_suffolk = {
+				color={ 255 100 10 }
+				color2={ 255 255 255 }
+			
+				b_ipswich = {
+				}
+				b_ely = {
+				}
+				b_bury = {
+				}
+				b_lowestoft = {
+					danish = "Lothvistoft"
+					swedish = "Lothvistoft"
+					norwegian = "Lothvistoft"
+				}
+				b_dunwich = {
+				}
+				b_stow = {
+				}
+				b_bungay = {
+				}
+				b_framlingham = {
+				}
+			}
+		}
+		d_oxford = {
+			color={ 255 108 0 }
+			color2={ 255 255 255 }
+			
+			c_northampton = {
+				color={ 255 110 5 }
+				color2={ 255 255 255 }
+				
+				b_peterborough = {
+				}
+				b_huntingdon = {
+				}
+				b_ramsey = {
+				}
+				b_northampton = {
+				}
+				b_kettering = {
+				}
+				b_cambridge = {
+				}
+				b_crowland = {
+				}
+				b_rockingham = {
+				}
+			}
+			c_oxford = {
+				color={ 255 115 15 }
+				color2={ 255 255 255 }
+				
+				b_oxford = {
+				}
+				b_wallingford = {
+				}
+				b_abingdon = {
+				}
+				b_buckingham = {
+				}
+				b_banbury = {
+				}
+				b_reading = {
+				}
+				b_aylesbury = {
+				}
+				b_eynsham = {
+				}
+			}
+		}
+		d_bedford = {
+			color={ 241 15 15 }
+			color2={ 255 255 255 }
+			capital = 72 # Essex
+			
+			saxon = "Essex"
+			
+			c_bedford = {
+				color={ 241 30 30 }
+				color2={ 255 255 255 }
+				
+				b_bedford = {
+				}
+				b_hertford = {
+				}
+				b_st_albans = {
+				}
+				b_berkhamsted = {
+				}
+				b_luton = {
+				}
+				b_dunstable = {
+				}
+				b_watford = {
+				}
+				b_ashridge = {
+				}
+			}
+			c_middlesex = {
+				color={ 241 90 35 }
+				color2={ 255 255 255 }
+			
+				b_westminster = {
+				}
+				b_london = {
+				}
+				b_st_pauls = {
+					holy_site = aztec
+					holy_site = aztec_reformed
+				}
+				b_tottenham = {
+				}
+				b_fulham = {
+				}
+				b_staines = {
+				}
+				b_harrow = {
+				}
+				b_chelsea = {
+				}
+			}
+			c_essex = {
+				color={ 241 25 25 }
+				color2={ 255 255 255 }
+				
+				b_maldon = {
+				}
+				b_havering = {
+				}
+				b_dunmow = {
+				}
+				b_colchester = {
+				}
+				b_waltham = {
+				}
+				b_barking = {
+				}
+				b_pleshey = {
+				}
+				b_hedingham = {
+				}
+			}
+		}
+		d_hereford = {
+			color={ 241 47 15 }
+			color2={ 255 255 255 }
+			
+			dignity = 5
+			
+			saxon = "Mercia"
+			
+			c_hereford = {
+				color={ 241 50 20 }
+				color2={ 255 255 255 }
+			
+				b_st_ethelberts = {
+				}
+				b_hereford = {
+				}
+				b_leominster = {
+				}
+				b_archenfield = {
+				}
+				b_ewyas_harold = {
+				}
+				b_ledbury = {
+				}
+				b_clifford = {
+				}
+				b_brobury = {
+				}
+			}
+			c_shrewsbury = {
+				color={ 241 55 25 }
+				color2={ 255 255 255 }
+			
+				b_shrewsbury = {
+				}
+				b_clun = {
+				}
+				b_wenlock = {
+				}
+				b_ludlow = {
+				}
+				b_whitchurch = {
+				}
+				b_bridgnorth = {
+				}
+				b_oswestry = {
+				}
+				b_chirk = {
+				}
+			}
+			c_warwick = {
+				color={ 241 60 30 }
+				color2={ 255 255 255 }
+			
+				b_coventry = {
+				}
+				b_warwick = {
+				}
+				b_lichfield = {
+				}
+				b_stafford = {
+				}
+				b_tamworth = {
+				}
+				b_kenilworth = {
+				}
+				b_tutbury = {
+				}
+				b_dudley = {
+				}
+			}
+			c_worcester = {
+				color={ 250 25 25 }
+				color2={ 255 255 255 }
+				
+				b_worcester = {
+				}
+				b_evesham = {
+				}
+				b_droitwich = {
+				}
+				b_kidderminster = {
+				}
+				b_pershore = {
+				}
+				b_malvern = {
+				}
+				b_bromsgrove = {
+				}
+				b_laughern = {
+				}
+			}
+		}
+		d_gloucester = {
+			color={ 241 79 15 }
+			color2={ 255 255 255 }
+			
+			saxon = Hwicce
+			
+			c_gloucester = {
+				color={ 241 85 25 }
+				color2={ 255 255 255 }
+			
+				b_gloucester = {
+				}
+				b_sudeley = {
+				}
+				b_tewkesbury = {
+				}
+				b_cheltenham = {
+				}
+				b_cirencester = {
+				}
+				b_winchcombe = {
+				}
+				b_bristol = {
+				}
+				b_hailes = {
+				}
+			}
+			c_wiltshire = {
+				color={ 241 95 45 }
+				color2={ 255 255 255 }
+			
+				b_wilton = {
+				}
+				b_sarum = {
+				}
+				b_clarendon = {
+				}
+				b_malmesbury = {
+				}
+				b_salisbury = {
+				}
+				b_devizes = {
+				}
+				b_ramsbury = {
+				}
+				b_marlborough = {
+				}
+			}
+		}
+		d_canterbury = {
+			color={ 241 100 15 }
+			color2={ 255 255 255 }
+			
+			c_surrey = {
+				color={ 241 105 55 }
+				color2={ 255 255 255 }
+				
+				b_farnham = {
+				}
+				b_guildford = {
+				}
+				b_lambeth = {
+				}
+				b_southwark = {
+				}
+				b_woking = {
+				}
+				b_chertsey = {
+				}
+				b_croydon = {
+				}
+				b_waverley = {
+				}
+			}
+			c_kent = {
+				color={ 241 115 65 }
+				color2={ 255 255 255 }
+				
+				b_rochester = {
+				}
+				b_dover = {
+				}
+				b_canterbury = {
+					holy_site = catholic
+				}
+				b_faversham = {
+				}
+				b_sandwich = {
+				}
+				b_lympne = {
+				}
+				b_romney = {
+				}
+				b_tonbridge = {
+				}
+			}
+			c_sussex = {
+				color={ 241 110 60 }
+				color2={ 255 255 255 }
+				
+				b_hastings = {
+				}
+				b_pevensey = {
+				}
+				b_chichester = {
+				}
+				b_lewes = {
+				}
+				b_arundel = {
+				}
+				b_rye = {
+				}
+				b_bramber = {
+				}
+				b_bodiam = {
+				}
+			}
+		}
+		d_somerset = {
+			color={ 241 15 63 }
+			color2={ 255 255 255 }
+			
+			saxon="Wessex"
+			
+			c_winchester = {
+				color={ 241 20 65 }
+				color2={ 255 255 255 }
+				
+				saxon="Wessex"
+				
+				b_southampton = {
+				}
+				b_portchester = {
+				}
+				b_winchester = {
+				}
+				b_carisbrooke = {
+				}
+				b_romsey = {
+				}
+				b_andover = {
+				}
+				b_st_swithun = {
+				}
+				b_wherwell = {
+				}
+			}
+			c_dorset = {
+				color={ 241 25 70 }
+				color2={ 255 255 255 }
+				
+				b_wareham = {
+				}
+				b_corfe = {
+				}
+				b_shaftesbury = {
+				}
+				b_dorchester = {
+				}
+				b_sherborne = {
+				}
+				b_lyme = {
+				}
+				b_weymouth = {
+				}
+				b_wimborne = {
+				}
+			}
+			c_somerset = {
+				color={ 241 30 75 }
+				color2={ 255 255 255 }
+				
+				b_bath = {
+				}
+				b_wells = {
+				}
+				b_ilchester = {
+				}
+				b_taunton = {
+				}
+				b_muchelney = {
+				}
+				b_castle_cary = {
+				}
+				b_glastonbury = {
+				}
+				b_cleeve = {
+				}
+			}
+		}
+	}
+
+	k_scotland = {
+		color={ 20 80 162 }
+		color2={ 255 255 255 }
+		
+		capital = 43 #Gowrie
+		
+		culture = scottish
+		
+		catholic = 300 # Crusade target weight
+		
+		d_galloway = {
+			color={ 77 116 208 }
+			color2={ 255 255 255 }
+			
+			c_galloway = {
+				color={ 15 185 243 }
+				color2={ 255 255 255 }
+				
+				b_dumfries = {
+				}
+				b_dunragit = {
+				}
+				b_whithorn = {
+				}
+				b_dunrod = {
+				}
+				b_kirkcudbright = {
+				}
+				b_glenluce = {
+				}
+				b_wigtown = {
+				}
+				b_threave = {
+				}
+			}
+			c_carrick = {
+				color={ 50 185 243 }
+				color2={ 255 255 255 }
+				
+				b_turnberry = {
+				}
+				b_dunure = {
+				}
+				b_maybole = {
+				}
+				b_crossraguel = {
+				}
+				b_loch_doon = {
+				}
+				b_ballantrae = {
+				}
+				b_culzean = {
+				}
+				b_greenan = {
+				}
+			}
+			c_clydesdale = {
+				color={ 5 140 240 }
+				color2={ 255 255 255 }
+				
+				b_renfrew = {
+				}
+				b_st_kentigern = {
+				}
+				b_glasgow = {
+				}
+				b_lanark = {
+				}
+				b_cadzow = {
+				}
+				b_bothwell = {
+				}
+				b_lesmahagow = {
+				}
+				b_dumbarton = {
+				}
+			}
+			
+		}
+		d_western_isles = {
+			color = { 6 42 127 }
+			
+			norwegian = "Søreyar"
+			danish = "Søreyar"
+			swedish = "Söröarna"
+			norse = "Suðreyjar"
+			
+			pagan_coa = {
+				template = 0
+				layer = {
+					texture = 2
+					texture_internal = 8
+					emblem = 0
+					color = 0
+					color = 0
+					color = 0
+				}
+				religion = "norse_pagan"
+			}
+			
+			c_innse_gall = {
+				color={ 20 60 243 }
+				color2={ 255 255 255 }
+				
+				norwegian = "Søreyar"
+				danish = "Søreyar"
+				swedish = "Söröarna"
+				
+				b_snizort = {
+				}
+				b_finlaggan = {
+				}
+				b_iona = {
+				}
+				b_stornoway = {
+					norwegian = "Stornavåg"
+					danish = "Stornavik"
+					swedish = "Stornavik"
+				}
+				b_laggan = {
+				}
+				b_uig = {
+					norwegian = "Vik"
+					danish = "Vik"
+					swedish = "Vik"
+				}
+				b_dunvegan = {
+				}
+				b_dunyveg = {
+				}
+			}
+			c_isle_of_man = {
+				color={ 25 65 243 }
+				color2={ 255 255 255 }
+				
+				norwegian = "Mann"
+				danish = "Mann"
+				swedish = "Mann"
+				
+				b_peel = {
+					norwegian = "Pålø"
+					danish = "Pålø"
+					swedish = "Pålø"
+				}
+				b_rushen = {
+				}
+				b_maughold = {
+				}
+				b_douglas = {
+				}
+				b_kirk_michael = {
+				}
+				b_sulby = {
+				}
+				b_inis_patraic = {
+				}
+				b_laxey = {
+				}
+			}
+			c_argyll = {
+				color={ 15 150 240 }
+				color2={ 255 255 255 }
+				
+				b_st_moluag = {
+				}
+				b_dunollie = {
+				}
+				b_loch_awe = {
+				}
+				b_sween = {
+				}
+				b_dunstaffnage = {
+				}
+				b_ardchattan = {
+				}
+				b_kilmun = {
+				}
+				b_inverary = {
+				}
+			}
+		}
+		d_lothian = {
+			color={ 10 164 243 }
+			color2={ 255 255 255 }
+			
+			c_lothian = {
+				color={ 20 170 245 }
+				color2={ 255 255 255 }
+
+				b_edinburgh = {
+				}
+				b_stirling = {
+				}
+				b_abercorn = {
+				}
+				b_linlithgow = {
+				}
+				b_falkirk = {
+				}
+				b_stow_of_wedale = {
+				}
+				b_leith = {
+				}
+				b_torphichen = {
+				}
+			}
+			c_dunbar = {
+				color={ 15 165 245 }
+				color2={ 255 255 255 }
+
+				b_dunbar = {
+				}
+				b_berwick = {
+				}
+				b_thirlestane = {
+				}
+				b_tyninghame = {
+				}
+				b_gordon = {
+				}
+				b_huntly = {
+				}
+				b_coldingham = {
+				}
+				b_crichton = {
+				}
+			}
+			c_teviotdale = {
+				color={ 25 90 243 }
+				color2={ 255 255 255 }
+				
+				b_jedburgh = {
+				}
+				b_roxburgh = {
+				}
+				b_peebles = {
+				}
+				b_melrose = {
+				}
+				b_kelso = {
+				}
+				b_selkirk = {
+				}
+				b_maxwell = {
+				}
+				b_ednam = {
+				}
+			}
+		}
+		d_albany = {
+			color={ 10 209 243 }
+			color2={ 255 255 255 }
+			
+			c_gowrie = {
+				color={ 35 222 250 }
+				color2={ 255 255 255 }
+				
+				b_scone = {
+				}
+				b_dunkeld = {
+				}
+				b_perth = {
+				}
+				b_forteviot = {
+				}
+				b_dundee = {
+				}
+				b_abernethy = {
+				}
+				b_clunie = {
+				}
+				b_errol = {
+				}
+			}
+			c_fife = {
+				color={ 20 210 250 }
+				color2={ 255 255 255 }
+				
+				b_dunfermline = {
+				}
+				b_cupar = {
+				}
+				b_st_andrews = {
+				}
+				b_kirkcaldy = {
+				}
+				b_kinross = {
+				}
+				b_leuchars = {
+				}
+				b_lochore = {
+				}
+				b_falkland = {
+				}
+			}
+			c_strathearn = {
+				color={ 15 210 245 }
+				color2={ 255 255 255 }
+				
+				b_crieff = {
+				}
+				b_dunblane = {
+				}
+				b_tullibardine = {
+				}
+				b_auchterarder = {
+				}
+				b_madderty = {
+				}
+				b_doune = {
+				}
+				b_inchaffray = {
+				}
+				b_kenmore = {
+				}
+			}
+			c_atholl = {
+				color={ 30 215 250 }
+				color2={ 255 255 255 }
+				
+				b_blair_atholl = {
+				}
+				b_glen_dochart = {
+				}
+				b_pitlochry = {
+				}
+				b_fortingall = {
+				}
+				b_grandtully = {
+				}
+				b_rannoch = {
+				}
+				b_strathardle = {
+				}
+				b_struan = {
+				}
+			}
+		}
+		d_moray = {
+			color={ 10 81 243 }
+			color2={ 255 255 255 }
+			
+			c_moray = {
+				color={ 20 85 243 }
+				color2={ 255 255 255 }
+				
+				b_forres = {
+				}
+				b_cawdor = {
+				}
+				b_elgin = {
+				}
+				b_nairn = {
+				}
+				b_inverness = {
+				}
+				b_lochindorb = {
+				}
+				b_kinloss = {
+				}
+				b_urquhart = {
+				}
+			}
+			c_ross = {
+				color={ 15 55 243 }
+				color2={ 255 255 255 }
+				
+				b_applecross = {
+				}
+				b_dingwall = {
+					norwegian = "Tingvall"
+					danish = "Tingvall"
+					swedish = "Tingvall"
+				}
+				b_rosemarkie = {
+				}
+				b_fortrose = {
+				}
+				b_fearn = {
+				}
+				b_tain = {
+				}
+				b_cromarty = {
+				}
+				b_avoch = {
+				}
+			}
+			c_buchan = {
+				color={ 40 227 250 }
+				color2={ 255 255 255 }
+				
+				b_aberdeen = {
+				}
+				b_banff = {
+				}
+				b_deer = {
+				}
+				b_kintore = {
+				}
+				b_inverurie = {
+				}
+				b_fyvie = {
+				}
+				b_ellon = {
+				}
+				b_st_machar = {
+				}
+			}
+			c_caithness = {
+				color={ 30 95 243 }
+				color2={ 255 255 255 }
+				
+				norwegian = "Katanes"
+				danish = "Katanæs"
+				swedish = "Katanäs"
+				
+				b_wick = {
+					norwegian = "Vik"
+					danish = "Vik"
+					swedish = "Vik"
+				}
+				b_dunbeath = {
+				}
+				b_dornoch = {
+				}
+				b_thurso = {
+					swedish = "Tjurså"
+					danish = "Tyrså"
+					norwegian = "Tyrså"
+				}
+				b_dunrobin = {
+				}
+				b_freswick = {
+					swedish = "Fresvik"
+					danish = "Fresvik"
+					norwegian = "Fresvik"
+				}
+				b_latheron = {
+				}
+				b_golspie = {
+				}
+			}
+		}
+		
+	}	
+
+	k_ireland = {
+		color={ 6 127 2 }
+		color2={ 255 255 255 }
+		
+		capital = 11 # Dublin
+		
+		culture = irish
+		
+		catholic = 300 # Crusade target weight
+		
+		d_ulster = {
+			color={ 5 222 31 }
+			color2={ 255 255 255 }
+			
+			c_ulster = {
+				color={ 25 230 35 }
+				color2={ 255 255 255 }
+			
+				b_downpatrick = {
+				}
+				b_dunseverick = {
+				}
+				b_bangor = {
+				}
+				b_carrickfergus = {
+				}
+				b_connor = {
+				}
+				b_dromore = {
+				}
+				b_larne = {
+				}
+				b_dunluce = {
+				}
+			}
+			c_oriel = {
+				color={ 30 180 45 }
+				color2={ 255 255 255 }
+
+				b_clones = {
+				}
+				b_armagh = {
+				}
+				b_dundalk = {
+				}
+				b_clogher = {
+				}
+				b_drogheda = {
+				}
+				b_monaghan = {
+				}
+				b_olouth = {
+				}
+				b_ardee = {
+				}
+			}
+			c_tyrone = {
+				color={ 66 157 22 }
+				color2={ 255 255 255 }
+
+				b_coleraine = {
+				}
+				b_dungannon = {
+				}
+				b_aileach = {
+				}
+				b_maghera = {
+				}
+				b_derry = {
+				}
+				b_omagh = {
+				}
+				b_tullyhogue = {
+				}
+				b_dungiven = {
+				}
+			}
+			c_tyrconnell = {
+				color={ 25 190 31 }
+				color2={ 255 255 255 }
+			
+				b_gartan = {
+				}
+				b_moville = {
+				}
+				b_raphoe = {
+				}
+				b_fahan = {
+				}
+				b_donegal = {
+				}
+				b_ballyshannon = {
+				}
+				b_kilmacrenan = {
+				}
+				b_ballymacswiney = {
+				}
+			}
+		}
+		d_connacht = {
+			color={ 73 229 56 }
+			color2={ 255 255 255 }
+		
+			c_breifne = {
+				color={ 40 230 65 }
+				color2={ 255 255 255 }
+
+				b_dromahair = {
+				}
+				b_kilmore = {
+				}
+				b_cavan = {
+				}
+				b_longford = {
+				}
+				b_ardagh = {
+				}
+				b_leitrim = {
+				}
+				b_drumcliffe = {
+				}
+				b_kells = {
+				}
+			}
+			c_connacht = {
+				color={ 45 230 70 }
+				color2={ 255 255 255 }
+
+				b_galway = {
+				}
+				b_elphin = {
+				}
+				b_tuam = {
+				}
+				b_clonfert = {
+				}
+				b_roscommon = {
+				}
+				b_mayo = {
+				}
+				b_killala = {
+				}
+				b_anchory = {
+				}
+			}
+		}
+		d_meath = {
+			color={ 49 249 72 }
+			color2={ 255 255 255 }
+			
+			capital = 11 # Dublin
+			
+			norwegian = "Dublin"
+			danish = "Dublin"
+			swedish = "Dublin"
+			norse = "Dublin"
+			
+			pagan_coa = {
+				template = 0
+				layer = {
+					texture = 2
+					texture_internal = 3
+					emblem = 0
+					color = 0
+					color = 0
+					color = 0
+				}
+				religion = "norse_pagan"
+			}
+		
+			c_kildare = {
+				color={ 102 248 65 }
+				color2={ 255 255 255 }
+
+				b_knockaulin = {
+				}
+				b_athlone = {
+				}
+				b_kildare = {
+				}
+				b_maynooth = {
+				}
+				b_st_brigit = {
+				}
+				b_rathangan = {
+				}
+				b_durrow = {
+				}
+				b_clonard = {
+				}
+			}
+			c_dublin = {
+				color={ 55 250 85 }
+				color2={ 255 255 255 }
+
+				b_dublin = {
+				}
+				b_clondalkin = {
+				}
+				b_finglas = {
+				}
+				b_wicklow = {
+				}
+				b_ath_cliath = {
+				}
+				b_christ_church = {
+				}
+				b_mellifont = {
+				}
+				b_trim = {
+				}
+			}
+		}
+		d_leinster = {
+			color={ 85 211 27 }
+			color2={ 255 255 255 }
+			
+			c_leinster = {
+				color={ 65 210 85 }
+				color2={ 255 255 255 }
+	
+				b_wexford = {
+					norwegian = Veisafjord
+					swedish = Veisafjord
+					danish = Veisafjord
+				}
+				b_leighlin = {
+				}
+				b_arklow = {
+				}
+				b_carlow = {
+				}
+				b_ferns = {
+				}
+				b_glendalough = {
+				}
+				b_naas = {
+				}
+				b_enniscorthy = {
+				}
+			}
+			c_ossory = {
+				color={ 60 210 80 }
+				color2={ 255 255 255 }
+		
+				b_kilkenny = {
+				}
+				b_gowran = {
+				}
+				b_clonmacnoise = {
+				}
+				b_aghaboe = {
+				}
+				b_jerpoint = {
+				}
+				b_callan = {
+				}
+				b_grennan = {
+				}
+				b_grannagh = {
+				}
+			}
+		}
+		d_munster = {
+			color={ 16 157 12 }
+			color2={ 255 255 255 }
+		
+			c_thomond = {
+				color={ 90 221 111 }
+				color2={ 255 255 255 }
+		
+				b_limerick = {
+					norwegian = "Hlymrek"
+					danish = "Lymrek"
+					swedish = "Lymrek"
+				}
+				b_bunratty = {
+				}
+				b_killaloe = {
+				}
+				b_emly = {
+				}
+				b_ennis = {
+				}
+				b_kilfenora = {
+				}
+				b_askeaton = {
+				}
+				b_adare = {
+				}
+			}
+			c_ormond = {
+				color={ 95 221 121 }
+				color2={ 255 255 255 }
+		
+				b_waterford = {
+					norwegian = Vedrafjord
+					swedish = Vedrafjord
+					danish = Vedrafjord
+				}
+				b_cahir = {
+				}
+				b_cashel = {
+				}
+				b_clonmel = {
+				}
+				b_lismore = {
+				}
+				b_roscrea = {
+				}
+				b_nenagh = {
+				}
+				b_fethard = {
+				}
+			}
+			c_desmond = {
+				color={ 100 221 90 }
+				color2={ 255 255 255 }
+		
+				b_cork = {
+				}
+				b_dunasead = {
+				}
+				b_ross = {
+				}
+				b_youghal = {
+				}
+				b_ardfert = {
+				}
+				b_cloyne = {
+				}
+				b_fermoy = {
+				}
+				b_blarney = {
+				}
+			}
+		}
+	}
+
+	k_wales = {
+		color={ 135 25 3 }
+		color2={ 255 255 255 }
+		
+		capital = 64 # Gwynedd
+		
+		culture = welsh
+		
+		catholic = 300 # Crusade target weight
+		
+		allow = {
+			culture_group = celtic
+		}
+		
+		d_gwynedd = {
+			color={ 172 99 22 }
+			color2={ 255 255 255 }
+			
+			c_gwynedd = {
+				color={ 175 80 10 }
+				color2={ 255 255 255 }
+				
+				b_caernarfon = {
+				}
+				b_degannwy = {
+				}
+				b_bangor_fawr = {
+				}
+				b_aberffraw = {
+					norwegian = Ongullsøy
+					english = Anglesey
+					saxon = Anglesey
+				}
+				b_harlech = {
+				}
+				b_cardigan = {
+				}
+				b_conwy = {
+				}
+				b_llanbadarn = {
+				}
+			}
+			c_perfeddwlad = {
+				color={ 175 85 15 }
+				color2={ 255 255 255 }
+				
+				b_denbigh = {
+				}
+				b_rhuddlan = {
+				}
+				b_llanelwy = {
+				}
+				b_flint = {
+				}
+				b_ruthin = {
+				}
+				b_basingwerk = {
+				}
+				b_ewloe = {
+				}
+				b_hawarden = {
+				}
+			}
+			c_powys = {
+				color={ 175 90 20 }
+				color2={ 255 255 255 }
+				
+				b_caersws = {
+				}
+				b_mathrafal = {
+				}
+				b_llangollen = {
+				}
+				b_llandinam = {
+				}
+				b_glascwm = {
+				}
+				b_radnor = {
+				}
+				b_montgomery = {
+				}
+				b_rhayader = {
+				}
+			}
+		}
+		d_deheubarth = {
+			color={ 125 51 3 }
+			color2={ 255 255 255 }
+			
+			c_dyfed = {
+				color={ 155 75 5 }
+				color2={ 255 255 255 }
+			
+				b_carmarthen = {
+				}
+				b_dinefwr = {
+				}
+				b_st_davids = {
+					welsh = Tyddewi
+					norwegian = "Ramsøy"
+				}
+				b_kidwelly = {
+					welsh = Cydweli
+				}
+				b_llandeilo = {
+				}
+				b_pembroke = {
+				}
+				b_narberth = {
+				}
+				b_haverford = {
+				}
+			}
+			c_glamorgan = {
+				color={ 155 120 15 }
+				color2={ 255 255 255 }
+			
+				b_cardiff = {
+				}
+				b_neath = {
+				}
+				b_llandaff = {
+				}
+				b_caerphilly = {
+				}
+				b_swansea = {
+				}
+				b_loughor = {
+				}
+				b_margam = {
+				}
+				b_ogmore = {
+				}
+			}
+			c_gwent = {
+				color={ 160 75 5 }
+				color2={ 255 255 255 }
+			
+				b_caerwent = {
+				}
+				b_chepstow = {
+				}
+				b_abergavenny = {
+				}
+				b_monmouth = {
+				}
+				b_caerleon = {
+				}
+				b_newport = {
+				}
+				b_brecon = {
+				}
+				b_tintern = {
+				}
+			}
+		}
+		d_cornwall = {
+			color={ 251 15 15 }
+			color2={ 255 255 255 }
+			
+			c_cornwall = {
+				color={ 250 20 15 }
+				color2={ 255 255 255 }
+				
+				b_bodmin = {
+				}
+				b_launceston = {
+				}
+				b_st_germans = {
+				}
+				b_truro = {
+				}
+				b_liskeard = {
+				}
+				b_tintagel = {
+				}
+				b_st_michael = {
+				}
+				b_restormel = {
+				}
+			}
+			c_devon = {
+				color={ 250 30 55 }
+				color2={ 255 255 255 }
+				
+				b_lydford = {
+				}
+				b_exeter = {
+				}
+				b_crediton = {
+				}
+				b_totnes = {
+				}
+				b_axminster = {
+				}
+				b_tavistock = {
+				}
+				b_buckfast = {
+				}
+				b_dartmouth = {
+				}
+			}
+		}
+	}
+	
+	# Creation/usurpation trigger
+	allow = {
+		OR = {
+			culture = english
+			culture = saxon
+			culture = norman
+			culture = norse
+			culture_group = celtic
+		}
+		OR = {
+			has_landed_title = k_england
+			completely_controls = k_england
+			k_england = { is_titular = yes }
+		}
+		OR = {
+			has_landed_title = k_scotland
+			completely_controls = k_scotland
+			k_scotland = { is_titular = yes }
+		}
+		OR = {
+			has_landed_title = k_wales
+			completely_controls = k_wales
+			k_wales = { is_titular = yes }
+		}
+		OR = {
+			has_landed_title = k_ireland
+			completely_controls = k_ireland
+			k_ireland = { is_titular = yes }
+		}
+		war = no
+		ruled_years = 5
+		is_adult = yes
+		NOT = { tier = emperor }
+	}
+}

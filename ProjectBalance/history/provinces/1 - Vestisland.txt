@@ -1,0 +1,32 @@
+# 1 - Vestisland
+
+# County Title
+title = c_vestisland
+
+# Settlements
+max_settlements = 2
+b_reykjavik = city
+b_alftanes = castle
+
+#b_skalholt = temple
+#b_pingvellir = castle
+#b_kjalarnes = castle
+#b_hvamm = castle
+#b_hlidarendi = castle
+#b_borg = castle
+
+# Misc
+culture = norse
+religion = norse_pagan
+
+# History
+867.1.1 = {
+	b_reykjavik = ca_shipyard_1
+}
+1000.1.1 = {
+	culture = norwegian
+	religion = catholic
+}
+
+
+1066.1.1 = { trade_post = b_oddaverjar }

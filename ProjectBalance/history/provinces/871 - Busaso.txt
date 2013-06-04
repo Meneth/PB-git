@@ -1,0 +1,20 @@
+# 871 - Busaso
+
+# County Title
+title = c_busaso
+
+# Settlements
+max_settlements = 3
+
+b_mosylon = castle
+b_lasanod = temple
+b_bandaraassim = city
+
+# Misc
+culture = somali
+religion = sunni
+
+# History
+1066.1.1 = { 
+	trade_post = b_walashma
+}

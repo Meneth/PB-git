@@ -1,0 +1,38 @@
+# Do not change tags in here without changing every other reference to them.
+# If adding new groups or cultures, make sure they are unique.
+
+indian = {
+	graphical_culture = muslimgfx
+
+    gujarati = {
+        graphical_culture = muslimgfx
+       
+        color = { 0.9 0.5 0.2 }
+
+        male_names = {
+            Abhayapala Acharya Ahila Ajairaja_Jayaraja Ajayapala Ajay-Singh Alhana Allat Amarangeya Ambra-Prasad Amol Amritapala Anahilla Ari-Singh Arjunavarman Arnoraja Asaraja Asvapala Balaprasada Baliraja Bhatarka Bhert-Patt Bhima_Bhima Bhimadeva_Bhima Bhim-Singh Bhuvan-Singh Bhoja Bhoo-Chand Chachiga Chamundaraja Chandanaraja Chandraraja Chaud-Singh Dadda Dambarisimha Deopali-Deo Devapala Dharapatta Dharasena Dharmapala Dhruvasena Dinakarn Dronasinha
+            Dungar-Singh Durlabharaja Gajasimha Gopala Gopendraka_Gopendraraja Gopendraraja_Gopendraraja Govinda_Govindaraja Govindapala_Govindaraja Govindaraja_Govindaraja Guhasena Guvaka_Govindaraja Hammira Hammir-Singh Hanspal Hariraja Harischandra Hemachandra Jagadeva Jaitrasimha_Jaitrasimha Jaitra-Singh_Jaitrasimha Jaitugideva Jasapala Jaskarn Jayapala Jayaraja_Jayaraja Jayasimha_Jayasimha Jay-Singh_Jayasimha Jay-Singh-Deo Jayat-Singh_Jayasimha Jayavarman Jayshikari Jendraraja Jojalla
+            Kalbhoj Kanhadadeva Karandeva_Karnadeva Karan-Singh Karnadeva_Karnadeva Katudeva Katukaraja Keerti-Verma_Kirtivarman Kelhana Kharagraha Khuman Kirtipala Kirtivarman_Kirtivarman Kumarapala Kshemraja_Xemraja Kshem-Singh Kshetra-Singh Kumar-Singh Lakhanapala Lakhshaman-Singh Lakshmana_Lakshmanadeva Lakshmanadeva_Lakshmanadeva Lakshmivarman Lavanyakarna Lunavarman Luntiga
+            Madanapala Mahap Mahayak Mahendra_Mahendrapala Mahendrapala_Mahendra Mahipala Mahlakadeva Maladeva Manavasimha Mathan-Singh Mattat Mihira Mulraja Nagabhata Nagarjuna Nagraja Naradeva Narapati Naravarman_Naravarman Naravarmandeva_Naravarman Narayanapala Nar-Verma_Naravarman Narwahan Nayapala Padam-Singh Prahladana Pratapa Prithvipal_Prithviraja Prithivipala_Prithviraja Prithviraja_Prithviraja Purnpala Rahap Rajapala Rajyapala Ramabhadra Ramapala Ratan-Singh Ratnapala Rayapala Rudrapala
+            Sahajapala Sahanapala Samanta_Samanta Samant-Singh_Samanta Samantasimha_Samanta Samarasimha_Samarasimha Samar-Singh_Samarasimha Shakti-Kumar Shaliwahan Shuchi-Verma Shurapala Siladitya Sindhuraja Singhraja Sinha Sinhad-Deo Siyaka Sohiya Someshwara Subhatavarman Suratrana Tejasimha_Tejasimha Tej-Singh_Tejasimha Trailokyavarman Tribhuvanapala Trilochanpala Udayaditya Udayasimha Udayavarman Upendra Vagbhata Vahadiasimha Vairisimha_Vairisimha Vairsingh_Vairisimha Vajradeva Vakapati_Vakpati Vakpati_Vakpati Vakpatiraja_Vakpati Valhana_Valhanadeva Valhanadeva_Valhanadeva Vallabharaja
+            Vanraja Vapyata Vasudeva Vatsaraja Vigrahapala Vigraharaja_Vigraharaja Vigrharaja_Vigraharaja Vijada-Dasasyandana Vijai-Singh Vikramaditya Vinaykpala Vindhyavarman Virama Viradeva Viranarayana Virsinh-Deo Viryarama Xemraja_Xemraja Yasovarman Yograj
+        }
+        female_names = {
+            Annaladevi Bauladevi Bhuyikadevi Candrabhattarikadevi Chachinidevi Dehanagadevi Delhanadevi Desaladevi Hariyadevi Laxmidevi Madhavi Mahalakshmi Mahidevi Manaladevi Mayanalladevi Namalladevi Padmaladevi Padmini Prasadhanadevi Pratha Rasaladevi Rudaladevi Rudrani Rupadevi Samyukta Sidhawa Somalladevi Suhava Sundaridevi Tihunaka Udayamati
+        }
+		
+		from_dynasty_prefix = "na "
+
+		modifier = default_culture_modifier
+
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 0
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 0
+		mat_grm_name_chance = 0
+		mother_name_chance = 0
+	}
+}

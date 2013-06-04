@@ -1,0 +1,56 @@
+#Somalia
+b_makhzumi = {
+	culture = somali
+	religion = sunni
+}
+b_walashma = {
+	culture = somali
+	religion = sunni
+}
+b_gareen = {
+	culture = somali
+	religion = sunni
+}
+b_warsangali = {
+	culture = somali
+	religion = sunni
+}
+b_gobroon = {
+	culture = somali
+	religion = sunni
+}
+#Hormuz Republic
+d_hormuz_republic = {
+	color={ 100 125 88 }
+	color2={ 255 255 255 }
+	
+	capital = 641 # Hormuz
+	
+	short_name = yes
+
+	dynasty_title_names = no
+	
+	dignity = 10
+}
+
+#Hormuz
+b_thakkur = {
+	culture = gujarati
+	religion = sunni
+}
+b_abdullid = {
+	culture = bedouin_arabic #101018 Abdullid
+	religion = sunni
+}
+b_mustawfi = { #1031124 Mustawfi
+	culture = persian
+	religion = shiite
+}
+b_motamedi = {
+	culture = persian
+	religion = sunni
+}
+b_suren = {
+	culture = persian
+	religion = zoroastrian
+}

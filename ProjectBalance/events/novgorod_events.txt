@@ -1,0 +1,522 @@
+# Novgorod formation events
+
+namespace = NOV
+
+# chain begins
+character_event = {
+	id = NOV.1
+	hide_window = yes
+	
+	ai = yes
+	
+	trigger = {
+		#has_dlc = "The Republic"
+		has_landed_title = d_novgorod
+		has_landed_title = c_novgorod
+		OR = {
+			c_vodi = {
+				holder_scope = {
+					is_liege_or_above = ROOT
+				}
+			}
+			has_landed_title = c_vodi
+		}			
+		culture = russian
+		NOT = {
+			tier = king
+			OR = {
+				has_landed_title = d_rostov
+				has_landed_title = d_kiev
+				has_landed_title = d_chernigov
+				has_landed_title = d_polotsk
+			}
+		}
+		independent = yes
+		war = no
+		year = 1126
+		NOT = { year = 1146 }
+		NOT = { is_merchant_republic = yes }
+		NOT = { liege = { is_merchant_republic = yes } }
+		NOT = { is_patrician = yes }
+		NOT = { has_global_flag = novgorod_formed }
+	}
+	
+	immediate = {
+		character_event = { id = NOV.2 }
+		narrative_event = { id = NOV.4 }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+			
+	option = {
+		name = OK
+	}
+}
+
+# Novgorod formed
+character_event = {
+	id = NOV.2
+	hide_window = yes
+	
+	ai = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		b_nyen = { province_capital = yes }
+		create_character = {
+			random_traits = yes
+			dynasty = random
+			religion = orthodox
+			culture = russian
+			female = no
+			age = 30
+		}
+		new_character = {
+			character_event = { id = NOV.3 }
+			b_nyen = {
+				grant_title = PREV
+			}
+			c_vodi = {
+				grant_title = PREV
+				ROOT = {
+					capital = PREV
+				}
+			}
+			k_novgorod_republic = {
+				grant_title = PREV
+			}
+			set_defacto_vassal = ROOT
+			create_character = { # Extra courtiers
+				random_traits = yes
+				dynasty = random
+				religion = orthodox
+				culture = russian
+				female = no
+				age = 16
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = orthodox
+				culture = russian
+				female = no
+				age = 18
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = orthodox
+				culture = russian
+				female = no
+				age = 18
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = orthodox
+				culture = russian
+				female = no
+				age = 20
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = orthodox
+				culture = russian
+				female = no
+				age = 25
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = orthodox
+				culture = russian
+				female = no
+				age = 26
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = orthodox
+				culture = russian
+				female = no
+				age = 28
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = orthodox
+				culture = russian
+				female = yes
+				age = 16
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = orthodox
+				culture = russian
+				female = yes
+				age = 17
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = orthodox
+				culture = russian
+				female = yes
+				age = 18
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = orthodox
+				culture = russian
+				female = yes
+				age = 18
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = orthodox
+				culture = russian
+				female = yes
+				age = 20
+			}
+		}
+		b_tikhvin = { 
+			province_capital = yes
+			holder_scope = {
+				c_novgorod = {
+					usurp_title = PREV
+				}
+				d_novgorod = {
+					usurp_title = PREV
+				}
+			}
+		}
+		set_global_flag = novgorod_formed
+	}
+			
+	option = {
+		name = OK	
+	}
+}
+
+# The Rise of Novgorod (AI)
+character_event = {
+	id = NOV.3
+	hide_window = yes
+	
+	ai = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		character_event = { id = NOV.5 days = 6 }
+		wealth = 1000
+		location = {
+			if = {
+				limit = { has_trade_post = yes }
+				seize_trade_post = ROOT
+				any_neighbor_province = {
+					seize_trade_post = ROOT
+				}
+			}	
+		}
+	}
+	
+	option = {
+		name = OK
+	}
+}
+
+# The Rise of Novgorod
+narrative_event = {
+	id = NOV.4
+	title = EVTNAME_NOV_4
+	desc = EVTDESC_NOV_4
+	major = yes
+	picture = GFX_evt_busy_trading_dock_republic
+	
+	is_triggered_only = yes
+	
+	major_trigger = {
+		ai = no
+	}	
+	
+	option = {
+		name = "Interesting news"
+		trigger = {
+			OR = {
+				NOT = { is_merchant_republic = yes }
+				NOT = { liege = { is_merchant_republic = yes } }
+				NOT = { is_patrician = yes }
+			}
+		}
+	}
+	option = {
+		name = "More competition..."
+		trigger = {
+			OR = {
+				is_merchant_republic = yes
+				is_patrician = yes
+			}
+		}
+	}
+}
+
+# Set up Patricians
+character_event = {
+	id = NOV.5
+	hide_window = yes
+	
+	ai = yes
+	
+	is_triggered_only = yes
+
+	immediate = {
+		random_vassal = {
+			limit = { 
+				is_patrician = yes
+				NOT = {
+					has_character_flag = patrician_1
+					has_character_flag = patrician_2
+					has_character_flag = patrician_3
+					has_character_flag = patrician_4
+				}
+			}
+			set_character_flag = patrician_1
+		}
+		random_vassal = {
+			limit = { 
+				is_patrician = yes
+				NOT = {
+					has_character_flag = patrician_1
+					has_character_flag = patrician_2
+					has_character_flag = patrician_3
+					has_character_flag = patrician_4
+				}
+			}
+			set_character_flag = patrician_2
+		}
+		random_vassal = {
+			limit = { 
+				is_patrician = yes
+				NOT = {
+					has_character_flag = patrician_1
+					has_character_flag = patrician_2
+					has_character_flag = patrician_3
+					has_character_flag = patrician_4
+				}
+			}
+			set_character_flag = patrician_3
+		}
+		random_vassal = {
+			limit = { 
+				is_patrician = yes
+				NOT = {
+					has_character_flag = patrician_1
+					has_character_flag = patrician_2
+					has_character_flag = patrician_3
+					has_character_flag = patrician_4
+				}
+			}
+			set_character_flag = patrician_4
+		}
+		random_vassal = {
+			limit = { has_character_flag = patrician_1 }
+			character_event = { id = NOV.6 }
+		}
+		random_vassal = {
+			limit = { has_character_flag = patrician_2 }
+			character_event = { id = NOV.7 }
+		}
+		random_vassal = {
+			limit = { has_character_flag = patrician_3 }
+			character_event = { id = NOV.8 }
+		}
+		random_vassal = {
+			limit = { has_character_flag = patrician_4 }
+			character_event = { id = NOV.9 }
+		}
+	}
+			
+	option = {
+		name = OK
+	}
+}
+
+# Set up Patrician 1
+character_event = {
+	id = NOV.6
+	hide_window = yes
+	
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = { 
+				394 = { has_trade_post = yes }
+			}
+			394 = { 
+				trade_post_owner = { character_event = { id = NOV.10 } }
+				seize_trade_post = ROOT 
+			}
+		}
+		wealth = 1000
+	}
+			
+	option = {
+		name = OK
+	}
+}
+
+# Set up Patrician 2
+character_event = {
+	id = NOV.7
+	hide_window = yes
+	
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = { 
+				395 = { has_trade_post = yes }
+			}
+			395 = { 
+				trade_post_owner = { character_event = { id = NOV.11 } }
+				seize_trade_post = ROOT
+			}
+		}
+		wealth = 1000
+	}
+			
+	option = {
+		name = OK
+	}
+}
+
+# Set up Patrician 3
+character_event = {
+	id = NOV.8
+	hide_window = yes
+	
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = { 
+				396 = { has_trade_post = yes }
+			}
+			396 = { 
+				trade_post_owner = { character_event = { id = NOV.12 } }
+				seize_trade_post = ROOT				
+			}
+		}
+		wealth = 1000
+	}
+			
+	option = {
+		name = OK
+	}
+}
+
+# Set up Patrician 4
+character_event = {
+	id = NOV.9
+	hide_window = yes
+	
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = { 
+				397 = { has_trade_post = yes }
+			}
+			397 = { 
+				trade_post_owner = { character_event = { id = NOV.13 } }
+				seize_trade_post = ROOT 
+			}
+		}
+		wealth = 1000
+	}
+			
+	option = {
+		name = OK
+	}
+}
+
+# Former Trade Post Owner Informed 394
+character_event = {
+	id = NOV.10
+	desc = EVTDESC_NOV_10
+	picture = GFX_evt_trade_post_republic
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Ingrates"
+		tooltip = {
+			394 = { 
+				seize_trade_post = FROM
+			}
+		}
+	}
+}
+
+# Former Trade Post Owner Informed 395
+character_event = {
+	id = NOV.11
+	desc = EVTDESC_NOV_10
+	picture = GFX_evt_trade_post_republic
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Ingrates"
+		tooltip = {
+			395 = { 
+				seize_trade_post = FROM
+			}
+		}
+	}
+}
+
+# Former Trade Post Owner Informed 396
+character_event = {
+	id = NOV.12
+	desc = EVTDESC_NOV_10
+	picture = GFX_evt_trade_post_republic
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Ingrates"
+		tooltip = {
+			396 = { 
+				seize_trade_post = FROM
+			}
+		}
+	}
+}
+
+# Former Trade Post Owner Informed 397
+character_event = {
+	id = NOV.13
+	desc = EVTDESC_NOV_10
+	picture = GFX_evt_trade_post_republic
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Ingrates"
+		tooltip = {
+			397 = { 
+				seize_trade_post = FROM
+			}
+		}
+	}
+}

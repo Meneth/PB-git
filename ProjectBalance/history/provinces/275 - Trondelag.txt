@@ -1,0 +1,30 @@
+# 275 - Trøndelag
+
+# County Title
+title = c_trondelag
+
+# Settlements
+max_settlements = 4
+b_audunborg = castle
+b_trondheim = city
+b_nidaros = temple
+b_steinvikholm = castle
+#b_sverresborg = castle
+#b_borgund = temple
+#b_austratt = castle
+#b_haltålen = temple 
+
+# Misc
+culture = norse
+religion = norse_pagan
+
+# History
+867.1.1 = {
+	b_trondheim = ct_marketplace_1
+}
+1066.1.1 = {
+	culture = norwegian
+	religion = catholic
+}
+1066.1.1 = { b_trondheim = ct_trade_post_1 }
+1066.1.1 = { trade_post = b_svinfellingar }

@@ -1,0 +1,29 @@
+1066.1.1={
+	holding_dynasty = 1000061349 #Motamedi - makes this a FAMILY_PALACE type Holding
+	liege="d_hormuz_republic"
+	holder = 1000158085
+}
+1113.1.1={
+	holder = 1000158091
+}
+1156.1.1={
+	holder = 1000158092
+}
+1162.1.1={
+	holder = 1000158093
+}
+1200.1.1={
+	holder = 1000158094
+}
+1212.1.1={
+	holder = 1000158095
+}
+1266.1.1={
+	holder = 1000158096
+}
+1298.1.1={
+	holder = 1000158097
+}
+1321.1.1={
+	holder = 1000158098
+}

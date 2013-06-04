@@ -1,0 +1,20 @@
+1066.1.1 = {
+	holding_dynasty = 7506 #Qubaybid - makes this a FAMILY_PALACE type Holding
+	liege="d_arabia_felix_republic"
+	holder = 191121
+}
+1100.1.1 = {
+	holder = 45054
+}
+1124.1.1={
+	holder = 191134
+}
+1200.1.1={
+	holder = 191135
+}
+1250.1.1={
+	holder = 191136
+}
+1310.1.1={
+	holder = 191137
+}

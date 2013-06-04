@@ -1,0 +1,18 @@
+# 116 - Liege
+
+# County Title
+title = c_liege
+
+# Settlements
+max_settlements = 4
+
+b_liege = temple
+b_huy = city
+b_bouillon = castle
+
+#b_fexhe = castle
+#b_aulne = castle
+
+# Misc
+culture = frankish
+religion = catholic

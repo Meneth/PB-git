@@ -1,0 +1,9 @@
+1000000 = {
+	name="von Selija"
+	culture = lettigallish
+}
+
+1000001 = {
+	name="von Jersika"
+	culture = lettigallish
+}

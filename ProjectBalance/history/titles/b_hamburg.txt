@@ -1,0 +1,71 @@
+# Treaty between the free cities of Lübeck and Hamburg - seed of the Hansa
+1000.1.1={
+	liege="c_hamburg"
+	holder=1000182100	#Nikolaus de Monte
+}
+1049.1.1={
+	holder=1000182201	#Johann Hoyer
+}
+1055.1.1={
+	holder=1000182302	#Christian Miles
+}
+1078.1.1={
+	holder=1000182404	#Hellingbern Hetvelt
+}
+1087.1.1={
+	holder=1000182505	#Bertram Horborch
+}
+1101.1.1={
+	holder=1000182103	#Nikolaus de Monte
+}
+1103.1.1={
+	holder=1000182204	#Heinrich Hoyer
+}
+1111.1.1={
+	holder=1000182304	#Christian Miles
+}
+1114.1.1={
+	holder=1000182406	#Helligbern Hetvelt
+}
+1129.1.1={
+	holder=1000182507	#Bertram Horborch
+}
+1155.1.1={
+	holder=1000182107	#Johann de Monte
+}
+1187.1.1={
+	holder=1000182108	#Heinrich de Monte
+}
+1199.1.1={
+	holder=1000182209	#Johann Hoyer
+}
+1208.1.1={
+	holder=1000182210	#Heinrich Hoyer
+}
+1232.1.1 = {
+	holder=1000182511	#Bertram Horborch
+}
+1244.1.1 = {
+	holder=1000182512	#Johann Horborch
+}
+1255.1.1 = {
+	holder=1000182311	#Johann Miles
+}
+1266.1.1 = {
+	holder=1000182216	#Heinrich Hoyer
+}
+1276.1.1 = {
+	holder=1000182414	#Hellingbernus Hetvelt
+}
+1293.1.1 = {
+	holder=1000182313	#Johan Miles 1300–1329
+}
+1325.1.1 = {
+	holder=1000182122	#Johannes de Monte 1325–1328
+}
+1328.1.1 = {
+	holder=1000182415	#Hinricus de Hetfeld 1325–1335
+}
+1335.1.1 = {
+	holder=1000182125	#Nicolaus de Monte 1341–1344
+}

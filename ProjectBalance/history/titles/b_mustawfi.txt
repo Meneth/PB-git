@@ -1,0 +1,32 @@
+1066.1.1={
+	holding_dynasty = 1031124 #Mustawfi - makes this a FAMILY_PALACE type Holding
+	liege="d_hormuz_republic"
+	holder = 1000158070
+}
+1102.1.1={
+	holder = 1000158073
+}
+1155.1.1={
+	holder = 1000158074
+}
+1188.1.1={
+	holder = 1000158075
+}
+1199.1.1={
+	holder = 1000158076
+}
+1235.1.1={
+	holder = 1000158077
+}
+1260.1.1={
+	holder = 1000158078
+}
+1278.1.1={
+	holder = 1000158079
+}
+1314.1.1={
+	holder = 1000158080
+}
+1336.1.1={
+	holder = 1000158081
+}

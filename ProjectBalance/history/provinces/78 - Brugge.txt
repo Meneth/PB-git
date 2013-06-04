@@ -1,0 +1,32 @@
+# 78 - Brugge
+
+# County Title
+title = c_brugge
+
+# Settlements
+max_settlements = 7
+b_sluys = castle
+b_brugge = city
+b_damme = temple
+#b_male = castle
+
+#b_oostende = city
+
+b_nieuwpoort = city
+#b_aardenburg = castle
+#b_torhout = castle
+
+# Misc
+culture = dutch
+religion = catholic
+
+# History
+1000.1.1 = { trade_post = b_miles }
+1066.1.1 = {
+	b_brugge = ct_trade_post_1
+	b_brugge = ct_trade_post_2
+	b_brugge = ct_trade_post_3
+}
+
+1187.1.1 = { b_male = castle }
+1337.1.1 = { b_oostende = city }

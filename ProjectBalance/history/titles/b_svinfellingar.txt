@@ -1,0 +1,8 @@
+1066.1.1 = {
+	holding_dynasty = 486
+	liege="d_iceland"
+	holder=102702
+}
+1264.1.1={
+	holder = 0
+}

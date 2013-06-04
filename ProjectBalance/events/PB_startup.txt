@@ -1,0 +1,96 @@
+###################################
+#
+# Startup event
+#
+# Id meneth.200 is reserved
+#
+#
+###################################
+
+namespace = meneth
+#Make sure all the provinces are correct religion again
+narrative_event = {
+	id = meneth.200
+	title = "meneth.200.name"
+	desc = "meneth.200.desc"
+	major = yes
+	hide_new = yes
+	hide_from = yes
+	is_triggered_only = yes
+	
+	picture = "GFX_evt_battle"
+	
+	immediate = {
+		#set_global_flag = pb_setup
+		336 = { culture = italian }
+		336 = { religion = catholic }
+		344 = { culture = italian }
+		344 = { religion = catholic }
+		609 = { religion = sunni }
+		610 = { religion = sunni }
+		613 = { religion = sunni }
+		614 = { religion = sunni }
+		615 = { religion = sunni }
+		695 = { religion = nestorian }
+		696 = { religion = nestorian }
+		700 = { religion = orthodox }
+		708 = { religion = miaphysite }
+		709 = { religion = orthodox }
+		712 = { religion = nestorian }
+		765 = { religion = orthodox }
+		766 = { religion = orthodox }
+		767 = { religion = monothelite }
+		770 = { religion = monothelite }
+		771 = { religion = monothelite }
+		772 = { religion = orthodox }
+		773 = { religion = orthodox }
+		790 = { religion = miaphysite }
+		792 = { religion = miaphysite }
+		793 = { religion = miaphysite }
+		874 = { religion = miaphysite }
+		875 = { religion = miaphysite }
+		876 = { religion = miaphysite }
+		878 = { religion = miaphysite }
+		879 = { religion = miaphysite }
+		880 = { religion = miaphysite }
+		881 = { religion = pagan }
+		882 = { religion = jewish }
+		883 = { religion = jewish }
+		884 = { religion = jewish }
+		885 = { religion = miaphysite }
+		919 = { religion = sunni }
+		948 = { religion = miaphysite }
+		949 = { religion = miaphysite }
+		950 = { religion = miaphysite }
+		951 = { religion = miaphysite }
+		952 = { religion = miaphysite }
+		955 = { religion = pagan }
+		956 = { religion = miaphysite }
+		957 = { religion = miaphysite }
+		if = {
+			limit = { NOT = { year = 1080 } }
+			794 = { religion = miaphysite }
+			795 = { religion = miaphysite }
+			797 = { religion = miaphysite }
+			802 = { religion = miaphysite }
+		}
+		e_byzantium = {
+			holder_scope = {
+				any_vassal = {
+					limit = { trait = content }
+					remove_trait = content
+				}
+			}
+		}
+		if = {
+			limit = { e_persia = { holder_scope = { has_landed_title = k_persia } } }
+			k_persia = {
+				destroy_landed_title = THIS
+			}
+		}
+	}
+	
+	option = {
+		name = "meneth.200.a"
+	}
+}

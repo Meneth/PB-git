@@ -1,0 +1,268 @@
+#Become old
+character_event = {
+	id = 1000109000
+	desc = "EVTDESC1000109000"
+	picture = "GFX_evt_pale_rider"
+	
+	trigger = {
+		age = 50
+		NOT = { has_character_modifier = old_age }
+		NOT = { trait = immortal }
+	}
+	
+	mean_time_to_happen = {
+		years = 5
+		modifier = {
+			trait = strong
+			factor = 1.5
+		}
+		modifier = {
+			trait = weak
+			factor = 0.8
+		}
+		modifier = {
+			trait = stressed
+			factor = 0.9
+		}
+		modifier = {
+			trait = depressed
+			factor = 0.9
+		}
+		modifier = {
+			trait = infirm
+			factor = 0.1
+		}
+		modifier = {
+			trait = incapable
+			factor = 0.1
+		}
+		modifier = {
+			trait = gluttonous
+			factor = 0.95
+		}
+		modifier = {
+			trait = diligent
+			factor = 0.95
+		}
+		modifier = {
+			trait = lunatic
+			factor = 0.9
+		}
+		modifier = {
+			trait = possessed
+			factor = 0.9
+		}
+		modifier = {
+			trait = ill
+			factor = 0.75
+		}
+		modifier = {
+			trait = maimed
+			factor = 0.75
+		}
+		modifier = {
+			age = 51
+			factor = 0.9
+		}
+		modifier = {
+			age = 52
+			factor = 0.9
+		}
+		modifier = {
+			age = 53
+			factor = 0.9
+		}
+		modifier = {
+			age = 54
+			factor = 0.8
+		}
+		modifier = {
+			age = 55
+			factor = 0.8
+		}
+		modifier = {
+			age = 56
+			factor = 0.7
+		}
+		modifier = {
+			age = 57
+			factor = 0.7
+		}
+		modifier = {
+			age = 58
+			factor = 0.6
+		}
+		modifier = {
+			age = 59
+			factor = 0.6
+		}
+		modifier = {
+			age = 60
+			factor = 0.5
+		}
+		modifier = {
+			age = 61
+			factor = 0.4
+		}
+		modifier = {
+			age = 62
+			factor = 0.3
+		}
+		modifier = {
+			age = 63
+			factor = 0.2
+		}
+		modifier = {
+			age = 64
+			factor = 0.1
+		}
+		modifier = {
+			age = 65
+			factor = 0.09
+		}
+		modifier = {
+			age = 66
+			factor = 0.09
+		}
+		modifier = {
+			age = 67
+			factor = 0.09
+		}
+		modifier = {
+			age = 68
+			factor = 0.09
+		}
+		modifier = {
+			age = 69
+			factor = 0.08
+		}
+		modifier = {
+			age = 70
+			factor = 0.08
+		}
+		modifier = {
+			age = 71
+			factor = 0.08
+		}
+		modifier = {
+			age = 72
+			factor = 0.08
+		}
+		modifier = {
+			age = 73
+			factor = 0.07
+		}
+		modifier = {
+			age = 74
+			factor = 0.07
+		}
+		modifier = {
+			age = 75
+			factor = 0.07
+		}
+		modifier = {
+			age = 76
+			factor = 0.07
+		}
+		modifier = {
+			age = 77
+			factor = 0.06
+		}
+		modifier = {
+			age = 78
+			factor = 0.06
+		}
+		modifier = {
+			age = 79
+			factor = 0.06
+		}
+		modifier = {
+			age = 80
+			factor = 0.05
+		}
+		modifier = {
+			age = 81
+			factor = 0.04
+		}
+		modifier = {
+			age = 82
+			factor = 0.03
+		}
+		modifier = {
+			age = 83
+			factor = 0.02
+		}
+		modifier = {
+			age = 84
+			factor = 0.01
+		}
+		modifier = {
+			age = 85
+			factor = 0.01
+		}
+		modifier = {
+			age = 86
+			factor = 0.01
+		}
+		modifier = {
+			age = 87
+			factor = 0.01
+		}
+		modifier = {
+			age = 88
+			factor = 0.01
+		}
+		modifier = {
+			age = 89
+			factor = 0.01
+		}
+		modifier = {
+			age = 90
+			factor = 0.01
+		}
+		modifier = {
+			age = 91
+			factor = 0.01
+		}
+		modifier = {
+			age = 92
+			factor = 0.01
+		}
+		modifier = {
+			age = 93
+			factor = 0.01
+		}
+		modifier = {
+			age = 94
+			factor = 0.01
+		}
+		modifier = {
+			age = 95
+			factor = 0.01
+		}
+		modifier = {
+			age = 96
+			factor = 0.01
+		}
+		modifier = {
+			age = 97
+			factor = 0.01
+		}
+		modifier = {
+			age = 98
+			factor = 0.01
+		}
+		modifier = {
+			age = 99
+			factor = 0.01
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA1000109000"
+		add_character_modifier = {
+			name = old_age
+			duration = -1
+		}		
+	}
+}

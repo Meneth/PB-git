@@ -1,0 +1,42 @@
+d_norman_company = {
+	color={ 121 24 38 }
+	color2={ 255 255 255 }
+
+	capital = 32 # Middlesex
+	
+	mercenary = yes
+	
+	# Hire Trigger
+	allow = {
+		religion_group = christian
+	}
+	
+	# Parent Religion 
+	religion = catholic
+	culture = norman
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	strength_growth_per_century = 1.0
+
+	modifier = d_norman_company_modifier
+}
+
+e_hre_french = {
+	color={ 11 22 170 }
+	color2={ 255 255 20 }
+	
+	capital = 112 # Ile de France
+	
+	culture = frankish
+	short_name = yes
+	
+	allow = { always = no }
+}

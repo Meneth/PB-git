@@ -1,0 +1,31 @@
+b_mikulinich = {
+	culture = russian
+	religion = orthodox
+}
+b_miroslavich = {
+	culture = russian
+	religion = orthodox
+}
+b_ivankovich = {
+	culture = russian
+	religion = orthodox
+}
+b_tverdiatich = {
+	culture = russian
+	religion = orthodox
+}
+b_zakharyinich = {
+	culture = russian
+	religion = orthodox
+}
+
+k_novgorod_republic = {
+	culture = russian
+	capital = 411 #vodi
+	dignity = 200
+	color={ 85 107 47 }
+	allow = {
+		is_republic = yes
+		lower_tier_than = king
+	}
+}

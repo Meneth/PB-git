@@ -1,0 +1,39 @@
+102700 = { 
+	name="Gils" #Grandfather of clan founder
+	dynasty= 484 #Sturlungar
+	religion="catholic"
+	culture="norwegian"
+	1048.1.1={
+		birth="1048.1.1"
+	} #18 at game start
+	1080.1.1={
+		death="1080.1.1"
+	}
+}
+
+102701 = { 
+	name="Flosi" #Clan founder, was dead by now
+	dynasty= 485 #Svenfellingar
+	religion="catholic"
+	culture="norwegian"
+	1048.1.1={
+		birth="1048.1.1"
+	} #18 at game start
+	1080.1.1={
+		death="1080.1.1"
+	}
+}
+
+
+102702 = { 
+	name="Helgi" #First settled stronghold, was dead by now
+	dynasty= 486 #Vatnsfirðingar
+	religion="catholic"
+	culture="norwegian"
+	1048.1.1={
+		birth="1048.1.1"
+	} #18 at game start
+	1080.1.1={
+		death="1080.1.1"
+	}
+}

@@ -1,0 +1,886 @@
+#Republic of Aden, made up or extrapolated
+191120 = { #father of historical char
+	name="Hatim"
+	dynasty=7505 #Hatimid
+	religion="shiite"
+	culture="bedouin_arabic"
+	1022.1.1={
+		birth="1022.1.1"
+	}
+	1080.1.1={
+		death="1080.1.1"
+	}
+}
+191121 = { #father of historical char
+	name="Qubay"
+	dynasty=7506 #Qubaybid
+	religion="shiite"
+	culture="bedouin_arabic"
+	1040.1.1={
+		birth="1040.1.1"
+	}
+	1100.1.1={
+		death="1100.1.1"
+	}
+}
+191122 = { #fake ancestry back to 1066
+	name="Rasul"
+	dynasty=139 #Rasulid
+	religion="sunni"
+	culture="bedouin_arabic"
+	father=1000158141
+	1040.1.1={
+		birth="1040.1.1"
+	}
+	1125.1.1={
+		death="1125.1.1"
+	}
+}
+191123 = {
+	name="Ali"
+	dynasty=139 #Rasulid
+	religion="sunni"
+	culture="bedouin_arabic"
+	father=191122
+	1120.1.1={
+		birth="1120.1.1"
+	}
+	1210.1.1={
+		death="1210.1.1"
+	}
+}
+#Invented Rassids
+191124 = {
+	name="Ahmad"
+	dynasty=576 #Rassid
+	religion="shiite"
+	culture="bedouin_arabic"
+	add_trait="sayyid"
+	father=45059
+	1145.1.1={
+		birth="1145.1.1"
+	}
+	1171.1.1={
+		religion = sunni
+	}
+	1220.1.1={
+		death="1220.1.1"
+	}
+}
+191125 = {
+	name="Muhammad"
+	dynasty=576 #Rassid
+	religion="sunni"
+	culture="bedouin_arabic"
+	add_trait="sayyid"
+	father=191124
+	1180.1.1={
+		birth="1180.1.1"
+	}
+	1260.1.1={
+		death="1260.1.1"
+	}
+}
+191126 = {
+	name="Ali"
+	dynasty=576 #Rassid
+	religion="sunni"
+	culture="bedouin_arabic"
+	add_trait="sayyid"
+	father=191125
+	1220.1.1={
+		birth="1220.1.1"
+	}
+	1300.1.1={
+		death="1300.1.1"
+	}
+}
+191127 = {
+	name="Hasan"
+	dynasty=576 #Rassid
+	religion="sunni"
+	culture="bedouin_arabic"
+	add_trait="sayyid"
+	father=191126
+	1270.1.1={
+		birth="1270.1.1"
+	}
+	1350.1.1={
+		death="1350.1.1"
+	}
+}
+191128 = {
+	name="Ali"
+	dynasty=576 #Rassid
+	religion="sunni"
+	culture="bedouin_arabic"
+	add_trait="sayyid"
+	father=191127
+	1310.1.1={
+		birth="1310.1.1"
+	}
+	1390.1.1={
+		death="1390.1.1"
+	}
+}
+#Invented Hatimids
+191129 = {
+	name="Is'mail"
+	dynasty=7505 #Hatimid
+	religion="shiite"
+	culture="bedouin_arabic"
+	father=45053
+	1115.1.1={
+		birth="1115.1.1"
+	}
+	1171.1.1={
+		religion = sunni
+	}
+	1200.1.1={
+		death="1200.1.1"
+	}
+}
+191130 = {
+	name="Aram"
+	dynasty=7505 #Hatimid
+	religion="shiite"
+	culture="bedouin_arabic"
+	father=191129
+	1150.1.1={
+		birth="1150.1.1"
+	}
+	1171.1.1={
+		religion = sunni
+	}
+	1240.1.1={
+		death="1240.1.1"
+	}
+}
+191131 = {
+	name="Bahir"
+	dynasty=7505 #Hatimid
+	religion="sunni"
+	culture="bedouin_arabic"
+	father=191130
+	1190.1.1={
+		birth="1190.1.1"
+	}
+	1280.1.1={
+		death="1280.1.1"
+	}
+}
+191132 = {
+	name="Khalil"
+	dynasty=7505 #Hatimid
+	religion="sunni"
+	culture="bedouin_arabic"
+	father=191131
+	1240.1.1={
+		birth="1240.1.1"
+	}
+	1320.1.1={
+		death="1320.1.1"
+	}
+}
+191133 = {
+	name="Yusuf"
+	dynasty=7505 #Hatimid
+	religion="sunni"
+	culture="bedouin_arabic"
+	father=191132
+	1280.1.1={
+		birth="1280.1.1"
+	}
+	1370.1.1={
+		death="1370.1.1"
+	}
+}
+#Invented Qubaybids
+191134 = {
+	name="Sulayman"
+	dynasty=7506 #Qubaybid
+	religion="shiite"
+	culture="bedouin_arabic"
+	father=45054
+	1120.1.1={
+		birth="1120.1.1"
+	}
+	1171.1.1={
+		religion = sunni
+	}
+	1200.1.1={
+		death="1200.1.1"
+	}
+}
+191135 = {
+	name="Ghalib"
+	dynasty=7506 #Qubaybid
+	religion="shiite"
+	culture="bedouin_arabic"
+	father=191134
+	1160.1.1={
+		birth="1160.1.1"
+	}
+	1171.1.1={
+		religion = sunni
+	}
+	1250.1.1={
+		death="1250.1.1"
+	}
+}
+191136 = {
+	name="Ibrahim"
+	dynasty=7506 #Qubaybid
+	religion="sunni"
+	culture="bedouin_arabic"
+	father=191135
+	1220.1.1={
+		birth="1220.1.1"
+	}
+	1310.1.1={
+		death="1310.1.1"
+	}
+}
+191137 = {
+	name="Muhammad"
+	dynasty=7506 #Qubaybid
+	religion="sunni"
+	culture="bedouin_arabic"
+	father=191136
+	1260.1.1={
+		birth="1260.1.1"
+	}
+	1350.1.1={
+		death="1350.1.1"
+	}
+}
+#Invented Sulahids
+191138 = {
+	name="Faruk"
+	dynasty=590 #Sulahid
+	religion="shiite"
+	culture="bedouin_arabic"
+	father=45036
+	1060.1.1={
+		birth="1060.1.1"
+	}
+	1150.1.1={
+		death="1150.1.1"
+	}
+}
+191139 = {
+	name="Ya'qub"
+	dynasty=590 #Sulahid
+	religion="shiite"
+	culture="bedouin_arabic"
+	father=191138
+	1110.1.1={
+		birth="1110.1.1"
+	}
+	1171.1.1={
+		religion = sunni
+	}
+	1200.1.1={
+		death="1200.1.1"
+	}
+}
+191140 = {
+	name="Bahir"
+	dynasty=590 #Sulahid
+	religion="shiite"
+	culture="bedouin_arabic"
+	father=191139
+	1160.1.1={
+		birth="1160.1.1"
+	}
+	1171.1.1={
+		religion = sunni
+	}
+	1250.1.1={
+		death="1250.1.1"
+	}
+}
+191141 = {
+	name="Muhammad"
+	dynasty=590 #Sulahid
+	religion="sunni"
+	culture="bedouin_arabic"
+	father=191140
+	1220.1.1={
+		birth="1220.1.1"
+	}
+	1310.1.1={
+		death="1310.1.1"
+	}
+}
+191142 = {
+	name="Ramadan"
+	dynasty=590 #Sulahid
+	religion="sunni"
+	culture="bedouin_arabic"
+	father=191141
+	1260.1.1={
+		birth="1260.1.1"
+	}
+	1350.1.1={
+		death="1350.1.1"
+	}
+}
+191143 = {
+	name="Hasan"
+	dynasty=590 #Sulahid
+	religion="sunni"
+	culture="bedouin_arabic"
+	father=191142
+	1300.1.1={
+		birth="1300.1.1"
+	}
+	1380.1.1={
+		death="1380.1.1"
+	}
+}
+191144 = {
+	name="Aghlab"
+	dynasty=7505 #Hatimid
+	religion="sunni"
+	culture="bedouin_arabic"
+	father=191133
+	1320.1.1={
+		birth="1320.1.1"
+	}
+	1390.1.1={
+		death="1390.1.1"
+	}
+}
+191145 = {
+	name="Fadl"
+	dynasty=7506 #Qubaybid
+	religion="sunni"
+	culture="bedouin_arabic"
+	father=191137
+	1300.1.1={
+		birth="1300.1.1"
+	}
+	1390.1.1={
+		death="1390.1.1"
+	}
+}
+######################################################################
+#Expanded Fictional Characters for 1066 Start (organized by family)
+#Uses IDs 1000158131 - 1000158159
+######################################################################
+
+#Qubaybids 
+1000158131 = {
+	name="Muslihiddin"
+	dynasty=7506 #Qubaybid
+	religion="shiite"
+	culture="bedouin_arabic"
+	add_trait="cynical"
+	add_trait="honest"
+	add_trait="wroth"
+	father=191121
+	1060.1.1={
+		birth="1060.1.1"
+	}
+	1113.1.1={
+		death="1113.1.1"
+	}
+}
+1000158132 = {
+	name="Shujah"
+	dynasty=7506 #Qubaybid
+	religion="shiite"
+	culture="bedouin_arabic"
+	add_trait="kind"
+	add_trait="charitable"
+	add_trait="proud"
+	father=191121
+	1061.1.1={
+		birth="1061.1.1"
+	}
+	1129.1.1={
+		death="1129.1.1"
+	}
+}
+1000158133 = {
+	name="Abdul-Gafur"
+	dynasty=7506 #Qubaybid
+	religion="shiite"
+	culture="bedouin_arabic"
+	add_trait="ambitious"
+	add_trait="arbitrary"
+	add_trait="greedy"
+	father=191121
+	1066.1.1={
+		birth="1066.1.1"
+	}
+	1119.1.1={
+		death="1119.1.1"
+	}
+}
+1000158134 = {
+	name="Idris"
+	dynasty=7506 #Qubaybid
+	religion="shiite"
+	culture="bedouin_arabic"
+	add_trait="content"
+	add_trait="patient"
+	add_trait="paranoid"
+	father=191121
+	1058.1.1={
+		birth="1058.1.1"
+	}
+	1137.1.1={
+		death="1137.1.1"
+	}
+}
+1000158135 = {
+	name="Mubarak"
+	dynasty=7506 #Qubaybid
+	religion="shiite"
+	culture="bedouin_arabic"
+	add_trait="poet"
+	add_trait="envious"
+	add_trait="gregarious"
+	father=191121
+	1063.1.1={
+		birth="1063.1.1"
+	}
+	1125.1.1={
+		death="1125.1.1"
+	}
+}
+
+#Hatimids
+1000158136 = {
+	name="Hatim"
+	dynasty=7505 #Hatimid
+	religion="shiite"
+	culture="bedouin_arabic"
+	add_trait="just"
+	add_trait="diligent"
+	add_trait="wroth"
+	father=191120
+	1040.1.1={
+		birth="1040.1.1"
+	}
+	1086.1.1={
+		death="1086.1.1"
+	}
+}
+1000158137 = {
+	name="Sadiq"
+	dynasty=7505 #Hatimid
+	religion="shiite"
+	culture="bedouin_arabic"
+	add_trait="scholar"
+	add_trait="shy"
+	add_trait="temperate"
+	father=191120
+	1041.1.1={
+		birth="1041.1.1"
+	}
+	1135.1.1={
+		death="1135.1.1"
+	}
+}
+1000158138 = {
+	name="Aghlab"
+	dynasty=7505 #Hatimid
+	religion="shiite"
+	culture="bedouin_arabic"
+	add_trait="brave"
+	add_trait="lustful"
+	add_trait="hedonist"
+	father=191120
+	1045.1.1={
+		birth="1045.1.1"
+	}
+	1071.1.1={
+		death="1071.1.1"
+	}
+}
+1000158139 = {
+	name="Aarif"
+	dynasty=7505 #Hatimid
+	religion="shiite"
+	culture="bedouin_arabic"
+	add_trait="weak"
+	add_trait="fair"
+	add_trait="trusting"
+	add_trait="chaste"
+	father=1000158138
+	1063.1.1={
+		birth="1063.1.1"
+	}
+	1142.1.1={
+		death="1142.1.1"
+	}
+}
+1000158140 = {
+	name="Jibril"
+	dynasty=7505 #Hatimid
+	religion="shiite"
+	culture="bedouin_arabic"
+	add_trait="stutter"
+	add_trait="diligent"
+	add_trait="patient"
+	father=1000158137
+	1056.1.1={
+		birth="1056.1.1"
+	}
+	1120.1.1={
+		death="1120.1.1"
+	}
+}
+
+#Rasulids
+1000158141 = {
+	name="Rasul"
+	dynasty=139 #Rasulid
+	religion="sunni"
+	culture="bedouin_arabic"
+	add_trait="impaler"
+	add_trait="craven"
+	add_trait="cruel"
+	1007.1.1={
+		birth="1007.1.1"
+	}
+	1066.1.1={
+		death="1066.1.1"
+	}
+}
+1000158142 = {
+	name="Sulayman"
+	dynasty=139 #Rasulid
+	religion="sunni"
+	culture="bedouin_arabic"
+	add_trait="hunter"
+	add_trait="brave"
+	add_trait="patient"
+	father=1000158141
+	1028.1.1={
+		birth="1028.1.1"
+	}
+	1077.1.1={
+		death="1077.1.1"
+	}
+}
+1000158143 = {
+	name="Qawurd"
+	dynasty=139 #Rasulid
+	religion="sunni"
+	culture="bedouin_arabic"
+	add_trait="zealous"
+	add_trait="deceitful"
+	add_trait="gluttonous"
+	father=1000158142
+	1050.1.1={
+		birth="1050.1.1"
+	}
+	1123.1.1={
+		death="1123.1.1"
+	}
+}
+1000158144 = {
+	name="Ya'qub"
+	dynasty=139 #Rasulid
+	religion="sunni"
+	culture="bedouin_arabic"
+	add_trait="cynical"
+	add_trait="honest"
+	add_trait="temperate"
+	father=1000158142
+	1053.1.1={
+		birth="1053.1.1"
+	}
+	1111.1.1={
+		death="1111.1.1"
+	}
+}
+1000158145 = {
+	name="Shaiban"
+	dynasty=139 #Rasulid
+	religion="sunni"
+	culture="bedouin_arabic"
+	add_trait="strong"
+	father=1000158143
+	1066.1.1={
+		birth="1066.1.1"
+	}
+	1148.1.1={
+		death="1148.1.1"
+	}
+}
+
+#Sulaihids
+1000158146 = {
+	name="Ali"
+	dynasty=590
+	religion="shiite"
+	culture="bedouin_arabic"
+	add_trait="fair"
+	add_trait="kind"
+	add_trait="cynical"
+	add_trait="just"
+	father=45035
+	1025.1.1={
+		birth="1025.1.1"
+	}
+	1088.1.1={
+		death="1088.1.1"
+	}
+}
+1000158147 = {
+	name="Tanaz" #Ice Cream's Sis
+	female=yes
+	dynasty=590
+	religion="shiite"
+	culture="bedouin_arabic"
+	add_trait="genius"
+	add_trait="diligent"
+	add_trait="proud"
+	add_trait="just"
+	add_trait="temperate"
+	add_trait="gregarious"
+	father=1000158146
+	1046.1.1={
+		birth="1046.1.1"
+	}
+	1122.1.1={
+		death="1122.1.1"
+	}
+}
+1000158148 = { #Ice Cream
+	name="Hussayn Ubayd"
+	dynasty=590
+	religion="shiite"
+	culture="bedouin_arabic"
+	add_trait="genius"
+	add_trait="kind"
+	add_trait="cynical"
+	add_trait="slothful"
+	add_trait="content"
+	add_trait="patient"
+	add_trait="humble"
+	father=1000158146
+	1050.1.1={
+		birth="1050.1.1"
+	}
+	1066.1.1 = {
+		add_spouse=1000158151
+		effect = {
+			add_lover = 1000158151
+		}
+	}
+	1139.1.1={
+		death="1139.1.1"
+	}
+}
+1000158149 = { #Ice Cream's BF
+	name="Sa'daddin"
+	dynasty=590
+	religion="shiite"
+	culture="bedouin_arabic"
+	add_trait="envious"
+	add_trait="diligent"
+	add_trait="proud"
+	add_trait="gregarious"
+	add_trait="deceitful"
+	father=45035
+	1027.1.1={
+		birth="1027.1.1"
+	}
+	1095.1.1={
+		death="1095.1.1"
+	}
+}
+1000158150 = { #Ice Cream & Tsuntsun
+	name="Maryam"
+	female=yes
+	dynasty=590
+	religion="shiite"
+	culture="bedouin_arabic"
+	add_trait="diligent"
+	add_trait="proud"
+	add_trait="honest"
+	add_trait="just"
+	add_trait="wroth"
+	father=1000158149
+	1048.1.1={
+		birth="1048.1.1"
+	}
+	1113.1.1={
+		death="1113.1.1"
+	}
+}
+1000158151 = { #Ice Cream & Curiosity
+	name="Urdia"
+	female=yes
+	dynasty=590
+	religion="shiite"
+	culture="bedouin_arabic"
+	add_trait="fair"
+	add_trait="slow"
+	add_trait="kind"
+	add_trait="trusting"
+	add_trait="shy"
+	add_trait="humble"
+	add_trait="diligent"
+	father=1000158149
+	1050.1.1={
+		birth="1050.1.1"
+	}
+	1139.1.1={
+		death="1139.1.1"
+	}
+}
+1000158159 = { #Ice Cream & Empress
+	name="Yasmin"
+	female=yes
+	dynasty=590
+	religion="shiite"
+	culture="bedouin_arabic"
+	add_trait="strong"
+	add_trait="deceitful"
+	add_trait="diligent"
+	add_trait="proud"
+	add_trait="cruel"
+	add_trait="zealous"
+	father=1000158149
+	1048.1.1={
+		birth="1048.1.1"
+	}
+	1122.1.1={
+		death="1122.1.1"
+	}
+}
+
+#Rassids
+1000158152 = {
+	name="Mansur"
+	dynasty=576
+	religion="shiite"
+	culture="bedouin_arabic"
+	add_trait="sayyid"
+	add_trait="cruel"
+	add_trait="wroth"
+	add_trait="slow"
+	add_claim = d_shiite
+	father=45050
+	1066.1.1={
+		birth="1066.1.1"
+	}
+	1088.1.1={
+		death="1088.1.1"
+	}
+}
+1000158153 = {
+	name="Ramadan"
+	dynasty=576
+	religion="shiite"
+	culture="bedouin_arabic"
+	add_trait="sayyid"
+	add_trait="arbitrary"
+	add_trait="humble"
+	add_trait="charitable"
+	add_claim = d_shiite
+	father=45048
+	1049.1.1={
+		birth="1049.1.1"
+	}
+	1110.1.1={
+		death="1110.1.1"
+	}
+}
+1000158154 = {
+	name="Asiya"
+	female=yes
+	dynasty=576
+	religion="shiite"
+	culture="bedouin_arabic"
+	add_trait="sayyid"
+	add_trait="gregarious"
+	add_trait="kind"
+	add_trait="greedy"
+	father=45048
+	1050.1.1={
+		birth="1050.1.1"
+	}
+	1111.1.1={
+		death="1111.1.1"
+	}
+}
+1000158155 = {
+	name="Nizam"
+	dynasty=576
+	religion="shiite"
+	culture="bedouin_arabic"
+	add_trait="sayyid"
+	add_trait="kinslayer"
+	add_trait="zealous"
+	add_trait="ambitious"
+	add_claim = d_shiite
+	father=159422
+	1017.1.1={
+		birth="1017.1.1"
+	}
+	1078.1.1={
+		death="1078.1.1"
+	}
+}
+1000158156 = {
+	name="Talib"
+	dynasty=576
+	religion="shiite"
+	culture="bedouin_arabic"
+	add_trait="sayyid"
+	add_trait="chaste"
+	add_trait="craven"
+	add_trait="paranoid"
+	add_claim = d_shiite
+	father=1000158155
+	1039.1.1={
+		birth="1039.1.1"
+	}
+	1086.1.1={
+		death="1086.1.1"
+	}
+}
+1000158157 = {
+	name="Yasmin"
+	female=yes
+	dynasty=576
+	religion="shiite"
+	culture="bedouin_arabic"
+	add_trait="sayyid"
+	add_trait="fair"
+	add_trait="lustful"
+	add_trait="gregarious"
+	father=1000158155
+	1051.1.1={
+		birth="1051.1.1"
+	}
+	1099.1.1={
+		death="1099.1.1"
+	}
+}
+1000158158 = {
+	name="Faruk"
+	dynasty=576
+	religion="shiite"
+	culture="bedouin_arabic"
+	add_trait="sayyid"
+	add_trait="temperate"
+	add_trait="patient"
+	add_trait="envious"
+	add_claim = d_shiite
+	father=1000158155
+	1044.1.1={
+		birth="1044.1.1"
+	}
+	1123.1.1={
+		death="1123.1.1"
+	}
+}

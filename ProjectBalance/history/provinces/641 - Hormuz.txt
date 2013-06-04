@@ -1,0 +1,29 @@
+# 641 - Hormuz
+
+# County Title
+title = c_hormuz
+
+# Settlements
+max_settlements = 6
+b_gombroon = castle
+b_abarkawan = city
+#b_abu_musa = castle
+
+b_jiroth = temple
+#b_minab = castle
+#b_bam = castle
+#b_kish = castle
+#b_fin = castle
+
+# Misc
+culture = persian
+religion = sunni
+
+# History
+1066.1.1 = {
+	b_abarkawan = ct_trade_post_1
+	b_abarkawan = ct_trade_post_2
+	capital = b_abarkawan
+	trade_post = b_motamedi
+}
+1337.1.1 = { b_minab = castle }

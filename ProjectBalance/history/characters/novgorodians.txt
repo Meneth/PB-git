@@ -1,0 +1,387 @@
+5552221 = {
+	name="Nifont"
+	dynasty=0
+	religion="orthodox"
+	culture="russian"
+	add_trait = content
+	1100.1.2={
+		birth="1100.1.2"
+	}
+	1156.1.1={
+		death="1156.1.1"
+	}
+}
+5552222 = {
+	name="Ivan"
+	dynasty=0
+	religion="orthodox"
+	culture="russian"
+	1100.1.2={
+		birth="1100.1.2"
+	}
+	1157.1.2={
+		death="1157.1.2"
+	}
+}
+5552223 = {
+	name="Vladimir"
+	dynasty=0
+	religion="orthodox"
+	culture="russian"
+	1100.1.2={
+		birth="1100.1.2"
+	}
+	1157.1.2={
+		death="1157.1.2"
+	}
+}
+
+# Archbishops of Novgorod
+
+5552224 = {
+	name="Arkady"
+	dynasty=0
+	religion="orthodox"
+	culture="russian"
+	add_trait = content
+	1126.1.1={
+		birth="1126.1.1"
+	}
+	1163.1.1={
+		death="1163.1.1"
+	}
+}
+5552225 = {
+	name="Ilya"
+	dynasty=0
+	religion="orthodox"
+	culture="russian"
+	add_trait = content
+	add_trait = zealous
+	1126.1.1={
+		birth="1126.1.1"
+	}
+	1186.1.1={
+		death="1186.1.1"
+	}
+}
+5552226 = {
+	name="Gavril"
+	dynasty=0
+	religion="orthodox"
+	culture="russian"
+	add_trait = content
+	1126.1.1={
+		birth="1126.1.1"
+	}
+	1193.1.1={
+		death="1193.1.1"
+	}
+}
+5552227 = {
+	name="Martiry Rushanin"
+	dynasty=0
+	religion="orthodox"
+	culture="russian"
+	add_trait = content
+	1130.1.1={
+		birth="1130.1.1"
+	}
+	1199.1.1={
+		death="1199.1.1"
+	}
+}
+5552228 = {
+	name="Mitrofan"
+	dynasty=0
+	religion="orthodox"
+	culture="russian"
+	add_trait = content
+	1170.1.1={
+		birth="1170.1.1"
+	}
+	1223.1.1={
+		death="1223.1.1"
+	}
+}
+5552229 = {
+	name="Antony"
+	dynasty=0
+	religion="orthodox"
+	culture="russian"
+	add_trait = content
+	1170.1.1={
+		birth="1170.1.1"
+	}
+	1230.1.1={
+		death="1230.1.1"
+	}
+}
+
+5552230 = {
+	name="Arseny"
+	dynasty=0
+	religion="orthodox"
+	culture="russian"
+	add_trait = content
+	1170.1.1={
+		birth="1170.1.1"
+	}
+	1229.1.1={
+		death="1229.1.1"
+	}
+}
+5552231 = {
+	name="Spiridon"
+	dynasty=0
+	religion="orthodox"
+	culture="russian"
+	add_trait = content
+	1180.1.1={
+		birth="1180.1.1"
+	}
+	1249.1.1={
+		death="1249.1.1"
+	}
+}
+5552232 = {
+	name="Dalmat"
+	dynasty=0
+	religion="orthodox"
+	culture="russian"
+	add_trait = content
+	1220.1.1={
+		birth="1220.1.1"
+	}
+	1274.1.1={
+		death="1274.1.1"
+	}
+}
+5552233 = {
+	name="Kliment"
+	dynasty=0
+	religion="orthodox"
+	culture="russian"
+	add_trait = content
+	1230.1.1={
+		birth="1230.1.1"
+	}
+	1299.1.1={
+		death="1299.1.1"
+	}
+}
+5552234 = {
+	name="Feoktist"
+	dynasty=0
+	religion="orthodox"
+	culture="russian"
+	add_trait = content
+	1245.1.1={
+		birth="1245.1.1"
+	}
+	1310.1.1={
+		death="1310.1.1"
+	}
+}
+5552235 = {
+	name="David"
+	dynasty=0
+	religion="orthodox"
+	culture="russian"
+	add_trait = content
+	1260.1.1={
+		birth="1260.1.1"
+	}
+	1325.1.1={
+		death="1325.1.1"
+	}
+}
+
+# Fictional patricians
+5552236 = {
+	name="Mikhail" #mikulinich patrician
+	dynasty=11101
+	religion="orthodox"
+	culture="russian"
+	father=125224
+	1110.1.2={
+		birth="1110.1.2"
+	}
+	1176.1.1={
+		death="1176.1.1"
+	}
+}
+
+5552237 = {
+	name="Miroslav" #miroslavich
+	dynasty=11102
+	religion="orthodox"
+	culture="russian"
+	1140.1.2={
+		birth="1140.1.2"
+	}
+	1200.1.2={
+		death="1200.1.2"
+	}
+}
+
+5552238 = {
+	name="Ivan" #Ivankovich
+	dynasty=11103
+	religion="orthodox"
+	culture="russian"
+	father=125226
+	1130.1.2={
+		birth="1130.1.2"
+	}
+	1187.1.2={
+		death="1187.1.2"
+	}
+}
+
+5552239 = {
+	name="Vasily" #Tverdiatich
+	dynasty=11104
+	religion="orthodox"
+	culture="russian"
+	father=125227
+	1130.1.2={
+		birth="1130.1.2"
+	}
+	1191.1.2={
+		death="1191.1.2"
+	}
+}
+
+5552240 = {
+	name="Mitrofan" #Tverdiatich
+	dynasty=11104
+	religion="orthodox"
+	culture="russian"
+	1160.1.2={
+		birth="1160.1.2"
+	}
+	1230.1.2={
+		death="1230.1.2"
+	}
+}
+
+5552241 = {
+	name="Borislav" #miroslavich
+	dynasty=11102
+	religion="orthodox"
+	culture="russian"
+	1170.1.2={
+		birth="1170.1.2"
+	}
+	1240.1.2={
+		death="1240.1.2"
+	}
+}
+5552242 = {
+	name="Yaropolk" #Zakhary
+	dynasty=11105
+	religion="orthodox"
+	culture="russian"
+	father=125231
+	1185.1.2={
+		birth="1185.1.2"
+	}
+	1260.1.2={
+		death="1260.1.2"
+	}
+}
+
+5552247 = {
+	name="Dmitriy"
+	dynasty=11108
+	religion="orthodox"
+	culture="russian"
+	father=125235
+	1186.1.2={
+		birth="1186.1.2"
+	}
+	1256.1.2={
+		death="1256.1.2"
+	}
+}
+
+# More lowborn counts
+
+5552243 = {
+	name="Ivan"
+	dynasty=0
+	religion="orthodox"
+	culture="russian"
+	1137.1.2={
+		birth="1137.1.2"
+	}
+	1187.1.2={
+		death="1187.1.2"
+	}
+}
+
+5552244 = {
+	name="Ivan"
+	dynasty=0
+	religion="orthodox"
+	culture="russian"
+	1166.1.2={
+		birth="1166.1.2"
+	}
+	1210.1.2={
+		death="1210.1.2"
+	}
+}
+
+5552245 = {
+	name="Vladimir"
+	dynasty=0
+	religion="orthodox"
+	culture="russian"
+	1120.1.2={
+		birth="1120.1.2"
+	}
+	1190.1.2={
+		death="1190.1.2"
+	}
+}
+
+5552246 = {
+	name="Vladimir"
+	dynasty=0
+	religion="orthodox"
+	culture="russian"
+	1160.1.2={
+		birth="1160.1.2"
+	}
+	1240.1.2={
+		death="1240.1.2"
+	}
+}
+
+5552248 = {
+	name="Zakhary"
+	dynasty=11105
+	religion="orthodox"
+	culture="russian"
+	1200.1.2={
+		birth="1200.1.2"
+	}
+	1266.1.2={
+		death="1266.1.2"
+	}
+}
+
+5552249 = {
+	name="Antony"
+	dynasty=11104
+	religion="orthodox"
+	culture="russian"
+	1200.1.2={
+		birth="1200.1.2"
+	}
+	1276.1.2={
+		death="1276.1.2"
+	}
+}

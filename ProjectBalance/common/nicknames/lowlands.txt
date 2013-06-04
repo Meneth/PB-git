@@ -1,0 +1,4 @@
+# History - Character specific
+##############################
+
+nick_martel = { } #Charles Martel

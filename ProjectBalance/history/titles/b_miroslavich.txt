@@ -1,0 +1,20 @@
+1136.1.2 = {
+	holding_dynasty = 11102 
+	liege="k_novgorod_republic"
+	holder=125225
+}
+1170.1.2 = {
+	holder=5552237
+}
+1200.1.2 = {
+	holder=125239
+}
+1219.7.2 = {
+	holder=5552241
+}
+1229.1.2 = {
+	holder=125243
+}
+1240.1.1 = {
+	holder=0
+}

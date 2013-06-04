@@ -1,0 +1,20 @@
+b_haukdaelur = {
+	culture = norwegian
+	religion = catholic
+}
+b_oddaverjar = {
+	culture = norwegian
+	religion = catholic
+}
+b_sturlungar = {
+	culture = norwegian
+	religion = catholic
+}
+b_vatnsfiroingar = {
+	culture = norwegian
+	religion = catholic
+}
+b_svinfellingar = {
+	culture = norwegian
+	religion = catholic
+}

@@ -1,0 +1,11 @@
+ransom_all;Ransom All Prisoners;Ransom All Prisoners;Ransom All Prisoners;;Ransom All Prisoners;;;;;;;;;x
+ransom_all_desc;Make a ransom offer to all prisoners.;Make a ransom offer to all prisoners.;Make a ransom offer to all prisoners.;;Make a ransom offer to all prisoners.;;;;;;;;;x
+ransom_all_tooltip;Character is asked to pay ransom.;Character is asked to pay ransom.;Character is asked to pay ransom.;;Character is asked to pay ransom.;;;;;;;;;x
+ransomall.0.desc;[Root.Host.GetTitledFirstName] offered to release me from prison if I pay a ransom.;[Root.Host.GetTitledFirstName] offered to release me from prison if I pay a ransom.;[Root.Host.GetTitledFirstName] offered to release me from prison if I pay a ransom.;;[Root.Host.GetTitledFirstName] offered to release me from prison if I pay a ransom.;;;;;;;;;x
+ransomall.0.a;I will pay for my freedom, if I can afford it.;I will pay for my freedom.;I will pay for my freedom.;;I will pay for my freedom.;;;;;;;;;x
+ransomall.0.b;I will not pay.;I will not pay.;I will not pay.;;I will not pay.;;;;;;;;;x
+ransomall.0.w;You have received a ransom request for one of your courtiers. It is a good deal...;;;;;;;;;x
+ransomall.0.w1;I will pay to get them back.;;;;;;;;;x
+ransomall.0.w2;I will not pay to get them back.;;;;;;;;;x
+ransomall.0.ww;The ransom has been denied!;;;;;;;;;x
+ransomall.0.ww1;Well, let them rot...;;;;;;;;;x

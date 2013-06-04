@@ -1,0 +1,33 @@
+d_arabia_felix_republic = { #Aden Republic
+    color = { 163 254 56 }            
+    capital = 858 # Aden
+    dignity = 10
+    
+    allow = {
+        war = no
+        is_republic = yes
+        culture = bedouin_arabic
+    }
+    
+    dynasty_title_names = no    
+}
+b_rassid = {
+	culture = bedouin_arabic
+	religion = shiite
+}
+b_sulaihid = {
+	culture = bedouin_arabic
+	religion = shiite
+}
+b_hatimid = {
+	culture = bedouin_arabic
+	religion = shiite
+}
+b_qubaybid = {
+	culture = bedouin_arabic
+	religion = shiite
+}
+b_rasulid = {
+	culture = bedouin_arabic
+	religion = sunni
+}

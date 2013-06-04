@@ -1,0 +1,78 @@
+#Muslim Makhzumi Dynasty
+1000085056 = {
+	name="Aziz"
+	dynasty=1000032050
+	religion="shiite"
+	culture="somali"
+	1012.1.1 = {
+		birth="1012.1.1"
+	}
+	1065.1.1 = {
+		death="1065.1.1"
+	}
+}
+1000085057 = {
+	name="Mohammad"
+	dynasty=1000032050
+	religion="shiite"
+	culture="somali"
+	father=1000085056
+	1036.1.1 = {
+		birth="1036.1.1"
+	}
+	1109.1.1 = {
+		death="1109.1.1"
+	}
+}
+1000085058 = {
+	name="Ibrahim"
+	dynasty=1000032050
+	religion="shiite"
+	culture="somali"
+	father=1000085056
+	1039.1.1 = {
+		birth="1039.1.1"
+	}
+	1099.1.1 = {
+		death="1099.1.1"
+	}
+}
+1000085059 = {
+	name="Abdullah"
+	dynasty=1000032050
+	religion="sunni"
+	culture="somali"
+	father=1000158238
+	1019.1.1 = {
+		birth="1019.1.1"
+	}
+	1084.1.1 = {
+		death="1084.1.1"
+	}
+}
+#Walashma Dynasty, vassals of Somali Kingdom
+1000085060 = {
+	name="Aman"
+	dynasty=1000032054
+	religion="sunni"
+	culture="somali"
+	1046.1.1 = {
+		birth="1046.1.1"
+	}
+	1111.1.1 = {
+		death="1111.1.1"
+	}
+}
+1000085061 = {
+	name="Umar"
+	dynasty=1000032054
+	religion="sunni"
+	culture="somali"
+	father=1000085060
+	1058.1.1 = {
+		birth="1058.1.1"
+	}
+	1145.1.1 = {
+		death="1145.1.1"
+	}
+}

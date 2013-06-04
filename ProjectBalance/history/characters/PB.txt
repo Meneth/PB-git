@@ -1,0 +1,84 @@
+9999999 = {
+	name="Project Balance" #
+	dynasty=0
+	martial=0
+	diplomacy=0
+	intrigue=0
+	stewardship=0
+	religion="baltic_pagan"
+	culture="norwegian"
+	
+	1.1.1={
+		birth="1.1.1"
+	}
+	800.1.1={
+		effect = {
+			narrative_event = { id = meneth.200 }
+			narrative_event = { id = meneth.500 }
+			narrative_event = { id = meneth.501 }
+			narrative_event = { id = meneth.600 }
+			set_global_flag = 867_start			
+			set_global_flag = theme_system_reformed			
+		}
+	}
+	1066.1.1={
+		effect = {
+			clr_global_flag = 867_start
+			clr_global_flag = theme_system_reformed
+			if = {
+				limit = {
+					NOT = { year = 1075 }
+				}
+				d_burgundy = {
+					holder_scope = {
+						any_courtier = {
+							remove_claim = d_barcelona
+						}
+					}
+				}
+			}
+		}
+	}
+	1071.8.26={
+		effect = {
+			set_global_flag = independence_from_byz
+			set_global_flag = independence_from_byz_achieved
+			c_tarsos = { kingdom = { de_jure_liege = 0 } } #Cilicia out of Byz
+		}
+	}
+	1077.1.1={
+		effect = {
+			set_global_flag = rum_formed
+			set_global_flag = rum_invaded_nikaea
+			k_anatolia = {
+				any_direct_de_jure_vassal_title = {
+					de_jure_liege = k_rum
+				}
+			}
+		}
+	}
+	1098.1.1={
+		effect = {
+			set_global_flag = retake_the_coast
+			set_global_flag = retake_the_coast_attempted
+			d_cibyrrhaeot = {
+				de_jure_liege = k_nikaea
+			}
+		}
+	}
+	1099.7.15={
+		effect = {
+			set_global_flag = reclaim_the_holy_land
+		}
+	}
+	1185.1.1={
+		effect = {
+			set_global_flag = bulgarian_unrest
+			set_global_flag = bulgarian_unrest_ends
+			set_global_flag = bulgarian_uprising
+		}
+	}
+	1337.12.31 = {
+		death="1337.12.31"
+	}
+}

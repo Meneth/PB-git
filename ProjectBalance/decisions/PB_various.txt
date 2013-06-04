@@ -1,0 +1,670 @@
+decisions = {
+	#Enable check CBs
+	holy_war_cb = {
+		potential = {
+			ai = no
+			NOT = { has_character_flag = holy_war_check }
+		}
+		effect = {
+			hidden_tooltip = {
+				set_character_flag = holy_war_check
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	#Check arbitrary holy war CB
+	holy_war_any = {
+		potential = {
+			ai = no
+			has_character_flag = holy_war_check
+		}
+		allow = {
+			top_liege = {
+				religion = PREV
+			}
+			NOT = { has_character_modifier = holy_war_cooldown }
+			OR = {
+				NOT = { has_law = emperor_peace_0 }
+				has_law = revokation_1
+				has_law = revokation_2
+			}
+			OR = {
+				NOT = { trait = content }
+				trait = brave
+				trait = wroth
+				trait = zealous
+				trait = lunatic
+				trait = possessed
+			}
+			OR = {
+				NOT = { trait = craven }
+				trait = wroth
+				trait = ambitious
+				trait = zealous
+				trait = lunatic
+				trait = possessed
+			}
+			OR = {
+				NOT = { trait = stressed }
+				trait = wroth
+				trait = ambitious
+				trait = brave
+				trait = lunatic
+				trait = possessed
+				trait = zealous
+			}
+			OR = {
+				trait = lunatic
+				trait = possessed
+				AND = {
+					NOT = { trait = depressed }
+					NOT = { trait = infirm }
+					NOT = { trait = incapable }
+					NOT = {
+						OR = {
+							AND = {
+								trait = content
+								OR = {
+									trait = craven
+									trait = stressed
+								}
+							}
+							AND = {
+								trait = craven
+								trait = stressed
+							}
+						}
+					}
+				}
+			}
+			piety = 100
+		}
+		effect = {
+			hidden_tooltip = {
+				clr_character_flag = holy_war_check
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	#Check Pagans
+	holy_war_pagan = {
+		potential = {
+			ai = no
+			has_character_flag = holy_war_check
+			always = no #Disabled for now
+		}
+		allow = {
+			NOT = { has_law = king_peace_0 }
+		}
+		effect = {
+			hidden_tooltip = {
+				clr_character_flag = holy_war_check
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	#Non dejure territory
+	holy_war_non_de_jure = {
+		potential = {
+			ai = no
+			has_character_flag = holy_war_check
+		}
+		allow = {
+			OR = {
+				AND = {
+					NOT = { trait = content }
+					NOT = { trait = craven }
+					NOT = { trait = stressed }
+				}
+				trait = possessed
+				trait = lunatic
+			}
+			OR = {
+				trait = wroth
+				trait = ambitious
+				trait = brave
+				trait = lunatic
+				trait = possessed
+				trait = zealous
+			}
+		}
+		effect = {
+			hidden_tooltip = {
+				clr_character_flag = holy_war_check
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	#Non bordering territory
+	holy_war_no_border = {
+		potential = {
+			ai = no
+			has_character_flag = holy_war_check
+		}
+		allow = {
+			NOT = { has_law = king_peace_0 }
+			NOT = { has_law = crown_levies_0 }
+		}
+		effect = {
+			hidden_tooltip = {
+				clr_character_flag = holy_war_check
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	#Allies
+	alliance_wars = {
+		potential = {
+			ai = no
+			has_character_flag = holy_war_check
+		}
+		allow = {
+			OR = {
+				trait = ambitious
+				trait = wroth
+				trait = envious
+				trait = arbitrary
+			}
+			OR = {
+				trait = possessed
+				trait = lunatic
+				AND = {
+					NOT = { trait = craven }
+					NOT = { trait = content }
+					NOT = { trait = just }
+					NOT = { trait = kind }
+				}
+			}
+		}
+		effect = {
+			hidden_tooltip = {
+				clr_character_flag = holy_war_check
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	#Imperial Reconquest CB
+	imperial_reconquest_check = {
+		potential = {
+			ai = no
+			has_character_flag = holy_war_check
+			OR = {
+				has_landed_title = e_byzantium
+				has_landed_title = e_roman_empire
+			}
+		}
+		allow = {
+			prestige = 500
+			NOT = { trait = content }
+			NOT = { trait = craven }
+			NOT = { trait = slothful }
+			NOT = { trait = stressed }
+			NOT = { trait = depressed }
+			NOT = { trait = infirm }
+			NOT = { trait = incapable }
+			NOT = { trait = blinded }
+			OR = {
+				trait = ambitious
+				trait = brave
+				trait = lunatic
+				trait = possessed
+				trait = wroth
+				trait = diligent
+			}
+		}
+		effect = {
+			hidden_tooltip = {
+				clr_character_flag = holy_war_check
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	#Pagan Subjugation CB
+	pagan_subjugation_check = {
+		potential = {
+			ai = no
+			has_character_flag = holy_war_check
+			religion_group = pagan_group
+			is_reformed_religion = no
+			NOT = { religion = aztec }
+		}
+		allow = {
+			NOT = { trait = content }
+			NOT = { trait = slothful }
+			NOT = { trait = craven }
+			NOT = { trait = stressed }
+			NOT = { trait = depressed }
+			NOT = { has_character_modifier = launched_subjugation }
+		}
+		effect = {
+			hidden_tooltip = {
+				clr_character_flag = holy_war_check
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	#Pagan Subjugation CB
+	pagan_subjugation_wrong_kingdom_check = {
+		potential = {
+			ai = no
+			has_character_flag = holy_war_check
+			religion_group = pagan_group
+			is_reformed_religion = no
+			NOT = { religion = aztec }
+		}
+		allow = {
+			NOT = { trait = content }
+			NOT = { trait = slothful }
+			NOT = { trait = craven }
+			NOT = { trait = stressed }
+			NOT = { trait = depressed }
+			NOT = { has_character_modifier = launched_subjugation }
+			trait = ambitious
+			trait = diligent
+			trait = brave
+		}
+		effect = {
+			hidden_tooltip = {
+				clr_character_flag = holy_war_check
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	#Pagan Conquest CB
+	pagan_conquest_check = {
+		potential = {
+			ai = no
+			has_character_flag = holy_war_check
+			religion_group = pagan_group
+		}
+		allow = {
+			OR = {
+				trait = ambitious
+				trait = diligent
+				trait = zealous
+				trait = wroth
+				trait = brave
+			}
+			NOT = { has_character_modifier = holy_war_cooldown }
+		}
+		effect = {
+			hidden_tooltip = {
+				clr_character_flag = holy_war_check
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	#Dismiss checks
+	holy_war_clear = {
+		potential = {
+			ai = no
+			has_character_flag = holy_war_check
+		}
+		effect = {
+			hidden_tooltip = {
+				clr_character_flag = holy_war_check
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	#Request the transfer of a dejure vassal
+	request_dejure_vassal_transfer = {
+		potential = {
+			independent = no
+			NOT = { has_character_flag = requested_vassal_transfer }
+			liege = {
+				NOT = { character = ROOT }
+				war = no
+				any_vassal = {
+					NOT = { character = ROOT }
+					de_jure_liege = ROOT
+					war = no
+				}
+			}
+		}
+		allow = {
+			war = no
+			OR = {
+				trait = greedy
+				trait = envious
+				trait = ambitious
+				ai = no
+			}
+		}
+		effect = {
+			set_character_flag = requested_vassal_transfer
+			liege = { character_event = { id = 63001 days = 4 tooltip = "EVTTOOLTIP63001" } }
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				trait = content
+			}
+		}
+	}
+	#Set gender law to dejure liege's
+	gender_law_to_liege = {
+		potential = {
+			always = no #Disabled for now
+			independent = no
+			OR = {
+				tier = count
+				tier = duke
+			}
+			capital_scope = {
+				duchy = {
+					holder_scope = {
+						is_liege_of = ROOT
+						tier = duke
+						OR = {
+							AND = {
+								has_law = cognatic_succession
+								ROOT = { NOT = { has_law = cognatic_succession } }
+							}
+							AND = {
+								has_law = agnatic_succession
+								ROOT = { NOT = { has_law = agnatic_succession } }
+							}
+							AND = {
+								has_law = true_cognatic_succession
+								ROOT = { NOT = { has_law = true_cognatic_succession } }
+							}
+						}
+					}
+				}
+				kingdom = {
+					holder_scope = {
+						is_liege_of = ROOT
+						tier = king
+					}
+					OR = {
+						AND = {
+							has_law = cognatic_succession
+							ROOT = { NOT = { has_law = cognatic_succession } }
+						}
+						AND = {
+							has_law = agnatic_succession
+							ROOT = { NOT = { has_law = agnatic_succession } }
+						}
+						AND = {
+							has_law = true_cognatic_succession
+							ROOT = { NOT = { has_law = true_cognatic_succession } }
+						}
+					}
+				}
+				empire = {
+					holder_scope = {
+						is_liege_of = ROOT
+						tier = emperor
+					}
+					OR = {
+						AND = {
+							has_law = cognatic_succession
+							ROOT = { NOT = { has_law = cognatic_succession } }
+						}
+						AND = {
+							has_law = agnatic_succession
+							ROOT = { NOT = { has_law = agnatic_succession } }
+						}
+						AND = {
+							has_law = true_cognatic_succession
+							ROOT = { NOT = { has_law = true_cognatic_succession } }
+						}
+					}
+				}
+			}
+		}
+		allow = {
+			prestige = 100
+		}
+		effect = {
+			if = {
+				limit = { liege = { tier = duke } }
+				liege = {
+					if = {
+						limit = { has_law = cognatic_succession }
+						ROOT = { primary_title = { add_law = cognatic_succession } }
+					}
+					if = {
+						limit = { has_law = agnatic_succession }
+						ROOT = { primary_title = { add_law = agnatic_succession } }
+					}
+					if = {
+						limit = { has_law = true_cognatic_succession }
+						ROOT = { primary_title = { add_law = true_cognatic_succession } }
+					}
+				}
+			}
+			if = {
+				limit = { liege = { tier = king } }
+				capital_scope = {
+					kingdom = {
+						if = {
+							limit = { has_law = cognatic_succession }
+							ROOT = { primary_title = { add_law = cognatic_succession } }
+						}
+						if = {
+							limit = { has_law = agnatic_succession }
+							ROOT = { primary_title = { add_law = agnatic_succession } }
+						}
+						if = {
+							limit = { has_law = true_cognatic_succession }
+							ROOT = { primary_title = { add_law = true_cognatic_succession } }
+						}
+					}
+				}
+			}
+			if = {
+				limit = { liege = { tier = emperor } }
+				capital_scope = {
+					empire = {
+						if = {
+							limit = { has_law = cognatic_succession }
+							ROOT = { primary_title = { add_law = cognatic_succession } }
+						}
+						if = {
+							limit = { has_law = agnatic_succession }
+							ROOT = { primary_title = { add_law = agnatic_succession } }
+						}
+						if = {
+							limit = { has_law = true_cognatic_succession }
+							ROOT = { primary_title = { add_law = true_cognatic_succession } }
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	create_hre = {
+		is_high_prio = yes
+		potential = {
+			OR = {
+				has_landed_title = k_germany
+				has_landed_title = k_bavaria
+			}
+			e_hre = {
+				has_holder = no
+			}
+		}
+		allow = {
+			has_landed_title = k_italy
+			has_landed_title = k_lotharingia
+			prestige = 500
+			war = no
+			ruled_years = 10
+		}
+		effect = {
+			narrative_event = { id = meneth.427 tooltip = create_hre_tooltip }
+			if = {
+				limit = { has_nickname = no }
+				give_nickname = nick_the_great
+			}
+			prestige = 500
+			e_hre = {
+				grant_title = ROOT
+				if = {
+					limit = { has_landed_title = k_germany }
+					copy_title_laws = k_germany
+				}
+				if = {
+					limit = { NOT = { has_landed_title = k_germany } }
+					copy_title_laws = k_bavaria
+				}
+				hidden_tooltip = {
+					revoke_law = king_peace_0
+					revoke_law = king_peace_1
+					revoke_law = king_peace_2
+				}
+				add_law = emperor_peace_0
+				add_law = succ_feudal_elective
+				add_law = hre_law_0
+			}
+			any_demesne_title = {
+				limit = {
+					OR = {
+						title = k_italy
+						title = k_germany
+						de_jure_liege = e_hre
+					}
+				}
+				destroy_landed_title = THIS
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	create_hre_france = {
+		is_high_prio = yes
+		potential = {
+			has_landed_title = k_france
+			e_hre = {
+				has_holder = no
+			}
+		}
+		allow = {
+			completely_controls = k_france
+			has_landed_title = k_italy
+			OR = {
+				has_landed_title = k_aquitaine
+				k_aquitaine = { has_holder = no }
+			}
+			prestige = 500
+			war = no
+			ruled_years = 10
+		}
+		effect = {
+			narrative_event = { id = meneth.427 tooltip = create_hre_tooltip }
+			if = {
+				limit = { has_nickname = no }
+				give_nickname = nick_the_great
+			}
+			prestige = 500
+			e_hre_french = {
+				grant_title = ROOT
+				copy_title_laws = k_france
+				add_law = emperor_peace_0
+				add_law = succ_feudal_elective
+				add_law = hre_law_0
+				hidden_tooltip = {
+					revoke_law = king_peace_0
+					revoke_law = king_peace_1
+					revoke_law = king_peace_2
+					
+				}
+			}
+			hidden_tooltip = {
+				e_france = {
+					any_direct_de_jure_vassal_title = {
+						de_jure_liege = e_hre_french
+					}
+				}
+				e_hre = {
+					any_direct_de_jure_vassal_title = {
+						de_jure_liege = e_germany
+					}
+				}
+			}
+			any_demesne_title = {
+				limit = {
+					OR = {
+						title = k_italy
+						de_jure_liege = e_hre
+					}
+				}
+				destroy_landed_title = THIS
+			}
+			add_claim = k_lotharingia
+			k_lotharingia = {
+				de_jure_liege = e_hre_french
+			}
+			k_frisia = {
+				de_jure_liege = e_hre_french
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
+
+dynasty_decisions = {
+	#Prisoner exchange
+	exchange_prisoners = {
+		potential = {
+			prisoner = yes
+			host = {
+				NOT = { dynasty = FROM }
+			}
+			is_landed = no
+			NOT = { FROM = { has_character_flag = prisoner_exchange_attempted } }
+			NOT = { has_character_flag = prisoner_exchange_attempted }
+		}
+		allow = {
+			host = {
+				any_dynasty_member = {
+					prisoner = yes
+					host = { character = FROM }
+				}
+			}
+		}
+		effect = {
+			set_character_flag = prisoner_exchange_attempted
+			FROM = { set_character_flag = prisoner_exchange_attempted }
+			host = {
+				character_event = { id = meneth.213 }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

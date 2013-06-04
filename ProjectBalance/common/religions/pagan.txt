@@ -1,0 +1,503 @@
+pagan_group = {
+	has_coa_on_barony_only = no
+	graphical_culture = westerngfx
+	playable = yes
+	
+	# Names given only to Pagan characters (base names)
+	male_names = {
+		Anund Asbjörn Aslak Audun Bagge Balder Brage Egil Emund Frej Gnupa Gorm Gudmund Gudröd Hardeknud Helge Odd Orm 
+		Orvar Ottar Rikulfr Rurik Sigbjörn Styrbjörn Starkad Styrkar Sämund Sölve Sörkver Thorolf Tjudmund Toke Tolir 
+		Torbjörn Torbrand Torfinn Torgeir Toste Tyke
+	}
+	female_names = {
+		Aslaug Bothild Björg Freja Grima Gytha Kráka Malmfrid Thora Thordis Thyra Ragnfrid Ragnhild Svanhild Ulvhilde
+	}
+
+	pagan = { # Use for misc other pagans
+		graphical_culture = westerngfx
+
+		icon = 5
+		
+		color = { 0.6 0.0 0.0 }
+		god_names = {
+			GOD_THE_SPIRITS GOD_THE_ANCESTORS
+		}
+		crusade_name = GREAT_HOLY_WAR
+		scripture_name = THE_LEGENDS
+		priests_can_marry = yes
+		max_consorts = 3
+		
+		defensive_attrition = yes
+		
+		religious_clothing_head = 3
+		religious_clothing_priest = 3
+	}
+	
+	norse_pagan_reformed = {
+		graphical_culture = norsegfx
+
+		icon = 20
+		heresy_icon = 21
+		
+		color = { 0.75 0.75 0.75 }
+		god_names = {
+			GOD_THOR GOD_THE_THUNDERER GOD_THE_ALLFATHER GOD_THE_ODIN GOD_FREY GOD_TYR
+		}
+		
+		unit_modifier = {
+			heavy_infantry_offensive = 0.3
+			heavy_infantry_defensive = 0.3
+			
+			key = "OFF_RELIGION"
+		}
+		
+		crusade_name = GREAT_HOLY_WAR
+		scripture_name = THE_SAGAS
+		priests_can_marry = yes
+		
+		can_call_crusade = yes
+		
+		allow_viking_invasion = yes # Allows the "Prepare Invasion" diplo action
+		allow_looting = yes
+		allow_rivermovement = yes
+		female_temple_holders = yes
+		
+		short_reign_opinion_year_mult = 3 # The default is 2
+		
+		aggression = 1.5 # AI aggression factor
+		
+		max_consorts = 3
+		
+		religious_clothing_head = 3
+		religious_clothing_priest = 3
+	}		
+	
+	norse_pagan = {
+		graphical_culture = norsegfx
+
+		icon = 19
+		heresy_icon = 21
+		
+		color = { 0.6 0.6 0.6 }
+		god_names = {
+			GOD_THOR GOD_THE_THUNDERER GOD_THE_ALLFATHER GOD_THE_ODIN GOD_FREY GOD_TYR
+		}
+		
+		unit_modifier = {
+			heavy_infantry_offensive = 0.3
+			heavy_infantry_defensive = 0.3
+			
+			key = "OFF_RELIGION"
+		}
+		
+		crusade_name = GREAT_HOLY_WAR
+		scripture_name = THE_SAGAS
+		priests_can_marry = yes
+		allow_viking_invasion = yes # Allows the "Prepare Invasion" diplo action
+		allow_looting = yes
+		allow_rivermovement = yes
+		female_temple_holders = yes
+		defensive_attrition = yes
+		peace_prestige_loss = yes # Lose Prestige while at peace
+		raised_vassal_opinion_loss = no
+		max_consorts = 3
+		independence_war_score_bonus = 30 # Overrides define CONTESTED_TITLE_OCCUPIED_WARSCORE_BONUS_INDEP
+		reformed = norse_pagan_reformed
+		reformer_head_of_religion = yes #make the character that reforms this religion the head of the new reformed faith
+		
+		aggression = 2.0 # AI aggression factor
+		
+		short_reign_opinion_year_mult = 5 # The default is 2
+		
+		religious_clothing_head = 3
+		religious_clothing_priest = 3
+	}	
+	
+	tengri_pagan_reformed = { # Mongols
+		graphical_culture = mongolgfx
+
+		icon = 29
+		heresy_icon = 30
+		
+		color = { 0.1 0.3 0.85 }
+		god_names = {
+			GOD_TENGRI GOD_ERLIK_KHAN GOD_TUNG-AK
+		}
+		
+		unit_modifier = {
+			light_cavalry_offensive = 0.3
+			light_cavalry_defensive = 0.3
+			
+			key = "tengri_pagan"
+		}
+		
+		crusade_name = GREAT_HOLY_WAR
+		scripture_name = THE_LEGENDS
+		priests_can_marry = yes
+		allow_looting = yes
+		can_call_crusade = yes
+		max_consorts = 3
+		
+		aggression = 2.0 # AI aggression factor
+		
+		religious_clothing_head = 6
+		religious_clothing_priest = 4
+	}		
+	
+	tengri_pagan = { #Mongols
+		graphical_culture = mongolgfx
+
+		icon = 28
+		heresy_icon = 30
+		
+		color = { 0.0 0.2 0.8 }
+		god_names = {
+			GOD_TENGRI GOD_ERLIK_KHAN GOD_TUNG-AK
+		}
+		
+		unit_modifier = {
+			light_cavalry_offensive = 0.3
+			light_cavalry_defensive = 0.3
+			
+			key = "tengri_pagan"
+		}
+	
+		crusade_name = GREAT_HOLY_WAR
+		scripture_name = THE_LEGENDS
+		priests_can_marry = yes
+		allow_looting = yes
+		peace_prestige_loss = yes # Lose Prestige while at peace
+		raised_vassal_opinion_loss = no
+		max_consorts = 3
+		independence_war_score_bonus = 30 # Overrides define CONTESTED_TITLE_OCCUPIED_WARSCORE_BONUS_INDEP
+		reformed = tengri_pagan_reformed
+		
+		short_reign_opinion_year_mult = 3 # The default is 2
+		
+		aggression = 2.0 # AI aggression factor
+		
+		religious_clothing_head = 6
+		religious_clothing_priest = 4
+	}
+	
+	baltic_pagan_reformed = {
+		graphical_culture = norsegfx
+
+		icon = 32
+		heresy_icon = 33
+		
+		color = { 0.75 0.5 0.35 }
+		crusade_name = GREAT_HOLY_WAR
+		scripture_name = THE_LEGENDS
+		god_names = {
+			GOD_DIEVAS GOD_GABIJA GOD_PERKUNAS GOD_LAIMA 
+		}
+		
+		unit_modifier = {
+			heavy_infantry_offensive = 0.3
+			heavy_infantry_defensive = 0.3
+			
+			key = "DEF_RELIGION"
+		}
+
+		priests_can_marry = yes
+		female_temple_holders = yes
+		can_call_crusade = yes
+		allow_looting = yes
+		max_consorts = 3
+		
+		religious_clothing_head = 3
+		religious_clothing_priest = 3
+	}		
+	
+	baltic_pagan = {
+		graphical_culture = norsegfx
+
+		icon = 31
+		heresy_icon = 33
+		
+		color = { 0.6 0.4 0.3 }
+		crusade_name = GREAT_HOLY_WAR
+		scripture_name = THE_LEGENDS
+		god_names = {
+			GOD_DIEVAS GOD_GABIJA GOD_PERKUNAS GOD_LAIMA
+		}
+		
+		unit_modifier = {		
+			heavy_infantry_offensive = 0.3
+			heavy_infantry_defensive = 0.3
+			
+			key = "DEF_RELIGION"
+		}
+		
+		priests_can_marry = yes
+		female_temple_holders = yes
+		defensive_attrition = yes
+		allow_looting = yes
+		max_consorts = 3
+		independence_war_score_bonus = 30 # Overrides define CONTESTED_TITLE_OCCUPIED_WARSCORE_BONUS_INDEP
+		reformed = baltic_pagan_reformed
+		
+		short_reign_opinion_year_mult = 4 # The default is 2
+		
+		religious_clothing_head = 3
+		religious_clothing_priest = 3
+	}	
+	
+	finnish_pagan_reformed = {
+		graphical_culture = norsegfx
+
+		icon = 26
+		heresy_icon = 27
+		
+		color = { 0.65 0.65 0.1 }
+		crusade_name = GREAT_HOLY_WAR
+		scripture_name = THE_LEGENDS
+		god_names = {
+			GOD_UKKO GOD_PERKELE GOD_JUMI GOD_THE_GREAT_BEAR GOD_KUU GOD_TAPIO GOD_TAARA GOD_OMOL GOD_MASTOR_AVA
+		}
+		
+		unit_modifier = {		
+			heavy_infantry_offensive = 0.3
+			heavy_infantry_defensive = 0.3
+			
+			key = "DEF_RELIGION"
+		}
+		
+		priests_can_marry = yes
+		female_temple_holders = yes
+		can_call_crusade = yes
+		allow_looting = yes
+		max_consorts = 3
+		
+		aggression = 0.5 # AI aggression factor
+		
+		religious_clothing_head = 3
+		religious_clothing_priest = 3
+	}	
+	
+	finnish_pagan = {
+		graphical_culture = norsegfx
+
+		icon = 25
+		heresy_icon = 27
+		
+		color = { 0.5 0.5 0.0 }
+		crusade_name = GREAT_HOLY_WAR
+		scripture_name = THE_LEGENDS
+		god_names = {
+			GOD_UKKO GOD_PERKELE GOD_JUMI GOD_THE_GREAT_BEAR GOD_KUU GOD_TAPIO GOD_TAARA GOD_OMOL GOD_MASTOR_AVA
+		}
+		
+		unit_modifier = {		
+			heavy_infantry_offensive = 0.3
+			heavy_infantry_defensive = 0.3
+			
+			key = "DEF_RELIGION"
+		}
+		
+		priests_can_marry = yes
+		female_temple_holders = yes
+		defensive_attrition = yes
+		allow_looting = yes
+		max_consorts = 3
+		independence_war_score_bonus = 30 # Overrides define CONTESTED_TITLE_OCCUPIED_WARSCORE_BONUS_INDEP
+		reformed = finnish_pagan_reformed
+		
+		short_reign_opinion_year_mult = 4 # The default is 2
+		
+		aggression = 0.2 # AI aggression factor
+		
+		religious_clothing_head = 3
+		religious_clothing_priest = 3
+	}
+	
+	aztec_reformed = {
+		graphical_culture = mesoamericangfx
+		icon = 17
+		color = { 0.95 0.3 0.3 }
+		god_names = {
+			GOD_HUITZILOPOCHTLI GOD_XIPE_TOTEC GOD_TEZCATLIPOCA GOD_QUETZALCOATL GOD_MICTLANTECUHTLI GOD_TLALOC
+		}
+		
+		unit_modifier = {
+			levy_size = 0.3
+			
+			key = "OFF_RELIGION"
+		}
+		
+		crusade_name = GREAT_HOLY_WAR
+		scripture_name = THE_LEGENDS
+		priests_can_marry = yes
+		max_consorts = 3
+		can_call_crusade = yes
+		
+		aggression = 2.0 # AI aggression factor
+		
+		religious_clothing_head = 3
+		religious_clothing_priest = 3
+	}	
+	
+	aztec = {
+		graphical_culture = mesoamericangfx
+		icon = 15
+		color = { 0.8 0.2 0.2 }
+		god_names = {
+			GOD_HUITZILOPOCHTLI GOD_XIPE_TOTEC GOD_TEZCATLIPOCA GOD_QUETZALCOATL GOD_MICTLANTECUHTLI GOD_TLALOC
+		}
+		
+		unit_modifier = {
+			levy_size = 0.3
+			
+			key = "OFF_RELIGION"
+		}
+		
+		crusade_name = GREAT_HOLY_WAR
+		scripture_name = THE_LEGENDS
+		priests_can_marry = yes
+		peace_prestige_loss = yes # Lose Prestige while at peace
+		raised_vassal_opinion_loss = no
+		max_consorts = 3
+		independence_war_score_bonus = 30 # Overrides define CONTESTED_TITLE_OCCUPIED_WARSCORE_BONUS_INDEP
+		reformed = aztec_reformed
+		
+		aggression = 2.0 # AI aggression factor
+		
+		religious_clothing_head = 3
+		religious_clothing_priest = 3
+	}
+
+	slavic_pagan_reformed = {
+		graphical_culture = norsegfx
+
+		icon = 23
+		heresy_icon = 24
+		
+		color = { 0.85 0.73 0.4 }
+		crusade_name = GREAT_HOLY_WAR
+		scripture_name = THE_LEGENDS
+		god_names = {
+			GOD_PERUN GOD_VELES GOD_JARILO GOD_SVAROG GOD_TRIGLAV GOD_RADEGAST
+		}
+		
+		unit_modifier = {		
+			heavy_infantry_offensive = 0.3
+			heavy_infantry_defensive = 0.3
+			
+			key = "DEF_RELIGION"
+		}
+		
+		priests_can_marry = yes
+		female_temple_holders = yes
+		can_call_crusade = yes
+		allow_looting = yes
+		max_consorts = 3
+		
+		religious_clothing_head = 3
+		religious_clothing_priest = 3
+	}		
+	
+	slavic_pagan = {
+		graphical_culture = norsegfx
+
+		icon = 22
+		heresy_icon = 24
+		
+		color = { 0.7 0.6 0.3 }
+		crusade_name = GREAT_HOLY_WAR
+		scripture_name = THE_LEGENDS
+		god_names = {
+			GOD_PERUN GOD_VELES GOD_JARILO GOD_SVAROG GOD_TRIGLAV GOD_RADEGAST
+		}
+		
+		unit_modifier = {	
+			heavy_infantry_offensive = 0.3
+			heavy_infantry_defensive = 0.3
+			
+			key = "DEF_RELIGION"
+		}
+		
+		priests_can_marry = yes
+		female_temple_holders = yes
+		defensive_attrition = yes
+		allow_looting = yes
+		
+		max_consorts = 3
+		
+		independence_war_score_bonus = 30 # Overrides define CONTESTED_TITLE_OCCUPIED_WARSCORE_BONUS_INDEP
+		reformed = slavic_pagan_reformed
+		
+		short_reign_opinion_year_mult = 4 # The default is 2
+		
+		aggression = 0.6 # AI aggression factor
+		
+		religious_clothing_head = 3
+		religious_clothing_priest = 3
+	}
+	
+	west_african_pagan_reformed = {
+		graphical_culture = africangfx
+
+		icon = 35
+		heresy_icon = 36
+		
+		color = { 91 49 13 }
+		crusade_name = GREAT_HOLY_WAR
+		scripture_name = THE_LEGENDS
+		god_names = {
+			GOD_THE_SPIRITS GOD_THE_ANCESTORS
+		}
+		
+		can_call_crusade = yes
+		
+		unit_modifier = {
+			light_infantry_offensive = 0.3
+			light_infantry_defensive = 0.3
+			
+			key = "DEF_RELIGION"
+		}
+		
+		priests_can_marry = yes
+		female_temple_holders = yes
+		max_consorts = 3
+		
+		aggression = 0.5 # AI aggression factor
+		
+		religious_clothing_head = 3
+		religious_clothing_priest = 3
+	}
+	
+	west_african_pagan = {
+		graphical_culture = africangfx
+
+		icon = 34
+		heresy_icon = 35
+		
+		color = { 111 69 33 }
+		crusade_name = GREAT_HOLY_WAR
+		scripture_name = THE_LEGENDS
+		god_names = {
+			GOD_THE_SPIRITS GOD_THE_ANCESTORS
+		}
+		
+		unit_modifier = {		
+			light_infantry_offensive = 0.3
+			light_infantry_defensive = 0.3
+			
+			key = "DEF_RELIGION"
+		}
+		
+		priests_can_marry = yes
+		female_temple_holders = yes
+		
+		max_consorts = 3
+		
+		independence_war_score_bonus = 30 # Overrides define CONTESTED_TITLE_OCCUPIED_WARSCORE_BONUS_INDEP
+		reformed = west_african_pagan_reformed
+		
+		aggression = 0.1 # AI aggression factor
+		
+		religious_clothing_head = 3
+		religious_clothing_priest = 3
+	}
+}

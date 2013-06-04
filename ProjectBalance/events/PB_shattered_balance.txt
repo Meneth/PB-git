@@ -1,0 +1,24 @@
+###################################
+#
+# Gender Equality
+#
+# Id meneth.500 is reserved
+#
+#
+###################################
+
+namespace = meneth
+
+#Blank in vanilla PB
+narrative_event = {
+	id = meneth.501
+	title = "meneth.200.name"
+	desc = "meneth.200.desc"
+	is_triggered_only = yes
+	
+	picture = "GFX_evt_battle"
+	
+	option = {
+		name = "meneth.200.a"
+	}
+}

@@ -1,0 +1,35 @@
+1066.1.1 = {
+	holding_dynasty = 1000061352 #warsangali - makes this a FAMILY_PALACE type Holding
+	liege="k_somalia"
+	holder = 1000158117
+}
+1100.1.1 = {
+	holder = 1000158170
+}
+1125.1.1 = {
+	holder = 1000158171
+}
+1151.1.1 = {
+	holder = 1000158172
+}
+1183.1.1 = {
+	holder = 1000158173
+}
+1221.1.1 = {
+	holder = 1000158174
+}
+1226.1.1 = {
+	holder = 1000158175
+}
+1271.1.1 = {
+	holder = 1000158176
+}
+1289.1.1 = {
+	holder = 1000158177
+}
+1311.1.1 = {
+	holder = 1000158178
+}
+1328.1.1 = {
+	holder = 1000158179
+}

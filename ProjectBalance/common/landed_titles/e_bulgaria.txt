@@ -1,0 +1,27 @@
+e_bulgaria = {
+	color={ 20 70 20 }
+	color2={ 255 255 255 }
+	
+	capital = 499 # Tyrnovo
+	short_name = yes
+	culture = bulgarian
+	
+	# Creation/Usurp Trigger
+	allow = {
+		OR = {
+			culture = bulgarian
+			culture = serbian
+		}
+		war = no
+		ruled_years = 5
+		is_adult = yes
+		NOT = { tier = emperor }
+	}
+	gain_effect = {
+		if = {
+			limit = { e_bulgaria = { is_titular = yes } }
+			k_bulgaria = { de_jure_liege = e_bulgaria }
+			k_serbia = { de_jure_liege = e_bulgaria }
+		}
+	}
+}

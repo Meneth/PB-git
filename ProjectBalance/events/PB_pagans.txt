@@ -1,0 +1,43 @@
+###################################
+#
+# Events for Pagans
+#
+# Id meneth.100 to meneth.199 is reserved
+#
+#
+###################################
+
+namespace = meneth
+#Ensure Pagans have enough Piety to hire Holy Orders
+character_event = {
+	id = meneth.100
+	desc = "meneth.100.desc"
+	picture = "GFX_evt_battle"
+	border = "GFX_event_normal_frame_religion"
+	
+	only_rulers = yes
+	
+	trigger = {
+		always = no #Disabled for now
+		religion_group = pagan_group
+		NOT = { primary_title = { tier = baron }}
+		OR = {
+			NOT = { piety = 75 }
+			AND = {
+				NOT = { piety = 125 }
+				culture = pecheneg
+			}
+		}
+		ai = yes
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "meneth.100.a"
+		ai_chance = { factor = 100 }
+		piety = 15
+	}
+}

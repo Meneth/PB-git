@@ -1,0 +1,25 @@
+# 396 - Bjarmia
+
+# County Title
+title = c_bjarmia
+
+# Settlements
+max_settlements = 2
+b_okladnikowa = castle
+#b_kusnezowa = city
+#b_okulovsky = temple
+
+#b_kamenka = castle
+#b_pinega = castle
+#b_mezen = castle
+#b_kimzha = castle
+#b_lampozhnya = castle
+
+# Misc
+culture = samoyed
+religion = finnish_pagan
+
+# History
+1136.1.2 = { trade_post = b_miroslavich culture = russian religion = orthodox }
+1136.1.2 = { b_kamenka = city }
+1136.1.2 = { capital = b_kamenka }

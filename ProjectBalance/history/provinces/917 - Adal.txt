@@ -1,0 +1,16 @@
+# County Title
+title = c_adal
+
+# Settlements
+max_settlements = 4
+
+b_adal = castle
+b_harar = temple
+
+
+# Misc
+culture = somali
+religion = sunni
+
+# History
+

@@ -1,0 +1,10 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_create_hre"
+		texturefile = "gfx\\interface\\decision_icon_create_hre.dds"
+	}
+	spriteType = {
+		name = "GFX_create_hre_france"
+		texturefile = "gfx\\interface\\decision_icon_create_hre.dds"
+	}
+}

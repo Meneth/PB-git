@@ -1,0 +1,78 @@
+escaped_siege;Escaped from a siege;;;;;;;;;;;;;;x
+dis_chance;Slight chance of infection from serious diseases\n\n;;;;;;;;;;;;;;x
+left_at_siege;Kept in the Castle;;;;;;;;;;;;;;x
+left_to_rot;Left to rot in prison;;;;;;;;;;;;;;x
+death_escape;died attempting a daring escape;;;;;;;;;;;;;;x
+left_behind;Left behind at siege;;;;;;;;;;;;;;x
+stalwart_defender;Stalwart Defender;;;;;;;;;;;;;;x
+modifier_hidden;Hidden in countryside;;;;;;;;;;;;;;x
+joined_war_against_me;Joined War Against Me;;;;;;;;;;;;;;x
+stolen_banner;Captured Banner;;;;;;;;;;;;;;x
+liberated;Liberated from occupation;;;;;;;;;;;;;;x
+EVTDESCSIEGECAPTURE;[Root.GetBestName] was captured by [From.GetBestName] while trying to flee the castle!;[Root.GetBestName] a été capturé(e) par [From.GetBestName] lors d’un combat !;[Root.GetBestName] wurde in der Schlacht von [From.GetBestName] gefangengenommen!;;¡[Root.GetBestName] fue capturado en combate por [From.GetBestName]!;;;;;;;;;x
+EVTDESCCAPTUREENEMYSIEGE;[From.GetBestName] was captured after the siege and is now my prisoner!;[From.GetBestName] a été capturé(e) au combat. C’est désormais mon(ma) prisonnier(ière) !;[From.GetBestName] wurde in der Schlacht gefangengenommen und ist nun mein Gefangener!;;¡[From.GetBestName] fue capturado en combate y ahora es mi prisionero!;;;;;;;;;x
+EVTDESCbattlewin001;You can add this to the list of my accomplishments.;;;;;;;;;x
+EVTDESCsiegewin001;You can add this to the list of my accomplishments.;;;;;;;;;x
+EVTDESCsiegeescape01;[Root.GetBestName]! The castle could fall any day now, we must make preparations...;;;;;;;;;;;;;;x
+EVTOPTAsiegeescape1;Flee the castle via secret underground tunnel...;;;;;;;;;;;;;;x
+EVTOPTAsiegeescape2;place;;;;;;;;;;;;;;x
+EVTDESCsiegewin01;My Lord, we've rounded up everybody we could find.  What should we do with them?;;;;;;;;;;;;;;x
+EVTOPTAsiegewin1;Clap their leader in irons and leave the rest here.;;;;;;;;;;;;;;x
+EVTOPTAsiegewin2;Grab him and his entire family.;;;;;;;;;;;;;;x
+EVTOPTAsiegewin3;These people are useless, leave them be.;;;;;;;;;;;;;;x
+EVTOPTAsiegewin4;He's no where to be found, my Lord.  Shall we ask his family along with us?;;;;;;;;;;;;;;x
+EVTOPTAsiegewin5;Let them all go, I'm feeling merciful today.;;;;;;;;;;;;;;x
+EVTOPTAsiegewin6;Take no prisoners...;;;;;;;;;;;;;;x
+EVTDESCsiegeprestige;My Lord, the keep has fallen!;;;;;;;;;;;;;;x
+EVTTOOLTIPenemynothere;If the enemy is not defending, this does nothing.;;;;;;;;;;;;;;x
+EVTOPTAsiegewinprestige;My name will live for ever!;;;;;;;;;;;;;;x
+EVTOPTAsiegewinbanner;Another banner to hang proudly in my hall.;;;;;;;;;;;;;;x
+EVTDESCsiegenoenemy;My Lord, the enemy is nowhere to be found...;;;;;;;;;;;;;;x
+EVTOPTAnoenemy1;Leave them all be.;;;;;;;;;;;;;;x
+EVTOPTAnoenemy2;We will ask the family along with us, then.;;;;;;;;;;;;;;x
+EVTOPTAnoenemy3;Execute the whole family.;;;;;;;;;;;;;;x
+EVTOPTleavedecision;I shall leave the decision to my liege.;;;;;;;;;;;;;;x
+EVTOPTleavedecisionmerc;I am not interested, let the employer decide.;;;;;;;;;;;;;;x
+EVTOPTAwaylitfriendlycapture;Liberated!;;;;;;;;;;;;;;x
+EVTDESCWAYsearchdungeons;Yes, my Lord, we will search the dungeons at once!;;;;;;;;;;;;;;x
+EVTOPWAYprisonrelease01;Release all prisoners.;;;;;;;;;;;;;;x
+EVTOPWAYprisonrelease02;Release anybody with whom we have common cause.;;;;;;;;;;;;;;x
+EVTOPWAYprisonrelease03;Release only my relatives. Some of these other fellows look like they are here for a good reason...;;;;;;;;;;;;;;x
+EVTOPWAYprisonrelease04;Whomever these people are, they smell like they belong here...;;;;;;;;;;;;;;x
+EVTDESCWAYsiegepulseflee;My Lord, an enemy host approaches intent on encicling the castle.  What shall we do?;;;;;;;;;;;;;;x
+EVTNAMEWAYsiegepulseflee;Fight or Flee?;;;;;;;;;;;;;;x
+EVTOPTWAYsiegepulseflee01;This castle is impregnable. We will be safest here.;;;;;;;;;;;;;;x
+EVTOPTWAYsiegepulseflee02;Send my family into hiding, I cannot risk them being captured.;;;;;;;;;;;;;;x 
+EVTOPTWAYsiegepulseflee03;I will take my family and hide until it is safe.;;;;;;;;;;;;;;x
+EVTNAMEWAYsiegeescape;An opportunity presents itself!;;;;;;;;;;;;;;x
+EVTDESCWAYsiegeescape;My Lord, the situation looks dire. If no relief comes soon you could fall into the hands of the enemy. The time to escape is now...we may not get another chance!;;;;;;;;;;;;;;x
+EVTOPTWAYsiegesescapeattempt01;Slip out a postern door at midnight.;;;;;;;;;;;;;;x
+EVTOPTWAYsiegesescapeattempt02;Brave the sewers.;;;;;;;;;;;;;;x
+EVTOPTWAYsiegesescapeattempt03;Just give me a rope...;;;;;;;;;;;;;;x
+EVTOPTWAYsiegesescapeattempt04;I think it's better that we wait.;;;;;;;;;;;;;;x
+EVTDESCRWAYnotifyofcapture1;Just as I thought I had made it to freedom, a group of armed men appear under the banner of my foe.  Exhausted from my escape, it is all I can do to croak the word 'yield.';;;;;;;;;;;;;;x
+EVTDESCRWAYnotifyofcapture2;My Lord, we've caught the enemy commander sneaking out the castle!;;;;;;;;;;;;;;x
+EVTNAMEWAYnotifyofoutcome;Escape Attempt;;;;;;;;;;;;;;x
+EVTTOOLTIPsiegecapturedenemy;[Root.GetTitledName] is imprisoned by the enemy.;;;;;;;;;;;;;;x
+EVTTOOLTIPsiegeescaped;[Root.GetTitledName] escapes to the countryside!;;;;;;;;;;;;;;x
+EVTOPWAYsiegecapture01;Take them back to my castle dungeons immediately!;;;;;;;;;;;;;;x
+EVTOPWAYsiegecapture02;Damn you all to hell!;;;;;;;;;;;;;;x
+EVTDESCRWAYnotifyofescape01;In the dead of night, as a low mist hung about the curtain wall, you creep out a postern door and float across the moat on an inflated sheepskin.  It's only by the ineptitude of the enemy watch that you stagger, dripping wet, through the siege lines and to the safety of a nearby wood.  Thanks be to God! ... Although any family left behind is likely angry with us...;;;;;;;;;;;;;;x
+EVTDESCRWAYnotifyofescape02;Your steward leads you down into the store rooms to a passage you didn't even know existed.  Beyond it, a dismal tunnel full of death and decay, and you are only too glad to reach the moat and relatively fresh water. I hope I never have to do that again!  It only now occurs to me that any family left behind is likely angry with me for leaving them in the hands of the enemy.;;;;;;;;;;;;;;x
+EVTDESCRWAYnotifyofescape03;They said only a lunatic would attempt climbing down the southeast wall, and certainly the enemy agreed!  A near thing, too, when my foot slipped on that patch of moss.  My brush with death over with, and safety assured, it only now occurs to me that any family left behind will see this as a desertion, not a bold deed of heroism...;;;;;;;;;;;;;;x
+EVTTOOLWAYfamilyhatesyou;is imprisoned by the enemy and any family members left behind in the castle aren't too happy about it.;;;;;;;;;;;;;;x
+EVTDESCswapletterenemy;[From.GetTitledName] would like to arrange a prisoner exchange.;;;;;;;;;;;;;;x
+EVTDESCswapletterroot;My Lord, shall we send letters out requesting a meet for prisoner exchange?;;;;;;;;;;;;;;x
+EVTDESCswapletteraccept;The prisoner exchange has been accepted!;;;;;;;;;;;;;;x
+EVTNAMEWAYprisonerswap;Prisoner Exchange;;;;;;;;;;;;;;x
+arrange_prisoner_swap;Arrange an exchange of hostages;;;;;;;;;;;;;;x
+arrange_prisoner_swap_desc;Arrange an exchange of hostages;;;;;;;;;;;;;;x
+EVTDESCswapletterprisoner;Your guard lets it slip that there may be a prisoner exchange soon...;;;;;;;;;;;;;;x
+EVTOPWAYswap3op1;Exchange all noble prisoners.;;;;;;;;;;;;;;x
+bring_out_of_hiding;Call Family out of Hiding;;;;;;;;;;;;;;x
+bring_out_of_hiding_desc;Removes Hidden, Stalwart, or Left At Siege from any of your dynasty or spouses at your location.;;;;;;;;;;;;;;x
+request_important_prisoners;Demand Important Prisoners from Vassals;;;;;;;;;;;;;;x
+request_important_prisoners_desc;Any prisoners ranked above Baron are transferred to your dungeons.;;;;;;;;;;;;;;x
+EVTTOOLTIPprisreq;Prisoner is moved to your dungeons.;;;;;;;;;;;;;;x
+
+

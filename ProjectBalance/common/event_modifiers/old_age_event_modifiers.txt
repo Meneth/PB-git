@@ -1,0 +1,13 @@
+old_age = {
+	martial = -2
+	intrigue = -1
+	learning = 1
+	health = -1
+	fertility = -0.35
+	icon = 26
+}
+lip_reader = {
+	diplomacy = 1
+	intrigue = 1
+	icon = 18
+}

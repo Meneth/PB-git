@@ -1,0 +1,1231 @@
+e_tartaria = {
+	color = { 211 177 80 }
+	color2={ 255 255 255 }
+	
+	culture = cuman
+	
+	capital = 594 #	Sarkel
+	
+	k_crimea = {
+		color={ 200 0 0 }
+		color2={ 255 255 255 }
+		
+		capital = 559 # Crimea
+
+		d_crimea = {
+			color={ 170 20 20 }
+			color2={ 255 255 255 }
+			
+			capital = 559 # Crimea
+		
+			c_lower_don = {
+				color={ 230 190 84 }
+				color2={ 255 255 255 }
+			
+				b_taganrog = {
+				}
+				b_matveevkurgan = {
+				}
+				b_skorokhod = {
+				}
+				b_latonovo = {
+				}
+				b_vesely = {
+				}
+				b_marfinka = {
+				}
+				b_ryasnoye = {
+				}
+				b_novoazovsk = {
+				}
+			}
+			c_chortitza = {
+				color={ 234 194 88 }
+				color2={ 255 255 255 }
+			
+				b_ltava = {
+				}
+				b_chortitza = {
+				}
+				b_baszmacka = {
+				}
+				b_lubny = {
+				}
+				b_alexandrowsk = {
+				}
+				b_rasumowka = {
+				}
+				b_vosnesjensk = {
+				}
+				b_khorol = {
+				}
+			}
+			c_lukomorie = {
+				color={ 242 202 96 }
+				color2={ 255 255 255 }
+			
+				b_zaporzhye = {
+				}
+				b_kushunum = {
+				}
+				b_huliaipole = {
+				}
+				b_kalmius = {
+				}
+				b_kalchik = {
+				}
+				b_onkhiv = {
+				}
+				b_polohy = {
+				}
+				b_chernihivka = {
+				}
+			}
+			c_lower_dniepr = {
+				color={ 246 206 100 }
+				color2={ 255 255 255 }
+			
+				b_dnieprkherson = {
+				}
+				b_kairy = {
+				}
+				b_kyzylyar = {
+				}
+				b_shagingirei = {
+				}
+				b_kuturogly = {
+				}
+				b_tokmak = {
+				}
+				b_pryazovske = {
+				}
+				b_bilozerka = {
+				}
+			}
+			c_crimea = {
+				color={ 250 210 104 }
+				color2={ 255 255 255 }
+			
+				b_bakhchisaray = {
+				}
+				b_aqmescit = {
+					holy_site = tengri_pagan
+					holy_site = tengri_pagan_reformed				
+				}
+				b_dzhankoy = {
+				}
+				b_saq = {
+				}
+				b_perekop = {
+				}
+				b_qarasuvbazar = {
+				}
+				b_kezlev = {
+				}
+				b_qurman = {
+				}
+			}
+			c_oleshye = {
+				color={ 238 198 92 }
+				color2={ 255 255 255 }
+			
+				b_ochakiv = {
+				}
+				b_bohopol = {
+				}
+				b_odessa = {
+				}
+				b_kocibey = {
+				}
+				b_balta = {
+				}
+				b_sokoly = {
+				}
+				b_akkerman = {
+				}
+				b_nikolayev = {
+				}
+			}
+		}
+		d_azov = {
+			color={ 190 10 10 }
+			color2={ 255 255 255 }
+			
+			capital = 597 # Azov
+		
+			c_tana = {
+				color={ 222 183 79 }
+				color2={ 255 255 255 }
+			
+				b_tana = {
+				}
+				b_rostovnadonu = {
+				}
+				b_monastyrsky = {
+				}
+				b_bataysk = {
+				}
+				b_gundorovka = {
+				}
+				b_cherkassk = {
+				}
+				b_ustaksayaskaya = {
+				}
+				b_sulin = {
+				}
+			}
+			c_azov = {
+				color={ 226 187 83 }
+				color2={ 255 255 255 }
+			
+				b_azov = {
+				}
+				b_azaq = {
+				}
+				b_sadki = {
+				}
+				b_eysk = {
+				}
+				b_kagalnik = {
+				}
+				b_akhtarsk = {
+				}
+				b_kugey = {
+				}
+				b_katon = {
+				}
+			}
+			c_kuban = {
+				color={ 230 191 87 }
+				color2={ 255 255 255 }
+			
+				b_khumar = {
+				}
+				b_kuban = {
+				}
+				b_psekups = {
+				}
+				b_khutor = {
+				} 
+				b_podkumok = {
+				}
+				b_coparia = {
+				}
+				b_kirpili = {
+				}
+				b_beshtau = {
+				}
+			}
+		}
+		d_sarkel = {
+			color={ 200 50 10 }
+			color2={ 255 255 255 }
+			
+			capital = 594 # Sarkel
+		
+			c_khopyor = {
+				color={ 238 202 107 }
+				color2={ 255 255 255 }
+			
+				b_khopyorsk = {
+				}
+				b_borisoglebsk = {
+				}
+				b_tambov = {
+				} 
+				b_uryupin = {
+				}
+				b_balashov = {
+				}
+				b_kirsanov = {
+				}
+				b_ustmedveditskaya = {
+				}
+				b_uvarovo = {
+				}
+			}
+			c_sugrov = {
+				color={ 240 204 109 }
+				color2={ 255 255 255 }
+			
+				b_sugrov = {
+				}
+				b_yauchy = {
+				}
+				b_khursa = {
+				}
+				b_khazar = {
+				}
+				b_khratayak = {
+				}
+				b_oboyan = {
+				}
+				b_tim = {
+				}
+				b_fatezh = {
+				}
+			}
+			c_desht-i-kipchak = {
+				color={ 242 206 111 }
+				color2={ 255 255 255 }
+			
+				b_bakhmut = {
+				}
+				b_sviatohirsk = {
+				}
+				b_krasne = {
+				}
+				b_dobropillia = {
+				}
+				b_druzhkivka = {
+				}
+				b_kramatorsk = {
+				}
+				b_lyman = {
+				}
+				b_mospyne = {
+				}
+			}
+			c_sarkel = {
+				color={ 244 208 113 }
+				color2={ 255 255 255 }
+			
+				b_kazarki = {
+				}
+				b_sarkel = {
+				}
+				b_belayavezha = {
+				}
+				b_semikarakorsk = {
+				}
+				b_ustdonetskiy = {
+				}
+				b_kotelnikovo = {
+				}
+				b_tsimlyanskoye = {
+				}
+				b_nizhchir = {
+				}
+			}
+			c_don_portage = {
+				color={ 246 210 115 }
+				color2={ 255 255 255 }
+			
+				b_kalach = {
+				}
+				b_illovlya = {
+				}
+				b_ryumino = {
+				}
+				b_loq = {
+				}
+				b_illevka = {
+				}
+				b_donskoy = {
+				}
+				b_tary = {
+				}
+				b_ozerki = {
+				}
+			}
+			c_sharukan = {
+				color={ 238 203 121 }
+				color2={ 255 255 255 }
+				
+				b_kharka = {
+				}
+				b_sumy = {
+				}
+				b_challykala = {
+				}
+				b_khorysdan = {
+				}
+				b_izyum = {
+				}
+				b_balakliia = {
+				}
+				b_kupyansk = {
+				}
+				b_lyubotin = {
+				}
+			}
+		}
+		# Creation/usurpation trigger
+		# MUST BE PUT AT THE BOTTOM! DO NOT BRING TO TOP!
+		allow = {
+			OR = {
+				has_landed_title = d_crimea
+				any_vassal = { has_landed_title = d_crimea }
+			}
+		}
+	}
+	k_khazaria = {
+		color={ 250 184 31 }
+		color2={ 255 255 255 }
+		
+		capital = 620 #	Itil
+		
+		# Creation/Usurp Trigger
+		allow = {
+			always = no
+		}
+		
+		d_bulgar = { 
+			color={ 193 158 63 }
+			color2={ 255 255 255 }
+			
+			capital = 610 # Bulgar
+		
+			c_kama = {
+				color={ 199 164 69 }
+				color2={ 255 255 255 }
+			
+				b_osa = {
+				}
+				b_chastye = {
+				}
+				b_usttuntor = {
+				}
+				b_krmayak = {
+				}
+				b_pal = {
+				}
+				b_uymuzh = {
+				}
+				b_belyaevka = {
+				}
+				b_pakli = {
+				}
+			}
+			c_bilyar = {
+				color={ 201 166 71 }
+				color2={ 255 255 255 }
+			
+				b_bilyar = {
+				}
+				b_tukhchin = {
+				}
+				b_cukataw = {
+				}
+				b_urussu = {
+				}
+				b_bogulma = {
+				}
+				b_bryakhimov = {
+				}
+				b_nurlat = {
+				}
+				b_dzhalil = {
+				}
+			}
+			c_bulgar = {
+				color={ 203 168 73 }
+				color2={ 255 255 255 }
+			
+				b_bulgar = {
+				}
+				b_ashli = {
+				}
+				b_suar = {
+				}
+				b_balimer = {
+				}
+				b_arbuga = {
+				}
+				b_tawille = {
+				}
+				b_tetyushi = {
+				}
+				b_koshki = {
+				}
+			}
+			c_syrt = {
+				color={ 205 170 75 }
+				color2={ 255 255 255 }
+			
+				b_samara = {
+				}
+				b_bandja = {
+				}
+				b_kinel = {
+				}
+				b_syzran = {
+				}
+				b_tashia = {
+				}
+				b_sarbay = {
+				}
+				b_osinki = {
+				}
+				b_shungut = {
+				}
+			}
+			c_southern_ural = {
+				color={ 207 172 77 }
+				color2={ 255 255 255 }
+			
+				b_boro = {
+				}
+				b_durtojle = {
+				}
+				b_daulakan = {
+				}
+				b_blagovescen = {
+				}
+				b_tuimasy = {
+				}
+				b_janauyl = {
+				}
+				b_iq = {
+				}
+				b_yamantaw = {
+				}
+			}
+			c_bashkirs = {
+				color={ 209 174 79 }
+				color2={ 255 255 255 }
+			
+				b_ufa = {
+				}
+				b_belebey = {
+				}
+				b_chishmy = {
+				}
+				b_bajmaq = {
+				}
+				b_isembaj = {
+				}
+				b_beloret = {
+				}
+				b_meleus = {
+				}
+				b_sterlitamak = {
+				}
+			}
+		}
+		d_cheremisa = { 
+			color={ 225 165 4 }
+			color2={ 255 255 255 }
+			
+			capital = 589 # Grassland Cheremisa
+
+			c_grassland_cheremisa = {
+				color={ 231 171 10 }
+				color2={ 255 255 255 }
+			
+				b_qazan = {
+				}
+				b_yarcalli = {
+				}
+				b_zay = {
+				}
+				b_cistay = {
+				}
+				b_aznaqay = {
+				}
+				b_bua = {
+				}
+				b_bawli = {
+				}
+				b_alabuga = {
+				}
+			}
+			c_merya = {
+				color={ 234 174 13 }
+				color2={ 255 255 255 }
+			
+				b_yoshkarola = {
+				}
+				b_volzhsk = {
+				}
+				b_lopatino = {
+				}
+				b_tsikma = {
+				}
+				b_provoi = {
+				}
+				b_kilemary = {
+				}
+				b_mariturek = {
+				}
+				b_morki = {
+				}
+			}
+			c_chuvash = {
+				color={ 237 177 16 }
+				color2={ 255 255 255 }
+			
+				b_vedasuvar = {
+				}
+				b_makaryevo = {
+				}
+				b_cheboksary = {
+				}
+				b_alatyr = {
+				}
+				b_kozlovka = {
+				}
+				b_sundyr = {
+				}
+				b_tsivilsk = {
+				}
+				b_yadrin = {
+				}
+			}
+			c_mountain_cheremisa = {
+				color={ 240 180 19 }
+				color2={ 255 255 255 }
+			
+				b_simbirsk = {
+				}
+				b_kanadey = {
+				}
+				b_pokrovskoye = {
+				}
+				b_stanichnaya = {
+				}
+				b_melekess = {
+				}
+				b_butyrskaya = {
+				}
+				b_vybornaya = {
+				}
+				b_barysh = {
+				}
+			}
+			c_burtasy = {
+				color={ 243 183 22 }
+				color2={ 255 255 255 }
+			
+				b_saratov = {
+				}
+				b_mechetnaya = {
+				}
+				b_pokrovsk = {
+				}
+				b_atkarsk = {
+				}
+				b_balakova = {
+				}
+				b_sosnovyostrov = {
+				}
+				b_golykaramysh = {
+				}
+				b_rtishchevo = {
+				}
+			}
+			c_mordva = {
+				color={ 246 186 25 }
+				color2={ 255 255 255 }
+			
+				b_saransk = {
+				}
+				b_insar = {
+				}
+				b_temnikow = {
+				}
+				b_ardatovo = {
+				}
+				b_krasnoslobodsk = {
+				}
+				b_yalga = {
+				}
+				b_penza = {
+				}
+				b_yavas = {
+				}
+			}
+		}
+		d_itil = {
+			color={ 151 118 30 }
+			color2={ 255 255 255 }
+			
+			capital = 620 # Itil
+		
+			c_itil = {
+				color={ 155 122 34 }
+				color2={ 255 255 255 }
+			
+				b_itil = {
+				}
+				b_khaganbaligh = {
+				}
+				b_saqsin = {
+					holy_site = tengri_pagan
+					holy_site = tengri_pagan_reformed
+				}
+				b_kamyzyak = {
+				}
+				b_kharabali = {
+				}
+				b_xacitarxan = {
+				} 
+				b_alga = {
+				}
+				b_tumak = {
+				}
+			}
+			c_guryev = {
+				color={ 230 172 16 }
+				color2={ 255 255 255 }
+			
+				b_atyrau = {
+				}
+				b_sarayjuk = {
+				}
+				b_yesmakan = {
+				}
+				b_zhanakush = {
+				}
+				b_birlik = {
+				}
+				b_karabatyr = {
+				}
+				b_mantyube = {
+				}
+				b_besikty = {
+				}
+			}
+			c_yaik = {
+				color={ 159 126 38 }
+				color2={ 255 255 255 }
+			
+				b_orenburg = {
+				}
+				b_kargala = {
+				}
+				b_saraktash = {
+				}
+				b_sakmara = {
+				}
+				b_khutorka = {
+				}
+				b_tolkachi = {
+				}
+				b_sadovy = {
+				}
+				b_kichkas = {
+				}
+			}
+			c_uzens = {
+				color={ 163 130 42 }
+				color2={ 255 255 255 }
+			
+				b_kaztal = {
+				}
+				b_krykuru = {
+				}
+				b_kyzylasker = {
+				}
+				b_khasan = {
+				}
+				b_akkus = {
+				}
+				b_kosoba = {
+				}
+				b_ushkuduk = {
+				}
+				b_aytbay = {
+				}
+			}
+			c_lower_volga = {
+				color={ 167 134 46 }
+				color2={ 255 255 255 }
+			
+				b_sarysu = {
+				}
+				b_tsaritsyn = {
+				}
+				b_kamyshin = {
+				}
+				b_serebrjakovo = {
+				}
+				b_dubovka = {
+				}
+				b_petrovval = {
+				}
+				b_kotovo = {
+				}
+				b_prishib = {
+				}
+			}
+			c_saray = {
+				color={ 175 142 54 }
+				color2={ 255 255 255 }
+			
+				b_akhtuba = {
+				}
+				b_saray = {
+				}
+				b_tsaganaman = {
+				}
+				b_uspenka = {
+				}
+				b_pokrovka = {
+				}
+				b_dzhelga = {
+				}
+				b_bataevka = {
+				}
+				b_chernyyar = {
+				}
+			}
+		}
+		d_perm = {
+			color={ 234 208 137 }
+			color2={ 255 255 255 }
+			
+			capital = 886 # Perm
+		
+			c_perm = {
+				color={ 237 211 140 }
+				color2={ 255 255 255 }
+			
+				b_perym = {
+				}
+				b_perm = {
+					holy_site = finnish_pagan
+					holy_site = finnish_pagan_reformed				
+				}
+				b_gorodki = {
+				}
+				b_yagoshikha = {
+				}
+				b_lysva = {
+				}
+				b_cherdyn = {
+				}
+				b_chemuska = {
+				}
+				b_biser = {
+				}
+			}
+			c_votyaki = {
+				color={ 197 162 67 }
+				color2={ 255 255 255 }
+			
+				b_achit = {
+				}
+				b_sarana = {
+				}
+				b_ufimskiy = {
+				}
+				b_bisert = {
+				}
+				b_arti = {
+				}
+				b_atig = {
+				}
+				b_shalya = {
+				}
+				b_shamary = {
+				}
+			}
+			c_yamalia = {
+				color={ 240 214 143 }
+				color2={ 255 255 255 }
+			
+				b_polnovatvozh = {
+				}
+				b_obdorsk = {
+				}
+				b_lapytnangk = {
+				}
+				b_ituyakha = {
+				}
+				b_urengoi = {
+				}
+				b_nazym = {
+				}
+				b_baygul = {
+				}
+				b_kaek = {
+				}
+			}
+			c_komi = {
+				color={ 243 217 146 }
+				color2={ 255 255 255 }
+			
+				b_inta = {
+				}
+				b_vorkuta = {
+				}
+				b_ustkolom = {
+				}
+				b_usttsilma = {
+				}
+				b_aykino = {
+				}
+				b_vorgashor = {
+				}
+				b_kharp = {
+				}
+				b_khalmeryu = {
+				}
+			}
+			c_chelyabi = {
+				color={ 246 220 149 }
+				color2={ 255 255 255 }
+			
+				b_chelyabinsk = {
+				}
+				b_ustkatav = {
+				}
+				b_asha = {
+				}
+				b_chebarkul = {
+				}
+				b_kaslinsky = {
+				}
+				b_kyshtym = {
+				}
+				b_miass = {
+				}
+				b_satka = {
+				}
+			}
+			c_khantia = {
+				color={ 249 223 152 }
+				color2={ 255 255 255 }
+			
+				b_chanty = {
+				}
+				b_beloyarskiy = {
+				}
+				b_igrim = {
+				}
+				b_berezovo = {
+				}
+				b_pnobe = {
+				}
+				b_nyagyn = {
+				}
+				b_djinesh = {
+				}
+				b_sherkala = {
+				}
+			}
+		}
+		d_tyumen = {
+			color={ 210 185 15 }
+			color2={ 255 255 255 }
+			
+			capital = 891 # Tyumen
+		
+			c_tyumen = {
+				color={ 219 166 23 }
+				color2={ 255 255 255 }
+			
+				b_tyumen = {
+				}
+				b_qashliq = {
+				}
+				b_tobolsk = {
+				}
+				b_tugulym = {
+				}
+				b_novtap = {
+				}
+				b_sumkino = {
+				}
+				b_nizhtavda = {
+				}
+				b_borovskiy = {
+				}
+			}
+			c_mansia = {
+				color={ 223 170 27 }
+				color2={ 255 255 255 }
+			
+				b_mansiysk = {
+				}
+				b_yabin = {
+				}
+				b_yalbak = {
+				}
+				b_pytyakh = {
+				}
+				b_nefteyugansk = {
+				}
+				b_mamontovo = {
+				}
+				b_poykovskiy = {
+				}
+				b_samza = {
+				}
+			}
+			c_surgut = {
+				color={ 227 174 31 }
+				color2={ 255 255 255 }
+			
+				b_surgut = {
+				}
+				b_belyyyar = {
+				}
+				b_iberbolgar = {
+				}
+				b_baduk = {
+				}
+				b_kaik = {
+				}
+				b_langepas = {
+				}
+				b_pokachi = {
+				}
+				b_vysokiy = {
+				}
+			}
+			c_oral = {
+				color={ 231 178 35 }
+				color2={ 255 255 255 }
+			
+				b_kurgan = {
+				}
+				b_vagay = {
+				}
+				b_kyzalyar = {
+				}
+				b_lebyazhe = {
+				}
+				b_yurgamysh = {
+				}
+				b_shumikha = {
+				}
+				b_mishkino = {
+				}
+				b_makushino = {
+				}
+			}
+		}
+		d_aktobe = {
+			color={ 198 150 11 }
+			color2={ 255 255 255 }
+			
+			capital = 896 # Aktobe
+		
+			c_ryn_desert = {
+				color={ 171 138 50 }
+				color2={ 255 255 255 }
+			
+				b_orsk = {
+				}
+				b_karatogay = {
+				}
+				b_bogunbay = {
+				}
+				b_kaumetey = {
+				}
+				b_chausay = {
+				}
+				b_kemer = {
+				}
+				b_ebita = {
+				}
+				b_dzhanatalap = {
+				}
+			}
+			c_aqtobe = {
+				color={ 232 174 18 }
+				color2={ 255 255 255 }
+			
+				b_aqtobe = {
+				}
+				b_ashchesay = {
+				}
+				b_burta = {
+				} 
+				b_sibiryak = {
+				}
+				b_kunsay = {
+				}
+				b_zharlysay = {
+				}
+				b_shilikta = {
+				}
+				b_aulkutyrtas = {
+				}
+			}
+			c_omsk = {
+				color={ 234 176 20 }
+				color2={ 255 255 255 }
+			
+				b_omsk = {
+				}
+				b_tara = {
+				}
+				b_isilkul = {
+					holy_site = tengri_pagan
+					holy_site = tengri_pagan_reformed
+				}
+				b_kalachinsk = {
+				}
+				b_tyukalinsk = {
+				}
+				b_cherlak = {
+				}
+				b_sargatka = {
+				}
+				b_krasnyyar = {
+				}
+			}
+		}
+	}
+
+	k_alania = {
+		color={ 180 150 50 }
+		color2={ 255 255 255 }
+		
+		capital = 603 # Alania
+
+		d_alania = {
+			color={ 155 110 48 }
+			color2={ 255 255 255 }
+			
+			capital = 603 # Alania
+		
+			c_sarpa = {
+				color={ 247 212 90 }
+				color2={ 255 255 255 }
+			
+				b_elst = {
+				}
+				b_bachanta = {
+				}
+				b_ikburul = {
+				}
+				b_karatchaplak = {
+				}
+				b_yashkul = {
+				} 
+				b_ketchenery = {
+				}
+				b_yashalta = {
+				}
+				b_ysaganaman = {
+				}
+			}
+			c_yegorlyk = {
+				color={ 249 214 92 }
+				color2={ 255 255 255 }
+			
+				b_piatigorie = {
+				}
+				b_madjar = {
+				}
+				b_stauropolis = {
+				}
+				b_beshpagir = {
+				}
+				b_erkenshakhar = {
+				}
+				b_kuguty = {
+				}
+				b_kiankiz = {
+				}
+				b_yamki = {
+				}
+			}
+			c_manych = {
+				color={ 251 216 94 }
+				color2={ 255 255 255 }
+			
+				b_mozdok = {
+				}
+				b_terek = {
+				}
+				b_makhmudmekteb = {
+				}
+				b_nartkala = {
+				}
+				b_malgobekbalka = {
+				}
+				b_kunay = {
+				}
+				b_karabulak = {
+				}
+				b_makhach = {
+				}
+			}
+			c_alania = {
+				color={ 253 218 96 }
+				color2={ 255 255 255 }
+			
+				b_vovnushki = {
+				}
+				b_magas = {
+				}
+				b_arkhyz = {
+				}
+				b_zaur = {
+				}
+				b_tskhinval = {
+				}
+				b_tkhabayerdy = {
+				}
+				b_zadalesk = {
+				}
+				b_tamarasheni = {
+				}
+			}
+			c_kuma = {
+				color={ 255 220 98 }
+				color2={ 255 255 255 }
+			
+				b_kizlyar = {
+				}
+				b_kuliyurt = {
+				}
+				b_tereklimekteb = {
+				}
+				b_kizilyurt = {
+				}
+				b_gums = {
+				}
+				b_dylym = {
+				}
+				b_babayurt = {
+				}
+				b_arslanbek = {
+				}
+			}
+			c_kasogs = {
+				color={ 250 156 156 }
+				color2={ 255 255 255 }
+				
+				b_myequape = {
+				}
+				b_samiran = {
+				}
+				b_zikh = {
+				}
+				b_bakhtarakhtar = {
+				}
+				b_koshkhab = {
+				}
+				b_ustdzeghuta = {
+				}
+				b_sarytyuz = {
+				}
+				b_eltarkan = {
+				}
+			}
+		}
+	}
+	allow = {
+		culture_group = altaic
+		OR = {
+			has_landed_title = k_crimea
+			completely_controls = k_crimea
+			k_crimea = { is_titular = yes }
+		}
+		OR = {
+			has_landed_title = k_alania
+			completely_controls = k_alania
+			k_alania = { is_titular = yes }
+		}
+		war = no
+		ruled_years = 5
+		is_adult = yes
+		NOT = { tier = emperor }
+	}
+}

@@ -1,0 +1,1294 @@
+#Hormuz Republic - all fictional
+#1000158034 -
+
+#Thakkur (sunni Gujarati)
+1000158034 = {
+	name="Amol"
+	dynasty=1000061300 #Thakkur
+	religion="sunni"
+	culture="gujarati"
+	add_trait="honest"
+	add_trait="zealous"
+	add_trait="genius"
+	999.1.1={
+		birth="999.1.1"
+	}
+	1065.1.1={
+		death="1065.1.1"
+	}
+}
+1000158035 = {
+	name="Amol"
+	dynasty=1000061300 #Thakkur
+	religion="sunni"
+	culture="gujarati"
+	add_trait="quick"
+	add_trait="cynical"
+	add_trait="kind"
+	add_trait="patient"
+	father=1000158034
+	1030.1.1={
+		birth="1030.1.1"
+	}
+	1101.1.1={
+		death="1101.1.1"
+	}
+}
+1000158036 = {
+	name="Devapala"
+	dynasty=1000061300 #Thakkur
+	religion="sunni"
+	culture="gujarati"
+	add_trait="quick"
+	add_trait="shy"
+	add_trait="kind"
+	add_trait="depressed"
+	father=1000158035
+	1048.1.1={
+		birth="1048.1.1"
+	}
+	1125.1.1={
+		death="1125.1.1"
+	}
+}
+1000158037 = {
+	name="Rajapala"
+	dynasty=1000061300 #Thakkur
+	religion="sunni"
+	culture="gujarati"
+	add_trait="gregarious"
+	add_trait="kind"
+	add_trait="humble"
+	father=1000158035
+	1050.1.1={
+		birth="1050.1.1"
+	}
+	1100.1.1={
+		death="1100.1.1"
+	}
+}
+1000158038 = {
+	name="Rajyapala"
+	dynasty=1000061300 #Thakkur
+	religion="sunni"
+	culture="gujarati"
+	add_trait="honest"
+	add_trait="charitable"
+	father=1000158037
+	1069.1.1={
+		birth="1069.1.1"
+	}
+	1105.1.1={
+		death="1105.1.1"
+	}
+}
+1000158039 = {
+	name="Mattat"
+	dynasty=1000061300 #Thakkur
+	religion="sunni"
+	culture="gujarati"
+	add_trait="temperate"
+	add_trait="proud"
+	father=1000158038
+	1092.1.1={
+		birth="1092.1.1"
+	}
+	1107.1.1={
+		death="1107.1.1"
+	}
+}
+1000158040 = {
+	name="Amol"
+	dynasty=1000061300 #Thakkur
+	religion="sunni"
+	culture="gujarati"
+	add_trait="zealous"
+	add_trait="greedy"
+	father=1000158036
+	1066.1.1={
+		birth="1066.1.1"
+	}
+	1135.1.1={
+		death="1135.1.1"
+	}
+}
+1000158041 = {
+	name="Bhoo-Chand"
+	dynasty=1000061300 #Thakkur
+	religion="sunni"
+	culture="gujarati"
+	add_trait="shy"
+	add_trait="temperate"
+	father=1000158040
+	1090.1.1={
+		birth="1090.1.1"
+	}
+	1172.1.1={
+		death="1172.1.1"
+	}
+}
+1000158042 = {
+	name="Kalbhoj"
+	dynasty=1000061300 #Thakkur
+	religion="sunni"
+	culture="gujarati"
+	add_trait="deceitful"
+	add_trait="lustful"
+	father=1000158041
+	1111.1.1={
+		birth="1111.1.1"
+	}
+	1175.1.1={
+		death="1175.1.1"
+	}
+}
+1000158043 = {
+	name="Prithvipal"
+	dynasty=1000061300 #Thakkur
+	religion="sunni"
+	culture="gujarati"
+	add_trait="diligent"
+	add_trait="kind"
+	father=1000158042
+	1144.1.1={
+		birth="1144.1.1"
+	}
+	1212.1.1={
+		death="1212.1.1"
+	}
+}
+1000158044 = {
+	name="Amol"
+	dynasty=1000061300 #Thakkur
+	religion="sunni"
+	culture="gujarati"
+	add_trait="quick"
+	add_trait="kind"
+	add_trait="patient"
+	father=1000158043
+	1166.1.1={
+		birth="1166.1.1"
+	}
+	1234.1.1={
+		death="1234.1.1"
+	}
+}
+1000158045 = {
+	name="Samant-Singh"
+	dynasty=1000061300 #Thakkur
+	religion="sunni"
+	culture="gujarati"
+	add_trait="cynical"
+	add_trait="ambitious"
+	father=1000158044
+	1188.1.1={
+		birth="1188.1.1"
+	}
+	1248.1.1={
+		death="1248.1.1"
+	}
+}
+1000158046 = {
+	name="Vindhyavarman"
+	dynasty=1000061300 #Thakkur
+	religion="sunni"
+	culture="gujarati"
+	add_trait="gregarious"
+	add_trait="kind"
+	add_trait="gluttonous"
+	father=1000158045
+	1210.1.1={
+		birth="1210.1.1"
+	}
+	1258.1.1={
+		death="1258.1.1"
+	}
+}
+1000158047 = {
+	name="Sinhad-Deo"
+	dynasty=1000061300 #Thakkur
+	religion="sunni"
+	culture="gujarati"
+	add_trait="patient"
+	add_trait="diligent"
+	father=1000158046
+	1233.1.1={
+		birth="1233.1.1"
+	}
+	1285.1.1={
+		death="1285.1.1"
+	}
+}
+1000158048 = {
+	name="Ajairaja"
+	dynasty=1000061300 #Thakkur
+	religion="sunni"
+	culture="gujarati"
+	add_trait="paranoid"
+	add_trait="cruel"
+	father=1000158047
+	1255.1.1={
+		birth="1255.1.1"
+	}
+	1299.1.1={
+		death="1299.1.1"
+	}
+}
+1000158049 = {
+	name="Amol"
+	dynasty=1000061300 #Thakkur
+	religion="sunni"
+	culture="gujarati"
+	add_trait="quick"
+	add_trait="kind"
+	add_trait="shy"
+	add_trait="trusting"
+	add_trait="diligent"
+	father=1000158048
+	1282.1.1={
+		birth="1282.1.1"
+	}
+	1380.1.1={
+		death="1380.1.1"
+	}
+}
+1000158050 = {
+	name="Amol"
+	dynasty=1000061300 #Thakkur
+	religion="sunni"
+	culture="gujarati"
+	add_trait="quick"
+	add_trait="charitable"
+	add_trait="gregarious"
+	father=1000158049
+	1300.1.1={
+		birth="1300.1.1"
+	}
+	1381.1.1={
+		death="1381.1.1"
+	}
+}
+1000158051 = {
+	name="Devapala"
+	dynasty=1000061300 #Thakkur
+	religion="sunni"
+	culture="gujarati"
+	add_trait="ambitious"
+	add_trait="kind"
+	add_trait="slothful"
+	father=1000158050
+	1325.1.1={
+		birth="1325.1.1"
+	}
+	1405.1.1={
+		death="1405.1.1"
+	}
+}
+
+#Abdullid Bedouin Sunni
+
+1000158052 = {
+	name="Abdullah"
+	dynasty=101018
+	religion="sunni"
+	culture="bedouin_arabic"
+	#father=1000158050
+	1008.1.1={
+		birth="1008.1.1"
+	}
+	1060.1.1={
+		death="1060.1.1"
+	}
+}
+1000158053 = {
+	name="Abdullah"
+	dynasty=101018
+	religion="sunni"
+	culture="bedouin_arabic"
+	add_trait="ambitious"
+	add_trait="slothful"
+	add_trait="gluttonous"
+	father=1000158052
+	1030.1.1={
+		birth="1030.1.1"
+	}
+	1099.1.1={
+		death="1099.1.1"
+	}
+}
+1000158054 = {
+	name="Khalil"
+	dynasty=101018
+	religion="sunni"
+	culture="bedouin_arabic"
+	add_trait="diligent"
+	add_trait="gregarious"
+	add_trait="gluttonous"
+	father=1000158053
+	1047.1.1={
+		birth="1047.1.1"
+	}
+	1072.1.1={
+		death="1072.1.1"
+	}
+}
+1000158055 = {
+	name="Qawurd"
+	dynasty=101018
+	religion="sunni"
+	culture="bedouin_arabic"
+	add_trait="shy"
+	add_trait="cynical"
+	add_trait="charitable"
+	father=1000158053
+	1048.1.1={
+		birth="1048.1.1"
+	}
+	1072.1.1={
+		death="1072.1.1"
+	}
+}
+1000158056 = {
+	name="Idris"
+	dynasty=101018
+	religion="sunni"
+	culture="bedouin_arabic"
+	add_trait="trusting"
+	add_trait="honest"
+	add_trait="ambitious"
+	father=1000158053
+	1052.1.1={
+		birth="1052.1.1"
+	}
+	1111.1.1={
+		death="1111.1.1"
+	}
+}
+1000158057 = {
+	name="Muzaffaraddin"
+	dynasty=101018
+	religion="sunni"
+	culture="bedouin_arabic"
+	add_trait="kind"
+	add_trait="charitable"
+	father=1000158055
+	1066.1.1={
+		birth="1066.1.1"
+	}
+	1082.1.1={
+		death="1082.1.1"
+	}
+}
+1000158058 = {
+	name="Ubayd"
+	dynasty=101018
+	religion="sunni"
+	culture="bedouin_arabic"
+	add_trait="patient"
+	add_trait="deceitful"
+	father=1000158056
+	1070.1.1={
+		birth="1070.1.1"
+	}
+	1140.1.1={
+		death="1140.1.1"
+	}
+}
+1000158059 = {
+	name="Abdul-Wahab"
+	dynasty=101018
+	religion="sunni"
+	culture="bedouin_arabic"
+	add_trait="paranoid"
+	add_trait="cruel"
+	add_trait="wroth"
+	father=1000158058
+	1097.1.1={
+		birth="1097.1.1"
+	}
+	1166.1.1={
+		death="1166.1.1"
+	}
+}
+1000158060 = {
+	name="Mukhtar"
+	dynasty=101018
+	religion="sunni"
+	culture="bedouin_arabic"
+	add_trait="craven"
+	add_trait="shy"
+	father=1000158059
+	1130.1.1={
+		birth="1130.1.1"
+	}
+	1203.1.1={
+		death="1203.1.1"
+	}
+}
+1000158061 = {
+	name="Hafiz"
+	dynasty=101018
+	religion="sunni"
+	culture="bedouin_arabic"
+	add_trait="ambitious"
+	add_trait="brave"
+	add_trait="wroth"
+	father=1000158060
+	1148.1.1={
+		birth="1148.1.1"
+	}
+	1225.1.1={
+		death="1225.1.1"
+	}
+}
+1000158062 = {
+	name="Faruk"
+	dynasty=101018
+	religion="sunni"
+	culture="bedouin_arabic"
+	add_trait="patient"
+	add_trait="content"
+	father=1000158061
+	1184.1.1={
+		birth="1184.1.1"
+	}
+	1267.1.1={
+		death="1267.1.1"
+	}
+}
+1000158063 = {
+	name="Aram"
+	dynasty=101018
+	religion="sunni"
+	culture="bedouin_arabic"
+	add_trait="slothful"
+	add_trait="greedy"
+	father=1000158062
+	1213.1.1={
+		birth="1213.1.1"
+	}
+	1270.1.1={
+		death="1270.1.1"
+	}
+}
+1000158064 = {
+	name="Jibril"
+	dynasty=101018
+	religion="sunni"
+	culture="bedouin_arabic"
+	add_trait="chaste"
+	add_trait="temperate"
+	father=1000158063
+	1249.1.1={
+		birth="1249.1.1"
+	}
+	1319.1.1={
+		death="1319.1.1"
+	}
+}
+1000158065 = {
+	name="Faruk"
+	dynasty=101018
+	religion="sunni"
+	culture="bedouin_arabic"
+	add_trait="lustful"
+	add_trait="kind"
+	father=1000158064
+	1300.1.1={
+		birth="1300.1.1"
+	}
+	1355.1.1={
+		death="1355.1.1"
+	}
+}
+1000158066 = {
+	name="Faruk"
+	dynasty=101018
+	religion="sunni"
+	culture="bedouin_arabic"
+	add_trait="kind"
+	add_trait="cynical"
+	father=1000158065
+	1317.1.1={
+		birth="1317.1.1"
+	}
+	1415.1.1={
+		death="1415.1.1"
+	}
+}
+1000158067 = {
+	name="Halil"
+	dynasty=101018
+	religion="sunni"
+	culture="bedouin_arabic"
+	add_trait="kind"
+	add_trait="zealous"
+	father=1000158065
+	1318.1.1={
+		birth="1318.1.1"
+	}
+	1381.1.1={
+		death="1381.1.1"
+	}
+}
+1000158068 = {
+	name="Muslihiddin"
+	dynasty=101018
+	religion="sunni"
+	culture="bedouin_arabic"
+	add_trait="charitable"
+	add_trait="gregarious"
+	father=1000158065
+	1320.1.1={
+		birth="1320.1.1"
+	}
+	1398.1.1={
+		death="1398.1.1"
+	}
+}
+1000158069 = {
+	name="Aida"
+	female = yes
+	dynasty=101018
+	religion="sunni"
+	culture="bedouin_arabic"
+	add_trait="fair"
+	add_trait="kind"
+	add_trait="shy"
+	father=1000158065
+	1324.1.1={
+		birth="1324.1.1"
+	}
+	1415.1.1={
+		death="1415.1.1"
+	}
+}
+
+#1031124 Mustawfi (Shiite Persian)
+1000158070 = {
+	name="Kurush"
+	dynasty=1031124
+	religion="shiite"
+	culture="persian"
+	add_trait="fair"
+	add_trait="proud"
+	add_trait="deceitful"
+	add_trait="patient"
+	1030.1.1={
+		birth="1030.1.1"
+	}
+	1102.1.1={
+		death="1102.1.1"
+	}
+}
+1000158071 = {
+	name="Farah"
+	female = yes
+	dynasty=1031124
+	religion="shiite"
+	culture="persian"
+	add_trait="fair"
+	add_trait="proud"
+	add_trait="slothful"
+	add_trait="charitable"
+	father=1000158070
+	1055.1.1={
+		birth="1055.1.1"
+	}
+	1091.1.1={
+		death="1091.1.1"
+	}
+}
+1000158072 = {
+	name="Ghamze"
+	dynasty=1031124
+	religion="shiite"
+	culture="persian"
+	add_trait="fair"
+	add_trait="humble"
+	add_trait="cynical"
+	father=1000158070
+	1056.1.1={
+		birth="1056.1.1"
+	}
+	1091.1.1={
+		death="1091.1.1"
+	}
+}
+1000158073 = {
+	name="Shahrokh"
+	dynasty=1031124
+	religion="shiite"
+	culture="persian"
+	add_trait="fair"
+	add_trait="kind"
+	add_trait="shy"
+	father=1000158072
+	1073.1.1={
+		birth="1073.1.1"
+	}
+	1155.1.1={
+		death="1155.1.1"
+	}
+}
+1000158074 = {
+	name="Darab"
+	dynasty=1031124
+	religion="shiite"
+	culture="persian"
+	add_trait="patient"
+	add_trait="cruel"
+	father=1000158073
+	1102.1.1={
+		birth="1102.1.1"
+	}
+	1188.1.1={
+		death="1188.1.1"
+	}
+}
+1000158075 = {
+	name="Gholam"
+	dynasty=1031124
+	religion="shiite"
+	culture="persian"
+	add_trait="honest"
+	add_trait="chaste"
+	father=1000158074
+	1130.1.1={
+		birth="1130.1.1"
+	}
+	1199.1.1={
+		death="1199.1.1"
+	}
+}
+1000158076 = {
+	name="Vahid"
+	dynasty=1031124
+	religion="shiite"
+	culture="persian"
+	add_trait="kind"
+	add_trait="shy"
+	father=1000158075
+	1162.1.1={
+		birth="1162.1.1"
+	}
+	1235.1.1={
+		death="1235.1.1"
+	}
+}
+1000158077 = {
+	name="Esma'il"
+	dynasty=1031124
+	religion="shiite"
+	culture="persian"
+	add_trait="zealous"
+	add_trait="cruel"
+	father=1000158076
+	1199.1.1={
+		birth="1199.1.1"
+	}
+	1260.1.1={
+		death="1260.1.1"
+	}
+}
+1000158078 = {
+	name="Khosrow"
+	dynasty=1031124
+	religion="shiite"
+	culture="persian"
+	add_trait="slothful"
+	add_trait="greedy"
+	father=1000158077
+	1231.1.1={
+		birth="1231.1.1"
+	}
+	1278.1.1={
+		death="1278.1.1"
+	}
+}
+1000158079 = {
+	name="Hooshyar"
+	dynasty=1031124
+	religion="shiite"
+	culture="persian"
+	add_trait="lustful"
+	add_trait="gregarious"
+	father=1000158078
+	1260.1.1={
+		birth="1260.1.1"
+	}
+	1314.1.1={
+		death="1314.1.1"
+	}
+}
+1000158080 = {
+	name="Zia"
+	dynasty=1031124
+	religion="shiite"
+	culture="persian"
+	add_trait="envious"
+	add_trait="arbitrary"
+	father=1000158079
+	1288.1.1={
+		birth="1288.1.1"
+	}
+	1336.1.1={
+		death="1336.1.1"
+	}
+}
+1000158081 = {
+	name="Morteza"
+	dynasty=1031124
+	religion="shiite"
+	culture="persian"
+	add_trait="fair"
+	add_trait="just"
+	father=1000158080
+	1312.1.1={
+		birth="1312.1.1"
+	}
+	1388.1.1={
+		death="1388.1.1"
+	}
+}
+
+# Motamedi (Sunni Persian)
+1000158082 = {
+	name="Shahram"
+	dynasty=1000061349
+	religion="sunni"
+	culture="persian"
+	add_trait="kind"
+	add_trait="gregarious"
+	980.1.1={
+		birth="980.1.1"
+	}
+	1050.1.1={
+		death="1050.1.1"
+	}
+}
+1000158083 = {
+	name="Salman"
+	dynasty=1000061349
+	religion="sunni"
+	culture="persian"
+	add_trait="charitable"
+	add_trait="just"
+	father=1000158082
+	1000.1.1={
+		birth="1000.1.1"
+	}
+	1066.1.1={
+		death="1066.1.1"
+	}
+}
+1000158084 = {
+	name="Dinah"
+	female=yes
+	dynasty=1000061349
+	religion="sunni"
+	culture="persian"
+	add_trait="zealous"
+	add_trait="honest"
+	add_trait="shy"
+	father=1000158085
+	1044.1.1={
+		birth="1044.1.1"
+	}
+	1078.1.1={
+		death="1078.1.1"
+	}
+}
+1000158085 = {
+	name="Sina"
+	dynasty=1000061349
+	religion="sunni"
+	culture="persian"
+	add_trait="strong"
+	add_trait="gregarious"
+	add_trait="cynical"
+	add_trait="honest"
+	father=1000158083
+	1022.1.1={
+		birth="1022.1.1"
+	}
+	1113.1.1={
+		death="1113.1.1"
+	}
+}
+1000158086 = {
+	name="Shayan"
+	dynasty=1000061349
+	religion="sunni"
+	culture="persian"
+	add_trait="weak"
+	add_trait="kind"
+	add_trait="trusting"
+	father=1000158085
+	1043.1.1={
+		birth="1043.1.1"
+	}
+	1066.1.1={
+		death="1066.1.1"
+	}
+}
+1000158087 = {
+	name="Zohreh"
+	female=yes
+	dynasty=1000061349
+	religion="sunni"
+	culture="persian"
+	add_trait="strong"
+	add_trait="brave"
+	add_trait="wroth"
+	add_trait="kind"
+	father=1000158085
+	1066.1.1={
+		birth="1066.1.1"
+	}
+	1142.1.1={
+		death="1142.1.1"
+	}
+}
+1000158088 = {
+	name="Dinah"
+	female=yes
+	dynasty=1000061349
+	religion="sunni"
+	culture="persian"
+	add_trait="strong"
+	add_trait="brave"
+	add_trait="wroth"
+	add_trait="just"
+	father=1000158085
+	1045.1.1={
+		birth="1045.1.1"
+	}
+	1072.1.1={
+		death="1072.1.1"
+	}
+}
+1000158089 = {
+	name="Asa"
+	female=yes
+	dynasty=1000061349
+	religion="sunni"
+	culture="persian"
+	add_trait="scholar"
+	add_trait="patient"
+	add_trait="cynical"
+	father=1000158085
+	1049.1.1={
+		birth="1049.1.1"
+	}
+	1107.1.1={
+		death="1107.1.1"
+	}
+}
+1000158090 = {
+	name="Irandokht"
+	female=yes
+	dynasty=1000061349
+	religion="sunni"
+	culture="persian"
+	add_trait="honest"
+	add_trait="kind"
+	father=1000158085
+	1056.1.1={
+		birth="1056.1.1"
+	}
+	1078.1.1={
+		death="1078.1.1"
+	}
+}
+1000158091 = {
+	name="Keykhosrow"
+	dynasty=1000061349
+	religion="sunni"
+	culture="persian"
+	add_trait="honest"
+	add_trait="kind"
+	add_trait="shy"
+	add_trait="brave"
+	father=1000158085
+	1077.1.1={
+		birth="1077.1.1"
+	}
+	1156.1.1={
+		death="1156.1.1"
+	}
+}
+1000158092 = {
+	name="Ehsan"
+	dynasty=1000061349
+	religion="sunni"
+	culture="persian"
+	add_trait="poet"
+	add_trait="envious"
+	add_trait="just"
+	father=1000158091
+	1099.1.1={
+		birth="1099.1.1"
+	}
+	1162.1.1={
+		death="1162.1.1"
+	}
+}
+1000158093 = {
+	name="Ardahan"
+	dynasty=1000061349
+	religion="sunni"
+	culture="persian"
+	add_trait="cynical"
+	add_trait="just"
+	father=1000158092
+	1133.1.1={
+		birth="1133.1.1"
+	}
+	1200.1.1={
+		death="1200.1.1"
+	}
+}
+1000158094 = {
+	name="Mohammed"
+	dynasty=1000061349
+	religion="sunni"
+	culture="persian"
+	add_trait="charitable"
+	add_trait="humble"
+	add_trait="deceitful"
+	father=1000158093
+	1156.1.1={
+		birth="1156.1.1"
+	}
+	1212.1.1={
+		death="1212.1.1"
+	}
+}
+1000158095 = {
+	name="Danush"
+	dynasty=1000061349
+	religion="sunni"
+	culture="persian"
+	add_trait="proud"
+	add_trait="greedy"
+	add_trait="kind"
+	father=1000158094
+	1190.1.1={
+		birth="1190.1.1"
+	}
+	1266.1.1={
+		death="1266.1.1"
+	}
+}
+1000158096 = {
+	name="Mehrzad"
+	dynasty=1000061349
+	religion="sunni"
+	culture="persian"
+	add_trait="scholar"
+	add_trait="slow"
+	add_trait="honest"
+	add_trait="kind"
+	father=1000158095
+	1224.1.1={
+		birth="1224.1.1"
+	}
+	1298.1.1={
+		death="1298.1.1"
+	}
+}
+1000158097 = {
+	name="Vishtasb"
+	dynasty=1000061349
+	religion="sunni"
+	culture="persian"
+	add_trait="wroth"
+	add_trait="ambitious"
+	add_trait="homosexual"
+	father=1000158096
+	1260.1.1={
+		birth="1260.1.1"
+	}
+	1321.1.1={
+		death="1321.1.1"
+	}
+}
+1000158098 = {
+	name="Kamran"
+	dynasty=1000061349
+	religion="sunni"
+	culture="persian"
+	add_trait="lustful"
+	add_trait="shy"
+	add_trait="just"
+	father=1000158097
+	1295.1.1={
+		birth="1295.1.1"
+	}
+	1348.1.1={
+		death="1348.1.1"
+	}
+}
+1000158099 = {
+	name="Ahmad"
+	dynasty=1000061349
+	religion="sunni"
+	culture="persian"
+	add_trait="humble"
+	add_trait="diligent"
+	father=1000158098
+	1319.1.1={
+		birth="1319.1.1"
+	}
+	1370.1.1={
+		death="1370.1.1"
+	}
+}
+
+
+# Suren (Zoroastrian Persian)
+
+1000158100 = {
+	name="Zartosht"
+	dynasty=1000061348
+	religion="zoroastrian"
+	culture="persian"
+	add_trait="ambitious"
+	add_trait="diligent"
+	add_trait="brave"
+	add_trait="slow"
+	1003.1.1={
+		birth="1003.1.1"
+	}
+	1075.1.1={
+		death="1075.1.1"
+	}
+}
+1000158101 = {
+	name="Ferdows"
+	dynasty=1000061348
+	religion="zoroastrian"
+	culture="persian"
+	add_trait="humble"
+	add_trait="diligent"
+	add_trait="shy"
+	father=1000158100
+	1025.1.1={
+		birth="1025.1.1"
+	}
+	1090.1.1={
+		death="1090.1.1"
+	}
+}
+1000158102 = {
+	name="Khosrow"
+	dynasty=1000061348
+	religion="zoroastrian"
+	culture="persian"
+	add_trait="slothful"
+	add_trait="trusting"
+	add_trait="kind"
+	add_trait="shy"
+	father=1000158101
+	1044.1.1={
+		birth="1044.1.1"
+	}
+	1101.1.1={
+		death="1101.1.1"
+	}
+}
+1000158103 = {
+	name="Hormazd"
+	dynasty=1000061348
+	religion="zoroastrian"
+	culture="persian"
+	add_trait="paranoid"
+	add_trait="charitable"
+	add_trait="chaste"
+	father=1000158102
+	1062.1.1={
+		birth="1062.1.1"
+	}
+	1144.1.1={
+		death="1144.1.1"
+	}
+}
+1000158104 = {
+	name="Pashang"
+	dynasty=1000061348
+	religion="zoroastrian"
+	culture="persian"
+	add_trait="envious"
+	add_trait="content"
+	add_trait="cynical"
+	father=1000158103
+	1100.1.1={
+		birth="1100.1.1"
+	}
+	1174.1.1={
+		death="1174.1.1"
+	}
+}
+1000158105 = {
+	name="Peroz"
+	dynasty=1000061348
+	religion="zoroastrian"
+	culture="persian"
+	add_trait="greedy"
+	add_trait="arbitrary"
+	add_trait="temperate"
+	father=1000158104
+	1124.1.1={
+		birth="1124.1.1"
+	}
+	1188.1.1={
+		death="1188.1.1"
+	}
+}
+1000158106 = {
+	name="Ferdows"
+	dynasty=1000061348
+	religion="zoroastrian"
+	culture="persian"
+	add_trait="gluttonous"
+	add_trait="zealous"
+	add_trait="honest"
+	father=1000158105
+	1152.1.1={
+		birth="1152.1.1"
+	}
+	1199.1.1={
+		death="1199.1.1"
+	}
+}
+1000158107 = {
+	name="Shapur"
+	dynasty=1000061348
+	religion="zoroastrian"
+	culture="persian"
+	add_trait="cynical"
+	add_trait="kind"
+	add_trait="craven"
+	father=1000158106
+	1179.1.1={
+		birth="1179.1.1"
+	}
+	1247.1.1={
+		death="1247.1.1"
+	}
+}
+1000158108 = {
+	name="Aurang"
+	dynasty=1000061348
+	religion="zoroastrian"
+	culture="persian"
+	add_trait="cruel"
+	add_trait="gregarious"
+	add_trait="temperate"
+	father=1000158107
+	1202.1.1={
+		birth="1202.1.1"
+	}
+	1258.1.1={
+		death="1258.1.1"
+	}
+}
+1000158109 = {
+	name="Ardeshir"
+	dynasty=1000061348
+	religion="zoroastrian"
+	culture="persian"
+	add_trait="patient"
+	add_trait="gardener"
+	add_trait="shy"
+	father=1000158108
+	1221.1.1={
+		birth="1221.1.1"
+	}
+	1285.1.1={
+		death="1285.1.1"
+	}
+}
+1000158110 = {
+	name="Anushirvan"
+	dynasty=1000061348
+	religion="zoroastrian"
+	culture="persian"
+	add_trait="ambitious"
+	add_trait="deceitful"
+	add_trait="cynical"
+	father=1000158109
+	1248.1.1={
+		birth="1248.1.1"
+	}
+	1303.1.1={
+		death="1303.1.1"
+	}
+}
+1000158111 = {
+	name="Manushihr"
+	dynasty=1000061348
+	religion="zoroastrian"
+	culture="persian"
+	add_trait="greedy"
+	add_trait="lustful"
+	add_trait="cruel"
+	father=1000158110
+	1273.1.1={
+		birth="1273.1.1"
+	}
+	1338.1.1={
+		death="1338.1.1"
+	}
+}
+1000158112 = {
+	name="Dariush"
+	dynasty=1000061348
+	religion="zoroastrian"
+	culture="persian"
+	add_trait="slothful"
+	add_trait="arbitrary"
+	add_trait="humble"
+	father=1000158111
+	1292.1.1={
+		birth="1292.1.1"
+	}
+	1331.1.1={
+		death="1331.1.1"
+	}
+}
+1000158113 = {
+	name="Varshasb"
+	dynasty=1000061348
+	religion="zoroastrian"
+	culture="persian"
+	add_trait="diligent"
+	add_trait="temperate"
+	add_trait="proud"
+	father=1000158112
+	1309.1.1={
+		birth="1309.1.1"
+	}
+	1377.1.1={
+		death="1377.1.1"
+	}
+}
+1000158114 = {
+	name="Faramarz"
+	dynasty=1000061348
+	religion="zoroastrian"
+	culture="persian"
+	add_trait="zealous"
+	add_trait="content"
+	add_trait="just"
+	father=1000158113
+	1326.1.1={
+		birth="1326.1.1"
+	}
+	1394.1.1={
+		death="1394.1.1"
+	}
+}
+
+

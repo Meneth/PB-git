@@ -1,0 +1,27 @@
+# 347 - Apulia
+
+# County Title
+title = c_apulia
+
+# Settlements
+max_settlements = 4
+b_cannae  = castle
+b_melfi = city
+b_trani = temple
+
+#b_barletta = castle
+#b_salapia = castle
+#b_minervo = castle
+#b_lavello = castle
+#b_lucano = castle
+
+# Misc
+culture = italian
+religion = catholic
+
+# History
+
+1066.1.1 = { b_melfi = ct_trade_post_1 }
+1110.1.1 = { trade_post = b_dandolo }
+1130.12.25 = { culture = sicilian }
+1187.1.1={ b_lucano = castle }

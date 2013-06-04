@@ -1,0 +1,49 @@
+#CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+#War checks;;;;;;;;;;;;;;x
+holy_war_cb;Is war possible?;;;;;;;;;;;;;x
+holy_war_cb_desc;Enables a set of decisions showing the requirements for various types of war. If you can activate every relevant decision, you should be able to declare war;;;;;;;;;;;;;x
+holy_war_any;Base holy war requirements;;;;;;;;;;;;;x
+holy_war_any_desc;You have to meet these requirements to declare any holy war. Do note that more requirements will apply if your target is pagan, is not dejure yours, or does not share a border with you.;;;;;;;;;;;;;x
+holy_war_pagan;Pagan holy war requirements;;;;;;;;;;;;;x
+holy_war_pagan_desc;You have to meet these requirements to declare holy war upon pagans, in addition to the base requirements, and potentially non-dejure and non-bordering requirements.;;;;;;;;;;;;;x
+holy_war_non_de_jure;Non dejure holy war requirements;;;;;;;;;;;;;x
+holy_war_non_de_jure_desc;You have to meet these requirements to declare holy war upon areas that aren't dejure yours, in addition to the base requirements, and potentially pagan and non-bordering requirements.;;;;;;;;;;;;;x
+holy_war_no_border;Non-bordering holy war requirements;;;;;;;;;;;;;x
+holy_war_no_border_desc;You have to meet these requirements to declare holy war upon areas your realm doesn't border. You also need to meet the base requirements, and potentially non-dejure and pagan requirements requirements.;;;;;;;;;;;;;x
+alliance_wars;War upon allies;;;;;;;;;;;;;x
+alliance_wars_desc;You have to meet these requirements to declare war upon allies unless they're heretics, infidels, or excommunicated.;;;;;;;;;;;;;x
+imperial_reconquest_check;Imperial Reconquest Requirements;;;;;;;;;;;;;x
+imperial_reconquest_check_desc;Do note that target areas are unlocked in tiers. Every county in a tier has to be controlled before the next tier can be targetted.;;;;;;;;;;;;;x
+pagan_subjugation_check;Pagan subjugation requirements;;;;;;;;;;;;;x
+pagan_subjugation_check_desc;If the target is within the same kingdom as your capital, these requirements must be met.;;;;;;;;;;;;;x
+pagan_subjugation_wrong_kingdom_check;Pagan subjugation foreign kingdom requirements;;;;;;;;;;;;;x
+pagan_subjugation_wrong_kingdom_check_desc;If the target is not within the same kingdom as your capital, these requirements must be met.;;;;;;;;;;;;;x
+pagan_conquest_check;Pagan conquest requirements;;;;;;;;;;;;;x
+pagan_conquest_check_desc;The only requirements beyond these is that you share a border with the target, unless you're Norse, in which case you can target any coastal province.;;;;;;;;;;;;;x
+holy_war_clear;Dismiss checks;;;;;;;;;;;;;x
+holy_war_clear_desc;Disable the decisions for checking if war is possible.;;;;;;;;;;;;;x
+#Employment;;;;;;;;;;;;;;x
+employ_soldier;Invite Soldier to Court;;;;;;;;;;;;;x
+employ_soldier_desc;Invite a promising soldier to court, to aid with military matters.;;;;;;;;;;;;;x
+employ_spy;Invite Spy to Court;;;;;;;;;;;;;x
+employ_spy_desc;Invite a promising spy to court, to aid with matters of intrigue.;;;;;;;;;;;;;x
+employ_diplomat;Invite Diplomat to Court;;;;;;;;;;;;;x
+employ_diplomat_desc;Invite a promising diplomat to court, to aid with diplomatic matters.;;;;;;;;;;;;;x
+toggle_marriage_decisions;Toggle Marriage Decisions;;;;;;;;;;;;;x
+toggle_marriage_decisions_desc;Toggle the arranged marriage decisions, which will allow you to arrange marriages for your courtiers.;;;;;;;;;;;;;x
+marry_courtiers;Arrange Courtier Marriages;;;;;;;;;;;;;x
+marry_courtiers_desc;Arrange marriages for your courtiers, marrying them to each other where possible. Will not affect courtiers of your dynasty.;;;;;;;;;;;;;x
+marry_courtier;Arrange Marriage for [Root.GetTitledFirstName];;;;;;;;;;;;;x
+marry_courtier_desc;Arrange a marriage for [Root.GetTitledFirstName]. This will create a random character of approximately the same age as [Root.GetObjectPronoun], with random traits and attributes.;;;;;;;;;;;;;x
+request_dejure_vassal_transfer;Request Dejure Vassal Transfer;;;;;;;;;;;;;x
+request_dejure_vassal_transfer_desc;Enacting this decision will send your liege a request that one of his vassals that is dejure yours be transfered to you. This decision can only be taken once per character.;;;;;;;;;;;;;x
+feast_0_desc;Hold the biggest feast ever seen in the Kingdom! The feast preparations will start between October and December.;Organisez le plus grand banquet du Royaume !;Veranstaltet das größte Gelage, das das Königreich je gesehen hat!;;¡Celebra el banquete más grande jamás visto en el reino!;;;;;;;;;x
+hold_grand_hunt_desc;Go on a Grand Hunt with the best hunters in our domains! The hunt preparations will start in August or September.;Participez à une grande partie de chasse avec les meilleurs chasseurs de nos domaines !;Mit den besten Jägern unserer Domänen auf eine Hofjagd gehen!;;¡Ve a una gran cacería con los mejores cazadores de nuestros dominios!;;;;;;;;;x
+summer_fair_desc;The Summer Fair brings merchants, peddlers and all sorts of entertainment to your province. The fair preparations will start between April and June.;Le Festival d’été est l’occasion d’attirer marchands, colporteurs et autres divertissements dans votre province.;Das Sommerfest bringt Kaufleute, fahrende Händler und allerlei Unterhalter in Eure Provinz.;;La feria de verano atrae a mercaderes, vendedores ambulantes y todo tipo de entretenimiento a tu provincia.;;;;;;;;;x
+create_hre;Create the Holy Roman Empire;;;;;;;;;x
+create_hre_desc;We are clearly the rightful successor to Rome, so we should therefore unify our realm under one empire.;;;;;;;;;x
+create_hre_tooltip;I am crowned Holy Roman Emperor.;;;;;;;;;x
+create_hre_france;Create the Holy Roman Empire;;;;;;;;;x
+create_hre_france_desc;We are clearly the rightful successor to Rome, so we should therefore unify our realm under one empire.;;;;;;;;;x
+exchange_prisoners;Arrange Exchange for [Root.GetTitledFirstName];;;;;;;;;;;;;x
+exchange_prisoners_desc;Arrange a prisoner exchange for [Root.GetTitledFirstName]. If the ruler holding [Root.GetObjectPronoun] prisoner accepts, a member of his dynasty will be released from your dungeons in exchange.;;;;;;;;;;;;;x

@@ -1,0 +1,52 @@
+# Castle
+castle = {
+	# Prevents barons from having retinues
+	ca_retinues = {
+		auto_add_at_year = 10
+		trigger = { TECH_FORTIFICATIONS_CONSTRUCTION = 0 }
+		desc = retinue_disabler
+		potential = {
+			FROM = { tier = baron }
+		}
+		build_cost = 1
+		build_time = 1
+		retinuesize = -100000
+		ai_creation_factor = 500
+		
+		extra_tech_building_start = 0.0
+	}
+}
+city = {
+	# Prevents barons from having retinues
+	ct_retinues = {
+		auto_add_at_year = 10
+		trigger = { TECH_FORTIFICATIONS_CONSTRUCTION = 0 }
+		desc = retinue_disabler
+		potential = {
+			FROM = { tier = baron }
+		}
+		build_cost = 1
+		build_time = 1
+		retinuesize = -100000
+		ai_creation_factor = 500
+		
+		extra_tech_building_start = 0.0
+	}
+}
+temple = {
+	# Prevents barons from having retinues
+	tp_retinues = {
+		auto_add_at_year = 10
+		trigger = { TECH_FORTIFICATIONS_CONSTRUCTION = 0 }
+		desc = retinue_disabler
+		potential = {
+			FROM = { tier = baron }
+		}
+		build_cost = 1
+		build_time = 1
+		retinuesize = -100000
+		ai_creation_factor = 500
+		
+		extra_tech_building_start = 0.0
+	}
+}

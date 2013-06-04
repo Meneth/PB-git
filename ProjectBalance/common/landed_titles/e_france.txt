@@ -1,0 +1,1522 @@
+e_france = {
+	color={ 11 22 170 }
+	color2={ 255 255 20 }
+	
+	capital = 112 # Ile de France
+	
+	culture = frankish
+	name_tier = king
+	short_name = yes
+	
+	k_france = {
+		color={ 15 27 187 }
+		color2={ 255 255 20 }
+		capital = 112 # Ile de France
+		dignity = 20 # Counted as having this many more counties than it does
+		
+		culture = frankish
+		
+		catholic = 700 # Crusade target weight
+		
+		allow = { NOT = { culture = occitan } }
+		
+		d_berry = {
+			color={ 24 52 226 }
+			color2={ 255 255 255 }
+			
+			c_tourraine = {
+				color={ 27 55 229 }
+				color2={ 255 255 255 }
+				
+				b_chinon = {
+				}
+				b_tours = {
+				}
+				b_beaulieu = {
+				}
+				b_amboise = {
+				}
+				b_loches = {
+				}
+				b_langeais = {
+				}
+				b_fierbois = {
+				}
+				b_montbazon = {
+				}
+			}
+			c_bourges = {
+				color={ 30 58 232 }
+				color2={ 255 255 255 }
+				
+				b_chateauroux = {
+				}
+				b_deols = {
+				}
+				b_bourges = {
+				}
+				b_issoudun = {
+				}
+				b_stsatur = {
+				}
+				b_sancerre = {
+				}
+				b_mehun = {
+				}
+				b_vierzon = {
+				}
+			}
+		}
+		d_anjou = {
+			color={ 43 24 226 }
+			color2={ 255 255 255 }
+			
+			c_anjou = {
+				color={ 45 26 228 }
+				color2={ 255 255 255 }
+				
+				b_vihiers = {
+				}
+				b_angers = {
+				}
+				b_fontevraud = {
+				}
+				b_saumur = {
+				}
+				b_montsoreau = {
+				}
+				b_cholet = {
+				}
+				b_treves = {
+				}
+				b_chateaugontier = {
+				}
+			}
+			c_maine = {
+				color={ 49 30 232 }
+				color2={ 255 255 255 }
+				
+				b_le_mans = {
+				}
+				b_beaumont = {
+				}
+				b_evron = {
+				}
+				b_mayenne = {
+				}
+				b_laval = {
+				}
+				b_sable = {
+				}
+				b_craon = {
+				}
+				b_montenay = {
+				}
+			}
+		}
+		d_normandy = {
+			color={ 71 24 226 }
+			color2={ 255 255 255 }
+			
+			culture = norman
+			
+			c_evreux = {
+				color={ 74 27 229 }
+				color2={ 255 255 255 }
+				
+				b_evreux = {
+				}
+				b_falaise = {
+				}
+				b_lisieux = {
+				}
+				b_alencon = {
+				}
+				b_argentan = {
+				}
+				b_sees = {
+				}
+				b_verneuil = {
+				}
+				b_honfleur = {
+				}
+			}
+			c_avranches = {
+				color={ 77 30 232 }
+				color2={ 255 255 255 }
+				
+				b_caen = {
+				}
+				b_coutances = {
+				}
+				b_bayeux = {
+				}
+				b_avranches = {
+				}
+				b_mortain = {
+				}
+				b_domfront = {
+				}
+				b_barfleur = {
+				}
+				b_cherbourg = {
+				}
+			}
+			c_vexin = {
+				color={ 80 33 235 }
+				color2={ 255 255 255 }
+				
+				b_larocheguyon = {
+				}
+				b_mantes = {
+				}
+				b_pontoise = {
+				}
+				b_harcourt = {
+				}
+				b_gisors = {
+				}
+				b_andely = {
+				}
+				b_ivry = {
+				}
+				b_abbayedemortemer = {
+				}
+			}
+			c_arques = {
+				color={ 83 36 238 }
+				color2={ 255 255 255 }
+				
+				b_fecamp = {
+				}
+				b_rouen = {
+				}
+				b_lillebonne = {
+				}
+				b_harfleur = {
+				}
+				b_arques = {
+				}
+				b_dieppe = {
+				}
+				b_jumieges = {
+				}
+				b_longueville = {
+				}
+			}
+			c_eu = {
+				color={ 86 39 241 }
+				color2={ 255 255 255 }
+				
+				b_eu = {
+				}
+				b_mortemer = {
+				}
+				b_gournay = {
+				}
+				b_aumale = {
+				}
+				b_forges = {
+				}
+				b_drincourt = {
+				}
+				b_neufchatel-en-bray = {
+				}
+				b_serqueux = {
+				}
+			}
+		}
+		d_orleans = {
+			color={ 126 124 226 }
+			color2={ 255 255 255 }
+			
+			c_orleans = {
+				color={ 94 32 234 }
+				color2={ 255 255 255 }
+				
+				b_gien = {
+				}
+				b_orleans = {
+				}
+				b_fleury = {
+				}
+				b_lepuiset = {
+				}
+				b_sully = {
+				}
+				b_meung = {
+				}
+				b_janville = {
+				}
+				b_jargeau = {
+				}
+			}
+			c_blois = {
+				color={ 90 28 230 }
+				color2={ 255 255 255 }
+				
+				b_beaugency = {
+				}
+				b_blois = {
+				}
+				b_staignan = {
+				}
+				b_chaumontsurloire = {
+				}
+				b_montrichard = {
+				}
+				b_fougeressurbievre = {
+				}
+				b_romorantin = {
+				}
+				b_stgeorgesdubois = {
+				}
+			}
+			c_vendome = {
+				color={ 47 28 230 }
+				color2={ 255 255 255 }
+				
+				b_lavardin = {
+				}
+				b_vendome = {
+				}
+				b_cloyes = {
+				}
+				b_freteval = {
+				}
+				b_chateaurenault = {
+				}
+				b_montoire = {
+				}
+				b_montmirail = {
+				}
+				b_stavit = {
+				}
+			}
+			c_chartres = {
+				color={ 98 36 238 }
+				color2={ 255 255 255 }
+				
+				b_chateaudun = {
+				}
+				b_chartres = {
+				}
+				b_dreux = {
+				}
+				b_nogent = {
+				}
+				b_gallardon = {
+				}
+				b_epernon = {
+				}
+				b_bonneval = {
+				}
+				b_tiron = {
+				}
+			}
+		}
+		d_champagne = {
+			color={ 95 24 226 }
+			color2={ 255 255 255 }
+			
+			c_troyes = {
+				color={ 99 28 230 }
+				color2={ 255 255 255 }
+				
+				b_brienne = {
+				}
+				b_troyes = {
+				}
+				b_langres = {
+				}
+				b_chaumont = {
+				}
+				b_clairvaux = {
+				}
+				b_rosnay = {
+				}
+				b_chacenay = {
+				}
+			}
+			c_reims = {
+				color={ 101 30 232 }
+				color2={ 255 255 255 }
+				
+				b_reims = {
+				}
+				b_chateauthierry = {
+				}
+				b_provins = {
+				}
+				b_chalons = {
+				}
+				b_chatillon = {
+				}
+				b_vertus = {
+				}
+				b_epernay = {
+				}
+				b_roucy = {
+				}
+			}
+			c_sens = {
+				color={ 102 40 242 }
+				color2={ 255 255 255 }
+				
+				b_montargis = {
+				}
+				b_sens = {
+				}
+				b_nemours = {
+				}
+				b_chateaulandon = {
+				}
+				b_nogentsurseine = {
+				}
+				b_joigny = {
+				}
+				b_montereau = {
+				}
+				b_villeneuveleroi = {
+				}
+			}
+		}
+		d_valois = {
+			color={ 35 141 208 }
+			color2={ 255 255 255 }
+			capital = 112 # Ile de France
+			
+			c_ile_de_france = {
+				color={ 38 144 211 }
+				color2={ 255 255 255 }
+				
+				b_paris = {
+				}
+				b_melun = {
+				}
+				b_stdenis = {
+					holy_site = aztec
+					holy_site = aztec_reformed
+				}
+				b_meaux = {
+				}
+				b_etampes = {
+				}
+				b_montfortlamaury = {
+				}
+				b_senlis = {
+				}
+				b_compiegne = {
+				}
+			}
+			c_vermandois = {
+				color={ 41 147 214 }
+				color2={ 255 255 255 }
+				
+				b_coucy = {
+				}
+				b_stquentin = {
+				}
+				b_laon = {
+				}
+				b_crepy = {
+				}
+				b_montaigu = {
+				}
+				b_rethel = {
+				}
+				b_guise = {
+				}
+				b_signy = {
+				}
+			}
+			c_amiens = {
+				color={ 44 151 217 }
+				color2={ 255 255 255 }
+				
+				b_peronne = {
+				}
+				b_amiens = {
+				}
+				b_beauvais = {
+				}
+				b_soissons = {
+				}
+				b_corbie = {
+				}
+				b_noyon = {
+				}
+				b_montdidier = {
+				}
+				b_breteuil = {
+				}
+			}
+		}
+	}
+
+	k_aquitaine = {
+		color={ 54 50 226 }
+		color2={ 255 255 20 }
+		capital = 149 # Bordaeux
+		
+		culture = occitan
+		
+		catholic = 700 # Crusade target weight
+		
+		allow = { NOT = { culture = frankish } }
+		
+		d_aquitaine = {
+			color={ 54 10 243 }
+			color2={ 255 255 255 }
+			dignity = 10 # Counted as having 10 more counties than it does
+			capital = 149 # Bordaeux
+			
+			culture = occitan
+			
+			c_bordeaux = {
+				color={ 58 14 247 }
+				color2={ 255 255 255 }
+				
+				b_castillon = {
+				}
+				b_bordeaux = {
+				}
+				b_stemilion = {
+				}
+				b_blaye = {
+				}
+				b_bourg = {
+				}
+				b_lasauve = {
+				}
+				b_lareole = {
+				}
+				b_libourne = {
+				}
+			}
+			c_agen = {
+				color={ 62 18 251 }
+				color2={ 255 255 255 }
+				
+				b_penne = {
+				}
+				b_cahors = {
+				}
+				b_agen = {
+				}
+				b_luzech = {
+				}
+				b_moissac = {
+				}
+				b_figeac = {
+				}
+				b_rocamadour = {
+				}
+				b_blanquefort = {
+				}
+			}
+			c_perigord = {
+				color={ 66 22 255 }
+				color2={ 255 255 255 }
+				
+				b_baneuil = {
+				}
+				b_perigueux = {
+				}
+				b_sarlat = {
+				}
+				b_biron = {
+				}
+				b_auberoche = {
+				}
+				b_bergerac = {
+				}
+				b_chancelade = {
+				}
+				b_bonaguil = {
+				}
+			}
+			c_angouleme = {
+				color={ 70 26 255 }
+				color2={ 255 255 255 }
+				
+				b_jarnac = {
+				}
+				b_angouleme = {
+				}
+				b_bassac = {
+				}
+				b_larochefoucauld = {
+				}
+				b_cognac = {
+				}
+				b_richemont = {
+				}
+				b_fontdouce = {
+				}
+				b_latranchade = {
+				}
+			}
+		}
+		d_toulouse = {
+			color={ 10 16 243 }
+			color2={ 255 255 255 }
+			
+			culture = occitan
+			
+			c_montpellier = {
+				color={ 10 16 243 }
+				color2={ 255 255 255 }
+				
+				b_beaucaire = {
+				}
+				b_montpellier = {
+				}
+				b_maguelone = {
+				}
+				b_nimes = {
+				}
+				b_aiguesmortes = {
+				}
+				b_bagnolssurceze = {
+				}
+				b_saintguilhemledesert = {
+				}
+				b_melgueil = {
+				}
+			}
+			c_viviers = {
+				color={ 12 18 245 }
+				color2={ 255 255 255 }
+				
+				b_aubenas = {
+				}
+				b_tournon = {
+				}
+				b_viviers = {
+				}
+				b_albalaromaine = {
+				}
+				b_privas = {
+				}
+				b_lecheylard = {
+				}
+				b_largentiere = {
+				}
+				b_joyeuse = {
+				}
+			}
+			c_narbonne = {
+				color={ 14 20 247 }
+				color2={ 255 255 255 }
+				
+				b_albi = {
+				} 
+				b_narbonne = {
+				} 
+				b_agde = {
+				} 
+				b_beziers = {
+				} 
+				b_puisserguier = {
+				} 
+				b_stponsdethomieres = {
+				} 
+				b_castres = {
+				} 
+				b_queribus = {
+				} 
+			}
+			c_carcassonne = {
+				color={ 16 22 249 }
+				color2={ 255 255 255 }
+				
+				b_saissac = {
+				} 
+				b_carcassonne = {
+				} 
+				b_alet = {
+				} 
+				b_termes = {
+				} 
+				b_lagrasse = {
+				} 
+				b_lastours = {
+				} 
+				b_cabaret = {
+				} 
+				b_minerve = {
+				}
+			}
+			c_toulouse = {
+				color={ 18 24 251 }
+				color2={ 255 255 255 }
+				
+				b_castelnaudary = {
+				} 
+				b_toulouse = {
+				} 
+				b_lavaur = {
+				} 
+				b_montauban = {
+				} 
+				b_lombez = {
+				} 
+				b_hautpoul = {
+				} 
+				b_montgiscard = {
+				} 
+				b_muret = {
+				} 
+			}
+			c_rouergue = {
+				color={ 20 28 253 }
+				color2={ 255 255 255 }
+				
+				b_rodez = {
+				} 
+				b_millau = {
+				} 
+				b_vabres = {
+				} 
+				b_najac = {
+				} 
+				b_villefranche = {
+				} 
+				b_caylus = {
+				} 
+				b_staffrique = {
+				} 
+				b_estaing = {
+				} 
+			}
+		}
+		d_gascogne = {
+			color={ 81 30 243 }
+			color2={ 255 255 255 }
+			
+			culture = occitan
+			
+			c_foix = {
+				color={ 24 13 246 }
+				color2={ 255 255 255 }
+				
+				b_foix = {
+				} 
+				b_pamiers = {
+				} 
+				b_mirepoix = {
+				} 
+				b_montsegur = {
+				} 
+				b_stbertrand = {
+				}  
+				b_roquefeuil = {
+				} 
+				b_stgaudens = {
+				}  
+				b_usson = {
+				} 
+			}
+			c_bearn = {
+				color={ 27 16 249 }
+				color2={ 255 255 255 }
+				
+				b_pau = {
+				}
+				b_morlaas = {
+				} 
+				b_lescar = {
+				}
+				b_tarbes = {
+				}
+				b_mauleonlicharre = {
+				}
+				b_orthez = {
+				}
+				b_oloron = {
+				}
+				b_montaner = {
+				}
+			}
+			c_armagnac = {
+				color={ 30 19 252 }
+				color2={ 255 255 255 }
+				
+				b_castelnau = {
+				}
+				b_auch = {
+				}
+				b_condom = {
+				}
+				b_lectoure = {
+				}
+				b_lisle = {
+				}
+				b_eauze = {
+				}
+				b_mirande = {
+				}
+				b_laplume = {
+				}
+			}
+			c_labourd = {
+				color={ 33 22 255 }
+				color2={ 255 255 255 }
+				
+				b_sauveterre = {
+				}
+				b_bayonne = {
+				}
+				b_stsever = {
+				}
+				b_dax = {
+				}
+				b_aire = {
+				}
+				b_labastideclairence = {
+				}
+				b_sorde = {
+				}
+				b_hasparren = {
+				}
+			}
+			c_albret = {
+				color={ 36 25 255 }
+				color2={ 255 255 255 }
+				
+				b_labrit = {
+				}
+				b_tartas = {
+				}
+				b_bazas = {
+				}
+				b_roquefort = {
+				}
+				b_montdemarsan = {
+				}
+				b_gabarret = {
+				}
+				b_mimizan = {
+				}
+				b_latestedebuch = {
+				}
+			}
+		}
+		d_poitou = {
+			color={ 24 95 226 }
+			color2={ 255 255 255 }
+			
+			culture = occitan
+			
+			c_lusignan = {
+				color={ 28 97 228 }
+				color2={ 255 255 255 }
+				
+				b_lusignan = {
+				}
+				b_charroux = {
+				}
+				b_niort = {
+				}
+				b_melle = {
+				}
+				b_civray = {
+				}
+				b_maillezais = {
+				}
+				b_confolens = {
+				}
+				b_stmaixent = {
+				}
+			}
+			c_saintonge = {
+				color={ 30 99 230 }
+				color2={ 255 255 255 }
+				
+				b_montguyon = {
+				}
+				b_saintes = {
+				}
+				b_stjeandangely = {
+				}
+				b_villeneuve = {
+				}
+				b_tonnay = {
+				}
+				b_aulnay = {
+				}
+				b_royan = {
+				}
+				b_taillebourg = {
+				}
+			}
+			c_poitiers = {
+				color={ 32 101 232 }
+				color2={ 255 255 255 }
+				
+				b_chauvigny = {
+				}
+				b_poitiers = {
+				}
+				b_stsavin = {
+				}
+				b_moncontour = {
+				}
+				b_mirebeau = {
+				}
+				b_parthenay = {
+				}
+				b_loudun = {
+				}
+				b_chatellerault = {
+				}
+			}
+			c_thouars = {
+				color={ 34 103 234 }
+				color2={ 255 255 255 }
+				
+				b_thouars = {
+				}
+				b_larochelle = {
+				}
+				b_lucon = {
+				}
+				b_chatelaillon = {
+				}
+				b_bressuire = {
+				}
+				b_olonne = {
+				}
+				b_mauleon = {
+				}
+				b_fontenay = {
+				}
+			}
+		}
+		d_auvergne = {
+			color={ 24 171 226 }
+			color2={ 255 255 255 }
+			
+			culture = occitan
+			
+			c_auvergne = {
+				color={ 26 173 228 }
+				color2={ 255 255 255 }
+				
+				b_tournoel = {
+				}
+				b_clermont = {
+				}
+				b_mozac = {
+				}
+				b_murol = {
+				}
+				b_aurillac = {
+				}
+				b_carlat = {
+				}
+				b_brioude = {
+				}
+				b_domeyrat = {
+				}
+			}
+			c_gevaudan = {
+				color={ 28 175 230 }
+				color2={ 255 255 255 }
+				
+				b_grezes = {
+				}
+				b_mende = {
+				}
+				b_lepuy = {
+				}
+				b_apchier = {
+				}
+				b_marvejols = {
+				}
+				b_florac = {
+				}
+				b_stsauveur = {
+				}
+				b_tournel = {
+				}
+			}
+		}
+		d_bourbon = {
+			color={ 74 133 186 }
+			color2={ 255 255 255 }
+			
+			c_bourbon = {
+				color={ 28 147 230 }
+				color2={ 255 255 255 }
+				
+				b_bourbon = {
+				}
+				b_moulins = {
+				}
+				b_lancy = {
+				}
+				b_montlucon = {
+				}
+				b_vichy = {
+				}
+				b_murat = {
+				}
+				b_souvigny = {
+				}
+				b_montpensier = {
+				}
+			}
+			c_limousin = {
+				color={ 32 151 234 }
+				color2={ 255 255 255 }
+				
+				b_turenne = {
+				}
+				b_limoges = {
+				}
+				b_comborn = {
+				}
+				b_rochechouart = {
+				}
+				b_thiviers = {
+				}
+				b_stleonard = {
+				}
+				b_ventadour = {
+				}
+				b_chalus = {
+				}
+			}
+			c_la_marche = {
+				color={ 36 155 240 }
+				color2={ 255 255 255 }
+				
+				b_crozant = {
+				}
+				b_bellac = {
+				}
+				b_gueret = {
+				}
+				b_aubusson = {
+				}
+				b_boussac = {
+				}
+				b_lasouterraine = {
+				}
+				b_bourganeuf = {
+				}
+				b_jouillat = {
+				}
+			}
+		}
+	}
+
+	k_burgundy = {
+		color={ 134 0 37 }
+		color2={ 220 220 0 }
+		
+		capital	= 221 # Provence
+		
+		culture = occitan
+		
+		catholic = 700 # Crusade target weight
+		
+		d_provence = {
+			color={ 145 37 67 }
+			color2={ 255 255 255 }
+			
+			c_provence = {
+				color={ 149 40 70 }
+				color2={ 255 255 255 }
+				
+				b_arles = {
+				}
+				b_aix = {
+				}
+				b_marseille = {
+				}
+				b_grimaud = {
+				}
+				b_frejus = {
+				}
+				b_grasse = {
+				}
+				b_castellane = {
+				}
+				b_tarascon = {
+				}
+			}
+			c_forcalquier = {
+				color={ 151 42 72 }
+				color2={ 255 255 255 }
+				
+				b_forcalquier = {
+				}
+				b_nyons = {
+				}
+				b_embrun = {
+				}
+				b_sisteron = {
+				}
+				b_briancon = {
+				}
+				b_vaison = {
+				}
+				b_gap = {
+				}
+				b_apt = {
+				}
+			}
+			c_venaissin = {
+				color={ 153 44 74 }
+				color2={ 255 255 255 }
+				
+				b_orange = {
+				}
+				b_avignon = {
+				}
+				b_cavaillon = {
+				}
+				b_venasque = {
+				}
+				b_carpentras = {
+				}
+				b_chateauneufdupape = {
+				}
+				b_stpaul = {
+				}
+				b_mondragon = {
+				}
+			}
+		}
+		d_savoie = {
+			color={ 80 5 20 }
+			color2={ 255 255 255 }
+			
+			c_savoie = {
+				color={ 107 15 41 }
+				color2={ 255 255 255 }
+				
+				b_savosusa = {
+				}
+				b_tarentaise = {
+				}
+				b_ciamberi = {
+				}
+				b_aosta = {
+				}
+				b_pombia = {
+				}
+				b_montjovet = {
+				}
+				b_vercelli = {
+				}
+				b_bussoleno = {
+				}
+			}
+			c_valais = {
+				color={ 110 18 44 }
+				color2={ 255 255 255 }
+				
+				b_brig = {
+				}
+				b_monthey = {
+				}
+				b_aigle = {
+				}
+				b_martigny = {
+				}
+				b_siders = {
+				}
+				b_sitten = {
+				}
+				b_greyerz = {
+				}
+				b_chateaudoex = {
+				}
+			}
+			c_geneve = {
+				color={ 113 21 47 }
+				color2={ 255 255 255 }
+				
+				b_geneve = {
+				}
+				b_romainmotier = {
+				}
+				b_nyon = {
+				}
+				b_lausanne = {
+				}
+				b_echallens = {
+				}
+				b_aubonne = {
+				}
+				b_orbe = {
+				}
+				b_thonon = {
+				}
+			}
+		}
+		d_dauphine = {
+			color={ 115 26 90 }
+			color2={ 255 255 255 }
+			
+			c_dauphine_viennois = {
+				color={ 119 30 54 }
+				color2={ 255 255 255 }
+				
+				b_montelimar = {
+				}
+				b_vienne = {
+				}
+				b_valence = {
+				}
+				b_grenoble = {
+				}
+				b_chartreuse = {
+				}
+				b_albon = {
+				}
+				b_stantoine = {
+				}
+				b_valreas = {
+				}
+			}
+			c_lyon = {
+				color={ 123 34 58 }
+				color2={ 255 255 255 }
+				
+				b_brindas = {
+				}
+				b_stjeanbaptiste = {
+				}
+				b_lyon = {
+				}
+				b_anse = {
+				}
+				b_chessy = {
+				}
+				b_lacenas = {
+				}
+				b_pusignan = {
+				}
+				b_irigny = {
+				}
+			}
+			c_forez = {
+				color={ 127 38 62 }
+				color2={ 255 255 255 }
+				
+				b_couzan = {
+				}
+				b_montbrison = {
+				}
+				b_thiers = {
+				}
+				b_feurs = {
+				}
+				b_roanne = {
+				}
+				b_charlieu = {
+				}
+				b_chalmazel = {
+				}
+				b_stetienne = {
+				}
+			}
+		}
+		d_upper_burgundy = {
+			color={ 159 20 58 }
+			color2={ 255 255 255 }
+			
+			c_neuchatel = {
+				color={ 163 24 62 }
+				color2={ 255 255 255 }
+				
+				b_neuchatel = {
+				}
+				b_stimier = {
+				}
+				b_fribourg = {
+				}
+				b_grandson = {
+				}
+				b_yverdon = {
+				}
+				b_estavayer = {
+				}
+				b_avences = {
+				}
+				b_murten = {
+				}
+			}
+			c_bern = {
+				color={ 165 26 64 }
+				color2={ 255 255 255 }
+				
+				b_bern = {
+				}
+				b_interlaken = {
+				}
+				b_luzern = {
+				}
+				b_biel = {
+				}
+				b_sempach = {
+				}
+				b_langenthal = {
+				}
+				b_kyburg = {
+				}
+				b_sursee = {
+				}
+			}
+			c_schwyz = {
+				color={ 167 28 66 }
+				color2={ 255 255 255 }
+				
+				b_schwyz = {
+				}
+				b_engelberg = {
+				}
+				b_zurich = {
+				}
+				b_zug = {
+				}
+				b_altdorf = {
+				}
+				b_stans = {
+				}
+				b_glarus = {
+				}
+				b_winterthur = {
+				}
+			}
+			c_aargau = {
+				color={ 169 30 68 }
+				color2={ 255 255 255 }
+				
+				b_aargau = {
+				}
+				b_basel = {
+				}
+				b_solothurn = {
+				}
+				b_habsburg = {
+				}
+				b_rheinfelden = {
+				}
+				b_schaffhausen = {
+				}
+				b_lenzburg = {
+				}
+				b_laufenburg = {
+				}
+			}
+			c_besancon = {
+				color={ 171 32 70 }
+				color2={ 255 255 255 }
+				
+				b_besancon = {
+				}
+				b_belfort = {
+				}
+				b_vesoul = {
+				}
+				b_montbeliard = {
+				}
+				b_beaucourt = {
+				}
+				b_valdahon = {
+				}
+				b_maiche = {
+				}
+				b_morteau = {
+				}
+			}
+			c_grisons = {
+				color={ 255 241 230 }
+				color2={ 255 255 255 }
+				
+				b_bellinzona = {
+				}
+				b_disentis = {
+				}
+				b_locarno = {
+				}
+				b_biasca = {
+				}
+				b_domo = {
+				}
+				b_lugano = {
+				}
+				b_musso = {
+				}
+				b_mendrisio = {
+				}
+			}
+		}
+		d_burgundy = {
+			# French, or Lower Burgundy
+			color={ 153 67 108 }
+			color2={ 255 255 255 }
+			
+			c_auxerre = {
+				color={ 97 26 228 }
+				color2={ 255 255 255 }
+				
+				b_auxerre = {
+				}
+				b_druyes = {
+				}
+				b_tonnerre = {
+				}
+				b_pontigny = {
+				}
+				b_cravant = {
+				}
+				b_crisenon = {
+				}
+				b_stsauveurenpuisaye = {
+				}
+				b_mailly = {
+				}
+			}
+			c_macon = {
+				color={ 27 165 229 }
+				color2={ 255 255 255 }
+				
+				b_fuisse = {
+				}
+				b_macon = {
+				}
+				b_cluny = {
+				}
+				b_davaye = {
+				}
+				b_beaujeu = {
+				}
+				b_lugny = {
+				}
+				b_berze = {
+				}
+				b_villefranchesursaone = {
+				}
+			}
+			c_dijon = {
+				color={ 30 168 232 }
+				color2={ 255 255 255 }
+				
+				b_semur = {
+				}
+				b_dijon = {
+				}
+				b_autun = {
+				}
+				b_vezelay = {
+				}
+				b_avallon = {
+				}
+				b_citeaux = {
+				}
+				b_beaune = {
+				}
+				b_noyers = {
+				}
+			}
+			c_nevers = {
+				color={ 33 171 235 }
+				color2={ 255 255 255 }
+				
+				b_courtenay = {
+				}
+				b_nevers = {
+				}
+				b_lacharite = {
+				}
+				b_donzy = {
+				}
+				b_chateauchinon = {
+				}
+				b_vandenesse = {
+				}
+				b_clamecy = {
+				}
+				b_cosne = {
+				}
+			}
+			c_charolais = {
+				color={ 36 174 238 }
+				color2={ 255 255 255 }
+				
+				b_montstvincent = {
+				}
+				b_charolles = {
+				}
+				b_paray = {
+				}
+				b_semurenbrionnais = {
+				}
+				b_toulonsurarroux = {
+				}
+				b_perrecy = {
+				}
+				b_digoine = {
+				}
+				b_joncy = {
+				}
+			}
+			c_chalons = {
+				color={ 161 22 60 }
+				color2={ 255 255 255 }
+				
+				b_brancion = {
+				}
+				b_chalon = {
+				}
+				b_tournus = {
+				}
+				b_louhans = {
+				}
+				b_chamilly = {
+				}
+				b_seurre = {
+				}
+				b_stjeandelosne = {
+				}
+				b_cuisery = {
+				}
+			}
+		}
+	}
+	
+	allow = {
+		OR = {
+			culture = frankish
+			culture = norman
+			culture = occitan
+		}
+		num_of_king_titles = 4
+		OR = {
+			has_landed_title = k_france
+			completely_controls = k_france
+			k_france = { is_titular = yes }
+		}
+		OR = {
+			has_landed_title = k_aquitaine
+			completely_controls = k_aquitaine
+			k_aquitaine = { is_titular = yes }
+		}
+		OR = {
+			has_landed_title = k_burgundy
+			completely_controls = k_burgundy
+			k_burgundy = { is_titular = yes }
+		}
+		war = no
+		ruled_years = 5
+		is_adult = yes
+		NOT = { tier = emperor }
+	}
+}

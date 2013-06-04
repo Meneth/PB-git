@@ -1,0 +1,13 @@
+1136.1.2 = {
+	liege="k_novgorod_republic"
+	holder=125225
+}
+1170.1.2 = {
+	holder=5552237
+}
+1200.1.2 = {
+	holder=5552241
+}
+1240.1.1 = {
+	holder=0
+}

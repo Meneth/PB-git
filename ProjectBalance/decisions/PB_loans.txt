@@ -1,0 +1,184 @@
+decisions = {
+	#Show loan decisions
+	show_loan_decisions = {
+		potential = {
+			NOT = { has_character_flag = loan_decisions }
+			prisoner = no
+		}
+		effect = {
+			set_character_flag = loan_decisions
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	#Hide loan decisions
+	hide_loan_decisions = {
+		potential = {
+			has_character_flag = loan_decisions
+		}
+		effect = {
+			clr_character_flag = loan_decisions
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	#Small loan - 100
+	take_small_loan = {
+		potential = {
+			prisoner = no
+			NOT = { has_character_modifier = small_loan }
+			has_character_flag = loan_decisions
+		}
+		allow = {
+			yearly_income = 10
+		}
+		effect = {
+			add_character_modifier = {
+				name = small_loan
+				duration = -1
+			}
+			wealth = 100
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	#Medium loan - 200
+	take_medium_loan = {
+		potential = {
+			prisoner = no
+			NOT = { has_character_modifier = medium_loan }
+			has_character_flag = loan_decisions
+		}
+		allow = {
+			OR = {
+				higher_tier_than = count
+				is_patrician = yes
+			}
+			yearly_income = 20
+		}
+		effect = {
+			add_character_modifier = {
+				name = medium_loan
+				duration = -1
+			}
+			wealth = 200
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	#Large loan - 400
+	take_large_loan = {
+		potential = {
+			prisoner = no
+			NOT = { has_character_modifier = large_loan }
+			has_character_flag = loan_decisions
+		}
+		allow = {
+			OR = {
+				higher_tier_than = duke
+				is_merchant_republic = yes
+			}
+			yearly_income = 40
+		}
+		effect = {
+			add_character_modifier = {
+				name = large_loan
+				duration = -1
+			}
+			wealth = 400
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	#Huge loan - 800
+	take_huge_loan = {
+		potential = {
+			prisoner = no
+			NOT = { has_character_modifier = huge_loan }
+			has_character_flag = loan_decisions
+		}
+		allow = {
+			higher_tier_than = duke
+			yearly_income = 80
+		}
+		effect = {
+			add_character_modifier = {
+				name = huge_loan
+				duration = -1
+			}
+			wealth = 800
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	#Repay small loan - 100
+	repay_small_loan = {
+		potential = {
+			has_character_modifier = small_loan
+		}
+		allow = {
+			wealth = 110
+		}
+		effect = {
+			remove_character_modifier = small_loan
+			wealth = -110
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	#Repay medium loan - 200
+	repay_medium_loan = {
+		potential = {
+			has_character_modifier = medium_loan
+		}
+		allow = {
+			wealth = 220
+		}
+		effect = {
+			remove_character_modifier = medium_loan
+			wealth = -220
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	#Repay large loan - 400
+	repay_large_loan = {
+		potential = {
+			has_character_modifier = large_loan
+		}
+		allow = {
+			wealth = 440
+		}
+		effect = {
+			remove_character_modifier = large_loan
+			wealth = -440
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	#Repay huge loan - 800
+	repay_huge_loan = {
+		potential = {
+			has_character_modifier = huge_loan
+		}
+		allow = {
+			wealth = 880
+		}
+		effect = {
+			remove_character_modifier = huge_loan
+			wealth = -880
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

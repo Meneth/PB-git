@@ -1,0 +1,20 @@
+1000069500 = {
+	name="de Monte"
+	culture = german
+}
+1000069501 = {
+	name="Hoyer"
+	culture = german
+}
+1000069502 = {
+	name="Miles"
+	culture = german
+}
+1000069503 = {
+	name="Hetfeld"	#Hittfeld
+	culture = german
+}
+1000069504 = {
+	name="Horborch"	#Harburg
+	culture = german
+}

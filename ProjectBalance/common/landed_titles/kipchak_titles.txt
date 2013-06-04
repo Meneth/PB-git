@@ -1,0 +1,9 @@
+k_kipchak = { #kept it titular here but you might want to add some de jure duchies
+	color={ 165 110 48 }
+	color2={ 255 255 255 }
+	capital = 616 #yaik
+	culture = cuman
+	allow = {
+		culture = cuman
+	}
+}

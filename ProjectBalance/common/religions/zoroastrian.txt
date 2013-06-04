@@ -1,0 +1,82 @@
+zoroastrian_group = {
+	has_coa_on_barony_only = no
+	graphical_culture = muslimgfx
+	playable = yes
+	
+	# Names given only to Zoroastrian characters (base names)
+	male_names = {
+		Hormazd Maziar Shapur Vandad Zartosht
+	}
+
+	zoroastrian = {
+		graphical_culture = persiangfx
+		
+		icon = 10
+		heresy_icon = 12
+		
+		color = { 0.5 0.7 0.2 }
+		crusade_name = GREAT_HOLY_WAR
+		scripture_name = THE_GATHAS
+		god_names = {
+			GOD_AHURA_MAZDA GOD_ZURVAN GOD_OHRMAZD GOD_MANAH PROPHET_ZOROASTER
+		}
+		
+		can_grant_divorce = yes
+		can_call_crusade = yes
+		can_grant_invasion_cb = invasion
+		
+		max_consorts = 3 # Can take concubines
+		
+		divine_blood = yes # Sacred Xwedodah close-kin marriage mechanics
+		pc_marriage = yes
+		bs_marriage = yes
+		
+		religious_clothing_head = 5
+		religious_clothing_priest = 5
+	}
+	
+	mazdaki = {
+		graphical_culture = persiangfx
+		
+		icon = 10
+		heresy_icon = 12
+		
+		color = { 0.3 0.65 0.25 }
+		
+		scripture_name = THE_GREAT_SECRET
+		
+		god_names = {
+			GOD_ZURVAN GOD_AHURA_MAZDA GOD_MANAH PROPHET_MAZDAK
+		}
+		
+		parent = zoroastrian
+		
+		can_grant_divorce = yes
+		can_call_crusade = yes
+		can_grant_invasion_cb = invasion
+		
+		religious_clothing_head = 5
+		religious_clothing_priest = 5
+	}
+	
+	manichean = {
+		graphical_culture = persiangfx
+		
+		icon = 10
+		heresy_icon = 12
+		
+		color = { 0.7 0.7 0.4 }
+		god_names = {
+			GOD_ZURVAN GOD_OHRMAZD PROPHET_MANI GOD_MIHRYAZD
+		}
+		
+		parent = zoroastrian
+		
+		can_grant_divorce = yes
+		can_call_crusade = yes
+		can_grant_invasion_cb = invasion
+		
+		religious_clothing_head = 5
+		religious_clothing_priest = 5
+	}
+}

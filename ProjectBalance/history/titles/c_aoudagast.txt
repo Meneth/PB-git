@@ -1,0 +1,4 @@
+1066.1.1 = {
+    holder = 1000034105
+    liege = d_diafanu
+}

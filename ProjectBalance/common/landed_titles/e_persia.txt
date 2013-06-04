@@ -1,0 +1,2751 @@
+e_persia = {
+	color={ 99 168 74 }
+	color2={ 200 200 0 }
+	
+	capital = 687 # Kirkuk
+	
+	short_name = yes
+	name_tier = king
+	
+	culture = turkish
+	
+	k_persia = {
+		color={ 151 224 24 }
+		color2={ 255 255 255 }
+		
+		capital = 646 #	Esfahan
+		
+		culture = persian
+		
+		d_merv = { 
+			color={ 153 201 70 }
+			color2={ 255 255 255 }
+			
+			c_merv = {
+				color={ 156 204 73 }
+				color2={ 255 255 255 }
+				
+				b_merv = {
+				}
+				b_bayramaly = {
+				}
+				b_tagtabazar = {
+				}
+				b_yoloten = {
+				}
+				b_gulanly = {
+				}
+				b_kushka = {
+				}
+				b_wekilbazar = {
+				}
+				b_sakarcage = {
+				}
+			}
+			c_dihistan = {
+				color={ 162 210 79 }
+				color2={ 255 255 255 }
+				
+				b_akhur = {
+				}
+				b_gasankuli = {
+				}
+				b_bayatkhadzi = {
+				}
+				b_kumdag = {
+				}
+				b_torskhali = {
+				}
+				b_yasydepe = {
+				}
+				b_yarymtyk = {
+				}
+				b_kemir = {
+				}
+			}
+		}
+		d_khorasan = {
+			color={ 99 150 9 }
+			color2={ 255 255 255 }
+			
+			c_khorasan = {
+				color={ 103 154 13 }
+				color2={ 255 255 255 }
+				
+				b_bojnurd = {
+				}
+				b_shervan = {
+				}
+				b_mashhad = {
+				}
+				b_hasanabad = {
+				}
+				b_ghaisar = {
+				}
+				b_isfarayen = {
+				}
+				b_fagdatdezh = {
+				}
+				b_solak = {
+				}
+			}
+			c_gurgan = {
+				color={ 107 158 17 }
+				color2={ 255 255 255 }
+				
+				b_gurgan = {
+				}
+				b_gonbadeqabus = {
+				}
+				b_komishdepa = {
+				}
+				b_kordkuy = {
+				}
+				b_aqqala = {
+				}
+				b_ramian = {
+				}
+				b_minudasht = {
+				}
+				b_khanbebin = {
+				}
+			}
+			c_nishapur = {
+				color={ 111 162 21 }
+				color2={ 255 255 255 }
+				
+				b_nishapur = {
+				}
+				b_jajarm = {
+					holy_site = zoroastrian # The Great Fire of Adur Burzen-Mehr
+				}
+				b_tus = {
+				}
+				b_akhlamad = {
+				}
+				b_quchan = {
+				}
+				b_daregaz = {
+				}
+				b_chenaran = {
+				}
+				b_sarakhs = {
+				}
+			}
+			c_qohistan = {
+				color={ 115 166 25 }
+				color2={ 255 255 255 }
+				
+				b_torshiz = {
+				}
+				b_beyhaq = {
+				}
+				b_gonabad = {
+				}
+				b_kalat = {
+				}
+				b_torbatjam = {
+				}
+				b_bardaskan = {
+				}
+				b_mahvalat = {
+				}
+				b_fariman = {
+				}
+			}
+			c_lut = {
+				color={ 119 170 29 }
+				color2={ 255 255 255 }
+				
+				b_tabas = {
+				}
+				b_dayhouk = {
+				}
+				b_mazanabad = {
+				}
+				b_aspak = {
+				}
+				b_kalateh = {
+				}
+				b_amanieh = {
+				}
+				b_bibaz = {
+				}
+				b_esfandiar = {
+				}
+			}
+		}
+		d_mazandaran = {
+			color={ 109 149 39 }
+			color2={ 255 255 255 }
+			
+			c_tabaristan = {
+				color={ 111 151 41 }
+				color2={ 255 255 255 }
+				
+				b_firuzkuh = {
+				}
+				b_amol = {
+				}
+				b_sari = {
+				}
+				b_rarem = {
+				}
+				b_mamatir = {
+				}
+				b_chamnoo = {
+				}
+				b_farim = {
+				}
+				b_lavij = {
+				}
+			}
+			c_mazandaran = {
+				color={ 113 153 43 }
+				color2={ 255 255 255 }
+				
+				b_kalar = {
+				}
+				b_chaloos = {
+				}
+				b_rostamrood = {
+				}
+				b_kojoor = {
+				}
+				b_sisangan = {
+				}
+				b_damavand = {
+				}
+				b_garmsar = {
+				}
+				b_varamin = {
+				}
+			}
+			c_qwivir = {
+				color={ 115 155 45 }
+				color2={ 255 255 255 }
+				
+				b_semnan = {
+				}
+				b_darvar = {
+				}
+				b_damqan = {
+				}
+				b_dehnamak = {
+				}
+				b_sangsar = {
+				}
+				b_sharequmis = {
+				}
+				b_gerdkuh = {
+				}
+				b_kohandej = {
+				}
+			}
+		}
+		d_esfahan = {
+			color={ 142 176 84 }
+			color2={ 255 255 255 }
+			
+			c_esfahan = {
+				color={ 145 179 87 }
+				color2={ 255 255 255 }
+				
+				b_esfahan = {
+				}
+				b_zarrinshahr = {
+				}
+				b_khansar = {
+				}
+				b_kashan = {
+				}
+				b_sedeh = {
+				}
+				b_qomsheh = {
+				}
+				b_abyaneh = {
+				}
+				b_ardestan = {
+				}
+			}
+			c_yazd = {
+				color={ 148 182 90 }
+				color2={ 255 255 255 }
+				
+				b_meybod = {
+				}
+				b_yazd = {
+				}
+				b_chak_chak = {
+				}
+				b_ardakan = {
+				}
+				b_zarch = {
+				}
+				b_taft = {
+				}
+				b_nir = {
+				}
+				b_dar_anjir = {
+				}
+			}
+			c_avhaz = {
+				color={ 151 185 93 }
+				color2={ 255 255 255 }
+				
+				b_dezful = {
+				}
+				b_shushtar = {
+				}
+				b_helen = {
+				}
+				b_idhaj = {
+				}
+				b_masjedsoleyman = {
+				}
+				b_shahrekord = {
+				}
+				b_koohrang = {
+				}
+				b_farsan = {
+				}
+			}
+			c_shiraz = {
+				color={ 154 188 96 }
+				color2={ 255 255 255 }
+				
+				b_shiraz = {
+				}
+				b_estakhr = {
+				}
+				b_bishapur = {
+				}
+				b_persepolis = {
+				}
+				b_azargarta = {
+				}
+				b_abadeh = {
+				}
+				b_bavanat = {
+				}
+				b_arsanjan = {
+				}
+			}
+		}
+		d_hormuz = {
+			color={ 98 118 63 }
+			color2={ 255 255 255 }
+			
+			c_sistan = {
+				color={ 102 122 67 }
+				color2={ 255 255 255 }
+				
+				b_haozdar = {
+				}
+				b_kuh_taftan = {
+				}
+				b_nok_kundi = {
+					holy_site = zoroastrian # Lake Hamun / Mount Khwaja
+				}
+				b_dozz_aap = {
+				}
+				b_zabol = {
+				}
+				b_shahresukhteh = {
+				}
+				b_esfandak = {
+				}
+				b_dehak = {
+				}
+			}
+			c_hormuz = {
+				color={ 106 126 71 }
+				color2={ 255 255 255 }
+				
+				b_gombroon = {
+				}
+				b_abarkawan = {
+				}
+				b_jiroth = {
+				}
+				b_abu_musa = {
+				}
+				b_minab = {
+				}
+				b_kish = {
+				}
+				b_bam = {
+				}
+				b_fin = {
+				}
+			}
+			c_kerman = {
+				color={ 110 130 75 }
+				color2={ 255 255 255 }
+				
+				b_rayen = {
+				} 
+				b_behdesir = {
+				}
+				b_kerman = {
+				}
+				b_maymand = {
+				}
+				b_nough = {
+				}
+				b_bardsir = {
+				}
+				b_zarand = {
+				}
+				b_ghaleganj = {
+				}
+			}
+			c_ladistan = {
+				color={ 114 134 79 }
+				color2={ 255 255 255 }
+				
+				b_lad = {
+				}
+				b_khonj = {
+				}
+				b_evaz = {
+				}
+				b_jask = {
+				}
+				b_bastak = {
+				}
+				b_morbagh = {
+				}
+				b_forg = {
+				}
+				b_bandarkhamir = {
+				}
+			}
+			c_zermanya = {
+				color={ 118 138 83 }
+				color2={ 255 255 255 }
+				
+				b_sirjan = {
+				}
+				b_borougheeyeh = {
+				}
+				b_faragheh = {
+				}
+				b_shahrbabak = {
+				}
+				b_abarkuh = {
+				}
+				b_dehbid = {
+				}
+				b_mehrabad = {
+				}
+			}
+		}
+		d_fars = {
+			color={ 89 128 22 }
+			color2={ 255 255 255 }
+			
+			c_fars = {
+				color={ 91 130 24 }
+				color2={ 255 255 255 }
+				
+				b_perozabad = {
+				}
+				b_kakhesasan = {
+					holy_site = zoroastrian # The Great Fire of Adur Farnbag
+				}
+				b_darab = {
+				}
+				b_jahrom = {
+				}
+				b_estahbanat = {
+				}
+				b_lamerd = {
+				}
+				b_gerash = {
+				}
+				b_khafr = {
+				}
+			}
+			c_hendjan = {
+				color={ 93 132 26 }
+				color2={ 255 255 255 }
+				
+				b_argan = {
+				}
+				b_bandaremashoor = {
+				}
+				b_susa = {
+				}
+				b_ramhormoz = {
+				}
+				b_bandarshahpur = {
+				}
+				b_omidiyeh = {
+				}
+				b_behbahan = {
+				}
+				b_jayzan = {
+				}
+			}
+			c_khozistan = {
+				color={ 95 134 28 }
+				color2={ 255 255 255 }
+				
+				b_abadan = {
+				}
+				b_izaj = {
+				}
+				b_hoveizeh = {
+				}
+				b_ahvaz = {
+				}
+				b_dora = {
+				}
+				b_fao = {
+				}
+				b_khorramshahr = {
+				}
+				b_shadegan = {
+				}
+			}
+		}
+		d_hamadan = {
+			color={ 184 225 112 }
+			color2={ 255 255 255 }
+			
+			c_qom = {
+				color={ 187 228 115 }
+				color2={ 255 255 255 }
+				
+				b_khourabad = {
+				}
+				b_qom = {
+				}
+				b_jamkaran = {
+				}
+				b_kahak = {
+				}
+				b_dastjerd = {
+				}
+				b_salafchegan = {
+				}
+				b_qanavat = {
+				}
+				b_jafariyeh = {
+				}
+			}
+			c_hamadan = {
+				color={ 190 231 118 }
+				color2={ 255 255 255 }
+				
+				b_hamadan = {
+				}
+				b_nahavand = {
+				}
+				b_ganjnameh = {
+				}
+				b_malayer = {
+				}
+				b_ecbatana = {
+				}
+				b_asadabad = {
+				}
+				b_kabudrahang = {
+				}
+				b_roudavar = {
+				}
+			}
+			c_rayy = {
+				color={ 193 234 121 }
+				color2={ 255 255 255 }
+				
+				b_rayy = {
+				}
+				b_tehran = {
+				}
+				b_roudehen = {
+				}
+				b_hashtgerd = {
+				}
+				b_shahriar = {
+				}
+				b_eslamshahr = {
+				}
+				b_karaj = {
+				}
+				b_pakdasht = {
+				}
+			}
+		}
+		d_birjand = {
+			color={ 136 169 80 }
+			color2={ 255 255 255 }
+			
+			c_birjand = {
+				color={ 138 171 82 }
+				color2={ 255 255 255 }
+				
+				b_nehbandan = {
+				}
+				b_birjand = {
+				}
+				b_toon = {
+				}
+				b_furg = {
+				}
+				b_sarayan = {
+				}
+				b_boshruyeh = {
+				}
+				b_qaen = {
+				}
+				b_paeenshahr = {
+				}
+			}
+			c_farrah = {
+				color={ 140 173 84 }
+				color2={ 255 255 255 }
+				
+				b_farrah = {
+				}
+				b_bakwa = {
+				}
+				b_baladuluk = {
+				}
+				b_anardara = {
+				}
+				b_khakisafed = {
+				}
+				b_qalaikah = {
+				}
+				b_shibkoh = {
+				}
+				b_juwayn = {
+				}
+			}
+			c_zahedan = {
+				color={ 142 175 86 }
+				color2={ 255 255 255 }
+				
+				b_zahedan = {
+				}
+				b_khajeh = {
+				}
+				b_kuhtaftan = {
+				}
+				b_hamun = {
+				}
+				b_jahangir = {
+				}
+				b_golchah = {
+				}
+				b_buk = {
+				}
+				b_kacharud = {
+				}
+			}
+			c_bam = {
+				color={ 144 177 88 }
+				color2={ 255 255 255 }
+				
+				b_bampur = {
+				}
+				b_bal_chah = {
+				}
+				b_kaj = {
+				}
+				b_baravat = {
+				}
+				b_fahraj = {
+				}
+				b_nukjub = {
+				}
+				b_sol_hasan = {
+				}
+				b_abeshkan = {
+				}
+			}
+			c_jask = {
+				color={ 146 179 90 }
+				color2={ 255 255 255 }
+				
+				b_yeldar = {
+				}
+				b_band_jask = {
+				}
+				b_miski = {
+				}
+				b_hara_gabrik = {
+				}
+				b_jagin = {
+				}
+				b_par_kun = {
+				}
+				b_rabag = {
+				}
+				b_zaharai = {
+				}
+			}
+			c_tis = {
+				color={ 148 181 92 }
+				color2={ 255 255 255 }
+				
+				b_parak = {
+				}
+				b_kursar = {
+				}
+				b_tis = {
+				}
+				b_chabahar = {
+				}
+				b_konarak = {
+				}
+				b_pozm_machchan = {
+				}
+				b_regedan = {
+				}
+				b_sergen = {
+				}
+			}
+			c_sabzevar = {
+				color={ 150 183 94 }
+				color2={ 255 255 255 }
+				
+				b_sabzevar = {
+				}
+				b_adraskan = {
+				}
+				b_baluci = {
+				}
+				b_saghar = {
+				}
+				b_kwajaha = {
+				}
+				b_taywara = {
+				}
+				b_gozareh = {
+				}
+				b_chanechahan = {
+				}
+			}
+			c_baluchistan = {
+				color={ 152 185 96 }
+				color2={ 255 255 255 }
+				
+				b_saravan = {
+				}
+				b_pahrah = {
+				}
+				b_khash = {
+				}
+				b_jaleq = {
+				}
+				b_pishin = {
+				}
+				b_sarbaz = {
+				}
+				b_rasak = {
+				}
+				b_sangan = {
+				}
+			}
+		}
+	}
+	
+	k_qarakhnid = { # Actually Khiva
+		color = { 39 138 51 }
+		color2={ 255 255 255 }
+		
+		capital	= 626 # Khiva
+		culture = persian
+		
+		tengri_pagan_reformed = 50
+		
+		d_khiva = {
+			color={ 185 210 142 }
+			color2={ 255 255 255 }
+			
+			capital = 626 # Samarkand
+			
+			c_maverannahr = { # Khiva
+				color={ 167 245 32 }
+				color2={ 255 255 255 }
+				
+				b_darvaza = {
+				}
+				b_beruni = {
+				}
+				b_kuskupir = {
+				}
+				b_tahta = {
+				}
+				b_kizketken = {
+				}
+				b_atajab = {
+				}
+				b_nukus = {
+				}
+				b_sumanay = {
+				}
+				b_khiva = {
+				}
+			}
+			
+			c_khiva = { # Aral
+				color={ 189 214 146 }
+				color2={ 255 255 255 }
+				
+				b_itchankila = {
+				}
+				b_xazorasp = {
+				}
+				b_bogot = {
+				}
+				b_xonqa = {
+				}
+				b_qorovul = {
+				}
+				b_yangiariq = {
+				}
+				b_shovot = {
+				}
+			}
+			c_dashhowuz = {
+				color={ 193 217 150 }
+				color2={ 255 255 255 }
+				
+				b_dashhowuz = {
+				}
+				b_kunyaurgench = {
+				}
+				b_tagta = {
+				}
+				b_akdepe = {
+				}
+				b_gubadag = {
+				}
+				b_boldumsaz = {
+				}
+				b_yylanly = {
+				}
+				b_gorogly = {
+				}
+			}
+		}
+		d_samarkand = {
+			color={ 155 170 132 }
+			color2={ 255 255 255 }
+			
+			capital = 903 # Samarkand
+			
+			c_samarkand = {
+				color={ 157 201 100 }
+				color2={ 255 255 255 }
+				
+				b_afrasiyab = {
+				}
+				b_samarkand = {
+				}
+				b_khokand = {
+				}
+				b_urgut = {
+				}
+				b_koshrabot = {
+				}
+				b_ishtikhon = {
+				}
+				b_ziadin = {
+				}
+				b_laish = {
+				}
+			}
+			c_balkh = {
+				color={ 201 225 158 }
+				color2={ 255 255 255 }
+				
+				b_balkh = {
+				}
+				b_termez = {
+				}
+				b_tiliatepe = {
+				}
+				b_takhtisangin = {
+					holy_site = zoroastrian
+				}
+				b_alkhanoum = {
+				}
+				b_kunduz = {
+				}
+				b_surkhkotal = {
+				}
+				b_dalverzintepe = {
+				}
+			}
+			c_herat = {
+				color={ 205 224 162 }
+				color2={ 255 255 255 }
+				
+				b_herat = {
+				}
+				b_karukh = {
+				}
+				b_kushk = {
+				}
+				b_gulran = {
+				}
+				b_obe = {
+				}
+				b_zarghun = {
+				}
+				b_farsi = {
+				}
+				b_chishti = {
+				}
+			}
+		}
+		
+		d_bukhara = {
+			color={ 163 241 28 }
+			color2={ 255 255 255 }
+			
+			capital = 628 # Bukhara
+			
+			c_kara-kum = {
+				color={ 165 243 30 }
+				color2={ 255 255 255 }
+				
+				b_kyzylsu = {
+				}
+				b_gazanjyk = {
+				}
+				b_bekdas = {
+				}
+				b_cheleken = {
+				}
+				b_ohk = {
+				}
+				b_dzhanga = {
+				}
+				b_awaza = {
+				}
+				b_yangadzha = {
+				}
+			}
+			c_bukhara = {
+				color={ 169 247 34 }
+				color2={ 255 255 255 }
+				
+				b_gizhduvan = {
+				}
+				b_bukhara = {
+				}
+				b_vabkent = {
+				}
+				b_karkuh = {
+				}
+				b_chardjul = {
+				}
+				b_kogon = {
+				}
+				b_agar = {
+				}
+				b_ayrybaba = {
+				}
+			}
+			c_turkmen = { # Ashkabad
+				color={ 153 128 53 }
+				color2={ 255 255 255 }
+				
+				b_farava = {
+				}
+				b_nisa = {
+				}
+				b_abiward = {
+				}
+				b_gokdepe = {
+				}
+				b_konjikala = {
+				}
+				b_kyzylarvat = {
+				}
+				b_sarahs = {
+				}
+				b_ulugdepe = {
+				}
+			}
+		}
+	}
+	
+	k_khwarizm = { # Turkestan
+		color={ 204 150 21 }
+		color2={ 255 255 255 }
+		
+		capital = 900 # Khwarizm
+		
+		culture = turkish
+		
+		tengri_pagan_reformed = 500
+
+		d_khwarizmian = { # Turkestan
+			color={ 224 170 24 }
+			color2={ 255 255 255 }
+			
+			capital = 900 # Kyzylorda
+			
+			culture = turkish
+			
+			c_kyzylorda = {
+				color={ 236 178 22 }
+				color2={ 255 255 255 }
+			
+				b_akmechet = {
+				}
+				b_kyzylorda = {
+					holy_site = tengri_pagan
+					holy_site = tengri_pagan_reformed				
+				}
+				b_kazaly = {
+				}
+				b_terenuzyak = {
+				}
+				b_dzhanadzhol = {
+				}
+				b_sarytogay = {
+				}
+				b_zhalagash = {
+				}
+				b_kyzyleginshi = {
+				}
+			}
+		
+			c_khwarizm = { # Chimboy
+				color={ 227 173 27 }
+				color2={ 255 255 255 }
+			
+				b_kassarma = {
+				}
+				b_dawletgirei = {
+				}
+				b_kuljandi = {
+				}
+				b_kaszkarata = {
+				}
+				b_aszczeatrik = {
+				}
+				b_kosbulak = {
+				}
+				b_sokyrbulak = {
+				}
+				b_karakul = {
+				}
+			}
+			c_emba = {
+				color={ 230 176 30 }
+				color2={ 255 255 255 }
+			
+				b_emba = {
+				}
+				b_koshkar = {
+				}
+				b_akkube = {
+				}
+				b_akbulak = {
+				}
+				b_makat = {
+				}
+				b_bakachi = {
+				}
+				b_qulsary = {
+				}
+				b_kizay = {
+				}
+			}
+			c_mangyshlak = {
+				color={ 233 179 33 }
+				color2={ 255 255 255 }
+			
+				b_aqtaw = {
+				}
+				b_kzyluzen = {
+				}
+				b_amankyzylit = {
+				}
+				b_uzen = {
+				}
+				b_araldy = {
+				}
+				b_ashchimuryn = {
+				}
+				b_tigen = {
+				}
+				b_sayutes = {
+				}
+			}
+			c_aral = { # Turkestan
+				color={ 236 182 36 }
+				color2={ 255 255 255 }
+			
+				b_akdzulpas = {
+				}
+				b_aralsk = {
+				}
+				b_sapak = {
+				}
+				b_aralkum = {
+				}
+				b_kosskul = {
+				}
+				b_akespe = {
+				}
+				b_saksaulskiy = {
+				}
+				b_akshelek = {
+				}
+			}
+			c_usturt = {
+				color={ 238 184 38 }
+				color2={ 255 255 255 }
+			
+				b_bailjar = {
+				}
+				b_barsakelmos = {
+				}
+				b_bussaga = {
+				}
+				b_sengirkum = {
+				}
+				b_sumbe = {
+				}
+				b_akkuduk = {
+				}
+				b_aksu = {
+				}
+				b_karamola = {
+				}
+			}
+		}
+	}
+	k_mesopotamia = {
+		color={ 50 100 60 }
+		color2={ 255 255 255 }
+		
+		capital	= 693 # Bagdad
+		
+		culture = levantine_arabic
+		
+		d_kermanshah = {
+			color={ 68 174 105 }
+			color2={ 255 255 255 }
+			
+			c_qazwin = {
+				color={ 70 107 176 }
+				color2={ 255 255 255 }
+				
+				b_lambsar = {
+				}
+				b_qazwin = {
+				}
+				b_ahmadabad = {
+				}
+				b_avaj = {
+				}
+				b_abeyek = {
+				}
+				b_takestan = {
+				}
+				b_alvand = {
+				}
+				b_buinzahra = {
+				}
+			}
+			c_dailam = {
+				color={ 72 109 178 }
+				color2={ 255 255 255 }
+				
+				b_alamut = {
+				}
+				b_dailam = {
+				}
+				b_soltaniyeh = {
+				}
+				b_gheydar = {
+				}
+				b_zanjan = {
+				}
+				b_abhar = {
+				}
+				b_tarom = {
+				}
+				b_mahneshan = {
+				}
+			}
+			c_kermanshah = {
+				color={ 74 111 180 }
+				color2={ 255 255 255 }
+				
+				b_javanroud = {
+				}
+				b_kermanshah = {
+				}
+				b_hulwan = {
+				}
+				b_paveh = {
+				}
+				b_mahalkufa = {
+				}
+				b_kangavar = {
+				}
+				b_kuzaran = {
+				}
+				b_ravansar = {
+				}
+			}
+			c_luristan = {
+				color={ 76 113 182 }
+				color2={ 255 255 255 }
+				
+				b_dezbar = {
+				}
+				b_khorramabad = {
+				}
+				b_borujerd = {
+				}
+				b_dorood = {
+				}
+				b_aligoodarz = {
+				}
+				b_koohdasht = {
+				}
+				b_poledokhtar = {
+				}
+				b_alashtar = {
+				}
+			}
+		}
+		d_tigris = {
+			color={ 113 150 32 }
+			color2={ 255 255 255 }
+			
+			c_al_nadjaf = {
+				color={ 90 130 202 }
+				color2={ 255 255 255 }
+				
+				b_nadjaf = {
+					holy_site = shiite
+				}
+				b_kufah = {
+				}
+				b_taqtaqanah = {
+				}
+				b_rahbah = {
+				}
+				b_jasim = {
+				}
+				b_midhrawi = {
+				}
+				b_rashid = {
+				}
+				b_jaarah = {
+				}
+			}
+			c_ilam = {
+				color={ 58 118 228 }
+				color2={ 255 255 255 }
+				
+				b_dehloran = {
+				}
+				b_ilam = {
+				}
+				b_chahartaghi = {
+				}
+				b_abdanan = {
+				}
+				b_hezardar = {
+				}
+				b_mehran = {
+				}
+				b_ghalehghiran = {
+				}
+				b_towhid = {
+				}
+			}
+			c_tigris = {
+				color={ 61 121 231 }
+				color2={ 255 255 255 }
+				
+				b_majaralkabir = {
+				}
+				b_bismaya = {
+				}
+				b_qalatsjergat = {
+				}
+				b_nuffar = {
+				}
+				b_ishan = {
+				}
+				b_Warka = {
+				}
+				b_samawah = {
+				}
+				b_tellelhiba = {
+				}
+			}
+			c_al_amarah = {
+				color={ 64 124 234 }
+				color2={ 255 255 255 }
+				
+				b_amarah = {
+				}
+				b_kutelamara = {
+				}
+				b_wasit = {
+				}
+				b_badra = {
+				}
+				b_suwaira = {
+				}
+				b_hai = {
+				}
+				b_azeeziaya = {
+				}
+				b_zurbatiyah = {
+				}
+			}
+			c_al_nasiryah = {
+				color={ 67 127 237 }
+				color2={ 255 255 255 }
+				
+				b_nasiryah = {
+				}
+				b_dhiqar = {
+				}
+				b_qalatsukkar = {
+				}
+				b_mukayyar = {
+				}
+				b_shahrain = {
+				}
+				b_telloh = {
+				}
+				b_muntafiq = {
+				}
+				b_shatra = {
+				}
+			}
+		}
+		d_basra = {
+			color={ 6 150 2 }
+			color2={ 255 255 255 }
+			
+			c_kufa = {
+				color={ 88 141 239 }
+				color2={ 255 255 255 }
+				
+				b_kufa = {
+				}
+				b_bussayyah = {
+				}
+				b_suqash = {
+				}
+				b_hammar = {
+				}
+				b_chibayish = {
+				}
+				b_alqurnah = {
+				}
+				b_shuyukh = {
+				}
+				b_ragai = {
+				}
+			}
+			c_rummah = {
+				color={ 92 145 243 }
+				color2={ 255 255 255 }
+				
+				b_hafaralbatin = {
+				}
+				b_alqalt = {
+				}
+				b_samoudah = {
+				}
+				b_qaisumah = {
+				}
+				b_altheebiyah = {
+				}
+				b_arraqai = {
+				}
+				b_assuayerah = {
+				}
+				b_assufayri = {
+				}
+			}
+			c_kuwait = {
+				color={ 96 149 247 }
+				color2={ 255 255 255 }
+				
+				b_kuwait = {
+				}
+				b_ikaros = {
+				}
+				b_alwafra = {
+				}
+				b_khinan = {
+				}
+				b_arrawdatayn = {
+				}
+				b_ashshuaybah = {
+				}
+				b_anthemusias = {
+				}
+				b_alfalalheel = {
+				}
+			}
+			c_basra = {
+				color={ 100 153 251 }
+				color2={ 255 255 255 }
+				
+				b_basra = {
+				}
+				b_ummqasr = {
+				}
+				b_azzubayr = {
+				}
+				b_arah = {
+				}
+				b_mohammera = {
+				}
+				b_sukelsheyuhk = {
+				}
+				b_kalaatderat = {
+				}
+				b_qurna = {
+				}
+			}
+		}
+		d_amman = {
+			color = { 32 127 30 }
+			color2={ 255 255 255 }
+			
+			c_damman = {
+				color={ 14 79 198 }
+				color2={ 255 255 255 }
+				
+				b_avan = {
+				}
+				b_najmah = {
+				}
+				b_qatif = {
+				}
+				b_damman = {
+				} 
+				b_jubail = {
+				}
+				b_alaba = {
+				}
+				b_alhinnah = {
+				}
+				b_abuhadriya = {
+				}
+			}
+			c_al_hasa = {
+				color={ 16 81 200 }
+				color2={ 255 255 255 }
+				
+				b_alhasa = {
+				}
+				b_holuf = {
+				}
+				b_foda = {
+				}
+				b_khobar = {
+				}
+				b_almubarraz = {
+				}
+				b_aloyoon = {
+				}
+				b_alomran = {
+				}
+				b_ghunan = {
+				}
+				b_abqaiq = {
+				}
+			}
+			c_bahrein = {
+				color={ 18 83 202 }
+				color2={ 255 255 255 }
+				
+				b_muharraq = {
+				}
+				b_manama = {
+				}
+				b_umm_al_nasan = {
+				}
+				b_sitra = {
+				}
+				b_jidda = {
+				}
+				b_ummalsabaan = {
+				}
+				b_hamala = {
+				}
+				b_aldur = {
+				}
+			}
+		}
+		d_baghdad = {
+			color={ 6 100 2 }
+			color2={ 255 255 255 }
+			
+			c_karbala = {
+				color={ 125 165 239 }
+				color2={ 255 255 255 }
+				
+				b_ainaltamur = {
+				}
+				b_karbala = {
+				}
+				b_hindiya = {
+				}
+				b_ofak = {
+				}
+				b_hamzah = {
+				}
+				b_shamiyah = {
+				}
+				b_qisair = {
+				}
+				b_ukhaidir = {
+				}
+			}
+			c_baghdad = {
+				color={ 129 169 243 }
+				color2={ 255 255 255 }
+				
+				b_baqubah = {
+				}
+				b_bagdad = {
+					holy_site = sunni
+				}
+				b_hillah = {
+				}
+				b_iskandariya = {
+				}
+				b_taji = {
+				}
+				b_babel = {
+				}
+				b_madain = {
+				}
+				b_latifiya = {
+				}
+			}
+			c_al_habbariyah = {
+				color={ 93 133 205 }
+				color2={ 255 255 255 }
+				
+				b_alhabbariyah = {
+				}
+				b_shabakah = {
+				}
+				b_nukhaib = {
+				}
+				b_qutaysh = {
+				}
+				b_aljirami = {
+				}
+				b_adhaman = {
+				}
+				b_daydab = {
+				}
+				b_nuayj = {
+				}
+			}
+			c_deir = {
+				color={ 133 173 247 }
+				color2={ 255 255 255 }
+				
+				b_anah = {
+				}
+				b_anbar = {
+				}
+				b_rutbah = {
+				}
+				b_rawa = {
+				}
+				b_hit = {
+				}
+				b_ramadi = {
+				}
+				b_kasra = {
+				}
+				b_nehardea = {
+				}
+			}
+			c_euphrates = {
+				color={ 137 177 250 }
+				color2={ 255 255 255 }
+				
+				b_bayji = {
+				}
+				b_tagrit = {
+				}
+				b_samarra = {
+				}
+				b_balad = {
+				}
+				b_dujail = {
+				}
+				b_amirli = {
+				}
+				b_ishaqi = {
+				}
+				b_faris = {
+				}
+			}
+			c_kirkuk = {
+				color={ 141 181 254 }
+				color2={ 255 255 255 }
+				
+				b_kirkuk = {
+				}
+				b_daquq = {
+				}
+				b_ranya = {
+				}
+				b_halabja = {
+				}
+				b_makhmur = {
+				}
+				b_dukan = {
+				}
+				b_chuartan = {
+				}
+				b_kifri = {
+				}
+			}
+		}
+		d_mosul = {
+			color={ 49 181 44 }
+			color2={ 255 255 255 }
+			
+			c_mosul = {
+				color={ 9 89 236 }
+				color2={ 255 255 255 }
+				
+				b_mosul = {
+				}
+				b_bakhdida = {
+				}
+				b_karamlish = {
+				}
+				b_shekhan = {
+				}
+				b_aqrah = {
+				}
+				b_bartella = {
+				}
+				b_arbil = {
+				}
+				b_baqofah = {
+				}
+			}
+			c_kurdistan = {
+				color={ 11 91 238 }
+				color2={ 255 255 255 }
+				
+				b_duhok = {
+				}
+				b_araden = {
+				}
+				b_bebadi = {
+				}
+				b_dehi = {
+				}
+				b_harmashi = {
+				}
+				b_marqayoma = {
+				}
+				b_dawodiya = {
+				}
+				b_sarsink = {
+				}
+			}
+			c_al_jazira = {
+				color={ 13 93 240 }
+				color2={ 255 255 255 }
+				
+				b_hasakah = {
+				}
+				b_dayrik = {
+				}
+				b_qamishhlo = {
+				}
+				b_darbasiyah = {
+				}
+				b_teltamer = {
+				}
+				b_hamoukar = {
+				}
+				b_amuda = {
+				}
+				b_dakhiliyah = {
+				}
+			}
+			c_al_bichri = {
+				color={ 15 95 242 }
+				color2={ 255 255 255 }
+				
+				b_bichri = {
+				}
+				b_deiralzur = {
+				}
+				b_osrhoene = {
+				}
+				b_abukamal = {
+				}
+				b_shamiyya = {
+				}
+				b_mayadin = {
+				}
+				b_sirhi = {
+				}
+				b_mhaymidah = {
+				}
+			}
+			c_sinjar = {
+				color={ 17 97 244 }
+				color2={ 255 255 255 }
+				
+				b_sinjar = {
+				}
+				b_hatra = {
+				}
+				b_telassar = {
+				}
+				b_nineveh = {
+				}
+				b_talkayf = {
+				}
+				b_baaj = {
+				}
+				b_kouyunik = {
+				}
+				b_nabiyunus = {
+				}
+			}
+		}
+		d_tabriz = {
+			color={ 60 140 60 }
+			color2={ 255 255 255 }
+			
+			c_oromieh = {
+				color={ 61 86 133 }
+				color2={ 255 255 255 }
+				
+				b_oroumieh = {
+				}
+				b_khoy = {
+				}
+				b_takhtesoleyman = {
+					holy_site = zoroastrian # The Great Fire of Adur Gushnasp
+				}
+				b_avajiq = {
+				}
+				b_chaldiran = {
+				}
+				b_charekelisa = {
+				}
+				b_mahabad = {
+				}
+				b_salmas = {
+				}
+			}
+			c_gilan = {
+				color={ 64 89 136 }
+				color2={ 255 255 255 }
+				
+				b_gilan = {
+				}
+				b_rasht = {
+				}
+				b_talysh = {
+				}
+				b_astara = {
+				}
+				b_rudkhan = {
+				}
+				b_lahijan = {
+				}
+				b_masouleh = {
+				}
+				b_rudbar = {
+				}
+			}
+			c_tabriz = {
+				color={ 67 92 138 }
+				color2={ 255 255 255 }
+				
+				b_babak = {
+				}
+				b_tabriz = {
+				}
+				b_maragheh = {
+				}
+				b_ahar = {
+				}
+				b_zahhak = {
+				}
+				b_sarab = {
+				}
+				b_shabestar = {
+				}
+				b_miyaneh = {
+				}
+			}
+		}
+	}
+	k_armenia = {
+		color={ 140 41 171 }
+		color2={ 255 255 255 }
+		
+		orthodox = 150 # Crusade target weight
+		muslim = 150 # Crusade target weight
+		
+		capital = 681 #	Ani
+		
+		culture = armenian
+		
+		# Creation/usurpation trigger
+		allow = {
+			religion_group = christian
+		}
+
+		d_azerbaijan = {
+			color={ 160 232 20 }
+			color2={ 255 255 255 }
+			
+			culture = persian
+			
+			c_shirvan = {
+				color={ 162 234 22 }
+				color2={ 255 255 255 }
+				
+				b_baku = {
+				}
+				b_lankaran = {
+				}
+				b_absheron = {
+				}
+				b_shirvan = {
+				}
+				b_shakhriyar = {
+				} 
+				b_salyan = {
+				}
+				b_khizirzinda = {
+				}
+				b_altiagay = {
+				}
+			}
+			c_azerbaijan = {
+				color={ 164 236 24 }
+				color2={ 255 255 255 }
+				
+				b_urmiah = {
+				}
+				b_kapalak = {
+				}
+				b_takhtesuleiman = {
+				}
+				b_bastam = {
+				}
+				b_maku = {
+				} 
+				b_kalaberd = {
+				}
+				b_chaldoran = {
+				}
+				b_deglane = {
+				}
+			}
+			c_suenik = {
+				color={ 166 238 26 }
+				color2={ 255 255 255 }
+				
+				turkish = "Kafan"
+				persian = "Kafan"
+				armenian = "Syunik"
+				
+				b_ghapan = {
+				}
+				b_areni = {
+				}
+				b_noravank = {
+				}
+				b_vorotnavank = {
+				}
+				b_tatev = {
+				}
+				b_prochabert = {
+				}
+				b_gandzassar = {
+				}
+				b_goris = {
+				}
+			}
+			c_shemakha = {
+				color={ 168 240 28 }
+				color2={ 255 255 255 }
+				
+				b_ahemakha = {
+				}
+				b_quba = {
+				}
+				b_shikhlar = {
+				}
+				b_khachmaz = {
+				}
+				b_chiraggala = {
+				}
+				b_anig = {
+				}
+				b_maraza = {
+				}
+				b_khil = {
+				}
+			}
+		}
+		d_armenia = {
+			color={ 143 49 161 }
+			color2={ 255 255 255 }
+			
+			c_vaspurakan = {
+				color={ 162 191 44 }
+				color2={ 255 255 255 }
+				
+				turkish = "Van"
+				kurdish = "Wan"
+				
+				b_haykaberd = {
+				}
+				b_van = {
+				}
+				b_surbkhach = {
+				}
+				b_vostan = {
+				}
+				b_varagavank = {
+				}
+				b_aghtamar = {
+				}
+				b_bakear = {
+				}
+				b_hadamakert = {
+				}
+			}
+			c_dwin = {
+				color={ 165 194 47 }
+				color2={ 255 255 255 }
+				
+				turkish = "Erivan"
+				
+				b_lori = {
+					armenian = Loriberd
+				}
+				b_dvin = {
+				}
+				b_etchmiadzin = {
+				}
+				b_erebuni = {
+				}
+				b_alaverdi = {
+				}
+				b_khorvirap = {
+				}
+				b_matsnaberd = {
+				}
+				b_sanahin = {
+				}
+			}
+			c_ani = {
+				color={ 168 87 50 }
+				color2={ 255 255 255 }
+				
+				turkish = "Kars"
+				
+				b_midjnaberd = {
+				}
+				b_ani = {
+				}
+				b_surpasdvadzadzin = {
+				}
+				b_karutsberd = {
+				}
+				b_karuts = {
+				}
+				b_artashat = {
+				}
+				b_oshakan  = {
+				}
+				b_zvartnots = {
+				}
+			}
+		}
+		d_mesopotamia = {
+			color={ 155 110 88 }
+			color2={ 255 255 255 }
+			
+			c_karin = {
+				color={ 117 154 36 }
+				color2={ 255 255 255 }
+				
+				turkish = "Erzurum"
+				
+				b_daroynk = {
+				}
+				b_karin = {
+					turkish = "Erzurum"
+				}
+				b_owshank = {
+				}
+				b_mardin = {
+				} 
+				b_baghesh = {
+				}
+				b_pasen = {
+				}
+				b_tercan = {
+				}
+				b_kirklarkilisesi = {
+				}
+			}
+			c_mesopotamia = {
+				color={ 121 158 40 }
+				color2={ 255 255 255 }
+				
+				b_tzimisca = {
+				}
+				b_martyropolis = {
+				}
+				b_mayafaraqin = {
+				}
+				b_jermuk = {
+				}
+				b_arghana = {
+				}
+				b_hani = {
+				}
+				b_lice = {
+				}
+				b_tigranakert = {
+				}
+			}
+			c_taron = {
+				color={ 125 162 44 }
+				color2={ 255 255 255 }
+				
+				b_manzikert = {
+				}
+				b_mush = {
+				}
+				b_glak = {
+				}
+				b_ararati = {
+				}
+				b_artchesh = {
+				}
+				b_arakelots = {
+				}
+				b_akhlat = {
+				}
+				b_sason = {
+				}
+			}
+			c_amida = {
+				color={ 129 166 48 }
+				color2={ 255 255 255 }
+				
+				b_kiaburc = {
+				}
+				b_amida = {
+				}
+				b_ulucamii = {
+				}
+				b_suraamede = {
+				}
+				b_mayyafarikin = {
+				}
+				b_hazretisuleymancamii = {
+				}
+				b_egil = {
+				}
+				b_idtodyolataloho = {
+				}
+			}
+			c_nisibin = {
+				color={ 133 170 52 }
+				color2={ 255 255 255 }
+				
+				b_nusaybin = {
+				}
+				b_savur = {
+				}
+				b_dairodmorhannanyo = {
+				}
+				b_kerburan = {
+				}
+				b_cizre = {
+				}
+				b_sittiradviyyemadrasa = {
+				}
+				b_dayrodmorgabriel = {
+				}
+				b_yaqobnsibnaya = {
+				}
+			}
+		}
+		d_edessa = {
+			color={ 151 255 3 }
+			color2={ 255 255 255 }
+			
+			c_edessa = {
+				color={ 153 255 5 }
+				color2={ 255 255 255 }
+				
+				b_edessa = {
+				}
+				b_sruk = {
+				}
+				b_bile = {
+				}
+				b_tulupe = {
+				}
+				b_kaisun = {
+				}
+				b_samsat = {
+				}
+				b_harran = {
+				}
+				b_edesurfa = {
+				}
+			}
+			c_tell_bashir = {
+				color={ 155 255 7 }
+				color2={ 255 255 255 }
+				
+				b_turbessel = {
+				}
+				b_buzaa = {
+				}
+				b_manbij = {
+				}
+				b_nizip = {
+				}
+				b_zeugma = {
+				}
+				b_makedonopolis = {
+				}
+				b_birtha = {
+				}
+				b_jarabulus = {
+				}
+			}
+			c_aintab = {
+				color={ 157 255 9 }
+				color2={ 255 255 255 }
+				
+				b_aintab = {
+				}
+				b_marash = {
+				}
+				b_kyrrhos = {
+				}
+				b_ravendan = {
+				}
+				b_duluk = {
+				}
+				b_hromgla = {
+				}
+				b_raban = {
+				}
+				b_amanus = {
+				}
+			}
+			c_bira = {
+				color={ 19 99 246 }
+				color2={ 255 255 255 }
+				
+				b_bira = {
+				}
+				b_tella = {
+				}
+				b_resaina = {
+				}
+				b_qalarebete = {
+				}
+				b_derik = {
+				}
+				b_qoser = {
+				}
+				b_samrah = {
+				}
+				b_stewr = {
+				}
+			}
+		}
+		d_coloneia = {
+			color={ 232 20 130 }
+			color2={ 255 255 255 }
+			
+			c_koloneia = {
+				color={ 133 235 23 }
+				color2={ 255 255 255 }
+				
+				b_koloneia = {
+				}
+				b_anatolnikopolis = {
+				}
+				b_tephrice = {
+				}
+				b_mazaka = {
+				}
+				b_celtzene = {
+				}
+				b_gamakh = {
+				}
+				b_akn = {
+				}
+				b_gerjanis = {
+				}
+			}
+			c_melitene = {
+				color={ 136 238 26 }
+				color2={ 255 255 255 }
+				
+				b_melitene = {
+				}
+				b_arca = {
+				}
+				b_samosata = {
+				}
+				b_corduene = {
+				}
+				b_seneqerim = {
+				}
+				b_arguvan = {
+				}
+				b_kigi = {
+				}
+				b_yedisu = {
+				}
+			}
+		}
+	}
+	k_syria = {
+		color={ 145 130 88 }
+		color2={ 255 255 255 }
+		
+		orthodox = 200 # Crusade target weight
+		muslim = 400 # Crusade target weight
+		
+		culture = levantine_arabic
+		
+		capital = 728 # Damascus
+		
+		d_aleppo = {
+			color={ 85 232 20 }
+			color2={ 255 255 255 }
+		
+			c_asas = {
+				color={ 87 234 22 }
+				color2={ 255 255 255 }
+			
+				b_asas = {
+				}
+				b_rakka = {
+				}
+				b_kallinikos = {
+				}
+				b_talabyad = {
+				}
+				b_tabqa = {
+				}
+				b_souriya = {
+				}
+				b_resafa = {
+				}
+				b_zaazouaa = {
+				}
+			}
+			c_palmyra = {
+				color={ 89 236 24 }
+				color2={ 255 255 255 }
+			
+				b_arak = {
+				}
+				b_palmyra = {
+				}
+				b_arraml = {
+				}
+				b_alqasr = {
+				}
+				b_jihar = {
+				}
+				b_tiace = {
+				} 
+				b_alhuwaysis = {
+				}
+				b_khirbat = {
+				}
+			}
+			c_aleppo = {
+				color={ 91 238 26 }
+				color2={ 255 255 255 }
+			
+				b_aleppo = {
+				}
+				b_azaz = {
+				}
+				b_mashala = {
+				} 
+				b_lerminet = {
+				}
+				b_sarmin = {
+				}
+				b_harim = {
+				}
+				b_qusayr = {
+				}
+				b_maaratannuman = {
+				}
+			}
+			c_homs = {
+				color={ 93 240 28 }
+				color2={ 255 255 255 }
+			
+				b_homs = {
+				}
+				b_zweitina = {
+				}
+				b_emesa = {
+				}
+				b_alkhazandar = {
+				}
+				b_qadesh = {
+				}
+				b_sadad = {
+				}
+				b_marmarita = {
+				}
+				b_qatna = {
+				}
+			}
+			c_hama = {
+				color={ 95 242 30 }
+				color2={ 255 255 255 }
+			
+				b_hama = {
+				}
+				b_hamath = {
+				}
+				b_mhardeh = {
+				}
+				b_qarqar = {
+				}
+				b_bara = {
+				} 
+				b_salamiyah = {
+				}
+				b_serjilla = {
+				}
+				b_kharsan = {
+				}
+			}
+		}
+		d_antioch = {
+			color={ 142 63 129 }
+			color2={ 255 255 255 }
+		
+			c_antiocheia = {
+				color={ 152 69 135 }
+				color2={ 255 255 255 }
+			
+				b_antiocheia = {
+					pentarchy = yes
+					holy_site = orthodox
+					holy_site = miaphysite
+					holy_site = monophysite
+					holy_site = nestorian
+				}
+				b_latakiah = {
+				}
+				b_stsymeon = {
+				}
+				b_darbsak = {
+				}
+				b_hazart = {
+				}
+				b_saone = {
+				}
+				b_harenc = {
+				}
+				b_baghras = {
+				}
+			}
+			c_archa = {
+				color={ 109 194 47 }
+				color2={ 255 255 255 }
+			
+				b_archa = {
+				}
+				b_shayzar = {
+				}
+				b_famia = {
+				}
+				b_masyaf = {
+				}
+				b_chastelblanc = {
+				}
+				b_kafroun = {
+				}
+				b_treiz = {
+				}
+				b_krakdeschevaliers = {
+				}
+			}
+			c_alexandretta = {
+				color={ 112 197 50 }
+				color2={ 255 255 255 }
+				
+				bedouin_arabic = "Iskandarun"
+				maghreb_arabic = "Iskandarun"
+				levantine_arabic = "Iskandarun"
+				egyptian_arabic = "Iskandarun"
+				andalusian_arabic = "Iskandarun"
+				turkish = "Iskandarun"
+				armenian = "Hrosos"
+			
+				b_alexandretta = {
+					bedouin_arabic = "Iskandarun"
+					maghreb_arabic = "Iskandarun"
+					levantine_arabic = "Iskandarun"
+					egyptian_arabic = "Iskandarun"
+					andalusian_arabic = "Iskandarun"
+					turkish = "Iskandarun"
+				}
+				b_rhosus = {
+					armenian = "Hrosos"
+				}
+				b_portbonnel = {
+				}
+				b_myriandros = {
+				}
+				b_portella = {
+				}
+				b_derbasak = {
+				}
+				b_sarvantikar = {
+				}
+				b_larochederissole = {
+				}
+			}
+		}
+		d_tripoli = {
+			color={ 71 150 32 }
+			color2={ 255 255 255 }
+		
+			c_tortosa = {
+				color={ 73 152 34 }
+				color2={ 255 255 255 }
+			
+				b_tortosa = {
+				}
+				b_maraclea = {
+				}
+				b_balemia = {
+				}
+				b_jabala = {
+				}
+				b_valania = {
+				}
+				b_ruad = {
+				}
+				b_alkhawabi = {
+				}
+				b_margat = {
+				}
+			}
+			c_tripoli = {
+				color={ 75 154 36 }
+				color2={ 255 255 255 }
+			
+				b_syrtripoli = {
+				}
+				b_gibelet = {
+				}
+				b_boutron = {
+				}
+				b_arqah = {
+				}
+				b_besmedin = {
+				}
+				b_alqulayat = {
+				}
+				b_nephin = {
+				}
+				b_alqadmus = {
+				}
+			}
+			c_baalbek = {
+				color={ 77 156 38 }
+				color2={ 255 255 255 }
+			
+				b_baalbek = {
+				}
+				b_akkar = {
+				}
+				b_halbah = {
+				}
+				b_zahle = {
+				}
+				b_laboue = {
+				}
+				b_buissera = {
+				}
+				b_riyaq = {
+				}
+				b_chlifa = {
+				}
+			}
+		}
+		d_damascus = {
+			color={ 122 255 3 }
+			color2={ 255 255 255 }
+		
+			c_damascus = {
+				color={ 125 255 6 }
+				color2={ 255 255 255 }
+			
+				b_qsarbardawil = {
+				}
+				b_damascus = {
+					holy_site = shiite
+				}
+				b_daraa = {
+				}
+				b_shahba = {
+				}
+				b_suada = {
+				}
+				b_alsanamayn = {
+				}
+				b_izra = {
+				}
+				b_duma = {
+				}
+			}
+			c_irbid = {
+				color={ 128 255 9 }
+				color2={ 255 255 255 }
+			
+				b_aljun = {
+				}
+				b_irbid = {
+				}
+				b_pella = {
+				}
+				b_yarmouk = {
+				}
+				b_habisjaldak = {
+				}
+				b_aydoun = {
+				}
+				b_ummqais = {
+				}
+				b_gadera = {
+				}
+			}
+			c_al_mafraq = {
+				color={ 134 255 15 }
+				color2={ 255 255 255 }
+			
+				b_mafraq = {
+				}
+				b_thughra = {
+				}
+				b_jarash = {
+				}
+				b_nasib = {
+				}
+				b_buwayda = {
+				}
+				b_ramtah = {
+				}
+				b_taebah = {
+				}
+				b_elemtaih = {
+				}
+			}
+			c_az_zarqa = {
+				color={ 103 143 214 }
+				color2={ 255 255 255 }
+				
+				b_zarqa = {
+				}
+				b_qasramra = {
+				}
+				b_russeifa = {
+				}
+				b_qasralhallabat = {
+				}
+				b_shabib = {
+				}
+				b_hashemiyya = {
+				}
+				b_khurqah = {
+				}
+				b_amratamad = {
+				}
+			}
+			c_amman = {
+				color={ 131 255 12 }
+				color2={ 255 255 255 }
+			
+				b_amman = {
+				}
+				b_dhiban = {
+				}
+				b_salt = {
+				}
+				b_mahis = {
+				}
+				b_fuheis = {
+				}
+				b_deir_alla = {
+				}
+				b_jerash = {
+				}
+				b_al_balqa = {
+				}
+			}
+		}
+		d_syria = {
+			color={ 35 232 20 }
+			color2={ 255 255 255 }
+		
+			c_syria = {
+				color={ 37 234 22 }
+				color2={ 255 255 255 }
+			
+				b_amrah = {
+				}
+				b_otaybah = {
+				}
+				b_adra = {
+				}
+				b_jarba = {
+				}
+				b_qasmiye = {
+				}
+				b_hayjanah = {
+				}
+				b_buraq = {
+				}
+				b_baly = {
+				}
+			}
+			c_druz = {
+				color={ 39 236 24 }
+				color2={ 255 255 255 }
+			
+				b_salkhard = {
+				}
+				b_dibin = {
+				}
+				b_awas = {
+				}
+				b_busra = {
+				}
+				b_ghariyah = {
+				}
+				b_shannireh = {
+				}
+				b_samj = {
+				}
+				b_thoula = {
+				}
+			}
+			c_suwaida = {
+				color={ 41 238 26 }
+				color2={ 255 255 255 }
+			
+				b_suwaida = {
+				}
+				b_raha = {
+				}
+				b_taraba = {
+				}
+				b_nimreh = {
+				}
+				b_salah = {
+				}
+				b_busan = {
+				}
+				b_tlilin = {
+				}
+				b_qummoualad = {
+				}
+			}
+			c_tadmor = {
+				color={ 43 240 28 }
+				color2={ 255 255 255 }
+			
+				b_husaiba = {
+				}
+				b_bukamal = {
+				}
+				b_alqaim = {
+				}
+				b_salhiyah = {
+				}
+				b_assusah = {
+				}
+				b_subaykhan = {
+				}
+				b_asharah = {
+				}
+				b_alqunjah = {
+				}
+			}
+		}
+	}
+	
+	# Creation/Usurp Trigger
+	allow = {
+		OR = {
+			culture_group = iranian
+			culture = turkish
+		}
+		OR = {
+			has_landed_title = k_persia
+			completely_controls = k_persia
+			k_persia = { is_titular = yes }
+		}
+		OR = {
+			has_landed_title = k_mesopotamia
+			completely_controls = k_mesopotamia
+			k_mesopotamia = { is_titular = yes }
+		}
+		OR = {
+			has_landed_title = k_syria
+			completely_controls = k_syria
+			k_syria = { is_titular = yes }
+		}
+		war = no
+		ruled_years = 5
+		is_adult = yes
+		NOT = { tier = emperor }
+	}
+}
+

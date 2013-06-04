@@ -1,0 +1,33 @@
+# Do not change tags in here without changing every other reference to them.
+# If adding new groups or cultures, make sure they are unique.
+
+magyar = {
+	graphical_culture = easterngfx
+
+	hungarian = {
+		graphical_culture = westernslavicgfx
+		
+		color = { 0.5 0.6 0.3 }
+
+		male_names = {
+			Ábel Ádárn Ágoston Álmos Árpád Õdön Alajos Ambrus_Ambrose András_Andrew Antal Attila Bálint Béla_Albert Balázs Benedek_Benedict Bernát_Bernard Bertók Bertalan Boldizsár Bonuslo
+			Borisz_Boris Csák Csaba Csongor Dénes Dömötör Dezsõ Domoszló Donát Elek Elemér Endre Ernõ Fulöp_Philip Ferenc_Francis Frigyes_Frederick Gábor Gábriel Gáspár Géza Gazsi
+			Gellért Gergely György_George Gyula Imre István_Stephen Izsák Jákob_Jacob János_John József_Joseph Jenõ Kálmán Károly_Charles Konrád_Konrad Kornél Kristóf László Lázár Lõrinc Lajos_Louis
+			Lampert Levente Lukács Márk_Marcus Márton_Martin Máté Mátyás_Matthew Móric Mózes Mihály_Michael Miklós Nándor Orbán Oszkár Pál Péter Sámuel Sándor_Alexander Salamon Saul Soma
+			Szilveszter Tádor Tacsony Tamás Tibor Tivadar Vazul Vencel Vilmos Zoltán Zsigmond_Sigmund Zsolt 
+		}
+		female_names = {
+			Ágnes_Agnes Éva_Eva Adelaida_Adelaide Agáta_Agatha Amália_Amelia Angyalka Anikó Aranka Berta Borbála Csilla Csillag Czenzi Dorottya Edit_Edith Emõke Emese Erika Erzsébet Eszter
+			Etel Euphemia_Euphemia Gizella Györgyi Hajnal Hedwig Ibolya Ildikó Illona Irén_Irene Jácinta Józsa Júlia_Juliana Jolán Judith_Judith Kamilla Katalin Kinga Klára_Clara
+			Konstancia_Constance Krisztina Kunigunda Luca Mária_Maria Márta_Martha Magdolna_Magdalena Margaréta_Margaret Margit Matild_Matilda Natália Odola Orsolya PanniPiroska Rózsa Sára_Sarah Sarolt
+			Skolasztika Sophia_Sophia Tundér Terezia_Teresa Viola_Viola Virág Zoltána Zsófia Zsanett Zsuzsa
+		}
+		
+		from_dynasty_prefix = "a "
+		
+		male_patronym = "fi"
+		prefix = no
+
+		modifier = default_culture_modifier
+	}
+}

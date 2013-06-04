@@ -1,0 +1,24 @@
+#CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+religious_defense;Religious Defense;Religious Defense;Religious Defense;;Religious Defense;;;;;;;;;x
+desc_religious_defense;We're defending against a holy war. Everyone is doing what they can to fend of the invaders.;We're defending against a holy war. Everyone is doing what they can to fend of the invaders.;We're defending against a holy war. Everyone is doing what they can to fend of the invaders.;;We're defending against a holy war. Everyone is doing what they can to fend of the invaders.;;;;;;;;;x
+disorganized;Disorganized;Disorganized;Disorganized;;Disorganized;;;;;;;;;x
+desc_disorganized;We're rather disorganized at the moment.;;We're rather disorganized at the moment.;;We're rather disorganized at the moment.;;;We're rather disorganized at the moment.;;;;;;;;;x
+muslim_merchant_republic;Muslim Merchant Republic;;;;;;;;;;;;;x
+desc_muslim_merchant_republic;Historically, Muslims never become a major trading force.;;;;;;;;;;;;;x
+low_decadence;Low Decadence;;;;;;;;;;;;;x
+desc_low_decadence;Our decadence is low, making everyone like us more.;;;;;;;;;;;;;x
+medium_decadence;Decadent;;;;;;;;;;;;;x
+desc_medium_decadence;We are decadent and many are therefore questioning our legitimate rule;;;;;;;;;;;;;x
+high_decadence;Highly Decadent;;;;;;;;;;;;;x
+desc_high_decadence;We are highly decadent and many are therefore questioning our legitimate rule;;;;;;;;;;;;;x
+TECH_CASTLES;Infrastructure;;;;;;;;;;;;;x
+TECH_CASTLES_DESC;Improved infrastructure makes supplying armies easier.;;;;;;;;;;;;;x
+formation_of_rum;Newly Formed Realm;;;;;;;;;;;;;x
+war_torn;War-torn;;;;;;;;;;;;;x
+bulgarian_unrest;Bulgarian Unrest;;;;;;;;;;;;;x
+bulgarian_unrest_2;Bulgarian Unrest;;;;;;;;;;;;;x
+culture_clash;Culture Clash;;;;;;;;;;;;;x
+decentralized_hre;Decentralized HRE;;;;;;;;;;;;;x
+theme_system;Decayed Theme System;;;;;;;;;;;;;x
+theme_system_2;Intact Theme System;;;;;;;;;;;;;x
+launched_subjugation;Subjugation Cooldown;;;;;;;;;;;;;x

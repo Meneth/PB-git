@@ -1,0 +1,130 @@
+# Do not change tags in here without changing every other reference to them.
+# If adding new groups or cultures, make sure they are unique.
+
+iberian = {
+	graphical_culture = occitangfx
+
+	basque = {
+		graphical_culture = occitangfx
+		
+		color = { 0.7 0.7 0.4 }
+
+		male_names = {
+			Alfontso_Alphonse Alvar_Oliver Antso_Sancho Aurelio_Aurelius Aznar_Aznar Belasko_Vasco Beltran_Bertrand Dato_Theodat Diego_Jacob Egidio_Egidius Eneko_Inigo Erramun_Raymond Fernando_Ferdinand Fortun_Fortunatus Galindo_Galindo Gartzia_Garcia Gilen_William Gomez_Gomez Gontzal_Gonzalo Henrike_Henry
+			Joanes_John Karlos_Charles Ladron Lope_Lupo Luis_Louis Manrike_Amalric  Martín_Martin Mentzio Munio_Munio Nuño_Nuno Ordoño_Ordono Otxoa Paskoal_Pascal Pelaio_Pelagius Piarres_Peter Ramiro_Ramiro Rodrigo_Roderick Suero Tello_Tello Tibalt_Theobald Ximeno_Simon
+		}
+		female_names = {
+			Aines_Agnes Aldontza_Aldonza Ana_Anna Anderkina Andregoto Antsa Auro Belaskita Berengaria Blanka_Blanche Eilo Elbira Elida_Hilda Elisabet_Elisabeth Eliza Emili_Emily Endulcia_Douce Ermesinda_Ermesinda Estefania_Stephania Fakilo Fronilde_Fronilde Guntroda
+			Joana_Joan Konstantzia_Constance Lopa_Lopa Maior_Mayor Margarita_Margaret Maria_Maria Markesa Mentzia_Mencia Munia Nuña Oneka Plazentzia_Plaisance Tekla Teresa_Teresa Toda_Toda Urraka_Urraca Ximena
+		}
+		from_dynasty_prefix = "de "
+		
+		male_patronym = "ez"
+		female_patronym = "ez"
+		grammar_transform = spanish
+
+		pat_grf_name_chance = 80
+		mat_grf_name_chance = 5
+		father_name_chance = 5
+		
+		pat_grm_name_chance = 55
+		mat_grm_name_chance = 15
+		mother_name_chance = 20
+
+		modifier = default_culture_modifier
+	}
+	castillan = {
+		graphical_culture = southerngfx
+		
+		color = { 0.4 0.7 0.5 }
+
+		male_names = {
+			Alfonso_Alphonse Alonso_Alphonse Álvar_Oliver Álvaro_Oliver Andrés_Andrew Ansur Antonio_Antoninus Antonino_Antoninus Arias Artal_Artal Aurelio_Aurelius Aznar_Aznar Beltrán_Bertrand Benito_Benedict Berenguel_Berengar Bernardo_Bernard Blasco_Vasco Bosón_Boson Diego_Jacob Domingo_Dominic Enrique_Henry Esteban_Stephen Facundo Fadrique_Frederick
+			Felipe_Philip Fernán_Ferdinand Fernando_Ferdinand Flaín Fruela Galindo_Galindo García_Garcia Gil_Egidius Gómez_Gomez Gonzalo_Gonzalo Gundemaro Guillén_William Guillermo_William Gustio
+			Gutierre Guzmán Hermenegildo Jacobo_Jacob Jaime_Jacob Jimeno_Simon Juan_John Juan-Alfonso_John-Alphonse Julián_Julian Lorenzo_Laurence Lope_Lupo Luis_Louis Manrique_Amalric Manuel_Manuel
+			Martín_Martin Menendo_Mendo Mendo_Mendo Muño_Munio Nuño_Nuno Osorio Ordoño_Ordono Oveco Pedro_Peter Pelayo_Pelagius Piñolo Ponce_Pons Raimundo_Raymond Ramiro_Ramiro Ramón_Raymond Rodrigo_Roderick Román_Roman Rosendo Salvador Sancho_Sancho
+			Sebastián_Sebastian Tello_Tello Teobaldo_Theobald Vela Velasco_Vasco Vermudo_Vermudo
+		}
+		female_names = {
+			Adosinda Aldonza_Aldonza Alduara_Alduara Anderquina Andregoto Aragonta Argilo Arsenda_Arsenda Aurovita Ava Beatriz_Beatrice Benita Berenguela Blanca_Blanche Brígida_Brigid Constanza_Constance Corexia Cristina_Christina Dalia Dueña Dulce_Douce Elvira Emilia_Emily Ermengarda_Ermengarde Ermesinda_Ermesinda Eslonza Estefanía_Stephania Eulalia Eva_Eva Eylo Fronilda_Fronilde Gaudiosa Godo Gontroda Gotina_Gotina Guina Guiomar Inés_Agnes Isabel_Elisabeth Jimena Juana Juliana_Juliana Justa Leonor_Eleanor
+			Lopa_Lopa Mafalda Margarita_Margaret María_Maria Marina_Marine Marquesa Matrona
+			Mayor_Mayor Mencía_Mencia Milia Muña Muñadona_Mumadona Nicor Nuñadona Ónega Petronila_Petronilla Sancha_Sancha Sol Tegridia Teresa_Teresa Toda_Toda Urraca_Urraca
+			Usenda Varela Velasquita Viscavlara
+			Violante_Yolanda
+		}
+		from_dynasty_prefix = "de "
+		
+		male_patronym = "ez"
+		female_patronym = "ez"
+		grammar_transform = spanish
+
+		pat_grf_name_chance = 45
+		mat_grf_name_chance = 15
+		father_name_chance = 30
+		
+		pat_grm_name_chance = 40
+		mat_grm_name_chance = 10
+		mother_name_chance = 40
+
+		modifier = default_culture_modifier
+	}
+	catalan = {
+		graphical_culture = southerngfx
+		
+		color = { 0.4 0.7 0.4 }
+
+		male_names = {
+			Adalbert_Albert Alfons_Alphonse Àlvar_Oliver Amat Arnau_Arnold Arnau-Miró Artau_Artal Bartomeu_Bartolomeus Benet_Benedict Berenguer_Berengar Berenguer-Ramon Berenguer-Renard Bernat_Bernard Bernat-Amat Bernat-Hug Bertran_Bertrand Borrell Carles_Charles Dalmau Dalmau-Berenguer Deodat_Theodat Enric_Henry Ermengol Felip_Philip  Felip-Dalmau Ferran_Ferdinand Ferrer Folc_Folke Francesc_Francis
+			Frederic_Frederick Galcerà Gausbert Gausfred_Godfrey Geribert  Gombau_Gundoald Guerau_Gerald Guifré Guillem_William Guillem-Galcerà Guillem-Jordà Guillem-Ramon Guislabert_Gilbert Guitard Hug_Hugh Hug-Jofré Jaume_Jacob Joan_John  Joan-Alfons_John-Alphonse Joan-Guerau Jofré_Godfrey Jordà_Jordan Llop_Lupo Mateu_Matthew Miró
+			Nunó_Nuno Oliba Ot_Otto Pagan_Pagan Pere_Peter Pere-Amat Pere-Ramon Ponç_Pons Riambau Ramon_Raymond Ramon-Berenguer_Raymond-Berengar Ramon-Borrell Ramon-Folc Renard Reverter Ricard_Richard Robert_Robert Roderic_Roderick Roger_Roger Sanç_Sancho Simó_Simon Sunifred Sunyer Tetbald_Theobald Udalard Vidal
+		}
+		female_names = {
+			Adelaida_Adelaide Agnès_Agnes Alamanda Aldonça_Aldonza Algaburga Almodis_Almodis Angarina Anglesa Arnaua Arsenda_Arsenda Aurembaix Ava Beatriu Beliarda Berenguera Blanca_Blanche Brunisenda Caterina_Catherine Cecília Clemencia_ClementiaConstança_Constance
+			Dolça_Douce Eldionda Elionor_Eleanor Elisenda Ermenerda Ermessenda_Ermesinda Esclaramunda_Esclarmunda Estefania_Stephania Fides Flor_Flora Gaia Galceranda Gausfredina Gotruda Gueraua Guillelma Guinilda Guisla_Gisela Isabel_Elisabeth Joana_Joan
+			Jusiana Laura_Laura Letgarda Llúcia Mahalta Maior Margarida_Margaret Maria_Maria Marquesa Òria Ramona Ricarda_Ricarda Riquilda Sança_Sancha Saura Sibila_Sibylla Teresa_Teresa Timbor
+			Toda_Toda Urraca_Urraca València Violant_Yolanda Ximena
+        }
+		from_dynasty_prefix = "de "
+		grammar_transform = french
+
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 10
+		father_name_chance = 30
+		
+		pat_grm_name_chance = 40
+		mat_grm_name_chance = 25
+		mother_name_chance = 25
+
+		modifier = default_culture_modifier
+	}
+	portuguese = {
+		graphical_culture = southerngfx
+		
+		color = { 0.4 0.7 0.3 }
+
+		male_names = {
+			Abril Álvaro_Oliver Ângelo_Angel Abel Afonso_Alphonse Aires Alexandre_Alexander Alvito António_Antoninus Bermudo_Vermudo Bernardo_Bernard Damião_Damian Dinis_Dionysus Diogo_Jacob Duarte_Edward Egas Estêvão_Stephen Eugénio_Eugene Filipe_Philip Fernão_Ferdinand Fernando_Ferdinand Francisco_Francis
+			Frederico_Frederick Garcia_Garcia Gil_Egidius Gomes_Gomez Gonçalo_Gonzalo Gregório_Gregory Guilherme_William Heitor Henrique_Henry Hermenegildo Hermígio Hugo_Hugh Igor_Ingvar Inácio_Ignatius Júlio_Julian Jerónimo João_John José_Joseph Julião_Julian Lopo_Lupo Lucídio Luís_Louis Manoel_Manuel Manuel_Manuel Marcelo
+			Marco_Marcus Martim_Martin Martinho_Martin Mem_Mendo Mendo_Mendo Miguel_Michael Monio_Munio Muno_Munio Nuno_Nuno Octávio Ordonho_Ordono Paio_Pagan Pedro_Peter Pero_Peter Raimundo_Raymond Ramiro_Ramiro Ricardo_Richard Roberto_Robert Rodrigo_Roderick Rui Sancho_Sancho Sebastião_Sebastian Soeiro Telmo Tiago_Jacob Tomás_Thomas Vasco_Vasco Vicente_Vincent Vímara Xelmirio
+		}
+		female_names = {
+			Ágata_Agatha Alda_Alduara Aldara_Alduara Aldonça_Aldonza Ana_Anna Beatriz_Beatrice Berengária Branca Brites_Beatrice Camila Carol Carolina Catarina_Catherine Chamoa Conceição Constança_Constance Cristina_Christina Dórdia Elisabete_Elisabeth Elvira Esmeralda
+			Esperança Estefânia_Stephania Estevainha Fátima Filipa_Philippa Fruilhe_Fronilde Gonçinha_Gotina Gontinha_Gotina Gregória Guiomar Ilduara_Alduara Inês_Agnes Isabel_Isabella Jacinta Joana_Joan Leonor_Eleanor Loba_Lopa Lúcia_Lucia Lucinda Luísa Madalena_Magdalena Maior_Mayor Mafalda Margarida_Margaret Maria_Maria Marinha_Marine Marquesa Marta_Martha Matilde_Matilda Mécia_Mencia Moninha Mor_Mayor Mumadona_Mumadona Ouroana Ourtigueira Paula_Paula
+			Raquel Rita Sónia Sancha_Sancha Sandra Sofia_Sophia Teresa_Teresa Tota_Toda Totadona_Toda Urraca_Urraca Usco Vela Violante_Yolanda Ximena
+		}
+		from_dynasty_prefix = "de "
+		male_patronym = "es"
+		female_patronym = "es"
+		grammar_transform = spanish
+
+		modifier = default_culture_modifier
+
+		pat_grf_name_chance = 55
+		mat_grf_name_chance = 5
+		father_name_chance = 30
+		
+		pat_grm_name_chance = 60
+		mat_grm_name_chance = 15
+		mother_name_chance = 15
+	}
+}

@@ -1,0 +1,29 @@
+1066.1.1 = {
+	holding_dynasty = 576 #Rassid - makes this a FAMILY_PALACE type Holding
+	liege="d_arabia_felix_republic"
+	holder=45049
+}
+1068.1.1 = {
+	holder=45050
+}
+1117.1.1 = {
+	holder=45055
+}
+1137.1.1 = {
+	holder=45058
+}
+1138.1.1 = {
+	holder=45059
+}
+1171.1.1={	
+	holder = 191124
+}
+1220.1.1={
+	holder = 191125
+}
+1260.1.1={
+	holder = 191126
+}
+1300.1.1={
+	holder = 191127
+}

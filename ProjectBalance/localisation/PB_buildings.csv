@@ -1,0 +1,46 @@
+#CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+tp_warrior_cult;Warrior Cult;Culte guerrier;Kriegerkult;;Culto guerrero;;;;;;;;;x
+ct_warrior_cult;Warrior Cult;Culte guerrier;Kriegerkult;;Culto guerrero;;;;;;;;;x
+ct_trade_post_1;Small Center of Trade;;;;;;;;;;;;;x
+ct_trade_post_2;Center of Trade;;;;;;;;;;;;;x
+ct_trade_post_3;Large Center of Trade;;;;;;;;;;;;;x
+ct_trade_post_4;Huge Center of Trade;;;;;;;;;;;;;x
+ct_trade_post_5;Gargantuan Center of Trade;;;;;;;;;;;;;x
+ca_culture_saxon_english_0;Long Bow range;;;;;;;;;;;;;x
+ca_culture_saxon_english_5;Long Bow range;;;;;;;;;;;;;x
+ca_culture_scottish_0;Schiltron Training Ground;;;;;;;;;;;;;x
+ca_culture_scottish_5;Schiltron Training Ground;;;;;;;;;;;;;x
+ca_culture_group_baltic_0;Warrior Gathering Ground;;;;;;;;;;;;;x
+ca_culture_group_baltic_5;Warrior Gathering Ground;;;;;;;;;;;;;x
+ca_culture_group_altaic_0;Riding Grounds;;;;;;;;;;;;;x
+ca_culture_group_altaic_5;Riding Grounds;;;;;;;;;;;;;x
+ca_culture_frank_norman_german_0;Jousting Lists;;;;;;;;;;;;;x
+ca_culture_frank_norman_german_5;Jousting Lists;;;;;;;;;;;;;x
+ca_culture_group_iberian_0;Cabellero Training Ground;;;;;;;;;;;;;x
+ca_culture_group_iberian_5;Cabellero Training Ground;;;;;;;;;;;;;x
+ca_culture_italian_0;Pike Training Ground;;;;;;;;;;;;;x
+ca_culture_italian_5;Pike Training Ground;;;;;;;;;;;;;x
+ca_culture_russian_0;Druzhina Training Ground;;;;;;;;;;;;;x
+ca_culture_russian_5;Druzhina Training Ground;;;;;;;;;;;;;x
+ca_culture_group_north_germanic_0;Huscarl Training Ground;;;;;;;;;;;;;x
+ca_culture_group_north_germanic_5;Huscarl Training Ground;;;;;;;;;;;;;x
+ca_culture_hungarian_0;Hussar Training Ground;;;;;;;;;;;;;x
+ca_culture_hungarian_5;Hussar Training Ground;;;;;;;;;;;;;x
+ca_culture_group_arabic_0;Camel Riding Ground;;;;;;;;;;;;;x
+ca_culture_group_arabic_5;Camel Riding Ground;;;;;;;;;;;;;x
+ca_culture_group_byzantine_0;Cataphract Training Ground;;;;;;;;;;;;;x
+ca_culture_group_byzantine_5;Cataphract Training Ground;;;;;;;;;;;;;x
+ca_culture_irish_0;Gallowglass Training Ground;;;;;;;;;;;;;x
+ca_culture_irish_5;Gallowglass Training Ground;;;;;;;;;;;;;x
+ca_culture_ethiopian_0;Ethiopian Drilling Grounds;;;;;;;;;;;;;x
+ca_culture_ethiopian_5;Ethiopian Drilling Grounds;;;;;;;;;;;;;x
+ca_culture_west_african_0;Free Warrior Lodge;;;;;;;;;;;;;x
+ca_culture_west_african_5;Free Warrior Lodge;;;;;;;;;;;;;x
+ca_culture_group_south_slavic_0;Gusar Training Ground;;;;;;;;;;;;;x
+ca_culture_group_south_slavic_5;Gusar Training Ground;;;;;;;;;;;;;x
+ca_culture_dutch_0;Goedendag Militia Quarters;;;;;;;;;;;;;x
+ca_culture_dutch_5;Goedendag Militia Quarters;;;;;;;;;;;;;x
+retinue_disabler;This building prevents barons from having retinues. If you're seeing it in a count or above's holding, please report it as a bug if it persists for more than a month.;;;;;;;;;;;;;x
+ca_retinues;Retinue Disabler;;;;;;;;;;;;;x
+ct_retinues;Retinue Disabler;;;;;;;;;;;;;x
+tp_retinues;Retinue Disabler;;;;;;;;;;;;;x

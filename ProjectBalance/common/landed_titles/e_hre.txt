@@ -1,0 +1,2095 @@
+e_hre = {
+
+	color={ 155 155 155 }
+	color2={ 220 220 20 }
+	
+	capital = 90 # Jülich / Aachen
+	
+	religion=catholic
+	culture = german
+	short_name = yes
+
+	k_frisia = {
+		color={ 245 100 20 }
+		color2={ 220 220 20 }
+		
+		culture = dutch
+		
+		capital = 80 #Holland
+		
+		allow = {
+			OR = {
+				culture = dutch
+				culture = frisian
+			}
+		}
+		
+		catholic = 700 # Crusade target weight
+		
+		d_frisia = {
+			color={ 240 120 20 }
+			color2={ 240 125 10 }
+
+			capital = 84 #Frisia
+
+			culture = frisian
+			c_ostfriesland = {
+				color={ 162 162 162 }
+				color2={ 255 255 255 }
+
+				b_emden = {
+				}
+				b_aurich = {
+				}
+				b_borkum = {
+				}
+				b_norden = {
+				}
+				b_norderney = {
+				}
+				b_leer = {
+				}
+				b_wittmund = {
+				}
+				b_esens = {
+				}
+			}
+			c_frisia = {
+				color={ 160 160 160 }
+				color2={ 255 255 255 }
+
+				b_groningen = {
+				}
+				b_leeuwarden = {
+				}
+				b_stavoren = {
+				}
+				b_bolsward = {
+				}
+				b_franeker = {
+				}
+				b_dokkum = {
+				}
+				b_assen = {
+				}
+				b_harlingen = {
+				}
+			}
+		}
+		d_holland = {
+			color={ 250 150 20 }
+			color2={ 240 140 10 }
+
+			capital = 80 #Holland
+
+			culture = dutch
+
+			c_holland = {
+				color={ 168 168 168 }
+				color2={ 255 255 255 }
+
+				b_haarlem = {
+				}
+				b_amsterdam = {
+				}
+				b_vlaardingen = {
+				}
+				b_sgravenhage = {
+				}
+				b_dordrecht = {
+				}
+				b_gouda = {
+				}
+				b_leiden = {
+				}
+				b_muiden = {
+				}
+			}
+			c_sticht = {
+				color={ 156 156 156 }
+				color2={ 255 255 255 }
+
+				b_woerden = {
+				}
+				b_utrecht = {
+				}
+				b_dorestad = {
+				}
+				b_gorinchem = {
+				}
+				b_zeist = {
+				}
+				b_buren = {
+				}
+				b_ijsselstein = {
+				}
+				b_oudewater = {
+				}
+			}
+			c_westfriesland = {
+				color={ 40 40 40 }
+				color2={ 255 255 255 }
+
+				b_alkmaar = {
+				}
+				b_hoorn = {
+				}
+				b_medemblik = {
+				}
+				b_enkhuizen = {
+				}
+				b_heerhugowaard = {
+				}
+				b_texel = {
+				}
+				b_egmond = {
+				}
+				b_schagen = {
+				}
+			}
+			c_zeeland = {
+				color={ 165 165 165 }
+				color2={ 255 255 255 }
+
+				b_middelburg = {
+				}
+				b_tholen = {
+					holy_site = norse_pagan
+					holy_site = norse_pagan_reformed
+				}
+				b_veere = {
+				}
+				b_cadzand = {
+				}
+				b_vlissingen = {
+				}
+				b_renesse = {
+				}
+				b_borsele = {
+				}
+				b_zierikzee = {
+				}
+			}
+		}
+		d_gelre = {
+			color={ 250 125 20 }
+			color2={ 240 125 10 }
+
+			capital = 83 #Gelre
+
+			culture = dutch
+
+			c_gelre = {
+				color={ 159 159 159 }
+				color2={ 255 255 255 }
+
+				b_nijmegen = {
+				}
+
+				b_arnhem = {
+				}
+				b_bergh = {
+				}
+				b_bronckhorst = {
+				}
+			}
+			c_zutphen = {
+				color={ 159 159 159 }
+				color2={ 255 255 255 }
+
+				b_zutphen = {
+				}
+				b_steenderen = {
+				}
+				b_eerbeek = {
+				}
+				b_leuvenheim = {
+				}
+			}
+			c_oversticht = {
+				color={ 159 160 161 }
+				color2={ 255 255 255 }
+
+				b_deventer = {
+				}
+				b_kampen = {
+				}
+				b_zwolle = {
+				}
+				b_coevorden = {
+				}
+			}
+		}
+		d_brabant = {
+			color={ 250 204 20 }
+			color2={ 240 204 10 }
+
+			capital = 117 #Brabant
+
+			culture = dutch
+
+			c_brabant = {
+				color={ 153 153 153 }
+				color2={ 255 255 255 }
+
+				b_leuven = {
+				}
+				b_mechelen = {
+				}
+				b_brussel = {
+				}
+				b_aarschot = {
+				}
+				b_grimbergen = {
+				}
+				b_herstal = {
+				}
+				b_lier = {
+				}
+			}
+			c_hainaut = {
+				color={ 151 152 153 }
+				color2={ 255 255 255 }
+
+				b_valenciennes = {
+				}
+				b_cambrai = {
+				}
+				b_avesnes = {
+				}
+				b_mons = {
+				}
+				b_chievres = {
+				}
+				b_enghien = {
+				}
+				b_charleroi = {
+				}
+				b_ath = {
+				}
+			}
+			c_breda = {
+				color={ 150 150 150 }
+				color2={ 255 255 255 }
+
+				b_breda = {
+				}
+				b_antwerpen = {
+				}
+				b_tilburg = {
+				}
+				b_bergenopzoom = {
+				}
+				b_ravenstein = {
+				}
+				b_horn = {
+				}
+				b_eindhoven = {
+				}
+				b_hoogstraten = {
+				}
+				b_turnhout = {
+				}
+			}
+		}
+		d_flanders = {
+			color={ 255 120 0 }
+			color2={ 255 255 255 }
+			
+			culture = dutch
+			
+			capital = 78
+			
+			c_artois = {
+				color={ 39 72 212 }
+				color2={ 255 255 255 }
+				
+				b_arras = {
+				}
+				b_terwaan = {
+				}
+				b_bethune = {
+				}
+				b_lens = {
+				}
+				b_lille = {
+				}
+				b_bouvines = {
+				}
+				b_beaumetz = {
+				}
+				b_bapaume = {
+				}
+			}
+			c_boulogne = {
+				color={ 43 76 216 }
+				color2={ 255 255 255 }
+				
+				b_boulogne = {
+				}
+				b_montreuil = {
+				}
+				b_saintpol = {
+				}
+				b_hesdin = {
+				}
+				b_fauquembergues = {
+				}
+				b_ternouis = {
+				}
+				b_therouanne = {
+				}
+				b_ardres = {
+				}
+			}
+			c_guines = {
+				color={ 47 80 220 }
+				color2={ 255 255 255 }
+				
+				b_guines = {
+				}
+				b_saintomer = {
+				}
+				b_calais = {
+				}
+				b_dunkerque = {
+				}
+				b_bourbourg = {
+				}
+				b_marck = {
+				}
+				b_gravelines = {
+				}
+				b_coulogne = {
+				}
+			}
+			c_yperen = {
+				color={ 51 84 224 }
+				color2={ 255 255 255 }
+				
+				b_ypres = {
+				}
+				b_rosebeke = {
+				}
+				b_cassel = {
+				}
+				b_roeselare = {
+				}
+				b_poperinge = {
+				}
+				b_menen = {
+				}
+				b_diksmuide = {
+				}
+				b_wervik = {
+				}
+			}
+			c_brugge = {
+				color={ 55 88 228 }
+				color2={ 255 255 255 }
+				
+				b_brugge = {
+				}
+				b_damme = {
+				}
+				b_sluys = {
+				}
+				b_oostende = {
+				}
+				b_male = {
+				}
+				b_nieuwpoort = {
+				}
+				b_torhout = {
+				}
+				b_aardenburg = {
+				}
+			}
+			c_gent = {
+				color={ 59 92 232 }
+				color2={ 255 255 255 }
+				
+				b_gent = {
+				}
+				b_doornik = {
+				}
+				b_oudenaarde = {
+				}
+				b_aalst = {
+				}
+				b_st_niklaas = {
+				}
+				b_dendermonde = {
+				}
+				b_kortrijk = {
+				}
+				b_geraardsbergen = {
+				}
+			}
+		}
+	}
+	
+	k_lotharingia = {
+		color={ 250 150 20 }
+		color2={ 240 140 10 }
+		culture = frankish
+
+		capital = 117 #Brabant
+		dignity = 10
+		
+		d_limburg = {
+			color={ 250 51 0 }
+			color2={ 240 51 0 }
+
+			capital = 912 #Limburg
+
+			culture = dutch
+
+			c_limburg = {
+				color={ 149 150 153 }
+				color2={ 255 255 255 }
+
+				b_limburg = {
+				}
+				b_valkenburg = {
+				}
+				b_maastricht = {
+				}
+				b_wassenberg = {
+				}
+				b_eupen = {
+				}
+			}
+		}
+		d_liege = {
+			color={ 250 79 0 }
+			color2={ 240 79 0 }
+
+			capital = 116 #Liege
+
+			culture = frankish
+
+			c_liege = {
+				color={ 144 144 144 }
+				color2={ 255 255 255 }
+
+				b_liege = {
+				}
+				b_huy = {
+				}
+				b_fexhe = {
+				}
+				b_aulne = {
+				}
+				b_bouillon = {
+				}
+				b_stavelot = {
+				}
+				b_malmedy = {
+				}
+			}
+			c_loon = {
+				color={ 147 146 154 }
+				color2={ 255 255 255 }
+
+				b_loon = {
+				}
+				b_hasselt = {
+				}
+				b_heinsberg = {
+				}
+				b_hesbaie = {
+				}
+				b_tongeren = {
+				}
+			}
+			c_namur = {
+				color={ 154 152 153 }
+				color2={ 255 255 255 }
+
+				b_namur = {
+				}
+				b_andenne = {
+				}
+				b_dinant = {
+				}
+			}
+		}
+		d_luxembourg = {
+			color={ 214 150 0 }
+			color2={ 214 140 0 }
+
+			capital = 115 #Luxembourg
+
+			c_luxembourg = {
+				color={ 147 147 147 }
+				color2={ 255 255 255 }
+
+				b_luxembourg = {
+				}
+				b_echternach = {
+				}
+				b_saintvith = {
+				}
+				b_arlon = {
+				}
+				b_neufchateau = {
+				}
+				b_longwy = {
+				}
+				b_differdange = {
+				}
+				b_ettelbruck = {
+				}
+			}
+			c_laroche = {
+				color={ 145 145 145 }
+				color2={ 255 255 255 }
+
+				b_laroche = {
+				}
+				b_clervaux = {
+				}
+				b_bastogne = {
+				}
+				b_houffalize = {
+				}
+			}
+			c_chiny = {
+				color={ 146 146 146 }
+				color2={ 255 255 255 }
+
+				b_chiny = {
+				}
+				b_orval = {
+				}
+			}
+		}
+		d_lower_lorraine = {
+			color={ 255 204 20 }
+			color2={ 255 204 0 }
+
+			capital = 118 # Trier
+			c_pfalz = {
+				color={ 117 117 117 }
+				color2={ 255 255 255 }
+
+				b_kaiserslautern = {
+				}
+				b_worms = {
+				}
+				b_hagenau = {
+				}
+				b_stahleck = {
+				}
+				b_trifels = {
+				}
+				b_speyer = {
+				}
+				b_zweibrucken = {
+				}
+				b_saarbrucken = {
+				}
+			}
+			c_trier = {
+				color={ 135 135 135 }
+				color2={ 255 255 255 }
+
+				b_andernach = {
+				}
+				b_trier = {
+				}
+				b_coblenz = {
+				}
+				b_sponheim = {
+				}
+				b_wittlich = {
+				}
+				b_gerolstein = {
+				}
+				b_laach = {
+				}
+				b_bitburg = {
+				}
+			}
+			c_metz = {
+				color={ 114 114 114 }
+				color2={ 255 255 255 }
+
+				b_metz = {
+				}
+				b_thionville = {
+				}
+				b_saintjulien = {
+				}
+				b_marslatour = {
+				}
+				b_bouzonville = {
+				}
+				b_briey = {
+				}
+				b_joudreville = {
+				}
+				b_audunleroman = {
+				}
+			}
+		}
+		d_upper_lorraine = {
+			color={ 255 166 0 }
+			color2={ 255 166 0 }
+
+			capital = 127 #Lorraine
+			c_verdun = {
+				color={ 111 111 111 }
+				color2={ 255 255 255 }
+			
+				b_verdun = {
+				}
+				b_grandpre = {
+				}
+				b_barlecomte = {
+				}
+				b_longuyon = {
+				}
+				b_doaumont = {
+				}
+				b_stenay = {
+				}
+				b_etain = {
+				}
+			}
+			c_lorraine = {
+				color={ 108 108 108 }
+				color2={ 255 255 255 }
+
+				b_nancy = {
+				}
+				b_toul = {
+				}
+				b_sarrebourg = {
+				}
+				b_epinal = {
+				}
+				b_luneville = {
+				}
+				b_charpeigne = {
+				}
+				b_mortagnedevosges = {
+				}
+				b_saintavoid = {
+				}
+			}
+			c_saintois = {
+				color={ 105 105 105 }
+				color2={ 255 255 255 }
+
+				b_saintois = {
+				}
+				b_vaudemont = {
+				}
+				b_brixey = {
+				}
+				b_sorcystmartin = {
+				}
+				b_ivios = {
+				}
+				b_ornois = {
+				}
+				b_saulnois = {
+				}
+				b_dompaire = {
+				}
+			}
+			c_bar = {
+				color={ 111 111 111 }
+				color2={ 255 255 255 }
+				
+				b_barleduc = {
+				}
+				b_vaucouleurs = {
+				}
+				b_saintmihel = {
+				}
+				b_commercy = {
+				}
+				b_joinville = {
+				}
+				b_saintdizier = {
+				}
+			}
+		}
+		d_alsace = {
+			color={ 204 102 0 }
+			color2={ 200 106 0 }
+
+			capital = 134 #Sundgau
+
+			c_nordgau = {
+				color={ 96 96 96 }
+				color2={ 255 255 255 }
+
+				b_egisheim = {
+				}
+				b_strassburg = {
+				}
+				b_lauterburg = {
+				}
+				b_selz = {
+				}
+				b_erstein = {
+				}
+				b_molsheim = {
+				}
+				b_brumath = {
+				}
+				b_schlettstadt = {
+				}
+			}
+			c_sundgau = {
+				color={ 93 93 93 }
+				color2={ 255 255 255 }
+
+				b_ensisheim = {
+				}
+				b_kolmar = {
+				}
+				b_murbach = {
+				}
+				b_mulhouse = {
+				}
+				b_landser = {
+				}
+				b_thann = {
+				}
+				b_altkirch = {
+				}
+				b_ferette = {
+				}
+			}
+		}
+
+		# Creation/usurpation trigger
+		# MUST BE PUT AT THE BOTTOM! DO NOT BRING TO TOP!
+		allow = {
+			OR = {
+				has_landed_title = d_lower_lorraine
+				any_vassal = { has_landed_title = d_lower_lorraine }
+			}
+			OR = {
+				has_landed_title = d_upper_lorraine
+				any_vassal = { has_landed_title = d_upper_lorraine }
+			}
+		}
+	}
+	
+	k_saxony = {
+		color={ 60 120 20 }
+		color2={ 255 255 255 }
+		
+		culture = german
+		
+		capital = 310 #Anhalt
+		
+		catholic = 700 # Crusade target weight
+		
+		d_saxony = {
+			color={ 60 120 20 }
+			color2={ 255 255 255 }
+			
+			capital = 310 #Anhalt
+			c_anhalt = {
+				color={ 184 184 184 }
+				color2={ 255 255 255 }
+				
+				b_zerbst = {
+				}
+				b_magdeburg = {
+				}
+				b_haldensleben = {
+				}
+				b_mansfeld = {
+				}
+				b_dessau = {
+				}
+				b_arnstein = {
+				}
+				b_querfurt = {
+				}
+				b_bernburg = {
+				}
+			}
+			c_plauen = {
+				color={ 180 180 180 }
+				color2={ 255 255 255 }
+				
+				b_plauen = {
+				}
+				b_leipzig = {
+				}
+				b_merseburg = {
+				}
+				b_halle = {
+				}
+				b_knobelsdorf = {
+				}
+				b_zeitz = {
+				}
+				b_zwickau = {
+				}
+				b_naumburg = {
+				}
+			}
+			c_weimar = {
+				color={ 183 183 183 }
+				color2={ 255 255 255 }
+				
+				b_weimar = {
+				}
+				b_jena = {
+				}
+				b_walkenried = {
+				}
+				b_nordhausen = {
+				}
+				b_memelsen = {
+				}
+				b_gotha = {
+				}
+				b_apoldoa = {
+				}
+				b_gera = {
+				}
+			}
+		}
+		
+		d_brandenburg = {
+			color={ 180 30 20 }
+			color2={ 255 255 255 }
+			
+			capital = 365 #Brandenburg
+		
+			c_altmark = {
+				color={ 189 189 189 }
+				color2={ 255 255 255 }
+				
+				b_werben = {
+				}
+				b_halberstedt = {
+				}
+				b_walbeck = {
+				}
+				b_luchow = {
+				}
+				b_salzwedel = {
+				}
+				b_stendal = {
+				}
+				b_osterburg = {
+				}
+				b_tangermunde = {
+				}
+			}
+			
+			c_brandenburg = {
+				color={ 186 186 186 }
+				color2={ 255 255 255 }
+				
+				b_brandenburg = {
+				}
+				b_havelberg = {
+				}
+				b_berlin = {
+				}
+				b_juterborg = {
+				}
+				b_belzig = {
+				}
+				b_ruppin = {
+				}
+				b_oranienburg = {
+				}
+				b_muncheberg = {
+				}
+			}
+		}
+		d_meissen = {
+			color={ 182 188 181 }
+			color2={ 255 255 255 }
+			
+			capital = 312 #Meissen
+		
+			c_meissen = {
+				color={ 177 177 177 }
+				color2={ 255 255 255 }
+				
+				b_dresden = {
+				}
+				b_meissen = {
+				}
+				b_dohna = {
+				}
+				b_belgern = {
+				}
+				b_strehla = {
+				}
+				b_rabenau = {
+				}
+				b_wettin = {
+				}
+				b_radeburg = {
+				}
+			}
+			c_lausitz = {
+				color={ 174 174 174 }
+				color2={ 255 255 255 }
+				
+				b_gorlitz = {
+				}
+				b_bautzen = {
+				} 
+				b_lebus = {
+				}
+				b_cottbus = {
+				}
+				b_rothenburg = {
+				}
+				b_forst = {
+				}
+				b_zittau = {
+				}
+				b_luckau = {
+				}
+			}
+		}
+
+		d_brunswick = {
+			color={ 183 172 172 }
+			color2={ 255 255 255 }
+			
+			capital = 258 #Lüneburg
+			
+			c_celle = {
+				color={ 198 198 198 }
+				color2={ 255 255 255 }
+				
+				b_celle = {
+				}
+				b_hannover = {
+				}
+				b_herford = {
+				}
+				b_hermannsburg = {
+				}
+				b_ravensberg = {
+				}
+				b_nienburg = {
+				}
+				b_wedemark = {
+				}
+				b_wittingen = {
+				}
+			}
+			c_munster = {
+				color={ 212 212 212 }
+				color2={ 255 255 255 }
+				
+				b_munster = {
+				}
+				b_dortmund = {
+				}
+				b_essen = {
+				}
+				b_greven = {
+				}
+				b_gutersloh = {
+				}
+				b_steinfurt = {
+				}
+				b_gronau = {
+				}
+				b_ahlen = {
+				}
+			}
+			c_luneburg = {
+				color={ 195 195 195 }
+				color2={ 255 255 255 }
+				
+				b_luneburg = {
+				}
+				b_bardowick = {
+				}
+				b_gifhorn = {
+				}
+				b_evern = {
+				}
+				b_reppenstedt = {
+				}
+				b_ludersburg = {
+				}
+				b_thomasburg = {
+				}
+				b_uelzen = {
+				}
+			}
+			c_braunschweig = {
+				color={ 192 192 192 }
+				color2={ 255 255 255 }
+				
+				b_braunschweig = {
+				}
+				b_bielefeld = {
+				}
+				b_paderborn = {
+					holy_site = norse_pagan
+					holy_site = norse_pagan_reformed
+				}
+				b_hildesheim = {
+				}
+				b_waldeck = {
+				}
+				b_wolfenbuttel = {
+				}
+				b_helmstedt = {
+				}
+				b_gandersheim = {
+				}
+			}
+			c_oldenburg = {
+				color={ 214 214 214 }
+				color2={ 255 255 255 }
+				
+				b_oldenburg = {
+				}
+				b_cloppenburg = {
+				}
+				b_jever = {
+				}
+				b_delmenhorst = {
+				}
+				b_loningen = {
+				}
+				b_nordenham = {
+				}
+				b_kniphausen = {
+				}
+				b_varel = {
+				}
+			}
+			c_osnabruck = {
+				color={ 213 213 213 }
+				color2={ 255 255 255 }
+				
+				b_osnabruck = {
+				}
+				b_lingen = {
+				}
+				b_bentheim = {
+				}
+				b_wildeshausen = {
+				}
+				b_tecklenburg = {
+				}
+				b_minden = {
+				}
+				b_quackenbruck = {
+				}
+				b_meppen = {
+				}
+			}
+			c_gottingen = {
+				color={ 210 210 210 }
+				color2={ 255 255 255 }
+				
+				b_gottingen = {
+				}
+				b_corvey = {
+				}
+				b_lippe = {
+				}
+				b_kassel = {
+				}
+				b_goslar = {
+				}
+				b_northeim = {
+				}
+				b_eisenach = {
+				}
+				b_detmold = {
+				}
+			}
+		}
+		d_thuringia = {
+			color={ 207 206 226 }
+			color2={ 255 255 255 }
+			
+			capital = 255 #Thuringen
+			
+			c_thuringen = {
+				color={ 42 42 42 }
+				color2={ 255 255 255 }
+				
+				b_erfurt = {
+				}
+				b_muhlhausen = {
+				}
+				b_arnstadt = {
+				}
+				b_eichsfeld = {
+				}
+				b_reuss = {
+				}
+				b_salzungen = {
+				}
+				b_schmalkalden = {
+				}
+				b_henneberg = {
+				}
+			}
+			c_nassau = {
+				color={ 171 171 171 }
+				color2={ 255 255 255 }
+				
+				b_nassau = {
+				}
+				b_fulda = {
+				}
+				b_wetzlar = {
+				}
+				b_marburg = {
+				}
+				b_katzenelnbogen = {
+				}
+				b_hersfeld = {
+				}
+				b_falkenstein = {
+				}
+				b_isenburg = {
+				}
+			}
+		}
+		d_koln = {
+			color={ 255 102 0 }
+			color2={ 250 102 5 }
+
+			capital = 119 #Köln
+
+			c_koln = {
+				color={ 141 141 141 }
+				color2={ 255 255 255 }
+
+				b_koln = {
+					holy_site = catholic
+				}
+				b_berg = {
+				}
+				b_mark = {
+				}
+				b_bonn = {
+				}
+				b_dietz = {
+				}
+				b_saffenburg = {
+				}
+				b_hochstaden = {
+				}
+				b_brauweiler = {
+				}
+			}
+			c_julich = {
+				color={ 138 138 138 }
+				color2={ 255 255 255 }
+
+				b_julich = {
+				}
+				b_aachen = {
+				}
+				b_prum = {
+				}
+				b_geldern = {
+				}
+				b_roermond = {
+				}
+				b_duren = {
+				}
+				b_moers = {
+				}
+				b_monschau = {
+				}
+			}
+
+			c_kleve = {
+				color={ 132 132 132 }
+				color2={ 255 255 255 }
+
+				b_kleve = {
+				}
+				b_goch = {
+				}
+				b_rees = {
+				}
+				b_anholt = {
+				}
+				b_Xanten = {
+				}
+				b_wesel = {
+				}
+				b_emmerich = {
+				}
+				b_isselburg = {
+				}
+			}
+		}
+	}
+	
+	k_bavaria = {
+		color={ 0 120 210 }
+		color2={ 220 220 20 }
+		
+		culture = german
+		
+		capital = 360 #Oberbayern
+		
+		catholic = 700 # Crusade target weight
+		
+		d_bavaria = {
+			color={ 0 120 210 }
+			color2={ 255 255 255 }
+			
+			capital = 360 #Oberbayern
+			
+			c_kempten = {
+				color={ 69 69 69 }
+				color2={ 255 255 255 }
+				
+				b_kempten = {
+				}
+				b_augsburg = {
+				}
+				b_zumarshausen = {
+				}
+				b_kaufbeuren = {
+				}
+				b_donauworth = {
+				}
+				b_friedberg = {
+				}
+				b_hochstadt = {
+				}
+				b_rain = {
+				}
+			}
+			c_oberbayern = {
+				color={ 66 66 66 }
+				color2={ 255 255 255 }
+				
+				b_munchen = {
+				}
+				b_dachau = {
+				}
+				b_freising = {
+				}
+				b_andechs = {
+				}
+				b_diessen = {
+				}
+				b_dingolfing = {
+				}
+				b_pfaffenberg = {
+				}
+				b_ebersberg = {
+				}
+			}
+			c_salzburg = {
+				color={ 63 63 63 }
+				color2={ 255 255 255 }
+				
+				b_salzburg = {
+				}
+				b_durmberg = {
+				}
+				b_waging = {
+				}
+				b_berchtesgaden = {
+				}
+				b_tittmoning = {
+				}
+				b_laufen = {
+				}
+				b_muhldorf = {
+				}
+				b_gastein = {
+				}
+			}
+			c_niederbayern = {
+				color={ 60 60 60 }
+				color2={ 255 255 255 }
+				
+				b_straubing = {
+				}
+				b_regensburg = {
+				}
+				b_landshut = {
+				}
+				b_ingolstadt = {
+				}
+				b_wittelsbach = {
+				}
+				b_cham = {
+				}
+				b_rohrbach = {
+				}
+				b_kirchroth = {
+				}
+			}
+			c_nurnberg = {
+				color={ 57 57 57 }
+				color2={ 255 255 255 }
+				
+				b_nurnberg = {
+				}
+				b_ellwangen = {
+				}
+				b_furth = {
+				}
+				b_kulmbach = {
+				}
+				b_hohenburg = {
+				}
+				b_nordlingen = {
+				}
+				b_eichstatt = {
+				}
+				b_erlangen = {
+				}
+			}
+		}
+		d_osterreich = { 
+			color={ 191 182 182 }
+			color2={ 255 255 255 }
+			
+			capital = 449 #Österreich
+			
+			c_passau = {
+				color={ 54 54 54 }
+				color2={ 255 255 255 }
+				
+				b_passau = {
+				}
+				b_ortenburg = {
+				}
+				b_schaumberg = {
+				}
+				b_formbach = {
+				}
+				b_ulrichsberg = {
+				}
+				b_freistadt = {
+				}
+				b_raab = {
+				}
+				b_freyung = {
+				}
+			}
+			c_znojmo = {
+				color={ 51 51 51 }
+				color2={ 255 255 255 }
+				
+				b_mikulov = {
+				}
+				b_iglau = {
+				}
+				b_lundenburg = {
+				}
+				b_skalitz = {
+				}
+				b_trebic = {
+				}
+				b_eibenshitz = {
+				}
+				b_znojmo = {
+				}
+				b_ivancice = {
+				}
+			}
+			c_osterreich = {
+				color={ 48 48 48 }
+				color2={ 255 255 255 }
+				
+				b_wien = {
+				}
+				b_linz = {
+				}
+				b_melk = {
+				}
+				b_stpolten = {
+				}
+				b_hohenwarth = {
+				}
+				b_wagram = {
+				}
+				b_krems = {
+				}
+				b_steyr = {
+				}
+			}
+			c_steiermark = {
+				color={ 45 45 45 }
+				color2={ 255 255 255 }
+				
+				b_eppenstein = {
+				}
+				b_graz = {
+				}
+				b_lavant = {
+				}
+				b_cilli = {
+				}
+				b_seckau = {
+				}
+				b_leibnitz = {
+				}
+				b_radkersburg = {
+				}
+				b_stubing = {
+				}
+			}
+		}
+		d_tyrol = {
+			color={ 157 154 154 }
+			color2={ 255 255 255 }
+			
+			capital = 316 #Tirol
+			
+			c_tirol = {
+				color={ 90 90 90 }
+				color2={ 255 255 255 }
+				
+				b_bregenz = {
+				}
+				b_landeck = {
+				}
+				b_stanton = {
+				}
+				b_imst = {
+				}
+				b_sterzing = {
+				}
+				b_ried = {
+				}
+				b_dornbirn = {
+				}
+				b_nenzing = {
+				}
+			}
+			
+			c_st_gallen = {
+				color={ 85 80 85 }
+				color2={ 255 255 255 }
+				
+				b_rheineck = {
+				}
+				b_stgallen = {
+				}
+				b_appenzell = {
+				}
+				b_frauenfeld = {
+				}
+				b_altstatten = {
+				}
+				b_lichtensteig = {
+				}
+				b_vaduz = {
+				}
+				b_herisau = {
+				}
+			}
+			c_innsbruck = {
+				color={ 84 84 84 }
+				color2={ 255 255 255 }
+				
+				b_innsbruck = {
+				}
+				b_kufstein = {
+				}
+				b_stams = {
+				}
+				b_lienz = {
+				}
+				b_schwaz = {
+				}
+				b_kitzbuhel = {
+				}
+				b_jenbach = {
+				}
+				b_fugen = {
+				}
+			}
+			c_chur = {
+				color={ 87 87 87 }
+				color2={ 255 255 255 }
+				
+				b_chur = {
+				}
+				b_churwalden = {
+				}
+				b_davos = {
+				}
+				b_maienfeld = {
+				}
+				b_illanz = {
+				}
+				b_thusis = {
+				}
+				b_glurns = {
+				}
+				b_zuoz = {
+				}
+			}
+		}
+		d_carinthia = {
+			color={ 165 255 250 }
+			color2={ 255 255 255 }
+			
+			c_istria = {
+				color={ 224 249 237 }
+				color2={ 255 255 255 }
+				
+				b_mitterburg = {
+					croatian = "Pazin"
+					serbian = "Pazin"
+					italian = "Pisino"
+					greek = "Pisino"
+				}
+				b_trieste = {
+					german = "Triest"
+					croatian = "Trst"
+					serbian = "Trst"
+				}
+				b_fiume = {
+				}
+				b_lovrana = {
+				}
+				b_wolauska = {
+				}
+				b_karstberg = {
+				}
+				b_duino = {
+				}
+				b_pula = {
+				}
+			}
+			c_krain = {
+				color={ 244 227 180 }
+				color2={ 255 255 255 }
+				
+				b_gorz = {
+				}
+				b_krainburg = {
+				}
+				b_gurk = {
+				}
+				b_stain = {
+				}
+				b_guetenegg = {
+				}
+				b_auersperg = {
+				}
+				b_zerknitz = {
+				}
+				b_stveit = {
+				}
+			}
+			c_karnten = {
+				color={ 244 247 160 }
+				color2={ 255 255 255 }
+				
+				b_villach = {
+				}
+				b_klagenfurt = {
+				}
+				b_ossiach = {
+				}
+				b_laibach = {
+				}
+				b_treffen = {
+				}
+				b_sann = {
+				}
+				b_pettau = {
+				}
+				b_wolfsberg = {
+				}
+			}
+			
+			c_aquileia = {
+				color = { 37  140  129 }
+				color2 = { 255 255 255 }
+				
+				b_aquileia = {
+				}
+				b_udine = {
+					german = "Weiden"
+					croatian = "Videm"
+					serbian = "Videm"
+				}
+				b_friuli = {
+				}
+				b_motta = {
+				}
+				b_concordia = {
+				}
+				b_ciridale = {
+				}
+				b_portoguaro = {
+				}
+				b_sacile = {
+				}
+			}
+		}
+		d_franconia = {
+			color={ 100 99 100 }
+			color2={ 255 255 255 }
+			
+			capital = 123 #Mainz
+			
+			c_mainz = {
+				color={ 129 129 129 }
+				color2={ 255 255 255 }
+				
+				b_mainz = {
+				}
+				b_frankfurt = {
+				}
+				b_eppstein = {
+				}
+				b_ingelheim = {
+				}
+				b_mannheim = {
+				}
+				b_weilburg = {
+				}
+				b_dornburg = {
+				}
+				b_hanau = {
+				}
+			}
+			c_leiningen = {
+				color={ 126 126 126 }
+				color2={ 255 255 255 }
+				
+				b_leiningen = {
+				}
+				b_heidelberg = {
+				}
+				b_lorsch = {
+				}
+				b_durkheim = {
+				}
+				b_battenberg = {
+				}
+				b_hardenburg = {
+				}
+				b_ungstein = {
+				}
+				b_pfeffingen = {
+				}
+			}
+			c_wurzburg = {
+				color={ 123 123 123 }
+				color2={ 255 255 255 }
+				
+				b_wurzburg = {
+				}
+				b_aschaffenburg = {
+				}
+				b_schweinfurt = {
+				}
+				b_marienberg = {
+				}
+				b_hammelburg = {
+				}
+				b_schwarzenberg = {
+				}
+				b_theiheim = {
+				}
+				b_mainderheim = {
+				}
+			}
+			c_bamberg = {
+				color={ 120 120 120 }
+				color2={ 255 255 255 }
+				
+				b_ansbach = {
+				}
+				b_bamberg = {
+				}
+				b_babenberg = {
+				}
+				b_cadolzburg = {
+				}
+				b_colmberg = {
+				}
+				b_roth = {
+				}
+				b_uffenheim = {
+				}
+				b_crailsheim = {
+				}
+			}
+		}
+		d_baden = {
+			color={ 115 109 109 }
+			color2={ 255 255 255 }
+			
+			capital = 125 #Baden
+			
+			c_baden = {
+				color={ 102 102 102 }
+				color2={ 255 255 255 }
+				
+				b_baden = {
+				}
+				b_karlsruhe = {
+				}
+				b_wimpfen = {
+				}
+				b_calw = {
+				}
+				b_pforzheim = {
+				}
+				b_durlach = {
+				}
+				b_rastatt = {
+				}
+				b_neuhausen = {
+				}
+			}
+			c_breisgau = {
+				color={ 105 94 105 }
+				color2={ 255 255 255 }
+				
+				b_freiburg = {
+				}
+				b_stblasien = {
+				}
+				b_offenburg = {
+				}
+				b_zahringen = {
+				}
+				b_lahr = {
+				}
+				b_lohrrach = {
+				}
+				b_breisach = {
+				}
+				b_rottweil = {
+				}
+			}
+		}
+		d_swabia = {
+			color={ 206 203 203 }
+			color2={ 255 255 255 }
+			
+			capital = 249 #Schwaben
+			
+			c_schwaben = {
+				color={ 81 81 81 }
+				color2={ 255 255 255 }
+				
+				b_tubingen = {
+				}
+				b_konstanz = {
+				}
+				b_heiligenberg = {
+				}
+				b_uberlingen = {
+				}
+				b_hohenberg = {
+				}
+				b_friedrichshafen = {
+				}
+				b_wangen = {
+				}
+				b_lindau = {
+				}
+			}
+			c_ulm = {
+				color={ 78 78 78 }
+				color2={ 255 255 255 }
+				
+				b_ulm = {
+				}
+				b_zwiefalten = {
+				}
+				b_teck = {
+				}
+				b_biberach = {
+				}
+				b_memmingen = {
+				}
+				b_isny = {
+				}
+				b_goppingen = {
+				}
+				b_erbach = {
+				}
+			}
+			c_furstenberg = {
+				color={ 75 75 75 }
+				color2={ 255 255 255 }
+				
+				b_furstenberg = {
+				}
+				b_villingen = {
+				}
+				b_hirsau = {
+				}
+				b_baar = {
+				}
+				b_haslach = {
+				}
+				b_zollern = {
+				}
+				b_wolfach = {
+				}
+				b_donaueschingen = {
+				}
+			}
+			c_wurttemberg = {
+				color={ 72 72 72 }
+				color2={ 255 255 255 }
+				
+				b_stuttgart = {
+				}
+				b_heilbronn = {
+				}
+				b_reutlingen = {
+				}
+				b_waiblingen = {
+				}
+				b_esslingen = {
+				}
+				b_gmund = {
+				}
+				b_staufen = {
+				}
+				b_asperg = {
+				}
+			}
+		}
+	}
+	
+	k_bohemia = {
+		color={ 176 110 32 }
+		color2={ 255 255 255 }
+		
+		culture = bohemian
+		
+		capital = 437 # Praha
+		
+		catholic = 400 # Crusade target weight
+		
+		d_bohemia = {
+			color={ 195 110 11 }
+			color2={ 255 255 255 }
+			
+			capital = 437 # Praha
+			
+			c_domazlice = {
+				color={ 197 112 13 }
+				color2={ 255 255 255 }
+				
+				b_pisek = {
+				}
+				b_kladruby = {
+				}
+				b_budejovice = {
+				}
+				b_domazlice = {
+				}
+				b_hohenfurth = {
+				}
+				b_rosenberg = {
+				}
+				b_goldenkron = {
+				}
+				b_sobeslav = {
+				}
+			}
+			c_praha = {
+				color={ 199 114 15 }
+				color2={ 255 255 255 }
+				
+				b_praha = {
+				}
+				b_brevnov = {
+				}
+				b_kuttenberg = {
+				}
+				b_karlstein = {
+				}
+				b_slany = {
+				}
+				b_kolin = {
+				}
+				b_stare_mesto = {
+				}
+				b_zbraslav = {
+				}
+			}
+			c_boleslav = {
+				color={ 201 116 17 }
+				color2={ 255 255 255 }
+				
+				b_glatz = {
+				}
+				b_nachod = {
+				}
+				b_hradiste = {
+				}
+				b_jicin = {
+				}
+				b_trutnov = {
+				}
+				b_kamieniec = {
+				}
+				b_jaromer = {
+				}
+				b_turnov = {
+				}
+			}
+			c_litomerice = {
+				color={ 203 118 19 }
+				color2={ 255 255 255 }
+				
+				b_usti = {
+				}
+				b_zatec = {
+				}
+				b_jachymov = {
+				}
+				b_kadan = {
+				}
+				b_ceskalipa = {
+				}
+				b_duchcov = {
+				}
+				b_chomutov = {
+				}
+				b_osek = {
+				}
+			}
+			c_plzen = {
+				color={ 205 120 21 }
+				color2={ 255 255 255 }
+				
+				b_plzen = {
+				}
+				b_stribo = {
+				}
+				b_rokycany = {
+				}
+				b_plasy = {
+				}
+				b_pomuk = {
+				}
+				b_susice = {
+				}
+				b_tachov = {
+				}
+				b_cheb = {
+				}
+			}
+		}
+		d_moravia = {
+			color={ 157 101 35 }
+			color2={ 255 255 255 }
+			
+			capital = 440 # Olomouc
+			
+			c_hradec = {
+				color={ 160 104 38 }
+				color2={ 255 255 255 }
+				
+				b_hradeckralove = {
+				}
+				b_pardubice = {
+				}
+				b_litomysl = {
+				}
+				b_zamberk = {
+				}
+				b_policka = {
+				}
+				b_jihlava = {
+				}
+				b_pelhrimov = {
+				}
+				b_chrudim = {
+				}
+			}
+			c_olomouc = {
+				color={ 163 107 41 }
+				color2={ 255 255 255 }
+				
+				b_opava = {
+				}
+				b_olomouc = {
+				}
+				b_sternberk = {
+				}
+				b_ostrava = {
+				}
+				b_zabreh = {
+				}
+				b_moravskatrebova = {
+				}
+				b_zdar = {
+				}
+				b_unicov = {
+				}
+			}
+			c_brno = {
+				color={ 166 110 44 }
+				color2={ 255 255 255 }
+				
+				b_boskovice = {
+				}
+				b_prerov = {
+				}
+				b_velehrad = {
+				}
+				b_wisowitz = {
+				}
+				b_uherskebrod = {
+				}
+				b_uherskehradiste = {
+				}
+				b_kromeriz = {
+				}
+				b_zlin = {
+				}
+			}
+		}
+	}
+}
+
+e_germany = {
+
+	color={ 155 155 155 }
+	color2={ 220 220 20 }
+	
+	capital = 90 # Jülich / Aachen
+	
+	religion=catholic
+	culture = german
+	name_tier = king
+	short_name = yes
+	allow = {
+		NOT = {
+			e_hre = {
+				has_holder = yes
+			}
+		}
+	}
+}

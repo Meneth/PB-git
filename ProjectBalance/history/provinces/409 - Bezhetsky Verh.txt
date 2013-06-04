@@ -1,0 +1,24 @@
+# 409 - Bezhetsky Verh
+
+# County Title
+title = c_bezhetsky_verh
+
+# Settlements
+max_settlements = 4
+b_bezhetsk = castle
+b_sonkovo = city
+#b_spasnakholmu = temple
+
+#b_kyasovagora = castle
+#b_maksatikha = castle
+#b_molokovo = castle
+#b_rameshki = castle
+#b_obrosovo = castle
+
+# Misc
+culture = russian
+religion = orthodox
+
+# History
+1116.1.1 = { b_kyasovagora = castle } #expansion of Ladoga
+1136.1.2 = { capital = b_sonkovo }

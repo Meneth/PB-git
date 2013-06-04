@@ -1,0 +1,79 @@
+###################################
+#
+# Startup event
+#
+# Id meneth.600 to 700 is reserved
+#
+#
+###################################
+
+namespace = meneth
+#Make sure all the provinces are correct religion again
+narrative_event = {
+	id = meneth.600
+	title = "meneth.200.name"
+	desc = "meneth.200.desc"
+	
+	is_triggered_only = yes
+	
+	picture = "GFX_evt_battle"
+	
+	immediate = {
+		any_independent_ruler = {
+			if = {
+				limit = {
+					trait = misguided_warrior
+				}
+				add_trait = poor_warrior
+			}
+			if = {
+				limit = {
+					trait = tough_soldier
+				}
+				add_trait = trained_warrior
+			}
+			if = {
+				limit = {
+					trait = skilled_tactician
+				}
+				add_trait = skilled_warrior
+			}
+			if = {
+				limit = {
+					trait = brilliant_strategist
+				}
+				add_trait = master_warrior
+			}
+			any_realm_character = {
+				if = {
+					limit = {
+						trait = misguided_warrior
+					}
+					add_trait = poor_warrior
+				}
+				if = {
+					limit = {
+						trait = tough_soldier
+					}
+					add_trait = trained_warrior
+				}
+				if = {
+					limit = {
+						trait = skilled_tactician
+					}
+					add_trait = skilled_warrior
+				}
+				if = {
+					limit = {
+						trait = brilliant_strategist
+					}
+					add_trait = master_warrior
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "meneth.200.a"
+	}
+}

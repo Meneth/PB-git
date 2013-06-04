@@ -1,0 +1,83 @@
+6552252 = {
+	name="Uzur"
+	dynasty=698
+	religion="tengri_pagan"
+	culture="cuman"
+	father=90142
+	1040.1.1={
+		birth="1040.1.1"
+	}
+	1110.1.1={
+		death="1110.1.1"
+	}
+}
+
+6552253 = {
+	name="Törtogul"
+	dynasty=698
+	religion="tengri_pagan"
+	culture="cuman"
+	father=6552252
+	1065.1.1={
+		birth="1065.1.1"
+	}
+	1130.1.1={
+		death="1130.1.1"
+	}
+}
+
+6552254 = {
+	name="Sevenç"
+	dynasty=698
+	religion="tengri_pagan"
+	culture="cuman"
+	father=6552253
+	1090.1.1={
+		birth="1090.1.1"
+	}
+	1160.1.1={
+		death="1160.1.1"
+	}
+}
+
+6552255 = {
+	name="Könçek"
+	dynasty=698
+	religion="tengri_pagan"
+	culture="cuman"
+	father=6552254
+	1120.1.1={
+		birth="1120.1.1"
+	}
+	1190.1.1={
+		death="1190.1.1"
+	}
+}
+
+6552256 = {
+	name="Atrak"
+	dynasty=698
+	religion="tengri_pagan"
+	culture="cuman"
+	father=6552255
+	1150.1.1={
+		birth="1150.1.1"
+	}
+	1220.1.1={
+		death="1220.1.1"
+	}
+}
+
+6552257 = {
+	name="Gzi"
+	dynasty=698
+	religion="tengri_pagan"
+	culture="cuman"
+	father=6552256
+	1180.1.1={
+		birth="1180.1.1"
+	}
+	1250.1.1={
+		death="1250.1.1"
+	}
+}

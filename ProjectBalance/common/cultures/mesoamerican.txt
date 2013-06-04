@@ -1,0 +1,43 @@
+# Do not change tags in here without changing every other reference to them.
+# If adding new groups or cultures, make sure they are unique.
+
+mesoamerican = {
+	graphical_culture = mesoamericangfx
+	second_graphical_culture = muslimgfx
+
+	nahuatl = {
+		graphical_culture = mesoamericangfx
+		color = { 1.0 0.5 0.0 }
+		
+		horde = yes
+		
+		used_for_random = no
+		
+		male_names = {
+			Acalan Acacitli Acamapichtli Acolmiztli Aculnahuacatl Ahuiliztli Ahuitzotl Atl Axayacatl Cacamatzin Chimalli Chimalpilli Chimalpopoca Cipac Coanacoch Coatl Cozahtli Cuauhtemoc Cuauhtl Cuetlachtli Cuetzpalli Cuixtli Cuitlahuac 
+			Huitzilin Huitzilihuitl Huitzitl Huitztecol Iquehuacatzin Itzcoatl Itzli Itzcuintli Ixtlilxochitl Mahchimaleh Matlal Mazatl Matlalihuitl Matlatzincatzin Maxtla Miztli Moctezuma Moquihuix Necuametl Nezahualcoyotl Nezahualpilli Nochehuatl 
+			Ocuil Olli Opochtli Ozomatli Quauhtli Tapayaxi Tecocoltzin Tecolotl Tetlepanquetzaltzin Tezozomoc Tizoc Tizocic Tlacaelel Tlacaeleltzin Tlalli Tlaloc Tochtli Tototl Tzompantzin Tlilpotonqui Topiltzin Totoquihuaztli 
+			Ueman Yaotl Yayauhqui Yolotli Yolyamanitzin Xicohtencatl Xiuhpilli Xihuitl Xipil Xipilli Xochitl Xochipepe Xochipilli Yaotl Zipactonal Zolin
+		}
+		female_names = {
+			Achcauhtli Acxocueitl Ahuiliztli Amoxtli Atl Atotoztli Ayauhcihuatl Azcalxochitzin Centehua Cihuaton Citlalmina Chalchiuitl Chicahua Chichimecacihuatzin Chipahua Chicomecoatl Chimalma Cihuaton Citlali Citlalli Citlalmina Coaxoch Coszcatl 
+			Cozamalotl Cuicatl Eleuia Eloxochitl Etalpalli Eztli Huehue-Zaca Itotia Iuitl Ixcatzin Izel Malinalxochitl Manauia Matlalatzin Mecatl Meztli Miahuaxiuitl Miyaoaxochitl Mizquixahual Momoztli Nahuatl Necahual Nelli Ohtli Papa Patli
+			Quiauhxochitl Sacnite Techichpotzin Tezozomoc Tziquetzalpoztectzin Teiuc Teicuih Teyacapan Tepin Tezcatlan Tlacotl Tlahco Tlahcoehua Toltecatl Tonalnan Tlazozomizqui
+			Yoltzin Xilonen Xiloxoch Xiuhtomiyauhtzin Xochitl Xocoh Xocoyotl Yaretzi Zeltzin Zyanya
+		}
+		
+		from_dynasty_prefix = "of "
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 25
+		mat_grm_name_chance = 25
+		mother_name_chance = 0
+
+		modifier = default_culture_modifier
+	}
+}

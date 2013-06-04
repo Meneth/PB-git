@@ -1,0 +1,16 @@
+# 878 - Hayya
+
+# County Title
+title = c_hayya
+
+# Settlements
+max_settlements = 4
+
+b_faras = castle
+b_shabana = city
+
+# Misc
+culture = nubian
+religion = druze
+
+# History

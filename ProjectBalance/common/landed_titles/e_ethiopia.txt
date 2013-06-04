@@ -1,0 +1,536 @@
+e_abyssinia = {
+	color = { 161 172 86 }
+	capital = 879 # Dongola
+	culture = ethiopian
+	
+	name_tier = king
+	short_name = yes
+	
+	k_nubia = {
+		color = { 161 172 86 }
+		capital = 879 # Dongola
+		culture = ethiopian
+		
+		d_makuria = {
+			color={ 85 200 95 }
+			color2={ 255 255 255 }
+			
+			c_atbara = {
+				color={ 208 40 103 }
+				color2={ 255 255 255 }
+			
+				b_dongola = {
+				}
+				b_atbara = {
+				}
+				b_bayuda = {
+				}
+				b_kasea = {
+				}
+				b_ghabah = {
+				}
+			}
+			c_butana = {
+				color={ 116 156 119 }
+				
+				b_butana = {
+				}
+				b_gedaref = {
+				}
+				b_bazen = {
+				}
+				b_gallabat = {
+				}
+			}
+			c_napata = {
+				color={ 0 255 25 }
+				
+				b_napata = {
+				}
+				b_kakur = {
+				}
+				b_dabbah = {
+				}
+				b_girra = {
+				}
+			}
+			c_meroe = {
+				color={ 0 70 5 }
+				
+				b_meroe = {
+				}
+				b_taka = {
+				}
+				b_wolqayt = {
+				}
+			}
+		}
+		d_nubia = {
+			color={ 125 35 200 }
+			color2={ 255 255 255 }
+			
+			c_makuria = {
+				color={ 45 192 124 }
+				color2={ 255 255 255 }
+			
+				b_chiggre = {
+				}
+				b_kalabsha = {
+				}
+				b_salala = {
+				}
+				b_komelshokafa = {
+				}
+				b_ghazali = {
+					holy_site = miaphysite
+					holy_site = monophysite
+				}
+			}
+			c_nubia = {
+				color={ 47 194 126 }
+				color2={ 255 255 255 }
+			
+				b_aniba = {
+				}
+				b_semna = {
+				}
+				b_dotawo = {
+				}
+				b_kawa = {
+				}
+				b_qubban = {
+				}
+			}
+			c_hayya = {
+				color={ 206 38 101 }
+				color2={ 255 255 255 }
+			
+				b_faras = {
+				}
+				b_shabana = {
+				}
+				b_argo = {
+				}
+				b_dagarti = {
+				}
+			}
+		}	
+		d_alodia = {
+			color={ 180 70 70 }
+			color2={ 255 255 255 }
+			
+			c_sennar = {
+				color={ 210 42 105 }
+				color2={ 255 255 255 }
+			
+				b_gezira = {
+				}
+				b_sennar = {
+				}
+				b_kosti = {
+				}
+				b_kinanah = {
+				}
+			}
+			c_matamma = {
+				color={ 158 69 102 }
+				color2={ 255 255 255 }
+			
+				b_ginbo = {
+				}
+				b_gishabay = {
+				}
+				b_kaffa = {
+				}
+				b_garo = {
+				}
+			}
+			c_soba = {
+				color={ 177 68 68 }
+				
+				b_soba = {
+				}
+				b_madani = {
+				}
+				b_chiri = {
+				}
+				b_wacha = {
+				}
+				b_yadeta = {
+				}	
+			}
+		}
+	}
+
+	k_abyssinia = {
+		color={ 201 143 68 }
+		color2={ 255 255 255 }
+		capital = 883 # Gondar
+		culture = ethiopian
+
+		d_harer = {
+			color={ 180 200 30 }
+			color2={ 255 255 255 }
+			
+			c_harer = {
+				color={ 159 8 65 }
+				color2={ 255 255 255 }
+			
+				b_zeila = {
+				}
+				b_hargeysa = {
+				}
+				b_jijiga = {
+				}
+				b_kurfachele = {
+				}
+			}
+			c_busaso = {
+				color={ 155 4 61 }
+				color2={ 255 255 255 }
+			
+				b_mosylon = {
+				}
+				b_bandaraassim = {
+				}
+				b_lasanod = {
+				}
+				b_garoowe = {
+				}
+				b_qardho = {
+				}
+				b_erigavo = {
+				}
+				b_hadaftimo = {
+				}
+				b_buraan = {
+				}
+			}
+			c_berbera = {
+				color={ 157 6 63 }
+				color2={ 255 255 255 }
+			
+				b_berbera = {
+				}
+				b_maydh = {
+				}
+				b_amud = {
+				}
+				b_gabiley = {
+				}
+				b_burco = {
+				}
+				b_mandera = {
+				}
+				b_daarbuduq = {
+				}
+				b_shiikh = {
+				}
+			}
+			c_adal = {
+				color={ 180 200 30 }
+				
+				b_adal = {
+				}
+				b_harar = {
+				}
+				b_diridawa = {
+				}
+				b_kombolcha = {
+				}
+			}
+		}
+
+		d_shewa = {
+			color={ 150 50 30 }
+			color2={ 255 255 255 }
+			
+			c_ankober = {
+				color={ 152 63 96 }
+				color2={ 255 255 255 }
+			
+				b_shewa = {
+				}
+				b_gojjam = {
+				}
+				b_wej = {
+				}
+				b_arbabni = {
+				}
+			}
+			c_dobaa = {
+				color={ 160 40 20 }
+				
+				b_dobaa = {
+				}
+				b_babile = {
+				}
+				b_mora = {
+				}
+			}
+			c_ifat = {
+				color={ 255 36 0 }
+				
+				b_ifat = {
+				}
+				b_hubat = {
+				}
+				b_fatagar = {
+				}
+				b_dewaro = {
+				}
+			}
+		}
+
+		d_gondar = {
+			color={ 85 120 80 }
+			color2={ 255 255 255 }	
+			
+			c_gondar = {
+				color={ 154 65 98 }
+				color2={ 255 255 255 }
+			
+				b_fasilghebbi = {
+				}
+				b_gondar = {
+				}
+				b_roha = {
+				}
+				b_ambassel = {
+				}
+				b_bahirdar = {
+				}
+				b_magdala = {
+				}
+			}
+			c_asosa = {
+				color={ 150 61 94 }
+				color2={ 255 255 255 }
+			
+				b_welega = {
+				}
+				b_gambela = {
+				}
+				b_inarya = {
+				}
+			}
+			c_hadiya = {
+				color={ 21 87 21 }
+				
+				b_hadiya = {
+				}
+				b_kafa = {
+				}
+				b_sarka = {
+				}
+			}
+			c_damot = {
+				color={ 114 130 114 }
+				
+				b_damot = {
+				}
+				b_debreberhan = {
+				}
+				b_antsokia = {
+				}
+			}
+		}
+
+		d_eritrea = {
+			color={ 170 200 225 }
+			color2={ 255 255 255 }
+			
+			c_akordat = {
+				color={ 202 34 97 }
+				color2={ 255 255 255 }
+			
+				b_bahr = {
+				}
+				b_dankali = {
+				}
+				b_djibouti = {
+				}
+				b_bur = {
+				}
+			}
+			c_kassala = {
+				color={ 204 36 99 }
+				color2={ 255 255 255 }
+			
+				b_suakin = {
+				}
+				b_feruk = {
+				}
+				b_usuk = {
+				}
+				b_doka = {
+				}
+			}
+			c_barka = {
+				color={ 11 61 100 }
+				
+				b_barka = {
+				}
+				b_alaka = {
+				}
+				b_bogos = {
+				}
+			}
+			c_aidhab = {
+				color={ 21 133 222 }
+				
+				b_aidhab = {
+				}
+				b_dahlak = {
+				}
+				b_akkele_guzay = {
+				}
+			}
+		}
+
+		d_axum = {
+			color={ 125 5 155 }
+			color2={ 255 255 255 }
+			
+			c_aksum = {
+				color={ 200 32 95 }
+				color2={ 255 255 255 }
+			
+				b_adwa = {
+				}
+				b_aksum = {
+					holy_site = miaphysite
+					holy_site = monophysite
+				}
+				b_mekele = {
+				}
+				b_tigray = {
+				}
+				b_enderta = {
+				}
+			}
+			c_antalo = {
+				color={ 156 67 100 }
+				color2={ 255 255 255 }
+			
+				b_lasta = {
+				}
+				b_angot = {
+				}
+				b_amhara = {
+				}
+				b_semien = {
+				}
+			}
+			c_tadjoura = {
+				color={ 161 10 67 }
+				color2={ 255 255 255 }
+			
+				b_tadjoura = {
+				}
+				b_ankala = {
+				}
+				b_harak_bodoyta = {
+				}
+				b_galafi = {
+				} 
+				b_dikhil = {
+				}
+			}
+		}	
+	}
+	
+	k_makuria = {
+		color={ 0 255 255 }
+		color2={ 255 255 255}
+		capital = 879
+		allow = {
+			culture = ethiopian
+		}
+	}
+
+	k_alodia = {
+		color={ 150 90 150 }
+		color2={ 255 255 255}
+		capital = 952
+		allow = {
+			culture = ethiopian
+		}
+	}
+
+	k_somalia = {
+		color={ 0 175 255 }
+		color2={ 255 255 255}
+		capital = 872
+		allow = {
+			always = no
+		}
+		title = "BOQOR_KING"
+		foa = "BOQOR_KING_FOA"
+		short_name = yes
+	}
+
+	k_beja = {
+		color={ 50 255 50 }
+		color2={ 255 255 255}
+		capital = 877
+		allow = {
+			always = no
+		}
+		title = "SULTAN_KING"
+		foa = "SULTAN_KING_FOA"
+		short_name = yes
+	}
+
+	k_semien = {
+		color={ 15 15 15 }
+		color2={ 255 255 255}
+		capital = 884
+		allow = {
+			always = no
+		}
+	}
+	
+	allow = {
+		culture = ethiopian
+		OR = {
+			has_landed_title = k_nubia
+			completely_controls = k_nubia
+			k_nubia = { is_titular = yes }
+		}
+		OR = {
+			has_landed_title = k_makuria
+			completely_controls = k_makuria
+			k_makuria = { is_titular = yes }
+		}
+		OR = {
+			has_landed_title = k_beja
+			completely_controls = k_beja
+			k_beja = { is_titular = yes }
+		}
+		OR = {
+			has_landed_title = k_alodia
+			completely_controls = k_alodia
+			k_alodia = { is_titular = yes }
+		}
+		OR = {
+			has_landed_title = k_abyssinia
+			completely_controls = k_abyssinia
+			k_abyssinia = { is_titular = yes }
+		}
+		OR = {
+			has_landed_title = k_semien
+			completely_controls = k_semien
+			k_semien = { is_titular = yes }
+		}
+		OR = {
+			has_landed_title = k_somalia
+			completely_controls = k_somalia
+			k_somalia = { is_titular = yes }
+		}
+		war = no
+		ruled_years = 5
+		is_adult = yes
+		NOT = { tier = emperor }
+	}
+}

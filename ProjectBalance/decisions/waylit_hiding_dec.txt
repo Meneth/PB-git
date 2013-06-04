@@ -1,0 +1,110 @@
+#decisions to arrange prisoner swap
+
+decisions = {
+	bring_out_of_hiding = {
+		is_high_prio = yes
+		potential = {
+			is_ruler = yes
+			prisoner = no
+			OR = {
+				ROOT = { has_character_modifier = stalwart_defender }
+				ROOT = { has_character_modifier = left_at_siege }
+				ROOT = { has_character_modifier = modifier_hidden }
+				any_dynasty_member = {
+					at_location = ROOT
+					OR = {
+						has_character_modifier = modifier_hidden
+						has_character_modifier = left_at_siege
+						has_character_modifier = stalwart_defender
+					}
+				}
+			}
+		}
+		
+		allow = {
+			war = no
+			NOT = { any_liege = { war = yes } }
+		}
+		
+		effect = {
+			hidden_tooltip = {
+				any_courtier = {
+					limit = {
+						at_location = ROOT
+					}
+					remove_character_modifier = modifier_hidden
+					remove_character_modifier = left_at_siege
+					remove_character_modifier = stalwart_defender
+				}
+				any_dynasty_member = {
+					limit = {
+						at_location = ROOT
+					}
+					remove_character_modifier = modifier_hidden
+					remove_character_modifier = left_at_siege
+					remove_character_modifier = stalwart_defender
+				}
+				any_spouse = {
+					limit = {
+						at_location = ROOT
+					}
+					remove_character_modifier = modifier_hidden
+					remove_character_modifier = left_at_siege
+					remove_character_modifier = stalwart_defender
+				}
+				remove_character_modifier = modifier_hidden
+				remove_character_modifier = stalwart_defender
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	request_important_prisoners = {
+		is_high_prio = yes
+		potential = {
+			prisoner = no
+			is_ruler = yes
+			primary_title = { higher_tier_than = BARON }
+			
+			any_realm_lord = {
+				any_courtier = {
+					prisoner = yes
+					primary_title = { higher_tier_than = BARON }
+					war_with = ROOT
+				}
+			}
+		}#pot
+
+		allow = { prestige = 0 }
+
+		effect = {
+			
+			any_realm_lord = {
+				IF = {
+					any_courtier = {
+
+						custom_tooltip = EVTTOOLTIPprisreq
+
+						limit = {
+							prisoner = yes
+							primary_title = { higher_tier_than = BARON }
+							war_with = ROOT
+						}
+						hidden_tooltip = {
+							prisoner = no
+							prisoner = ROOT
+						}#hddn
+					}
+				}#if
+			}#rlmlord
+			
+		}#effect
+		ai_will_do = {
+			factor = 1
+		}
+	}#request
+	
+}#decisions

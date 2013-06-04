@@ -1,0 +1,1121 @@
+###################################
+#
+# Various events
+#
+# Id meneth.201 to meneth.299 is reserved
+#
+#
+###################################
+
+namespace = meneth
+
+#Event to kill off useless courtiers
+character_event = {
+	id = meneth.201
+	desc = meneth.201.desc
+	picture = GFX_evt_battle
+	border = GFX_event_normal_frame_religion
+	
+	trigger = {
+		is_ruler = no
+		is_councillor = no
+		is_married = no
+		is_adult = yes
+		OR = {
+			AND = {
+				age = 40 #5 years of fertility isn't much use
+				is_female = yes
+			}
+			trait = incapable #No reason to keep incapable characters around
+			has_character_modifier = old_age
+			NOT = {
+				OR = {
+					martial = 5
+					diplomacy = 5
+					intrigue = 5
+					stewardship = 5
+					learning = 5
+				}
+			}
+		}
+		NOT = {
+			any_dynasty_member = {
+				higher_tier_than = baron #Don't want the relatives of important people dying
+			}
+		}
+		NOT = {
+			any_child = {
+				higher_tier_than = baron #Don't want the relatives of important people dying
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = meneth.201.a
+		death = { death_reason = death_accident }
+	}
+}
+
+# The Restoration of Rome
+narrative_event = {
+	id = meneth.202
+	title = EVTNAMELoR.20
+	desc = EVTDESCLoR.20
+	
+	picture = GFX_evt_rome_restored_byzantine
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTALoR.20
+		set_global_flag = rome_restored
+		hidden_tooltip = {
+			primary_title = {
+				any_direct_de_jure_vassal_title = {
+					de_jure_liege = e_roman_empire
+				}
+				revoke_law = themes_0
+				revoke_law = themes_1
+			}
+			e_hre = {
+				any_direct_de_jure_vassal_title = {
+					de_jure_liege = e_germany
+				}
+				holder_scope = {
+					e_germany = {
+						grant_title = PREV
+						copy_title_laws = e_hre
+						copy_title_history = e_hre
+					}
+				}
+				destroy_landed_title = THIS
+			}
+		}
+		e_roman_empire = {
+			grant_title = ROOT
+			copy_title_laws = e_byzantium
+			copy_title_history = e_byzantium
+			if = {
+				limit = { has_law = themes_1 }
+				add_law = crown_levies_3
+				revoke_law = themes_1
+			}
+			if = {
+				limit = { has_law = themes_2 }
+				add_law = crown_levies_4
+				revoke_law = themes_2
+			}
+		}
+		e_byzantium = {
+			destroy_landed_title = THIS
+		}
+		add_trait = augustus
+		give_nickname = nick_the_glorious
+		hidden_tooltip = {
+			activate_title = { title = e_byzantium status = no }
+			activate_title = { title = e_hre status = no }
+			any_playable_ruler = {
+				limit = {
+					NOT = { has_landed_title = e_byzantium }
+					ai = no
+				}
+				narrative_event = { id = LoR.21 }
+			}
+		}
+	}	
+}
+#Interest on loans
+character_event = {
+	id = meneth.203
+	desc = meneth.203.desc
+	picture = GFX_evt_council
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		OR = {
+			has_character_modifier = small_loan
+			has_character_modifier = medium_loan
+			has_character_modifier = large_loan
+			has_character_modifier = huge_loan
+		}
+	}
+	#Pay interest
+	option = {
+		name = meneth.203.a
+		custom_tooltip = pay_interest
+		hidden_tooltip = {
+			if = {
+				limit = {
+					has_character_modifier = small_loan
+				}
+				wealth = -10
+			}
+			if = {
+				limit = {
+					has_character_modifier = medium_loan
+				}
+				wealth = -20
+			}
+			if = {
+				limit = {
+					has_character_modifier = large_loan
+				}
+				wealth = -40
+			}
+			if = {
+				limit = {
+					has_character_modifier = huge_loan
+				}
+				wealth = -80
+			}
+		}
+	}
+	#Repay as much as possible
+	option = {
+		name = meneth.203.b
+		trigger = {
+			wealth = 110
+		}
+		custom_tooltip = repay_loans
+		hidden_tooltip = {
+			if = {
+				limit = {
+					has_character_modifier = small_loan
+				}
+				wealth = -10
+			}
+			if = {
+				limit = {
+					has_character_modifier = medium_loan
+				}
+				wealth = -20
+			}
+			if = {
+				limit = {
+					has_character_modifier = large_loan
+				}
+				wealth = -40
+			}
+			if = {
+				limit = {
+					has_character_modifier = huge_loan
+				}
+				wealth = -80
+			}
+			if = {
+				limit = {
+					has_character_modifier = huge_loan
+					wealth = 800
+				}
+				wealth = -800
+				remove_character_modifier = huge_loan
+			}
+			if = {
+				limit = {
+					has_character_modifier = large_loan
+					wealth = 400
+				}
+				wealth = -400
+				remove_character_modifier = large_loan
+			}
+			if = {
+				limit = {
+					has_character_modifier = medium_loan
+					wealth = 200
+				}
+				wealth = -200
+				remove_character_modifier = medium_loan
+			}
+			if = {
+				limit = {
+					has_character_modifier = small_loan
+					wealth = 100
+				}
+				wealth = -100
+				remove_character_modifier = small_loan
+			}
+		}
+	}
+}
+
+#Crusader States
+character_event = {
+	id = meneth.204
+	desc = meneth.204.desc
+	picture = GFX_evt_crusaders
+	
+	is_triggered_only = yes
+	
+	#Keep it
+	option = {
+		name = meneth.204.a
+		trigger = {
+			ai = no
+		}
+		revoke_law = the_crusade_target
+		ai_chance = {
+			factor = 0
+		}
+	}
+	#Give it to a secondary son
+	option = {
+		name = meneth.204.b
+		trigger = {
+			any_child = {
+				is_female = no
+				is_adult = yes
+				is_alive = yes
+				is_ruler = no
+				is_primary_heir = no
+			}
+		}
+		prestige = 200
+		random_child = {
+			limit = {
+				is_female = no
+				is_adult = yes
+				is_alive = yes
+				is_ruler = no
+				is_primary_heir = no
+			}
+			character_event = { id = meneth.207 }
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+	#Give it to a brother
+	option = {
+		name = meneth.204.c
+		trigger = {
+			any_sibling = {
+				is_female = no
+				is_adult = yes
+				is_alive = yes
+				is_ruler = no
+				is_primary_heir = no
+			}
+		}
+		prestige = 200
+		random_sibling = {
+			limit = {
+				is_female = no
+				is_adult = yes
+				is_alive = yes
+				is_ruler = no
+				is_primary_heir = no
+			}
+			character_event = { id = meneth.207 }
+		}
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 0
+				any_child = {
+					is_female = no
+					is_adult = yes
+					is_alive = yes
+					is_ruler = no
+					is_primary_heir = no
+				}
+			}
+		}
+	}
+	#Give it to a close relative
+	option = {
+		name = meneth.204.d
+		trigger = {
+			any_dynasty_member = {
+				is_female = no
+				is_adult = yes
+				is_alive = yes
+				is_ruler = no
+				is_primary_heir = no
+				is_close_relative = ROOT
+			}
+		}
+		prestige = 200
+		random_dynasty_member = {
+			limit = {
+				is_female = no
+				is_adult = yes
+				is_alive = yes
+				is_ruler = no
+				is_primary_heir = no
+				is_close_relative = ROOT
+			}
+			character_event = { id = meneth.207 }
+		}
+		ai_chance = {
+			factor = 50
+		}
+	}
+	#Give it to a dynasty member
+	option = {
+		name = meneth.204.e
+		trigger = {
+			any_dynasty_member = {
+				is_female = no
+				is_adult = yes
+				is_alive = yes
+				is_ruler = no
+				is_primary_heir = no
+			}
+		}
+		prestige = 200
+		random_dynasty_member = {
+			limit = {
+				is_female = no
+				is_adult = yes
+				is_alive = yes
+				is_ruler = no
+				is_primary_heir = no
+			}
+			character_event = { id = meneth.207 }
+		}
+		ai_chance = {
+			factor = 25
+		}
+	}
+	#Give it to a courtier
+	option = {
+		name = meneth.204.f
+		trigger = {
+			any_realm_character = {
+				is_female = no
+				is_adult = yes
+				is_alive = yes
+				is_ruler = no
+				is_primary_heir = no
+				opinion = { who = ROOT value = 0 }
+				reverse_opinion = { who = ROOT value = 0 }
+				trait = crusader
+			}
+		}
+		prestige = 200
+		random_realm_character = {
+			limit = {
+				is_female = no
+				is_adult = yes
+				is_alive = yes
+				is_ruler = no
+				is_primary_heir = no
+				opinion = { who = ROOT value = 0 }
+				reverse_opinion = { who = ROOT value = 0 }
+				trait = crusader
+			}
+			character_event = { id = meneth.207 }
+		}
+		ai_chance = {
+			factor = 15
+		}
+	}
+	#Generate a new character
+	option = {
+		name = meneth.204.g
+		trigger = {
+			ai = yes
+		}
+		prestige = 200
+		create_character = {
+			random_traits = no
+			age = 25
+			dynasty = random
+			female = no
+			religion = ROOT
+			culture = ROOT
+			trait = crusader
+			trait = diligent
+			trait = quick
+			trait = brave
+			trait = brilliant_strategist
+			attributes = {
+				martial = 10
+				learning = 5
+				stewardship = 7
+				intrigue = 5
+				diplomacy = 7
+			}
+		}
+		new_character = {
+			character_event = { id = meneth.207 }
+		}
+		ai_chance = {
+			factor = 5
+		}
+	}
+}
+
+#Crusader States
+character_event = {
+	id = meneth.207
+	desc = meneth.200.desc
+	picture = GFX_evt_crusaders
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = meneth.204.a
+		FROM = {
+			random_demesne_title = {
+				limit = {
+					has_law = the_crusade_target
+				}
+				hidden_tooltip = {
+					any_de_jure_vassal_title = {
+						limit = {
+							is_feudal = yes
+							holder_scope = { character = PREVPREVPREV }
+						}
+						grant_title = ROOT
+					}
+					any_de_jure_vassal_title = {
+						limit = {
+							holder_scope = { character = PREVPREVPREV }
+						}
+						grant_title = ROOT
+					}
+				}
+				grant_title = ROOT
+				revoke_law = the_crusade_target
+			}
+		}
+		set_defacto_liege = THIS
+		add_character_modifier = {
+			name = formation_of_rum
+			duration = 9125
+		}
+		spawn_unit = {
+			province = PREV
+			home = PREV
+			troops =
+			{
+				heavy_infantry = { 2000 2000 }
+				knights = { 500 500 }
+			}
+		}
+		random_list = {
+			20 = { add_trait = strong }
+			20 = { add_trait = brave }
+			20 = { add_trait = ambitious }
+			20 = { add_trait = zealous }
+			20 = { add_trait = diligent }
+		}
+		wealth = 250
+		prestige = 200
+		piety = 100
+		#Ensure some decent councilors
+		create_random_priest = {
+			random_traits = yes
+			dynasty = random
+			female = no
+			religion = ROOT
+			culture = ROOT
+		}
+		create_random_steward = {
+			random_traits = yes
+			dynasty = random
+			female = no
+			religion = ROOT
+			culture = ROOT
+		}
+		create_random_soldier = {
+			random_traits = yes
+			dynasty = random
+			female = no
+			religion = ROOT
+			culture = ROOT
+		}
+		create_random_intriguer = {
+			random_traits = yes
+			dynasty = random
+			female = no
+			religion = ROOT
+			culture = ROOT
+		}
+		create_random_diplomat = {
+			random_traits = yes
+			dynasty = random
+			female = no
+			religion = ROOT
+			culture = ROOT
+		}
+		capital_scope = {
+			religion = ROOT
+		}
+	}
+}
+
+# Revolt in isolated province
+province_event = {
+	id = meneth.205
+	desc = meneth.205.desc
+	picture = GFX_evt_peasants
+	
+	trigger = {
+		NOT = { has_province_modifier = recent_revolt }
+		# Not for those in an independence war
+		owner = {
+			top_liege = {
+				independent = yes
+			}
+		}
+		# Not a player's last province
+		owner = {
+			OR = {
+				ai = yes
+				AND = {
+					ai = no
+					any_demesne_province = {
+						NOT = { province_id = ROOT }
+					}
+				}
+			}
+
+		}
+		# No neighbor province from same realm
+		NOT = {
+			any_neighbor_province = {
+				owner = {
+					top_liege = {
+						ROOT = {
+							owner = {
+								top_liege = {
+									character = PREVPREVPREV
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		# Not the only province in the realm
+		owner = {
+			top_liege = {
+				any_realm_province = {
+					NOT = { province_id = ROOT }
+				}
+			}
+		}
+		# Not a single-province island
+		any_neighbor_province = {
+			is_land = yes
+		}
+		# Not a coastal province
+		port = no		
+		# Not if part of de jure duchy held by someone in same top realm
+		NOT = {
+			duchy = {
+				holder_scope = {
+					top_liege = {
+						ROOT = {
+							owner = {
+								top_liege = {
+									character = PREVPREVPREV
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = EVTOPTA600
+		hidden_tooltip = {
+			random_list = {
+				50 = {
+					create_random_soldier = {
+						random_traits = yes
+						dynasty = random
+						religion = PREV
+						culture = PREV
+						female = no
+						age = 30
+						employer = e_rebels
+					}
+					new_character = {
+						spawn_unit = {
+							province = PREV
+							home = PREV
+							scaled_by_biggest_garrison = 1.5
+							troops = {
+								archers = { 6 6 }
+								light_cavalry = { 4 4 }
+								light_infantry = { 10 10 }
+							}
+						}
+					}
+				}
+				25 = {
+					create_random_soldier = {
+						random_traits = yes
+						dynasty = random
+						religion = PREV
+						culture = PREV
+						female = no
+						age = 30
+						employer = e_rebels
+					}
+					new_character = {
+						spawn_unit = {
+							province = PREV
+							home = PREV
+							scaled_by_biggest_garrison = 1.5
+							troops = {
+								archers = { 6 6 }
+								light_cavalry = { 3 3 }
+								light_infantry = { 11 11 }
+							}
+						}
+					}
+				}
+				25 = {
+					create_random_soldier = {
+						random_traits = yes
+						dynasty = random
+						religion = PREV
+						culture = PREV
+						female = no
+						age = 30
+						employer = e_rebels
+					}
+					new_character = {
+						spawn_unit = {
+							province = PREV
+							home = PREV
+							scaled_by_biggest_garrison = 1.5
+							troops = {
+								archers = { 6 6 }
+								light_infantry = { 14 14 }
+							}
+						}
+					}
+				}
+			}
+			# Lower revolt risk
+			remove_province_modifier = recent_revolt
+			add_province_modifier = {
+				name = recent_revolt
+				duration = 3650
+			}
+			# Inform barons about the rebels
+			owner = {
+				set_character_flag = informed_about_rebels
+			}
+			any_province_lord = {
+				limit = {
+					NOT = { has_character_flag = informed_about_rebels }
+					ai = no
+				}
+				character_event = { id = 601 days = 7 }
+			}
+			owner = {
+				clr_character_flag = informed_about_rebels
+			}
+		}
+	}
+}
+
+# Reward for converting a province
+letter_event = {
+	id = meneth.206
+	desc = meneth.206.desc
+	border = GFX_event_letter_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = meneth.206.a
+		random_list = {
+			50 = {
+				piety = 25
+			}
+			25 = {
+				change_learning = 1
+			}
+			10 = {
+				add_trait = zealous
+				hidden_tooltip = { character_event = { id = 38269 } }
+			}
+			5 = {
+				add_trait = diligent
+				hidden_tooltip = { character_event = { id = 38256 } }
+			}
+			5 = {
+				add_trait = patient
+				hidden_tooltip = { character_event = { id = 38264 } }
+			}
+			1 = {
+				add_trait = chaste
+				hidden_tooltip = { character_event = { id = 38274 } }
+			}
+			1 = {
+				add_trait = temperate
+				hidden_tooltip = { character_event = { id = 38276 } }
+			}
+			1 = {
+				add_trait = charitable
+				hidden_tooltip = { character_event = { id = 38273 } }
+			}
+			1 = {
+				add_trait = kind
+				hidden_tooltip = { character_event = { id = 38268 } }
+			}
+			1 = {
+				add_trait = humble
+				hidden_tooltip = { character_event = { id = 38260 } }
+			}
+		}
+	}
+}
+
+#Fix lack of internal peace
+character_event = {
+	id = meneth.208
+	desc = meneth.208.desc
+	picture = GFX_evt_council
+	
+	only_rulers = yes
+	
+	trigger = {
+		any_demesne_title = {
+			is_titular = no
+			OR = {
+				AND = {
+					tier = king
+					NOT = { has_law = king_peace_0 }
+					NOT = { has_law = king_peace_1 }
+					NOT = { has_law = king_peace_2 }
+				}
+				AND = {
+					tier = emperor
+					NOT = { has_law = emperor_peace_0 }
+					NOT = { has_law = emperor_peace_1 }
+					NOT = { has_law = emperor_peace_2 }
+				}
+			}
+		}
+		is_republic = no
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = OK
+		random_demesne_title = {
+			limit = {
+				is_titular = no
+				OR = {
+					AND = {
+						tier = king
+						NOT = { has_law = king_peace_0 }
+						NOT = { has_law = king_peace_1 }
+						NOT = { has_law = king_peace_2 }
+					}
+					AND = {
+						tier = emperor
+						NOT = { has_law = emperor_peace_0 }
+						NOT = { has_law = emperor_peace_1 }
+						NOT = { has_law = emperor_peace_2 }
+					}
+				}
+			}
+			if = {
+				limit = { tier = king }
+				if = {
+					limit = {
+						has_law = emperor_peace_0
+					}
+					add_law = king_peace_0
+					
+				}
+				if = {
+					limit = {
+						has_law = emperor_peace_1
+					}
+					add_law = king_peace_1
+				}
+				if = {
+					limit = {
+						has_law = emperor_peace_2
+					}
+					add_law = king_peace_2
+				}
+				hidden_tooltip = {
+					if = {
+						limit = {
+							NOT = { has_law = king_peace_0 }
+							NOT = { has_law = king_peace_1 }
+							NOT = { has_law = king_peace_2 }
+						}
+						add_law = king_peace_0
+					}
+				}
+			}
+			if = {
+				limit = { tier = emperor }
+				if = {
+					limit = {
+						has_law = king_peace_0
+					}
+					add_law = emperor_peace_0
+				}
+				if = {
+					limit = {
+						has_law = king_peace_1
+					}
+					add_law = emperor_peace_1
+				}
+				if = {
+					limit = {
+						has_law = king_peace_2
+					}
+					add_law = emperor_peace_2
+				}
+				hidden_tooltip = {
+					if = {
+						limit = {
+							NOT = { has_law = emperor_peace_0 }
+							NOT = { has_law = emperor_peace_1 }
+							NOT = { has_law = emperor_peace_2 }
+						}
+						add_law = emperor_peace_0
+					}
+				}
+			}
+			any_de_jure_vassal_title = {
+				limit = {
+					holder_scope = {
+						liege = {
+							character = ROOT
+						}
+					}
+				}
+				holder_scope = {
+					remove_opinion = {
+						modifier = opinion_increased_authority
+						who = liege
+					}
+				}
+			}
+		}
+	}
+}
+
+#Excommunicated for refusing the Pope
+character_event = {
+	id = meneth.209
+	
+	desc = meneth.209.desc
+	picture = GFX_evt_battle
+	border = GFX_event_normal_frame_religion
+	
+	only_rulers = yes
+	
+	trigger = {
+		has_character_flag = pope_we_refuse_law_changed
+		NOT = { had_character_flag = { flag = pope_we_refuse_law_changed days = 730 } }
+		NOT = { trait = excommunicated }
+	}
+	mean_time_to_happen = {
+		months = 24
+		modifier = {
+			factor = 0.5
+			rightful_religious_head_scope = { trait = diligent }
+		}
+		modifier = {
+			factor = 0.5
+			rightful_religious_head_scope = { trait = zealous }
+		}
+		modifier = {
+			factor = 0.5
+			rightful_religious_head_scope = { trait = wroth }
+		}
+		modifier = {
+			factor = 0.5
+			rightful_religious_head_scope = { trait = cruel }
+		}
+		modifier = {
+			factor = 0.5
+			rightful_religious_head_scope = { trait = arbitrary }
+		}
+		modifier = {
+			factor = 2
+			rightful_religious_head_scope = { trait = slothful }
+		}
+		modifier = {
+			factor = 2
+			rightful_religious_head_scope = { trait = cynical }
+		}
+		modifier = {
+			factor = 2
+			rightful_religious_head_scope = { trait = patient }
+		}
+	}
+	option = {
+		name = meneth.209.a
+		add_trait = excommunicated
+		remove_trait = zealous
+	}
+}
+#Excommunicated for being at war with the pope
+character_event = {
+	id = meneth.210
+	
+	desc = meneth.210.desc
+	picture = GFX_evt_battle
+	border = GFX_event_normal_frame_religion
+	
+	only_rulers = yes
+	
+	trigger = {
+		religion = catholic
+		rightful_religious_head_scope = {
+			any_war = {
+				any_defender = { character = PREV }
+				any_attacker = { character = ROOT }
+			}
+		}
+		NOT = { trait = excommunicated }
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = meneth.209.a
+		add_trait = excommunicated
+	}
+}
+#Fix immortal
+character_event = {
+	id = meneth.211
+	
+	desc = meneth.210.desc
+	picture = GFX_evt_battle
+	border = GFX_event_normal_frame_religion
+	
+	trigger = {
+		trait = immortal
+		NOT = { has_global_flag = immortals }
+		ai = yes
+	}
+	
+	option = {
+		name = OK
+		remove_trait = immortal
+	}
+}
+#Remove tournament flag
+character_event = {
+	id = meneth.212
+	
+	desc = meneth.212.desc
+	picture = GFX_evt_battle
+	border = GFX_event_normal_frame_religion
+	
+	trigger = {
+		had_character_flag = { flag = attending_tournament days = 730 }
+	}
+	
+	option = {
+		name = OK
+		clr_character_flag = attending_tournament
+	}
+}
+
+#Prisoner exchange
+character_event = {
+	id = meneth.213
+	
+	desc = meneth.213.desc
+	picture = GFX_evt_battle
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = OK
+		FROMFROM = { clr_character_flag = prisoner_exchange_attempted }
+		FROM = {
+			prisoner = no
+		}
+		FROMFROM = {
+			random_courtier = {
+				limit = {
+					is_close_relative = ROOT
+					dynasty = ROOT
+					prisoner = yes
+					is_landed = no
+				}
+				prisoner = no
+			}
+			if = {
+				limit = {
+					NOT = {
+						any_courtier = {
+							is_close_relative = ROOT
+							dynasty = ROOT
+							prisoner = yes
+							is_landed = no
+						}
+					}
+				}
+				random_courtier = {
+					limit = {
+						dynasty = ROOT
+						prisoner = yes
+						is_landed = no
+					}
+					prisoner = no
+				}
+			}
+			character_event = { id = meneth.214 }
+		}
+	}
+	option = {
+		name = meneth.400.b
+		FROMFROM = { clr_character_flag = prisoner_exchange_attempted }
+		FROMFROM = { character_event = { id = meneth.214 } }
+	}
+}
+
+#Prisoner exchange succeeds
+character_event = {
+	id = meneth.214
+	
+	desc = meneth.214.desc
+	picture = GFX_evt_battle
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = OK
+	}
+}
+
+#Prisoner exchange fails
+character_event = {
+	id = meneth.215
+	
+	desc = meneth.215.desc
+	picture = GFX_evt_battle
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = OK
+	}
+}

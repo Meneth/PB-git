@@ -1,0 +1,570 @@
+bookmark =
+{
+	name = "BM_NORMAN_CONQUEST"
+	desc = "BM_NORMAN_CONQUEST_DESC"
+	date = 1069.8.1
+	
+	character = 140 # William the Conqueror
+	character = 101515 # Svend Estridsen, King of Denmark
+}
+
+bookmark =
+{
+	name = "BM_THE_OLD_GODS"
+	desc = "BM_THE_OLD_GODS_DESC"
+	date = 867.1.1
+	
+	character = 163111 # Ivar the Boneless
+	character = 163112 # Halfdan Whiteshirt
+	character = 40605 # Rurik
+	character = 33358 # Æthelred
+	character = 45107 # Vandad I
+	character = 1700 # Basil I
+	character = 90104 # Charles the Bald
+	character = 34014 # Al-Mu'tazz
+}
+
+bookmark =
+{
+	name = "BM_FATE_OF_ENGLAND"
+	desc = "BM_FATE_OF_ENGLAND_DESC"
+	date = 1066.9.15
+	
+	character = 140 # William the Conqueror
+	character = 122 # Harold Godwinson
+	character = 102531 # Harald Hårdråde
+}
+
+bookmark =
+{
+	name = "BM_TWO_ERIKS"
+	desc = "BM_TWO_ERIKS_DESC"
+	date = 1066.9.25
+
+	character = 100546
+	character = 100525
+}
+
+bookmark =
+{
+	name = "BM_CASTILLE"
+	desc = "BM_CASTILLE_DESC"
+	date = 1072.1.12
+
+	character = 107500
+}
+
+bookmark =
+{
+	name = "BM_LEVANT"
+	desc = "BM_LEVANT_DESC"
+	date = 1076.1.1
+
+	character = 3042
+	character = 3096
+	character = 1736
+}
+
+bookmark =
+{
+	name = "BM_NAVARRA"
+	desc = "BM_NAVARRA_DESC"
+	date = 1076.7.1
+
+	character = 108500
+	character = 110500
+}
+
+bookmark =
+{
+	name = "BM_KIEV"
+	desc = "BM_KIEV_DESC"
+	date = 1077.1.1
+
+	character = 630
+	character = 654
+	character = 3046
+	character = 1736
+}
+
+bookmark =
+{
+	name = "BM_KOMNENOS_DYNASTY"
+	desc = "BM_KOMNENOS_DYNASTY_DESC"
+	date = 1081.4.1
+	
+	character = 1742 # Alexios I Komnenos
+	character = 3046 # Suleyman I of Rum
+}
+
+bookmark =
+{
+	name = "BM_HUNGARY"
+	desc = "BM_HUNGARY_DESC"
+	date = 1091.1.1
+
+	character = 474 # László I of Hungary
+	character = 32965
+}
+
+bookmark =
+{
+	name = "BM_THE_ISLES"
+	desc = "BM_THE_ISLES_DESC"
+	date = 1092.7.1
+
+	character = 5788 # Gudrod I of The Isles
+	character = 984 # Malcolm III of Scotland
+}
+
+bookmark =
+{
+	name = "BM_EDGE_OF_KNIFE"
+	desc = "BM_EDGE_OF_KNIFE_DESC"
+	date = 1098.1.1
+
+	character = 32965 # Yusuf I of Almoravid Sultanate
+	character = 210508 # Ramon-Berenguer III of Barcelona
+	character = 70231 # Pedro I of Aragon
+	character = 1742 # Alexios Komnenos of Byzantium
+	character = 41701 # Kilij Arslan of Rum
+	character = 232563 # Duke Gosdantin of Armenia Minor
+	character = 216517 # King Davit of Georgia
+}
+
+bookmark =
+{
+	name = "BM_NORWAY_1"
+	desc = "BM_NORWAY_1_DESC"
+	date = 1099.1.1
+
+	character = 202511 # Magnus III of Norway
+	character = 202968 # Edgar I of Scotland
+	character = 203560 # Fergus of Galloway
+}
+
+bookmark =
+{
+	name = "BM_ANTIOCH"
+	desc = "BM_ANTIOCH_DESC"
+	date = 1103.1.1
+
+	character = 232564 # Thoros of Armenia Minor
+	character = 1140 # Duke Bohemond of Antioch
+	character = 232007 # Duke Baudouin II of Edessa
+	character = 144020 # Emir Radwan I Aleppo
+	character = 144023 # Emir Duqaq I of Damascus
+	character = 32905 # Caliph Al-Amir of Egypt
+	character = 10073 # King Boudouin I of Jerusalem
+}
+
+bookmark =
+{
+	name = "BM_JERUSALEM"
+	desc = "BM_JERUSALEM_DESC"
+	date = 1124.7.7
+
+	character = 232007 # King Baudouin II of Jerusalem
+	character = 232564 # Duke Thoros of Armenia Minor
+	character = 32905 # Caliph Al-Amir of Egypt
+	character = 93435 # Emir of Damascus
+	character = 34249 # Emir Timurtash of Aleppo
+	character = 231012 # Duke Joscelin of Edessa
+}
+
+bookmark =
+{
+	name = "BM_NOVGOROD"
+	desc = "BM_NOVGOROD_DESC"
+	date = 1136.1.2
+	
+	character = 125224
+}
+
+bookmark =
+{
+	name = "BM_KHITAN"
+	desc = "BM_KHITAN_DESC"
+	date = 1141.11.1
+	
+	character = 144119 # Ibrahaim (Qara-Khanid)
+	character = 144015 # Sanjar (Seljuks)
+	character = 125401 # Atrak (Cuman)
+}
+
+bookmark =
+{
+	name = "BM_ANARCHY"
+	desc = "BM_ANARCHY_DESC"
+	date = 1144.1.1
+
+	character = 205851
+	character = 204506
+}
+
+bookmark =
+{
+	name = "BM_ALMORAVID"
+	desc = "BM_ALMORAVID_DESC"
+	date = 1145.1.1
+
+	character = 209503
+	character = 207500
+	character = 70233
+	character = 215530
+	character = 216516
+	character = 231067
+}
+
+bookmark =
+{
+	name = "BM_SELJUK"
+	desc = "BM_SELJUK_DESC"
+	date = 1157.5.8
+
+	character = 144120
+	character = 144062
+	character = 144032
+	character = 144051
+	character = 93026
+	character = 93200
+	character = 144054
+	character = 93273
+	character = 144036
+	character = 144138
+	character = 93127
+}
+
+bookmark =
+{
+	name = "BM_KOMNENOS"
+	desc = "BM_KOMNENOS_DESC"
+	date = 1165.1.1
+
+	character = 215530
+	character = 219500
+	character = 219511
+}
+
+bookmark =
+{
+	name = "BM_SALADIN"
+	desc = "BM_SALADIN_DESC"
+	date = 1171.1.1
+
+	character = 226000
+	character = 223520
+	character = 144031
+	character = 223750
+}
+
+bookmark =
+{
+	name = "BM_SERBIA"
+	desc = "BM_SERBIA_DESC"
+	date = 1186.1.1
+
+	character = 218500
+	character = 217501
+	character = 215500
+	character = 215519
+	character = 225000
+	character = 219500
+}
+
+bookmark =
+{
+	name = "BM_IBERIA"
+	desc = "BM_IBERIA_DESC"
+	date = 1186.1.1
+
+	character = 209500
+	character = 208500
+	character = 207510
+	character = 210500
+	character = 206500
+	character = 32980
+}
+
+bookmark =
+{
+	name = "BM_THIRD_CRUSADE"
+	desc = "BM_THIRD_CRUSADE_DESC"
+	date = 1187.1.1
+	
+	character = 204500 # Henry II of England
+	character = 205506 # Philippe II Auguste of France
+	character = 223500 # Guy de Lusignan, King of Jerusalem
+	character = 212501 # Friedrich I of the HRE
+	character = 219500 # Hungary
+	character = 215500 # The Byzantine Empire
+	character = 226000 # Saladin
+}
+
+bookmark =
+{
+	name = "BM_SICILY"
+	desc = "BM_SICILY_DESC"
+	date = 1194.10.1
+
+	character = 204510
+	character = 205506
+	character = 212507
+}
+
+bookmark =
+{
+	name = "BM_THE_LATIN_EMPIRE"
+	desc = "BM_THE_LATIN_EMPIRE_DESC"
+	date = 1204.5.16
+	
+	character = 205523 # Baudouin I - Latin Empire
+	character = 215674 # Theodoros I - Byzantine Empire
+	character = 204514 # John I of England
+	character = 205506 # Philippe II of France
+	character = 209500 # Sancho I of Portugal
+	character = 34187 # Kilij Arslan III of Rum
+}
+
+bookmark =
+{
+	name = "BM_ALEXIOS"
+	desc = "BM_ALEXIOS_DESC"
+	date = 1205.1.1
+
+	character = 215519
+}
+
+bookmark =
+{
+	name = "BM_ANUSHTIGINID"
+	desc = "BM_ANUSHTIGINID_DESC"
+	date = 1212.1.1
+
+	character = 93052
+	character = 226052
+}
+
+bookmark =
+{
+	name = "BM_TURMOIL_IN_THE_EAST"
+	desc = "BM_TURMOIL_IN_THE_EAST_DESC"
+	date = 1219.1.1
+
+	character = 215514
+	character = 31211
+	character = 31337
+	character = 205526
+	character = 215674
+}
+
+bookmark =
+{
+	name = "BM_THE_MONGOLS"
+	desc = "BM_THE_MONGOLS_DESC"
+	date = 1220.2.1
+	
+	character = 125501 # Genghis Khan
+}
+
+bookmark =
+{
+	name = "BM_SCOURGE_OF_GOD"
+	desc = "BM_SCOURGE_OF_GOD_DESC"
+	date = 1227.12.2
+	
+	character = 125503 # Batu
+	character = 125520 # Tolui
+	character = 222588 # Vladimir of Kiev
+	character = 221570 # Wladyslaw III
+	character = 219502 # Andras of Hungary
+	character = 34028 # Caliph Al-Mustansir
+	character = 32924 # Al-Kamil Naser al-din
+}
+
+bookmark =
+{
+	name = "BM_RISE_OF_THE_HANSA"
+	desc = "BM_RISE_OF_THE_HANSA_DESC"
+	date = 1241.5.1
+	
+	character = 167219 # Heinrich Vorrade of the Hansa
+	character = 212513 # Friedrich II of the HRE
+	character = 125503 # Batu Khan
+	character = 478011 # Hulegu Khan
+}
+
+bookmark =
+{
+	name = "BM_LITHUANIA_FORMED"
+	desc = "BM_LITHUANIA_FORMED_DESC"
+	date = 1253.6.30
+
+	character = 125301
+}
+
+bookmark =
+{
+	name = "BM_PLANTAGENET"
+	desc = "BM_PLANTAGENET_DESC"
+	date = 1256.1.28
+
+	character = 232682
+	character = 454522
+	character = 30785
+	character = 96001
+}
+
+bookmark =
+{
+	name = "BM_LITHUANIA_ROMUVA"
+	desc = "BM_LITHUANIA_ROMUVA_DESC"
+	date = 1263.9.12
+
+	character = 125302
+}
+
+bookmark =
+{
+	name = "BM_LITHUANIA"
+	desc = "BM_LITHUANIA_DESC"
+	date = 1265.1.1
+
+	character = 125303
+	character = 125982
+	character = 98003
+	character = 31187
+	character = 125248
+}
+
+bookmark =
+{
+	name = "BM_MALI"
+	desc = "BM_MALI_DESC"
+	date = 1275.1.1
+
+	character = 161025
+}
+
+bookmark =
+{
+	name = "BM_HABSBURG"
+	desc = "BM_HABSBURG_DESC"
+	date = 1282.1.1
+
+	character = 462023
+	character = 462021
+	character = 455406
+}
+
+bookmark =
+{
+	name = "BM_NAPLES"
+	desc = "BM_NAPLES_DESC"
+	date = 1285.11.11
+
+	character = 461710
+	character = 460560
+	character = 71739
+	character = 455526
+}
+
+bookmark =
+{
+	name = "BM_ILKHANATE"
+	desc = "BM_ILKHANATE_DESC"
+	date = 1295.1.1
+
+	character = 125522
+}
+
+bookmark =
+{
+	name = "BM_POLAND"
+	desc = "BM_POLAND_DESC"
+	date = 1300.1.1
+
+	character = 96002
+	character = 462023
+}
+
+bookmark =
+{
+	name = "BM_OSMANS_DREAM"
+	desc = "BM_OSMANS_DREAM_DESC"
+	date = 1307.1.1
+
+	character = 476501 # Osman	
+	character = 465521 # Andronikos II Palaiologos
+	character = 71878 # Mahmud (Karamanids)
+	character = 465810 # Alexios II of Trebizond
+	character = 31193 # Theodora Svetoslav of Bulgaria
+}
+
+bookmark =
+{
+	name = "BM_FRACTURE"
+	desc = "BM_FRACTURE_DESC"
+	date = 1311.1.1
+
+	character = 465521
+	character = 476501
+	character = 71879
+	character = 476350
+	character = 71867
+	character = 71886
+	character = 71892
+	character = 71889
+	character = 71870
+	character = 138024
+	character = 461803
+	character = 31193
+	character = 468505
+	character = 461700
+	character = 125728
+	character = 461733
+}
+
+bookmark =
+{
+	name = "BM_GH"
+	desc = "BM_GH_DESC"
+	date = 1313.1.1
+
+	character = 480000
+}
+
+bookmark =
+{
+	name = "BM_SWEDEN"
+	desc = "BM_SWEDEN_DESC"
+	date = 1319.7.8
+
+	character = 450500
+}
+
+bookmark =
+{
+	name = "BM_ITALY"
+	desc = "BM_ITALY_DESC"
+	date = 1329.3.1
+
+	character = 461500
+	character = 461700
+	character = 460510
+	character = 462153
+	character = 463140
+	character = 412072
+	character = 463600
+	character = 70700
+}
+
+bookmark =
+{
+	name = "BM_100_YEARS_WAR"
+	desc = "BM_100_YEARS_WAR_DESC"
+	date = 1337.1.1
+	
+	character = 454500 # Edward III of England
+	character = 455500 # Philippe VI of France
+}
