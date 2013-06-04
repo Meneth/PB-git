@@ -48,7 +48,18 @@ plot_decisions = {
 					faction_power = 
 					{
 						faction = faction_succ_seniority
-						power = 0.75
+						power = 0.85
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 0.2
+				NOT = { 
+					faction_power = 
+					{
+						faction = faction_succ_seniority
+						power = 1.1
 					}
 				}
 			}
@@ -129,7 +140,18 @@ plot_decisions = {
 					faction_power = 
 					{
 						faction = faction_succ_primogeniture
-						power = 0.75
+						power = 0.85
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 0.2
+				NOT = { 
+					faction_power = 
+					{
+						faction = faction_succ_primogeniture
+						power = 1.1
 					}
 				}
 			}
@@ -215,7 +237,18 @@ plot_decisions = {
 					faction_power = 
 					{
 						faction = faction_succ_feudal_elective
-						power = 0.75
+						power = 0.85
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 0.2
+				NOT = { 
+					faction_power = 
+					{
+						faction = faction_succ_feudal_elective
+						power = 1.1
 					}
 				}
 			}
@@ -301,6 +334,17 @@ plot_decisions = {
 					{
 						faction = faction_succ_gavelkind
 						power = 0.75
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 0.2
+				NOT = { 
+					faction_power = 
+					{
+						faction = faction_succ_gavelkind
+						power = 1.1
 					}
 				}
 			}
@@ -616,6 +660,17 @@ plot_decisions = {
 					{
 						faction = faction_claimant
 						power = 0.75
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 0.2
+				NOT = { 
+					faction_power = 
+					{
+						faction = faction_claimant
+						power = 1.1
 					}
 				}
 			}
