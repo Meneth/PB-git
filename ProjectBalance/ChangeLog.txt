@@ -1,3 +1,13 @@
+3.2.9
+	Tweaked the color of Crimea to make it less similar to Poland
+	If the Bulgarian Empire is formed normally rather than through the Byzantine events, it'll gain its proper dejure area
+	Norse characters can now form Britannia
+	Fixed one bug with hiding from besieging armies
+	Fixed Iceland not being a republic in most start dates before its annexation by Norway (note: not being a merchant republic in 867 is intended)
+	Halved the base retinue from castles
+	Pagans and Zoroastrians now have random CoAs, since the defined CoAs often only make sense for Christians
+	The Pagan County Conquest CB now counts as a holy war, thus letting characters of the same religion as the target join in defense
+
 3.2.8
 	Ensured traitors can be executed
 	The center of trade buildings now directly give tech points
