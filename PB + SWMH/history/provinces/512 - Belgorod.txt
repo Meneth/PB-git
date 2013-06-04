@@ -1,0 +1,30 @@
+# 512 - Belgorod
+
+# County Title
+title = c_belgorod
+
+# Settlements
+max_settlements = 5
+
+b_tighina = castle
+b_chisinau = city
+#b_scheia = castle
+#b_slobozia = castle
+#b_vasluimoldavia  = castle
+#b_dobrovat = temple
+#b_husimoldavia = city
+#b_causeni = castle
+#b_lapusnei = castle
+
+
+
+# Misc
+culture = romanian
+religion = tengri_pagan
+
+# History
+
+1187.1.1 = { b_scheia = castle } 
+
+
+ 

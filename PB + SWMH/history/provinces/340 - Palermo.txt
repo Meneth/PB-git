@@ -1,0 +1,55 @@
+# 340 - Palermo
+
+# County Title
+title = c_palermo
+
+# Settlements
+max_settlements = 7
+
+
+b_misilmeri = castle
+b_palermo = city
+b_monreale = temple
+b_mistretta = castle
+b_campofelicedifitalia = castle
+#b_collesano = city
+#b_carini = castle
+#b_petralia = castle
+#b_castiddubbuonu = castle
+#b_altofonte = temple
+#b_casalearianum = castle
+#b_zisa = castle
+#b_castellodellacuba = castle
+#b_ypsigro = city
+#b_molla = castle
+#b_cefalu = temple #Cefalù
+#b_gratteri = temple
+#b_caltavuturo = castle
+
+# Misc
+culture = maghreb_arabic
+religion = sunni
+
+# History
+1066.1.1 = { 
+	b_palermo = ct_trade_post_1
+	b_palermo = ct_trade_post_2
+	b_palermo = ct_wall_1
+	b_palermo = ct_wall_2
+	b_palermo = ct_marketplace_1
+	b_palermo = ct_marketplace_2
+	b_palermo = ct_marketplace_3
+	b_palermo = ct_wall_q_1
+	b_palermo = ct_barracks_1
+	b_palermo = ct_training_grounds_1
+	b_misilmeri = ca_keep_1
+	b_misilmeri = ca_stable_1
+	b_misilmeri = ca_militia_barracks_1
+	b_misilmeri = ca_wall_1
+}
+
+1072.1.1={ culture = sicilian }
+1072.1.1={ religion = catholic }
+1081.1.1 = { trade_post = b_visconti }
+1285.1.1 = { trade_post = b_embriaco }
+1337.1.1 = { b_cefalu = temple }

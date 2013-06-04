@@ -1,0 +1,282 @@
+imperial_reconquest = {
+	name = CB_NAME_IMPERIAL
+	war_name = WAR_NAME_IMPERIAL
+	sprite = 17
+	truce_days = 3650
+	is_permanent = yes
+	check_de_jure_tier = DUKE # this scans all dejure duchies for the counties which are held by or vassals(or below) of selected character. Only valid if is_permanent = yes
+
+	can_use = {
+		ROOT = {
+			OR = {
+				has_landed_title = e_byzantium
+				has_landed_title = e_roman_empire
+			}
+			independent = yes
+			religion_group = christian
+			NOT = { same_realm = FROM }
+			prestige = 500
+			NOT = { trait = content }
+			NOT = { trait = craven }
+			NOT = { trait = slothful }
+			NOT = { trait = stressed }
+			NOT = { trait = depressed }
+			NOT = { trait = infirm }
+			NOT = { trait = incapable }
+			NOT = { trait = blinded }
+			OR = {
+				trait = ambitious
+				trait = brave
+				trait = lunatic
+				trait = possessed
+				trait = wroth
+				trait = diligent
+			}
+		}
+		OR = {
+			NOT = { has_global_flag = rum_formed }
+			had_global_flag = { flag = rum_formed days = 5475 }
+		}
+	}
+
+	can_use_title = {
+		OR = {
+			AND = {
+				OR = {
+					de_jure_liege_or_above = k_greece
+					de_jure_liege_or_above = k_anatolia
+					de_jure_liege_or_above = k_nikaea
+					de_jure_liege_or_above = k_epirus
+					de_jure_liege_or_above = k_trebizond
+					de_jure_liege_or_above = k_cilician
+					de_jure_liege_or_above = k_rum
+				}
+			}
+			AND = {
+				OR = {
+					de_jure_liege_or_above = k_serbia
+					de_jure_liege_or_above = k_bulgaria
+					de_jure_liege_or_above = k_armenia
+					de_jure_liege_or_above = k_cyprus
+					de_jure_liege_or_above = d_antioch
+				}
+				ROOT = {
+					completely_controls = k_greece
+					completely_controls = k_anatolia
+					completely_controls = k_nikaea
+					completely_controls = k_epirus
+					completely_controls = k_trebizond
+					completely_controls = k_cilician
+
+				}
+			}
+			AND = {
+				OR = {
+					de_jure_liege_or_above = k_sicily
+					de_jure_liege_or_above = k_antioch
+					de_jure_liege_or_above = k_sardinia
+
+				}
+				ROOT = {
+					completely_controls = e_byzantium
+					completely_controls = k_serbia
+					completely_controls = d_antioch
+				}
+			}
+			AND = {
+				OR = {
+					de_jure_liege_or_above = k_croatia
+					de_jure_liege_or_above = k_bosnia
+				}
+				ROOT = {
+					completely_controls = e_byzantium
+					completely_controls = k_serbia
+					completely_controls = k_sicily
+					completely_controls = k_antioch
+					completely_controls = k_sardinia
+				}
+			}
+			AND = {
+				OR = {
+					de_jure_liege_or_above = k_italy
+					de_jure_liege_or_above = k_patrimoniumpetri
+					de_jure_liege_or_above = k_venice
+					de_jure_liege_or_above = k_syria
+					de_jure_liege_or_above = k_jerusalem
+					de_jure_liege_or_above = k_egypt
+				}
+				ROOT = {
+					completely_controls = e_byzantium
+					completely_controls = k_serbia
+					completely_controls = k_sicily
+					completely_controls = k_antioch
+					completely_controls = k_bosnia
+					completely_controls = k_croatia
+					completely_controls = k_sardinia
+				}
+			}
+			AND = {
+				OR = {
+					de_jure_liege_or_above = e_africa
+					de_jure_liege_or_above = e_iberia
+				}
+				ROOT = {
+					completely_controls = e_byzantium
+					completely_controls = e_italy
+					completely_controls = k_antioch
+					completely_controls = k_bosnia
+					completely_controls = k_croatia
+					completely_controls = k_serbia
+					completely_controls = k_egypt
+					completely_controls = k_syria
+					completely_controls = k_jerusalem
+				}
+			}
+			AND = {
+				OR = {
+					de_jure_liege_or_above = e_france
+				}
+				ROOT = {
+					completely_controls = e_byzantium
+					completely_controls = e_iberia
+					completely_controls = e_africa
+					completely_controls = e_italy
+					completely_controls = k_antioch
+					completely_controls = k_bosnia
+					completely_controls = k_croatia
+					completely_controls = k_serbia
+					completely_controls = k_egypt
+					completely_controls = k_syria
+					completely_controls = k_jerusalem
+				}
+			}
+			AND = {
+				OR = {
+					de_jure_liege_or_above = k_england
+					de_jure_liege_or_above = k_wales
+					de_jure_liege_or_above = k_wallachia
+					de_jure_liege_or_above = k_aljazira
+					de_jure_liege_or_above = k_bavaria
+					de_jure_liege_or_above = k_germany
+					de_jure_liege_or_above = k_carinthia
+					de_jure_liege_or_above = k_lower_lorraine
+					de_jure_liege_or_above = k_upper_lorraine
+					title = d_brabant
+				}
+				ROOT = {
+					completely_controls = e_byzantium
+					completely_controls = e_france
+					completely_controls = e_iberia
+					completely_controls = e_africa
+					completely_controls = e_italy
+					completely_controls = k_antioch
+					completely_controls = k_bosnia
+					completely_controls = k_croatia
+					completely_controls = k_serbia
+					completely_controls = k_egypt
+					completely_controls = k_syria
+					completely_controls = k_jerusalem
+				}
+			}
+		}
+	}
+	
+	is_valid = {
+		ROOT = {
+			OR = {
+				has_landed_title = e_byzantium
+				has_landed_title = e_roman_empire
+			}
+			independent = yes
+			religion_group = christian
+			NOT = { same_realm = FROM }
+		}
+	}
+	
+	on_success = {
+		any_attacker = {
+			limit = { character = ROOT }
+			participation_scaled_prestige = 100
+		}
+		any_attacker = {
+			limit = { NOT = { character = ROOT } }
+			hidden_tooltip = { 
+				participation_scaled_prestige = 100
+			}
+		}
+		
+		FROM = { prestige = -100 }
+	}
+
+	on_success_title = {
+		custom_tooltip = tribal_invasion_succ_tip
+		hidden_tooltip = {
+			ROOT = {
+				vassalize_or_take_under_title = {
+					title = PREV
+					enemy = FROM
+				}
+			}
+		}
+		if = {
+			limit = {
+				holder_scope = { character = FROM }
+			}
+			usurp_title_only = ROOT
+		}
+	}
+
+	on_fail = {
+		ROOT = { prestige = -150 }
+	}
+
+	on_reverse_demand = {
+		ROOT = {
+			transfer_scaled_wealth = {
+				to = FROM
+				value = 4.0
+			}
+			ROOT = { prestige = -200 }
+		}
+		any_defender = {
+			limit = { character = FROM }
+			participation_scaled_piety = 100
+			participation_scaled_prestige = 200
+			if = {
+				limit = {
+					religion_group = muslim
+				}
+				participation_scaled_decadence = -10
+			}
+		}
+		any_defender = {
+			limit = { NOT = { character = FROM } }
+			hidden_tooltip = { 
+				participation_scaled_piety = 100
+				participation_scaled_prestige = 200
+				if = {
+					limit = {
+						religion_group = muslim
+					}
+					participation_scaled_decadence = -10
+				}
+			}
+		}
+	}
+
+	attacker_ai_victory_worth = {
+		factor = -1 # always accept
+	}
+	
+	attacker_ai_defeat_worth = {
+		factor = 100
+	}
+
+	defender_ai_victory_worth = {
+		factor = -1 # always accept
+	}
+	
+	defender_ai_defeat_worth = {
+		factor = 100
+	}
+}

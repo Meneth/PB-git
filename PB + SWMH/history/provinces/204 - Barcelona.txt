@@ -1,0 +1,44 @@
+# 204 - Barcelona
+
+# County Title
+title = c_barcelona
+
+# Settlements
+max_settlements = 6
+b_barcelona = castle
+b_manresa = city
+b_vich = temple
+b_osona = castle
+#b_cardona = castle
+#b_sant_cugat = temple
+#b_montcada = castle
+#b_penedes = castle
+#b_solsona = castle
+
+# Misc
+culture = catalan
+religion = catholic
+
+# History
+
+1066.1.1 = { 
+	trade_post = b_fieschi
+	b_manresa = ct_trade_post_1
+	b_manresa = ct_trade_post_2
+	b_montcada = ca_town_1
+	b_montcada = ca_keep_1
+	b_montcada = ca_stable_1
+	b_montcada = ca_militia_barracks_1
+	b_montcada = ca_wall_1
+	b_montcada = ca_wall_2
+	b_montcada = ca_barracks_1
+	b_osona = ca_town_1
+	b_osona = ca_keep_1
+	b_osona = ca_stable_1
+	b_osona = ca_militia_barracks_1
+	b_osona = ca_wall_1
+	b_osona = ca_wall_2
+	b_osona = ca_barracks_1
+}
+
+

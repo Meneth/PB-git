@@ -1,0 +1,31 @@
+# 1148 - Targujiu
+
+# County Title
+title = c_targujiu
+
+# Settlements
+max_settlements = 4
+
+b_valcan = castle
+b_targujiu = city
+b_tismana = temple
+
+#b_visina = temple
+#b_polovragi = temple
+#b_govora = temple
+#b_cozia = temple
+#b_castrulcopaceni = castle
+#b_turnullunidoanca = castle
+#b_ocna = city
+#b_baiadaarma = city
+
+
+
+
+# Misc
+culture = romanian
+religion = tengri_pagan
+
+# History
+
+

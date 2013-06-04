@@ -1,0 +1,30 @@
+# 516 - Severin
+
+# County Title
+title = c_severin
+
+# Settlements
+max_settlements = 5
+
+b_gradet = castle
+b_severin = city
+b_craiova = city
+
+#b_vodita = temple
+#b_secui = castle
+#b_calafat = castle
+#b_bistritaseverin = city
+#b_corabia = city
+#b_hotarani = castle
+#b_caracal = city
+#b_bals = castle
+
+
+
+# Misc
+culture = romanian
+religion = tengri_pagan
+
+# History
+
+

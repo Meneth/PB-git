@@ -1,0 +1,21 @@
+# 1084 - Utik
+
+# County Title
+title = c_utik
+
+# Settlements
+ max_settlements = 3
+b_parisos = castle
+b_tavush = city
+b_khoranashat = temple
+#b_shamkhor = castle
+#b_matsnaberd = castle
+#b_arenatssar = temple
+#b_khamshi = temple
+ 
+
+# Misc
+culture = persian
+religion = sunni
+
+# History

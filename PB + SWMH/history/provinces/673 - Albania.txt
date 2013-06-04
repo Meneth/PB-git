@@ -1,0 +1,24 @@
+# 673 - Albania
+
+# County Title
+title = c_albania
+
+# Settlements
+ max_settlements = 3
+b_barda = castle 
+b_kaghankatuyk = city
+b_gish = temple
+#b_baylakan = castle
+#b_ganja = castle
+#b_kabala = castle
+#b_martakert = castle
+#b_aghuen = temple
+ 
+
+# Misc
+culture = persian
+religion = sunni
+
+# History
+1187.1.1 = { b_barda = castle }
+1320.1.1 = { religion = shiite }

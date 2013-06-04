@@ -1,0 +1,21 @@
+# 1096 - Sarir
+
+# County Title
+title = c_sarir
+
+# Settlements
+ max_settlements = 3
+b_humraj = castle
+b_arakul = city
+b_vachi = temple
+#b_balanjar = castle
+#b_khasavyurt = castle
+#b_khunzakh = city
+#b_albana = castle
+#b_manas = castle
+ 
+# Misc
+culture = persian
+religion = sunni
+
+# History

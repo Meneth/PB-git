@@ -1,0 +1,31 @@
+# 733 - Aleppo
+
+# County Title
+title = c_aleppo
+
+# Settlements
+max_settlements = 6
+
+b_aleppocastle = castle
+b_aleppo = city
+b_qinnasrin = city
+b_khanasir = temple
+#b_sarmin = castle
+#b_buzaa = city
+#b_alsafira = city
+#b_zardana = city
+
+
+# Misc
+culture = levantine_arabic
+religion = sunni
+
+# History
+1066.1.1 = {
+	b_aleppo = ct_trade_post_1
+	b_aleppo = ct_trade_post_2
+}
+
+1110.1.1 = { b_sarmin = castle } 
+
+

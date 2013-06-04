@@ -1,0 +1,22 @@
+# 2 - Austisland
+
+# County Title
+title = c_austisland
+
+# Settlements
+max_settlements = 1
+
+b_seydifsjord = city
+#b_glaumbaer = castle
+
+
+
+
+# Misc
+culture = norwegian
+religion = catholic
+
+# History
+
+
+1066.1.1 = { trade_post = b_haukdaelur }

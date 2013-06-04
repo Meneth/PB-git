@@ -1,0 +1,1096 @@
+###################################
+#
+# Culture Events
+#
+# Id meneth.0 to meneth.99 is reserved
+#
+#
+###################################
+
+namespace = meneth
+#Rulers' culture changed to that of his capital
+character_event = {
+	id = meneth.0
+	desc = "meneth.0.desc"
+	picture = "GFX_evt_throne_room"
+	
+	only_rulers = yes
+	
+	trigger = {
+		capital_scope = {
+			NOT = { culture = ROOT }
+			religion = ROOT
+		}
+		#These setups use melting pot events instead
+		NOT = {
+			AND = {
+				culture_group = celtic
+				capital_scope = { culture_group = north_germanic }
+			}
+		}
+		NOT = {
+			AND = {
+				culture = norman
+				capital_scope = {
+					OR = {
+						culture = central_italian
+						culture = southern_italian
+						culture = langobardisch
+						culture = greek
+					}
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.5
+			capital_scope = {
+				culture_group = ROOT
+			}
+		}
+		modifier = {
+			factor = 0.75
+			primary_title = {
+				tier = count
+			}
+		}
+		modifier = {
+			factor = 0.25
+			primary_title = {
+				tier = baron
+			}
+		}
+		modifier = {
+			factor = 2
+			primary_title = {
+				tier = duke
+			}
+		}
+		modifier = {
+			factor = 5
+			primary_title = {
+				OR = {
+					tier = king
+					tier = emperor
+				}
+			}
+		}
+		modifier = {
+			factor = 0.75
+			NOT = { age = 10 }
+		}
+		modifier = {
+			factor = 1.1
+			age = 10
+		}
+		modifier = {
+			factor = 1.1
+			age = 16
+		}
+		modifier = {
+			factor = 1.2
+			age = 20
+		}
+		modifier = {
+			factor = 1.35
+			age = 30
+		}
+		modifier = {
+			factor = 1.5
+			age = 40
+		}
+		modifier = {
+			factor = 2
+			age = 50
+		}
+		modifier = {
+			factor = 2
+			age = 60
+		}
+		modifier = {
+			factor = 0.75
+			NOT = {
+				capital_scope = {
+					any_neighbor_province = {
+						culture = ROOT
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			is_patrician = yes
+		}
+	}
+	
+	option = {
+		name = "meneth.0.a"
+		ai_chance = { factor = 100 }
+		any_child = {
+			limit = {
+				dynasty = ROOT
+				NOT = { age = 16 }
+			}
+			ROOT = {
+				capital_scope = {
+					reverse_culture = PREVPREV
+					reverse_culture = ROOT
+				}
+			}
+		}
+	}
+	option = {
+		name = "meneth.0.b"
+	}
+}
+
+character_event = {
+	id = meneth.1
+	desc = "meneth.1.desc"
+	picture = "GFX_evt_throne_room"
+	
+	max_age = 1
+	
+	trigger = {
+		is_ruler = no
+		location = {
+			NOT = { culture = ROOT }
+			religion = ROOT
+		}
+		#These setups use melting pot events instead
+		NOT = {
+			AND = {
+				culture_group = north_germanic
+				location = { culture_group = celtic }
+			}
+		}
+		NOT = {
+			AND = {
+				culture = norman
+				location = {
+					OR = {
+						culture = central_italian
+						culture = southern_italian
+						culture = langobardisch
+						culture = greek
+					}
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 150
+		modifier = {
+			factor = 0.5
+			location = {
+				culture_group = ROOT
+			}
+		}
+		modifier = {
+			factor = 0.5
+			OR = {
+				AND = {
+					father = {
+						primary_title = {
+							NOT = { tier = duke }
+							NOT = { tier = king }
+							NOT = { tier = emperor }
+						}
+					}
+					mother = {
+						primary_title = {
+							NOT = { tier = duke }
+							NOT = { tier = king }
+							NOT = { tier = emperor }
+						}
+					}
+				}
+				AND = {
+					mother = {
+						primary_title = {
+							NOT = { tier = duke }
+							NOT = { tier = king }
+							NOT = { tier = emperor }
+						}
+					}
+					father = {
+						primary_title = {
+							NOT = { tier = duke }
+							NOT = { tier = king }
+							NOT = { tier = emperor }
+						}
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				father = {
+					primary_title = {
+						OR = {
+							tier = king
+							tier = emperor
+						}
+					}
+				}
+				mother = {
+					primary_title = {
+						OR = {
+							tier = king
+							tier = emperor
+						}
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				is_patrician = yes
+				father_even_if_dead = {
+					is_patrician = yes
+				}
+				mother = {
+					is_patrician = yes
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "meneth.1.a"
+		ai_chance = { factor = 100 }
+		location = {
+			reverse_culture = ROOT
+		}
+	}
+	option = {
+		name = "meneth.1.b"
+	}
+}
+
+#Ruler melting pot event for Norse-Gael
+character_event = {
+	id = meneth.2
+	desc = "meneth.0.desc"
+	picture = "GFX_evt_throne_room"
+	
+	only_rulers = yes
+	
+	trigger = {
+		culture_group = north_germanic
+		capital_scope = {
+			culture_group = celtic
+			NOT = { culture = norsegaelicic }
+			religion = ROOT
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 200
+		modifier = {
+			factor = 0.75
+			primary_title = {
+				tier = count
+			}
+		}
+		modifier = {
+			factor = 0.25
+			primary_title = {
+				tier = baron
+			}
+		}
+		modifier = {
+			factor = 2
+			primary_title = {
+				tier = duke
+			}
+		}
+		modifier = {
+			factor = 5
+			primary_title = {
+				OR = {
+					tier = king
+					tier = emperor
+				}
+			}
+		}
+		modifier = {
+			factor = 0.75
+			NOT = { age = 10 }
+		}
+		modifier = {
+			factor = 1.1
+			age = 10
+		}
+		modifier = {
+			factor = 1.1
+			age = 16
+		}
+		modifier = {
+			factor = 1.2
+			age = 20
+		}
+		modifier = {
+			factor = 1.35
+			age = 30
+		}
+		modifier = {
+			factor = 1.5
+			age = 40
+		}
+		modifier = {
+			factor = 2
+			age = 50
+		}
+		modifier = {
+			factor = 2
+			age = 60
+		}
+		modifier = {
+			factor = 0.75
+			NOT = {
+				capital_scope = {
+					any_neighbor_province = {
+						culture = ROOT
+					}
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "meneth.0.a"
+		ai_chance = { factor = 100 }
+		culture = norsegaelic
+		any_child = {
+			limit = {
+				dynasty = ROOT
+				NOT = { age = 16 }
+			}
+			culture = norsegaelic
+		}
+	}
+	option = {
+		name = "meneth.0.b"
+	}
+}
+
+character_event = {
+	id = meneth.3
+	desc = "meneth.1.desc"
+	picture = "GFX_evt_throne_room"
+	
+	max_age = 1
+	
+	trigger = {
+		is_ruler = no
+		culture_group = north_germanic
+		location = {
+			culture_group = celtic
+			NOT = { culture = norsegaelicic }
+			religion = ROOT
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 50
+		modifier = {
+			factor = 0.5
+			OR = {
+				AND = {
+					father = {
+						primary_title = {
+							NOT = { tier = duke }
+							NOT = { tier = king }
+							NOT = { tier = emperor }
+						}
+					}
+					mother = {
+						primary_title = {
+							NOT = { tier = duke }
+							NOT = { tier = king }
+							NOT = { tier = emperor }
+						}
+					}
+				}
+				AND = {
+					mother = {
+						primary_title = {
+							NOT = { tier = duke }
+							NOT = { tier = king }
+							NOT = { tier = emperor }
+						}
+					}
+					father = {
+						primary_title = {
+							NOT = { tier = duke }
+							NOT = { tier = king }
+							NOT = { tier = emperor }
+						}
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				father = {
+					primary_title = {
+						OR = {
+							tier = king
+							tier = emperor
+						}
+					}
+				}
+				mother = {
+					primary_title = {
+						OR = {
+							tier = king
+							tier = emperor
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "meneth.1.a"
+		ai_chance = { factor = 100 }
+		culture = norsegaelic
+	}
+	option = {
+		name = "meneth.1.b"
+	}
+}
+
+# Norse-Gael melting pot (bordering province)
+province_event = {
+	id = meneth.4
+	desc = "EVTDESC55000"
+	picture = GFX_evt_throne_room
+	
+	trigger = {
+		culture_group = celtic
+		NOT = { culture = norsegaelicic }
+		owner = {
+			culture_group = north_germanic
+		}
+		any_neighbor_province = {
+			owner = { culture_group = PREV }
+			ROOT = {
+				owner = { culture_group = PREVPREV }
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 500
+
+		modifier = {
+			factor = 0.75
+			port = yes
+		}
+		modifier = {
+			factor = 0.4
+			NOT = {
+				any_neighbor_province = { culture = ROOT }
+			}
+		}
+		modifier = {
+			factor = 1.5
+			owner = { NOT = { stewardship = 2 }}
+		}
+		modifier = {
+			factor = 1.5
+			owner = { NOT = { stewardship = 3 }}
+		}
+		modifier = {
+			factor = 1.5
+			owner = { NOT = { stewardship = 4 }}
+		}
+		modifier = {
+			factor = 1.5
+			owner = { NOT = { stewardship = 5 }}
+		}
+		modifier = {
+			factor = 0.75
+			owner = { stewardship = 10 }
+		}
+		modifier = {
+			factor = 0.75
+			owner = { stewardship = 11 }
+		}
+		modifier = {
+			factor = 0.75
+			owner = { stewardship = 12 }
+		}
+		modifier = {
+			factor = 0.75
+			owner = { stewardship = 13 }
+		}
+		modifier = {
+			factor = 0.75
+			owner = {
+				OR = {
+					primary_title = {
+						conquest_culture = PREV
+					}
+					ROOT = {
+						county = {
+							conquest_culture = PREVPREV
+						}
+					}
+					ROOT = {
+						duchy = {
+							holder_scope = {
+								character = PREVPREVPREV
+							}
+							conquest_culture = PREVPREV
+						}
+					}
+					ROOT = {
+						kingdom = {
+							holder_scope = {
+								character = PREVPREVPREV
+							}
+							conquest_culture = PREVPREV
+						}
+					}
+					ROOT = {
+						empire = {
+							holder_scope = {
+								character = PREVPREVPREV
+							}
+							conquest_culture = PREVPREV
+						}
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTA55000"
+		culture = norsegaelic
+	}
+}
+
+# Norse-Gael melting pot (port)
+province_event = {
+	id = meneth.5
+	desc = "EVTDESC55001"
+	picture = GFX_evt_carriage
+	
+	trigger = {
+		culture_group = celtic
+		NOT = { culture = norsegaelicic }
+		owner = {
+			culture_group = north_germanic
+			top_liege = {
+				culture_group = PREV
+				any_realm_province = {
+					port = yes
+					culture_group = PREV
+				}
+			}
+		}
+		port = yes
+		
+		NOT = { # Exclude provinces covered by event meneth.4
+			any_neighbor_province = {
+				culture_group = north_germanic
+				owner = {
+					culture_group = north_germanic
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 600
+
+		modifier = {
+			factor = 1.5
+			owner = { NOT = { stewardship = 2 }}
+		}
+		modifier = {
+			factor = 1.5
+			owner = { NOT = { stewardship = 3 }}
+		}
+		modifier = {
+			factor = 1.5
+			owner = { NOT = { stewardship = 4 }}
+		}
+		modifier = {
+			factor = 1.5
+			owner = { NOT = { stewardship = 5 }}
+		}
+		modifier = {
+			factor = 0.75
+			owner = { stewardship = 10 }
+		}
+		modifier = {
+			factor = 0.75
+			owner = { stewardship = 11}
+		}
+		modifier = {
+			factor = 0.75
+			owner = { stewardship = 12 }
+		}
+		modifier = {
+			factor = 0.75
+			owner = { stewardship = 13 }
+		}
+	}
+
+	option = {
+		name = "EVTOPTA55001"
+		culture = norsegaelic
+	}
+}
+
+# Sicilian melting pot (bordering province)
+province_event = {
+	id = meneth.6
+	desc = "EVTDESC55000"
+	picture = GFX_evt_throne_room
+	
+	trigger = {
+		OR = {
+			culture = southern_italian
+			culture = central_italian
+			culture = langobardisch
+			culture = greek
+		}
+		owner = {
+			OR = {
+				culture = norman
+				culture = sicilian
+			}
+		}
+		any_neighbor_province = {
+			owner = { culture = PREV }
+			ROOT = {
+				owner = { culture = PREVPREV }
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 600
+
+		modifier = {
+			factor = 0.75
+			port = yes
+		}
+		modifier = {
+			factor = 0.4
+			NOT = {
+				any_neighbor_province = { culture = ROOT }
+			}
+		}
+		modifier = {
+			factor = 1.5
+			owner = { NOT = { stewardship = 2 }}
+		}
+		modifier = {
+			factor = 1.5
+			owner = { NOT = { stewardship = 3 }}
+		}
+		modifier = {
+			factor = 1.5
+			owner = { NOT = { stewardship = 4 }}
+		}
+		modifier = {
+			factor = 1.5
+			owner = { NOT = { stewardship = 5 }}
+		}
+		modifier = {
+			factor = 0.75
+			owner = { stewardship = 10 }
+		}
+		modifier = {
+			factor = 0.75
+			owner = { stewardship = 11 }
+		}
+		modifier = {
+			factor = 0.75
+			owner = { stewardship = 12 }
+		}
+		modifier = {
+			factor = 0.75
+			owner = { stewardship = 13 }
+		}
+		modifier = {
+			factor = 0.75
+			owner = {
+				OR = {
+					primary_title = {
+						conquest_culture = PREV
+					}
+					ROOT = {
+						county = {
+							conquest_culture = PREVPREV
+						}
+					}
+					ROOT = {
+						duchy = {
+							holder_scope = {
+								character = PREVPREVPREV
+							}
+							conquest_culture = PREVPREV
+						}
+					}
+					ROOT = {
+						kingdom = {
+							holder_scope = {
+								character = PREVPREVPREV
+							}
+							conquest_culture = PREVPREV
+						}
+					}
+					ROOT = {
+						empire = {
+							holder_scope = {
+								character = PREVPREVPREV
+							}
+							conquest_culture = PREVPREV
+						}
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 0.5
+			k_sicily = {
+				OR = {
+					holder_scope = { culture = norman }
+					holder_scope = { culture = sicilian }
+				}
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTA55000"
+		culture = sicilian
+	}
+}
+
+# Sicilian melting pot (port)
+province_event = {
+	id = meneth.7
+	desc = "EVTDESC55001"
+	picture = GFX_evt_carriage
+	
+	trigger = {
+		OR = {
+			culture = southern_italian
+			culture = central_italian
+			culture = langobardisch
+			culture = greek
+		}
+		owner = {
+			OR = {
+				culture = norman
+				culture = sicilian
+			}
+			top_liege = {
+				OR = {
+					culture = norman
+					culture = sicilian
+				}
+			}
+		}
+		port = yes
+		
+		NOT = { # Exclude provinces covered by event meneth.6
+			any_neighbor_province = {
+				culture = norman
+				owner = {
+					culture = norman
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 800
+
+		modifier = {
+			factor = 1.5
+			owner = { NOT = { stewardship = 2 }}
+		}
+		modifier = {
+			factor = 1.5
+			owner = { NOT = { stewardship = 3 }}
+		}
+		modifier = {
+			factor = 1.5
+			owner = { NOT = { stewardship = 4 }}
+		}
+		modifier = {
+			factor = 1.5
+			owner = { NOT = { stewardship = 5 }}
+		}
+		modifier = {
+			factor = 0.75
+			owner = { stewardship = 10 }
+		}
+		modifier = {
+			factor = 0.75
+			owner = { stewardship = 11}
+		}
+		modifier = {
+			factor = 0.75
+			owner = { stewardship = 12 }
+		}
+		modifier = {
+			factor = 0.75
+			owner = { stewardship = 13 }
+		}
+		modifier = {
+			factor = 0.5
+			k_sicily = {
+				OR = {
+					holder_scope = { culture = norman }
+					holder_scope = { culture = sicilian }
+				}
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTA55001"
+		culture = sicilian
+	}
+}
+
+#Ruler melting pot event for Sicilian
+character_event = {
+	id = meneth.8
+	desc = "meneth.0.desc"
+	picture = "GFX_evt_throne_room"
+	
+	only_rulers = yes
+	
+	trigger = {
+		culture = norman
+		capital_scope = {
+			OR = {
+				culture = southern_italian
+				culture = central_italian
+				culture = langobardisch
+				culture = greek
+			}
+			religion = ROOT
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 200
+		modifier = {
+			factor = 0.75
+			primary_title = {
+				tier = count
+			}
+		}
+		modifier = {
+			factor = 0.25
+			primary_title = {
+				tier = baron
+			}
+		}
+		modifier = {
+			factor = 2
+			primary_title = {
+				tier = duke
+			}
+		}
+		modifier = {
+			factor = 5
+			primary_title = {
+				OR = {
+					tier = king
+					tier = emperor
+				}
+			}
+		}
+		modifier = {
+			factor = 0.75
+			NOT = { age = 10 }
+		}
+		modifier = {
+			factor = 1.1
+			age = 10
+		}
+		modifier = {
+			factor = 1.1
+			age = 16
+		}
+		modifier = {
+			factor = 1.2
+			age = 20
+		}
+		modifier = {
+			factor = 1.35
+			age = 30
+		}
+		modifier = {
+			factor = 1.5
+			age = 40
+		}
+		modifier = {
+			factor = 2
+			age = 50
+		}
+		modifier = {
+			factor = 2
+			age = 60
+		}
+		modifier = {
+			factor = 0.75
+			NOT = {
+				capital_scope = {
+					any_neighbor_province = {
+						culture = ROOT
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 0.5
+			k_sicily = {
+				OR = {
+					holder_scope = { culture = norman }
+					holder_scope = { culture = sicilian }
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "meneth.0.a"
+		ai_chance = { factor = 100 }
+		culture = sicilian
+		any_child = {
+			limit = {
+				dynasty = ROOT
+				NOT = { age = 16 }
+			}
+			culture = sicilian
+		}
+	}
+	option = {
+		name = "meneth.0.b"
+	}
+}
+
+character_event = {
+	id = meneth.9
+	desc = "meneth.1.desc"
+	picture = "GFX_evt_throne_room"
+	
+	max_age = 1
+	
+	trigger = {
+		is_ruler = no
+		culture = norman
+		location = {
+			OR = {
+				culture = southern_italian
+				culture = central_italian
+				culture = langobardisch
+				culture = greek
+			}
+			religion = ROOT
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 50
+		modifier = {
+			factor = 0.5
+			OR = {
+				AND = {
+					father = {
+						primary_title = {
+							NOT = { tier = duke }
+							NOT = { tier = king }
+							NOT = { tier = emperor }
+						}
+					}
+					mother = {
+						primary_title = {
+							NOT = { tier = duke }
+							NOT = { tier = king }
+							NOT = { tier = emperor }
+						}
+					}
+				}
+				AND = {
+					mother = {
+						primary_title = {
+							NOT = { tier = duke }
+							NOT = { tier = king }
+							NOT = { tier = emperor }
+						}
+					}
+					father = {
+						primary_title = {
+							NOT = { tier = duke }
+							NOT = { tier = king }
+							NOT = { tier = emperor }
+						}
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				father = {
+					primary_title = {
+						OR = {
+							tier = king
+							tier = emperor
+						}
+					}
+				}
+				mother = {
+					primary_title = {
+						OR = {
+							tier = king
+							tier = emperor
+						}
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 0.5
+			k_sicily = {
+				OR = {
+					holder_scope = { culture = norman }
+					holder_scope = { culture = sicilian }
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "meneth.1.a"
+		ai_chance = { factor = 100 }
+		culture = sicilian
+	}
+	option = {
+		name = "meneth.1.b"
+	}
+}

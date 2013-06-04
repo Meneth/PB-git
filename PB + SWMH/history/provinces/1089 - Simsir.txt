@@ -1,0 +1,21 @@
+# 1089 - Simsir
+
+# County Title
+title = c_simsir
+
+# Settlements
+ max_settlements = 3
+b_vovnushki = castle
+b_nikaroi = city
+b_tkhabayerdy = temple
+#b_bekhaila = castle
+#b_erzi = castle
+#b_haskali = castle
+#b_chanta = castle
+#b_albiyerdy = temple
+
+# Misc
+culture = persian
+religion = sunni
+
+# History

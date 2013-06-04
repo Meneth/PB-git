@@ -1,0 +1,27 @@
+# 1092 - Arran
+
+# County Title
+title = c_arran
+
+# Settlements
+ max_settlements = 4
+b_chukhurkabala = castle
+b_gulistan = city
+b_ujar = temple
+#b_darussoltan = castle
+#b_agsu = castle
+#b_gelersengorersen = castle
+#b_emli = temple
+#b_shusha = city
+ 
+# Misc
+culture = persian
+religion = sunni
+
+# History
+1084.1.1 = { culture = kurdish }
+
+1220.1.1 = { 
+	culture = kurdish 
+	religion = sunni 
+}

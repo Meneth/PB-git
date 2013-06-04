@@ -1,0 +1,22 @@
+# 20 - Gwent
+
+# County Title
+title = c_gwent
+
+# Settlements
+max_settlements = 3
+b_caerwent = castle
+#b_caerleon = castle
+b_newport = city
+
+#b_chepstow = castle
+b_monmouth = temple
+#b_tintern = castle
+
+# Misc
+culture = welsh
+religion = catholic
+terrain = hills
+
+# History
+1066.1.1 = { b_newport = ct_trade_post_1 }

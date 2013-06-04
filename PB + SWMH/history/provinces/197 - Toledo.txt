@@ -1,0 +1,26 @@
+# 197 - Toledo
+
+# County Title
+title = c_toledo
+
+# Settlements
+max_settlements = 5
+b_toledo = castle
+b_orgaz = temple
+b_illescas = city
+#b_tolemora = temple
+#b_consuegra = castle
+#b_fuensalida = castle
+
+# Misc
+culture = andalusian_arabic
+religion = sunni
+
+# History
+1066.1.1 = {
+	b_illescas = ct_trade_post_1
+	b_illescas = ct_trade_post_2
+	b_illescas = ct_trade_post_3
+}
+1100.5.25 = { culture = castillan }
+1100.5.25 = { religion = catholic }

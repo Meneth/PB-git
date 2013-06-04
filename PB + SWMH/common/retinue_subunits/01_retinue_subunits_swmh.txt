@@ -1,0 +1,1009 @@
+# Types:
+# 0 - Light Infantry
+# 1 - Heavy Infantry
+# 2 - Pikemen
+# 3 - Light Cavalry
+# 4 - Heavy Cavalry
+# 5 - Archers
+# 6 - Horse Archers
+
+RETTYPE_INF1 =
+{
+	first_type = 1
+	first_amount = 200
+	second_type = 5
+	second_amount = 50
+}
+
+RETTYPE_INF2 =
+{
+	first_type = 2
+	first_amount = 150
+	second_type = 5
+	second_amount = 100
+}
+
+RETTYPE_CAV1 =
+{
+	first_type = 4
+	first_amount = 50
+	second_type = 3
+	second_amount = 200
+}
+
+RETTYPE_SKIR1 = 
+{
+	first_type = 5
+	first_amount = 200
+	second_type = 1
+	second_amount = 50
+}
+########################
+#Italian group
+########################
+RETTYPE_CUL_ITA = 
+{
+        first_type = 4
+	first_amount = 150
+
+	second_type = 3
+	second_amount = 100
+	
+	culture = italian
+	
+	modifier = {
+		knights_defensive = 0.6
+	}
+}
+RETTYPE_CUL_SARDINIAN = 
+{
+	first_type = 4
+	first_amount = 150
+
+	second_type = 3
+	second_amount = 100
+	
+	culture = sardinian
+	
+	modifier = {
+		knights_defensive = 0.6
+	}
+}
+RETTYPE_CUL_SICILIAN = 
+{
+	first_type = 4
+	first_amount = 150
+
+	second_type = 3
+	second_amount = 100
+	
+	culture = sicilian
+	
+	modifier = {
+		knights_defensive = 0.6
+	}
+}
+RETTYPE_CUL_CORSICAN = 
+{
+	first_type = 4
+	first_amount = 150
+
+	second_type = 3
+	second_amount = 100
+	
+	culture = corsican
+	
+	modifier = {
+		knights_defensive = 0.6
+	}
+}
+RETTYPE_CUL_CENTRAL_ITALIAN = 
+{
+	first_type = 4
+	first_amount = 150
+
+	second_type = 3
+	second_amount = 100
+	
+	culture = central_italian
+	
+	modifier = {
+		knights_defensive = 0.6
+	}
+}
+RETTYPE_CUL_SOUTHER_ITALIAN = 
+{
+	first_type = 4
+	first_amount = 150
+
+        second_type = 3
+	second_amount = 100
+	
+	culture = southern_italian
+	
+	modifier = {
+		knights_defensive = 0.6
+	}
+}
+RETTYPE_CUL_NEAPOLITAN = 
+{	
+
+        first_type = 4
+	first_amount = 150
+
+        second_type = 3
+	second_amount = 100
+	
+	culture = neapolitan
+	
+	modifier = {
+		knights_defensive = 0.6
+	}
+}
+RETTYPE_CUL_TUSCAN = 
+{
+	first_type = 4
+	first_amount = 150
+
+        second_type = 3
+	second_amount = 100
+	
+	culture = tuscan
+	
+	modifier = {
+		knights_defensive = 0.6
+	}
+}
+RETTYPE_CUL_LIGURIAN = 
+{
+	first_type = 5
+	first_amount = 250
+	
+	culture = ligurian
+	
+	modifier = {
+		archers_offensive = 0.2
+                archers_defensive = 0.4
+	}
+}
+RETTYPE_CUL_VENETIAN = 
+{
+	first_type = 1
+	first_amount = 250
+	
+	culture = venetian
+	
+	modifier = {
+                heavy_infantry_defensive = 0.6
+	}
+}
+RETTYPE_CUL_LANGOBARDISCH = 
+{
+	first_type = 1
+	first_amount = 250
+	
+	culture = langobardisch
+	
+	modifier = {
+		heavy_infantry_offensive = 0.6
+	}
+}
+########################
+#West Slavic group
+########################
+RETTYPE_CUL_BOHEMIAN = 
+{
+	first_type = 4
+	first_amount = 150
+	
+	second_type = 3
+	second_amount = 100
+	
+	culture = bohemian
+	
+	modifier = {
+		knights_offensive = 0.6
+	}
+}
+RETTYPE_CUL_KARANTANCI = 
+{
+	first_type = 4
+	first_amount = 150
+	
+	second_type = 3
+	second_amount = 100
+	
+	culture = karantanci
+	
+	modifier = {
+		knights_defensive = 0.3
+		light_cavalry_defensive = 0.3
+	}
+}
+RETTYPE_CUL_MORAVIAN = 
+{
+	first_type = 4
+	first_amount = 150
+	
+	second_type = 3
+	second_amount = 100
+	
+	culture = moravian
+	
+	modifier = {
+		knights_offensive = 0.6
+	}
+}
+RETTYPE_CUL_POLISH = 
+{
+	first_type = 4
+	first_amount = 150
+	
+	second_type = 3
+	second_amount = 100
+	
+	culture = polish
+	
+	modifier = {
+		knights_defensive = 0.3
+		light_cavalry_defensive = 0.3
+	}
+}
+RETTYPE_CUL_POMMERANIAN = 
+{
+	first_type = 1
+	first_amount = 250
+	
+	culture = pommeranian
+	
+	modifier = {
+		heavy_infantry_offensive = 0.6
+	}
+}
+########################
+#South Slavic group
+########################
+
+RETTYPE_CUL_CROATIAN = 
+{
+	first_type = 1
+	first_amount = 250
+	
+	culture = croatian
+	
+	modifier = {
+		heavy_infantry_offensive = 0.6
+	}
+}
+RETTYPE_CUL_BOSNIAN = 
+{
+	first_type = 4
+	first_amount = 150
+	
+	second_type = 3
+	second_amount = 100
+	
+	culture = bosnian
+	
+	modifier = {
+		knights_offensive = 0.3
+		light_cavalry_offensive = 0.3
+	}
+}
+RETTYPE_CUL_SERBIAN = 
+{
+	first_type = 4
+	first_amount = 150
+	
+	second_type = 3
+	second_amount = 100
+	
+	culture = serbian
+	
+	modifier = {
+                   knights_offensive = 0.6
+	}
+}
+RETTYPE_CUL_BULGARIAN = 
+{
+	first_type = 1
+	first_amount = 250	
+	
+	culture = bulgarian
+	
+	modifier = {
+                 heavy_infantry_defensive = 0.6
+	}
+}
+RETTYPE_CUL_ROMANIAN = 
+{
+	first_type = 1
+	first_amount = 250
+		
+	culture = romanian
+	
+	modifier = {
+                 heavy_infantry_offensive = 0.6
+	}
+}
+########################
+#Magyar group
+########################
+RETTYPE_CUL_HUNG = 
+{
+	first_type = 6
+	first_amount = 150
+	
+	second_type = 3
+	second_amount = 100
+	
+	culture = hungarian
+	
+	modifier = {
+		knights_offensive = 0.3
+                knights_defensive = 0.3
+	}
+}
+########################
+#East Slavic group
+########################
+RETTYPE_CUL_RUS = 
+{
+	first_type = 4
+	first_amount = 150
+	
+	second_type = 6
+	second_amount = 100
+	
+	culture = russian
+	modifier = {
+		knights_offensive = 0.3
+		horse_archers_offensive = 0.3
+	}
+}
+########################
+#Baltic group
+########################
+RETTYPE_CUL_BALT = 
+{
+	
+	first_type = 1
+	first_amount = 150
+       
+       	second_type = 0
+	second_amount = 100
+	
+	culture = livonian
+        culture = lettigallish
+	
+	modifier = {
+		heavy_infantry_offensive = 0.6
+	}
+}
+RETTYPE_CUL_LITHUANIAN = 
+{
+	first_type = 1
+	first_amount = 250
+	
+	culture = lithuanian
+        culture = prussian
+	
+	modifier = {
+		heavy_infantry_offensive = 0.6
+	}
+}
+########################
+#Finno_ugric group
+########################
+RETTYPE_CUL_FINNO_UGRIC = 
+{
+	first_type = 5
+	first_amount = 250
+	
+	culture = finnish
+        culture = lappish
+        culture = ugricbaltic
+        culture = komi
+	
+	modifier = {
+		archers_offensive = 0.3
+                archers_defensive = 0.3
+	}
+}
+RETTYPE_CUL_ESTONIAN = 
+{
+	first_type = 1
+	first_amount = 150
+       
+       	second_type = 0
+	second_amount = 100 
+	
+	culture = tsuudi
+	
+	modifier = {
+		heavy_infantry_offensive = 0.3
+                heavy_infantry_defensive = 0.3
+	}
+}
+########################
+#Celtic group
+########################
+RETTYPE_CUL_BRETTON = 
+{
+	first_type = 4
+	first_amount = 150
+	
+	second_type = 3
+	second_amount = 100
+	
+	culture = breton
+	
+	modifier = {
+		knights_offensive = 0.6
+	}
+}
+RETTYPE_CUL_CORNISH = 
+{
+	first_type = 4
+	first_amount = 150
+	
+	second_type = 3
+	second_amount = 100
+	
+	culture = cornish
+	
+	modifier = {
+		knights_offensive = 0.6
+	}
+}
+RETTYPE_CUL_IRISH = 
+{
+	first_type = 1
+	first_amount = 250
+	
+	culture = irish
+	
+	modifier = {
+		heavy_infantry_defensive = 0.6
+	}
+}
+RETTYPE_CUL_WELSH = 
+{
+	first_type = 5
+	first_amount = 250
+	
+	culture = welsh
+	
+	modifier = {
+		archers_offensive = 0.6
+	}
+}
+RETTYPE_CUL_NORSEGAELIC = 
+{
+	first_type = 1
+	first_amount = 250
+	
+	culture = norsegaelic
+	
+	modifier = {
+		heavy_infantry_offensive = 0.6
+	}
+}
+RETTYPE_CUL_SCOT = 
+{
+	first_type = 2
+	first_amount = 250
+	
+	culture = scottish
+	
+	modifier = {
+		pikemen_defensive = 0.6
+	}
+}
+########################
+#French group
+########################
+RETTYPE_CUL_FRANKISH = 
+{
+	first_type = 4
+	first_amount = 150
+	
+	second_type = 3
+	second_amount = 100
+	
+	culture = frankish
+	
+	modifier = {
+		knights_offensive = 0.3
+                knights_defensive = 0.3
+	}
+}
+RETTYPE_CUL_NORMAN = 
+{
+	first_type = 4
+	first_amount = 150
+	
+	second_type = 3
+	second_amount = 100
+	
+	culture = norman
+	
+	modifier = {
+		knights_offensive = 0.6
+	}
+}
+RETTYPE_CUL_ARPITAN = 
+{
+	first_type = 4
+	first_amount = 150
+	
+	second_type = 3
+	second_amount = 100
+	
+	culture = arpitan
+	
+	modifier = {
+		knights_offensive = 0.3
+                knights_defensive = 0.3
+	}
+}
+########################
+#Iberian group
+########################
+RETTYPE_CUL_PORTUGESE = 
+{
+	first_type = 3
+	first_amount = 250
+	
+	culture = portuguese
+	
+	modifier = {
+		light_cavalry_offensive = 0.6
+	}
+}
+RETTYPE_CUL_BASQUE = 
+{
+	first_type = 1
+	first_amount = 250
+	
+	culture = basque
+	
+	modifier = {
+		heavy_infantry_offensive = 0.3
+                heavy_infantry_defensive = 0.3
+	}
+}
+RETTYPE_CUL_ARAGONESE = 
+{
+	first_type = 3
+	first_amount = 250
+	
+	culture = aragonese
+	
+	modifier = {
+		light_cavalry_offensive = 0.6
+	}
+}
+RETTYPE_CUL_GALICIAN = 
+{
+	first_type = 3
+	first_amount = 250
+	
+	culture = galician
+	
+	modifier = {
+		light_cavalry_offensive = 0.6
+	}
+}
+RETTYPE_CUL_LEONESE = 
+{
+	first_type = 3
+	first_amount = 250
+	
+	culture = leonese
+	
+	modifier = {
+		light_cavalry_offensive = 0.6
+	}
+}
+RETTYPE_CUL_CASTILLIAN = 
+{
+	first_type = 3
+	first_amount = 250
+	
+	culture = castillan
+	
+	modifier = {
+		light_cavalry_offensive = 0.6
+	}
+}
+RETTYPE_CUL_CATALAN = 
+{
+	first_type = 0
+	first_amount = 250
+	
+	culture = catalan
+	
+	modifier = {
+                light_infantry_offensive = 1.0
+		light_infantry_defensive = 0.8
+	}
+}
+RETTYPE_CUL_ANDALUSIAN = 
+{
+	first_type = 3
+	first_amount = 250
+	
+	culture = andalusian_arabic
+	
+	modifier = {
+		light_cavalry_defensive = 0.6
+	}
+}
+RETTYPE_CUL_OCCTIAN = 
+{
+	first_type = 4
+	first_amount = 150
+	
+	second_type = 3
+	second_amount = 100
+	
+	culture = occitan
+	
+	modifier = {
+		knights_offensive = 0.3
+                knights_defensive = 0.3
+	}
+}
+########################
+#Norse group
+########################
+
+RETTYPE_CUL_DANISH = 
+{
+	first_type = 1
+	first_amount = 250
+	
+	culture = danish
+	
+	modifier = {
+		heavy_infantry_offensive = 0.6
+	}
+}
+RETTYPE_CUL_GOTHIC = 
+{
+	first_type = 1
+	first_amount = 250
+	
+	culture = gothic
+
+	
+	modifier = {
+		heavy_infantry_offensive = 0.6
+	}
+}
+
+RETTYPE_CUL_NORWEGIAN = 
+{
+	first_type = 1
+	first_amount = 250
+	
+	culture = norwegian
+	
+	modifier = {
+		heavy_infantry_offensive = 0.6
+	}
+}
+RETTYPE_CUL_SWEDISH = 
+{
+	first_type = 1
+	first_amount = 250     
+	
+	culture = swedish
+	
+	modifier = {
+		heavy_infantry_offensive = 0.6
+	}
+}
+########################
+#West Germanic group
+########################
+RETTYPE_CUL_ANGLONORSE = 
+{
+	first_type = 1
+	first_amount = 250
+	
+	culture = anglonorse
+	
+	modifier = {
+		heavy_infantry_offensive = 0.6
+	}
+}
+RETTYPE_CUL_FRISIAN = 
+{
+	first_type = 0
+	first_amount = 150
+	
+	second_type = 2
+	second_amount = 100
+	
+	culture = frisian
+	
+	modifier = {
+		light_infantry_offensive = 0.3
+		pikemen_offensive = 0.3
+	}
+}
+RETTYPE_CUL_ENG = 
+{
+	first_type = 5
+	first_amount = 250
+	
+	culture = english
+	
+	modifier = {
+		archers_offensive = 0.6
+	}
+}
+RETTYPE_CUL_SAXON = 
+{
+	first_type = 1
+	first_amount = 250
+	
+	culture = saxon
+	
+	modifier = {
+		heavy_infantry_offensive = 0.2
+                heavy_infantry_defensive = 0.4
+	}
+}
+########################
+#Central Germanic group
+########################
+
+RETTYPE_CUL_DUTCH = 
+{
+	first_type = 0
+	first_amount = 150
+	
+	second_type = 2
+	second_amount = 100
+	
+	culture = dutch
+	
+	modifier = {
+		light_infantry_offensive = 0.3
+		pikemen_offensive = 0.3
+	}
+}
+RETTYPE_CUL_GERMAN = 
+{
+	first_type = 4
+	first_amount = 150
+	
+	second_type = 3
+	second_amount = 100
+	
+	culture = german
+	
+	modifier = {
+		knights_offensive = 0.6
+	}
+}
+########################
+#Byzantine group
+########################
+RETTYPE_CUL_BYZ = 
+{
+	first_type = 4
+	first_amount = 150
+	
+	second_type = 6
+	second_amount = 100
+  
+
+	culture = alan
+	culture = sicilian_greek
+        culture = greek
+
+	modifier = {
+		knights_offensive = 0.3
+		horse_archers_offensive = 0.3
+	}
+}
+RETTYPE_CUL_ARMENIAN = 
+{
+	first_type = 4
+	first_amount = 150
+	
+	second_type = 6
+	second_amount = 100
+  
+
+	culture = armenian
+
+	modifier = {
+		knights_offensive = 0.3
+		horse_archers_offensive = 0.3
+	}
+}
+RETTYPE_CUL_ALBANIAN = 
+{
+	first_type = 3
+	first_amount = 250
+	
+        culture = arberian
+
+	modifier = {
+		light_cavalry_offensive = 0.6
+	}
+}
+RETTYPE_CUL_GEORGIAN = 
+{
+	first_type = 4
+	first_amount = 150
+	
+	second_type = 3
+	second_amount = 100
+	
+	culture = georgian
+	
+	modifier = {
+		knights_offensive = 0.6
+	}
+}
+
+########################
+#Iranian group
+########################
+RETTYPE_CUL_IRANIAN = 
+{
+	first_type = 6
+	first_amount = 130
+	
+	second_type = 3
+	second_amount = 120
+	
+	culture_group = iranian
+	
+	modifier = {
+		horse_archers_offensive = 0.4
+		horse_archers_morale = 0.2
+	}
+}
+
+########################
+#Altaic group
+########################
+RETTYPE_CUL_ALTAIC = 
+{
+	first_type = 6
+	first_amount = 130
+	
+	second_type = 3
+	second_amount = 120
+	
+	culture = cuman
+        culture = pecheneg
+
+	modifier = {
+		horse_archers_offensive = 0.4
+		horse_archers_morale = 0.2
+	}
+}
+RETTYPE_CUL_TURKISH = 
+{
+	first_type = 6
+	first_amount = 130
+	
+	second_type = 3
+	second_amount = 120
+	
+	culture = turkish
+
+	modifier = {
+		horse_archers_offensive = 0.4
+		horse_archers_morale = 0.2
+	}
+}
+RETTYPE_CUL_MONGOL = 
+{
+	first_type = 6
+	first_amount = 130
+	
+	second_type = 3
+	second_amount = 120
+	
+	culture = mongol
+
+	modifier = {
+		horse_archers_offensive = 0.4
+		horse_archers_morale = 0.2
+	}
+}
+
+########################
+#Arabic group
+########################
+RETTYPE_CUL_ARAB = 
+{
+	first_type = 3
+	first_amount = 250
+	
+	culture_group = arabic
+	
+	modifier = {
+		light_cavalry_offensive = 0.6
+	}
+}
+
+########################
+#North African group
+########################
+RETTYPE_CUL_N_AFR = 
+{
+	first_type = 3
+	first_amount = 250
+	
+	culture_group = north_african
+	
+	modifier = {
+		light_cavalry_offensive = 0.6
+	}
+}
+
+########################
+#West African group
+########################
+RETTYPE_CUL_W_AFR = 
+{
+	first_type = 0
+	first_amount = 150
+	
+	second_type = 5
+	second_amount = 100
+	
+	culture_group = west_african
+	
+	modifier = {
+		light_infantry_offensive = 0.6
+	}
+}
+
+########################
+#East African group
+########################
+RETTYPE_CUL_E_AFR = 
+{
+	first_type = 0
+	first_amount = 150
+	
+	second_type = 5
+	second_amount = 100
+	
+	culture_group = east_african
+	
+	modifier = {
+		light_infantry_offensive = 0.6
+	}
+}
+
+
+########################
+#Mesoamerican group
+########################
+
+RETTYPE_CUL_NAHUA = 
+{
+	first_type = 0
+	first_amount = 125
+	second_type = 1
+	second_amount = 125
+	
+	culture = nahuatl
+	
+	modifier = {
+		light_infantry_offensive = 0.3
+		heavy_infantry_offensive = 0.3
+	}
+}

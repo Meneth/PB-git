@@ -1,0 +1,32 @@
+# 347 - Apulia
+
+# County Title
+title = c_apulia
+
+# Settlements
+max_settlements = 6
+
+b_melfi = castle
+b_troia = city
+b_lagopesole = castle
+b_potenza = temple
+
+#b_montemilone = temple
+#b_castelluccio = city
+#b_bovino = castle
+#b_lavello = temple
+#b_avigliano = city
+#b_calitri = castle
+#b_venosa = castle
+#b_lucania = city
+
+
+
+# Misc
+culture = southern_italian
+religion = catholic
+
+# History
+1066.1.1 = { b_troia = ct_trade_post_1 }
+1110.1.1 = { trade_post = b_dandolo }
+1187.1.1={ b_lucano = castle }

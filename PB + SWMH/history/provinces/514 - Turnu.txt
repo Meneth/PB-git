@@ -1,0 +1,26 @@
+# 514 - Turnu
+
+# County Title
+title = c_turnu
+
+# Settlements
+max_settlements = 5
+
+b_holavnik = castle
+b_turnu = city
+b_giurgiu = city
+#b_slatina = castle
+#b_bucuresti = city
+#b_rosiorriidevede = castle
+#b_oltenita = city
+#b_glavacioc = temple
+#b_comana = temple
+
+
+# Misc
+culture = romanian
+religion = tengri_pagan
+
+# History
+
+

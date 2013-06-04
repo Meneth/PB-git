@@ -1,0 +1,26 @@
+# 259 - Celle
+
+# County Title
+title = c_celle
+
+# Settlements
+max_settlements = 5
+
+b_wevelsburg = castle
+b_lippe = city
+b_detmold = city
+b_paderborn = temple
+#b_blomberg = city
+#b_stenberg = temple
+
+
+
+# Misc
+culture = german
+religion = catholic
+
+# History
+1166.1.1 = { trade_post = b_de_monte }
+1242.1.1 = { trade_post = b_vorrade }
+
+

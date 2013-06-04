@@ -1,0 +1,25 @@
+# 522 - Pest
+
+# County Title
+title = c_pest
+
+# Settlements
+max_settlements = 4
+
+b_szatmarvar = castle
+b_kaplony = city
+b_nemeti = temple
+#b_desvar = castle
+#b_erdod = castle
+#b_ecsed = city
+#b_szinyer = castle
+#b_meggyes = castle
+
+# Misc
+culture = hungarian
+religion = catholic
+
+# History
+
+1066.1.1 = { b_kaplony = ct_trade_post_1 }
+
