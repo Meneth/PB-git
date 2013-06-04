@@ -2022,9 +2022,9 @@ faction_remove_inheritance = {
 		modifier = {
 			factor = 0.2
 		}
-		#Greeks shouldn't plot against Byz' crown authority all that often
+		#Greeks don't care about External Inheritance in Byzantium
 		modifier = {
-			factor = 0.1
+			factor = 0
 			OR = {
 				title = e_byzantium
 				title = e_roman_empire
@@ -2240,9 +2240,9 @@ faction_remove_inheritance = {
 		modifier = {
 			factor = 0.2
 		}
-		#Greeks shouldn't plot against Byz' crown authority all that often
+		#Greeks don't care about external inheritance in Byzantium
 		modifier = {
-			factor = 0.1
+			factor = 0
 			liege = {
 				culture = greek
 				culture = ROOT
