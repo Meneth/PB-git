@@ -1,3 +1,7 @@
+3.2.10
+	Dublin is called Dyflin if part of a Norse realm
+	Ensured most of the title files are up to date with 1.10; a few dejure changes, but mostly just cultural names and such
+
 3.2.9
 	Tweaked the color of Crimea to make it less similar to Poland
 	If the Bulgarian Empire is formed normally rather than through the Byzantine events, it'll gain its proper dejure area

@@ -1,13 +1,15 @@
+#Header and allow changed. Syria, Armenia, and Khwarizm moved here
 e_persia = {
 	color={ 99 168 74 }
-	color2={ 200 200 0 }
+	color2={ 255 255 255 }
 	
-	capital = 687 # Kirkuk
+	capital = 646 #	Esfahan
+	
+	culture = persian
 	
 	short_name = yes
 	name_tier = king
 	
-	culture = turkish
 	
 	k_persia = {
 		color={ 151 224 24 }
@@ -17,9 +19,13 @@ e_persia = {
 		
 		culture = persian
 		
+		muslim = 400 # Crusade target weight
+		
 		d_merv = { 
 			color={ 153 201 70 }
 			color2={ 255 255 255 }
+			
+			capital = 630 # Merv
 			
 			c_merv = {
 				color={ 156 204 73 }
@@ -63,10 +69,33 @@ e_persia = {
 				b_kemir = {
 				}
 			}
+			c_gurgan = {
+				color={ 107 158 17 }
+				color2={ 255 255 255 }
+				
+				b_gurgan = {
+				}
+				b_gonbadeqabus = {
+				}
+				b_komishdepa = {
+				}
+				b_kordkuy = {
+				}
+				b_aqqala = {
+				}
+				b_ramian = {
+				}
+				b_minudasht = {
+				}
+				b_khanbebin = {
+				}
+			}
 		}
 		d_khorasan = {
 			color={ 99 150 9 }
 			color2={ 255 255 255 }
+			
+			capital = 632 # Khorasan
 			
 			c_khorasan = {
 				color={ 103 154 13 }
@@ -87,27 +116,6 @@ e_persia = {
 				b_fagdatdezh = {
 				}
 				b_solak = {
-				}
-			}
-			c_gurgan = {
-				color={ 107 158 17 }
-				color2={ 255 255 255 }
-				
-				b_gurgan = {
-				}
-				b_gonbadeqabus = {
-				}
-				b_komishdepa = {
-				}
-				b_kordkuy = {
-				}
-				b_aqqala = {
-				}
-				b_ramian = {
-				}
-				b_minudasht = {
-				}
-				b_khanbebin = {
 				}
 			}
 			c_nishapur = {
@@ -175,9 +183,11 @@ e_persia = {
 				}
 			}
 		}
-		d_mazandaran = {
+		d_mazandaran = { # Tabaristan
 			color={ 109 149 39 }
 			color2={ 255 255 255 }
+			
+			capital = 662 # Mazandaran
 			
 			c_tabaristan = {
 				color={ 111 151 41 }
@@ -221,31 +231,33 @@ e_persia = {
 				b_varamin = {
 				}
 			}
-			c_qwivir = {
-				color={ 115 155 45 }
+			c_dailam = {
+				color={ 72 109 178 }
 				color2={ 255 255 255 }
 				
-				b_semnan = {
+				b_dailam = {
 				}
-				b_darvar = {
+				b_soltaniyeh = {
 				}
-				b_damqan = {
+				b_gheydar = {
 				}
-				b_dehnamak = {
+				b_zanjan = {
 				}
-				b_sangsar = {
+				b_abhar = {
 				}
-				b_sharequmis = {
+				b_tarom = {
 				}
-				b_gerdkuh = {
+				b_mahneshan = {
 				}
-				b_kohandej = {
+				b_alamut = {
 				}
 			}
 		}
 		d_esfahan = {
 			color={ 142 176 84 }
 			color2={ 255 255 255 }
+			
+			capital = 646 # Esfahan
 			
 			c_esfahan = {
 				color={ 145 179 87 }
@@ -335,6 +347,8 @@ e_persia = {
 		d_hormuz = {
 			color={ 98 118 63 }
 			color2={ 255 255 255 }
+			
+			capital = 641 # Hormuz
 			
 			c_sistan = {
 				color={ 102 122 67 }
@@ -445,6 +459,8 @@ e_persia = {
 			color={ 89 128 22 }
 			color2={ 255 255 255 }
 			
+			capital = 643 # Fars
+			
 			c_fars = {
 				color={ 91 130 24 }
 				color2={ 255 255 255 }
@@ -514,6 +530,8 @@ e_persia = {
 			color={ 184 225 112 }
 			color2={ 255 255 255 }
 			
+			capital = 658 # Hamadan
+			
 			c_qom = {
 				color={ 187 228 115 }
 				color2={ 255 255 255 }
@@ -577,10 +595,33 @@ e_persia = {
 				b_pakdasht = {
 				}
 			}
+			c_qwivir = {
+				color={ 115 155 45 }
+				color2={ 255 255 255 }
+				
+				b_semnan = {
+				}
+				b_darvar = {
+				}
+				b_damqan = {
+				}
+				b_dehnamak = {
+				}
+				b_sangsar = {
+				}
+				b_sharequmis = {
+				}
+				b_gerdkuh = {
+				}
+				b_kohandej = {
+				}
+			}
 		}
 		d_birjand = {
 			color={ 136 169 80 }
 			color2={ 255 255 255 }
+			
+			capital = 906 # Birjand
 			
 			c_birjand = {
 				color={ 138 171 82 }
@@ -977,166 +1018,21 @@ e_persia = {
 		}
 	}
 	
-	k_khwarizm = { # Turkestan
-		color={ 204 150 21 }
-		color2={ 255 255 255 }
-		
-		capital = 900 # Khwarizm
-		
-		culture = turkish
-		
-		tengri_pagan_reformed = 500
-
-		d_khwarizmian = { # Turkestan
-			color={ 224 170 24 }
-			color2={ 255 255 255 }
-			
-			capital = 900 # Kyzylorda
-			
-			culture = turkish
-			
-			c_kyzylorda = {
-				color={ 236 178 22 }
-				color2={ 255 255 255 }
-			
-				b_akmechet = {
-				}
-				b_kyzylorda = {
-					holy_site = tengri_pagan
-					holy_site = tengri_pagan_reformed				
-				}
-				b_kazaly = {
-				}
-				b_terenuzyak = {
-				}
-				b_dzhanadzhol = {
-				}
-				b_sarytogay = {
-				}
-				b_zhalagash = {
-				}
-				b_kyzyleginshi = {
-				}
-			}
-		
-			c_khwarizm = { # Chimboy
-				color={ 227 173 27 }
-				color2={ 255 255 255 }
-			
-				b_kassarma = {
-				}
-				b_dawletgirei = {
-				}
-				b_kuljandi = {
-				}
-				b_kaszkarata = {
-				}
-				b_aszczeatrik = {
-				}
-				b_kosbulak = {
-				}
-				b_sokyrbulak = {
-				}
-				b_karakul = {
-				}
-			}
-			c_emba = {
-				color={ 230 176 30 }
-				color2={ 255 255 255 }
-			
-				b_emba = {
-				}
-				b_koshkar = {
-				}
-				b_akkube = {
-				}
-				b_akbulak = {
-				}
-				b_makat = {
-				}
-				b_bakachi = {
-				}
-				b_qulsary = {
-				}
-				b_kizay = {
-				}
-			}
-			c_mangyshlak = {
-				color={ 233 179 33 }
-				color2={ 255 255 255 }
-			
-				b_aqtaw = {
-				}
-				b_kzyluzen = {
-				}
-				b_amankyzylit = {
-				}
-				b_uzen = {
-				}
-				b_araldy = {
-				}
-				b_ashchimuryn = {
-				}
-				b_tigen = {
-				}
-				b_sayutes = {
-				}
-			}
-			c_aral = { # Turkestan
-				color={ 236 182 36 }
-				color2={ 255 255 255 }
-			
-				b_akdzulpas = {
-				}
-				b_aralsk = {
-				}
-				b_sapak = {
-				}
-				b_aralkum = {
-				}
-				b_kosskul = {
-				}
-				b_akespe = {
-				}
-				b_saksaulskiy = {
-				}
-				b_akshelek = {
-				}
-			}
-			c_usturt = {
-				color={ 238 184 38 }
-				color2={ 255 255 255 }
-			
-				b_bailjar = {
-				}
-				b_barsakelmos = {
-				}
-				b_bussaga = {
-				}
-				b_sengirkum = {
-				}
-				b_sumbe = {
-				}
-				b_akkuduk = {
-				}
-				b_aksu = {
-				}
-				b_karamola = {
-				}
-			}
-		}
-	}
 	k_mesopotamia = {
 		color={ 50 100 60 }
 		color2={ 255 255 255 }
 		
-		capital	= 693 # Bagdad
+		capital	= 693 # Baghdad
 		
 		culture = levantine_arabic
 		
+		muslim = 400 # Crusade target weight
+		
 		d_kermanshah = {
-			color={ 68 174 105 }
+			color={ 55 144 95 }
 			color2={ 255 255 255 }
+			
+			capital = 657 # Luristan
 			
 			c_qazwin = {
 				color={ 70 107 176 }
@@ -1157,27 +1053,6 @@ e_persia = {
 				b_alvand = {
 				}
 				b_buinzahra = {
-				}
-			}
-			c_dailam = {
-				color={ 72 109 178 }
-				color2={ 255 255 255 }
-				
-				b_alamut = {
-				}
-				b_dailam = {
-				}
-				b_soltaniyeh = {
-				}
-				b_gheydar = {
-				}
-				b_zanjan = {
-				}
-				b_abhar = {
-				}
-				b_tarom = {
-				}
-				b_mahneshan = {
 				}
 			}
 			c_kermanshah = {
@@ -1226,6 +1101,8 @@ e_persia = {
 		d_tigris = {
 			color={ 113 150 32 }
 			color2={ 255 255 255 }
+			
+			capital = 656 # Tigris
 			
 			c_al_nadjaf = {
 				color={ 90 130 202 }
@@ -1337,6 +1214,8 @@ e_persia = {
 		d_basra = {
 			color={ 6 150 2 }
 			color2={ 255 255 255 }
+			
+			capital = 649 # Basra
 			
 			c_kufa = {
 				color={ 88 141 239 }
@@ -1497,6 +1376,8 @@ e_persia = {
 			color={ 6 100 2 }
 			color2={ 255 255 255 }
 			
+			capital = 693 # Baghdad
+			
 			c_karbala = {
 				color={ 125 165 239 }
 				color2={ 255 255 255 }
@@ -1628,6 +1509,8 @@ e_persia = {
 		d_mosul = {
 			color={ 49 181 44 }
 			color2={ 255 255 255 }
+			
+			capital = 697 # Mosul
 			
 			c_mosul = {
 				color={ 9 89 236 }
@@ -1805,16 +1688,17 @@ e_persia = {
 			}
 		}
 	}
+	#Azerbaijan moved here. Amida, Nisibin, and Edessa moved here from Mesopotamia. 
 	k_armenia = {
 		color={ 140 41 171 }
 		color2={ 255 255 255 }
 		
-		orthodox = 150 # Crusade target weight
-		muslim = 150 # Crusade target weight
-		
 		capital = 681 #	Ani
 		
 		culture = armenian
+		
+		orthodox = 300 # Crusade target weight
+		muslim = 100 # Crusade target weight
 		
 		# Creation/usurpation trigger
 		allow = {
@@ -1920,6 +1804,8 @@ e_persia = {
 			color={ 143 49 161 }
 			color2={ 255 255 255 }
 			
+			capital = 682 # Vaspurakan
+			
 			c_vaspurakan = {
 				color={ 162 191 44 }
 				color2={ 255 255 255 }
@@ -1993,8 +1879,10 @@ e_persia = {
 			}
 		}
 		d_mesopotamia = {
-			color={ 155 110 88 }
+			color={ 155 88 110 }
 			color2={ 255 255 255 }
+			
+			capital = 702 # Mesopotamia
 			
 			c_karin = {
 				color={ 117 154 36 }
@@ -2109,6 +1997,8 @@ e_persia = {
 			color={ 151 255 3 }
 			color2={ 255 255 255 }
 			
+			capital = 699 # Edessa
+			
 			c_edessa = {
 				color={ 153 255 5 }
 				color2={ 255 255 255 }
@@ -2198,6 +2088,8 @@ e_persia = {
 			color={ 232 20 130 }
 			color2={ 255 255 255 }
 			
+			capital = 706 # Koloneia
+			
 			c_koloneia = {
 				color={ 133 235 23 }
 				color2={ 255 255 255 }
@@ -2242,20 +2134,23 @@ e_persia = {
 			}
 		}
 	}
+	#Moved here from Arabia. Al Bichri moved here from Mesopotamia
 	k_syria = {
 		color={ 145 130 88 }
 		color2={ 255 255 255 }
-		
-		orthodox = 200 # Crusade target weight
-		muslim = 400 # Crusade target weight
 		
 		culture = levantine_arabic
 		
 		capital = 728 # Damascus
 		
+		orthodox = 200 # Crusade target weight
+		muslim = 200 # Crusade target weight
+		
 		d_aleppo = {
 			color={ 85 232 20 }
 			color2={ 255 255 255 }
+			
+			capital = 733 # Aleppo
 		
 			c_asas = {
 				color={ 87 234 22 }
@@ -2366,6 +2261,8 @@ e_persia = {
 		d_antioch = {
 			color={ 142 63 129 }
 			color2={ 255 255 255 }
+			
+			capital = 764 # Antioch
 		
 			c_antiocheia = {
 				color={ 152 69 135 }
@@ -2403,8 +2300,6 @@ e_persia = {
 				}
 				b_famia = {
 				}
-				b_masyaf = {
-				}
 				b_chastelblanc = {
 				}
 				b_kafroun = {
@@ -2412,6 +2307,8 @@ e_persia = {
 				b_treiz = {
 				}
 				b_krakdeschevaliers = {
+				}
+				b_masyaf = {
 				}
 			}
 			c_alexandretta = {
@@ -2454,6 +2351,8 @@ e_persia = {
 		d_tripoli = {
 			color={ 71 150 32 }
 			color2={ 255 255 255 }
+			
+			capital = 767 # Tripoli
 		
 			c_tortosa = {
 				color={ 73 152 34 }
@@ -2522,6 +2421,8 @@ e_persia = {
 		d_damascus = {
 			color={ 122 255 3 }
 			color2={ 255 255 255 }
+			
+			capital = 728 # Damascus
 		
 			c_damascus = {
 				color={ 125 255 6 }
@@ -2633,6 +2534,8 @@ e_persia = {
 		d_syria = {
 			color={ 35 232 20 }
 			color2={ 255 255 255 }
+			
+			capital = 727 # Syria
 		
 			c_syria = {
 				color={ 37 234 22 }
@@ -2720,6 +2623,156 @@ e_persia = {
 			}
 		}
 	}
+	#Moved here from Tartaria
+	k_khwarizm = { # Turkestan
+		color={ 204 150 21 }
+		color2={ 255 255 255 }
+		
+		capital = 900 # Khwarizm
+		
+		culture = turkish
+		
+		tengri_pagan_reformed = 500
+
+		d_khwarizmian = { # Turkestan
+			color={ 224 170 24 }
+			color2={ 255 255 255 }
+			
+			capital = 900 # Kyzylorda
+			
+			culture = turkish
+			
+			c_kyzylorda = {
+				color={ 236 178 22 }
+				color2={ 255 255 255 }
+			
+				b_akmechet = {
+				}
+				b_kyzylorda = {
+					holy_site = tengri_pagan
+					holy_site = tengri_pagan_reformed				
+				}
+				b_kazaly = {
+				}
+				b_terenuzyak = {
+				}
+				b_dzhanadzhol = {
+				}
+				b_sarytogay = {
+				}
+				b_zhalagash = {
+				}
+				b_kyzyleginshi = {
+				}
+			}
+		
+			c_khwarizm = { # Chimboy
+				color={ 227 173 27 }
+				color2={ 255 255 255 }
+			
+				b_kassarma = {
+				}
+				b_dawletgirei = {
+				}
+				b_kuljandi = {
+				}
+				b_kaszkarata = {
+				}
+				b_aszczeatrik = {
+				}
+				b_kosbulak = {
+				}
+				b_sokyrbulak = {
+				}
+				b_karakul = {
+				}
+			}
+			c_emba = {
+				color={ 230 176 30 }
+				color2={ 255 255 255 }
+			
+				b_emba = {
+				}
+				b_koshkar = {
+				}
+				b_akkube = {
+				}
+				b_akbulak = {
+				}
+				b_makat = {
+				}
+				b_bakachi = {
+				}
+				b_qulsary = {
+				}
+				b_kizay = {
+				}
+			}
+			c_mangyshlak = {
+				color={ 233 179 33 }
+				color2={ 255 255 255 }
+			
+				b_aqtaw = {
+				}
+				b_kzyluzen = {
+				}
+				b_amankyzylit = {
+				}
+				b_uzen = {
+				}
+				b_araldy = {
+				}
+				b_ashchimuryn = {
+				}
+				b_tigen = {
+				}
+				b_sayutes = {
+				}
+			}
+			c_aral = { # Turkestan
+				color={ 236 182 36 }
+				color2={ 255 255 255 }
+			
+				b_akdzulpas = {
+				}
+				b_aralsk = {
+				}
+				b_sapak = {
+				}
+				b_aralkum = {
+				}
+				b_kosskul = {
+				}
+				b_akespe = {
+				}
+				b_saksaulskiy = {
+				}
+				b_akshelek = {
+				}
+			}
+			c_usturt = {
+				color={ 238 184 38 }
+				color2={ 255 255 255 }
+			
+				b_bailjar = {
+				}
+				b_barsakelmos = {
+				}
+				b_bussaga = {
+				}
+				b_sengirkum = {
+				}
+				b_sumbe = {
+				}
+				b_akkuduk = {
+				}
+				b_aksu = {
+				}
+				b_karamola = {
+				}
+			}
+		}
+	}
 	
 	# Creation/Usurp Trigger
 	allow = {
@@ -2748,4 +2801,3 @@ e_persia = {
 		NOT = { tier = emperor }
 	}
 }
-

@@ -1333,7 +1333,7 @@ decisions = {
 		}
 		allow = {
 			prestige = 3000
-			completely_controls = d_spoleto
+			completely_controls = d_latium
 			completely_controls = d_venice
 			completely_controls = d_ferrara
 			completely_controls = d_sicily

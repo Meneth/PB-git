@@ -7,20 +7,23 @@ e_arabia = {
 	culture = bedouin_arabic
 	short_name = yes
 	
+	#Algerian provinces moved into own kingdom. New west African provinces
 	k_mauretania = {
 		color={ 58 188 41 }
 		color2={ 255 255 255 }
 		
 		capital = 843 # Marrakech
 		
-		catholic = 10 # Crusade target weight
-		muslim = 100 # Crusade target weight
-		
 		culture = maghreb_arabic
-
+		
+		muslim = 100 # Crusade target weight
+		west_african_pagan_reformed = 100
+	
 		d_marrakech = {
 			color={ 43 150 32 }
 			color2={ 255 255 255 }
+			
+			capital = 843 # Marrakech
 		
 			c_marrakech = {
 				color={ 45 152 34 }
@@ -156,6 +159,8 @@ e_arabia = {
 		d_tangiers = {
 			color={ 45 255 3 }
 			color2={ 255 255 255 }
+			
+			capital = 841 # Tangiers
 		
 			c_infa = {
 				color={ 48 255 6 }
@@ -224,6 +229,8 @@ e_arabia = {
 		d_fes = {
 			color={ 20 232 55 }
 			color2={ 255 255 255 }
+			
+			capital = 840 # Fes
 		
 			c_fes = {
 				color={ 24 236 59 }
@@ -327,12 +334,11 @@ e_arabia = {
 			}
 		}
 	}
-
+	#Entirely new kingdom
 	k_algeria = {
 		color={ 0 98 51 }
 		capital = 831
 
-		catholic = 10 # Crusade target weight
 		muslim = 100 # Crusade target weight
 		
 		d_tlemcen = {
@@ -605,7 +611,7 @@ e_arabia = {
 			}
 		}
 	}
-		
+	#Different capital. Tunisian provinces moved into own kingdom
 	k_africa = {
 		color={ 21 255 3 }
 		color2={ 255 255 255 }
@@ -613,14 +619,15 @@ e_arabia = {
 		capital = 811
 		
 		culture = maghreb_arabic
-
+		
 		orthodox = 10 # Crusade target weight
-		catholic = 25 # Crusade target weight
 		muslim = 200 # Crusade target weight
-
+		west_african_pagan_reformed = 50
 		d_tripolitania = {
 			color={ 63 175 117 }
 			color2={ 255 255 255 }
+			
+			capital = 811 # Tripolitania
 		
 			c_tripolitana = {
 				color={ 45 192 107 }
@@ -710,6 +717,8 @@ e_arabia = {
 		d_cyrenaica = {
 			color={ 32 150 63 }
 			color2={ 255 255 255 }
+			
+			capital = 806 # Cyrenaica
 		
 			c_cyrenaica = {
 				color={ 34 152 65 }
@@ -774,9 +783,30 @@ e_arabia = {
 				b_jardinah = {
 				}
 			}
+			c_tobruk = {
+				color={ 40 158 71 }
+				color2={ 255 255 255 }
+			
+				b_tobruk = {
+				}
+				b_bardia = {
+				}
+				b_sollum = {
+				}
+				b_alqardabah = {
+				}
+				b_acroma = {
+				}
+				b_kambut = {
+				}
+				b_zanzur = {
+				}
+				b_rukbah = {
+				}
+			}
 		}
 	}
-
+	#Entirely new kingdom
 	k_tunisia = {
 		color={ 255 255 0 }
 		capital = 817 # Tunis
@@ -992,7 +1022,7 @@ e_arabia = {
 			}
 		}
 	}
-
+	#Unchanged from vanilla
 	k_egypt = {
 		color={ 10 255 80 }
 		color2={ 255 255 255 }
@@ -1002,13 +1032,39 @@ e_arabia = {
 		culture = egyptian_arabic
 		
 		orthodox = 20 # Crusade target weight
-		catholic = 20 # Crusade target weight
 		muslim = 400 # Crusade target weight
 		
-		d_alamayn = {
-			color={ 60 150 60 }
+		d_alexandria = {
+			color={ 100 219 134 }
 			color2={ 255 255 255 }
+			
+			capital = 802 # Alexandria
 		
+			c_alexandria = {
+				color={ 102 221 136 }
+				color2={ 255 255 255 }
+			
+				b_alexandria = {
+					pentarchy = yes
+					holy_site = miaphysite
+					holy_site = monophysite
+					holy_site = nestorian
+				}
+				b_abukir = {
+				}
+				b_damanhur = {
+				}
+				b_hammam = {
+				}
+				b_naucratis = {
+				}
+				b_burgelarab = {
+				}
+				b_marabout = {
+				}
+				b_elkanoun = {
+				}
+			}
 			c_al_alamayn = {
 				color={ 104 223 138 }
 				color2={ 255 255 255 }
@@ -1051,66 +1107,19 @@ e_arabia = {
 				b_ziwaelbahari = {
 				}
 			}
-			c_tobruk = {
-				color={ 40 158 71 }
-				color2={ 255 255 255 }
-			
-				b_tobruk = {
-				}
-				b_bardia = {
-				}
-				b_sollum = {
-				}
-				b_alqardabah = {
-				}
-				b_acroma = {
-				}
-				b_kambut = {
-				}
-				b_zanzur = {
-				}
-				b_rukbah = {
-				}
-			}
-		}	
-		d_alexandria = {
-			color={ 100 219 134 }
-			color2={ 255 255 255 }
-		
-			c_alexandria = {
-				color={ 102 221 136 }
-				color2={ 255 255 255 }
-			
-				b_alexandria = {
-					pentarchy = yes
-					holy_site = miaphysite
-					holy_site = monophysite
-					holy_site = nestorian
-				}
-				b_abukir = {
-				}
-				b_damanhur = {
-				}
-				b_hammam = {
-				}
-				b_naucratis = {
-				}
-				b_burgelarab = {
-				}
-				b_marabout = {
-				}
-				b_elkanoun = {
-				}
-			}
 			c_buhairya = {
 				color={ 108 227 142 }
 				color2={ 255 255 255 }
 			
 				b_buhairya = {
 				}
+				b_mut = {
+				}
 				b_qasrfarfra = {
 				}
 				b_elkharga = {
+				}
+				b_baris = {
 				}
 				b_budhkula = {
 				}
@@ -1144,6 +1153,8 @@ e_arabia = {
 		d_damietta = {
 			color={ 3 255 74 }
 			color2={ 255 255 255 }
+			
+			capital = 798 # Damietta
 		
 			c_gabiyaha = {
 				color={ 6 255 77 }
@@ -1208,10 +1219,33 @@ e_arabia = {
 				b_serapeum = {
 				}
 			}
+			c_manupura = {
+				color={ 15 255 86 }
+				color2={ 255 255 255 }
+			
+				b_manusura = {
+				}
+				b_almahallah = {
+				}
+				b_bilbays = {
+				}
+				b_zagazig = {
+				}
+				b_athribis = {
+				}
+				b_bubastis = {
+				}
+				b_qantir = {
+				}
+				b_busiris = {
+				}
+			}
 		}
 		d_cairo = {
 			color={ 20 232 115 }
 			color2={ 255 255 255 }
+			
+			capital = 796 # Cairo
 		
 			c_cairo = {
 				color={ 24 236 119 }
@@ -1255,31 +1289,12 @@ e_arabia = {
 				b_suez = {
 				}
 			}
-			c_manupura = {
-				color={ 15 255 86 }
-				color2={ 255 255 255 }
-			
-				b_manusura = {
-				}
-				b_almahallah = {
-				}
-				b_bilbays = {
-				}
-				b_zagazig = {
-				}
-				b_athribis = {
-				}
-				b_bubastis = {
-				}
-				b_qantir = {
-				}
-				b_busiris = {
-				}
-			}
 		}
 		d_aswan = {
 			color={ 41 188 120 }
 			color2={ 255 255 255 }
+			
+			capital = 794 # Aswan
 		
 			c_aswan = {
 				color={ 43 190 122 }
@@ -1288,6 +1303,10 @@ e_arabia = {
 				b_aswan = {
 				}
 				b_elefantina = {
+				}
+				b_faras = {
+				}
+				b_qasribrim = {
 				}
 				b_veset = {
 				}
@@ -1347,6 +1366,8 @@ e_arabia = {
 		d_sinai = {
 			color={ 88 99 2 }
 			color2={ 255 255 255 }
+			
+			capital = 788 # Farama
 		
 			c_farama = {
 				color={ 141 198 5 }
@@ -1434,7 +1455,7 @@ e_arabia = {
 			}
 		}
 	}
-
+	#New color. Oman moved to new kingdom
 	k_arabia = {
 		color={ 32 150 85 }
 		color2={ 255 255 255 }
@@ -1444,10 +1465,12 @@ e_arabia = {
 		culture = bedouin_arabic
 		
 		muslim = 25 # Crusade target weight
-
+	
 		d_arabia_petrae = {
 			color={ 121 196 2 }
 			color2={ 255 255 255 }
+			
+			capital = 722 # Petra
 		
 			c_al_aqabah = {
 				color={ 124 199 5 }
@@ -1559,9 +1582,9 @@ e_arabia = {
 			color={ 150 249 43 }
 			color2={ 255 255 255 }
 			
-			muslim = 500 # Crusade target weight
+			capital = 719 # Mecca
 			
-			dynasty_title_names = no
+			muslim = 500 # Crusade target weight
 		
 			c_al_jawf = {
 				color={ 154 253 47 }
@@ -1681,6 +1704,8 @@ e_arabia = {
 			color={ 17 228 10 }
 			color2={ 255 255 255 }
 			
+			capital = 863 # Hajr
+			
 			c_rafha = {
 				color={ 174 253 67 }
 				color2={ 255 255 255 }
@@ -1767,7 +1792,7 @@ e_arabia = {
 			}
 		}
 	}
-
+	#Entirely new kingdom
 	k_oman = {
 		color={ 0 70 0 }
 		capital = 868 # Muscat
@@ -2015,17 +2040,14 @@ e_arabia = {
 			}
 		}
 	}
-
+	#Unchanged from vanilla
 	k_jerusalem = {
 		color={ 180 180 180 }
 		color2={ 255 255 255 }
 		
-		christian = 1000 # Crusade target weight
-		muslim = 125 # Crusade target weight
-		
 		capital = 774 # Jerusalem
 		
-		assimilate = no
+		assimilate = no # Duchies cannot de jure drift OUT of this title
 		
 		culture = levantine_arabic
 		
@@ -2040,9 +2062,14 @@ e_arabia = {
 			piety = 2000
 		}
 		
+		christian = 500 # Crusade target weight
+		muslim = 250 # Crusade target weight
+		
 		d_oultrejourdain = {
 			color={ 159 188 41 }
 			color2={ 255 255 255 }
+			
+			capital = 723 # Madaba
 		
 			c_negev = {
 				color={ 45 251 50 }
@@ -2154,6 +2181,8 @@ e_arabia = {
 		d_ascalon = {
 			color={ 99 150 32 }
 			color2={ 255 255 255 }
+			
+			capital = 780 # Ascalon
 		
 			c_darum = {
 				color={ 5 199 37 }
@@ -2266,15 +2295,17 @@ e_arabia = {
 			color={ 43 249 67 }
 			color2={ 255 255 255 }
 			
-			christian = 500 # Crusade target weight
-			muslim = 250 # Crusade target weight
+			capital = 774 # Jerusalem
 			
+			christian = 250 # Crusade target weight
+			muslim = 250 # Crusade target weight
+		
 			c_jerusalem = {
 				color={ 45 251 69 }
 				color2={ 255 255 255 }
 				
-				christian = 1000 # Crusade target weight
-				muslim = 500 # Crusade target weight
+				christian = 250 # Crusade target weight
+				muslim = 250 # Crusade target weight
 		
 				b_mirabel = {
 				}
@@ -2347,6 +2378,8 @@ e_arabia = {
 		d_galilee = {
 			color={ 2 196 61 }
 			color2={ 255 255 255 }
+			
+			capital = 771 # Tyrus
 		
 			c_tiberias = {
 				color={ 5 199 64 }

@@ -19,7 +19,7 @@ e_roman_empire = {
 		always = no # Only created through special event
 	}
 }
-
+#Massively changed from vanilla
 e_byzantium = {
 	color={ 163 10 145 }
 	color2={ 255 255 20 }

@@ -9,25 +9,28 @@ e_carpathia = {
 	tengri_pagan_reformed = 100
 	slavic_pagan_reformed = 50 # Crusade target weight
 	
+	#Some color changes, otherwise unchanged
 	k_croatia = {
 		color={ 165 0 15 }
 		color2={ 200 0 0 }
 		
-		orthodox = 300 # Crusade target weight
-		catholic = 300 # Crusade target weight
-		
 		culture = croatian
 		
 		capital = 465 # Zadar
-
+		
+		orthodox = 300 # Crusade target weight
+		catholic = 300 # Crusade target weight
+	
 		d_slavonia = {
 			color={ 150 10 10 }
 			color2={ 255 255 255 }
-
+			
+			capital = 461 # Zagreb
+	
 			c_krizevci = {
 				color={ 186 139 139 }
 				color2={ 255 255 255 }
-
+	
 				b_krizevci = {
 				}
 				b_koprivnica = {
@@ -48,7 +51,7 @@ e_carpathia = {
 			c_zagreb = {
 				color={ 189 141 141 }
 				color2={ 255 255 255 }
-
+	
 				b_zagreb = {
 				}
 				b_sisak = {
@@ -69,7 +72,7 @@ e_carpathia = {
 			c_varadzin = {
 				color={ 191 143 143 }
 				color2={ 255 255 255 }
-
+	
 				b_varazdin = {
 				}
 				b_cakovec = {
@@ -91,11 +94,13 @@ e_carpathia = {
 		d_bosnia = {
 			color={ 140 20 30 }
 			color2={ 255 255 255 }
-
+			
+			capital = 463 # Usora
+	
 			c_rama = {
 				color={ 197 118 118 }
 				color2={ 255 255 255 }
-
+	
 				b_rama = {
 				}
 				b_samobor = {
@@ -116,7 +121,7 @@ e_carpathia = {
 			c_usora = {
 				color={ 200 121 121 }
 				color2={ 255 255 255 }
-
+	
 				b_usora = {
 				}
 				b_banjaluka = {
@@ -138,11 +143,13 @@ e_carpathia = {
 		d_croatia = {
 			color={ 170 0 20 }
 			color2={ 255 255 255 }
-
+			
+			capital = 464 # Senj
+	
 			c_zachlumia = {
 				color={ 166 57 57 }
 				color2={ 255 255 255 }
-
+	
 				b_mostar = {
 				}
 				b_duvno = {
@@ -168,7 +175,7 @@ e_carpathia = {
 				italian = "Segna"
 				german = "Zengg"
 				hungarian = "Zeng"
-
+	
 				b_senj = {
 					greek = "Attienities"
 					italian = "Segna"
@@ -196,7 +203,7 @@ e_carpathia = {
 				
 				greek = "Kyrikon"
 				german = "Vegl"
-
+	
 				b_veglia = {
 					greek = "Kyrikon"
 					german = "Vegl"
@@ -220,14 +227,16 @@ e_carpathia = {
 		d_dalmatia = {
 			color={ 180 10 5 }
 			color2={ 255 255 255 }
-
+			
+			capital = 465 # Zadar
+	
 			c_split = {
 				color={ 186 139 139 }
 				color2={ 255 255 255 }
 				
 				italian = "Spalato"
 				greek = "Spalathos"
-
+	
 				b_split = {
 					italian = "Spalato"
 					greek = "Spalathos"
@@ -256,7 +265,7 @@ e_carpathia = {
 				
 				italian = "Zara"
 				greek = "Diadora"
-
+	
 				b_zadar = {
 					italian = "Zara"
 					greek = "Diadora"
@@ -278,11 +287,31 @@ e_carpathia = {
 			}
 		}
 	}
+	#Unchanged from vanilla
 	k_hungary = {
 		color={ 187 70 70 }
 		color2={ 255 255 255 }
 		
 		capital	= 444 # Esztergom
+
+		avar = Avar
+		
+		allow = {
+			OR = {
+				culture_group = magyar
+				culture = avar
+				AND = {
+					FROM = { # FROM = this title
+						any_previous_holder = {
+							always = yes # The title has existed before
+						}
+					}
+					any_realm_province = {
+						culture_group = magyar
+					}
+				}
+			}
+		}
 		
 		culture = hungarian
 		
@@ -292,9 +321,18 @@ e_carpathia = {
 			color={ 155 25 65 }
 			color2={ 255 255 255 }
 			
-			c_pecs = {
+			capital = 452 # Pecs
+			
+			bohemian=Balaton
+			
+			c_pecs={
 				color={ 182 72 72 }
 				color2={ 255 255 255 }
+
+				croatian = Pecuh
+				serbian = Pecuj
+				german = Fünfkirchen
+				bohemian=Balaton
 				
 				b_pecs = {
 				}
@@ -317,6 +355,8 @@ e_carpathia = {
 				color={ 189 74 74 }
 				color2={ 255 255 255 }
 				
+				german = Stuhlweissenburg
+				
 				b_szekezfehervar = {
 				}
 				b_csurgo = {
@@ -337,6 +377,9 @@ e_carpathia = {
 			c_vas = {
 				color={ 191 76 76 }
 				color2={ 255 255 255 }
+
+				german = Eisenburg
+				croatian = Zelezna
 				
 				b_szombathely = {
 				}
@@ -358,6 +401,9 @@ e_carpathia = {
 			c_fejer = {
 				color={ 193 78 78 }
 				color2={ 255 255 255 }
+				
+				german = Stuhlweiss
+				croatian = Bila
 				
 				b_sarbogard = {
 				}
@@ -381,9 +427,17 @@ e_carpathia = {
 			color={ 230 55 55 }
 			color2={ 255 255 255 }
 			
+			capital = 444 # Esztergom
+
+			german = Gran
+			bohemian = Ostrihom
+			croatian = Ostrogon
+			
 			c_sopron = {
 				color={ 211 63 63 }
 				color2={ 255 255 255 }
+				
+				german = Ödenburg
 				
 				b_sopron = {
 				}
@@ -406,6 +460,10 @@ e_carpathia = {
 				color={ 214 66 66 }
 				color2={ 255 255 255 }
 				
+				german = Gran
+				bohemian = Ostrihom
+				croatian = Ostrogon
+				
 				b_esztergom = {
 				}
 				b_komarom = {
@@ -424,6 +482,11 @@ e_carpathia = {
 			c_pressburg = {
 				color={ 217 69 69 }
 				color2={ 255 255 255 }
+
+				
+				hungarian = Pozsony
+				bohemian = Presporok
+	
 				
 				b_pressburg = {
 				}
@@ -447,9 +510,17 @@ e_carpathia = {
 			color={ 190 21 21 }
 			color2={ 255 255 255 }
 			
+			capital = 443 # Nitra
+
+			german = Neutra
+			bohemian = Nitra
+			
 			c_nitra = {
 				color={ 194 25 25 }
 				color2={ 255 255 255 }
+
+				german = Neutra
+				bohemian = Nitra
 				
 				b_nyitra = {
 				}
@@ -493,6 +564,8 @@ e_carpathia = {
 				color={ 202 33 33 }
 				color2={ 255 255 255 }
 				
+				hungarian = Gömör
+				
 				b_gomor = {
 				}
 				b_losonc = {
@@ -513,6 +586,9 @@ e_carpathia = {
 			c_orava = {
 				color={ 205 36 36 }
 				color2={ 255 255 255 }
+
+				german = Arwa
+				hungarian = Árva
 				
 				b_arvavara = {
 				}
@@ -536,9 +612,16 @@ e_carpathia = {
 			color={ 156 15 15 }
 			color2={ 255 255 255 }
 			
-			c_saris = {
+			capital = 538 # Abauj
+			
+			croatian = Chrobatia
+			bohemian = Uzhorod	
+			
+			c_saris = { # "Spis" in-game
 				color={ 158 17 17 }
 				color2={ 255 255 255 }
+				
+				german = Scharosch
 				
 				b_saris = {
 				}
@@ -560,6 +643,8 @@ e_carpathia = {
 			c_bereg = {
 				color={ 160 19 19 }
 				color2={ 255 255 255 }
+
+				german = Berg
 				
 				b_beregszasz = {
 				}
@@ -581,6 +666,9 @@ e_carpathia = {
 			c_abauj = {
 				color={ 162 21 21 }
 				color2={ 255 255 255 }
+
+				german = Neuburg
+				bohemian = Abov
 				
 				b_abauj = {
 				}
@@ -603,6 +691,8 @@ e_carpathia = {
 				color={ 164 23 23 }
 				color2={ 255 255 255 }
 				
+				german = Maramuresch
+				
 				b_maramarossziget = {
 				}
 				b_nagybanya = {
@@ -624,6 +714,8 @@ e_carpathia = {
 		d_pest = {
 			color={ 150 51 51 }
 			color2={ 255 255 255 }
+			
+			capital = 522 # Pest
 			
 			c_heves = {
 				color={ 173 64 64 }
@@ -695,9 +787,13 @@ e_carpathia = {
 			color={ 255 150 150 }
 			color2={ 255 255 255 }
 			
+			capital = 519 # Feher
+			
 			c_szekelyfold = {
 				color={ 237 54 54 }
 				color2={ 255 255 255 }
+
+				german = Szeklerland
 				
 				b_csik = {
 				}
@@ -720,6 +816,8 @@ e_carpathia = {
 				color={ 241 58 58 }
 				color2={ 255 255 255 }
 				
+				romanian = Bihor
+				
 				b_bihar = {
 				}
 				b_nagyvarad = {
@@ -740,6 +838,9 @@ e_carpathia = {
 			c_feher = {
 				color={ 245 62 62 }
 				color2={ 255 255 255 }
+
+				#romanian = Alba de Jos
+				german = Unterweissenburg
 				
 				b_feher = {
 				}
@@ -761,12 +862,22 @@ e_carpathia = {
 			}
 		}
 		d_temes = {
-			color={ 150 80 60 }
+			color={ 147 121 58 }
 			color2={ 255 255 255 }
+			
+			capital = 505 # Belgrade
+
+			romanian = Timis
+			serbian = Tamis
+
 			
 			c_temes = {
 				color={ 153 127 64 }
 				color2={ 255 255 255 }
+
+				
+				romanian = Timis
+				serbian = Tamis
 				
 				b_temesvar = {
 				}
@@ -808,17 +919,21 @@ e_carpathia = {
 			}
 		}
 	}
+	#Galaz moved, Moldau split into Belgorod + Moldau
 	k_dacia = {
 		color={ 220 132 40 }
 		color2={ 255 255 255 }
 		
+		culture = romanian
+		
 		capital = 515 # Tirgoviste
 		
 		allow = {
-			NOT = { culture = pecheneg }
+			culture = romanian
 		}
+		
 		d_wallachia = {
-			color={ 15 75 25 }
+			color={ 238 192 69 }
 			color2={ 255 255 255 }
 			
 			capital = 515 # Tirgoviste
@@ -888,7 +1003,7 @@ e_carpathia = {
 			}
 		}
 		d_moldau = {
-			color={ 0 60 10 }
+			color={ 223 202 145 }
 			color2={ 255 255 255 }
 			
 			capital = 545 # Torki
@@ -899,7 +1014,7 @@ e_carpathia = {
 			
 				b_iasi = {
 				}
-				b_varzaresti = {
+				b_varzaresti = {			
 				}
 				b_orhei = {
 				}

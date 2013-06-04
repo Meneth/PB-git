@@ -1,3 +1,4 @@
+#Massively changed from vanilla
 e_mali = {
 	color={ 251 133 78 }
 	color2={ 185 48 15 }

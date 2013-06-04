@@ -1,3 +1,4 @@
+#Massively changed from vanilla
 e_russia = {
 	color={ 147 164 104 }
 	color2={ 255 255 255 }
@@ -16,6 +17,16 @@ e_russia = {
 		
 		culture = russian
 		
+		slavic_pagan_reformed = 500 # Crusade target weight
+		baltic_pagan_reformed = 100 # Crusade target weight
+		tengri_pagan_reformed = 100
+		finnish_pagan_reformed = 100
+		
+		norse = Könugarðr
+		swedish = Könugård
+		norwegian = Kønugård
+		danish = Kønugård
+
 		d_vitebsk = {
 			color={ 196 33 55 }
 			color2={ 255 255 255 }

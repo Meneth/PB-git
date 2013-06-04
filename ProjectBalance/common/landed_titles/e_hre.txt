@@ -1,5 +1,5 @@
+#Massively changed from vanilla
 e_hre = {
-
 	color={ 155 155 155 }
 	color2={ 220 220 20 }
 	
