@@ -580,6 +580,8 @@ gender_laws = {
 				has_horde_culture = no
 				is_merchant_republic = no
 				is_patrician = no
+				NOT = { religion = tengri_pagan }
+				NOT = { religion = tengri_pagan_reformed }
 			}
 			
 			is_landless_type_title = no
@@ -623,6 +625,8 @@ gender_laws = {
 				has_horde_culture = no
 				is_merchant_republic = no
 				is_patrician = no
+				NOT = { religion = tengri_pagan }
+				NOT = { religion = tengri_pagan_reformed }
 			}
 			
 			is_landless_type_title = no

@@ -10,6 +10,7 @@
 	Made the AI smarter about who it'll send their court chaplain to convert
 	(Based on 1.101 changelog) Subjugation can only be done done once per lifetime unless you've got the Become King ambition 
 	(Based on 1.101 changelog) Norse Pagans can no longer employ the coastal conquest CB against other pagans (neighboring counties can still be taken though)
+	(Based on 1.101 changelog) Tengri Pagans are now limited to Agnatic succession
 
 3.2.9
 	Tweaked the color of Crimea to make it less similar to Poland
