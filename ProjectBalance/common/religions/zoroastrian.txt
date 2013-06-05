@@ -14,7 +14,7 @@ zoroastrian_group = {
 		icon = 10
 		heresy_icon = 12
 		
-		color = { 0.5 0.7 0.2 }
+		color = { 0.5 0 0 }
 		crusade_name = GREAT_HOLY_WAR
 		scripture_name = THE_GATHAS
 		god_names = {
