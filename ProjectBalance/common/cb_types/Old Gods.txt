@@ -175,7 +175,7 @@ viking_invasion = {
 	}
 }
 
-# Pagans can subjugate people of their own culture
+# Pagans can subjugate other pagans
 pagan_subjugation = {
 	name = CB_NAME_PAGAN_SUBJUGATION
 	war_name = WAR_NAME_PAGAN_SUBJUGATION
@@ -514,7 +514,15 @@ peasant_revolt = {
 				}
 			}
 		}
-		ROOT = { imprison = FROM }
+		ROOT = { 
+			imprison = FROM
+			hidden_tooltip = {
+				add_character_modifier = { 
+					name = broken_spirit
+					days = -1
+				}
+			}
+		}
 	}
 
 	on_reverse_demand = {
@@ -528,7 +536,15 @@ peasant_revolt = {
 				}
 			}
 		}
-		ROOT = { imprison = FROM }
+		ROOT = { 
+			imprison = FROM
+			hidden_tooltip = {
+				add_character_modifier = { 
+					name = broken_spirit
+					days = -1
+				}
+			}
+		}
 	}
 
 	attacker_ai_victory_worth = {
@@ -581,8 +597,14 @@ heretic_revolt = {
 
 	on_fail = {
 		ROOT = {
-			imprison = FROM 
+			imprison = FROM
 			clr_character_flag = heretic_revolter
+			hidden_tooltip = {
+				add_character_modifier = { 
+					name = broken_spirit
+					days = -1
+				}
+			}
 		}
 		FROM = {
 			prestige = 50
@@ -602,8 +624,14 @@ heretic_revolt = {
 
 	on_reverse_demand = {
 		ROOT = {
-			imprison = FROM 
+			imprison = FROM
 			clr_character_flag = heretic_revolter
+			hidden_tooltip = {
+				add_character_modifier = { 
+					name = broken_spirit
+					days = -1
+				}
+			}
 		}
 		FROM = {
 			prestige = 100
@@ -735,8 +763,14 @@ liberation_revolt = {
 			}
 		}
 		ROOT = {
-			imprison = FROM 
+			imprison = FROM
 			clr_character_flag = nationalist_rebel
+			hidden_tooltip = {
+				add_character_modifier = { 
+					name = broken_spirit
+					days = -1
+				}
+			}
 		}
 	}
 
@@ -752,8 +786,14 @@ liberation_revolt = {
 			}
 		}
 		ROOT = {
-			imprison = FROM 
+			imprison = FROM
 			clr_character_flag = nationalist_rebel
+			hidden_tooltip = {
+				add_character_modifier = { 
+					name = broken_spirit
+					days = -1
+				}
+			}
 		}
 	}
 
@@ -796,6 +836,7 @@ duchy_adventure = {
 			prestige = 250
 			hidden_tooltip = {
 				clr_character_flag = duchy_adventurer
+				give_nickname = nick_the_conqueror
 			}
 		}
 		FROM = {
@@ -1101,11 +1142,9 @@ pagan_county_conquest = {
 					ROOT = { religion = norse_pagan }
 					ROOT = { religion = norse_pagan_reformed }
 				}
+				FROM = { NOT = { religion_group = pagan_group } }
 				location = {
 					port = yes
-				}
-				holder_scope = {
-					NOT = { religion_group = pagan_group }
 				}
 			}
 			location = {

@@ -112,12 +112,18 @@ obj_become_chancellor = {
 	abort_effect = {
 	}
 	effect = {
-		change_diplomacy = 1
+		if = {
+			limit = {
+				NOT = { has_character_flag = successful_council_ambition }
+			}
+			change_diplomacy = 1
+		}
 		opinion = {
 			who = liege
 			modifier = opinion_ambition_fulfilled
 			months = 24
 		}
+		set_character_flag = successful_council_ambition
 	}
 }
 
@@ -216,12 +222,18 @@ obj_become_marshal = {
 	abort_effect = {
 	}
 	effect = {
-		change_martial = 1
+		if = {
+			limit = {
+				NOT = { has_character_flag = successful_council_ambition }
+			}
+			change_martial = 1
+		}
 		opinion = {
 			who = liege
 			modifier = opinion_ambition_fulfilled
 			months = 24
 		}
+		set_character_flag = successful_council_ambition
 	}
 }
 
@@ -337,12 +349,18 @@ obj_become_treasurer = {
 	abort_effect = {
 	}
 	effect = {
-		change_stewardship = 1
+		if = {
+			limit = {
+				NOT = { has_character_flag = successful_council_ambition }
+			}
+			change_stewardship = 1
+		}
 		opinion = {
 			who = liege
 			modifier = opinion_ambition_fulfilled
 			months = 24
 		}
+		set_character_flag = successful_council_ambition
 	}
 }
 
@@ -447,12 +465,18 @@ obj_become_spymaster = {
 	abort_effect = {
 	}
 	effect = {
-		change_intrigue = 1
+		if = {
+			limit = {
+				NOT = { has_character_flag = successful_council_ambition }
+			}
+			change_intrigue = 1
+		}
 		opinion = {
 			who = liege
 			modifier = opinion_ambition_fulfilled
 			months = 24
 		}
+		set_character_flag = successful_council_ambition
 	}
 }
 
@@ -583,12 +607,18 @@ obj_become_spiritual = {
 	abort_effect = {
 	}
 	effect = {
-		change_learning = 1
+		if = {
+			limit = {
+				NOT = { has_character_flag = successful_council_ambition }
+			}
+			change_learning = 1
+		}
 		opinion = {
 			who = liege
 			modifier = opinion_ambition_fulfilled
 			months = 24
 		}
+		set_character_flag = successful_council_ambition
 	}
 }
 
@@ -812,6 +842,7 @@ obj_become_paragon_of_virtue = {
 		set_character_flag = paragon_of_virtue
 	}
 }
+
 
 obj_become_exalted = {
 	type = character
@@ -1243,12 +1274,26 @@ obj_wants_landed_title = {
 		is_female = no
 		is_ruler = no
 		NOT = { trait = incapable }
-		liege = { 
+		liege = {
 			is_feudal = yes
-			is_close_relative = ROOT 
+			is_close_relative = ROOT
 			num_of_extra_landed_titles = 1
+			OR = {
+				NOT = { is_father = ROOT }
+				NOT = {
+					current_heir = {
+						character = ROOT
+					}
+				}
+				NOT = {
+					primary_title = {
+						has_law = succ_gavelkind
+					}
+				}
+			}
 		}
 	}
+	
 	chance = {
 		factor = 100
 		
@@ -1814,6 +1859,14 @@ obj_become_king = {
 			trait = craven
 		}
 		modifier = {
+			factor = 0.01
+			trait = content
+		}
+		modifier = {
+			factor = 0.01
+			trait = slothful
+		}
+		modifier = {
 			factor = 0.1
 			tier = COUNT
 		}
@@ -1844,6 +1897,9 @@ obj_become_king = {
 			trait = incapable
 			trait = content
 			trait = slothful
+			trait = craven
+			trait = stressed
+			trait = depressed
 			is_playable = no
 			is_landed = no
 			higher_tier_than = DUKE

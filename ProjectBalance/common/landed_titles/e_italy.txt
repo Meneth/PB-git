@@ -712,6 +712,8 @@ e_italy = {
 					holy_site = catholic
 					holy_site = aztec
 					holy_site = aztec_reformed
+					holy_site = hellenic_pagan
+					holy_site = pagan
 					used_for_dynasty_names = no
 				}
 				b_viterbo = {

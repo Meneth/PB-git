@@ -1,5 +1,6 @@
 3.2.11
 	Fixed significant issues in the siege imprisonment events
+	Subjugation gives +30 to opinion. Subjugation of people of another religion gives +20 to opinion
 
 3.2.10
 	Dublin is called Dyflin if part of a Norse realm

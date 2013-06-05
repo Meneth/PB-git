@@ -386,7 +386,7 @@ opinion_claimed_my_title = {
 	months = 1200
 }
 
-# Given when a character revokes a title held by someone else
+# Given when a character revokes a title
 opinion_revoked_my_title = {
 	opinion = -80
 	months = 1200
@@ -395,6 +395,28 @@ opinion_revoked_my_title = {
 # Given to vassals of a liege who revokes the title of another vassal
 opinion_revoked_a_title = {
 	opinion = -20
+	months = 60
+}
+
+# Given when a character retracts a vassalage
+opinion_retracted_my_vassal = {
+	opinion = -30
+	months = 1200
+}
+
+opinion_retracted_my_de_jure_vassal = {
+	opinion = -60
+	months = 1200
+}
+
+# Given to direct vassals of a liege who retracts a vassal of another direct vassal
+opinion_retracted_a_vassal = {
+	opinion = -10
+	months = 60
+}
+
+opinion_retracted_a_de_jure_vassal = {
+	opinion = -15
 	months = 60
 }
 
@@ -524,8 +546,14 @@ opinion_discovered_plotting = {
 
 # Given to vassals by the event effect 'vassalize_or_take_under_title'
 opinion_subjugated = {
-	opinion = 25
+	opinion = 30
 	months = 120
+}
+
+# Given to vassals of another religion by the event effect 'vassalize_or_take_under_title'
+opinion_subjugated_other_rel = {
+	opinion = 20
+	months = 60
 }
 
 opinion_imprisoned_child = {

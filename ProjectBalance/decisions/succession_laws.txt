@@ -74,6 +74,7 @@ succession_laws = {
 				OR = {
 					NOT = { religion_group = pagan_group }
 					is_reformed_religion = yes
+					religion = hellenic_pagan
 				}
 				
 				OR = {
@@ -165,6 +166,7 @@ succession_laws = {
 				OR = {
 					NOT = { religion_group = pagan_group }
 					is_reformed_religion = yes
+					religion = hellenic_pagan
 				}
 				
 				is_merchant_republic = no
@@ -244,6 +246,7 @@ succession_laws = {
 				OR = {
 					NOT = { religion_group = pagan_group }
 					is_reformed_religion = yes
+					religion = hellenic_pagan
 				}
 			}
 			OR = {
@@ -389,6 +392,7 @@ succession_laws = {
 						NOT = { religion = baltic_pagan }
 						NOT = { religion = finnish_pagan }
 						NOT = { religion = aztec }
+						NOT = { religion = pagan }
 						NOT = { religion = slavic_pagan }
 					}
 				}
@@ -577,11 +581,11 @@ gender_laws = {
 		potential = {
 			holder_scope = { 
 				NOT = { religion_group = muslim }
+				NOT = { religion = tengri_pagan_reformed }
+				NOT = { religion = tengri_pagan }
 				has_horde_culture = no
 				is_merchant_republic = no
 				is_patrician = no
-				NOT = { religion = tengri_pagan }
-				NOT = { religion = tengri_pagan_reformed }
 			}
 			
 			is_landless_type_title = no
@@ -622,11 +626,11 @@ gender_laws = {
 		potential = {
 			holder_scope = { 
 				NOT = { religion_group = muslim }
+				NOT = { religion = tengri_pagan_reformed }
+				NOT = { religion = tengri_pagan }
 				has_horde_culture = no
 				is_merchant_republic = no
 				is_patrician = no
-				NOT = { religion = tengri_pagan }
-				NOT = { religion = tengri_pagan_reformed }
 			}
 			
 			is_landless_type_title = no

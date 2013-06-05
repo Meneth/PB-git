@@ -6,7 +6,7 @@ title = c_koumbi_saleh
 # Settlements
 max_settlements = 3
 b_koumbi_saleh = castle
-
+b_gharba = temple
 
 # Misc
 culture = sosso

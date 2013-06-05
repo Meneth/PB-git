@@ -3509,6 +3509,7 @@
 	add_trait=hunter
 	add_trait=gregarious
 	add_trait=viking
+	add_trait=zealous
 	add_trait=fortune_builder
 	
 	father = 163109
@@ -3578,7 +3579,6 @@
 				match_character = ROOT
 				match_mult = 1.5
 				attrition = 0.5
-#				earmark = prepared_invasion
 			}
 			create_character = {
 				random_traits = yes
@@ -3600,7 +3600,6 @@
 					match_character = ROOT
 					match_mult = 1.5
 					attrition = 0.5
-#					earmark = prepared_invasion
 				}
 			}
 			create_character = {
@@ -3623,7 +3622,6 @@
 					match_character = ROOT
 					match_mult = 1.5
 					attrition = 0.5
-					disband_on_peace = yes
 				}
 			}
 			add_character_modifier = { 
@@ -3720,7 +3718,6 @@
 				match_character = ROOT
 				match_mult = 3.0
 				attrition = 0.5
-#				earmark = prepared_invasion
 			}
 			c_163119 = { # Ubbe
 				spawn_unit = {
@@ -4407,7 +4404,7 @@
 	dynasty=1031
 	religion="norse_pagan"
 	culture="norse"
-	father=166721
+	father=167721
 	845.1.1={
 		birth="845.1.1"
 	}

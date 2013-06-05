@@ -1351,6 +1351,7 @@ e_scandinavia = {
 					danish = "Lødøse"
 				}
 				b_skara = {
+					holy_site = pagan
 				}
 				b_falkoping = {
 					norwegian = "Falkøping"
