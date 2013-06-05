@@ -2,7 +2,7 @@ PB-git
 ======
 
 Project Balance
-Installation (ignore if you're using the .exe version)
+Installation
 
 1.    Important: Delete your Project Balance folder if you have one
 2.    Extract the Project Balance folder and the ProjectBalance.mod file to your mod-folder (Crusader Kings II\mod)
