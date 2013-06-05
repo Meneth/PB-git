@@ -7,6 +7,7 @@
 	Fixed Hamburg's ships being unusable
 	Made Norse religion blue, Slavic religion greenish, and Zoroastrianism red
 	Fixed one issue with the siege imprisonment events that could lead to rebels holding characters prisoner
+	Made the AI smarter about who it'll send their court chaplain to convert
 
 3.2.9
 	Tweaked the color of Crimea to make it less similar to Poland
