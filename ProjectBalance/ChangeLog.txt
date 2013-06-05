@@ -5,6 +5,7 @@
 	Greeks will no longer try to restore external inheritance in Byzantium
 	The AI will generally wait until it's stronger before launching faction wars
 	Fixed Hamburg's ships being unusable
+	Made Norse religion blue and Slavic religion greenish
 
 3.2.9
 	Tweaked the color of Crimea to make it less similar to Poland

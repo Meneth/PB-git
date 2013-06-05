@@ -39,7 +39,7 @@ pagan_group = {
 		icon = 20
 		heresy_icon = 21
 		
-		color = { 0.75 0.75 0.75 }
+		color = { 90 145 205 }
 		god_names = {
 			GOD_THOR GOD_THE_THUNDERER GOD_THE_ALLFATHER GOD_THE_ODIN GOD_FREY GOD_TYR
 		}
@@ -78,7 +78,7 @@ pagan_group = {
 		icon = 19
 		heresy_icon = 21
 		
-		color = { 0.6 0.6 0.6 }
+		color = { 60 120 180 }
 		god_names = {
 			GOD_THOR GOD_THE_THUNDERER GOD_THE_ALLFATHER GOD_THE_ODIN GOD_FREY GOD_TYR
 		}
@@ -373,7 +373,7 @@ pagan_group = {
 		icon = 23
 		heresy_icon = 24
 		
-		color = { 0.85 0.73 0.4 }
+		color = { 0.55 0.75 0.55 }
 		crusade_name = GREAT_HOLY_WAR
 		scripture_name = THE_LEGENDS
 		god_names = {
@@ -403,7 +403,7 @@ pagan_group = {
 		icon = 22
 		heresy_icon = 24
 		
-		color = { 0.7 0.6 0.3 }
+		color = { 0.4 0.6 0.4 }
 		crusade_name = GREAT_HOLY_WAR
 		scripture_name = THE_LEGENDS
 		god_names = {
