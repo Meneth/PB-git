@@ -408,6 +408,11 @@ character_event = {
 		
 		siege = {
 			is_attacker = no
+			enemy = {
+				leader = {
+					NOT = { has_landed_title = e_rebels }
+				}
+			}
 		}
 	}
 	option = {

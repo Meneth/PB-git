@@ -6,6 +6,7 @@
 	The AI will generally wait until it's stronger before launching faction wars
 	Fixed Hamburg's ships being unusable
 	Made Norse religion blue, Slavic religion greenish, and Zoroastrianism red
+	Fixed one issue with the siege imprisonment events that could lead to rebels holding characters prisoner
 
 3.2.9
 	Tweaked the color of Crimea to make it less similar to Poland
