@@ -651,7 +651,7 @@ e_scandinavia = {
 			}
 		}
 		d_ostlandet = {
-			color={ 120 160 245 }
+			color={ 150 40 20 }
 			color2={ 255 255 255 }
 			
 			capital = 272 # Akershus
