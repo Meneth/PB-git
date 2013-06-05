@@ -59,7 +59,21 @@ character_event = {
 							location = { is_capital = yes }
 							any_courtier = { at_location = ROOT }
 						}
-						at_location = ROOT
+						OR = {
+							at_location = ROOT
+							any_dynasty_member = {
+								at_location = ROOT
+								NOT = { has_character_modifier = modifier_hidden }
+								NOT = { has_character_modifier = left_at_siege }
+								NOT = { has_character_modifier = stalwart_defender }
+							}
+							any_spouse = {
+								at_location = ROOT
+								NOT = { has_character_modifier = modifier_hidden }
+								NOT = { has_character_modifier = left_at_siege }
+								NOT = { has_character_modifier = stalwart_defender }
+							}
+						}
 					}
 					set_character_flag = religious_enemy_sieging
 				}
@@ -94,6 +108,9 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
+		trigger = {
+			at_location = FROM
+		}
 		name = "EVTOPTWAYsiegepulseflee01"
 		
 		ai_chance = {
