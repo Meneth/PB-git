@@ -239,6 +239,7 @@ e_byzantium = {
 					turkish = "Salonika"
 				}
 				b_thesedessa = {
+					holy_site = hellenic_pagan
 				}
 				b_voden = {
 				}
@@ -334,6 +335,7 @@ e_byzantium = {
 				}
 				b_piraeaus = {
 					holy_site = orthodox
+					holy_site = hellenic_pagan
 				}
 				b_megara = {
 				}
@@ -650,6 +652,7 @@ e_byzantium = {
 					turkish = "Balakhisar"
 				}
 				b_lampsakos = {
+					holy_site = hellenic_pagan
 				}
 				b_alexandriatroas = {
 				}

@@ -1049,6 +1049,7 @@ e_arabia = {
 					holy_site = miaphysite
 					holy_site = monophysite
 					holy_site = nestorian
+					holy_site = hellenic_pagan
 				}
 				b_abukir = {
 				}
@@ -1662,6 +1663,7 @@ e_arabia = {
 				b_mecca = {
 					holy_site = sunni
 					holy_site = shiite
+					holy_site = pagan
 				}
 				b_jeddah = {
 				}
@@ -2318,6 +2320,7 @@ e_arabia = {
 					holy_site = miaphysite
 					holy_site = monophysite
 					holy_site = nestorian
+					holy_site = pagan
 				}
 				b_nablus = {
 				}

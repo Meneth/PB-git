@@ -441,7 +441,7 @@ pagan_group = {
 		icon = 35
 		heresy_icon = 36
 		
-		color = { 91 49 13 }
+		color = { 1.0 0.45 0.0 }
 		crusade_name = GREAT_HOLY_WAR
 		scripture_name = THE_LEGENDS
 		god_names = {
@@ -460,6 +460,7 @@ pagan_group = {
 		priests_can_marry = yes
 		female_temple_holders = yes
 		allow_looting = yes
+		
 		max_consorts = 3
 		
 		aggression = 0.5 # AI aggression factor
@@ -474,7 +475,7 @@ pagan_group = {
 		icon = 34
 		heresy_icon = 35
 		
-		color = { 111 69 33 }
+		color = { 0.8 0.35 0.0 }
 		crusade_name = GREAT_HOLY_WAR
 		scripture_name = THE_LEGENDS
 		god_names = {
@@ -490,14 +491,33 @@ pagan_group = {
 		
 		priests_can_marry = yes
 		female_temple_holders = yes
+		allow_looting = yes
 		
 		max_consorts = 3
 		
 		independence_war_score_bonus = 30 # Overrides define CONTESTED_TITLE_OCCUPIED_WARSCORE_BONUS_INDEP
 		reformed = west_african_pagan_reformed
-		allow_looting = yes
 		
 		aggression = 0.1 # AI aggression factor
+		
+		religious_clothing_head = 3
+		religious_clothing_priest = 3
+	}
+	
+	hellenic_pagan = {
+		graphical_culture = westerngfx
+
+		icon = 37
+		
+		color = { 0.6 0.1 0.1 }
+		god_names = {
+			GOD_JUPITER GOD_MERCURY GOD_MARS GOD_VENUS GOD_MINERVA GOD_VESTA
+		}
+		crusade_name = GREAT_HOLY_WAR
+		scripture_name = THE_LEGENDS
+		priests_can_marry = yes
+		female_temple_holders = yes
+		max_consorts = 3
 		
 		religious_clothing_head = 3
 		religious_clothing_priest = 3

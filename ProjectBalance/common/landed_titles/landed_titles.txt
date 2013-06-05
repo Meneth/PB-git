@@ -2349,6 +2349,41 @@ d_ghilman = {
 	modifier = d_ghilman_modifier
 }
 
+d_ghanan_band = {
+	color = { 108 123 48 }
+	color2 = { 255 255 255 }
+
+	capital = 913 # Ghana
+	
+	# Hire Trigger
+	allow = {
+		always = yes
+	}
+	
+	# Parent Religion 
+	religion = west_african_pagan
+	
+	culture = manden
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	strength_growth_per_century = 1.0
+	
+	modifier = d_ghanan_band_modifier
+}
+
 k_pomerania = {
 	color={ 145 130 40 }
 	color2={ 220 220 20 }

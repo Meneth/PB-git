@@ -5,6 +5,7 @@ castle = {
 		potential = {
 			port = yes
 		}
+		port = yes
 		trigger = { TECH_NAVAL = 1 }
 		build_cost = 50
 		build_time = 365
@@ -20,6 +21,7 @@ castle = {
 		potential = {
 			port = yes
 		}
+		port = yes
 		trigger = { TECH_NAVAL = 2 }
 		upgrades_from = ca_shipyard_1
 		build_cost = 50
@@ -36,6 +38,7 @@ castle = {
 		potential = {
 			port = yes
 		}
+		port = yes
 		trigger = { TECH_NAVAL = 3 }
 		upgrades_from = ca_shipyard_2
 		build_cost = 50
@@ -52,6 +55,7 @@ castle = {
 		potential = {
 			port = yes
 		}
+		port = yes
 		trigger = { TECH_NAVAL = 4 }
 		upgrades_from = ca_shipyard_3
 		build_cost = 50

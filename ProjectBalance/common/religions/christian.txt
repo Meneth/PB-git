@@ -94,9 +94,9 @@ christian = {
 		graphical_culture = westerngfx
 
 		icon = 2
-		heresy_icon = 6
+		heresy_icon = 7
 		
-		color = { 0.7 0.5 0 }
+		color = { 0.7 0 0.5 }
 		
 		crusade_name = "CRUSADE"
 		scripture_name = THE_BIBLE
@@ -123,7 +123,7 @@ christian = {
 		icon = 11
 		heresy_icon = 13
 		
-		color = { 0.7 0.7 0.4 }
+		color = { 0.7 0.7 0.1 }
 		
 		crusade_name = "CRUSADE"
 		scripture_name = THE_BIBLE
@@ -171,7 +171,7 @@ christian = {
 		icon = 2
 		heresy_icon = 7
 		
-		color = { 0.9 0.7 0 }
+		color = { 0.9 0.7 0.2 }
 		parent = orthodox
 		
 		religious_clothing_head = 2
@@ -184,7 +184,7 @@ christian = {
 		icon = 2
 		heresy_icon = 7
 		
-		color = { 0.6 0.2 0.2 }
+		color = { 0.8 0.3 0.5 }
 		parent = orthodox
 		
 		investiture = no
@@ -205,7 +205,7 @@ christian = {
 		icon = 2
 		heresy_icon = 7
 		
-		color = { 0.75 0.51 0.35 }
+		color = { 0.5 0 0.3 }
 		parent = orthodox
 		
 		investiture = no
@@ -226,7 +226,7 @@ christian = {
 		icon = 2
 		heresy_icon = 7
 		
-		color = { 0.9 0.6 0.6 }
+		color = { 0.5 0.2 0.4 }
 		parent = orthodox
 		
 		religious_clothing_head = 2

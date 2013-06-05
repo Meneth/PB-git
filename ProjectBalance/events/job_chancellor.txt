@@ -35,7 +35,7 @@ character_event = {
 	trigger = {
 		has_job_action = action_improve_relations
 		location = {
-			any_province_character = {
+			any_province_lord = {
 				OR = {
 					primary_title = { higher_tier_than = BARON }
 					same_liege = ROOT
@@ -48,7 +48,7 @@ character_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 120
+		months = 80
 		
 		modifier = {
 			factor = 1.25

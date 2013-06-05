@@ -2711,6 +2711,7 @@ tribal_invasion = {
 					OR = {
 						culture_group = altaic
 						culture_group = magyar
+						culture_group = mesoamerican
 					}
 					higher_tier_than = COUNT
 					OR = {
@@ -3014,6 +3015,7 @@ crusade = {
 			can_call_crusade = yes
 			has_called_crusade = no
 			religion_authority = 0.05
+			is_landed = yes # Otherwise the war score starts at -100%
 			NOT = {
 				AND = {
 					religion_group = muslim

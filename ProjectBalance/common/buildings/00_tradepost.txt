@@ -84,7 +84,7 @@ trade_post = {
 		build_time = 182
 		ai_creation_factor = 91
 		
-		retinuesize = 100
+		retinuesize = 20
 		garrison_size = 1.0
 		fort_level = 1
 		
@@ -99,7 +99,7 @@ trade_post = {
 		upgrades_from = tr_garrison_1
 		ai_creation_factor = 90
 		
-		retinuesize = 150
+		retinuesize = 30
 		garrison_size = 1.5
 		fort_level = 2
 		
@@ -114,7 +114,7 @@ trade_post = {
 		upgrades_from = tr_garrison_2
 		ai_creation_factor = 89
 		
-		retinuesize = 250
+		retinuesize = 50
 		garrison_size = 2.0
 		fort_level = 3
 		

@@ -40,14 +40,14 @@ normal_ai = {
 
 hard_ai = {
 	land_morale = 0.25
-	global_tax_modifier = 0.25
-	levy_reinforce_rate = 0.05
+	global_tax_modifier = 0.1
+	levy_reinforce_rate = 0.5
 }
 
 very_hard_ai = {
 	land_morale = 0.5
-	global_tax_modifier = 0.5
-	levy_reinforce_rate = 0.1
+	global_tax_modifier = 0.2
+	levy_reinforce_rate = 1.0
 }
 
 ##########################################################################
@@ -233,7 +233,6 @@ under_siege = {
 	levy_reinforce_rate = -2
 	local_tax_modifier = -0.5
 }
-
 
 revolt_risk = {
 	local_tax_modifier = -0.01

@@ -152,6 +152,7 @@ e_mali = {
 				b_koumbi_saleh = {
 				}
 				b_gharba = {
+					holy_site = pagan
 				}
 				b_magali = {
 				}

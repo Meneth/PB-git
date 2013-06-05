@@ -1634,10 +1634,11 @@ e_britannia = {
 			
 			capital = 11 # Dublin
 			
-			norwegian = "Dublin"
-			danish = "Dublin"
-			swedish = "Dublin"
-			norse = "Dyflin"
+			norwegian = Dublin
+			danish = Dublin
+			swedish = Dublin
+			norse = Dyflin
+			irish = Tara
 			
 			pagan_coa = {
 				template = 0

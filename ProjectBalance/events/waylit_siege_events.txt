@@ -57,65 +57,57 @@ character_event = {
 	immediate = {
 		if = {
 			limit = {
-				any_liege = {
+				liege = {
 					FROM = { holder_scope = { war_with = PREVPREV } }
 				}
 			}
-			if = {
-				limit = {
-					at_location = ROOT
-					NOT = { has_character_modifier = modifier_hidden }
-				}
-				any_liege = {
-					limit = {
-						FROM = { holder_scope = { war_with = PREVPREV } }
-						NOT = {
-							any_liege = {
-								FROM = { holder_scope = { war_with = PREVPREV } }
-							}
-						}
-					}
-					hidden_tooltip = {
-						character_event = { id = 110009994 }
-					}
-				}
-			}
-			if = {
-				limit = {
-					OR = {
-						NOT = { at_location = ROOT }
-						has_character_modifier = modifier_hidden
-					}
-					OR = {
-						NOT = { num_of_baron_titles = 2 }
-						NOT = { num_of_count_titles = 2 }
-						any_courtier = { at_location = ROOT }
-					}
-					OR = {
-						any_dynasty_member = {
-							NOT = { character = ROOT }
-							at_location = ROOT
-							NOT = { character = PREV }
-							NOT = { has_character_modifier = modifier_hidden }
-						}
-						
-						any_spouse = {
+			FROM = {
+				holder_scope = {
+					if = {
+						limit = {
 							at_location = ROOT
 							NOT = { has_character_modifier = modifier_hidden }
 						}
-					}
-				}
-				any_liege = {
-					limit = {
-						FROM = { holder_scope = { war_with = PREVPREV } }
-						NOT = {
-							any_liege = {
-								FROM = { holder_scope = { war_with = PREVPREV } }
+						ROOT = {
+							liege = {
+								hidden_tooltip = {
+									character_event = { id = 110009994 }
+								}
 							}
 						}
 					}
-					hidden_tooltip = {
-						character_event = { id = 110009995 }
+					if = {
+						limit = {
+							OR = {
+								NOT = { at_location = ROOT }
+								has_character_modifier = modifier_hidden
+							}
+							OR = {
+								NOT = { num_of_baron_titles = 2 }
+								NOT = { num_of_count_titles = 2 }
+								any_courtier = { at_location = ROOT }
+							}
+							OR = {
+								any_dynasty_member = {
+									NOT = { character = ROOT }
+									at_location = ROOT
+									NOT = { character = PREV }
+									NOT = { has_character_modifier = modifier_hidden }
+								}
+								
+								any_spouse = {
+									at_location = ROOT
+									NOT = { has_character_modifier = modifier_hidden }
+								}
+							}
+						}
+						ROOT = {
+							liege = {
+								hidden_tooltip = {
+									character_event = { id = 110009995 }
+								}
+							}
+						}
 					}
 				}
 			}
@@ -126,17 +118,11 @@ character_event = {
 						at_location = ROOT
 					}
 				}
-				any_liege = {
-					limit = {
-						FROM = { holder_scope = { war_with = PREVPREV } }
-						NOT = {
-							any_liege = {
-								FROM = { holder_scope = { war_with = PREVPREV } }
-							}
+				ROOT = {
+					liege = {
+						hidden_tooltip = {
+							character_event = { id = 110009996 }
 						}
-					}
-					hidden_tooltip = {
-						character_event = { id = 110009996 }
 					}
 				}
 			}
@@ -144,58 +130,68 @@ character_event = {
 		if = {
 			limit = {
 				NOT = {
-					any_liege = {
+					liege = {
 						FROM = { holder_scope = { war_with = PREVPREV } }
 					}
 				}
 			}
-			if = {
-				limit = {
-					at_location = ROOT
-					NOT = { has_character_modifier = modifier_hidden }
-				}
-				hidden_tooltip = {
-					character_event = { id = 110009994 }
-				}
-			}
-			if = {
-				limit = {
-					OR = {
-						NOT = { at_location = ROOT }
-						has_character_modifier = modifier_hidden
-					}
-					OR = {
-						NOT = { num_of_baron_titles = 2 }
-						NOT = { num_of_count_titles = 2 }
-						any_courtier = { at_location = FROM }
-					}
-					OR = {
-						any_dynasty_member = {
-							NOT = { character = ROOT }
-							at_location = ROOT
-							NOT = { character = PREV }
-							NOT = { has_character_modifier = modifier_hidden }
-						}
-						
-						any_spouse = {
+			FROM = {
+				holder_scope = {
+					if = {
+						limit = {
 							at_location = ROOT
 							NOT = { has_character_modifier = modifier_hidden }
 						}
+						ROOT = {
+							hidden_tooltip = {
+								character_event = { id = 110009994 }
+							}
+						}
 					}
-				}
-				hidden_tooltip = {
-					character_event = { id = 110009995 }
-				}
-			}
-			if = {
-				limit = {
-					any_courtier = {
-						prisoner = yes
-						at_location = ROOT
+					if = {
+						limit = {
+							OR = {
+								NOT = { at_location = ROOT }
+								has_character_modifier = modifier_hidden
+							}
+							OR = {
+								NOT = { num_of_baron_titles = 2 }
+								NOT = { num_of_count_titles = 2 }
+								any_courtier = { at_location = FROM }
+							}
+							OR = {
+								any_dynasty_member = {
+									NOT = { character = ROOT }
+									at_location = ROOT
+									NOT = { character = PREV }
+									NOT = { has_character_modifier = modifier_hidden }
+								}
+								
+								any_spouse = {
+									at_location = ROOT
+									NOT = { has_character_modifier = modifier_hidden }
+								}
+							}
+						}
+						ROOT = {
+							hidden_tooltip = {
+								character_event = { id = 110009995 }
+							}
+						}
 					}
-				}
-				hidden_tooltip = {
-					character_event = { id = 110009996 }
+					if = {
+						limit = {
+							any_courtier = {
+								prisoner = yes
+								at_location = ROOT
+							}
+						}
+						ROOT = {
+							hidden_tooltip = {
+								character_event = { id = 110009996 }
+							}
+						}
+					}
 				}
 			}
 		}

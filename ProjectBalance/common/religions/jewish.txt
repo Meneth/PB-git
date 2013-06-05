@@ -5,7 +5,7 @@ jewish_group = {
 	
 	jewish = {
 		graphical_culture = muslimgfx
-		icon = 37
+		icon = 38
 		color = { 1.0 0.0 0.0 }
 		crusade_name = "HOLY_WAR"
 		scripture_name = THE_TORAH

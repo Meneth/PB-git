@@ -51013,24 +51013,6 @@
 	}
 }
 
-167976 = {
-	name="Hucbald"
-	dynasty=9566
-	religion="catholic"
-	culture="german"
-	830.1.1 = {
-		birth="830.1.1"
-	}
-	848.1.1 = {
-		add_spouse=167977
-	}
-	893.3.1 = {
-		death="893.3.1"
-	}
-}
-
-
-
 167977 = {
 	name="Andaberta"
 	female=yes
@@ -51076,21 +51058,6 @@
 	}
 	902.1.1 = {
 		death="902.1.1"
-	}
-}
-
-167980 = {
-	name="Hucbald"
-	dynasty=9566
-	religion="catholic"
-	culture="german"
-	father=167976
-	mother=167977
-	860.1.1 = {
-		birth="860.1.1"
-	}
-	893.1.1 = {
-		death="893.1.1"
 	}
 }
 

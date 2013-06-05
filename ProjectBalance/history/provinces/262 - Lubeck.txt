@@ -19,18 +19,26 @@ b_starigard = city
 culture = pommeranian
 religion = slavic_pagan
 
-# History TODO: make sure Lübeck becomes the capital after 1226
-#1226.1.1 = { b_lubeck = city } ## done!
-
-#county of Ratzeburg
-1066.1.1 = {
+# History
+700.1.1 = {
+	b_travemunde = ca_keep_1
+	b_travemunde = ca_militia_barracks_1
+	b_travemunde = ca_wall_1
+	b_travemunde = ca_wall_q_1
+	b_starigard = ct_barracks_1
+	b_ratzeburg = tp_barracks_1
 	b_starigard = ct_trade_post_1
 	b_starigard = ct_trade_post_2
 	b_starigard = ct_trade_post_3
 }
 
-1143.1.1 = { b_ratzeburg = castle }
-1143.1.1 = { capital = b_ratzeburg } 
+#county of Ratzeburg
+
+1143.1.1 = { 
+	b_ratzeburg = castle
+	capital = b_ratzeburg
+	b_travemunde = temple
+}
 
 #founding of Lübeck
 1157.1.1 = { b_lubeck = city }

@@ -224,21 +224,34 @@ latin = {
 		graphical_culture = southerngfx
 		second_graphical_culture = occitangfx # Fallback type
 		
-		color = { 0.7 0.5 0.7 }
+		color = { 0.8 0.7 0.2 }
 
 		male_names = {
-			Alexander_Alexander Constans_Constans Constantine_Constantine Constantius_Constantius Hadrian_Adrian Julian_Julian 
-			Marcus_Marcus Philip_Philip Theodosius_Theodosios Tiberius_Tiberius Trajan_Trajan
+			Aemilian Aemilius Aetius Albinus Alexander_Alexander Anastasius_Anastasius Anicius Annius Antoninus Antonius_Antonius Arcadius Aurelian Aurelius
+			Avitus Belisarius_Belisarius Britannicus Caecilius Caesar_Caesar Carinus Carus Cassius Claudius Clementius Constans_Constans Constantine_Constantine
+			Constantius_Constantius Cornelius Crassus Decimus Decius Diocletian Domitian Domitius Drusus Ennodius Fabianus Fabius Faustus Felix Flavianus Florian
+			Gaius Galerius Gallienus Gallus Germanus_Germanus Gordian Gracchus Gratian Hadrian_Adrian Herculius_Heracles Honorius Joannes_John Jovian
+			Julian_Julian Julius Julius-Caesar Junius Justin_Justin Justinian_Justinian Leo_Leo Leontius_Leontius Liberius Licinius Lucius Magnus_Magnus Marcellinus
+			Marcellus Marcian Marcus_Marcus Marinus Marius Martinus Maximian Maximinus Maximus_Maximus Nepotian Nerva Numerian Octavianus Octavius Otho
+			Paulinus Paulus_Paul Petronius Philip_Philip Pompeius Pontianus Priscus Probus Publius Quintus Romanus_Roman Romulus Rufinus Rutilius Sabinianus
+			Saturninus Sempronius Septimius Sergius_Sergius Severinus Severus Sextus Symmachus_Symmachus Tacitus Theodosius_Theodosios Tiberius_Tiberius
+			Titius Titus Trajan_Trajan Urbanus Valens Valentinian Valerian Valerius_Valerius Venantius Vespasian Victor Victorinus Vigilius Vitalianus Volusianus
 		}
 		female_names = {
-			Pulcheria_Pulcheria
+			Aelia Agrippina Antonia_Antonia Antonina Aquilia Aurelia Caecilia Caesaris Candida Cassia Claudia_Claudia Clementia Constantia_Constantia
+			Constantina_Constantina Cornelia Crispina Dominica Domitiana Domna Domnina Drusilla Fausta Faustina Flacilla Flavia Fortunata Frontina Gaia Galeria
+			Gordiana Hadriana_Adriana Helvia Hilara Honoria Hortensia Julia_Julia Juliana_Juliana Junia Justa Justina_Justina Justiniana Licinia Livia Livilla Lucilla
+			Magnia Magnilla Marcella Marcia_Marcia Marciana Marina Martina_Martina Matrona Maxima Maximiana Messalina Minervina Minucia Modia Mustela
+			Octavia Palatina Paula_Paula Paulina_Paulina Petronella Petronia_Petronia Placidia Plautia Plautilla Pompeia Poppaea Praeiecta Publia Pulcheria_Pulcheria
+			Rusticiana Sabina Sallustia Salonina Salvianella Scantilla Serena Sergia Severa Severina Silvia Spadusa Sulpicia Tarsilla Titiana Ulpia Valeria_Valeria
+			Verina Victoria Vigilantia Viviana_Viviana
 		}
 		from_dynasty_prefix = "of "
 
 		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
 		pat_grf_name_chance = 50
-		mat_grf_name_chance = 50
-		father_name_chance = 0
+		mat_grf_name_chance = 0
+		father_name_chance = 50
 		
 		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
 		pat_grm_name_chance = 50
