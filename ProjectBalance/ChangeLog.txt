@@ -12,6 +12,7 @@
 	(Based on 1.101 changelog) Norse Pagans can no longer employ the coastal conquest CB against other pagans (neighboring counties can still be taken though)
 	(Based on 1.101 changelog) Tengri Pagans are now limited to Agnatic succession
 	(Based on 1.101 changelog) West African pagans can now also raid
+	(Based on 1.101 changelog) 867: Byzantium is now properly on Primogeniture, not Gavelkind
 
 3.2.9
 	Tweaked the color of Crimea to make it less similar to Poland
