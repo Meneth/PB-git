@@ -773,6 +773,14 @@ d_nubian_band_modifier = {
 	light_cavalry = 150
 }
 
+d_ghanan_band_modifier = {
+	levy_size = 1.5
+	archers = 150
+	light_infantry = 450
+	heavy_infantry = 150
+	light_cavalry = 150
+}
+
 d_scottish_band_modifier = {
 	levy_size = 1.5
 	archers = 150

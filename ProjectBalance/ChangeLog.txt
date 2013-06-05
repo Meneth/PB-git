@@ -1,3 +1,6 @@
+3.2.12
+	Fixed the Ghanan Band not having any troops
+
 3.2.11
 	Now compatible with both 1.10 and 1.101
 	Fixed significant issues in the siege imprisonment events
