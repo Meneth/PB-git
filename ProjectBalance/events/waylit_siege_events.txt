@@ -89,7 +89,7 @@ character_event = {
 					OR = {
 						NOT = { num_of_baron_titles = 2 }
 						NOT = { num_of_count_titles = 2 }
-						any_courtier = { at_location = FROM }
+						any_courtier = { at_location = ROOT }
 					}
 					OR = {
 						any_dynasty_member = {

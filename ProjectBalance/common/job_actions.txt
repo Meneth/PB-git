@@ -263,7 +263,29 @@ action_inquisition = {
 					has_opinion_modifier = { who = FROM modifier = opinion_sent_preacher }
 				}
 				OR = {
-					religion = norse_pagan
+					AND = {
+						religion = norse_pagan
+						FROM = { religion = catholic }
+					}
+					AND = {
+						culture = polish
+						FROM = { religion = catholic }
+					}
+					AND = {
+						culture = russian
+						FROM = { religion = orthodox }
+					}
+					AND = {
+						culture = hungarian
+						OR = {
+							FROM = { religion = orthodox }
+							FROM = { religion = catholic }
+						}
+					}
+					AND = {
+						religion = west_african_pagan
+						FROM = { religion_group = muslim }
+					}
 					FROM = { trait = zealous }
 					FROM = { ai = no }
 				}

@@ -1,12 +1,15 @@
+#Wendish empire minus Pomerania. Header and allow changed
 e_poland_lithuania = {
 	color={ 180 0 50 }
 	color2={ 200 0 0 }
 	
+	capital = 527 # Krakowskie
+		
 	culture = polish
 	
-	capital = 527 # Krakowskie
 	name_tier = king
 	
+	#Unchanged from vanilla
 	k_poland = {
 		color={ 150 23 23 }
 		color2={ 200 0 0 }
@@ -16,6 +19,8 @@ e_poland_lithuania = {
 		culture = polish
 		
 		catholic = 100 # Crusade target weight
+		slavic_pagan_reformed = 500 # Crusade target weight
+		baltic_pagan_reformed = 100 # Crusade target weight
 		
 		d_mazovia = {
 			color={ 125 46 36 }
@@ -24,7 +29,7 @@ e_poland_lithuania = {
 			capital = 529 # Plock
 			
 			c_plock = {
-				color={ 30 127 2 }
+				color={ 127 30 2 }
 				color2={ 255 255 255 }
 				
 				b_plock = {
@@ -47,7 +52,7 @@ e_poland_lithuania = {
 				}
 			}
 			c_czersk = {
-				color={ 6 127 50 }
+				color={ 127 6 50 }
 				color2={ 255 255 255 }
 				
 				b_czersk = {
@@ -76,7 +81,7 @@ e_poland_lithuania = {
 			capital = 429 # Gnieznenskie
 		
 			c_lubusz = {
-				color={ 6 135 2 }
+				color={ 135 30 30 }
 				color2={ 255 255 255 }
 			
 				b_lubusz = {
@@ -97,7 +102,7 @@ e_poland_lithuania = {
 				}
 			}
 			c_gnieznienskie = {
-				color={ 6 125 2 }
+				color={ 125 6 2 }
 				color2={ 255 255 255 }
 			
 				b_gniezno = {
@@ -118,7 +123,7 @@ e_poland_lithuania = {
 				}
 			}
 			c_poznanskie = {
-				color={ 6 145 2 }
+				color={ 145 6 2 }
 				color2={ 255 255 255 }
 			
 				b_poznan = {
@@ -139,7 +144,7 @@ e_poland_lithuania = {
 				}
 			}
 			c_kaliskie = {
-				color={ 6 155 20}
+				color={ 155 6 20}
 				color2={ 255 255 255 }
 			
 				b_kalisz = {
@@ -167,7 +172,7 @@ e_poland_lithuania = {
 			capital = 435 # Upper Silesia
 		
 			c_lower_silesia = {
-				color={ 17 228 10 }
+				color={ 170 30 30 }
 				color2={ 255 255 255 }
 			
 				b_glogow = {
@@ -188,7 +193,7 @@ e_poland_lithuania = {
 				}
 			}
 			c_upper_silesia = {
-				color={ 17 218 10 }
+				color={ 200 50 70 }
 				color2={ 255 255 255 }
 			
 				b_wroclaw = {
@@ -209,7 +214,7 @@ e_poland_lithuania = {
 				}
 			}
 			c_opole = {
-				color={ 17 238 10 }
+				color={ 218 37 15 }
 				color2={ 255 255 255 }
 			
 				b_opole = {
@@ -230,7 +235,7 @@ e_poland_lithuania = {
 				}
 			}
 			c_cieszyn = {
-				color={ 6 127 2 }
+				color={ 127 6 2 }
 				color2={ 255 255 255 }
 			
 				b_cieszyn = {
@@ -256,10 +261,9 @@ e_poland_lithuania = {
 			color2={ 255 255 255 }
 			
 			capital = 527 # Krakowskie
-		
 
 			c_krakowskie = {
-				color={ 6 137 2 }
+				color={ 137 6 20 }
 				color2={ 255 255 255 }
 			
 				b_krakow = {
@@ -280,7 +284,7 @@ e_poland_lithuania = {
 				}
 			}
 			c_sacz = {
-				color={ 6 117 2 }
+				color={ 117 6 2 }
 				color2={ 255 255 255 }
 			
 				b_nowysacz = {
@@ -301,7 +305,7 @@ e_poland_lithuania = {
 				}
 			}
 			c_sandomierskie = {
-				color={ 16 147 2 }
+				color={ 147 16 2 }
 				color2={ 255 255 255 }
 			
 				b_sandomierz = {
@@ -329,7 +333,7 @@ e_poland_lithuania = {
 			capital = 428 # Kujawy
 		
 			c_sieradzko-leczyckie = {
-				color={ 0 255 0 }
+				color={ 160 40 40 }
 				color2={ 255 255 255 }
 			
 				b_sieradz = {
@@ -350,7 +354,7 @@ e_poland_lithuania = {
 				}
 			}
 			c_kujawy = {
-				color={ 10 245 10 }
+				color={ 210 50 10 }
 				color2={ 255 255 255 }
 			
 				b_inowroclaw = {
@@ -372,7 +376,7 @@ e_poland_lithuania = {
 			}
 		}
 	}
-
+	#Zhmud moved to d_lithuania. Podlaise moved out to Kiev. No duchy of Grodno
 	k_lithuania = {
 		color={ 75 125 6 }
 		color2={ 255 255 255 }
@@ -382,6 +386,9 @@ e_poland_lithuania = {
 		culture = lithuanian
 		
 		catholic = 50 # Crusade target weight
+		slavic_pagan_reformed = 100 # Crusade target weight
+		baltic_pagan_reformed = 500
+		finnish_pagan_reformed = 100
 		
 		d_livonia = {
 			color={ 110 50 50 }
@@ -407,6 +414,7 @@ e_poland_lithuania = {
 				color2={ 255 255 255 }
 				
 				swedish = "Lettgallen"
+				norse = "Lettgallen"
 				danish = "Lettgallen"
 				norwegian = "Lettgallen"
 				german = "Lettgallen"
@@ -433,6 +441,7 @@ e_poland_lithuania = {
 				color2={ 255 255 255 }
 				
 				swedish = "Livland"
+				norse = "Livland"
 				danish = "Livland"
 				norwegian = "Livland"
 				german = "Livland"
@@ -441,12 +450,14 @@ e_poland_lithuania = {
 				}
 				b_lemisele = {
 					swedish = "Lemsal"
+					norse = "Lemsal"
 					danish = "Lemsal"
 					norwegian = "Lemsal"
 					german = "Lemsal"
 				}
 				b_uxkull = { # Ikskila
 					swedish = "Yxkull"
+					norse = "Yxkull"
 					danish = "Yxkull"
 					norwegian = "Yxkull"
 					german = "Üxküll"
@@ -467,12 +478,14 @@ e_poland_lithuania = {
 				color2={ 255 255 255 }
 				
 				swedish = "Dorpat"
+				norse = "Dorpat"
 				danish = "Dorpat"
 				norwegian = "Dorpat"
 				german = "Dorpat"
 			
 				b_tartu = {
 					swedish = "Dorpat"
+					norse = "Dorpat"
 					danish = "Dorpat"
 					norwegian = "Dorpat"
 					german = "Dorpat"
@@ -497,12 +510,14 @@ e_poland_lithuania = {
 				color2={ 255 255 255 }
 				
 				swedish = "Ösel"
+				norse = "Ösel"
 				danish = "Øsel"
 				norwegian = "Øsel"
 				german = "Ösel"
 			
 				b_kuressare = {
 					swedish = "Arensborg"
+					norse = "Arensborg"
 					danish = "Arensborg"
 					norwegian = "Arensborg"
 					german = "Arensburg"
@@ -518,6 +533,7 @@ e_poland_lithuania = {
 				}
 				b_muhu = {
 					swedish = "Moon"
+					norse = "Moon"
 					danish = "Moon"
 					norwegian = "Moon"
 					german = "Mohn"
@@ -540,17 +556,19 @@ e_poland_lithuania = {
 			color2={ 255 255 255 }
 			
 			capital = 419 # Polotsk
-		
+			
 			c_polotsk = {
 				color={ 125 14 14 }
 				color2={ 255 255 255 }
 				
 				swedish = "Pallteskja"
+				norse = "Pallteskja"
 				danish = "Pallteskja"
 				norwegian = "Pallteskja"
 			
 				b_polotsk = {
 					swedish = "Pallteskja"
+					norse = "Pallteskja"
 					danish = "Pallteskja"
 					norwegian = "Pallteskja"
 				}
@@ -584,6 +602,7 @@ e_poland_lithuania = {
 				
 				german = "Düna"
 				swedish = "Dyna"
+				norse = "Dyna"
 				danish = "Dyna"
 				norwegian = "Dyna"
 				russian = "Dvina"
@@ -591,6 +610,7 @@ e_poland_lithuania = {
 				b_daugavpils = {
 					german = "Dünaburg"
 					swedish = "Dynaborg"
+					norse = "Dynaborg"
 					danish = "Dynaborg"
 					norwegian = "Dynaborg"
 					finnish = "Väinänlinna"
@@ -613,7 +633,7 @@ e_poland_lithuania = {
 			}
 		}
 		d_lithuanians = {
-			color={ 146 13 13 }
+			color={ 81 0 0 }
 			color2={ 255 255 255 }
 			
 			capital = 420 # Aukshayts
@@ -696,6 +716,7 @@ e_poland_lithuania = {
 				b_merkine = {
 				}
 			}
+			
 			c_yatvyagi = {
 				color={ 60 127 20 }
 				color2={ 255 255 255 }
@@ -739,6 +760,7 @@ e_poland_lithuania = {
 				}
 			}
 		}
+		
 		d_courland = { 
 			color={ 182 16 16 }
 			color2={ 255 255 255 }
@@ -747,6 +769,7 @@ e_poland_lithuania = {
 			
 			german = "Kurland"
 			swedish = "Kurland"
+			norse = "Kurland"
 			danish = "Kurland"
 			norwegian = "Kurland"
 			
@@ -756,6 +779,7 @@ e_poland_lithuania = {
 				
 				german = "Riga"
 				swedish = "Riga"
+				norse = "Riga"
 				danish = "Riga"
 				norwegian = "Riga"
 				
@@ -784,6 +808,7 @@ e_poland_lithuania = {
 				
 				german = "Kurland"
 				swedish = "Kurland"
+				norse = "Kurland"
 				danish = "Kurland"
 				norwegian = "Kurland"
 				
@@ -810,6 +835,15 @@ e_poland_lithuania = {
 			color2={ 255 255 255 }
 			
 			capital = 422 # Scalovia
+			
+			german = "Sameiten"
+			prussian = "Zhmud"
+			lithuanian = "Zemaitija"
+			polish = "Zhmudz"
+			russian = "Zhmud"
+			pommeranian = "Zhmud"
+			bohemian = "Zhmud"
+			lettigallish = "Zemaiteje"
 			
 			c_scalovia = {
 				color={ 190 85 85 }
@@ -850,6 +884,7 @@ e_poland_lithuania = {
 				b_gargzdai = {
 					german = "Garsden"
 					swedish = "Garsden"
+					norse = "Garsden"
 					danish = "Garsden"
 					norwegian = "Garsden"
 					polish = "Gorzdy"

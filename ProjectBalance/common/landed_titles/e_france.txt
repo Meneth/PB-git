@@ -1,3 +1,4 @@
+#Brittany removed. Header and allow changed
 e_france = {
 	color={ 11 22 170 }
 	color2={ 255 255 20 }
@@ -8,6 +9,7 @@ e_france = {
 	name_tier = king
 	short_name = yes
 	
+	#Unchanged from vanilla
 	k_france = {
 		color={ 15 27 187 }
 		color2={ 255 255 20 }
@@ -17,12 +19,13 @@ e_france = {
 		culture = frankish
 		
 		catholic = 700 # Crusade target weight
-		
-		allow = { NOT = { culture = occitan } }
+		norse_pagan_reformed = 100 # Crusade target weight
 		
 		d_berry = {
 			color={ 24 52 226 }
 			color2={ 255 255 255 }
+			
+			capital = 140 # Tours
 			
 			c_tourraine = {
 				color={ 27 55 229 }
@@ -71,6 +74,8 @@ e_france = {
 			color={ 43 24 226 }
 			color2={ 255 255 255 }
 			
+			capital = 107 # Anjou
+			
 			c_anjou = {
 				color={ 45 26 228 }
 				color2={ 255 255 255 }
@@ -117,6 +122,8 @@ e_france = {
 		d_normandy = {
 			color={ 71 24 226 }
 			color2={ 255 255 255 }
+			
+			capital = 97 # Rouen
 			
 			culture = norman
 			
@@ -183,7 +190,7 @@ e_france = {
 				b_abbayedemortemer = {
 				}
 			}
-			c_arques = {
+			c_arques = { # actually Rouen
 				color={ 83 36 238 }
 				color2={ 255 255 255 }
 				
@@ -229,6 +236,8 @@ e_france = {
 		d_orleans = {
 			color={ 126 124 226 }
 			color2={ 255 255 255 }
+			
+			capital = 138 # Orleans
 			
 			c_orleans = {
 				color={ 94 32 234 }
@@ -319,6 +328,8 @@ e_france = {
 			color={ 95 24 226 }
 			color2={ 255 255 255 }
 			
+			capital = 114 # Reims
+			
 			c_troyes = {
 				color={ 99 28 230 }
 				color2={ 255 255 255 }
@@ -334,7 +345,7 @@ e_france = {
 				b_clairvaux = {
 				}
 				b_rosnay = {
-				}
+				} 
 				b_chacenay = {
 				}
 			}
@@ -391,6 +402,7 @@ e_france = {
 				color2={ 255 255 255 }
 				
 				b_paris = {
+					used_for_dynasty_names = no
 				}
 				b_melun = {
 				}
@@ -452,8 +464,277 @@ e_france = {
 				}
 			}
 		}
+		d_burgundy = {
+			# French, or Lower Burgundy
+			color={ 153 67 108 }
+			color2={ 255 255 255 }
+			capital = 136 # Dijon
+			
+			c_chalons = {
+				color={ 161 22 60 }
+				color2={ 255 255 255 }
+				
+				b_brancion = {
+				}
+				b_chalon = {
+				}
+				b_tournus = {
+				}
+				b_louhans = {
+				}
+				b_chamilly = {
+				}
+				b_seurre = {
+				}
+				b_stjeandelosne = {
+				}
+				b_cuisery = {
+				}
+			}
+			
+			c_auxerre = {
+				color={ 97 26 228 }
+				color2={ 255 255 255 }
+				
+				b_auxerre = {
+				}
+				b_druyes = {
+				}
+				b_tonnerre = {
+				}
+				b_pontigny = {
+				}
+				b_cravant = {
+				}
+				b_crisenon = {
+				}
+				b_stsauveurenpuisaye = {
+				}
+				b_mailly = {
+				}
+			}
+			c_macon = {
+				color={ 27 165 229 }
+				color2={ 255 255 255 }
+				
+				b_fuisse = {
+				}
+				b_macon = {
+				}
+				b_cluny = {
+				}
+				b_davaye = {
+				}
+				b_beaujeu = {
+				}
+				b_lugny = {
+				}
+				b_berze = {
+				}
+				b_villefranchesursaone = {
+				}
+			}
+			c_dijon = {
+				color={ 30 168 232 }
+				color2={ 255 255 255 }
+				
+				b_semur = {
+				}
+				b_dijon = {
+				}
+				b_autun = {
+				}
+				b_vezelay = {
+				}
+				b_avallon = {
+				}
+				b_citeaux = {
+				}
+				b_beaune = {
+				}
+				b_noyers = {
+				}
+			}
+			c_nevers = {
+				color={ 33 171 235 }
+				color2={ 255 255 255 }
+				
+				b_courtenay = {
+				}
+				b_nevers = {
+				}
+				b_lacharite = {
+				}
+				b_donzy = {
+				}
+				b_chateauchinon = {
+				}
+				b_vandenesse = {
+				}
+				b_clamecy = {
+				}
+				b_cosne = {
+				}
+			}
+			c_charolais = {
+				color={ 36 174 238 }
+				color2={ 255 255 255 }
+				
+				b_montstvincent = {
+				}
+				b_charolles = {
+				}
+				b_paray = {
+				}
+				b_semurenbrionnais = {
+				}
+				b_toulonsurarroux = {
+				}
+				b_perrecy = {
+				}
+				b_digoine = {
+				}
+				b_joncy = {
+				}
+			}
+		}
+		d_flanders = {
+			color={ 255 120 0 }
+			color2={ 255 255 255 }
+			
+			culture = dutch
+			
+			capital = 78
+			
+			c_artois = {
+				color={ 39 72 212 }
+				color2={ 255 255 255 }
+				
+				b_arras = {
+				}
+				b_terwaan = {
+				}
+				b_bethune = {
+				}
+				b_lens = {
+				}
+				b_lille = {
+				}
+				b_bouvines = {
+				}
+				b_beaumetz = {
+				}
+				b_bapaume = {
+				}
+			}
+			c_boulogne = {
+				color={ 43 76 216 }
+				color2={ 255 255 255 }
+				
+				b_boulogne = {
+				}
+				b_montreuil = {
+				}
+				b_saintpol = {
+				}
+				b_hesdin = {
+				}
+				b_fauquembergues = {
+				}
+				b_ternouis = {
+				}
+				b_therouanne = {
+				}
+				b_ardres = {
+				}
+			}
+			c_guines = {
+				color={ 47 80 220 }
+				color2={ 255 255 255 }
+				
+				b_guines = {
+				}
+				b_saintomer = {
+				}
+				b_calais = {
+				}
+				b_dunkerque = {
+				}
+				b_bourbourg = {
+				}
+				b_marck = {
+				}
+				b_gravelines = {
+				}
+				b_coulogne = {
+				}
+			}
+			c_yperen = {
+				color={ 51 84 224 }
+				color2={ 255 255 255 }
+				
+				b_ypres = {
+				}
+				b_rosebeke = {
+				}
+				b_cassel = {
+				}
+				b_roeselare = {
+				}
+				b_poperinge = {
+				}
+				b_menen = {
+				}
+				b_diksmuide = {
+				}
+				b_wervik = {
+				}
+			}
+			c_brugge = {
+				color={ 55 88 228 }
+				color2={ 255 255 255 }
+				
+				b_brugge = {
+				}
+				b_damme = {
+				}
+				b_sluys = {
+				}
+				b_oostende = {
+				}
+				b_male = {
+				}
+				b_nieuwpoort = {
+				}
+				b_torhout = {
+				}
+				b_aardenburg = {
+				}
+			}
+			c_gent = {
+				color={ 59 92 232 }
+				color2={ 255 255 255 }
+				
+				b_gent = {
+				}
+				b_doornik = {
+				}
+				b_oudenaarde = {
+				}
+				b_aalst = {
+				}
+				b_st_niklaas = {
+				}
+				b_dendermonde = {
+				}
+				b_kortrijk = {
+				}
+				b_geraardsbergen = {
+				}
+			}
+		}
 	}
-
+	#Can't be formed by Franks. Viviers moved here
 	k_aquitaine = {
 		color={ 54 50 226 }
 		color2={ 255 255 20 }
@@ -561,6 +842,8 @@ e_france = {
 		d_toulouse = {
 			color={ 10 16 243 }
 			color2={ 255 255 255 }
+			
+			capital = 214 # Toulouse
 			
 			culture = occitan
 			
@@ -690,13 +973,6 @@ e_france = {
 				b_estaing = {
 				} 
 			}
-		}
-		d_gascogne = {
-			color={ 81 30 243 }
-			color2={ 255 255 255 }
-			
-			culture = occitan
-			
 			c_foix = {
 				color={ 24 13 246 }
 				color2={ 255 255 255 }
@@ -718,6 +994,15 @@ e_france = {
 				b_usson = {
 				} 
 			}
+		}
+		d_gascogne = {
+			color={ 81 30 243 }
+			color2={ 255 255 255 }
+			
+			capital = 209 # Armagnac
+			
+			culture = occitan
+			
 			c_bearn = {
 				color={ 27 16 249 }
 				color2={ 255 255 255 }
@@ -806,6 +1091,8 @@ e_france = {
 		d_poitou = {
 			color={ 24 95 226 }
 			color2={ 255 255 255 }
+			
+			capital = 141 # Poitiers
 			
 			culture = occitan
 			
@@ -898,6 +1185,8 @@ e_france = {
 			color={ 24 171 226 }
 			color2={ 255 255 255 }
 			
+			capital = 217 # Auvergne
+			
 			culture = occitan
 			
 			c_auvergne = {
@@ -946,6 +1235,8 @@ e_france = {
 		d_bourbon = {
 			color={ 74 133 186 }
 			color2={ 255 255 255 }
+			
+			capital = 146 # Bourbon
 			
 			c_bourbon = {
 				color={ 28 147 230 }
@@ -1012,7 +1303,7 @@ e_france = {
 			}
 		}
 	}
-
+	#Nice is in Italy instead. Viviers is in Aquitaine instead
 	k_burgundy = {
 		color={ 134 0 37 }
 		color2={ 220 220 0 }
@@ -1026,6 +1317,8 @@ e_france = {
 		d_provence = {
 			color={ 145 37 67 }
 			color2={ 255 255 255 }
+			
+			capital = 221 # Provence
 			
 			c_provence = {
 				color={ 149 40 70 }
@@ -1092,8 +1385,10 @@ e_france = {
 			}
 		}
 		d_savoie = {
-			color={ 80 5 20 }
+			color={ 101 8 34 }
 			color2={ 255 255 255 }
+			
+			capital = 237 # Savoie
 			
 			c_savoie = {
 				color={ 107 15 41 }
@@ -1159,9 +1454,12 @@ e_france = {
 				}
 			}
 		}
+		
 		d_dauphine = {
 			color={ 115 26 90 }
 			color2={ 255 255 255 }
+			
+			capital = 227 # Lyon
 			
 			c_dauphine_viennois = {
 				color={ 119 30 54 }
@@ -1230,6 +1528,30 @@ e_france = {
 		d_upper_burgundy = {
 			color={ 159 20 58 }
 			color2={ 255 255 255 }
+			
+			capital = 135 # Bourgogne
+			
+			c_grisons = {
+				color={ 255 241 230 }
+				color2={ 255 255 255 }
+				
+				b_bellinzona = {
+				}
+				b_disentis = {
+				}
+				b_locarno = {
+				}
+				b_biasca = {
+				}
+				b_domo = {
+				}
+				b_lugano = {
+				}
+				b_musso = {
+				}
+				b_mendrisio = {
+				}
+			}
 			
 			c_neuchatel = {
 				color={ 163 24 62 }
@@ -1334,159 +1656,6 @@ e_france = {
 				b_maiche = {
 				}
 				b_morteau = {
-				}
-			}
-			c_grisons = {
-				color={ 255 241 230 }
-				color2={ 255 255 255 }
-				
-				b_bellinzona = {
-				}
-				b_disentis = {
-				}
-				b_locarno = {
-				}
-				b_biasca = {
-				}
-				b_domo = {
-				}
-				b_lugano = {
-				}
-				b_musso = {
-				}
-				b_mendrisio = {
-				}
-			}
-		}
-		d_burgundy = {
-			# French, or Lower Burgundy
-			color={ 153 67 108 }
-			color2={ 255 255 255 }
-			
-			c_auxerre = {
-				color={ 97 26 228 }
-				color2={ 255 255 255 }
-				
-				b_auxerre = {
-				}
-				b_druyes = {
-				}
-				b_tonnerre = {
-				}
-				b_pontigny = {
-				}
-				b_cravant = {
-				}
-				b_crisenon = {
-				}
-				b_stsauveurenpuisaye = {
-				}
-				b_mailly = {
-				}
-			}
-			c_macon = {
-				color={ 27 165 229 }
-				color2={ 255 255 255 }
-				
-				b_fuisse = {
-				}
-				b_macon = {
-				}
-				b_cluny = {
-				}
-				b_davaye = {
-				}
-				b_beaujeu = {
-				}
-				b_lugny = {
-				}
-				b_berze = {
-				}
-				b_villefranchesursaone = {
-				}
-			}
-			c_dijon = {
-				color={ 30 168 232 }
-				color2={ 255 255 255 }
-				
-				b_semur = {
-				}
-				b_dijon = {
-				}
-				b_autun = {
-				}
-				b_vezelay = {
-				}
-				b_avallon = {
-				}
-				b_citeaux = {
-				}
-				b_beaune = {
-				}
-				b_noyers = {
-				}
-			}
-			c_nevers = {
-				color={ 33 171 235 }
-				color2={ 255 255 255 }
-				
-				b_courtenay = {
-				}
-				b_nevers = {
-				}
-				b_lacharite = {
-				}
-				b_donzy = {
-				}
-				b_chateauchinon = {
-				}
-				b_vandenesse = {
-				}
-				b_clamecy = {
-				}
-				b_cosne = {
-				}
-			}
-			c_charolais = {
-				color={ 36 174 238 }
-				color2={ 255 255 255 }
-				
-				b_montstvincent = {
-				}
-				b_charolles = {
-				}
-				b_paray = {
-				}
-				b_semurenbrionnais = {
-				}
-				b_toulonsurarroux = {
-				}
-				b_perrecy = {
-				}
-				b_digoine = {
-				}
-				b_joncy = {
-				}
-			}
-			c_chalons = {
-				color={ 161 22 60 }
-				color2={ 255 255 255 }
-				
-				b_brancion = {
-				}
-				b_chalon = {
-				}
-				b_tournus = {
-				}
-				b_louhans = {
-				}
-				b_chamilly = {
-				}
-				b_seurre = {
-				}
-				b_stjeandelosne = {
-				}
-				b_cuisery = {
 				}
 			}
 		}

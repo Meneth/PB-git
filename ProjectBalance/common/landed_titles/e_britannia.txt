@@ -1,3 +1,4 @@
+#Unchanged from vanilla except for top section, allow section, and Dublin's Norse name
 e_britannia = {
 	color={ 172 22 22 }
 	color2={ 255 255 255 }
@@ -13,10 +14,15 @@ e_britannia = {
 		dignity = 10 # Counted as having this many more counties than it does
 		
 		catholic = 300 # Crusade target weight
+		norse_pagan_reformed = 200 # Crusade target weight
+		
+		culture = saxon
 		
 		d_northumberland = {
 			color={ 255 0 0 }
 			color2={ 255 255 255 }
+			
+			capital = 52 # Northumberland
 			
 			c_northumberland = {
 				color={ 255 10 0 }
@@ -28,6 +34,7 @@ e_britannia = {
 					norwegian = "Bamborg"
 					danish = "Bamborg"
 					swedish = "Bamborg"
+					norse = "Bamborg"
 				}
 				b_hexham = {
 				}
@@ -45,10 +52,19 @@ e_britannia = {
 			c_durham = {
 				color={ 255 15 0 }
 				color2={ 255 255 255 }
-
+				
+				norwegian = "Dunholm"
+				danish = "Dunholm"
+				swedish = "Dunholm"
+				norse = "Dunholm"
+	
 				b_gateshead = {
 				}
 				b_durham = {
+					norwegian = "Dunholm"
+					danish = "Dunholm"
+					swedish = "Dunholm"
+					norse = "Dunholm"
 				}
 				b_chester-le-street = {
 				}
@@ -66,7 +82,7 @@ e_britannia = {
 			c_cumberland = {
 				color={ 30 185 243 }
 				color2={ 255 255 255 }
-
+	
 				b_carlisle = {
 				}
 				b_burgh = {
@@ -88,6 +104,8 @@ e_britannia = {
 		d_lancaster = {
 			color={ 255 48 0 }
 			color2={ 255 255 255 }
+			
+			capital = 58 # Lancaster
 			
 			welsh = Rheged
 			
@@ -161,11 +179,13 @@ e_britannia = {
 				norwegian = "Djuraby"
 				danish = "Djuraby"
 				swedish = "Djuraby"
+				norse = "Djuraby"
 			
 				b_derby = {
 					norwegian = "Djuraby"
 					danish = "Djuraby"
 					swedish = "Djuraby"
+					norse = "Djuraby"
 				}
 				b_bakewell = {
 				}
@@ -186,6 +206,10 @@ e_britannia = {
 		d_york = {
 			color={ 255 90 15 }
 			color2={ 255 255 255 }
+			
+			capital = 57 # York
+			
+			dignity = 2
 			
 			norwegian = "Jorvik"
 			danish = "Jorvik"
@@ -212,11 +236,13 @@ e_britannia = {
 				norwegian = "Jorvik"
 				danish = "Jorvik"
 				swedish = "Jorvik"
+				norse = "Jorvik"
 	
 				b_york = {
 					norwegian = "Jorvik"
 					danish = "Jorvik"
 					swedish = "Jorvik"
+					norse = "Jorvik"
 				}
 				b_richmond = {
 				}
@@ -226,6 +252,7 @@ e_britannia = {
 					norwegian = "Skardaborg"
 					danish = "Skardaborg"
 					swedish = "Skardaborg"
+					norse = "Skardaborg"
 				}
 				b_skipton = {
 				}
@@ -237,6 +264,7 @@ e_britannia = {
 					norwegian = "Kungsborg"
 					danish = "Kungsborg"
 					swedish = "Kungsborg"
+					norse = "Kungsborg"
 				}
 			}
 			c_leicester = {
@@ -286,7 +314,10 @@ e_britannia = {
 			color={ 200 90 0 }
 			color2={ 255 255 255 }
 			
-			saxon = "East Anglia"
+			capital = 70 # Norfolk
+			
+			norman = "Norfolk"
+			english = "Norfolk"
 			
 			c_norfolk = {
 				color={ 255 95 5 }
@@ -323,6 +354,7 @@ e_britannia = {
 					danish = "Lothvistoft"
 					swedish = "Lothvistoft"
 					norwegian = "Lothvistoft"
+					norse = "Lothvistoft"
 				}
 				b_dunwich = {
 				}
@@ -334,59 +366,13 @@ e_britannia = {
 				}
 			}
 		}
-		d_oxford = {
-			color={ 255 108 0 }
-			color2={ 255 255 255 }
-			
-			c_northampton = {
-				color={ 255 110 5 }
-				color2={ 255 255 255 }
-				
-				b_peterborough = {
-				}
-				b_huntingdon = {
-				}
-				b_ramsey = {
-				}
-				b_northampton = {
-				}
-				b_kettering = {
-				}
-				b_cambridge = {
-				}
-				b_crowland = {
-				}
-				b_rockingham = {
-				}
-			}
-			c_oxford = {
-				color={ 255 115 15 }
-				color2={ 255 255 255 }
-				
-				b_oxford = {
-				}
-				b_wallingford = {
-				}
-				b_abingdon = {
-				}
-				b_buckingham = {
-				}
-				b_banbury = {
-				}
-				b_reading = {
-				}
-				b_aylesbury = {
-				}
-				b_eynsham = {
-				}
-			}
-		}
-		d_bedford = {
+		d_bedford = { # Essex
 			color={ 241 15 15 }
 			color2={ 255 255 255 }
 			capital = 72 # Essex
 			
-			saxon = "Essex"
+			norman = "Bedford"
+			english = "Bedford"
 			
 			c_bedford = {
 				color={ 241 30 30 }
@@ -414,8 +400,10 @@ e_britannia = {
 				color2={ 255 255 255 }
 			
 				b_westminster = {
+					used_for_dynasty_names = no
 				}
 				b_london = {
+					used_for_dynasty_names = no
 				}
 				b_st_pauls = {
 					holy_site = aztec
@@ -453,14 +441,38 @@ e_britannia = {
 				b_hedingham = {
 				}
 			}
+			c_northampton = {
+				color={ 255 110 5 }
+				color2={ 255 255 255 }
+				
+				b_peterborough = {
+				}
+				b_huntingdon = {
+				}
+				b_ramsey = {
+				}
+				b_northampton = {
+				}
+				b_kettering = {
+				}
+				b_cambridge = {
+				}
+				b_crowland = {
+				}
+				b_rockingham = {
+				}
+			}
 		}
-		d_hereford = {
+		d_hereford = { # Mercia
 			color={ 241 47 15 }
 			color2={ 255 255 255 }
 			
+			capital = 17 # Hereford
+			
 			dignity = 5
 			
-			saxon = "Mercia"
+			norman = "Hereford"
+			english = "Hereford"
 			
 			c_hereford = {
 				color={ 241 50 20 }
@@ -547,11 +559,14 @@ e_britannia = {
 				}
 			}
 		}
-		d_gloucester = {
+		d_gloucester = { # Hwicce
 			color={ 241 79 15 }
 			color2={ 255 255 255 }
 			
-			saxon = Hwicce
+			capital = 21 # Gloucester
+			
+			norman = Gloucester
+			english = Gloucester
 			
 			c_gloucester = {
 				color={ 241 85 25 }
@@ -595,10 +610,33 @@ e_britannia = {
 				b_marlborough = {
 				}
 			}
+			c_oxford = {
+				color={ 255 115 15 }
+				color2={ 255 255 255 }
+				
+				b_oxford = {
+				}
+				b_wallingford = {
+				}
+				b_abingdon = {
+				}
+				b_buckingham = {
+				}
+				b_banbury = {
+				}
+				b_reading = {
+				}
+				b_aylesbury = {
+				}
+				b_eynsham = {
+				}
+			}
 		}
-		d_canterbury = {
+		d_canterbury = { # Sussex
 			color={ 241 100 15 }
 			color2={ 255 255 255 }
+			
+			capital = 73 # Kent
 			
 			c_surrey = {
 				color={ 241 105 55 }
@@ -669,7 +707,10 @@ e_britannia = {
 			color={ 241 15 63 }
 			color2={ 255 255 255 }
 			
-			saxon="Wessex"
+			capital = 26 # Winchester
+			
+			norman="Somerset"
+			english="Somerset"
 			
 			c_winchester = {
 				color={ 241 20 65 }
@@ -738,7 +779,218 @@ e_britannia = {
 			}
 		}
 	}
-
+	
+	k_wales = {
+		color={ 135 25 3 }
+		color2={ 255 255 255 }
+		
+		capital = 64 # Gwynedd
+		
+		culture = welsh
+		
+		catholic = 300 # Crusade target weight
+		
+		allow = {
+			culture_group = celtic
+		}
+		
+		d_gwynedd = {
+			color={ 172 99 22 }
+			color2={ 255 255 255 }
+			
+			capital = 64 # Gwynedd
+			
+			c_gwynedd = {
+				color={ 175 80 10 }
+				color2={ 255 255 255 }
+				
+				b_caernarfon = {
+				}
+				b_degannwy = {
+				}
+				b_bangor_fawr = {
+				}
+				b_aberffraw = {
+					norwegian = Ongullsøy
+					english = Anglesey
+					saxon = Anglesey
+				}
+				b_harlech = {
+				}
+				b_cardigan = {
+				}
+				b_conwy = {
+				}
+				b_llanbadarn = {
+				}
+			}
+			c_perfeddwlad = {
+				color={ 175 85 15 }
+				color2={ 255 255 255 }
+				
+				b_denbigh = {
+				}
+				b_rhuddlan = {
+				}
+				b_llanelwy = {
+				}
+				b_flint = {
+				}
+				b_ruthin = {
+				}
+				b_basingwerk = {
+				}
+				b_ewloe = {
+				}
+				b_hawarden = {
+				}
+			}
+			c_powys = {
+				color={ 175 90 20 }
+				color2={ 255 255 255 }
+				
+				b_caersws = {
+				}
+				b_mathrafal = {
+				}
+				b_llangollen = {
+				}
+				b_llandinam = {
+				}
+				b_glascwm = {
+				}
+				b_radnor = {
+				}
+				b_montgomery = {
+				}
+				b_rhayader = {
+				}
+			}
+		}
+		d_deheubarth = {
+			color={ 125 51 3 }
+			color2={ 255 255 255 }
+			
+			capital = 18 # Dyfed
+			
+			c_dyfed = {
+				color={ 155 75 5 }
+				color2={ 255 255 255 }
+			
+				b_carmarthen = {
+				}
+				b_dinefwr = {
+				}
+				b_st_davids = {
+					welsh = Tyddewi
+					norwegian = "Ramsøy"
+				}
+				b_kidwelly = {
+					welsh = Cydweli
+				}
+				b_llandeilo = {
+				}
+				b_pembroke = {
+				}
+				b_narberth = {
+				}
+				b_haverford = {
+				}
+			}
+			c_glamorgan = {
+				color={ 155 120 15 }
+				color2={ 255 255 255 }
+			
+				b_cardiff = {
+				}
+				b_neath = {
+				}
+				b_llandaff = {
+				}
+				b_caerphilly = {
+				}
+				b_swansea = {
+				}
+				b_loughor = {
+				}
+				b_margam = {
+				}
+				b_ogmore = {
+				}
+			}
+			c_gwent = {
+				color={ 160 75 5 }
+				color2={ 255 255 255 }
+			
+				b_caerwent = {
+				}
+				b_chepstow = {
+				}
+				b_abergavenny = {
+				}
+				b_monmouth = {
+				}
+				b_caerleon = {
+				}
+				b_newport = {
+				}
+				b_brecon = {
+				}
+				b_tintern = {
+				}
+			}
+		}
+		d_cornwall = {
+			color={ 181 60 10 }
+			color2={ 255 255 255 }
+			
+			capital = 31 # Cornwall
+			
+			c_cornwall = {
+				color={ 150 40 15 }
+				color2={ 255 255 255 }
+				
+				b_bodmin = {
+				}
+				b_launceston = {
+				}
+				b_st_germans = {
+				}
+				b_truro = {
+				}
+				b_liskeard = {
+				}
+				b_tintagel = {
+				}
+				b_st_michael = {
+				}
+				b_restormel = {
+				}
+			}
+			c_devon = {
+				color={ 135 35 25 }
+				color2={ 255 255 255 }
+				
+				b_lydford = {
+				}
+				b_exeter = {
+				}
+				b_crediton = {
+				}
+				b_totnes = {
+				}
+				b_axminster = {
+				}
+				b_tavistock = {
+				}
+				b_buckfast = {
+				}
+				b_dartmouth = {
+				}
+			}
+		}
+	}
+	
 	k_scotland = {
 		color={ 20 80 162 }
 		color2={ 255 255 255 }
@@ -748,10 +1000,15 @@ e_britannia = {
 		culture = scottish
 		
 		catholic = 300 # Crusade target weight
+		norse_pagan_reformed = 200 # Crusade target weight
 		
 		d_galloway = {
 			color={ 77 116 208 }
 			color2={ 255 255 255 }
+			
+			capital = 50 # Galloway
+			
+			welsh = Strathclyde
 			
 			c_galloway = {
 				color={ 15 185 243 }
@@ -821,6 +1078,8 @@ e_britannia = {
 		d_western_isles = {
 			color = { 6 42 127 }
 			
+			capital = 35 # Inse Gall
+			
 			norwegian = "Søreyar"
 			danish = "Søreyar"
 			swedish = "Söröarna"
@@ -846,6 +1105,7 @@ e_britannia = {
 				norwegian = "Søreyar"
 				danish = "Søreyar"
 				swedish = "Söröarna"
+				norse = "Suðreyjar"
 				
 				b_snizort = {
 				}
@@ -857,6 +1117,7 @@ e_britannia = {
 					norwegian = "Stornavåg"
 					danish = "Stornavik"
 					swedish = "Stornavik"
+					norse = "Stornavik"
 				}
 				b_laggan = {
 				}
@@ -864,6 +1125,7 @@ e_britannia = {
 					norwegian = "Vik"
 					danish = "Vik"
 					swedish = "Vik"
+					norse = "Vik"
 				}
 				b_dunvegan = {
 				}
@@ -877,11 +1139,13 @@ e_britannia = {
 				norwegian = "Mann"
 				danish = "Mann"
 				swedish = "Mann"
+				norse = "Mann"
 				
 				b_peel = {
 					norwegian = "Pålø"
 					danish = "Pålø"
 					swedish = "Pålø"
+					norse = "Pålø"
 				}
 				b_rushen = {
 				}
@@ -924,10 +1188,12 @@ e_britannia = {
 			color={ 10 164 243 }
 			color2={ 255 255 255 }
 			
+			capital = 48 # Lothian
+			
 			c_lothian = {
 				color={ 20 170 245 }
 				color2={ 255 255 255 }
-
+	
 				b_edinburgh = {
 				}
 				b_stirling = {
@@ -948,7 +1214,7 @@ e_britannia = {
 			c_dunbar = {
 				color={ 15 165 245 }
 				color2={ 255 255 255 }
-
+	
 				b_dunbar = {
 				}
 				b_berwick = {
@@ -991,6 +1257,8 @@ e_britannia = {
 		d_albany = {
 			color={ 10 209 243 }
 			color2={ 255 255 255 }
+			
+			capital = 43 # Gowrie
 			
 			c_gowrie = {
 				color={ 35 222 250 }
@@ -1081,6 +1349,8 @@ e_britannia = {
 			color={ 10 81 243 }
 			color2={ 255 255 255 }
 			
+			capital = 40 # Moray
+			
 			c_moray = {
 				color={ 20 85 243 }
 				color2={ 255 255 255 }
@@ -1112,6 +1382,7 @@ e_britannia = {
 					norwegian = "Tingvall"
 					danish = "Tingvall"
 					swedish = "Tingvall"
+					norse = "Tingvall"
 				}
 				b_rosemarkie = {
 				}
@@ -1154,11 +1425,13 @@ e_britannia = {
 				norwegian = "Katanes"
 				danish = "Katanæs"
 				swedish = "Katanäs"
+				norse = "Katanæs"
 				
 				b_wick = {
 					norwegian = "Vik"
 					danish = "Vik"
 					swedish = "Vik"
+					norse = "Vik"
 				}
 				b_dunbeath = {
 				}
@@ -1168,6 +1441,7 @@ e_britannia = {
 					swedish = "Tjurså"
 					danish = "Tyrså"
 					norwegian = "Tyrså"
+					norse = "Tyrså"
 				}
 				b_dunrobin = {
 				}
@@ -1175,6 +1449,7 @@ e_britannia = {
 					swedish = "Fresvik"
 					danish = "Fresvik"
 					norwegian = "Fresvik"
+					norse = "Fresvik"
 				}
 				b_latheron = {
 				}
@@ -1182,9 +1457,8 @@ e_britannia = {
 				}
 			}
 		}
-		
-	}	
-
+	}
+	
 	k_ireland = {
 		color={ 6 127 2 }
 		color2={ 255 255 255 }
@@ -1194,16 +1468,33 @@ e_britannia = {
 		culture = irish
 		
 		catholic = 300 # Crusade target weight
+		norse_pagan_reformed = 200 # Crusade target weight
 		
 		d_ulster = {
 			color={ 5 222 31 }
 			color2={ 255 255 255 }
 			
+			capital = 5 # Ulster
+			
+			norwegian = Strangfjord
+			swedish = Strangfjord
+			danish = Strangfjord
+			norse = Strangfjorðr
+			
 			c_ulster = {
 				color={ 25 230 35 }
 				color2={ 255 255 255 }
+				
+				norwegian = Strangfjord
+				swedish = Strangfjord
+				danish = Strangfjord
+				norse = Strangfjorðr
 			
 				b_downpatrick = {
+					norwegian = Strangfjord
+					swedish = Strangfjord
+					danish = Strangfjord
+					norse = Strangfjorðr
 				}
 				b_dunseverick = {
 				}
@@ -1223,12 +1514,16 @@ e_britannia = {
 			c_oriel = {
 				color={ 30 180 45 }
 				color2={ 255 255 255 }
-
+	
 				b_clones = {
 				}
 				b_armagh = {
 				}
 				b_dundalk = {
+					norwegian = Kerlingfjord
+					swedish = Kerlingfjord
+					danish = Kerlingfjord
+					norse = Kerlingfjorðr
 				}
 				b_clogher = {
 				}
@@ -1244,7 +1539,7 @@ e_britannia = {
 			c_tyrone = {
 				color={ 66 157 22 }
 				color2={ 255 255 255 }
-
+	
 				b_coleraine = {
 				}
 				b_dungannon = {
@@ -1287,11 +1582,13 @@ e_britannia = {
 		d_connacht = {
 			color={ 73 229 56 }
 			color2={ 255 255 255 }
+			
+			capital = 9 # Connacht
 		
 			c_breifne = {
 				color={ 40 230 65 }
 				color2={ 255 255 255 }
-
+	
 				b_dromahair = {
 				}
 				b_kilmore = {
@@ -1312,7 +1609,7 @@ e_britannia = {
 			c_connacht = {
 				color={ 45 230 70 }
 				color2={ 255 255 255 }
-
+	
 				b_galway = {
 				}
 				b_elphin = {
@@ -1340,7 +1637,7 @@ e_britannia = {
 			norwegian = "Dublin"
 			danish = "Dublin"
 			swedish = "Dublin"
-			norse = "Dublin"
+			norse = "Dyflin"
 			
 			pagan_coa = {
 				template = 0
@@ -1358,7 +1655,7 @@ e_britannia = {
 			c_kildare = {
 				color={ 102 248 65 }
 				color2={ 255 255 255 }
-
+	
 				b_knockaulin = {
 				}
 				b_athlone = {
@@ -1379,7 +1676,7 @@ e_britannia = {
 			c_dublin = {
 				color={ 55 250 85 }
 				color2={ 255 255 255 }
-
+				
 				b_dublin = {
 				}
 				b_clondalkin = {
@@ -1402,14 +1699,27 @@ e_britannia = {
 			color={ 85 211 27 }
 			color2={ 255 255 255 }
 			
+			capital = 16 # Leinster
+			
+			norwegian = Veisafjord
+			swedish = Veisafjord
+			danish = Veisafjord
+			norse = Veisafjorðr
+			
 			c_leinster = {
 				color={ 65 210 85 }
 				color2={ 255 255 255 }
+				
+				norwegian = Veisafjord
+				swedish = Veisafjord
+				danish = Veisafjord
+				norse = Veisafjorðr
 	
 				b_wexford = {
 					norwegian = Veisafjord
 					swedish = Veisafjord
 					danish = Veisafjord
+					norse = Veisafjorðr
 				}
 				b_leighlin = {
 				}
@@ -1451,15 +1761,28 @@ e_britannia = {
 		d_munster = {
 			color={ 16 157 12 }
 			color2={ 255 255 255 }
+			
+			capital = 13 # Thomond
+			
+			norwegian = "Hlymrek"
+			danish = "Lymrek"
+			swedish = "Lymrek"
+			norse = "Hlymrek"
 		
 			c_thomond = {
 				color={ 90 221 111 }
 				color2={ 255 255 255 }
+				
+				norwegian = "Hlymrek"
+				danish = "Lymrek"
+				swedish = "Lymrek"
+				norse = "Hlymrek"
 		
 				b_limerick = {
 					norwegian = "Hlymrek"
 					danish = "Lymrek"
 					swedish = "Lymrek"
+					norse = "Hlymrek"
 				}
 				b_bunratty = {
 				}
@@ -1479,11 +1802,17 @@ e_britannia = {
 			c_ormond = {
 				color={ 95 221 121 }
 				color2={ 255 255 255 }
+				
+				norwegian = Vedrafjord
+				swedish = Vedrafjord
+				danish = Vedrafjord
+				norse = Veðrafjorðr
 		
 				b_waterford = {
 					norwegian = Vedrafjord
 					swedish = Vedrafjord
 					danish = Vedrafjord
+					norse = Veðrafjorðr
 				}
 				b_cahir = {
 				}
@@ -1519,211 +1848,6 @@ e_britannia = {
 				b_fermoy = {
 				}
 				b_blarney = {
-				}
-			}
-		}
-	}
-
-	k_wales = {
-		color={ 135 25 3 }
-		color2={ 255 255 255 }
-		
-		capital = 64 # Gwynedd
-		
-		culture = welsh
-		
-		catholic = 300 # Crusade target weight
-		
-		allow = {
-			culture_group = celtic
-		}
-		
-		d_gwynedd = {
-			color={ 172 99 22 }
-			color2={ 255 255 255 }
-			
-			c_gwynedd = {
-				color={ 175 80 10 }
-				color2={ 255 255 255 }
-				
-				b_caernarfon = {
-				}
-				b_degannwy = {
-				}
-				b_bangor_fawr = {
-				}
-				b_aberffraw = {
-					norwegian = Ongullsøy
-					english = Anglesey
-					saxon = Anglesey
-				}
-				b_harlech = {
-				}
-				b_cardigan = {
-				}
-				b_conwy = {
-				}
-				b_llanbadarn = {
-				}
-			}
-			c_perfeddwlad = {
-				color={ 175 85 15 }
-				color2={ 255 255 255 }
-				
-				b_denbigh = {
-				}
-				b_rhuddlan = {
-				}
-				b_llanelwy = {
-				}
-				b_flint = {
-				}
-				b_ruthin = {
-				}
-				b_basingwerk = {
-				}
-				b_ewloe = {
-				}
-				b_hawarden = {
-				}
-			}
-			c_powys = {
-				color={ 175 90 20 }
-				color2={ 255 255 255 }
-				
-				b_caersws = {
-				}
-				b_mathrafal = {
-				}
-				b_llangollen = {
-				}
-				b_llandinam = {
-				}
-				b_glascwm = {
-				}
-				b_radnor = {
-				}
-				b_montgomery = {
-				}
-				b_rhayader = {
-				}
-			}
-		}
-		d_deheubarth = {
-			color={ 125 51 3 }
-			color2={ 255 255 255 }
-			
-			c_dyfed = {
-				color={ 155 75 5 }
-				color2={ 255 255 255 }
-			
-				b_carmarthen = {
-				}
-				b_dinefwr = {
-				}
-				b_st_davids = {
-					welsh = Tyddewi
-					norwegian = "Ramsøy"
-				}
-				b_kidwelly = {
-					welsh = Cydweli
-				}
-				b_llandeilo = {
-				}
-				b_pembroke = {
-				}
-				b_narberth = {
-				}
-				b_haverford = {
-				}
-			}
-			c_glamorgan = {
-				color={ 155 120 15 }
-				color2={ 255 255 255 }
-			
-				b_cardiff = {
-				}
-				b_neath = {
-				}
-				b_llandaff = {
-				}
-				b_caerphilly = {
-				}
-				b_swansea = {
-				}
-				b_loughor = {
-				}
-				b_margam = {
-				}
-				b_ogmore = {
-				}
-			}
-			c_gwent = {
-				color={ 160 75 5 }
-				color2={ 255 255 255 }
-			
-				b_caerwent = {
-				}
-				b_chepstow = {
-				}
-				b_abergavenny = {
-				}
-				b_monmouth = {
-				}
-				b_caerleon = {
-				}
-				b_newport = {
-				}
-				b_brecon = {
-				}
-				b_tintern = {
-				}
-			}
-		}
-		d_cornwall = {
-			color={ 251 15 15 }
-			color2={ 255 255 255 }
-			
-			c_cornwall = {
-				color={ 250 20 15 }
-				color2={ 255 255 255 }
-				
-				b_bodmin = {
-				}
-				b_launceston = {
-				}
-				b_st_germans = {
-				}
-				b_truro = {
-				}
-				b_liskeard = {
-				}
-				b_tintagel = {
-				}
-				b_st_michael = {
-				}
-				b_restormel = {
-				}
-			}
-			c_devon = {
-				color={ 250 30 55 }
-				color2={ 255 255 255 }
-				
-				b_lydford = {
-				}
-				b_exeter = {
-				}
-				b_crediton = {
-				}
-				b_totnes = {
-				}
-				b_axminster = {
-				}
-				b_tavistock = {
-				}
-				b_buckfast = {
-				}
-				b_dartmouth = {
 				}
 			}
 		}

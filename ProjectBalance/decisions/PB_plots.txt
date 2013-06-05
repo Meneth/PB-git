@@ -35,7 +35,18 @@ plot_decisions = {
 					faction_power = 
 					{
 						faction = faction_remove_king_peace
-						power = 0.75
+						power = 0.85
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 0.2
+				NOT = { 
+					faction_power = 
+					{
+						faction = faction_remove_king_peace
+						power = 1.1
 					}
 				}
 			}
@@ -111,7 +122,18 @@ plot_decisions = {
 					faction_power = 
 					{
 						faction = faction_remove_emperor_peace
-						power = 0.75
+						power = 0.85
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 0.2
+				NOT = { 
+					faction_power = 
+					{
+						faction = faction_remove_emperor_peace
+						power = 1.1
 					}
 				}
 			}
@@ -187,7 +209,18 @@ plot_decisions = {
 					faction_power = 
 					{
 						faction = faction_remove_revokation
-						power = 0.75
+						power = 0.85
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 0.2
+				NOT = { 
+					faction_power = 
+					{
+						faction = faction_remove_revokation
+						power = 1.1
 					}
 				}
 			}
@@ -262,8 +295,19 @@ plot_decisions = {
 				NOT = { 
 					faction_power = 
 					{
-						faction = faction_remove_inheritance
-						power = 0.75
+						faction = faction_remove_revokation
+						power = 0.85
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 0.2
+				NOT = { 
+					faction_power = 
+					{
+						faction = faction_remove_revokation
+						power = 1.1
 					}
 				}
 			}
@@ -340,6 +384,17 @@ plot_decisions = {
 					{
 						faction = faction_lower_crown_levies
 						power = 0.75
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 0.2
+				NOT = { 
+					faction_power = 
+					{
+						faction = faction_lower_crown_levies
+						power = 1.1
 					}
 				}
 			}

@@ -1,3 +1,4 @@
+#Massively changed from vanilla
 e_tartaria = {
 	color = { 211 177 80 }
 	color2={ 255 255 255 }
