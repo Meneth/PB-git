@@ -1902,6 +1902,34 @@ character_event = {
 		}
 	}
 }
+
+#Bulgarian becomes emperor for more than 5 years
+character_event = {
+	id = meneth.428
+	desc = meneth.428.desc
+	picture = GFX_evt_battle
+	border = GFX_event_normal_frame_religion
+	
+	only_rulers = yes
+	
+	trigger = {
+		has_landed_title = e_byzantium
+		ruled_years = 5
+		war = no
+		OR = {
+			has_global_flag = bulgarian_unrest_pacified
+			has_global_flag = bulgarian_unrest_escalates
+		}
+		NOT = { has_global_flag = bulgarian_unrest_ends }
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = OK
+		set_global_flag = bulgarian_unrest_ends
+	}
+}
 	
 #Destruction of Galicia
 character_event = {
@@ -2354,7 +2382,5 @@ narrative_event = {
 		name = OK
 	}
 }
-
-#Note: meneth.428 is free
 
 #Note: Everything up to and including meneth.435 is taken

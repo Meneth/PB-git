@@ -9,6 +9,7 @@
 	Added "is war possible" decisions for the Muslim CBs
 	Removed the Irish flavor titles as this has been replaced by the "petty king" system
 	If the Bulgarian Revolt is destroyed completely the land once more becomes dejure Byzantine
+	If a Bulgarian ends up on the Byzantine throne for a period of more than a few years the Bulgarian Unrest will end
 
 3.2.11
 	Now compatible with both 1.10 and 1.101
