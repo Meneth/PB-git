@@ -33,7 +33,7 @@
 
 #### Other places I can be contacted:
 - [Paradox Forums](http://forum.paradoxplaza.com/forum/private.php?do=newpm&u=265499)
-- [E-mail](pb@meneth.com)
+- [E-mail](mailto:pb@meneth.com)
 - [Reddit](http://www.reddit.com/message/compose/?to=Meneth)
 
 #### What the modules do:
