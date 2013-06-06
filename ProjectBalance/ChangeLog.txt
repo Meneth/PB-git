@@ -14,7 +14,8 @@
 	There are now only two levels of shipyards
 	Reduced the number of ships from each level of marketplace by 1
 	Reduced the number of ships from each level of center of trade by 2
-	Reduced the base number of ships from castles by 1, and from cities by 2	
+	Reduced the base number of ships from castles by 1, and from cities by 2
+	Halved the amount of ships gained from technology
 
 3.2.11
 	Now compatible with both 1.10 and 1.101

@@ -33,7 +33,7 @@ TECH_GROUP_MILITARY = {
 	}
 	TECH_NAVAL = {
 		modifier = {
-			GALLEYS_PERC = 0.8
+			GALLEYS_PERC = 0.4
 		}
 		1 = {
 			add_building = ct_shipyard_1
