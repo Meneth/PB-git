@@ -1,27 +1,4 @@
 #CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
-#War checks;;;;;;;;;;;;;;x
-holy_war_cb;Is war possible?;;;;;;;;;;;;;x
-holy_war_cb_desc;Enables a set of decisions showing the requirements for various types of war. If you can activate every relevant decision, you should be able to declare war;;;;;;;;;;;;;x
-holy_war_any;Base holy war requirements;;;;;;;;;;;;;x
-holy_war_any_desc;You have to meet these requirements to declare any holy war. Do note that more requirements will apply if your target is pagan, is not dejure yours, or does not share a border with you.;;;;;;;;;;;;;x
-holy_war_pagan;Pagan holy war requirements;;;;;;;;;;;;;x
-holy_war_pagan_desc;You have to meet these requirements to declare holy war upon pagans, in addition to the base requirements, and potentially non-dejure and non-bordering requirements.;;;;;;;;;;;;;x
-holy_war_non_de_jure;Non dejure holy war requirements;;;;;;;;;;;;;x
-holy_war_non_de_jure_desc;You have to meet these requirements to declare holy war upon areas that aren't dejure yours, in addition to the base requirements, and potentially pagan and non-bordering requirements.;;;;;;;;;;;;;x
-holy_war_no_border;Non-bordering holy war requirements;;;;;;;;;;;;;x
-holy_war_no_border_desc;You have to meet these requirements to declare holy war upon areas your realm doesn't border. You also need to meet the base requirements, and potentially non-dejure and pagan requirements requirements.;;;;;;;;;;;;;x
-alliance_wars;War upon allies;;;;;;;;;;;;;x
-alliance_wars_desc;You have to meet these requirements to declare war upon allies unless they're heretics, infidels, or excommunicated.;;;;;;;;;;;;;x
-imperial_reconquest_check;Imperial Reconquest Requirements;;;;;;;;;;;;;x
-imperial_reconquest_check_desc;Do note that target areas are unlocked in tiers. Every county in a tier has to be controlled before the next tier can be targetted.;;;;;;;;;;;;;x
-pagan_subjugation_check;Pagan subjugation requirements;;;;;;;;;;;;;x
-pagan_subjugation_check_desc;If the target is within the same kingdom as your capital, these requirements must be met.;;;;;;;;;;;;;x
-pagan_subjugation_wrong_kingdom_check;Pagan subjugation foreign kingdom requirements;;;;;;;;;;;;;x
-pagan_subjugation_wrong_kingdom_check_desc;If the target is not within the same kingdom as your capital, these requirements must be met.;;;;;;;;;;;;;x
-pagan_conquest_check;Pagan conquest requirements;;;;;;;;;;;;;x
-pagan_conquest_check_desc;The only requirements beyond these is that you share a border with the target, unless you're Norse, in which case you can target any coastal province.;;;;;;;;;;;;;x
-holy_war_clear;Dismiss checks;;;;;;;;;;;;;x
-holy_war_clear_desc;Disable the decisions for checking if war is possible.;;;;;;;;;;;;;x
 #Employment;;;;;;;;;;;;;;x
 employ_soldier;Invite Soldier to Court;;;;;;;;;;;;;x
 employ_soldier_desc;Invite a promising soldier to court, to aid with military matters.;;;;;;;;;;;;;x

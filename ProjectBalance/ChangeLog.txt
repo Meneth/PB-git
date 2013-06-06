@@ -4,6 +4,9 @@
 	(From VIET Traits) Infirm now gives -2.5 health, not -1.5
 	(From VIET Traits) Proud characters now get -20 opinion with one another, not -10
 	(From VIET Traits) Humble characters now get +20 opinion with one another, not +10
+	Got rid of the opinion requirements for the Muslim CBs; should've been removed long ago
+	The Muslim Invasion CB cannot be used if the attacker's decadence is above 50%
+	Added "is war possible" decisions for the Muslim CBs
 
 3.2.11
 	Now compatible with both 1.10 and 1.101
