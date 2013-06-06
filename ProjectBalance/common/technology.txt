@@ -33,27 +33,23 @@ TECH_GROUP_MILITARY = {
 	}
 	TECH_NAVAL = {
 		modifier = {
-			GALLEYS_PERC = 0.8
+			GALLEYS_PERC = 0.4
 		}
 		1 = {
 			add_building = ct_shipyard_1
-			add_building = tp_shipyard_1
-			add_building = ca_shipyard_1
 		}
 		2 = {
-			add_building = ct_shipyard_2
-			add_building = tp_shipyard_2
-			add_building = ca_shipyard_2
+			add_building = tp_shipyard_1
 		}
 		3 = {
-			add_building = ct_shipyard_3
-			add_building = tp_shipyard_3
-			add_building = ca_shipyard_3
+			add_building = ct_shipyard_1
+			add_building = ca_shipyard_2
 		}
 		4 = {
-			add_building = ct_shipyard_4
-			add_building = tp_shipyard_4
-			add_building = ca_shipyard_4
+			add_building = tp_shipyard_2
+		}
+		5 = {
+			add_building = ct_shipyard_2
 		}
 	}
 	TECH_RECRUITMENT = {

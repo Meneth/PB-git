@@ -227,6 +227,11 @@ pagan_subjugation = {
 				de_jure_liege_or_above = PREVPREV
 			}
 		}
+		ROOT = {
+			any_realm_title = {
+				de_jure_liege_or_above = PREVPREV
+			}
+		}
 		any_direct_de_jure_vassal_title = {
 			any_direct_de_jure_vassal_title = {
 				holder_scope = {

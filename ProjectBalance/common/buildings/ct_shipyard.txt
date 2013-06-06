@@ -22,47 +22,13 @@ city = {
 			port = yes
 		}
 		port = yes
-		trigger = { TECH_NAVAL = 2 }
+		trigger = { TECH_NAVAL = 3 }
 		upgrades_from = ct_shipyard_1
 		build_cost = 50
 		build_time = 365
 		galleys = 2
 		tax_income = -0.1
 		ai_creation_factor = 97
-		
-		extra_tech_building_start = 0.2
-	}
-	
-	ct_shipyard_3 = {
-		desc = shipyard_desc
-		potential = {
-			port = yes
-		}
-		port = yes
-		trigger = { TECH_NAVAL = 3 }
-		upgrades_from = ct_shipyard_2
-		build_cost = 50
-		build_time = 365
-		galleys = 2
-		tax_income = -0.15
-		ai_creation_factor = 96
-		
-		extra_tech_building_start = 0.2
-	}
-	
-	ct_shipyard_4 = {
-		desc = shipyard_desc
-		potential = {
-			port = yes
-		}
-		port = yes
-		trigger = { TECH_NAVAL = 4 }
-		upgrades_from = ct_shipyard_3
-		build_cost = 50
-		build_time = 365
-		galleys = 2
-		tax_income = -0.2
-		ai_creation_factor = 95
 		
 		extra_tech_building_start = 0.2
 	}

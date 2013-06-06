@@ -932,7 +932,7 @@
 	father=3094
 	1029.7.5={
 		birth="1029.7.5"
-		decadence = 15
+		decadence = 50
 		wealth = -1000
 	}
 	1094.1.10={

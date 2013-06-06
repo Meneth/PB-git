@@ -409,7 +409,7 @@ castle = {
 	heavy_infantry = 100
 	light_cavalry = 15
 	knights = 5
-	galleys = 3
+	galleys = 2
 	levy_reinforce_rate = 1.25
 	land_organisation = 0.2
 	tech_growth_modifier = 0.08
@@ -421,7 +421,7 @@ city = {
 	fort_level = 0
 	light_infantry = 60
 	archers = 40
-	galleys = 5
+	galleys = 3
 	build_cost_modifier = 500
 	build_time_modifier = 730
 	land_organisation = 0.2
@@ -766,6 +766,14 @@ d_abyssinian_band_modifier = {
 }
 
 d_nubian_band_modifier = {
+	levy_size = 1.5
+	archers = 150
+	light_infantry = 450
+	heavy_infantry = 150
+	light_cavalry = 150
+}
+
+d_ghanan_band_modifier = {
 	levy_size = 1.5
 	archers = 150
 	light_infantry = 450

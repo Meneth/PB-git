@@ -7302,26 +7302,6 @@ county_conquest = {
 						}
 					}
 					NOT = { has_law = emperor_peace_0 }
-					NOT = {
-						AND = {
-							has_law = king_peace_0
-							any_vassal = {
-								higher_tier_than = count
-								NOT = { opinion = { who = ROOT value = -10 }}
-								prisoner = no
-							}
-						}
-					}
-					NOT = {
-						AND = {
-							has_law = crown_levies_0
-							any_vassal = {
-								higher_tier_than = count
-								NOT = { opinion = { who = ROOT value = -10 }}
-								prisoner = no
-							}
-						}
-					}
 					OR = {
 						NOT = { trait = content }
 						trait = brave
@@ -7718,6 +7698,7 @@ muslim_invasion = {
 			NOT = { trait = slothful }
 			NOT = { trait = imbecile }
 			NOT = { trait = craven }
+			NOT = { decadence = 50 }
 			is_republic = no
 			is_patrician = no
 		}
@@ -7741,93 +7722,26 @@ muslim_invasion = {
 		}
 		
 		FROM = { NOT = { religion = ROOT } }
+		FROM = { religion_group = pagan_group }
+		NOT = {
+			FROM = {
+				OR = {
+					religion = miaphysite
+					religion = orthodox
+				}
+				culture_group = east_african
+			}
+		}
 		
 		ROOT = {
 			NOT = { is_liege_or_above = FROM }
 			OR = {
 				FROM = { religion_group = ROOT }
-				AND = {
-					NOT = { FROM = { religion_group = pagan_group } }
-					NOT = {
-						FROM = {
-							OR = {
-								religion = miaphysite
-								religion = orthodox
-							}
-							culture_group = east_african
-						}
-					}
-					NOT = { has_law = emperor_peace_0 }
-					NOT = {
-						AND = {
-							has_law = king_peace_0
-							any_vassal = {
-								higher_tier_than = count
-								NOT = { opinion = { who = ROOT value = -10 }}
-								prisoner = no
-							}
-						}
-					}
-					NOT = {
-						AND = {
-							has_law = crown_levies_0
-							any_vassal = {
-								higher_tier_than = count
-								NOT = { opinion = { who = ROOT value = -10 }}
-								prisoner = no
-							}
-						}
-					}
-					OR = {
-						NOT = { trait = content }
-						trait = brave
-						trait = wroth
-						trait = zealous
-						trait = lunatic
-						trait = possessed
-					}
-					OR = {
-						NOT = { trait = craven }
-						trait = wroth
-						trait = ambitious
-						trait = zealous
-						trait = lunatic
-						trait = possessed
-					}
-					OR = {
-						NOT = { trait = stressed }
-						trait = wroth
-						trait = ambitious
-						trait = brave
-						trait = lunatic
-						trait = possessed
-						trait = zealous
-					}
-					OR = {
-						trait = lunatic
-						trait = possessed
-						AND = {
-							NOT = { trait = depressed }
-							NOT = { trait = infirm }
-							NOT = { trait = incapable }
-							NOT = {
-								OR = {
-									AND = {
-										trait = content
-										OR = {
-											trait = craven
-											trait = stressed
-										}
-									}
-									AND = {
-										trait = craven
-										trait = stressed
-									}
-								}
-							}
-						}
-					}
-				}
+				trait = brave
+				trait = wroth
+				trait = zealous
+				trait = lunatic
+				trait = possessed
 			}
 		}
 	}

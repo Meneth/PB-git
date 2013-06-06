@@ -378,7 +378,7 @@ infirm = {
 	martial = -3
 	learning = -3
 	
-	health = -1.5
+	health = -2.5
 	fertility = -0.3
 	
 	ai_rationality = -10
@@ -1131,7 +1131,7 @@ proud = {
 		humble
 	}
 	
-	same_opinion = -10
+	same_opinion = -20
 
 	monthly_character_prestige = 0.5
 	
@@ -1149,7 +1149,7 @@ humble = {
 	
 	monthly_character_piety = 1
 	opposite_opinion = -20
-	same_opinion = 10
+	same_opinion = 20
 	
 	ai_ambition = -10
 	
