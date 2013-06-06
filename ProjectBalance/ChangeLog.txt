@@ -17,6 +17,7 @@
 	Reduced the base number of ships from castles by 1, and from cities by 2
 	Halved the amount of ships gained from technology
 	The Pagan Subjugation CB can now only target kingdoms you have (directly or via a vassal) at least one title within
+	Brought the Fatimid decadence up to the same level as in vanilla (75%)
 
 3.2.11
 	Now compatible with both 1.10 and 1.101
