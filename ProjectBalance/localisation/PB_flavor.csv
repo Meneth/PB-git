@@ -2,14 +2,6 @@
 syphilitic;Gonorrhea;Syphilitique;Syphilitisch;;Sifilítico;;;;;;;;;x
 syphilitic_desc;This character suffers from Gonorrhea.;Ce personnage a contracté une maladie vénérienne particulièrement grave.;Dieser Charakter leidet an der Geschlechtskrankheit 'Lues', später als Syphilis bekannt.;;Este personaje padece de lues, la infección venérea más tarde conocida como sífilis.;;;;;;;;;x
 syphilitic_death;of Gonorrhea;de syphilis;an Syphilis;;de sífilis;;;;;;;;;x
-#Updated Irish titles;;;;;;;;;;;;;;x
-duke_irish;King;King;King;;King;;;;;;;;;x
-duke_title_ruler_consort_irish;King;King;King;;King;;;;;;;;;x
-duke_female_irish;Queen;Queen;Queen;;Queen;;;;;;;;;x
-duke_title_ruler_consort_female_irish;Queen;Queen;Queen;;Queen;;;;;;;;;x
-king_irish;High King;High King;High King;;High King;;;;;;;;;x
-king_title_ruler_consort_irish;High King;High King;High King;;High King;;;;;;;;;x
-king_title_ruler_consort_female_irish;High Queen;High Queen;High Queen;;High Queen;;;;;;;;;x
 #Russian titles;;;;;;;;;;;;;;x
 king_russian;Grand Duke;Grand Duke;Grand Duke;;Grand Duke;;;;;;;;;x
 king_title_ruler_consort_russian;Grand Duke;Grand Duke;Grand Duke;;Grand Duke;;;;;;;;;x

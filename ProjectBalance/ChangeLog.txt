@@ -7,6 +7,7 @@
 	Got rid of the opinion requirements for the Muslim CBs; should've been removed long ago
 	The Muslim Invasion CB cannot be used if the attacker's decadence is above 50%
 	Added "is war possible" decisions for the Muslim CBs
+	Removed the Irish flavor titles as this has been replaced by the "petty king" system
 
 3.2.11
 	Now compatible with both 1.10 and 1.101
