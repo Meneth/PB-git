@@ -15,10 +15,18 @@ b_sonkovo = city
 #b_rameshki = castle
 #b_obrosovo = castle
 
-# Misc
-culture = russian
-religion = orthodox
+culture = ugricbaltic
+religion = finnish_pagan
 
 # History
-1116.1.1 = { b_kyasovagora = castle } #expansion of Ladoga
+867.1.1 = {
+	b_bezhetsk = ca_keep_1
+	b_bezhetsk = ca_wall_1
+	b_sonkovo = ct_marketplace_1
+}
+988.1.1 = {
+	culture = russian
+	religion = orthodox
+	remove_settlement = b_spasnakholmu
+}
 1136.1.2 = { capital = b_sonkovo }
