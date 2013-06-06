@@ -1,24 +1,6 @@
 10.1.1 = {
 	de_jure_liege = 0
 }
-845.1.1={
-	holder = 163109
-}
-860.1.1={
-	holder = 163108
-}
-880.1.1={
-	holder = 100500
-}
-900.1.1={
-	holder = 100501
-}
-932.1.1={
-	holder = 163106
-}
-950.1.1={
-	holder = 163107
-}
 970.1.1={
 	holder = 100504 # Erik Segersäll
 	law = succ_feudal_elective
