@@ -888,6 +888,8 @@ bulgarian_uprising = {
 			prestige = 200
 		}
 		set_global_flag = bulgarian_unrest_ends
+		k_bulgaria = { de_jure_liege = e_byzantium }
+		k_serbia = { de_jure_liege = e_byzantium }
 	}
 	
 	on_add = {

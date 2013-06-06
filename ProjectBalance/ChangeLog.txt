@@ -8,6 +8,7 @@
 	The Muslim Invasion CB cannot be used if the attacker's decadence is above 50%
 	Added "is war possible" decisions for the Muslim CBs
 	Removed the Irish flavor titles as this has been replaced by the "petty king" system
+	If the Bulgarian Revolt is destroyed completely the land once more becomes dejure Byzantine
 
 3.2.11
 	Now compatible with both 1.10 and 1.101
