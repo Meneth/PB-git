@@ -19,7 +19,7 @@ imperial_reconquest_check_desc;Do note that target areas are unlocked in tiers. 
 pagan_subjugation_check;Pagan subjugation requirements;;;;;;;;;;;;;x
 pagan_subjugation_check_desc;If the target is within the same kingdom as your capital, these requirements must be met.;;;;;;;;;;;;;x
 pagan_subjugation_wrong_kingdom_check;Pagan subjugation foreign kingdom requirements;;;;;;;;;;;;;x
-pagan_subjugation_wrong_kingdom_check_desc;If the target is not within the same kingdom as your capital, these requirements must be met.;;;;;;;;;;;;;x
+pagan_subjugation_wrong_kingdom_check_desc;If the target is not within the same kingdom as your capital, these requirements must be met, in addition to holding a dejure title within the target kingdom either directly or via a vassal.;;;;;;;;;;;;;x
 pagan_conquest_check;Pagan conquest requirements;;;;;;;;;;;;;x
 pagan_conquest_check_desc;The only requirements beyond these is that you share a border with the target, unless you're Norse, in which case you can target any coastal province held by non-Pagans.;;;;;;;;;;;;;x
 muslim_conquest_check;Muslim conquest requirements;;;;;;;;;;;;;x
