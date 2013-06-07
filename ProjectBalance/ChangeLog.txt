@@ -6,6 +6,7 @@
 	Fixed that you'd get a message that a prisoner exchange succeeded even if it failed
 	Fixed a minor localisation bug
 	Fixed the Ghanan Band not necessarily getting proper culture assigned
+	Scandinavia and Britannia will now have raven CoAs (black and white) if held by Norse Pagans
 
 3.2.12
 	Fixed the Ghanan Band not having any troops

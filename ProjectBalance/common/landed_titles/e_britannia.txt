@@ -7,6 +7,19 @@ e_britannia = {
 	name_tier = king
 	short_name = yes
 	
+	pagan_coa = {
+		template = 0
+		layer = {
+			texture = 2
+			texture_internal = 12
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+		religion = "norse_pagan"
+	}
+	
 	k_england = {
 		color={ 202 26 26 }
 		color2={ 255 255 255 }

@@ -7,6 +7,19 @@ e_scandinavia = {
 	name_tier = king
 	short_name = yes
 	
+	pagan_coa = {
+		template = 0
+		layer = {
+			texture = 2
+			texture_internal = 8
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+		religion = "norse_pagan"
+	}
+	
 	#Unchanged from vanilla
 	k_denmark = {
 		color={ 247 77 54 }
