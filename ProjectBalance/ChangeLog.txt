@@ -1,3 +1,6 @@
+3.2.13
+	Fixed the Retake the Coast CB taking provinces from Byzantine vassals
+
 3.2.12
 	Fixed the Ghanan Band not having any troops
 	Fixed Free Infidel Revocation being available to unreformed Pagans
