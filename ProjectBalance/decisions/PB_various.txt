@@ -200,11 +200,11 @@ decisions = {
 			e_hre = {
 				grant_title = ROOT
 				if = {
-					limit = { has_landed_title = k_germany }
+					limit = { ROOT = { has_landed_title = k_germany } }
 					copy_title_laws = k_germany
 				}
 				if = {
-					limit = { NOT = { has_landed_title = k_germany } }
+					limit = { NOT = { ROOT = { has_landed_title = k_germany } } }
 					copy_title_laws = k_bavaria
 				}
 				hidden_tooltip = {
