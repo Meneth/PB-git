@@ -692,7 +692,7 @@ retake_the_coast = {
 						holder_scope = {
 							OR = {
 								character = FROM
-								is_liege_or_above = { character = FROM }
+								any_liege = { character = FROM }
 								liege_before_war = { character = FROM }
 								any_liege = { liege_before_war = { character = FROM } }
 							}
