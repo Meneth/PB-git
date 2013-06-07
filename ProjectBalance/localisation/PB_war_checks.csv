@@ -25,6 +25,6 @@ pagan_conquest_check_desc;The only requirements beyond these is that you share a
 muslim_conquest_check;Muslim conquest requirements;;;;;;;;;;;;;x
 muslim_conquest_check_desc;The only requirements beyond these is that you share a border with the target and that the target is not Pagan or East African and Orthodox/Coptic.;;;;;;;;;;;;;x
 muslim_invasion_check;Muslim invasion requirements;;;;;;;;;;;;;x
-muslim_invasion_check_desc;The only requirements beyond these is that you share a border with the target and that the target is not Pagan or East African and Orthodox/Coptic. If the target isn't Muslim you must also meet the requirements for invading non-Muslims.;;;;;;;;;;;;;x
+muslim_invasion_check_desc;The only requirements beyond these is that you share a border with the target, that the target holds at least 6 counties within the target kingdom, and that the target is not Pagan or East African and Orthodox/Coptic. If the target isn't Muslim you must also meet the requirements for invading non-Muslims.;;;;;;;;;;;;;x
 muslim_invasion_check_non_muslim;Muslim invasion on infidel requirements;;;;;;;;;;;;;x
-muslim_invasion_check_non_muslim_desc;The only requirements beyond these is that you share a border with the target and that the target is not Pagan or East African and Orthodox/Coptic.;;;;;;;;;;;;;x
+muslim_invasion_check_non_muslim_desc;There are no requirements beyond these, the base requirements, and those described in the base requirements description.;;;;;;;;;;;;;x

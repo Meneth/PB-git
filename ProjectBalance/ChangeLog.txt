@@ -8,6 +8,7 @@
 	Fixed the Ghanan Band not necessarily getting proper culture assigned
 	Scandinavia and Britannia will now have raven CoAs (black and white) if held by Norse Pagans
 	Mostly eliminated the black border around on-map Pagan CoAs (vanilla issue)
+	Improved the description for the Muslim Invasion "is war possible?" checks
 
 3.2.12
 	Fixed the Ghanan Band not having any troops
