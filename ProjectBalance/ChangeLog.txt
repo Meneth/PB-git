@@ -1,5 +1,6 @@
 3.2.13
 	Fixed the Retake the Coast CB taking provinces from Byzantine vassals
+	Centers of trade now give a bit of fort level
 
 3.2.12
 	Fixed the Ghanan Band not having any troops
