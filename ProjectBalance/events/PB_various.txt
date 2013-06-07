@@ -1046,6 +1046,15 @@ character_event = {
 	
 	option = {
 		name = OK
+		trigger = {
+			FROMFROM = {
+				any_courtier = {
+					dynasty = ROOT
+					prisoner = yes
+					is_landed = no
+				}
+			}
+		}
 		FROMFROM = { clr_character_flag = prisoner_exchange_attempted }
 		FROM = {
 			prisoner = no
@@ -1085,8 +1094,22 @@ character_event = {
 	}
 	option = {
 		name = meneth.400.b
+		trigger = {
+			OR = {
+				ai = no
+				NOT = {
+					FROMFROM = {
+						any_courtier = {
+							dynasty = ROOT
+							prisoner = yes
+							is_landed = no
+						}
+					}
+				}
+			}
+		}
 		FROMFROM = { clr_character_flag = prisoner_exchange_attempted }
-		FROMFROM = { character_event = { id = meneth.214 } }
+		FROMFROM = { character_event = { id = meneth.215 } }
 	}
 }
 
