@@ -4,6 +4,7 @@
 	Increased galley maintenance cost by 1/3
 	Fixed a minor bug in the Form HRE decision
 	Fixed that you'd get a message that a prisoner exchange succeeded even if it failed
+	Fixed a minor localisation bug
 
 3.2.12
 	Fixed the Ghanan Band not having any troops
