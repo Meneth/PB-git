@@ -11,6 +11,7 @@
 	name = WEST_FRANCIA
 	adjective = WEST_FRANCIA_ADJ
 	law = revokation_0
+	law = agnatic_succession
 }
 768.9.24={
 	holder = 144999 #Carloman I

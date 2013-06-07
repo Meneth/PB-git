@@ -84,6 +84,12 @@
 1319.11.13={
 	holder=451520 # Christoffer II
 }
+1326.6.7={
+	holder=451530 # Valdemar III
+}
+1329.2.23={
+	holder=451520 # Christoffer II (restored)
+}
 1332.8.2={
 	holder=451500 # Valdemar Atterdag
 }

@@ -1,4 +1,4 @@
-1000.1.1 = { de_jure_liege = e_italy }
+867.1.1 = { de_jure_liege = e_italy }
 1066.1.1 = {
 	holder = 20314 #Manfredo Doria
 }
