@@ -11,6 +11,7 @@
 	Fixed the Ghanan Band not necessarily getting proper culture assigned
 	Fixed Muslim Invasions being only usable against Pagans, rather than *not* being usable against Pagans
 	Fixed the cooldown on Pagan subjugation not always applying
+	Moved the Norman Conquest bookmark back to late 1066
 
 3.2.12
 	Fixed the Ghanan Band not having any troops
