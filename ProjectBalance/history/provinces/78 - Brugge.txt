@@ -21,12 +21,11 @@ culture = dutch
 religion = catholic
 
 # History
-1000.1.1 = { trade_post = b_miles }
-1066.1.1 = {
+867.1.1 = {
 	b_brugge = ct_trade_post_1
 	b_brugge = ct_trade_post_2
 	b_brugge = ct_trade_post_3
 }
-
+1000.1.1 = { trade_post = b_miles }
 1187.1.1 = { b_male = castle }
 1337.1.1 = { b_oostende = city }
