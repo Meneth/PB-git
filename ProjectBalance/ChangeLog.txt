@@ -5,6 +5,7 @@
 	Fixed a minor bug in the Form HRE decision
 	Fixed that you'd get a message that a prisoner exchange succeeded even if it failed
 	Fixed a minor localisation bug
+	Fixed the Ghanan Band not necessarily getting proper culture assigned
 
 3.2.12
 	Fixed the Ghanan Band not having any troops
