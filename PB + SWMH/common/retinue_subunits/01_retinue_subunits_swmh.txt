@@ -41,6 +41,17 @@ RETTYPE_SKIR1 =
 ########################
 #Italian group
 ########################
+RETTYPE_CUL_ROMAN = 
+{
+	first_type = 1
+	first_amount = 250
+	
+	culture = roman
+	
+	modifier = {
+		heavy_infantry_defensive = 0.6
+	}
+}
 RETTYPE_CUL_ITA = 
 {
         first_type = 4
@@ -404,6 +415,8 @@ RETTYPE_CUL_FINNO_UGRIC =
         culture = lappish
         culture = ugricbaltic
         culture = komi
+		culture = mordvins
+        culture = samoyeds
 	
 	modifier = {
 		archers_offensive = 0.3
@@ -658,7 +671,17 @@ RETTYPE_CUL_OCCTIAN =
 ########################
 #Norse group
 ########################
-
+RETTYPE_CUL_NORSE = 
+{
+	first_type = 1
+	first_amount = 250
+	
+	culture = norse
+	
+	modifier = {
+		heavy_infantry_offensive = 0.6
+	}
+}
 RETTYPE_CUL_DANISH = 
 {
 	first_type = 1
@@ -884,11 +907,27 @@ RETTYPE_CUL_ALTAIC =
 	second_amount = 120
 	
 	culture = cuman
+		culture = khazar
         culture = pecheneg
 
 	modifier = {
 		horse_archers_offensive = 0.4
 		horse_archers_morale = 0.2
+	}
+}
+RETTYPE_CUL_AVAR = 
+{
+	first_type = 3
+	first_amount = 150
+	
+	second_type = 6
+	second_amount = 100
+	
+	culture = cuman
+        culture = pecheneg
+modifier = {
+		knights_defensive = 0.6
+		horse_archers_offensive = 0.3
 	}
 }
 RETTYPE_CUL_TURKISH = 
