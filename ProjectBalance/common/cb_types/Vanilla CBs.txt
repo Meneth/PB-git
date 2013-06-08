@@ -2844,6 +2844,7 @@ tribal_invasion = {
 						ROOT = { NOT = { tier = emperor } }
 						FROM = { religion_group = muslim }
 						FROM = { religion_group = pagan_group }
+						FROM = { tier = emperor }
 					}
 				}
 				ROOT = {
@@ -2860,6 +2861,7 @@ tribal_invasion = {
 					ROOT = { tier = emperor }
 					NOT = { FROM = { religion_group = muslim } }
 					NOT = { FROM = { religion_group = pagan_group } }
+					NOT = { FROM = { tier = emperor } }
 				}
 				holder_scope = {
 					set_defacto_liege = ROOT
