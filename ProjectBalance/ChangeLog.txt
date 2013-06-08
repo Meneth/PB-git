@@ -3,6 +3,7 @@
 	Pentarchy holdings can now be taken via dejure claims by any Christians rather than just Orthodox Christians
 	Halved the tech gain from battle
 	Added decisions to release or execute all prisoners
+	The truce from Tribal Invasions now lasts 5 years rather than 1
 	(PB+SWMH) Fixed duplicate characters issues
 	(PB+SWMH) Rebalanced the scripted armies in 1066
 	(PB+SWMH) Now uses PB's list of bookmarks
