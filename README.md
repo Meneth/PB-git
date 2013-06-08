@@ -37,7 +37,7 @@
 - [Reddit](http://www.reddit.com/message/compose/?to=Meneth)
 
 #### What the modules do:
-- `Gender Equality`: People of both genders can staff all council positions and command armies. All non-Muslim realms start with Absolute Cognatic succession (Note: not compatible with SWMH)
+- `Gender Equality`: People of both genders can staff all council positions and command armies. All non-Muslim realms start with Absolute Cognatic succession
 - `No Assaults`: Holdings cannot be assaulted during sieges
 - `Vanilla Demesne Laws`: Vanilla demesne laws are restored, rather than Project Balance's new set of demesne laws. Crown laws are unaffected
 - `No Ahistorical Empires`: Only two empires have dejure land; Byzantium and the HRE
