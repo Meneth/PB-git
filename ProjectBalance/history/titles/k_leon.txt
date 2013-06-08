@@ -5,7 +5,6 @@
 	law = cognatic_succession
 	law = crown_levies_2
 	law = investiture_law_1
-	de_jure_liege=e_spain
 	effect={
 		insert_title_history=k_asturias # Will add all history entries in k_asturias earlier than the earliest entry here
 	}
