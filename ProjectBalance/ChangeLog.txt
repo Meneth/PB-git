@@ -6,6 +6,7 @@
 	(PB+SWMH) Fixed duplicate characters issues
 	(PB+SWMH) Rebalanced the scripted armies in 1066
 	(PB+SWMH) Now uses PB's list of bookmarks
+	Fixed Erik the Heathen not being vassalized when he loses or white peaces in the War of the two Eriks (vanilla issue)
 
 3.2.14
 	The Pope will no longer ask his liege to implement Papal Investiture
