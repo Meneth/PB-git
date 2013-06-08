@@ -1,3 +1,6 @@
+3.2.14
+	The Pope will no longer ask his liege to implement Papal Investiture
+
 3.2.13
 	Centers of trade now give a bit of fort level
 	Increased galley maintenance cost by 1/3
