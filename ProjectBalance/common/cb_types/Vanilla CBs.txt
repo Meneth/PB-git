@@ -3508,7 +3508,7 @@ religious = {
 	can_use_title = {
 		OR = {
 			has_global_flag = rapid_conquest
-			kingdom = { always = yes }
+			NOT = { location = { continent = region_sahara } }
 		}
 		OR = {
 			has_global_flag = rapid_conquest
@@ -7359,7 +7359,7 @@ county_conquest = {
 	can_use_title = {
 		OR = {
 			has_global_flag = rapid_conquest
-			kingdom = { always = yes }
+			NOT = { location = { continent = region_sahara } }
 		}
 		tier = count
 		OR = {
