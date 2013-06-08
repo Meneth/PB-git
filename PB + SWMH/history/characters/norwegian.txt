@@ -788,25 +788,31 @@
 		wealth = 750
 		
 		effect = {
-			set_global_flag = norwegian_invasion
+			raise_levies = {
+				location = 57 # York
+				#Rebalanced starting forces
+				force_mult = 1.0
+			}
 			spawn_unit = {
 				province = 57 # York
 				owner = ROOT
+				disband_on_peace = yes
 				earmark = norwegian_invasion
 				leader = ROOT
 				match_character = ROOT
 				#Rebalanced starting forces
-				match_mult = 1
+				match_mult = 1.1
 				attrition = 1.0
 			}
 			spawn_unit = {
 				province = 57 # York
 				owner = ROOT
+				disband_on_peace = yes
 				earmark = norwegian_invasion
 				leader = 124 # Tostig
 				match_character = ROOT
 				#Rebalanced starting forces
-				match_mult = 1
+				match_mult = 1.1
 				attrition = 1.0
 			}
 			create_character = {
@@ -821,20 +827,10 @@
 				}
 				trait = tough_soldier
 			}
-			new_character = {
-				spawn_unit = {
-					province = 57 # York
-					owner = PREV
-					earmark = norwegian_invasion
-					match_character = ROOT
-					#Rebalanced starting forces
-					match_mult = 1
-					attrition = 1.0
-				}
-			}
 			spawn_unit = {
 				province = 57 # York
 				owner = ROOT
+				disband_on_peace = yes
 				earmark = norwegian_invasion
 				troops =
 				{

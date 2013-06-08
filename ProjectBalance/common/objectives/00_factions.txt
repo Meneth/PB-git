@@ -280,6 +280,12 @@ faction_succ_seniority = {
 			factor = 4.0
 			FROM = { trait = ambitious }
 		}
+		modifier = {
+			factor = 0
+			FROM = {
+				primary_title = { is_primary_type_title = no } # Mercs, the Pope, Holy Orders, etc
+			}
+		}
 	}
 	
 	# AI membership weight: ROOT is the prospective member. FROM is the faction leader. FROMFROM is the target title or character.
@@ -556,6 +562,10 @@ faction_succ_seniority = {
 		modifier = {
 			factor = 4.0
 			trait = ambitious
+		}
+		modifier = {
+			factor = 0
+			primary_title = { is_primary_type_title = no } # Mercs, the Pope, Holy Orders, etc
 		}
 	}
 	
@@ -837,6 +847,12 @@ faction_succ_primogeniture = {
 			factor = 4.0
 			FROM = { trait = ambitious }
 		}
+		modifier = {
+			factor = 0
+			FROM = {
+				primary_title = { is_primary_type_title = no } # Mercs, the Pope, Holy Orders, etc
+			}
+		}
 	}
 	
 	# AI membership weight: ROOT is the prospective member. FROM is the faction leader. FROMFROM is the target title or character.
@@ -1113,6 +1129,10 @@ faction_succ_primogeniture = {
 		modifier = {
 			factor = 4.0
 			trait = ambitious
+		}
+		modifier = {
+			factor = 0
+			primary_title = { is_primary_type_title = no } # Mercs, the Pope, Holy Orders, etc
 		}
 	}
 	
@@ -1450,6 +1470,12 @@ faction_succ_gavelkind = {
 			factor = 4.0
 			FROM = { trait = ambitious }
 		}
+		modifier = {
+			factor = 0
+			FROM = {
+				primary_title = { is_primary_type_title = no } # Mercs, the Pope, Holy Orders, etc
+			}
+		}
 	}
 	
 	# AI membership weight: ROOT is the prospective member. FROM is the faction leader. FROMFROM is the target title or character.
@@ -1680,6 +1706,10 @@ faction_succ_gavelkind = {
 		modifier = {
 			factor = 4.0
 			trait = ambitious
+		}
+		modifier = {
+			factor = 0
+			primary_title = { is_primary_type_title = no } # Mercs, the Pope, Holy Orders, etc
 		}
 	}
 	
@@ -2041,6 +2071,12 @@ faction_succ_feudal_elective = {
 			factor = 4.0
 			FROM = { trait = ambitious }
 		}
+		modifier = {
+			factor = 0
+			FROM = {
+				primary_title = { is_primary_type_title = no } # Mercs, the Pope, Holy Orders, etc
+			}
+		}
 	}
 	
 	# AI membership weight: ROOT is the prospective member. FROM is the faction leader. FROMFROM is the target title or character.
@@ -2277,6 +2313,10 @@ faction_succ_feudal_elective = {
 		#Slow it down a bit
 		modifier = {
 			factor = 0.5
+		}
+		modifier = {
+			factor = 0
+			primary_title = { is_primary_type_title = no } # Mercs, the Pope, Holy Orders, etc
 		}
 	}
 	
@@ -2685,6 +2725,12 @@ faction_independence = {
 			religion_group = muslim
 			liege = { religion = ROOT }
 			NOT = { liege = { decadence = 25 } }
+		}
+		modifier = {
+			factor = 0
+			FROM = {
+				primary_title = { is_primary_type_title = no } # Mercs, the Pope, Holy Orders, etc
+			}
 		}
 	}
 	
@@ -3102,6 +3148,10 @@ faction_independence = {
 			religion_group = muslim
 			liege = { religion = ROOT }
 			NOT = { liege = { decadence = 25 } }
+		}
+		modifier = {
+			factor = 0
+			primary_title = { is_primary_type_title = no } # Mercs, the Pope, Holy Orders, etc
 		}
 	}
 	
@@ -3679,6 +3729,12 @@ faction_claimant = {
 				}
 			}
 		}
+		modifier = {
+			factor = 0
+			FROM = {
+				primary_title = { is_primary_type_title = no } # Mercs, the Pope, Holy Orders, etc
+			}
+		}
 	}
 	
 	# AI membership weight: ROOT is the prospective member. FROM is the faction leader. FROMFROM is the target title or character.
@@ -4149,6 +4205,10 @@ faction_claimant = {
 			factor = 0.05
 			tier = emperor
 			ROOT = { primary_title = { NOT = { de_jure_liege_or_above = ROOT } } }
+		}
+		modifier = {
+			factor = 0
+			primary_title = { is_primary_type_title = no } # Mercs, the Pope, Holy Orders, etc
 		}
 	}
 	

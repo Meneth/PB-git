@@ -466,17 +466,19 @@
 
 106516 = {
 	name="Billung"
+	dynasty=656
 	martial=6
 	diplomacy=8
 	intrigue=5
 	stewardship=7
 	religion="catholic"
 	culture="german"
-	900.1.2 = {
-		birth="900.1.2"
+	father=167770
+	880.1.1 = {
+		birth="880.1.1"
 	}
-	967.1.2 = {
-		death="967.1.2"
+	967.5.26 = {
+		death="967.5.26"
 	}
 }
 
@@ -970,6 +972,7 @@
 	religion="catholic"
 	culture="german"
 	father=33574
+	mother=168527
 	990.1.1 = {
 		birth="990.1.1"
 	}
@@ -1089,7 +1092,7 @@
 		birth="1007.1.1"
 	}
 	1057.8.3 = {
-	name="Stephanus"
+	name="Stephen"
 	# AKA: Friedrich
 	}
 	1058.3.29 = {
@@ -1791,56 +1794,6 @@
 	}
 }
 
-1164 = {
-	name="Louis"
-	dynasty=7052
-	martial=4
-	diplomacy=8
-	intrigue=7
-	stewardship=5
-	religion="catholic"
-	culture="german"
-	add_trait="charitable"
-	add_trait="patient"
-	add_trait="gluttonous"
-	add_trait="thrifty_clerk"
-	add_trait="blinded"
-	father=7981
-	mother=7982
-	880.1.2 = {
-		birth="880.1.2"
-		give_nickname="nick_the_blind"
-	}
-	905.1.1 = {
-		add_spouse=1701
-	}
-	928.1.2 = {
-		death="928.1.2"
-	}
-}
-
-1166 = {
-	name="Karl"
-	# AKA: Karl Konstantinos
-	dynasty=7052
-	martial=7
-	diplomacy=8
-	intrigue=6
-	stewardship=4
-	religion="catholic"
-	culture="german"
-	add_trait="charitable"
-	add_trait="skilled_tactician"
-	father=1164
-	mother=1701
-	917.1.2 = {
-		birth="917.1.2"
-	}
-	962.1.2 = {
-		death="962.1.2"
-	}
-}
-
 1169 = {
 	name="Bertha"
 	female=yes
@@ -2010,8 +1963,8 @@
 	add_trait="tough_soldier"
 	father=7908
 	mother=7912
-	876.1.2 = {
-		birth="876.1.2"
+	877.1.1 = {
+		birth="877.1.1"
 	}
 	898.1.1 = {
 		add_spouse=1281
@@ -2760,7 +2713,7 @@
 		birth="972.1.1"
 	}
 	996.5.3 = {
-	name="Gregorius"
+	name="Gregory"
 	# AKA: Bruno
 	}
 	999.2.18 = {
@@ -3539,7 +3492,7 @@
 }
 
 1410 = {
-	name="Herman"
+	name="Hermann"
 	dynasty=656
 	martial=5
 	diplomacy=5
@@ -3550,8 +3503,8 @@
 	add_trait="zealous"
 	add_trait="tough_soldier"
 	father=106516
-	922.1.2 = {
-		birth="922.1.2"
+	912.1.1 = {
+		birth="912.1.1"
 	}
 	973.1.28 = {
 		death="973.1.28"
@@ -3613,11 +3566,11 @@
 	add_trait="patient"
 	add_trait="flamboyant_schemer"
 	father=1410
-	956.1.2 = {
-		birth="956.1.2"
+	956.1.1 = {
+		birth="956.1.1"
 	}
-	1010.1.2 = {
-		death="1010.1.2"
+	1010.1.1 = {
+		death="1010.1.1"
 	}
 }
 
@@ -4724,7 +4677,7 @@
 }
 
 1524 = {
-	name="Rudolph"
+	name="Rudolf"
 	# AKA: Guelph
 	dynasty=650
 	martial=4
@@ -4864,6 +4817,10 @@
 	1066.1.1 = {
 		add_spouse=112602
 	}
+	1070.1.1 = {
+		remove_spouse=112602
+		add_spouse=363
+	}
 	1101.11.9 = {
 		death="1101.11.9"
 	}
@@ -4880,6 +4837,7 @@
 	culture="german"
 	add_trait="lustful"
 	add_trait="tough_soldier"
+	father=167878
 	1019.1.1 = {
 		birth="1019.1.1"
 	}
@@ -5040,10 +4998,12 @@
 	stewardship=8
 	religion="catholic"
 	culture="german"
-	980.1.2 = {
-		birth="980.1.2"
+	father=168211
+	mother=168203
+	980.1.1 = {
+		birth="980.1.1"
 	}
-	1022.1.2 = {
+	1022.1.1 = {
 		add_spouse=1619
 	}
 	1039.1.2 = {
@@ -5863,8 +5823,7 @@
 }
 
 20256 = {
-	name="Siegfrid"
-	dynasty=12400
+	name="Siegfried"
 	martial=7
 	diplomacy=4
 	intrigue=6
@@ -6036,7 +5995,7 @@
 20264 = {
 	name="Oda"
 	female=yes
-	dynasty=100364
+	dynasty=9601
 	martial=5
 	diplomacy=7
 	intrigue=5
@@ -6044,11 +6003,12 @@
 	religion="catholic"
 	culture="german"
 	add_trait="underhanded_rogue"
+	father=168570
 	1011.1.1 = {
 		birth="1011.1.1"
 	}
-	1061.1.1 = {
-		death="1061.1.1"
+	1068.1.1 = {
+		death="1068.1.1"
 	}
 }
 
@@ -6114,6 +6074,7 @@
 	add_trait="temperate"
 	add_trait="tough_soldier"
 	father=20269
+	mother=168575
 	983.1.1 = {
 		birth="983.1.1"
 	}
@@ -6154,6 +6115,9 @@
 	culture="german"
 	953.1.1 = {
 		birth="953.1.1"
+	}
+	980.1.1 = {
+		add_spouse=168575
 	}
 	1034.1.1 = {
 		death="1034.1.1"
@@ -6310,8 +6274,7 @@
 }
 
 20307 = {
-	name="Olderic"
-	dynasty=12445
+	name="Olderich"
 	martial=4
 	diplomacy=8
 	intrigue=6
@@ -8686,13 +8649,13 @@
 		birth="1122.1.1"
 	}
 	1147.1.1 = {
-		add_spouse = 31519 #Adela Ratoponen
+		add_spouse = 31519 #Adelheid Ratoponen
 	}
-	1153.1.1 = {
-	remove_spouse = 205599 #Adela Ratoponen
+	1153.3.1 = {
+		remove_spouse = 31519 #Adelheid Ratoponen
 	}	
 	1156.1.1 = {
-		add_spouse = 205599 #Beatrice of Burgund
+		add_spouse = 205599 #Beatrice of Burgundy
 	}
 	1190.6.2 = {
 		death="1190.6.2"
@@ -9089,9 +9052,13 @@
 	add_trait="charitable"
 	add_trait="amateurish_plotter"
 	father=212548
+	mother=7003
 	1073.1.2 = {
 		birth="1073.1.2"
 	}
+        1106.1.1={
+                add_spouse=212547 #Adelheid Salian
+        }
 	1136.1.31 = {
 		death="1136.1.31"
 	}
@@ -9134,6 +9101,9 @@
 	mother=7201
 	1050.1.1 = {
 		birth="1050.1.1"
+	}
+	1071.1.1 = {
+		add_spouse=7003
 	}
 	1095.10.12 = {
 		death="1095.10.12"
@@ -9763,8 +9733,8 @@
 	culture="german"
 	add_trait="charitable"
 	add_trait="amateurish_plotter"
-	father=7200
-	mother=7201
+	father=212548
+	mother=7003
 	1080.1.2 = {
 		birth="1080.1.2"
 	}
@@ -11645,8 +11615,8 @@
 	1097.1.2 = {
 		birth="1097.1.2"
 	}
-	1144.1.2 = {
-		death="1144.1.2"
+	1144.7.27 = {
+		death="1144.7.27"
 	}
 }
 
@@ -11913,17 +11883,16 @@
 30008 = {
 	name="Othelindis"
 	female=yes
-	dynasty=656
+	dynasty=652
 	martial=4
 	diplomacy=4
 	intrigue=4
 	stewardship=4
 	religion="catholic"
 	culture="german"
-	father=1412
-	mother=1421
-	985.1.2 = {
-		birth="985.1.2"
+	father=168528
+	985.1.1 = {
+		birth="985.1.1"
 	}
 	1044.3.9 = {
 		death="1044.3.9"
@@ -12978,6 +12947,7 @@
 	stewardship=6
 	religion="catholic"
 	culture="german"
+	father=168532
 	1032.1.1 = {
 		birth="1032.1.1"
 	}
@@ -13516,6 +13486,7 @@
 	stewardship=5
 	religion="catholic"
 	culture="german"
+	father=167787
 	920.1.1 = {
 		birth="920.1.1"
 	}
@@ -19017,10 +18988,10 @@
 	father=90107
 	mother = 7987
 	830.1.14={
-		birth="830.1.14"
+		birth=yes
 	}
 	880.9.29={
-		death="880.9.29"
+		death=yes
 	}
 }
 
@@ -19039,10 +19010,11 @@
 	father=90107
 	mother=7987
 	835.1.14 = {
-		birth="835.1.14"
+		birth=yes
+		give_nickname=nick_the_younger
 	}
 	882.1.21 = {
-		death="882.1.21"
+		death=yes
 	}
 }
 
@@ -24415,7 +24387,7 @@
 	}
 	1337.1.1 = {
 		give_nickname = nick_the_blind
-		add_trait="maimed"
+		add_trait="blinded"
 		add_trait="crusader"
 	}
 	1346.8.26 = {
@@ -24636,7 +24608,7 @@
 }
 
 462622 = {
-	name="Marie"
+	name="Maria"
 	female=yes
 	dynasty=61
 	martial=6
@@ -24651,8 +24623,8 @@
 	1304.1.2 = {
 		birth="1304.1.2"
 	}
-	1354.1.2 = {
-		death="1354.1.2"
+	1324.3.26 = {
+		death="1324.3.26"
 	}
 }
 
@@ -28052,7 +28024,7 @@
 7003 = {
 	name="Ida"
 	female=yes
-	dynasty=101560
+	dynasty=7220 #Rapotonen
 	martial=7
 	diplomacy=4
 	intrigue=8
@@ -28060,11 +28032,13 @@
 	religion="catholic"
 	culture="german"
 	add_trait="martial_cleric"
+        father=31514
+        mother=31523
 	1055.1.2 = {
 		birth="1055.1.2"
 	}
-	1105.1.2 = {
-		death="1105.1.2"
+	1101.12.31 = {
+		death="1101.12.31"
 	}
 }
 
@@ -30294,8 +30268,10 @@
 	dynasty=101555
 	religion="catholic"
 	culture="german"
-	860.1.1 = {
-		birth="860.1.1"
+	father=168064
+	mother=168065
+	868.1.1 = {
+		birth="868.1.1" #estimate
 	}
 	895.1.1 = {
 		add_spouse=33610
@@ -30634,6 +30610,7 @@
 	religion="catholic"
 	culture="german"
 	father=212548
+	mother=7003
 	1074.1.1 = {
 		birth="1074.1.1"
 	}
@@ -30942,7 +30919,7 @@
 7816 = {
 	name="Judith"
 	female=yes 
-	dynasty=100358
+	dynasty=12110
 	martial=6
 	diplomacy=5
 	intrigue=8
@@ -30954,8 +30931,8 @@
 	add_trait="amateurish_plotter"
 	father=7909
 	mother=7907
-	842.1.1 = {
-		birth="842.1.1"
+	839.1.1 = {
+		birth="839.1.1"
 	}
 	930.1.1 = {
 		death="930.1.1"
@@ -31002,7 +30979,7 @@
 		birth="1005.1.1"
 	}
 	1046.12.20 = {
-	name="Clemens"
+	name="Clement"
 	# AKA: Suidger
 	}
 	1047.10.9 = {
@@ -31161,6 +31138,7 @@
 	culture="german"
 	add_trait="tough_soldier"
 	father=7959
+	mother=167765
 	851.1.1 = {
 		birth="851.1.1"
 	}
@@ -31184,6 +31162,7 @@
 	add_trait="diligent"
 	add_trait="proud"
 	add_trait="amateurish_plotter"
+	father=167790
 	815.1.1={
 		birth="815.1.1"
 	}
@@ -31223,7 +31202,7 @@
 7911 = {
 	name="Ingeltrude"
 	female=yes 
-	dynasty=100358
+	dynasty=12110
 	martial=6
 	diplomacy=5
 	intrigue=8
@@ -31244,7 +31223,7 @@
 }
 
 7912 = {
-	name="Hedwiga"
+	name="Hedwig"
 	female=yes
 	dynasty=7290
 	martial=5
@@ -31259,8 +31238,8 @@
 	add_trait="skilled_tactician"
 	father=7910
 	mother=7911
-	851.1.1 = {
-		birth="851.1.1"
+	857.1.1 = {
+		birth="857.1.1"
 	}
 	886.1.1 = {
 		death="886.1.1"
@@ -31357,7 +31336,9 @@
 	culture="german"
 	add_trait="ambitious"
 	add_trait="ill"
+	add_trait="legit_bastard"
 	father=42018
+	mother=167813
 	850.1.1 = {
 		birth="850.1.1"
 	}
@@ -31380,8 +31361,12 @@
 	culture="german"
 	add_trait="wroth"
 	add_trait="flamboyant_schemer"
-	810.1.1 = {
-		birth="810.1.1"
+	father=167829
+	815.1.1 = {
+		birth="815.1.1"
+	}
+	834.1.1 = {
+		add_spouse=167811
 	}
 	860.1.1 = {
 		death="860.1.1"
@@ -31400,6 +31385,7 @@
 	add_trait="wroth"
 	add_trait="flamboyant_schemer"
 	father=7946
+	mother=167811
 	840.1.1 = {
 		birth="840.1.1"
 	}
@@ -31462,6 +31448,7 @@
 	add_trait="wroth"
 	add_trait="flamboyant_schemer"
 	father=7946
+	mother=167811
 	835.1.1 = {
 		birth="835.1.1"
 	}
@@ -31505,6 +31492,9 @@
 	890.1.1 = {
 		birth="890.1.1"
 	}
+	913.1.1 = {
+		add_spouse=167851
+	}
 	918.12.23 = {
 		death="918.12.23"
 	}
@@ -31542,6 +31532,7 @@
 	culture="german"
 	add_trait="tough_soldier"
 	father=7959
+	mother=167765
 	845.1.1 = {
 		birth="845.1.1"
 	}
@@ -31591,6 +31582,9 @@
 	883.1.1 = {
 		birth="883.1.1"
 	}
+	904.1.1 = {
+		add_spouse=168157
+	}
 	926.4.29 = {
 		death="926.4.29"
 	}
@@ -31609,6 +31603,7 @@
 	add_trait="brave"
 	add_trait="skilled_tactician"
 	father=7956
+	mother=168157
 	915.1.1 = {
 		birth="915.1.1"
 	}
@@ -31631,6 +31626,7 @@
 	add_trait="brave"
 	add_trait="skilled_tactician"
 	father=7956
+	mother=168157
 	907.1.1 = {
 		birth="907.1.1"
 	}
@@ -31650,8 +31646,13 @@
 	religion="catholic"
 	culture="german"
 	add_trait="tough_soldier"
-	805.1.1 = {
-		birth="805.1.1"
+	father=167766
+	mother=167767
+	809.1.1 = {
+		birth="809.1.1"
+	}
+	830.1.1 = {
+		add_spouse=167765
 	}
 	866.1.1 = {
 		death="866.1.1"
@@ -31693,6 +31694,9 @@
 	895.1.1 = {
 		birth="895.1.1"
 	}
+	927.1.1 = {
+		add_spouse=168157
+	}
 	949.12.10 = {
 		death="949.12.10"
 	}
@@ -31711,6 +31715,7 @@
 	add_trait="wroth"
 	add_trait="flamboyant_schemer"
 	father=7962
+	mother=168157
 	930.1.1 = {
 		birth="930.1.1"
 	}
@@ -31838,8 +31843,12 @@
 	stewardship=5
 	religion="catholic"
 	culture="german"
+	father=168302
 	860.1.1 = {
 		birth="860.1.1"
+	}
+	898.1.1 = {
+		add_spouse=167851
 	}
 	907.7.4 = {
 		death="907.7.4"
@@ -31875,6 +31884,7 @@
 	religion="catholic"
 	culture="german"
 	father=7969
+	mother=167851
 	900.1.1 = {
 		birth="900.1.1"
 	}
@@ -32210,15 +32220,20 @@
 	stewardship=5
 	religion="catholic"
 	culture="german"
-	add_trait="slothful"
-	add_trait="ill"
+	add_trait=slothful
+	add_trait=ill
+	add_trait=possessed
 	father=90107
 	mother = 7987
 	839.1.14={
-		birth="839.1.14"
+		birth=yes
+	}
+	862.1.1 = {
+		add_spouse=167847
+		give_nickname=nick_the_fat
 	}
 	888.1.14={
-		death="888.1.14"
+		death=yes
 	}
 }
 
@@ -32233,14 +32248,16 @@
 	religion="catholic"
 	culture="german"
 	father=90095
-	806.1.2 = {
-		birth="806.1.2"
+	mother=91002
+	806.1.1 = {
+		birth=yes
 	}
 	827.1.1 = {
 		add_spouse=7987
+		give_nickname=nick_the_german
 	}
 	876.1.29 = {
-		death="876.1.29"
+		death=yes
 	}
 }
 
@@ -32765,8 +32782,10 @@
 	1072.1.1 = {
 		birth="1072.1.1"
 	}
-	#1109 marries Adeleida Piast
-	1127.1.1 = {
+	1109.1.1 = {
+		add_spouse=125900
+	}
+	1128.1.1 = {
 		add_spouse=31517
 	}
 	1146.8.4 = {
@@ -32796,7 +32815,7 @@
 	religion="catholic"
 	culture="german"
 	father=31516
-	#mother=Adejla Piast
+	mother=125900
 	1110.1.1 = {
 		birth="1110.1.1"
 	}
@@ -32822,14 +32841,14 @@
 	}
 }
 31519 = {
-	name="Adela"
+	name="Adelheid"
 	female=yes
 	dynasty=7220 #Rapotonen
 	religion="catholic"
 	culture="german"
 	add_trait="chaste"
 	father=31516
-	#mother=Adejla Piast
+	mother=125900
 	1126.1.1 = {
 		birth="1126.1.1"
 	}
@@ -32886,11 +32905,11 @@
 	dynasty=7221 #von Lambach
 	religion="catholic"
 	culture="german"
-	1048.1.1 = {
-		birth="1048.1.1"
+	1038.1.1 = {
+		birth="1038.1.1"
 	}
-	1098.1.2 = {
-		death="1098.1.2"
+	1088.1.2 = {
+		death="1088.1.2"
 	}
 }
 
@@ -33367,14 +33386,19 @@
 
 32000 = {
 	name="Otakar" #I
-	dynasty=101605
+	dynasty=9554
 	religion="catholic"
 	culture="german"
-	860.1.2 = {
-		birth="860.1.2"
+	father=167802
+	mother=168311
+	862.1.1 = {
+		birth="862.1.1"
 	}
-	907.1.2 = {
-		death="907.1.2"
+	898.1.1 = {
+		add_spouse=168306
+	}
+	907.7.4 = { #battle of Pressburg
+		death="907.7.4"
 	}
 }
 32001 = {
@@ -33383,21 +33407,23 @@
 	religion="catholic"
 	culture="german"
 	father=32000
-	890.1.2 = {
-		birth="890.1.2"
+	900.1.1 = {
+		birth="900.1.1"
 	}
 	930.1.2 = {
 		death="930.1.2"
 	}
 }
+
+
 32002 = {
 	name="Otakar" #III
 	dynasty=101605
 	religion="catholic"
 	culture="german"
 	father=32001
-	910.1.2 = {
-		birth="910.1.2"
+	920.1.1 = {
+		birth="920.1.1"
 	}
 	976.1.2 = {
 		death="976.1.2"
@@ -33782,19 +33808,6 @@
 	}
 }
 
-32730 = {
-	name="Thitburge"
-	female=yes
-	religion="catholic"
-	culture="german"
-	1040.1.1 = {
-		birth="1040.1.1"
-	}
-	1090.1.1 = {
-		death="1090.1.1"
-	}
-}
-
 32760 = {
 	name="Kuno" #bishop of Lausanne
 	dynasty=87
@@ -34025,8 +34038,8 @@
 	culture="german"
 	father=32768
 	mother=33313
-	1205.1.1 = {
-		birth="1205.1.1"
+	1220.1.1 = {
+		birth="1220.1.1"
 	}
 	1263.8.31 = {
 		death="1263.8.31"
@@ -34503,6 +34516,7 @@
 	religion="catholic"
 	culture="german"
 	father=33249
+	mother=168622
 	820.1.1 = {
 		birth="820.1.1"
 	}
@@ -34518,6 +34532,9 @@
 	father=33250
 	780.1.1 = {
 		birth="780.1.1"
+	}
+	810.1.1 = {
+		add_spouse=168622
 	}
 	835.12.25 = {
 		death="835.12.25"
@@ -35053,6 +35070,7 @@
 	religion="catholic"
 	culture="german"
 	father=33128
+	mother=183253
 	1210.1.1 = {
 		birth="1210.1.1"
 	}
@@ -35342,6 +35360,9 @@
 	1150.1.1 = {
 		birth="1150.1.1"
 	}
+	1200.1.1 = {
+		add_spouse=183253 #Adelheid von Sayn
+	}
 	1223.1.1 = {
 		death="1223.1.1"
 	}
@@ -35352,8 +35373,9 @@
 	religion="catholic"
 	culture="german"
 	father=33128
-	1190.1.1 = {
-		birth="1190.1.1"
+	mother=183253
+	1201.1.1 = {
+		birth="1201.1.1"
 	}
 	1266.1.1 = {
 		death="1266.1.1"
@@ -35650,6 +35672,7 @@
 	religion="catholic"
 	culture="german"
 	father=33148
+	mother=33178
 	1222.1.1 = {
 		birth="1222.1.1"
 	}
@@ -35670,6 +35693,7 @@
 	religion="catholic"
 	culture="german"
 	father=33148
+	mother=33178
 	1221.1.1 = {
 		birth="1221.1.1"
 	}
@@ -35898,6 +35922,7 @@
 	religion="catholic"
 	culture="german"
 	add_trait="martial_cleric"
+	father=183250
 	1165.1.1 = {
 		birth="1165.1.1"
 	}
@@ -35925,6 +35950,7 @@
 	culture="german"
 	add_trait="martial_cleric"
 	father=33176
+	mother=30022
 	1185.1.1 = {
 		birth="1185.1.1"
 	}
@@ -36036,6 +36062,9 @@
 	1130.1.1 = {
 		birth="1130.1.1"
 	}
+        1172.1.1 = {
+                add_spouse=30022
+        }
 	1189.1.1 = {
 		death="1189.1.1"
 	}
@@ -36047,13 +36076,18 @@
 	religion="catholic"
 	culture="german"
 	father=33176
+	mother=30022
 	1176.1.1 = {
 		birth="1176.1.1"
+	}
+	1203.1.1 = {
+		add_spouse=183254 #Bertha von Sayn
 	}
 	1218.8.7 = {
 		death="1218.8.7"
 	}
 }
+
 33178 = {
 	name="Irmgard"
 	female=yes
@@ -36061,6 +36095,7 @@
 	religion="catholic"
 	culture="german"
 	father=33177
+	mother=183254
 	1204.1.1 = {
 		birth="1204.1.1"
 	}
@@ -38201,8 +38236,11 @@
 	religion="catholic"
 	culture="german"
 	father=33330
-	840.1.1 = {
-		birth="840.1.1"
+	838.1.1 = {
+		birth="838.1.1"
+	}
+	855.1.1={
+		add_spouse = 168230
 	}
 	906.1.1 = {
 		death="906.1.1"
@@ -38215,8 +38253,9 @@
 	religion="catholic"
 	culture="german"
 	father=33428
-	880.1.1 = {
-		birth="880.1.1"
+	mother=168230
+	870.1.1 = {
+		birth="870.1.1"
 	}
 	945.1.1 = {
 		death="945.1.1"
@@ -39460,8 +39499,8 @@
 	add_trait="tough_soldier"
 	father=7908
 	mother=7912
-	870.1.1 = {
-		birth="870.1.1"
+	876.1.1 = {
+		birth="876.1.1"
 	}
 	912.11.30 = {
 		death="912.11.30"
@@ -39514,7 +39553,7 @@
 	951.1.1 = {
 		birth="951.1.1"
 	}
-	975.1.1={
+	980.1.1={
 		add_spouse=1413
 	} 
 	1002.4.30 = {
@@ -39566,8 +39605,8 @@
 	add_trait="tough_soldier"
 	father=33460
 	mother=1413
-	980.1.1 = {
-		birth="980.1.1"
+	981.1.1 = {
+		birth="981.1.1"
 	}
 	1038.1.1 = {
 		death="1038.1.1"
@@ -39812,8 +39851,9 @@
 	dynasty=12404
 	religion="catholic"
 	culture="german"
-	1040.1.1 = {
-		birth="1040.1.1"
+	father=168199
+	1035.1.1 = {
+		birth="1035.1.1"
 	}
 	1090.1.1 = {
 		death="1090.1.1"
@@ -41205,6 +41245,9 @@
 	father=33573
 	960.1.1 = {
 		birth="960.1.1"
+	}
+	985.1.1 = {
+		add_spouse=168527
 	}
 	1009.11.13 = {
 		death="1009.11.13"
@@ -42932,8 +42975,15 @@
 	culture="german"
 	father=7909
 	mother=7907
-	845.1.1={
-	birth="845.1.1"
+	841.1.1={
+	birth="841.1.1"
+	}
+	881.1.1 = {
+		add_spouse=167889
+	}
+	905.6.1={
+		culture="italian"
+		name="Berengario"
 	}
 	924.4.7={
 		death="924.4.7"
@@ -44487,6 +44537,7 @@
 	religion="catholic"
 	culture="german"
 	father=7959
+	mother=167765
 	840.1.1 = {
 		birth="840.1.1"
 	}
@@ -44771,17 +44822,18 @@
 	}
 }
 
-163051 = {
-	name="Bertolf"
-	dynasty=1053
-	religion="catholic"
-	culture="german"
+163051 = {	
+	name="Bertolf"	
+	dynasty=1053	
+	religion="catholic"	
+	culture="german"	
 	father=7946
-	842.1.1 = {
+	mother=167811	
+	842.1.1 = {		
 		birth="842.1.1"
-	}
-	883.2.10 = {
-		death="883.2.10"
+	}	
+	883.2.10 = {		
+		death="883.2.10"	
 	}
 }
 
@@ -45204,7 +45256,7 @@
 }
 
 161473 = {
-	name="Liutfrid"
+	name="Liutfried"
 	dynasty=664
 	culture="german"
 	religion="catholic"
@@ -45566,6 +45618,7 @@
 	religion="catholic"
 	culture="german"
 	father=7956
+	mother=168157
 	905.1.1 = {
 		birth="905.1.1"
 	}
@@ -45597,8 +45650,12 @@
 	dynasty=651
 	religion="catholic"
 	culture="german"
+	father=168184
 	760.1.1 = {
 		birth="760.1.1"
+	}
+	788.1.1 = {
+		add_spouse=168189
 	}
 	814.1.1 = {
 		death="814.1.1"
@@ -45611,6 +45668,7 @@
 	religion="catholic"
 	culture="german"
 	father=161553
+	mother=168189
 	790.1.1 = {
 		birth="790.1.1"
 	}
@@ -45723,9 +45781,6 @@
 	1025.1.1={
 	birth="1025.1.1"
 	}
-        1045.1.1 = {
-		add_spouse = 1000140016
-	}
 	1075.1.2={
 	death="1075.1.2"
 	}
@@ -45774,7 +45829,7 @@
 }
 
 161541= {
-	name="Adelbero"
+	name="Adalbero"
 	dynasty=22007
 	religion="catholic"
 	culture="german"
@@ -49248,8 +49303,8 @@
 	culture="german"
 	father=7909
 	mother=7907
-	844.1.1={
-	birth="844.1.1"
+	840.1.1={
+	birth="840.1.1"
 	}
 	874.1.1={
 		death="874.1.1"
@@ -49267,19 +49322,6 @@
 	}
 	878.1.1 = {
 		death="878.1.1"
-	}
-}
-
-163059 = {
-	name="Adalberto"
-	dynasty=681
-	religion="catholic"
-	culture="german"
-	840.1.1 = {
-		birth="840.1.1"
-	}
-	902.1.1 = {
-		death="902.1.1"
 	}
 }
 
@@ -49387,5 +49429,3559 @@
 	}
 	1338.1.1 = {
 		death="1338.1.1"
+	}
+}
+
+161923 = {
+	name="Gottfried" #von Bliescastel
+	dynasty=100128 #von Metz
+	culture="german"
+	religion="catholic"
+	father=20249 #Folmar von Metz
+	mother=4249 #Spanhilda
+	1046.1.1 = {
+		birth="1046.1.1"
+	}
+	1077.1.1 = {
+		add_spouse=161981 #Mathilde von Luxemburg
+	}
+	1098.1.1 = {
+		death="1098.1.1"
+	}
+}
+
+161924 = {
+	name="Gottfried" #von Bliescastel
+	dynasty=100128 #von Metz
+	culture="german"
+	religion="catholic"
+	father=161923
+	mother=161981
+	1078.1.1 = {
+		birth="1078.1.1"
+	}
+	1127.1.1 = {
+		death="1127.1.1"
+	}
+}
+
+161925 = {
+	name="Folmar" #von Bliescastel
+	dynasty=100128 #von Metz
+	culture="german"
+	religion="catholic"
+	father=161924
+	1115.1.1 = {
+		birth="1115.1.1"
+	}
+	1138.1.1 = {
+		add_spouse=31547 #Clementia von Metz
+	}
+	1179.1.1 = {
+		death="1179.1.1"
+	}
+}
+
+161926 = {
+	name="Heinrich" #Prince-Bishop of Verdun 1181-1186
+	dynasty=100128 #von Metz
+	culture="german"
+	religion="catholic"
+	father=161925 #Folmar von Bliescastel
+	mother=31547 #Clementia von Metz
+	1140.1.1 = {
+		birth="1140.1.1"
+	}
+	1186.1.1 = {
+		add_trait="celibate"
+                employer=213148
+	}
+        1191.8.5 = {
+                employer=206853
+        }
+	1196.1.1 = {
+		death="1196.1.1"
+	}
+}
+
+161959 = {
+	name="Liutgard"
+	female=yes
+	dynasty=420 #von Luxemburg
+	culture="german"
+	religion="catholic"
+	father=500001 #Wilhelm von Luxemburg
+	mother=161250 #Liutgard von Nordheim
+	1114.1.1 = {
+		birth="1114.1.1"
+	}
+	1164.1.1 = {
+		death="1164.1.1"
+	}
+}
+
+161981 = {
+	name="Mathilde"
+	female=yes
+	dynasty=420 #von Luxemburg
+	culture="german"
+	religion="catholic"
+	father=106650
+	1065.1.1 = {
+		birth="1065.1.1"
+	}
+	1105.1.1 = {
+		death="1105.1.1"
+	}
+}
+
+167750 = {
+	name="Ekbert"
+	dynasty=9550
+	religion="catholic"
+	culture="german"
+	756.1.1={
+		birth="756.1.1"
+	}
+	788.1.1={
+		add_spouse=167754
+	}
+	811.1.1={
+		death="811.1.1"
+	}
+}
+
+
+
+167751 = {
+	name="Cobbo"
+	dynasty=9550
+	religion="catholic"
+	culture="german"
+	father=167750
+	mother=166754
+	790.1.1={
+		birth="790.1.1"
+	}
+	858.6.13={
+		death="858.6.13"
+	}
+}
+
+
+
+167752 = {
+	name="Warin"
+	dynasty=9550
+	religion="catholic"
+	culture="german"
+	father=167750
+	mother=166754
+	800.1.1={
+		birth="800.1.1"
+	}
+	856.9.20={
+		death="856.9.20"
+	}
+}
+
+
+
+167753 = {
+	name="Ida"
+	female=yes
+	dynasty=9550
+	religion="catholic"
+	culture="german"
+	father=167750
+	mother=166754
+	802.1.1={
+		birth="802.1.1"
+	}
+	862.1.1={
+		death="862.1.1"
+	}
+}
+
+167755 = {
+	name="Hildebold"
+	dynasty=9551
+	religion="catholic"
+	culture="german"
+	750.1.1={
+		birth="750.1.1"
+	}
+	
+	813.1.1={
+		death="813.1.1"
+	}
+}
+
+
+
+167756 = {
+	name="Adalrich"
+	dynasty=9551
+	religion="catholic"
+	culture="german"
+	father=167755
+	780.1.1={
+		birth="780.1.1"
+	}
+	818.1.1={
+		add_spouse=167753
+	}
+	843.1.1={
+		death="843.1.1"
+	}
+}
+
+
+
+
+167757 = {
+	name="Cobbo"
+	dynasty=9551
+	religion="catholic"
+	culture="german"
+	father=167756
+	mother=167753
+	819.1.1={
+		birth="819.1.1"
+	}
+	
+	889.1.1={
+		death="889.1.1"
+	}
+}
+
+
+167758 = {
+	name="Hedwig"
+	female=yes
+	dynasty=9551
+	religion="catholic"
+	culture="german"
+	father=167756
+	mother=167753
+	820.1.1={
+		birth="820.1.1"
+	}
+	
+	887.1.1={
+		death="887.1.1"
+	}
+}
+
+
+
+167759 = {
+	name="Wichmann"
+	dynasty=656
+	religion="catholic"
+	culture="german"
+	father=106516
+	900.1.1 = {
+		birth="900.1.1"
+	}
+	944.4.23 = {
+		death="944.4.23"
+	}
+}
+
+
+
+167760 = {
+	name="Amelung"
+	dynasty=656
+	religion="catholic"
+	culture="german"
+	father=106516
+	905.1.1 = {
+		birth="905.1.1"
+	}
+	962.5.5 = {
+		death="962.5.5"
+	}
+}
+
+167761 = {
+	name="Wichmann"
+	dynasty=656
+	religion="catholic"
+	culture="german"
+	father=167759
+	930.1.1 = {
+		birth="930.1.1"
+	}
+	967.9.22 = {
+		death="967.9.22"
+	}
+}
+
+
+167762 = {
+	name="Ekbert"
+	dynasty=656
+	religion="catholic"
+	culture="german"
+	father=167759
+	932.1.1 = {
+		birth="932.1.1"
+	}
+	994.4.1 = {
+		death="994.4.1"
+	}
+}
+
+
+
+167763 = {
+	name="Billung"
+	dynasty=656
+	religion="catholic"
+	culture="german"
+	780.1.1 = {
+		birth="780.1.1"
+	}
+	806.1.1 = {
+		add_spouse=167764
+	}
+	810.1.1 = {
+		death="810.1.1"
+	}
+}
+
+167765 = {
+	name="Oda"
+	female=yes
+	dynasty=656
+	religion="catholic"
+	culture="german"
+	father=167763
+	mother=167764
+	807.1.1 = {
+		birth="807.1.1"
+	}
+	
+	913.5.17 = {
+		death="913.5.17"
+	}
+}
+
+167766 = {
+	name="Bruno"
+	dynasty=669
+	religion="catholic"
+	culture="german"
+	785.1.1 = {
+		birth="785.1.1"
+	}
+	807.1.1 = {
+		add_spouse=167767
+	}
+	835.1.1 = {
+		death="835.1.1"
+	}
+}
+
+167767 = {
+	name="Adela"
+	female=yes
+	dynasty=9550
+	religion="catholic"
+	culture="german"
+	father=167750
+	mother=166754
+	791.1.1={
+		birth="791.1.1"
+	}
+	841.1.1={
+		death="841.1.1"
+	}
+}
+
+
+
+167768 = {
+	name="Amelung"
+	dynasty=656
+	religion="catholic"
+	culture="german"
+	father=167763
+	mother=167764
+	808.1.1 = {
+		birth="808.1.1"
+	}
+	
+	850.1.1 = {
+		death="850.1.1"
+	}
+}
+
+167769 = {
+	name="Wichmann"
+	dynasty=656
+	religion="catholic"
+	culture="german"
+	father=167763
+	mother=167764
+	809.1.1 = {
+		birth="809.1.1"
+	}
+	
+	855.11.10 = {
+		death="855.11.10"
+	}
+}
+
+167770 = {
+	name="Wichmann"
+	dynasty=656
+	religion="catholic"
+	culture="german"
+	father=167769
+	840.1.1 = {
+		birth="840.1.1"
+	}
+	
+	885.1.1 = {
+		death="885.1.1"
+	}
+}
+
+167771 = {
+	name="Alberada"
+	female=yes
+	dynasty=656
+	religion="catholic"
+	culture="german"
+	father=167768
+	840.1.1 = {
+		birth="840.1.1"
+	}
+	
+	890.1.1 = {
+		death="890.1.1"
+	}
+}
+
+167772 = {
+	name="Hemma"
+	female=yes
+	dynasty=656
+	religion="catholic"
+	culture="german"
+	father=167768
+	842.1.1 = {
+		birth="842.1.1"
+	}
+	
+	892.1.1 = {
+		death="892.1.1"
+	}
+}
+
+167773 = {
+	name="Adela"
+	female=yes
+	dynasty=9551
+	religion="catholic"
+	culture="german"
+	father=167757
+	849.1.1={
+		birth="849.1.1"
+	}
+	
+	899.1.1={
+		death="899.1.1"
+	}
+}
+
+167774 = {
+	name="Thietbold"
+	dynasty=9551
+	religion="catholic"
+	culture="german"
+	add_trait="bastard"
+	father=167757
+	865.1.1={
+		birth="865.1.1"
+	}
+	
+	938.1.1={
+		death="938.1.1"
+	}
+}
+
+167775 = {
+	name="Meginhard"
+	dynasty=656
+	religion="catholic"
+	culture="german"
+	father=167769
+	842.1.1 = {
+		birth="842.1.1"
+	}
+	
+	882.1.1 = {
+		death="882.1.1"
+	}
+}
+
+167784 = {
+	name="Ekbert"
+	religion="catholic"
+	culture="german"
+	825.1.1 = {
+		birth="825.1.1"
+	}
+	
+	884.2.1 = {
+		death="884.2.1"
+	}
+}
+
+167785 = {
+	name="Lothar"
+	dynasty=661
+	religion="catholic"
+	culture="german"
+	830.1.1 = {
+		birth="830.1.1"
+	}
+	864.1.1 = {
+		add_spouse=167786
+	}
+	880.2.2 = {
+		death="880.2.2"
+	}
+}
+
+167786 = {
+	name="Edda"
+	female=yes
+	dynasty=669
+	religion="catholic"
+	culture="german"
+	father=7959
+	mother=167765
+	846.1.1 = {
+		birth="846.1.1"
+	}
+	874.1.1 = {
+		death="874.1.1"
+	}
+}
+
+167787 = {
+	name="Lothar"
+	dynasty=661
+	religion="catholic"
+	culture="german"
+	father=167785
+	mother=167786
+	865.1.1 = {
+		birth="865.1.1"
+	}
+	
+	929.1.1 = {
+		death="929.1.1"
+	}
+}
+
+167790 = {
+	name="Unruoch"
+	dynasty=12110
+	religion="catholic"
+	culture="german"
+	father=167807
+	770.1.1 = {
+		birth="770.1.1"
+	}
+	
+	853.1.1 = {
+		death="853.1.1"
+	}
+}
+
+
+
+167791 = {
+	name="Berengar"
+	dynasty=12110
+	religion="catholic"
+	culture="german"
+	father=167790
+	790.1.1 = {
+		birth="790.1.1"
+	}
+	812.1.1 = {
+		give_nickname=nick_the_wise
+	}
+	837.1.1 = {
+		death="837.1.1"
+	}
+}
+
+
+
+167792 = {
+	name="Adalhard"
+	dynasty=12110
+	religion="catholic"
+	culture="german"
+	father=7909
+	mother=7907
+	843.1.1={
+		birth="843.1.1"
+	}
+	874.7.1={
+		death="874.7.1"
+	}
+}
+
+
+
+167793 = {
+	name="Eberhard"
+	dynasty=12110
+	religion="catholic"
+	culture="german"
+	father=167792
+	862.1.1={
+		birth="862.1.1"
+	}
+	889.1.1={
+		death="889.1.1"
+	}
+}
+
+
+
+167794 = {
+	name="Judith"
+	female=yes
+	dynasty=12110
+	religion="catholic"
+	culture="german"
+	father=167793
+	888.1.1={
+		birth="888.1.1"
+	}
+	938.1.1={
+		death="938.1.1"
+	}
+}
+
+
+
+167795 = {
+	name="Wilhelm"
+	dynasty=9553
+	religion="catholic"
+	culture="german"
+	800.1.1={
+		birth="800.1.1"
+	}
+	853.1.18={
+		death="853.1.18"
+	}
+}
+
+
+
+167796 = {
+	name="Wilhelm"
+	dynasty=9553
+	religion="catholic"
+	culture="german"
+	father=167795
+	820.1.1={
+		birth="820.1.1"
+	}
+	871.1.1={
+		death="871.1.1"
+	}
+}
+
+
+
+167797 = {
+	name="Megingoz"
+	dynasty=9553
+	religion="catholic"
+	culture="german"
+	father=167796
+	840.1.1={
+		birth="840.1.1"
+	}
+	884.1.1={
+		death="884.1.1"
+	}
+}
+
+167798 = {
+	name="Engelschalk"
+	dynasty=9553
+	religion="catholic"
+	culture="german"
+	father=167795
+	825.1.1={
+		birth="825.1.1"
+	}
+	871.1.1={
+		death="871.1.1"
+	}
+}
+
+
+
+167799 = {
+	name="Poppo"
+	dynasty=9553
+	religion="catholic"
+	culture="german"
+	father=167798
+	845.1.1={
+		birth="845.1.1"
+	}
+	884.1.1={
+		death="884.1.1"
+	}
+}
+
+
+
+
+167800 = {
+	name="Wilhelm"
+	dynasty=9553
+	religion="catholic"
+	culture="german"
+	father=167798
+	847.1.1={
+		birth="847.1.1"
+	}
+	893.1.1={
+		death="893.1.1"
+	}
+}
+
+
+
+167801 = {
+	name="Engelschalk"
+	dynasty=9553
+	religion="catholic"
+	culture="german"
+	father=167798
+	849.1.1={
+		birth="849.1.1"
+	}
+	895.1.1={
+		death="895.1.1"
+	}
+}
+
+
+
+167802 = {
+	name="Aribo"
+	dynasty=9554
+	religion="catholic"
+	culture="german"
+	840.1.1={
+		birth="840.1.1"
+	}
+	858.1.1 = {
+		add_spouse=168311
+	}
+	909.1.1={
+		death="909.1.1"
+	}
+}
+
+167803 = {
+	name="Isanrich"
+	dynasty=9554
+	religion="catholic"
+	culture="german"
+	father=167802
+	mother=168311
+	860.1.1={
+		birth="860.1.1"
+	}
+	912.3.5={
+		death="912.3.5"
+	}
+}
+
+167804 = {
+	name="Lupus"
+	religion="catholic"
+	add_trait="martial_cleric"
+	culture="german"
+	820.1.1={
+		birth="820.1.1"
+	}
+	875.1.1={
+		death="875.1.1"
+	}
+}
+
+167805 = {
+	name="Adelchis"
+	religion="catholic"
+	culture="german"
+	add_trait="martial_cleric"
+	825.1.1={
+		birth="825.1.1"
+	}
+	881.1.1={
+		death="875.1.1"
+	}
+}
+
+167807 = {
+	name="Unruoch"
+	dynasty=12110
+	religion="catholic"
+	culture="german"
+	736.1.1 = {
+		birth="736.1.1"
+	}
+	
+	810.1.1 = {
+		death="810.1.1"
+	}
+}
+
+167808 = {
+	name="Ernst"
+	dynasty=9556
+	religion="catholic"
+	culture="german"
+	790.1.1 = {
+		birth="790.1.1"
+	}
+	808.1.1 = {
+		add_spouse=167809
+	}
+	840.1.1 = {
+		death="840.1.1"
+	}
+}
+
+167809 = {
+	name="Wartrun"
+	female=yes
+	religion="catholic"
+	culture="german"
+	790.1.1 = {
+		birth="790.1.1"
+	}
+	
+	840.1.1 = {
+		death="840.1.1"
+	}
+}
+
+167810 = {
+	name="Ernst"
+	dynasty=9556
+	religion="catholic"
+	culture="german"
+	father=167808
+	mother=167809
+	810.1.1 = {
+		birth="810.1.1"
+	}
+	
+	865.11.11 = {
+		death="865.11.11"
+	}
+}
+
+167811 = {
+	name="Gisela" #real name unknown
+	female=yes
+	dynasty=9556
+	religion="catholic"
+	culture="german"
+	father=167808
+	mother=167809
+	812.1.1 = {
+		birth="812.1.1"
+	}
+	
+	862.1.1 = {
+		death="862.1.1"
+	}
+}
+
+167812 = {
+	name="Ernst"
+	dynasty=9556
+	religion="catholic"
+	culture="german"
+	father=167810
+	840.1.1 = {
+		birth="840.1.1"
+	}
+	
+	899.1.1 = {
+		death="899.1.1"
+	}
+}
+
+
+167813 = {
+	name="Liutswind" 
+	female=yes
+	dynasty=9556
+	religion="catholic"
+	culture="german"
+	father=167810
+	834.1.1 = {
+		birth="834.1.1"
+	}
+	
+	879.7.8 = {
+		death="879.7.8"
+	}
+}
+
+
+167814 = {
+	name="Ernst"
+	dynasty=9556
+	religion="catholic"
+	culture="german"
+	father=167812
+	860.1.1 = {
+		birth="860.1.1"
+	}
+	
+	920.1.1 = {
+		death="920.1.1"
+	}
+}
+
+
+
+167815 = {
+	name="Hartwig"
+	dynasty=9556
+	religion="catholic"
+	culture="german"
+	father=167812
+	861.1.1 = {
+		birth="861.1.1"
+	}
+	
+	907.7.4 = { #battle of Pressburg
+		death="907.7.4"
+	}
+}
+
+167816 = {
+	name="Guntpolt"
+	dynasty=9556
+	religion="catholic"
+	culture="german"
+	father=167812
+	862.1.1 = {
+		birth="862.1.1"
+	}
+	
+	907.7.4 = { #battle of Pressburg
+		death="907.7.4"
+	}
+}
+
+
+167817 = {
+	name="Ida" #real name unknown
+	female=yes
+	dynasty=9556
+	religion="catholic"
+	culture="german"
+	father=167812
+	863.1.1 = {
+		birth="863.1.1"
+	}
+	
+	923.1.1 = { 
+		death="923.1.1"
+	}
+}
+
+
+
+167818 = {
+	name="Ernst"
+	dynasty=9556
+	religion="catholic"
+	culture="german"
+	father=167814
+	900.1.1 = {
+		birth="900.1.1"
+	}
+	
+	960.1.1 = {
+		death="960.1.1"
+	}
+}
+
+
+
+167819 = {
+	name="Hartwig"
+	dynasty=9556
+	religion="catholic"
+	culture="german"
+	father=167814
+	905.1.1 = {
+		birth="905.1.1"
+	}
+	
+	972.1.1 = {
+		death="972.1.1"
+	}
+}
+
+167820 = {
+	name="Ernst"
+	dynasty=9556
+	religion="catholic"
+	culture="german"
+	father=167818
+	930.1.1 = {
+		birth="930.1.1"
+	}
+	
+	1007.1.1 = {
+		death="1007.1.1"
+	}
+}
+
+
+167821 = {
+	name="Hartwig"
+	dynasty=9556
+	religion="catholic"
+	culture="german"
+	father=167818
+	932.1.1 = {
+		birth="932.1.1"
+	}
+	
+	1005.1.1 = {
+		death="1005.1.1"
+	}
+}
+
+167822 = {
+	name="Guntpert"
+	dynasty=9556
+	religion="catholic"
+	culture="german"
+	father=167818
+	934.1.1 = {
+		birth="934.1.1"
+	}	
+	1005.1.1 = {
+		death="1005.1.1"
+	}
+}
+
+167823 = {
+	name="Richwara"
+	female=yes
+	dynasty=9556
+	religion="catholic"
+	culture="german"
+	father=167818
+	936.1.1 = {
+		birth="936.1.1"
+	}
+	
+	994.7.8 = {
+		death="994.7.8"
+	}
+}
+
+167824 = {	
+	name="Waldo"	
+	dynasty=1053	
+	religion="catholic"	
+	culture="german"	
+	father=7946
+	mother=167811	
+	839.1.1 = {		
+		birth="839.1.1"
+	}	
+	879.1.1 = {		
+		death="879.1.1"	
+	}
+}
+
+167825 = {	
+	name="Gerold"	
+	dynasty=9557	
+	religion="catholic"	
+	culture="german"		
+	740.1.1 = {		
+		birth="740.1.1"
+	}	
+	795.1.1 = {		
+		death="795.1.1"	
+	}
+}
+
+167826 = {	
+	name="Udalrich"	
+	dynasty=9558	
+	religion="catholic"	
+	culture="german"
+	father=167825		
+	778.1.1 = {		
+		birth="778.1.1"
+	}	
+	824.1.1 = {		
+		death="824.1.1"	
+	}
+}
+
+167827 = {
+	name="Hildegard"
+	female=yes	
+	dynasty=9557	
+	religion="catholic"	
+	culture="german"
+	father=167825		
+	756.1.1 = {		
+		birth="756.1.1"
+	}	
+	783.4.7 = {		
+		death="783.4.7"	
+	}
+}
+
+167828 = {
+	name="Erbio"
+	dynasty=9557	
+	religion="catholic"	
+	culture="german"
+	father=167825		
+	780.1.1 = {		
+		birth="780.1.1"
+	}	
+	808.1.1 = {		
+		death="808.1.1"	
+	}
+}
+
+167829 = {
+	name="Odo"
+	dynasty=9557	
+	religion="catholic"	
+	culture="german"
+	father=167828		
+	796.1.1 = {		
+		birth="796.1.1"
+	}	
+	834.1.1 = {		
+		death="834.1.1"	
+	}
+}
+
+167830 = {	
+	name="Irmintrud"
+	female=yes	
+	dynasty=9557	
+	religion="catholic"	
+	culture="german"
+	father=167829		
+	825.1.1 = {		
+		birth="825.1.1"
+	}	
+	869.10.6 = {		
+		death="869.10.6"	
+	}
+}
+
+167831 = {	
+	name="Ratbert"	
+	dynasty=9558	
+	religion="catholic"	
+	culture="german"
+	father=167826		
+	795.1.1 = {		
+		birth="795.1.1"
+	}	
+	817.1.1 = {		
+		death="817.1.1"	
+	}
+}
+
+167832 = {	
+	name="Udalrich"	
+	dynasty=9558	
+	religion="catholic"	
+	culture="german"
+	father=167831		
+	815.1.1 = {		
+		birth="815.1.1"
+	}	
+	896.4.14 = {		
+		death="896.4.14"	
+	}
+}
+
+167833 = {	
+	name="Udalrich"	
+	dynasty=9558	
+	religion="catholic"	
+	culture="german"
+	father=167832		
+	840.1.1 = {		
+		birth="840.1.1"
+	}	
+	894.9.27 = {		
+		death="894.9.27"	
+	}
+}
+
+167834 = {	
+	name="Gerold"	
+	dynasty=9558	
+	religion="catholic"	
+	culture="german"
+	father=167833		
+	860.1.1 = {		
+		birth="860.1.1"
+	}	
+	886.1.1 = {		
+		death="886.1.1"	
+	}
+}
+
+167835 = {	
+	name="Irmintrud"
+	female=yes	
+	dynasty=9558	
+	religion="catholic"	
+	culture="german"
+	father=167833		
+	862.1.1 = {		
+		birth="862.1.1"
+	}	
+	894.1.1 = {		
+		death="894.1.1"	
+	}
+}
+
+167836 = {	
+	name="Hesso"		
+	religion="catholic"	
+	culture="german"
+	add_trait="martial_cleric"		
+	820.1.1 = {		
+		birth="820.1.1"
+	}	
+	879.1.1 = {		
+		death="879.1.1"	
+	}
+}
+
+167837 = {
+	name="Walther"
+	religion="catholic"
+	culture="german"
+	add_trait="martial_cleric"		
+	840.1.1 = {		
+		birth="840.1.1"
+	}
+	910.1.1 = {		
+		death="910.1.1"	
+	}
+}
+167838 = {
+	name="Wigbert"
+	dynasty=7282
+	religion="catholic"
+	culture="german"
+	father=33248
+	845.1.1 = {
+		birth="845.1.1"
+	}
+	908.9.8 = {
+		death="908.9.8"
+	}
+}
+
+167839 = {
+	name="Widukind"
+	dynasty=7282
+	religion="catholic"
+	culture="german"
+	father=33247
+	862.1.1 = {
+		birth="862.1.1"
+	}
+	909.1.1 = {
+		death="909.1.1"
+	}
+}
+
+167840 = {
+	name="Berthold"
+	dynasty=9559
+	religion="catholic"
+	culture="german"
+	675.1.1 = {
+		birth="675.1.1"
+	}
+	724.1.1 = {
+		death="724.1.1"
+	}
+}
+
+
+167841 = {
+	name="Alaholf"
+	dynasty=9559
+	religion="catholic"
+	culture="german"
+	father=167840
+	710.1.1 = {
+		birth="710.1.1"
+	}
+	776.1.1 = {
+		death="776.1.1"
+	}
+}
+
+
+
+167842 = {
+	name="Chrodhoh"
+	dynasty=9559
+	religion="catholic"
+	culture="german"
+	father=167841
+	730.1.1 = {
+		birth="730.1.1"
+	}
+	772.1.1 = {
+		death="772.1.1"
+	}
+}
+
+
+
+167843 = {
+	name="Berthold"
+	dynasty=9559
+	religion="catholic"
+	culture="german"
+	father=167842
+	755.1.1 = {
+		birth="755.1.1"
+	}
+	815.8.10 = {
+		death="815.8.10"
+	}
+}
+
+
+
+167844 = {
+	name="Chadaloh"
+	dynasty=9559
+	religion="catholic"
+	culture="german"
+	father=167843
+	775.1.1 = {
+		birth="775.1.1"
+	}
+	819.10.31 = {
+		death="819.10.31"
+	}
+}
+
+167845 = {
+	name="Berthold"
+	dynasty=9559
+	religion="catholic"
+	culture="german"
+	father=167844
+	795.1.1 = {
+		birth="795.1.1"
+	}
+	826.7.29 = {
+		death="826.7.29"
+	}
+}
+
+167846 = {
+	name="Erchanger"
+	dynasty=9559
+	religion="catholic"
+	culture="german"
+	father=167845
+	815.1.1 = {
+		birth="815.1.1"
+	}
+	865.1.1 = {
+		death="865.1.1"
+	}
+}
+
+
+167847 = {
+	name="Richardis"
+	female=yes
+	dynasty=9559
+	religion="catholic"
+	culture="german"
+	father=167846
+	837.1.1 = {
+		birth="837.1.1"
+	}
+	900.9.18 = {
+		death="900.9.18"
+	}
+}
+
+167848 = {
+	name="Berthold"
+	dynasty=9559
+	religion="catholic"
+	culture="german"
+	father=167845
+	825.1.1 = {
+		birth="825.1.1"
+	}
+	885.1.1 = {
+		death="885.1.1"
+	}
+}
+
+
+
+167849 = {
+	name="Berthold"
+	dynasty=9559
+	religion="catholic"
+	culture="german"
+	father=167848
+	855.1.1 = {
+		birth="855.1.1"
+	}
+	917.1.21 = {
+		death="917.1.21"
+	}
+}
+
+
+
+167850 = {
+	name="Erchanger"
+	dynasty=9559
+	religion="catholic"
+	culture="german"
+	father=167848
+	860.1.1 = {
+		birth="860.1.1"
+	}
+	917.1.21 = {
+		death="917.1.21"
+	}
+}
+
+
+
+167851 = {
+	name="Kunigunde"
+	female=yes
+	dynasty=9559
+	religion="catholic"
+	culture="german"
+	father=167848
+	882.1.1 = {
+		birth="882.1.1"
+	}
+	915.2.7 = {
+		death="915.2.7"
+	}
+}
+
+
+
+167852 = {
+	name="Adalbert"
+	dynasty=9559
+	religion="catholic"
+	culture="german"
+	father=167849
+	885.1.1 = {
+		birth="885.1.1"
+	}
+	954.2.6 = {
+		death="954.2.6"
+	}
+}
+
+
+
+
+167853 = {
+	name="Berthold"
+	dynasty=9559
+	religion="catholic"
+	culture="german"
+	father=167852
+	910.1.1 = {
+		birth="910.1.1"
+	}
+	973.1.1 = {
+		death="973.1.1"
+	}
+}
+
+
+
+
+167854 = {
+	name="Judith"
+	female=yes
+	dynasty=9559
+	religion="catholic"
+	culture="german"
+	father=167852
+	915.1.1 = {
+		birth="915.1.1"
+	}
+	982.1.1 = {
+		death="982.1.1"
+	}
+}
+
+167877 = {
+	name="Lanzelin"
+	dynasty=664
+	religion="catholic"
+	culture="german"
+	father=161487
+	986.1.1={
+		birth="986.1.1"
+	}
+	1027.1.1={
+		death="1027.1.1"
+	}
+}
+
+167878 = {
+	name="Bezzelin"
+	dynasty=664
+	religion="catholic"
+	culture="german"
+	father=167877
+	1002.1.1={
+		birth="1002.1.1"
+	}
+	1024.7.15={
+		death="1024.7.15"
+	}
+}
+
+167895 = {
+	name="Ingeltrude" #real name unknown
+	dynasty=12110
+	female=yes
+	religion="catholic"
+	culture="german"
+	father=167790
+	830.1.1={
+		birth="830.1.1"
+	}
+	880.1.1={
+		death="880.1.1"
+	}
+}
+
+167976 = {
+	name="Hucbald"
+	dynasty=9566
+	religion="catholic"
+	culture="german"
+	830.1.1 = {
+		birth="830.1.1"
+	}
+	848.1.1 = {
+		add_spouse=167977
+	}
+	893.3.1 = {
+		death="893.3.1"
+	}
+}
+
+
+
+167977 = {
+	name="Andaberta"
+	female=yes
+	religion="catholic"
+	culture="german"
+	832.1.1 = {
+		birth="832.1.1"
+	}
+	880.1.1 = {
+		death="880.1.1"
+	}
+}
+
+
+167978 = {
+	name="Ingelrade"
+	female=yes
+	dynasty=9566
+	religion="catholic"
+	culture="german"
+	father=167976
+	mother=167977
+	850.1.1 = {
+		birth="850.1.1"
+	}
+	899.9.27 = {
+		death="899.9.27"
+	}
+}
+
+
+
+167979 = {
+	name="Berta"
+	female=yes
+	dynasty=9566
+	religion="catholic"
+	culture="german"
+	father=167976
+	mother=167977
+	852.1.1 = {
+		birth="852.1.1"
+	}
+	902.1.1 = {
+		death="902.1.1"
+	}
+}
+
+167980 = {
+	name="Hucbald"
+	dynasty=9566
+	religion="catholic"
+	culture="german"
+	father=167976
+	mother=167977
+	860.1.1 = {
+		birth="860.1.1"
+	}
+	893.1.1 = {
+		death="893.1.1"
+	}
+}
+
+168004 = {
+	name="Ludwig"
+	dynasty=650
+	religion="catholic"
+	culture="german"
+	father = 7984
+	mother = 7983 
+	893.1.1={
+		birth="893.1.1"
+	}
+	929.1.1={
+		death="929.1.1"
+	}
+}
+
+168005 = {
+	name="Willa"
+	female=yes
+	dynasty=650
+	religion="catholic"
+	culture="german"
+	father = 7984
+	mother = 7983 
+	895.1.1={
+		birth="895.1.1"
+	}
+	936.1.1={
+		death="936.1.1"
+	}
+}
+
+168006 = {
+	name="Waldrada"
+	female=yes
+	dynasty=650
+	religion="catholic"
+	culture="german"
+	father = 7984
+	mother = 7983 
+	900.1.1={
+		birth="900.1.1"
+	}
+	947.10.2={
+		death="947.2.10"
+	}
+}
+
+168064 = {
+	name="Hupold"
+	dynasty=664
+	culture="german"
+	religion="catholic"
+	father=163055
+	840.1.1 = {
+		birth="840.1.1"
+	}
+	865.1.1 = {
+		add_spouse=168065
+	}
+	890.1.1 = {
+		death="890.1.1"
+	}
+}
+
+
+168065 = {
+	name="Heylwig"
+	female=yes 
+	dynasty=12110
+	religion="catholic"
+	culture="german"
+	father=7909
+	mother=7907
+	844.1.1 = {
+		birth="844.1.1"
+	}
+	895.1.1 = {
+		death="895.1.1"
+	}
+}
+
+168141 = {
+	name="Dhuoda"
+	female=yes
+	dynasty=650
+	religion="catholic"
+	culture="german"
+	father=7985
+	802.1.1 = {
+		birth="802.1.1"
+	}
+	843.1.1 = {
+		death="843.1.1"
+	}
+}
+
+163180 = {
+	name="Judith"
+	female=yes
+	dynasty=650
+	religion="catholic"
+	culture="german"
+	father = 7988
+	mother = 161485
+	850.1.1={
+		birth="850.1.1"
+	}
+	890.1.1={
+		death="890.1.1"
+	}
+}
+
+163181 = {
+	name="Engeltrudis" 
+	female=yes
+	dynasty=667
+	religion="catholic"
+	culture="german"
+	father=31702
+	844.1.1 = {
+		birth="844.1.1"
+	}
+	890.1.1 = {
+		death="890.1.1"
+	}
+}
+
+168183 = {
+	name="Rudolf"
+	dynasty=12110
+	religion="catholic"
+	culture="german"
+	father=7909
+	mother=7907
+	842.1.1={
+		birth="842.1.1"
+	}
+	892.5.1={
+		death="892.5.1"
+	}
+}
+
+168186 = {
+	name="Sigihelm"
+	dynasty=9573
+	religion="catholic"
+	culture="german"
+	710.1.1 = {
+		birth="710.1.1"
+	}
+	765.1.1 = {
+		death="765.1.1"
+	}
+}
+
+168187 = {
+	name="Albrich"
+	dynasty=9573
+	religion="catholic"
+	culture="german"
+	father=168186
+	730.1.1 = {
+		birth="730.1.1"
+	}
+	765.1.1 = {
+		death="765.1.1"
+	}
+}
+
+168188 = {
+	name="Eberhard"
+	dynasty=9573
+	religion="catholic"
+	culture="german"
+	father=168187
+	750.1.1 = {
+		birth="750.1.1"
+	}
+	804.1.1 = {
+		death="804.1.1"
+	}
+}
+
+168189 = {
+	name="Engiltrud"
+	female=yes
+	dynasty=9573
+	religion="catholic"
+	culture="german"
+	father=168188
+	770.1.1 = {
+		birth="770.1.1"
+	}
+	804.1.1 = {
+		death="804.1.1"
+	}
+}
+
+168190 = {
+	name="Sieghard"
+	dynasty=9573
+	religion="catholic"
+	culture="german"
+	father=168188
+	775.1.1 = {
+		birth="775.1.1"
+	}
+	826.1.1 = {
+		death="826.1.1"
+	}
+}
+
+168191 = {
+	name="Sieghard"
+	dynasty=9573
+	religion="catholic"
+	culture="german"
+	father=168190
+	805.1.1 = {
+		birth="805.1.1"
+	}
+	861.1.1 = {
+		death="861.1.1"
+	}
+}
+
+168192 = {
+	name="Sieghard"
+	dynasty=9573
+	religion="catholic"
+	culture="german"
+	father=168191
+	835.1.1 = {
+		birth="835.1.1"
+	}
+	907.1.1 = {
+		death="907.1.1"
+	}
+}
+
+168193 = {
+	name="Ratold"
+	dynasty=9573
+	religion="catholic"
+	culture="german"
+	father=168192
+	855.1.1 = {
+		birth="855.1.1"
+	}
+	919.1.1 = {
+		death="919.1.1"
+	}
+}
+
+168194 = {
+	name="Sieghard"
+	dynasty=9573
+	religion="catholic"
+	culture="german"
+	father=168192
+	857.1.1 = {
+		birth="857.1.1"
+	}
+	923.1.1 = {
+		death="923.1.1"
+	}
+}
+
+168195 = {
+	name="Sieghard"
+	dynasty=9573
+	religion="catholic"
+	culture="german"
+	father=168194
+	890.1.1 = {
+		birth="890.1.1"
+	}
+	959.1.1 = {
+		death="959.1.1"
+	}
+}
+
+168196 = {
+	name="Sieghard"
+	dynasty=9573
+	religion="catholic"
+	culture="german"
+	father=168195
+	925.1.1 = {
+		birth="925.1.1"
+	}
+	980.1.1 = {
+		death="980.1.1"
+	}
+}
+
+168197 = {
+	name="Sieghard"
+	dynasty=9573
+	religion="catholic"
+	culture="german"
+	father=168196
+	950.1.1 = {
+		birth="950.1.1"
+	}
+	1020.1.1 = {
+		death="1020.1.1"
+	}
+}
+
+168198 = {
+	name="Engelbert"
+	dynasty=9573
+	religion="catholic"
+	culture="german"
+	father=168196
+	960.1.1 = {
+		birth="960.1.1"
+	}
+	1020.1.1 = {
+		death="1020.1.1"
+	}
+}
+
+168199 = {
+	name="Engelbert"
+	dynasty=9573
+	religion="catholic"
+	culture="german"
+	father=168198
+	990.1.1 = {
+		birth="990.1.1"
+	}
+	1040.1.1 = {
+		death="1040.1.1"
+	}
+}
+
+
+168200 = {
+	name="Eberhard"
+	dynasty=9573
+	religion="catholic"
+	culture="german"
+	father=168193
+	885.1.1 = {
+		birth="885.1.1"
+	}
+	959.1.1 = {
+		death="959.1.1"
+	}
+}
+
+168201 = {
+	name="Adalbero"
+	dynasty=9573
+	religion="catholic"
+	culture="german"
+	father=168193
+	895.1.1 = {
+		birth="895.1.1"
+	}
+	969.1.1 = {
+		death="969.1.1"
+	}
+}
+
+168202 = {
+	name="Willibrig"
+	female=yes
+	dynasty=9573
+	religion="catholic"
+	culture="german"
+	father=168193
+	900.1.1 = {
+		birth="900.1.1"
+	}
+	985.1.1 = {
+		death="985.1.1"
+	}
+}
+
+
+168203 = {
+	name="Hadamut"
+	female=yes
+	dynasty=9573
+	religion="catholic"
+	culture="german"
+	father=168201
+	950.1.1 = {
+		birth="950.1.1"
+	}
+	1010.1.1 = {
+		death="1010.1.1"
+	}
+}
+
+168204 = {
+	name="Ulrich"
+	dynasty=9573
+	religion="catholic"
+	culture="german"
+	father=168201
+	960.1.1 = {
+		birth="960.1.1"
+	}
+	979.1.1 = {
+		add_spouse=168205
+	}
+	1029.3.11 = {
+		death="1029.3.11"
+	}
+}
+
+168205 = {
+	name="Richardis"
+	female=yes
+	dynasty=523
+	religion="catholic"
+	culture="german"
+	father=168210
+	950.1.1 = {
+		birth="950.1.1"
+	}
+	1013.1.1 = {
+		death="1013.1.1"
+	}
+}
+
+168206 = {
+	name="Adalbero"
+	dynasty=9573
+	religion="catholic"
+	culture="german"
+	father=168204
+	mother=168205
+	980.1.1 = {
+		birth="980.1.1"
+	}
+	
+	1045.3.27 = {
+		death="1045.3.27"
+	}
+}
+
+168207 = {
+	name="Eberhard"
+	dynasty=9573
+	religion="catholic"
+	culture="german"
+	father=168204
+	mother=168205
+	982.1.1 = {
+		birth="981.1.1"
+	}
+	
+	1042.1.1 = {
+		death="1042.1.1"
+	}
+}
+
+
+168208 = {
+	name="Judith"
+	female=yes
+	dynasty=9573
+	religion="catholic"
+	culture="german"
+	father=168204
+	mother=168205
+	984.1.1 = {
+		birth="984.1.1"
+	}
+	
+	1046.1.1 = {
+		death="1046.1.1"
+	}
+}
+
+
+
+168209 = {
+	name="Markward"
+	dynasty=523
+	religion="catholic"
+	culture="german"
+	880.1.1 = {
+		birth="880.1.1"
+	}
+	
+	916.1.1 = {
+		death="916.1.1"
+	}
+}
+
+168210 = {
+	name="Markward"
+	dynasty=523
+	religion="catholic"
+	culture="german"
+	father=168209
+	900.1.1 = {
+		birth="900.1.1"
+	}
+	
+	951.1.1 = {
+		death="951.1.1"
+	}
+}
+
+168211 = {
+	name="Markward"
+	dynasty=523
+	religion="catholic"
+	culture="german"
+	father=168210
+	940.1.1 = {
+		birth="940.1.1"
+	}
+	975.1.1 = {
+		add_spouse=168203
+	}
+	1000.1.1 = {
+		death="1000.1.1"
+	}
+}
+
+168221 = {
+	name="Adalbert"
+	dynasty=7290
+	religion="catholic"
+	culture="german"
+	father=7910
+	mother=7911
+	855.1.1 = {
+		birth="855.1.1"
+	}
+	906.9.9 = {
+		death="906.9.9"
+	}
+}
+
+168222 = {
+	name="Adalhard"
+	dynasty=7290
+	religion="catholic"
+	culture="german"
+	father=7910
+	mother=7911
+	856.1.1 = {
+		birth="856.1.1"
+	}
+	903.1.1 = {
+		death="903.1.1"
+	}
+}
+
+
+168223 = {
+	name="Adalbert"
+	dynasty=7290
+	religion="catholic"
+	culture="german"
+	father=33428
+	mother=168230
+	858.1.1 = {
+		birth="858.1.1"
+	}
+	915.1.1 = {
+		death="915.1.1"
+	}
+}
+
+168224 = {
+	name="Radulf"
+	dynasty=227
+	religion="catholic"
+	culture="german"
+	720.1.1 = {
+		birth="720.1.1"
+	}
+	775.1.1 = {
+		death="775.1.1"
+	}
+}
+
+
+168225 = {
+	name="Fastrada"
+	female=yes
+	dynasty=227
+	religion="catholic"
+	culture="german"
+	father=168224
+	760.1.1 = {
+		birth="760.1.1"
+	}
+	794.10.10 = {
+		death="794.10.10"
+	}
+}
+
+168226 = {
+	name="Thankulf"
+	dynasty=227
+	religion="catholic"
+	culture="german"
+	father=168224
+	765.1.1 = {
+		birth="765.1.1"
+	}
+	815.1.1 = {
+		death="815.1.1"
+	}
+}
+
+168227 = {
+	name="Hadulf"
+	dynasty=227
+	religion="catholic"
+	culture="german"
+	father=168226
+	790.1.1 = {
+		birth="790.1.1"
+	}
+	840.1.1 = {
+		death="840.1.1"
+	}
+}
+
+168228 = {
+	name="Thankulf"
+	dynasty=227
+	religion="catholic"
+	culture="german"
+	father=168227
+	810.1.1 = {
+		birth="810.1.1"
+	}
+	873.8.1 = {
+		death="873.8.1"
+	}
+}
+
+168229 = {
+	name="Radulf"
+	dynasty=227
+	religion="catholic"
+	culture="german"
+	father=168228
+	830.1.1 = {
+		birth="830.1.1"
+	}
+	880.1.1 = {
+		death="880.1.1"
+	}
+}
+
+168230 = {
+	name="Hedwig" #real name unknown
+	female=yes
+	dynasty=227
+	religion="catholic"
+	culture="german"
+	father=168228
+	835.1.1 = {
+		birth="835.1.1"
+	}
+	885.1.1 = {
+		death="885.1.1"
+	}
+}
+
+
+
+
+168231 = {
+	name="Egino"
+	dynasty=7290
+	religion="catholic"
+	culture="german"
+	father=33330
+	839.1.1 = {
+		birth="839.1.1"
+	}
+	
+	908.8.3 = {
+		death="908.8.3"
+	}
+}
+
+168244 = {
+	name="Welf"
+	dynasty=650
+	add_trait="martial_cleric"
+	add_trait="celibate"
+	religion="catholic"
+	culture="german"
+	father=144974 
+	847.1.1 = {
+		birth="847.1.1"
+	}
+	881.1.1 = {
+		death="881.1.1"
+	}
+}
+
+168245 = {
+	name="Rudolf"
+	dynasty=650
+	religion="catholic"
+	culture="german"
+	father=144974 
+	848.1.1 = {
+		birth="848.1.1"
+	}
+	890.1.1 = {
+		death="890.1.1"
+	}
+}
+
+168246 = {
+	name="Hugo"
+	#AKA Hugo Abbas
+	dynasty=650
+	add_trait="martial_cleric"
+	religion="catholic"
+	culture="german"
+	father=7988
+	mother=161485
+	836.1.1 = {
+		birth="836.1.1"
+	}
+	886.5.12 = {
+		death="886.5.12"
+	}
+}
+
+168152 = {	
+	name="Gerold"	
+	dynasty=9557	
+	religion="catholic"	
+	culture="german"
+	father=167825		
+	760.1.1 = {		
+		birth="760.1.1"
+	}	
+	799.9.1 = {		
+		death="799.9.1"	
+	}
+}
+
+168153 = {	
+	name="Gerold"	
+	dynasty=9557	
+	religion="catholic"	
+	culture="german"
+	father=168152	
+	790.1.1 = {		
+		birth="790.1.1"
+	}	
+	852.1.1 = {		
+		death="852.1.1"	
+	}
+}
+
+168154 = {	
+	name="Gerold"	
+	dynasty=9557	
+	religion="catholic"	
+	culture="german"
+	father=168153	
+	820.1.1 = {		
+		birth="820.1.1"
+	}	
+	890.3.21 = {		
+		death="890.3.21"	
+	}
+}
+
+168155 = {	
+	name="Adalgoz"	
+	dynasty=9557	
+	religion="catholic"	
+	culture="german"
+	father=168154
+	849.1.1 = {		
+		birth="849.1.1"
+	}	
+	899.1.1 = {		
+		death="899.1.1"	
+	}
+}
+
+168156 = {	
+	name="Eberhard"	
+	dynasty=9557	
+	religion="catholic"	
+	culture="german"
+	father=168155
+	865.1.1 = {		
+		birth="865.1.1"
+	}	
+	889.1.27 = {		
+		death="889.1.27"	
+	}
+}
+
+168157 = {	
+	name="Reginlind"	
+	female=yes
+	dynasty=9557	
+	religion="catholic"	
+	culture="german"
+	father=168156
+	888.1.1 = {		
+		birth="888.1.1"
+	}	
+	958.4.29 = {		
+		death="958.4.29"	
+	}
+}
+
+168158 = {	
+	name="Eberhard"	
+	dynasty=9557	
+	religion="catholic"	
+	culture="german"
+	father=168156
+	887.1.1 = {		
+		birth="887.1.1"
+	}	
+	958.1.1 = {		
+		death="958.1.1"	
+	}
+}
+
+168159 = {	
+	name="Hartmann"	
+	religion="catholic"	
+	culture="german"
+	add_trait="scholarly_theologian"
+	820.1.1 = {		
+		birth="820.1.1"
+	}	
+	878.1.1 = {		
+		death="878.1.1"	
+	}
+}
+
+168160 = {	
+	name="Heyminus"	
+	religion="catholic"	
+	culture="german"
+	add_trait="martial_cleric"
+	820.1.1 = {		
+		birth="820.1.1"
+	}	
+	870.1.1 = {		
+		death="870.1.1"	
+	}
+}
+
+168300 = {
+	name="Liutpald"
+	dynasty=247
+	religion="catholic"
+	culture="german"
+	800.1.1 = {
+		birth="800.1.1"
+	}
+	
+	842.1.1 = {
+		death="842.1.1"
+	}
+}
+
+168301 = {
+	name="Liutpald"
+	dynasty=247
+	religion="catholic"
+	culture="german"
+	father=168300
+	820.1.1 = {
+		birth="820.1.1"
+	}
+	
+	846.1.1 = {
+		death="846.1.1"
+	}
+}
+
+168302 = {
+	name="Liutbert" #real name uncertain
+	dynasty=247
+	religion="catholic"
+	culture="german"
+	father=168301
+	840.1.1 = {
+		birth="840.1.1"
+	}
+	
+	890.1.1 = {
+		death="890.1.1"
+	}
+}
+
+168303 = {
+	name="Herolt"
+	dynasty=247
+	religion="catholic"
+	culture="german"
+	father=168302
+	862.1.1 = {
+		birth="862.1.1"
+	}
+	
+	895.1.1 = {
+		death="895.1.1"
+	}
+}
+
+168304 = {
+	name="Alberik"
+	dynasty=247
+	religion="catholic"
+	culture="german"
+	father=168303
+	885.1.1 = {
+		birth="885.1.1"
+	}
+	
+	931.1.1 = {
+		death="931.1.1"
+	}
+}
+
+168305 = {
+	name="Herolt"
+	dynasty=247
+	religion="catholic"
+	culture="german"
+	father=168304
+	905.1.1 = {
+		birth="905.1.1"
+	}
+	
+	967.1.1 = {
+		death="967.1.1"
+	}
+}
+
+168306 = {
+	name="Rihni"
+	female=yes
+	dynasty=247
+	religion="catholic"
+	culture="german"
+	father=168303
+	880.1.1 = {
+		birth="880.1.1"
+	}
+	
+	935.1.1 = {
+		death="935.1.1"
+	}
+}
+
+168308 = {
+	name="Gundakar"
+	dynasty=100359 
+	religion="catholic"
+	culture="german"
+	839.1.1 = {
+		birth="839.1.1"
+	}
+	
+	869.1.1 = {
+		death="869.1.1"
+	}
+}
+
+168309 = {
+	name="Guntbald"
+	dynasty=9587
+	religion="catholic"
+	culture="german"
+	845.1.1 = {
+		birth="845.1.1"
+	}
+	
+	907.3.19 = {
+		death="907.3.19"
+	}
+}
+
+168310 = {
+	name="Guntbert"
+	dynasty=100315
+	religion="catholic"
+	culture="german"
+	847.1.1 = {
+		birth="847.1.1"
+	}
+	
+	899.2.8 = {
+		death="899.2.8"
+	}
+}
+
+
+
+168311 = {
+	name="Bertha" #real name unknown
+	female=yes
+	dynasty=9553
+	religion="catholic"
+	culture="german"
+	father=167795
+	835.1.1={
+		birth="835.1.1"
+	}
+	885.1.1={
+		death="885.1.1"
+	}
+}
+
+
+
+168312 = {
+	name="Jakob"
+	dynasty=9554
+	religion="catholic"
+	culture="german"
+	father=167802
+	mother=168311
+	865.1.1={
+		birth="865.1.1"
+	}
+	958.1.1={
+		death="958.1.1"
+	}
+}
+
+168313 = {
+	name="Aribo"
+	dynasty=9554
+	religion="catholic"
+	culture="german"
+	father=167802
+	mother=168311
+	870.1.1={
+		birth="870.1.1"
+	}
+	904.1.1={
+		death="904.1.1"
+	}
+}
+
+7761 = {
+	name="Athalaric"
+	religion="catholic"
+	culture="german"
+	add_trait="diligent"
+	add_trait="patient"
+	add_trait="zealous"
+	add_trait="charismatic_negotiator"
+	470.1.1 = {
+		birth="470.1.1"
+	}
+	530.1.1 = {
+	name="Boniface"
+	# AKA: Athalaric
+	}
+	532.1.1 = {
+		death="532.1.1"
+	}
+}
+
+183250 = {
+	name="Eberhard"
+	dynasty=12445 # von Sayn
+	religion="catholic"
+	culture="german"
+	1136.1.1 = {
+		birth="1136.1.1"
+	}
+	1176.1.1 = {
+		death="1176.1.1"
+	}
+}
+
+183251 = {
+	name="Heinrich"
+	dynasty=12445 # von Sayn
+	religion="catholic"
+	culture="german"
+	father=183250
+	1160.1.1 = {
+		birth="1160.1.1"
+	}
+	1180.1.1 = {
+		add_spouse=183258 #Agnes von Saffenberg
+	}
+	1210.1.1 = {
+		death="1210.1.1" #after 1204
+	}
+}
+
+183252 = {
+	name="Heinrich"
+	dynasty=12445 # von Sayn
+	religion="catholic"
+	culture="german"
+	father=183251
+	mother=183258
+	1180.1.1 = {
+		birth="1180.1.1"
+	}
+	1206.1.1 = {
+		add_spouse=183255 #Mechtild Wettin
+	}
+	1246.12.31 = {
+		death="1246.12.31"
+	}
+}
+
+183253 = {
+	name="Adelheid"
+	female=yes
+	dynasty=12445 # von Sayn
+	religion="catholic"
+	culture="german"
+	father=183251
+	mother=183258
+	1185.1.1 = {
+		birth="1185.1.1"
+	}
+	1263.11.22 = {
+		death="1263.11.22"
+	}
+}
+
+183254 = {
+	name="Berta"
+	female=yes
+	dynasty=12445 # von Sayn
+	religion="catholic"
+	culture="german"
+	father=183251
+	mother=183258
+	1187.1.1 = {
+		birth="1187.1.1"
+	}
+	1237.1.1 = {
+		death="1237.1.1"
+	}
+}
+
+183255 = {
+	name="Mechtild"
+	female=yes
+	dynasty=528 #Wettin
+	religion="catholic"
+	culture="german"
+	father=212551
+	mother=212437
+	1190.1.1 = {
+		birth="1190.1.1"
+	}
+	1222.1.1 = {
+		death="1222.1.1"
+	}
+}
+
+183256 = {
+	name="Eberhard"
+	dynasty=213 #von Eberstein
+	religion="catholic"
+	culture="german"
+	father=212940
+	mother=212934
+	1183.1.1 = {
+		birth="1183.1.1"
+	}
+	1224.1.1 = {
+		add_spouse=183253
+	}
+	1263.5.18 = {
+		death="1263.5.18"
+	}
+}
+
+183257 = {
+	name="Eberhard"
+	dynasty=213 #von Eberstein
+	religion="catholic"
+	culture="german"
+	father=183256
+	mother=183253
+	1225.1.1 = {
+		birth="1225.1.1"
+	}
+	1248.1.1 = {
+		add_spouse=33717 #Elisabeth von Zähringen
+	}
+	1253.9.20 = {
+		death="1253.9.20"
+	}
+}
+
+183258 = {
+	name="Agnes"
+	female=yes
+	dynasty=12400 #Saffenberg
+	religion="catholic"
+	culture="german"
+	1161.1.1 = {
+		birth="1161.1.1"
+	}
+	1201.5.27 = {
+		death="1201.5.27"
+	}
+}
+
+168524 = {
+	name="Dietrich" 
+	dynasty=652
+	religion="catholic"
+	culture="german"
+	930.1.1 = {
+		birth=yes
+	}
+	
+	985.8.25 = {
+		death=yes
+	}
+}
+
+168525 = {
+	name="Oda" 
+	female=yes
+	dynasty=652
+	religion="catholic"
+	culture="german"
+	father=168524
+	960.1.1 = {
+		birth=yes
+	}
+	
+	1023.1.1 = {
+		death=yes
+	}
+}
+
+
+168526 = {
+	name="Mathilde" 
+	female=yes
+	dynasty=652
+	religion="catholic"
+	culture="german"
+	father=168524
+	961.1.1 = {
+		birth=yes
+	}
+	
+	995.1.1 = {
+		death=yes
+	}
+}
+
+
+
+
+168527 = {
+	name="Thietburga" 
+	female=yes
+	dynasty=652
+	religion="catholic"
+	culture="german"
+	father=168524
+	962.1.1 = {
+		birth=yes
+	}
+	
+	1020.1.1 = {
+		death=yes
+	}
+}
+
+
+
+
+168528 = {
+	name="Bernhard" 
+	dynasty=652
+	religion="catholic"
+	culture="german"
+	father=168524
+	964.1.1 = {
+		birth=yes
+	}
+	
+	1018.1.1 = {
+		death=yes
+	}
+}
+
+168529 = {
+	name="Bernhard" 
+	dynasty=652
+	religion="catholic"
+	culture="german"
+	father=168528
+	987.1.1 = {
+		birth=yes
+	}
+	1009.1.1 = {
+		add_spouse=168530
+	}
+	1051.1.1 = {
+		death=yes
+	}
+}
+
+168531 = {
+	name="Wilhelm" 
+	dynasty=652
+	religion="catholic"
+	culture="german"
+	father=168529
+	mother=168530
+	1010.1.1 = {
+		birth=yes
+	}
+	
+	1056.9.10 = {
+		death=yes
+	}
+}
+
+
+
+168532 = {
+	name="Konrad" 
+	dynasty=652
+	religion="catholic"
+	culture="german"
+	father=168529
+	mother=168530
+	1012.1.1 = {
+		birth=yes
+	}
+	
+	1056.9.10 = {
+		death=yes
+	}
+}
+
+
+
+
+168533 = {
+	name="Otto" 
+	dynasty=652
+	religion="catholic"
+	culture="german"
+	add_trait="bastard"
+	father=168529
+	1005.1.1 = {
+		birth=yes
+	}
+	
+	1057.6.26 = { #in battle
+		death=yes
+	}
+}
+
+
+
+
+168535 = {
+	name="Oda" 
+	female=yes
+	dynasty=652
+	religion="catholic"
+	culture="german"
+	father=168529
+	mother=168530
+	1011.1.1 = {
+		birth=yes
+	}
+	
+	1061.1.1 = {
+		death=yes
+	}
+}
+
+168542 = {
+	name="Lothar" 
+	dynasty=9600
+	religion="catholic"
+	culture="german"
+	890.1.1 = {
+		birth=yes
+	}
+	
+	929.9.5 = { #in battle
+		death=yes
+	}
+}
+
+
+
+168543 = {
+	name="Lothar" 
+	dynasty=9600
+	religion="catholic"
+	culture="german"
+	father=168542
+	925.1.1 = {
+		birth=yes
+	}
+	
+	986.1.1 = {
+		death=yes
+	}
+}
+
+
+
+
+168544 = {
+	name="Lothar" 
+	dynasty=9600
+	religion="catholic"
+	culture="german"
+	father=168543
+	955.1.1 = {
+		birth=yes
+	}
+	
+	1003.1.25 = {
+		death=yes
+	}
+}
+
+
+
+168545 = {
+	name="Werner" 
+	dynasty=9600
+	religion="catholic"
+	culture="german"
+	father=168544
+	985.1.1 = {
+		birth=yes
+	}
+	1003.1.1 = {
+		add_spouse=168546
+	}
+	1014.11.11 = { #murdered
+		death=yes
+	}
+}
+
+
+
+168546 = {
+	name="Liutgard"
+	female=yes
+	dynasty=669
+	religion="catholic"
+	culture="german"
+	father=33460
+	mother=1413
+	982.1.1 = {
+		birth=yes
+	}
+	1012.1.1 = {
+		death=yes
+	}
+}
+
+
+
+168547 = {
+	name="Lothar" 
+	dynasty=9600
+	religion="catholic"
+	culture="german"
+	father=168544
+	990.1.1 = {
+		birth=yes
+	}
+	
+	1033.1.1 = { #in battle
+		death=yes
+	}
+}
+
+
+
+168548 = {
+	name="Siegfried" 
+	dynasty=9600
+	religion="catholic"
+	culture="german"
+	father=168547
+	1025.1.1 = {
+		birth=yes
+	}
+	
+	1087.1.1 = { 
+		death=yes
+	}
+}
+
+
+
+
+
+168550 = {
+	name="Oda" 
+	female=yes
+	dynasty=9600
+	religion="catholic"
+	culture="german"
+	father=168548
+	1070.1.1 = {
+		birth=yes
+	}
+	
+	1152.1.1 = { 
+		death=yes
+	}
+}
+
+
+
+168551 = {
+	name="Berthold" 
+	dynasty=9600
+	religion="catholic"
+	culture="german"
+	father=168544
+	992.1.1 = {
+		birth=yes
+	}
+	
+	1018.1.1 = { 
+		death=yes
+	}
+}
+
+168560 = {
+	name="Thietmar" 
+	dynasty=9601
+	religion="catholic"
+	culture="german"
+	880.1.1 = {
+		birth=yes
+	}
+	
+	932.6.1 = {
+		death=yes
+	}
+}
+
+
+
+168561 = {
+	name="Siegfried" 
+	dynasty=9601
+	religion="catholic"
+	culture="german"
+	father=168560
+	900.1.1 = {
+		birth=yes
+	}
+	
+	941.12.3 = {
+		death=yes
+	}
+}
+
+
+
+
+168562 = {
+	name="Gero" #the Great Margrave
+	dynasty=9601
+	religion="catholic"
+	culture="german"
+	father=168560
+	add_trait="skilled_tactician"
+	add_trait="brave"
+	add_trait="zealous"
+	add_trait="charitable"
+	add_trait="diligent"
+	add_trait="cruel"
+	905.1.1 = {
+		birth=yes
+	}
+	
+	965.5.20 = {
+		death=yes
+	}
+}
+
+
+
+
+168563 = {
+	name="Hidda" 
+	female=yes
+	dynasty=9601
+	religion="catholic"
+	culture="german"
+	father=168560
+	910.1.1 = {
+		birth=yes
+	}
+	
+	975.1.1 = {
+		death=yes
+	}
+}
+
+
+
+168564 = {
+	name="Siegfried" 
+	dynasty=9601
+	religion="catholic"
+	culture="german"
+	father=168562
+	936.1.1 = {
+		birth=yes
+	}
+	
+	959.6.25 = {
+		death=yes
+	}
+}
+
+
+
+
+
+168565 = {
+	name="Gero" 
+	dynasty=9601
+	religion="catholic"
+	culture="german"
+	father=168562
+	937.1.1 = {
+		birth=yes
+	}
+	
+	959.10.26 = {
+		death=yes
+	}
+}
+
+
+
+168566 = {
+	name="Hedwig"
+	female=yes 
+	dynasty=9601
+	religion="catholic"
+	culture="german"
+	father=168562
+	939.1.1 = {
+		birth=yes
+	}
+	
+	964.1.1 = {
+		death=yes
+	}
+}
+
+
+
+
+168567 = {
+	name="Christian" 
+	dynasty=100364
+	religion="catholic"
+	culture="german"
+	900.1.1 = {
+		birth=yes
+	}
+	930.1.1 = {
+		add_spouse=168563
+	}
+	950.1.1 = {
+		death=yes
+	}
+}
+
+
+
+168568 = {
+	name="Thietmar" 
+	dynasty=9601
+	religion="catholic"
+	culture="german"
+	father=168567
+	mother=168563
+	931.1.1 = {
+		birth=yes
+	}
+	972.1.1 = {
+		add_spouse=1413
+	}
+	979.8.3 = {
+		death=yes
+	}
+}
+
+
+
+168569 = {
+	name="Gero" 
+	dynasty=9601
+	religion="catholic"
+	culture="german"
+	father=168568
+	mother=1413
+	973.1.1 = {
+		birth=yes
+	}
+	
+	1015.9.1 = {
+		death=yes
+	}
+}
+
+
+
+
+168570 = {
+	name="Thietmar" 
+	dynasty=9601
+	religion="catholic"
+	culture="german"
+	father=168569
+	992.1.1 = {
+		birth=yes
+	}
+	
+	1030.1.10 = {
+		death=yes
+	}
+}
+
+
+
+168571 = {
+	name="Odo" 
+	dynasty=9601
+	religion="catholic"
+	culture="german"
+	father=168570
+	1010.1.1 = {
+		birth=yes
+	}
+	
+	1032.7.30 = {
+		death=yes
+	}
+}
+
+
+
+
+168572 = {
+	name="Gero" 
+	dynasty=9601
+	religion="catholic"
+	culture="german"
+	add_trait="martial_cleric"
+	father=168567
+	mother=168563
+	932.1.1 = {
+		birth=yes
+	}
+	
+	976.6.29 = {
+		death=yes
+	}
+}
+
+168573 = {
+	name="Odo" 
+	dynasty=9601
+	religion="catholic"
+	culture="german"
+	father=168567
+	mother=168563
+	939.1.1 = {
+		birth=yes
+	}
+	
+	993.3.13 = {
+		death=yes
+	}
+}
+
+
+
+
+168574 = {
+	name="Siegfried" 
+	dynasty=9601
+	religion="catholic"
+	culture="german"
+	father=168573
+	965.1.1 = {
+		birth=yes
+	}
+	
+	1030.1.1 = {
+		death=yes
+	}
+}
+
+
+
+168575 = {
+	name="Hidda" 
+	female=yes
+	dynasty=9601
+	religion="catholic"
+	culture="german"
+	father=168573
+	960.1.1 = {
+		birth=yes
+	}
+	
+	1030.1.1 = {
+		death=yes
+	}
+}
+
+168593 = {
+	name="Liutbert" 
+	religion="catholic"
+	culture="german"
+	830.1.1={
+		birth=yes
+	}
+	889.2.17={
+		death=yes
+	}
+}
+
+183188 = {
+	name="Gerberga"
+	female=yes
+	dynasty=247
+	religion="catholic"
+	culture="german"
+	father=212548
+	mother=7003
+	1076.1.1 = {
+		birth="1076.1.1"
+	}
+	1142.7.13 = {
+		death="1142.7.13"
+	}
+}
+
+183189 = {
+	name="Poppo"
+	dynasty=247
+	religion="catholic"
+	culture="german"
+	father=10084
+	mother=20209
+	987.1.1={
+		birth="987.1.1"
+	}
+	1047.6.16={
+		death="1047.6.16"
 	}
 }
