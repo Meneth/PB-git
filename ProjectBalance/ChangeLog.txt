@@ -2,6 +2,7 @@
 	The AI will now not assault holdings unless it outnumbers the garrison 12-1 (was 10-1)
 	(PB+SWMH) Fixed duplicate characters issues
 	(PB+SWMH) Rebalanced the scripted armies in 1066
+	(PB+SWMH) Now uses PB's list of bookmarks
 
 3.2.14
 	The Pope will no longer ask his liege to implement Papal Investiture
