@@ -30,10 +30,11 @@ character_event = {
 			NOT = {	has_character_flag = pope_wants_our_law_changed }
 			NOT = {	has_character_flag = pope_respects_our_law }
 			any_demesne_title = {
-			        OR = { tier = KING tier = EMPEROR    }
-        			is_titular = no
-        			has_law = investiture_law_1 
-    			}
+				OR = { tier = KING tier = EMPEROR    }
+				is_titular = no
+				has_law = investiture_law_1 
+			}
+			NOT = { any_vassal = { character = ROOT } }
 		}
 	}
 	
