@@ -509,44 +509,53 @@
 		raise_levies = {
 			location = 62 # Leicester
 			#Rebalanced starting forces
-			force_mult = 1.15
+			force_mult = 1
 		}
 		
-		effect = {	
-			set_global_flag = saxon_defense_force
+		effect = {
 			spawn_unit = {
 				province = 62 # Leicester
 				owner = ROOT
+				disband_on_peace = yes
 				earmark = saxon_defense_force
 				leader = ROOT
 				match_character = ROOT
 				#Rebalanced starting forces
-				match_mult = 0.45
+				match_mult = 0.35
 				attrition = 1.0
 			}
 			spawn_unit = {
 				province = 62 # Leicester
 				owner = ROOT
+				disband_on_peace = yes
 				earmark = saxon_defense_force
 				leader = 130 # Leofwine
 				match_character = ROOT
 				#Rebalanced starting forces
-				match_mult = 0.45
+				match_mult = 0.35
 				attrition = 1.0
 			}
 			spawn_unit = {
 				province = 62 # Leicester
 				owner = ROOT
+				disband_on_peace = yes
 				earmark = saxon_defense_force
 				leader = 132 # Gyrth
 				match_character = ROOT
 				#Rebalanced starting forces
-				match_mult = 0.45
+				match_mult = 0.35
 				attrition = 1.0
 			}
 		}
 	}
 	1066.10.14={
+	
+		raise_levies = {
+			dismiss = yes
+			location = 62 # Leicester
+			#Rebalanced starting forces
+			force_mult = 1.5
+		}
 
 		death = {
 			death_reason = death_battle
