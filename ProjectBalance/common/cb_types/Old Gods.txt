@@ -254,10 +254,13 @@ pagan_subjugation = {
 		}
 		ROOT = {
 			OR = {
-				capital_scope = {
-					kingdom = {
-						title = PREVPREVPREV
+				AND = {
+					capital_scope = {
+						kingdom = {
+							title = PREVPREVPREV
+						}
 					}
+					has_ambition = obj_become_king
 				}
 				AND = {
 					NOT = { has_character_flag = subjugation_done }
@@ -265,6 +268,11 @@ pagan_subjugation = {
 						trait = ambitious
 						trait = diligent
 						trait = brave
+						capital_scope = {
+							kingdom = {
+								title = PREVPREVPREV
+							}
+						}
 					}
 				}
 			}
@@ -294,19 +302,9 @@ pagan_subjugation = {
 				}
 				set_character_flag = subjugation_done
 			}
-			if = {
-				limit = {
-					has_ambition = obj_become_king
-					capital_scope = {
-						kingdom = {
-							title = PREVPREVPREV
-						}
-					}
-				}
-				add_character_modifier = { 
-					name = launched_subjugation
-					days = 1095
-				}
+			add_character_modifier = { 
+				name = launched_subjugation
+				days = 1095
 			}
 		}
 	}

@@ -2,7 +2,7 @@ bookmark =
 {
 	name = "BM_NORMAN_CONQUEST"
 	desc = "BM_NORMAN_CONQUEST_DESC"
-	date = 1069.8.1
+	date = 1066.12.26
 	
 	character = 140 # William the Conqueror
 	character = 101515 # Svend Estridsen, King of Denmark

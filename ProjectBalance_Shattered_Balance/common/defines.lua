@@ -12,7 +12,7 @@ NDiplomacy = {
 	DEFENDER_CALL_DECLINE_COST = 150, 			-- Prestige cost for refusing to join a defensive war
 	CALL_TO_WAR_DELAY = 60, 					-- Months between attempts to call someone into war
 	PAPAL_INVEST_PIETY_COST_MULT = 0.5, 		-- The effect of Papal investiture on the piety cost of the special Papal actions
-	SHORT_REIGN_YEARS_END = 5,
+	SHORT_REIGN_YEARS_END = 8,
 	LONG_REIGN_YEARS_START = 20,
 	SHORT_REIGN_OPINION_MULT = 2,				-- Opinion penalty multiplier to short reign years
 	DOW_ON_ALLY_PRESTIGE_COST = 150,
@@ -31,7 +31,7 @@ NDiplomacy = {
 	DEMESNE_MAX_SIZE_LEGALISM_MULT = 1.0,		-- Extra Max Demesne Size from the level of legalism
 	DEMESNE_MAX_SIZE_PATRICIAN = 1.0,			-- Extra Max Demesne Size for Patricians (Tier effects do no not apply to Patricians!)
 	DEMESNE_MAX_SIZE_PATRICIAN_DOGE = 1.0,		-- Extra Max Demesne Size for a Patrician Doge (Tier effects do no not apply to Patricians!)
-	DEMESNE_BONUS_MAX_TECH_EMPEROR = 5,
+	DEMESNE_BONUS_MAX_TECH_EMPEROR = 4,
 	DEMESNE_BONUS_MAX_TECH_KING = 4,
 	DEMESNE_BONUS_MAX_TECH_DUKE = 3,
 	DEMESNE_BONUS_MAX_TECH_COUNT = 2,
@@ -61,6 +61,8 @@ NDiplomacy = {
 	MAX_PREP_INV_TARGET_HOLDINGS = 40,			-- The target must control at the most this many holdings within the target kingdom to be a valid prepared invasion target
 	MAX_PREP_INV_ATTACKER_HOLDINGS = 40,		-- The attacker must have fewer Holdings than this in the realm (disallow Prepared Invasions for rulers who are already very powerful)
 	PREP_INV_REQ_PRESTIGE = 1000,				-- Need to have this much Prestige to prepare an invasion
+	BASE_REVOLT_CHANCE_MOD = 1000,				-- Pre Old Gods rebel spawn chance modifier (fires on_rebel_revolt) : lower means fewer revolts. MUST NOT BE ZERO.
+	TOG_REVOLT_CHANCE_MOD = 200,				-- Old Gods rebel spawn chance modifier (fires on_rebel_revolt) : lower means fewer revolts. MUST NOT BE ZERO.
 
 	IMPRISON_CHARACTER_INTERACTION_MONEY = 0,
 	IMPRISON_CHARACTER_INTERACTION_PIETY = 10,
@@ -312,7 +314,13 @@ NDiplomacy = {
 	DISMISS_CONSORT_INTERACTION_PIETY = 0,
 	DISMISS_CONSORT_INTERACTION_PRESTIGE = 0,
 	DISMISS_CONSORT_INTERACTION_THRESHOLD_FOR_NO = 0,
-	DISMISS_CONSORT_INTERACTION_THRESHOLD_FOR_YES = 0
+	DISMISS_CONSORT_INTERACTION_THRESHOLD_FOR_YES = 0,
+	
+	RETRACT_VASSAL_INTERACTION_MONEY = 0,
+	RETRACT_VASSAL_INTERACTION_PIETY = 0,
+	RETRACT_VASSAL_INTERACTION_PRESTIGE = 0,
+	RETRACT_VASSAL_INTERACTION_THRESHOLD_FOR_NO = 25,
+	RETRACT_VASSAL_INTERACTION_THRESHOLD_FOR_YES = 75
 },
 
 NCharacter = {
@@ -473,7 +481,7 @@ NReligion = {
 	CRUSADE_AUTHORITY_COST = 0.05,
 	ORTHODOX_PENTARCH_MONTHLY_AUTHORITY = 0.001,
 	REFORM_RELIGION_MIN_AUTHORITY = 0.5,			-- Moral authority required to reform a pagan faith
-	REFORM_RELIGION_MIN_HOLY_SITES = 3,				-- Number of holy sites you must control to reform a pagan faith
+	REFORM_RELIGION_MIN_HOLY_SITES = 4,				-- Number of holy sites you must control to reform a pagan faith
 	REFORM_RELIGION_PIETY_COST = 750,				-- Piety cost of reforming a pagan faith
 	AUTHORITY_FROM_HOLY_SITE = 0.1,					-- Authority from each holy site held
 	AUTHORITY_FROM_ANTIPOPE = -0.2,					-- Authority from each antipope
@@ -518,15 +526,15 @@ NEconomy = {
 	PATRICIAN_GOLD_TO_MONTHLY_PRESTIGE = 0.0005,	-- Prestige that Patricians get each month from their treasury (CFixedPoint64 to support such small numbers)
 	PATRICIAN_CITY_TAX_MULT = 0.5,					-- Patricians don't pay normal City Tax to their liege... (CFixedPoint64)
 	OVER_MAX_DEMESNE_TAX_PENALTY = 0.25,			-- Percent penalty per county over the limit
-	TAX_TO_LOOT_MULTIPLIER = 1.0,					-- Lootable gold per tax 
+	TAX_TO_LOOT_MULTIPLIER = 0.75,					-- Lootable gold per tax 
 	FORT_LOOT_DEFENCE_MULTIPLIER = 4.0,				-- Loot protected gold per fortlevel
-	LOOTABLE_GOLD_REGROWTH = 0.025,					-- Percent of max lootable gold that regrows every month
+	LOOTABLE_GOLD_REGROWTH = 0.02,					-- Percent of max lootable gold that regrows every month
 	LOOT_PERCENT_PER_LOOTTICK = 0.04,				-- Percent of max lootable gold that is looted each loot tick
-	TPC_TO_LOOT_MULTIPLIER = 0.1,					-- Max loot in a navy is max troops * this
+	TPC_TO_LOOT_MULTIPLIER = 0.05,					-- Max loot in a navy is max troops * this
 	LOOTER_SHIP_MAINT_MULT = 0.1,					-- Religions that have looting have lower ship maintenance costs
-	LOOT_PRESTIGE_MULT = 1.0,						-- Whenever you gain loot you also get prestige related to the loot
-	LOOT_EVERY_X_DAYS = 4,							-- Loot every this many days
-	LOOT_IDEAL_MIN_TROOPS = 500,					-- Minimum troops for maximum loot, less than this scales down the amount looted
+	LOOT_PRESTIGE_MULT = 0.5,						-- Whenever you gain loot you also get prestige related to the loot
+	LOOT_EVERY_X_DAYS = 2,							-- Loot every this many days
+	LOOT_IDEAL_MIN_TROOPS = 1000,					-- Minimum troops for maximum loot, less than this scales down the amount looted
 	BUILDING_COST_MULT = 0.5,						-- Increases build cost of all buildings
 },
 
@@ -567,7 +575,7 @@ NMilitary = {
 	MERCENARY_HIRE_DISTANCE_THRESHOLD = 600,		-- Mercs will not be available if the province of origin is more distant from your capital
 	OPINION_WHEN_MARSHAL_INSTEAD_OF_SELF = 25,		-- Below this opinion value a vassal tends to use his marshal instead of himself when someone asks to raise his troops
 	OPINION_WHEN_NO_LEADER = 0,						-- Below this opinion a vassal will not supply a leader for subunits at all
-	BATTLE_WARSCORE_WORTH = 250,					-- Warscore from battles are multiplied with this value
+	BATTLE_WARSCORE_WORTH = 175,					-- Warscore from battles are multiplied with this value
 	BATTLE_WARSCORE_DEFENDER_MULTIPLIER = 1.4,		-- Defenders wins are multiplied with this value, which also means they get more prestige for a win
 	BATTLE_MINIMUM_WARSCORE = 0.2,					-- Battles below this value(in actual percentage) are removed from warscore calculations
 	MIN_LEVY_RAISE_OPINION_THRESHOLD = -50,			-- Below this opinion value you'll get the least amount of troops possible
@@ -584,7 +592,7 @@ NMilitary = {
 	FLANKLEADER_PRESTIGE_PART = 0.125,				-- The % of the total prestige gained in the battle that each other flank leader will get
 	BATTLE_UNIT_OWNER_PRESTIGE_MULT = 0.5,			-- The % of the total prestige gained in the battle that will be divided among the participating unit owners
 	BATTLE_UNIT_OWNER_PIETY_MULT = 0.5,				-- The % of the total piety gained in the battle that will be divided among the participating unit owners
-	REINFORCE_RATE = 0.025,							-- Reinforce rate per year
+	REINFORCE_RATE = 0.02,							-- Reinforce rate per year
 	MERC_REINFORCE_RATE = 0.015,					-- The rate at which mercenaries and holy orders reinforce in the field
 	MERC_REINFORCE_RATE_WHEN_IDLE = 0.03,			-- The rate at which mercenaries and holy orders reinforce when not hired
 	GARRISON_REINFORCE_RATE_MULTIPLIER = 5,			-- The rate at which the garrison reinforce
@@ -646,9 +654,9 @@ NMilitary = {
 	LOOT_HOLDING_DESTRUCTION_ODDS = 20,				-- a holding with less than LOOT_HOLDING_DEST_MIN_SAFE buildings will be destroyed by looting
 	LOOT_HOLDING_BUILDING_DEST_ODDS = 10,			-- there is a 1 in this chance a random building is destroyed when looted
 	
-	RETINUE_FROM_REALMSIZE = 6.0,
-	RETINUE_INCREASE_PER_TECH = 1.5,
-	RETINUE_HIRE_COST_MULTIPLIER = 0.025,			-- Retinues are free to hire atm, but they cost alot to reinforce
+	RETINUE_FROM_REALMSIZE = 5.0,
+	RETINUE_INCREASE_PER_TECH = 0.5,
+	RETINUE_HIRE_COST_MULTIPLIER = 0.02,			-- Retinues are free to hire atm, but they cost alot to reinforce
 	RETINUE_REINFORCE_RATE = 0.05,
 	RETINUE_REINFORCE_COST = 2.0,					-- Retinues cost while reinforcing.
 	RETINUE_CONSTANT_COST = 0.5, 					-- Retinues cost at all times.
@@ -736,7 +744,7 @@ NMilitary = {
 	HORSE_ARCHERS_GRAPHICAL_FACTOR = 1.5,
 
 	GALLEYS_MORALE = 1,
-	GALLEYS_MAINTENANCE = 300,
+	GALLEYS_MAINTENANCE = 400,
 	GALLEYS_PHASE_SKIRMISH_ATTACK = 1,
 	GALLEYS_PHASE_MELEE_ATTACK = 1,
 	GALLEYS_PHASE_PURSUE_ATTACK = 1,
@@ -751,7 +759,7 @@ NMilitary = {
 },
 
 NTechnology = {
-	POINTS_PER_ATTRIBUTE = 0.04,
+	POINTS_PER_ATTRIBUTE = 0.02,
 
 	BASE_NEIGHBOUR_SPREAD_BONUS = 0.2, 			-- bonus for each neighbour with the tech
 	NEIGHBOUR_SAME_RELIGON_GROUP_MULT = 1.3, 	-- multiplier to the above bonus if neighbour is of your religious group
@@ -841,7 +849,9 @@ NAI =
 	MAX_KING_TITLES_TO_CREATE = 0,							-- AI will not seek to create/usurp more King-level titles than this (0 for unlimited)
 	MAX_EMPIRE_TITLES_TO_CREATE = 0,						-- AI will not seek to create/usurp more Empire-level titles than this (0 for unlimited)
 	AI_EMPEROR_CREATES_KINGDOMS = 0,						-- If set to 1, AI Emperors will create King-level titles
-	AI_ASSAULT_RATIO = 10									-- AI will launch assaults at this ratio of attackers to defenders
+	AI_ASSAULT_RATIO = 10,									-- AI will launch assaults at this ratio of attackers to defenders
+	HARD_DIFF_AI_ATTRITION = 0.5,							-- AI attrition multiplier at Hard difficulty
+	V_HARD_DIFF_AI_ATTRITION = 0.25							-- AI attrition multiplier at Very Hard difficulty
 },
 
 NFrontend = 
@@ -945,7 +955,7 @@ NRulerDesigner =
 {
 	BASE_ATTRIB = 5,
 	BASE_AGE = 16,
-	BASE_FERTILITY = 0.35,
+	BASE_FERTILITY = 0.4,
 	BASE_HEALTH = 5.0,
 	COST_ATTRIB = 1.0,
 	COST_SON = 5.0,

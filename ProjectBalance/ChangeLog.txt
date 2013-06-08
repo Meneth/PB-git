@@ -1,3 +1,20 @@
+3.2.13
+	Centers of trade now give a bit of fort level
+	Increased galley maintenance cost by 1/3
+	Scandinavia and Britannia will now have raven CoAs (black and white) if held by Norse Pagans
+	Moved the Norman Conquest bookmark back to late 1066
+	Improved the description for the Muslim Invasion "is war possible?" checks
+	Mostly eliminated the black border around on-map Pagan CoAs (vanilla issue)
+	Fixed the Retake the Coast CB taking provinces from Byzantine vassals
+	Fixed a minor bug in the Form HRE decision
+	Fixed that you'd get a message that a prisoner exchange succeeded even if it failed
+	Fixed a minor localisation bug
+	Fixed the Ghanan Band not necessarily getting proper culture assigned
+	Fixed Muslim Invasions being only usable against Pagans, rather than *not* being usable against Pagans
+	Fixed the cooldown on Pagan subjugation not always applying
+	Fixed Kiev not having a center of trade
+	Fixed Brugge not having a center of trade in 867
+
 3.2.12
 	Fixed the Ghanan Band not having any troops
 	Fixed Free Infidel Revocation being available to unreformed Pagans

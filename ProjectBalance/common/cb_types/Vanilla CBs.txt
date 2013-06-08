@@ -7722,7 +7722,7 @@ muslim_invasion = {
 		}
 		
 		FROM = { NOT = { religion = ROOT } }
-		FROM = { religion_group = pagan_group }
+		FROM = { NOT = { religion_group = pagan_group } }
 		NOT = {
 			FROM = {
 				OR = {

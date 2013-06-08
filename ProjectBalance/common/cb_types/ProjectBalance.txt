@@ -689,6 +689,14 @@ retake_the_coast = {
 					limit = {
 						tier = count
 						location = { port = yes }
+						holder_scope = {
+							OR = {
+								character = FROM
+								any_liege = { character = FROM }
+								liege_before_war = { character = FROM }
+								any_liege = { liege_before_war = { character = FROM } }
+							}
+						}
 					}
 					usurp_title = ROOT
 				}

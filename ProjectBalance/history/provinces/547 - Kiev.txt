@@ -23,6 +23,8 @@ religion = slavic_pagan
 	b_kiev = ca_keep_1
 	b_kiev = ca_wall_1
 	b_iskorosten = ct_marketplace_1
+	b_iskorosten = ct_trade_post_1
+	b_iskorosten = ct_trade_post_2
 }
 988.1.1 = {
 	religion = orthodox 
