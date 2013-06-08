@@ -5999,13 +5999,7 @@ dejure_barony_claim = {
 				}
 			}
 			ROOT = {
-				OR = {
-					religion = orthodox
-					religion = miaphysite
-					religion = monophysite
-					religion = nestorian
-					religion = monothelite
-				}
+				religion_group = christian
 			}
 		}
 		
@@ -6171,16 +6165,8 @@ other_dejure_barony_claim = {
 					title = b_antiocheia
 				}
 			}
-			ROOT = {
-				any_liege = {
-					OR = {
-						religion = orthodox
-						religion = miaphysite
-						religion = monophysite
-						religion = nestorian
-						religion = monothelite
-					}
-				}
+			FROMFROM = {
+				religion_group = christian
 			}
 		}
 		
