@@ -7,9 +7,7 @@ e_persia = {
 	
 	culture = persian
 	
-	short_name = yes
-	name_tier = king
-	
+	short_name = yes	
 	
 	k_persia = {
 		color={ 151 224 24 }
