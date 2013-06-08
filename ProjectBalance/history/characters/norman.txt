@@ -1176,7 +1176,7 @@
 		raise_levies = {
 			dismiss=yes
 			location=97 # Rouen
-			force_mult=1.5
+			force_mult=1.0
 		}
 		effect = {
 			clr_global_flag = williams_invasion_of_england

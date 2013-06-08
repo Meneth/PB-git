@@ -268,9 +268,9 @@
 	980.1.1 = {
 		birth="980.1.1"
 	}
-	#1003.1.1 = {
-	#add_spouse=127057
-	#}
+	1003.1.1 = {
+		add_spouse=10000
+	}
 	1021.1.1 = {
 		add_spouse=10008
 	}
@@ -441,10 +441,9 @@
 	1066.1.1 = {
 		add_claim = d_epirus
 		add_claim = d_dyrrachion
-		add_claim = c_hellas
 		raise_levies = {
 			location=345 # Lecce
-			force_mult=1.5
+			force_mult=1.0
 		}
 		effect = {
 			wealth = 250
@@ -457,7 +456,7 @@
 				earmark = norman_byzantine_war
 				leader = ROOT
 				match_character = ROOT
-				match_mult = 0.5
+				match_mult = 0.6
 				attrition = 1.0
 			}
 			spawn_unit = {
@@ -467,7 +466,7 @@
 				earmark = norman_byzantine_war
 				leader = 1132
 				match_character = ROOT
-				match_mult = 0.5
+				match_mult = 0.6
 				attrition = 1.0
 			}
 			spawn_unit = {
@@ -477,7 +476,7 @@
 				earmark = norman_byzantine_war
 				leader = 1127
 				match_character = ROOT
-				match_mult = 0.5
+				match_mult = 0.6
 				attrition = 1.0
 			}
 			spawn_unit = {
@@ -1112,7 +1111,7 @@
 		raise_levies = {
 			location=97 # Rouen
 			#Rebalanced starting forces
-			force_mult=1.5
+			force_mult=1
 		}
 		
 		effect = {
@@ -1125,7 +1124,7 @@
 				leader = ROOT
 				match_character = ROOT
 				#Rebalanced starting forces
-				match_mult = 0.75
+				match_mult = 0.65
 				attrition = 1.0
 			}
 			spawn_unit = {
@@ -1136,7 +1135,7 @@
 				leader = 148 # Odo of Bayeux
 				match_character = ROOT
 				#Rebalanced starting forces
-				match_mult = 0.75
+				match_mult = 0.65
 				attrition = 1.0
 			}
 			spawn_unit = {
@@ -1147,7 +1146,7 @@
 				leader = 6818 # William of Eu
 				match_character = ROOT
 				#Rebalanced starting forces
-				match_mult = 0.75
+				match_mult = 0.65
 				attrition = 1.0
 			}
 			spawn_unit = {
@@ -1205,11 +1204,11 @@
 	culture="norman"
 	father=140
 	mother=367
-	1064.1.2 = {
-		birth="1064.1.2"
+	1064.1.1 = {
+		birth="1064.1.1"
 	}
-	1114.1.2 = {
-		death="1114.1.2"
+	1074.1.1 = {
+		death="1074.1.1"
 	}
 }
 
@@ -1257,13 +1256,14 @@
 	add_trait="thrifty_clerk"
 	father=140
 	mother=367
-	1061.1.2 = {
-		birth="1061.1.2"
+	1061.1.1 = {
+		birth="1061.1.1"
 	}
-	1111.1.2 = {
-		death="1111.1.2"
+	1090.8.13 = {
+		death="1090.8.13"
 	}
 }
+
 
 144 = {
 	name="Richard"
@@ -1278,8 +1278,8 @@
 	add_trait="ill"
 	father=140
 	mother=367
-	1057.1.2 = {
-		birth="1057.1.2"
+	1055.1.1 = {
+		birth="1055.1.1"
 	}
 	1081.1.1 = {
 		death="1081.1.1"
@@ -1304,8 +1304,8 @@
 	add_trait="tough_soldier"
 	father=140
 	mother=367
-	1060.1.1 = {
-		birth="1060.1.1"
+	1056.1.1 = {
+		birth="1056.1.1"
 	}
 	1100.8.3 = {
 		death="1100.8.3"
@@ -1326,11 +1326,11 @@
 	add_trait="thrifty_clerk"
 	father=140
 	mother=367
-	1056.1.2 = {
-		birth="1056.1.2"
+	1057.1.1 = {
+		birth="1057.1.1"
 	}
-	1106.1.2 = {
-		death="1106.1.2"
+	1126.7.30 = {
+		death="1126.7.30"
 	}
 }
 
@@ -1508,6 +1508,9 @@
 	1084.1.1 = {
 		birth="1084.1.1"
 	}
+	1103.1.1 = {
+		add_spouse=159742
+	} #Avice
 	1140.1.1 = {
 		death="1140.1.1"
 	}
@@ -1862,22 +1865,21 @@
 173 = {
 	name="Gundred"
 	female=yes
-	dynasty=752
+	dynasty=9501
 	martial=5
 	diplomacy=7
 	intrigue=7
 	stewardship=7
 	religion="catholic"
-	culture="norman"
+	culture="dutch"
 	add_trait="harelip"
 	add_trait="thrifty_clerk"
-	father=140
-	mother=367
-	1055.1.2 = {
-		birth="1055.1.2"
+	father=167006
+	1055.1.1 = {
+		birth="1055.1.1"
 	}
-	1105.1.2 = {
-		death="1105.1.2"
+	1085.5.27 = {
+		death="1085.5.27"
 	}
 }
 
@@ -1897,28 +1899,6 @@
 	}
 	1055.1.25 = {
 		death="1055.1.25"
-	}
-}
-
-1761 = {
-	name="Eudokia"
-	# AKA: Eudocia
-	female = yes
-	#dynasty=629 
-	martial=4
-	diplomacy=6
-	intrigue=7
-	stewardship=5
-	religion="orthodox"
-	culture="norman"
-	add_trait="lustful"
-	add_trait="envious"
-	add_trait="naive_appeaser"
-	840.1.1 = {
-		birth="840.1.1"
-	}
-	882.1.1 = {
-		death="882.1.1"
 	}
 }
 
@@ -1982,21 +1962,19 @@
 
 202990 = {
 	name="Constance"
+	# AKA: Constance FitzRoy, Viscountess de Beaumont
 	female=yes
 	dynasty=752
-	martial=4
-	diplomacy=7
-	intrigue=7
-	stewardship=4
 	religion="catholic"
 	culture="norman"
 	add_trait="bastard"
-	father=202992
+	add_trait="tough_soldier"
+	father=202992 #Henry I
 	1110.1.1 = {
 		birth="1110.1.1"
 	}
-	1170.1.1 = {
-		death="1170.1.1"
+	1173.1.1 = {
+		death="1173.1.1"
 	}
 }
 
@@ -2012,15 +1990,15 @@
 	religion="catholic"
 	culture="norman"
 	add_trait="martial_cleric"
-	add_trait="diligent"
-	add_trait="just"
+	add_trait="ambitious"
+	add_trait="arbitrary"
 	add_trait="proud"
-	add_trait="patient"
-	add_trait="brave"
+	add_trait="wroth"
+	add_trait="chaste"
 	father=202992
 	mother=202995
-	1102.1.2 = {
-		birth="1102.1.2"
+	1102.2.7 = {
+		birth="1102.2.7"
 	}
 	1135.12.2 = {
 		add_claim=k_england
@@ -2035,8 +2013,9 @@
 	dynasty=752
 	martial=7
 	diplomacy=4
-	intrigue=8
+	intrigue=9
 	stewardship=6
+	learning=10
 	religion="catholic"
 	culture="norman"
 	add_trait="charismatic_negotiator"
@@ -2045,10 +2024,11 @@
 	add_trait="proud"
 	add_trait="patient"
 	add_trait="brave"
+	add_trait="ambitious"
 	father=140
 	mother=367
-	1068.1.4 = {
-		birth="1068.1.4"
+	1068.9.1 = {
+		birth="1068.9.1"
 	}
 	1100.11.11 = {
 		add_spouse=202995
@@ -2264,11 +2244,11 @@
 	add_trait="amateurish_plotter"
 	father=140
 	mother=367
-	1054.1.1 = {
-		birth="1054.1.1"
+	1062.1.1 = {
+		birth="1062.1.1"
 	}
-	1135.1.1 = {
-		death="1135.1.1"
+	1137.3.8 = {
+		death="1137.3.8"
 	}
 }
 
@@ -2741,14 +2721,15 @@
 	religion="catholic"
 	culture="norman"
 	add_trait="wroth"
-	add_trait="skilled_tactician"
+	add_trait="proud"
+	add_trait="indulgent_wastrel"
 	father=202992
 	mother=202995
-	1103.1.2 = {
-		birth="1103.1.2"
+	1103.8.5 = {
+		birth="1103.8.5"
 	}
-	1120.1.26 = {
-		death="1120.1.26"
+	1120.11.25 = {
+		death="1120.11.25"
 	}
 }
 
@@ -2839,6 +2820,7 @@
 
 246 = {
 	name="Richard"
+	# AKA: Richard the Fearless
 	dynasty=752
 	martial=8
 	diplomacy=6
@@ -2855,12 +2837,14 @@
 		add_spouse=6801
 	}
 	996.11.20 = {
+		give_nickname=nick_the_fearless
 		death="996.11.20"
 	}
 }
 
 248 = {
 	name="Richard"
+	# AKA: Richard the Good
 	dynasty=752
 	martial=8
 	diplomacy=7
@@ -2874,10 +2858,11 @@
 	974.1.2 = {
 		birth="974.1.2"
 	}
-	100.1.1 = {
+	1000.1.1 = {
 		add_spouse=343
 	}
 	1026.8.28 = {
+		give_nickname=nick_the_good
 		death="1026.8.28"
 	}
 }
@@ -2926,6 +2911,7 @@
 
 252 = {
 	name="Robert"
+	# AKA: Robert the Magnificent
 	dynasty=752
 	martial=7
 	diplomacy=4
@@ -2940,10 +2926,8 @@
 	1000.6.22 = {
 		birth="1000.6.22"
 	}
-	1022.1.2 = {
-		add_spouse=41001
-	}
 	1035.7.3 = {
+		give_nickname=nick_the_magnificent
 		death="1035.7.3"
 	}
 }
@@ -3111,13 +3095,16 @@
 }
 
 30827 = {
-	name="Ralph" 
+	name="Rainulf" 
 	dynasty=676
 	religion="catholic"
 	culture="norman"
 	father=30826
 	986.1.1 = {
 		birth="986.1.1"
+	}
+	1035.1.1 = {
+		add_spouse=168471
 	}
 	1040.1.1 = {
 		death="1040.1.1"
@@ -3246,13 +3233,12 @@
 }
 
 30850 = {
-	name="Eva"
-	# AKA: Anna
+	name="Eva-Anna"
+	# AKA: Eva
 	female=yes
 	dynasty=7182 #Ridel
 	religion="catholic"
 	culture="norman"
-	father=1000167000
 	1079.1.1 = {
 		birth="1079.1.1"
 	}
@@ -3459,6 +3445,9 @@
 	mother=30873
 	1087.1.1 = {
 		birth="1087.1.1"
+	}
+	1114.1.1 = {
+		add_spouse=161928 #Hodierne de Rethel
 	}
 	1119.6.27 = {
 		death="1119.6.27"
@@ -3937,6 +3926,7 @@
 
 41000 = {
 	name="Herluin"
+	# AKA: Herluin de Conteville
 	dynasty=101754
 	martial=6
 	diplomacy=8
@@ -3951,6 +3941,9 @@
 	}
 	1021.1.2 = {
 		add_spouse=41001
+	}
+	1050.1.2 = {
+		add_spouse=183011
 	}
 	1066.1.2 = {
 		death="1066.1.2"
@@ -3984,6 +3977,10 @@
 	mother=449 #Maud de Belesme/Talvas
 	1057.1.1 = {
 		birth="1057.1.1"
+		
+	}
+	1087.1.1 = {
+		add_spouse=168181
 		give_nickname="nick_the_devil"
 	}
 	1130.1.1 = {
@@ -4565,11 +4562,11 @@
 	1030.1.2 = {
 		birth="1030.1.2"
 	}
-	1066.1.1 = {
-		employer=140
-	}
 	1060.1.2 = {
 		add_spouse=41252
+	}
+	1066.1.1 = {
+		employer=140
 	}
 	1090.2.1 = {
 		death="1090.2.1"
@@ -4825,7 +4822,6 @@
 
 42010 = {
 	name="Constantine"
-	female=yes
 	dynasty=678
 	martial=8
 	diplomacy=6
@@ -4835,11 +4831,18 @@
 	culture="norman"
 	add_trait="tough_soldier"
 	father=85016
-	1046.1.2 = {
-		birth="1046.1.2"
+	1046.1.1 = {
+		birth="1046.1.1"
 	}
-	1096.1.2 = {
-		death="1096.1.2"
+	1066.1.1 = {
+		employer = 1128 #Robert Guiscard
+	}
+	1081.1.1 = {
+		employer = 1742 #Alexios Komnenos
+	}
+
+	1112.1.1 = {
+		death="1112.1.1"
 	}
 }
 
@@ -6178,19 +6181,20 @@
 }
 
 31399 = {
-	name="Maud" #Maud Fitzroy, bastard of Henri I Beauclerc
-	#AKA Mathilde d'Angleterre
+	name="Matilda"
+	# AKA: Matilda FitzRoy, Duchess of Brittany
 	female=yes
-	#Bastard
+	dynasty=752
 	religion="catholic"
 	culture="norman"
 	add_trait="bastard"
-	father=202992 #Henri I Beauclerc, king of England
-	1100.1.1 = {
-		birth="1100.1.1"
+	add_trait="intricate_webweaver"
+	father=202992 #Henry I
+	1091.1.1 = {
+		birth="1091.1.1"
 	}
-	1150.1.1 = {
-		death="1150.1.1"
+	1132.1.1 = {
+		death="1132.1.1"
 	}
 }
 
@@ -7616,13 +7620,15 @@
 }
 
 161256 = {
-	name="Sybilla" 
+	name="Sibylla"
+	# AKA: Sibylla of Normandy, Queen of Scots
 	female=yes
-	#Bastard
+	dynasty=752
 	religion="catholic"
 	culture="norman"
 	add_trait="bastard"
-	father=202992 #Henri I Beauclerc, king of England
+	add_trait="martial_cleric"
+	father=202992 #Henry I
 	1092.1.1 = {
 		birth="1092.1.1"
 	}
@@ -7726,5 +7732,435 @@
 	}
 	1162.1.1 = {
 		death="1162.1.1"
+	}
+}
+
+205851 = {
+	name="Étienne"
+	dynasty=721
+	martial=8
+	diplomacy=5
+	intrigue=5
+	stewardship=6
+	religion="catholic"
+	culture="frankish"
+	add_trait="arbitrary"
+	add_trait="kind"
+	add_trait="charitable"
+	add_trait="trusting"
+	add_trait="brave"
+	add_trait="tough_soldier"
+	father=205897
+	mother=205898
+	1096.1.1={
+		birth="1096.1.1"
+	}
+	1125.1.1={
+		add_spouse=205860 #Mathilde de Boulogne
+	}	
+	1135.12.2 = {
+		name="Stephen"
+		culture="norman"
+	}
+	1154.10.25={
+		death="1154.10.25"
+	}
+}
+
+168182 = {
+	name="William" 
+	dynasty=751
+	religion="catholic"
+	culture="norman"
+	father=41004
+	mother=168181
+	1090.1.1 = {
+		birth="1090.1.1"
+		
+	}
+	
+	1171.6.30 = {
+		death="1171.6.30"
+	}
+}
+
+190003 = {
+	name="Robert"
+	dynasty=676
+	martial=5
+	diplomacy=4
+	intrigue=7
+	stewardship=4
+	religion="catholic"
+	culture="norman"
+	add_trait="arbitrary"
+	add_trait="martial_cleric"
+	father=30827
+	mother=168471
+	1036.1.1 = {
+		birth="1036.1.1"
+	}
+	1052.1.1 = {
+		add_spouse=1129
+	}
+	1090.1.1 = {
+		death="1090.1.1"
+	}
+}
+
+203561 = {
+	name="Elizabeth"
+	# AKA: Elizabeth FitzRoy, Duchess of Galloway
+	female=yes
+	dynasty=752
+	religion="catholic"
+	culture="norman"
+	add_trait="bastard"
+	add_trait="amateurish_plotter"
+	father=202992 #Henry I
+	1095.1.1 = {
+		birth="1095.1.1"
+	}
+	1168.1.1 = {
+		death="1168.1.1"
+	}
+}
+
+183123 = {
+	name="Matilda"
+	# AKA: Matilda FitzRoy, Countess of Perche
+	female=yes
+	dynasty=752
+	religion="catholic"
+	culture="norman"
+	add_trait="bastard"
+	add_trait="thrifty_clerk"
+	father=202992 #Henry I
+	1090.1.1 = {
+		birth="1090.1.1"
+	}
+	1120.11.25 = {
+		death="1120.11.25"
+	}
+}
+
+183124 = {
+	name="Richard"
+	# AKA: Richard of Lincoln
+	dynasty=752
+	religion="catholic"
+	culture="norman"
+	add_trait="bastard"
+	add_trait="tough_soldier"
+	father=202992 #Henry I
+	1094.1.1 = {
+		birth="1094.1.1"
+	}
+	1120.11.25 = {
+		death="1120.11.25"
+	}
+}
+
+183125 = {
+	name="Gilbert"
+	# AKA: Gilbert FitzRoy
+	dynasty=752
+	religion="catholic"
+	culture="norman"
+	add_trait="bastard"
+	add_trait="scholarly_theologian"
+	father=202992 #Henry I
+	1109.1.1 = {
+		birth="1109.1.1"
+	}
+	1146.1.1 = {
+		death="1146.1.1"
+	}
+}
+
+183126 = {
+	name="Alice"
+	# AKA: Alice FitzRoy, Viscountess de Montmorency
+	female=yes
+	dynasty=752
+	religion="catholic"
+	culture="norman"
+	add_trait="bastard"
+	add_trait="thrifty_clerk"
+	father=202992 #Henry I
+	1104.1.1 = {
+		birth="1104.1.1"
+	}
+	1140.4.24 = {
+		death="1140.4.24"
+	}
+}
+
+183127 = {
+	name="Fulk"
+	# AKA: Fulk FitzRoy
+	dynasty=752
+	religion="catholic"
+	culture="norman"
+	add_trait="bastard"
+	add_trait="detached_priest"
+	father=202992 #Henry I
+	1092.1.1 = {
+		birth="1092.1.1"
+	}
+	1132.1.1 = {
+		death="1132.1.1"
+	}
+}
+
+183128 = {
+	name="Juliana"
+	# AKA: Juliana FitzRoy
+	female=yes
+	dynasty=752
+	religion="catholic"
+	culture="norman"
+	add_trait="bastard"
+	add_trait="naive_appeaser"
+	father=202992 #Henry I
+	1093.1.1 = {
+		birth="1093.1.1"
+	}
+	1136.1.1 = {
+		death="1136.1.1"
+	}
+}
+
+183129 = {
+	name="Gundred"
+	# AKA: Gundred FitzRoy
+	female=yes
+	dynasty=752
+	religion="catholic"
+	culture="norman"
+	add_trait="twin"
+	add_trait="bastard"
+	add_trait="misguided_warrior"
+	father=202992 #Henry I
+	1114.1.1 = {
+		birth="1114.1.1"
+	}
+	1146.1.1 = {
+		death="1146.1.1"
+	}
+}
+
+183130 = {
+	name="Rohese"
+	# AKA: Rohese FitzRoy
+	female=yes
+	dynasty=752
+	religion="catholic"
+	culture="norman"
+	add_trait="twin"
+	add_trait="bastard"
+	add_trait="indulgent_wastrel"
+	father=202992 #Henry I
+	1114.1.1 = {
+		birth="1114.1.1"
+	}
+	1176.1.1 = {
+		death="1176.1.1"
+	}
+}
+
+183131 = {
+	name="Henry"
+	# AKA: Henry FitzRoy
+	dynasty=752
+	religion="catholic"
+	culture="norman"
+	add_trait="bastard"
+	add_trait="misguided_warrior"
+	father=202992 #Henry I
+	mother=204057 #Nest ferch Rhys
+	1103.1.1 = {
+		birth="1103.1.1"
+	}
+	1158.1.1 = {
+		death="1158.1.1"
+	}
+}
+
+183132 = {
+	name="Robert"
+	# AKA: Robert FitzRoy, Lord Okehampton
+	dynasty=752
+	religion="catholic"
+	culture="norman"
+	add_trait="bastard"
+	add_trait="fortune_builder"
+	father=202992 #Henry I
+	1122.1.1 = {
+		birth="1122.1.1"
+	}
+	1172.5.31 = {
+		death="1172.5.31"
+	}
+}
+
+183133 = {
+	name="William"
+	# AKA: William FitzRoy / Constable
+	dynasty=752
+	religion="catholic"
+	culture="norman"
+	add_trait="bastard"
+	add_trait="tough_soldier"
+	father=202992 #Henry I
+	1105.1.1 = {
+		birth="1105.1.1"
+	}
+	1187.1.1 = {
+		death="1187.1.1"
+	}
+}
+
+183134 = {
+	name="William"
+	# AKA: William de Tracy, Baron of Bradninch
+	dynasty=752
+	religion="catholic"
+	culture="norman"
+	add_trait="bastard"
+	add_trait="underhanded_rogue"
+	father=202992 #Henry I
+	1096.1.1 = {
+		birth="1096.1.1"
+	}
+	1137.1.1 = {
+		death="1137.1.1"
+	}
+}
+
+183011 = {
+	name="Fredesendis"
+	female=yes
+	religion="catholic"
+	culture="norman"
+	1020.1.2 = {
+		birth="1020.1.2"
+	}
+	1066.1.2 = {
+		employer=140
+	}
+	1084.1.2 = {
+		death="1084.1.2"
+	}
+}
+
+183012 = {
+	name="Radulf"
+	# AKA: Raoul de Conteville
+	dynasty=101754
+	religion="catholic"
+	culture="norman"
+	add_trait="misguided_warrior"
+	father=41000
+	mother=183011
+	1051.1.2 = {
+		birth="1051.1.2"
+	}
+	1066.1.2 = {
+		employer=140
+	}
+	1087.9.9 = {
+		employer=146
+	}
+	1097.1.2 = {
+		death="1097.1.2"
+	}
+}
+
+183013 = {
+	name="Jean"
+	# AKA: Jean de Conteville
+	dynasty=101754
+	religion="catholic"
+	culture="norman"
+	add_trait="indulgent_wastrel"
+	father=41000
+	mother=183011
+	1053.1.2 = {
+		birth="1053.1.2"
+	}
+	1066.1.2 = {
+		employer=140
+	}
+	1087.9.9 = {
+		employer=146
+	}
+	1089.1.2 = {
+		death="1089.1.2"
+	}
+}
+
+183014 = {
+	name="Richard"
+	# AKA: Richard de Conteville
+	dynasty=101754
+	religion="catholic"
+	culture="norman"
+	add_trait="naive_appeaser"
+	father=41000
+	mother=183011
+	1057.1.2 = {
+		birth="1057.1.2"
+	}
+	1066.1.2 = {
+		employer=140
+	}
+	1087.9.9 = {
+		employer=146
+	}
+	1100.8.3 = {
+		employer=202992
+	}
+	1106.1.2 = {
+		death="1106.1.2"
+	}
+}
+
+205850 = {
+	name="Marie"
+	female=yes
+	dynasty=721
+	martial=6
+	diplomacy=4
+	intrigue=8
+	stewardship=6
+	religion="catholic"
+	culture="norman"
+	add_trait="chaste"
+	add_trait="underhanded_rogue"
+	father=205851
+	mother=205860
+	1136.1.1 = {
+		birth="1136.1.1"
+	}
+	1182.7.25 = {
+		death="1182.7.25"
+	}
+}
+
+7474 = {
+	name="William"
+	dynasty=721
+	religion="catholic"
+	culture="norman"
+	add_trait="envious"
+	add_trait="amateurish_plotter"
+	father=205851
+	mother=205860
+	1137.1.1 = {
+		birth="1137.1.1"
+	}
+	1159.10.11 = {
+		death="1159.10.11"
 	}
 }
