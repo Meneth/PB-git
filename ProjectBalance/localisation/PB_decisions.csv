@@ -24,3 +24,8 @@ create_hre_france;Create the Holy Roman Empire;;;;;;;;;x
 create_hre_france_desc;We are clearly the rightful successor to Rome, so we should therefore unify our realm under one empire.;;;;;;;;;x
 exchange_prisoners;Arrange Exchange for [Root.GetTitledFirstName];;;;;;;;;;;;;x
 exchange_prisoners_desc;Arrange a prisoner exchange for [Root.GetTitledFirstName]. If the ruler holding [Root.GetObjectPronoun] prisoner accepts, a member of his dynasty will be released from your dungeons in exchange.;;;;;;;;;;;;;x
+release_prisoners;Release All Prisoners;;;;;;;;;;;;;x
+release_prisoners_desc;Release everyone in your dungeons for free.;;;;;;;;;;;;;x
+execute_prisoners;Execute All Prisoners;;;;;;;;;;;;;x
+execute_prisoners_desc;Execute everyone in your dungeons.;;;;;;;;;;;;;x
+become_kinslayer_tooltip;You'll be considered a kinslayer.\n;;;;;;;;;;;;;x
