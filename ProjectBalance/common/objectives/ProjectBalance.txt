@@ -371,6 +371,16 @@ faction_remove_king_peace = {
 				primary_title = { is_primary_type_title = yes } # Mercs, the Pope, Holy Orders, etc
 			}
 		}
+		modifier = {
+			factor = 0
+			FROM = {
+				has_opinion_modifier = {
+					who = LIEGE
+					modifier = opinion_coerced_into_leaving_faction
+				}
+				opinion = { who = LIEGE value = -25 }
+			}
+		}
 	}
 	
 	# AI membership weight: ROOT is the prospective member. FROM is the faction leader. FROMFROM is the target title or character.
@@ -623,6 +633,14 @@ faction_remove_king_peace = {
 		modifier = {
 			factor = 0
 			primary_title = { is_primary_type_title = yes } # Mercs, the Pope, Holy Orders, etc
+		}
+		modifier = {
+			factor = 0
+			has_opinion_modifier = {
+				who = LIEGE
+				modifier = opinion_coerced_into_leaving_faction
+			}
+			opinion = { who = LIEGE value = -25 }
 		}
 	}
 	
@@ -936,6 +954,16 @@ faction_remove_emperor_peace = {
 				primary_title = { is_primary_type_title = yes } # Mercs, the Pope, Holy Orders, etc
 			}
 		}
+		modifier = {
+			factor = 0
+			FROM = {
+				has_opinion_modifier = {
+					who = LIEGE
+					modifier = opinion_coerced_into_leaving_faction
+				}
+				opinion = { who = LIEGE value = -25 }
+			}
+		}
 	}
 	
 	# AI membership weight: ROOT is the prospective member. FROM is the faction leader. FROMFROM is the target title or character.
@@ -1188,6 +1216,14 @@ faction_remove_emperor_peace = {
 		modifier = {
 			factor = 0
 			primary_title = { is_primary_type_title = yes } # Mercs, the Pope, Holy Orders, etc
+		}
+		modifier = {
+			factor = 0
+			has_opinion_modifier = {
+				who = LIEGE
+				modifier = opinion_coerced_into_leaving_faction
+			}
+			opinion = { who = LIEGE value = -25 }
 		}
 	}
 	
@@ -1530,6 +1566,16 @@ faction_remove_revokation = {
 				primary_title = { is_primary_type_title = yes } # Mercs, the Pope, Holy Orders, etc
 			}
 		}
+		modifier = {
+			factor = 0
+			FROM = {
+				has_opinion_modifier = {
+					who = LIEGE
+					modifier = opinion_coerced_into_leaving_faction
+				}
+				opinion = { who = LIEGE value = -25 }
+			}
+		}
 	}
 	
 	# AI membership weight: ROOT is the prospective member. FROM is the faction leader. FROMFROM is the target title or character.
@@ -1812,6 +1858,14 @@ faction_remove_revokation = {
 			factor = 0
 			primary_title = { is_primary_type_title = yes } # Mercs, the Pope, Holy Orders, etc
 		}
+		modifier = {
+			factor = 0
+			has_opinion_modifier = {
+				who = LIEGE
+				modifier = opinion_coerced_into_leaving_faction
+			}
+			opinion = { who = LIEGE value = -25 }
+		}
 	}
 	
 	success = {
@@ -2093,6 +2147,16 @@ faction_remove_inheritance = {
 				primary_title = { is_primary_type_title = yes } # Mercs, the Pope, Holy Orders, etc
 			}
 		}
+		modifier = {
+			factor = 0
+			FROM = {
+				has_opinion_modifier = {
+					who = LIEGE
+					modifier = opinion_coerced_into_leaving_faction
+				}
+				opinion = { who = LIEGE value = -25 }
+			}
+		}
 	}
 	
 	# AI membership weight: ROOT is the prospective member. FROM is the faction leader. FROMFROM is the target title or character.
@@ -2316,6 +2380,14 @@ faction_remove_inheritance = {
 		modifier = {
 			factor = 0
 			primary_title = { is_primary_type_title = yes } # Mercs, the Pope, Holy Orders, etc
+		}
+		modifier = {
+			factor = 0
+			has_opinion_modifier = {
+				who = LIEGE
+				modifier = opinion_coerced_into_leaving_faction
+			}
+			opinion = { who = LIEGE value = -25 }
 		}
 	}
 	
@@ -2639,6 +2711,16 @@ faction_lower_crown_levies = {
 				primary_title = { is_primary_type_title = yes } # Mercs, the Pope, Holy Orders, etc
 			}
 		}
+		modifier = {
+			factor = 0
+			FROM = {
+				has_opinion_modifier = {
+					who = LIEGE
+					modifier = opinion_coerced_into_leaving_faction
+				}
+				opinion = { who = LIEGE value = -25 }
+			}
+		}
 	}
 	
 	# AI membership weight: ROOT is the prospective member. FROM is the faction leader. FROMFROM is the target title or character.
@@ -2899,6 +2981,14 @@ faction_lower_crown_levies = {
 		modifier = {
 			factor = 0
 			primary_title = { is_primary_type_title = yes } # Mercs, the Pope, Holy Orders, etc
+		}
+		modifier = {
+			factor = 0
+			has_opinion_modifier = {
+				who = LIEGE
+				modifier = opinion_coerced_into_leaving_faction
+			}
+			opinion = { who = LIEGE value = -25 }
 		}
 	}
 	

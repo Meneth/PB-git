@@ -11,6 +11,7 @@
 	Turkish emperors are now called Sultan rather than Padishah (historical: Ottoman and Seljuk empires)
 	Only dukes and independent counts can take the Become King ambition
 	Integrated the split Wealth, Piety, and Prestige ambitions from Additional Objectives 2.0, as their implementation is superior to the one currently in PB
+	Vassals won't start/join factions for 10 years after crushing a major revolt unless their opinion of their liege is below -25
 	Fixed Erik the Heathen not being vassalized when he loses or white peaces in the War of the two Eriks (vanilla issue)
 	Fixed successful tribal invasions not properly applying to empire-tier targets
 	Fixed fabricating claims not being possible in some cases where it should, as well as some CBs not being usable
