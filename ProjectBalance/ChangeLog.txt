@@ -15,6 +15,7 @@
 	Fixed successful tribal invasions not properly applying to empire-tier targets
 	Fixed fabricating claims not being possible in some cases where it should, as well as some CBs not being usable
 	Fixed factions never being formed
+	Fixed "character died gluttonous_death"
 
 3.2.14
 	The Pope will no longer ask his liege to implement Papal Investiture
