@@ -1,6 +1,6 @@
 98 = {
 	name="Eadgar"
-	# AKA: Edgar 'the Peaceable'
+	# AKA: Eadgar 'the Peaceable'
 	dynasty=100072
 	martial=2
 	diplomacy=10
@@ -21,7 +21,7 @@
 
 99 = {
 	name="Eadward"
-	# AKA: Edward 'the Martyr'
+	# AKA: Eadweard 'se Martyr'
 	dynasty=100072
 	martial=6
 	diplomacy=5
@@ -34,15 +34,17 @@
 	962.1.1={
 		birth="962.1.1"
 	}
-	978.3.18={
+	978.1.1 = {
 		give_nickname=nick_the_martyr
+	}
+	978.3.18={
 		death="978.3.18"
 	}
 }
 
 100 = {
 	name="Eadward"
-	# AKA: Edward 'the Elder'
+	# AKA: Eadweard 'se Ieldra'
 	dynasty=100072
 	martial=4
 	diplomacy=6
@@ -56,14 +58,16 @@
 	874.1.1={
 		birth="874.1.1"
 	}
-	924.7.17={
+	920.1.1 = {
 		give_nickname=nick_the_old
+	}
+	924.7.17={
 		death="924.7.17"
 	}
 }
 
 101 = {
-	name="Edith"
+	name="Edithia"
 	female = yes
 	dynasty=100072
 	martial=6
@@ -85,7 +89,7 @@
 
 102 = {
 	name="Eadmund"
-	# AKA: Edmund 'the Magnificent'
+	# AKA: Eadmund 'the Magnificent'
 	dynasty=100072
 	martial=9
 	diplomacy=7
@@ -99,14 +103,17 @@
 	922.1.1={
 		birth="922.1.1"
 	}
-	946.5.26={
+	946.1.1 = {
 		give_nickname=nick_the_magnificent
+	}
+	946.5.26={
 		death="946.5.26"
 	}
 }
 
 105 = {
-	name="Ælfflæd"
+	name="Ælflæd"
+	# AKA: Aelflaed
 	female = yes
 	dynasty=100052
 	martial=8
@@ -125,8 +132,8 @@
 }
 
 106 = {
-	name="Æthelred"
-	# AKA: Æthelred 'the Unready'
+	name="Æthelræd"
+	# AKA: Aethelraed 'Unraed'
 	dynasty=100072
 	martial=7
 	diplomacy=8
@@ -145,14 +152,16 @@
 	1002.3.1={
 		add_spouse=259 #Emma de Normandie
 	}
-	1016.4.23={
+	1016.1.1 = {
 		give_nickname=nick_the_unready
+	}
+	1016.4.23={
 		death="1016.4.23"
 	}
 }
 
 107 = {
-	name="Edith"
+	name="Ealdgyth"
 	female=yes
 	martial=5
 	diplomacy=6
@@ -171,7 +180,7 @@
 
 108 = {
 	name="Eadmund"
-	# AKA: Edmund 'Ironside'
+	# AKA: Eadmund 'Ironside'
 	dynasty=100072
 	martial=4
 	diplomacy=8
@@ -185,15 +194,17 @@
 	988.1.1={
 		birth="988.1.1"
 	}
-	1016.11.30={
+	1016.1.1 = {
 		give_nickname=nick_the_ironside
+	}
+	1016.11.30={
 		death="1016.11.30"
 	}
 }
 
 110 = {
 	name="Eadward"
-	# AKA: Edward 'the Exile'
+	# AKA: Eadward 'the Exile'
 	dynasty=100072
 	martial=8
 	diplomacy=5
@@ -217,7 +228,7 @@
 }
 
 111 = {
-	name="Godwin"
+	name="Godwine"
 	dynasty=756
 	martial=5
 	diplomacy=5
@@ -226,7 +237,6 @@
 	religion="catholic"
 	culture="saxon"
 	add_trait="thrifty_clerk"
-	add_trait="legit_bastard"
 	father=122
 	mother=131
 	1049.1.1={
@@ -242,8 +252,7 @@
 }
 
 112 = {
-	name="Eadgar"
-	# AKA: Edgar the Ætheling
+	name="Eadgar" # the Aetheling
 	dynasty=100072
 	martial=6
 	diplomacy=7
@@ -258,8 +267,8 @@
 	add_trait="kind"
 	father=110
 	mother=41101
-	1053.1.1={
-		birth="1053.1.1"
+	1050.1.1={
+		birth="1050.1.1"
 	}
 	1057.8.30={
 		add_claim = k_england
@@ -319,7 +328,7 @@
 
 114 = {
 	name="Eadward"
-	# AKA: Edward 'the Confessor'
+	# AKA: Eadweard 'se Andettere'
 	dynasty=100072
 	martial=5
 	diplomacy=4
@@ -335,11 +344,13 @@
 	1003.1.1={
 		birth="1003.1.1"
 	}
+	1016.1.1 = {
+		give_nickname=nick_the_confessor
+	}
 	1046.1.1 = {
 		add_spouse = 121
 	}
 	1066.1.5={
-		give_nickname=nick_the_confessor
 		death="1066.1.5"
 	}
 }
@@ -353,8 +364,7 @@
 	stewardship=6
 	religion="catholic"
 	culture="saxon"
-	add_trait="indulgent_wastrel"
-	add_trait="legit_bastard"
+	add_trait="tough_soldier"
 	father=122
 	mother=131
 	1049.12.10={
@@ -377,8 +387,7 @@
 	stewardship=4
 	religion="catholic"
 	culture="saxon"
-	add_trait="misguided_warrior"
-	add_trait="legit_bastard"
+	add_trait="tough_soldier"
 	father=122
 	mother=131
 	1051.6.10={
@@ -429,8 +438,7 @@
 }
 
 120 = {
-	name="Godwin"
-	# AKA: Godwin of Wessex
+	name="Godwine"
 	dynasty=756
 	martial=6
 	diplomacy=4
@@ -438,10 +446,6 @@
 	stewardship=7
 	religion="catholic"
 	culture="saxon"
-	add_trait="ambitious"
-	add_trait="deceitful"
-	add_trait="arbitrary"
-	add_trait="proud"
 	add_trait="fortune_builder"
 	993.1.1={
 		birth="993.1.1"
@@ -468,8 +472,8 @@
 	add_trait="martial_cleric"
 	father=120
 	mother=101534
-	1020.1.1={
-		birth="1020.1.1"
+	1021.1.1={
+		birth="1021.1.1"
 	}
 	1075.12.18={
 		death="1075.12.18"
@@ -477,8 +481,7 @@
 }
 
 122 = {
-	name="Harold"
-	# AKA: Harold Godwinson
+	name="Harold" # Godwineson, king of England
 	dynasty=756
 	dna="medjejoencc" 
 	properties="ae00e0"
@@ -488,22 +491,22 @@
 	stewardship=6
 	religion="catholic"
 	culture="saxon"
-	add_trait="ambitious"
-	add_trait="deceitful"
 	add_trait="arbitrary"
 	add_trait="proud"
-	add_trait="brave"
-	add_trait="strong"
-	add_trait="fair"
-	add_trait="gregarious"
 	add_trait="skilled_tactician"
 	father=120
 	mother=101534
 	1022.1.1={
 		birth="1022.1.1"
 	}
+	1048.1.1={
+		add_spouse=131 #Ealdgyth 'Swanneck'
+	}
+	1064.1.1={
+		remove_spouse = 131
+	}
 	1065.6.6={
-		add_spouse=123 #Edith of Mercia
+		add_spouse=123 #Ealdgyth of Mercia
 	}
 	1066.9.14 = {
 		raise_levies = {
@@ -521,7 +524,7 @@
 				leader = ROOT
 				match_character = ROOT
 				#Rebalanced starting forces
-				match_mult = 0.35
+				match_mult = 0.3
 				attrition = 1.0
 			}
 			spawn_unit = {
@@ -532,7 +535,7 @@
 				leader = 130 # Leofwine
 				match_character = ROOT
 				#Rebalanced starting forces
-				match_mult = 0.35
+				match_mult = 0.3
 				attrition = 1.0
 			}
 			spawn_unit = {
@@ -543,7 +546,7 @@
 				leader = 132 # Gyrth
 				match_character = ROOT
 				#Rebalanced starting forces
-				match_mult = 0.35
+				match_mult = 0.3
 				attrition = 1.0
 			}
 		}
@@ -565,8 +568,8 @@
 }
 
 123 = {
-	name="Edith"
-	# AKA: Edith of Mercia
+	name="Ældgyth" # of Mercia
+	# AKA: Ealdgyth
 	female=yes
 	dynasty=560
 	martial=4
@@ -610,9 +613,14 @@
 	}
 	1066.1.1={
 		employer=102531
-		give_job_title = job_marshal
+		effect = {
+			give_job_title = job_marshal
+		}
 	}
 	1066.1.1={
+		add_claim = c_york
+		add_claim = c_westmorland
+		add_claim = c_lincoln
 		add_claim = d_northumberland
 		add_claim = d_york
 	}
@@ -680,7 +688,6 @@
 	religion="catholic"
 	culture="saxon"
 	add_trait="martial_cleric"
-	add_trait="legit_bastard"
 	father=122
 	mother=131
 	1053.1.2={
@@ -692,7 +699,7 @@
 }
 
 128 = {
-	name="Sweyn"
+	name="Sveyn"
 	dynasty=756
 	martial=8
 	diplomacy=5
@@ -713,7 +720,7 @@
 }
 
 129 = {
-	name="Gunhilda"
+	name="Gunhild"
 	female=yes
 	dynasty=756
 	martial=6
@@ -722,8 +729,7 @@
 	stewardship=4
 	religion="catholic"
 	culture="saxon"
-	add_trait="amateurish_plotter"
-	add_trait="legit_bastard"
+	add_trait="martial_cleric"
 	father=122
 	mother=131
 	1055.1.2={
@@ -755,8 +761,8 @@
 }
 
 131 = {
-	name="Edith"
-	# AKA: Edith 'Swanneck'
+	name="Ældgyth" # 'the Fair', 'Swanneck'
+	# AKA: Ealdgyth 'Swanneck'
 	female=yes
 	dynasty=363
 	martial=4
@@ -786,11 +792,12 @@
 	culture="saxon"
 	add_trait="patient"
 	add_trait="brave"
+	add_trait="honest"
 	add_trait="skilled_tactician"
 	father=120
 	mother=101534
-	1031.1.1={
-		birth="1031.1.1"
+	1032.1.1={
+		birth="1032.1.1"
 	}
 	1050.1.1={
 		add_trait="hunter"
@@ -801,7 +808,8 @@
 }
 
 135 = {
-	name="Ælfgifu"
+	name="Ældgyth"
+	# AKA: Ealdgyth
 	female=yes
 	dynasty=753
 	martial=7
@@ -815,8 +823,8 @@
 	996.1.2={
 		birth="996.1.2"
 	}
-	1040.1.7={
-		death="1040.1.7"
+	1015.1.7={
+		death="1015.1.7"
 	}
 }
 
@@ -861,13 +869,12 @@
 		add_spouse=161261
 	}
 	1016.1.1={
-		give_nickname=nick_the_bold
 		death="1016.1.1"
 	}
 }
 
 189 = {
-	name="Edith"
+	name="Ealdgyth"
 	female=yes
 	dynasty=744
 	martial=6
@@ -952,7 +959,8 @@
 }
 
 193 = {
-	name="Ælfflæd"
+	name="Ælflæd"
+	# AKA: aelflaed
 	female = yes
 	dynasty=744
 	martial=6
@@ -972,7 +980,7 @@
 }
 
 196 = {
-	name="Sigurd"
+	name="Siward"
 	# AKA: Siward 'Grossus'
 	dynasty=745
 	martial=7
@@ -980,7 +988,7 @@
 	intrigue=7
 	stewardship=7
 	religion="catholic"
-	culture="danish"
+	culture="saxon"
 	add_trait="brave"
 	add_trait="tough_soldier"
 	1010.1.2={
@@ -991,23 +999,6 @@
 	}
 	1055.1.2={
 		death="1055.1.2"
-	}
-}
-
-197 = {
-	name="Asbjørn"
-	dynasty=745
-	religion="catholic"
-	culture="danish"
-	add_trait="skilled_tactician"
-	add_trait="wroth"
-	add_trait="brave"
-	father=196
-	1032.1.2={
-		birth="1032.1.2"
-	}
-	1054.1.2={
-		death="1054.1.2"
 	}
 }
 
@@ -1027,10 +1018,6 @@
 	mother=193
 	1050.1.2={
 		birth="1050.1.2"
-	}
-	1066.1.1={
-		add_claim = d_northumberland
-		add_claim = d_york
 	}
 	1070.1.1={
 		add_spouse = 317
@@ -1064,6 +1051,7 @@
 
 131601 = {
 	name="Æthelwine"
+	# AKA: aethelwine
 	dynasty=100056
 	martial=4
 	diplomacy=7
@@ -1078,68 +1066,6 @@
 	}
 	1072.1.1={
 		death="1072.1.1"
-	}
-}
-
-963 = {
-	name="Dolfin"
-	dynasty=370
-	martial=8
-	diplomacy=8
-	intrigue=5
-	stewardship=4
-	religion="catholic"
-	culture="saxon"
-	father=85018
-	mother=967
-	1060.6.1={
-		birth="1060.6.1"
-	}
-	1104.1.2={
-		death="1104.1.2"
-	}
-}
-
-969 = {
-	name="Æthelthryth"
-	female = yes
-	dynasty=370
-	martial=5
-	diplomacy=7
-	intrigue=6
-	stewardship=7
-	religion="catholic"
-	culture="saxon"
-	add_trait="martial_cleric"
-	father=85018
-	mother=967
-	1062.1.2={
-		birth="1062.1.2"
-	}
-	1111.1.2={
-		death="1111.1.2"
-	}
-}
-
-971 = {
-	name="Octreda"
-	female = yes
-	dynasty=370
-	martial=5
-	diplomacy=8
-	intrigue=7
-	stewardship=4
-	religion="catholic"
-	culture="saxon"
-	add_trait="deceitful"
-	add_trait="arbitrary"
-	father=85018
-	mother=967
-	1063.1.2={
-		birth="1063.1.2"
-	}
-	1113.1.2={
-		death="1113.1.2"
 	}
 }
 
@@ -1168,6 +1094,7 @@
 	1094.6.6={
 		employer=202511
 	}
+
 	1112.4.16={
 		death="1112.4.16"
 	}
@@ -1199,7 +1126,7 @@
 }
 
 511 = {
-	name="Ælfgifu"
+	name="Elgiva"
 	female = yes
 	dynasty=100072
 	martial=3
@@ -1238,6 +1165,7 @@
 
 5624 = {
 	name="Æthelwine"
+	# AKA: aethelwine
 	martial=7
 	diplomacy=4
 	intrigue=8
@@ -1282,6 +1210,7 @@
 
 5642 = {
 	name="Ælfgar"
+	# AKA: aelfgar
 	dynasty=560
 	martial=7
 	diplomacy=5
@@ -1303,25 +1232,6 @@
 	}
 }
 
-5646 = {
-	name="Burgheard"
-	dynasty=560
-	martial=3
-	diplomacy=6
-	intrigue=4
-	stewardship=5
-	religion="catholic"
-	culture="saxon"
-	add_trait="detached_priest"
-	father=5642
-	mother=161280
-	1038.1.1={
-		birth="1038.1.1"
-	}
-	1061.1.1={
-		death="1061.1.1"
-	}
-}
 
 5644 = {
 	name="Eadwin"
@@ -1345,10 +1255,31 @@
 	1066.1.1={
 		add_trait="hunter"
 	}
-	1072.1.1={
-		death="1072.1.1"
+	1071.1.1={
+		death="1071.1.1"
 	}
 }
+
+#nothing can be found of him
+#5646 = {
+#	name="Estmond"
+#	dynasty=560
+#	martial=8
+#	diplomacy=5
+#	intrigue=8
+#	stewardship=4
+#	religion="catholic"
+#	culture="saxon"
+#	add_trait="craven"
+#	add_trait="tough_soldier"
+#	father=5644
+#	1060.1.1={
+#		birth="1060.1.1"
+#	}
+#	1100.1.1={
+#		death="1100.1.1"
+#	}
+#}
 
 5660 = {
 	name="Morcar"
@@ -1396,6 +1327,31 @@
 	}
 }
 
+6890 = {
+	name=Ecgwyn # Fantasy
+	female=yes
+	religion="catholic"
+	culture=saxon
+	828.1.1 = {
+		birth=yes
+	}
+	894.1.1 = {
+		death=yes
+	}
+}
+
+6891 = {
+	name=Burgflæd # Fantasy
+	female=yes
+	religion="catholic"
+	culture=saxon
+	845.1.1 = {
+		birth=yes
+	}
+	899.1.1 = {
+		death=yes
+	}
+}
 
 7387 = {
 	name="Hextilda"
@@ -1432,30 +1388,35 @@
 }
 
 7627 = {
-	name="Alfred"
+	name=Alfred
 	dynasty=100072
-	martial=4
-	diplomacy=6
+	martial=8
+	diplomacy=9
 	intrigue=7
-	stewardship=7
-	religion="catholic"
-	culture="saxon"
-	add_trait="honest"
-	add_trait="tough_soldier"
+	stewardship=8
+	learning = 6
+	religion=catholic
+	culture=saxon
+	add_trait=honest
+	add_trait=just
+	add_trait=gregarious
+	add_trait=diligent
+	add_trait=quick
+	add_trait=brilliant_strategist
 	father=33355
 	849.1.1={
-		birth="849.1.1"
+		birth=yes
 	}
 	890.1.1 = {
 		give_nickname=nick_the_great
 	}
 	899.10.26={
-		death="899.10.26"
+		death=yes
 	}
 }
 
 7629 = {
-	name="Ælfthryth"
+	name="Elfthryth"
 	female = yes
 	dynasty=100072
 	martial=3
@@ -1549,6 +1510,7 @@
 
 82058 = {
 	name="Lucy"
+	# wife of Ranulf le Meschin earl of Chester
 	female = yes
 	dynasty=9112
 	martial=5
@@ -1588,7 +1550,7 @@
 
 90027 = {
 	name="Eadric"
-	# AKA: Eadric 'the Wild'
+	# AKA: Eadric Wilde
 	dynasty=20022
 	martial=4
 	diplomacy=6
@@ -1611,7 +1573,6 @@
 
 90028 = {
 	name="Hereward"
-	# AKA: Hereward 'the Wake'
 	dynasty=20049
 	martial=11
 	diplomacy=9
@@ -1671,28 +1632,8 @@
 	}
 }
 
-967 = {
-	name="Æthelthryth"
-	female = yes
-	dynasty=3108
-	martial=8
-	diplomacy=4
-	intrigue=7
-	stewardship=8
-	religion="catholic"
-	culture="saxon"
-	add_trait="flamboyant_schemer"
-	1042.1.2={
-		birth="1042.1.2"
-	}
-	1092.1.2={
-		death="1092.1.2"
-	}
-}
-
 33350 = {
 	name="Æthelstan"
-	# AKA: Æthelstan 'the Glorious'
 	dynasty=100072
 	religion="catholic"
 	culture="saxon"
@@ -1701,7 +1642,6 @@
 		birth="893.1.1"
 	}
 	939.10.27={
-		give_nickname=nick_the_glorious
 		death="939.10.27"
 	}
 }
@@ -1722,7 +1662,6 @@
 
 33352 = {
 	name="Eadwig"
-	# AKA: Eadwig 'the Fair'
 	dynasty=100072
 	religion="catholic"
 	culture="saxon"
@@ -1730,15 +1669,16 @@
 	941.1.1={
 		birth="941.1.1"
 	}
-	959.10.1={
+	959.1.1 = {
 	give_nickname=nick_the_fair
+	}
+	959.10.1={
 		death="959.10.1"
 	}
 }
 
 33354 = {
 	name="Egbert"
-	# AKA: Egbert of Wessex
 	dynasty=100072
 	religion="catholic"
 	culture="saxon"
@@ -1752,7 +1692,6 @@
 
 33355 = {
 	name="Æthelwulf"
-	# AKA: Æthelwulf of Wessex
 	dynasty=100072
 	religion="catholic"
 	culture="saxon"
@@ -1767,7 +1706,6 @@
 
 33356 = {
 	name="Æthelbald"
-	# AKA: Æthelbald of Wessex
 	dynasty=100072
 	religion="catholic"
 	culture="saxon"
@@ -1781,8 +1719,7 @@
 }
 
 33357 = {
-	name="Æthelberht"
-	# AKA: Æthelberht of Wessex
+	name="Æthelbert"
 	dynasty=100072
 	religion="catholic"
 	culture="saxon"
@@ -1797,7 +1734,6 @@
 
 33358 = {
 	name="Æthelred"
-	# AKA: Æthelred of Wessex
 	dynasty=100072
 	religion="catholic"
 	culture="saxon"
@@ -1820,25 +1756,6 @@
 	}
 	1112.5.5={
 		death="1112.5.5"
-	}
-}
-
-203019 = {
-	name="Gospatric"
-	dynasty=370
-	martial=5
-	diplomacy=6
-	intrigue=5
-	stewardship=6
-	religion="catholic"
-	culture="saxon"
-	father=85018
-	mother=967
-	1073.1.1={
-		birth="1073.1.1"
-	}
-	1138.1.1={
-		death="1138.1.1"
 	}
 }
 
@@ -1873,7 +1790,7 @@
 }
 
 32703  = {
-	name="Eadmund"
+	name="Edmund"
 	religion="catholic"
 	culture="saxon"
 	add_trait="martial_cleric"
@@ -1888,54 +1805,8 @@
 	}
 }
 
-203026 = {
-	name="Waltheof"
-	dynasty=370
-	martial=4
-	diplomacy=5
-	intrigue=6
-	stewardship=5
-	religion="catholic"
-	culture="saxon"
-	add_trait="zealous"
-	add_trait="martial_cleric"
-	father=85018
-	mother=967
-	1066.1.1={
-		birth="1066.1.1"
-	}
-	1140.1.1={
-		death="1140.1.1"
-	}
-}
-
-85018 = {
-	name="Gospatric"
-	dynasty=370
-	martial=4
-	diplomacy=7
-	intrigue=6
-	stewardship=6
-	religion="catholic"
-	culture="saxon"
-	add_trait="lustful"
-	add_trait="underhanded_rogue"
-	father=964
-	mother=189
-	1040.1.2={
-		birth="1040.1.2"
-	}
-	1059.1.2={
-		add_spouse = 967
-	}
-	1073.1.1={
-		death="1073.1.1"
-	}
-}
-
 161260 = {
 	name="Ælfwine"
-	# AKA: Ælfwine Haroldson
 	dynasty=490
 	religion="catholic"
 	culture="saxon"
@@ -1974,18 +1845,18 @@
 }
 
 161262 = {
-	name="Godgifu"
+	name="Godgifu" # aka Goda
 	female=yes
 	dynasty=100072
 	religion="catholic"
 	culture="saxon"
 	father=106
 	mother=259
-	1005.1.1={
-		birth="1005.1.1"
+	1004.1.1={
+		birth="1004.1.1"
 	}
-	1049.1.1={
-		death="1049.1.1"
+	1047.1.1={
+		death="1047.1.1"
 	}
 }
 
@@ -2003,7 +1874,7 @@
 }
 
 161264 = {
-	name="Ælfgifu"
+	name="Ælfgifu" #real name unknown
 	female=yes
 	dynasty=744
 	religion="catholic"
@@ -2078,7 +1949,7 @@
 }
 
 161269 = {
-	name="Edith"
+	name="Ældgyth"
 	female = yes
 	dynasty=744
 	religion="catholic"
@@ -2183,13 +2054,10 @@
 
 161276 = {
 	name="Eadric" 
-	# AKA: Eadric 'Streona'
+	#Eadric Streona
 	dynasty=20022
 	religion="catholic"
 	culture="saxon"
-	add_trait="ambitious"
-	add_trait="deceitful"
-	add_trait="arbitrary"
 	father=161275
 	980.1.1={
 		birth="980.1.1"
@@ -2203,7 +2071,7 @@
 }
 
 161277 = {
-	name="Edith" 
+	name="Eadgyth" 
 	female=yes
 	dynasty=100072
 	religion="catholic"
@@ -2235,7 +2103,7 @@
 
 161279 = {
 	name="Godgifu"
-	# AKA: 'Lady Godiva'
+	#AKA Lady Godiva
 	female=yes
 	religion="catholic"
 	culture="saxon"
@@ -2248,7 +2116,7 @@
 }
 
 161280 = {
-	name="Ælfgifu"
+	name="Ælgifu"
 	female=yes
 	religion="catholic"
 	culture="saxon"
@@ -2308,7 +2176,6 @@
 	}
 	1066.1.1={
 		add_claim = d_lancaster
-		add_claim = d_hereford
 	}
 	1091.1.1 = {
 		death="1091.1.1"
@@ -2351,39 +2218,216 @@
 	}
 }
 
-# New
-
-16450 = {
-	name="Eadnoth"
-	dynasty=100032 # of Bristol
+163064 = {
+	name="Edmund" # of East Anglia
+	dynasty=626
 	religion="catholic"
 	culture="saxon"
-	add_trait="fortune_builder"
-	1026.1.1 = {
-		birth="1026.1.1"
+	840.1.1 = {
+		birth="840.1.1"
 	}
-	1066.10.14={
-		employer=161281 # Kado of Cornwall
+	
+	866.11.2={
+		raise_levies = {
+			location=70 # Norfolk
+			force_mult=2.0
+		}
 	}
-	1069.1.1 = {
-		death="1069.1.1"
+	
+	869.11.20 = {
+		death="869.11.20"
+	}
+}
+163102 = {
+	name="Burghred"
+	dynasty=813
+	religion="catholic"
+	culture="saxon"
+	830.1.1 = {
+		birth="830.1.1"
+	}
+	855.1.1 = {
+		add_spouse=168594
+	}
+	874.1.1 = {
+		death="874.1.1"
 	}
 }
 
-16451 = {
-	name="Harding"
-	dynasty=100032 # of Bristol
+163103 = {
+	name="Ælla"
+	dynasty=814
 	religion="catholic"
 	culture="saxon"
-	add_trait="thrifty_clerk"
-	father=16450
-	1048.1.1 = {
-		birth="1048.1.1"
+	martial=5
+	diplomacy=3
+	stewardship=3
+	intrigue=6
+	learning=5
+	add_trait=deceitful
+	add_trait=cruel
+	add_trait=arbitrary
+	add_trait=paranoid
+	add_trait=intricate_webweaver
+	
+	824.1.1 = {
+		birth=yes
 	}
-	1066.10.14={
-		employer=6806 # William de Crepon
+	
+	840.1.1 = {
+		add_spouse = 6890
 	}
-	1125.1.1 = {
-		death="1125.1.1"
+	
+	866.11.2={
+		raise_levies = {
+			location=52 # Northumberland
+			force_mult=2.0
+		}
+	}
+	
+	867.3.21 = {
+		death=yes
+	}
+}
+
+6861 = {
+	name="Blæja"
+	female=yes
+	dynasty=814
+	religion="catholic"
+	culture=saxon
+	father = 163103
+	mother = 6890
+	841.1.1={
+		birth=yes
+	}
+	893.1.1={
+		death=yes
+	}
+}
+
+6875 = {
+	name="Ælfgar"
+	dynasty=814
+	religion="catholic"
+	culture=saxon
+	father = 163103
+	mother = 6890
+	843.1.1={
+		birth=yes
+	}
+	866.1.1 = {
+		add_spouse = 6891
+	}
+	867.3.21={
+		death=yes
+	}
+}
+
+163120 = {
+	name="Eardulf" # Bishop of Durham/Lindisfarne
+	religion="catholic"
+	culture="saxon"
+	learning=5
+	add_trait=scholarly_theologian
+	
+	829.1.1 = {
+		birth="829.1.1"
+	}
+	900.1.1 = {
+		death="900.1.1"
+	}
+}
+
+163121 = {
+	name="Oswine" # Earl of Lancaster (made up)
+	religion="catholic"
+	culture="saxon"
+	
+	830.1.1 = {
+		birth="830.1.1"
+	}
+	880.1.1 = {
+		death="880.1.1"
+	}
+}
+
+163122 = {
+	name="Ælfwald" # Earl of Westmorland (made up)
+	religion="catholic"
+	culture="saxon"
+	
+	833.1.1 = {
+		birth="833.1.1"
+	}
+	880.1.1 = {
+		death="880.1.1"
+	}
+}
+
+163123 = {
+	name="Sæxræd" # Earl of Cumberland (made up)
+	religion="catholic"
+	culture="saxon"
+	
+	835.1.1 = {
+		birth="835.1.1"
+	}
+	885.1.1 = {
+		death="885.1.1"
+	}
+}
+159465 = {
+	name="Ælfræd" #Alured
+	religion="catholic"
+	culture="saxon"
+	dynasty=100031 #of Cornwall
+	father=159464
+	970.1.1={
+		birth="970.1.1"
+	}
+	1020.1.1={
+		death="1020.1.1"
+	}
+}
+159470 = {
+	name="Godwine"  #Godwyn
+	religion="catholic"
+	culture="saxon"
+	dynasty=100031 #of Cornwall
+	father=159465
+	1014.1.1={
+		birth="1014.1.1"
+	}
+	1070.1.1={
+		death="1070.1.1"
+	}
+}
+159471 = {
+	name="Hereberht" 
+	religion="catholic"
+	culture="saxon"
+	dynasty=100031
+	father=159470
+	1050.1.1={
+		birth="1050.1.1"
+	}
+	1100.1.1={
+		death="1100.1.1"
+	}
+}
+
+168594 = {
+	name="Æthelswith"
+	female=yes
+	dynasty=100072
+	religion="catholic"
+	culture="saxon"
+	father=33355
+	838.1.1={
+		birth=yes
+	}
+	888.1.1={
+		death=yes
 	}
 }

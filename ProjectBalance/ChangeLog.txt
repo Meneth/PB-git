@@ -1,3 +1,27 @@
+3.2.15
+	Now works with SWMH 2.751
+	(PB+SWMH) Fixed duplicate characters issues
+	(PB+SWMH) Rebalanced the scripted armies in 1066
+	(PB+SWMH) Now uses PB's list of bookmarks
+	The AI will now not assault holdings unless it outnumbers the garrison 12-1 (was 10-1)
+	Pentarchy holdings can now be taken via dejure claims by any Christians rather than just Orthodox Christians
+	Halved the tech gain from battle
+	Added decisions to release or execute all prisoners
+	The truce from Tribal Invasions now lasts 5 years rather than 1
+	The Persian Empire is no longer named as if it were a kingdom
+	Turkish emperors are now called Sultan rather than Padishah (historical: Ottoman and Seljuk empires)
+	Only dukes and independent counts can take the Become King ambition
+	Integrated the split Wealth, Piety, and Prestige ambitions from Additional Objectives 2.0, as their implementation is superior to the one currently in PB
+	Vassals won't start/join factions for 10 years after crushing a major revolt unless their opinion of their liege is below -25
+	If the Roman Empire is formed and the HRE was formed in Francia, the HRE will revert to being Francia
+	Egypt no longer exists until 1171 when Saladin took power. The Caliphate is instead kingdom-tier
+	Fixed Erik the Heathen not being vassalized when he loses or white peaces in the War of the two Eriks (vanilla issue)
+	Fixed successful tribal invasions not properly applying to empire-tier targets
+	Fixed fabricating claims not being possible in some cases where it should, as well as some CBs not being usable
+	Fixed factions never being formed
+	Fixed "character died gluttonous_death"
+	Fixed women being unable to convert provinces
+
 3.2.14
 	The Pope will no longer ask his liege to implement Papal Investiture
 	Vassalized mercenaries, holy orders, and religious heads will not join factions

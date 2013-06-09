@@ -1,5 +1,31 @@
 bookmark =
 {
+	name = "BM_NORMAN_CONQUEST"
+	desc = "BM_NORMAN_CONQUEST_DESC"
+	date = 1066.12.26
+	
+	character = 140 # William the Conqueror
+	character = 101515 # Svend Estridsen, King of Denmark
+}
+
+bookmark =
+{
+	name = "BM_THE_OLD_GODS"
+	desc = "BM_THE_OLD_GODS_DESC"
+	date = 867.1.1
+	
+	character = 163111 # Ivar the Boneless
+	character = 163112 # Halfdan Whiteshirt
+	character = 40605 # Rurik
+	character = 33358 # Æthelred
+	character = 45107 # Vandad I
+	character = 1700 # Basil I
+	character = 90104 # Charles the Bald
+	character = 34014 # Al-Mu'tazz
+}
+
+bookmark =
+{
 	name = "BM_FATE_OF_ENGLAND"
 	desc = "BM_FATE_OF_ENGLAND_DESC"
 	date = 1066.9.15
@@ -11,12 +37,12 @@ bookmark =
 
 bookmark =
 {
-	name = "BM_NORMAN_CONQUEST"
-	desc = "BM_NORMAN_CONQUEST_DESC"
-	date = 1069.8.1
-	
-	character = 140 # William the Conqueror
-	character = 101515 # Svend Estridsen, King of Denmark
+	name = "BM_TWO_ERIKS"
+	desc = "BM_TWO_ERIKS_DESC"
+	date = 1066.9.25
+
+	character = 100546
+	character = 100525
 }
 
 bookmark =
@@ -148,16 +174,6 @@ bookmark =
 
 bookmark =
 {
-	name = "BM_POMERANIA"
-	desc = "BM_POMERANIA_DESC"
-	date = 1136.1.1
-
-	character = 221718
-	character = 221515
-}
-
-bookmark =
-{
 	name = "BM_NOVGOROD"
 	desc = "BM_NOVGOROD_DESC"
 	date = 1136.1.2
@@ -282,6 +298,7 @@ bookmark =
 	character = 212501 # Friedrich I of the HRE
 	character = 219500 # Hungary
 	character = 215500 # The Byzantine Empire
+	character = 226000 # Saladin
 }
 
 bookmark =
@@ -293,16 +310,6 @@ bookmark =
 	character = 204510
 	character = 205506
 	character = 212507
-}
-
-bookmark =
-{
-	name = "BM_ARMENIA"
-	desc = "BM_ARMENIA_DESC"
-	date = 1199.1.1
-
-	character = 223000
-	
 }
 
 bookmark =
@@ -330,31 +337,12 @@ bookmark =
 
 bookmark =
 {
-	name = "BM_AFRICA"
-	desc = "BM_AFRICA_DESC"
-	date = 1210.3.1
-
-	character = 224005
-	character = 226052
-}
-
-bookmark =
-{
 	name = "BM_ANUSHTIGINID"
 	desc = "BM_ANUSHTIGINID_DESC"
 	date = 1212.1.1
 
 	character = 93052
 	character = 226052
-}
-
-bookmark =
-{
-	name = "BM_GENGHIS_KHAN"
-	desc = "BM_GENGHIS_KHAN_DESC"
-	date = 1218.1.1
-
-	character = 93052
 }
 
 bookmark =
@@ -368,6 +356,15 @@ bookmark =
 	character = 31337
 	character = 205526
 	character = 215674
+}
+
+bookmark =
+{
+	name = "BM_THE_MONGOLS"
+	desc = "BM_THE_MONGOLS_DESC"
+	date = 1220.2.1
+	
+	character = 125501 # Genghis Khan
 }
 
 bookmark =
@@ -387,12 +384,23 @@ bookmark =
 
 bookmark =
 {
-	name = "BM_THE_MONGOLS"
-	desc = "BM_THE_MONGOLS_DESC"
+	name = "BM_RISE_OF_THE_HANSA"
+	desc = "BM_RISE_OF_THE_HANSA_DESC"
 	date = 1241.5.1
 	
 	character = 167219 # Heinrich Vorrade of the Hansa
 	character = 212513 # Friedrich II of the HRE
+	character = 125503 # Batu Khan
+	character = 478011 # Hulegu Khan
+}
+
+bookmark =
+{
+	name = "BM_LITHUANIA_FORMED"
+	desc = "BM_LITHUANIA_FORMED_DESC"
+	date = 1253.6.30
+
+	character = 125301
 }
 
 bookmark =
@@ -409,15 +417,24 @@ bookmark =
 
 bookmark =
 {
+	name = "BM_LITHUANIA_ROMUVA"
+	desc = "BM_LITHUANIA_ROMUVA_DESC"
+	date = 1263.9.12
+
+	character = 125302
+}
+
+bookmark =
+{
 	name = "BM_LITHUANIA"
 	desc = "BM_LITHUANIA_DESC"
 	date = 1265.1.1
 
 	character = 125303
-	character = 125248
 	character = 125982
 	character = 98003
 	character = 31187
+	character = 125248
 }
 
 bookmark =

@@ -79,6 +79,13 @@ narrative_event = {
 				destroy_landed_title = THIS
 			}
 		}
+		if = {
+			limit = {
+				k_egypt = { has_holder = yes }
+				NOT = { year = 1171 }
+			}
+			k_egypt = { destroy_landed_title = THIS }
+		}
 	}
 	
 	option = {

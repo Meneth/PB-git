@@ -8,6 +8,460 @@
 ###################################
 
 namespace = meneth
+
+# Province culture changes
+province_event = {
+	id = 55000
+	desc = "EVTDESC55000"
+	picture = GFX_evt_throne_room
+	
+	trigger = {
+		owner = {
+			NOT = { culture = ROOT }
+			religion = ROOT
+		}
+		any_neighbor_province = {
+			has_owner = yes
+			owner = { culture = PREV }
+			ROOT = {
+				owner = { culture = PREVPREV }
+			}
+		}
+		NOT = { # No flipping back to Norse culture before 1150
+			AND = {
+				NOT = {	has_global_flag = norse_culture_flipping }
+				owner = { culture = norse }
+				ROOT = {
+					OR = {
+						culture = swedish
+						culture = norwegian
+						culture = danish
+						culture = norman
+					}
+				}
+			}
+		}
+		#These setups use melting pot events instead
+		NOT = {
+			AND = {
+				culture_group = celtic
+				owner = { culture_group = north_germanic }
+			}
+		}
+		NOT = {
+			AND = {
+				OR = {
+					culture = italian
+					culture = greek
+				}
+				owner = { culture = norman }
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1800
+
+		modifier = {
+			factor = 0.75
+			port = yes
+		}
+		modifier = {
+			factor = 0.4
+			NOT = {
+				any_neighbor_province = { culture = ROOT }
+			}
+		}
+		modifier = {
+			factor = 1.5
+			owner = { NOT = { stewardship = 2 }}
+		}
+		modifier = {
+			factor = 1.5
+			owner = { NOT = { stewardship = 3 }}
+		}
+		modifier = {
+			factor = 1.5
+			owner = { NOT = { stewardship = 4 }}
+		}
+		modifier = {
+			factor = 1.5
+			owner = { NOT = { stewardship = 5 }}
+		}
+		modifier = {
+			factor = 0.75
+			owner = { stewardship = 10 }
+		}
+		modifier = {
+			factor = 0.75
+			owner = { stewardship = 11 }
+		}
+		modifier = {
+			factor = 0.75
+			owner = { stewardship = 12 }
+		}
+		modifier = {
+			factor = 0.75
+			owner = { stewardship = 13 }
+		}
+		modifier = {
+			factor = 0.4
+			owner = { culture = mongol }
+			NOT = { year = 1350 }
+		}
+		modifier = {
+			factor = 0.75
+			owner = {
+				OR = {
+					primary_title = {
+						conquest_culture = PREV
+					}
+					ROOT = {
+						county = {
+							conquest_culture = PREVPREV
+						}
+					}
+					ROOT = {
+						duchy = {
+							holder_scope = {
+								character = PREVPREVPREV
+							}
+							conquest_culture = PREVPREV
+						}
+					}
+					ROOT = {
+						kingdom = {
+							holder_scope = {
+								character = PREVPREVPREV
+							}
+							conquest_culture = PREVPREV
+						}
+					}
+					ROOT = {
+						empire = {
+							holder_scope = {
+								character = PREVPREVPREV
+							}
+							conquest_culture = PREVPREV
+						}
+					}
+				}
+			}
+		}
+		#Turkish culture didn't spread to coasts much
+		modifier = {
+			factor = 2
+			port = yes
+			owner = {
+				culture = turkish
+			}
+		}
+		#Turkish culture spread quickly inland
+		modifier = {
+			factor = 0.3
+			port = no
+			owner = {
+				culture = turkish
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTA55000"
+		owner = {
+			reverse_culture = ROOT
+		}
+	}
+}
+
+# Bring in some settlers
+province_event = {
+	id = 55001
+	desc = "EVTDESC55001"
+	picture = GFX_evt_carriage
+	
+	trigger = {
+		owner = {
+			top_liege = {
+				culture = PREV
+				any_realm_province = {
+					port = yes
+					culture = PREV
+				}
+			}
+			NOT = { culture = ROOT }
+			NOT = { culture = turkish }
+		}
+		port = yes
+		
+		NOT = { # Exclude provinces covered by event 55000
+			any_neighbor_province = {
+				has_owner = yes
+				owner = {
+					ROOT = {
+						owner = {
+							culture = PREVPREV
+							culture = PREVPREVPREV
+						}
+					}
+				}
+			}
+		}
+		NOT = { # No flipping back to Norse culture before 1150
+			AND = {
+				NOT = {	has_global_flag = norse_culture_flipping }
+				owner = { culture = norse }
+				ROOT = {
+					OR = {
+						culture = swedish
+						culture = norwegian
+						culture = danish
+						culture = norman
+					}
+				}
+			}
+		}
+		#These setups use melting pot events instead
+		NOT = {
+			AND = {
+				culture_group = celtic
+				owner = { culture_group = north_germanic }
+			}
+		}
+		NOT = {
+			AND = {
+				OR = {
+					culture = italian
+					culture = greek
+				}
+				owner = { culture = norman }
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 2100
+
+		modifier = {
+			factor = 1.5
+			owner = { NOT = { stewardship = 2 }}
+		}
+		modifier = {
+			factor = 1.5
+			owner = { NOT = { stewardship = 3 }}
+		}
+		modifier = {
+			factor = 1.5
+			owner = { NOT = { stewardship = 4 }}
+		}
+		modifier = {
+			factor = 1.5
+			owner = { NOT = { stewardship = 5 }}
+		}
+		modifier = {
+			factor = 0.75
+			owner = { stewardship = 10 }
+		}
+		modifier = {
+			factor = 0.75
+			owner = { stewardship = 11}
+		}
+		modifier = {
+			factor = 0.75
+			owner = { stewardship = 12 }
+		}
+		modifier = {
+			factor = 0.75
+			owner = { stewardship = 13 }
+		}
+	}
+
+	option = {
+		name = "EVTOPTA55001"
+		owner = {
+			ROOT = {
+				culture = PREV
+			}
+		}
+	}
+}
+
+# The English Melting Pot
+province_event = {
+	id = 55002
+	desc = "EVTDESC55002"
+	picture = GFX_evt_throne_room
+	
+	trigger = {
+		year = 1100
+		culture = saxon
+		owner = { culture = norman }
+		kingdom = { title = k_england }
+	}
+	
+	mean_time_to_happen = {
+		months = 1200
+		modifier = {
+			factor = 0.75
+			owner = { learning = 7 }
+		}
+		modifier = {
+			factor = 0.75
+			owner = { learning = 9 }
+		}
+		modifier = {
+			factor = 0.75
+			owner = { learning = 11 }
+		}
+		modifier = {
+			factor = 0.75
+			owner = { learning = 13 }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { NOT = { learning = 5 }}
+		}
+		modifier = {
+			factor = 1.5
+			owner = { NOT = { learning = 3 }}
+		}
+		modifier = {
+			factor = 2.0
+			owner = { NOT = { learning = 1 }}
+		}
+	}
+
+	option = {
+		name = "EVTOPTA55002"
+		culture = english
+		owner = { culture = english }
+	}
+}
+
+# It's spreading
+province_event = {
+	id = 55003
+	desc = "EVTDESC55003"
+	picture = GFX_evt_throne_room
+	
+	trigger = {
+		year = 1100
+		OR = {
+			culture = saxon
+			culture = norman
+		}
+		owner = { culture = english }
+	}
+	
+	mean_time_to_happen = {
+		months = 720
+	}
+
+	option = {
+		name = "EVTOPTA55003"
+		culture = english
+	}
+}
+
+#Make my court speak English
+character_event = {
+	id = 55004
+	desc = "EVTDESC55004"
+	picture = GFX_evt_throne_room
+
+	trigger = {
+		year = 1100
+		culture = english
+		top_liege = {
+			primary_title = {
+				title = k_england
+			}
+		}
+		any_courtier = {
+			OR = {
+				culture = saxon
+				culture = norman
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	option = {
+		name = "EVTOPTA55004"
+		random_courtier = {
+			limit = {
+				OR = {	
+					culture = saxon
+					culture = norman
+				}
+			}
+			culture = english
+			hidden_tooltip = {
+				character_event = { id = 55006 days = 3 }
+			}
+		}
+	}
+}
+
+#Make my vassal speak English
+character_event = {
+	id = 55005
+	desc = "EVTDESC55005"
+	picture = GFX_evt_throne_room
+
+	trigger = {
+		year = 1100
+		culture = english
+		top_liege = {
+			primary_title = {
+				title = k_england
+			}
+		}
+		any_vassal = {
+			OR = {
+				culture = saxon
+				culture = norman
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 720
+	}
+
+	option = {
+		name = "EVTOPTA55005"
+		random_vassal = {
+			limit = {
+				OR = {	
+					culture = saxon
+					culture = norman
+				}
+			}
+			culture = english
+			hidden_tooltip = {
+				character_event = { id = 55006 days = 3 }
+			}
+		}
+	}
+}
+
+character_event = {
+	id = 55006
+	desc = "EVTDESC55006"
+	picture = GFX_evt_throne_room
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA55006"
+		culture = english
+	}
+}
+
 #Rulers' culture changed to that of his capital
 character_event = {
 	id = meneth.0
@@ -20,6 +474,27 @@ character_event = {
 		capital_scope = {
 			NOT = { culture = ROOT }
 			religion = ROOT
+			#Prevent silly stuff
+			NOT = {
+				ROOT = { religion_group = christian }
+				OR = {
+					culture_group = arabic
+					culture = andalusian_arabic
+				}
+			}
+			NOT = {
+				ROOT = { culture = pecheneg }
+				culture = romanian
+			}
+			OR = { # Not when Norman culture should appear
+				ROOT = { NOT = { culture = norse } }
+				AND = {
+					NOT = { culture = frankish }
+					NOT = {	culture = breton }
+					NOT = { culture = occitan }
+				}
+				NOT = { has_dlc = "The Old Gods" }
+			}
 		}
 		#These setups use melting pot events instead
 		NOT = {
@@ -36,7 +511,10 @@ character_event = {
 						culture = central_italian
 						culture = southern_italian
 						culture = langobardisch
-						culture = greek
+						AND = {
+							culture = greek
+							empire = { title = e_italy }
+						}
 					}
 				}
 			}
@@ -159,6 +637,26 @@ character_event = {
 		location = {
 			NOT = { culture = ROOT }
 			religion = ROOT
+			NOT = {
+				ROOT = { religion_group = christian }
+				OR = {
+					culture_group = arabic
+					culture = andalusian_arabic
+				}
+				NOT = {
+					ROOT = { culture = pecheneg }
+					culture = romanian
+				}
+			}
+			OR = { # Not when Norman culture should appear
+				ROOT = { NOT = { culture = norse } }
+				AND = {
+					NOT = { culture = frankish }
+					NOT = {	culture = breton }
+					NOT = { culture = occitan }
+				}
+				NOT = { has_dlc = "The Old Gods" }
+			}
 		}
 		#These setups use melting pot events instead
 		NOT = {
@@ -175,7 +673,10 @@ character_event = {
 						culture = central_italian
 						culture = southern_italian
 						culture = langobardisch
-						culture = greek
+						AND = {
+							culture = greek
+							empire = { title = e_italy }
+						}
 					}
 				}
 			}
@@ -186,7 +687,7 @@ character_event = {
 		months = 150
 		modifier = {
 			factor = 0.5
-			location = {
+			capital_scope = {
 				culture_group = ROOT
 			}
 		}
@@ -667,7 +1168,10 @@ province_event = {
 			culture = southern_italian
 			culture = central_italian
 			culture = langobardisch
-			culture = greek
+			AND = {
+				culture = greek
+				empire = { title = e_italy }
+			}
 		}
 		owner = {
 			OR = {
@@ -795,7 +1299,10 @@ province_event = {
 			culture = southern_italian
 			culture = central_italian
 			culture = langobardisch
-			culture = greek
+			AND = {
+				culture = greek
+				empire = { title = e_italy }
+			}
 		}
 		owner = {
 			OR = {
@@ -888,7 +1395,10 @@ character_event = {
 				culture = southern_italian
 				culture = central_italian
 				culture = langobardisch
-				culture = greek
+				AND = {
+					culture = greek
+					empire = { title = e_italy }
+				}
 			}
 			religion = ROOT
 		}
@@ -1008,7 +1518,10 @@ character_event = {
 				culture = southern_italian
 				culture = central_italian
 				culture = langobardisch
-				culture = greek
+				AND = {
+					culture = greek
+					empire = { title = e_italy }
+				}
 			}
 			religion = ROOT
 		}

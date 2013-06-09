@@ -82,6 +82,7 @@ narrative_event = {
 				revoke_law = themes_1
 			}
 			e_hre = {
+				limit = { has_holder = yes }
 				any_direct_de_jure_vassal_title = {
 					de_jure_liege = e_germany
 				}
@@ -90,6 +91,20 @@ narrative_event = {
 						grant_title = PREV
 						copy_title_laws = e_hre
 						copy_title_history = e_hre
+					}
+				}
+				destroy_landed_title = THIS
+			}
+			e_hre_french = {
+				limit = { has_holder = yes }
+				any_direct_de_jure_vassal_title = {
+					de_jure_liege = e_france
+				}
+				holder_scope = {
+					e_france = {
+						grant_title = PREV
+						copy_title_laws = e_hre_french
+						copy_title_history = e_hre_french
 					}
 				}
 				destroy_landed_title = THIS

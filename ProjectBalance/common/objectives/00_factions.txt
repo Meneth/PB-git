@@ -283,7 +283,17 @@ faction_succ_seniority = {
 		modifier = {
 			factor = 0
 			FROM = {
-				primary_title = { is_primary_type_title = no } # Mercs, the Pope, Holy Orders, etc
+				primary_title = { is_primary_type_title = yes } # Mercs, the Pope, Holy Orders, etc
+			}
+		}
+		modifier = {
+			factor = 0
+			FROM = {
+				has_opinion_modifier = {
+					who = LIEGE
+					modifier = opinion_coerced_into_leaving_faction
+				}
+				opinion = { who = LIEGE value = -25 }
 			}
 		}
 	}
@@ -565,7 +575,15 @@ faction_succ_seniority = {
 		}
 		modifier = {
 			factor = 0
-			primary_title = { is_primary_type_title = no } # Mercs, the Pope, Holy Orders, etc
+			primary_title = { is_primary_type_title = yes } # Mercs, the Pope, Holy Orders, etc
+		}
+		modifier = {
+			factor = 0
+			has_opinion_modifier = {
+				who = LIEGE
+				modifier = opinion_coerced_into_leaving_faction
+			}
+			opinion = { who = LIEGE value = -25 }
 		}
 	}
 	
@@ -850,7 +868,17 @@ faction_succ_primogeniture = {
 		modifier = {
 			factor = 0
 			FROM = {
-				primary_title = { is_primary_type_title = no } # Mercs, the Pope, Holy Orders, etc
+				primary_title = { is_primary_type_title = yes } # Mercs, the Pope, Holy Orders, etc
+			}
+		}
+		modifier = {
+			factor = 0
+			FROM = {
+				has_opinion_modifier = {
+					who = LIEGE
+					modifier = opinion_coerced_into_leaving_faction
+				}
+				opinion = { who = LIEGE value = -25 }
 			}
 		}
 	}
@@ -1132,7 +1160,15 @@ faction_succ_primogeniture = {
 		}
 		modifier = {
 			factor = 0
-			primary_title = { is_primary_type_title = no } # Mercs, the Pope, Holy Orders, etc
+			primary_title = { is_primary_type_title = yes } # Mercs, the Pope, Holy Orders, etc
+		}
+		modifier = {
+			factor = 0
+			has_opinion_modifier = {
+				who = LIEGE
+				modifier = opinion_coerced_into_leaving_faction
+			}
+			opinion = { who = LIEGE value = -25 }
 		}
 	}
 	
@@ -1473,7 +1509,17 @@ faction_succ_gavelkind = {
 		modifier = {
 			factor = 0
 			FROM = {
-				primary_title = { is_primary_type_title = no } # Mercs, the Pope, Holy Orders, etc
+				primary_title = { is_primary_type_title = yes } # Mercs, the Pope, Holy Orders, etc
+			}
+		}
+		modifier = {
+			factor = 0
+			FROM = {
+				has_opinion_modifier = {
+					who = LIEGE
+					modifier = opinion_coerced_into_leaving_faction
+				}
+				opinion = { who = LIEGE value = -25 }
 			}
 		}
 	}
@@ -1709,7 +1755,15 @@ faction_succ_gavelkind = {
 		}
 		modifier = {
 			factor = 0
-			primary_title = { is_primary_type_title = no } # Mercs, the Pope, Holy Orders, etc
+			primary_title = { is_primary_type_title = yes } # Mercs, the Pope, Holy Orders, etc
+		}
+		modifier = {
+			factor = 0
+			has_opinion_modifier = {
+				who = LIEGE
+				modifier = opinion_coerced_into_leaving_faction
+			}
+			opinion = { who = LIEGE value = -25 }
 		}
 	}
 	
@@ -2074,7 +2128,17 @@ faction_succ_feudal_elective = {
 		modifier = {
 			factor = 0
 			FROM = {
-				primary_title = { is_primary_type_title = no } # Mercs, the Pope, Holy Orders, etc
+				primary_title = { is_primary_type_title = yes } # Mercs, the Pope, Holy Orders, etc
+			}
+		}
+		modifier = {
+			factor = 0
+			FROM = {
+				has_opinion_modifier = {
+					who = LIEGE
+					modifier = opinion_coerced_into_leaving_faction
+				}
+				opinion = { who = LIEGE value = -25 }
 			}
 		}
 	}
@@ -2316,7 +2380,15 @@ faction_succ_feudal_elective = {
 		}
 		modifier = {
 			factor = 0
-			primary_title = { is_primary_type_title = no } # Mercs, the Pope, Holy Orders, etc
+			primary_title = { is_primary_type_title = yes } # Mercs, the Pope, Holy Orders, etc
+		}
+		modifier = {
+			factor = 0
+			has_opinion_modifier = {
+				who = LIEGE
+				modifier = opinion_coerced_into_leaving_faction
+			}
+			opinion = { who = LIEGE value = -25 }
 		}
 	}
 	
@@ -2729,7 +2801,17 @@ faction_independence = {
 		modifier = {
 			factor = 0
 			FROM = {
-				primary_title = { is_primary_type_title = no } # Mercs, the Pope, Holy Orders, etc
+				primary_title = { is_primary_type_title = yes } # Mercs, the Pope, Holy Orders, etc
+			}
+		}
+		modifier = {
+			factor = 0
+			FROM = {
+				has_opinion_modifier = {
+					who = LIEGE
+					modifier = opinion_coerced_into_leaving_faction
+				}
+				opinion = { who = LIEGE value = -25 }
 			}
 		}
 	}
@@ -3151,7 +3233,15 @@ faction_independence = {
 		}
 		modifier = {
 			factor = 0
-			primary_title = { is_primary_type_title = no } # Mercs, the Pope, Holy Orders, etc
+			primary_title = { is_primary_type_title = yes } # Mercs, the Pope, Holy Orders, etc
+		}
+		modifier = {
+			factor = 0
+			has_opinion_modifier = {
+				who = LIEGE
+				modifier = opinion_coerced_into_leaving_faction
+			}
+			opinion = { who = LIEGE value = -25 }
 		}
 	}
 	
@@ -3732,7 +3822,17 @@ faction_claimant = {
 		modifier = {
 			factor = 0
 			FROM = {
-				primary_title = { is_primary_type_title = no } # Mercs, the Pope, Holy Orders, etc
+				primary_title = { is_primary_type_title = yes } # Mercs, the Pope, Holy Orders, etc
+			}
+		}
+		modifier = {
+			factor = 0
+			FROM = {
+				has_opinion_modifier = {
+					who = LIEGE
+					modifier = opinion_coerced_into_leaving_faction
+				}
+				opinion = { who = LIEGE value = -25 }
 			}
 		}
 	}
@@ -4208,7 +4308,15 @@ faction_claimant = {
 		}
 		modifier = {
 			factor = 0
-			primary_title = { is_primary_type_title = no } # Mercs, the Pope, Holy Orders, etc
+			primary_title = { is_primary_type_title = yes } # Mercs, the Pope, Holy Orders, etc
+		}
+		modifier = {
+			factor = 0
+			has_opinion_modifier = {
+				who = LIEGE
+				modifier = opinion_coerced_into_leaving_faction
+			}
+			opinion = { who = LIEGE value = -25 }
 		}
 	}
 	

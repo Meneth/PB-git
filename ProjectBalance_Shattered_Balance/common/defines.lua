@@ -587,7 +587,7 @@ NMilitary = {
 	SIEGE_MORALE_LOSS = 0.2,						-- Monthly morale loss in a siege
 	DAYS_BETWEEN_COMBAT_EVENTS = 5,				-- Combat events will happen every this many days
 	BATTLE_PRESTIGE_MULTIPLIER = 10,				-- Total prestige gained in the battle will be this * ( losers losses ) / 1000
-	BATTLE_TECH_MULTIPLIER = 0.5,					-- Military tech gain from battles multiplier.
+	BATTLE_TECH_MULTIPLIER = 0.25,					-- Military tech gain from battles multiplier.
 	MAINLEADER_PRESTIGE_PART = 0.35,				-- The % of the total prestige gained in the battle that the center flank leader will get
 	FLANKLEADER_PRESTIGE_PART = 0.125,				-- The % of the total prestige gained in the battle that each other flank leader will get
 	BATTLE_UNIT_OWNER_PRESTIGE_MULT = 0.5,			-- The % of the total prestige gained in the battle that will be divided among the participating unit owners
@@ -849,7 +849,7 @@ NAI =
 	MAX_KING_TITLES_TO_CREATE = 0,							-- AI will not seek to create/usurp more King-level titles than this (0 for unlimited)
 	MAX_EMPIRE_TITLES_TO_CREATE = 0,						-- AI will not seek to create/usurp more Empire-level titles than this (0 for unlimited)
 	AI_EMPEROR_CREATES_KINGDOMS = 0,						-- If set to 1, AI Emperors will create King-level titles
-	AI_ASSAULT_RATIO = 10,									-- AI will launch assaults at this ratio of attackers to defenders
+	AI_ASSAULT_RATIO = 12,									-- AI will launch assaults at this ratio of attackers to defenders
 	HARD_DIFF_AI_ATTRITION = 0.5,							-- AI attrition multiplier at Hard difficulty
 	V_HARD_DIFF_AI_ATTRITION = 0.25							-- AI attrition multiplier at Very Hard difficulty
 },

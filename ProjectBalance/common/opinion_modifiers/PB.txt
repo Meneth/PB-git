@@ -5,3 +5,11 @@ opinion_increased_crown_levies = {
 opinion_protected_inheritance = {
 	opinion = -10
 }
+
+opinion_known_virtue = {
+	opinion = 10
+}
+
+opinion_fame_glory = {
+	opinion = 5
+}
