@@ -283,7 +283,7 @@ faction_succ_seniority = {
 		modifier = {
 			factor = 0
 			FROM = {
-				primary_title = { is_primary_type_title = no } # Mercs, the Pope, Holy Orders, etc
+				primary_title = { is_primary_type_title = yes } # Mercs, the Pope, Holy Orders, etc
 			}
 		}
 	}
@@ -565,7 +565,7 @@ faction_succ_seniority = {
 		}
 		modifier = {
 			factor = 0
-			primary_title = { is_primary_type_title = no } # Mercs, the Pope, Holy Orders, etc
+			primary_title = { is_primary_type_title = yes } # Mercs, the Pope, Holy Orders, etc
 		}
 	}
 	
@@ -850,7 +850,7 @@ faction_succ_primogeniture = {
 		modifier = {
 			factor = 0
 			FROM = {
-				primary_title = { is_primary_type_title = no } # Mercs, the Pope, Holy Orders, etc
+				primary_title = { is_primary_type_title = yes } # Mercs, the Pope, Holy Orders, etc
 			}
 		}
 	}
@@ -1132,7 +1132,7 @@ faction_succ_primogeniture = {
 		}
 		modifier = {
 			factor = 0
-			primary_title = { is_primary_type_title = no } # Mercs, the Pope, Holy Orders, etc
+			primary_title = { is_primary_type_title = yes } # Mercs, the Pope, Holy Orders, etc
 		}
 	}
 	
@@ -1473,7 +1473,7 @@ faction_succ_gavelkind = {
 		modifier = {
 			factor = 0
 			FROM = {
-				primary_title = { is_primary_type_title = no } # Mercs, the Pope, Holy Orders, etc
+				primary_title = { is_primary_type_title = yes } # Mercs, the Pope, Holy Orders, etc
 			}
 		}
 	}
@@ -1709,7 +1709,7 @@ faction_succ_gavelkind = {
 		}
 		modifier = {
 			factor = 0
-			primary_title = { is_primary_type_title = no } # Mercs, the Pope, Holy Orders, etc
+			primary_title = { is_primary_type_title = yes } # Mercs, the Pope, Holy Orders, etc
 		}
 	}
 	
@@ -2074,7 +2074,7 @@ faction_succ_feudal_elective = {
 		modifier = {
 			factor = 0
 			FROM = {
-				primary_title = { is_primary_type_title = no } # Mercs, the Pope, Holy Orders, etc
+				primary_title = { is_primary_type_title = yes } # Mercs, the Pope, Holy Orders, etc
 			}
 		}
 	}
@@ -2316,7 +2316,7 @@ faction_succ_feudal_elective = {
 		}
 		modifier = {
 			factor = 0
-			primary_title = { is_primary_type_title = no } # Mercs, the Pope, Holy Orders, etc
+			primary_title = { is_primary_type_title = yes } # Mercs, the Pope, Holy Orders, etc
 		}
 	}
 	
@@ -2729,7 +2729,7 @@ faction_independence = {
 		modifier = {
 			factor = 0
 			FROM = {
-				primary_title = { is_primary_type_title = no } # Mercs, the Pope, Holy Orders, etc
+				primary_title = { is_primary_type_title = yes } # Mercs, the Pope, Holy Orders, etc
 			}
 		}
 	}
@@ -3151,7 +3151,7 @@ faction_independence = {
 		}
 		modifier = {
 			factor = 0
-			primary_title = { is_primary_type_title = no } # Mercs, the Pope, Holy Orders, etc
+			primary_title = { is_primary_type_title = yes } # Mercs, the Pope, Holy Orders, etc
 		}
 	}
 	
@@ -3732,7 +3732,7 @@ faction_claimant = {
 		modifier = {
 			factor = 0
 			FROM = {
-				primary_title = { is_primary_type_title = no } # Mercs, the Pope, Holy Orders, etc
+				primary_title = { is_primary_type_title = yes } # Mercs, the Pope, Holy Orders, etc
 			}
 		}
 	}
@@ -4208,7 +4208,7 @@ faction_claimant = {
 		}
 		modifier = {
 			factor = 0
-			primary_title = { is_primary_type_title = no } # Mercs, the Pope, Holy Orders, etc
+			primary_title = { is_primary_type_title = yes } # Mercs, the Pope, Holy Orders, etc
 		}
 	}
 	
