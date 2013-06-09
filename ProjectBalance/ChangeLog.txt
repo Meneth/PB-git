@@ -18,6 +18,7 @@
 	Fixed fabricating claims not being possible in some cases where it should, as well as some CBs not being usable
 	Fixed factions never being formed
 	Fixed "character died gluttonous_death"
+	Fixed women being unable to convert provinces
 
 3.2.14
 	The Pope will no longer ask his liege to implement Papal Investiture
