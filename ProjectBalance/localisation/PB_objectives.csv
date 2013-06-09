@@ -25,8 +25,10 @@ obj_amass_fortune_title;Amass Fortune;;;;;;;;;;;;;x
 obj_amass_fortune_desc;[This.GetTitledFirstName] is already well-off, but seeks a true fortune.;;;;;;;;;;;;;x
 obj_amass_hoard_title;Amass a Hoard of Wealth;;;;;;;;;;;;;x
 obj_amass_hoard_desc;[This.GetTitledFirstName] wants to swim in [This.GetHerHis] vault of gold!;;;;;;;;;;;;;x
+obj_publicly_pious_title;Be Seen Publicly As Pious;;;;;;;;;;;;;x
 obj_publicly_pious_desc;[This.GetTitledFirstName] wants to be known to all as a pious man;;;;;;;;;;;;;x
 obj_known_for_virtue_desc;[This.GetTitledFirstName] seeks to become known for [This.GetObjectPronoun] virtues.;;;;;;;;;;;;;x
+obj_become_distinguished_title;Become Distinguished Among the Nobility;;;;;;;;;;;;;x
 obj_become_distinguished_desc;[This.GetTitledFirstName] seeks to become distinguished among the nobility;;;;;;;;;;;;;x
 obj_seek_fame_glory_title;Seek Fame and Glory;;;;;;;;;;;;;x
 obj_seek_fame_glory_desc;While already notable, [This.GetTitledFirstName] thinks [This.GetObjectPronoun] deserves true fame and glory for [This.GetHerHis] deeds.;;;;;;;;;;;;;x
