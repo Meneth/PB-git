@@ -12,6 +12,7 @@
 	Fixed fabricating claims not being possible in some cases where it should, as well as some CBs not being usable
 	The Persian Empire is no longer named as if it were a kingdom
 	Turkish emperors are now called Sultan rather than Padishah (historical: Ottoman and Seljuk empires)
+	Only dukes and independent counts can take the Become King ambition
 
 3.2.14
 	The Pope will no longer ask his liege to implement Papal Investiture
