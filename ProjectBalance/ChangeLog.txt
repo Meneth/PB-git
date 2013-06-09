@@ -13,6 +13,7 @@
 	The Persian Empire is no longer named as if it were a kingdom
 	Turkish emperors are now called Sultan rather than Padishah (historical: Ottoman and Seljuk empires)
 	Only dukes and independent counts can take the Become King ambition
+	Integrated the split Wealth, Piety, and Prestige ambitions from Additional Objectives 2.0, as their implementation is superior to the one currently in PB
 
 3.2.14
 	The Pope will no longer ask his liege to implement Papal Investiture
