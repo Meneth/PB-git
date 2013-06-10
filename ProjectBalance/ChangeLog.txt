@@ -1,5 +1,6 @@
 3.2.16
 	Fixed it being possible to skip the Intact Theme System stage
+	The Norman Company is no longer called "the the Norman Company"
 	(PB+SWMH) Fixed the Norman Company having no soldiers
 
 3.2.15
