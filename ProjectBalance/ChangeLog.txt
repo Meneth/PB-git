@@ -2,6 +2,7 @@
 	Fixed it being possible to skip the Intact Theme System stage
 	The Norman Company is no longer called "the the Norman Company"
 	Disabled the vanilla loan event
+	Added some Norse-Gael dynasty names. Credit goes to cybrxkhan
 	(PB+SWMH) Fixed the Norman Company having no soldiers
 	(PB+SWMH) Fixed the Fatimids having lower decadence than they should
 	(PB+SWMH) Fixed some succession law restrictions not properly applying
