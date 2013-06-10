@@ -2,6 +2,7 @@
 	Fixed it being possible to skip the Intact Theme System stage
 	The Norman Company is no longer called "the the Norman Company"
 	(PB+SWMH) Fixed the Norman Company having no soldiers
+	(PB+SWMH) Fixed the Fatimids having lower decadence than they should
 
 3.2.15
 	Now works with SWMH 2.751
