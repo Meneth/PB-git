@@ -1,3 +1,6 @@
+3.2.16
+	Fixed it being possible to skip the Intact Theme System stage
+
 3.2.15
 	Now works with SWMH 2.751
 	(PB+SWMH) Fixed duplicate characters issues

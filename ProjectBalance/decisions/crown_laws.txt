@@ -1458,6 +1458,7 @@ de_jure_laws = {
 			title = e_byzantium
 		}
 		allow = {
+			has_law = themes_1
 			holder_scope = {
 				OR = {
 					trait = diligent
