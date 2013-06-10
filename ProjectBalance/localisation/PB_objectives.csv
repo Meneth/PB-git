@@ -27,6 +27,7 @@ obj_amass_hoard_title;Amass a Hoard of Wealth;;;;;;;;;;;;;x
 obj_amass_hoard_desc;[This.GetTitledFirstName] wants to swim in [This.GetHerHis] vault of gold!;;;;;;;;;;;;;x
 obj_publicly_pious_title;Be Seen Publicly As Pious;;;;;;;;;;;;;x
 obj_publicly_pious_desc;[This.GetTitledFirstName] wants to be known to all as a pious man;;;;;;;;;;;;;x
+obj_known_for_virtue_title;Become Known for Virtue;;;;;;;;;;;;;x
 obj_known_for_virtue_desc;[This.GetTitledFirstName] seeks to become known for [This.GetObjectPronoun] virtues.;;;;;;;;;;;;;x
 obj_become_distinguished_title;Become Distinguished Among the Nobility;;;;;;;;;;;;;x
 obj_become_distinguished_desc;[This.GetTitledFirstName] seeks to become distinguished among the nobility;;;;;;;;;;;;;x
