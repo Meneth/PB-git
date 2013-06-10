@@ -3,6 +3,7 @@
 	The Norman Company is no longer called "the the Norman Company"
 	(PB+SWMH) Fixed the Norman Company having no soldiers
 	(PB+SWMH) Fixed the Fatimids having lower decadence than they should
+	(PB+SWMH) Fixed some succession law restrictions not properly applying
 
 3.2.15
 	Now works with SWMH 2.751
