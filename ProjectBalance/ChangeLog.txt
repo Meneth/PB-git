@@ -5,6 +5,7 @@
 	Added some Norse-Gael dynasty names. Credit goes to cybrxkhan
 	Ensured all faction members get imprisoned if the faction war is lost
 	Ensured that all faction event forces get disbanded when the war concludes
+	Ensured that Ultimogeniture is not available to unreformed Pagans with the exception of Mongols
 	(PB+SWMH) Fixed the Norman Company having no soldiers
 	(PB+SWMH) Fixed the Fatimids having lower decadence than they should
 	(PB+SWMH) Fixed some succession law restrictions not properly applying
