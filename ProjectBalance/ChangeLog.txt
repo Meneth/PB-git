@@ -6,6 +6,9 @@
 	Reduced max opinion from prestige and piety to 10
 	The Saoshyant nicname is now on the list of nicknames that lets you enacy absolute cognatic succession
 	The Scandinavian kingdoms now have Norse Pagan CoAs defined rather than using random ones
+	Winning the War for the Balkans now gives prestige
+	Moved the starting Seljuk army to Amida
+	The AI is an idiot that will use up half his army assaulting forts, so now it'll only assault if it outnumbers the defender 20-1
 	(Shattered Balance) Fixed it crashing on campaign start
 
 3.2.16

@@ -849,7 +849,7 @@ NAI =
 	MAX_KING_TITLES_TO_CREATE = 0,							-- AI will not seek to create/usurp more King-level titles than this (0 for unlimited)
 	MAX_EMPIRE_TITLES_TO_CREATE = 0,						-- AI will not seek to create/usurp more Empire-level titles than this (0 for unlimited)
 	AI_EMPEROR_CREATES_KINGDOMS = 0,						-- If set to 1, AI Emperors will create King-level titles
-	AI_ASSAULT_RATIO = 12,									-- AI will launch assaults at this ratio of attackers to defenders
+	AI_ASSAULT_RATIO = 20,									-- AI will launch assaults at this ratio of attackers to defenders
 	HARD_DIFF_AI_ATTRITION = 0.5,							-- AI attrition multiplier at Hard difficulty
 	V_HARD_DIFF_AI_ATTRITION = 0.25							-- AI attrition multiplier at Very Hard difficulty
 },
