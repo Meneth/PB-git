@@ -1,5 +1,7 @@
 3.2.17
 	Unreformed West African Pagans now get defensive attrition
+	Almost all Lifestyle traits now give 2 stat points
+	Reduced Diplomacy gain from many traits
 
 3.2.16
 	Now compatible with CKII 1.101 (non-beta version)
