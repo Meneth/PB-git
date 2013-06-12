@@ -4,6 +4,7 @@
 	Reduced Diplomacy gain from many traits
 	Having held a feast no longer gives a bonus to Diplomacy, but gives a slightly larger opinion bonus
 	Reduced max opinion from prestige and piety to 10
+	(Shattered Balance) Fixed it crashing on campaign start
 
 3.2.16
 	Now compatible with CKII 1.101 (non-beta version)
