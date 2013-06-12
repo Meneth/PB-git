@@ -2,6 +2,7 @@
 	Unreformed West African Pagans now get defensive attrition
 	Almost all Lifestyle traits now give 2 stat points
 	Reduced Diplomacy gain from many traits
+	Having held a feast no longer gives a bonus to Diplomacy, but gives a slightly larger opinion bonus
 
 3.2.16
 	Now compatible with CKII 1.101 (non-beta version)
