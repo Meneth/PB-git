@@ -672,6 +672,7 @@ gender_laws = {
 						has_nickname = nick_the_bold
 						has_nickname = nick_the_magnificent
 						has_nickname = nick_the_great
+						has_nickname = nick_the_saoshyant
 					}
 				}
 			}
