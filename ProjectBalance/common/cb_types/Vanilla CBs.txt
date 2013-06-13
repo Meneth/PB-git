@@ -8116,6 +8116,19 @@ cb_faction_independence = {
 				}	
 			}
 		}
+		if = {
+			limit = {
+				FROM = { has_landed_title = e_hre }
+			}
+			FROM = {
+				any_vassal = {
+					limit = {
+						NOT = { de_jure_liege_or_above = e_hre }
+					}
+					set_defacto_liege = THIS
+				}
+			}
+		}
 	}
 
 	on_fail = {
