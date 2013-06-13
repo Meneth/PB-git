@@ -1157,3 +1157,36 @@ character_event = {
 		name = OK
 	}
 }
+
+#Retinue block
+character_event = {
+	id = meneth.216
+	
+	desc = meneth.215.desc
+	picture = GFX_evt_battle
+	border = GFX_event_normal_frame_religion
+	
+	only_rulers = yes
+	
+	trigger = {
+		lower_tier_than = duke
+		NOT = { num_of_count_titles = 2 }
+		independent = no
+		any_demesne_title = {
+			NOT = { has_building = ca_retinues }
+			NOT = { has_building = ct_retinues }
+			NOT = { has_building = tp_retinues }
+		}
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = OK
+		any_demesne_title = {
+			add_building = ca_retinues
+			add_building = ct_retinues
+			add_building = tp_retinues
+		}
+	}
+}

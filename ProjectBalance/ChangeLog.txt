@@ -12,6 +12,8 @@
 	Halved the troop loss for the besieger for most siege events
 	The HRE losing an independence war now causes all non-dejure vassals to become independent as I'm tired of terrible HRE borders
 	Ensured the Seljuk Invasion of Anatolia happens a bit quicker/more often
+	Ensured the retinue block is always in place when it should
+	Vassal single-province counts can no longer raise levies
 	(Shattered Balance) Fixed it crashing on campaign start
 	(PB+SWMH) Added an event to transfer the duchy of Benevento from the Pope to Sicily after the formation of Sicily
 	(PB+SWMH) Fixed Amalfi not having a center of trade

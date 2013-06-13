@@ -6,7 +6,11 @@ castle = {
 		trigger = { TECH_FORTIFICATIONS_CONSTRUCTION = 0 }
 		desc = retinue_disabler
 		potential = {
-			FROM = { tier = baron }
+			FROM = {
+				lower_tier_than = duke
+				NOT = { num_of_count_titles = 2 }
+				independent = no
+			}
 		}
 		build_cost = 1
 		build_time = 1
@@ -23,7 +27,11 @@ city = {
 		trigger = { TECH_FORTIFICATIONS_CONSTRUCTION = 0 }
 		desc = retinue_disabler
 		potential = {
-			FROM = { tier = baron }
+			FROM = {
+				lower_tier_than = duke
+				NOT = { num_of_count_titles = 2 }
+				independent = no
+			}
 		}
 		build_cost = 1
 		build_time = 1
@@ -40,7 +48,11 @@ temple = {
 		trigger = { TECH_FORTIFICATIONS_CONSTRUCTION = 0 }
 		desc = retinue_disabler
 		potential = {
-			FROM = { tier = baron }
+			FROM = {
+				lower_tier_than = duke
+				NOT = { num_of_count_titles = 2 }
+				independent = no
+			}
 		}
 		build_cost = 1
 		build_time = 1
