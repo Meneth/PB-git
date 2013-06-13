@@ -4,7 +4,7 @@
 	Reduced Diplomacy gain from many traits
 	Having held a feast no longer gives a bonus to Diplomacy, but gives a slightly larger opinion bonus
 	Reduced max opinion from prestige and piety to 10
-	The Saoshyant nicname is now on the list of nicknames that lets you enacy absolute cognatic succession
+	The Saoshyant nickname is now on the list of nicknames that lets you enact absolute cognatic succession
 	The Scandinavian kingdoms now have Norse Pagan CoAs defined rather than using random ones
 	Winning the War for the Balkans now gives prestige
 	Moved the starting Seljuk army to Amida
@@ -13,7 +13,7 @@
 	The HRE losing an independence war now causes all non-dejure vassals to become independent as I'm tired of terrible HRE borders
 	Ensured the Seljuk Invasion of Anatolia happens a bit quicker/more often
 	Ensured the retinue block is always in place when it should
-	Vassal single-province counts can no longer raise levies
+	Vassal single-province counts can no longer raise retinues
 	Ensured that vassals don't get given away with the formation of a Crusader State
 	Being a councilor now gives 0.25 prestige per month rather than 0.015 (spies and court chaplains get less)
 	Being a court chaplain now gives 0.1 piety and 0.15 prestige per month rather than just 0.015 piety per month

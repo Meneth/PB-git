@@ -1511,6 +1511,19 @@ letter_event = {
 				faction = faction_independence
 				set_defacto_liege = THIS
 			}
+			if = {
+				limit = {
+					has_landed_title = e_hre
+				}
+				any_vassal = {
+					limit = {
+						NOT = { 
+							any_realm_title = { de_jure_liege_or_above = e_hre }
+						}
+					}
+					set_defacto_liege = THIS
+				}
+			}
 			set_defacto_liege = THIS
 		}
 		
