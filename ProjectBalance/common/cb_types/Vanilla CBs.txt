@@ -8123,7 +8123,9 @@ cb_faction_independence = {
 			FROM = {
 				any_vassal = {
 					limit = {
-						NOT = { de_jure_liege_or_above = e_hre }
+						NOT = { 
+							any_realm_title = { de_jure_liege_or_above = e_hre }
+						}
 					}
 					set_defacto_liege = THIS
 				}
