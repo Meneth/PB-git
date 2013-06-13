@@ -2383,4 +2383,41 @@ narrative_event = {
 	}
 }
 
-#Note: Everything up to and including meneth.435 is taken
+#Beneveto returned to Sicily
+character_event = {
+	id = meneth.436
+	desc = meneth.436.desc
+	picture = GFX_evt_battle
+	border = GFX_event_normal_frame_religion
+	
+	trigger = {
+		has_global_flag = SWMH
+		NOT = { has_global_flag = benevento_returned }
+		religion = catholic
+		rightful_religious_head_scope = {
+			any_vassal = {
+				has_landed_title = d_benevento
+			}
+		}
+		has_landed_title = k_sicily
+		OR = {
+			culture = norman
+			culture = sicilian
+		}
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = OK
+		b_ariano = { province_capital = yes }
+		c_benevento = { grant_title = ROOT }
+		d_benevento = { grant_title = ROOT }
+		rightful_religious_head_scope = {
+			b_apice = {
+				holder_scope = { set_defacto_liege = PREVPREV }
+			}
+		}
+		set_global_flag = benevento_returned
+	}
+}

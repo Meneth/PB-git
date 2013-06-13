@@ -10,6 +10,7 @@
 	Moved the starting Seljuk army to Amida
 	The AI is an idiot that will use up half his army assaulting forts, so now it'll only assault if it outnumbers the defender 20-1
 	(Shattered Balance) Fixed it crashing on campaign start
+	(PB+SWMH) Added an event to transfer the duchy of Benevento from the Pope to Sicily after the formation of Sicily
 
 3.2.16
 	Now compatible with CKII 1.101 (non-beta version)
