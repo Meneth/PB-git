@@ -335,10 +335,10 @@ decisions = {
 	}
 	release_prisoners = {
 		potential = {
+			ai = no
 			any_courtier = {
 				prisoner = yes
 			}
-			ai = no
 		}
 		effect = {
 			any_courtier = {
@@ -376,10 +376,10 @@ decisions = {
 	}
 	execute_prisoners = {
 		potential = {
+			ai = no
 			any_courtier = {
 				prisoner = yes
 			}
-			ai = no
 		}
 		effect = {
 			if = {

@@ -2671,6 +2671,16 @@ d_hashshashin_modifier = {
 	horse_archers = 150
 }
 
+d_norman_company_modifier = {
+	levy_size = 2
+	archers = 300
+	pikemen = 100
+	light_infantry = 150
+	heavy_infantry = 200
+	light_cavalry = 150
+	knights = 100
+}
+
 d_jomsvikings_modifier = {
 	levy_size = 6
 	heavy_infantry = 1000

@@ -17,7 +17,9 @@ succession_laws = {
 			OR = {
 				is_landless_type_title = no
 				is_tribal_type_title = yes
+				temporary = yes
 			}
+			rebel = no
 			OR = {
 				AND = {
 					tier = baron
@@ -66,13 +68,15 @@ succession_laws = {
 	
 		potential = {
 			holder_scope = {
-				NOT = { 
-					AND = {
-						religion_group = muslim
-						is_patrician = no
-					}
-				}
+				NOT = { religion_group = muslim }
 				is_merchant_republic = no
+				
+				OR = {
+					NOT = { religion_group = pagan_group }
+					is_reformed_religion = yes
+					religion = hellenic_pagan
+					is_patrician = yes
+				}
 				
 				OR = {
 					is_republic = no
@@ -166,6 +170,12 @@ succession_laws = {
 		potential = {
 			holder_scope = {
 				NOT = { religion_group = muslim }
+				OR = {
+					NOT = { religion_group = pagan_group }
+					is_reformed_religion = yes
+					religion = hellenic_pagan
+				}
+				
 				is_merchant_republic = no
 				is_patrician = no
 			}
@@ -239,6 +249,12 @@ succession_laws = {
 				NOT = { religion_group = muslim }
 				is_merchant_republic = no
 				is_patrician = no
+				
+				OR = {
+					NOT = { religion_group = pagan_group }
+					is_reformed_religion = yes
+					religion = hellenic_pagan
+				}
 			}
 			OR = {
 				is_landless_type_title = no
@@ -306,6 +322,10 @@ succession_laws = {
 				NOT = { religion_group = muslim }
 				is_merchant_republic = no
 				is_patrician = no
+				OR = {
+					NOT = { religion_group = pagan_group }
+					is_reformed_religion = yes
+				}
 			}
 			OR = {
 				is_landless_type_title = no
@@ -377,7 +397,19 @@ succession_laws = {
 		dynasty_opinion = -5
 		potential = {
 			holder_scope = {
-#				religion_group = pagan_group
+				OR = {
+					culture = mongol
+					AND = {
+						NOT = { religion = norse_pagan }
+						NOT = { religion = tengri_pagan }
+						NOT = { religion = baltic_pagan }
+						NOT = { religion = finnish_pagan }
+						NOT = { religion = aztec }
+						NOT = { religion = pagan }
+						NOT = { religion = slavic_pagan }
+					}
+				}
+				
 				NOT = { religion_group = muslim }
 				is_merchant_republic = no
 				is_patrician = no
@@ -569,6 +601,8 @@ gender_laws = {
 		potential = {
 			holder_scope = { 
 				NOT = { religion_group = muslim }
+				NOT = { religion = tengri_pagan_reformed }
+				NOT = { religion = tengri_pagan }
 				has_horde_culture = no
 				is_merchant_republic = no
 				is_patrician = no
@@ -612,6 +646,8 @@ gender_laws = {
 		potential = {
 			holder_scope = { 
 				NOT = { religion_group = muslim }
+				NOT = { religion = tengri_pagan_reformed }
+				NOT = { religion = tengri_pagan }
 				has_horde_culture = no
 				is_merchant_republic = no
 				is_patrician = no

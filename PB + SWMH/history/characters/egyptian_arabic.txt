@@ -933,10 +933,9 @@
 	#add_trait="diligent"
 	#add_trait="gregarious"
 	father=3094
-        mother=1000144667
 	1029.7.5={
 		birth="1029.7.5"
-		decadence = 15
+		decadence = 50
 		wealth = -1000
 	}
 	1094.1.10={

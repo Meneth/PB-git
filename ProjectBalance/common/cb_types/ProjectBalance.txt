@@ -189,6 +189,13 @@ remove_king_peace = {
 			limit = { NOT = { character = ROOT } }
 			hidden_tooltip = { participation_scaled_prestige = 100 }
 		}
+		hidden_tooltip = {
+			any_attacker = {
+				limit = { liege = { character = FROM } }
+				disband_event_forces = faction_revolters
+			}
+		}
+		FROM = { hidden_tooltip = { disband_event_forces = faction_loyalists } }
 	}
 
 	on_success_title = {
@@ -212,6 +219,13 @@ remove_king_peace = {
 				cancel_objective = faction_remove_king_peace
 			}
 		}
+		hidden_tooltip = {
+			any_attacker = {
+				limit = { liege = { character = FROM } }
+				disband_event_forces = faction_revolters
+			}
+		}
+		FROM = { hidden_tooltip = { disband_event_forces = faction_loyalists } }
 	}
 
 	on_reverse_demand = {
@@ -232,6 +246,14 @@ remove_king_peace = {
 			limit = { NOT = { character = FROM } }
 			hidden_tooltip = { participation_scaled_prestige = 100 }
 		}
+		hidden_tooltip = {
+			any_attacker = {
+				limit = { liege = { character = FROM } }
+				prisoner = FROM
+				disband_event_forces = faction_revolters
+			}
+		}
+		FROM = { hidden_tooltip = { disband_event_forces = faction_loyalists } }
 	}
 
 	attacker_ai_victory_worth = {
@@ -287,6 +309,13 @@ remove_emperor_peace = {
 			limit = { NOT = { character = ROOT } }
 			hidden_tooltip = { participation_scaled_prestige = 100 }
 		}
+		hidden_tooltip = {
+			any_attacker = {
+				limit = { liege = { character = FROM } }
+				disband_event_forces = faction_revolters
+			}
+		}
+		FROM = { hidden_tooltip = { disband_event_forces = faction_loyalists } }
 	}
 
 	on_success_title = {
@@ -310,6 +339,13 @@ remove_emperor_peace = {
 				cancel_objective = faction_remove_emperor_peace
 			}
 		}
+		hidden_tooltip = {
+			any_attacker = {
+				limit = { liege = { character = FROM } }
+				disband_event_forces = faction_revolters
+			}
+		}
+		FROM = { hidden_tooltip = { disband_event_forces = faction_loyalists } }
 	}
 
 	on_reverse_demand = {
@@ -330,6 +366,14 @@ remove_emperor_peace = {
 			limit = { NOT = { character = FROM } }
 			hidden_tooltip = { participation_scaled_prestige = 100 }
 		}
+		hidden_tooltip = {
+			any_attacker = {
+				limit = { liege = { character = FROM } }
+				prisoner = FROM
+				disband_event_forces = faction_revolters
+			}
+		}
+		FROM = { hidden_tooltip = { disband_event_forces = faction_loyalists } }
 	}
 
 	attacker_ai_victory_worth = {
@@ -385,6 +429,13 @@ remove_revokation = {
 			limit = { NOT = { character = ROOT } }
 			hidden_tooltip = { participation_scaled_prestige = 100 }
 		}
+		hidden_tooltip = {
+			any_attacker = {
+				limit = { liege = { character = FROM } }
+				disband_event_forces = faction_revolters
+			}
+		}
+		FROM = { hidden_tooltip = { disband_event_forces = faction_loyalists } }
 	}
 
 	on_success_title = {
@@ -408,6 +459,13 @@ remove_revokation = {
 				cancel_objective = faction_remove_revokation
 			}
 		}
+		hidden_tooltip = {
+			any_attacker = {
+				limit = { liege = { character = FROM } }
+				disband_event_forces = faction_revolters
+			}
+		}
+		FROM = { hidden_tooltip = { disband_event_forces = faction_loyalists } }
 	}
 
 	on_reverse_demand = {
@@ -428,6 +486,14 @@ remove_revokation = {
 			limit = { NOT = { character = FROM } }
 			hidden_tooltip = { participation_scaled_prestige = 100 }
 		}
+		hidden_tooltip = {
+			any_attacker = {
+				limit = { liege = { character = FROM } }
+				prisoner = FROM
+				disband_event_forces = faction_revolters
+			}
+		}
+		FROM = { hidden_tooltip = { disband_event_forces = faction_loyalists } }
 	}
 
 	attacker_ai_victory_worth = {
@@ -483,6 +549,13 @@ remove_inheritance = {
 			limit = { NOT = { character = ROOT } }
 			hidden_tooltip = { participation_scaled_prestige = 100 }
 		}
+		hidden_tooltip = {
+			any_attacker = {
+				limit = { liege = { character = FROM } }
+				disband_event_forces = faction_revolters
+			}
+		}
+		FROM = { hidden_tooltip = { disband_event_forces = faction_loyalists } }
 	}
 
 	on_success_title = {
@@ -506,6 +579,13 @@ remove_inheritance = {
 				cancel_objective = faction_remove_inheritance
 			}
 		}
+		hidden_tooltip = {
+			any_attacker = {
+				limit = { liege = { character = FROM } }
+				disband_event_forces = faction_revolters
+			}
+		}
+		FROM = { hidden_tooltip = { disband_event_forces = faction_loyalists } }
 	}
 
 	on_reverse_demand = {
@@ -526,6 +606,14 @@ remove_inheritance = {
 			limit = { NOT = { character = FROM } }
 			hidden_tooltip = { participation_scaled_prestige = 100 }
 		}
+		hidden_tooltip = {
+			any_attacker = {
+				limit = { liege = { character = FROM } }
+				prisoner = FROM
+				disband_event_forces = faction_revolters
+			}
+		}
+		FROM = { hidden_tooltip = { disband_event_forces = faction_loyalists } }
 	}
 
 	attacker_ai_victory_worth = {
@@ -581,6 +669,13 @@ reduce_crown_levies = {
 			limit = { NOT = { character = ROOT } }
 			hidden_tooltip = { participation_scaled_prestige = 100 }
 		}
+		hidden_tooltip = {
+			any_attacker = {
+				limit = { liege = { character = FROM } }
+				disband_event_forces = faction_revolters
+			}
+		}
+		FROM = { hidden_tooltip = { disband_event_forces = faction_loyalists } }
 	}
 
 	on_success_title = {
@@ -619,6 +714,13 @@ reduce_crown_levies = {
 				cancel_objective = faction_lower_crown_levies
 			}
 		}
+		hidden_tooltip = {
+			any_attacker = {
+				limit = { liege = { character = FROM } }
+				disband_event_forces = faction_revolters
+			}
+		}
+		FROM = { hidden_tooltip = { disband_event_forces = faction_loyalists } }
 	}
 
 	on_reverse_demand = {
@@ -639,6 +741,14 @@ reduce_crown_levies = {
 			limit = { NOT = { character = FROM } }
 			hidden_tooltip = { participation_scaled_prestige = 100 }
 		}
+		hidden_tooltip = {
+			any_attacker = {
+				limit = { liege = { character = FROM } }
+				prisoner = FROM
+				disband_event_forces = faction_revolters
+			}
+		}
+		FROM = { hidden_tooltip = { disband_event_forces = faction_loyalists } }
 	}
 
 	attacker_ai_victory_worth = {
