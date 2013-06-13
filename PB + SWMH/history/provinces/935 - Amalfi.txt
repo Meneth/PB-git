@@ -1,0 +1,36 @@
+# 936 - Amalfi
+
+# County Title
+title = c_amalfi
+
+# Settlements
+max_settlements = 3
+
+b_sorrento = castle
+b_amalfi = city
+b_positano = city
+#b_sarno = castle
+#b_nocera = temple
+
+# Misc
+culture = greek
+religion = orthodox
+terrain = hills
+
+# History
+867.1.1 = { 
+	b_amalfi = ct_wall_1
+	b_amalfi = ct_wall_2
+	b_amalfi = ct_marketplace_1
+	b_amalfi = ct_marketplace_2
+	b_amalfi = ct_marketplace_3
+	b_amalfi = ct_wall_q_1
+	b_amalfi = ct_barracks_1
+	b_amalfi = ct_training_grounds_1
+	b_amalfi = ct_shipyard_1
+	b_sorrento = ca_shipyard_1
+	b_amalfi = ct_trade_post_1
+	b_amalfi = ct_trade_post_2
+}
+1140.1.1 = { culture = neapolitan }
+1250.1.1 = { religion = catholic }
