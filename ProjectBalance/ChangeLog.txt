@@ -14,6 +14,7 @@
 	Ensured the Seljuk Invasion of Anatolia happens a bit quicker/more often
 	Ensured the retinue block is always in place when it should
 	Vassal single-province counts can no longer raise levies
+	Ensured that vassals don't get given away with the formation of a Crusader State
 	(Shattered Balance) Fixed it crashing on campaign start
 	(PB+SWMH) Added an event to transfer the duchy of Benevento from the Pope to Sicily after the formation of Sicily
 	(PB+SWMH) Fixed Amalfi not having a center of trade

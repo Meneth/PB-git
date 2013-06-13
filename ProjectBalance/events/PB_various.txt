@@ -563,6 +563,12 @@ character_event = {
 		capital_scope = {
 			religion = ROOT
 		}
+		any_vassal = {
+			limit = {
+				NOT = { de_jure_liege_or_above = ROOT }
+			}
+			set_defacto_liege = FROM
+		}
 	}
 }
 
