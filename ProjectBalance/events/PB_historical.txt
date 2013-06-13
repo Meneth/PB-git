@@ -2390,6 +2390,8 @@ character_event = {
 	picture = GFX_evt_battle
 	border = GFX_event_normal_frame_religion
 	
+	only_rulers = yes
+	
 	trigger = {
 		has_global_flag = SWMH
 		NOT = { has_global_flag = benevento_returned }
