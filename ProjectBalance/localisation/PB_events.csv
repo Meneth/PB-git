@@ -99,3 +99,7 @@ meneth.509.desc;You've got some armies you're not supposed to have. They will no
 meneth.510.desc;Do you want to make all rulers immortal? This will also kill any dyasty members that aren't rulers and make the rulers infertile, and will enable an event causing an immortal to take over if there's any independent non-immortal.;;;;;;;;;;;;;x
 meneth.510.a;Only make me immortal.;;;;;;;;;;;;;x
 meneth.511.desc;You're not immortal, so your titles are forfeit.;;;;;;;;;;;;;x
+successful_sally;Defending troops gets §G10.0%§! morale.\nDefending troops take §R2.5%§! losses.\n§GEnemy:§! Attacking troops take §R2.5%§! losses.;;;;;;;;;;;;;x
+successful_sally_attacker;Attacking troops take §R2.5%§! losses.\n§GEnemy:§! Defending troops gets §G10.0%§! morale.\nDefending troops take §R2.5%§! losses.;;;;;;;;;;;;;x
+failed_sally;Defending troops gets §R-10.0%§! morale.\nDefending troops take §R5.0%§! losses.\n§GEnemy:§! Attacking troops take §R1.25%§! losses.;;;;;;;;;;;;;x
+siege_disease;§GEnemy:§! Attacking troops take §R2.5%§! losses.;;;;;;;;;;;;;x
