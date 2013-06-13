@@ -15,6 +15,10 @@
 	Ensured the retinue block is always in place when it should
 	Vassal single-province counts can no longer raise levies
 	Ensured that vassals don't get given away with the formation of a Crusader State
+	Being a councilor now gives 0.25 prestige per month rather than 0.015 (spies and court chaplains get less)
+	Being a court chaplain now gives 0.1 piety and 0.15 prestige per month rather than just 0.015 piety per month
+	Being a spymaster now gives 0.15 prestige per month
+	Characters now get a bit of prestige upon becoming a councilor, ranging from 50 for count-level lieges to 200 for emperor-level lieges. Spymasters get half this amount. Firing and rehiring a councilor will not give the bonus again
 	(Shattered Balance) Fixed it crashing on campaign start
 	(PB+SWMH) Added an event to transfer the duchy of Benevento from the Pope to Sicily after the formation of Sicily
 	(PB+SWMH) Fixed Amalfi not having a center of trade

@@ -16,7 +16,7 @@ job_chancellor = {
 	opinion_effect = 15
 	
 	monthly_salary = 0.1
-	monthly_prestige = 0.015
+	monthly_prestige = 0.25
 	
 	allow = {
 		OR = {
@@ -36,6 +36,32 @@ job_chancellor = {
 		NOT = { trait = incapable }
 	}
 	gain_effect = {
+		if = {
+			limit = {
+				NOT = { 
+					has_opinion_modifier = {
+						who = FROM
+						modifier = opinion_fired_from_council
+					}
+				}
+			}
+			if = {
+				limit = { FROM = { tier = count } }
+				prestige = 50
+			}
+			if = {
+				limit = { FROM = { tier = duke } }
+				prestige = 100
+			}
+			if = {
+				limit = { FROM = { tier = king } }
+				prestige = 150
+			}
+			if = {
+				limit = { FROM = { tier = emperor } }
+				prestige = 200
+			}
+		}
 		if = {
 			limit = {
 				has_opinion_modifier = {
@@ -66,7 +92,7 @@ job_marshal = {
 	opinion_effect = 15
 	
 	monthly_salary = 0.1
-	monthly_prestige = 0.015
+	monthly_prestige = 0.25
 	
 	allow = {
 		is_female = no
@@ -76,6 +102,32 @@ job_marshal = {
 	}
 	
 	gain_effect = {
+		if = {
+			limit = {
+				NOT = { 
+					has_opinion_modifier = {
+						who = FROM
+						modifier = opinion_fired_from_council
+					}
+				}
+			}
+			if = {
+				limit = { FROM = { tier = count } }
+				prestige = 50
+			}
+			if = {
+				limit = { FROM = { tier = duke } }
+				prestige = 100
+			}
+			if = {
+				limit = { FROM = { tier = king } }
+				prestige = 150
+			}
+			if = {
+				limit = { FROM = { tier = emperor } }
+				prestige = 200
+			}
+		}
 		if = {
 			limit = {
 				has_opinion_modifier = {
@@ -105,7 +157,7 @@ job_treasurer = {
 	opinion_effect = 15
 	
 	monthly_salary = 0.1
-	monthly_prestige = 0.015
+	monthly_prestige = 0.25
 	
 	allow = {
 		OR = {
@@ -127,6 +179,32 @@ job_treasurer = {
 		NOT = { trait = incapable }
 	}
 	gain_effect = {
+		if = {
+			limit = {
+				NOT = { 
+					has_opinion_modifier = {
+						who = FROM
+						modifier = opinion_fired_from_council
+					}
+				}
+			}
+			if = {
+				limit = { FROM = { tier = count } }
+				prestige = 50
+			}
+			if = {
+				limit = { FROM = { tier = duke } }
+				prestige = 100
+			}
+			if = {
+				limit = { FROM = { tier = king } }
+				prestige = 150
+			}
+			if = {
+				limit = { FROM = { tier = emperor } }
+				prestige = 200
+			}
+		}
 		if = {
 			limit = {
 				has_opinion_modifier = {
@@ -156,6 +234,7 @@ job_spymaster = {
 	opinion_effect = 15
 	
 	monthly_salary = 0.1
+	monthly_prestige = 0.15
 	
 	allow = {
 		is_adult = yes
@@ -163,6 +242,32 @@ job_spymaster = {
 		NOT = { trait = incapable }
 	}
 	gain_effect = {
+		if = {
+			limit = {
+				NOT = { 
+					has_opinion_modifier = {
+						who = FROM
+						modifier = opinion_fired_from_council
+					}
+				}
+			}
+			if = {
+				limit = { FROM = { tier = count } }
+				prestige = 25
+			}
+			if = {
+				limit = { FROM = { tier = duke } }
+				prestige = 50
+			}
+			if = {
+				limit = { FROM = { tier = king } }
+				prestige = 75
+			}
+			if = {
+				limit = { FROM = { tier = emperor } }
+				prestige = 100
+			}
+		}
 		if = {
 			limit = {
 				has_opinion_modifier = {
@@ -192,7 +297,8 @@ job_spiritual = {
 	opinion_effect = 15
 	
 	monthly_salary = 0.1
-	monthly_piety = 0.015
+	monthly_piety = 0.1
+	monthly_prestige = 0.15
 	
 	allow = {
 		is_adult = yes
@@ -236,6 +342,32 @@ job_spiritual = {
 		}
 	}
 	gain_effect = {
+		if = {
+			limit = {
+				NOT = { 
+					has_opinion_modifier = {
+						who = FROM
+						modifier = opinion_fired_from_council
+					}
+				}
+			}
+			if = {
+				limit = { FROM = { tier = count } }
+				prestige = 50
+			}
+			if = {
+				limit = { FROM = { tier = duke } }
+				prestige = 100
+			}
+			if = {
+				limit = { FROM = { tier = king } }
+				prestige = 150
+			}
+			if = {
+				limit = { FROM = { tier = emperor } }
+				prestige = 200
+			}
+		}
 		if = {
 			limit = {
 				has_opinion_modifier = {
