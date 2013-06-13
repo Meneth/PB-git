@@ -81,7 +81,7 @@ character_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 24
+		months = 3
 	}
 	option = {
 		name = meneth.400.a
