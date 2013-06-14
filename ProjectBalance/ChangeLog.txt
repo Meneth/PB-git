@@ -23,6 +23,7 @@
 	(Shattered Balance) Fixed it crashing on campaign start
 	(PB+SWMH) Added an event to transfer the duchy of Benevento from the Pope to Sicily after the formation of Sicily
 	(PB+SWMH) Fixed Amalfi not having a center of trade
+	(PB+SWMH) Fixed some issues with the provinces of Djenne and Jersika
 
 3.2.16
 	Now compatible with CKII 1.101 (non-beta version)
