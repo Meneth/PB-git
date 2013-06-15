@@ -660,6 +660,7 @@ character_event = {
 		}
 		location = {
 			is_heresy_of = ROOT
+			NOT = { religion = shiite }
 		}
 		
 		can_change_religion = yes
