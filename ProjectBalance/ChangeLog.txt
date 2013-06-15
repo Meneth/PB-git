@@ -25,6 +25,7 @@
 	(PB+SWMH) Fixed Amalfi not having a center of trade
 	(PB+SWMH) Fixed a number of province issues
 	(PB+SWMH) Fixed holy wars for the Sahara sometimes being possible
+	(PB+SWMH) Fixed an issue with some courtiers having "noculture"
 
 3.2.16
 	Now compatible with CKII 1.101 (non-beta version)
