@@ -342,8 +342,8 @@ NCharacter = {
 	PAGAN_NUM_CONSORTS_MONTHLY_PRESTIGE = 0.2,		-- The monthly prestige effect for pagans for each young Concubine
 	INBRED_TRAIT_CHANCE_FACTOR = 1.5,				-- Inbreeding: Multiplier to the base chance
 	LUNATIC_TRAIT_CHANCE_FACTOR = 0.2,				-- Inbreeding: Multiplier to the base chance
-	INBRED_DIVINE_BLOOD_TRAIT_CHANCE_FACTOR = 0.2,	-- Inbreeding: Multiplier to the base chance
-	LUNATIC_DIVINE_BLOOD_TRAIT_CHANCE_FACTOR = 1.0,	-- Inbreeding: Multiplier to the base chance
+	INBRED_DIVINE_BLOOD_TRAIT_CHANCE_FACTOR = 1.5,	-- Inbreeding: Multiplier to the base chance
+	LUNATIC_DIVINE_BLOOD_TRAIT_CHANCE_FACTOR = 0.2,	-- Inbreeding: Multiplier to the base chance
 	MAX_LED_FACTIONS = 2,							-- Maximum number of led Factions
 	PORTRAIT_ADULT_MALE_AGE_THRESHOLD = 16,			-- Male child to adult age portrait switch
 	PORTRAIT_ADULT_FEMALE_AGE_THRESHOLD = 16,		-- Female child to adult age portrait switch
@@ -489,7 +489,7 @@ NReligion = {
 	AUTHORITY_FROM_RELHEAD_DIPLOMACY = 0.05,		-- Authority from each 10 diplomacy of religious head
 	AUTHORITY_FROM_RELHEAD_HOLY_SITE = 0.05,		-- Authority from religious head controlling a holy site (does not stack)
 	AUTHORITY_FROM_ORG_RELIGION = 0.2,				-- Authority from being an organized religion
-	DIVINE_BLOOD_FERTILITY_MULT = 0.25				-- Fertility multiplier in a religious close kin marriage
+	DIVINE_BLOOD_FERTILITY_MULT = 1.0				-- Fertility multiplier in a religious close kin marriage
 },
 
 NEconomy = {
