@@ -26,6 +26,7 @@
 	(PB+SWMH) Fixed a number of province issues
 	(PB+SWMH) Fixed holy wars for the Sahara sometimes being possible
 	(PB+SWMH) Fixed an issue with some courtiers having "noculture"
+	(PB+SWMH) Fixed the republic of Gotland not existing
 
 3.2.16
 	Now compatible with CKII 1.101 (non-beta version)
