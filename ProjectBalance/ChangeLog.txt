@@ -23,6 +23,7 @@
 	Zoroastrian inbreeding won't affect fertility, occurence of inbreeding, etc
 	Fixed courtiers often converting to Shia Islam when they shouldn't
 	Updated Sniggles' Bookmarks to the latest version
+	All the tournament decisions now have the vanilla tournament icon rather than no icon
 	(Shattered Balance) Fixed it crashing on campaign start
 	(PB+SWMH) Added an event to transfer the duchy of Benevento from the Pope to Sicily after the formation of Sicily
 	(PB+SWMH) Fixed Amalfi not having a center of trade
