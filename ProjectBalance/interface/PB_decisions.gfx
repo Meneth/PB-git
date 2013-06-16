@@ -131,4 +131,8 @@ spriteTypes = {
 		name = "GFX_request_important_prisoners"
 		texturefile = "gfx\\interface\\decision_icon_exchange_prisoners.dds"
 	}
+	spriteType = {
+		name = "GFX_request_dejure_vassal_transfer"
+		texturefile = "gfx\\interface\\decision_icon_dejure_transfer.dds"
+	}
 }
