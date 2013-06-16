@@ -1178,7 +1178,15 @@ character_event = {
 		lower_tier_than = duke
 		NOT = { num_of_count_titles = 2 }
 		independent = no
-		NOT = { has_character_flag = retinue_blocked }
+		NOT = { 
+			any_demesne_title = {
+				OR = {
+					has_building = ca_retinues
+					has_building = ct_retinues
+					has_building = tp_retinues
+				}
+			}
+		}
 		ai = yes
 	}
 	mean_time_to_happen = {
@@ -1186,7 +1194,6 @@ character_event = {
 	}
 	option = {
 		name = OK
-		set_character_flag = retinue_blocked
 		any_demesne_title = {
 			add_building = ca_retinues
 			add_building = ct_retinues
