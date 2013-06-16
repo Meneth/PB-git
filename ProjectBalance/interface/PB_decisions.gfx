@@ -123,4 +123,8 @@ spriteTypes = {
 		name = "GFX_faction_lower_crown_levies_decision"
 		texturefile = "gfx\\interface\\decision_icon_faction_lower_crown_authority_ultimatum.dds"
 	}
+	spriteType = {
+		name = "GFX_exchange_prisoners"
+		texturefile = "gfx\\interface\\decision_icon_exchange_prisoners.dds"
+	}
 }
