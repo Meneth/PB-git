@@ -7,4 +7,36 @@ spriteTypes = {
 		name = "GFX_create_hre_france"
 		texturefile = "gfx\\interface\\decision_icon_create_hre.dds"
 	}
+	spriteType = {
+		name = "GFX_hold_a_epic_tournament_LP"
+		texturefile = "gfx\\interface\\decision_icon_tournament.dds"
+	}
+	spriteType = {
+		name = "GFX_hold_a_epic_tournament_high_lord"
+		texturefile = "gfx\\interface\\decision_icon_tournament.dds"
+	}
+	spriteType = {
+		name = "GFX_hold_a_epic_tournament_lord"
+		texturefile = "gfx\\interface\\decision_icon_tournament.dds"
+	}
+	spriteType = {
+		name = "GFX_show_me_the_medal_winners"
+		texturefile = "gfx\\interface\\decision_icon_tournament.dds"
+	}
+	spriteType = {
+		name = "GFX_employ_soldier"
+		texturefile = "gfx\\interface\\decision_icon_employ_soldier.dds"
+	}
+	spriteType = {
+		name = "GFX_employ_spy"
+		texturefile = "gfx\\interface\\decision_icon_employ_spy.dds"
+	}
+	spriteType = {
+		name = "GFX_employ_diplomat"
+		texturefile = "gfx\\interface\\decision_icon_employ_diplomat.dds"
+	}
+	spriteType = {
+		name = "GFX_mend_great_schism_catholic"
+		texturefile = "gfx\\interface\\decision_icon_mend_great_schism.dds"
+	}
 }

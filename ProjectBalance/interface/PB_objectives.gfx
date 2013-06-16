@@ -84,20 +84,4 @@ spriteTypes = {
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
-	spriteType = {
-		name = "GFX_hold_a_epic_tournament_LP"
-		texturefile = "gfx\\interface\\decision_icon_tournament.dds"
-	}
-	spriteType = {
-		name = "GFX_hold_a_epic_tournament_high_lord"
-		texturefile = "gfx\\interface\\decision_icon_tournament.dds"
-	}
-	spriteType = {
-		name = "GFX_hold_a_epic_tournament_lord"
-		texturefile = "gfx\\interface\\decision_icon_tournament.dds"
-	}
-	spriteType = {
-		name = "GFX_show_me_the_medal_winners"
-		texturefile = "gfx\\interface\\decision_icon_tournament.dds"
-	}
 }
