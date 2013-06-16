@@ -1,12 +1,18 @@
 spriteTypes = {
+	#Employment
 	spriteType = {
-		name = "GFX_create_hre"
-		texturefile = "gfx\\interface\\decision_icon_create_hre.dds"
+		name = "GFX_employ_soldier"
+		texturefile = "gfx\\interface\\decision_icon_employ_soldier.dds"
 	}
 	spriteType = {
-		name = "GFX_create_hre_france"
-		texturefile = "gfx\\interface\\decision_icon_create_hre.dds"
+		name = "GFX_employ_spy"
+		texturefile = "gfx\\interface\\decision_icon_employ_spy.dds"
 	}
+	spriteType = {
+		name = "GFX_employ_diplomat"
+		texturefile = "gfx\\interface\\decision_icon_employ_diplomat.dds"
+	}
+	#Tournaments
 	spriteType = {
 		name = "GFX_hold_a_epic_tournament_LP"
 		texturefile = "gfx\\interface\\decision_icon_tournament.dds"
@@ -23,22 +29,7 @@ spriteTypes = {
 		name = "GFX_show_me_the_medal_winners"
 		texturefile = "gfx\\interface\\decision_icon_tournament.dds"
 	}
-	spriteType = {
-		name = "GFX_employ_soldier"
-		texturefile = "gfx\\interface\\decision_icon_employ_soldier.dds"
-	}
-	spriteType = {
-		name = "GFX_employ_spy"
-		texturefile = "gfx\\interface\\decision_icon_employ_spy.dds"
-	}
-	spriteType = {
-		name = "GFX_employ_diplomat"
-		texturefile = "gfx\\interface\\decision_icon_employ_diplomat.dds"
-	}
-	spriteType = {
-		name = "GFX_mend_great_schism_catholic"
-		texturefile = "gfx\\interface\\decision_icon_mend_great_schism.dds"
-	}
+	#Loans
 	spriteType = {
 		name = "GFX_show_loan_decisions"
 		texturefile = "gfx\\interface\\decision_icon_loans.dds"
@@ -79,30 +70,7 @@ spriteTypes = {
 		name = "GFX_repay_huge_loan"
 		texturefile = "gfx\\interface\\decision_icon_loans.dds"
 	}
-	spriteType = {
-		name = "GFX_toggle_marriage_decisions"
-		texturefile = "gfx\\interface\\decision_icon_marriage.dds"
-	}
-	spriteType = {
-		name = "GFX_marry_courtiers"
-		texturefile = "gfx\\interface\\decision_icon_marriage.dds"
-	}
-	spriteType = {
-		name = "GFX_marry_courtier"
-		texturefile = "gfx\\interface\\decision_icon_marriage.dds"
-	}
-	spriteType = {
-		name = "GFX_ransom_all"
-		texturefile = "gfx\\interface\\decision_icon_ransom_all.dds"
-	}
-	spriteType = {
-		name = "GFX_release_prisoners"
-		texturefile = "gfx\\interface\\decision_icon_release_all.dds"
-	}
-	spriteType = {
-		name = "GFX_execute_prisoners"
-		texturefile = "gfx\\interface\\decision_icon_execute_all.dds"
-	}
+	#Faction ultimatums
 	spriteType = {
 		name = "GFX_faction_remove_king_peace_decision"
 		texturefile = "gfx\\interface\\decision_icon_faction_lower_crown_authority_ultimatum.dds"
@@ -123,6 +91,7 @@ spriteTypes = {
 		name = "GFX_faction_lower_crown_levies_decision"
 		texturefile = "gfx\\interface\\decision_icon_faction_lower_crown_authority_ultimatum.dds"
 	}
+	#Prisoner interactions
 	spriteType = {
 		name = "GFX_exchange_prisoners"
 		texturefile = "gfx\\interface\\decision_icon_exchange_prisoners.dds"
@@ -132,9 +101,18 @@ spriteTypes = {
 		texturefile = "gfx\\interface\\decision_icon_important_prisoners.dds"
 	}
 	spriteType = {
-		name = "GFX_request_dejure_vassal_transfer"
-		texturefile = "gfx\\interface\\decision_icon_dejure_transfer.dds"
+		name = "GFX_ransom_all"
+		texturefile = "gfx\\interface\\decision_icon_ransom_all.dds"
 	}
+	spriteType = {
+		name = "GFX_release_prisoners"
+		texturefile = "gfx\\interface\\decision_icon_release_all.dds"
+	}
+	spriteType = {
+		name = "GFX_execute_prisoners"
+		texturefile = "gfx\\interface\\decision_icon_execute_all.dds"
+	}
+	#War checks
 	spriteType = {
 		name = "GFX_holy_war_cb"
 		texturefile = "gfx\\interface\\decision_icon_war_checks.dds"
@@ -190,5 +168,38 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_muslim_invasion_check_non_muslim"
 		texturefile = "gfx\\interface\\decision_icon_war_invasion.dds"
+	}
+	#Various
+	spriteType = {
+		name = "GFX_create_hre"
+		texturefile = "gfx\\interface\\decision_icon_create_hre.dds"
+	}
+	spriteType = {
+		name = "GFX_create_hre_france"
+		texturefile = "gfx\\interface\\decision_icon_create_hre.dds"
+	}
+	spriteType = {
+		name = "GFX_mend_great_schism_catholic"
+		texturefile = "gfx\\interface\\decision_icon_mend_great_schism.dds"
+	}
+	spriteType = {
+		name = "GFX_toggle_marriage_decisions"
+		texturefile = "gfx\\interface\\decision_icon_marriage.dds"
+	}
+	spriteType = {
+		name = "GFX_marry_courtiers"
+		texturefile = "gfx\\interface\\decision_icon_marriage.dds"
+	}
+	spriteType = {
+		name = "GFX_marry_courtier"
+		texturefile = "gfx\\interface\\decision_icon_marriage.dds"
+	}
+	spriteType = {
+		name = "GFX_request_dejure_vassal_transfer"
+		texturefile = "gfx\\interface\\decision_icon_dejure_transfer.dds"
+	}
+	spriteType = {
+		name = "GFX_bring_out_of_hiding"
+		texturefile = "gfx\\interface\\decision_icon_end_hiding.dds"
 	}
 }
