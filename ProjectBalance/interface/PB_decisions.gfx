@@ -145,19 +145,19 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_holy_war_any"
-		texturefile = "gfx\\interface\\decision_icon_war_checks.dds"
+		texturefile = "gfx\\interface\\decision_icon_war_holy.dds"
 	}
 	spriteType = {
 		name = "GFX_holy_war_pagan"
-		texturefile = "gfx\\interface\\decision_icon_war_checks.dds"
+		texturefile = "gfx\\interface\\decision_icon_war_holy.dds"
 	}
 	spriteType = {
 		name = "GFX_holy_war_non_de_jure"
-		texturefile = "gfx\\interface\\decision_icon_war_checks.dds"
+		texturefile = "gfx\\interface\\decision_icon_war_holy.dds"
 	}
 	spriteType = {
 		name = "GFX_holy_war_no_border"
-		texturefile = "gfx\\interface\\decision_icon_war_checks.dds"
+		texturefile = "gfx\\interface\\decision_icon_war_holy.dds"
 	}
 	spriteType = {
 		name = "GFX_alliance_wars"
