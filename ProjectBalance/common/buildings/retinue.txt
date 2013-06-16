@@ -7,6 +7,7 @@ castle = {
 		desc = retinue_disabler
 		potential = {
 			FROM = {
+				#ai = yes
 				lower_tier_than = duke
 				NOT = { num_of_count_titles = 2 }
 				independent = no
@@ -28,6 +29,7 @@ city = {
 		desc = retinue_disabler
 		potential = {
 			FROM = {
+				#ai = yes
 				lower_tier_than = duke
 				NOT = { num_of_count_titles = 2 }
 				independent = no
@@ -49,6 +51,7 @@ temple = {
 		desc = retinue_disabler
 		potential = {
 			FROM = {
+				#ai = yes
 				lower_tier_than = duke
 				NOT = { num_of_count_titles = 2 }
 				independent = no

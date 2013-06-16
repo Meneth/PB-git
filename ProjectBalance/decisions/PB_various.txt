@@ -267,6 +267,7 @@ decisions = {
 					revoke_law = king_peace_0
 					revoke_law = king_peace_1
 					revoke_law = king_peace_2
+					
 				}
 			}
 			hidden_tooltip = {
