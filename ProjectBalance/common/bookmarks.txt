@@ -51,7 +51,7 @@ bookmark =
 	desc = "BM_CASTILLE_DESC"
 	date = 1072.1.12
 
-	character = 107500
+	character = 107500 # Sancho II of Castille
 }
 
 bookmark =
@@ -60,19 +60,9 @@ bookmark =
 	desc = "BM_LEVANT_DESC"
 	date = 1076.1.1
 
-	character = 3042
-	character = 3096
-	character = 1736
-}
-
-bookmark =
-{
-	name = "BM_NAVARRA"
-	desc = "BM_NAVARRA_DESC"
-	date = 1076.7.1
-
-	character = 108500
-	character = 110500
+	character = 3042 # Malik I Shah of Persia
+	character = 3096 # Al-Mustansir I of Egypt
+	character = 1736 # Michael VII of Byzantium
 }
 
 bookmark =
@@ -81,10 +71,10 @@ bookmark =
 	desc = "BM_KIEV_DESC"
 	date = 1077.1.1
 
-	character = 630
-	character = 654
-	character = 3046
-	character = 1736
+	character = 630 # Vsevolod I of Kiev
+	character = 654 # Gleb I of Novgorod
+	character = 3046 # Suleyman I of Rum
+	character = 1736 # Michael VII of Byzantium
 }
 
 bookmark =
@@ -104,7 +94,7 @@ bookmark =
 	date = 1091.1.1
 
 	character = 474 # László I of Hungary
-	character = 32965
+	character = 32965 # Yusuf I of Mauretania
 }
 
 bookmark =
@@ -121,15 +111,15 @@ bookmark =
 {
 	name = "BM_EDGE_OF_KNIFE"
 	desc = "BM_EDGE_OF_KNIFE_DESC"
-	date = 1098.1.1
+	date = 1094.1.1
 
 	character = 32965 # Yusuf I of Almoravid Sultanate
-	character = 210508 # Ramon-Berenguer III of Barcelona
-	character = 70231 # Pedro I of Aragon
+	character = 110525 # Berenguer-Ramon II of Barcelona
+	character = 110500 # Sancho I of Aragon-Navarra
+	character = 108500 # Alfonso VI of Castille-Leon
 	character = 1742 # Alexios Komnenos of Byzantium
 	character = 41701 # Kilij Arslan of Rum
-	character = 232563 # Duke Gosdantin of Armenia Minor
-	character = 216517 # King Davit of Georgia
+	character = 216517 # Davit of Georgia
 }
 
 bookmark =
@@ -140,7 +130,6 @@ bookmark =
 
 	character = 202511 # Magnus III of Norway
 	character = 202968 # Edgar I of Scotland
-	character = 203560 # Fergus of Galloway
 }
 
 bookmark =
@@ -150,12 +139,12 @@ bookmark =
 	date = 1103.1.1
 
 	character = 232564 # Thoros of Armenia Minor
-	character = 1140 # Duke Bohemond of Antioch
-	character = 232007 # Duke Baudouin II of Edessa
-	character = 144020 # Emir Radwan I Aleppo
-	character = 144023 # Emir Duqaq I of Damascus
-	character = 32905 # Caliph Al-Amir of Egypt
-	character = 10073 # King Boudouin I of Jerusalem
+	character = 1140 # Bohemond of Antioch
+	character = 232007 # Baudouin II of Edessa
+	character = 144020 # Radwan I Aleppo
+	character = 144023 # Duqaq I of Damascus
+	character = 32905 # Al-Amir of Egypt
+	character = 10073 # Boudouin I of Jerusalem
 }
 
 bookmark =
@@ -198,8 +187,8 @@ bookmark =
 	desc = "BM_ANARCHY_DESC"
 	date = 1144.1.1
 
-	character = 205851
-	character = 204506
+	character = 205851 # Stephen I of England
+	character = 204506 # Geoffrey I of Normandy
 }
 
 bookmark =
@@ -208,12 +197,12 @@ bookmark =
 	desc = "BM_ALMORAVID_DESC"
 	date = 1145.1.1
 
-	character = 209503
-	character = 207500
-	character = 70233
-	character = 215530
-	character = 216516
-	character = 231067
+	character = 207500 # Alfonso VII of Castille-Leon
+	character = 70233 # Ramiro of Aragon
+	character = 215530 # Manuel I of Byzantium
+	character = 216516 # Demetre I of Georgia
+	character = 231067 # Baudauin III of Jerusalem
+	character = 209503 # Afonso the Conqueror of Portugal
 }
 
 bookmark =
@@ -222,17 +211,17 @@ bookmark =
 	desc = "BM_SELJUK_DESC"
 	date = 1157.5.8
 
-	character = 144120
-	character = 144062
-	character = 144032
-	character = 144051
-	character = 93026
-	character = 93200
-	character = 144054
-	character = 93273
-	character = 144036
-	character = 144138
-	character = 93127
+	character = 144120 # Ali I of Khiva
+	character = 144062 # Caliph Al-Muqtafi I
+	character = 144032 # Qutb I of Edessa
+	character = 144051 # Shams I of Azerbaijan
+	character = 93026 # Muzaffar I of Derbent
+	character = 93200 # Ebu-Tehir I of Kermanshah
+	character = 144054 # Muhammed I of Esfahan
+	character = 93273 # Tagh II of Sistan
+	character = 144036 # Togrul I of Hormuz
+	character = 144138 # Khusraw I of Birjand
+	character = 93127 # Malik I Shah of Khorasan
 }
 
 bookmark =
@@ -241,9 +230,9 @@ bookmark =
 	desc = "BM_KOMNENOS_DESC"
 	date = 1165.1.1
 
-	character = 215530
-	character = 219500
-	character = 219511
+	character = 215530 # Manuel I of Byzantium
+	character = 219500 # Bela I of Boznia
+	character = 219511 # Istvan III of Hungary
 }
 
 bookmark =
@@ -252,10 +241,10 @@ bookmark =
 	desc = "BM_SALADIN_DESC"
 	date = 1171.1.1
 
-	character = 226000
-	character = 223520
-	character = 144031
-	character = 223750
+	character = 226000 # Saladin I of Egypt
+	character = 223520 # Amaury I of Jerusalem
+	character = 144031 # Nur ad-Din I of Damascus
+	character = 223750 # Bohemond III of Antioch
 }
 
 bookmark =
@@ -264,12 +253,12 @@ bookmark =
 	desc = "BM_SERBIA_DESC"
 	date = 1186.1.1
 
-	character = 218500
-	character = 217501
-	character = 215500
-	character = 215519
-	character = 225000
-	character = 219500
+	character = 218500 # Stefan I of Serbia
+	character = 217501 # Petar III of Bulgaria
+	character = 215500 # Isaakios II of Byzantium
+	character = 215519 # Alexios I of Trebizond
+	character = 225000 # Kilij II Arslan of Rum
+	character = 219500 # Bela III of Hungary
 }
 
 bookmark =
@@ -278,12 +267,12 @@ bookmark =
 	desc = "BM_IBERIA_DESC"
 	date = 1186.1.1
 
-	character = 209500
-	character = 208500
-	character = 207510
-	character = 210500
-	character = 206500
-	character = 32980
+	character = 209500 # Sancho I of Portugal
+	character = 208500 # Fernando II of Leon
+	character = 207510 # Alphonso VIII of Castille
+	character = 210500 # Alfons II of Aragon
+	character = 206500 # Antso VI of Navarra
+	character = 32980 # Ya'Qub I of Mauretania
 }
 
 bookmark =
@@ -307,9 +296,9 @@ bookmark =
 	desc = "BM_SICILY_DESC"
 	date = 1194.10.1
 
-	character = 204510
-	character = 205506
-	character = 212507
+	character = 204510 # Richard I of England
+	character = 205506 # Philippe II of France
+	character = 212507 # Heinrich VI of the Holy Roman Empire
 }
 
 bookmark =
@@ -332,7 +321,7 @@ bookmark =
 	desc = "BM_ALEXIOS_DESC"
 	date = 1205.1.1
 
-	character = 215519
+	character = 215519 # Alexios I of Trebizond
 }
 
 bookmark =
@@ -341,8 +330,8 @@ bookmark =
 	desc = "BM_ANUSHTIGINID_DESC"
 	date = 1212.1.1
 
-	character = 93052
-	character = 226052
+	character = 93052 # Mohammed I of Persia
+	character = 226052 # al-Adil I of Egypt
 }
 
 bookmark =
@@ -351,11 +340,11 @@ bookmark =
 	desc = "BM_TURMOIL_IN_THE_EAST_DESC"
 	date = 1219.1.1
 
-	character = 215514
-	character = 31211
-	character = 31337
-	character = 205526
-	character = 215674
+	character = 215514 # Theodoros I of Dyracchion
+	character = 31211 # Othon I of Athens
+	character = 31337 # Geoffrey II of Achaia
+	character = 205526 # Yolande I of the Latin Empire
+	character = 215674 # Theodoros I of Byzantium
 }
 
 bookmark =
@@ -400,7 +389,16 @@ bookmark =
 	desc = "BM_LITHUANIA_FORMED_DESC"
 	date = 1253.6.30
 
-	character = 125301
+	character = 125301 # Mindaugas I of Lithuania
+}
+
+bookmark =
+{
+	name = "BM_SARTAQ_KHAN"
+	desc = "BM_SARTAQ_KHAN_DESC"
+	date = 1255.2.1
+
+	character = 125505 # Sartag I of the Golden Horde
 }
 
 bookmark =
@@ -409,19 +407,10 @@ bookmark =
 	desc = "BM_PLANTAGENET_DESC"
 	date = 1256.1.28
 
-	character = 232682
-	character = 454522
-	character = 30785
-	character = 96001
-}
-
-bookmark =
-{
-	name = "BM_LITHUANIA_ROMUVA"
-	desc = "BM_LITHUANIA_ROMUVA_DESC"
-	date = 1263.9.12
-
-	character = 125302
+	character = 232682 # Richard I of the Holy Roman Empire
+	character = 454522 # Henry III of England
+	character = 30785 # Konrad II of Sicily
+	character = 96001 # Premysl II of Bohemia
 }
 
 bookmark =
@@ -430,11 +419,11 @@ bookmark =
 	desc = "BM_LITHUANIA_DESC"
 	date = 1265.1.1
 
-	character = 125303
-	character = 125982
-	character = 98003
-	character = 31187
-	character = 125248
+	character = 125303 # Vaisvilkas I of Lithuania
+	character = 125982 # Boleslaw IV of Poland
+	character = 98003 # Bela IV of Hungary
+	character = 31187 # Konstandin I of Bulgaria
+	character = 125248 # Mikhail I of Novgorod
 }
 
 bookmark =
@@ -443,7 +432,7 @@ bookmark =
 	desc = "BM_MALI_DESC"
 	date = 1275.1.1
 
-	character = 161025
+	character = 161025 # Abubakari I of Mali
 }
 
 bookmark =
@@ -452,9 +441,9 @@ bookmark =
 	desc = "BM_HABSBURG_DESC"
 	date = 1282.1.1
 
-	character = 462023
-	character = 462021
-	character = 455406
+	character = 462023 # Albrecht II of Austria
+	character = 462021 # Rudolf I of the Holy Roman Empire
+	character = 455406 # Charles I of Sicily
 }
 
 bookmark =
@@ -463,10 +452,10 @@ bookmark =
 	desc = "BM_NAPLES_DESC"
 	date = 1285.11.11
 
-	character = 461710
-	character = 460560
-	character = 71739
-	character = 455526
+	character = 461710 # Charles II of Naples
+	character = 460560 # Jaume I of Trinacria
+	character = 71739 # Alfons III of Aragon
+	character = 455526 # Philippe IV of France
 }
 
 bookmark =
@@ -475,7 +464,7 @@ bookmark =
 	desc = "BM_ILKHANATE_DESC"
 	date = 1295.1.1
 
-	character = 125522
+	character = 125522 # Baidu I of Ilkhanate
 }
 
 bookmark =
@@ -484,8 +473,8 @@ bookmark =
 	desc = "BM_POLAND_DESC"
 	date = 1300.1.1
 
-	character = 96002
-	character = 462023
+	character = 96002 # Vaclav I of Poland
+	character = 462023 # Albrecht I of the Holy Roman Empire
 }
 
 bookmark =
@@ -507,22 +496,22 @@ bookmark =
 	desc = "BM_FRACTURE_DESC"
 	date = 1311.1.1
 
-	character = 465521
-	character = 476501
-	character = 71879
-	character = 476350
-	character = 71867
-	character = 71886
-	character = 71892
-	character = 71889
-	character = 71870
-	character = 138024
-	character = 461803
-	character = 31193
-	character = 468505
-	character = 461700
-	character = 125728
-	character = 461733
+	character = 465521 # Andronikos II of Byzantium
+	character = 476501 # Osman I of Osman Sultanate
+	character = 71879 # Han I of Karaman Sultanate
+	character = 476350 # Suleyman I of Kandar Sultanate
+	character = 71867 # Yakub I of Germiyan Sultanate
+	character = 71886 # Yunus I of Tekke Sultanate
+	character = 71892 # Mesud I of Mentese Sultanate
+	character = 71889 # Mehmed I of Aydin Sultanate
+	character = 71870 # Saruhan I of Saruhan Sultanate
+	character = 138024 # Henri II of Cyprus
+	character = 461803 # Oshim I of Armenia
+	character = 31193 # Todor I of Bulgaria
+	character = 468505 # Uros II of Serbia
+	character = 461700 # Robert I of Naples
+	character = 125728 # Thomas I of Epirus
+	character = 461733 # Gauthier I of Athens
 }
 
 bookmark =
@@ -531,7 +520,7 @@ bookmark =
 	desc = "BM_GH_DESC"
 	date = 1313.1.1
 
-	character = 480000
+	character = 480000 # Ozbeg I of the Golden Horde
 }
 
 bookmark =
@@ -540,7 +529,7 @@ bookmark =
 	desc = "BM_SWEDEN_DESC"
 	date = 1319.7.8
 
-	character = 450500
+	character = 450500 # Magnus IV of Sweden
 }
 
 bookmark =
@@ -549,14 +538,14 @@ bookmark =
 	desc = "BM_ITALY_DESC"
 	date = 1329.3.1
 
-	character = 461500
-	character = 461700
-	character = 460510
-	character = 462153
-	character = 463140
-	character = 412072
-	character = 463600
-	character = 70700
+	character = 461500 # Federigo I of Trinacria
+	character = 461700 # Robert I of Naples
+	character = 460510 # Alfons IV of Aragon
+	character = 462153 # Edouard I of Savoy
+	character = 463140 # Azzone I of Lombardy
+	character = 412072 # Alberto I of Verona
+	character = 463600 # Francesco I of Venice
+	character = 70700 # Rinaldo I of Ferrara
 }
 
 bookmark =
