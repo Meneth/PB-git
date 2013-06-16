@@ -23,7 +23,7 @@
 	Zoroastrian inbreeding won't affect fertility, occurence of inbreeding, etc
 	Fixed courtiers often converting to Shia Islam when they shouldn't
 	Updated Sniggles' Bookmarks to the latest version
-	Added icons for many of the decisions PB adds
+	Added icons for many of the decisions PB adds. Credit goes to Crater for the "is war possible?" icon. Credit goes to Korbah for the Muslim Invasion icon
 	(Shattered Balance) Fixed it crashing on campaign start
 	(PB+SWMH) Added an event to transfer the duchy of Benevento from the Pope to Sicily after the formation of Sicily
 	(PB+SWMH) Fixed Amalfi not having a center of trade

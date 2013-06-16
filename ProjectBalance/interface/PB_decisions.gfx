@@ -135,4 +135,60 @@ spriteTypes = {
 		name = "GFX_request_dejure_vassal_transfer"
 		texturefile = "gfx\\interface\\decision_icon_dejure_transfer.dds"
 	}
+	spriteType = {
+		name = "GFX_holy_war_cb"
+		texturefile = "gfx\\interface\\decision_icon_war_checks.dds"
+	}
+	spriteType = {
+		name = "GFX_holy_war_clear"
+		texturefile = "gfx\\interface\\decision_icon_war_checks.dds"
+	}
+	spriteType = {
+		name = "GFX_holy_war_any"
+		texturefile = "gfx\\interface\\decision_icon_war_checks.dds"
+	}
+	spriteType = {
+		name = "GFX_holy_war_pagan"
+		texturefile = "gfx\\interface\\decision_icon_war_checks.dds"
+	}
+	spriteType = {
+		name = "GFX_holy_war_non_de_jure"
+		texturefile = "gfx\\interface\\decision_icon_war_checks.dds"
+	}
+	spriteType = {
+		name = "GFX_holy_war_no_border"
+		texturefile = "gfx\\interface\\decision_icon_war_checks.dds"
+	}
+	spriteType = {
+		name = "GFX_alliance_wars"
+		texturefile = "gfx\\interface\\decision_icon_war_allies.dds"
+	}
+	spriteType = {
+		name = "GFX_imperial_reconquest_check"
+		texturefile = "gfx\\interface\\decision_icon_war_checks.dds"
+	}
+	spriteType = {
+		name = "GFX_pagan_subjugation_check"
+		texturefile = "gfx\\interface\\decision_icon_war_checks.dds"
+	}
+	spriteType = {
+		name = "GFX_pagan_subjugation_wrong_kingdom_check"
+		texturefile = "gfx\\interface\\decision_icon_war_checks.dds"
+	}
+	spriteType = {
+		name = "GFX_pagan_conquest_check"
+		texturefile = "gfx\\interface\\decision_icon_war_county.dds"
+	}
+	spriteType = {
+		name = "GFX_muslim_conquest_check"
+		texturefile = "gfx\\interface\\decision_icon_war_county.dds"
+	}
+	spriteType = {
+		name = "GFX_muslim_invasion_check"
+		texturefile = "gfx\\interface\\decision_icon_war_invasion.dds"
+	}
+	spriteType = {
+		name = "GFX_muslim_invasion_check_non_muslim"
+		texturefile = "gfx\\interface\\decision_icon_war_invasion.dds"
+	}
 }
