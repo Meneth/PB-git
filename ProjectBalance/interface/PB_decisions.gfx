@@ -165,15 +165,15 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_imperial_reconquest_check"
-		texturefile = "gfx\\interface\\decision_icon_war_checks.dds"
+		texturefile = "gfx\\interface\\decision_icon_war_imperial.dds"
 	}
 	spriteType = {
 		name = "GFX_pagan_subjugation_check"
-		texturefile = "gfx\\interface\\decision_icon_war_checks.dds"
+		texturefile = "gfx\\interface\\decision_icon_war_subjugation.dds"
 	}
 	spriteType = {
 		name = "GFX_pagan_subjugation_wrong_kingdom_check"
-		texturefile = "gfx\\interface\\decision_icon_war_checks.dds"
+		texturefile = "gfx\\interface\\decision_icon_war_subjugation.dds"
 	}
 	spriteType = {
 		name = "GFX_pagan_conquest_check"
