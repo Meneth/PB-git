@@ -235,6 +235,10 @@ laws = {
 				has_law = feudal_obligations_0
 				has_law = feudal_obligations_2
 			}
+			NOT = {
+				has_law = hre_law_0
+				has_law = themes_0
+			}
 		}
 		revoke_allowed = {
 			always = no
@@ -279,6 +283,10 @@ laws = {
 			OR = {
 				has_law = feudal_obligations_1
 				has_law = feudal_obligations_3
+			}
+			NOT = {
+				has_law = hre_law_0
+				has_law = themes_0
 			}
 		}
 		revoke_allowed = {
@@ -328,6 +336,10 @@ laws = {
 				}
 				has_law = feudal_obligations_4
 			}
+			NOT = {
+				has_law = hre_law_0
+				has_law = themes_0
+			}
 		}
 		revoke_allowed = {
 			always = no
@@ -365,6 +377,10 @@ laws = {
 		allow = {
 			has_law = feudal_obligations_3
 			holder_scope = { trait = greedy }
+			NOT = {
+				has_law = hre_law_0
+				has_law = themes_0
+			}
 		}
 		revoke_allowed = {
 			always = no
@@ -610,6 +626,10 @@ laws = {
 				has_law = city_obligations_0
 				has_law = city_obligations_2
 			}
+			NOT = {
+				has_law = hre_law_0
+				has_law = themes_0
+			}
 		}
 		revoke_allowed = {
 			always = no
@@ -652,8 +672,14 @@ laws = {
 		}
 		allow = {
 			OR = {
-				has_law = city_obligations_1
+				AND = {
+					has_law = city_obligations_1
+				}
 				has_law = city_obligations_3
+			}
+			NOT = {
+				has_law = hre_law_0
+				has_law = themes_0
 			}
 		}
 		revoke_allowed = {
@@ -704,6 +730,10 @@ laws = {
 				}
 				has_law = city_obligations_4
 			}
+			NOT = {
+				has_law = hre_law_0
+				has_law = themes_0
+			}
 		}
 		revoke_allowed = {
 			always = no
@@ -742,6 +772,10 @@ laws = {
 		allow = {
 			has_law = city_obligations_3
 			holder_scope = { trait = greedy }
+			NOT = {
+				has_law = hre_law_0
+				has_law = themes_0
+			}
 		}
 		revoke_allowed = {
 			always = no
@@ -994,6 +1028,10 @@ laws = {
 				has_law = temple_obligations_0
 				has_law = temple_obligations_2
 			}
+			NOT = {
+				has_law = hre_law_0
+				has_law = themes_0
+			}
 		}
 		revoke_allowed = {
 			always = no
@@ -1043,6 +1081,10 @@ laws = {
 			OR = {
 				has_law = temple_obligations_1
 				has_law = temple_obligations_3
+			}
+			NOT = {
+				has_law = hre_law_0
+				has_law = themes_0
 			}
 		}
 		revoke_allowed = {
@@ -1097,6 +1139,10 @@ laws = {
 				}
 				has_law = temple_obligations_4
 			}
+			NOT = {
+				has_law = hre_law_0
+				has_law = themes_0
+			}
 		}
 		revoke_allowed = {
 			always = no
@@ -1135,6 +1181,10 @@ laws = {
 		allow = {
 			has_law = temple_obligations_3
 			holder_scope = { trait = greedy }
+			NOT = {
+				has_law = hre_law_0
+				has_law = themes_0
+			}
 		}
 		revoke_allowed = {
 			always = no

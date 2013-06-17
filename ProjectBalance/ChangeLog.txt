@@ -1,3 +1,7 @@
+3.2.18
+	It is no longer possible to increase obligation laws as the HRE when the Decentralized HRE law is in effect, nor as the ERE when the Decayed Theme System law is in effect. If someone with above minimum obligations inherits with either law in effet the obligations will be forced down to minimal levels
+	The HRE cannot change succession law when the Decentralized HRE law is in effect
+
 3.2.17
 	Unreformed West African Pagans now get defensive attrition
 	Almost all Lifestyle traits now give 2 stat points
@@ -23,7 +27,7 @@
 	Zoroastrian inbreeding won't affect fertility, occurence of inbreeding, etc
 	Fixed courtiers often converting to Shia Islam when they shouldn't
 	Updated Sniggles' Bookmarks to the latest version
-	Added icons for many of the decisions PB adds. Credit goes to Crater for the "is war possible?" icon. Credit goes to Korbah for the Muslim Invasion icon
+	Added icons for all of the decisions PB adds. Credit goes to Crater for the "is war possible?" icon. Credit goes to Korbah for the Muslim Invasion icon
 	(Shattered Balance) Fixed it crashing on campaign start
 	(PB+SWMH) Added an event to transfer the duchy of Benevento from the Pope to Sicily after the formation of Sicily
 	(PB+SWMH) Fixed Amalfi not having a center of trade

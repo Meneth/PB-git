@@ -51,6 +51,7 @@ succession_laws = {
 					}
 				}
 			}
+			NOT = { has_law = hre_law_0 }
 		}
 		effect = {
 			succession = gavelkind
@@ -146,6 +147,7 @@ succession_laws = {
 					}
 				}
 			}
+			NOT = { has_law = hre_law_0 }
 		}
 		
 		effect = {
@@ -223,6 +225,7 @@ succession_laws = {
 					}
 				}
 			}
+			NOT = { has_law = hre_law_0 }
 		}
 		
 		effect = {
@@ -369,6 +372,7 @@ succession_laws = {
 					}
 				}
 			}
+			NOT = { has_law = hre_law_0 }
 		}
 		effect = {
 			succession = tanistry
@@ -450,6 +454,7 @@ succession_laws = {
 					}
 				}
 			}
+			NOT = { has_law = hre_law_0 }
 		}
 		
 		effect = {
