@@ -14,44 +14,6 @@ character_event = {
 
 	trigger = {
 		primary_title = { rebel = no }
-		FROM = {
-			holder_scope = {
-				war_with = ROOT
-				OR = {
-					#Owner there
-					AND = {
-						at_location = ROOT
-						NOT = { has_character_modifier = modifier_hidden }
-					}
-					#Owner not there, but family is
-					AND = {
-						OR = {
-							NOT = { num_of_baron_titles = 2 }
-							NOT = { num_of_count_titles = 2 }
-							any_courtier = { at_location = FROM }
-						}
-						OR = {
-							any_dynasty_member = {
-								NOT = { character = ROOT }
-								at_location = ROOT
-								NOT = { character = PREV }
-								NOT = { has_character_modifier = modifier_hidden }
-							}
-							
-							any_spouse = {
-								at_location = ROOT
-								NOT = { has_character_modifier = modifier_hidden }
-							}
-						}
-					}
-					#Prisoners
-					any_courtier = {
-						prisoner = yes
-						at_location = ROOT
-					}
-				}
-			}
-		}
 	}
 	
 	immediate = {
@@ -69,11 +31,7 @@ character_event = {
 							NOT = { has_character_modifier = modifier_hidden }
 						}
 						ROOT = {
-							liege = {
-								hidden_tooltip = {
-									character_event = { id = 110009994 }
-								}
-							}
+							liege = { character_event = { id = 110009994 } }
 						}
 					}
 					if = {
@@ -102,11 +60,7 @@ character_event = {
 							}
 						}
 						ROOT = {
-							liege = {
-								hidden_tooltip = {
-									character_event = { id = 110009995 }
-								}
-							}
+							liege = { character_event = { id = 110009995 } }
 						}
 					}
 					if = {
@@ -117,11 +71,7 @@ character_event = {
 							}
 						}
 						ROOT = {
-							liege = {
-								hidden_tooltip = {
-									character_event = { id = 110009996 }
-								}
-							}
+							liege = { character_event = { id = 110009996 } }
 						}
 					}
 				}
@@ -142,11 +92,7 @@ character_event = {
 							at_location = ROOT
 							NOT = { has_character_modifier = modifier_hidden }
 						}
-						ROOT = {
-							hidden_tooltip = {
-								character_event = { id = 110009994 }
-							}
-						}
+						ROOT = { character_event = { id = 110009994 } }
 					}
 					if = {
 						limit = {
@@ -173,11 +119,7 @@ character_event = {
 								}
 							}
 						}
-						ROOT = {
-							hidden_tooltip = {
-								character_event = { id = 110009995 }
-							}
-						}
+						ROOT = { character_event = { id = 110009995 } }
 					}
 					if = {
 						limit = {
@@ -186,11 +128,7 @@ character_event = {
 								at_location = ROOT
 							}
 						}
-						ROOT = {
-							hidden_tooltip = {
-								character_event = { id = 110009996 }
-							}
-						}
+						ROOT = { character_event = { id = 110009996 } }
 					}
 				}
 			}
