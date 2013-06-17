@@ -110,18 +110,18 @@ character_event = {
 						}
 					}
 				}
-			}
-			if = {
-				limit = {
-					any_courtier = {
-						prisoner = yes
-						at_location = ROOT
+				if = {
+					limit = {
+						any_courtier = {
+							prisoner = yes
+							at_location = ROOT
+						}
 					}
-				}
-				ROOT = {
-					liege = {
-						hidden_tooltip = {
-							character_event = { id = 110009996 }
+					ROOT = {
+						liege = {
+							hidden_tooltip = {
+								character_event = { id = 110009996 }
+							}
 						}
 					}
 				}
