@@ -2,9 +2,6 @@
 city = {
 	ct_shipyard_1 = {
 		desc = shipyard_desc
-		potential = {
-			port = yes
-		}
 		port = yes
 		trigger = { TECH_NAVAL = 1 }
 		build_cost = 50
@@ -18,9 +15,6 @@ city = {
 	
 	ct_shipyard_2 = {
 		desc = shipyard_desc
-		potential = {
-			port = yes
-		}
 		port = yes
 		trigger = { TECH_NAVAL = 3 }
 		upgrades_from = ct_shipyard_1
