@@ -1,6 +1,7 @@
 3.2.18
 	It is no longer possible to increase obligation laws as the HRE when the Decentralized HRE law is in effect, nor as the ERE when the Decayed Theme System law is in effect. If someone with above minimum obligations inherits with either law in effet the obligations will be forced down to minimal levels
 	The HRE cannot change succession law when the Decentralized HRE law is in effect
+	Fixed non-dejure vassals not becoming independent from the HRE when the emperor folds to demands for independence
 
 3.2.17
 	Unreformed West African Pagans now get defensive attrition
