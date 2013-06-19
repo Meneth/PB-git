@@ -1169,6 +1169,7 @@ deceitful = {
 	diplomacy = -2
 	
 	opposite_opinion = -20
+	zoroastrian_opinion = -10
 	
 	ai_honor = -25
 
@@ -1187,6 +1188,7 @@ honest = {
 	
 	opposite_opinion = -20
 	same_opinion = 20
+	zoroastrian_opinion = 10
 	
 	ai_honor = 25
 	

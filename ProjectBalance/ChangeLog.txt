@@ -4,6 +4,7 @@
 	Fixed non-dejure vassals not becoming independent from the HRE when the emperor folds to demands for independence
 	The Ghanan Band is now actually based in Ghana rather than in the Low Countries
 	Fixed the prisoner release event something not firing when it should upon occupying a holding
+	Implemented some trait combat modifiers from VIET Traits
 
 3.2.17
 	Unreformed West African Pagans now get defensive attrition
