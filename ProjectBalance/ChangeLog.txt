@@ -5,6 +5,8 @@
 	The Ghanan Band is now actually based in Ghana rather than in the Low Countries
 	Fixed the prisoner release event something not firing when it should upon occupying a holding
 	Implemented some trait combat modifiers from VIET Traits
+	Increased the cost of archers by 50%
+	Modified light cavalry's power in melee and skirmish to correspond with vanilla
 
 3.2.17
 	Unreformed West African Pagans now get defensive attrition
