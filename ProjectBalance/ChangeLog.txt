@@ -9,6 +9,7 @@
 	Modified light cavalry's power in melee and skirmish to correspond with vanilla
 	Fixed a "rum" trait showing up in the Ruler Designer
 	Increased the effect of martial on combat modifiers by 50%
+	Integrated the additional cultural retinues SWMH adds (for cultures present in PB)
 
 3.2.17
 	Unreformed West African Pagans now get defensive attrition

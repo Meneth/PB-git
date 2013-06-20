@@ -1,0 +1,63 @@
+# Types:
+# 0 - Light Infantry
+# 1 - Heavy Infantry
+# 2 - Pikemen
+# 3 - Light Cavalry
+# 4 - Heavy Cavalry
+# 5 - Archers
+# 6 - Horse Archers
+
+########################
+#Generic
+########################
+
+RETTYPE_INF1 =
+{
+	first_type = 1
+	first_amount = 200
+	second_type = 5
+	second_amount = 50
+	
+	modifier = {
+		archers_offensive = 0.4
+		heavy_infantry_defensive = 0.2
+	}
+}
+
+RETTYPE_INF2 =
+{
+	first_type = 2
+	first_amount = 150
+	second_type = 5
+	second_amount = 100
+	
+	modifier = {
+		archers_defensive = 0.4
+		pikemen_defensive = 0.2
+	}
+}
+
+RETTYPE_CAV1 =
+{
+	first_type = 4
+	first_amount = 50
+	second_type = 3
+	second_amount = 200
+	
+	modifier = {
+		knights_offensive = 0.3
+		light_cavalry_offensive = 0.3
+	}
+}
+
+RETTYPE_SKIR1 = 
+{
+	first_type = 5
+	first_amount = 200
+	second_type = 1
+	second_amount = 50
+	
+	modifier = {
+		archers_offensive = 0.6
+	}
+}
