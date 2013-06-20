@@ -9,11 +9,16 @@ emperor_kanuri;Mai;Mai;Mai;;Mai;;;;;;;;;x
 emperor_zaghawa;Mai;Mai;Mai;;Mai;;;;;;;;;x
 central_african;Central African;Central African;Central African;;Central African;;;;;;;;;x
 west_african;West African;West African;West African;;West African;;;;;;;;;x
-temple_baron_animism;Shaman;Chaman;Schamane;;Chamán;;;;;;;;;x
-temple_count_animism;Shaman;Chaman;Schamane;;Chamán;;;;;;;;;x
-temple_duke_animism;High Shaman;Chaman;Schamane;;Chamán;;;;;;;;;x
-temple_king_animism;Shaman-King;Chaman;Schamane;;Chamán;;;;;;;;;x
-temple_emperor_animism;Shaman-Emperor;Chaman;Schamane;;Chamán;;;;;;;;;x
+temple_baron_west_african_paganism;Shaman;Chaman;Schamane;;Chamán;;;;;;;;;x
+temple_baron_west_african_paganism_reformed;Shaman;Chaman;Schamane;;Chamán;;;;;;;;;x
+temple_count_west_african_paganism;Shaman;Chaman;Schamane;;Chamán;;;;;;;;;x
+temple_count_west_african_paganism_reformed;Shaman;Chaman;Schamane;;Chamán;;;;;;;;;x
+temple_duke_west_african_paganism;High Shaman;Chaman;Schamane;;Chamán;;;;;;;;;x
+temple_duke_west_african_paganism_reformed;High Shaman;Chaman;Schamane;;Chamán;;;;;;;;;x
+temple_king_west_african_paganism;Shaman-King;Chaman;Schamane;;Chamán;;;;;;;;;x
+temple_king_west_african_paganism_reformed;Shaman-King;Chaman;Schamane;;Chamán;;;;;;;;;x
+temple_emperor_west_african_paganism;Shaman-Emperor;Chaman;Schamane;;Chamán;;;;;;;;;x
+temple_emperor_west_african_paganism_reformed;Shaman-Emperor;Chaman;Schamane;;Chamán;;;;;;;;;x
 MAI_KING;Mai;Mai;Mai;;Mai;;;;;;;;;x
 MAI_KING_FOA;Mai;Mai;Mai;;Mai;;;;;;;;;x
 mande;Mande;Mande;Mande;;Mande;;;;;;;;;x

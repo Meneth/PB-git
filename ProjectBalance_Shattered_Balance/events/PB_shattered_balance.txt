@@ -20,10 +20,6 @@ narrative_event = {
 	
 	immediate = {
 		set_global_flag = shattered_balance
-		d_normandy = { holder_scope = { letter_event = { id = meneth.509 days = 1 } } }
-		k_norway = { holder_scope = { letter_event = { id = meneth.509 days = 1 } } }
-		d_apulia = { holder_scope = { letter_event = { id = meneth.509 days = 1 } } }
-		k_england = { holder_scope = { letter_event = { id = meneth.509 days = 1 } } }
 		any_independent_ruler = {
 			limit = {
 				is_merchant_republic = no
@@ -440,23 +436,6 @@ letter_event = {
 	}
 }
 
-#Remove spawned armies
-letter_event = {
-	id = meneth.509
-	desc = meneth.509.desc
-	border = GFX_event_letter_frame_religion
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = OK
-		disband_event_forces = williams_invasion_fleet
-		disband_event_forces = norwegian_invasion
-		disband_event_forces = norman_byzantine_war
-		disband_event_forces = saxon_defense_force
-	}
-}
-
 #Make everyone immortal
 letter_event = {
 	id = meneth.510
@@ -655,3 +634,5 @@ character_event = {
 		set_character_flag = immortal_strip_cooldown
 	}
 }
+
+#509 is free

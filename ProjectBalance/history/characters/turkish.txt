@@ -2953,7 +2953,7 @@
 	}
 	1066.9.14 = {
 		raise_levies = {
-			location=670 # Azerbaijan
+			location=683 # Amida
 			force_mult=1.1
 		}
 	}

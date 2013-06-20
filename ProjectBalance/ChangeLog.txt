@@ -1,3 +1,37 @@
+3.2.17
+	Unreformed West African Pagans now get defensive attrition
+	Almost all Lifestyle traits now give 2 stat points
+	Reduced Diplomacy gain from many traits
+	Having held a feast no longer gives a bonus to Diplomacy, but gives a slightly larger opinion bonus
+	Reduced max opinion from prestige and piety to 10
+	The Saoshyant nickname is now on the list of nicknames that lets you enact absolute cognatic succession
+	The Scandinavian kingdoms now have Norse Pagan CoAs defined rather than using random ones
+	Winning the War for the Balkans now gives prestige
+	Moved the starting Seljuk army to Amida
+	The AI is an idiot that will use up half his army assaulting forts, so now it'll only assault if it outnumbers the defender 20-1
+	Halved the troop loss for the besieger for most siege events
+	The HRE losing an independence war now causes all non-dejure vassals to become independent as I'm tired of terrible HRE borders
+	Ensured the Seljuk Invasion of Anatolia happens a bit quicker/more often
+	Ensured the retinue block is always in place when it should
+	Vassal single-province counts can no longer raise retinues
+	Ensured that vassals don't get given away with the formation of a Crusader State
+	Being a councilor now gives 0.25 prestige per month rather than 0.015 (spies and court chaplains get less)
+	Being a court chaplain now gives 0.1 piety and 0.15 prestige per month rather than just 0.015 piety per month
+	Being a spymaster now gives 0.15 prestige per month
+	Characters now get a bit of prestige upon becoming a councilor, ranging from 50 for count-level lieges to 200 for emperor-level lieges. Spymasters get half this amount. Firing and rehiring a councilor will not give the bonus again
+	Minor localisation fix for West African Pagan clergy
+	Zoroastrian inbreeding won't affect fertility, occurence of inbreeding, etc
+	Fixed courtiers often converting to Shia Islam when they shouldn't
+	Updated Sniggles' Bookmarks to the latest version
+	Added icons for many of the decisions PB adds. Credit goes to Crater for the "is war possible?" icon. Credit goes to Korbah for the Muslim Invasion icon
+	(Shattered Balance) Fixed it crashing on campaign start
+	(PB+SWMH) Added an event to transfer the duchy of Benevento from the Pope to Sicily after the formation of Sicily
+	(PB+SWMH) Fixed Amalfi not having a center of trade
+	(PB+SWMH) Fixed a number of province issues
+	(PB+SWMH) Fixed holy wars for the Sahara sometimes being possible
+	(PB+SWMH) Fixed an issue with some courtiers having "noculture"
+	(PB+SWMH) Fixed the republic of Gotland not existing
+
 3.2.16
 	Now compatible with CKII 1.101 (non-beta version)
 	Fixed it being possible to skip the Intact Theme System stage

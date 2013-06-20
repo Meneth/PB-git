@@ -20,7 +20,7 @@ e_scandinavia = {
 		religion = "norse_pagan"
 	}
 	
-	#Unchanged from vanilla
+	# Pagan CoA
 	k_denmark = {
 		color={ 247 77 54 }
 		color2={ 136 157 23 }
@@ -32,6 +32,19 @@ e_scandinavia = {
 		capital = 266 # Sjaelland
 		
 		baltic_pagan_reformed = 50 # Crusade target weight
+		
+		pagan_coa = {
+			template = 0
+			layer = {
+				texture = 2
+				texture_internal = 0
+				emblem = 0
+				color = 0
+				color = 0
+				color = 0
+			}
+			religion = "norse_pagan"
+		}
 		
 		d_skane = {
 			color={ 210 2 2 }
@@ -454,7 +467,7 @@ e_scandinavia = {
 			}
 		}
 	}
-	#Colors changed. Viken moved from Sweden. Iceland moved to own kingdom. Name of Trøndelag corrected
+	#Colors changed. Viken moved from Sweden. Iceland moved to own kingdom. Name of Trøndelag corrected. Pagan CoA
 	k_norway = {
 		color={ 150 10 30 }
 		color2={ 220 220 220 }
@@ -465,6 +478,19 @@ e_scandinavia = {
 		
 		catholic = 100 # Crusade target weight
 		finnish_pagan_reformed = 50
+		
+		pagan_coa = {
+			template = 0
+			layer = {
+				texture = 2
+				texture_internal = 6
+				emblem = 0
+				color = 0
+				color = 0
+				color = 0
+			}
+			religion = "norse_pagan"
+		}
 		
 		d_orkney = {
 			color={ 210 40 100 }
@@ -1041,7 +1067,7 @@ e_scandinavia = {
 			}
 		}
 	}
-	#Viken moved to Norway
+	#Viken moved to Norway. Pagan CoA
 	k_sweden = {
 		color={ 55 112 170 }
 		color2={ 255 255 0 }
@@ -1054,7 +1080,20 @@ e_scandinavia = {
 		catholic = 100 # Crusade target weight
 		baltic_pagan_reformed = 50 # Crusade target weight
 		finnish_pagan_reformed = 50
-	
+		
+		pagan_coa = {
+			template = 0
+			layer = {
+				texture = 2
+				texture_internal = 10
+				emblem = 0
+				color = 0
+				color = 0
+				color = 0
+			}
+			religion = "norse_pagan"
+		}
+		
 		d_uppland = {
 			color={ 20 20 145 }
 			color2={ 255 255 255 }

@@ -74,7 +74,7 @@ underhanded_rogue = {
 charismatic_negotiator = {
 	education = yes
 	
-	diplomacy = 6
+	diplomacy = 5
 	intrigue = 1
 	learning = 1
 	martial = -1
@@ -87,7 +87,7 @@ charismatic_negotiator = {
 grey_eminence = {
 	education = yes
 	
-	diplomacy = 9
+	diplomacy = 7
 	intrigue = 2
 	learning = 2
 	martial = -1
@@ -733,7 +733,6 @@ strong = {
 		weak
 	}
 	
-	diplomacy = 1
 	martial = 2
 	
 	health = 2
@@ -818,14 +817,14 @@ scholar = {
 	lifestyle = yes
 	
 	stewardship = 1
-	learning = 2
+	learning = 1
 	
 	same_opinion = 20
 }
 gardener = {
 	lifestyle = yes
 	
-	stewardship = 2
+	stewardship = 1
 	intrigue = 1
 	
 	same_opinion = 20
@@ -872,7 +871,7 @@ hunter = {
 
 	health = 0.2
 	
-	martial = 1
+	martial = 2
 	
 	same_opinion = 20
 
@@ -894,6 +893,7 @@ falconer = {
 	health = 0.2
 	
 	diplomacy = 1
+	martial = 1
 	
 	same_opinion = 20
 }
@@ -991,7 +991,7 @@ charitable = {
 		greedy
 	}
 	global_tax_modifier = -0.05
-	diplomacy = 3
+	diplomacy = 2
 	
 	church_opinion = 10
 	opposite_opinion = -20
@@ -1039,7 +1039,6 @@ diligent = {
 	opposite_opinion = -20
 	same_opinion = 20
 	
-	diplomacy = 1
 	intrigue = 1
 	stewardship = 1
 	martial = 1
@@ -1077,7 +1076,7 @@ kind = {
 		cruel
 	}
 	intrigue = -2
-	diplomacy = 2
+	diplomacy = 1
 	
 	vassal_opinion = 5
 	opposite_opinion = -20
@@ -1184,7 +1183,7 @@ honest = {
 	}
 	
 	intrigue = -2
-	diplomacy = 3
+	diplomacy = 2
 	
 	opposite_opinion = -20
 	same_opinion = 20
@@ -1204,7 +1203,6 @@ craven = {
 	vassal_opinion = -5
 
 	intrigue = 1
-	diplomacy = 1	
 	martial = -2
 	
 	command_modifier = {
@@ -1259,7 +1257,7 @@ gregarious = {
 	vassal_opinion = 3
 	
 	intrigue = -1	
-	diplomacy = 2
+	diplomacy = 1
 }
 ambitious = {
 	personality = yes
@@ -1269,7 +1267,7 @@ ambitious = {
 	
 	intrigue = 2
 	stewardship = 2
-	diplomacy = 2
+	diplomacy = 1
 	martial = 2
 	learning = 2
 	

@@ -563,6 +563,12 @@ character_event = {
 		capital_scope = {
 			religion = ROOT
 		}
+		any_vassal = {
+			limit = {
+				NOT = { de_jure_liege_or_above = ROOT }
+			}
+			set_defacto_liege = FROM
+		}
 	}
 }
 
@@ -1155,5 +1161,43 @@ character_event = {
 	
 	option = {
 		name = OK
+	}
+}
+
+#Retinue block
+character_event = {
+	id = meneth.216
+	
+	desc = meneth.215.desc
+	picture = GFX_evt_battle
+	border = GFX_event_normal_frame_religion
+	
+	only_rulers = yes
+	
+	trigger = {
+		lower_tier_than = duke
+		NOT = { num_of_count_titles = 2 }
+		independent = no
+		NOT = { 
+			any_demesne_title = {
+				OR = {
+					has_building = ca_retinues
+					has_building = ct_retinues
+					has_building = tp_retinues
+				}
+			}
+		}
+		ai = yes
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = OK
+		any_demesne_title = {
+			add_building = ca_retinues
+			add_building = ct_retinues
+			add_building = tp_retinues
+		}
 	}
 }

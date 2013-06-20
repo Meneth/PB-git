@@ -870,6 +870,15 @@ conquest_of_the_balkans = {
 		always = no
 	}
 	
+	on_success = {
+		ROOT = {
+			prestige = 100
+		}
+		FROM = {
+			prestige = -100
+		}
+	}
+	
 	on_success_title = {
 		any_de_jure_vassal_title = {
 			limit = {

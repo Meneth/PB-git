@@ -58,7 +58,7 @@ character_event = {
 	
 	immediate = {
 		siege = {
-			troops = -0.05
+			troops = -0.025
 		}
 			
 		siege = {
@@ -93,7 +93,7 @@ character_event = {
 		
 		tooltip = {
 			siege = {
-				troops = -0.05
+				troops = -0.025
 			}
 				
 			siege = {
@@ -197,7 +197,7 @@ character_event = {
 			
 		siege = {
 			enemy = {
-				troops = -0.05
+				troops = -0.025
 				leader = {
 					any_liege = {
 						limit = {
@@ -231,7 +231,7 @@ character_event = {
 				
 			siege = {
 				enemy = {
-					troops = -0.05
+					troops = -0.025
 				}
 			}
 		}
@@ -316,7 +316,7 @@ character_event = {
 	
 	immediate = {
 		siege = {
-			troops = -0.025
+			troops = -0.0125
 		}
 			
 		siege = {
@@ -350,7 +350,7 @@ character_event = {
 		name = EVTOPTA62002
 		tooltip = {
 			siege = {
-				troops = -0.025
+				troops = -0.0125
 			}
 				
 			siege = {
@@ -613,7 +613,7 @@ character_event = {
 	
 	immediate = {
 		siege = {
-			troops = -0.05
+			troops = -0.025
 		}
 		siege = {
 			enemy = {
@@ -644,7 +644,7 @@ character_event = {
 		name = EVTOPTA62006
 		tooltip = {
 			siege = {
-				troops = -0.05
+				troops = -0.025
 			}
 		}
 	}
