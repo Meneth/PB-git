@@ -8,6 +8,7 @@
 	Increased the cost of archers by 50%
 	Modified light cavalry's power in melee and skirmish to correspond with vanilla
 	Fixed a "rum" trait showing up in the Ruler Designer
+	Increased the effect of martial on combat modifiers by 50%
 
 3.2.17
 	Unreformed West African Pagans now get defensive attrition

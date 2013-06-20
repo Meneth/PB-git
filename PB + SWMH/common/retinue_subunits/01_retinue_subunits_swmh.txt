@@ -54,7 +54,7 @@ RETTYPE_CUL_ROMAN =
 }
 RETTYPE_CUL_ITA = 
 {
-        first_type = 4
+	first_type = 4
 	first_amount = 150
 
 	second_type = 3
@@ -127,7 +127,7 @@ RETTYPE_CUL_SOUTHER_ITALIAN =
 	first_type = 4
 	first_amount = 150
 
-        second_type = 3
+	second_type = 3
 	second_amount = 100
 	
 	culture = southern_italian
@@ -139,10 +139,10 @@ RETTYPE_CUL_SOUTHER_ITALIAN =
 RETTYPE_CUL_NEAPOLITAN = 
 {	
 
-        first_type = 4
+	first_type = 4
 	first_amount = 150
 
-        second_type = 3
+	second_type = 3
 	second_amount = 100
 	
 	culture = neapolitan
@@ -156,7 +156,7 @@ RETTYPE_CUL_TUSCAN =
 	first_type = 4
 	first_amount = 150
 
-        second_type = 3
+	second_type = 3
 	second_amount = 100
 	
 	culture = tuscan
@@ -174,7 +174,7 @@ RETTYPE_CUL_LIGURIAN =
 	
 	modifier = {
 		archers_offensive = 0.2
-                archers_defensive = 0.4
+		archers_defensive = 0.4
 	}
 }
 RETTYPE_CUL_VENETIAN = 
@@ -185,7 +185,7 @@ RETTYPE_CUL_VENETIAN =
 	culture = venetian
 	
 	modifier = {
-                heavy_infantry_defensive = 0.6
+		heavy_infantry_defensive = 0.6
 	}
 }
 RETTYPE_CUL_LANGOBARDISCH = 
@@ -312,7 +312,7 @@ RETTYPE_CUL_SERBIAN =
 	culture = serbian
 	
 	modifier = {
-                   knights_offensive = 0.6
+		knights_offensive = 0.6
 	}
 }
 RETTYPE_CUL_BULGARIAN = 
@@ -323,18 +323,18 @@ RETTYPE_CUL_BULGARIAN =
 	culture = bulgarian
 	
 	modifier = {
-                 heavy_infantry_defensive = 0.6
+		heavy_infantry_defensive = 0.6
 	}
 }
 RETTYPE_CUL_ROMANIAN = 
 {
 	first_type = 1
 	first_amount = 250
-		
+	
 	culture = romanian
 	
 	modifier = {
-                 heavy_infantry_offensive = 0.6
+		heavy_infantry_offensive = 0.6
 	}
 }
 ########################
@@ -352,7 +352,7 @@ RETTYPE_CUL_HUNG =
 	
 	modifier = {
 		knights_offensive = 0.3
-                knights_defensive = 0.3
+		knights_defensive = 0.3
 	}
 }
 ########################
@@ -380,12 +380,12 @@ RETTYPE_CUL_BALT =
 	
 	first_type = 1
 	first_amount = 150
-       
-       	second_type = 0
+	
+	second_type = 0
 	second_amount = 100
 	
 	culture = livonian
-        culture = lettigallish
+	culture = lettigallish
 	
 	modifier = {
 		heavy_infantry_offensive = 0.6
@@ -397,7 +397,7 @@ RETTYPE_CUL_LITHUANIAN =
 	first_amount = 250
 	
 	culture = lithuanian
-        culture = prussian
+	culture = prussian
 	
 	modifier = {
 		heavy_infantry_offensive = 0.6
@@ -412,30 +412,30 @@ RETTYPE_CUL_FINNO_UGRIC =
 	first_amount = 250
 	
 	culture = finnish
-        culture = lappish
-        culture = ugricbaltic
-        culture = komi
-		culture = mordvins
-        culture = samoyeds
+	culture = lappish
+	culture = ugricbaltic
+	culture = komi
+	culture = mordvins
+	culture = samoyeds
 	
 	modifier = {
 		archers_offensive = 0.3
-                archers_defensive = 0.3
+		archers_defensive = 0.3
 	}
 }
 RETTYPE_CUL_ESTONIAN = 
 {
 	first_type = 1
 	first_amount = 150
-       
-       	second_type = 0
+	
+	second_type = 0
 	second_amount = 100 
 	
 	culture = tsuudi
 	
 	modifier = {
 		heavy_infantry_offensive = 0.3
-                heavy_infantry_defensive = 0.3
+		heavy_infantry_defensive = 0.3
 	}
 }
 ########################
@@ -528,7 +528,7 @@ RETTYPE_CUL_FRANKISH =
 	
 	modifier = {
 		knights_offensive = 0.3
-                knights_defensive = 0.3
+		knights_defensive = 0.3
 	}
 }
 RETTYPE_CUL_NORMAN = 
@@ -557,7 +557,7 @@ RETTYPE_CUL_ARPITAN =
 	
 	modifier = {
 		knights_offensive = 0.3
-                knights_defensive = 0.3
+		knights_defensive = 0.3
 	}
 }
 ########################
@@ -583,7 +583,7 @@ RETTYPE_CUL_BASQUE =
 	
 	modifier = {
 		heavy_infantry_offensive = 0.3
-                heavy_infantry_defensive = 0.3
+		heavy_infantry_defensive = 0.3
 	}
 }
 RETTYPE_CUL_ARAGONESE = 
@@ -638,7 +638,7 @@ RETTYPE_CUL_CATALAN =
 	culture = catalan
 	
 	modifier = {
-                light_infantry_offensive = 1.0
+		light_infantry_offensive = 1.0
 		light_infantry_defensive = 0.8
 	}
 }
@@ -665,7 +665,7 @@ RETTYPE_CUL_OCCTIAN =
 	
 	modifier = {
 		knights_offensive = 0.3
-                knights_defensive = 0.3
+		knights_defensive = 0.3
 	}
 }
 ########################
@@ -777,7 +777,7 @@ RETTYPE_CUL_SAXON =
 	
 	modifier = {
 		heavy_infantry_offensive = 0.2
-                heavy_infantry_defensive = 0.4
+		heavy_infantry_defensive = 0.4
 	}
 }
 ########################
@@ -823,11 +823,11 @@ RETTYPE_CUL_BYZ =
 	
 	second_type = 6
 	second_amount = 100
-  
+
 
 	culture = alan
 	culture = sicilian_greek
-        culture = greek
+	culture = greek
 
 	modifier = {
 		knights_offensive = 0.3
@@ -841,7 +841,7 @@ RETTYPE_CUL_ARMENIAN =
 	
 	second_type = 6
 	second_amount = 100
-  
+
 
 	culture = armenian
 
@@ -855,7 +855,7 @@ RETTYPE_CUL_ALBANIAN =
 	first_type = 3
 	first_amount = 250
 	
-        culture = arberian
+	culture = arberian
 
 	modifier = {
 		light_cavalry_offensive = 0.6
@@ -907,8 +907,8 @@ RETTYPE_CUL_ALTAIC =
 	second_amount = 120
 	
 	culture = cuman
-		culture = khazar
-        culture = pecheneg
+	culture = khazar
+	culture = pecheneg
 
 	modifier = {
 		horse_archers_offensive = 0.4
@@ -924,8 +924,8 @@ RETTYPE_CUL_AVAR =
 	second_amount = 100
 	
 	culture = cuman
-        culture = pecheneg
-modifier = {
+	culture = pecheneg
+	modifier = {
 		knights_defensive = 0.6
 		horse_archers_offensive = 0.3
 	}
