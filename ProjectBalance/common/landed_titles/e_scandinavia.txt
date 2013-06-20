@@ -1618,8 +1618,6 @@ e_scandinavia = {
 				}
 				b_sater = {
 				}
-				b_mora = {
-				}
 				b_tuna = {
 				}
 				b_idre = {

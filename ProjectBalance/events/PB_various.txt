@@ -1214,10 +1214,12 @@ character_event = {
 	only_independent = yes
 	
 	trigger = {
-		OR = {
-			NOT = { has_law = feudal_obligations_0 }
-			NOT = { has_law = city_obligations_0 }
-			NOT = { has_law = temple_obligations_0 }
+		primary_title = {
+			OR = {
+				NOT = { has_law = feudal_obligations_0 }
+				NOT = { has_law = city_obligations_0 }
+				NOT = { has_law = temple_obligations_0 }
+			}
 		}
 		primary_title = {
 			OR = {
@@ -1232,9 +1234,11 @@ character_event = {
 	option = {
 		name = OK
 		hidden_tooltip = {
-			add_law = feudal_obligations_0
-			add_law = city_obligations_0
-			add_law = temple_obligations_0
+			primary_title = {
+				add_law = feudal_obligations_0
+				add_law = city_obligations_0
+				add_law = temple_obligations_0
+			}
 		}
 	}
 }
