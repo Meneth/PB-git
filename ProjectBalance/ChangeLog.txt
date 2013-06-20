@@ -12,6 +12,7 @@
 	Integrated the additional cultural retinues SWMH adds (for cultures present in PB)
 	The Muslim county conquest CB now counts as a holy war, so defenders of another religion will often have religious allies join
 	Restored vanilla's tournaments. The New Duel Engine tournaments will be readded once they work properly
+	Fixed the retinue block sometimes being present in player-held counties
 	(PB+SWMH) Strengthened the initial position of the Christian Iberians
 
 3.2.17
