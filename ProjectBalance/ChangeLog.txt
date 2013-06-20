@@ -11,6 +11,7 @@
 	Increased the effect of martial on combat modifiers by 50%
 	Integrated the additional cultural retinues SWMH adds (for cultures present in PB)
 	The Muslim county conquest CB now counts as a holy war, so defenders of another religion will often have religious allies join
+	Restored vanilla's tournaments. The New Duel Engine tournaments will be readded once they work properly
 
 3.2.17
 	Unreformed West African Pagans now get defensive attrition
