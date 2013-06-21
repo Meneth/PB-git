@@ -448,4 +448,30 @@ decisions = {
 			factor = 0
 		}
 	}
+	republic_coastal_county = {
+		potential = {
+			ai = no
+			has_character_flag = holy_war_check
+			OR = {
+				is_merchant_republic = yes
+				is_patrician = yes
+			}
+		}
+		allow = {
+			religion_group = christian
+			NOT = { has_character_modifier = coastal_republic_cooldown }
+			NOT = { trait = content }
+			NOT = { trait = slothful }
+			NOT = { trait = imbecile }
+			NOT = { trait = craven }
+		}
+		effect = {
+			hidden_tooltip = {
+				clr_character_flag = holy_war_check
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
 }

@@ -162,6 +162,10 @@ spriteTypes = {
 		texturefile = "gfx\\interface\\decision_icon_war_county.dds"
 	}
 	spriteType = {
+		name = "GFX_republic_coastal_county"
+		texturefile = "gfx\\interface\\decision_icon_war_county.dds"
+	}
+	spriteType = {
 		name = "GFX_muslim_invasion_check"
 		texturefile = "gfx\\interface\\decision_icon_war_invasion.dds"
 	}
