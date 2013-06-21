@@ -236,12 +236,6 @@ other_claim = {
 	can_use = {
 		FROMFROM = {
 			OR = {
-				NOT = { tier = emperor }
-				is_close_relative = ROOT
-				any_spouse = { character = ROOT }
-				ai = no
-			}
-			OR = {
 				AND = {
 					NOT = { dynasty = FROM }
 					NOT = { is_close_relative = FROM }
@@ -274,8 +268,16 @@ other_claim = {
 			}
 		}
 	}
-
+	
 	can_use_title = {
+		FROMFROM = {
+			OR = {
+				NOT = { tier = emperor }
+				is_close_relative = ROOT
+				any_spouse = { character = ROOT }
+				ai = no
+			}
+		}
 		OR = {
 			ROOT = { is_female = no }
 			AND = {
@@ -291,7 +293,7 @@ other_claim = {
 				is_liege_or_above = FROM
 			}
 		}
-
+		
 		NOT = {
 			any_war = { # when used in title scope, checks all wars for that title
 				attacker = {
@@ -316,7 +318,7 @@ other_claim = {
 			}
 		}
 	}
-
+	
 	is_valid_title = {
 		OR = {
 			FROM = {
@@ -328,7 +330,7 @@ other_claim = {
 		}
 		ROOT = { has_claim = PREV }
 	}
-
+	
 	on_success = {
 		hidden_tooltip = {
 			ROOT = {
@@ -350,7 +352,7 @@ other_claim = {
 			prestige = -100
 		}
 	}
-
+	
 	on_success_title = {
 		if = {
 			limit = {
@@ -398,7 +400,7 @@ other_claim = {
 					set_character_flag = claimant_is_vassal_ruler_flag
 				}
 			}
-
+			
 			usurp_title_plus_barony_if_unlanded = ROOT
 			
 			hidden_tooltip = {
@@ -417,7 +419,7 @@ other_claim = {
 					}
 					ROOT = { set_defacto_liege = ROOT }
 				}
-			
+				
 				# try and vassalize, but only conditionally
 				if = {
 					limit = {
@@ -438,7 +440,7 @@ other_claim = {
 						set_defacto_liege = FROMFROM
 					}
 				}
-
+				
 				# check if the previous effect managed to make us part of the same realm
 				# if not, we'll break the other realm
 				if = {
@@ -497,7 +499,7 @@ other_claim = {
 			hidden_tooltip = { conquest_culture = ROOT }
 		}
 	}
-
+	
 	on_fail_title = {
 		ROOT = {
 			prestige = -100
@@ -517,7 +519,7 @@ other_claim = {
 			hidden_tooltip = { participation_scaled_prestige = 100 }
 		}
 	}
-
+	
 	on_reverse_demand = {
 		prestige = -150
 		transfer_scaled_wealth = {
@@ -537,13 +539,13 @@ other_claim = {
 			hidden_tooltip = { participation_scaled_prestige = 150 }
 		}
 	}
-
+	
 	on_reverse_demand_title = {
 		ROOT = {
 			remove_claim = PREV
 		}
 	}
-
+	
 	attacker_ai_victory_worth = {
 		factor = -1 # always accept
 	}
@@ -551,7 +553,7 @@ other_claim = {
 	attacker_ai_defeat_worth = {
 		factor = 100
 	}
-
+	
 	defender_ai_victory_worth = {
 		factor = -1 # always accept
 	}
