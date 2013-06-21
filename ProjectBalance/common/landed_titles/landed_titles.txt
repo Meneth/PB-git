@@ -2358,7 +2358,7 @@ d_ghanan_band = {
 	color = { 108 123 48 }
 	color2 = { 255 255 255 }
 
-	capital = 913 # Ghana
+	capital = 927 # Ghana
 	
 	# Hire Trigger
 	allow = {

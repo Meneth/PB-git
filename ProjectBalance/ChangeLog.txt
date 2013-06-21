@@ -1,3 +1,20 @@
+3.2.18
+	It is no longer possible to increase obligation laws as the HRE when the Decentralized HRE law is in effect, nor as the ERE when the Decayed Theme System law is in effect. If someone with above minimum obligations inherits with either law in effet the obligations will be forced down to minimal levels
+	The HRE cannot change succession law when the Decentralized HRE law is in effect
+	Fixed non-dejure vassals not becoming independent from the HRE when the emperor folds to demands for independence
+	The Ghanan Band is now actually based in Ghana rather than in the Low Countries
+	Fixed the prisoner release event something not firing when it should upon occupying a holding
+	Implemented some trait combat modifiers from VIET Traits
+	Increased the cost of archers by 50%
+	Modified light cavalry's power in melee and skirmish to correspond with vanilla
+	Fixed a "rum" trait showing up in the Ruler Designer
+	Increased the effect of martial on combat modifiers by 50%
+	Integrated the additional cultural retinues SWMH adds (for cultures present in PB)
+	The Muslim county conquest CB now counts as a holy war, so defenders of another religion will often have religious allies join
+	Restored vanilla's tournaments. The New Duel Engine tournaments will be readded once they work properly
+	Fixed the retinue block sometimes being present in player-held counties
+	Ensured that file extractors that ignore empty files will no longer cause problems (E.G., African provinces in the HRE)
+
 3.2.17
 	Unreformed West African Pagans now get defensive attrition
 	Almost all Lifestyle traits now give 2 stat points
@@ -23,7 +40,7 @@
 	Zoroastrian inbreeding won't affect fertility, occurence of inbreeding, etc
 	Fixed courtiers often converting to Shia Islam when they shouldn't
 	Updated Sniggles' Bookmarks to the latest version
-	Added icons for many of the decisions PB adds. Credit goes to Crater for the "is war possible?" icon. Credit goes to Korbah for the Muslim Invasion icon
+	Added icons for all of the decisions PB adds. Credit goes to Crater for the "is war possible?" icon. Credit goes to Korbah for the Muslim Invasion icon
 	(Shattered Balance) Fixed it crashing on campaign start
 	(PB+SWMH) Added an event to transfer the duchy of Benevento from the Pope to Sicily after the formation of Sicily
 	(PB+SWMH) Fixed Amalfi not having a center of trade

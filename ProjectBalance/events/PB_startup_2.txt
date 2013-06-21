@@ -8,7 +8,7 @@
 ###################################
 
 namespace = meneth
-#Make sure all the provinces are correct religion again
+#Gives out combat traits
 narrative_event = {
 	id = meneth.600
 	title = "meneth.200.name"

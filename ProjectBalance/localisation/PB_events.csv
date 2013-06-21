@@ -32,6 +32,7 @@ meneth.212.desc;You usually shouldn't be seeing this event, but for whatever rea
 meneth.213.desc;[FromFrom.GetTitledFirstName] has requested an exchange of prisoners. [FromFrom.GetSubjectPronoun] wants [From.GetTitledFirstName] released, and will in exchange release one member of our dynasty from their dungeons.;;;;;;;;;;;;;x
 meneth.214.desc;[From.GetTitledFirstName] has agreed to release [FromFrom.GetTitledFirstName], and we've in turn released one of their dynasty members.;;;;;;;;;;;;;x
 meneth.215.desc;[From.GetTitledFirstName] has not agreed to release [FromFrom.GetTitledFirstName].;;;;;;;;;;;;;x
+meneth.217.desc;The laws of your realm prevent you from instituting anything but minimal obligations from your vassals. Your demesne laws have therefore been returned to minimum.;;;;;;;;;;;;;x
 meneth.400.desc;It is time we asserted our dominion over Anatolia. We should invade Iconium.;;;;;;;;;;;;;x
 meneth.400.a;To war!;;;;;;;;;;;;;x
 meneth.400.b;I'd rather not;;;;;;;;;;;;;x

@@ -2,9 +2,6 @@
 temple = {
 	tp_shipyard_1 = {
 		desc = shipyard_desc
-		potential = {
-			port = yes
-		}
 		port = yes
 		trigger = { TECH_NAVAL = 2 }
 		build_cost = 50
@@ -18,9 +15,6 @@ temple = {
 	
 	tp_shipyard_2 = {
 		desc = shipyard_desc
-		potential = {
-			port = yes
-		}
 		port = yes
 		trigger = { TECH_NAVAL = 4 }
 		upgrades_from = tp_shipyard_1

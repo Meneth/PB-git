@@ -51,6 +51,7 @@ succession_laws = {
 					}
 				}
 			}
+			NOT = { has_law = hre_law_0 }
 		}
 		effect = {
 			succession = gavelkind
@@ -152,6 +153,7 @@ succession_laws = {
 					}
 				}
 			}
+			NOT = { has_law = hre_law_0 }
 		}
 		
 		effect = {
@@ -229,6 +231,7 @@ succession_laws = {
 					}
 				}
 			}
+			NOT = { has_law = hre_law_0 }
 		}
 		
 		effect = {
@@ -381,6 +384,7 @@ succession_laws = {
 					}
 				}
 			}
+			NOT = { has_law = hre_law_0 }
 		}
 		effect = {
 			succession = tanistry
@@ -399,15 +403,9 @@ succession_laws = {
 			holder_scope = {
 				OR = {
 					culture = mongol
-					AND = {
-						NOT = { religion = norse_pagan }
-						NOT = { religion = tengri_pagan }
-						NOT = { religion = baltic_pagan }
-						NOT = { religion = finnish_pagan }
-						NOT = { religion = aztec }
-						NOT = { religion = pagan }
-						NOT = { religion = slavic_pagan }
-					}
+					NOT = { religion_group = pagan_group }
+					is_reformed_religion = yes
+					religion = hellenic_pagan
 				}
 				
 				NOT = { religion_group = muslim }
@@ -468,6 +466,7 @@ succession_laws = {
 					}
 				}
 			}
+			NOT = { has_law = hre_law_0 }
 		}
 		
 		effect = {
@@ -697,6 +696,7 @@ gender_laws = {
 						has_nickname = nick_the_bold
 						has_nickname = nick_the_magnificent
 						has_nickname = nick_the_great
+						has_nickname = nick_the_saoshyant
 					}
 				}
 			}

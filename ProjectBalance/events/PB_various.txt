@@ -1201,3 +1201,44 @@ character_event = {
 		}
 	}
 }
+
+#Obligations in HRE and ERE
+#Retinue block
+character_event = {
+	id = meneth.217
+	
+	desc = meneth.217.desc
+	picture = GFX_evt_battle
+	border = GFX_event_normal_frame_religion
+	
+	only_independent = yes
+	
+	trigger = {
+		primary_title = {
+			OR = {
+				NOT = { has_law = feudal_obligations_0 }
+				NOT = { has_law = city_obligations_0 }
+				NOT = { has_law = temple_obligations_0 }
+			}
+		}
+		primary_title = {
+			OR = {
+				has_law = hre_law_0
+				has_law = themes_0
+			}
+		}
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = OK
+		hidden_tooltip = {
+			primary_title = {
+				add_law = feudal_obligations_0
+				add_law = city_obligations_0
+				add_law = temple_obligations_0
+			}
+		}
+	}
+}
