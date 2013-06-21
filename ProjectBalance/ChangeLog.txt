@@ -1,5 +1,7 @@
 3.2.19
 	Fixed some minor adjacency issues
+	The Warrior Cult building now gives 2 galleys
+	(PB+SWMH) Strengthened the initial position of the Christian Iberians
 
 3.2.18
 	It is no longer possible to increase obligation laws as the HRE when the Decentralized HRE law is in effect, nor as the ERE when the Decayed Theme System law is in effect. If someone with above minimum obligations inherits with either law in effet the obligations will be forced down to minimal levels
@@ -17,7 +19,6 @@
 	Restored vanilla's tournaments. The New Duel Engine tournaments will be readded once they work properly
 	Fixed the retinue block sometimes being present in player-held counties
 	Ensured that file extractors that ignore empty files will no longer cause problems (E.G., African provinces in the HRE)
-	(PB+SWMH) Strengthened the initial position of the Christian Iberians
 
 3.2.17
 	Unreformed West African Pagans now get defensive attrition
