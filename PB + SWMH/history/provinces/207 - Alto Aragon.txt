@@ -1,0 +1,35 @@
+# 207 - Alto Aragón
+
+# County Title
+title = c_alto_aragon
+
+# Settlements
+max_settlements = 4
+b_jaca = castle
+b_borau = temple
+b_canfranc = city
+#b_anso = castle
+
+
+# Misc
+culture = aragonese
+religion = catholic
+
+# History
+
+1066.1.1 = { 
+	b_jaca = ca_town_1
+	b_jaca = ca_keep_1
+	b_jaca = ca_keep_2
+	b_jaca = ca_stable_1
+	b_jaca = ca_stable_2
+	b_jaca = ca_militia_barracks_1
+	b_jaca = ca_militia_barracks_2
+	b_jaca = ca_wall_1
+	b_jaca = ca_wall_2
+	b_jaca = ca_barracks_1
+	b_jaca = ca_barracks_2
+	b_jaca = ca_culture_group_iberian_0
+	b_jaca = ca_culture_group_iberian_1
+	b_jaca = ca_training_grounds_1
+}
