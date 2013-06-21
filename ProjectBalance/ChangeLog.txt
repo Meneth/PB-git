@@ -14,7 +14,6 @@
 	Restored vanilla's tournaments. The New Duel Engine tournaments will be readded once they work properly
 	Fixed the retinue block sometimes being present in player-held counties
 	Ensured that file extractors that ignore empty files will no longer cause problems (E.G., African provinces in the HRE)
-	(PB+SWMH) Strengthened the initial position of the Christian Iberians
 
 3.2.17
 	Unreformed West African Pagans now get defensive attrition
