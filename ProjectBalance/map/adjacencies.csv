@@ -5,7 +5,7 @@ From;To;Type;Through;-1;-1;-1;-1;Comment
 35;39;sea;992;-1;-1;-1;-1;Western Isles-Ross
 36;37;sea;993;-1;-1;-1;-1;Orkney-Caithness
 50;54;sea;1019;-1;-1;-1;-1;Galloway-Isle of Man
-72;73;sea;965;-1;-1;-1;-1;Essex-Kent
+72;73;sea;1077;-1;-1;-1;-1;Essex-Kent
 78;79;sea;973;-1;-1;-1;-1;Brugge-Zeeland
 79;80;sea;973;-1;-1;-1;-1;Zeeland-Holland
 79;92;sea;973;-1;-1;-1;-1;Zeeland-Breda
@@ -35,7 +35,7 @@ From;To;Type;Through;-1;-1;-1;-1;Comment
 473;474;sea;1037;-1;-1;-1;-1;Arta-Corfu
 474;476;sea;1037;-1;-1;-1;-1;Corfu-Achaia
 475;476;sea;1037;-1;-1;-1;-1;Hellas-Achaia
-483;747;sea;936;-1;-1;-1;-1;Rhodos-Lykia
+483;747;sea;1047;-1;-1;-1;-1;Rhodos-Lykia
 484;485;sea;1017;-1;-1;-1;-1;Naxos-Euboia
 486;746;sea;1111;-1;-1;-1;-1;Samos-Ephesos
 487;744;sea;1111;-1;-1;-1;-1;Lesbos-Abydos

@@ -672,9 +672,7 @@ laws = {
 		}
 		allow = {
 			OR = {
-				AND = {
-					has_law = city_obligations_1
-				}
+				has_law = city_obligations_1
 				has_law = city_obligations_3
 			}
 			NOT = {
