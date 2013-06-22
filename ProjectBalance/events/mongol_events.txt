@@ -4768,12 +4768,12 @@ narrative_event = {
 		}
 		set_global_flag = seljuk_arrival
 		set_character_flag = horde_invader
-		900 = { # Kyzylorda
+		299 = { # Farrah
 			kingdom = {
 				ROOT = {
 					war = {
 						casus_belli = tribal_invasion
-						target = PREVPREV # The top liege of the owner of Kyzylorda
+						target = PREVPREV # The top liege of the owner of Farrah
 						thirdparty_title = PREV # The de jure kingdom
 					}
 				}
@@ -4783,7 +4783,7 @@ narrative_event = {
 		spawn_unit = {
 			owner = ROOT
 			leader = ROOT
-			province = 900 # Kyzylorda
+			province = 299 # Farrah
 			troops =
 			{
 				horse_archers = { 7500 7500 }
@@ -4808,7 +4808,7 @@ narrative_event = {
 		}
 		new_character = {
 			spawn_unit = {
-				province = 900 # Kyzylorda
+				province = 299 # Farrah
 				owner = PREV
 				troops =
 				{
@@ -4835,7 +4835,7 @@ narrative_event = {
 		}
 		new_character = {
 			spawn_unit = {
-				province = 900 # Kyzylorda
+				province = 299 # Farrah
 				owner = PREV
 				troops =
 				{
