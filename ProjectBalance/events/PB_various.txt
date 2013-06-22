@@ -948,6 +948,9 @@ character_event = {
 		has_character_flag = pope_we_refuse_law_changed
 		NOT = { had_character_flag = { flag = pope_we_refuse_law_changed days = 730 } }
 		NOT = { trait = excommunicated }
+		rightful_religious_head_scope = {
+			reverse_has_opinion_modifier = { who = ROOT modifier = pope_invest_dislike }
+		}
 	}
 	mean_time_to_happen = {
 		months = 24
