@@ -535,7 +535,7 @@ NEconomy = {
 	LOOT_PRESTIGE_MULT = 0.5,						-- Whenever you gain loot you also get prestige related to the loot
 	LOOT_EVERY_X_DAYS = 2,							-- Loot every this many days
 	LOOT_IDEAL_MIN_TROOPS = 1000,					-- Minimum troops for maximum loot, less than this scales down the amount looted
-	BUILDING_COST_MULT = 0.5,						-- Increases build cost of all buildings
+	BUILDING_COST_MULT = 0.0,						-- Increases build cost of all buildings
 },
 
 NDecadence = {
