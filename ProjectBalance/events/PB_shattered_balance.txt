@@ -2,7 +2,7 @@
 #
 # Gender Equality
 #
-# Id meneth.500 is reserved
+# Id meneth.501 to 599 is reserved
 #
 #
 ###################################

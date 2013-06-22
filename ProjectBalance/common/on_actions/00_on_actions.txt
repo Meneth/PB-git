@@ -780,6 +780,7 @@ on_birth = {
 		318 # A Bastard is born, but is not recognized as such by the mother's spouse (cuckoo!)
 		
 		TOG.3206 # Child Perceived to be Demon Born
+		meneth.700 #Inheritance of traits from grandparents
 	}
 }
 

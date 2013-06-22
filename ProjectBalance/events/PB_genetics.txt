@@ -1,0 +1,735 @@
+###################################
+#
+# Genetic events
+#
+# Id meneth.700 to meneth.799 is reserved
+#
+#
+###################################
+
+#Inheritance from grandparents
+character_event = {
+	id = meneth.700
+	
+	desc = meneth.1.desc
+	picture = GFX_evt_battle
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = OK
+		father_even_if_dead = {
+			father_even_if_dead = {
+				if = {
+					limit = { trait = clubfooted }
+					random = {
+						chance = 5
+						ROOT = { add_trait = clubfooted }
+					}
+				}
+				if = {
+					limit = { trait = harelip }
+					random = {
+						chance = 5
+						ROOT = { add_trait = harelip }
+					}
+				}
+				if = {
+					limit = { trait = hunchback }
+					random = {
+						chance = 5
+						ROOT = { add_trait = hunchback }
+					}
+				}
+				if = {
+					limit = { trait = lisp }
+					random = {
+						chance = 5
+						ROOT = { add_trait = lisp }
+					}
+				}
+				if = {
+					limit = { trait = stutter }
+					random = {
+						chance = 5
+						ROOT = { add_trait = stutter }
+					}
+				}
+				if = {
+					limit = { trait = fair }
+					random = {
+						chance = 5
+						ROOT = { add_trait = fair }
+					}
+				}
+				if = {
+					limit = { trait = ugly }
+					random = {
+						chance = 5
+						ROOT = { add_trait = ugly }
+					}
+				}
+				if = {
+					limit = { trait = dwarf }
+					random = {
+						chance = 15
+						ROOT = { add_trait = dwarf }
+					}
+				}
+				if = {
+					limit = { trait = genius }
+					random = {
+						chance = 5
+						ROOT = { add_trait = genius }
+					}
+				}
+				if = {
+					limit = { trait = quick }
+					random = {
+						chance = 5
+						ROOT = { add_trait = quick }
+					}
+				}
+				if = {
+					limit = { trait = slow }
+					random = {
+						chance = 5
+						ROOT = { add_trait = slow }
+					}
+				}
+				if = {
+					limit = { trait = imbecile }
+					random = {
+						chance = 5
+						ROOT = { add_trait = imbecile }
+					}
+				}
+				if = {
+					limit = { trait = inbred }
+					random = {
+						chance = 10
+						ROOT = { add_trait = inbred }
+					}
+				}
+				if = {
+					limit = { trait = strong }
+					random = {
+						chance = 5
+						ROOT = { add_trait = strong }
+					}
+				}
+				if = {
+					limit = { trait = weak }
+					random = {
+						chance = 5
+						ROOT = { add_trait = weak }
+					}
+				}
+				if = {
+					limit = { trait = tall }
+					random = {
+						chance = 10
+						ROOT = { add_trait = tall }
+					}
+				}
+				if = {
+					limit = { trait = agile }
+					random = {
+						chance = 5
+						ROOT = { add_trait = agile }
+					}
+				}
+				if = {
+					limit = { trait = perceptive }
+					random = {
+						chance = 5
+						ROOT = { add_trait = perceptive }
+					}
+				}
+				if = {
+					limit = { trait = melodious_voice }
+					random = {
+						chance = 5
+						ROOT = { add_trait = melodious_voice }
+					}
+				}
+				if = {
+					limit = { trait = powerful_voice }
+					random = {
+						chance = 5
+						ROOT = { add_trait = powerful_voice }
+					}
+				}
+				if = {
+					limit = { trait = ambidextrous }
+					random = {
+						chance = 5
+						ROOT = { add_trait = ambidextrous }
+					}
+				}
+				if = {
+					limit = { trait = lefthanded }
+					random = {
+						chance = 5
+						ROOT = { add_trait = lefthanded }
+					}
+				}
+				if = {
+					limit = { trait = wrymouth }
+					random = {
+						chance = 5
+						ROOT = { add_trait = wrymouth }
+					}
+				}
+				if = {
+					limit = { trait = deaf }
+					random = {
+						chance = 5
+						ROOT = { add_trait = deaf }
+					}
+				}
+				if = {
+					limit = { trait = absentminded }
+					random = {
+						chance = 5
+						ROOT = { add_trait = absentminded }
+					}
+				}
+			}
+			mother_even_if_dead = {
+				if = {
+					limit = { trait = clubfooted }
+					random = {
+						chance = 5
+						ROOT = { add_trait = clubfooted }
+					}
+				}
+				if = {
+					limit = { trait = harelip }
+					random = {
+						chance = 5
+						ROOT = { add_trait = harelip }
+					}
+				}
+				if = {
+					limit = { trait = hunchback }
+					random = {
+						chance = 5
+						ROOT = { add_trait = hunchback }
+					}
+				}
+				if = {
+					limit = { trait = lisp }
+					random = {
+						chance = 5
+						ROOT = { add_trait = lisp }
+					}
+				}
+				if = {
+					limit = { trait = stutter }
+					random = {
+						chance = 5
+						ROOT = { add_trait = stutter }
+					}
+				}
+				if = {
+					limit = { trait = fair }
+					random = {
+						chance = 5
+						ROOT = { add_trait = fair }
+					}
+				}
+				if = {
+					limit = { trait = ugly }
+					random = {
+						chance = 5
+						ROOT = { add_trait = ugly }
+					}
+				}
+				if = {
+					limit = { trait = dwarf }
+					random = {
+						chance = 15
+						ROOT = { add_trait = dwarf }
+					}
+				}
+				if = {
+					limit = { trait = genius }
+					random = {
+						chance = 5
+						ROOT = { add_trait = genius }
+					}
+				}
+				if = {
+					limit = { trait = quick }
+					random = {
+						chance = 5
+						ROOT = { add_trait = quick }
+					}
+				}
+				if = {
+					limit = { trait = slow }
+					random = {
+						chance = 5
+						ROOT = { add_trait = slow }
+					}
+				}
+				if = {
+					limit = { trait = imbecile }
+					random = {
+						chance = 5
+						ROOT = { add_trait = imbecile }
+					}
+				}
+				if = {
+					limit = { trait = inbred }
+					random = {
+						chance = 10
+						ROOT = { add_trait = inbred }
+					}
+				}
+				if = {
+					limit = { trait = strong }
+					random = {
+						chance = 5
+						ROOT = { add_trait = strong }
+					}
+				}
+				if = {
+					limit = { trait = weak }
+					random = {
+						chance = 5
+						ROOT = { add_trait = weak }
+					}
+				}
+				if = {
+					limit = { trait = tall }
+					random = {
+						chance = 10
+						ROOT = { add_trait = tall }
+					}
+				}
+				if = {
+					limit = { trait = agile }
+					random = {
+						chance = 5
+						ROOT = { add_trait = agile }
+					}
+				}
+				if = {
+					limit = { trait = perceptive }
+					random = {
+						chance = 5
+						ROOT = { add_trait = perceptive }
+					}
+				}
+				if = {
+					limit = { trait = melodious_voice }
+					random = {
+						chance = 5
+						ROOT = { add_trait = melodious_voice }
+					}
+				}
+				if = {
+					limit = { trait = powerful_voice }
+					random = {
+						chance = 5
+						ROOT = { add_trait = powerful_voice }
+					}
+				}
+				if = {
+					limit = { trait = ambidextrous }
+					random = {
+						chance = 5
+						ROOT = { add_trait = ambidextrous }
+					}
+				}
+				if = {
+					limit = { trait = lefthanded }
+					random = {
+						chance = 5
+						ROOT = { add_trait = lefthanded }
+					}
+				}
+				if = {
+					limit = { trait = wrymouth }
+					random = {
+						chance = 5
+						ROOT = { add_trait = wrymouth }
+					}
+				}
+				if = {
+					limit = { trait = deaf }
+					random = {
+						chance = 5
+						ROOT = { add_trait = deaf }
+					}
+				}
+				if = {
+					limit = { trait = absentminded }
+					random = {
+						chance = 5
+						ROOT = { add_trait = absentminded }
+					}
+				}
+			}
+		}
+		mother_even_if_dead = {
+			father_even_if_dead = {
+				if = {
+					limit = { trait = clubfooted }
+					random = {
+						chance = 5
+						ROOT = { add_trait = clubfooted }
+					}
+				}
+				if = {
+					limit = { trait = harelip }
+					random = {
+						chance = 5
+						ROOT = { add_trait = harelip }
+					}
+				}
+				if = {
+					limit = { trait = hunchback }
+					random = {
+						chance = 5
+						ROOT = { add_trait = hunchback }
+					}
+				}
+				if = {
+					limit = { trait = lisp }
+					random = {
+						chance = 5
+						ROOT = { add_trait = lisp }
+					}
+				}
+				if = {
+					limit = { trait = stutter }
+					random = {
+						chance = 5
+						ROOT = { add_trait = stutter }
+					}
+				}
+				if = {
+					limit = { trait = fair }
+					random = {
+						chance = 5
+						ROOT = { add_trait = fair }
+					}
+				}
+				if = {
+					limit = { trait = ugly }
+					random = {
+						chance = 5
+						ROOT = { add_trait = ugly }
+					}
+				}
+				if = {
+					limit = { trait = dwarf }
+					random = {
+						chance = 15
+						ROOT = { add_trait = dwarf }
+					}
+				}
+				if = {
+					limit = { trait = genius }
+					random = {
+						chance = 5
+						ROOT = { add_trait = genius }
+					}
+				}
+				if = {
+					limit = { trait = quick }
+					random = {
+						chance = 5
+						ROOT = { add_trait = quick }
+					}
+				}
+				if = {
+					limit = { trait = slow }
+					random = {
+						chance = 5
+						ROOT = { add_trait = slow }
+					}
+				}
+				if = {
+					limit = { trait = imbecile }
+					random = {
+						chance = 5
+						ROOT = { add_trait = imbecile }
+					}
+				}
+				if = {
+					limit = { trait = inbred }
+					random = {
+						chance = 10
+						ROOT = { add_trait = inbred }
+					}
+				}
+				if = {
+					limit = { trait = strong }
+					random = {
+						chance = 5
+						ROOT = { add_trait = strong }
+					}
+				}
+				if = {
+					limit = { trait = weak }
+					random = {
+						chance = 5
+						ROOT = { add_trait = weak }
+					}
+				}
+				if = {
+					limit = { trait = tall }
+					random = {
+						chance = 10
+						ROOT = { add_trait = tall }
+					}
+				}
+				if = {
+					limit = { trait = agile }
+					random = {
+						chance = 5
+						ROOT = { add_trait = agile }
+					}
+				}
+				if = {
+					limit = { trait = perceptive }
+					random = {
+						chance = 5
+						ROOT = { add_trait = perceptive }
+					}
+				}
+				if = {
+					limit = { trait = melodious_voice }
+					random = {
+						chance = 5
+						ROOT = { add_trait = melodious_voice }
+					}
+				}
+				if = {
+					limit = { trait = powerful_voice }
+					random = {
+						chance = 5
+						ROOT = { add_trait = powerful_voice }
+					}
+				}
+				if = {
+					limit = { trait = ambidextrous }
+					random = {
+						chance = 5
+						ROOT = { add_trait = ambidextrous }
+					}
+				}
+				if = {
+					limit = { trait = lefthanded }
+					random = {
+						chance = 5
+						ROOT = { add_trait = lefthanded }
+					}
+				}
+				if = {
+					limit = { trait = wrymouth }
+					random = {
+						chance = 5
+						ROOT = { add_trait = wrymouth }
+					}
+				}
+				if = {
+					limit = { trait = deaf }
+					random = {
+						chance = 5
+						ROOT = { add_trait = deaf }
+					}
+				}
+				if = {
+					limit = { trait = absentminded }
+					random = {
+						chance = 5
+						ROOT = { add_trait = absentminded }
+					}
+				}
+			}
+			mother_even_if_dead = {
+				if = {
+					limit = { trait = clubfooted }
+					random = {
+						chance = 5
+						ROOT = { add_trait = clubfooted }
+					}
+				}
+				if = {
+					limit = { trait = harelip }
+					random = {
+						chance = 5
+						ROOT = { add_trait = harelip }
+					}
+				}
+				if = {
+					limit = { trait = hunchback }
+					random = {
+						chance = 5
+						ROOT = { add_trait = hunchback }
+					}
+				}
+				if = {
+					limit = { trait = lisp }
+					random = {
+						chance = 5
+						ROOT = { add_trait = lisp }
+					}
+				}
+				if = {
+					limit = { trait = stutter }
+					random = {
+						chance = 5
+						ROOT = { add_trait = stutter }
+					}
+				}
+				if = {
+					limit = { trait = fair }
+					random = {
+						chance = 5
+						ROOT = { add_trait = fair }
+					}
+				}
+				if = {
+					limit = { trait = ugly }
+					random = {
+						chance = 5
+						ROOT = { add_trait = ugly }
+					}
+				}
+				if = {
+					limit = { trait = dwarf }
+					random = {
+						chance = 15
+						ROOT = { add_trait = dwarf }
+					}
+				}
+				if = {
+					limit = { trait = genius }
+					random = {
+						chance = 5
+						ROOT = { add_trait = genius }
+					}
+				}
+				if = {
+					limit = { trait = quick }
+					random = {
+						chance = 5
+						ROOT = { add_trait = quick }
+					}
+				}
+				if = {
+					limit = { trait = slow }
+					random = {
+						chance = 5
+						ROOT = { add_trait = slow }
+					}
+				}
+				if = {
+					limit = { trait = imbecile }
+					random = {
+						chance = 5
+						ROOT = { add_trait = imbecile }
+					}
+				}
+				if = {
+					limit = { trait = inbred }
+					random = {
+						chance = 10
+						ROOT = { add_trait = inbred }
+					}
+				}
+				if = {
+					limit = { trait = strong }
+					random = {
+						chance = 5
+						ROOT = { add_trait = strong }
+					}
+				}
+				if = {
+					limit = { trait = weak }
+					random = {
+						chance = 5
+						ROOT = { add_trait = weak }
+					}
+				}
+				if = {
+					limit = { trait = tall }
+					random = {
+						chance = 10
+						ROOT = { add_trait = tall }
+					}
+				}
+				if = {
+					limit = { trait = agile }
+					random = {
+						chance = 5
+						ROOT = { add_trait = agile }
+					}
+				}
+				if = {
+					limit = { trait = perceptive }
+					random = {
+						chance = 5
+						ROOT = { add_trait = perceptive }
+					}
+				}
+				if = {
+					limit = { trait = melodious_voice }
+					random = {
+						chance = 5
+						ROOT = { add_trait = melodious_voice }
+					}
+				}
+				if = {
+					limit = { trait = powerful_voice }
+					random = {
+						chance = 5
+						ROOT = { add_trait = powerful_voice }
+					}
+				}
+				if = {
+					limit = { trait = ambidextrous }
+					random = {
+						chance = 5
+						ROOT = { add_trait = ambidextrous }
+					}
+				}
+				if = {
+					limit = { trait = lefthanded }
+					random = {
+						chance = 5
+						ROOT = { add_trait = lefthanded }
+					}
+				}
+				if = {
+					limit = { trait = wrymouth }
+					random = {
+						chance = 5
+						ROOT = { add_trait = wrymouth }
+					}
+				}
+				if = {
+					limit = { trait = deaf }
+					random = {
+						chance = 5
+						ROOT = { add_trait = deaf }
+					}
+				}
+				if = {
+					limit = { trait = absentminded }
+					random = {
+						chance = 5
+						ROOT = { add_trait = absentminded }
+					}
+				}
+			}
+		}
+	}
+}

@@ -10,6 +10,7 @@
 	Removed the 50% increase to all building costs (added in vanilla 1.10)
 	Fixed some issues with navigable rivers, including the Danube being navigable by anyone
 	Fixed an issue where imprisonment events would sometimes fire when they shouldn't
+	There is now a low chance of inheriting genetic traits from one's grandparents upon birth. For most genetic traits you get a 5% chance of inheritance per grandparent that has it
 	(PB+SWMH) Strengthened the initial position of the Christian Iberians
 	(PB+SWMH) If Aragon hasn't been expanded when Castille's dejure area is expanded to Murcia, expansion is applied, giving Aragon Valencia and Mallorca dejure
 
