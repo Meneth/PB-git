@@ -17,7 +17,7 @@ alliance_wars_desc;You have to meet these requirements to declare war upon allie
 imperial_reconquest_check;Imperial Reconquest;;;;;;;;;;;;;x
 imperial_reconquest_check_desc;Do note that target areas are unlocked in tiers. Every county in a tier has to be controlled before the next tier can be targetted.;;;;;;;;;;;;;x
 pagan_subjugation_check;Pagan Subjugation;;;;;;;;;;;;;x
-pagan_subjugation_check_desc;If the target is within the same kingdom as your capital, these requirements must be met.;;;;;;;;;;;;;x
+pagan_subjugation_check_desc;If the target is within the same kingdom as your capital, these requirements must be met. You also cannot target characters currently being targetted by another subjugation war, and must share a border with you.;;;;;;;;;;;;;x
 pagan_subjugation_wrong_kingdom_check;Pagan Subjugation Foreign Kingdom;;;;;;;;;;;;;x
 pagan_subjugation_wrong_kingdom_check_desc;If the target is not within the same kingdom as your capital, these requirements must be met, in addition to holding a dejure title within the target kingdom either directly or via a vassal.;;;;;;;;;;;;;x
 pagan_conquest_check;Pagan County Conquest;;;;;;;;;;;;;x
