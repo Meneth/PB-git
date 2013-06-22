@@ -1,12 +1,13 @@
 #CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
-meneth.0.desc;Our family has assimilated the local culture.;Our family has assimilated the local culture.;Our family has assimilated the local culture.;;Our family has assimilated the local culture.;;;;;;;;;x
-meneth.0.a;Assimilate the local culture.;Assimilate the local culture.;Assimilate the local culture.;;Assimilate the local culture.;;;;;;;;;x
-meneth.0.b;Do nothing.;Do nothing.;Do nothing.;;Do nothing.;;;;;;;;;x
-meneth.1.desc;I've assimilated the local culture.;I've assimilated the local culture.;I've assimilated the local culture.;;I've assimilated the local culture.;;;;;;;;;x
-meneth.1.a;Assimilate the local culture.;Assimilate the local culture.;Assimilate the local culture.;;Assimilate the local culture.;;;;;;;;;x
-meneth.1.b;Do nothing.;Do nothing.;Do nothing.;;Do nothing.;;;;;;;;;x
-meneth.100.desc;It's dangerous to go alone! Take this piety!;It's dangerous to go alone! Take this piety!;It's dangerous to go alone! Take this piety!;;It's dangerous to go alone! Take this piety!;;;;;;;;;x
-meneth.100.a;Free piety! Thanks;Free piety! Thanks;Free piety! Thanks;;Free piety! Thanks;;;;;;;;;x
+meneth.0.desc;Our family has assimilated the local culture.;;;;;;;;;;;;;x
+meneth.0.a;Assimilate the local culture;;;;;;;;;;;;;x
+meneth.0.b;Do nothing;;;;;;;;;;;;;x
+meneth.1.desc;I've assimilated the local culture.;;;;;;;;;;;;;x
+meneth.1.a;Assimilate the local culture;;;;;;;;;;;;;x
+meneth.1.b;Do nothing;;;;;;;;;;;;;x
+meneth.100.desc;It's dangerous to go alone! Take this piety!;;;;;;;;;;;;;x
+meneth.100.a;Free piety! Thanks;;;;;;;;;;;;;x
+meneth.101.desc;EVTDESC60013;The great [Root.GetTitledName] and all [Root.GetHerHis] vassals have converted and embraced the Shiite faith!;;;;;;;;;;;;;x
 meneth.200.name;Welcome;;;;;;;;;;;;;x
 meneth.200.desc;Welcome to Project Balance. This event is here to set up the campaign and to give you a brief introduction to Project Balance. \nProject Balance is much more minimalist than most major mods. Instead of trying to remake the game I've made tweaks in order to make the game both more enjoyable and more historically plausible.\nMake sure to check the "is war possible?" decision to see if you meet the restrictions. \nIf you encounter any issues or have any questions or feedback you can contact me in Project Balance's thread on the Paradoxplaza forums. Alternatively you can send me a PM on Paradoxplaza or on Reddit. \nI hope you'll enjoy the mod, \n- Meneth;;;;;;;;;;;;;x
 meneth.200.a;OK;;;;;;;;;;;;;x
