@@ -729,6 +729,15 @@ liberation_revolt = {
 							}
 						}
 					}
+					PREV = {
+						if = {
+							limit = { has_holder = no }
+							add_law = revokation_1
+							add_law = crown_levies_0
+							add_law = king_peace_0
+							add_law = inheritance_0
+						}
+					}
 					usurp_title = PREV
 				}
 			}

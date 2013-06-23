@@ -16,6 +16,7 @@
 	The Mongols can now convert to Reformed Tengri if they manage to get ahold of provinces with the religion
 	If the leaders of the Golden Horde and the Ilkhanate are the same religion, Timur will be the same religion as them rather than Shia
 	Commented out the event that clears tournaments that go on for long, as it should no longer be needed
+	Fixed liberation revolts sometimes leading to kingdoms with no crown authority law
 	(867 start) The Seljuks no longer start so ridiculously far north, so they're far less likely to expand into the Steppe
 	(PB+SWMH) Strengthened the initial position of the Christian Iberians
 	(PB+SWMH) If Aragon hasn't been expanded when Castille's dejure area is expanded to Murcia, expansion is applied, giving Aragon Valencia and Mallorca dejure
