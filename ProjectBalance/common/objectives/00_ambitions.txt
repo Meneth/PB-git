@@ -1119,7 +1119,7 @@ obj_improve_martial = {
 		prisoner = no
 	}
 	chance = {
-		factor = 100
+		factor = 200
 		
 		modifier = {
 			factor = 1.25
@@ -1140,6 +1140,10 @@ obj_improve_martial = {
 		modifier = {
 			factor = 0.01
 			trait = slothful
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { martial = 5 }
 		}
 	}
 	success = {
@@ -1179,7 +1183,7 @@ obj_improve_stewardship = {
 		prisoner = no
 	}
 	chance = {
-		factor = 100
+		factor = 200
 		
 		modifier = {
 			factor = 1.25
@@ -1200,6 +1204,11 @@ obj_improve_stewardship = {
 		modifier = {
 			factor = 0.01
 			trait = slothful
+		}
+		
+		modifier = {
+			factor = 1.5
+			NOT = { stewardship = 5 }
 		}
 	}
 	success = {
@@ -1242,7 +1251,7 @@ obj_improve_learning = {
 		prisoner = no
 	}
 	chance = {
-		factor = 100
+		factor = 200
 		
 		modifier = {
 			factor = 1.25
@@ -1263,6 +1272,10 @@ obj_improve_learning = {
 		modifier = {
 			factor = 0.01
 			trait = slothful
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { learning = 5 }
 		}
 	}
 	success = {
@@ -1301,7 +1314,7 @@ obj_improve_diplomacy = {
 		prisoner = no
 	}
 	chance = {
-		factor = 100
+		factor = 200
 		
 		modifier = {
 			factor = 1.25
@@ -1322,6 +1335,10 @@ obj_improve_diplomacy = {
 		modifier = {
 			factor = 0.01
 			trait = slothful
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { diplomacy = 5 }
 		}
 	}
 	success = {
@@ -1360,7 +1377,7 @@ obj_improve_intrigue = {
 		prisoner = no
 	}
 	chance = {
-		factor = 100
+		factor = 200
 		
 		modifier = {
 			factor = 1.25
@@ -1381,6 +1398,10 @@ obj_improve_intrigue = {
 		modifier = {
 			factor = 0.01
 			trait = slothful
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { intrigue = 5 }
 		}
 	}
 	success = {
