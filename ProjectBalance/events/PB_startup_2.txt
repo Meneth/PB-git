@@ -2,7 +2,7 @@
 #
 # Startup event
 #
-# Id meneth.600 to 700 is reserved
+# Id meneth.600 to 699 is reserved
 #
 #
 ###################################

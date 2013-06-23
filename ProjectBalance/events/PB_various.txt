@@ -948,6 +948,9 @@ character_event = {
 		has_character_flag = pope_we_refuse_law_changed
 		NOT = { had_character_flag = { flag = pope_we_refuse_law_changed days = 730 } }
 		NOT = { trait = excommunicated }
+		rightful_religious_head_scope = {
+			reverse_has_opinion_modifier = { who = ROOT modifier = pope_invest_dislike }
+		}
 	}
 	mean_time_to_happen = {
 		months = 24
@@ -1046,6 +1049,7 @@ character_event = {
 	border = GFX_event_normal_frame_religion
 	
 	trigger = {
+		always = no #Not needed until fancy tourneys are implemented again, and hopefully not then either
 		had_character_flag = { flag = attending_tournament days = 730 }
 	}
 	
@@ -1242,3 +1246,4 @@ character_event = {
 		}
 	}
 }
+#meneth.218 taken

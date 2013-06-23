@@ -729,6 +729,15 @@ liberation_revolt = {
 							}
 						}
 					}
+					PREV = {
+						if = {
+							limit = { has_holder = no }
+							add_law = revokation_1
+							add_law = crown_levies_0
+							add_law = king_peace_0
+							add_law = inheritance_0
+						}
+					}
 					usurp_title = PREV
 				}
 			}
@@ -948,7 +957,7 @@ caliphal_subjugation = {
 			religion_group = muslim
 			OR = {
 				has_landed_title = d_sunni
-				has_landed_title = d_shiite
+				has_landed_title = k_shiite
 			}
 			has_horde_culture = no # Should use tribal invasion instead
 			NOT = { has_character_modifier = launched_subjugation }
@@ -1318,7 +1327,7 @@ shia_caliphate_rising = {
 				de_jure_liege_or_above = PREVPREV
 			}
 		}
-		d_shiite = {
+		k_shiite = {
 			has_holder = no
 		}
 	}
@@ -1340,7 +1349,7 @@ shia_caliphate_rising = {
 	on_success_title = {
 		custom_tooltip = tribal_invasion_succ_tip
 		hidden_tooltip = {
-			d_shiite = {
+			k_shiite = {
 				usurp_title = ROOT
 			}
 			FROM = {

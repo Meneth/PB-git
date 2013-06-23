@@ -527,7 +527,7 @@ NEconomy = {
 	PATRICIAN_CITY_TAX_MULT = 0.5,					-- Patricians don't pay normal City Tax to their liege... (CFixedPoint64)
 	OVER_MAX_DEMESNE_TAX_PENALTY = 0.25,			-- Percent penalty per county over the limit
 	TAX_TO_LOOT_MULTIPLIER = 0.75,					-- Lootable gold per tax 
-	FORT_LOOT_DEFENCE_MULTIPLIER = 4.0,				-- Loot protected gold per fortlevel
+	FORT_LOOT_DEFENCE_MULTIPLIER = 3.0,				-- Loot protected gold per fortlevel
 	LOOTABLE_GOLD_REGROWTH = 0.02,					-- Percent of max lootable gold that regrows every month
 	LOOT_PERCENT_PER_LOOTTICK = 0.04,				-- Percent of max lootable gold that is looted each loot tick
 	TPC_TO_LOOT_MULTIPLIER = 0.05,					-- Max loot in a navy is max troops * this
@@ -535,7 +535,7 @@ NEconomy = {
 	LOOT_PRESTIGE_MULT = 0.5,						-- Whenever you gain loot you also get prestige related to the loot
 	LOOT_EVERY_X_DAYS = 2,							-- Loot every this many days
 	LOOT_IDEAL_MIN_TROOPS = 1000,					-- Minimum troops for maximum loot, less than this scales down the amount looted
-	BUILDING_COST_MULT = 0.5,						-- Increases build cost of all buildings
+	BUILDING_COST_MULT = 0.0,						-- Increases build cost of all buildings
 },
 
 NDecadence = {

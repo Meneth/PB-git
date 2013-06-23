@@ -2183,6 +2183,15 @@ character_event = {
 			de_jure_liege = k_castille
 		}
 		set_global_flag = expansion_of_castille_murcia
+		hidden_tooltip = {
+			d_valencia = {
+				de_jure_liege = k_aragon
+			}
+			d_mallorca = {
+				de_jure_liege = k_aragon
+			}
+			set_global_flag = expansion_of_aragon_valencia
+		}
 	}
 }
 

@@ -598,7 +598,7 @@ fair = {
 }
 ugly = {
 	birth = 100
-	inherit_chance = 10
+	inherit_chance = 15
 	
 	sex_appeal_opinion = -20
 	
