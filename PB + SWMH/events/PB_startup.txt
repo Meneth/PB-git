@@ -65,27 +65,6 @@ narrative_event = {
 			797 = { religion = miaphysite }
 			802 = { religion = miaphysite }
 		}
-		e_byzantium = {
-			holder_scope = {
-				any_vassal = {
-					limit = { trait = content }
-					remove_trait = content
-				}
-			}
-		}
-		if = {
-			limit = { e_persia = { holder_scope = { has_landed_title = k_persia } } }
-			k_persia = {
-				destroy_landed_title = THIS
-			}
-		}
-		if = {
-			limit = {
-				k_egypt = { has_holder = yes }
-				NOT = { year = 1171 }
-			}
-			k_egypt = { destroy_landed_title = THIS }
-		}
 	}
 	
 	option = {

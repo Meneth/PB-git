@@ -1,3 +1,6 @@
+3.2.20
+	(867 start) Fixed Egypt not existing
+
 3.2.19
 	Fixed some minor adjacency issues
 	The Warrior Cult building now gives 2 galleys
