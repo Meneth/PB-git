@@ -70,8 +70,8 @@ laws = {
 				revoke_law = feudal_slider_4
 			}
 		}
-		castle_vassal_max_levy = -0.275
-		castle_vassal_tax_modifier = 0.05
+		castle_vassal_max_levy = -0.25
+		castle_vassal_tax_modifier = 0.075
 	}
 	
 	feudal_slider_2 = {
@@ -106,8 +106,8 @@ laws = {
 			}
 		}
 		
-		castle_vassal_max_levy = -0.35
-		castle_vassal_tax_modifier = 0.1
+		castle_vassal_max_levy = -0.3
+		castle_vassal_tax_modifier = 0.15
 	}
 	
 	feudal_slider_3 = {
@@ -142,8 +142,8 @@ laws = {
 			}
 		}
 		
-		castle_vassal_max_levy = -0.425
-		castle_vassal_tax_modifier = 0.15
+		castle_vassal_max_levy = -0.35
+		castle_vassal_tax_modifier = 0.225
 	}
 	
 	feudal_slider_4 = {
@@ -175,8 +175,8 @@ laws = {
 			}
 		}
 		
-		castle_vassal_max_levy = -0.5
-		castle_vassal_tax_modifier = 0.2
+		castle_vassal_max_levy = -0.4
+		castle_vassal_tax_modifier = 0.3
 	}
 	
 	
@@ -434,7 +434,7 @@ laws = {
 			}
 		}
 		
-		city_vassal_max_levy = -0.4
+		city_vassal_max_levy = -0.3
 		city_vassal_tax_modifier = 0.1
 	}
 
@@ -468,7 +468,7 @@ laws = {
 			}
 		}
 		
-		city_vassal_max_levy = -0.45
+		city_vassal_max_levy = -0.375
 		city_vassal_tax_modifier = 0.15
 	}
 	
@@ -502,7 +502,7 @@ laws = {
 			}
 		}
 		
-		city_vassal_max_levy = -0.5
+		city_vassal_max_levy = -0.45
 		city_vassal_tax_modifier = 0.5
 	}
 	
@@ -536,7 +536,7 @@ laws = {
 			}
 		}
 		
-		city_vassal_max_levy = -0.55
+		city_vassal_max_levy = -0.525
 		city_vassal_tax_modifier = 0.25
 	}
 	

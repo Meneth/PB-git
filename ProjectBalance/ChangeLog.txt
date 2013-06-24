@@ -2,7 +2,7 @@
 	(867 start) Fixed Egypt not existing
 	Doubled the chance of being randomly born with most congenital traits (does not affect trait inheritance)
 	Genius parents or grandparents now make the quick trait more likely if you don't inherit the genius trait. Imbecile and inbred also makes slow more likely
-	Rebalanced the clergy and burgher obligation focus sliders
+	Rebalanced the obligation focus sliders
 
 3.2.19
 	Fixed some minor adjacency issues
