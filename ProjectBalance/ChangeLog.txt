@@ -1,5 +1,6 @@
 3.2.21
 	Moved as many requirements as possible from the "is war possible?" decisions over to the war declaration UI. Some still remain due to it not being possible to display title requirements in the UI yet
+	Changed the colors of Zoroastrians to blue as it looks better than red, and is at least somewhat relevant
 
 3.2.20
 	Updated to work with patch 1.102
