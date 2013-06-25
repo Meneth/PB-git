@@ -620,6 +620,7 @@ decisions = {
 			}
 		}
 		effect = {
+			custom_tooltip = EVTOPTA62910_CUSTOM
 			narrative_event = { id = 62910 tooltip = EVTTOOLTIP62910 }
 			k_pechenegs = { holder_scope = { character_event = { id = meneth.426 } } }
 			if = {

@@ -809,6 +809,8 @@ narrative_event = {
 			}
 		}
 		
+		custom_tooltip = EVTOPTA62910_CUSTOM
+		
 		hidden_tooltip = {
 			any_playable_ruler = {
 				limit = {

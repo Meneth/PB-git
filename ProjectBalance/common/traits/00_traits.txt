@@ -528,7 +528,7 @@ homosexual = {
 #####################
 
 clubfooted = {
-	birth = 50
+	birth = 100
 	inherit_chance = 15
 	
 	sex_appeal_opinion = -10
@@ -537,7 +537,7 @@ clubfooted = {
 	martial = -1
 }
 harelip = {
-	birth = 50
+	birth = 100
 	inherit_chance = 15
 	
 	sex_appeal_opinion = -10
@@ -546,7 +546,7 @@ harelip = {
 	diplomacy = -1
 }
 hunchback = {
-	birth = 50
+	birth = 100
 	inherit_chance = 15
 	
 	sex_appeal_opinion = -30
@@ -557,7 +557,7 @@ hunchback = {
 	martial = -1
 }
 lisp = {
-	birth = 50
+	birth = 100
 	inherit_chance = 15
 	
 	sex_appeal_opinion = -5
@@ -571,7 +571,7 @@ lisp = {
 	}
 }
 stutter = {
-	birth = 50
+	birth = 100
 	inherit_chance = 15
 	
 	same_opinion = 5
@@ -585,7 +585,7 @@ stutter = {
 	
 }
 fair = {
-	birth = 100
+	birth = 200
 	inherit_chance = 15
 	
 	sex_appeal_opinion = 30
@@ -597,7 +597,7 @@ fair = {
 	diplomacy = 1
 }
 ugly = {
-	birth = 100
+	birth = 200
 	inherit_chance = 15
 	
 	sex_appeal_opinion = -20
@@ -613,7 +613,7 @@ ugly = {
 	}
 }
 dwarf = {
-	birth = 25
+	birth = 50
 	inherit_chance = 50
 	
 	sex_appeal_opinion = -30
@@ -629,7 +629,7 @@ dwarf = {
 	monthly_character_prestige = 0.05
 }
 genius = {
-	birth = 50
+	birth = 100
 	inherit_chance = 15
 	
 	opposites =  {
@@ -650,7 +650,7 @@ genius = {
 	
 }
 quick = {
-	birth = 100
+	birth = 200
 	inherit_chance = 15
 	
 	opposites =  {
@@ -668,7 +668,7 @@ quick = {
 	ai_rationality = 15
 }
 slow = {
-	birth = 100
+	birth = 200
 	inherit_chance = 15
 	
 	opposites =  {
@@ -686,7 +686,7 @@ slow = {
 	ai_rationality = -15
 }
 imbecile = {
-	birth = 50
+	birth = 100
 	inherit_chance = 15
 	
 	sex_appeal_opinion = -30
@@ -726,7 +726,7 @@ inbred = {
 	ai_rationality = -20
 }
 strong = {
-	birth = 100
+	birth = 200
 	inherit_chance = 15
 	
 	opposites =  {
@@ -747,7 +747,7 @@ strong = {
 	}
 }
 weak = {
-	birth = 100
+	birth = 200
 	inherit_chance = 15
 	
 	opposites =  {

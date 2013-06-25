@@ -1,4 +1,4 @@
-#Unchanged from vanilla except for top section, allow section, and Dublin's Norse name
+#Unchanged from vanilla except for top section, allow section
 e_britannia = {
 	color={ 172 22 22 }
 	color2={ 255 255 255 }
@@ -1015,6 +1015,14 @@ e_britannia = {
 		catholic = 300 # Crusade target weight
 		norse_pagan_reformed = 200 # Crusade target weight
 		
+		norse = Skotland
+		swedish = Skottland
+		danish = Skotland
+		norwegian = Skottland
+		welsh = Alba
+		irish = Alba
+		breton = Alba
+		
 		d_galloway = {
 			color={ 77 116 208 }
 			color2={ 255 255 255 }
@@ -1483,6 +1491,11 @@ e_britannia = {
 		catholic = 300 # Crusade target weight
 		norse_pagan_reformed = 200 # Crusade target weight
 		
+		norse = Irland
+		swedish = Irland
+		danish = Irland
+		norwegian = Irland
+		
 		d_ulster = {
 			color={ 5 222 31 }
 			color2={ 255 255 255 }
@@ -1691,7 +1704,10 @@ e_britannia = {
 				color={ 55 250 85 }
 				color2={ 255 255 255 }
 				
+				norse = Dyflinn
+				
 				b_dublin = {
+					norse = Dyflinn
 				}
 				b_clondalkin = {
 				}

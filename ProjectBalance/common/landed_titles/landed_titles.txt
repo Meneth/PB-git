@@ -342,6 +342,15 @@ d_sunni = {
 	}
 	
 	caliphate = yes
+	
+	coat_of_arms=
+	{
+		data=
+		{
+			0 0 0 3 0 2 2
+		}
+		religion=sunni
+	}
 }
 
 d_shiite = {
@@ -435,6 +444,15 @@ k_shiite = {
 	}
 
 	caliphate = yes
+	
+	coat_of_arms=
+	{
+		data=
+		{
+			0 0 0 9 1 7 7
+		}
+		religion=shiite
+	}
 }
 
 e_golden_horde = {
@@ -2362,7 +2380,7 @@ d_ghanan_band = {
 	
 	# Hire Trigger
 	allow = {
-		always = yes
+		culture_group = west_african
 	}
 	
 	# Parent Religion 
@@ -2662,6 +2680,7 @@ k_finland = {
 		OR = {
 			culture_group = north_germanic
 			culture_group = finno_ugric
+			culture_group = east_slavic
 		}
 	}
 
@@ -3390,6 +3409,8 @@ k_brittany = {
 	
 	catholic = 300 # Crusade target weight
 	
+	norse = Bertangaland
+	
 	allow = {
 		culture_group = celtic
 	}
@@ -3401,6 +3422,8 @@ k_brittany = {
 		capital = 105 # Vannes
 		
 		culture = breton
+		
+		norse = Bertangaland
 		
 		c_nantes = {
 			color={ 37 28 230 }
@@ -4393,7 +4416,7 @@ k_saruhan = {
 }
 k_seljuk_turks = { # Seljuk Turks
 	color={ 99 168 74 }
-	capital = 900 # Kyzylorda
+	capital = 646 # Esfahan
 	culture = turkish
 	
 	tribe=yes

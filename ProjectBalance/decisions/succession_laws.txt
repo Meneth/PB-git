@@ -689,4 +689,41 @@ gender_laws = {
 			always = no
 		}			
 	}
+	
+	enatic_succession = {
+		male_dynasty_opinion = -20
+		female_dynasty_opinion = 20
+		
+		potential = {
+			always = no # For modders only
+		}
+		allow = {
+			always=yes
+		}
+		effect = {
+			gender_succ = enatic
+		}
+		revoke_allowed = {
+			always = no
+		}			
+	}
+	
+	enatic_cognatic_succession = {
+		male_dynasty_opinion = -15
+		female_dynasty_opinion = 10
+		
+		potential = {
+			always = no # For modders only
+		}
+		allow = {
+			always=yes
+		}
+		effect = {
+			gender_succ = enatic_cognatic
+		}
+		revoke_allowed = {
+			always = no
+		}			
+	}
+	
 }

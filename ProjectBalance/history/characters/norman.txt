@@ -1094,7 +1094,7 @@
 	father=252
 	mother=41001
 	1027.1.15 = {
-		birth="1027.1.15"
+		birth=yes
 	}
 	1035.7.3 = {
 		give_nickname=nick_the_bastard
@@ -1188,7 +1188,7 @@
 		give_nickname=nick_the_conqueror
 	}
 	1087.9.9 = {
-		death="1087.9.9"
+		death=yes
 	}
 }
 

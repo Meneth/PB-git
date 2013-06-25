@@ -950,7 +950,15 @@ caliphal_subjugation = {
 	can_ask_to_join_war = yes
 	check_de_jure_tier = KING # this scans all de jure kingdoms for the counties which are held by or vassals(or below) of selected character. Only valid if is_permanent = yes
 	
-	piety_cost = 200
+	can_use_gui = {
+		ROOT = {
+			piety = 200
+		}
+	}
+	
+	on_add = {
+		ROOT = { piety = -200 }
+	}
 
 	can_use = {
 		ROOT = {

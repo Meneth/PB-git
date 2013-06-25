@@ -14,7 +14,8 @@
 # These three all have war scopes, which currently has the following scope changes: 
 # attacker, defender, thirdparty(only valid if thirdparty character is involved), thirdparty_title(only valid if thirdparty title is involved)
 #
-# Added ai_will_do, modifies value AI places on the CB compared to other CBs (default: 1)
+# ai_will_do: modifies value AI places on the CB compared to other CBs (default: 1)
+# can_use_gui: If otherwise valid, the CB is listed in the Diplo View, but you can't declare war unless 'can_use_gui' is also valid (also shows a trigger tooltip.)
 #
 
 claim = {
@@ -2995,7 +2996,7 @@ crusade = {
 	is_holy_war = yes
 	check_de_jure_tier = KING # this scans all de jure kingdoms for the counties which are held by or vassals(or below) of selected character. Only valid if is_permanent = yes
 
-	can_use = {
+	can_use_gui = {
 		NOT = { has_global_flag = shattered_balance }
 		OR = {
 			ROOT = {
@@ -3016,7 +3017,6 @@ crusade = {
 			}
 		}
 		ROOT = {
-			can_call_crusade = yes
 			has_called_crusade = no
 			religion_authority = 0.05
 			is_landed = yes # Otherwise the war score starts at -100%
@@ -3027,6 +3027,18 @@ crusade = {
 				}
 			}
 		}
+		NOT = { religion = miaphysite }
+		NOT = {
+			AND = {
+				religion = orthodox
+				culture_group = east_african
+			}
+		}
+	}
+	can_use = {
+		ROOT = {
+			can_call_crusade = yes
+		}
 		FROM = {
 			OR = {
 				NOT = { religion_group = ROOT }
@@ -3035,13 +3047,6 @@ crusade = {
 				AND = {
 					religion_group = pagan_group
 					NOT = { religion = ROOT }
-				}
-			}
-			NOT = { religion = miaphysite }
-			NOT = {
-				AND = {
-					religion = orthodox
-					culture_group = east_african
 				}
 			}
 		}
@@ -7277,10 +7282,34 @@ county_conquest = {
 	press_claim = yes
 	can_ask_to_join_war = no
 	
+	can_use_gui = {
+		ROOT = {
+			piety = 50
+		}
+	}
+	
+	on_add = {
+		ROOT = { piety = -50 }
+		if = {
+			limit = {
+				FROM = {
+					NOT = {
+						religion_group = ROOT
+					}
+				}
+			}
+			ROOT = {
+				add_character_modifier = {
+					name = holy_war_cooldown
+					duration = 1825
+				}
+			}
+		}
+	}
+	
 	can_use = {
 		ROOT = {
 			religion_group = muslim
-			piety = 50
 			NOT = { is_liege_or_above = FROM }
 			OR = {
 				religion_group = FROM
@@ -7401,25 +7430,6 @@ county_conquest = {
 		}
 	}
 	
-	on_add = {
-		ROOT = { piety = -50 }
-		if = {
-			limit = {
-				FROM = {
-					NOT = {
-						religion_group = ROOT
-					}
-				}
-			}
-			ROOT = {
-				add_character_modifier = {
-					name = holy_war_cooldown
-					duration = 1825
-				}
-			}
-		}
-	}
-
 	on_success_title = {
 		if = {
 			limit = {
@@ -7683,7 +7693,21 @@ muslim_invasion = {
 	is_holy_war = yes
 	can_ask_to_join_war = yes
 	check_de_jure_tier = KING # this scans all de jure kingdoms for the counties which are held by or vassals(or below) of selected character. Only valid if is_permanent = yes
-
+	
+	can_use_gui = {
+		ROOT = {
+			piety = 500
+		}
+	}
+	
+	on_add = {
+		ROOT = { piety = -500 }
+		add_character_modifier = {
+			name = holy_war_cooldown
+			duration = 1825
+		}
+	}
+	
 	can_use = {
 		ROOT = {
 			NOT = { has_character_modifier = holy_war_cooldown }
@@ -7778,16 +7802,6 @@ muslim_invasion = {
 		FROM = {
 			any_realm_title = {
 				de_jure_liege_or_above = PREVPREV
-			}
-		}
-	}
-	
-	on_add = {
-		ROOT = { piety = -500 }
-		ROOT = {
-			add_character_modifier = {
-				name = holy_war_cooldown
-				duration = 1825
 			}
 		}
 	}

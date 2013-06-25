@@ -497,7 +497,7 @@
 	father=120
 	mother=101534
 	1022.1.1={
-		birth="1022.1.1"
+		birth=yes
 	}
 	1048.1.1={
 		add_spouse=131 #Ealdgyth 'Swanneck'
@@ -508,6 +508,7 @@
 	1065.6.6={
 		add_spouse=123 #Ealdgyth of Mercia
 	}
+	#Rebalanced starting forces
 	1066.9.14 = {
 		raise_levies = {
 			location = 62 # Leicester
