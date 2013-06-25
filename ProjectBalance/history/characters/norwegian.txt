@@ -34,8 +34,8 @@
 	add_trait="martial_cleric"
 	father=102504
 	mother=102503
-	1037.1.2={
-		birth="1037.1.2"
+	1024.1.2={
+		birth="1024.1.2"
 	}
 	1087.1.2={
 		death="1087.1.2"
@@ -43,7 +43,7 @@
 }
 
 102523 = {
-	name="Hakon"
+	name="Håkon"
 	dynasty=100273
 	martial=6
 	diplomacy=8
@@ -55,8 +55,8 @@
 	add_trait="brave"
 	add_trait="tough_soldier"
 	father=102522
-	1031.1.2={
-		birth="1031.1.2"
+	1026.1.2={
+		birth="1026.1.2"
 	}
 	1062.1.2= {
 		add_spouse = 102530
@@ -171,7 +171,7 @@
 	father=102500
 	mother=102501
 	1015.1.2={
-		birth="1015.1.2"
+		birth=yes
 	}
 	1044.1.2={
 		add_spouse=633
@@ -180,7 +180,7 @@
 		add_claim = k_england
 		give_nickname = nick_haardraade
 	}
-
+	#Rebalanced starting forces
 	1066.9.14 = {
 		wealth = 750
 		
@@ -188,7 +188,7 @@
 			raise_levies = {
 				location = 57 # York
 				#Rebalanced starting forces
-				force_mult = 0.95
+				force_mult = 0.75
 			}
 			spawn_unit = {
 				province = 57 # York
@@ -198,7 +198,7 @@
 				leader = ROOT
 				match_character = ROOT
 				#Rebalanced starting forces
-				match_mult = 0.95
+				match_mult = 0.75
 				attrition = 1.0
 			}
 			spawn_unit = {
@@ -209,20 +209,18 @@
 				leader = 124 # Tostig
 				match_character = ROOT
 				#Rebalanced starting forces
-				match_mult = 0.95
+				match_mult = 0.75
 				attrition = 1.0
 			}
-			create_character = {
-				random_traits = yes
-				dynasty = random
-				religion = ROOT
-				culture = ROOT
-				female = no
-				age = 23
-				attributes = {
-					martial = 5
-				}
-				trait = tough_soldier
+			spawn_unit = {
+				province = 57 # York
+				owner = ROOT
+				disband_on_peace = yes
+				earmark = norwegian_invasion
+				leader = 102534 # Olav Kyrre
+				match_character = ROOT
+				match_mult = 0.75
+				attrition = 1.0
 			}
 			spawn_unit = {
 				province = 57 # York
@@ -237,7 +235,10 @@
 		}
 	}
 	1066.9.26 = {
-		death="1066.9.26"
+		death = {
+			death_reason = death_battle
+			killer = 122
+		}
 	}
 }
 
@@ -431,25 +432,28 @@
 }
 
 102547 = {
-	name="Orm"
+	name="Ormr"
 	dynasty=455
 	martial=7
 	diplomacy=7
 	intrigue=8
 	stewardship=8
 	religion="catholic"
-	culture="norwegian"
+	culture="norse"
 	add_trait="charitable"
 	add_trait="temperate"
 	add_trait="clubfooted"
 	add_trait="flamboyant_schemer"
 	father=102546
 	mother=102513
-	1030.1.2={
-		birth="1030.1.2"
+	1019.1.2={
+		birth="1019.1.2"
 	}
-	1093.1.1={
-		death="1093.1.1"
+	1040.1.1={
+		add_spouse=102506
+	}
+	1055.1.2={
+		death="1055.1.2"
 	}
 }
 
@@ -494,8 +498,8 @@
 	1060.1.27={
 		add_spouse = 102557
 	}
-	1090.1.2={
-		death="1090.1.2"
+	1103.1.2={
+		death="1103.1.2"
 	}
 }
 
@@ -531,7 +535,7 @@
 	stewardship=7
 	religion="catholic"
 	culture="norwegian"
-	add_trait="hunchback"
+	add_trait="flamboyant_schemer"
 	father=102553
 	mother=102557
 	1064.1.2={
@@ -784,8 +788,9 @@
 	religion="catholic"
 	culture="norwegian"
 	father=102547
-	1060.1.1={
-		birth="1060.1.1"
+	mother=102506
+	1050.1.1={
+		birth="1050.1.1"
 	}
 	1120.1.1={
 		death="1120.1.1"
@@ -1065,7 +1070,7 @@
 
 202006 = {
 	name="Kaare"
-	dynasty=100273
+	dynasty=468
 	martial=6
 	diplomacy=4
 	intrigue=8
@@ -1643,8 +1648,9 @@
 	add_trait="honest"
 	add_trait="tough_soldier"
 	father=161124
-	1120.1.1={
-		birth="1120.1.1"
+	mother=102558
+	1101.1.1={
+		birth="1101.1.1"
 	}
 	1140.1.2={
 		add_spouse=202041
@@ -1652,8 +1658,8 @@
 	1149.1.24={
 		add_spouse = 202042
 	}
-	1183.1.1={
-		death="1183.1.1"
+	1163.1.1={
+		death="1163.1.1"
 	}
 }
 
@@ -1725,6 +1731,8 @@
 	culture="norwegian"
 	add_trait="clubfooted"
 	add_trait="tough_soldier"
+	father=183911
+	mother=183913
 	1115.1.1={
 		birth="1115.1.1"
 	}
@@ -4707,11 +4715,14 @@
 	religion="catholic"
 	culture="norwegian"
 	father=125
-	1090.1.1={
-		birth="1090.1.1"
+	1075.1.1={
+		birth="1075.1.1"
 	}
-	1140.1.1={
-		death="1140.1.1"
+    1090.1.1={
+            add_spouse=102558
+    }
+	1125.1.1={
+		death="1125.1.1"
 	}
 }
 
@@ -4904,5 +4915,191 @@
 	}
 	1068.1.1={
 		death="1068.1.1"
+	}
+}
+
+183902 = {
+	name="Ogmund"
+	dynasty=453
+	religion="catholic"
+	culture="norwegian"
+	father=102553
+	mother=102557
+	1061.1.2={
+		birth="1061.1.2"
+	}
+	1103.1.1={
+		death="1103.1.1"
+	}
+}
+
+183903 = {
+	name="Finn"
+	dynasty=453
+	religion="catholic"
+	culture="norwegian"
+	father=102553
+	mother=102557
+	1062.1.2={
+		birth="1062.1.2"
+	}
+	1103.1.1={
+		death="1103.1.1"
+	}
+}
+
+183904 = {
+	name="Thord"
+	dynasty=453
+	religion="catholic"
+	culture="norwegian"
+	father=102553
+	mother=102557
+	1063.1.2={
+		birth="1063.1.2"
+	}
+	1103.1.1={
+		death="1103.1.1"
+	}
+}
+
+183905 = {
+	name="Ragna"
+        female=yes
+	dynasty=455
+	religion="catholic"
+	culture="norwegian"
+	father=102547
+	mother=102506
+	1052.1.1={
+		birth="1052.1.1"
+	}
+	1102.1.2={
+		death="1102.1.2"
+	}
+}
+
+183906 = {
+	name="Munan"
+	dynasty=455
+	religion="catholic"
+	culture="norwegian"
+	father=144248
+	1100.1.1={
+		birth="1100.1.1"
+	}
+	1137.1.1={
+		death="1137.1.1"
+	}
+}
+
+183907 = {
+	name="Astrid"
+        female=yes
+	dynasty=455
+	religion="catholic"
+	culture="norwegian"
+	father=144248
+	1102.1.1={
+		birth="1102.1.1"
+	}
+	1152.1.1={
+		death="1152.1.1"
+	}
+}
+
+183908 = {
+	name="Ragnhild"
+        female=yes
+	dynasty=756
+	religion="catholic"
+	culture="norwegian"
+	father=125
+	1074.1.1={
+		birth="1074.1.1"
+	}
+	1113.1.1={
+		death="1113.1.1"
+	}
+}
+
+183909 = {
+	name="Sigrid"
+        female=yes
+	dynasty=2033
+	religion="catholic"
+	culture="norwegian"
+	father=161124
+        mother=102558
+	1104.1.1={
+		birth="1104.1.1"
+	}
+	1154.1.1={
+		death="1154.1.1"
+	}
+}
+
+183910 = {
+	name="Svein"
+	dynasty=1030031
+	religion="catholic"
+	culture="norwegian"
+	1048.1.1={
+		birth="1048.1.1"
+	}
+	1068.1.1={
+		add_spouse=183905 #Ragna Hagalín
+	}
+	1098.1.1={
+		death="1098.1.1"
+	}
+}
+
+183911 = {
+	name="Orm"
+	dynasty=1030031
+	religion="catholic"
+	culture="norwegian"
+	father=183910
+	mother=183905
+	1078.1.1={
+		birth="1078.1.1"
+	}
+	1092.1.1={
+		add_spouse=183908 #Ragnhild Rein
+	}
+	1114.1.1={
+		add_spouse=183913 #Ragnhild
+	}
+	1140.1.1={
+		death="1140.1.1"
+	}
+}
+
+183912 = {
+	name="Ogmund"
+	dynasty=1030031
+	religion="catholic"
+	culture="norwegian"
+	father=183911
+	mother=183908
+	1105.1.1={
+		birth="1105.1.1"
+	}
+	1155.1.1={
+		death="1155.1.1"
+	}
+}
+
+183913 = {
+	name="Ragnhild"
+	female=yes
+	religion="catholic"
+	culture="norwegian"
+	1088.1.1={
+		birth="1088.1.1"
+	}
+	1138.1.1={
+		death="1138.1.1"
 	}
 }

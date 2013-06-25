@@ -6,7 +6,7 @@ family_palace = {
 		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
 		build_cost = 200
 		build_time = 1095
-		ai_creation_factor = 110
+		ai_creation_factor = 105
 		
 		levy_size = 0.1
 		tax_income = 2
@@ -21,7 +21,7 @@ family_palace = {
 		upgrades_from = fp_mansion_1
 		build_cost = 300
 		build_time = 1460
-		ai_creation_factor = 109
+		ai_creation_factor = 104
 		
 		levy_size = 0.2
 		tax_income = 6
@@ -37,7 +37,7 @@ family_palace = {
 		upgrades_from = fp_mansion_2
 		build_cost = 400
 		build_time = 2190
-		ai_creation_factor = 108
+		ai_creation_factor = 103
 		
 		levy_size = 0.3
 		tax_income = 8
@@ -53,7 +53,7 @@ family_palace = {
 		upgrades_from = fp_mansion_3
 		build_cost = 500
 		build_time = 2190
-		ai_creation_factor = 107
+		ai_creation_factor = 102
 		
 		levy_size = 0.4
 		tax_income = 10
@@ -68,7 +68,7 @@ family_palace = {
 		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
 		build_cost = 150
 		build_time = 730
-		ai_creation_factor = 105
+		ai_creation_factor = 100
 		
 		heavy_infantry = 70
 		pikemen = 50
@@ -84,7 +84,7 @@ family_palace = {
 		prerequisites = { fp_mansion_2 }
 		build_cost = 250
 		build_time = 1095
-		ai_creation_factor = 104
+		ai_creation_factor = 99
 		
 		heavy_infantry = 85
 		pikemen = 65
@@ -100,7 +100,7 @@ family_palace = {
 		prerequisites = { fp_mansion_3 }
 		build_cost = 350
 		build_time = 1460
-		ai_creation_factor = 103
+		ai_creation_factor = 98
 		
 		heavy_infantry = 100
 		pikemen = 80
@@ -114,7 +114,7 @@ family_palace = {
 		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
 		build_cost = 150
 		build_time = 730
-		ai_creation_factor = 105
+		ai_creation_factor = 100
 		
 		light_cavalry = 75
 		
@@ -129,7 +129,7 @@ family_palace = {
 		build_time = 1095
 		upgrades_from = fp_stable_1
 		prerequisites = { fp_mansion_2 }
-		ai_creation_factor = 104
+		ai_creation_factor = 99
 		
 		light_cavalry = 90
 		
@@ -144,7 +144,7 @@ family_palace = {
 		build_time = 1460
 		upgrades_from = fp_stable_2
 		prerequisites = { fp_mansion_3 }
-		ai_creation_factor = 103
+		ai_creation_factor = 98
 		
 		light_cavalry = 105
 		knights = 45
@@ -158,7 +158,7 @@ family_palace = {
 		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
 		build_cost = 150
 		build_time = 730
-		ai_creation_factor = 105
+		ai_creation_factor = 100
 		
 		light_infantry = 95
 		archers = 95
@@ -174,7 +174,7 @@ family_palace = {
 		build_time = 1095
 		upgrades_from = fp_bowyer_1
 		prerequisites = { fp_mansion_2 }
-		ai_creation_factor = 104
+		ai_creation_factor = 99
 		
 		light_infantry = 110
 		archers = 110
@@ -190,7 +190,7 @@ family_palace = {
 		build_time = 1460
 		upgrades_from = fp_bowyer_2
 		prerequisites = { fp_mansion_3 }
-		ai_creation_factor = 103
+		ai_creation_factor = 98
 		
 		light_infantry = 120
 		archers = 120
@@ -204,7 +204,7 @@ family_palace = {
 		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
 		build_cost = 150
 		build_time = 730
-		ai_creation_factor = 105
+		ai_creation_factor = 100
 		
 		galleys = 12
 		
@@ -219,7 +219,7 @@ family_palace = {
 		build_time = 1095
 		upgrades_from = fp_shipyard_1
 		prerequisites = { fp_mansion_2 }
-		ai_creation_factor = 104
+		ai_creation_factor = 99
 		
 		galleys = 18
 		
@@ -234,7 +234,7 @@ family_palace = {
 		build_time = 1460
 		upgrades_from = fp_shipyard_2
 		prerequisites = { fp_mansion_3 }
-		ai_creation_factor = 103
+		ai_creation_factor = 98
 		
 		galleys = 24
 		
@@ -247,7 +247,7 @@ family_palace = {
 		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
 		build_cost = 150
 		build_time = 730
-		ai_creation_factor = 105
+		ai_creation_factor = 100
 		
 		land_morale = 0.1
 		levy_reinforce_rate = 0.1
@@ -264,7 +264,7 @@ family_palace = {
 		build_time = 1095
 		upgrades_from = fp_warehouse_1
 		prerequisites = { fp_mansion_2 }
-		ai_creation_factor = 104
+		ai_creation_factor = 99
 		
 		stewardship = 1
 		land_morale = 0.2
@@ -282,7 +282,7 @@ family_palace = {
 		build_time = 1460
 		upgrades_from = fp_warehouse_2
 		prerequisites = { fp_mansion_3 }
-		ai_creation_factor = 103
+		ai_creation_factor = 98
 		
 		stewardship = 1
 		land_morale = 0.3
@@ -298,7 +298,7 @@ family_palace = {
 		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
 		build_cost = 150
 		build_time = 730
-		ai_creation_factor = 105
+		ai_creation_factor = 100
 		
 		monthly_character_prestige = 0.20
 		
@@ -311,7 +311,7 @@ family_palace = {
 		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
 		build_cost = 250
 		build_time = 1095
-		ai_creation_factor = 104
+		ai_creation_factor = 99
 
 		upgrades_from = fp_garden_1
 		prerequisites = { fp_mansion_2 }
@@ -328,7 +328,7 @@ family_palace = {
 		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
 		build_cost = 350
 		build_time = 1460
-		ai_creation_factor = 103
+		ai_creation_factor = 98
 
 		upgrades_from = fp_garden_2
 		prerequisites = { fp_mansion_3 }
@@ -345,7 +345,7 @@ family_palace = {
 		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
 		build_cost = 150
 		build_time = 730
-		ai_creation_factor = 105
+		ai_creation_factor = 100
 		
 		fertility = 0.1
 		
@@ -358,7 +358,7 @@ family_palace = {
 		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
 		build_cost = 250
 		build_time = 1095
-		ai_creation_factor = 104
+		ai_creation_factor = 99
 
 		upgrades_from = fp_cellar_1
 		prerequisites = { fp_mansion_2 }
@@ -375,7 +375,7 @@ family_palace = {
 		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
 		build_cost = 350
 		build_time = 1460
-		ai_creation_factor = 103
+		ai_creation_factor = 98
 		
 		upgrades_from = fp_cellar_2
 		prerequisites = { fp_mansion_3 }
@@ -392,7 +392,7 @@ family_palace = {
 		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
 		build_cost = 150
 		build_time = 730
-		ai_creation_factor = 105
+		ai_creation_factor = 100
 		
 		church_opinion = 10
 		monthly_character_piety = 0.10
@@ -408,7 +408,7 @@ family_palace = {
 		build_time = 1095
 		upgrades_from = fp_shrine_1
 		prerequisites = { fp_mansion_2 }
-		ai_creation_factor = 104
+		ai_creation_factor = 99
 		
 		learning = 1
 		monthly_character_piety = 0.25
@@ -424,7 +424,7 @@ family_palace = {
 		build_time = 1460
 		upgrades_from = fp_shrine_2
 		prerequisites = { fp_mansion_3 }
-		ai_creation_factor = 103
+		ai_creation_factor = 98
 		
 		learning = 1
 		monthly_character_piety = 0.50
@@ -438,7 +438,7 @@ family_palace = {
 		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
 		build_cost = 150
 		build_time = 730
-		ai_creation_factor = 105
+		ai_creation_factor = 100
 		
 		tax_income = 4
 		
@@ -453,7 +453,7 @@ family_palace = {
 		build_time = 1095
 		upgrades_from = fp_vault_1
 		prerequisites = { fp_mansion_2 }
-		ai_creation_factor = 104
+		ai_creation_factor = 99
 		
 		tax_income = 5
 		intrigue = 1
@@ -469,7 +469,7 @@ family_palace = {
 		build_time = 1460
 		upgrades_from = fp_vault_2
 		prerequisites = { fp_mansion_3 }
-		ai_creation_factor = 103
+		ai_creation_factor = 98
 		
 		tax_income = 6
 		intrigue = 1

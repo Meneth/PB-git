@@ -2942,7 +2942,7 @@
 	add_trait="brilliant_strategist"
 	father=3036
 	1029.1.1={
-		birth="1029.1.1"
+		birth=yes
 	}
 	1054.1.1={
 		add_spouse=3045
@@ -2951,6 +2951,7 @@
 		wealth=300
 		decadence = -25
 	}
+	#rebalanced starting forces
 	1066.9.14 = {
 		raise_levies = {
 			location=683 # Amida
@@ -2958,7 +2959,7 @@
 		}
 	}
 	1072.11.1={
-		death="1072.11.1"
+		death=yes
 	}
 }
 
@@ -7859,7 +7860,7 @@
 	religion="tengri_pagan"
 
 	837.1.1={
-		birth="837.1.1"
+		birth=yes
 	}
 	
 	867.1.1 = {
@@ -7921,7 +7922,7 @@
 	}
 	
 	891.1.1={
-		death="891.1.1"
+		death=yes
 	}
 }
 74032 = {

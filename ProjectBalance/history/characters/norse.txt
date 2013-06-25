@@ -5,17 +5,32 @@
 	diplomacy=6
 	intrigue=8
 	stewardship=7
-	religion="catholic"
+	learning=5
+	religion=norse_pagan
 	culture=norse
-	add_trait="lustful"
-	add_trait="wroth"
-	add_trait="proud"
-	add_trait="skilled_tactician"
+	trait=lustful
+	trait=proud
+	trait=strong
+	trait=brave
+	trait=brilliant_strategist
 	846.6.6={
 		birth=yes
 	}
+	866.1.1={
+		trait=viking
+	}
+	867.1.1={
+		employer=186004
+	}
 	886.1.1={
 		add_spouse=241
+	}
+	911.1.1={
+		religion=catholic
+	}
+	930.1.1={
+		trait=lunatic
+		religion=norse_pagan
 	}
 	932.1.1={
 		death=yes
@@ -25,18 +40,18 @@
 600 = {
 	name="Yngvar" # AKA Igor
 	dynasty=705
-	religion="norse_pagan"
+	religion=norse_pagan
 	culture=norse
 	father=40605
 	mother=6863
 	875.1.1={
-		birth="875.1.1"
+		birth=yes
 	}
 	920.1.1={
 		add_spouse=601
 	}
 	945.1.1={
-		death="945.1.1"
+		death=yes
 	}
 }
 
@@ -71,7 +86,7 @@
 	culture=norse
 	father=5789
 	926.1.2={
-		birth="926.1.2"
+		birth=yes
 	}
 	953.1.1={
 		add_spouse=131520
@@ -80,7 +95,7 @@
 		add_spouse=166102
 	}
 	981.1.2={
-		death="981.1.2"
+		death=yes
 	}
 }
 
@@ -96,10 +111,10 @@
 	culture=norse
 	father=5790
 	950.1.2={
-		birth="950.1.2"
+		birth=yes
 	}
 	999.1.2={
-		death="999.1.2"
+		death=yes
 	}
 }
 
@@ -115,10 +130,10 @@
 	culture=norse
 	father=5791
 	986.1.2={
-		birth="986.1.2"
+		birth=yes
 	}
 	1054.1.2={
-		death="1054.1.2"
+		death=yes
 	}
 }
 
@@ -467,14 +482,14 @@
 	trait=ambitious
 	trait=quick
 	trait=greedy
-	trait=greedy
+	trait=viking
 	trait=brilliant_strategist
 	823.1.1={
 		birth=yes
 	}
 	865.1.1={
-		prestige = 300
-		wealth = 500 # Rich from raiding
+		prestige = 1000 # Rich and prestigious from raiding
+		wealth = 500 
 		effect = {
 			spawn_unit = {
 				province = 106 # Nantes
@@ -1870,13 +1885,13 @@
 	1020.1.2= {
 		add_spouse = 102503
 	}
-	1059.1.4={
-		death="1059.1.4"
+	1062.1.1={
+		death="1062.1.1"
 	}
 }
 
 102505 = {
-	name="Ingibjörg"
+	name="Ingebjørg"
 	# AKA: Ingebjorg
 	female = yes
 	dynasty=475
@@ -1885,16 +1900,16 @@
 	intrigue=6
 	stewardship=7
 	religion="catholic"
-	culture=norse
+	culture="norwegian"
 	add_trait="proud"
 	add_trait="fortune_builder"
 	father=102504
 	mother=102503
-	1020.1.2={
-		birth="1020.1.2"
+	1027.1.2={
+		birth="1027.1.2"
 	}
-	1063.1.2={
-		death="1063.1.2"
+	1069.1.2={
+		death="1069.1.2"
 	}
 }
 
@@ -2198,7 +2213,7 @@
 
 102521 = {
 	name="Skage"
-	dynasty=469
+	dynasty=100273
 	martial=6
 	diplomacy=6
 	intrigue=8
@@ -2209,14 +2224,17 @@
 	965.1.2={
 		birth="965.1.2"
 	}
-	1027.1.23={
-		death="1027.1.23"
+	999.1.1={
+		add_spouse=102513
+	}
+	1015.1.2={
+		death="1015.1.2"
 	}
 }
 
 102522 = {
 	name="Ivar"
-	dynasty=468
+	dynasty=100273
 	martial=5
 	diplomacy=4
 	intrigue=6
@@ -2230,10 +2248,11 @@
 	1000.1.2={
 		birth="1000.1.2"
 	}
-	1055.1.8={
-		death="1055.1.8"
+	1027.1.2={
+		death="1027.1.2"
 	}
 }
+
 
 102526 = {
 	name="Haraldr"
@@ -2400,14 +2419,14 @@
 	religion="catholic"
 	culture=norse
 	add_trait="tough_soldier"
-	1000.1.2={
-		birth="1000.1.2"
+	991.1.2={
+		birth="991.1.2"
 	}
-	1018.1.2={
+	1017.1.2={
 		add_spouse = 102513
 	}
-	1061.1.2={
-		death="1061.1.2"
+	1041.1.2={
+		death="1041.1.2"
 	}
 }
 
@@ -2500,7 +2519,7 @@
 }
 
 102552 = {
-	name="Ogmund"
+	name="Ogmundr"
 	dynasty=453
 	martial=7
 	diplomacy=7
@@ -2511,8 +2530,8 @@
 	add_trait="flamboyant_schemer"
 	father=102550
 	mother=102566
-	1027.1.2={
-		birth="1027.1.2"
+	1020.1.2={
+		birth="1020.1.2"
 	}
 	1050.1.2={
 		death="1050.1.2"
@@ -2531,23 +2550,24 @@
 	add_trait="chaste"
 	add_trait="proud"
 	add_trait="cynical"
-	add_trait="harelip"
-	add_trait="amateurish_plotter"
-	972.1.2={
-		birth="972.1.2"
+	add_trait="hunter"
+	add_trait="tough_soldier"
+        father=183900 #Eindride av Gimse
+	980.1.1={
+		birth="980.1.1"
 	}
 	997.1.2={
 		add_spouse=102512
 	}
-	1052.1.2={
-		death="1052.1.2"
+	1050.1.1={
+		death="1050.1.1"
 	}
 }
 
 102555 = {
 	name="Alov"
 	female = yes
-	dynasty=450
+	dynasty=451
 	martial=7
 	diplomacy=8
 	intrigue=5
@@ -2558,8 +2578,8 @@
 	add_trait="underhanded_rogue"
 	father=102554
 	mother=102512
-	1000.1.2={
-		birth="1000.1.2"
+	1007.1.1={
+		birth="1007.1.1"
 	}
 	1029.1.27 = {
 		death="1029.1.27"
@@ -2568,7 +2588,7 @@
 
 102556 = {
 	name="Þord"
-	dynasty=449
+	dynasty=448
 	martial=5
 	diplomacy=4
 	intrigue=8
@@ -2578,13 +2598,13 @@
 	add_trait="temperate"
 	add_trait="fortune_builder"
 	1000.1.2={
-		birth="1000.1.2"
+		birth="1000.1.1"
 	}
 	1020.1.2={
 		add_spouse = 102555
 	}
 	1030.1.2={
-		death="1030.1.2"
+		death="1030.1.1"
 	}
 }
 
@@ -3561,7 +3581,7 @@
 	838.1.1={
 		give_nickname = nick_the_boneless
 	}
-	
+	#Various nerfs
 	866.11.2={
 		wealth = 50
 		
@@ -3708,7 +3728,7 @@
 			location=57 # York
 			force_mult=2.0
 		}
-		
+		#Various nerfs
 		effect = {
 			spawn_unit = {
 				province = 57 # York
@@ -5919,5 +5939,35 @@
 	}
 	891.1.1={
 		death=yes
+	}
+}
+
+183900 = {
+	name="Eindride"
+	dynasty=451
+	religion="norse_pagan"
+	culture="norse"
+    add_trait="fortune_builder"
+	950.1.1={
+		birth="950.1.1"
+	}
+	1000.1.1={
+		death="1000.1.1"
+	}
+}
+
+183901 = {
+	name="Eindride"
+	dynasty=451
+	religion="catholic"
+	culture="norse"
+    add_trait="tough_soldier"
+    father=102554
+	mother=102512
+	1006.1.2={
+		birth="1006.1.1"
+	}
+	1050.1.2={
+		death="1050.1.1"
 	}
 }
