@@ -46,17 +46,13 @@ imperial_reconquest = {
 
 	can_use_title = {
 		OR = {
-			AND = {
-				OR = {
-					de_jure_liege_or_above = k_greece
-					de_jure_liege_or_above = k_anatolia
-					de_jure_liege_or_above = k_nikaea
-					de_jure_liege_or_above = k_epirus
-					de_jure_liege_or_above = k_trebizond
-					de_jure_liege_or_above = k_cilician
-					de_jure_liege_or_above = k_rum
-				}
-			}
+			de_jure_liege_or_above = k_greece
+			de_jure_liege_or_above = k_anatolia
+			de_jure_liege_or_above = k_nikaea
+			de_jure_liege_or_above = k_epirus
+			de_jure_liege_or_above = k_trebizond
+			de_jure_liege_or_above = k_cilician
+			de_jure_liege_or_above = k_rum
 			AND = {
 				OR = {
 					de_jure_liege_or_above = k_serbia
