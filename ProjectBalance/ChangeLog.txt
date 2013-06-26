@@ -7,6 +7,8 @@
 	It is no longer possible to move directly from Agnatic to True Cognatic; succession law has to be changed in steps: Agnatic -> Agnatic-Cognatic -> True Cognatic -> Enatic-Cognatic -> Enatic
 	Rebalanced the cultural buildings, making them more consistent. Credit goes to Frozensky
 	Fixed only Greeks in the Byzantine culture group having a culture building
+	Reformed pagans don't get the holy war CB for free due to the presence of their religion in unreformed realms of the same religion
+	The bypass of holy war requirements due to same religion provinces in the target no longer bypasses the holy war cooldown
 
 3.2.20
 	Updated to work with patch 1.102

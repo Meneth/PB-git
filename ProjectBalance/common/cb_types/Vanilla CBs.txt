@@ -3552,6 +3552,7 @@ religious = {
 				ROOT = { has_landed_title = k_jerusalem }
 				FROM = { religion_group = muslim }
 			}
+			#Exception if the target has a province of your religion
 			any_direct_de_jure_vassal_title = {
 				NOT = {
 					FROM = { has_landed_title = k_rum }
@@ -3571,9 +3572,13 @@ religious = {
 						is_liege_or_above = FROM
 					}
 				}
+				NOT = {
+					ROOT = { is_reformed_religion = FROM }
+				}
 				location = {
 					ROOT = {
 						religion = PREV
+						NOT = { has_character_modifier = holy_war_cooldown }
 					}
 				}
 			}
