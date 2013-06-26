@@ -1019,7 +1019,7 @@ castle = {
 	ca_culture_group_byzantine_0 = {
 		desc = ca_culture_group_byzantine_1_desc
 		potential = {
-			culture = greek
+			culture_group = byzantine
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
 		build_cost = 100
@@ -1037,7 +1037,7 @@ castle = {
 	ca_culture_group_byzantine_1 = {
 		desc = ca_culture_group_byzantine_1_desc
 		potential = {
-			culture = greek
+			culture_group = byzantine
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
 		upgrades_from = ca_culture_group_byzantine_0
@@ -1057,7 +1057,7 @@ castle = {
 		desc = ca_culture_group_byzantine_1_desc
 		potential = {
 			FROM = { culture_group = ROOT }
-			culture = greek
+			culture_group = byzantine
 		}
 		trigger = {
 			TECH_CASTLE_CONSTRUCTION = 2
@@ -1080,7 +1080,7 @@ castle = {
 		desc = ca_culture_group_byzantine_1_desc
 		potential = {
 			FROM = { culture_group = ROOT }
-			culture = greek
+			culture_group = byzantine
 		}
 		trigger = {
 			TECH_CASTLE_CONSTRUCTION = 4
@@ -1103,7 +1103,7 @@ castle = {
 		desc = ca_culture_group_byzantine_1_desc
 		potential = {
 			FROM = { culture = ROOT }
-			culture = greek
+			culture_group = byzantine
 		}
 		trigger = {
 			TECH_CASTLE_CONSTRUCTION = 6
@@ -1126,7 +1126,7 @@ castle = {
 		desc = ca_culture_group_byzantine_1_desc
 		potential = {
 			FROM = { culture = ROOT }
-			culture = greek
+			culture_group = byzantine
 		}
 		trigger = {
 			TECH_CASTLE_CONSTRUCTION = 8
