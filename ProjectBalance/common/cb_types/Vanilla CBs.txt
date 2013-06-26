@@ -7316,70 +7316,73 @@ county_conquest = {
 	can_use_gui = {
 		ROOT = {
 			piety = 50
+			NOT = { has_character_modifier = holy_war_cooldown }
+			NOT = { FROM = { religion_group = pagan_group } }
+			OR = {
+				NOT = { trait = content }
+				trait = brave
+				trait = wroth
+				trait = zealous
+				trait = lunatic
+				trait = possessed
+			}
+			OR = {
+				NOT = { trait = craven }
+				trait = wroth
+				trait = ambitious
+				trait = zealous
+				trait = lunatic
+				trait = possessed
+			}
+			OR = {
+				NOT = { trait = stressed }
+				trait = wroth
+				trait = ambitious
+				trait = brave
+				trait = lunatic
+				trait = possessed
+				trait = zealous
+			}
+			OR = {
+				trait = lunatic
+				trait = possessed
+				AND = {
+					NOT = { trait = depressed }
+					NOT = { trait = infirm }
+					NOT = { trait = incapable }
+					NOT = {
+						OR = {
+							AND = {
+								trait = content
+								OR = {
+									trait = craven
+									trait = stressed
+								}
+							}
+							AND = {
+								trait = craven
+								trait = stressed
+							}
+						}
+					}
+				}
+			}
+			NOT = {
+				FROM = {
+					OR = {
+						religion = miaphysite
+						religion = orthodox
+					}
+					culture_group = east_african
+				}
+			}
 			OR = {
 				religion_group = FROM
 				AND = {
-					NOT = { has_character_modifier = holy_war_cooldown }
-					NOT = { FROM = { religion_group = pagan_group } }
-					NOT = {
-						FROM = {
-							OR = {
-								religion = miaphysite
-								religion = orthodox
-							}
-							culture_group = east_african
-						}
-					}
 					NOT = { has_law = emperor_peace_0 }
-					OR = {
-						NOT = { trait = content }
-						trait = brave
-						trait = wroth
-						trait = zealous
-						trait = lunatic
-						trait = possessed
-					}
-					OR = {
-						NOT = { trait = craven }
-						trait = wroth
-						trait = ambitious
-						trait = zealous
-						trait = lunatic
-						trait = possessed
-					}
-					OR = {
-						NOT = { trait = stressed }
-						trait = wroth
-						trait = ambitious
-						trait = brave
-						trait = lunatic
-						trait = possessed
-						trait = zealous
-					}
-					OR = {
-						trait = lunatic
-						trait = possessed
-						AND = {
-							NOT = { trait = depressed }
-							NOT = { trait = infirm }
-							NOT = { trait = incapable }
-							NOT = {
-								OR = {
-									AND = {
-										trait = content
-										OR = {
-											trait = craven
-											trait = stressed
-										}
-									}
-									AND = {
-										trait = craven
-										trait = stressed
-									}
-								}
-							}
-						}
-					}
+					NOT = { trait = content }
+					NOT = { trait = craven }
+					NOT = { trait = stressed }
 				}
 			}
 		}
