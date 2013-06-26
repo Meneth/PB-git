@@ -657,45 +657,47 @@ gender_laws = {
 			is_primary_type_title = no
 		}
 		allow = {
-			OR = {
-				has_law = cognatic_succession
-				has_law = enatic_cognatic_succession
-			}
 			holder_scope = { prestige = 1000 }
 			OR = {
-				holder_scope = { culture = basque }
-				holder_scope = {
-					is_female = yes
-					NOT = { trait = content }
+				AND = {
+					has_law = cognatic_succession
 					OR = {
-						has_nickname = nick_the_conqueror
-						has_nickname = nick_the_holy
-						has_nickname = nick_the_able
-						has_nickname = nick_the_kind
-						has_nickname = nick_the_good
-						has_nickname = nick_the_troubadour
-						has_nickname = nick_the_strong
-						has_nickname = nick_the_magnanimous
-						has_nickname = nick_the_merry
-						has_nickname = nick_the_noble
-						has_nickname = nick_the_gentle
-						has_nickname = nick_the_silent
-						has_nickname = nick_the_just
-						has_nickname = nick_the_wise
-						has_nickname = nick_the_pious
-						has_nickname = nick_the_apostle
-						has_nickname = nick_the_blessed
-						has_nickname = nick_the_confessor
-						has_nickname = nick_the_monk
-						has_nickname = nick_the_ironside
-						has_nickname = nick_the_lion
-						has_nickname = nick_the_lionheart
-						has_nickname = nick_the_bold
-						has_nickname = nick_the_magnificent
-						has_nickname = nick_the_great
-						has_nickname = nick_the_saoshyant
+						holder_scope = { culture = basque }
+						holder_scope = {
+							is_female = yes
+							NOT = { trait = content }
+							OR = {
+								has_nickname = nick_the_conqueror
+								has_nickname = nick_the_holy
+								has_nickname = nick_the_able
+								has_nickname = nick_the_kind
+								has_nickname = nick_the_good
+								has_nickname = nick_the_troubadour
+								has_nickname = nick_the_strong
+								has_nickname = nick_the_magnanimous
+								has_nickname = nick_the_merry
+								has_nickname = nick_the_noble
+								has_nickname = nick_the_gentle
+								has_nickname = nick_the_silent
+								has_nickname = nick_the_just
+								has_nickname = nick_the_wise
+								has_nickname = nick_the_pious
+								has_nickname = nick_the_apostle
+								has_nickname = nick_the_blessed
+								has_nickname = nick_the_confessor
+								has_nickname = nick_the_monk
+								has_nickname = nick_the_ironside
+								has_nickname = nick_the_lion
+								has_nickname = nick_the_lionheart
+								has_nickname = nick_the_bold
+								has_nickname = nick_the_magnificent
+								has_nickname = nick_the_great
+								has_nickname = nick_the_saoshyant
+							}
+						}
 					}
 				}
+				has_law = enatic_cognatic_succession
 			}
 		}
 		effect = {
@@ -732,47 +734,49 @@ gender_laws = {
 			is_primary_type_title = no
 		}
 		allow = {
+			holder_scope = { prestige = 1000 }
 			OR = {
-				has_law = true_cognatic_succession
+				AND = {
+					has_law = true_cognatic_succession
+					holder_scope = {
+						is_female = yes
+						OR = {
+							trait = ambitious
+							trait = diligent
+						}
+						NOT = { trait = content }
+						NOT = { trait = slothful }
+						OR = {
+							has_nickname = nick_the_conqueror
+							has_nickname = nick_the_holy
+							has_nickname = nick_the_able
+							has_nickname = nick_the_kind
+							has_nickname = nick_the_good
+							has_nickname = nick_the_troubadour
+							has_nickname = nick_the_strong
+							has_nickname = nick_the_magnanimous
+							has_nickname = nick_the_merry
+							has_nickname = nick_the_noble
+							has_nickname = nick_the_gentle
+							has_nickname = nick_the_silent
+							has_nickname = nick_the_just
+							has_nickname = nick_the_wise
+							has_nickname = nick_the_pious
+							has_nickname = nick_the_apostle
+							has_nickname = nick_the_blessed
+							has_nickname = nick_the_confessor
+							has_nickname = nick_the_monk
+							has_nickname = nick_the_ironside
+							has_nickname = nick_the_lion
+							has_nickname = nick_the_lionheart
+							has_nickname = nick_the_bold
+							has_nickname = nick_the_magnificent
+							has_nickname = nick_the_great
+							has_nickname = nick_the_saoshyant
+						}
+					}
+				}
 				has_law = enatic_succession
-			}
-			holder_scope = {
-				prestige = 2000
-				is_female = yes
-				OR = {
-					trait = ambitious
-					trait = diligent
-				}
-				NOT = { trait = content }
-				NOT = { trait = slothful }
-				OR = {
-					has_nickname = nick_the_conqueror
-					has_nickname = nick_the_holy
-					has_nickname = nick_the_able
-					has_nickname = nick_the_kind
-					has_nickname = nick_the_good
-					has_nickname = nick_the_troubadour
-					has_nickname = nick_the_strong
-					has_nickname = nick_the_magnanimous
-					has_nickname = nick_the_merry
-					has_nickname = nick_the_noble
-					has_nickname = nick_the_gentle
-					has_nickname = nick_the_silent
-					has_nickname = nick_the_just
-					has_nickname = nick_the_wise
-					has_nickname = nick_the_pious
-					has_nickname = nick_the_apostle
-					has_nickname = nick_the_blessed
-					has_nickname = nick_the_confessor
-					has_nickname = nick_the_monk
-					has_nickname = nick_the_ironside
-					has_nickname = nick_the_lion
-					has_nickname = nick_the_lionheart
-					has_nickname = nick_the_bold
-					has_nickname = nick_the_magnificent
-					has_nickname = nick_the_great
-					has_nickname = nick_the_saoshyant
-				}
 			}
 		}
 		effect = {
