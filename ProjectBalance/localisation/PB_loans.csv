@@ -1,8 +1,6 @@
 #CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
-show_loan_decisions;Show Loan Decisions;;;;;;;;;;;;;x
-show_loan_decisions_desc;As a ruler you can take up loans in order to finance construction or war. At times this can be necessary to survive, or provide future gain, but do note that you'll have to pay 10% interest each year as long as you have loans, and another 10% upon repayment.;;;;;;;;;;;;;x
-hide_loan_decisions;Hide Loan Decisions;;;;;;;;;;;;;x
-hide_loan_decisions_desc;Hide the loan decisions so your decision list isn't as cluttered.;;;;;;;;;;;;;x
+toggle_loan_decisions;Toggle Loan Decisions;;;;;;;;;;;;;x
+toggle_loan_decisions_desc;As a ruler you can take up loans in order to finance construction or war. At times this can be necessary to survive, or provide future gain, but do note that you'll have to pay 10% interest each year as long as you have loans, and another 10% upon repayment.;;;;;;;;;;;;;x
 take_small_loan;Take Small Loan;;;;;;;;;;;;;x
 take_small_loan_desc;Take up a loan of 100 gold. 10% interest will be charged each year until repaid, and another 10% upon repayment.;;;;;;;;;;;;;x
 take_medium_loan;Take Medium Loan;;;;;;;;;;;;;x

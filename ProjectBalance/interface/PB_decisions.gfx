@@ -31,11 +31,7 @@ spriteTypes = {
 	}
 	#Loans
 	spriteType = {
-		name = "GFX_show_loan_decisions"
-		texturefile = "gfx\\interface\\decision_icon_loans.dds"
-	}
-	spriteType = {
-		name = "GFX_hide_loan_decisions"
+		name = "GFX_toggle_loan_decisions"
 		texturefile = "gfx\\interface\\decision_icon_loans.dds"
 	}
 	spriteType = {
