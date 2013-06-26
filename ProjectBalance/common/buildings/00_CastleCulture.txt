@@ -1,4 +1,12 @@
 # Castle
+# Culture building tiers - maintenance used. Knights count as 6 rather than 8
+# Tier 0 - 90
+# Tier 1 - 120
+# Tier 2 - 150
+# Tier 3 - 180
+# Tier 4 - 210
+# Tier 5 - 240
+
 castle = {
 	# Dutch Urban Militia
 	ca_culture_dutch_0 = {
