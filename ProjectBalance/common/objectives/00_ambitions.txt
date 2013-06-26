@@ -1513,6 +1513,7 @@ obj_become_king = {
 		NOT = { trait = craven }
 		NOT = { trait = depressed }
 		NOT = { trait = stressed }
+		liege = { NOT = { has_landed_title = e_byzantium } }
 	}
 	
 	chance = {

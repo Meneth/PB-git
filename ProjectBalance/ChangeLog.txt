@@ -10,6 +10,7 @@
 	Reformed pagans don't get the holy war CB for free due to the presence of their religion in unreformed realms of the same religion
 	The bypass of holy war requirements due to same religion provinces in the target no longer bypasses the holy war cooldown
 	Fixed the Muslim County Conquest not having as strict requirements as it were supposed to have
+	The kingdoms in Byzantium can no longer be created by vassals of the empire
 
 3.2.20
 	Updated to work with patch 1.102
