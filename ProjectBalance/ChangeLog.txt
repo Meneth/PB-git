@@ -2,6 +2,9 @@
 	Moved as many requirements as possible from the "is war possible?" decisions over to the war declaration UI. Some still remain due to it not being possible to display title requirements in the UI yet
 	Changed the colors of Zoroastrians to blue as it looks better than red, and is at least somewhat relevant
 	Merged Show/Hide Loan Decisions into a single "Toggle Loan Decisions" decision
+	Changing gender law now requires a certain level of prestige (500 for Agnatic and Agnatic-Cognatic, 1000 for True Cognatic). The prestige is not lost
+	Added Enatic-Cognatic and Enatic succession with some very high restrictions. The AI will never use either
+	It is no longer possible to move directly from Agnatic to True Cognatic; succession law has to be changed in steps: Agnatic -> Agnatic-Cognatic -> True Cognatic -> Enatic-Cognatic -> Enatic
 
 3.2.20
 	Updated to work with patch 1.102
