@@ -833,8 +833,7 @@ character_event = {
 	mean_time_to_happen = {
 		days = 1
 	}
-	option = {
-		name = OK
+	immediate = {
 		random_demesne_title = {
 			limit = {
 				is_titular = no
@@ -932,6 +931,9 @@ character_event = {
 				}
 			}
 		}
+	}
+	option = {
+		name = OK
 	}
 }
 
