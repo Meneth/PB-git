@@ -15,6 +15,7 @@
 	People with a combat trait are now biased towards not running from battle even when meeting equals
 	Women will now take appropriate councilor ambitions in the Gender Equality module
 	The HRE can no longer be formed by Bavaria while East Francia still exists
+	Corrected some issues with the Crusade CB
 
 3.2.20
 	Updated to work with patch 1.102
