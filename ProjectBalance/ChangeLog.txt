@@ -3,7 +3,7 @@
 	Changed the colors of Zoroastrians to blue as it looks better than red, and is at least somewhat relevant
 	Merged Show/Hide Loan Decisions into a single "Toggle Loan Decisions" decision
 	Changing gender law now requires a certain level of prestige (500 for Agnatic and Agnatic-Cognatic, 1000 for True Cognatic). The prestige is not lost
-	Added Enatic-Cognatic and Enatic succession with some very high restrictions. The AI will never use either
+	Added Enatic-Cognatic and Enatic succession with some very high restrictions (not present in the Gender Equality module). The AI will never use either
 	It is no longer possible to move directly from Agnatic to True Cognatic; succession law has to be changed in steps: Agnatic -> Agnatic-Cognatic -> True Cognatic -> Enatic-Cognatic -> Enatic
 	Rebalanced the cultural buildings, making them more consistent. Credit goes to Frozensky
 	Fixed only Greeks in the Byzantine culture group having a culture building
@@ -13,6 +13,7 @@
 	The kingdoms in Byzantium can no longer be created by vassals of the empire
 	Made brave, proud, and craven affect the chance of running away from combat much more
 	People with a combat trait are now biased towards not running from battle even when meeting equals
+	Women will now take appropriate councilor ambitions in the Gender Equality module
 
 3.2.20
 	Updated to work with patch 1.102

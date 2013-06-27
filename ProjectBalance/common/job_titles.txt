@@ -26,10 +26,10 @@ job_chancellor = {
 					has_law = true_cognatic_succession
 				}
 			}
-		}
-		OR = {
-			is_female = no
-			NOT = { liege = { religion_group = muslim } }
+			AND = {
+				has_global_flag = gender_equality
+				NOT = { liege = { religion_group = muslim } }
+			}
 		}
 		is_adult = yes
 		prisoner = no
@@ -95,7 +95,13 @@ job_marshal = {
 	monthly_prestige = 0.25
 	
 	allow = {
-		is_female = no
+		OR = {
+			is_female = no
+			AND = {
+				has_global_flag = gender_equality
+				NOT = { liege = { religion_group = muslim } }
+			}
+		}
 		is_adult = yes
 		prisoner = no
 		NOT = { trait = incapable }
@@ -168,6 +174,10 @@ job_treasurer = {
 						has_law = agnatic_succession
 					}
 				}
+			}
+			AND = {
+				has_global_flag = gender_equality
+				NOT = { liege = { religion_group = muslim } }
 			}
 		}
 		OR = {
@@ -315,6 +325,10 @@ job_spiritual = {
 				NOT = { religion = aztec_reformed}
 				NOT = { religion = tengri_pagan }
 				NOT = { religion = tengri_pagan_reformed}
+			}
+			AND = {
+				has_global_flag = gender_equality
+				NOT = { liege = { religion_group = muslim } }
 			}
 		}
 		

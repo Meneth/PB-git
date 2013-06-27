@@ -26,6 +26,10 @@ obj_become_chancellor = {
 					has_law = true_cognatic_succession
 				}
 			}
+			AND = {
+				has_global_flag = gender_equality
+				NOT = { liege = { religion_group = muslim } }
+			}
 		}
 		NOT = { trait = incapable }
 		diplomacy = 10
@@ -136,7 +140,13 @@ obj_become_marshal = {
 		is_adult = yes
 		is_councillor = no
 		independent = no
-		is_female = no
+		OR = {
+			is_female = no
+			AND = {
+				has_global_flag = gender_equality
+				NOT = { liege = { religion_group = muslim } }
+			}
+		}
 		NOT = { trait = incapable }
 		martial = 10
 	}
@@ -254,6 +264,10 @@ obj_become_treasurer = {
 						has_law = agnatic_succession
 					}
 				}
+			}
+			AND = {
+				has_global_flag = gender_equality
+				NOT = { liege = { religion_group = muslim } }
 			}
 		}
 		NOT = { trait = incapable }
@@ -497,6 +511,10 @@ obj_become_spiritual = {
 				NOT = { religion = aztec_reformed}
 				NOT = { religion = tengri_pagan }
 				NOT = { religion = tengri_pagan_reformed}
+			}
+			AND = {
+				has_global_flag = gender_equality
+				NOT = { liege = { religion_group = muslim } }
 			}
 		}
 		learning = 10
