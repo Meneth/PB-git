@@ -746,6 +746,7 @@ gender_laws = {
 				AND = {
 					has_law = true_cognatic_succession
 					holder_scope = {
+						prestige = 2000
 						is_female = yes
 						OR = {
 							trait = ambitious
