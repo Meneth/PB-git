@@ -16,6 +16,7 @@
 	Women will now take appropriate councilor ambitions in the Gender Equality module
 	The HRE can no longer be formed by Bavaria while East Francia still exists
 	Corrected some issues with the Crusade CB
+	Added an event to fix the lack of crown laws when creating a new kingdom as a duke (vanilla issue)
 
 3.2.20
 	Updated to work with patch 1.102

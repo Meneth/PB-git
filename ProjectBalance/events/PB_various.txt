@@ -808,6 +808,7 @@ character_event = {
 	picture = GFX_evt_council
 	
 	only_rulers = yes
+	hide_window = yes
 	
 	trigger = {
 		any_demesne_title = {
@@ -1247,3 +1248,65 @@ character_event = {
 	}
 }
 #meneth.218 taken
+#Fix lack of crown laws
+character_event = {
+	id = meneth.219
+	desc = meneth.208.desc
+	picture = GFX_evt_council
+	
+	only_rulers = yes
+	hide_window = yes
+	
+	trigger = {
+		is_republic = no
+		any_demesne_title = {
+			is_titular = no
+			OR = {
+				tier = king
+				tier = emperor
+			}
+			NOT = { has_law = inheritance_0 }
+			NOT = { has_law = inheritance_1 }
+		}
+		is_republic = no
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = OK
+		random_demesne_title = {
+			limit = {
+				is_titular = no
+				OR = {
+					tier = king
+					tier = emperor
+				}
+				NOT = { has_law = inheritance_0 }
+				NOT = { has_law = inheritance_1 }
+			}
+			add_law = inheritance_0
+			add_law = crown_levies_0
+			add_law = revokation_1
+			if = {
+				limit = { ROOT = { religion = catholic } }
+				add_law = investiture_law_0
+			}
+			any_de_jure_vassal_title = {
+				limit = {
+					holder_scope = {
+						liege = {
+							character = ROOT
+						}
+					}
+				}
+				holder_scope = {
+					remove_opinion = {
+						modifier = opinion_increased_authority
+						who = liege
+					}
+				}
+			}
+		}
+	}
+}
