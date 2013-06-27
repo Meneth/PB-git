@@ -11,6 +11,8 @@
 	The bypass of holy war requirements due to same religion provinces in the target no longer bypasses the holy war cooldown
 	Fixed the Muslim County Conquest not having as strict requirements as it were supposed to have
 	The kingdoms in Byzantium can no longer be created by vassals of the empire
+	Made brave, proud, and craven affect the chance of running away from combat much more
+	People with a combat trait are now biased towards not running from battle even when meeting equals
 
 3.2.20
 	Updated to work with patch 1.102
