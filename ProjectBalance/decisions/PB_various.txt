@@ -41,7 +41,10 @@ decisions = {
 		potential = {
 			OR = {
 				has_landed_title = k_germany
-				has_landed_title = k_bavaria
+				AND = {
+					has_landed_title = k_bavaria
+					k_germany = { has_holder = no }
+				}
 			}
 			e_hre = {
 				has_holder = no
