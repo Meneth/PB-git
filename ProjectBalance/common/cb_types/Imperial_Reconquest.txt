@@ -6,15 +6,8 @@ imperial_reconquest = {
 	is_permanent = yes
 	check_de_jure_tier = DUKE # this scans all dejure duchies for the counties which are held by or vassals(or below) of selected character. Only valid if is_permanent = yes
 
-	can_use = {
+	can_use_gui = {
 		ROOT = {
-			OR = {
-				has_landed_title = e_byzantium
-				has_landed_title = e_roman_empire
-			}
-			independent = yes
-			religion_group = christian
-			NOT = { same_realm = FROM }
 			prestige = 500
 			NOT = { trait = content }
 			NOT = { trait = craven }
@@ -32,6 +25,17 @@ imperial_reconquest = {
 				trait = wroth
 				trait = diligent
 			}
+		}
+	}
+	can_use = {
+		ROOT = {
+			OR = {
+				has_landed_title = e_byzantium
+				has_landed_title = e_roman_empire
+			}
+			independent = yes
+			religion_group = christian
+			NOT = { same_realm = FROM }
 		}
 		OR = {
 			NOT = { has_global_flag = rum_formed }

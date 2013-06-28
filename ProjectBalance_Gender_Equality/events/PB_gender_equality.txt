@@ -18,6 +18,7 @@ narrative_event = {
 	picture = "GFX_evt_battle"
 	
 	immediate = {
+		set_global_flag = gender_equality
 		any_independent_ruler = {
 			if = {
 				limit = {

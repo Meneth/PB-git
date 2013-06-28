@@ -1,27 +1,33 @@
 decisions = {
 	#Show loan decisions
-	show_loan_decisions = {
+	toggle_loan_decisions = {
 		potential = {
-			NOT = { has_character_flag = loan_decisions }
-			prisoner = no
+			ai = no
+			OR = {
+				prisoner = no
+				has_character_flag = loan_decisions
+			}
 		}
 		effect = {
-			set_character_flag = loan_decisions
-		}
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	#Hide loan decisions
-	hide_loan_decisions = {
-		potential = {
-			has_character_flag = loan_decisions
-		}
-		effect = {
-			clr_character_flag = loan_decisions
-		}
-		ai_will_do = {
-			factor = 0
+			if = {
+				limit = {
+					NOT = { has_character_flag = loan_decisions }
+				}
+				hidden_tooltip = {
+					set_character_flag = loan_decisions
+					set_character_flag = loan_decisions_temp
+				}
+			}
+			if = {
+				limit = {
+					has_character_flag = loan_decisions
+					NOT = { has_character_flag = loan_decisions_temp }
+				}
+				hidden_tooltip = {
+					clr_character_flag = loan_decisions
+				}
+			}
+			clr_character_flag = loan_decisions_temp
 		}
 	}
 	#Small loan - 100

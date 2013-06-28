@@ -186,8 +186,21 @@ pagan_subjugation = {
 	can_ask_to_join_war = yes
 	check_de_jure_tier = KING # this scans all de jure kingdoms for the counties which are held by or vassals(or below) of selected character. Only valid if is_permanent = yes
 	
-	prestige_cost = 100
-
+	can_use_gui = {
+		ROOT = {
+			prestige = 100
+			NOT = { trait = content }
+			NOT = { trait = slothful }
+			NOT = { trait = craven }
+			NOT = { trait = stressed }
+			NOT = { trait = depressed }
+		}
+	}
+	
+	on_add = {
+		ROOT = { prestige = -100 }
+	}
+	
 	can_use = {
 		ROOT = {
 			religion_group = pagan_group
@@ -196,11 +209,7 @@ pagan_subjugation = {
 			NOT = { same_realm = FROM }
 			NOT = { is_liege_or_above = FROM }
 			has_horde_culture = no # Should use tribal invasion instead
-			NOT = { trait = content }
-			NOT = { trait = slothful }
-			NOT = { trait = craven }
-			NOT = { trait = stressed }
-			NOT = { trait = depressed }
+			
 		}
 		FROM = {
 			religion_group = pagan_group
@@ -1115,10 +1124,8 @@ pagan_county_conquest = {
 	prestige_cost = 100
 	piety_cost = 50
 	
-	can_use = {
+	can_use_gui = {
 		ROOT = {
-			religion_group = pagan_group
-			NOT = { same_realm = FROM }
 			OR = {
 				trait = ambitious
 				trait = diligent
@@ -1127,6 +1134,12 @@ pagan_county_conquest = {
 				trait = brave
 			}
 			NOT = { has_character_modifier = holy_war_cooldown }
+		}
+	}
+	can_use = {
+		ROOT = {
+			religion_group = pagan_group
+			NOT = { same_realm = FROM }
 		}
 		FROM = {
 			NOT = { religion = ROOT }

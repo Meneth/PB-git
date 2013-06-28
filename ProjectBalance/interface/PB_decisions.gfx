@@ -31,11 +31,7 @@ spriteTypes = {
 	}
 	#Loans
 	spriteType = {
-		name = "GFX_show_loan_decisions"
-		texturefile = "gfx\\interface\\decision_icon_loans.dds"
-	}
-	spriteType = {
-		name = "GFX_hide_loan_decisions"
+		name = "GFX_toggle_loan_decisions"
 		texturefile = "gfx\\interface\\decision_icon_loans.dds"
 	}
 	spriteType = {
@@ -138,40 +134,12 @@ spriteTypes = {
 		texturefile = "gfx\\interface\\decision_icon_war_holy.dds"
 	}
 	spriteType = {
-		name = "GFX_alliance_wars"
-		texturefile = "gfx\\interface\\decision_icon_war_allies.dds"
-	}
-	spriteType = {
-		name = "GFX_imperial_reconquest_check"
-		texturefile = "gfx\\interface\\decision_icon_war_imperial.dds"
-	}
-	spriteType = {
 		name = "GFX_pagan_subjugation_check"
 		texturefile = "gfx\\interface\\decision_icon_war_subjugation.dds"
 	}
 	spriteType = {
 		name = "GFX_pagan_subjugation_wrong_kingdom_check"
 		texturefile = "gfx\\interface\\decision_icon_war_subjugation.dds"
-	}
-	spriteType = {
-		name = "GFX_pagan_conquest_check"
-		texturefile = "gfx\\interface\\decision_icon_war_county.dds"
-	}
-	spriteType = {
-		name = "GFX_muslim_conquest_check"
-		texturefile = "gfx\\interface\\decision_icon_war_county.dds"
-	}
-	spriteType = {
-		name = "GFX_republic_coastal_county"
-		texturefile = "gfx\\interface\\decision_icon_war_county.dds"
-	}
-	spriteType = {
-		name = "GFX_muslim_invasion_check"
-		texturefile = "gfx\\interface\\decision_icon_war_invasion.dds"
-	}
-	spriteType = {
-		name = "GFX_muslim_invasion_check_non_muslim"
-		texturefile = "gfx\\interface\\decision_icon_war_invasion.dds"
 	}
 	#Various
 	spriteType = {
