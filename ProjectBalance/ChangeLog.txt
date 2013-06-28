@@ -1,5 +1,6 @@
 3.2.22
 	Fixed the HRE Decentralization laws and Byzantine Theme laws existing in the Shattered Balance module
+	Increased the reinforcement rate by 50% (to a base level of 3%/year) since the rounding error is fixed in 1.103b. Reinforcement while levy is raised remains at approximately the same level as before
 
 3.2.21
 	Moved as many requirements as possible from the "is war possible?" decisions over to the war declaration UI. Some still remain due to it not being possible to display title requirements in the UI yet
