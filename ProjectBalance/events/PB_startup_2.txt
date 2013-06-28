@@ -71,11 +71,14 @@ narrative_event = {
 				}
 			}
 		}
-		e_byzantium = {
-			holder_scope = {
-				any_vassal = {
-					limit = { trait = content }
-					remove_trait = content
+		if = {
+			limit = { year = 1066 }
+			e_byzantium = {
+				holder_scope = {
+					any_vassal = {
+						limit = { trait = content }
+						remove_trait = content
+					}
 				}
 			}
 		}
