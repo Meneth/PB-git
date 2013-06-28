@@ -20,6 +20,8 @@ narrative_event = {
 	
 	immediate = {
 		set_global_flag = shattered_balance
+		set_global_flag = theme_system_reformed
+		set_global_flag = theme_system_reformed_2
 		any_independent_ruler = {
 			limit = {
 				is_merchant_republic = no
