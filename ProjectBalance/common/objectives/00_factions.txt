@@ -2750,7 +2750,7 @@ faction_independence = {
 		}
 		#Dejure characters are unlikely to go independent
 		modifier = {
-			factor = 0.1
+			factor = 0.01
 			liege = {
 				any_demesne_title = {
 					OR = {
@@ -3181,7 +3181,7 @@ faction_independence = {
 		}
 		#Dejure characters are unlikely to go independent
 		modifier = {
-			factor = 0.05
+			factor = 0.01
 			liege = {
 				any_demesne_title = {
 					OR = {
