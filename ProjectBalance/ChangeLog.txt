@@ -4,6 +4,7 @@
 	(867 start) The Content trait will no longer be removed from Byzantine vassals
 	Made dejure vassals even less likely to join independence factions
 	Fixed some positioning issues with Napoli
+	Merged the sea zones of Iceland and Faroya
 
 3.2.21
 	Moved as many requirements as possible from the "is war possible?" decisions over to the war declaration UI. Some still remain due to it not being possible to display title requirements in the UI yet
