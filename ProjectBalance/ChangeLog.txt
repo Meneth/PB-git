@@ -5,6 +5,7 @@
 	Made dejure vassals even less likely to join independence factions
 	Fixed some positioning issues with Napoli
 	Merged the sea zones of Iceland and Faroya
+	Fixed an issue with coastal county wars ending inconclusively in certain cases
 
 3.2.21
 	Moved as many requirements as possible from the "is war possible?" decisions over to the war declaration UI. Some still remain due to it not being possible to display title requirements in the UI yet

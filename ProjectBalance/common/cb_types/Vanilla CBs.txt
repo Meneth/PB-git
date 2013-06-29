@@ -6946,6 +6946,7 @@ coastal_county_republic = {
 					}
 				}
 				NOT = { num_of_trade_posts = 2 }
+				ROOT = { is_merchant_republic = yes }
 			}
 		}
 	}
@@ -6961,17 +6962,30 @@ coastal_county_republic = {
 
 	is_valid_title = {
 		tier = COUNT
-		location = {
-			port = yes
-			county = {
-				any_direct_de_jure_vassal_title = {
-					holder_scope = {
-						OR = {
-							character = ROOT
-							is_liege_or_above = ROOT
+		OR = {
+			location = {
+				port = yes
+				county = {
+					any_direct_de_jure_vassal_title = {
+						holder_scope = {
+							OR = {
+								character = ROOT
+								is_liege_or_above = ROOT
+							}
 						}
 					}
 				}
+			}
+			FROM = {
+				is_merchant_republic = yes
+				NOT = {
+					any_realm_title = {
+						tier = count
+						NOT = { title = PREVPREV }
+					}
+				}
+				NOT = { num_of_trade_posts = 2 }
+				ROOT = { is_merchant_republic = yes }
 			}
 		}
 	}
