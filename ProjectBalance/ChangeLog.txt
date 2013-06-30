@@ -3,7 +3,7 @@
 	Increased the reinforcement rate by 50% (to a base level of 3%/year) since the rounding error is fixed in 1.103b. Reinforcement while levy is raised remains at approximately the same level as before
 	(867 start) The Content trait will no longer be removed from Byzantine vassals
 	Made dejure vassals even less likely to join independence factions
-	Fixed some positioning issues with Napoli
+	Fixed some positioning issues with Napoli and Värend
 	Merged the sea zones of Iceland and Faroya
 	Fixed an issue with coastal county wars ending inconclusively in certain cases
 	Fixed the Muslim Invasion CB not applying a cooldown
