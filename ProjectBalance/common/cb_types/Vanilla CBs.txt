@@ -7777,10 +7777,12 @@ muslim_invasion = {
 	}
 	
 	on_add = {
-		ROOT = { piety = -500 }
-		add_character_modifier = {
-			name = holy_war_cooldown
-			duration = 1825
+		ROOT = {
+			piety = -500
+			add_character_modifier = {
+				name = holy_war_cooldown
+				duration = 1825
+			}
 		}
 	}
 	
