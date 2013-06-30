@@ -7,6 +7,7 @@
 	Merged the sea zones of Iceland and Faroya
 	Fixed an issue with coastal county wars ending inconclusively in certain cases
 	Fixed the Muslim Invasion CB not applying a cooldown
+	Fixed it being possible to go directly to Enatic-Cognatic from Agnatic-Cognatic
 
 3.2.21
 	Moved as many requirements as possible from the "is war possible?" decisions over to the war declaration UI. Some still remain due to it not being possible to display title requirements in the UI yet
