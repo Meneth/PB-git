@@ -42,14 +42,14 @@ TECH_GROUP_MILITARY = {
 			add_building = tp_shipyard_1
 		}
 		3 = {
-			add_building = ct_shipyard_1
-			add_building = ca_shipyard_2
+			add_building = ct_shipyard_2
+			add_building = ca_shipyard_1
 		}
 		4 = {
 			add_building = tp_shipyard_2
 		}
 		5 = {
-			add_building = ct_shipyard_2
+			add_building = ca_shipyard_2
 		}
 	}
 	TECH_RECRUITMENT = {
