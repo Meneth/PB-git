@@ -30,9 +30,11 @@ character_event = { # Battlefield Duel Start
                         at_location = ROOT
                         NOT = { has_character_modifier = battlefield_fight }
                     }
-                    in_battle = yes
-                    at_location = ROOT
-                    NOT = { has_character_modifier = battlefield_fight }
+					AND = {
+						in_battle = yes
+						at_location = ROOT
+						NOT = { has_character_modifier = battlefield_fight }
+					}
                 }
             }
         }

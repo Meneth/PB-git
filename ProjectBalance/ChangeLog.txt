@@ -11,6 +11,7 @@
 	Fixed Naval Tech claiming to give certain buildings at the wrong levels
 	Fixed West African Pagans being excempted from the reform requirement for high crown laws
 	Fixed Bulgarian Unrest repeatedly spreading and dissipating
+	Fixed an issue with duel targeting
 
 3.2.21
 	Moved as many requirements as possible from the "is war possible?" decisions over to the war declaration UI. Some still remain due to it not being possible to display title requirements in the UI yet
