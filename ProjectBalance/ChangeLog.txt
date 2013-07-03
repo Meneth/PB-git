@@ -9,6 +9,7 @@
 	Fixed the Muslim Invasion CB not applying a cooldown
 	Fixed it being possible to go directly to Enatic-Cognatic from Agnatic-Cognatic
 	Fixed Naval Tech claiming to give certain buildings at the wrong levels
+	Fixed West African Pagans being excempted from the reform requirement for high crown laws
 
 3.2.21
 	Moved as many requirements as possible from the "is war possible?" decisions over to the war declaration UI. Some still remain due to it not being possible to display title requirements in the UI yet

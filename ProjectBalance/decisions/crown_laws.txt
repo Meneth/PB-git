@@ -200,6 +200,7 @@ de_jure_laws = {
 					NOT = { religion = finnish_pagan }
 					NOT = { religion = aztec }
 					NOT = { religion = slavic_pagan }
+					NOT = { religion = west_african_pagan }
 				}
 				custom_tooltip = TT_NOT_UNREFORMED_PAGAN
 			}
@@ -321,6 +322,7 @@ de_jure_laws = {
 					NOT = { religion = finnish_pagan }
 					NOT = { religion = aztec }
 					NOT = { religion = slavic_pagan }
+					NOT = { religion = west_african_pagan }
 				}
 				custom_tooltip = TT_NOT_UNREFORMED_PAGAN
 			}
@@ -437,6 +439,7 @@ de_jure_laws = {
 					NOT = { religion = finnish_pagan }
 					NOT = { religion = aztec }
 					NOT = { religion = slavic_pagan }
+					NOT = { religion = west_african_pagan }
 				}
 				custom_tooltip = TT_NOT_UNREFORMED_PAGAN
 			}
@@ -580,6 +583,7 @@ de_jure_laws = {
 					NOT = { religion = finnish_pagan }
 					NOT = { religion = aztec }
 					NOT = { religion = slavic_pagan }
+					NOT = { religion = west_african_pagan }
 				}
 				custom_tooltip = TT_NOT_UNREFORMED_PAGAN
 			}
@@ -685,6 +689,7 @@ de_jure_laws = {
 					NOT = { religion = finnish_pagan }
 					NOT = { religion = aztec }
 					NOT = { religion = slavic_pagan }
+					NOT = { religion = west_african_pagan }
 				}
 				custom_tooltip = TT_NOT_UNREFORMED_PAGAN
 			}
@@ -824,6 +829,7 @@ de_jure_laws = {
 					NOT = { religion = finnish_pagan }
 					NOT = { religion = aztec }
 					NOT = { religion = slavic_pagan }
+					NOT = { religion = west_african_pagan }
 				}
 				custom_tooltip = TT_NOT_UNREFORMED_PAGAN
 			}
@@ -929,6 +935,7 @@ de_jure_laws = {
 					NOT = { religion = finnish_pagan }
 					NOT = { religion = aztec }
 					NOT = { religion = slavic_pagan }
+					NOT = { religion = west_african_pagan }
 				}
 				custom_tooltip = TT_NOT_UNREFORMED_PAGAN
 			}
@@ -1161,6 +1168,7 @@ de_jure_laws = {
 					NOT = { religion = finnish_pagan }
 					NOT = { religion = aztec }
 					NOT = { religion = slavic_pagan }
+					NOT = { religion = west_african_pagan }
 				}
 				custom_tooltip = TT_NOT_UNREFORMED_PAGAN
 			}
@@ -1289,6 +1297,7 @@ de_jure_laws = {
 					NOT = { religion = finnish_pagan }
 					NOT = { religion = aztec }
 					NOT = { religion = slavic_pagan }
+					NOT = { religion = west_african_pagan }
 				}
 				custom_tooltip = TT_NOT_UNREFORMED_PAGAN
 			}
