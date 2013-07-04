@@ -784,7 +784,7 @@ gender_laws = {
 						}
 					}
 				}
-				has_law = cognatic_succession
+				has_law = enatic_succession
 				AND = {
 					holder_scope = {
 						custom_tooltip = gender_equality

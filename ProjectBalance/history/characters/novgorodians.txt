@@ -3,7 +3,7 @@
 	dynasty=0
 	religion="orthodox"
 	culture="russian"
-	add_trait = content
+	trait = content
 	1100.1.2={
 		birth="1100.1.2"
 	}
@@ -43,7 +43,7 @@
 	dynasty=0
 	religion="orthodox"
 	culture="russian"
-	add_trait = content
+	trait = content
 	1126.1.1={
 		birth="1126.1.1"
 	}
@@ -56,8 +56,8 @@
 	dynasty=0
 	religion="orthodox"
 	culture="russian"
-	add_trait = content
-	add_trait = zealous
+	trait = content
+	trait = zealous
 	1126.1.1={
 		birth="1126.1.1"
 	}
@@ -70,7 +70,7 @@
 	dynasty=0
 	religion="orthodox"
 	culture="russian"
-	add_trait = content
+	trait = content
 	1126.1.1={
 		birth="1126.1.1"
 	}
@@ -83,7 +83,7 @@
 	dynasty=0
 	religion="orthodox"
 	culture="russian"
-	add_trait = content
+	trait = content
 	1130.1.1={
 		birth="1130.1.1"
 	}
@@ -96,7 +96,7 @@
 	dynasty=0
 	religion="orthodox"
 	culture="russian"
-	add_trait = content
+	trait = content
 	1170.1.1={
 		birth="1170.1.1"
 	}
@@ -109,7 +109,7 @@
 	dynasty=0
 	religion="orthodox"
 	culture="russian"
-	add_trait = content
+	trait = content
 	1170.1.1={
 		birth="1170.1.1"
 	}
@@ -123,7 +123,7 @@
 	dynasty=0
 	religion="orthodox"
 	culture="russian"
-	add_trait = content
+	trait = content
 	1170.1.1={
 		birth="1170.1.1"
 	}
@@ -136,7 +136,7 @@
 	dynasty=0
 	religion="orthodox"
 	culture="russian"
-	add_trait = content
+	trait = content
 	1180.1.1={
 		birth="1180.1.1"
 	}
@@ -149,7 +149,7 @@
 	dynasty=0
 	religion="orthodox"
 	culture="russian"
-	add_trait = content
+	trait = content
 	1220.1.1={
 		birth="1220.1.1"
 	}
@@ -162,7 +162,7 @@
 	dynasty=0
 	religion="orthodox"
 	culture="russian"
-	add_trait = content
+	trait = content
 	1230.1.1={
 		birth="1230.1.1"
 	}
@@ -175,7 +175,7 @@
 	dynasty=0
 	religion="orthodox"
 	culture="russian"
-	add_trait = content
+	trait = content
 	1245.1.1={
 		birth="1245.1.1"
 	}
@@ -188,7 +188,7 @@
 	dynasty=0
 	religion="orthodox"
 	culture="russian"
-	add_trait = content
+	trait = content
 	1260.1.1={
 		birth="1260.1.1"
 	}

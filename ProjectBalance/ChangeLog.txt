@@ -1,3 +1,19 @@
+3.2.22
+	Updated for CKII patch 1.103
+	Fixed the HRE Decentralization laws and Byzantine Theme laws existing in the Shattered Balance module
+	Increased the reinforcement rate by 50% (to a base level of 3%/year) since the rounding error is fixed in 1.103b. Reinforcement while levy is raised remains at approximately the same level as before
+	(867 start) The Content trait will no longer be removed from Byzantine vassals
+	Made dejure vassals even less likely to join independence factions
+	Fixed some positioning issues with Napoli and Värend
+	Merged the sea zones of Iceland and Faroya
+	Fixed an issue with coastal county wars ending inconclusively in certain cases
+	Fixed the Muslim Invasion CB not applying a cooldown
+	Fixed it being possible to go directly to Enatic-Cognatic from Agnatic-Cognatic
+	Fixed Naval Tech claiming to give certain buildings at the wrong levels
+	Fixed West African Pagans being excempted from the reform requirement for high crown laws
+	Fixed Bulgarian Unrest repeatedly spreading and dissipating
+	Fixed an issue with duel targeting
+
 3.2.21
 	Moved as many requirements as possible from the "is war possible?" decisions over to the war declaration UI. Some still remain due to it not being possible to display title requirements in the UI yet
 	Changed the colors of Zoroastrians to blue as it looks better than red, and is at least somewhat relevant

@@ -3,8 +3,8 @@
 	dynasty=7512 # Alavids of Tabaristan
 	religion="shiite"
 	culture="bedouin_arabic"
-	add_trait=sayyid
-	add_trait="tough_soldier"
+	trait=sayyid
+	trait="tough_soldier"
 	father=163128
 	830.1.1={
 		birth="830.1.1"
@@ -20,7 +20,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father=3088
-	add_trait="sayyid"
+	trait="sayyid"
 	1092.1.1={
 		birth="1092.1.1"
 	}
@@ -35,7 +35,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father=144060
-	add_trait="sayyid"
+	trait="sayyid"
 	1109.1.1={
 		birth="1109.1.1"
 	}
@@ -50,7 +50,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father=3088
-	add_trait="sayyid"
+	trait="sayyid"
 	1095.1.1={
 		birth="1095.1.1"
 	}
@@ -65,7 +65,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father=144062
-	add_trait="sayyid"
+	trait="sayyid"
 	1120.1.1={
 		birth="1120.1.1"
 	}
@@ -80,7 +80,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father=144063
-	add_trait="sayyid"
+	trait="sayyid"
 	1142.1.1={
 		birth="1142.1.1"
 	}
@@ -377,8 +377,8 @@
 	stewardship=7
 	religion="sunni"
 	culture="bedouin_arabic"
-	add_trait="temperate"
-	add_trait="amateurish_plotter"
+	trait="temperate"
+	trait="amateurish_plotter"
 	1039.1.1={
 		birth="1039.1.1"
 	}
@@ -396,7 +396,7 @@
 	stewardship=8
 	religion="sunni"
 	culture="bedouin_arabic"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	1039.1.1={
 		birth="1039.1.1"
 	}
@@ -414,7 +414,7 @@
 	stewardship=7
 	religion="sunni"
 	culture="bedouin_arabic"
-	add_trait="flamboyant_schemer"
+	trait="flamboyant_schemer"
 	1039.1.1={
 		birth="1039.1.1"
 	}
@@ -432,10 +432,10 @@
 	stewardship=7
 	religion="sunni"
 	culture="bedouin_arabic"
-	add_trait="diligent"
-	add_trait="kind"
-	add_trait="skilled_tactician"
-	add_trait="cynical"
+	trait="diligent"
+	trait="kind"
+	trait="skilled_tactician"
+	trait="cynical"
 	1041.1.1={
 		birth="1041.1.1"
 	}
@@ -453,10 +453,10 @@
 	stewardship=6
 	religion="sunni"
 	culture="bedouin_arabic"
-	add_trait="wroth"
-	add_trait="just"
-	add_trait="flamboyant_schemer"
-	add_trait="cynical"
+	trait="wroth"
+	trait="just"
+	trait="flamboyant_schemer"
+	trait="cynical"
 	1039.1.1={
 		birth="1039.1.1"
 	}
@@ -474,8 +474,8 @@
 	stewardship=6
 	religion="sunni"
 	culture="bedouin_arabic"
-	add_trait="skilled_tactician"
-	add_trait="cynical"
+	trait="skilled_tactician"
+	trait="cynical"
 	1000.1.1={
 		birth="1000.1.1"
 	}
@@ -493,8 +493,8 @@
 	stewardship=4
 	religion="sunni"
 	culture="bedouin_arabic"
-	add_trait="greedy"
-	add_trait="amateurish_plotter"
+	trait="greedy"
+	trait="amateurish_plotter"
 	1039.1.1={
 		birth="1039.1.1"
 	}
@@ -513,8 +513,8 @@
 	stewardship=6
 	religion="pagan"
 	culture="bedouin_arabic"
-	add_trait="arbitrary"
-	add_trait="tough_soldier"
+	trait="arbitrary"
+	trait="tough_soldier"
 	1039.1.1={
 		birth="1039.1.1"
 	}
@@ -532,11 +532,11 @@
 	stewardship=8
 	religion="sunni"
 	culture="bedouin_arabic"
-	add_trait="lustful"
-	add_trait="diligent"
-	add_trait="kind"
-	add_trait="temperate"
-	add_trait="skilled_tactician"
+	trait="lustful"
+	trait="diligent"
+	trait="kind"
+	trait="temperate"
+	trait="skilled_tactician"
 	1039.1.1={
 		birth="1039.1.1"
 	}
@@ -553,7 +553,7 @@
 	stewardship=7
 	religion="sunni"
 	culture="bedouin_arabic"
-	add_trait="amateurish_plotter"
+	trait="amateurish_plotter"
 	1039.1.1={
 		birth="1039.1.1"
 	}
@@ -571,8 +571,8 @@
 	stewardship=4
 	religion="shiite"
 	culture="bedouin_arabic"
-	add_trait="lustful"
-	add_trait="flamboyant_schemer"
+	trait="lustful"
+	trait="flamboyant_schemer"
 	1050.1.1={
 		birth="1050.1.1"
 	}
@@ -590,7 +590,7 @@
 	stewardship=7
 	religion="sunni"
 	culture="bedouin_arabic"
-	add_trait="martial_cleric"
+	trait="martial_cleric"
 	1150.1.1={
 		birth="1150.1.1"
 	}
@@ -608,8 +608,8 @@
 	stewardship=8
 	religion="sunni"
 	culture="bedouin_arabic"
-	add_trait="proud"
-	add_trait="scholarly_theologian"
+	trait="proud"
+	trait="scholarly_theologian"
 	1150.1.1={
 		birth="1150.1.1"
 	}
@@ -627,7 +627,7 @@
 	stewardship=5
 	religion="sunni"
 	culture="bedouin_arabic"
-	add_trait="underhanded_rogue"
+	trait="underhanded_rogue"
 	1150.1.1={
 		birth="1150.1.1"
 	}
@@ -645,8 +645,8 @@
 	stewardship=7
 	religion="sunni"
 	culture="bedouin_arabic"
-	add_trait="brave"
-	add_trait="scholarly_theologian"
+	trait="brave"
+	trait="scholarly_theologian"
 	1150.1.1={
 		birth="1150.1.1"
 	}
@@ -664,7 +664,7 @@
 	stewardship=6
 	religion="sunni"
 	culture="bedouin_arabic"
-	add_trait="martial_cleric"
+	trait="martial_cleric"
 	1150.1.1={
 		birth="1150.1.1"
 	}
@@ -682,9 +682,9 @@
 	stewardship=6
 	religion="sunni"
 	culture="bedouin_arabic"
-	add_trait="chaste"
-	add_trait="kind"
-	add_trait="tough_soldier"
+	trait="chaste"
+	trait="kind"
+	trait="tough_soldier"
 	1150.1.1={
 		birth="1150.1.1"
 	}
@@ -702,9 +702,9 @@
 	stewardship=4
 	religion="sunni"
 	culture="bedouin_arabic"
-	add_trait="gluttonous"
-	add_trait="just"
-	add_trait="tough_soldier"
+	trait="gluttonous"
+	trait="just"
+	trait="tough_soldier"
 	1090.1.2={
 		birth="1090.1.2"
 	}
@@ -726,10 +726,10 @@
 	stewardship=7
 	religion="sunni"
 	culture="bedouin_arabic"
-	add_trait="sayyid"
-	add_trait="proud"
-	add_trait="just"
-	add_trait="charismatic_negotiator"
+	trait="sayyid"
+	trait="proud"
+	trait="just"
+	trait="charismatic_negotiator"
 	father = 144064
 	1158.1.1={
 		birth="1158.1.1"
@@ -749,10 +749,10 @@
 	stewardship=8
 	religion="sunni"
 	culture="bedouin_arabic"
-	add_trait="wroth"
-	add_trait="cynical"
-	add_trait="underhanded_rogue"
-	add_trait="sayyid"
+	trait="wroth"
+	trait="cynical"
+	trait="underhanded_rogue"
+	trait="sayyid"
 	father=34025
 	932.1.1={
 		birth="932.1.1"
@@ -772,9 +772,9 @@
 	stewardship=4
 	religion="sunni"
 	culture="bedouin_arabic"
-	add_trait="deceitful"
-	add_trait="martial_cleric"
-	add_trait="sayyid"
+	trait="deceitful"
+	trait="martial_cleric"
+	trait="sayyid"
 	father=34023
 	943.1.1={
 		birth="943.1.1"
@@ -794,8 +794,8 @@
 	stewardship=4
 	religion="sunni"
 	culture="bedouin_arabic"
-	add_trait="scholarly_theologian"
-	add_trait="sayyid"
+	trait="scholarly_theologian"
+	trait="sayyid"
 	father=3082
 	1017.1.1={
 		birth="1017.1.1"
@@ -815,8 +815,8 @@
 	stewardship=4
 	religion="sunni"
 	culture="bedouin_arabic"
-	add_trait="martial_cleric"
-	add_trait="sayyid"
+	trait="martial_cleric"
+	trait="sayyid"
 	father=34026
 	1052.1.1={
 		birth="1052.1.1"
@@ -836,9 +836,9 @@
 	stewardship=7
 	religion="sunni"
 	culture="bedouin_arabic"
-	add_trait="charitable"
-	add_trait="martial_cleric"
-	add_trait="sayyid"
+	trait="charitable"
+	trait="martial_cleric"
+	trait="sayyid"
 	father=3086
 	1075.1.1={
 		birth="1075.1.1"
@@ -857,9 +857,9 @@
 	stewardship=5
 	religion="sunni"
 	culture="bedouin_arabic"
-	add_trait="patient"
-	add_trait="sayyid"
-	add_trait="scholarly_theologian"
+	trait="patient"
+	trait="sayyid"
+	trait="scholarly_theologian"
 	father=73686
 	891.1.7={
 		birth="891.1.7"
@@ -878,9 +878,9 @@
 	stewardship=5
 	religion="sunni"
 	culture="bedouin_arabic"
-	add_trait="kind"
-	add_trait="sayyid"
-	add_trait="scholarly_theologian"
+	trait="kind"
+	trait="sayyid"
+	trait="scholarly_theologian"
 	father=3200
 	915.1.13={
 		birth="915.1.13"
@@ -899,10 +899,10 @@
 	stewardship=8
 	religion="sunni"
 	culture="bedouin_arabic"
-	add_trait="chaste"
-	add_trait="wroth"
-	add_trait="sayyid"
-	add_trait="thrifty_clerk"
+	trait="chaste"
+	trait="wroth"
+	trait="sayyid"
+	trait="thrifty_clerk"
 	father=3202
 	965.6.11={
 		birth="965.6.11"
@@ -921,9 +921,9 @@
 	stewardship=5
 	religion="sunni"
 	culture="bedouin_arabic"
-	add_trait="humble"
-	add_trait="sayyid"
-	add_trait="flamboyant_schemer"
+	trait="humble"
+	trait="sayyid"
+	trait="flamboyant_schemer"
 	father=73677
 	980.1.1={
 		birth="980.1.1"
@@ -942,8 +942,8 @@
 	stewardship=5
 	religion="sunni"
 	culture="bedouin_arabic"
-	add_trait="arbitrary"
-	add_trait="naive_appeaser"
+	trait="arbitrary"
+	trait="naive_appeaser"
 	1050.1.2={
 		birth="1050.1.2"
 	}
@@ -961,11 +961,11 @@
 	stewardship=4
 	religion="orthodox"
 	culture="bedouin_arabic"
-	add_trait="fortune_builder"
-	add_trait="kind"
-	add_trait="mastermind_theologian"
-	add_trait="humble"
-	add_trait="grey_eminence"
+	trait="fortune_builder"
+	trait="kind"
+	trait="mastermind_theologian"
+	trait="humble"
+	trait="grey_eminence"
 	993.1.2={
 		birth="993.1.2"
 	}
@@ -983,11 +983,11 @@
 	stewardship=7
 	religion="orthodox"
 	culture="bedouin_arabic"
-	add_trait="proud"
-	add_trait="kind"
-	add_trait="thrifty_clerk"
-	add_trait="cynical"
-	add_trait="flamboyant_schemer"
+	trait="proud"
+	trait="kind"
+	trait="thrifty_clerk"
+	trait="cynical"
+	trait="flamboyant_schemer"
 	father=3220
 	1025.1.2={
 		birth="1025.1.2"
@@ -1006,9 +1006,9 @@
 	stewardship=8
 	religion="sunni"
 	culture="bedouin_arabic"
-	add_trait="chaste"
-	add_trait="greedy"
-	add_trait="amateurish_plotter"
+	trait="chaste"
+	trait="greedy"
+	trait="amateurish_plotter"
 	939.1.2={
 		birth="939.1.2"
 	}
@@ -1026,7 +1026,7 @@
 	stewardship=6
 	religion="sunni"
 	culture="bedouin_arabic"
-	add_trait="amateurish_plotter"
+	trait="amateurish_plotter"
 	father=3808
 	979.1.2={
 		birth="979.1.2"
@@ -1045,7 +1045,7 @@
 	stewardship=7
 	religion="sunni"
 	culture="bedouin_arabic"
-	add_trait="flamboyant_schemer"
+	trait="flamboyant_schemer"
 	father=3810
 	1002.1.2={
 		birth="1002.1.2"
@@ -1065,9 +1065,9 @@
 	stewardship=7
 	religion="sunni"
 	culture="bedouin_arabic"
-	add_trait="patient"
-	add_trait="cynical"
-	add_trait="scholarly_theologian"
+	trait="patient"
+	trait="cynical"
+	trait="scholarly_theologian"
 	father=159392
 	978.1.1={
 		birth="978.1.1"
@@ -1087,8 +1087,8 @@
 	stewardship=7
 	religion="sunni"
 	culture="bedouin_arabic"
-	add_trait="wroth"
-	add_trait="flamboyant_schemer"
+	trait="wroth"
+	trait="flamboyant_schemer"
 	father=3816
 	1002.1.1={
 		birth="1002.1.1"
@@ -1108,8 +1108,8 @@
 	stewardship=4
 	religion="sunni"
 	culture="bedouin_arabic"
-	add_trait="arbitrary"
-	add_trait="tough_soldier"
+	trait="arbitrary"
+	trait="tough_soldier"
 	father=3816
 	1014.1.1={
 		birth="1014.1.1"
@@ -1129,7 +1129,7 @@
 	stewardship=5
 	religion="sunni"
 	culture="bedouin_arabic"
-	add_trait="scholarly_theologian"
+	trait="scholarly_theologian"
 	999.1.2={
 		birth="999.1.2"
 	}
@@ -1148,9 +1148,9 @@
 	stewardship=7
 	religion="sunni"
 	culture="bedouin_arabic"
-	add_trait="just"
-	add_trait="kind"
-	add_trait="martial_cleric"
+	trait="just"
+	trait="kind"
+	trait="martial_cleric"
 	father=3828
 	1020.1.2={
 		birth="1020.1.2"
@@ -1169,8 +1169,8 @@
 	stewardship=6
 	religion="sunni"
 	culture="bedouin_arabic"
-	add_trait="cynical"
-	add_trait="fortune_builder"
+	trait="cynical"
+	trait="fortune_builder"
 	father=3828
 	1022.1.1={
 		birth="1022.1.1"
@@ -1189,8 +1189,8 @@
 	stewardship=4
 	religion="sunni"
 	culture="bedouin_arabic"
-	add_trait="just"
-	add_trait="tough_soldier"
+	trait="just"
+	trait="tough_soldier"
 	father=3832
 	1043.1.2={
 		birth="1043.1.2"
@@ -1209,7 +1209,7 @@
 	stewardship=7
 	religion="sunni"
 	culture="bedouin_arabic"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	1036.1.2={
 		birth="1036.1.2"
 	}
@@ -1227,7 +1227,7 @@
 	stewardship=5
 	religion="orthodox"
 	culture="bedouin_arabic"
-	add_trait="thrifty_clerk"
+	trait="thrifty_clerk"
 	1051.1.1={
 		birth="1051.1.1"
 	}
@@ -1245,7 +1245,7 @@
 	stewardship=5
 	religion="orthodox"
 	culture="bedouin_arabic"
-	add_trait="thrifty_clerk"
+	trait="thrifty_clerk"
 	1051.1.1={
 		birth="1051.1.1"
 	}
@@ -1264,9 +1264,9 @@
 	stewardship=6
 	religion="sunni"
 	culture="bedouin_arabic"
-	add_trait="deceitful"
-	add_trait="patient"
-	add_trait="tough_soldier"
+	trait="deceitful"
+	trait="patient"
+	trait="tough_soldier"
 	1000.1.2={
 		birth="1000.1.2"
 	}
@@ -1338,7 +1338,7 @@
 	religion="shiite"
 	culture="bedouin_arabic"
 	father=45037
-	add_trait="content"
+	trait="content"
 	1055.1.1={
 		birth="1055.1.1"
 	}
@@ -1356,7 +1356,7 @@
 	stewardship=6
 	religion="shiite"
 	culture="bedouin_arabic"
-	add_trait="humble"
+	trait="humble"
 	father=45036
 	1060.1.1={
 		birth="1060.1.1"
@@ -1394,7 +1394,7 @@
 	stewardship=4
 	religion="shiite"
 	culture="bedouin_arabic"
-	add_trait="ambitious"
+	trait="ambitious"
 	father=45038
 	1075.1.1={
 		birth="1075.1.1"
@@ -1414,7 +1414,7 @@
 	religion="shiite"
 	culture="bedouin_arabic"
 	father=45039
-	add_trait="ambitious"
+	trait="ambitious"
 	1080.1.1={
 		birth="1080.1.1"
 	}
@@ -1432,7 +1432,7 @@
 	stewardship=4
 	religion="shiite"
 	culture="bedouin_arabic"
-	add_trait="ambitious"
+	trait="ambitious"
 	father=45041
 	1091.1.1={
 		birth="1091.1.1"
@@ -1506,7 +1506,7 @@
 	stewardship=6
 	religion="shiite"
 	culture="bedouin_arabic"
-	add_trait="detached_priest"
+	trait="detached_priest"
 	1120.1.1={
 		birth="1120.1.1"
 	}
@@ -1524,7 +1524,7 @@
 	stewardship=4
 	religion="shiite"
 	culture="bedouin_arabic"
-	add_trait="sayyid"
+	trait="sayyid"
 	add_claim = d_shiite
 	father=159422
 	1000.1.1={
@@ -1544,7 +1544,7 @@
 	stewardship=4
 	religion="shiite"
 	culture="bedouin_arabic"
-	add_trait="sayyid"
+	trait="sayyid"
 	add_claim = d_shiite
 	father=45048
 	1040.1.1={
@@ -1564,7 +1564,7 @@
 	stewardship=4
 	religion="shiite"
 	culture="bedouin_arabic"
-	add_trait="sayyid"
+	trait="sayyid"
 	add_claim = d_shiite
 	father=45048
 	1045.1.1={
@@ -1657,7 +1657,7 @@
 	stewardship=4
 	religion="shiite"
 	culture="bedouin_arabic"
-	add_trait="sayyid"
+	trait="sayyid"
 	add_claim = d_shiite
 	father=45050
 	1080.1.1={
@@ -1677,7 +1677,7 @@
 	stewardship=4
 	religion="shiite"
 	culture="bedouin_arabic"
-	add_trait="sayyid"
+	trait="sayyid"
 	add_claim = d_shiite
 	father=45050
 	1075.1.1={
@@ -1697,7 +1697,7 @@
 	stewardship=4
 	religion="shiite"
 	culture="bedouin_arabic"
-	add_trait="sayyid"
+	trait="sayyid"
 	add_claim = d_shiite
 	father=45050
 	1076.1.1={
@@ -1718,7 +1718,7 @@
 	stewardship=4
 	religion="shiite"
 	culture="bedouin_arabic"
-	add_trait="sayyid"
+	trait="sayyid"
 	add_claim = d_shiite
 	father=45056
 	1100.1.1={
@@ -1738,7 +1738,7 @@
 	stewardship=4
 	religion="shiite"
 	culture="bedouin_arabic"
-	add_trait="sayyid"
+	trait="sayyid"
 	add_claim = d_shiite
 	father=45057
 	1110.1.1={
@@ -1759,7 +1759,7 @@
 	religion="shiite"
 	culture="bedouin_arabic"
 	father=45043
-	add_trait="ambitious"
+	trait="ambitious"
 	1107.1.1={
 		birth="1107.1.1"
 	}
@@ -1777,14 +1777,14 @@
 	stewardship=5
 	religion="orthodox"
 	culture="bedouin_arabic"
-	add_trait="tough_soldier"
-	add_trait="brave"
-	add_trait="diligent"
-	add_trait="proud"
-	add_trait="patient"
-	add_trait="greedy"
-	add_trait="cynical"
-	add_trait="kind"
+	trait="tough_soldier"
+	trait="brave"
+	trait="diligent"
+	trait="proud"
+	trait="patient"
+	trait="greedy"
+	trait="cynical"
+	trait="kind"
 	1055.1.2={
 		birth="1055.1.2"
 		culture="greek"
@@ -1808,8 +1808,8 @@
 	stewardship=4
 	religion="orthodox"
 	culture="bedouin_arabic"
-	add_trait="cynical"
-	add_trait="grey_eminence"
+	trait="cynical"
+	trait="grey_eminence"
 	1040.1.2={
 		birth="1040.1.2"
 	}
@@ -1827,7 +1827,7 @@
 	stewardship=7
 	religion="orthodox"
 	culture="bedouin_arabic"
-	add_trait="underhanded_rogue"
+	trait="underhanded_rogue"
 	1040.1.2={
 		birth="1040.1.2"
 	}
@@ -1845,7 +1845,7 @@
 	stewardship=4
 	religion="orthodox"
 	culture="bedouin_arabic"
-	add_trait="flamboyant_schemer"
+	trait="flamboyant_schemer"
 	1040.1.2={
 		birth="1040.1.2"
 	}
@@ -1863,7 +1863,7 @@
 	stewardship=6
 	religion="orthodox"
 	culture="bedouin_arabic"
-	add_trait="fortune_builder"
+	trait="fortune_builder"
 	1040.1.2={
 		birth="1040.1.2"
 	}
@@ -1992,7 +1992,7 @@
 	stewardship=4
 	religion="sunni"
 	culture="bedouin_arabic"
-	add_trait="skilled_tactician"
+	trait="skilled_tactician"
 	1039.1.1={
 		birth="1039.1.1"
 	}
@@ -2010,7 +2010,7 @@
 	stewardship=6
 	religion="sunni"
 	culture="bedouin_arabic"
-	add_trait="martial_cleric"
+	trait="martial_cleric"
 	1039.1.1={
 		birth="1039.1.1"
 	}
@@ -2029,8 +2029,8 @@
 	stewardship=5
 	religion="sunni"
 	culture="bedouin_arabic"
-	add_trait="greedy"
-	add_trait="flamboyant_schemer"
+	trait="greedy"
+	trait="flamboyant_schemer"
 	1039.1.1={
 		birth="1039.1.1"
 	}
@@ -2045,7 +2045,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father=33924
-	add_trait="sayyid"
+	trait="sayyid"
 	566.1.1={
 		birth="566.1.1"
 	}
@@ -2060,7 +2060,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father=33900
-	add_trait="sayyid"
+	trait="sayyid"
 	618.1.1={
 		birth="618.1.1"
 	}
@@ -2075,7 +2075,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father=33901
-	add_trait="sayyid"
+	trait="sayyid"
 	648.1.1={
 		birth="648.1.1"
 	}
@@ -2090,7 +2090,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father=33924
-	add_trait="sayyid"
+	trait="sayyid"
 	549.1.1={
 		birth="549.1.1"
 	}
@@ -2105,7 +2105,7 @@
 	religion="shiite"
 	culture="bedouin_arabic"
 	father=33910
-	add_trait="sayyid"
+	trait="sayyid"
 	598.10.23={
 		birth="598.10.23"
 	}
@@ -2124,7 +2124,7 @@
 	culture="bedouin_arabic"
 	father=33911
 	mother=33921
-	add_trait="sayyid"
+	trait="sayyid"
 	626.1.8={
 		birth="626.1.8"
 	}
@@ -2139,7 +2139,7 @@
 	religion="shiite"
 	culture="bedouin_arabic"
 	father=33912
-	add_trait="sayyid"
+	trait="sayyid"
 	659.1.1={
 		birth="659.1.1"
 	}
@@ -2154,7 +2154,7 @@
 	religion="shiite"
 	culture="bedouin_arabic"
 	father=33913
-	add_trait="sayyid"
+	trait="sayyid"
 	676.1.1={
 		birth="676.1.1"
 	}
@@ -2169,7 +2169,7 @@
 	religion="shiite"
 	culture="bedouin_arabic"
 	father=33914
-	add_trait="sayyid"
+	trait="sayyid"
 	702.4.20={
 		birth="702.4.20"
 	}
@@ -2184,7 +2184,7 @@
 	religion="shiite"
 	culture="bedouin_arabic"
 	father=33915
-	add_trait="sayyid"
+	trait="sayyid"
 	721.1.1={
 		birth="721.1.1"
 	}
@@ -2199,7 +2199,7 @@
 	religion="shiite"
 	culture="bedouin_arabic"
 	father=33916
-	add_trait="sayyid"
+	trait="sayyid"
 	740.1.1={
 		birth="740.1.1"
 	}
@@ -2214,7 +2214,7 @@
 	religion="shiite"
 	culture="bedouin_arabic"
 	father=33917
-	add_trait="sayyid"
+	trait="sayyid"
 	795.1.1={
 		birth="795.1.1"
 	}
@@ -2229,7 +2229,7 @@
 	religion="shiite"
 	culture="bedouin_arabic"
 	father=33918
-	add_trait="sayyid"
+	trait="sayyid"
 	814.1.1={
 		birth="814.1.1"
 	}
@@ -2244,7 +2244,7 @@
 	religion="shiite"
 	culture="bedouin_arabic"
 	father=33919
-	add_trait="sayyid"
+	trait="sayyid"
 	834.1.1={
 		birth="834.1.1"
 	}
@@ -2280,13 +2280,13 @@
 	intrigue=5
 	stewardship=8
 	learning=10
-	add_trait="mastermind_theologian"
-	add_trait="sayyid"
-	add_trait="mystic"
-	add_trait="zealous"
-	add_trait="patient"
-	add_trait="gregarious"
-	add_trait="ambitious"
+	trait="mastermind_theologian"
+	trait="sayyid"
+	trait="mystic"
+	trait="zealous"
+	trait="patient"
+	trait="gregarious"
+	trait="ambitious"
 	570.4.26={
 		birth="570.4.26"
 	}
@@ -2326,7 +2326,7 @@
 	dynasty=7296
 	religion="pagan"
 	culture="bedouin_arabic"
-	add_trait = "twin"
+	trait = "twin"
 	father = 163004
 	464.1.1={
 		birth="464.1.1"
@@ -2343,7 +2343,7 @@
 	culture="bedouin_arabic"
 	father=33911
 	mother=33921
-	add_trait="sayyid"
+	trait="sayyid"
 	625.3.1={
 		birth="625.3.1"
 	}
@@ -2358,7 +2358,7 @@
 	religion="shiite"
 	culture="bedouin_arabic"
 	father=33926
-	add_trait="sayyid"
+	trait="sayyid"
 	664.1.1={
 		birth="664.1.1"
 	}
@@ -2373,7 +2373,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father=33902
-	add_trait="sayyid"
+	trait="sayyid"
 	690.1.1={
 		birth="690.1.1"
 	}
@@ -2388,7 +2388,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father=34000
-	add_trait="sayyid"
+	trait="sayyid"
 	721.1.1={
 		birth="721.1.1"
 	}
@@ -2403,7 +2403,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father=34000
-	add_trait="sayyid"
+	trait="sayyid"
 	714.1.1={
 		birth="714.1.1"
 	}
@@ -2418,7 +2418,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father=34002
-	add_trait="sayyid"
+	trait="sayyid"
 	735.1.1={
 		birth="735.1.1"
 	}
@@ -2433,7 +2433,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father=34003
-	add_trait="sayyid"
+	trait="sayyid"
 	755.1.1={
 		birth="755.1.1"
 	}
@@ -2448,7 +2448,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father=34003
-	add_trait="sayyid"
+	trait="sayyid"
 	763.1.1={
 		birth="763.1.1"
 	}
@@ -2463,7 +2463,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father=34005
-	add_trait="sayyid"
+	trait="sayyid"
 	787.1.1={
 		birth="787.1.1"
 	}
@@ -2478,7 +2478,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father=34005
-	add_trait="sayyid"
+	trait="sayyid"
 	786.9.13={
 		birth="786.9.13"
 	}
@@ -2493,7 +2493,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father=34005
-	add_trait="sayyid"
+	trait="sayyid"
 	794.1.1={
 		birth="794.1.1"
 	}
@@ -2508,7 +2508,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father=34008
-	add_trait="sayyid"
+	trait="sayyid"
 	817.1.1={
 		birth="817.1.1"
 	}
@@ -2523,7 +2523,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father=34008
-	add_trait="sayyid"
+	trait="sayyid"
 	821.3.1={
 		birth="821.3.1"
 	}
@@ -2541,7 +2541,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father=34008
-	add_trait="sayyid"
+	trait="sayyid"
 	823.1.1={
 		birth="823.1.1"
 	}
@@ -2556,7 +2556,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father=34010
-	add_trait="sayyid"
+	trait="sayyid"
 	840.1.1={
 		birth="840.1.1"
 	}
@@ -2574,7 +2574,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father=34011
-	add_trait="sayyid"
+	trait="sayyid"
 	840.1.1={
 		birth=yes
 	}
@@ -2592,13 +2592,13 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father=34010
-	add_trait="sayyid"
-	add_trait="cruel"
-	add_trait="cynical"
-	add_trait="arbitrary"
-	add_trait="envious"
-	add_trait="lustful"
-	add_trait="indulgent_wastrel"
+	trait="sayyid"
+	trait="cruel"
+	trait="cynical"
+	trait="arbitrary"
+	trait="envious"
+	trait="lustful"
+	trait="indulgent_wastrel"
 	
 	847.1.1={
 		birth=yes
@@ -2614,7 +2614,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father=34009
-	add_trait="sayyid"
+	trait="sayyid"
 	833.1.1={
 		birth=yes
 	}
@@ -2629,12 +2629,12 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father=34010
-	add_trait="sayyid"
-	add_trait="just"
-	add_trait="kind"
-	add_trait="diligent"
-	add_trait="zealous"
-	add_trait="grey_eminence"
+	trait="sayyid"
+	trait="just"
+	trait="kind"
+	trait="diligent"
+	trait="zealous"
+	trait="grey_eminence"
 	844.1.1={
 		birth=yes
 	}
@@ -2649,7 +2649,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father=34010
-	add_trait="sayyid"
+	trait="sayyid"
 	840.1.1={
 		birth="840.1.1"
 	}
@@ -2664,7 +2664,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father=34017
-	add_trait="sayyid"
+	trait="sayyid"
 	857.1.1={
 		birth="857.1.1"
 	}
@@ -2679,7 +2679,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father=34018
-	add_trait="sayyid"
+	trait="sayyid"
 	880.1.1={
 		birth="880.1.1"
 	}
@@ -2694,7 +2694,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father=34018
-	add_trait="sayyid"
+	trait="sayyid"
 	899.1.1={
 		birth="899.1.1"
 	}
@@ -2709,7 +2709,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father=34018
-	add_trait="sayyid"
+	trait="sayyid"
 	895.1.1={
 		birth="895.1.1"
 	}
@@ -2724,7 +2724,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father=34021
-	add_trait="sayyid"
+	trait="sayyid"
 	912.1.1={
 		birth="912.1.1"
 	}
@@ -2739,7 +2739,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father=34021
-	add_trait="sayyid"
+	trait="sayyid"
 	915.1.1={
 		birth="915.1.1"
 	}
@@ -2754,7 +2754,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father=34019
-	add_trait="sayyid"
+	trait="sayyid"
 	900.1.1={
 		birth="900.1.1"
 	}
@@ -2769,7 +2769,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father=34021
-	add_trait="sayyid"
+	trait="sayyid"
 	916.1.1={
 		birth="916.1.1"
 	}
@@ -2785,7 +2785,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father=3084
-	add_trait="sayyid"
+	trait="sayyid"
 	1035.1.1={
 		birth="1035.1.1"
 	}
@@ -2800,7 +2800,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father=227000
-	add_trait="sayyid"
+	trait="sayyid"
 	1176.1.1={
 		birth="1176.1.1"
 	}
@@ -2815,7 +2815,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father=34027
-	add_trait="sayyid"
+	trait="sayyid"
 	1192.1.1={
 		birth="1192.1.1"
 	}
@@ -2830,7 +2830,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father=34028
-	add_trait="sayyid"
+	trait="sayyid"
 	1213.1.1={
 		birth="1213.1.1"
 	}
@@ -2845,7 +2845,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father=144060
-	add_trait="sayyid"
+	trait="sayyid"
 	1120.1.1={
 		birth="1120.1.1"
 	}
@@ -2860,7 +2860,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father=34030
-	add_trait="sayyid"
+	trait="sayyid"
 	1165.1.1={
 		birth="1165.1.1"
 	}
@@ -2875,7 +2875,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father=34031
-	add_trait="sayyid"
+	trait="sayyid"
 	1205.1.1={
 		birth="1205.1.1"
 	}
@@ -2890,7 +2890,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father=34032
-	add_trait="sayyid"
+	trait="sayyid"
 	1240.1.1={
 		birth="1240.1.1"
 	}
@@ -2905,7 +2905,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father=34033
-	add_trait="sayyid"
+	trait="sayyid"
 	1285.1.1={
 		birth="1285.1.1"
 	}
@@ -2920,7 +2920,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father=34033
-	add_trait="sayyid"
+	trait="sayyid"
 	1290.1.1={
 		birth="1290.1.1"
 	}
@@ -2935,7 +2935,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father=34035
-	add_trait="sayyid"
+	trait="sayyid"
 	1310.1.1={
 		birth="1310.1.1"
 	}
@@ -2950,7 +2950,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father=34034
-	add_trait="sayyid"
+	trait="sayyid"
 	1302.1.1={
 		birth="1302.1.1"
 	}
@@ -2965,7 +2965,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father=34034
-	add_trait="sayyid"
+	trait="sayyid"
 	1305.1.1={
 		birth="1305.1.1"
 	}
@@ -2980,7 +2980,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father=34038
-	add_trait="sayyid"
+	trait="sayyid"
 	1335.1.1={
 		birth="1335.1.1"
 	}
@@ -2998,7 +2998,7 @@
 	stewardship=6
 	religion="sunni"
 	culture="bedouin_arabic"
-	add_trait="amateurish_plotter"
+	trait="amateurish_plotter"
 	father=34040
 	1020.1.1={
 		birth="1020.1.1"
@@ -3028,7 +3028,7 @@
 	religion="shiite"
 	culture="bedouin_arabic"
 	father=33927
-	add_trait="sayyid"
+	trait="sayyid"
 	700.1.1={
 		birth="700.1.1"
 	}
@@ -3043,7 +3043,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father=33928
-	add_trait="sayyid"
+	trait="sayyid"
 	720.1.1={
 		birth="720.1.1"
 	}
@@ -3058,7 +3058,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father=33929
-	add_trait="sayyid"
+	trait="sayyid"
 	740.1.1={
 		birth="740.1.1"
 	}
@@ -3073,7 +3073,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father=33930
-	add_trait="sayyid"
+	trait="sayyid"
 	780.1.1={
 		birth="780.1.1"
 	}
@@ -3088,7 +3088,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father=33931
-	add_trait="sayyid"
+	trait="sayyid"
 	820.1.1={
 		birth="820.1.1"
 	}
@@ -3103,7 +3103,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father=33932
-	add_trait="sayyid"
+	trait="sayyid"
 	860.1.1={
 		birth="860.1.1"
 	}
@@ -3118,7 +3118,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father=34041
-	add_trait="sayyid"
+	trait="sayyid"
 	900.1.1={
 		birth="900.1.1"
 	}
@@ -3133,7 +3133,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father=34042
-	add_trait="sayyid"
+	trait="sayyid"
 	940.1.1={
 		birth="940.1.1"
 	}
@@ -3148,7 +3148,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father=34043
-	add_trait="sayyid"
+	trait="sayyid"
 	970.1.1={
 		birth="970.1.1"
 	}
@@ -3163,7 +3163,7 @@
 	culture="bedouin_arabic"
 	religion="sunni"
 	father=34044
-	add_trait="sayyid"
+	trait="sayyid"
 	1010.1.1={
 		birth="1010.1.1"
 	}
@@ -3178,7 +3178,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father=34045
-	add_trait="sayyid"
+	trait="sayyid"
 	1030.1.1={
 		birth="1030.1.1"
 	}
@@ -3193,7 +3193,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father=34046
-	add_trait="sayyid"
+	trait="sayyid"
 	1050.1.1={
 		birth="1050.1.1"
 	}
@@ -3207,7 +3207,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father=34047
-	add_trait="sayyid"
+	trait="sayyid"
 	1070.1.1={
 		birth="1070.1.1"
 	}
@@ -3221,7 +3221,7 @@
 	dynasty=7296
 	religion="sunni"
 	culture="bedouin_arabic"
-	add_trait="sayyid"
+	trait="sayyid"
 	father=34048
 	1090.1.1={
 		birth="1090.1.1"
@@ -3237,7 +3237,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father=34049
-	add_trait="sayyid"
+	trait="sayyid"
 	1130.1.1={
 		birth="1130.1.1"
 	}
@@ -3251,7 +3251,7 @@
 	dynasty=7296
 	religion="sunni"
 	culture="bedouin_arabic"
-	add_trait="sayyid"
+	trait="sayyid"
 	father=34049
 	1130.1.1={
 		birth="1130.1.1"
@@ -3269,7 +3269,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father=34051
-	add_trait="sayyid"
+	trait="sayyid"
 	1200.1.1={
 		birth="1200.1.1"
 	}
@@ -3284,7 +3284,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father=34051
-	add_trait="sayyid"
+	trait="sayyid"
 	1202.1.1={
 		birth="1202.1.1"
 	}
@@ -3299,7 +3299,7 @@
 	dynasty=7296
 	religion="sunni"
 	culture="bedouin_arabic"
-	add_trait="sayyid"
+	trait="sayyid"
 	father=34049
 	1150.1.1={
 		birth="1150.1.1"
@@ -3315,7 +3315,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father=34050
-	add_trait="sayyid"
+	trait="sayyid"
 	1180.1.1={
 		birth="1180.1.1"
 	}
@@ -3330,7 +3330,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father=34055
-	add_trait="sayyid"
+	trait="sayyid"
 	1220.1.1={
 		birth="1220.1.1"
 	}
@@ -3345,7 +3345,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father=34055
-	add_trait="sayyid"
+	trait="sayyid"
 	1222.1.1={
 		birth="1222.1.1"
 	}
@@ -3360,7 +3360,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father=34055
-	add_trait="sayyid"
+	trait="sayyid"
 	1224.1.1={
 		birth="1224.1.1"
 	}
@@ -3375,7 +3375,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father=34054
-	add_trait="sayyid"
+	trait="sayyid"
 	1230.1.1={
 		birth="1230.1.1"
 	}
@@ -3390,7 +3390,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father=34056
-	add_trait="sayyid"
+	trait="sayyid"
 	1280.1.1={
 		birth="1280.1.1"
 	}
@@ -3405,7 +3405,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father=34056
-	add_trait="sayyid"
+	trait="sayyid"
 	1260.1.1={
 		birth="1260.1.1"
 	}
@@ -3420,7 +3420,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father=34056
-	add_trait="sayyid"
+	trait="sayyid"
 	1242.1.1={
 		birth="1242.1.1"
 	}
@@ -3436,7 +3436,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father=34056
-	add_trait="sayyid"
+	trait="sayyid"
 	1250.1.1={
 		birth="1250.1.1"
 	}
@@ -3451,7 +3451,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father=34063
-	add_trait="sayyid"
+	trait="sayyid"
 	1300.1.1={
 		birth="1300.1.1"
 	}
@@ -3465,7 +3465,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father=34064
-	add_trait="sayyid"
+	trait="sayyid"
 	1320.1.1={
 		birth="1320.1.1"
 	}
@@ -5938,7 +5938,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father=3200
-	add_trait=sayyid
+	trait=sayyid
 	927.1.1={
 		birth="927.1.1"
 	}
@@ -5953,7 +5953,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father=73666
-	add_trait=sayyid
+	trait=sayyid
 	936.1.1={
 		birth="936.1.1"
 	}
@@ -5968,7 +5968,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father=73667
-	add_trait=sayyid
+	trait=sayyid
 	979.1.1={
 		birth="979.1.1"
 	}
@@ -5983,7 +5983,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father=3200
-	add_trait=sayyid
+	trait=sayyid
 	940.1.1={
 		birth="940.1.1"
 	}
@@ -5998,7 +5998,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father=73669
-	add_trait=sayyid
+	trait=sayyid
 	960.1.1={
 		birth="960.1.1"
 	}
@@ -6013,7 +6013,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father=73670
-	add_trait=sayyid
+	trait=sayyid
 	980.1.1={
 		birth="980.1.1"
 	}
@@ -6028,7 +6028,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father=73670
-	add_trait=sayyid
+	trait=sayyid
 	989.1.1={
 		birth="989.1.1"
 	}
@@ -6043,7 +6043,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father=3200
-	add_trait=sayyid
+	trait=sayyid
 	943.1.1={
 		birth="943.1.1"
 	}
@@ -6058,7 +6058,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father=73673
-	add_trait=sayyid
+	trait=sayyid
 	968.1.1={
 		birth="968.1.1"
 	}
@@ -6073,7 +6073,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father=73674
-	add_trait=sayyid
+	trait=sayyid
 	986.1.1={
 		birth="986.1.1"
 	}
@@ -6088,7 +6088,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father=3200
-	add_trait=sayyid
+	trait=sayyid
 	947.1.1={
 		birth="947.1.1"
 	}
@@ -6103,7 +6103,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father=73676
-	add_trait=sayyid
+	trait=sayyid
 	963.1.1={
 		birth="963.1.1"
 	}
@@ -6118,7 +6118,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father=73677
-	add_trait=sayyid
+	trait=sayyid
 	979.1.1={
 		birth="979.1.1"
 	}
@@ -6133,7 +6133,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father = 163000
-	add_trait=sayyid
+	trait=sayyid
 	731.3.1={
 		birth="731.3.1"
 	}
@@ -6148,7 +6148,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father=73679
-	add_trait=sayyid
+	trait=sayyid
 	757.4.26={
 		birth="757.4.26"
 	}
@@ -6163,7 +6163,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father=73680
-	add_trait=sayyid
+	trait=sayyid
 	770.1.1={
 		birth="770.1.1"
 	}
@@ -6178,7 +6178,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father=73681
-	add_trait=sayyid
+	trait=sayyid
 	792.11.1={
 		birth="792.11.1"
 	}
@@ -6197,7 +6197,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father=73682
-	add_trait=sayyid
+	trait=sayyid
 	823.1.1={
 		birth="823.1.1"
 	}
@@ -6220,9 +6220,9 @@
 	culture="bedouin_arabic"
 	father=73683
 	mother=73927
-	add_trait=twin
-	add_trait=scarred
-	add_trait=sayyid
+	trait=twin
+	trait=scarred
+	trait=sayyid
 	844.1.11={
 		birth="844.1.11"
 	}
@@ -6242,8 +6242,8 @@
 	culture="bedouin_arabic"
 	father=73683
 	mother=73927
-	add_trait=twin
-	add_trait=sayyid
+	trait=twin
+	trait=sayyid
 	844.1.11={
 		birth="844.1.11"
 	}
@@ -6265,7 +6265,7 @@
 	culture="bedouin_arabic"
 	father=73685
 	mother=70294
-	add_trait=sayyid
+	trait=sayyid
 	866.1.1={
 		birth="866.1.1"
 	}
@@ -6280,7 +6280,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father = 163001
-	add_trait=sayyid
+	trait=sayyid
 	705.1.1={
 		birth="705.1.1"
 	}
@@ -6295,7 +6295,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father = 163002
-	add_trait=sayyid
+	trait=sayyid
 	691.1.1={
 		birth="691.1.1"
 	}
@@ -6310,7 +6310,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father = 163003
-	add_trait=sayyid
+	trait=sayyid
 	646.1.1={
 		birth="646.1.1"
 	}
@@ -6325,7 +6325,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father = 163019
-	add_trait=sayyid
+	trait=sayyid
 	623.1.1={
 		birth="623.1.1"
 	}
@@ -6507,7 +6507,7 @@
 	dynasty=7296
 	religion="sunni"
 	culture="bedouin_arabic"
-	add_trait = "twin"
+	trait = "twin"
 	father = 163004
 	464.1.1={
 		birth="464.1.1"
@@ -6523,7 +6523,7 @@
 	religion="pagan"
 	culture="bedouin_arabic"
 	father = 163016
-	add_trait=sayyid
+	trait=sayyid
 	490.1.1={
 		birth="490.1.1"
 	}
@@ -6538,7 +6538,7 @@
 	religion="pagan"
 	culture="bedouin_arabic"
 	father = 163017
-	add_trait=sayyid
+	trait=sayyid
 	520.1.1={
 		birth="520.1.1"
 	}
@@ -6553,7 +6553,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father = 163018
-	add_trait=sayyid
+	trait=sayyid
 	550.1.1={
 		birth="550.1.1"
 	}
@@ -6568,7 +6568,7 @@
 	religion="pagan"
 	culture="bedouin_arabic"
 	father = 163017
-	add_trait=sayyid
+	trait=sayyid
 	522.1.1={
 		birth="522.1.1"
 	}
@@ -6583,7 +6583,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father = 163020
-	add_trait=sayyid
+	trait=sayyid
 	579.1.1={
 		birth="579.1.1"
 	}
@@ -6598,7 +6598,7 @@
 	religion="shiite"
 	culture="bedouin_arabic"
 	father=33915
-	add_trait="sayyid"
+	trait="sayyid"
 	745.11.6={
 		birth="745.11.6"
 	}
@@ -6613,7 +6613,7 @@
 	religion="shiite"
 	culture="bedouin_arabic"
 	father=163022
-	add_trait="sayyid"
+	trait="sayyid"
 	765.12.9={
 		birth="765.12.9"
 	}
@@ -6628,7 +6628,7 @@
 	religion="shiite"
 	culture="bedouin_arabic"
 	father=163023
-	add_trait="sayyid"
+	trait="sayyid"
 	811.4.8={
 		birth="811.4.8"
 	}
@@ -6643,7 +6643,7 @@
 	religion="shiite"
 	culture="bedouin_arabic"
 	father=163024
-	add_trait="sayyid"
+	trait="sayyid"
 	828.1.1={
 		birth="828.1.1"
 	}
@@ -6658,7 +6658,7 @@
 	religion="shiite"
 	culture="bedouin_arabic"
 	father=163025
-	add_trait="sayyid"
+	trait="sayyid"
 	846.12.1={
 		birth="846.12.1"
 	}
@@ -6673,7 +6673,7 @@
 	religion="shiite"
 	culture="bedouin_arabic"
 	father=163026
-	add_trait="sayyid"
+	trait="sayyid"
 	869.7.29={
 		birth="869.7.29"
 	}
@@ -6688,7 +6688,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father = 163020
-	add_trait=sayyid
+	trait=sayyid
 	560.9.1={
 		birth="560.9.1"
 	}
@@ -6703,7 +6703,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father = 163028
-	add_trait=sayyid
+	trait=sayyid
 	602.1.1={
 		birth="602.1.1"
 	}
@@ -6718,7 +6718,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father = 163029
-	add_trait=sayyid
+	trait=sayyid
 	645.1.1={
 		birth="645.1.1"
 	}
@@ -6733,7 +6733,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father = 163030
-	add_trait=sayyid
+	trait=sayyid
 	661.3.28={
 		birth="661.3.28"
 	}
@@ -6748,7 +6748,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father = 163002
-	add_trait=sayyid
+	trait=sayyid
 	668.1.1={
 		birth="668.1.1"
 	}
@@ -6763,7 +6763,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father = 163002
-	add_trait=sayyid
+	trait=sayyid
 	674.1.1={
 		birth="674.1.1"
 	}
@@ -6778,7 +6778,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father = 163003
-	add_trait=sayyid
+	trait=sayyid
 	648.1.1={
 		birth="648.1.1"
 	}
@@ -6793,7 +6793,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father = 163034
-	add_trait=sayyid
+	trait=sayyid
 	648.1.1={
 		birth="648.1.1"
 	}
@@ -6808,7 +6808,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father = 163002
-	add_trait=sayyid
+	trait=sayyid
 	687.1.1={
 		birth="687.1.1"
 	}
@@ -6823,7 +6823,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father = 163036
-	add_trait=sayyid
+	trait=sayyid
 	697.1.1={
 		birth="697.1.1"
 	}
@@ -6838,7 +6838,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father = 163032
-	add_trait=sayyid
+	trait=sayyid
 	701.1.1={
 		birth="701.1.1"
 	}
@@ -6853,7 +6853,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father = 163032
-	add_trait=sayyid
+	trait=sayyid
 	703.1.1={
 		birth="703.1.1"
 	}
@@ -6868,7 +6868,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father = 163003
-	add_trait=sayyid
+	trait=sayyid
 	650.1.1={
 		birth="650.1.1"
 	}
@@ -6883,7 +6883,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 	father = 163040
-	add_trait=sayyid
+	trait=sayyid
 	688.1.1={
 		birth="688.1.1"
 	}
@@ -6899,7 +6899,7 @@
 	culture="bedouin_arabic"
 	father=33911
 	mother=33921
-	add_trait="sayyid"
+	trait="sayyid"
 	633.1.1={
 		birth="633.1.1"
 	}
@@ -6914,7 +6914,7 @@
 	religion="shiite"
 	culture="bedouin_arabic"
 	father=33913
-	add_trait="sayyid"
+	trait="sayyid"
 	695.1.1={
 		birth="695.1.1"
 	}
@@ -6929,7 +6929,7 @@
 	religion="shiite"
 	culture="bedouin_arabic"
 	father=33915
-	add_trait="sayyid"
+	trait="sayyid"
 	720.1.1={
 		birth=yes
 	}
@@ -6944,7 +6944,7 @@
 	religion="shiite"
 	culture="bedouin_arabic"
 	father=163025
-	add_trait="sayyid"
+	trait="sayyid"
 	848.1.1={
 		birth=yes
 	}
@@ -7194,7 +7194,7 @@
 	dynasty=7296
 	religion="shiite"
 	culture="bedouin_arabic"
-	add_trait="sayyid"
+	trait="sayyid"
 	father=33926
 	655.1.1={
 		birth="655.1.1" #Unknown
@@ -7208,7 +7208,7 @@
 	dynasty=7296
 	religion="shiite"
 	culture="bedouin_arabic"
-	add_trait="sayyid"
+	trait="sayyid"
 	father=159393
 	685.1.1={
 		birth="685.1.1" #Unknown
@@ -7222,7 +7222,7 @@
 	dynasty=7296
 	religion="shiite"
 	culture="bedouin_arabic"
-	add_trait="sayyid"
+	trait="sayyid"
 	father=159394
 	715.1.1={
 		birth="715.1.1" #Unknown
@@ -7236,7 +7236,7 @@
 	dynasty=7296
 	religion="shiite"
 	culture="bedouin_arabic"
-	add_trait="sayyid"
+	trait="sayyid"
 	father=159395
 	745.1.1={
 		birth="745.1.1" #Unknown
@@ -7250,7 +7250,7 @@
 	dynasty=576
 	religion="shiite"
 	culture="bedouin_arabic"
-	add_trait="sayyid"
+	trait="sayyid"
 	father=159396
 	775.1.1={
 		birth="775.1.1" #Unknown
@@ -7264,7 +7264,7 @@
 	dynasty=576
 	religion="shiite"
 	culture="bedouin_arabic"
-	add_trait="sayyid"
+	trait="sayyid"
 	father=159397
 	810.1.1={
 		birth="810.1.1" #Unknown
@@ -7278,7 +7278,7 @@
 	dynasty=576
 	religion="shiite"
 	culture="bedouin_arabic"
-	add_trait="sayyid"
+	trait="sayyid"
 	father=159398
 	845.1.1={
 		birth="845.1.1" #Unknown
@@ -7292,7 +7292,7 @@
 	dynasty=576
 	religion="shiite"
 	culture="bedouin_arabic"
-	add_trait="sayyid"
+	trait="sayyid"
 	father=159399
 	880.1.1={
 		birth="880.1.1" #Unknown
@@ -7306,7 +7306,7 @@
 	dynasty=576
 	religion="shiite"
 	culture="bedouin_arabic"
-	add_trait="sayyid"
+	trait="sayyid"
 	father=159399
 	881.1.1={
 		birth="881.1.1" #Unknown
@@ -7320,7 +7320,7 @@
 	dynasty=576
 	religion="shiite"
 	culture="bedouin_arabic"
-	add_trait="sayyid"
+	trait="sayyid"
 	father=159401
 	901.1.1={
 		birth="901.1.1" #Unknown
@@ -7334,7 +7334,7 @@
 	dynasty=576
 	religion="shiite"
 	culture="bedouin_arabic"
-	add_trait="sayyid"
+	trait="sayyid"
 	father=159401
 	902.1.1={
 		birth="902.1.1" #Unknown
@@ -7348,7 +7348,7 @@
 	dynasty=576
 	religion="shiite"
 	culture="bedouin_arabic"
-	add_trait="sayyid"
+	trait="sayyid"
 	father=159401
 	903.1.1={
 		birth="903.1.1" #Unknown
@@ -7362,7 +7362,7 @@
 	dynasty=576
 	religion="shiite"
 	culture="bedouin_arabic"
-	add_trait="sayyid"
+	trait="sayyid"
 	father=159404
 	938.1.1={
 		birth="938.1.1" #Unknown
@@ -7376,7 +7376,7 @@
 	dynasty=576
 	religion="shiite"
 	culture="bedouin_arabic"
-	add_trait="sayyid"
+	trait="sayyid"
 	father=159397
 	815.1.1={
 		birth="815.1.1" #Unknown
@@ -7390,7 +7390,7 @@
 	dynasty=576
 	religion="shiite"
 	culture="bedouin_arabic"
-	add_trait="sayyid"
+	trait="sayyid"
 	father=159406
 	850.1.1={
 		birth="850.1.1" #Unknown
@@ -7404,7 +7404,7 @@
 	dynasty=576
 	religion="shiite"
 	culture="bedouin_arabic"
-	add_trait="sayyid"
+	trait="sayyid"
 	father=159407
 	885.1.1={
 		birth="885.1.1" #Unknown
@@ -7418,7 +7418,7 @@
 	dynasty=576
 	religion="shiite"
 	culture="bedouin_arabic"
-	add_trait="sayyid"
+	trait="sayyid"
 	father=159408
 	920.1.1={
 		birth="920.1.1" #Unknown
@@ -7432,7 +7432,7 @@
 	dynasty=576
 	religion="shiite"
 	culture="bedouin_arabic"
-	add_trait="sayyid"
+	trait="sayyid"
 	father=159409
 	950.1.1={
 		birth="950.1.1" #Unknown
@@ -7446,7 +7446,7 @@
 	dynasty=576
 	religion="shiite"
 	culture="bedouin_arabic"
-	add_trait="sayyid"
+	trait="sayyid"
 	father=159398
 	850.1.1={
 		birth="850.1.1" #Unknown
@@ -7460,7 +7460,7 @@
 	dynasty=576
 	religion="shiite"
 	culture="bedouin_arabic"
-	add_trait="sayyid"
+	trait="sayyid"
 	father=159411
 	880.1.1={
 		birth="880.1.1" #Unknown
@@ -7474,7 +7474,7 @@
 	dynasty=576
 	religion="shiite"
 	culture="bedouin_arabic"
-	add_trait="sayyid"
+	trait="sayyid"
 	father=159412
 	920.1.1={
 		birth="920.1.1" #Unknown
@@ -7488,7 +7488,7 @@
 	dynasty=576
 	religion="shiite"
 	culture="bedouin_arabic"
-	add_trait="sayyid"
+	trait="sayyid"
 	father=159413
 	955.1.1={
 		birth="955.1.1" #Unknown
@@ -7502,7 +7502,7 @@
 	dynasty=576
 	religion="shiite"
 	culture="bedouin_arabic"
-	add_trait="sayyid"
+	trait="sayyid"
 	father=159414
 	980.1.1={
 		birth="980.1.1" #Unknown
@@ -7516,7 +7516,7 @@
 	dynasty=576
 	religion="shiite"
 	culture="bedouin_arabic"
-	add_trait="sayyid"
+	trait="sayyid"
 	father=159401
 	925.1.1={
 		birth="925.1.1" #Unknown
@@ -7530,7 +7530,7 @@
 	dynasty=576
 	religion="shiite"
 	culture="bedouin_arabic"
-	add_trait="sayyid"
+	trait="sayyid"
 	father=159416
 	956.1.1={
 		birth="956.1.1" #Unknown
@@ -7544,7 +7544,7 @@
 	dynasty=576
 	religion="shiite"
 	culture="bedouin_arabic"
-	add_trait="sayyid"
+	trait="sayyid"
 	father=159417
 	1000.1.1={
 		birth="1000.1.1" #Unknown
@@ -7558,7 +7558,7 @@
 	dynasty=576
 	religion="shiite"
 	culture="bedouin_arabic"
-	add_trait="sayyid"
+	trait="sayyid"
 	add_claim = d_shiite
 	father=159418
 	1045.1.1={
@@ -7573,7 +7573,7 @@
 	dynasty=576
 	religion="shiite"
 	culture="bedouin_arabic"
-	add_trait="sayyid"
+	trait="sayyid"
 	add_claim = d_shiite
 	father=159419
 	1100.1.1={
@@ -7588,7 +7588,7 @@
 	dynasty=576
 	religion="shiite"
 	culture="bedouin_arabic"
-	add_trait="sayyid"
+	trait="sayyid"
 	father=159405
 	970.1.1={
 		birth="970.1.1" #Unknown
@@ -7602,7 +7602,7 @@
 	dynasty=576
 	religion="shiite"
 	culture="bedouin_arabic"
-	add_trait="sayyid"
+	trait="sayyid"
 	father=159421
 	990.1.1={
 		birth="990.1.1" #Unknown
@@ -7616,7 +7616,7 @@
 	dynasty=576
 	religion="shiite"
 	culture="bedouin_arabic"
-	add_trait="sayyid"
+	trait="sayyid"
 	father=159403
 	932.1.1={
 		birth="932.1.1" #Unknown
@@ -7936,7 +7936,7 @@
 	dynasty = 1029055
 	religion="shiite"
 	culture="bedouin_arabic"
-	add_trait="sayyid"
+	trait="sayyid"
 	father=33928
 	745.1.2={
 		birth="745.1.2"
@@ -8129,7 +8129,7 @@
 
 	culture="bedouin_arabic"
 	religion="shiite"
-	add_trait="sayyid"
+	trait="sayyid"
 	father = 163130
 	846.1.1={
 		birth="846.1.1"
@@ -8186,7 +8186,7 @@
 	dynasty=7296
 	religion="shiite"
 	culture="bedouin_arabic"
-	add_trait="sayyid"
+	trait="sayyid"
 	father=33926
 	653.1.1={
 		birth="653.1.1" #Unknown
@@ -8201,7 +8201,7 @@
 	dynasty=7296
 	religion="shiite"
 	culture="bedouin_arabic"
-	add_trait="sayyid"
+	trait="sayyid"
 	father=163124
 	703.1.1={
 		birth="703.1.1" #Unknown
@@ -8216,7 +8216,7 @@
 	dynasty=7296
 	religion="shiite"
 	culture="bedouin_arabic"
-	add_trait="sayyid"
+	trait="sayyid"
 	father=163125
 	740.1.1={
 		birth="740.1.1" #Unknown
@@ -8231,7 +8231,7 @@
 	dynasty=7296
 	religion="shiite"
 	culture="bedouin_arabic"
-	add_trait="sayyid"
+	trait="sayyid"
 	father=163126
 	780.1.1={
 		birth="780.1.1" #Unknown
@@ -8246,7 +8246,7 @@
 	dynasty=7296
 	religion="shiite"
 	culture="bedouin_arabic"
-	add_trait="sayyid"
+	trait="sayyid"
 	father=163127
 	810.1.1={
 		birth="810.1.1" #Unknown
@@ -8261,7 +8261,7 @@
 	dynasty=7296
 	religion="shiite"
 	culture="bedouin_arabic"
-	add_trait="sayyid"
+	trait="sayyid"
 	father=33929
 	780.1.1={
 		birth="780.1.1" #Unknown
@@ -8276,7 +8276,7 @@
 	dynasty=7296
 	religion="shiite"
 	culture="bedouin_arabic"
-	add_trait="sayyid"
+	trait="sayyid"
 	father=163129
 	810.1.1={
 		birth="810.1.1" #Unknown
@@ -8334,8 +8334,8 @@
 	father=73797
 	religion="sunni"
 	culture="bedouin_arabic"
-	add_trait="patient"
-	add_trait="brilliant_strategist"
+	trait="patient"
+	trait="brilliant_strategist"
 	978.1.1={
 		birth="978.1.1"
 	}
@@ -9676,7 +9676,7 @@
 	religion="sunni"
 	culture="bedouin_arabic"
 
-	add_trait=sayyid
+	trait=sayyid
 
 	850.1.1 = {
 		birth="850.1.1"
@@ -9826,7 +9826,7 @@
 
 	culture="bedouin_arabic"
 	religion="shiite"
-	add_trait="sayyid"
+	trait="sayyid"
 	father = 163130
 	840.1.1={
 		birth="840.1.1"
@@ -9841,7 +9841,7 @@
 
 	culture="bedouin_arabic"
 	religion="shiite"
-	add_trait="sayyid"
+	trait="sayyid"
 	father = 74041
 	860.1.1={
 		birth="860.1.1"
@@ -9856,7 +9856,7 @@
 
 	culture="bedouin_arabic"
 	religion="shiite"
-	add_trait="sayyid"
+	trait="sayyid"
 	father = 160016
 	880.1.1={
 		birth="880.1.1"
@@ -9871,7 +9871,7 @@
 
 	culture="bedouin_arabic"
 	religion="shiite"
-	add_trait="sayyid"
+	trait="sayyid"
 	father = 160017
 	900.1.1={
 		birth="900.1.1"
@@ -9886,7 +9886,7 @@
 
 	culture="bedouin_arabic"
 	religion="shiite"
-	add_trait="sayyid"
+	trait="sayyid"
 	father = 160017
 	901.1.1={
 		birth="901.1.1"
@@ -9901,7 +9901,7 @@
 
 	culture="bedouin_arabic"
 	religion="shiite"
-	add_trait="sayyid"
+	trait="sayyid"
 	father = 160017
 	903.1.1={
 		birth="903.1.1"
@@ -9959,7 +9959,7 @@
 	dynasty=7512 
 	religion="shiite"
 	culture="bedouin_arabic"
-	add_trait=sayyid
+	trait=sayyid
 	father=163128
 	832.1.1={
 		birth="832.1.1"

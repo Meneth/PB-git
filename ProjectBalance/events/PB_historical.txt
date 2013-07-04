@@ -1545,7 +1545,10 @@ province_event = {
 			OR = {
 				any_liege = {
 					NOT = { culture = ROOT }
-					liege = { has_landed_title = e_byzantium }
+					liege = {
+						has_landed_title = e_byzantium
+						NOT = { character = PREV }
+					}
 				}
 				AND = {
 					liege = { has_landed_title = e_byzantium }

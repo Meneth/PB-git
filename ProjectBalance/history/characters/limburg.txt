@@ -4,7 +4,7 @@
 	name="Mathilda"
 	female=yes
 	dynasty=287
-	add_trait="scholarly_theologian"
+	trait="scholarly_theologian"
 	diplomacy=19
 	religion="catholic"
 	culture="german"

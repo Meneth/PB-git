@@ -2,8 +2,8 @@
 	name="Yaropolk"
 	religion="slavic_pagan"
 	culture="russian"
-	add_trait = content
-	add_trait = cynical
+	trait = content
+	trait = cynical
 	dynasty=1029117
 	father=160064
 	841.1.1={
@@ -20,8 +20,8 @@
 	culture="russian"
 	dynasty=1029137
 	father=160139
-	add_trait = content
-	add_trait = cynical
+	trait = content
+	trait = cynical
 	839.1.1={
 		birth=yes
 	}
@@ -34,7 +34,7 @@
 	name="Vsemil"
 	religion="slavic_pagan"
 	culture="russian"
-	add_trait = content
+	trait = content
 	dynasty=1029136
 	father=160062
 	839.1.1={
@@ -49,7 +49,7 @@
 	name="Svetozar"
 	religion="slavic_pagan"
 	culture="russian"
-	add_trait = content
+	trait = content
 	dynasty=1029136
 	father=160058
 	834.1.1={
@@ -64,7 +64,7 @@
 	name="Radoslav"
 	religion="slavic_pagan"
 	culture="russian"
-	add_trait = content
+	trait = content
 	dynasty=1029136
 	father=160062
 	836.1.1={
@@ -78,7 +78,7 @@
 	name="Sviatopolk"
 	religion="slavic_pagan"
 	culture="russian"
-	add_trait = content
+	trait = content
 	dynasty=1029136
 	father=160062
 	834.1.1={
@@ -109,7 +109,7 @@
 	culture="russian"
 	dynasty=1029136
 	father=160058
-	add_trait = content
+	trait = content
 	835.1.1={
 		birth=yes
 	}
@@ -339,8 +339,8 @@
 	dynasty=705
 	religion="orthodox"
 	culture="russian"
-	add_trait="zealous"
-	add_trait="scholarly_theologian"
+	trait="zealous"
+	trait="scholarly_theologian"
 	father=680
 	1120.1.2={
 		birth="1120.1.2"
@@ -356,8 +356,8 @@
 	dynasty=705
 	religion="orthodox"
 	culture="russian"
-	add_trait="zealous"
-	add_trait="scholarly_theologian"
+	trait="zealous"
+	trait="scholarly_theologian"
 	father=682
 	1110.1.2={
 		birth="1110.1.2"
@@ -603,7 +603,7 @@
 	religion="orthodox"
 	culture="russian"
 	father=222504
-	add_trait="bastard"
+	trait="bastard"
 	1170.1.2={
 		birth="1170.1.2"
 	}
@@ -697,7 +697,7 @@
 	religion="orthodox"
 	culture="russian"
 	father=652
-	add_trait="bastard"
+	trait="bastard"
 	1070.1.2={
 		birth="1070.1.2"
 	}
@@ -948,7 +948,7 @@
 	dynasty=705
 	religion="orthodox"
 	culture="russian"
-	add_trait="zealous"
+	trait="zealous"
 	father=656
 	1080.1.2={
 		birth="1080.1.2"
@@ -1492,7 +1492,7 @@
 	dynasty=705
 	religion="orthodox"
 	culture="russian"
-	add_trait="zealous"
+	trait="zealous"
 	father=125086
 	1235.1.2={
 		birth="1235.1.2"
@@ -1998,7 +1998,7 @@
 	dynasty=705
 	religion="orthodox"
 	culture="russian"
-	add_trait="zealous"
+	trait="zealous"
 	father=125116
     mother=98037
 	1270.1.2={
@@ -2582,8 +2582,8 @@
 	dynasty=705
 	religion="orthodox"
 	culture="russian"
-	add_trait="chaste"
-	add_trait="scholar"
+	trait="chaste"
+	trait="scholar"
 	father=472794
 	mother=472795
 	1282.1.2={
@@ -3096,7 +3096,7 @@
 	dynasty=705
 	religion="orthodox"
 	culture="russian"
-	add_trait="zealous"
+	trait="zealous"
 	father=222670
 	mother=222671
 	1196.3.27={
@@ -3348,7 +3348,7 @@
 	culture="russian"
 	father=472885
 	mother=125149
-	add_trait="drunkard"
+	trait="drunkard"
 	1241.1.2={
 		birth="1241.1.2"
 	}
@@ -4202,8 +4202,8 @@
 	stewardship=5
 	religion="orthodox"
 	culture="russian"
-	add_trait="envious"
-	add_trait="tough_soldier"
+	trait="envious"
+	trait="tough_soldier"
 	1039.1.1={
 		birth="1039.1.1"
 	}
@@ -4221,8 +4221,8 @@
 	stewardship=8
 	religion="orthodox"
 	culture="russian"
-	add_trait="proud"
-	add_trait="underhanded_rogue"
+	trait="proud"
+	trait="underhanded_rogue"
 	1039.1.1={
 		birth="1039.1.1"
 	}
@@ -4240,7 +4240,7 @@
 	stewardship=5
 	religion="orthodox"
 	culture="russian"
-	add_trait="flamboyant_schemer"
+	trait="flamboyant_schemer"
 	1039.1.1={
 		birth="1039.1.1"
 	}
@@ -4258,8 +4258,8 @@
 	stewardship=8
 	religion="orthodox"
 	culture="russian"
-	add_trait="honest"
-	add_trait="flamboyant_schemer"
+	trait="honest"
+	trait="flamboyant_schemer"
 	1039.1.1={
 		birth="1039.1.1"
 	}
@@ -4277,8 +4277,8 @@
 	stewardship=7
 	religion="orthodox"
 	culture="russian"
-	add_trait="hunchback"
-	add_trait="flamboyant_schemer"
+	trait="hunchback"
+	trait="flamboyant_schemer"
 	1039.1.1={
 		birth="1039.1.1"
 	}
@@ -4296,9 +4296,9 @@
 	stewardship=5
 	religion="orthodox"
 	culture="russian"
-	add_trait="envious"
-	add_trait="zealous"
-	add_trait="underhanded_rogue"
+	trait="envious"
+	trait="zealous"
+	trait="underhanded_rogue"
 	1039.1.1={
 		birth="1039.1.1"
 	}
@@ -4316,8 +4316,8 @@
 	stewardship=5
 	religion="orthodox"
 	culture="russian"
-	add_trait="greedy"
-	add_trait="scholarly_theologian"
+	trait="greedy"
+	trait="scholarly_theologian"
 	1039.1.1={
 		birth="1039.1.1"
 	}
@@ -4335,8 +4335,8 @@
 	stewardship=4
 	religion="orthodox"
 	culture="russian"
-	add_trait="cynical"
-	add_trait="tough_soldier"
+	trait="cynical"
+	trait="tough_soldier"
 	1039.1.1={
 		birth="1039.1.1"
 	}
@@ -4354,9 +4354,9 @@
 	stewardship=5
 	religion="orthodox"
 	culture="russian"
-	add_trait="greedy"
-	add_trait="proud"
-	add_trait="tough_soldier"
+	trait="greedy"
+	trait="proud"
+	trait="tough_soldier"
 	1039.1.1={
 		birth="1039.1.1"
 	}
@@ -4374,8 +4374,8 @@
 	stewardship=6
 	religion="orthodox"
 	culture="russian"
-	add_trait="gluttonous"
-	add_trait="martial_cleric"
+	trait="gluttonous"
+	trait="martial_cleric"
 	1039.1.1={
 		birth="1039.1.1"
 	}
@@ -4393,9 +4393,9 @@
 	stewardship=5
 	religion="orthodox"
 	culture="russian"
-	add_trait="honest"
-	add_trait="lisp"
-	add_trait="amateurish_plotter"
+	trait="honest"
+	trait="lisp"
+	trait="amateurish_plotter"
 	1039.1.1={
 		birth="1039.1.1"
 	}
@@ -4413,9 +4413,9 @@
 	stewardship=8
 	religion="orthodox"
 	culture="russian"
-	add_trait="envious"
-	add_trait="clubfooted"
-	add_trait="flamboyant_schemer"
+	trait="envious"
+	trait="clubfooted"
+	trait="flamboyant_schemer"
 	1039.1.1={
 		birth="1039.1.1"
 	}
@@ -4433,8 +4433,8 @@
 	stewardship=7
 	religion="orthodox"
 	culture="russian"
-	add_trait="temperate"
-	add_trait="martial_cleric"
+	trait="temperate"
+	trait="martial_cleric"
 	1039.1.1={
 		birth="1039.1.1"
 	}
@@ -4452,11 +4452,11 @@
 	stewardship=5
 	religion="orthodox"
 	culture="russian"
-	add_trait="just"
-	add_trait="envious"
-	add_trait="proud"
-	add_trait="honest"
-	add_trait="skilled_tactician"
+	trait="just"
+	trait="envious"
+	trait="proud"
+	trait="honest"
+	trait="skilled_tactician"
 	1039.1.1={
 		birth="1039.1.1"
 	}
@@ -4474,8 +4474,8 @@
 	stewardship=5
 	religion="orthodox"
 	culture="russian"
-	add_trait="hunchback"
-	add_trait="skilled_tactician"
+	trait="hunchback"
+	trait="skilled_tactician"
 	1039.1.1={
 		birth="1039.1.1"
 	}
@@ -4493,8 +4493,8 @@
 	stewardship=4
 	religion="orthodox"
 	culture="russian"
-	add_trait="cynical"
-	add_trait="scholarly_theologian"
+	trait="cynical"
+	trait="scholarly_theologian"
 	1039.1.1={
 		birth="1039.1.1"
 	}
@@ -4512,8 +4512,8 @@
 	stewardship=6
 	religion="orthodox"
 	culture="russian"
-	add_trait="deceitful"
-	add_trait="tough_soldier"
+	trait="deceitful"
+	trait="tough_soldier"
 	1039.1.1={
 		birth="1039.1.1"
 	}
@@ -4531,7 +4531,7 @@
 	stewardship=4
 	religion="sunni"
 	culture="russian"
-	add_trait="martial_cleric"
+	trait="martial_cleric"
 	1039.1.1={
 		birth="1039.1.1"
 	}
@@ -4549,9 +4549,9 @@
 	stewardship=7
 	religion="catholic"
 	culture="russian"
-	add_trait="wroth"
-	add_trait="greedy"
-	add_trait="amateurish_plotter"
+	trait="wroth"
+	trait="greedy"
+	trait="amateurish_plotter"
 	1150.1.1={
 		birth="1150.1.1"
 	}
@@ -4569,9 +4569,9 @@
 	stewardship=8
 	religion="orthodox"
 	culture="russian"
-	add_trait="wroth"
-	add_trait="honest"
-	add_trait="flamboyant_schemer"
+	trait="wroth"
+	trait="honest"
+	trait="flamboyant_schemer"
 	1150.1.1={
 		birth="1150.1.1"
 	}
@@ -4604,7 +4604,7 @@
 	stewardship=8
 	religion="orthodox"
 	culture="russian"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	1150.1.1={
 		birth="1150.1.1"
 	}
@@ -4622,7 +4622,7 @@
 	stewardship=4
 	religion="orthodox"
 	culture="russian"
-	add_trait="martial_cleric"
+	trait="martial_cleric"
 	1150.1.1={
 		birth="1150.1.1"
 	}
@@ -4640,9 +4640,9 @@
 	stewardship=6
 	religion="orthodox"
 	culture="russian"
-	add_trait="kind"
-	add_trait="ill"
-	add_trait="tough_soldier"
+	trait="kind"
+	trait="ill"
+	trait="tough_soldier"
 	1150.1.1={
 		birth="1150.1.1"
 	}
@@ -4660,9 +4660,9 @@
 	stewardship=7
 	religion="orthodox"
 	culture="russian"
-	add_trait="chaste"
-	add_trait="deceitful"
-	add_trait="martial_cleric"
+	trait="chaste"
+	trait="deceitful"
+	trait="martial_cleric"
 	1150.1.1={
 		birth="1150.1.1"
 	}
@@ -4680,8 +4680,8 @@
 	stewardship=5
 	religion="orthodox"
 	culture="russian"
-	add_trait="patient"
-	add_trait="amateurish_plotter"
+	trait="patient"
+	trait="amateurish_plotter"
 	1150.1.1={
 		birth="1150.1.1"
 	}
@@ -4699,7 +4699,7 @@
 	stewardship=6
 	religion="orthodox"
 	culture="russian"
-	add_trait="martial_cleric"
+	trait="martial_cleric"
 	1150.1.1={
 		birth="1150.1.1"
 	}
@@ -4717,8 +4717,8 @@
 	stewardship=8
 	religion="orthodox"
 	culture="russian"
-	add_trait="harelip"
-	add_trait="amateurish_plotter"
+	trait="harelip"
+	trait="amateurish_plotter"
 	1150.1.1={
 		birth="1150.1.1"
 	}
@@ -4736,9 +4736,9 @@
 	stewardship=5
 	religion="orthodox"
 	culture="russian"
-	add_trait="slothful"
-	add_trait="cynical"
-	add_trait="underhanded_rogue"
+	trait="slothful"
+	trait="cynical"
+	trait="underhanded_rogue"
 	1150.1.1={
 		birth="1150.1.1"
 	}
@@ -4756,7 +4756,7 @@
 	stewardship=8
 	religion="orthodox"
 	culture="russian"
-	add_trait="flamboyant_schemer"
+	trait="flamboyant_schemer"
 	1150.1.1={
 		birth="1150.1.1"
 	}
@@ -4774,8 +4774,8 @@
 	stewardship=4
 	religion="orthodox"
 	culture="russian"
-	add_trait="wroth"
-	add_trait="martial_cleric"
+	trait="wroth"
+	trait="martial_cleric"
 	1150.1.1={
 		birth="1150.1.1"
 	}
@@ -4793,8 +4793,8 @@
 	stewardship=6
 	religion="orthodox"
 	culture="russian"
-	add_trait="just"
-	add_trait="martial_cleric"
+	trait="just"
+	trait="martial_cleric"
 	1150.1.1={
 		birth="1150.1.1"
 	}
@@ -4812,8 +4812,8 @@
 	stewardship=8
 	religion="orthodox"
 	culture="russian"
-	add_trait="cynical"
-	add_trait="skilled_tactician"
+	trait="cynical"
+	trait="skilled_tactician"
 	1150.1.1={
 		birth="1150.1.1"
 	}
@@ -4831,10 +4831,10 @@
 	stewardship=7
 	religion="orthodox"
 	culture="russian"
-	add_trait="lustful"
-	add_trait="patient"
-	add_trait="greedy"
-	add_trait="flamboyant_schemer"
+	trait="lustful"
+	trait="patient"
+	trait="greedy"
+	trait="flamboyant_schemer"
 	1150.1.1={
 		birth="1150.1.1"
 	}
@@ -4900,9 +4900,9 @@
 	dynasty=705
 	religion="orthodox"
 	culture="russian"
-	add_trait="lustful"
-	add_trait="gluttonous"
-	add_trait="slothful"
+	trait="lustful"
+	trait="gluttonous"
+	trait="slothful"
 	father=222500
 	mother=222501
 	1151.1.4={
@@ -4938,7 +4938,7 @@
 	dynasty=705
 	religion="orthodox"
 	culture="russian"
-	add_trait="bastard"
+	trait="bastard"
 	father=222500
 	1162.1.2={
 		birth="1162.1.2"
@@ -5292,7 +5292,7 @@
 	dynasty=705
 	religion="orthodox"
 	culture="russian"
-	add_trait="martial_cleric"
+	trait="martial_cleric"
 	father=222577
 	mother=222578
 	1156.1.2={
@@ -5508,7 +5508,7 @@
 	martial=8
 	religion="orthodox"
 	culture="russian"
-	add_trait="brave"
+	trait="brave"
 	father=222572
 	1142.1.2={
 		birth="1142.1.2"
@@ -5887,8 +5887,8 @@
 	dynasty=705
 	religion="orthodox"
 	culture="russian"
-	add_trait="arbitrary"
-	add_trait="charismatic_negotiator"
+	trait="arbitrary"
+	trait="charismatic_negotiator"
 	father=660
 	mother=125051
 	1097.1.2={
@@ -6071,7 +6071,7 @@
 	dynasty=705
 	religion="orthodox"
 	culture="russian"
-	add_trait="zealous"
+	trait="zealous"
 	father=222652
 	mother=221523
 	1185.1.2={
@@ -6194,9 +6194,9 @@
 	dynasty=705
 	religion="orthodox"
 	culture="russian"
-	add_trait="lustful"
-	add_trait="just"
-	add_trait="zealous"
+	trait="lustful"
+	trait="just"
+	trait="zealous"
 	father=222672
 	mother=222674
 	1154.1.2={
@@ -6221,7 +6221,7 @@
 	stewardship=7
 	religion="orthodox"
 	culture="russian"
-	add_trait="ambitious"
+	trait="ambitious"
 	father=666
 	mother=127
 	1095.1.2={
@@ -6259,8 +6259,8 @@
 	martial=8
 	religion="orthodox"
 	culture="russian"
-	add_trait="ambitious"
-	add_trait="zealous"
+	trait="ambitious"
+	trait="zealous"
 	father=222672
 	mother=222673
 	1111.1.2={
@@ -6436,7 +6436,7 @@
 	dynasty=705
 	religion="orthodox"
 	culture="russian"
-	add_trait="brave"
+	trait="brave"
 	father=222702
 	mother=125163
 	1157.1.2={
@@ -6502,8 +6502,8 @@
 	dynasty=705
 	religion="orthodox"
 	culture="russian"
-	add_trait="proud"
-	add_trait="martial_cleric"
+	trait="proud"
+	trait="martial_cleric"
 	father=222675
 	1130.1.2={
 		birth="1130.1.2"
@@ -7013,8 +7013,8 @@
 	dynasty=705
 	religion="orthodox"
 	culture="russian"
-	add_trait="just"
-	add_trait="charismatic_negotiator"
+	trait="just"
+	trait="charismatic_negotiator"
 	father=222822
 	mother=125110
 	1122.1.2={
@@ -7063,8 +7063,8 @@
 	dynasty=705
 	religion="orthodox"
 	culture="russian"
-	add_trait="hedonist"
-	add_trait="lustful"
+	trait="hedonist"
+	trait="lustful"
 	father=222676
 	mother=222677
 	1160.1.2={
@@ -7117,7 +7117,7 @@
 	dynasty=705
 	religion="orthodox"
 	culture="russian"
-	add_trait="zealous"
+	trait="zealous"
 	father=630
 	mother=1727
 	1055.1.2={
@@ -7180,7 +7180,7 @@
 	stewardship=5
 	religion="orthodox"
 	culture="russian"
-	add_trait="martial_cleric"
+	trait="martial_cleric"
 	1280.1.2={
 		birth="1280.1.2"
 	}
@@ -7198,10 +7198,10 @@
 	stewardship=7
 	religion="orthodox"
 	culture="russian"
-	add_trait="slothful"
-	add_trait="humble"
-	add_trait="zealous"
-	add_trait="scholarly_theologian"
+	trait="slothful"
+	trait="humble"
+	trait="zealous"
+	trait="scholarly_theologian"
 	1285.1.2={
 		birth="1285.1.2"
 	}
@@ -7271,7 +7271,7 @@
 	stewardship=4
 	religion="orthodox"
 	culture="russian"
-	add_trait="underhanded_rogue"
+	trait="underhanded_rogue"
 	1300.1.1={
 		birth="1300.1.1"
 	}
@@ -7289,11 +7289,11 @@
 	stewardship=7
 	religion="orthodox"
 	culture="russian"
-	add_trait="slothful"
-	add_trait="charitable"
-	add_trait="zealous"
-	add_trait="temperate"
-	add_trait="thrifty_clerk"
+	trait="slothful"
+	trait="charitable"
+	trait="zealous"
+	trait="temperate"
+	trait="thrifty_clerk"
 	1300.1.1={
 		birth="1300.1.1"
 	}
@@ -7311,10 +7311,10 @@
 	stewardship=4
 	religion="orthodox"
 	culture="russian"
-	add_trait="chaste"
-	add_trait="slothful"
-	add_trait="charitable"
-	add_trait="tough_soldier"
+	trait="chaste"
+	trait="slothful"
+	trait="charitable"
+	trait="tough_soldier"
 	1300.1.1={
 		birth="1300.1.1"
 	}
@@ -7332,8 +7332,8 @@
 	stewardship=5
 	religion="orthodox"
 	culture="russian"
-	add_trait="just"
-	add_trait="amateurish_plotter"
+	trait="just"
+	trait="amateurish_plotter"
 	1300.1.1={
 		birth="1300.1.1"
 	}
@@ -7351,9 +7351,9 @@
 	stewardship=8
 	religion="orthodox"
 	culture="russian"
-	add_trait="cynical"
-	add_trait="inbred"
-	add_trait="tough_soldier"
+	trait="cynical"
+	trait="inbred"
+	trait="tough_soldier"
 	1300.1.1={
 		birth="1300.1.1"
 	}
@@ -7371,8 +7371,8 @@
 	stewardship=8
 	religion="orthodox"
 	culture="russian"
-	add_trait="patient"
-	add_trait="skilled_tactician"
+	trait="patient"
+	trait="skilled_tactician"
 	1300.1.1={
 		birth="1300.1.1"
 	}
@@ -7390,8 +7390,8 @@
 	stewardship=6
 	religion="orthodox"
 	culture="russian"
-	add_trait="honest"
-	add_trait="scholarly_theologian"
+	trait="honest"
+	trait="scholarly_theologian"
 	1250.1.1={
 		birth="1250.1.1"
 	}
@@ -7409,7 +7409,7 @@
 	stewardship=6
 	religion="orthodox"
 	culture="russian"
-	add_trait="underhanded_rogue"
+	trait="underhanded_rogue"
 	1300.1.1={
 		birth="1300.1.1"
 	}
@@ -7427,8 +7427,8 @@
 	stewardship=6
 	religion="orthodox"
 	culture="russian"
-	add_trait="honest"
-	add_trait="scholarly_theologian"
+	trait="honest"
+	trait="scholarly_theologian"
 	1300.1.1={
 		birth="1300.1.1"
 	}
@@ -7446,9 +7446,9 @@
 	stewardship=5
 	religion="orthodox"
 	culture="russian"
-	add_trait="wroth"
-	add_trait="honest"
-	add_trait="amateurish_plotter"
+	trait="wroth"
+	trait="honest"
+	trait="amateurish_plotter"
 	1300.1.1={
 		birth="1300.1.1"
 	}
@@ -7466,8 +7466,8 @@
 	stewardship=8
 	religion="orthodox"
 	culture="russian"
-	add_trait="just"
-	add_trait="tough_soldier"
+	trait="just"
+	trait="tough_soldier"
 	1300.1.1={
 		birth="1300.1.1"
 	}
@@ -7485,9 +7485,9 @@
 	stewardship=5
 	religion="orthodox"
 	culture="russian"
-	add_trait="just"
-	add_trait="inbred"
-	add_trait="amateurish_plotter"
+	trait="just"
+	trait="inbred"
+	trait="amateurish_plotter"
 	1300.1.1={
 		birth="1300.1.1"
 	}
@@ -7505,7 +7505,7 @@
 	stewardship=5
 	religion="orthodox"
 	culture="russian"
-	add_trait="charismatic_negotiator"
+	trait="charismatic_negotiator"
 	1300.1.1={
 		birth="1300.1.1"
 	}
@@ -7523,9 +7523,9 @@
 	stewardship=5
 	religion="orthodox"
 	culture="russian"
-	add_trait="patient"
-	add_trait="temperate"
-	add_trait="tough_soldier"
+	trait="patient"
+	trait="temperate"
+	trait="tough_soldier"
 	1300.1.1={
 		birth="1300.1.1"
 	}
@@ -7543,8 +7543,8 @@
 	stewardship=8
 	religion="orthodox"
 	culture="russian"
-	add_trait="honest"
-	add_trait="charismatic_negotiator"
+	trait="honest"
+	trait="charismatic_negotiator"
 	1300.1.1={
 		birth="1300.1.1"
 	}
@@ -7562,8 +7562,8 @@
 	stewardship=6
 	religion="orthodox"
 	culture="russian"
-	add_trait="deceitful"
-	add_trait="scholarly_theologian"
+	trait="deceitful"
+	trait="scholarly_theologian"
 	1300.1.1={
 		birth="1300.1.1"
 	}
@@ -7581,9 +7581,9 @@
 	stewardship=5
 	religion="orthodox"
 	culture="russian"
-	add_trait="arbitrary"
-	add_trait="brave"
-	add_trait="flamboyant_schemer"
+	trait="arbitrary"
+	trait="brave"
+	trait="flamboyant_schemer"
 	1300.1.1={
 		birth="1300.1.1"
 	}
@@ -7601,10 +7601,10 @@
 	stewardship=8
 	religion="orthodox"
 	culture="russian"
-	add_trait="chaste"
-	add_trait="wroth"
-	add_trait="deceitful"
-	add_trait="fortune_builder"
+	trait="chaste"
+	trait="wroth"
+	trait="deceitful"
+	trait="fortune_builder"
 	1300.1.1={
 		birth="1300.1.1"
 	}
@@ -7622,9 +7622,9 @@
 	stewardship=8
 	religion="orthodox"
 	culture="russian"
-	add_trait="charitable"
-	add_trait="envious"
-	add_trait="tough_soldier"
+	trait="charitable"
+	trait="envious"
+	trait="tough_soldier"
 	1300.1.1={
 		birth="1300.1.1"
 	}
@@ -7642,7 +7642,7 @@
 	stewardship=4
 	religion="orthodox"
 	culture="russian"
-	add_trait="flamboyant_schemer"
+	trait="flamboyant_schemer"
 	1300.1.1={
 		birth="1300.1.1"
 	}
@@ -7660,7 +7660,7 @@
 	stewardship=7
 	religion="orthodox"
 	culture="russian"
-	add_trait="amateurish_plotter"
+	trait="amateurish_plotter"
 	1300.1.1={
 		birth="1300.1.1"
 	}
@@ -7678,9 +7678,9 @@
 	stewardship=5
 	religion="orthodox"
 	culture="russian"
-	add_trait="cynical"
-	add_trait="hunchback"
-	add_trait="flamboyant_schemer"
+	trait="cynical"
+	trait="hunchback"
+	trait="flamboyant_schemer"
 	1300.1.1={
 		birth="1300.1.1"
 	}
@@ -7698,10 +7698,10 @@
 	stewardship=5
 	religion="orthodox"
 	culture="russian"
-	add_trait="just"
-	add_trait="patient"
-	add_trait="brave"
-	add_trait="underhanded_rogue"
+	trait="just"
+	trait="patient"
+	trait="brave"
+	trait="underhanded_rogue"
 	1300.1.1={
 		birth="1300.1.1"
 	}
@@ -7719,7 +7719,7 @@
 	stewardship=7
 	religion="orthodox"
 	culture="russian"
-	add_trait="amateurish_plotter"
+	trait="amateurish_plotter"
 	1300.1.1={
 		birth="1300.1.1"
 	}
@@ -7737,8 +7737,8 @@
 	stewardship=6
 	religion="orthodox"
 	culture="russian"
-	add_trait="honest"
-	add_trait="skilled_tactician"
+	trait="honest"
+	trait="skilled_tactician"
 	1300.1.1={
 		birth="1300.1.1"
 	}
@@ -7756,8 +7756,8 @@
 	stewardship=7
 	religion="orthodox"
 	culture="russian"
-	add_trait="cynical"
-	add_trait="tough_soldier"
+	trait="cynical"
+	trait="tough_soldier"
 	1300.1.1={
 		birth="1300.1.1"
 	}
@@ -8222,8 +8222,8 @@
 	dynasty=705
 	religion="orthodox"
 	culture="russian"
-	add_trait="ambitious"
-	add_trait="wroth"
+	trait="ambitious"
+	trait="wroth"
 	father=472792
 	1300.1.2={
 		birth="1300.1.2"
@@ -8258,7 +8258,7 @@
 	dynasty=705
 	religion="orthodox"
 	culture="russian"
-	add_trait="zealous"
+	trait="zealous"
 	father=125154
 	1238.1.2={
 		birth="1238.1.2"
@@ -8647,7 +8647,7 @@
 	stewardship=8
 	religion="orthodox"
 	culture="russian"
-	add_trait="midas_touched"
+	trait="midas_touched"
 	father=472843
 	1288.1.2={
 		birth="1288.1.2"
@@ -8717,11 +8717,11 @@
 	culture="russian"
 	father=472885
 	mother=125149
-	add_trait="brave"
-	add_trait="proud"
-	add_trait="cynical"
-	add_trait="diligent"
-	add_trait="brilliant_strategist"
+	trait="brave"
+	trait="proud"
+	trait="cynical"
+	trait="diligent"
+	trait="brilliant_strategist"
 	1220.5.30={
 		birth="1220.5.30"
 	}
@@ -8823,7 +8823,7 @@
 	dynasty=705
 	religion="orthodox"
 	culture="russian"
-	add_trait="proud"
+	trait="proud"
 	father=472840
 	mother=472841
 	1317.11.7={
@@ -8873,7 +8873,7 @@
 	dynasty=705
 	religion="orthodox"
 	culture="russian"
-	add_trait="fair"
+	trait="fair"
 	father=472840
 	mother=472841
 	1326.3.30={
@@ -9037,7 +9037,7 @@
 	dynasty=705
 	religion="orthodox"
 	culture="russian"
-	add_trait="wroth"
+	trait="wroth"
 	father=472862
 	mother=472863
 	1299.1.2={
@@ -9524,8 +9524,8 @@
 	stewardship=5
 	religion="catholic"
 	culture="russian"
-	add_trait="gluttonous"
-	add_trait="martial_cleric"
+	trait="gluttonous"
+	trait="martial_cleric"
 	1300.1.1={
 		birth="1300.1.1"
 	}
@@ -9543,9 +9543,9 @@
 	stewardship=4
 	religion="catholic"
 	culture="russian"
-	add_trait="wroth"
-	add_trait="honest"
-	add_trait="scholarly_theologian"
+	trait="wroth"
+	trait="honest"
+	trait="scholarly_theologian"
 	1300.1.1={
 		birth="1300.1.1"
 	}
@@ -9573,7 +9573,7 @@
 	dynasty=705
 	religion="norse_pagan"
 	culture="russian"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	father=600
 	mother=601
 	942.1.2={
@@ -9639,10 +9639,10 @@
 	stewardship=7
 	religion="orthodox"
 	culture="russian"
-	add_trait="envious"
-	add_trait="zealous"
-	add_trait="bastard"
-	add_trait="skilled_tactician"
+	trait="envious"
+	trait="zealous"
+	trait="bastard"
+	trait="skilled_tactician"
 	father=602
 	mother=603
 	960.1.2={
@@ -9683,10 +9683,10 @@
 	dynasty=705
 	religion="orthodox"
 	culture="russian"
-	add_trait="envious"
-	add_trait="wroth"
-	add_trait="kinslayer"
-	add_trait="misguided_warrior"
+	trait="envious"
+	trait="wroth"
+	trait="kinslayer"
+	trait="misguided_warrior"
 	father=604
 	979.1.2={
 		birth="979.1.2"
@@ -9710,8 +9710,8 @@
 	stewardship=8
 	religion="orthodox"
 	culture="russian"
-	add_trait="scholar"
-	add_trait="midas_touched"
+	trait="scholar"
+	trait="midas_touched"
 	father=608
 	mother=609
 	983.1.2={
@@ -9884,7 +9884,7 @@
 	dynasty=705
 	religion="orthodox"
 	culture="russian"
-	add_trait="scholar"
+	trait="scholar"
 	father=612
 	mother=100511
 	1030.1.2={
@@ -10000,8 +10000,8 @@
 	dynasty=705
 	religion="orthodox"
 	culture="russian"
-	add_trait="cynical"
-	add_trait="skilled_tactician"
+	trait="cynical"
+	trait="skilled_tactician"
 	father=642
 	1030.1.2={
 		birth="1030.1.2"
@@ -10020,7 +10020,7 @@
 	dynasty=705
 	religion="orthodox"
 	culture="russian"
-	add_trait="legit_bastard"
+	trait="legit_bastard"
 	father=626
 	1050.11.8={
 		birth="1050.11.8"
@@ -10080,8 +10080,8 @@
 	dynasty=705
 	religion="orthodox"
 	culture="russian"
-	add_trait="ambitious"
-	add_trait="cynical"
+	trait="ambitious"
+	trait="cynical"
 	father=628
 	mother=125044
 	1053.1.2={
@@ -10119,7 +10119,7 @@
 	stewardship=9
 	religion="orthodox"
 	culture="russian"
-	add_trait="genius"
+	trait="genius"
 	father=630
 	mother=1727
 	1053.1.2={
@@ -10305,9 +10305,9 @@
 	stewardship=4
 	religion="orthodox"
 	culture="russian"
-	add_trait="tough_soldier"
-	add_trait="wroth"
-	add_trait="brave"
+	trait="tough_soldier"
+	trait="wroth"
+	trait="brave"
 	1012.1.2={
 		birth="1012.1.2"
 	}
@@ -10325,9 +10325,9 @@
 	stewardship=4
 	religion="orthodox"
 	culture="russian"
-	add_trait="skilled_tactician"
-	add_trait="temperate"
-	add_trait="zealous"
+	trait="skilled_tactician"
+	trait="temperate"
+	trait="zealous"
 	father=90135
 	1042.1.2={
 		birth="1042.1.2"
@@ -10346,9 +10346,9 @@
 	stewardship=4
 	religion="orthodox"
 	culture="russian"
-	add_trait="skilled_tactician"
-	add_trait="deceitful"
-	add_trait="cynical"
+	trait="skilled_tactician"
+	trait="deceitful"
+	trait="cynical"
 	father=90135
 	1050.1.2={
 		birth="1050.1.2"
@@ -10366,8 +10366,8 @@
 	stewardship=6
 	religion="orthodox"
 	culture="russian"
-	add_trait="martial_cleric"
-	add_trait="patient"
+	trait="martial_cleric"
+	trait="patient"
 	1056.1.2={
 		birth="1056.1.2"
 	}
@@ -10385,9 +10385,9 @@
 	stewardship=9
 	religion="orthodox"
 	culture="russian"
-	add_trait="scholarly_theologian"
-	add_trait="zealous"
-	add_trait="humble"
+	trait="scholarly_theologian"
+	trait="zealous"
+	trait="humble"
 	983.1.2={
 		birth="983.1.2"
 	}
@@ -10405,10 +10405,10 @@
 	stewardship=9
 	religion="orthodox"
 	culture="russian"
-	add_trait="scholarly_theologian"
-	add_trait="zealous"
-	add_trait="just"
-	add_trait="temperate"
+	trait="scholarly_theologian"
+	trait="zealous"
+	trait="just"
+	trait="temperate"
 	1036.1.2={
 		birth="1036.1.2"
 	}
@@ -10426,8 +10426,8 @@
 	stewardship=8
 	religion="orthodox"
 	culture="russian"
-	add_trait="thrifty_clerk"
-	add_trait="deceitful"
+	trait="thrifty_clerk"
+	trait="deceitful"
 	1054.1.2={
 		birth="1054.1.2"
 	}
@@ -10445,8 +10445,8 @@
 	stewardship=7
 	religion="orthodox"
 	culture="russian"
-	add_trait="scholarly_theologian"
-	add_trait="patient"
+	trait="scholarly_theologian"
+	trait="patient"
 	1016.1.2={
 		birth="1016.1.2"
 	}
@@ -10464,10 +10464,10 @@
 	stewardship=7
 	religion="baltic_pagan"
 	culture="russian"
-	add_trait="mastermind_theologian"
-	add_trait="wroth"
-	add_trait="deceitful"
-	add_trait="cynical"
+	trait="mastermind_theologian"
+	trait="wroth"
+	trait="deceitful"
+	trait="cynical"
 	1022.1.2={
 		birth="1022.1.2"
 	}
@@ -10485,7 +10485,7 @@
 	stewardship=7
 	religion="baltic_pagan"
 	culture="russian"
-	add_trait="martial_cleric"
+	trait="martial_cleric"
 	father=90146
 	1056.1.2={
 		birth="1056.1.2"
@@ -10504,9 +10504,9 @@
 	stewardship=7
 	religion="orthodox"
 	culture="russian"
-	add_trait="detached_priest"
-	add_trait="zealous"
-	add_trait="possessed"
+	trait="detached_priest"
+	trait="zealous"
+	trait="possessed"
 	1040.1.2={
 		birth="1040.1.2"
 	}
@@ -10557,7 +10557,7 @@
 	}
 	1098.1.2={
 		give_nickname="nick_the_blind"
-		add_trait="blinded"
+		trait="blinded"
 	}
 	1124.1.2={
 		death="1124.1.2"
@@ -10742,9 +10742,9 @@
 	religion="slavic_pagan"
 	culture="russian"
 	dynasty=1029117
-	add_trait = content
-	add_trait = craven
-	add_trait = cynical
+	trait = content
+	trait = craven
+	trait = cynical
 	father=160064
 	840.1.1={
 		birth=yes
@@ -10773,7 +10773,7 @@
 	father=82258
 	religion="slavic_pagan"
 	culture="russian"
-	add_trait="bastard"
+	trait="bastard"
 	824.1.1={
 		birth="824.1.1"
 	}
@@ -11523,7 +11523,7 @@
 	dynasty=705
 	religion="orthodox"
 	culture="russian"
-	add_trait="bastard"
+	trait="bastard"
 	father=608
 	990.1.1={
 		birth=yes
