@@ -184,9 +184,9 @@
 	dynasty=1000032034
 	religion="sunni"
 	culture="maghreb_arabic"
-	add_trait="tough_soldier"
-	add_trait="ambitious"
-	add_trait="zealous"
+	trait="tough_soldier"
+	trait="ambitious"
+	trait="zealous"
 	1014.1.1 = {
 		birth="1014.1.1"
 	}
@@ -200,7 +200,7 @@
 	religion="sunni"
 	culture="maghreb_arabic"
 	father=1000085005
-	add_trait="underhanded_rogue"
+	trait="underhanded_rogue"
 	1060.1.1 = {
 		birth="1060.1.1"
 	}

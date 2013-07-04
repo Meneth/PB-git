@@ -8,7 +8,7 @@
 	stewardship=5
 	religion="catholic"
 	culture="norwegian"
-	add_trait="scholarly_theologian"
+	trait="scholarly_theologian"
 	father=101543
 	mother=101544
 	1030.1.2={
@@ -29,9 +29,9 @@
 	stewardship=7
 	religion="catholic"
 	culture="norwegian"
-	add_trait="charitable"
-	add_trait="temperate"
-	add_trait="martial_cleric"
+	trait="charitable"
+	trait="temperate"
+	trait="martial_cleric"
 	father=102504
 	mother=102503
 	1024.1.2={
@@ -51,9 +51,9 @@
 	stewardship=7
 	religion="catholic"
 	culture="norwegian"
-	add_trait="diligent"
-	add_trait="brave"
-	add_trait="tough_soldier"
+	trait="diligent"
+	trait="brave"
+	trait="tough_soldier"
 	father=102522
 	1026.1.2={
 		birth="1026.1.2"
@@ -76,8 +76,8 @@
 	stewardship=6
 	religion="catholic"
 	culture="norwegian"
-	add_trait="humble"
-	add_trait="martial_cleric"
+	trait="humble"
+	trait="martial_cleric"
 	father=102523
 	mother=102530
 	1056.1.2={
@@ -98,8 +98,8 @@
 	stewardship=5
 	religion="catholic"
 	culture="norwegian"
-	add_trait="diligent"
-	add_trait="martial_cleric"
+	trait="diligent"
+	trait="martial_cleric"
 	father=102523
 	mother=102530
 	1060.1.2={
@@ -120,9 +120,9 @@
 	stewardship=8
 	religion="catholic"
 	culture="norwegian"
-	add_trait="humble"
-	add_trait="hunchback"
-	add_trait="fortune_builder"
+	trait="humble"
+	trait="hunchback"
+	trait="fortune_builder"
 	father=102527
 	mother=100512
 	1023.1.2={
@@ -143,8 +143,8 @@
 	stewardship=7
 	religion="catholic"
 	culture="norwegian"
-	add_trait="just"
-	add_trait="flamboyant_schemer"
+	trait="just"
+	trait="flamboyant_schemer"
 	father=102529
 	1040.1.2={
 		birth="1040.1.2"
@@ -161,13 +161,14 @@
 	diplomacy=7
 	intrigue=7
 	stewardship=5
-	religion="catholic"
-	culture="norwegian"
-	add_trait="just"
-	add_trait="zealous"
-	add_trait="envious"
-	add_trait="brave"
-	add_trait="skilled_tactician"
+	religion=catholic
+	culture=norwegian
+	trait=just
+	trait=zealous
+	trait=envious
+	trait=brave
+	trait=skilled_tactician
+	trait=varangian
 	father=102500
 	mother=102501
 	1015.1.2={
@@ -251,19 +252,19 @@
 	stewardship=6
 	religion="catholic"
 	culture="norwegian"
-	add_trait="greedy"
-	add_trait="honest"
-	add_trait="humble"
-	add_trait="ill"
-	add_trait="legit_bastard"
-	add_trait="thrifty_clerk"
+	trait="greedy"
+	trait="honest"
+	trait="humble"
+	trait="ill"
+	trait="legit_bastard"
+	trait="thrifty_clerk"
 	father=102531
 	mother=102551
 	1048.1.2={
-		birth="1048.1.2"
+		birth=yes
 	}
 	1069.4.28={
-		death="1069.4.28"
+		death=yes
 	}
 }
 
@@ -277,14 +278,14 @@
 	stewardship=8
 	religion="catholic"
 	culture="norwegian"
-	add_trait="thrifty_clerk"
+	trait="thrifty_clerk"
 	father=102531
 	mother=633
 	1047.1.2={
-		birth="1047.1.2"
+		birth=yes
 	}
 	1066.9.26={
-		death="1066.9.26"
+		death=yes
 	}
 }
 
@@ -297,21 +298,21 @@
 	stewardship=6
 	religion="catholic"
 	culture="norwegian"
-	add_trait="charitable"
-	add_trait="kind"
-	add_trait="patient"
-	add_trait="legit_bastard"
-	add_trait="fortune_builder"
+	trait="charitable"
+	trait="kind"
+	trait="patient"
+	trait="legit_bastard"
+	trait="fortune_builder"
 	father=102531
 	mother=102551
 	1050.1.1={
-		birth="1050.1.1"
+		birth=yes
 	}
 	1068.1.1={
 		add_spouse=101516
 	}
 	1093.1.1={
-		death="1093.1.1"
+		death=yes
 	}
 }
 
@@ -328,10 +329,10 @@
 	father=102531
 	mother=633
 	1046.1.2={
-		birth="1046.1.2"
+		birth=yes
 	}
 	1120.1.2={
-		death="1120.1.2"
+		death=yes
 	}
 }
 
@@ -346,10 +347,10 @@
 	stewardship=4
 	religion="catholic"
 	culture="norwegian"
-	add_trait="lustful"
-	add_trait="just"
-	add_trait="craven"
-	add_trait="underhanded_rogue"
+	trait="lustful"
+	trait="just"
+	trait="craven"
+	trait="underhanded_rogue"
 	father=102531
 	mother=633
 	1045.1.4={
@@ -369,10 +370,10 @@
 	stewardship=6
 	religion="catholic"
 	culture="norwegian"
-	add_trait="zealous"
-	add_trait="hunchback"
-	add_trait="twin"
-	add_trait="tough_soldier"
+	trait="zealous"
+	trait="hunchback"
+	trait="twin"
+	trait="tough_soldier"
 	father=102537
 	mother=102505
 	1043.1.1={
@@ -395,10 +396,10 @@
 	stewardship=8
 	religion="catholic"
 	culture="norwegian"
-	add_trait="lustful"
-	add_trait="lisp"
-	add_trait="twin"
-	add_trait="martial_cleric"
+	trait="lustful"
+	trait="lisp"
+	trait="twin"
+	trait="martial_cleric"
 	father=102537
 	mother=102505
 	1043.1.1={
@@ -422,7 +423,7 @@
 	stewardship=6
 	religion="catholic"
 	culture="norwegian"
-	add_trait="scholarly_theologian"
+	trait="scholarly_theologian"
 	1038.1.2={
 		birth="1038.1.2"
 	}
@@ -440,10 +441,10 @@
 	stewardship=8
 	religion="catholic"
 	culture="norse"
-	add_trait="charitable"
-	add_trait="temperate"
-	add_trait="clubfooted"
-	add_trait="flamboyant_schemer"
+	trait="charitable"
+	trait="temperate"
+	trait="clubfooted"
+	trait="flamboyant_schemer"
 	father=102546
 	mother=102513
 	1019.1.2={
@@ -467,8 +468,8 @@
 	stewardship=5
 	religion="catholic"
 	culture="norwegian"
-	add_trait="envious"
-	add_trait="fortune_builder"
+	trait="envious"
+	trait="fortune_builder"
 	father=102550
 	mother=102566
 	1017.1.2={
@@ -488,9 +489,9 @@
 	stewardship=6
 	religion="catholic"
 	culture="norwegian"
-	add_trait="patient"
-	add_trait="temperate"
-	add_trait="martial_cleric"
+	trait="patient"
+	trait="temperate"
+	trait="martial_cleric"
 	father=102552
 	1040.1.2={
 		birth="1040.1.2"
@@ -513,8 +514,8 @@
 	stewardship=5
 	religion="catholic"
 	culture="norwegian"
-	add_trait="wroth"
-	add_trait="underhanded_rogue"
+	trait="wroth"
+	trait="underhanded_rogue"
 	father=102556
 	mother=102555
 	1029.1.27={
@@ -535,7 +536,7 @@
 	stewardship=7
 	religion="catholic"
 	culture="norwegian"
-	add_trait="flamboyant_schemer"
+	trait="flamboyant_schemer"
 	father=102553
 	mother=102557
 	1064.1.2={
@@ -556,9 +557,9 @@
 	stewardship=4
 	religion="catholic"
 	culture="norwegian"
-	add_trait="chaste"
-	add_trait="honest"
-	add_trait="scholarly_theologian"
+	trait="chaste"
+	trait="honest"
+	trait="scholarly_theologian"
 	father=102561
 	1026.1.2={
 		birth="1026.1.2"
@@ -577,8 +578,8 @@
 	stewardship=6
 	religion="catholic"
 	culture="norwegian"
-	add_trait="craven"
-	add_trait="skilled_tactician"
+	trait="craven"
+	trait="skilled_tactician"
 	father=102560
 	1021.1.2={
 		birth="1021.1.2"
@@ -597,9 +598,9 @@
 	stewardship=5
 	religion="catholic"
 	culture="norwegian"
-	add_trait="diligent"
-	add_trait="envious"
-	add_trait="tough_soldier"
+	trait="diligent"
+	trait="envious"
+	trait="tough_soldier"
 	father=102563
 	1055.1.1={
 		birth="1055.1.1"
@@ -621,8 +622,8 @@
 	stewardship=4
 	religion="catholic"
 	culture="norwegian"
-	add_trait="lustful"
-	add_trait="martial_cleric"
+	trait="lustful"
+	trait="martial_cleric"
 	father=102567
 	mother=102515
 	1025.1.2={
@@ -646,10 +647,10 @@
 	stewardship=6
 	religion="catholic"
 	culture="norwegian"
-	add_trait="just"
-	add_trait="temperate"
-	add_trait="harelip"
-	add_trait="underhanded_rogue"
+	trait="just"
+	trait="temperate"
+	trait="harelip"
+	trait="underhanded_rogue"
 	father=102567
 	mother=102515
 	1030.1.2={
@@ -671,7 +672,7 @@
 	stewardship=8
 	religion="catholic"
 	culture="norwegian"
-	add_trait="scholarly_theologian"
+	trait="scholarly_theologian"
 	father=102567
 	mother=102515
 	1034.1.2={
@@ -710,8 +711,8 @@
 	stewardship=5
 	religion="catholic"
 	culture="norwegian"
-	add_trait="just"
-	add_trait="amateurish_plotter"
+	trait="just"
+	trait="amateurish_plotter"
 	father=102573
 	1017.1.2={
 		birth="1017.1.2"
@@ -730,8 +731,8 @@
 	stewardship=5
 	religion="catholic"
 	culture="norwegian"
-	add_trait="patient"
-	add_trait="flamboyant_schemer"
+	trait="patient"
+	trait="flamboyant_schemer"
 	1020.1.2={
 		birth="1020.1.2"
 	}
@@ -749,9 +750,9 @@
 	stewardship=4
 	religion="catholic"
 	culture="norwegian"
-	add_trait="cynical"
-	add_trait="lisp"
-	add_trait="tough_soldier"
+	trait="cynical"
+	trait="lisp"
+	trait="tough_soldier"
 	father=102575
 	1052.1.2={
 		birth="1052.1.2"
@@ -771,8 +772,8 @@
 	stewardship=5
 	religion="catholic"
 	culture="norwegian"
-	add_trait="ill"
-	add_trait="thrifty_clerk"
+	trait="ill"
+	trait="thrifty_clerk"
 	father=102532 # Magnus Haraldson
 	1069.1.1={
 		birth="1069.1.1"
@@ -863,8 +864,8 @@
 	stewardship=7
 	religion="catholic"
 	culture="norwegian"
-	add_trait="diligent"
-	add_trait="tough_soldier"
+	trait="diligent"
+	trait="tough_soldier"
 	1165.1.1={
 		birth="1165.1.1"
 	}
@@ -882,8 +883,8 @@
 	stewardship=5
 	religion="catholic"
 	culture="norwegian"
-	add_trait="zealous"
-	add_trait="martial_cleric"
+	trait="zealous"
+	trait="martial_cleric"
 	1039.1.1={
 		birth="1039.1.1"
 	}
@@ -901,7 +902,7 @@
 	stewardship=4
 	religion="catholic"
 	culture="norwegian"
-	add_trait="skilled_tactician"
+	trait="skilled_tactician"
 	1039.1.1={
 		birth="1039.1.1"
 	}
@@ -919,7 +920,7 @@
 	stewardship=7
 	religion="catholic"
 	culture="norwegian"
-	add_trait="skilled_tactician"
+	trait="skilled_tactician"
 	1039.1.1={
 		birth="1039.1.1"
 	}
@@ -937,8 +938,8 @@
 	stewardship=8
 	religion="catholic"
 	culture="norwegian"
-	add_trait="zealous"
-	add_trait="martial_cleric"
+	trait="zealous"
+	trait="martial_cleric"
 	1039.1.1={
 		birth="1039.1.1"
 	}
@@ -956,9 +957,9 @@
 	stewardship=5
 	religion="catholic"
 	culture="norwegian"
-	add_trait="deceitful"
-	add_trait="greedy"
-	add_trait="intricate_webweaver"
+	trait="deceitful"
+	trait="greedy"
+	trait="intricate_webweaver"
 	1095.1.1={
 		birth="1095.1.1"
 	}
@@ -976,7 +977,7 @@
 	stewardship=7
 	religion="catholic"
 	culture="norwegian"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	1150.1.1={
 		birth="1150.1.1"
 	}
@@ -994,11 +995,11 @@
 	stewardship=6
 	religion="catholic"
 	culture="norwegian"
-	add_trait="slothful"
-	add_trait="honest"
-	add_trait="envious"
-	add_trait="ill"
-	add_trait="charismatic_negotiator"
+	trait="slothful"
+	trait="honest"
+	trait="envious"
+	trait="ill"
+	trait="charismatic_negotiator"
 	1150.1.1={
 		birth="1150.1.1"
 	}
@@ -1016,8 +1017,8 @@
 	stewardship=5
 	religion="catholic"
 	culture="norwegian"
-	add_trait="brave"
-	add_trait="skilled_tactician"
+	trait="brave"
+	trait="skilled_tactician"
 	1150.1.1={
 		birth="1150.1.1"
 	}
@@ -1035,8 +1036,8 @@
 	stewardship=5
 	religion="catholic"
 	culture="norwegian"
-	add_trait="temperate"
-	add_trait="amateurish_plotter"
+	trait="temperate"
+	trait="amateurish_plotter"
 	1150.1.1={
 		birth="1150.1.1"
 	}
@@ -1054,11 +1055,11 @@
 	stewardship=7
 	religion="catholic"
 	culture="norwegian"
-	add_trait="zealous"
-	add_trait="cynical"
-	add_trait="diligent"
-	add_trait="martial_cleric"
-	add_trait="ambitious"
+	trait="zealous"
+	trait="cynical"
+	trait="diligent"
+	trait="martial_cleric"
+	trait="ambitious"
 	father=202512
 	1150.1.1={
 		birth="1150.1.1"
@@ -1077,7 +1078,7 @@
 	stewardship=5
 	religion="catholic"
 	culture="norwegian"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	1150.1.1={
 		birth="1150.1.1"
 	}
@@ -1095,9 +1096,9 @@
 	stewardship=8
 	religion="catholic"
 	culture="norwegian"
-	add_trait="arbitrary"
-	add_trait="cynical"
-	add_trait="skilled_tactician"
+	trait="arbitrary"
+	trait="cynical"
+	trait="skilled_tactician"
 	1150.1.1={
 		birth="1150.1.1"
 	}
@@ -1115,7 +1116,7 @@
 	stewardship=4
 	religion="catholic"
 	culture="norwegian"
-	add_trait="martial_cleric"
+	trait="martial_cleric"
 	1150.1.1={
 		birth="1150.1.1"
 	}
@@ -1133,8 +1134,8 @@
 	stewardship=6
 	religion="catholic"
 	culture="norwegian"
-	add_trait="brave"
-	add_trait="skilled_tactician"
+	trait="brave"
+	trait="skilled_tactician"
 	1150.1.1={
 		birth="1150.1.1"
 	}
@@ -1152,8 +1153,8 @@
 	stewardship=5
 	religion="catholic"
 	culture="norwegian"
-	add_trait="deceitful"
-	add_trait="underhanded_rogue"
+	trait="deceitful"
+	trait="underhanded_rogue"
 	father = 144633
 	1125.1.1={
 		birth="1125.1.1"
@@ -1172,9 +1173,9 @@
 	stewardship=5
 	religion="catholic"
 	culture="norwegian"
-	add_trait="charitable"
-	add_trait="patient"
-	add_trait="martial_cleric"
+	trait="charitable"
+	trait="patient"
+	trait="martial_cleric"
 	father=202011
 	1155.1.1={
 		birth="1155.1.1"
@@ -1193,8 +1194,8 @@
 	stewardship=8
 	religion="catholic"
 	culture="norwegian"
-	add_trait="envious"
-	add_trait="skilled_tactician"
+	trait="envious"
+	trait="skilled_tactician"
 	1150.1.1={
 		birth="1150.1.1"
 	}
@@ -1212,8 +1213,8 @@
 	stewardship=6
 	religion="catholic"
 	culture="norwegian"
-	add_trait="diligent"
-	add_trait="thrifty_clerk"
+	trait="diligent"
+	trait="thrifty_clerk"
 	1179.1.1={
 		birth="1179.1.1"
 	}
@@ -1231,7 +1232,7 @@
 	stewardship=6
 	religion="catholic"
 	culture="norwegian"
-	add_trait="scholarly_theologian"
+	trait="scholarly_theologian"
 	1101.1.1={
 		birth="1101.1.1"
 	}
@@ -1250,10 +1251,10 @@
 	stewardship=7
 	religion="catholic"
 	culture="norwegian"
-	add_trait="chaste"
-	add_trait="proud"
-	add_trait="zealous"
-	add_trait="detached_priest"
+	trait="chaste"
+	trait="proud"
+	trait="zealous"
+	trait="detached_priest"
 	father=202017
 	1133.1.1={
 		birth="1133.1.1"
@@ -1272,9 +1273,9 @@
 	stewardship=5
 	religion="catholic"
 	culture="norwegian"
-	add_trait="lustful"
-	add_trait="gluttonous"
-	add_trait="charismatic_negotiator"
+	trait="lustful"
+	trait="gluttonous"
+	trait="charismatic_negotiator"
 	father=202017
 	1155.1.1={
 		birth="1155.1.1"
@@ -1294,8 +1295,8 @@
 	stewardship=8
 	religion="catholic"
 	culture="norwegian"
-	add_trait="envious"
-	add_trait="skilled_tactician"
+	trait="envious"
+	trait="skilled_tactician"
 	1129.1.2={
 		birth="1129.1.2"
 	}
@@ -1317,8 +1318,8 @@
 	stewardship=8
 	religion="catholic"
 	culture="norwegian"
-	add_trait="humble"
-	add_trait="tough_soldier"
+	trait="humble"
+	trait="tough_soldier"
 	father=202020
 	mother=202023
 	1167.1.2={
@@ -1338,8 +1339,8 @@
 	stewardship=6
 	religion="catholic"
 	culture="norwegian"
-	add_trait="deceitful"
-	add_trait="tough_soldier"
+	trait="deceitful"
+	trait="tough_soldier"
 	father=202020
 	mother=202023
 	1179.1.2={
@@ -1360,7 +1361,7 @@
 	stewardship=8
 	religion="catholic"
 	culture="norwegian"
-	add_trait="amateurish_plotter"
+	trait="amateurish_plotter"
 	father=202024
 	mother=202025
 	1151.1.1={
@@ -1381,10 +1382,10 @@
 	stewardship=8
 	religion="catholic"
 	culture="norwegian"
-	add_trait="patient"
-	add_trait="just"
-	add_trait="wroth"
-	add_trait="martial_cleric"
+	trait="patient"
+	trait="just"
+	trait="wroth"
+	trait="martial_cleric"
 	father=202026
 	mother=202027
 	1124.1.1={
@@ -1410,7 +1411,7 @@
 	stewardship=8
 	religion="catholic"
 	culture="norwegian"
-	add_trait="amateurish_plotter"
+	trait="amateurish_plotter"
 	1130.1.1={
 		birth="1130.1.1"
 	}
@@ -1428,7 +1429,7 @@
 	stewardship=6
 	religion="catholic"
 	culture="norwegian"
-	add_trait="scholarly_theologian"
+	trait="scholarly_theologian"
 	father = 20581
 	1076.1.1={
 		birth="1076.1.1"
@@ -1451,8 +1452,8 @@
 	stewardship=8
 	religion="catholic"
 	culture="norwegian"
-	add_trait="legit_bastard"
-	add_trait="amateurish_plotter"
+	trait="legit_bastard"
+	trait="amateurish_plotter"
 	father=202511
 	1100.1.1={
 		birth="1100.1.1"
@@ -1472,10 +1473,10 @@
 	stewardship=6
 	religion="catholic"
 	culture="norwegian"
-	add_trait="humble"
-	add_trait="honest"
-	add_trait="patient"
-	add_trait="scholarly_theologian"
+	trait="humble"
+	trait="honest"
+	trait="patient"
+	trait="scholarly_theologian"
 	father=202024
 	mother=202025
 	1154.1.1={
@@ -1496,10 +1497,10 @@
 	stewardship=4
 	religion="catholic"
 	culture="norwegian"
-	add_trait="bastard"
-	add_trait="honest"
-	add_trait="chaste"
-	add_trait="mastermind_theologian"
+	trait="bastard"
+	trait="honest"
+	trait="chaste"
+	trait="mastermind_theologian"
 	father=202024
 	mother=202019
 	1170.1.1={
@@ -1520,8 +1521,8 @@
 	stewardship=8
 	religion="catholic"
 	culture="norwegian"
-	add_trait="humble"
-	add_trait="tough_soldier"
+	trait="humble"
+	trait="tough_soldier"
 	father=202040
 	mother=202042
 	1150.1.1={
@@ -1544,7 +1545,7 @@
 	stewardship=8
 	religion="catholic"
 	culture="norwegian"
-	add_trait="amateurish_plotter"
+	trait="amateurish_plotter"
 	1155.1.1={
 		birth="1155.1.1"
 	}
@@ -1581,10 +1582,10 @@
 	stewardship=7
 	religion="catholic"
 	culture="norwegian"
-	add_trait="temperate"
-	add_trait="humble"
-	add_trait="honest"
-	add_trait="charismatic_negotiator"
+	trait="temperate"
+	trait="humble"
+	trait="honest"
+	trait="charismatic_negotiator"
 	1163.1.1={
 		birth="1163.1.1"
 	}
@@ -1603,8 +1604,8 @@
 	stewardship=6
 	religion="catholic"
 	culture="norwegian"
-	add_trait="lustful"
-	add_trait="charismatic_negotiator"
+	trait="lustful"
+	trait="charismatic_negotiator"
 	father=202030 # Bård Guttormsson
 	mother=202506
 	1189.1.1={
@@ -1626,7 +1627,7 @@
 	stewardship=5
 	religion="catholic"
 	culture="norwegian"
-	add_trait="charismatic_negotiator"
+	trait="charismatic_negotiator"
 	father=202034 # Skule Bårdsson
 	1208.1.1={
 		birth="1208.1.1"
@@ -1645,8 +1646,8 @@
 	stewardship=8
 	religion="catholic"
 	culture="norwegian"
-	add_trait="honest"
-	add_trait="tough_soldier"
+	trait="honest"
+	trait="tough_soldier"
 	father=161124
 	mother=102558
 	1101.1.1={
@@ -1672,7 +1673,7 @@
 	stewardship=7
 	religion="catholic"
 	culture="norwegian"
-	add_trait="charismatic_negotiator"
+	trait="charismatic_negotiator"
 	1119.1.1={
 		birth="1119.1.1"
 	}
@@ -1690,7 +1691,7 @@
 	stewardship=7
 	religion="catholic"
 	culture="norwegian"
-	add_trait="amateurish_plotter"
+	trait="amateurish_plotter"
 	1128.1.1={
 		birth="1128.1.1"
 	}
@@ -1709,7 +1710,7 @@
 	stewardship=5
 	religion="catholic"
 	culture="norwegian"
-	add_trait="amateurish_plotter"
+	trait="amateurish_plotter"
 	father=202040
 	mother=202041
 	1135.1.1={
@@ -1729,8 +1730,8 @@
 	stewardship=6
 	religion="catholic"
 	culture="norwegian"
-	add_trait="clubfooted"
-	add_trait="tough_soldier"
+	trait="clubfooted"
+	trait="tough_soldier"
 	father=183911
 	mother=183913
 	1115.1.1={
@@ -1740,7 +1741,7 @@
 		add_spouse=222596
 	}
 	1150.1.1={
-		add_trait="crusader"
+		trait="crusader"
 	}
 	1179.6.18={
 		death="1179.6.18"
@@ -1756,8 +1757,8 @@
 	stewardship=6
 	religion="catholic"
 	culture="norwegian"
-	add_trait="diligent"
-	add_trait="tough_soldier"
+	trait="diligent"
+	trait="tough_soldier"
 	father=202050 # Erling Skakke
 	mother=222596
 	1156.1.1={
@@ -1780,9 +1781,9 @@
 	stewardship=6
 	religion="catholic"
 	culture="norwegian"
-	add_trait="proud"
-	add_trait="tough_soldier"
-	add_trait="legit_bastard"
+	trait="proud"
+	trait="tough_soldier"
+	trait="legit_bastard"
 	father=202051
 	1172.1.1={
 		birth="1172.1.1"
@@ -1801,9 +1802,9 @@
 	stewardship=7
 	religion="catholic"
 	culture="norwegian"
-	add_trait="proud"
-	add_trait="diligent"
-	add_trait="martial_cleric"
+	trait="proud"
+	trait="diligent"
+	trait="martial_cleric"
 	1151.1.1={
 		birth="1151.1.1"
 	}
@@ -1821,10 +1822,10 @@
 	stewardship=8
 	religion="catholic"
 	culture="norwegian"
-	add_trait="diligent"
-	add_trait="cynical"
-	add_trait="just"
-	add_trait="martial_cleric"
+	trait="diligent"
+	trait="cynical"
+	trait="just"
+	trait="martial_cleric"
 	father=202501
 	1152.1.1={
 		birth="1152.1.1"
@@ -1849,9 +1850,9 @@
 	stewardship=4
 	religion="catholic"
 	culture="norwegian"
-	add_trait="legit_bastard"
-	add_trait="gluttonous"
-	add_trait="flamboyant_schemer"
+	trait="legit_bastard"
+	trait="gluttonous"
+	trait="flamboyant_schemer"
 	father=202510
 	1133.1.1={
 		birth="1133.1.1"
@@ -1871,7 +1872,7 @@
 	stewardship=5
 	religion="catholic"
 	culture="norwegian"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	father=202500
 	mother=202515
 	1177.1.1={
@@ -1891,9 +1892,9 @@
 	stewardship=5
 	religion="catholic"
 	culture="norwegian"
-	add_trait="chaste"
-	add_trait="greedy"
-	add_trait="martial_cleric"
+	trait="chaste"
+	trait="greedy"
+	trait="martial_cleric"
 	father=202500
 	mother=202515
 	1175.1.1={
@@ -1914,10 +1915,10 @@
 	stewardship=7
 	religion="catholic"
 	culture="norwegian"
-	add_trait="envious"
-	add_trait="gluttonous"
-	add_trait="inbred"
-	add_trait="martial_cleric"
+	trait="envious"
+	trait="gluttonous"
+	trait="inbred"
+	trait="martial_cleric"
 	father=202500
 	mother=202515
 	1181.1.2={
@@ -1938,7 +1939,7 @@
 	stewardship=7
 	religion="catholic"
 	culture="norwegian"
-	add_trait="humble"
+	trait="humble"
 	father=202500
 	mother=202515
 	1183.1.2={
@@ -1959,9 +1960,9 @@
 	stewardship=8
 	religion="catholic"
 	culture="norwegian"
-	add_trait="proud"
-	add_trait="lustful"
-	add_trait="charismatic_negotiator"
+	trait="proud"
+	trait="lustful"
+	trait="charismatic_negotiator"
 	father=202501
 	1155.1.2={
 		birth="1155.1.2"
@@ -1981,8 +1982,8 @@
 	stewardship=6
 	religion="catholic"
 	culture="norwegian"
-	add_trait="gregarious"
-	add_trait="tough_soldier"
+	trait="gregarious"
+	trait="tough_soldier"
 	father=202501
 	1147.1.1={
 		birth="1147.1.1"
@@ -2021,8 +2022,8 @@
 	stewardship=5
 	religion="catholic"
 	culture="norwegian"
-	add_trait="lustful"
-	add_trait="charismatic_negotiator"
+	trait="lustful"
+	trait="charismatic_negotiator"
 	father=202502
 	1204.1.1={
 		birth="1204.1.1"
@@ -2044,9 +2045,9 @@
 	stewardship=5
 	religion="catholic"
 	culture="norwegian"
-	add_trait="gluttonous"
-	add_trait="legit_bastard"
-	add_trait="tough_soldier"
+	trait="gluttonous"
+	trait="legit_bastard"
+	trait="tough_soldier"
 	father=202511
 	1103.1.1={
 		birth="1103.1.1"
@@ -2068,9 +2069,9 @@
 	stewardship=5
 	religion="catholic"
 	culture="norwegian"
-	add_trait="diligent"
-	add_trait="legit_bastard"
-	add_trait="tough_soldier"
+	trait="diligent"
+	trait="legit_bastard"
+	trait="tough_soldier"
 	father=102534 # Olaf Kyrre
 	1073.1.1={
 		birth="1073.1.1"
@@ -2093,8 +2094,8 @@
 	stewardship=4
 	religion="catholic"
 	culture="norwegian"
-	add_trait="hunchback"
-	add_trait="tough_soldier"
+	trait="hunchback"
+	trait="tough_soldier"
 	father=202510
 	mother=100554 #Ingrid Ragnvaldsdotter
 	1135.1.2={
@@ -2118,10 +2119,10 @@
 	stewardship=4
 	religion="catholic"
 	culture="norwegian"
-	add_trait="harelip"
-	add_trait="lustful"
-	add_trait="legit_bastard"
-	add_trait="flamboyant_schemer"
+	trait="harelip"
+	trait="lustful"
+	trait="legit_bastard"
+	trait="flamboyant_schemer"
 	father=202510
 	1136.1.2={
 		birth="1136.1.2"
@@ -2141,8 +2142,8 @@
 	stewardship=4
 	religion="catholic"
 	culture="norwegian"
-	add_trait="legit_bastard"
-	add_trait="tough_soldier"
+	trait="legit_bastard"
+	trait="tough_soldier"
 	father=202510
 	1125.1.1={
 		birth="1125.1.1"
@@ -2162,8 +2163,8 @@
 	stewardship=7
 	religion="catholic"
 	culture="norwegian"
-	add_trait="ill"
-	add_trait="flamboyant_schemer"
+	trait="ill"
+	trait="flamboyant_schemer"
 	father=202516
 	1152.1.2={
 		birth="1152.1.2"
@@ -2182,9 +2183,9 @@
 	stewardship=7
 	religion="catholic"
 	culture="norwegian"
-	add_trait="zealous"
-	add_trait="wroth"
-	add_trait="martial_cleric"
+	trait="zealous"
+	trait="wroth"
+	trait="martial_cleric"
 	1132.1.2={
 		birth="1132.1.2"
 	}
@@ -2203,11 +2204,11 @@
 	stewardship=5
 	religion="catholic"
 	culture="norwegian"
-	add_trait="just"
-	add_trait="proud"
-	add_trait="lustful"
-	add_trait="charitable"
-	add_trait="elusive_shadow"
+	trait="just"
+	trait="proud"
+	trait="lustful"
+	trait="charitable"
+	trait="elusive_shadow"
 	1156.1.2={
 		birth="1156.1.2"
 	}
@@ -2225,9 +2226,9 @@
 	stewardship=5
 	religion="catholic"
 	culture="norwegian"
-	add_trait="temperate"
-	add_trait="diligent"
-	add_trait="tough_soldier"
+	trait="temperate"
+	trait="diligent"
+	trait="tough_soldier"
 	father=203007
 	mother=203077
 	1180.1.1={
@@ -2247,8 +2248,8 @@
 	stewardship=5
 	religion="catholic"
 	culture="norwegian"
-	add_trait="diligent"
-	add_trait="flamboyant_schemer"
+	trait="diligent"
+	trait="flamboyant_schemer"
 	1006.1.1={
 		birth="1006.1.1"
 	}
@@ -2266,11 +2267,11 @@
 	stewardship=5
 	religion="catholic"
 	culture="norwegian"
-	add_trait="greedy"
-	add_trait="arbitrary"
-	add_trait="patient"
-	add_trait="honest"
-	add_trait="martial_cleric"
+	trait="greedy"
+	trait="arbitrary"
+	trait="patient"
+	trait="honest"
+	trait="martial_cleric"
 	1038.1.1={
 		birth="1038.1.1"
 	}
@@ -2288,7 +2289,7 @@
 	stewardship=7
 	religion="catholic"
 	culture="norwegian"
-	add_trait="martial_cleric"
+	trait="martial_cleric"
 	father=20580
 	1056.1.1={
 		birth="1056.1.1"
@@ -2308,9 +2309,9 @@
 	stewardship=3
 	religion="catholic"
 	culture="norwegian"
-	add_trait="temperate"
-	add_trait="lustful"
-	add_trait="charismatic_negotiator"
+	trait="temperate"
+	trait="lustful"
+	trait="charismatic_negotiator"
 	father=220021
 	mother=220045
 	1164.1.1={
@@ -2331,8 +2332,8 @@
 	stewardship=7
 	religion="catholic"
 	culture="norwegian"
-	add_trait="just"
-	add_trait="grey_eminence"
+	trait="just"
+	trait="grey_eminence"
 	father = 7390
 	mother=220037
 	1134.1.1={
@@ -2359,11 +2360,11 @@
 	stewardship=4
 	religion="catholic"
 	culture="norwegian"
-	add_trait="greedy"
-	add_trait="zealous"
-	add_trait="cynical"
-	add_trait="martial_cleric"
-	add_trait="ill"
+	trait="greedy"
+	trait="zealous"
+	trait="cynical"
+	trait="martial_cleric"
+	trait="ill"
 	father=220023
 	mother=220024
 	1135.1.11={
@@ -2387,9 +2388,9 @@
 	stewardship=4
 	religion="catholic"
 	culture="norwegian"
-	add_trait="greedy"
-	add_trait="proud"
-	add_trait="tough_soldier"
+	trait="greedy"
+	trait="proud"
+	trait="tough_soldier"
 	father=220021
 	mother=220045
 	1164.1.1={
@@ -2474,8 +2475,8 @@
 	stewardship=6
 	religion="catholic"
 	culture="norwegian"
-	add_trait="humble"
-	add_trait="martial_cleric"
+	trait="humble"
+	trait="martial_cleric"
 	1056.1.2={
 		birth="1056.1.2"
 	}
@@ -2535,8 +2536,8 @@
 	stewardship=3
 	religion="catholic"
 	culture="norwegian"
-	add_trait="cynical"
-	add_trait="amateurish_plotter"
+	trait="cynical"
+	trait="amateurish_plotter"
 	father=220020
 	mother=220039
 	1157.1.1={
@@ -2556,8 +2557,8 @@
 	stewardship=7
 	religion="catholic"
 	culture="norwegian"
-	add_trait="wroth"
-	add_trait="tough_soldier"
+	trait="wroth"
+	trait="tough_soldier"
 	father=220020
 	mother=220038
 	1166.1.1={
@@ -2578,8 +2579,8 @@
 	stewardship=4
 	religion="catholic"
 	culture="norwegian"
-	add_trait="wroth"
-	add_trait="thrifty_clerk"
+	trait="wroth"
+	trait="thrifty_clerk"
 	father=220021
 	mother=220045
 	1173.1.1={
@@ -2620,17 +2621,17 @@
 	stewardship=7
 	religion="catholic"
 	culture="norwegian"
-	add_trait="lunatic"
-	add_trait="brave"
-	add_trait="zealous"
-	add_trait="legit_bastard"
-	add_trait="tough_soldier"
+	trait="lunatic"
+	trait="brave"
+	trait="zealous"
+	trait="legit_bastard"
+	trait="tough_soldier"
 	father=202511
 	1090.1.1={
 		birth="1090.1.1"
 	}
 	1110.1.1={
-		add_trait="crusader"
+		trait="crusader"
 		give_nickname=nick_the_crusader
 	}
 	1118.1.2={
@@ -2655,8 +2656,8 @@
 	stewardship=7
 	religion="catholic"
 	culture="norwegian"
-	add_trait="zealous"
-	add_trait="amateurish_plotter"
+	trait="zealous"
+	trait="amateurish_plotter"
 	father=222595
 	mother=222594
 	1125.1.1={
@@ -2677,9 +2678,9 @@
 	stewardship=5
 	religion="catholic"
 	culture="norwegian"
-	add_trait="brave"
-	add_trait="legit_bastard"
-	add_trait="tough_soldier"
+	trait="brave"
+	trait="legit_bastard"
+	trait="tough_soldier"
 	father=202511 # Magnus Barfot
 	1089.1.1={
 		birth="1089.1.1"
@@ -2699,8 +2700,8 @@
 	stewardship=5
 	religion="catholic"
 	culture="norwegian"
-	add_trait="legit_bastard"
-	add_trait="thrifty_clerk"
+	trait="legit_bastard"
+	trait="thrifty_clerk"
 	father=202511 # Magnus Barfot
 	1099.1.1={
 		birth="1099.1.1"
@@ -2716,15 +2717,15 @@
 	dynasty=499
 	religion="catholic"
 	culture="norwegian"
-	add_trait="legit_bastard"
-	add_trait="amateurish_plotter"
+	trait="legit_bastard"
+	trait="amateurish_plotter"
 	father=222595
 	1115.1.1={
 		birth="1115.1.1"
 	}
 	1135.1.7={
-		add_trait="blinded"
-		add_trait="maimed"
+		trait="blinded"
+		trait="maimed"
 		give_nickname=nick_the_blind
 	}
 	1139.11.12={
@@ -2741,8 +2742,8 @@
 	stewardship=4
 	religion="catholic"
 	culture="norwegian"
-	add_trait="brave"
-	add_trait="tough_soldier"
+	trait="brave"
+	trait="tough_soldier"
 	father=232683
 	1174.1.1={
 		birth="1174.1.1"
@@ -2761,8 +2762,8 @@
 	stewardship=8
 	religion="catholic"
 	culture="norwegian"
-	add_trait="diligent"
-	add_trait="charismatic_negotiator"
+	trait="diligent"
+	trait="charismatic_negotiator"
 	1020.1.1={
 		birth="1020.1.1"
 	}
@@ -2784,7 +2785,7 @@
 	stewardship=5
 	religion="catholic"
 	culture="norwegian"
-	add_trait="flamboyant_schemer"
+	trait="flamboyant_schemer"
 	1021.1.1={
 		birth="1021.1.1"
 	}
@@ -2803,8 +2804,8 @@
 	stewardship=7
 	religion="catholic"
 	culture="norwegian"
-	add_trait="lustful"
-	add_trait="tough_soldier"
+	trait="lustful"
+	trait="tough_soldier"
 	father=40610
 	mother=40611
 	1040.1.1={
@@ -2824,8 +2825,8 @@
 	stewardship=6
 	religion="catholic"
 	culture="norwegian"
-	add_trait="honest"
-	add_trait="tough_soldier"
+	trait="honest"
+	trait="tough_soldier"
 	1020.1.1={
 		birth="1020.1.1"
 	}
@@ -2847,8 +2848,8 @@
 	stewardship=6
 	religion="catholic"
 	culture="norwegian"
-	add_trait="temperate"
-	add_trait="amateurish_plotter"
+	trait="temperate"
+	trait="amateurish_plotter"
 	1049.1.1={
 		birth="1049.1.1"
 	}
@@ -2865,7 +2866,7 @@
 	stewardship=7
 	religion="catholic"
 	culture="norwegian"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	1050.1.1={
 		birth="1050.1.1"
 	}
@@ -2884,7 +2885,7 @@
 	stewardship=4
 	religion="catholic"
 	culture="norwegian"
-	add_trait="martial_cleric"
+	trait="martial_cleric"
 	father=450661
 	mother=450662
 	1312.1.2={
@@ -2905,8 +2906,8 @@
 	stewardship=7
 	religion="catholic"
 	culture="norwegian"
-	add_trait="humble"
-	add_trait="skilled_tactician"
+	trait="humble"
+	trait="skilled_tactician"
 	1275.1.2={
 		birth="1275.1.2"
 	}
@@ -2929,8 +2930,8 @@
 	stewardship=6
 	religion="catholic"
 	culture="norwegian"
-	add_trait="legit_bastard"
-	add_trait="martial_cleric"
+	trait="legit_bastard"
+	trait="martial_cleric"
 	father=452510
 	1288.1.2={
 		birth="1288.1.2"
@@ -2950,10 +2951,10 @@
 	stewardship=4
 	religion="catholic"
 	culture="norwegian"
-	add_trait="envious"
-	add_trait="proud"
-	add_trait="patient"
-	add_trait="martial_cleric"
+	trait="envious"
+	trait="proud"
+	trait="patient"
+	trait="martial_cleric"
 	father=450661
 	mother=450662
 	1315.1.2={
@@ -2974,9 +2975,9 @@
 	stewardship=7
 	religion="catholic"
 	culture="norwegian"
-	add_trait="lustful"
-	add_trait="slothful"
-	add_trait="tough_soldier"
+	trait="lustful"
+	trait="slothful"
+	trait="tough_soldier"
 	father=450731
 	mother=450732
 	1292.1.2={
@@ -3000,7 +3001,7 @@
 	stewardship=6
 	religion="catholic"
 	culture="norwegian"
-	add_trait="skilled_tactician"
+	trait="skilled_tactician"
 	1260.1.2={
 		birth="1260.1.2"
 	}
@@ -3023,7 +3024,7 @@
 	stewardship=7
 	religion="catholic"
 	culture="norwegian"
-	add_trait="martial_cleric"
+	trait="martial_cleric"
 	1260.1.2={
 		birth="1260.1.2"
 	}
@@ -3042,8 +3043,8 @@
 	stewardship=7
 	religion="catholic"
 	culture="norwegian"
-	add_trait="honest"
-	add_trait="amateurish_plotter"
+	trait="honest"
+	trait="amateurish_plotter"
 	father=450730
 	mother=450750
 	1315.1.2={
@@ -3064,9 +3065,9 @@
 	stewardship=5
 	religion="catholic"
 	culture="norwegian"
-	add_trait="patient"
-	add_trait="hunchback"
-	add_trait="tough_soldier"
+	trait="patient"
+	trait="hunchback"
+	trait="tough_soldier"
 	father=450731
 	mother=450732
 	1290.1.2={
@@ -3090,7 +3091,7 @@
 	stewardship=7
 	religion="catholic"
 	culture="norwegian"
-	add_trait="flamboyant_schemer"
+	trait="flamboyant_schemer"
 	1290.1.2={
 		birth="1290.1.2"
 	}
@@ -3110,8 +3111,8 @@
 	stewardship=6
 	religion="catholic"
 	culture="norwegian"
-	add_trait="envious"
-	add_trait="thrifty_clerk"
+	trait="envious"
+	trait="thrifty_clerk"
 	father=450740
 	mother=450741
 	1310.1.2={
@@ -3133,9 +3134,9 @@
 	stewardship=7
 	religion="catholic"
 	culture="norwegian"
-	add_trait="chaste"
-	add_trait="envious"
-	add_trait="thrifty_clerk"
+	trait="chaste"
+	trait="envious"
+	trait="thrifty_clerk"
 	father=450751
 	mother=450752
 	1285.1.2={
@@ -3156,9 +3157,9 @@
 	stewardship=5
 	religion="catholic"
 	culture="norwegian"
-	add_trait="honest"
-	add_trait="envious"
-	add_trait="flamboyant_schemer"
+	trait="honest"
+	trait="envious"
+	trait="flamboyant_schemer"
 	1255.1.2={
 		birth="1255.1.2"
 	}
@@ -3181,10 +3182,10 @@
 	stewardship=6
 	religion="catholic"
 	culture="norwegian"
-	add_trait="lustful"
-	add_trait="just"
-	add_trait="inbred"
-	add_trait="underhanded_rogue"
+	trait="lustful"
+	trait="just"
+	trait="inbred"
+	trait="underhanded_rogue"
 	1265.1.2={
 		birth="1265.1.2"
 	}
@@ -3203,7 +3204,7 @@
 	stewardship=7
 	religion="catholic"
 	culture="norwegian"
-	add_trait="flamboyant_schemer"
+	trait="flamboyant_schemer"
 	father=450781
 	mother=450782
 	1292.1.2={
@@ -3227,8 +3228,8 @@
 	stewardship=4
 	religion="catholic"
 	culture="norwegian"
-	add_trait="humble"
-	add_trait="amateurish_plotter"
+	trait="humble"
+	trait="amateurish_plotter"
 	1247.1.2={
 		birth="1247.1.2"
 	}
@@ -3250,8 +3251,8 @@
 	stewardship=7
 	religion="catholic"
 	culture="norwegian"
-	add_trait="diligent"
-	add_trait="scholarly_theologian"
+	trait="diligent"
+	trait="scholarly_theologian"
 	1267.1.2={
 		birth="1267.1.2"
 	}
@@ -3271,7 +3272,7 @@
 	stewardship=6
 	religion="catholic"
 	culture="norwegian"
-	add_trait="amateurish_plotter"
+	trait="amateurish_plotter"
 	father=450784
 	mother=450785
 	1297.1.2={
@@ -3292,9 +3293,9 @@
 	stewardship=6
 	religion="catholic"
 	culture="norwegian"
-	add_trait="just"
-	add_trait="humble"
-	add_trait="thrifty_clerk"
+	trait="just"
+	trait="humble"
+	trait="thrifty_clerk"
 	1267.1.2={
 		birth="1267.1.2"
 	}
@@ -3317,8 +3318,8 @@
 	stewardship=8
 	religion="catholic"
 	culture="norwegian"
-	add_trait="proud"
-	add_trait="flamboyant_schemer"
+	trait="proud"
+	trait="flamboyant_schemer"
 	1275.1.2={
 		birth="1275.1.2"
 	}
@@ -3337,7 +3338,7 @@
 	stewardship=8
 	religion="catholic"
 	culture="norwegian"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	father=450780
 	mother=450783
 	1323.1.2={
@@ -3380,8 +3381,8 @@
 	stewardship=5
 	religion="catholic"
 	culture="norwegian"
-	add_trait="lustful"
-	add_trait="amateurish_plotter"
+	trait="lustful"
+	trait="amateurish_plotter"
 	father=450780
 	mother=450783
 	1320.1.2={
@@ -3402,9 +3403,9 @@
 	stewardship=8
 	religion="catholic"
 	culture="norwegian"
-	add_trait="patient"
-	add_trait="cynical"
-	add_trait="martial_cleric"
+	trait="patient"
+	trait="cynical"
+	trait="martial_cleric"
 	father=450801
 	mother=450802
 	1272.1.2={
@@ -3428,7 +3429,7 @@
 	stewardship=6
 	religion="catholic"
 	culture="norwegian"
-	add_trait="charismatic_negotiator"
+	trait="charismatic_negotiator"
 	1228.1.2={
 		birth="1228.1.2"
 	}
@@ -3451,7 +3452,7 @@
 	stewardship=4
 	religion="catholic"
 	culture="norwegian"
-	add_trait="flamboyant_schemer"
+	trait="flamboyant_schemer"
 	1248.1.2={
 		birth="1248.1.2"
 	}
@@ -3470,9 +3471,9 @@
 	stewardship=8
 	religion="catholic"
 	culture="norwegian"
-	add_trait="lustful"
-	add_trait="envious"
-	add_trait="tough_soldier"
+	trait="lustful"
+	trait="envious"
+	trait="tough_soldier"
 	father=450800
 	mother=450812
 	1302.1.2={
@@ -3493,8 +3494,8 @@
 	stewardship=6
 	religion="catholic"
 	culture="norwegian"
-	add_trait="humble"
-	add_trait="tough_soldier"
+	trait="humble"
+	trait="tough_soldier"
 	father=450800
 	mother=450812
 	1304.1.2={
@@ -3515,8 +3516,8 @@
 	stewardship=8
 	religion="catholic"
 	culture="norwegian"
-	add_trait="cynical"
-	add_trait="scholarly_theologian"
+	trait="cynical"
+	trait="scholarly_theologian"
 	father=450800
 	mother=450812
 	1300.1.2={
@@ -3540,7 +3541,7 @@
 	stewardship=4
 	religion="catholic"
 	culture="norwegian"
-	add_trait="amateurish_plotter"
+	trait="amateurish_plotter"
 	1300.1.2={
 		birth="1300.1.2"
 	}
@@ -3559,8 +3560,8 @@
 	stewardship=4
 	religion="catholic"
 	culture="norwegian"
-	add_trait="charitable"
-	add_trait="tough_soldier"
+	trait="charitable"
+	trait="tough_soldier"
 	father=450805
 	mother=450806
 	1325.1.2={
@@ -3581,7 +3582,7 @@
 	stewardship=8
 	religion="catholic"
 	culture="norwegian"
-	add_trait="martial_cleric"
+	trait="martial_cleric"
 	father=450805
 	mother=450806
 	1330.1.2={
@@ -3602,8 +3603,8 @@
 	stewardship=6
 	religion="catholic"
 	culture="norwegian"
-	add_trait="patient"
-	add_trait="amateurish_plotter"
+	trait="patient"
+	trait="amateurish_plotter"
 	1260.1.2={
 		birth="1260.1.2"
 	}
@@ -3625,10 +3626,10 @@
 	stewardship=6
 	religion="catholic"
 	culture="norwegian"
-	add_trait="deceitful"
-	add_trait="wroth"
-	add_trait="brave"
-	add_trait="flamboyant_schemer"
+	trait="deceitful"
+	trait="wroth"
+	trait="brave"
+	trait="flamboyant_schemer"
 	1260.1.2={
 		birth="1260.1.2"
 	}
@@ -3648,8 +3649,8 @@
 	stewardship=8
 	religion="catholic"
 	culture="norwegian"
-	add_trait="craven"
-	add_trait="martial_cleric"
+	trait="craven"
+	trait="martial_cleric"
 	father=450810
 	mother=450811
 	1281.1.2={
@@ -3671,10 +3672,10 @@
 	stewardship=5
 	religion="catholic"
 	culture="norwegian"
-	add_trait="humble"
-	add_trait="wroth"
-	add_trait="cynical"
-	add_trait="martial_cleric"
+	trait="humble"
+	trait="wroth"
+	trait="cynical"
+	trait="martial_cleric"
 	father=452510
 	mother=452511
 	1301.1.2={
@@ -3695,8 +3696,8 @@
 	stewardship=4
 	religion="catholic"
 	culture="norwegian"
-	add_trait="clubfooted"
-	add_trait="martial_cleric"
+	trait="clubfooted"
+	trait="martial_cleric"
 	father=6905 # Magnus Lagaböter
 	mother=6904
 	1270.1.1={
@@ -3720,8 +3721,8 @@
 	stewardship=8
 	religion="catholic"
 	culture="norwegian"
-	add_trait="envious"
-	add_trait="martial_cleric"
+	trait="envious"
+	trait="martial_cleric"
 	1280.1.2={
 		birth="1280.1.2"
 	}
@@ -3743,9 +3744,9 @@
 	stewardship=5
 	religion="catholic"
 	culture="norwegian"
-	add_trait="patient"
-	add_trait="zealous"
-	add_trait="underhanded_rogue"
+	trait="patient"
+	trait="zealous"
+	trait="underhanded_rogue"
 	1282.1.2={
 		birth="1282.1.2"
 	}
@@ -3764,8 +3765,8 @@
 	stewardship=4
 	religion="catholic"
 	culture="norwegian"
-	add_trait="lustful"
-	add_trait="flamboyant_schemer"
+	trait="lustful"
+	trait="flamboyant_schemer"
 	1304.1.2={
 		birth="1304.1.2"
 	}
@@ -3784,7 +3785,7 @@
 	stewardship=5
 	religion="catholic"
 	culture="norwegian"
-	add_trait="amateurish_plotter"
+	trait="amateurish_plotter"
 	father=452600
 	mother=452601
 	1300.1.2={
@@ -3805,7 +3806,7 @@
 	stewardship=6
 	religion="catholic"
 	culture="norwegian"
-	add_trait="scholarly_theologian"
+	trait="scholarly_theologian"
 	father=452600
 	mother=452601
 	1302.1.2={
@@ -3827,7 +3828,7 @@
 	stewardship=4
 	religion="catholic"
 	culture="norwegian"
-	add_trait="scholarly_theologian"
+	trait="scholarly_theologian"
 	father=452600
 	mother=452601
 	1306.1.2={
@@ -3848,7 +3849,7 @@
 	stewardship=8
 	religion="catholic"
 	culture="norwegian"
-	add_trait="scholarly_theologian"
+	trait="scholarly_theologian"
 	father=452600
 	mother=452601
 	1308.1.2={
@@ -3869,8 +3870,8 @@
 	stewardship=8
 	religion="catholic"
 	culture="norwegian"
-	add_trait="slothful"
-	add_trait="martial_cleric"
+	trait="slothful"
+	trait="martial_cleric"
 	father=452600
 	mother=452601
 	1312.1.2={
@@ -3891,9 +3892,9 @@
 	stewardship=4
 	religion="catholic"
 	culture="norwegian"
-	add_trait="kind"
-	add_trait="proud"
-	add_trait="skilled_tactician"
+	trait="kind"
+	trait="proud"
+	trait="skilled_tactician"
 	father=452600
 	mother=452601
 	1314.1.2={
@@ -3914,8 +3915,8 @@
 	stewardship=7
 	religion="catholic"
 	culture="norwegian"
-	add_trait="wroth"
-	add_trait="thrifty_clerk"
+	trait="wroth"
+	trait="thrifty_clerk"
 	1260.1.2={
 		birth="1260.1.2"
 	}
@@ -3937,9 +3938,9 @@
 	stewardship=8
 	religion="catholic"
 	culture="norwegian"
-	add_trait="proud"
-	add_trait="lisp"
-	add_trait="flamboyant_schemer"
+	trait="proud"
+	trait="lisp"
+	trait="flamboyant_schemer"
 	1260.1.2={
 		birth="1260.1.2"
 	}
@@ -3958,8 +3959,8 @@
 	stewardship=8
 	religion="catholic"
 	culture="norwegian"
-	add_trait="patient"
-	add_trait="thrifty_clerk"
+	trait="patient"
+	trait="thrifty_clerk"
 	father=452610
 	mother=452611
 	1300.1.2={
@@ -3983,9 +3984,9 @@
 	stewardship=4
 	religion="catholic"
 	culture="norwegian"
-	add_trait="charitable"
-	add_trait="proud"
-	add_trait="scholarly_theologian"
+	trait="charitable"
+	trait="proud"
+	trait="scholarly_theologian"
 	1320.1.2={
 		birth="1320.1.2"
 	}
@@ -4004,7 +4005,7 @@
 	stewardship=5
 	religion="catholic"
 	culture="norwegian"
-	add_trait="charismatic_negotiator"
+	trait="charismatic_negotiator"
 	1300.1.2={
 		birth="1300.1.2"
 	}
@@ -4026,7 +4027,7 @@
 	stewardship=5
 	religion="catholic"
 	culture="norwegian"
-	add_trait="martial_cleric"
+	trait="martial_cleric"
 	father=452620
 	mother=452605
 	1325.1.2={
@@ -4047,10 +4048,10 @@
 	stewardship=6
 	religion="catholic"
 	culture="norwegian"
-	add_trait="just"
-	add_trait="honest"
-	add_trait="clubfooted"
-	add_trait="charismatic_negotiator"
+	trait="just"
+	trait="honest"
+	trait="clubfooted"
+	trait="charismatic_negotiator"
 	1300.1.1={
 		birth="1300.1.1"
 	}
@@ -4068,10 +4069,10 @@
 	stewardship=7
 	religion="catholic"
 	culture="norwegian"
-	add_trait="patient"
-	add_trait="greedy"
-	add_trait="brave"
-	add_trait="martial_cleric"
+	trait="patient"
+	trait="greedy"
+	trait="brave"
+	trait="martial_cleric"
 	1300.1.1={
 		birth="1300.1.1"
 	}
@@ -4091,7 +4092,7 @@
 	stewardship=5
 	religion="catholic"
 	culture="norwegian"
-	add_trait="flamboyant_schemer"
+	trait="flamboyant_schemer"
 	father=5793
 	1051.1.2={
 		birth="1051.1.2"
@@ -4113,7 +4114,7 @@
 	stewardship=5
 	religion="catholic"
 	culture="norwegian"
-	add_trait="underhanded_rogue"
+	trait="underhanded_rogue"
 	father=5793
 	1049.1.2={
 		birth="1049.1.2"
@@ -4135,8 +4136,8 @@
 	stewardship=4
 	religion="catholic"
 	culture="norwegian"
-	add_trait="clubfooted"
-	add_trait="martial_cleric"
+	trait="clubfooted"
+	trait="martial_cleric"
 	father=202509 # Håkon Håkonsson
 	mother=202035 # Margareta Skulesdotter
 	1238.5.1={
@@ -4159,8 +4160,8 @@
 	stewardship=4
 	religion="catholic"
 	culture="norwegian"
-	add_trait="brave"
-	add_trait="tough_soldier"
+	trait="brave"
+	trait="tough_soldier"
 	father=6905 # Magnus Lagaböter
 	mother=6904
 	1268.1.2={
@@ -4187,8 +4188,8 @@
 	stewardship=4
 	religion="catholic"
 	culture="norwegian"
-	add_trait="clubfooted"
-	add_trait="martial_cleric"
+	trait="clubfooted"
+	trait="martial_cleric"
 	father = 6906
 	mother = 6903
 	1283.4.1={
@@ -4248,9 +4249,9 @@
 	dynasty=461
 	religion="catholic"
 	culture="norwegian"
-	add_trait="lustful"
-	add_trait="lisp"
-	add_trait="martial_cleric"
+	trait="lustful"
+	trait="lisp"
+	trait="martial_cleric"
 	father=102539
 	mother=161327
 	1060.1.1={
@@ -4504,8 +4505,8 @@
 	name="Svend" #Nordmand
 	religion="catholic"
 	culture="norwegian"
-	add_trait="quick"
-	add_trait="martial_cleric"
+	trait="quick"
+	trait="martial_cleric"
 	1038.1.1 = {
 		birth="1038.1.1" 
 	}
@@ -4620,7 +4621,7 @@
 	dynasty=1030031
 	religion="catholic"
 	culture="norwegian"
-	add_trait="legit_bastard"
+	trait="legit_bastard"
 	father=202051
 	1174.1.1={
 		birth="1174.1.1"
@@ -4635,7 +4636,7 @@
 	dynasty=1030031
 	religion="catholic"
 	culture="norwegian"
-	add_trait="legit_bastard"
+	trait="legit_bastard"
 	father=202051
 	1175.1.1={
 		birth="1175.1.1"
@@ -4779,7 +4780,7 @@
 	dynasty=461
 	religion="catholic"
 	culture="norwegian"
-	add_trait="bastard"
+	trait="bastard"
 	father=102539
 	1068.1.1={
 		birth="1068.1.1"
@@ -4810,7 +4811,7 @@
 	dynasty=499
 	religion="catholic"
 	culture="norwegian"
-	add_trait="legit_bastard"
+	trait="legit_bastard"
 	father=202511
 	1089.1.2={
 		birth="1089.1.2"

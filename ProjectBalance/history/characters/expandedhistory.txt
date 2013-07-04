@@ -8,7 +8,7 @@
 	intrigue=6
 	stewardship=7
 	father=7945
-	add_trait="bastard"
+	trait="bastard"
 	religion="catholic"
 	culture="german"
 	871.1.1 = {
