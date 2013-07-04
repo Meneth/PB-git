@@ -60,7 +60,7 @@ province_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 1800
+		months = 2400
 
 		modifier = {
 			factor = 0.75
@@ -150,11 +150,12 @@ province_event = {
 		}
 		#Turkish culture didn't spread to coasts much
 		modifier = {
-			factor = 2
+			factor = 3
 			port = yes
 			owner = {
 				culture = turkish
 			}
+			NOT = { has_global_flag = failed_to_retake_the_coast }
 		}
 		#Turkish culture spread quickly inland
 		modifier = {
@@ -240,7 +241,7 @@ province_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 2100
+		months = 2700
 
 		modifier = {
 			factor = 1.5

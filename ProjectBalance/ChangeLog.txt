@@ -1,3 +1,7 @@
+3.2.23
+	Slowed down the regular culture spread events by about 30%
+	Slowed down spread of Turkish culture to ports even further (3x as long as base rather than 2x), but the modifier now disappears if the Byzantines lose their war to retake the coast
+
 3.2.22
 	Updated for CKII patch 1.103
 	Fixed the HRE Decentralization laws and Byzantine Theme laws existing in the Shattered Balance module
