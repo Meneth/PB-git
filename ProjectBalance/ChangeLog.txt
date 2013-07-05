@@ -2,6 +2,7 @@
 	Slowed down the regular culture spread events by about 30%
 	Slowed down spread of Turkish culture to ports even further (3x as long as base rather than 2x), but the modifier now disappears if the Byzantines lose their war to retake the coast
 	Fixed a minor bug with trait inheritance
+	The Ransom All decision will now also try to get the ransom from the prisoner's father/mother if the prisoner is their heir and they can afford it
 
 3.2.22
 	Updated for CKII patch 1.103
