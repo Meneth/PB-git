@@ -356,7 +356,7 @@ character_event = {
 				if = {
 					limit = {
 						trait = absentminded
-						NOT = { ROOT = { trait = preceptive } }
+						NOT = { ROOT = { trait = perceptive } }
 					}
 					random = {
 						chance = 5
@@ -640,7 +640,7 @@ character_event = {
 				if = {
 					limit = {
 						trait = absentminded
-						NOT = { ROOT = { trait = preceptive } }
+						NOT = { ROOT = { trait = perceptive } }
 					}
 					random = {
 						chance = 5
@@ -926,7 +926,7 @@ character_event = {
 				if = {
 					limit = {
 						trait = absentminded
-						NOT = { ROOT = { trait = preceptive } }
+						NOT = { ROOT = { trait = perceptive } }
 					}
 					random = {
 						chance = 5
@@ -1210,7 +1210,7 @@ character_event = {
 				if = {
 					limit = {
 						trait = absentminded
-						NOT = { ROOT = { trait = preceptive } }
+						NOT = { ROOT = { trait = perceptive } }
 					}
 					random = {
 						chance = 5
