@@ -734,7 +734,7 @@ e_france = {
 			}
 		}
 	}
-	#Can't be formed by Franks. Viviers moved here
+	#Can't be formed by Franks or kings. Viviers moved here
 	k_aquitaine = {
 		color={ 54 50 226 }
 		color2={ 255 255 20 }
@@ -744,7 +744,10 @@ e_france = {
 		
 		catholic = 700 # Crusade target weight
 		
-		allow = { NOT = { culture = frankish } }
+		allow = {
+			NOT = { culture = frankish }
+			NOT = { has_landed_title = k_france }
+		}
 		
 		d_aquitaine = {
 			color={ 54 10 243 }

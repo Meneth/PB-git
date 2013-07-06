@@ -5,6 +5,7 @@
 	The Ransom All decision will now also try to get the ransom from the prisoner's father/mother if the prisoner is their heir and they can afford it
 	Fixed the middle point of the city focus slider giving far too much tax
 	Moved Damman to the kingdom of Arabia rather than Mesopotamia
+	Aquitaine can no longer be formed by the king of France
 
 3.2.22
 	Updated for CKII patch 1.103
