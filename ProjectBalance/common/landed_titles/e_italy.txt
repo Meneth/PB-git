@@ -1426,7 +1426,10 @@ e_italy = {
 	
 	# Creation/usurpation trigger
 	allow = {
-		culture = italian
+		OR = {
+			culture = italian
+			culture = greek
+		}
 		num_of_king_titles = 3
 		has_landed_title = k_italy
 		OR = {
