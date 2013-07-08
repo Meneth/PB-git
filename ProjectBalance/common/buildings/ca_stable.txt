@@ -6,7 +6,7 @@ castle = {
 		build_cost = 100
 		build_time = 365
 		light_cavalry = 45
-		retinuesize = 25
+		retinuesize = 20
 		tax_income = -0.1
 		ai_creation_factor = 89
 		
@@ -19,7 +19,7 @@ castle = {
 		build_cost = 120
 		build_time = 547
 		light_cavalry = 55
-		retinuesize = 25
+		retinuesize = 20
 		tax_income = -0.15
 		ai_creation_factor = 88
 
@@ -33,7 +33,7 @@ castle = {
 		build_time = 730
 		light_cavalry = 55
 		knights = 5
-		retinuesize = 25
+		retinuesize = 20
 		tax_income = -0.2
 		ai_creation_factor = 87
 
@@ -46,7 +46,7 @@ castle = {
 		build_time = 1095
 		light_cavalry = 55
 		knights = 10
-		retinuesize = 25
+		retinuesize = 20
 		tax_income = -0.25
 		ai_creation_factor = 86
 
@@ -59,7 +59,7 @@ castle = {
 		build_time = 2190
 		light_cavalry = 55
 		knights = 20
-		retinuesize = 25
+		retinuesize = 20
 		tax_income = -0.3
 		ai_creation_factor = 85
 

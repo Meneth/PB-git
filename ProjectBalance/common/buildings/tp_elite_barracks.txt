@@ -5,7 +5,7 @@ temple = {
 		build_cost = 100
 		build_time = 365
 		heavy_infantry = 45
-		retinuesize = 25
+		retinuesize = 20
 		tax_income = -0.1
 		ai_creation_factor = 95
 
@@ -18,7 +18,7 @@ temple = {
 		build_cost = 120
 		build_time = 730
 		heavy_infantry = 55
-		retinuesize = 25
+		retinuesize = 20
 		tax_income = -0.15
 		ai_creation_factor = 94
 
@@ -31,7 +31,7 @@ temple = {
 		build_cost = 200
 		build_time = 730
 		heavy_infantry = 65
-		retinuesize = 25
+		retinuesize = 20
 		tax_income = -0.2
 		ai_creation_factor = 93
 
@@ -43,7 +43,7 @@ temple = {
 		build_cost = 300
 		build_time = 1095
 		heavy_infantry = 75
-		retinuesize = 25
+		retinuesize = 20
 		tax_income = -0.25
 		ai_creation_factor = 92
 
@@ -55,7 +55,7 @@ temple = {
 		build_cost = 400
 		build_time = 2190
 		heavy_infantry = 85
-		retinuesize = 25
+		retinuesize = 20
 		tax_income = -0.3
 		ai_creation_factor = 91
 
@@ -67,7 +67,7 @@ temple = {
 		build_cost = 500
 		build_time = 2190
 		heavy_infantry = 95
-		retinuesize = 25
+		retinuesize = 20
 		tax_income = -0.35
 		ai_creation_factor = 90
 

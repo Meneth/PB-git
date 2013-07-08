@@ -9,6 +9,7 @@
 	Doubled the prestige requirements for upping Emperor's Peace
 	Greek characters can form Italia (empire-tier)
 	Fixed characters of Persian culture having the wrong settlement pictures and such
+	Reduced overall retinue sizes by 20%
 
 3.2.22
 	Updated for CKII patch 1.103

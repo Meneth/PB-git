@@ -654,7 +654,7 @@ NMilitary = {
 	LOOT_HOLDING_DESTRUCTION_ODDS = 20,				-- a holding with less than LOOT_HOLDING_DEST_MIN_SAFE buildings will be destroyed by looting
 	LOOT_HOLDING_BUILDING_DEST_ODDS = 10,			-- there is a 1 in this chance a random building is destroyed when looted
 	
-	RETINUE_FROM_REALMSIZE = 5.0,
+	RETINUE_FROM_REALMSIZE = 4.0,
 	RETINUE_INCREASE_PER_TECH = 0.5,
 	RETINUE_HIRE_COST_MULTIPLIER = 0.02,			-- Retinues are free to hire atm, but they cost alot to reinforce
 	RETINUE_REINFORCE_RATE = 0.05,
