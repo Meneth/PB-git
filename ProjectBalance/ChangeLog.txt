@@ -8,6 +8,7 @@
 	Aquitaine can no longer be formed by the king of France
 	Doubled the prestige requirements for upping Emperor's Peace
 	Greek characters can form Italia (empire-tier)
+	Fixed characters of Persian culture having the wrong settlement pictures and such
 
 3.2.22
 	Updated for CKII patch 1.103

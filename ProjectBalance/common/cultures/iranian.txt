@@ -5,7 +5,7 @@ iranian = {
 	graphical_culture = muslimgfx
 
 	persian = {
-		graphical_culture = muslimgfx #arabicgfx
+		graphical_culture = persiangfx #arabicgfx
 
 		color = { 0.5 0.5 0.05 }
 
