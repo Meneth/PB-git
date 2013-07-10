@@ -2040,7 +2040,10 @@ character_event = {
 	trigger = {
 		has_global_flag = SWMH
 		has_landed_title = k_portugal
-		k_al_andalus = { has_holder = no }
+		OR = {
+			k_al_andalus = { has_holder = no }
+			completely_controls = d_beja
+		}
 		NOT = { has_global_flag = expansion_of_portugal }
 		completely_controls = k_portugal
 	}
@@ -2051,7 +2054,7 @@ character_event = {
 	
 	option = {
 		name = OK
-		d_alentejo = {
+		d_beja = {
 			de_jure_liege = k_portugal
 		}
 		d_algarve = {

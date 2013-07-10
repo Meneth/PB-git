@@ -10,6 +10,7 @@
 	Greek characters can form Italia (empire-tier)
 	Fixed characters of Persian culture having the wrong settlement pictures and such
 	Reduced overall retinue sizes by 20%
+	(PB+SWMH) Fixed some issues with the event for the expansion of Portugal
 
 3.2.22
 	Updated for CKII patch 1.103
