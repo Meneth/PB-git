@@ -1,5 +1,6 @@
 3.2.24
 	Fixed some potential issues with the Release/Execute All decisions
+	(No Ahistorical Empires) Fixed Khazaria not existing in 867
 
 3.2.23
 	Slowed down the regular culture spread events by about 30%
