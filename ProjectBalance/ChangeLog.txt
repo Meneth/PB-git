@@ -1,3 +1,6 @@
+3.2.24
+	Fixed some potential issues with the Release/Execute All decisions
+
 3.2.23
 	Slowed down the regular culture spread events by about 30%
 	Slowed down spread of Turkish culture to ports even further (3x as long as base rather than 2x), but the modifier now disappears if the Byzantines lose their war to retake the coast

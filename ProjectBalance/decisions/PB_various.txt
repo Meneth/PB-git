@@ -204,12 +204,16 @@ decisions = {
 		potential = {
 			ai = no
 			any_courtier = {
+				NOT = { same_realm = ROOT }
 				prisoner = yes
 			}
 		}
 		effect = {
 			any_courtier = {
-				limit = { prisoner = yes }
+				limit = {
+					NOT = { same_realm = ROOT }
+					prisoner = yes
+				}
 				hidden_tooltip = {
 					opinion = {
 						who = ROOT
@@ -245,6 +249,7 @@ decisions = {
 		potential = {
 			ai = no
 			any_courtier = {
+				NOT = { same_realm = ROOT }
 				prisoner = yes
 			}
 		}
@@ -252,6 +257,7 @@ decisions = {
 			if = {
 				limit = {
 					any_courtier = {
+						NOT = { same_realm = ROOT }
 						prisoner = yes
 						dynasty = ROOT
 					}
@@ -263,7 +269,11 @@ decisions = {
 				}
 			}
 			any_courtier = {
-				limit = { prisoner = yes }
+				limit = {
+					NOT = { same_realm = ROOT }
+					prisoner = yes
+
+				}
 				hidden_tooltip = {
 					top_liege = {
 						opinion = {
