@@ -40,7 +40,7 @@ ca_culture_group_south_slavic_0;Gusar Training Ground;;;;;;;;;;;;;x
 ca_culture_group_south_slavic_5;Gusar Training Ground;;;;;;;;;;;;;x
 ca_culture_dutch_0;Goedendag Militia Quarters;;;;;;;;;;;;;x
 ca_culture_dutch_5;Goedendag Militia Quarters;;;;;;;;;;;;;x
-retinue_disabler;This building prevents barons and single-province counts from having retinues. If you're seeing it in a count or above's holding, please report it as a bug if it persists for more than a month.;;;;;;;;;;;;;x
+retinue_disabler;This building prevents barons and vassalized single-province counts from having retinues. If you're seeing it in a count or above's holding, please report it as a bug if it persists for more than a month.;;;;;;;;;;;;;x
 ca_retinues;Retinue Disabler;;;;;;;;;;;;;x
 ct_retinues;Retinue Disabler;;;;;;;;;;;;;x
 tp_retinues;Retinue Disabler;;;;;;;;;;;;;x

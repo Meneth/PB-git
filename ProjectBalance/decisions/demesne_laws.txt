@@ -503,7 +503,7 @@ laws = {
 		}
 		
 		city_vassal_max_levy = -0.45
-		city_vassal_tax_modifier = 0.5
+		city_vassal_tax_modifier = 0.2
 	}
 	
 	city_slider_3 = {

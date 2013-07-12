@@ -9,7 +9,7 @@ temple = {
 		tech_growth_modifier_military = 0.01
 		tech_growth_modifier_culture = 0.02
 		tech_growth_modifier_economy = 0.02
-		retinuesize = 25
+		retinuesize = 20
 		tax_income = -0.1
 		ai_creation_factor = 96
 
@@ -26,7 +26,7 @@ temple = {
 		tech_growth_modifier_military = 0.01
 		tech_growth_modifier_culture = 0.02
 		tech_growth_modifier_economy = 0.02
-		retinuesize = 25
+		retinuesize = 20
 		tax_income = -0.15
 		ai_creation_factor = 95
 
@@ -42,7 +42,7 @@ temple = {
 		tech_growth_modifier_military = 0.01
 		tech_growth_modifier_culture = 0.02
 		tech_growth_modifier_economy = 0.02
-		retinuesize = 25
+		retinuesize = 20
 		tax_income = -0.2
 		ai_creation_factor = 94
 
@@ -58,7 +58,7 @@ temple = {
 		tech_growth_modifier_military = 0.01
 		tech_growth_modifier_culture = 0.02
 		tech_growth_modifier_economy = 0.02
-		retinuesize = 25
+		retinuesize = 20
 		tax_income = -0.25
 		ai_creation_factor = 93
 
@@ -74,7 +74,7 @@ temple = {
 		tech_growth_modifier_military = 0.01
 		tech_growth_modifier_culture = 0.02
 		tech_growth_modifier_economy = 0.02
-		retinuesize = 25
+		retinuesize = 20
 		tax_income = -0.3
 		ai_creation_factor = 92
 
@@ -90,7 +90,7 @@ temple = {
 		tech_growth_modifier_military = 0.01
 		tech_growth_modifier_culture = 0.02
 		tech_growth_modifier_economy = 0.02
-		retinuesize = 25
+		retinuesize = 20
 		tax_income = -0.35
 		ai_creation_factor = 91
 

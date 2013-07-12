@@ -6,7 +6,7 @@ temple = {
 		build_time = 365
 		light_infantry = 60
 		archers = 30
-		retinuesize = 25
+		retinuesize = 20
 		tax_income = -0.1
 		ai_creation_factor = 94
 
@@ -20,7 +20,7 @@ temple = {
 		build_time = 547
 		light_infantry = 65
 		archers = 45
-		retinuesize = 25
+		retinuesize = 20
 		tax_income = -0.15
 		ai_creation_factor = 93
 
@@ -34,7 +34,7 @@ temple = {
 		build_time = 730
 		light_infantry = 70
 		archers = 60
-		retinuesize = 25
+		retinuesize = 20
 		tax_income = -0.2
 		ai_creation_factor = 92
 
@@ -47,7 +47,7 @@ temple = {
 		build_time = 1095
 		light_infantry = 75
 		archers = 75
-		retinuesize = 25
+		retinuesize = 20
 		tax_income = -0.25
 		ai_creation_factor = 91
 
@@ -60,7 +60,7 @@ temple = {
 		build_time = 2190
 		light_infantry = 85
 		archers = 85
-		retinuesize = 25
+		retinuesize = 20
 		tax_income = -0.3
 		ai_creation_factor = 90
 
@@ -73,7 +73,7 @@ temple = {
 		build_time = 2190
 		light_infantry = 95
 		archers = 95
-		retinuesize = 25
+		retinuesize = 20
 		tax_income = -0.35
 		ai_creation_factor = 89
 

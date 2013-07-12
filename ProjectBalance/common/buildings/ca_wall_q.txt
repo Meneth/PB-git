@@ -7,7 +7,7 @@ castle = {
 		build_cost = 50
 		build_time = 182
 		fort_level = 0.5
-		retinuesize = 25
+		retinuesize = 20
 		tax_income = -0.05
 		ai_creation_factor = 80
 		
@@ -20,7 +20,7 @@ castle = {
 		build_cost = 50
 		build_time = 182
 		fort_level = 0.5
-		retinuesize = 25
+		retinuesize = 20
 		tax_income = -0.1
 		ai_creation_factor = 79
 
@@ -32,7 +32,7 @@ castle = {
 		build_cost = 50
 		build_time = 182
 		fort_level = 0.5
-		retinuesize = 25
+		retinuesize = 20
 		tax_income = -0.15
 		ai_creation_factor = 78
 		
@@ -44,7 +44,7 @@ castle = {
 		build_cost = 100
 		build_time = 365
 		fort_level = 1.0
-		retinuesize = 25
+		retinuesize = 20
 		tax_income = -0.2
 		ai_creation_factor = 77
 		
@@ -56,7 +56,7 @@ castle = {
 		build_cost = 100
 		build_time = 365
 		fort_level = 1.0
-		retinuesize = 25
+		retinuesize = 20
 		tax_income = -0.25
 		ai_creation_factor = 76
 

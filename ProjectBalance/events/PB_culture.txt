@@ -53,6 +53,7 @@ province_event = {
 				OR = {
 					culture = italian
 					culture = greek
+					culture = saxon
 				}
 				owner = { culture = norman }
 			}
@@ -60,7 +61,7 @@ province_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 1800
+		months = 2400
 
 		modifier = {
 			factor = 0.75
@@ -150,11 +151,12 @@ province_event = {
 		}
 		#Turkish culture didn't spread to coasts much
 		modifier = {
-			factor = 2
+			factor = 3
 			port = yes
 			owner = {
 				culture = turkish
 			}
+			NOT = { has_global_flag = failed_to_retake_the_coast }
 		}
 		#Turkish culture spread quickly inland
 		modifier = {
@@ -162,6 +164,38 @@ province_event = {
 			port = no
 			owner = {
 				culture = turkish
+			}
+		}
+		#Decentralized HRE
+		modifier = {
+			factor = 2.5
+			NOT = { culture = pommeranian }
+			NOT = { culture_group = baltic }
+			owner = {
+				top_liege = {
+					culture = PREV
+					primary_title = { has_law = hre_law_0 }
+				}
+			}
+		}
+		#Byzantine Theme System
+		modifier = {
+			factor = 3
+			owner = {
+				top_liege = {
+					culture = PREV
+					primary_title = { has_law = themes_0 }
+				}
+			}
+		}
+		#Byzantine Theme System
+		modifier = {
+			factor = 2
+			owner = {
+				top_liege = {
+					culture = PREV
+					primary_title = { has_law = themes_1 }
+				}
 			}
 		}
 	}
@@ -233,6 +267,7 @@ province_event = {
 				OR = {
 					culture = italian
 					culture = greek
+					culture = saxon
 				}
 				owner = { culture = norman }
 			}
@@ -240,7 +275,7 @@ province_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 2100
+		months = 2700
 
 		modifier = {
 			factor = 1.5
@@ -273,6 +308,38 @@ province_event = {
 		modifier = {
 			factor = 0.75
 			owner = { stewardship = 13 }
+		}
+		#Decentralized HRE
+		modifier = {
+			factor = 2.5
+			NOT = { culture = pommeranian }
+			NOT = { culture_group = baltic }
+			owner = {
+				top_liege = {
+					culture = PREV
+					primary_title = { has_law = hre_law_0 }
+				}
+			}
+		}
+		#Byzantine Theme System
+		modifier = {
+			factor = 3
+			owner = {
+				top_liege = {
+					culture = PREV
+					primary_title = { has_law = themes_0 }
+				}
+			}
+		}
+		#Byzantine Theme System
+		modifier = {
+			factor = 2
+			owner = {
+				top_liege = {
+					culture = PREV
+					primary_title = { has_law = themes_1 }
+				}
+			}
 		}
 	}
 
@@ -509,6 +576,7 @@ character_event = {
 				capital_scope = {
 					OR = {
 						culture = italian
+						culture = saxon
 						AND = {
 							culture = greek
 							empire = { title = e_italy }
@@ -669,6 +737,7 @@ character_event = {
 				location = {
 					OR = {
 						culture = italian
+						culture = saxon
 						AND = {
 							culture = greek
 							empire = { title = e_italy }

@@ -1,3 +1,19 @@
+3.2.23
+	Slowed down the regular culture spread events by about 30%
+	Slowed down spread of Turkish culture to ports even further (3x as long as base rather than 2x), but the modifier now disappears if the Byzantines lose their war to retake the coast
+	Fixed a minor bug with trait inheritance
+	The Ransom All decision will now also try to get the ransom from the prisoner's father/mother if the prisoner is their heir and they can afford it
+	Fixed the middle point of the city focus slider giving far too much tax
+	Moved Damman to the kingdom of Arabia rather than Mesopotamia
+	Aquitaine can no longer be formed by the king of France
+	Doubled the prestige requirements for upping Emperor's Peace
+	Greek characters can form Italia (empire-tier)
+	Fixed characters of Persian culture having the wrong settlement pictures and such
+	Reduced overall retinue sizes by 20%
+	Norman culture no longer spreads to Saxon provinces
+	Significantly slowed down culture spread in realms affected by the HRE Decentralization law (unless target is Baltic or Pommeranian) or a Decayed/Intact Theme System
+	(PB+SWMH) Fixed some issues with the event for the expansion of Portugal
+
 3.2.22
 	Updated for CKII patch 1.103
 	Fixed the HRE Decentralization laws and Byzantine Theme laws existing in the Shattered Balance module

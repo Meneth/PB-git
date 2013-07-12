@@ -16,7 +16,7 @@ city = {
 		fort_level = 1.0
 		garrison_size = 0.25
 		levy_size = 0.075
-		retinuesize = 25
+		retinuesize = 20
 		tax_income = -0.1
 		ai_creation_factor = 95
 
@@ -39,7 +39,7 @@ city = {
 		fort_level = 1.5
 		garrison_size = 0.2
 		levy_size = 0.075
-		retinuesize = 25
+		retinuesize = 20
 		tax_income = -0.15
 		ai_creation_factor = 95
 
@@ -62,7 +62,7 @@ city = {
 		fort_level = 2.0
 		garrison_size = 0.25
 		levy_size = 0.125
-		retinuesize = 25
+		retinuesize = 20
 		tax_income = -0.2
 		ai_creation_factor = 95
 

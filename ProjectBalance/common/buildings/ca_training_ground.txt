@@ -8,7 +8,7 @@ castle = {
 		build_time = 730
 		land_morale = 0.1
 		levy_reinforce_rate = 0.08
-		retinuesize = 25
+		retinuesize = 20
 		tax_income = -0.1
 		ai_creation_factor = 89
 
@@ -21,7 +21,7 @@ castle = {
 		build_time = 1095
 		land_morale = 0.15
 		levy_reinforce_rate = 0.12
-		retinuesize = 25
+		retinuesize = 20
 		tax_income = -0.2
 		ai_creation_factor = 88
 		
@@ -35,7 +35,7 @@ castle = {
 		build_time = 2190
 		land_morale = 0.2
 		levy_reinforce_rate = 0.16
-		retinuesize = 25
+		retinuesize = 20
 		tax_income = -0.3
 		ai_creation_factor = 87
 		

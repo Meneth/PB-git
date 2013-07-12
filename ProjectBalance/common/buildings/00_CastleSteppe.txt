@@ -31,7 +31,7 @@ castle = {
 		build_time = 365
 		heavy_infantry = 25
 		light_cavalry = 20
-		retinuesize = 25
+		retinuesize = 20
 		tax_income = -0.1
 		ai_creation_factor = 105
 		
@@ -56,7 +56,7 @@ castle = {
 		build_time = 547
 		heavy_infantry = 35
 		light_cavalry = 20
-		retinuesize = 25
+		retinuesize = 20
 		tax_income = -0.15
 		ai_creation_factor = 104
 		
@@ -81,7 +81,7 @@ castle = {
 		build_time = 730
 		heavy_infantry = 40
 		light_cavalry = 25
-		retinuesize = 25
+		retinuesize = 20
 		tax_income = -0.2
 		ai_creation_factor = 103
 
@@ -105,7 +105,7 @@ castle = {
 		build_time = 1095
 		heavy_infantry = 45
 		light_cavalry = 30
-		retinuesize = 25
+		retinuesize = 20
 		tax_income = -0.25
 		ai_creation_factor = 102
 
@@ -129,7 +129,7 @@ castle = {
 		build_time = 2190
 		heavy_infantry = 55
 		light_cavalry = 30
-		retinuesize = 25
+		retinuesize = 20
 		tax_income = -0.3
 		ai_creation_factor = 101
 
@@ -153,7 +153,7 @@ castle = {
 		build_time = 2190
 		heavy_infantry = 60
 		light_cavalry = 35
-		retinuesize = 25
+		retinuesize = 20
 		tax_income = -0.35
 		ai_creation_factor = 100
 
@@ -178,7 +178,7 @@ castle = {
 		build_time = 365
 		light_cavalry = 25
 		horse_archers = 10
-		retinuesize = 25
+		retinuesize = 20
 		tax_income = -0.1
 		ai_creation_factor = 89
 		
@@ -203,7 +203,7 @@ castle = {
 		build_time = 547
 		light_cavalry = 25
 		horse_archers = 20
-		retinuesize = 25
+		retinuesize = 20
 		tax_income = -0.15
 		ai_creation_factor = 88
 
@@ -228,7 +228,7 @@ castle = {
 		build_time = 730
 		light_cavalry = 35
 		horse_archers = 20
-		retinuesize = 25
+		retinuesize = 20
 		tax_income = -0.2
 		ai_creation_factor = 87
 
@@ -253,7 +253,7 @@ castle = {
 		light_cavalry = 35
 		horse_archers = 20
 		knights = 5
-		retinuesize = 25
+		retinuesize = 20
 		tax_income = -0.25
 		ai_creation_factor = 86
 
@@ -278,7 +278,7 @@ castle = {
 		light_cavalry = 35
 		horse_archers = 20
 		knights = 10
-		retinuesize = 25
+		retinuesize = 20
 		tax_income = -0.3
 		ai_creation_factor = 85
 
@@ -303,7 +303,7 @@ castle = {
 		light_cavalry = 35
 		horse_archers = 20
 		knights = 20
-		retinuesize = 25
+		retinuesize = 20
 		tax_income = -0.35
 		ai_creation_factor = 85
 
