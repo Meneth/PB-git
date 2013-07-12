@@ -10,6 +10,7 @@
 	Greek characters can form Italia (empire-tier)
 	Fixed characters of Persian culture having the wrong settlement pictures and such
 	Reduced overall retinue sizes by 20%
+	Norman culture no longer spreads to Saxon provinces
 	(PB+SWMH) Fixed some issues with the event for the expansion of Portugal
 
 3.2.22

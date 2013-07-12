@@ -53,10 +53,11 @@ province_event = {
 				OR = {
 					culture = italian
 					culture = greek
+					culture = saxon
 				}
 				owner = { culture = norman }
 			}
-		}
+		}n
 	}
 	
 	mean_time_to_happen = {
@@ -234,6 +235,7 @@ province_event = {
 				OR = {
 					culture = italian
 					culture = greek
+					culture = saxon
 				}
 				owner = { culture = norman }
 			}
@@ -510,6 +512,7 @@ character_event = {
 				capital_scope = {
 					OR = {
 						culture = italian
+						culture = saxond
 						AND = {
 							culture = greek
 							empire = { title = e_italy }
@@ -670,6 +673,7 @@ character_event = {
 				location = {
 					OR = {
 						culture = italian
+						culture = saxon
 						AND = {
 							culture = greek
 							empire = { title = e_italy }
