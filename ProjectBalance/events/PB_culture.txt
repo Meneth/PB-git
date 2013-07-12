@@ -576,7 +576,7 @@ character_event = {
 				capital_scope = {
 					OR = {
 						culture = italian
-						culture = saxond
+						culture = saxon
 						AND = {
 							culture = greek
 							empire = { title = e_italy }
