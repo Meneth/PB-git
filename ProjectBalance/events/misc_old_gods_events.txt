@@ -786,11 +786,6 @@ narrative_event = {
 				}
 			}
 		}
-		k_hungary = {
-			grant_title = ROOT
-			copy_title_laws = k_magyar
-			copy_title_history = k_magyar
-		}
 		k_magyar = {
 			destroy_landed_title = THIS
 		}
