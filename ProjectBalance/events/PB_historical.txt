@@ -2358,6 +2358,30 @@ character_event = {
 			holder_scope = {
 				any_realm_province = {
 					limit = {
+						culture = russian
+						owner = { culture = russian }
+					}
+					owner = { set_defacto_liege = THIS }
+				}
+				any_realm_province = {
+					limit = {
+						culture = russian
+					}
+					county = {
+						location = {
+							random_neighbor_province = {
+								limit = {
+									owner = { culture = russian }
+								}
+								owner = {
+									usurp_title = PREVPREVPREV
+								}
+							}
+						}
+					}
+				}
+				any_realm_province = {
+					limit = {
 						kingdom = {
 							NOT = { title = k_hungary }
 						}
