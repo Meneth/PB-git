@@ -6,6 +6,7 @@ castle = {
 		potential = {
 			FROM = {
 				religion_group = pagan_group
+				is_reformed_religion = no
 				NOT = {
 					any_liege = {
 						NOT = { religion_group = pagan_group }
@@ -24,6 +25,9 @@ castle = {
 		archers = 50
 		galleys = 2
 		tech_growth_modifier = -0.5
+		tech_growth_modifier_military = -0.02
+		tech_growth_modifier_culture = -0.02
+		tech_growth_modifier_economy = -0.02
 		garrison_size = -0.3
 		levy_size = -0.25
 		fort_level = 1
