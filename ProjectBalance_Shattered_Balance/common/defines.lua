@@ -527,7 +527,7 @@ NEconomy = {
 	PATRICIAN_CITY_TAX_MULT = 0.5,					-- Patricians don't pay normal City Tax to their liege... (CFixedPoint64)
 	OVER_MAX_DEMESNE_TAX_PENALTY = 0.25,			-- Percent penalty per county over the limit
 	TAX_TO_LOOT_MULTIPLIER = 0.75,					-- Lootable gold per tax 
-	FORT_LOOT_DEFENCE_MULTIPLIER = 4.0,				-- Loot protected gold per fortlevel
+	FORT_LOOT_DEFENCE_MULTIPLIER = 3.0,				-- Loot protected gold per fortlevel
 	LOOTABLE_GOLD_REGROWTH = 0.02,					-- Percent of max lootable gold that regrows every month
 	LOOT_PERCENT_PER_LOOTTICK = 0.04,				-- Percent of max lootable gold that is looted each loot tick
 	TPC_TO_LOOT_MULTIPLIER = 0.05,					-- Max loot in a navy is max troops * this
@@ -535,7 +535,7 @@ NEconomy = {
 	LOOT_PRESTIGE_MULT = 0.5,						-- Whenever you gain loot you also get prestige related to the loot
 	LOOT_EVERY_X_DAYS = 2,							-- Loot every this many days
 	LOOT_IDEAL_MIN_TROOPS = 1000,					-- Minimum troops for maximum loot, less than this scales down the amount looted
-	BUILDING_COST_MULT = 0.5,						-- Increases build cost of all buildings
+	BUILDING_COST_MULT = 0.0,						-- Increases build cost of all buildings
 },
 
 NDecadence = {
@@ -592,11 +592,11 @@ NMilitary = {
 	FLANKLEADER_PRESTIGE_PART = 0.125,				-- The % of the total prestige gained in the battle that each other flank leader will get
 	BATTLE_UNIT_OWNER_PRESTIGE_MULT = 0.5,			-- The % of the total prestige gained in the battle that will be divided among the participating unit owners
 	BATTLE_UNIT_OWNER_PIETY_MULT = 0.5,				-- The % of the total piety gained in the battle that will be divided among the participating unit owners
-	REINFORCE_RATE = 0.02,							-- Reinforce rate per year
+	REINFORCE_RATE = 0.03,							-- Reinforce rate per year
 	MERC_REINFORCE_RATE = 0.015,					-- The rate at which mercenaries and holy orders reinforce in the field
 	MERC_REINFORCE_RATE_WHEN_IDLE = 0.03,			-- The rate at which mercenaries and holy orders reinforce when not hired
 	GARRISON_REINFORCE_RATE_MULTIPLIER = 5,			-- The rate at which the garrison reinforce
-	LEVY_RAISED_REINFORCE_RATE_MULTIPLIER = 0.5,	-- The rate at which the garrison/levy reinforce when the levy is raised
+	LEVY_RAISED_REINFORCE_RATE_MULTIPLIER = 0.3,	-- The rate at which the garrison/levy reinforce when the levy is raised
 	BATTLE_PIETY_MULTIPLIER = 1.5,					-- Piety gain/loss multiplier. This is based on the prestige value, so a value of 1 gives a leader as much piety as he gains prestige from combat
 	SIEGE_PIETY_MULTIPLIER = 0.15,					-- Piety gain/loss multiplier for sieges
 	SIEGE_WEALTH_MULTIPLIER = 1,					-- Wealth gain/loss multiplier for sieges
@@ -654,7 +654,7 @@ NMilitary = {
 	LOOT_HOLDING_DESTRUCTION_ODDS = 20,				-- a holding with less than LOOT_HOLDING_DEST_MIN_SAFE buildings will be destroyed by looting
 	LOOT_HOLDING_BUILDING_DEST_ODDS = 10,			-- there is a 1 in this chance a random building is destroyed when looted
 	
-	RETINUE_FROM_REALMSIZE = 5.0,
+	RETINUE_FROM_REALMSIZE = 4.0,
 	RETINUE_INCREASE_PER_TECH = 0.5,
 	RETINUE_HIRE_COST_MULTIPLIER = 0.02,			-- Retinues are free to hire atm, but they cost alot to reinforce
 	RETINUE_REINFORCE_RATE = 0.05,
@@ -761,18 +761,18 @@ NMilitary = {
 NTechnology = {
 	POINTS_PER_ATTRIBUTE = 0.02,
 
-	BASE_NEIGHBOUR_SPREAD_BONUS = 0.2, 			-- bonus for each neighbour with the tech
+	BASE_NEIGHBOUR_SPREAD_BONUS = 0.15, 			-- bonus for each neighbour with the tech
 	NEIGHBOUR_SAME_RELIGON_GROUP_MULT = 1.3, 	-- multiplier to the above bonus if neighbour is of your religious group
-	BASE_DEMESNE_SPREAD_BONUS = 0.1, 			-- bonus for each other province in demesne with the tech
-	MAX_DEMESNE_BONUS = 0.3, 					-- maximum bonus from demesne
+	BASE_DEMESNE_SPREAD_BONUS = 0.05, 			-- bonus for each other province in demesne with the tech
+	MAX_DEMESNE_BONUS = 0.25, 					-- maximum bonus from demesne
 	FOCUS_BONUS = 1.5, 							-- bonus for the tech in each group set as the focus
 	TRADEPOST_SPREAD_BONUS = 0.002, 			-- Spread from trade posts
 	SPYACTION_SPREAD_BONUS = 0.006,				-- Spread from the target of the study technology spymaster action
 	
-	IDEAL_YEAR_LEVEL_0 = 700, 					-- the chance to get a progress to this level will increase after this date and decrease before it
+	IDEAL_YEAR_LEVEL_0 = 800, 					-- the chance to get a progress to this level will increase after this date and decrease before it
 	IDEAL_YEAR_LEVEL_8 = 1500,
 	IDEAL_YEAR_AHEAD_PENALTY = -0.2,			-- UNUSED
-	IDEAL_YEAR_AHEAD_PENALTY_INVEST = 0.3,		-- Percent increase in cost pre level ahead of ideal date
+	IDEAL_YEAR_AHEAD_PENALTY_INVEST = 0.25,		-- Percent increase in cost pre level ahead of ideal date
 	
 	PAGAN_HOME_ATTRITION_REMOVAL_LEVEL = 4.0,
 	

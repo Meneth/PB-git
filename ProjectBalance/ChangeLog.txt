@@ -1,6 +1,7 @@
 3.2.24
 	Fixed some potential issues with the Release/Execute All decisions
 	Fixed an issue that would cause Hungary to not lose its Crimean provinces when formed by a player
+	Reduced province to province tech spread somewhat
 	(No Ahistorical Empires) Fixed Khazaria not existing in 867
 	(867 start) Improved the Creation of Hungary Event. The Russian provinces they hold now end up in the hands of Russian rulers
 	(867 start) The province of Torki starts as Hungarian
