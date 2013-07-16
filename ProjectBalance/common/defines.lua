@@ -761,10 +761,10 @@ NMilitary = {
 NTechnology = {
 	POINTS_PER_ATTRIBUTE = 0.02,
 
-	BASE_NEIGHBOUR_SPREAD_BONUS = 0.15, 			-- bonus for each neighbour with the tech
+	BASE_NEIGHBOUR_SPREAD_BONUS = 0.1, 			-- bonus for each neighbour with the tech
 	NEIGHBOUR_SAME_RELIGON_GROUP_MULT = 1.3, 	-- multiplier to the above bonus if neighbour is of your religious group
-	BASE_DEMESNE_SPREAD_BONUS = 0.05, 			-- bonus for each other province in demesne with the tech
-	MAX_DEMESNE_BONUS = 0.25, 					-- maximum bonus from demesne
+	BASE_DEMESNE_SPREAD_BONUS = 0.01, 			-- bonus for each other province in demesne with the tech
+	MAX_DEMESNE_BONUS = 0.1, 					-- maximum bonus from demesne
 	FOCUS_BONUS = 1.5, 							-- bonus for the tech in each group set as the focus
 	TRADEPOST_SPREAD_BONUS = 0.002, 			-- Spread from trade posts
 	SPYACTION_SPREAD_BONUS = 0.006,				-- Spread from the target of the study technology spymaster action

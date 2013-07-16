@@ -59,7 +59,7 @@ province_base_values = {
 }
 
 coastal = {
-	tech_growth_modifier = 0.6
+	tech_growth_modifier = 1
 }
 
 non_coastal = {
@@ -412,7 +412,7 @@ castle = {
 	galleys = 2
 	levy_reinforce_rate = 1.25
 	land_organisation = 0.2
-	tech_growth_modifier = 0.06
+	tech_growth_modifier = 0.08
 	retinuesize = 50
 }
 
@@ -425,7 +425,7 @@ city = {
 	build_cost_modifier = 500
 	build_time_modifier = 730
 	land_organisation = 0.2
-	tech_growth_modifier = 0.06
+	tech_growth_modifier = 0.08
 }
 
 temple = {
@@ -438,7 +438,7 @@ temple = {
 	build_time_modifier = 730
 	levy_reinforce_rate = 0.25
 	land_organisation = 0.2
-	tech_growth_modifier = 0.06
+	tech_growth_modifier = 0.08
 }
 
 trade_post = {
