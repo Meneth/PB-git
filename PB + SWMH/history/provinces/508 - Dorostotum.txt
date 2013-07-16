@@ -1,0 +1,22 @@
+# 508 - Dorostotum
+
+# County Title
+title = c_dorostotum
+
+# Settlements
+max_settlements = 4
+
+b_maglizh = castle
+b_irinopolis = city
+#b_hisarya = castle
+#b_opan = castle
+#b_chirpan = castle
+#b_kazanlak = castle
+
+
+# Misc
+culture = bulgarian
+religion = orthodox
+
+# History
+950.1.1 = { religion = bogomilist }
