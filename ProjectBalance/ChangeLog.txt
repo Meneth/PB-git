@@ -6,10 +6,12 @@
 	Increased tech gain from centers of trade
 	The Warrior Cult building now reduces tech point game somewhat
 	The Warrior Cult building is no longer available to Reformed Pagans
+	Fixed a number of missing centers of trade, mainly in the 867 start
+	Stewardship no longer speeds up culture spread quite as much. Now reduces time to spread by at most 50% rather than 68%
+	Mongols cannot use the Tribal Invasion CB on other Mongols until year 1350
 	(No Ahistorical Empires) Fixed Khazaria not existing in 867
 	(867 start) Improved the Creation of Hungary Event. The Russian provinces they hold now end up in the hands of Russian rulers
 	(867 start) The province of Torki starts as Hungarian
-	Fixed a number of missing centers of trade, mainly in the 867 start
 
 3.2.23
 	Slowed down the regular culture spread events by about 30%

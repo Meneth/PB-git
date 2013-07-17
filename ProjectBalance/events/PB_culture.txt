@@ -90,19 +90,19 @@ province_event = {
 			owner = { NOT = { stewardship = 5 }}
 		}
 		modifier = {
-			factor = 0.75
+			factor = 0.84
 			owner = { stewardship = 10 }
 		}
 		modifier = {
-			factor = 0.75
+			factor = 0.84
 			owner = { stewardship = 11 }
 		}
 		modifier = {
-			factor = 0.75
+			factor = 0.84
 			owner = { stewardship = 12 }
 		}
 		modifier = {
-			factor = 0.75
+			factor = 0.84
 			owner = { stewardship = 13 }
 		}
 		modifier = {
@@ -294,19 +294,19 @@ province_event = {
 			owner = { NOT = { stewardship = 5 }}
 		}
 		modifier = {
-			factor = 0.75
+			factor = 0.84
 			owner = { stewardship = 10 }
 		}
 		modifier = {
-			factor = 0.75
+			factor = 0.84
 			owner = { stewardship = 11}
 		}
 		modifier = {
-			factor = 0.75
+			factor = 0.84
 			owner = { stewardship = 12 }
 		}
 		modifier = {
-			factor = 0.75
+			factor = 0.84
 			owner = { stewardship = 13 }
 		}
 		#Decentralized HRE
