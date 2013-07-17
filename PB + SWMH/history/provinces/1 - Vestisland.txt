@@ -14,11 +14,17 @@ b_husavik = city
 
 
 # Misc
-culture = norwegian
-religion = catholic
-
+culture = norse
+religion = norse_pagan
 
 # History
+867.1.1 = {
+	b_reykjavik = ca_shipyard_1
+}
+1000.1.1 = {
+	culture = norwegian
+	religion = catholic
+}
 
 
 1066.1.1 = { trade_post = b_oddaverjar }

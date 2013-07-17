@@ -22,4 +22,4 @@ culture = lettigallish
 religion = baltic_pagan
 
 # History
-1066.1.1 = { b_jelgava = ct_trade_post_1 }
+867.1.1 = { b_jelgava = ct_trade_post_1 }

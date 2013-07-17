@@ -23,7 +23,7 @@ culture = pommeranian
 religion = slavic_pagan
 
 # History
-1066.1.1 = { b_gdansk = ct_trade_post_1 }
+867.1.1 = { b_gdansk = ct_trade_post_1 }
 1178.1.1 = { b_lubiszewo = castle } 
 1185.1.1 = { religion = catholic }
 1227.1.1 = { trade_post = b_warendorp }

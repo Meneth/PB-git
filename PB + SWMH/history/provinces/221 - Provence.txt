@@ -19,7 +19,7 @@ culture = occitan
 religion = catholic
 
 # History
-1066.1.1 = {
+867.1.1 = {
 	b_marseille = ct_trade_post_1
 	b_marseille = ct_trade_post_2
 }

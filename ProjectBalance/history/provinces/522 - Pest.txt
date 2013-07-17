@@ -21,8 +21,8 @@ culture = avar
 religion = tengri_pagan
 
 # History
+867.1.1 = { b_kecskemet = ct_trade_post_1 }
 890.1.1 = { religion = catholic }
 950.1.1 = { culture = hungarian }
-1066.1.1 = { b_kecskemet = ct_trade_post_1 }
 1187.1.1 = { b_kiskunhalas = castle }
 

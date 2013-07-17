@@ -20,5 +20,5 @@ culture = swedish
 religion = norse_pagan
 
 # History
-1066.1.1 = { b_vaksala = ct_trade_post_1 }
+867.1.1 = { b_vaksala = ct_trade_post_1 }
 1090.1.1 = { religion = catholic }

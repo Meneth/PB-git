@@ -20,7 +20,7 @@ culture = saxon
 religion = catholic
 
 # History
-1066.1.1 = { b_southampton = ct_trade_post_1 }
+867.1.1 = { b_southampton = ct_trade_post_1 }
 1070.1.1 = { capital = b_st_swithun }
 1100.11.11 = { culture = english } 
 1337.1.1 = { b_andover = castle }

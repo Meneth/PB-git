@@ -20,7 +20,7 @@ religion = shiite
 
 # History
 
-1066.1.1 = { 
+867.1.1 = { 
 	b_shahriar = city
 	b_eslamshahr = temple
 	b_tehran = ct_trade_post_1

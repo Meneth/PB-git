@@ -21,7 +21,7 @@ religion = orthodox
 
 # History
 
-1066.1.1 = { 
+867.1.1 = { 
 	b_galata = ct_trade_post_1
 	b_galata = ct_trade_post_2
 	b_galata = ct_trade_post_3

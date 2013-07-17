@@ -23,6 +23,7 @@ religion = norse_pagan
 # History
 867.1.1 = {
 	b_birka = ct_marketplace_1
+	b_sigtuna = ct_trade_post_1
 }
 960.1.1 = {
 	b_birka = 0
@@ -33,7 +34,6 @@ religion = norse_pagan
 1066.1.1 = {
 	b_enkoping = city
 }
-1066.1.1 = { b_sigtuna = ct_trade_post_1 }
 1090.1.1 = { religion = catholic }
 #1187.1.1 = { b_enkoping = city }
 1249.1.1= { trade_post = b_wittenborg }

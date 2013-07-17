@@ -20,10 +20,10 @@ culture = bedouin_arabic
 religion = sunni
 
 # History
-1066.1.1 = { 
+867.1.1 = { b_aden = ct_trade_post_1 }
+1066.1.1 = {
 	capital = b_aden
 	trade_post = b_sulaihid
-	b_aden = ct_trade_post_1
 }
 1110.1.1 = { b_alawbhali = castle }
 1110.1.1 = { b_jaar = castle }

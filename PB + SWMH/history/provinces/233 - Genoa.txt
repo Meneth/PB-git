@@ -34,7 +34,7 @@ religion = catholic
 
 # History
 
-1066.1.1 = { 
+867.1.1 = { 
 	b_genoa = ct_trade_post_1
 	b_genoa = ct_trade_post_2
 	b_genoa = ct_trade_post_3
@@ -52,6 +52,8 @@ religion = catholic
 	b_chiavari = ca_militia_barracks_1
 	b_chiavari = ca_wall_1
 	b_chiavari = ca_wall_2
-        trade_post = b_doria
+}
+1066.1.1 = {
+    trade_post = b_doria
 }
 
