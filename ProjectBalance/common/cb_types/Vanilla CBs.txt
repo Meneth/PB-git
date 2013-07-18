@@ -3102,22 +3102,13 @@ crusade = {
 		}
 		OR = {
 			title = k_jerusalem
-			k_jerusalem = {
-				has_holder = yes
-				holder_scope = {
-					NOT = {
-						any_realm_province = {
-							any_neighbor_province = {
-								de_jure_liege_or_above = PREVPREVPREV
-								owner = {
-									religion_group = muslim
-								}
-							}
-						}
-					}
+			ROOT = { NOT = { religion_group = christian } }
+			FROM = {
+				any_realm_province = {
+					de_jure_liege_or_above = PREVPREV
+					religion = ROOT
 				}
 			}
-			ROOT = { NOT = { religion_group = christian } }
 		}
 		OR = {
 			has_holder = no
