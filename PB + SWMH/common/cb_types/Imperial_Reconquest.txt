@@ -99,9 +99,7 @@ imperial_reconquest = {
 			}
 			AND = {
 				OR = {
-					de_jure_liege_or_above = k_italy
-					de_jure_liege_or_above = k_patrimoniumpetri
-					de_jure_liege_or_above = k_venice
+					de_jure_liege_or_above = e_italy
 					de_jure_liege_or_above = k_syria
 					de_jure_liege_or_above = k_jerusalem
 					de_jure_liege_or_above = k_egypt
