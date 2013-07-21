@@ -1951,10 +1951,6 @@ e_germany = {
 	name_tier = king
 	short_name = yes
 	allow = {
-		NOT = {
-			e_hre = {
-				has_holder = yes
-			}
-		}
+		is_titular = no
 	}
 }
