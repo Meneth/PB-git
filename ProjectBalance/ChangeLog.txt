@@ -19,6 +19,7 @@
 	Reduced the size of Robert of Apulia's army somewhat
 	Added a Baqt province modifier to Cairo and all of Ethiopia giving a decent tax bonus in order to simulate the Baqt
 	The Baqt can now be violated by either party, removing the restrictions on war between Muslims and Ethiopians, but also removing the Baqt province modifiers
+	Fixed it being possible to exploit the prestige bonus from being assigned to a council by repeatedly resigning; the bonus checked for being fired rather than resigning
 	(Experimental) Crusades can now only be called on Jerusalem and kingdoms with at least one Catholic province in them
 	(No Ahistorical Empires) Fixed Khazaria not existing in 867, and being dejure part of Tartaria
 	(867 start) Improved the Creation of Hungary Event. The Russian provinces they hold now end up in the hands of Russian rulers

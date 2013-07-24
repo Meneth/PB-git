@@ -39,10 +39,7 @@ job_chancellor = {
 		if = {
 			limit = {
 				NOT = { 
-					has_opinion_modifier = {
-						who = FROM
-						modifier = opinion_fired_from_council
-					}
+					has_character_flag = council_prestige_bonus
 				}
 			}
 			if = {
@@ -61,6 +58,7 @@ job_chancellor = {
 				limit = { FROM = { tier = emperor } }
 				prestige = 200
 			}
+			set_character_flag = council_prestige_bonus
 		}
 		if = {
 			limit = {
@@ -111,10 +109,7 @@ job_marshal = {
 		if = {
 			limit = {
 				NOT = { 
-					has_opinion_modifier = {
-						who = FROM
-						modifier = opinion_fired_from_council
-					}
+					has_character_flag = council_prestige_bonus
 				}
 			}
 			if = {
@@ -133,6 +128,7 @@ job_marshal = {
 				limit = { FROM = { tier = emperor } }
 				prestige = 200
 			}
+			set_character_flag = council_prestige_bonus
 		}
 		if = {
 			limit = {
@@ -192,10 +188,7 @@ job_treasurer = {
 		if = {
 			limit = {
 				NOT = { 
-					has_opinion_modifier = {
-						who = FROM
-						modifier = opinion_fired_from_council
-					}
+					has_character_flag = council_prestige_bonus
 				}
 			}
 			if = {
@@ -214,6 +207,7 @@ job_treasurer = {
 				limit = { FROM = { tier = emperor } }
 				prestige = 200
 			}
+			set_character_flag = council_prestige_bonus
 		}
 		if = {
 			limit = {
@@ -255,10 +249,7 @@ job_spymaster = {
 		if = {
 			limit = {
 				NOT = { 
-					has_opinion_modifier = {
-						who = FROM
-						modifier = opinion_fired_from_council
-					}
+					has_character_flag = council_prestige_bonus
 				}
 			}
 			if = {
@@ -277,6 +268,7 @@ job_spymaster = {
 				limit = { FROM = { tier = emperor } }
 				prestige = 100
 			}
+			set_character_flag = council_prestige_bonus
 		}
 		if = {
 			limit = {
@@ -359,10 +351,7 @@ job_spiritual = {
 		if = {
 			limit = {
 				NOT = { 
-					has_opinion_modifier = {
-						who = FROM
-						modifier = opinion_fired_from_council
-					}
+					has_character_flag = council_prestige_bonus
 				}
 			}
 			if = {
@@ -381,6 +370,7 @@ job_spiritual = {
 				limit = { FROM = { tier = emperor } }
 				prestige = 200
 			}
+			set_character_flag = council_prestige_bonus
 		}
 		if = {
 			limit = {
