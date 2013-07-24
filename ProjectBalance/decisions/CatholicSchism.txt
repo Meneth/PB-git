@@ -14,7 +14,6 @@ decisions = {
 			NOT = { has_global_flag = schism_mended }
 		}
 		allow = {
-			piety = 2000
 			religion_authority = 0.9
 			OR = {
 				AND = {
@@ -26,6 +25,7 @@ decisions = {
 					b_jerusalem = { holder_scope = { religion = catholic } }
 					completely_controls = c_alexandria
 					b_alexandria = { holder_scope = { religion = catholic } }
+					piety = 2000
 				}
 				AND = {
 					NOT = {
