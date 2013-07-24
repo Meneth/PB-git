@@ -15,6 +15,7 @@
 	Eliminated an edge-case where the wrong characters would be imprisoned after a siege
 	Eliminated an edge-case where the wrong characters would end up duelling in battle
 	Added Georgia, Armenia, Croatia, and Sicily to the list of kingdoms Byzantines cannot form
+	The schism can now also be mended by a Catholic who controls Rome if there are no Orthodox empires
 	(Experimental) Crusades can now only be called on Jerusalem and kingdoms with at least one Catholic province in them
 	(No Ahistorical Empires) Fixed Khazaria not existing in 867
 	(867 start) Improved the Creation of Hungary Event. The Russian provinces they hold now end up in the hands of Russian rulers
