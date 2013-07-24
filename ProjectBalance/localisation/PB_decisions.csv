@@ -29,3 +29,5 @@ release_prisoners_desc;Release everyone in your dungeons for free.;;;;;;;;;;;;;x
 execute_prisoners;Execute All Prisoners;;;;;;;;;;;;;x
 execute_prisoners_desc;Execute everyone in your dungeons.;;;;;;;;;;;;;x
 become_kinslayer_tooltip;You'll be considered a kinslayer.\n;;;;;;;;;;;;;x
+violate_baqt;Violate the Baqt;;;;;;;;;;;;;x
+violate_baqt_desc;By violating the Baqt, free trade between Muslims and Ethiopians will cease, and they will once more be allowed to attack one another.;;;;;;;;;;;;;x

@@ -105,3 +105,6 @@ successful_sally;Defending troops gets §G10.0%§! morale.\nDefending troops take 
 successful_sally_attacker;Attacking troops take §R2.5%§! losses.\n§GEnemy:§! Defending troops gets §G10.0%§! morale.\nDefending troops take §R2.5%§! losses.;;;;;;;;;;;;;x
 failed_sally;Defending troops gets §R-10.0%§! morale.\nDefending troops take §R5.0%§! losses.\n§GEnemy:§! Attacking troops take §R1.25%§! losses.;;;;;;;;;;;;;x
 siege_disease;§GEnemy:§! Attacking troops take §R2.5%§! losses.;;;;;;;;;;;;;x
+meneth.601;The Baqt;;;;;;;;;;;;;x
+meneth.601.desc;The Baqt was an agreement between the Ethiopian kingdom of Makuria and the Muslim rulers of Egypt. In exchange for free trade between the peoples, they were to live in peace with one another. Maintaining the Baqt provides safety and revenue, but prevents expansion. An ambitious ruler can seek to violate the Baqt and earn power through war rather than trade.;;;;;;;;;;;;;x
+meneth.601.a;Interesting;;;;;;;;;;;;;x

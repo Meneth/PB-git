@@ -3036,14 +3036,17 @@ crusade = {
 				}
 			}
 		}
-		FROM = {
-			NOT = { religion = miaphysite }
-			NOT = {
-				AND = {
-					religion = orthodox
-					culture_group = east_african
+		OR = {
+			FROM = {
+				NOT = { religion = miaphysite }
+				NOT = {
+					AND = {
+						religion = orthodox
+						culture_group = east_african
+					}
 				}
 			}
+			has_global_flag = violated_baqt
 		}
 	}
 	can_use = {
@@ -3459,6 +3462,7 @@ religious = {
 					}
 				}
 				has_global_flag = rapid_conquest
+				has_global_flag = violated_baqt
 			}
 		}
 	}
@@ -7374,14 +7378,17 @@ county_conquest = {
 					}
 				}
 			}
-			NOT = {
-				FROM = {
-					OR = {
-						religion = miaphysite
-						religion = orthodox
+			OR = {
+				NOT = {
+					FROM = {
+						OR = {
+							religion = miaphysite
+							religion = orthodox
+						}
+						culture_group = east_african
 					}
-					culture_group = east_african
 				}
+				has_global_flag = violated_baqt
 			}
 			OR = {
 				religion_group = FROM
@@ -7756,14 +7763,17 @@ muslim_invasion = {
 			}
 		}
 		FROM = { NOT = { religion_group = pagan_group } }
-		NOT = {
-			FROM = {
-				OR = {
-					religion = miaphysite
-					religion = orthodox
+		OR = {
+			NOT = {
+				FROM = {
+					OR = {
+						religion = miaphysite
+						religion = orthodox
+					}
+					culture_group = east_african
 				}
-				culture_group = east_african
 			}
+			has_global_flag = violated_baqt
 		}
 		OR = {
 			NOT = {
