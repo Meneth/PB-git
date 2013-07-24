@@ -9,7 +9,7 @@ e_carpathia = {
 	tengri_pagan_reformed = 100
 	slavic_pagan_reformed = 50 # Crusade target weight
 	
-	#Some color changes, otherwise unchanged
+	#Some color changes, otherwise unchanged. Not formable by Byzantines
 	k_croatia = {
 		color={ 165 0 15 }
 		color2={ 200 0 0 }
@@ -20,7 +20,11 @@ e_carpathia = {
 		
 		orthodox = 300 # Crusade target weight
 		catholic = 300 # Crusade target weight
-	
+		
+		allow = {
+			liege = { NOT = { has_landed_title = e_byzantium } }
+		}
+		
 		d_slavonia = {
 			color={ 150 10 10 }
 			color2={ 255 255 255 }
