@@ -2407,10 +2407,27 @@ character_event = {
 	}
 }
 
+#Formation of German HRE
 narrative_event = {
 	id = meneth.427
 	title = meneth.427
 	desc = meneth.427.desc
+	picture = GFX_evt_battle
+	
+	major = yes
+	only_rulers = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = OK
+	}
+}
+
+#Formation of French HRE
+narrative_event = {
+	id = meneth.437
+	title = meneth.437
+	desc = meneth.437.desc
 	picture = GFX_evt_battle
 	
 	major = yes
@@ -2462,3 +2479,4 @@ character_event = {
 		set_global_flag = benevento_returned
 	}
 }
+#meneth.437 is taken
