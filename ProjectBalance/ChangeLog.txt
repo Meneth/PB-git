@@ -20,6 +20,8 @@
 	Added a Baqt province modifier to Cairo and all of Ethiopia giving a decent tax bonus in order to simulate the Baqt
 	The Baqt can now be violated by either party, removing the restrictions on war between Muslims and Ethiopians, but also removing the Baqt province modifiers
 	Fixed it being possible to exploit the prestige bonus from being assigned to a council by repeatedly resigning; the bonus checked for being fired rather than resigning
+	Cultural buildings are now a lot more important. The amount of troops given has been doubled, but levies of all other types are slightly reduced. This will hopefully result in different cultures having noticeably different army compositions
+	Added a Basque culture building, giving heavy infantry
 	(Experimental) Crusades can now only be called on Jerusalem and kingdoms with at least one Catholic province in them
 	(No Ahistorical Empires) Fixed Khazaria not existing in 867, and being dejure part of Tartaria
 	(867 start) Improved the Creation of Hungary Event. The Russian provinces they hold now end up in the hands of Russian rulers

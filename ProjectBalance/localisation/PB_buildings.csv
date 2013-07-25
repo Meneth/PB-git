@@ -40,6 +40,13 @@ ca_culture_group_south_slavic_0;Gusar Training Ground;;;;;;;;;;;;;x
 ca_culture_group_south_slavic_5;Gusar Training Ground;;;;;;;;;;;;;x
 ca_culture_dutch_0;Goedendag Militia Quarters;;;;;;;;;;;;;x
 ca_culture_dutch_5;Goedendag Militia Quarters;;;;;;;;;;;;;x
+ca_culture_basque_0;Kuartela;;;;;;;;;;;;;x
+ca_culture_basque_1;Kuartela;;;;;;;;;;;;;x
+ca_culture_basque_2;Kuartela;;;;;;;;;;;;;x
+ca_culture_basque_3;Kuartela;;;;;;;;;;;;;x
+ca_culture_basque_4;Kuartela;;;;;;;;;;;;;x
+ca_culture_basque_5;Kuartela;;;;;;;;;;;;;x
+ca_culture_basque_1_desc;The Basque were renowned for their powerful heavy infantry.;;;;;;;;;;;;;x
 retinue_disabler;This building prevents barons and vassalized single-province counts from having retinues. If you're seeing it in a count or above's holding, please report it as a bug if it persists for more than a month.;;;;;;;;;;;;;x
 ca_retinues;Retinue Disabler;;;;;;;;;;;;;x
 ct_retinues;Retinue Disabler;;;;;;;;;;;;;x
