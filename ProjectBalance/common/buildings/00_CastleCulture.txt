@@ -110,7 +110,7 @@ castle = {
 			}
 		}
 		trigger = {
-			TECH_CASTLE_CONSTRUCTION = 4
+			TECH_CASTLE_CONSTRUCTION = 3
 			FROM = { culture_group = ROOT }
 		}
 		upgrades_from = ca_culture_dutch_2
@@ -141,7 +141,7 @@ castle = {
 			}
 		}
 		trigger = {
-			TECH_CASTLE_CONSTRUCTION = 6
+			TECH_CASTLE_CONSTRUCTION = 4
 			FROM = { culture = ROOT }
 		}
 		upgrades_from = ca_culture_dutch_3
@@ -172,7 +172,7 @@ castle = {
 			}
 		}
 		trigger = {
-			TECH_CASTLE_CONSTRUCTION = 8
+			TECH_CASTLE_CONSTRUCTION = 6
 			FROM = { culture = ROOT }
 		}
 		upgrades_from = ca_culture_dutch_4
@@ -268,7 +268,7 @@ castle = {
 			culture_group = east_african
 		}
 		trigger = {
-			TECH_CASTLE_CONSTRUCTION = 4
+			TECH_CASTLE_CONSTRUCTION = 3
 			FROM = { culture_group = ROOT }
 		}
 		upgrades_from = ca_culture_ethiopian_2
@@ -295,7 +295,7 @@ castle = {
 			culture_group = east_african
 		}
 		trigger = {
-			TECH_CASTLE_CONSTRUCTION = 6
+			TECH_CASTLE_CONSTRUCTION = 4
 			FROM = { culture = ROOT }
 		}
 		upgrades_from = ca_culture_ethiopian_3
@@ -322,7 +322,7 @@ castle = {
 			culture_group = east_african
 		}
 		trigger = {
-			TECH_CASTLE_CONSTRUCTION = 8
+			TECH_CASTLE_CONSTRUCTION = 6
 			FROM = { culture = ROOT }
 		}
 		upgrades_from = ca_culture_ethiopian_4
@@ -426,7 +426,7 @@ castle = {
 			culture_group = west_african
 		}
 		trigger = {
-			TECH_CASTLE_CONSTRUCTION = 4
+			TECH_CASTLE_CONSTRUCTION = 3
 			FROM = { culture_group = ROOT }
 		}
 		upgrades_from = ca_culture_west_african_2
@@ -454,7 +454,7 @@ castle = {
 			culture_group = west_african
 		}
 		trigger = {
-			TECH_CASTLE_CONSTRUCTION = 6
+			TECH_CASTLE_CONSTRUCTION = 4
 			FROM = { culture = ROOT }
 		}
 		upgrades_from = ca_culture_west_african_3
@@ -482,7 +482,7 @@ castle = {
 			culture_group = west_african
 		}
 		trigger = {
-			TECH_CASTLE_CONSTRUCTION = 8
+			TECH_CASTLE_CONSTRUCTION = 6
 			FROM = { culture = ROOT }
 		}
 		upgrades_from = ca_culture_west_african_4
@@ -612,7 +612,7 @@ castle = {
 			}
 		}
 		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 4
+			TECH_CASTLE_CONSTRUCTION = 3
 			FROM = { culture_group = ROOT }
 		}
 		upgrades_from = ca_culture_frank_norman_german_2
@@ -647,7 +647,7 @@ castle = {
 			}
 		}
 		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 6
+			TECH_CASTLE_CONSTRUCTION = 4
 			FROM = { culture = ROOT }
 		}
 		upgrades_from = ca_culture_frank_norman_german_3
@@ -682,7 +682,7 @@ castle = {
 			}
 		}
 		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 8
+			TECH_CASTLE_CONSTRUCTION = 6
 			FROM = { culture = ROOT }
 		}
 		upgrades_from = ca_culture_frank_norman_german_4
@@ -803,7 +803,7 @@ castle = {
 			}
 		}
 		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 4
+			TECH_CASTLE_CONSTRUCTION = 3
 			FROM = { culture_group = ROOT }
 		}
 		upgrades_from = ca_culture_group_altaic_2
@@ -836,7 +836,7 @@ castle = {
 			}
 		}
 		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 6
+			TECH_CASTLE_CONSTRUCTION = 4
 			FROM = { culture = ROOT }
 		}
 		upgrades_from = ca_culture_group_altaic_3
@@ -869,7 +869,7 @@ castle = {
 			}
 		}
 		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 8
+			TECH_CASTLE_CONSTRUCTION = 6
 			FROM = { culture = ROOT }
 		}
 		upgrades_from = ca_culture_group_altaic_4
@@ -974,7 +974,7 @@ castle = {
 			culture_group = arabic
 		}
 		trigger = {
-			TECH_CASTLE_CONSTRUCTION = 4
+			TECH_CASTLE_CONSTRUCTION = 3
 			FROM = { culture_group = ROOT }
 		}
 		upgrades_from = ca_culture_group_arabic_2
@@ -1002,7 +1002,7 @@ castle = {
 			culture_group = arabic
 		}
 		trigger = {
-			TECH_CASTLE_CONSTRUCTION = 6
+			TECH_CASTLE_CONSTRUCTION = 4
 			FROM = { culture = ROOT }
 		}
 		upgrades_from = ca_culture_group_arabic_3
@@ -1030,7 +1030,7 @@ castle = {
 			culture_group = arabic
 		}
 		trigger = {
-			TECH_CASTLE_CONSTRUCTION = 8
+			TECH_CASTLE_CONSTRUCTION = 6
 			FROM = { culture = ROOT }
 		}
 		upgrades_from = ca_culture_group_arabic_4
@@ -1151,7 +1151,7 @@ castle = {
 			}
 		}
 		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 4
+			TECH_CASTLE_CONSTRUCTION = 3
 			FROM = { culture_group = ROOT }
 		}
 		upgrades_from = ca_culture_group_baltic_2
@@ -1184,7 +1184,7 @@ castle = {
 			}
 		}
 		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 6
+			TECH_CASTLE_CONSTRUCTION = 4
 			FROM = { culture = ROOT }
 		}
 		upgrades_from = ca_culture_group_baltic_3
@@ -1217,7 +1217,7 @@ castle = {
 			}
 		}
 		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 8
+			TECH_CASTLE_CONSTRUCTION = 6
 			FROM = { culture = ROOT }
 		}
 		upgrades_from = ca_culture_group_baltic_4
@@ -1322,7 +1322,7 @@ castle = {
 			culture_group = byzantine
 		}
 		trigger = {
-			TECH_CASTLE_CONSTRUCTION = 4
+			TECH_CASTLE_CONSTRUCTION = 3
 			FROM = { culture_group = ROOT }
 		}
 		upgrades_from = ca_culture_group_byzantine_2
@@ -1350,7 +1350,7 @@ castle = {
 			culture_group = byzantine
 		}
 		trigger = {
-			TECH_CASTLE_CONSTRUCTION = 6
+			TECH_CASTLE_CONSTRUCTION = 4
 			FROM = { culture = ROOT }
 		}
 		upgrades_from = ca_culture_group_byzantine_3
@@ -1378,7 +1378,7 @@ castle = {
 			culture_group = byzantine
 		}
 		trigger = {
-			TECH_CASTLE_CONSTRUCTION = 8
+			TECH_CASTLE_CONSTRUCTION = 6
 			FROM = { culture = ROOT }
 		}
 		upgrades_from = ca_culture_group_byzantine_4
@@ -1457,7 +1457,7 @@ castle = {
 			NOT = { culture = occitan }
 		}
 		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 4
+			TECH_CASTLE_CONSTRUCTION = 2
 			FROM = { culture_group = ROOT }
 		}
 		upgrades_from = ca_culture_group_iberian_1
@@ -1485,7 +1485,7 @@ castle = {
 			NOT = { culture = occitan }
 		}
 		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 4
+			TECH_CASTLE_CONSTRUCTION = 3
 			FROM = { culture_group = ROOT }
 		}
 		upgrades_from = ca_culture_group_iberian_2
@@ -1513,7 +1513,7 @@ castle = {
 			NOT = { culture = occitan }
 		}
 		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 6
+			TECH_CASTLE_CONSTRUCTION = 4
 			FROM = { culture = ROOT }
 		}
 		upgrades_from = ca_culture_group_iberian_3
@@ -1541,7 +1541,7 @@ castle = {
 			NOT = { culture = occitan }
 		}
 		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 8
+			TECH_CASTLE_CONSTRUCTION = 6
 			FROM = { culture = ROOT }
 		}
 		upgrades_from = ca_culture_group_iberian_4
@@ -1619,7 +1619,7 @@ castle = {
 			NOT = { culture = occitan }
 		}
 		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 4
+			TECH_CASTLE_CONSTRUCTION = 2
 			FROM = { culture_group = ROOT }
 		}
 		upgrades_from = ca_culture_basque_1
@@ -1647,7 +1647,7 @@ castle = {
 			NOT = { culture = occitan }
 		}
 		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 4
+			TECH_CASTLE_CONSTRUCTION = 3
 			FROM = { culture_group = ROOT }
 		}
 		upgrades_from = ca_culture_basque_2
@@ -1675,7 +1675,7 @@ castle = {
 			NOT = { culture = occitan }
 		}
 		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 6
+			TECH_CASTLE_CONSTRUCTION = 4
 			FROM = { culture = ROOT }
 		}
 		upgrades_from = ca_culture_basque_3
@@ -1703,7 +1703,7 @@ castle = {
 			NOT = { culture = occitan }
 		}
 		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 8
+			TECH_CASTLE_CONSTRUCTION = 6
 			FROM = { culture = ROOT }
 		}
 		upgrades_from = ca_culture_basque_4
@@ -1821,7 +1821,7 @@ castle = {
 			}
 		}
 		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 4
+			TECH_CASTLE_CONSTRUCTION = 3
 			FROM = { culture_group = ROOT }
 		}
 		upgrades_from = ca_culture_group_north_germanic_2
@@ -1853,7 +1853,7 @@ castle = {
 			}
 		}
 		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 6
+			TECH_CASTLE_CONSTRUCTION = 4
 			FROM = { culture = ROOT }
 		}
 		upgrades_from = ca_culture_group_north_germanic_3
@@ -1885,7 +1885,7 @@ castle = {
 			}
 		}
 		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 8
+			TECH_CASTLE_CONSTRUCTION = 6
 			FROM = { culture = ROOT }
 		}
 		upgrades_from = ca_culture_group_north_germanic_4
@@ -1989,7 +1989,7 @@ castle = {
 			culture_group = south_slavic
 		}
 		trigger = {
-			TECH_CASTLE_CONSTRUCTION = 4
+			TECH_CASTLE_CONSTRUCTION = 3
 			FROM = { culture_group = ROOT }
 		}
 		upgrades_from = ca_culture_group_south_slavic_2
@@ -2017,7 +2017,7 @@ castle = {
 			culture_group = south_slavic
 		}
 		trigger = {
-			TECH_CASTLE_CONSTRUCTION = 6
+			TECH_CASTLE_CONSTRUCTION = 4
 			FROM = { culture = ROOT }
 		}
 		upgrades_from = ca_culture_group_south_slavic_3
@@ -2045,7 +2045,7 @@ castle = {
 			culture_group = south_slavic
 		}
 		trigger = {
-			TECH_CASTLE_CONSTRUCTION = 8
+			TECH_CASTLE_CONSTRUCTION = 6
 			FROM = { culture = ROOT }
 		}
 		upgrades_from = ca_culture_group_south_slavic_4
@@ -2166,7 +2166,7 @@ castle = {
 			}
 		}
 		trigger = {
-			TECH_CASTLE_CONSTRUCTION = 4
+			TECH_CASTLE_CONSTRUCTION = 3
 			FROM = { culture_group = ROOT }
 		}
 		upgrades_from = ca_culture_hungarian_2
@@ -2199,7 +2199,7 @@ castle = {
 			}
 		}
 		trigger = {
-			TECH_CASTLE_CONSTRUCTION = 6
+			TECH_CASTLE_CONSTRUCTION = 4
 			FROM = { culture = ROOT }
 		}
 		upgrades_from = ca_culture_hungarian_3
@@ -2232,7 +2232,7 @@ castle = {
 			}
 		}
 		trigger = {
-			TECH_CASTLE_CONSTRUCTION = 8
+			TECH_CASTLE_CONSTRUCTION = 6
 			FROM = { culture = ROOT }
 		}
 		upgrades_from = ca_culture_hungarian_4
@@ -2334,7 +2334,7 @@ castle = {
 			culture = irish
 		}
 		trigger = {
-			TECH_CASTLE_CONSTRUCTION = 4
+			TECH_CASTLE_CONSTRUCTION = 3
 			FROM = { culture_group = ROOT }
 		}
 		upgrades_from = ca_culture_irish_2
@@ -2361,7 +2361,7 @@ castle = {
 			culture = irish
 		}
 		trigger = {
-			TECH_CASTLE_CONSTRUCTION = 6
+			TECH_CASTLE_CONSTRUCTION = 4
 			FROM = { culture = ROOT }
 		}
 		upgrades_from = ca_culture_irish_3
@@ -2388,7 +2388,7 @@ castle = {
 			culture = irish
 		}
 		trigger = {
-			TECH_CASTLE_CONSTRUCTION = 8
+			TECH_CASTLE_CONSTRUCTION = 6
 			FROM = { culture = ROOT }
 		}
 		upgrades_from = ca_culture_irish_4
@@ -2508,7 +2508,7 @@ castle = {
 			}
 		}
 		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 4
+			TECH_CASTLE_CONSTRUCTION = 3
 			FROM = { culture_group = ROOT }
 		}
 		upgrades_from = ca_culture_italian_2
@@ -2540,7 +2540,7 @@ castle = {
 			}
 		}
 		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 6
+			TECH_CASTLE_CONSTRUCTION = 4
 			FROM = { culture = ROOT }
 		}
 		upgrades_from = ca_culture_italian_3
@@ -2572,7 +2572,7 @@ castle = {
 			}
 		}
 		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 8
+			TECH_CASTLE_CONSTRUCTION = 6
 			FROM = { culture = ROOT }
 		}
 		upgrades_from = ca_culture_italian_4
@@ -2678,7 +2678,7 @@ castle = {
 			culture = russian
 		}
 		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 4
+			TECH_CASTLE_CONSTRUCTION = 3
 			FROM = { culture_group = ROOT }
 		}
 		upgrades_from = ca_culture_russian_2
@@ -2706,7 +2706,7 @@ castle = {
 			culture = russian
 		}
 		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 6
+			TECH_CASTLE_CONSTRUCTION = 4
 			FROM = { culture = ROOT }
 		}
 		upgrades_from = ca_culture_russian_3
@@ -2734,7 +2734,7 @@ castle = {
 			culture = russian
 		}
 		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 8
+			TECH_CASTLE_CONSTRUCTION = 6
 			FROM = { culture = ROOT }
 		}
 		upgrades_from = ca_culture_russian_4
@@ -2850,7 +2850,7 @@ castle = {
 			}
 		}
 		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 4
+			TECH_CASTLE_CONSTRUCTION = 3
 			FROM = { culture_group = ROOT }
 		}
 		upgrades_from = ca_culture_saxon_english_2
@@ -2880,7 +2880,7 @@ castle = {
 			}
 		}
 		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 6
+			TECH_CASTLE_CONSTRUCTION = 4
 			FROM = { culture = ROOT }
 		}
 		upgrades_from = ca_culture_saxon_english_3
@@ -2910,7 +2910,7 @@ castle = {
 			}
 		}
 		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 8
+			TECH_CASTLE_CONSTRUCTION = 6
 			FROM = { culture = ROOT }
 		}
 		upgrades_from = ca_culture_saxon_english_4
@@ -3018,7 +3018,7 @@ castle = {
 			culture = scottish
 		}
 		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 4
+			TECH_CASTLE_CONSTRUCTION = 3
 			FROM = { culture_group = ROOT }
 		}
 		upgrades_from = ca_culture_scottish_2
@@ -3048,7 +3048,7 @@ castle = {
 			culture = scottish
 		}
 		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 6
+			TECH_CASTLE_CONSTRUCTION = 4
 			FROM = { culture = ROOT }
 		}
 		upgrades_from = ca_culture_scottish_3
@@ -3078,7 +3078,7 @@ castle = {
 			culture = scottish
 		}
 		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 8
+			TECH_CASTLE_CONSTRUCTION = 6
 			FROM = { culture = ROOT }
 		}
 		upgrades_from = ca_culture_scottish_4
