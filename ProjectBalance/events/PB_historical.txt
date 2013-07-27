@@ -2426,7 +2426,7 @@ narrative_event = {
 #Formation of French HRE
 narrative_event = {
 	id = meneth.437
-	title = meneth.437
+	title = meneth.427
 	desc = meneth.437.desc
 	picture = GFX_evt_battle
 	
