@@ -17,6 +17,8 @@
 	Added a Basque culture building, giving heavy infantry
 	Reduced the tech requirements of the last three tiers of cultural buildings
 	(Experimental) Crusades can now only be called on Jerusalem and kingdoms with at least one Catholic province in them
+	(867 start) Improved the Creation of Hungary Event. The Russian provinces they hold now end up in the hands of Russian rulers
+	(867 start) The province of Torki starts as Hungarian
 	
 Fixes:
 	Fixed some potential issues with the Release/Execute All decisions
@@ -24,13 +26,9 @@ Fixes:
 	Fixed a number of missing centers of trade, mainly in the 867 start
 	The "German Realm" empire can no longer be created except by event
 	Eliminated an edge-case where the wrong characters would be imprisoned after a siege
-	Eliminated an edge-case where the wrong characters would end up duelling in battle
+	Eliminated an edge-case where the wrong characters would end up dueling in battle
 	Fixed it being possible to exploit the prestige bonus from being assigned to a council by repeatedly resigning; the bonus checked for being fired rather than resigning
-	
-Modules:
 	(No Ahistorical Empires) Fixed Khazaria not existing in 867, and being dejure part of Tartaria
-	(867 start) Improved the Creation of Hungary Event. The Russian provinces they hold now end up in the hands of Russian rulers
-	(867 start) The province of Torki starts as Hungarian
 	(867 start) If the French form the HRE the narrative event will now say "French and Italian lands" rather than "German and Italian"
 	(PB+SWMH) Fixed the Papacy not being targetable for Imperial Reconquest if it exists dejure
 
