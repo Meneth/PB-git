@@ -1024,25 +1024,6 @@ character_event = {
 		add_trait = excommunicated
 	}
 }
-#Fix immortal
-character_event = {
-	id = meneth.211
-	
-	desc = meneth.210.desc
-	picture = GFX_evt_battle
-	border = GFX_event_normal_frame_religion
-	
-	trigger = {
-		trait = immortal
-		NOT = { has_global_flag = immortals }
-		ai = yes
-	}
-	
-	option = {
-		name = OK
-		remove_trait = immortal
-	}
-}
 #Remove tournament flag
 character_event = {
 	id = meneth.212
@@ -1250,3 +1231,4 @@ character_event = {
 	}
 }
 #meneth.218 taken
+#meneth.211 free

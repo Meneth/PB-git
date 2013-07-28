@@ -19,7 +19,7 @@
 	(Experimental) Crusades can now only be called on Jerusalem and kingdoms with at least one Catholic province in them
 	(867 start) Improved the Creation of Hungary Event. The Russian provinces they hold now end up in the hands of Russian rulers
 	(867 start) The province of Torki starts as Hungarian
-	
+
 Fixes:
 	Fixed some potential issues with the Release/Execute All decisions
 	Fixed an issue that would cause Hungary to not lose its Crimean provinces when formed by a player
