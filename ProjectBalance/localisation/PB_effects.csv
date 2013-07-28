@@ -1,6 +1,6 @@
 #CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
 religious_defense;Religious Defense;Religious Defense;Religious Defense;;Religious Defense;;;;;;;;;x
-desc_religious_defense;We're defending against a holy war. Everyone is doing what they can to fend of the invaders.;We're defending against a holy war. Everyone is doing what they can to fend of the invaders.;We're defending against a holy war. Everyone is doing what they can to fend of the invaders.;;We're defending against a holy war. Everyone is doing what they can to fend of the invaders.;;;;;;;;;x
+desc_religious_defense;We're defending against a holy war. Everyone is doing what they can to fend off the invaders.;We're defending against a holy war. Everyone is doing what they can to fend of the invaders.;We're defending against a holy war. Everyone is doing what they can to fend of the invaders.;;We're defending against a holy war. Everyone is doing what they can to fend of the invaders.;;;;;;;;;x
 disorganized;Disorganized;Disorganized;Disorganized;;Disorganized;;;;;;;;;x
 desc_disorganized;We're rather disorganized at the moment.;;We're rather disorganized at the moment.;;We're rather disorganized at the moment.;;;We're rather disorganized at the moment.;;;;;;;;;x
 muslim_merchant_republic;Muslim Merchant Republic;;;;;;;;;;;;;x
@@ -22,3 +22,4 @@ decentralized_hre;Decentralized HRE;;;;;;;;;;;;;x
 theme_system;Decayed Theme System;;;;;;;;;;;;;x
 theme_system_2;Intact Theme System;;;;;;;;;;;;;x
 launched_subjugation;Subjugation Cooldown;;;;;;;;;;;;;x
+baqt;Baqt;;;;;;;;;;;;;x

@@ -21,7 +21,7 @@ culture = german
 religion = catholic
 
 # History
-1066.1.1 = {
+867.1.1 = {
 	b_dietz = ct_trade_post_1
 	b_dietz = ct_trade_post_2
 }

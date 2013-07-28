@@ -25,5 +25,5 @@ culture = andalusian_arabic
 religion = sunni
 
 # History
-1066.1.1 = { b_algericas = ct_trade_post_1 }
+867.1.1 = { b_algeciras = ct_trade_post_1 }
 1211.1.1 = { trade_post = b_embriaco }

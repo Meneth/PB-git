@@ -20,6 +20,6 @@ culture = polish
 religion = slavic_pagan
 
 # History
+867.1.1 = { b_tarnow = ct_trade_post_1 }
 990.1.1 = { religion = catholic }
-1066.1.1 = { b_tarnow = ct_trade_post_1 }
 1187.1.1 = { b_kielce = city }

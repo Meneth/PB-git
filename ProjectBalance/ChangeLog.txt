@@ -1,3 +1,37 @@
+3.2.24
+	Made much of Bulgaria Bogomilist after year 950, as it was historically a Bogomilist stronghold
+	Toned down province to province spread significantly
+	Increased tech gain from centers of trade
+	The Warrior Cult building now reduces tech point game somewhat
+	The Warrior Cult building is no longer available to Reformed Pagans
+	Stewardship no longer speeds up culture spread quite as much. Now reduces time to spread by at most 50% rather than 68%
+	Mongols cannot use the Tribal Invasion CB on other Mongols until year 1350
+	Vassals will always provide a general for their levies regardless of their opinion of their liege. This should ensure fewer leaderless battles
+	Made Judaism blue and Zoroastrianism red
+	Added Georgia, Armenia, Croatia, and Sicily to the list of kingdoms Byzantines cannot form
+	The schism can now also be mended by a Catholic who controls Rome if there are no Orthodox empires
+	Reduced the size of Robert of Apulia's army somewhat
+	Added a Baqt province modifier to Cairo and all of Ethiopia giving a decent tax bonus in order to simulate the Baqt
+	The Baqt can now be violated by either party, removing the restrictions on war between Muslims and Ethiopians, but also removing the Baqt province modifiers
+	Cultural buildings are now a lot more important. The amount of troops given has been doubled, but levies of all other types are slightly reduced. This will hopefully result in different cultures having noticeably different army compositions
+	Added a Basque culture building, giving heavy infantry
+	Reduced the tech requirements of the last three tiers of cultural buildings
+	(Experimental) Crusades can now only be called on Jerusalem and kingdoms with at least one Catholic province in them
+	(867 start) Improved the Creation of Hungary Event. The Russian provinces they hold now end up in the hands of Russian rulers
+	(867 start) The province of Torki starts as Hungarian
+	
+Fixes:
+	Fixed some potential issues with the Release/Execute All decisions
+	Fixed an issue that would cause Hungary to not lose its Crimean provinces when formed by a player
+	Fixed a number of missing centers of trade, mainly in the 867 start
+	The "German Realm" empire can no longer be created except by event
+	Eliminated an edge-case where the wrong characters would be imprisoned after a siege
+	Eliminated an edge-case where the wrong characters would end up dueling in battle
+	Fixed it being possible to exploit the prestige bonus from being assigned to a council by repeatedly resigning; the bonus checked for being fired rather than resigning
+	(No Ahistorical Empires) Fixed Khazaria not existing in 867, and being dejure part of Tartaria
+	(867 start) If the French form the HRE the narrative event will now say "French and Italian lands" rather than "German and Italian"
+	(PB+SWMH) Fixed the Papacy not being targetable for Imperial Reconquest if it exists dejure
+
 3.2.23
 	Slowed down the regular culture spread events by about 30%
 	Slowed down spread of Turkish culture to ports even further (3x as long as base rather than 2x), but the modifier now disappears if the Byzantines lose their war to retake the coast

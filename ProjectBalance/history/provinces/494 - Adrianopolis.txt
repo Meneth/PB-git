@@ -20,7 +20,7 @@ culture = greek
 religion = orthodox
 
 # History
-1066.1.1 = { b_traianopolis = ct_trade_post_1 }
+867.1.1 = { b_traianopolis = ct_trade_post_1 }
 1187.1.1 = { b_skalothe = castle }
 1189.1.1 = { trade_post = b_dandolo }
 # Catalan Company ravages the province

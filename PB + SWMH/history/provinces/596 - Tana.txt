@@ -21,7 +21,7 @@ religion = tengri_pagan
 
 # History
 
-1066.1.1 = { b_rostovnadonu = ct_trade_post_1 }
+867.1.1 = { b_rostovnadonu = ct_trade_post_1 }
 
 1187.1.1 = { b_bataysk = castle } 
 

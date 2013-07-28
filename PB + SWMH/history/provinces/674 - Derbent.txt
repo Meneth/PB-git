@@ -20,6 +20,6 @@ religion = sunni
 
 # History
 
-1066.1.1 = { b_narinkala = ct_trade_post_1 }
+867.1.1 = { b_narinkala = ct_trade_post_1 }
 1259.1.1 = { culture = persian }
 1259.1.1 = { religion = shiite }

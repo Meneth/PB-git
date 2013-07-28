@@ -85,6 +85,7 @@ meneth.425.desc;With how far removed we are from William the Conqueror, the Norm
 meneth.426.desc;With the Magyars settled in the Carpathian Basin, we can now move away from our enemies into their former territory.;;;;;;;;;;;;;x
 meneth.427;Holy Roman Empire formed;;;;;;;;;;;;;x
 meneth.427.desc;A new empire has been formed from German and Italian lands, claiming it is the one true successor to Rome. It is a decentralized realm, but still one that could potentially rise to greatness.;;;;;;;;;;;;;x
+meneth.437.desc;A new empire has been formed from French and Italian lands, claiming it is the one true successor to Rome. It is a decentralized realm, but still one that could potentially rise to greatness.;;;;;;;;;;;;;x
 meneth.429.desc;Now that we have complete control over Leon we shall claim our rightful lands once more!;;;;;;;;;;;;;x
 meneth.430.desc;Now that we have complete control over La Mancha our claim to it is recognized by all!;;;;;;;;;;;;;x
 meneth.431.desc;Now that we have complete control over Toledo our claim to it is recognized by all!;;;;;;;;;;;;;x
@@ -105,3 +106,6 @@ successful_sally;Defending troops gets §G10.0%§! morale.\nDefending troops take 
 successful_sally_attacker;Attacking troops take §R2.5%§! losses.\n§GEnemy:§! Defending troops gets §G10.0%§! morale.\nDefending troops take §R2.5%§! losses.;;;;;;;;;;;;;x
 failed_sally;Defending troops gets §R-10.0%§! morale.\nDefending troops take §R5.0%§! losses.\n§GEnemy:§! Attacking troops take §R1.25%§! losses.;;;;;;;;;;;;;x
 siege_disease;§GEnemy:§! Attacking troops take §R2.5%§! losses.;;;;;;;;;;;;;x
+meneth.601;The Baqt;;;;;;;;;;;;;x
+meneth.601.desc;The Baqt was an agreement between the Ethiopian kingdom of Makuria and the Muslim rulers of Egypt. In exchange for free trade between the peoples, they were to live in peace with one another. Maintaining the Baqt provides safety and revenue, but prevents expansion. An ambitious ruler can seek to violate the Baqt and earn power through war rather than trade.;;;;;;;;;;;;;x
+meneth.601.a;Interesting;;;;;;;;;;;;;x

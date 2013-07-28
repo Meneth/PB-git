@@ -621,6 +621,11 @@ decisions = {
 		}
 		effect = {
 			custom_tooltip = EVTOPTA62910_CUSTOM
+			k_hungary = {
+				grant_title = ROOT
+				copy_title_laws = k_magyar
+				copy_title_history = k_magyar
+			}
 			narrative_event = { id = 62910 tooltip = EVTTOOLTIP62910 }
 			k_pechenegs = { holder_scope = { character_event = { id = meneth.426 } } }
 			if = {

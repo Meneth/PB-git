@@ -19,5 +19,5 @@ culture = german
 religion = catholic
 
 # History
-1066.1.1 = { b_wien = ct_trade_post_1 }
+867.1.1 = { b_wien = ct_trade_post_1 }
 1187.1.1 = { b_steyr = castle } 

@@ -20,7 +20,7 @@ culture = bohemian
 religion = catholic
 
 # History
+867.1.1 = { b_kakath = ct_trade_post_1 }
 950.1.1 = { culture = hungarian }
-1066.1.1 = { b_kakath = ct_trade_post_1 }
 1187.1.1 = { b_tatabanya = castle }
 

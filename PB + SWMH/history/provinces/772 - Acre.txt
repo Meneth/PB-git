@@ -24,6 +24,7 @@ culture = levantine_arabic
 religion = orthodox
 
 # History
+867.1.1 = { b_acre = ct_trade_post_1 }
 1066.1.1 = { 
 	b_acre = ct_wall_1
 	b_acre = ct_wall_2
@@ -37,7 +38,6 @@ religion = orthodox
 	b_acre = ct_marketplace_1
 
 } 
-1066.1.1 = { b_acre = ct_trade_post_1 }
 1104.1.1 = { religion = catholic }
 1244.1.1 = { trade_post = b_contarini }
 1295.1.1 = { religion = sunni } 

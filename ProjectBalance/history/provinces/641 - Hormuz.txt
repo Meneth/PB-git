@@ -20,9 +20,11 @@ culture = persian
 religion = sunni
 
 # History
-1066.1.1 = {
+867.1.1 = {
 	b_abarkawan = ct_trade_post_1
 	b_abarkawan = ct_trade_post_2
+}
+1066.1.1 = {
 	capital = b_abarkawan
 	trade_post = b_motamedi
 }

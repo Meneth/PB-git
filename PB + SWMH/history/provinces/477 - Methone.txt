@@ -23,7 +23,7 @@ religion = orthodox
 terrain = hills
 
 # History
-1066.1.1 = { b_kalamata = ct_trade_post_1 }
+867.1.1 = { b_kalamata = ct_trade_post_1 }
 1112.1.1 = { trade_post = b_morosini }
 
 

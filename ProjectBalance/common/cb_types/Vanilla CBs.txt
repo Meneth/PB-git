@@ -3036,14 +3036,17 @@ crusade = {
 				}
 			}
 		}
-		FROM = {
-			NOT = { religion = miaphysite }
-			NOT = {
-				AND = {
-					religion = orthodox
-					culture_group = east_african
+		OR = {
+			FROM = {
+				NOT = { religion = miaphysite }
+				NOT = {
+					AND = {
+						religion = orthodox
+						culture_group = east_african
+					}
 				}
 			}
+			has_global_flag = violated_baqt
 		}
 	}
 	can_use = {
@@ -3102,22 +3105,13 @@ crusade = {
 		}
 		OR = {
 			title = k_jerusalem
-			k_jerusalem = {
-				has_holder = yes
-				holder_scope = {
-					NOT = {
-						any_realm_province = {
-							any_neighbor_province = {
-								de_jure_liege_or_above = PREVPREVPREV
-								owner = {
-									religion_group = muslim
-								}
-							}
-						}
-					}
+			ROOT = { NOT = { religion_group = christian } }
+			FROM = {
+				any_realm_province = {
+					de_jure_liege_or_above = PREVPREV
+					religion = ROOT
 				}
 			}
-			ROOT = { NOT = { religion_group = christian } }
 		}
 		OR = {
 			has_holder = no
@@ -3468,6 +3462,7 @@ religious = {
 					}
 				}
 				has_global_flag = rapid_conquest
+				has_global_flag = violated_baqt
 			}
 		}
 	}
@@ -7383,14 +7378,17 @@ county_conquest = {
 					}
 				}
 			}
-			NOT = {
-				FROM = {
-					OR = {
-						religion = miaphysite
-						religion = orthodox
+			OR = {
+				NOT = {
+					FROM = {
+						OR = {
+							religion = miaphysite
+							religion = orthodox
+						}
+						culture_group = east_african
 					}
-					culture_group = east_african
 				}
+				has_global_flag = violated_baqt
 			}
 			OR = {
 				religion_group = FROM
@@ -7765,14 +7763,24 @@ muslim_invasion = {
 			}
 		}
 		FROM = { NOT = { religion_group = pagan_group } }
-		NOT = {
-			FROM = {
-				OR = {
-					religion = miaphysite
-					religion = orthodox
+		OR = {
+			NOT = {
+				FROM = {
+					OR = {
+						religion = miaphysite
+						religion = orthodox
+					}
+					culture_group = east_african
 				}
-				culture_group = east_african
 			}
+			has_global_flag = violated_baqt
+		}
+		OR = {
+			NOT = {
+				FROM = { culture = mongol }
+				ROOT = { culture = mongol }
+			}
+			year = 1350
 		}
 	}
 	

@@ -21,7 +21,7 @@ religion = catholic
 
 # History
 
-1066.1.1 = { 
+867.1.1 = { 
 	trade_post = b_fieschi
 	b_manresa = ct_trade_post_1
 	b_manresa = ct_trade_post_2

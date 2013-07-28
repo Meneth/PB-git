@@ -25,6 +25,6 @@ culture = russian
 religion = orthodox
 
 # History
-1066.1.1 = { b_nizhyn = ct_trade_post_1 }
+867.1.1 = { b_nizhyn = ct_trade_post_1 }
 #1239.1.1 = { remove_settlement = b_borzna } #Mongol invasion
 1239.1.1 = { remove_settlement = b_kozelets }

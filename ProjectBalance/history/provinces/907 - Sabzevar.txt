@@ -20,5 +20,5 @@ culture = persian
 religion = zoroastrian
 
 # History
+867.1.1 = { b_adraskan = ct_trade_post_1 }
 900.1.1 = { religion = sunni }
-1066.1.1 = { b_adraskan = ct_trade_post_1 }

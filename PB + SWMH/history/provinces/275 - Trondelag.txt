@@ -19,5 +19,5 @@ culture = norwegian
 religion = catholic
 
 # History
-1066.1.1 = { b_trondheim = ct_trade_post_1 }
+867.1.1 = { b_trondheim = ct_trade_post_1 }
 1066.1.1 = { trade_post = b_svinfellingar }

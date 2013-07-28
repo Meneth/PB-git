@@ -18,7 +18,7 @@ culture = andalusian_arabic
 religion = sunni
 
 # History
-1066.1.1 = {
+867.1.1 = {
 	b_madrid = ct_trade_post_1
 	b_madrid = ct_trade_post_2
 	b_madrid = ct_trade_post_3

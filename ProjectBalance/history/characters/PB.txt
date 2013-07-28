@@ -17,6 +17,7 @@
 			narrative_event = { id = meneth.500 }
 			narrative_event = { id = meneth.501 }
 			narrative_event = { id = meneth.600 }
+			narrative_event = { id = meneth.601 }
 			set_global_flag = 867_start			
 			set_global_flag = theme_system_reformed			
 		}

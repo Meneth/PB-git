@@ -848,7 +848,7 @@ e_italy = {
 			}
 		}	
 	}
-	#Unchanged from vanilla
+	#Not formable by Byzantines
 	k_sicily = {
 		color={ 175 244 86 }
 		color2={ 255 255 255 }
@@ -860,6 +860,10 @@ e_italy = {
 		catholic = 500 # Crusade target weight
 		orthodox = 50
 		muslim = 10
+		
+		allow = {
+			liege = { NOT = { has_landed_title = e_byzantium } }
+		}
 		
 		d_benevento = {
 			color={ 153 247 29 }

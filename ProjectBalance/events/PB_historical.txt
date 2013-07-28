@@ -2358,6 +2358,30 @@ character_event = {
 			holder_scope = {
 				any_realm_province = {
 					limit = {
+						culture = russian
+						owner = { culture = russian }
+					}
+					owner = { set_defacto_liege = THIS }
+				}
+				any_realm_province = {
+					limit = {
+						culture = russian
+					}
+					county = {
+						location = {
+							random_neighbor_province = {
+								limit = {
+									owner = { culture = russian }
+								}
+								owner = {
+									usurp_title = PREVPREVPREV
+								}
+							}
+						}
+					}
+				}
+				any_realm_province = {
+					limit = {
 						kingdom = {
 							NOT = { title = k_hungary }
 						}
@@ -2383,10 +2407,27 @@ character_event = {
 	}
 }
 
+#Formation of German HRE
 narrative_event = {
 	id = meneth.427
 	title = meneth.427
 	desc = meneth.427.desc
+	picture = GFX_evt_battle
+	
+	major = yes
+	only_rulers = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = OK
+	}
+}
+
+#Formation of French HRE
+narrative_event = {
+	id = meneth.437
+	title = meneth.427
+	desc = meneth.437.desc
 	picture = GFX_evt_battle
 	
 	major = yes
@@ -2438,3 +2479,4 @@ character_event = {
 		set_global_flag = benevento_returned
 	}
 }
+#meneth.437 is taken

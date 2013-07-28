@@ -19,4 +19,4 @@ religion = catholic
 
 # History
 ## Nuremburg was Kaiserburg, inofficial capial
-1066.1.1 = { b_roth = ct_trade_post_1 }
+867.1.1 = { b_roth = ct_trade_post_1 }

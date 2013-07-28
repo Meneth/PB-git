@@ -574,7 +574,7 @@ NMilitary = {
 	VASSAL_MERC_HIRE_COST_FACTOR = 0.125,			-- Fraction of nominal hire cost when hiring vassal mercenaries or holy orders
 	MERCENARY_HIRE_DISTANCE_THRESHOLD = 600,		-- Mercs will not be available if the province of origin is more distant from your capital
 	OPINION_WHEN_MARSHAL_INSTEAD_OF_SELF = 25,		-- Below this opinion value a vassal tends to use his marshal instead of himself when someone asks to raise his troops
-	OPINION_WHEN_NO_LEADER = 0,						-- Below this opinion a vassal will not supply a leader for subunits at all
+	OPINION_WHEN_NO_LEADER = -100,					-- Below this opinion a vassal will not supply a leader for subunits at all
 	BATTLE_WARSCORE_WORTH = 175,					-- Warscore from battles are multiplied with this value
 	BATTLE_WARSCORE_DEFENDER_MULTIPLIER = 1.4,		-- Defenders wins are multiplied with this value, which also means they get more prestige for a win
 	BATTLE_MINIMUM_WARSCORE = 0.2,					-- Battles below this value(in actual percentage) are removed from warscore calculations
@@ -761,18 +761,18 @@ NMilitary = {
 NTechnology = {
 	POINTS_PER_ATTRIBUTE = 0.02,
 
-	BASE_NEIGHBOUR_SPREAD_BONUS = 0.2, 			-- bonus for each neighbour with the tech
+	BASE_NEIGHBOUR_SPREAD_BONUS = 0.1, 			-- bonus for each neighbour with the tech
 	NEIGHBOUR_SAME_RELIGON_GROUP_MULT = 1.3, 	-- multiplier to the above bonus if neighbour is of your religious group
-	BASE_DEMESNE_SPREAD_BONUS = 0.1, 			-- bonus for each other province in demesne with the tech
-	MAX_DEMESNE_BONUS = 0.3, 					-- maximum bonus from demesne
+	BASE_DEMESNE_SPREAD_BONUS = 0.01, 			-- bonus for each other province in demesne with the tech
+	MAX_DEMESNE_BONUS = 0.1, 					-- maximum bonus from demesne
 	FOCUS_BONUS = 1.5, 							-- bonus for the tech in each group set as the focus
 	TRADEPOST_SPREAD_BONUS = 0.002, 			-- Spread from trade posts
 	SPYACTION_SPREAD_BONUS = 0.006,				-- Spread from the target of the study technology spymaster action
 	
-	IDEAL_YEAR_LEVEL_0 = 700, 					-- the chance to get a progress to this level will increase after this date and decrease before it
+	IDEAL_YEAR_LEVEL_0 = 800, 					-- the chance to get a progress to this level will increase after this date and decrease before it
 	IDEAL_YEAR_LEVEL_8 = 1500,
 	IDEAL_YEAR_AHEAD_PENALTY = -0.2,			-- UNUSED
-	IDEAL_YEAR_AHEAD_PENALTY_INVEST = 0.3,		-- Percent increase in cost pre level ahead of ideal date
+	IDEAL_YEAR_AHEAD_PENALTY_INVEST = 0.25,		-- Percent increase in cost pre level ahead of ideal date
 	
 	PAGAN_HOME_ATTRITION_REMOVAL_LEVEL = 4.0,
 	

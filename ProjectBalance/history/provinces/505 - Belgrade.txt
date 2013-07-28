@@ -20,4 +20,4 @@ culture = serbian
 religion = orthodox
 
 # History
-1066.1.1 = { b_zemun = ct_trade_post_1 }
+867.1.1 = { b_zemun = ct_trade_post_1 }

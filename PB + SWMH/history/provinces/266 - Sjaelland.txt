@@ -23,6 +23,7 @@ religion = catholic
 terrain = farmlands
 
 # History
+867.1.1 = { b_kobenhavn = ct_trade_post_1 }
 #1065.1.1 = { remove_settlement = b_lejre } 
 1066.1.1 = { 
 	b_ringsted = ca_keep_1
@@ -38,7 +39,6 @@ terrain = farmlands
         b_roskilde = tp_barracks_2
 	b_roskilde = tp_wall_1
 	b_roskilde = tp_town_1
-	b_kobenhavn = ct_trade_post_1
 }
 1158.1.1 = { b_esrum = temple }
 #1231.1.1 = { b_helsingør = city }

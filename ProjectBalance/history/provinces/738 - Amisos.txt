@@ -22,7 +22,7 @@ terrain = mountain
 
 # History
 
-1066.1.1 = { b_amasia = ct_trade_post_1 }
+867.1.1 = { b_amasia = ct_trade_post_1 }
 
 1214.1.1 = { culture = turkish }
 1214.1.1 = { religion = sunni }

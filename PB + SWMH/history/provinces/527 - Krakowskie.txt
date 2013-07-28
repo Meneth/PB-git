@@ -23,5 +23,5 @@ culture = polish
 religion = catholic
 
 # History
-1066.1.1 = { b_krakow = ct_trade_post_1 }
+867.1.1 = { b_krakow = ct_trade_post_1 }
 1187.1.1 = { b_kielce = city }

@@ -22,6 +22,8 @@ religion = catholic
 	b_pontevedra = ca_militia_barracks_1
 	b_pontevedra = ca_wall_1
 	b_pontevedra = ca_wall_2
+	b_ribadavia = ct_trade_post_1
+	b_ribadavia = ct_trade_post_2
 }
 
 

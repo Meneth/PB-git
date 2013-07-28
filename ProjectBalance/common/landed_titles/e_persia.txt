@@ -1631,6 +1631,7 @@ e_persia = {
 		# Creation/usurpation trigger
 		allow = {
 			religion_group = christian
+			liege = { NOT = { has_landed_title = e_byzantium } }
 		}
 
 		d_azerbaijan = {

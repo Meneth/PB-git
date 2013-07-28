@@ -19,12 +19,11 @@ culture = bohemian
 religion = slavic_pagan
 
 # History
-
-883.1.1 = { religion = catholic }
-1066.1.1 = {
+867.1.1 = {
 	b_kuttenberg = ct_trade_post_1
 	b_kuttenberg = ct_trade_post_2
 }
+883.1.1 = { religion = catholic }
 
 1130.1.1 = { b_slany = castle }
 

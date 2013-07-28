@@ -27,7 +27,7 @@ b_piombino = city
 culture = tuscan
 religion = catholic
 
-1066.1.1 = { 
+867.1.1 = { 
 	b_pisa = ct_trade_post_1
 	b_pisa = ct_trade_post_2
 	b_pisa = ct_trade_post_3

@@ -59,7 +59,7 @@ province_base_values = {
 }
 
 coastal = {
-	tech_growth_modifier = 0.8
+	tech_growth_modifier = 1
 }
 
 non_coastal = {

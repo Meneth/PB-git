@@ -14,16 +14,29 @@ decisions = {
 			NOT = { has_global_flag = schism_mended }
 		}
 		allow = {
-			piety = 2000
 			religion_authority = 0.9
-			completely_controls = c_byzantion
-			b_hagiasophia = { holder_scope = { religion = catholic } }
-			completely_controls = c_antiocheia
-			b_antiocheia = { holder_scope = { religion = catholic } }
-			completely_controls = c_jerusalem
-			b_jerusalem = { holder_scope = { religion = catholic } }
-			completely_controls = c_alexandria
-			b_alexandria = { holder_scope = { religion = catholic } }
+			OR = {
+				AND = {
+					completely_controls = c_byzantion
+					b_hagiasophia = { holder_scope = { religion = catholic } }
+					completely_controls = c_antiocheia
+					b_antiocheia = { holder_scope = { religion = catholic } }
+					completely_controls = c_jerusalem
+					b_jerusalem = { holder_scope = { religion = catholic } }
+					completely_controls = c_alexandria
+					b_alexandria = { holder_scope = { religion = catholic } }
+					piety = 2000
+				}
+				AND = {
+					NOT = {
+						any_independent_ruler = {
+							religion = orthodox
+							tier = emperor
+						}
+					}
+					completely_controls = c_roma
+				}
+			}
 			OR = {
 				AND = {
 				completely_controls = c_roma

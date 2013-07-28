@@ -6,6 +6,7 @@ city = {
 		potential = {
 			FROM = {
 				religion_group = pagan_group
+				is_reformed_religion = no
 				NOT = {
 					any_liege = {
 						NOT = { religion_group = pagan_group }

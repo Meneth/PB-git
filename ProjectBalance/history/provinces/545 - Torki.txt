@@ -17,8 +17,8 @@ b_bogdana = temple
 #b_siret = castle
 
 # Misc
-culture = russian
-religion = slavic_pagan
+culture = hungarian
+religion = tengri_pagan
 
 # History
 988.1.1 = { religion = orthodox }

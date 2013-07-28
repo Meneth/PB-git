@@ -20,4 +20,4 @@ culture = persian
 religion = sunni
 
 # History
-1066.1.1 = { b_bishapur = ct_trade_post_1 }
+867.1.1 = { b_bishapur = ct_trade_post_1 }

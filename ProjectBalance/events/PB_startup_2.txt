@@ -11,7 +11,7 @@ namespace = meneth
 #Gives out combat traits
 narrative_event = {
 	id = meneth.600
-	title = "meneth.200.name"
+	title = "meneth.200"
 	desc = "meneth.200.desc"
 	
 	is_triggered_only = yes
@@ -100,5 +100,72 @@ narrative_event = {
 	
 	option = {
 		name = "meneth.200.a"
+	}
+}
+
+#The Baqt
+narrative_event = {
+	id = meneth.601
+	title = meneth.601
+	desc = meneth.601.desc
+	
+	is_triggered_only = yes
+	
+	picture = "GFX_evt_battle"
+	
+	trigger = {
+		NOT = { has_global_flag = shattered_balance }
+	}
+	
+	
+	option = {
+		name = OK
+		any_independent_ruler = {
+			limit = {
+				OR = {
+					culture_group = east_african
+					has_landed_title = k_shiite
+				}
+			}
+			narrative_event = { id = meneth.602 }
+		}
+	}
+}
+
+narrative_event = {
+	id = meneth.602
+	title = meneth.601
+	desc = meneth.601.desc
+	
+	is_triggered_only = yes
+	hide_from = yes
+	
+	picture = "GFX_evt_battle"
+	
+	trigger = {
+		NOT = { has_global_flag = shattered_balance }
+	}
+	option = {
+		name = meneth.601.a
+		if = {
+			limit = { culture_group = east_african }
+			any_realm_province = {
+				add_province_modifier = {
+					name = baqt
+					duration = -1
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_landed_title = k_shiite
+			}
+			796 = {
+				add_province_modifier = {
+					name = baqt
+					duration = -1
+				}
+			}
+		}
 	}
 }
