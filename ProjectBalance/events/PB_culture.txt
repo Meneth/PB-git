@@ -208,7 +208,7 @@ province_event = {
 	}
 }
 
-# Bring in some settlers
+# Culture spread via port
 province_event = {
 	id = 55001
 	desc = "EVTDESC55001"
@@ -275,7 +275,7 @@ province_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 2700
+		months = 3600
 
 		modifier = {
 			factor = 1.5

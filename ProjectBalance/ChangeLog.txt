@@ -1,3 +1,6 @@
+3.2.25
+	Slowed down culture spread via ports by 25%
+
 3.2.24
 	Made much of Bulgaria Bogomilist after year 950, as it was historically a Bogomilist stronghold
 	Toned down province to province spread significantly
