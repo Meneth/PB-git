@@ -1430,6 +1430,7 @@ castle = {
 		potential = {
 			culture_group = iberian
 			NOT = { culture = occitan }
+			NOT = { culture = basque }
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
 		upgrades_from = ca_culture_group_iberian_0
@@ -1455,6 +1456,7 @@ castle = {
 			FROM = { culture_group = ROOT }
 			culture_group = iberian
 			NOT = { culture = occitan }
+			NOT = { culture = basque }
 		}
 		trigger = { 
 			TECH_CASTLE_CONSTRUCTION = 2
@@ -1483,6 +1485,7 @@ castle = {
 			FROM = { culture_group = ROOT }
 			culture_group = iberian
 			NOT = { culture = occitan }
+			NOT = { culture = basque }
 		}
 		trigger = { 
 			TECH_CASTLE_CONSTRUCTION = 3
@@ -1511,6 +1514,7 @@ castle = {
 			FROM = { culture = ROOT }
 			culture_group = iberian
 			NOT = { culture = occitan }
+			NOT = { culture = basque }
 		}
 		trigger = { 
 			TECH_CASTLE_CONSTRUCTION = 4
@@ -1539,6 +1543,7 @@ castle = {
 			FROM = { culture = ROOT }
 			culture_group = iberian
 			NOT = { culture = occitan }
+			NOT = { culture = basque }
 		}
 		trigger = { 
 			TECH_CASTLE_CONSTRUCTION = 6
@@ -1566,9 +1571,7 @@ castle = {
 	ca_culture_basque_0 = {
 		desc = ca_culture_basque_1_desc
 		potential = {
-			culture_group = iberian
-			NOT = { culture = occitan }
-			NOT = { culture = basque }
+			culture = basque
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
 		build_cost = 100
@@ -1590,8 +1593,7 @@ castle = {
 	ca_culture_basque_1 = {
 		desc = ca_culture_basque_1_desc
 		potential = {
-			culture_group = iberian
-			NOT = { culture = occitan }
+			culture = basque
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
 		upgrades_from = ca_culture_basque_0
@@ -1615,8 +1617,7 @@ castle = {
 		desc = ca_culture_basque_1_desc
 		potential = {
 			FROM = { culture_group = ROOT }
-			culture_group = iberian
-			NOT = { culture = occitan }
+			culture = basque
 		}
 		trigger = { 
 			TECH_CASTLE_CONSTRUCTION = 2
@@ -1643,8 +1644,7 @@ castle = {
 		desc = ca_culture_basque_1_desc
 		potential = {
 			FROM = { culture_group = ROOT }
-			culture_group = iberian
-			NOT = { culture = occitan }
+			culture = basque
 		}
 		trigger = { 
 			TECH_CASTLE_CONSTRUCTION = 3
@@ -1671,8 +1671,7 @@ castle = {
 		desc = ca_culture_basque_1_desc
 		potential = {
 			FROM = { culture = ROOT }
-			culture_group = iberian
-			NOT = { culture = occitan }
+			culture = basque
 		}
 		trigger = { 
 			TECH_CASTLE_CONSTRUCTION = 4
@@ -1699,8 +1698,7 @@ castle = {
 		desc = ca_culture_basque_1_desc
 		potential = {
 			FROM = { culture = ROOT }
-			culture_group = iberian
-			NOT = { culture = occitan }
+			culture = basque
 		}
 		trigger = { 
 			TECH_CASTLE_CONSTRUCTION = 6
