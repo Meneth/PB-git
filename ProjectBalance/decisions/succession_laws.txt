@@ -209,19 +209,19 @@ succession_laws = {
 				OR = {
 					AND = {
 						tier = count
-						prestige = 100
+						prestige = 200
 					}
 					AND = {
 						tier = duke
-						prestige = 250
-					}
-					AND = {
-						tier = king
 						prestige = 500
 					}
 					AND = {
-						tier = emperor
+						tier = king
 						prestige = 1000
+					}
+					AND = {
+						tier = emperor
+						prestige = 2000
 					}
 				}
 			}
