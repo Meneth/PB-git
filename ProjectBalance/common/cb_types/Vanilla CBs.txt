@@ -3776,20 +3776,47 @@ religious = {
 		}
 		FROM = { piety = -100 }
 		FROM = { prestige = -50 }
-		hidden_tooltip = {
-			FROM = {
-				any_realm_character = { set_character_flag = holy_war_target }
-			}
-		}
 	}
 
 	on_success_title = {
 		custom_tooltip = religious_cb_succ_tip
 		hidden_tooltip = {
 			ROOT = {
-				vassalize_or_take_under_title = {
-					title = PREV
-					enemy = FROM
+				FROM = {
+					any_realm_character = { set_character_flag = holy_war_target }
+				}
+				if = {
+					limit = {
+						FROM = {
+							OR = {
+								religion_group = pagan_group
+								is_heresy_of = ROOT
+								is_parent_religion = ROOT
+							}
+						}
+					}
+					vassalize_or_take_under_title = {
+						title = PREV
+						enemy = FROM
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							FROM = {
+								OR = {
+									religion_group = pagan_group
+									is_heresy_of = ROOT
+									is_parent_religion = ROOT
+								}
+							}
+						}
+					}
+					vassalize_or_take_under_title = {
+						title = PREV
+						enemy = FROM
+						same_religion = yes # Only vassalize rulers of my religion
+					}
 				}
 #				gain_settlements_under_title = {
 #					title = PREV
@@ -3799,6 +3826,12 @@ religious = {
 					limit = {
 						has_character_flag = holy_war_target
 						NOT = { religion = ROOT }
+						OR = {
+							religion_group = pagan_group
+							is_heresy_of = ROOT
+							is_parent_religion = ROOT
+						}
+						NOT = { religion_group = muslim }
 					}
 					religion = ROOT
 					opinion = {
