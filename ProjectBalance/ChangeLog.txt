@@ -3,7 +3,7 @@
 	Fixed the Basque not actually getting their culture building
 	Culture buildings no longer reduce the number of heavy cavalry available
 	Doubled the prestige requirements for enacting Primogeniture
-	Holy wars now vassalize rather than conquer where possible
+	Holy wars now vassalize rather than conquer where possible, and force the vassalized rulers to convert
 	Added a new CB: Religious Reconquest. Lets you attack any duchy with 1 or more province of your religion that is held by a ruler of another religion. Usable as long as you either border the target or you're two or less sea zones away. This CB outright conquers the target duchy
 	Added a new CB: Special Holy War. This CB is only given to Jerusalem and a few holy orders, letting them bypass requirements in certain circumstances (Teutonic Order against Pagans, Knights Hospitallier/Templar against Muslims, Jerusalem against their dejure provinces). This CB outright conquers the target duchy
 	Moved the base requirements for holy war into the war declaration UI. Dejure/border requirements are still displayed via the "is war possible?" decisions

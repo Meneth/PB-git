@@ -3776,6 +3776,11 @@ religious = {
 		}
 		FROM = { piety = -100 }
 		FROM = { prestige = -50 }
+		hidden_tooltip = {
+			FROM = {
+				any_realm_character = { set_character_flag = holy_war_target }
+			}
+		}
 	}
 
 	on_success_title = {
@@ -3790,6 +3795,28 @@ religious = {
 #					title = PREV
 #					enemy = FROM
 #				}
+				any_realm_character = {
+					limit = {
+						has_character_flag = holy_war_target
+						NOT = { religion = ROOT }
+					}
+					religion = ROOT
+					opinion = {
+						who = ROOT
+						years = 10
+						modifier = opinion_demanded_conversion
+					}
+				}
+				any_realm_character = {
+					limit = { has_character_flag = holy_war_target }
+					clr_character_flag = holy_war_target
+				}
+			}
+			FROM = {
+				any_realm_character = {
+					limit = { has_character_flag = holy_war_target }
+					clr_character_flag = holy_war_target
+				}
 			}
 		}
 	}
