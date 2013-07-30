@@ -3434,6 +3434,63 @@ religious = {
 
 	can_use_gui = {
 		ROOT = {
+			#Base conditions
+			NOT = { has_character_modifier = holy_war_cooldown }
+			OR = {
+				NOT = { has_law = emperor_peace_0 }
+				has_law = revokation_1
+				has_law = revokation_2
+			}
+			OR = {
+				NOT = { trait = content }
+				trait = brave
+				trait = wroth
+				trait = zealous
+				trait = lunatic
+				trait = possessed
+			}
+			OR = {
+				NOT = { trait = craven }
+				trait = wroth
+				trait = ambitious
+				trait = zealous
+				trait = lunatic
+				trait = possessed
+			}
+			OR = {
+				NOT = { trait = stressed }
+				trait = wroth
+				trait = ambitious
+				trait = brave
+				trait = lunatic
+				trait = possessed
+				trait = zealous
+			}
+			OR = {
+				trait = lunatic
+				trait = possessed
+				AND = {
+					NOT = { trait = depressed }
+					NOT = { trait = infirm }
+					NOT = { trait = incapable }
+					NOT = {
+						OR = {
+							AND = {
+								trait = content
+								OR = {
+									trait = craven
+									trait = stressed
+								}
+							}
+							AND = {
+								trait = craven
+								trait = stressed
+							}
+						}
+					}
+				}
+			}
+			piety = 100
 			OR = {
 				NOT = {
 					OR = {
@@ -3463,6 +3520,12 @@ religious = {
 				}
 				has_global_flag = rapid_conquest
 				has_global_flag = violated_baqt
+			}
+		}
+		
+		NOT = {
+			FROM = {
+				has_character_modifier = formation_of_rum
 			}
 		}
 	}
@@ -3515,11 +3578,6 @@ religious = {
 				}
 			}
 		}
-		NOT = {
-			FROM = {
-				has_character_modifier = formation_of_rum
-			}
-		}
 	}
 
 	can_use_title = {
@@ -3534,111 +3592,6 @@ religious = {
 		OR = {
 			has_global_flag = rapid_conquest
 			AND = {
-				ROOT = { has_landed_title = d_teutonic_order }
-				FROM = { religion_group = pagan_group }
-			}
-			AND = {
-				OR = {
-					ROOT = { has_landed_title = d_knights_templar }
-					ROOT = { has_landed_title = d_knights_hospitaler }
-				}
-				FROM = { religion_group = muslim }
-			}
-			AND = {
-				de_jure_liege_or_above = k_jerusalem
-				ROOT = { has_landed_title = k_jerusalem }
-				FROM = { religion_group = muslim }
-			}
-			#Exception if the target has a province of your religion
-			any_direct_de_jure_vassal_title = {
-				NOT = {
-					FROM = { has_landed_title = k_rum }
-				}
-				NOT = {
-					FROM = { has_landed_title = k_pechenegs }
-				}
-				NOT = {
-					AND = {
-						FROM = { religion_group = muslim }
-						ROOT = { religion_group = muslim }
-					}
-				}
-				holder_scope = {
-					OR = {
-						character = FROM
-						is_liege_or_above = FROM
-					}
-				}
-				NOT = {
-					ROOT = { is_reformed_religion = FROM }
-				}
-				location = {
-					ROOT = {
-						religion = PREV
-						NOT = { has_character_modifier = holy_war_cooldown }
-					}
-				}
-			}
-			AND = {
-				#Base conditions
-				ROOT = {
-					NOT = { has_character_modifier = holy_war_cooldown }
-					OR = {
-						NOT = { has_law = emperor_peace_0 }
-						has_law = revokation_1
-						has_law = revokation_2
-					}
-					OR = {
-						NOT = { trait = content }
-						trait = brave
-						trait = wroth
-						trait = zealous
-						trait = lunatic
-						trait = possessed
-					}
-					OR = {
-						NOT = { trait = craven }
-						trait = wroth
-						trait = ambitious
-						trait = zealous
-						trait = lunatic
-						trait = possessed
-					}
-					OR = {
-						NOT = { trait = stressed }
-						trait = wroth
-						trait = ambitious
-						trait = brave
-						trait = lunatic
-						trait = possessed
-						trait = zealous
-					}
-					OR = {
-						trait = lunatic
-						trait = possessed
-						AND = {
-							NOT = { trait = depressed }
-							NOT = { trait = infirm }
-							NOT = { trait = incapable }
-							NOT = {
-								OR = {
-									AND = {
-										trait = content
-										OR = {
-											trait = craven
-											trait = stressed
-										}
-									}
-									AND = {
-										trait = craven
-										trait = stressed
-									}
-								}
-							}
-						}
-					}
-					piety = 100
-				}
 				OR = {
 					kingdom = { holder = ROOT }
 					empire = { holder = ROOT }
@@ -3832,7 +3785,6 @@ religious = {
 				vassalize_or_take_under_title = {
 					title = PREV
 					enemy = FROM
-					same_religion = yes # Only vassalize rulers of my religion
 				}
 #				gain_settlements_under_title = {
 #					title = PREV
@@ -7848,6 +7800,16 @@ muslim_invasion = {
 								}
 							}
 						}
+					}
+				}
+			}
+		}
+		OR = {
+			has_global_flag = rapid_conquest
+			NOT = {
+				any_direct_de_jure_vassal_title = {
+					any_direct_de_jure_vassal_title = {
+						location = { continent = region_sahara }
 					}
 				}
 			}

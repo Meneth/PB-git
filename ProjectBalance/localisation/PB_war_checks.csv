@@ -4,14 +4,10 @@ holy_war_cb;Is War Possible?;;;;;;;;;;;;;x
 holy_war_cb_desc;Enables a set of decisions showing the requirements for various types of war. If you can activate every relevant decision, you should be able to declare war;;;;;;;;;;;;;x
 holy_war_clear;Dismiss Checks;;;;;;;;;;;;;x
 holy_war_clear_desc;Disable the decisions for checking if war is possible.;;;;;;;;;;;;;x
-holy_war_any;Base Holy War;;;;;;;;;;;;;x
-holy_war_any_desc;You have to meet these requirements to declare any holy war. Do note that more requirements will apply if your target is pagan, is not dejure yours, or does not share a border with you.;;;;;;;;;;;;;x
-holy_war_pagan;Pagan Holy War;;;;;;;;;;;;;x
-holy_war_pagan_desc;You have to meet these requirements to declare holy war upon pagans, in addition to the base requirements, and potentially non-dejure and non-bordering requirements.;;;;;;;;;;;;;x
 holy_war_non_de_jure;Non Dejure Holy War;;;;;;;;;;;;;x
-holy_war_non_de_jure_desc;You have to meet these requirements to declare holy war upon areas that aren't dejure yours, in addition to the base requirements, and potentially pagan and non-bordering requirements.;;;;;;;;;;;;;x
+holy_war_non_de_jure_desc;You have to meet these requirements to declare holy war upon areas that aren't dejure yours, in addition to the base requirements (displayed on the war declaration screen if you fulfill the requirements listed on the decision screen), and potentially pagan and non-bordering requirements.;;;;;;;;;;;;;x
 holy_war_no_border;Non-bordering holy war requirements;;;;;;;;;;;;;x
-holy_war_no_border_desc;You have to meet these requirements to declare holy war upon areas your realm doesn't border. You also need to meet the base requirements, and potentially non-dejure and pagan requirements requirements.;;;;;;;;;;;;;x
+holy_war_no_border_desc;You have to meet these requirements to declare holy war upon areas your realm doesn't border. You also need to meet the base requirements (displayed on the war declaration screen if you fulfill the requirements listed on the decision screen), and potentially non-dejure and pagan requirements requirements.;;;;;;;;;;;;;x
 alliance_wars;War Upon Allies;;;;;;;;;;;;;x
 alliance_wars_desc;You have to meet these requirements to declare war upon allies unless they're heretics, infidels, or excommunicated.;;;;;;;;;;;;;x
 imperial_reconquest_check;Imperial Reconquest;;;;;;;;;;;;;x

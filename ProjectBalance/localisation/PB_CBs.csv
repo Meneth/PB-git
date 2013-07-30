@@ -30,3 +30,8 @@ subjugation_duke_desc;With the world shattered by mysterious forces it is ripe f
 conquest_of_the_balkans_desc;This Casus Belli can be used by §Y$CLAIMANT$§! to press the claim on the §Y$TITLE$§!;;;;;;;;;;;;;x
 BULGARIAN_UPRISING;Bulgarian Uprising;;;;;;;;;;;;;x
 bulgarian_uprising_desc;The Bulgarian Uprising;;;;;;;;;;;;;x
+CB_NAME_RETAKE_RELIGIOUS;Religious Reconquest of [Title.GetBaseName];;;;;;;;;;;;;x
+WAR_NAME_RETAKE_RELIGIOUS;$ORDER$$FIRST_ADJ$ Religious Reconquest of $OTHER_TITLE$;;;;;;;;;;;;;x
+retake_religious_lands_desc;§Y$CLAIMANT$§! can use this Casus Belli to seize all titles held by the infidel, §Y$TARGET$§!, within the de jure §Y$TITLE$§!. You get this CB due to playing as either Jerusalem or a Holy Order, letting you bypass nearly all regular holy war requirements. This CB outright conquers the target, while the regular Holy War CB will only vassalize.;;;;;;;;;;;;;x
+special_holy_war_desc;§Y$CLAIMANT$§! can use this Casus Belli to seize all titles held by the infidel, §Y$TARGET$§!, within the de jure §Y$TITLE$§!.;;;;;;;;;;;;;x
+CB_NAME_Special_RELIGIOUS;Special Holy War for [Title.GetBaseName];;;;;;;;;;;;;x
