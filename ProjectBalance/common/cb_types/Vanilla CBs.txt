@@ -3642,6 +3642,58 @@ religious = {
 				}
 			}
 		}
+		NOT = {
+			OR = {
+				AND = {
+					ROOT = { has_landed_title = d_teutonic_order }
+					FROM = { religion_group = pagan_group }
+				}
+				AND = {
+					OR = {
+						ROOT = { has_landed_title = d_knights_templar }
+						ROOT = { has_landed_title = d_knights_hospitaler }
+					}
+					FROM = { religion_group = muslim }
+				}
+				AND = {
+					de_jure_liege_or_above = k_jerusalem
+					ROOT = { has_landed_title = k_jerusalem }
+					FROM = { religion_group = muslim }
+				}
+			}
+		}
+		#Target must have at least one province of declarer's religion
+		NOT = {
+			any_direct_de_jure_vassal_title = {
+				NOT = {
+					FROM = { has_landed_title = k_rum } #Need help surviving
+				}
+				NOT = {
+					FROM = { has_landed_title = k_pechenegs }  #Need help surviving
+				}
+				# Muslim reconquest does not make much sense
+				NOT = {
+					AND = {
+						FROM = { religion_group = muslim }
+						ROOT = { religion_group = muslim }
+					}
+				}
+				holder_scope = {
+					OR = {
+						character = FROM
+						is_liege_or_above = FROM
+					}
+				}
+				NOT = {
+					ROOT = { is_reformed_religion = FROM }
+				}
+				location = {
+					ROOT = {
+						religion = PREV
+					}
+				}
+			}
+		}
 		# The attacker needs at least one county in the target kingdom, or a border, or be only two sea zones away from one of your counties
 		any_direct_de_jure_vassal_title = {
 			OR = {
