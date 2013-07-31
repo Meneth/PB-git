@@ -75,7 +75,7 @@ narrative_event = {
 			802 = { religion = miaphysite }
 		}
 		if = {
-			limit = { NOT = { year = 1066 }
+			limit = { NOT = { year = 1066 } }
 			k_saxony = {
 				any_direct_de_jure_vassal_title = {
 					de_jure_liege = k_germany
