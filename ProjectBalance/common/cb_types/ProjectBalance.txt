@@ -962,8 +962,8 @@ retake_religious_lands = {
 				religion_group = pagan_group
 				NOT = { religion = FROM }
 			}
-			NOT = { same_realm = FROM }
 		}
+		NOT = { same_realm = FROM }
 	}
 	top_liege = {
 		religion_group = ROOT
