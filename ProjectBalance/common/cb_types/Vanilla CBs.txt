@@ -3642,6 +3642,7 @@ religious = {
 				}
 			}
 		}
+		#Prevents duplicate CBs
 		NOT = {
 			OR = {
 				AND = {
@@ -3662,7 +3663,7 @@ religious = {
 				}
 			}
 		}
-		#Target must have at least one province of declarer's religion
+		#Prevents duplicate CBs
 		NOT = {
 			any_direct_de_jure_vassal_title = {
 				NOT = {
