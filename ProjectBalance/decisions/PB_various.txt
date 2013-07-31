@@ -93,6 +93,16 @@ decisions = {
 				}
 				destroy_landed_title = THIS
 			}
+			hidden_tooltip = {
+				if = {
+					limit = { NOT = { has_global_flag = SWMH } }
+					k_germany = {
+						any_direct_de_jure_vassal_title = {
+							de_jure_liege = k_saxony
+						}
+					}
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 1
@@ -164,6 +174,16 @@ decisions = {
 			}
 			k_frisia = {
 				de_jure_liege = e_hre_french
+			}
+			hidden_tooltip = {
+				if = {
+					limit = { NOT = { has_global_flag = SWMH } }
+					k_germany = {
+						any_direct_de_jure_vassal_title = {
+							de_jure_liege = k_saxony
+						}
+					}
+				}
 			}
 		}
 		ai_will_do = {
