@@ -8,6 +8,7 @@
 	Added a new CB: Special Holy War. This CB is only given to Jerusalem and a few holy orders, letting them bypass requirements in certain circumstances (Teutonic Order against Pagans, Knights Hospitallier/Templar against Muslims, Jerusalem against their dejure provinces). This CB outright conquers the target duchy
 	Moved the base requirements for holy war into the war declaration UI. Dejure/border requirements are still displayed via the "is war possible?" decisions
 	(PB+SWMH) Fixed the province of Tazerbo not getting its Sahara-immunity to many CBs
+	(867 start) A dejure Bulgarian Empire exists
 
 3.2.24
 	Made much of Bulgaria Bogomilist after year 950, as it was historically a Bogomilist stronghold

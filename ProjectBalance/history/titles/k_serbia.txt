@@ -1,3 +1,9 @@
+632.1.1={
+	holder=159117
+}
+1041.1.1 = {
+	de_jure_liege = e_byzantium
+}
 1185.1.1 = {
 	de_jure_liege = e_bulgaria
 }
