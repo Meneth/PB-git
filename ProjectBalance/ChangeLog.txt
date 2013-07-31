@@ -8,6 +8,7 @@
 	Added a new CB: Special Holy War. This CB is only given to Jerusalem and a few holy orders, letting them bypass requirements in certain circumstances (Teutonic Order against Pagans, Knights Hospitallier/Templar against Muslims, Jerusalem against their dejure provinces). This CB outright conquers the target duchy
 	Moved the base requirements for holy war into the war declaration UI. Dejure/border requirements are still displayed via the "is war possible?" decisions
 	Reduced the size of the Mongol doomstacks by 25%, and doubled the attrition they take to 20% of normal attrition
+	Moved the arrival of the Timurids further south so that Timurid Steppes should be rarer
 	The Cumans and Kipchaks can no longer become dejure kingdoms
 	Renamed Francia to France
 	(PB+SWMH) Fixed the province of Tazerbo not getting its Sahara-immunity to many CBs

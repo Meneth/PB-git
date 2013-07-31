@@ -1094,12 +1094,12 @@ narrative_event = {
 		
 		wealth = 5000
 		
-		901 = { # Khiva
+		299 = { # Balkh
 			kingdom = {
 				ROOT = {
 					war = {
 						casus_belli = tribal_invasion
-						target = PREVPREV # The top liege of the owner of Khiva
+						target = PREVPREV # The top liege of the owner of Balkh
 						thirdparty_title = PREV # The de jure kingdom
 					}
 				}
@@ -1107,7 +1107,7 @@ narrative_event = {
 		}
 		
 		spawn_unit = {
-			province = 904 # Balkh
+			province = 299 # Farrah
 			leader = ROOT
 			troops =
 			{
@@ -1134,7 +1134,7 @@ narrative_event = {
 		}
 		new_character = {
 			spawn_unit = {
-				province = 901 # Khiva
+				province = 299 # Balkh
 				troops =
 				{
 					horse_archers = { 7500 7500 }
@@ -1160,7 +1160,7 @@ narrative_event = {
 		}
 		new_character = {
 			spawn_unit = {
-				province = 901 # Khiva
+				province = 299 # Balkh
 				troops =
 				{
 					horse_archers = { 7500 7500 }
@@ -1186,7 +1186,7 @@ narrative_event = {
 		}
 		new_character = {
 			spawn_unit = {
-				province = 901 # Khiva
+				province = 299 # Balkh
 				troops =
 				{
 					horse_archers = { 7500 7500 }
@@ -1356,7 +1356,7 @@ narrative_event = {
 			}
 			new_character = {
 				spawn_unit = {
-					province = 904 # Balkh
+					province = 299 # Farrah
 					troops =
 					{
 						horse_archers = { 7500 7500 }
@@ -1385,7 +1385,7 @@ narrative_event = {
 			}
 			new_character = {
 				spawn_unit = {
-					province = 904 # Balkh
+					province = 299 # Farrah
 					troops =
 					{
 						horse_archers = { 7500 7500 }
@@ -1552,7 +1552,7 @@ character_event = {
 		}
 		new_character = {
 			spawn_unit = {
-				province = 904 # Balkh
+				province = 299 # Farrah
 				troops =
 				{
 					horse_archers = { 7500 7500 }
@@ -1581,7 +1581,7 @@ character_event = {
 			}
 			new_character = {
 				spawn_unit = {
-					province = 904 # Balkh
+					province = 299 # Farrah
 					troops =
 					{
 						horse_archers = { 7500 7500 }
@@ -1708,7 +1708,7 @@ character_event = {
 		}
 		new_character = {
 			spawn_unit = {
-				province = 901 # Khiva
+				province = 299 # Balkh
 				troops =
 				{
 					horse_archers = { 7500 7500 }
@@ -1736,7 +1736,7 @@ character_event = {
 			}
 			new_character = {
 				spawn_unit = {
-					province = 901 # Khiva
+					province = 299 # Balkh
 					troops =
 					{
 						horse_archers = { 7500 7500 }
