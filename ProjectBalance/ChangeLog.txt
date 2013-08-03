@@ -16,6 +16,9 @@
 	(867 start) A dejure Bulgarian Empire exists
 	(867 start) Fixed the vanilla event interferring with PB's Formation of Hungary event
 	(867 start) East Francia now has the dejure territory of Saxony. When the HRE is formed, Saxony becomes a dejure title
+	(867 start) Fixed the HRE Decentralization law potentially not properly showing up for a French HRE
+	(867 start) Holding Lotharingia is no longer necessary to form the German HRE; completely controlling its dejure territory instead is enough
+	(867 start) Ensured that it is impossible for both the German and French HRE to form
 
 3.2.24
 	Made much of Bulgaria Bogomilist after year 950, as it was historically a Bogomilist stronghold
