@@ -49,7 +49,7 @@ decisions = {
 			e_hre = {
 				has_holder = no
 			}
-			e_hre_france = {
+			e_hre_french = {
 				has_holder = no
 			}
 		}
@@ -121,7 +121,7 @@ decisions = {
 			e_hre = {
 				has_holder = no
 			}
-			e_hre_france = {
+			e_hre_french = {
 				has_holder = no
 			}
 		}
