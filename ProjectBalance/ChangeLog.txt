@@ -1,5 +1,5 @@
 3.2.25
-	Slowed down culture spread via ports by 25%
+	Slowed down normal culture spread by 25%, and by port by 35%
 	Fixed the Basque not actually getting their culture building
 	Culture buildings no longer reduce the number of heavy cavalry available
 	Doubled the prestige requirements for enacting Primogeniture

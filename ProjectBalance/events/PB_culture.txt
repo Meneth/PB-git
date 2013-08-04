@@ -61,7 +61,7 @@ province_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 2400
+		months = 3000
 
 		modifier = {
 			factor = 0.75
@@ -275,7 +275,7 @@ province_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 3600
+		months = 4500
 
 		modifier = {
 			factor = 1.5
