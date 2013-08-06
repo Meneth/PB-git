@@ -163,9 +163,7 @@ decisions = {
 					}
 				}
 				e_hre = {
-					any_direct_de_jure_vassal_title = {
-						de_jure_liege = e_germany
-					}
+					set_name="Germania"
 				}
 			}
 			any_demesne_title = {
