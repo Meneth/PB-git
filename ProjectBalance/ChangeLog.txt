@@ -1,5 +1,6 @@
 3.2.26
 	Fixed a localisation issue with the holy war CBs
+	Fixed East Francia not being a dejure part of the HRE
 
 3.2.25
 	Slowed down normal culture spread by 25%, and by port by 35%
