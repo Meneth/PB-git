@@ -1,3 +1,6 @@
+3.2.26
+	Fixed a localisation issue with the holy war CBs
+
 3.2.25
 	Slowed down normal culture spread by 25%, and by port by 35%
 	Fixed the Basque not actually getting their culture building
