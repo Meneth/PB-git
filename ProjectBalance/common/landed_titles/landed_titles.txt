@@ -4790,6 +4790,8 @@ k_cuman = {
 	color2={ 255 255 255 }
 
 	culture = cuman
+	
+	assimilate = no
 
 	capital = 594 #	Sarkel
 }

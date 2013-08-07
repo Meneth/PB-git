@@ -1540,6 +1540,7 @@ de_jure_laws = {
 		potential = {
 			OR = {
 				title = e_hre
+				title = e_hre_french
 				title = e_germany
 			}
 			NOT = { has_global_flag = shattered_balance }
@@ -1573,6 +1574,7 @@ de_jure_laws = {
 		potential = {
 			OR = {
 				title = e_hre
+				title = e_hre_french
 				title = e_germany
 			}
 			NOT = { has_global_flag = shattered_balance }

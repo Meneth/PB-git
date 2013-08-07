@@ -49,10 +49,16 @@ decisions = {
 			e_hre = {
 				has_holder = no
 			}
+			e_hre_french = {
+				has_holder = no
+			}
 		}
 		allow = {
 			has_landed_title = k_italy
-			has_landed_title = k_lotharingia
+			OR = {
+				has_landed_title = k_lotharingia
+				completely_controls = k_lotharingia
+			}
 			prestige = 500
 			war = no
 			ruled_years = 10
@@ -93,6 +99,16 @@ decisions = {
 				}
 				destroy_landed_title = THIS
 			}
+			hidden_tooltip = {
+				if = {
+					limit = { NOT = { has_global_flag = SWMH } }
+					k_germany = {
+						any_direct_de_jure_vassal_title = {
+							de_jure_liege = k_saxony
+						}
+					}
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 1
@@ -103,6 +119,9 @@ decisions = {
 		potential = {
 			has_landed_title = k_france
 			e_hre = {
+				has_holder = no
+			}
+			e_hre_french = {
 				has_holder = no
 			}
 		}
@@ -144,9 +163,7 @@ decisions = {
 					}
 				}
 				e_hre = {
-					any_direct_de_jure_vassal_title = {
-						de_jure_liege = e_germany
-					}
+					set_name="Germania"
 				}
 			}
 			any_demesne_title = {
@@ -164,6 +181,16 @@ decisions = {
 			}
 			k_frisia = {
 				de_jure_liege = e_hre_french
+			}
+			hidden_tooltip = {
+				if = {
+					limit = { NOT = { has_global_flag = SWMH } }
+					k_germany = {
+						any_direct_de_jure_vassal_title = {
+							de_jure_liege = k_saxony
+						}
+					}
+				}
 			}
 		}
 		ai_will_do = {

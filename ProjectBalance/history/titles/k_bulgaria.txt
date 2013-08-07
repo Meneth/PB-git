@@ -1,5 +1,6 @@
 632.1.1={
 	holder=159117
+	de_jure_liege = e_bulgaria
 }
 665.1.1={
 	holder=159127
@@ -74,6 +75,7 @@
 }
 1041.1.1={
 	holder="-"
+	de_jure_liege = e_byzantium
 }
 
 1071.8.26={

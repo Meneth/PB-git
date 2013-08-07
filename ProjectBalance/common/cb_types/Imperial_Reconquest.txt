@@ -54,9 +54,6 @@ imperial_reconquest = {
 				de_jure_liege_or_above = k_serbia
 				ROOT = {
 					completely_controls = e_byzantium
-					completely_controls = d_coloneia
-					completely_controls = d_edessa
-					completely_controls = d_mesopotamia
 				}
 			}
 			AND = {
@@ -66,9 +63,6 @@ imperial_reconquest = {
 				}
 				ROOT = {
 					completely_controls = e_byzantium
-					#completely_controls = d_coloneia
-					#completely_controls = d_edessa
-					#completely_controls = d_mesopotamia
 					completely_controls = k_serbia
 				}
 			}
@@ -83,9 +77,6 @@ imperial_reconquest = {
 				}
 				ROOT = {
 					completely_controls = e_byzantium
-					#completely_controls = d_coloneia
-					#completely_controls = d_edessa
-					#completely_controls = d_mesopotamia
 					completely_controls = k_serbia
 					completely_controls = k_sicily
 					completely_controls = k_croatia
@@ -100,9 +91,6 @@ imperial_reconquest = {
 				ROOT = {
 					completely_controls = e_byzantium
 					completely_controls = e_italy
-					#completely_controls = d_coloneia
-					#completely_controls = d_edessa
-					#completely_controls = d_mesopotamia
 					completely_controls = k_serbia
 					completely_controls = k_croatia
 					completely_controls = k_syria
@@ -122,9 +110,6 @@ imperial_reconquest = {
 					completely_controls = e_byzantium
 					completely_controls = e_italy
 					completely_controls = e_spain
-					#completely_controls = d_coloneia
-					#completely_controls = d_edessa
-					#completely_controls = d_mesopotamia
 					completely_controls = k_serbia
 					completely_controls = k_croatia
 					completely_controls = k_syria
@@ -149,9 +134,6 @@ imperial_reconquest = {
 					completely_controls = e_italy
 					completely_controls = e_spain
 					completely_controls = e_france
-					#completely_controls = d_coloneia
-					#completely_controls = d_edessa
-					#completely_controls = d_mesopotamia
 					completely_controls = k_serbia
 					completely_controls = k_croatia
 					completely_controls = k_syria

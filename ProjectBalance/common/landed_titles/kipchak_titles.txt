@@ -3,6 +3,8 @@ k_kipchak = { #kept it titular here but you might want to add some de jure duchi
 	color2={ 255 255 255 }
 	capital = 616 #yaik
 	culture = cuman
+	
+	assimilate = no
 	allow = {
 		culture = cuman
 	}
