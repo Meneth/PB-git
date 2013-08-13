@@ -677,10 +677,12 @@ letter_event = {
 				years = 2
 			}
 		}
-		custom_tooltip = EVTTOOLTIP9004
-		hidden_tooltip = {
-			FROM = {
-				character_event = { id = 9004 days = 7 }
+		custom_tooltip = {
+			text = EVTTOOLTIP9004
+			hidden_tooltip = {
+				FROM = {
+					character_event = { id = 9004 days = 7 }
+				}
 			}
 		}
 	}
@@ -695,10 +697,12 @@ letter_event = {
 				years = 2
 			}
 		}
-		custom_tooltip = EVTTOOLTIP9004
-		hidden_tooltip = {
-			FROM = {
-				character_event = { id = 9004 days = 7 }
+		custom_tooltip = {
+			text = EVTTOOLTIP9004
+			hidden_tooltip = {
+				FROM = {
+					character_event = { id = 9004 days = 7 }
+				}
 			}
 		}
 	}
@@ -713,10 +717,12 @@ letter_event = {
 				years = 2
 			}
 		}
-		custom_tooltip = EVTTOOLTIP9004
-		hidden_tooltip = {
-			FROM = {
-				character_event = { id = 9004 days = 7 }
+		custom_tooltip = {
+			text = EVTTOOLTIP9004
+			hidden_tooltip = {
+				FROM = {
+					character_event = { id = 9004 days = 7 }
+				}
 			}
 		}
 	}
@@ -731,10 +737,12 @@ letter_event = {
 				years = 2
 			}
 		}
-		custom_tooltip = EVTTOOLTIP9004
-		hidden_tooltip = {
-			FROM = {
-				character_event = { id = 9004 days = 7 }
+		custom_tooltip = {
+			text = EVTTOOLTIP9004
+			hidden_tooltip = {
+				FROM = {
+					character_event = { id = 9004 days = 7 }
+				}
 			}
 		}
 	}
@@ -749,10 +757,12 @@ letter_event = {
 				years = 2
 			}
 		}
-		custom_tooltip = EVTTOOLTIP9004
-		hidden_tooltip = {
-			FROM = {
-				character_event = { id = 9004 days = 7 }
+		custom_tooltip = {
+			text = EVTTOOLTIP9004
+			hidden_tooltip = {
+				FROM = {
+					character_event = { id = 9004 days = 7 }
+				}
 			}
 		}
 	}
@@ -767,10 +777,12 @@ letter_event = {
 				years = 2
 			}
 		}
-		custom_tooltip = EVTTOOLTIP9004
-		hidden_tooltip = {
-			FROM = {
-				character_event = { id = 9004 days = 7 }
+		custom_tooltip = {
+			text = EVTTOOLTIP9004
+			hidden_tooltip = {
+				FROM = {
+					character_event = { id = 9004 days = 7 }
+				}
 			}
 		}
 	}
@@ -794,10 +806,12 @@ letter_event = {
 				years = 2
 			}
 		}
-		custom_tooltip = EVTTOOLTIP9004
-		hidden_tooltip = {
-			FROM = {
-				character_event = { id = 9007 days = 7 }
+		custom_tooltip = {
+			text = EVTTOOLTIP9004
+			hidden_tooltip = {
+				FROM = {
+					character_event = { id = 9007 days = 7 }
+				}
 			}
 		}
 	}
@@ -810,10 +824,12 @@ letter_event = {
 				years = 2
 			}
 		}
-		custom_tooltip = EVTTOOLTIP9003
-		hidden_tooltip = {
-			FROM = {
-				character_event = { id = 9006 days = 7 }
+		custom_tooltip = {
+			text = EVTTOOLTIP9003
+			hidden_tooltip = {
+				FROM = {
+					character_event = { id = 9006 days = 7 }
+				}
 			}
 		}
 	}
@@ -837,7 +853,7 @@ letter_event = {
 			}
 			clr_character_flag = faction_member
 		}
-		custom_tooltip = leaving_faction
+		custom_tooltip = { text = leaving_faction }
 	}
 }
 
@@ -861,10 +877,12 @@ letter_event = {
 				years = 2
 			}
 		}
-		custom_tooltip = EVTTOOLTIP9004
-		hidden_tooltip = {
-			FROM = {
-				character_event = { id = 9007 days = 7 }
+		custom_tooltip = {
+			text = EVTTOOLTIP9004
+			hidden_tooltip = {
+				FROM = {
+					character_event = { id = 9007 days = 7 }
+				}
 			}
 		}
 	}
@@ -879,10 +897,12 @@ letter_event = {
 				years = 2
 			}
 		}
-		custom_tooltip = EVTTOOLTIP9004
-		hidden_tooltip = {
-			FROM = {
-				character_event = { id = 9007 days = 7 }
+		custom_tooltip = {
+			text = EVTTOOLTIP9004
+			hidden_tooltip = {
+				FROM = {
+					character_event = { id = 9007 days = 7 }
+				}
 			}
 		}
 	}
@@ -897,10 +917,12 @@ letter_event = {
 				years = 2
 			}
 		}
-		custom_tooltip = EVTTOOLTIP9004
-		hidden_tooltip = {
-			FROM = {
-				character_event = { id = 9007 days = 7 }
+		custom_tooltip = {
+			text = EVTTOOLTIP9004
+			hidden_tooltip = {
+				FROM = {
+					character_event = { id = 9007 days = 7 }
+				}
 			}
 		}
 	}
@@ -915,10 +937,12 @@ letter_event = {
 				years = 2
 			}
 		}
-		custom_tooltip = EVTTOOLTIP9004
-		hidden_tooltip = {
-			FROM = {
-				character_event = { id = 9007 days = 7 }
+		custom_tooltip = {
+			text = EVTTOOLTIP9004
+			hidden_tooltip = {
+				FROM = {
+					character_event = { id = 9007 days = 7 }
+				}
 			}
 		}
 	}
@@ -933,10 +957,12 @@ letter_event = {
 				years = 2
 			}
 		}
-		custom_tooltip = EVTTOOLTIP9004
-		hidden_tooltip = {
-			FROM = {
-				character_event = { id = 9007 days = 7 }
+		custom_tooltip = {
+			text = EVTTOOLTIP9004
+			hidden_tooltip = {
+				FROM = {
+					character_event = { id = 9007 days = 7 }
+				}
 			}
 		}
 	}
@@ -982,7 +1008,7 @@ letter_event = {
 			}
 			clr_character_flag = faction_member
 		}
-		custom_tooltip = leaving_faction
+		custom_tooltip = { text = leaving_faction }
 	}
 }
 
@@ -1006,10 +1032,12 @@ letter_event = {
 				years = 2
 			}
 		}
-		custom_tooltip = EVTTOOLTIP9004
-		hidden_tooltip = {
-			FROM = {
-				character_event = { id = 9010 days = 7 }
+		custom_tooltip = {
+			text = EVTTOOLTIP9004
+			hidden_tooltip = {
+				FROM = {
+					character_event = { id = 9010 days = 7 }
+				}
 			}
 		}
 	}
@@ -1024,10 +1052,12 @@ letter_event = {
 				years = 2
 			}
 		}
-		custom_tooltip = EVTTOOLTIP9004
-		hidden_tooltip = {
-			FROM = {
-				character_event = { id = 9010 days = 7 }
+		custom_tooltip = {
+			text = EVTTOOLTIP9004
+			hidden_tooltip = {
+				FROM = {
+					character_event = { id = 9010 days = 7 }
+				}
 			}
 		}
 	}
@@ -1042,10 +1072,12 @@ letter_event = {
 				years = 2
 			}
 		}
-		custom_tooltip = EVTTOOLTIP9004
-		hidden_tooltip = {
-			FROM = {
-				character_event = { id = 9010 days = 7 }
+		custom_tooltip = {
+			text = EVTTOOLTIP9004
+			hidden_tooltip = {
+				FROM = {
+					character_event = { id = 9010 days = 7 }
+				}
 			}
 		}
 	}
@@ -1060,10 +1092,12 @@ letter_event = {
 				years = 2
 			}
 		}
-		custom_tooltip = EVTTOOLTIP9004
-		hidden_tooltip = {
-			FROM = {
-				character_event = { id = 9010 days = 7 }
+		custom_tooltip = {
+			text = EVTTOOLTIP9004
+			hidden_tooltip = {
+				FROM = {
+					character_event = { id = 9010 days = 7 }
+				}
 			}
 		}
 	}
@@ -1078,10 +1112,12 @@ letter_event = {
 				years = 2
 			}
 		}
-		custom_tooltip = EVTTOOLTIP9004
-		hidden_tooltip = {
-			FROM = {
-				character_event = { id = 9010 days = 7 }
+		custom_tooltip = {
+			text = EVTTOOLTIP9004
+			hidden_tooltip = {
+				FROM = {
+					character_event = { id = 9010 days = 7 }
+				}
 			}
 		}
 	}
@@ -1105,7 +1141,7 @@ letter_event = {
 			}
 			clr_character_flag = faction_member
 		}
-		custom_tooltip = leaving_faction
+		custom_tooltip = { text = leaving_faction }
 	}
 }
 
@@ -1327,10 +1363,12 @@ letter_event = {
 				years = 2
 			}
 		}
-		custom_tooltip = EVTTOOLTIP9004
-		hidden_tooltip = {
-			FROM = {
-				character_event = { id = 9024 days = 7 }
+		custom_tooltip = {
+			text = EVTTOOLTIP9004
+			hidden_tooltip = {
+				FROM = {
+					character_event = { id = 9024 days = 7 }
+				}
 			}
 		}
 	}
@@ -1345,10 +1383,12 @@ letter_event = {
 				years = 2
 			}
 		}
-		custom_tooltip = EVTTOOLTIP9004
-		hidden_tooltip = {
-			FROM = {
-				character_event = { id = 9024 days = 7 }
+		custom_tooltip = {
+			text = EVTTOOLTIP9004
+			hidden_tooltip = {
+				FROM = {
+					character_event = { id = 9024 days = 7 }
+				}
 			}
 		}
 	}
@@ -1363,10 +1403,12 @@ letter_event = {
 				years = 2
 			}
 		}
-		custom_tooltip = EVTTOOLTIP9004
-		hidden_tooltip = {
-			FROM = {
-				character_event = { id = 9024 days = 7 }
+		custom_tooltip = {
+			text = EVTTOOLTIP9004
+			hidden_tooltip = {
+				FROM = {
+					character_event = { id = 9024 days = 7 }
+				}
 			}
 		}
 	}
@@ -1381,10 +1423,12 @@ letter_event = {
 				years = 2
 			}
 		}
-		custom_tooltip = EVTTOOLTIP9004
-		hidden_tooltip = {
-			FROM = {
-				character_event = { id = 9024 days = 7 }
+		custom_tooltip = {
+			text = EVTTOOLTIP9004
+			hidden_tooltip = {
+				FROM = {
+					character_event = { id = 9024 days = 7 }
+				}
 			}
 		}
 	}
@@ -1399,10 +1443,12 @@ letter_event = {
 				years = 2
 			}
 		}
-		custom_tooltip = EVTTOOLTIP9004
-		hidden_tooltip = {
-			FROM = {
-				character_event = { id = 9024 days = 7 }
+		custom_tooltip = {
+			text = EVTTOOLTIP9004
+			hidden_tooltip = {
+				FROM = {
+					character_event = { id = 9024 days = 7 }
+				}
 			}
 		}
 	}
@@ -1417,10 +1463,12 @@ letter_event = {
 				years = 2
 			}
 		}
-		custom_tooltip = EVTTOOLTIP9004
-		hidden_tooltip = {
-			FROM = {
-				character_event = { id = 9024 days = 7 }
+		custom_tooltip = { 
+			text = EVTTOOLTIP9004
+			hidden_tooltip = {
+				FROM = {
+					character_event = { id = 9024 days = 7 }
+				}
 			}
 		}
 	}
@@ -1485,7 +1533,7 @@ letter_event = {
 			}
 			clr_character_flag = faction_recruit
 		}
-		custom_tooltip = joining_faction
+		custom_tooltip = { text = joining_faction }
 	}
 }
 
@@ -1507,7 +1555,7 @@ letter_event = {
 			}
 			clr_character_flag = faction_recruit
 		}
-		custom_tooltip = joining_faction
+		custom_tooltip = { text = joining_faction }
 	}
 }
 
@@ -1553,10 +1601,12 @@ letter_event = {
 				years = 2
 			}
 		}
-		custom_tooltip = EVTTOOLTIP9004
-		hidden_tooltip = {
-			FROM = {
-				character_event = { id = 9030 days = 7 }
+		custom_tooltip = {
+			text = EVTTOOLTIP9004
+			hidden_tooltip = {
+				FROM = {
+					character_event = { id = 9030 days = 7 }
+				}
 			}
 		}
 	}
@@ -1571,10 +1621,12 @@ letter_event = {
 				years = 2
 			}
 		}
-		custom_tooltip = EVTTOOLTIP9004
-		hidden_tooltip = {
-			FROM = {
-				character_event = { id = 9030 days = 7 }
+		custom_tooltip = {
+			text = EVTTOOLTIP9004
+			hidden_tooltip = {
+				FROM = {
+					character_event = { id = 9030 days = 7 }
+				}
 			}
 		}
 	}
@@ -1589,10 +1641,12 @@ letter_event = {
 				years = 2
 			}
 		}
-		custom_tooltip = EVTTOOLTIP9004
-		hidden_tooltip = {
-			FROM = {
-				character_event = { id = 9030 days = 7 }
+		custom_tooltip = {
+			text = EVTTOOLTIP9004
+			hidden_tooltip = {
+				FROM = {
+					character_event = { id = 9030 days = 7 }
+				}
 			}
 		}
 	}
@@ -1607,10 +1661,12 @@ letter_event = {
 				years = 2
 			}
 		}
-		custom_tooltip = EVTTOOLTIP9004
-		hidden_tooltip = {
-			FROM = {
-				character_event = { id = 9030 days = 7 }
+		custom_tooltip = {
+			text = EVTTOOLTIP9004
+			hidden_tooltip = {
+				FROM = {
+					character_event = { id = 9030 days = 7 }
+				}
 			}
 		}
 	}
@@ -1634,7 +1690,7 @@ letter_event = {
 			}
 			clr_character_flag = faction_recruit
 		}
-		custom_tooltip = joining_faction
+		custom_tooltip = { text = joining_faction }
 	}
 }
 

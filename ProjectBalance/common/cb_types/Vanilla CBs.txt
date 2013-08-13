@@ -2584,25 +2584,27 @@ invasion = {
 	}
 
 	on_success_title = {
-		custom_tooltip = invasion_succ_tip
+		custom_tooltip = {
+			text = tribal_invasion_succ_tip
 		
-		hidden_tooltip = {
-			usurp_title_plus_barony_if_unlanded = ROOT
-			FROM = { set_defacto_liege = ROOT }
+			hidden_tooltip = {
+				usurp_title_plus_barony_if_unlanded = ROOT
+				FROM = { set_defacto_liege = ROOT }
+				if = {
+					limit = {
+						FROM = { is_liege_or_above = ROOT }
+					}
+					FROM = { imprison = ROOT }
+				}
+			}
+			
 			if = {
 				limit = {
-					FROM = { is_liege_or_above = ROOT }
+					higher_tier_than = BARON
+					NOT = { culture = ROOT }
 				}
-				FROM = { imprison = ROOT }
+				hidden_tooltip = { conquest_culture = ROOT }
 			}
-		}
-		
-		if = {
-			limit = {
-				higher_tier_than = BARON
-				NOT = { culture = ROOT }
-			}
-			hidden_tooltip = { conquest_culture = ROOT }
 		}
 	}
 
@@ -2847,82 +2849,84 @@ tribal_invasion = {
 	}
 	
 	on_success_title = {
-		custom_tooltip = tribal_invasion_succ_tip
-		hidden_tooltip = {
-			if = {
-				limit = {
-					OR = {
-						NOT = { has_holder = yes }
-						ROOT = { NOT = { tier = emperor } }
-						FROM = { religion_group = muslim }
-						FROM = { religion_group = pagan_group }
-						FROM = { tier = emperor }
-					}
-				}
-				ROOT = {
-					vassalize_or_take_under_title = {
-						title = PREV
-						enemy = FROM
-						is_crusade = yes # Even if the title holder is not participating in the war, gain holdings occupied by all Crusade participants
-					}
-				}
-			}
-			if = {
-				limit = {
-					has_holder = yes
-					ROOT = { tier = emperor }
-					NOT = { FROM = { religion_group = muslim } }
-					NOT = { FROM = { religion_group = pagan_group } }
-					NOT = { FROM = { tier = emperor } }
-				}
-				holder_scope = {
-					set_defacto_liege = ROOT
-				}
-			}
-			any_de_jure_vassal_title = {
-				limit = {
-					holder_scope = {
-						independent = no
-						liege = {
-							character = PREV
+		custom_tooltip = {
+			text = tribal_invasion_succ_tip
+			hidden_tooltip = {
+				if = {
+					limit = {
+						OR = {
+							NOT = { has_holder = yes }
+							ROOT = { NOT = { tier = emperor } }
+							FROM = { religion_group = muslim }
+							FROM = { religion_group = pagan_group }
+							FROM = { tier = emperor }
 						}
-						any_war = {
-							defender = {
-								character = FROM
+					}
+					ROOT = {
+						vassalize_or_take_under_title = {
+							title = PREV
+							enemy = FROM
+							is_crusade = yes # Even if the title holder is not participating in the war, gain holdings occupied by all Crusade participants
+						}
+					}
+				}
+				if = {
+					limit = {
+						has_holder = yes
+						ROOT = { tier = emperor }
+						NOT = { FROM = { religion_group = muslim } }
+						NOT = { FROM = { religion_group = pagan_group } }
+						NOT = { FROM = { tier = emperor } }
+					}
+					holder_scope = {
+						set_defacto_liege = ROOT
+					}
+				}
+				any_de_jure_vassal_title = {
+					limit = {
+						holder_scope = {
+							independent = no
+							liege = {
+								character = PREV
+							}
+							any_war = {
+								defender = {
+									character = FROM
+								}
 							}
 						}
 					}
+					holder_scope = {
+						set_defacto_liege = ROOT
+					}
 				}
-				holder_scope = {
-					set_defacto_liege = ROOT
-				}
-			}
-			if = {
-				limit = {
-					title = k_anatolia
+				if = {
+					limit = {
+						title = k_anatolia
+						ROOT = {
+							has_landed_title = e_persia
+						}
+						FROM = {
+							has_landed_title = e_byzantium
+						}
+					}
 					ROOT = {
-						has_landed_title = e_persia
-					}
-					FROM = {
-						has_landed_title = e_byzantium
+						character_event = { id = meneth.401 }
 					}
 				}
-				ROOT = {
-					character_event = { id = meneth.401 }
-				}
-			}
-			if = {
-				limit = {
-					title = k_nikaea
+				if = {
+					limit = {
+						title = k_nikaea
+						ROOT = {
+							has_landed_title = k_rum
+						}
+						FROM = {
+							has_landed_title = e_byzantium
+						}
+					}
 					ROOT = {
-						has_landed_title = k_rum
+						character_event = { id = meneth.408 }
 					}
-					FROM = {
-						has_landed_title = e_byzantium
-					}
-				}
-				ROOT = {
-					character_event = { id = meneth.408 }
 				}
 			}
 		}
@@ -3832,30 +3836,15 @@ religious = {
 	}
 
 	on_success_title = {
-		custom_tooltip = religious_cb_succ_tip
-		hidden_tooltip = {
-			ROOT = {
-				FROM = {
-					any_realm_character = { set_character_flag = holy_war_target }
-				}
-				if = {
-					limit = {
-						FROM = {
-							OR = {
-								religion_group = pagan_group
-								is_heresy_of = ROOT
-								is_parent_religion = ROOT
-							}
-						}
+		custom_tooltip = {
+			text = religious_cb_succ_tip
+			hidden_tooltip = {
+				ROOT = {
+					FROM = {
+						any_realm_character = { set_character_flag = holy_war_target }
 					}
-					vassalize_or_take_under_title = {
-						title = PREV
-						enemy = FROM
-					}
-				}
-				if = {
-					limit = {
-						NOT = {
+					if = {
+						limit = {
 							FROM = {
 								OR = {
 									religion_group = pagan_group
@@ -3864,44 +3853,61 @@ religious = {
 								}
 							}
 						}
-					}
-					vassalize_or_take_under_title = {
-						title = PREV
-						enemy = FROM
-						same_religion = yes # Only vassalize rulers of my religion
-					}
-				}
-#				gain_settlements_under_title = {
-#					title = PREV
-#					enemy = FROM
-#				}
-				any_realm_character = {
-					limit = {
-						has_character_flag = holy_war_target
-						NOT = { religion = ROOT }
-						OR = {
-							religion_group = pagan_group
-							is_heresy_of = ROOT
-							is_parent_religion = ROOT
+						vassalize_or_take_under_title = {
+							title = PREV
+							enemy = FROM
 						}
-						NOT = { religion_group = muslim }
 					}
-					religion = ROOT
-					opinion = {
-						who = ROOT
-						years = 10
-						modifier = opinion_demanded_conversion
+					if = {
+						limit = {
+							NOT = {
+								FROM = {
+									OR = {
+										religion_group = pagan_group
+										is_heresy_of = ROOT
+										is_parent_religion = ROOT
+									}
+								}
+							}
+						}
+						vassalize_or_take_under_title = {
+							title = PREV
+							enemy = FROM
+							same_religion = yes # Only vassalize rulers of my religion
+						}
+					}
+	#				gain_settlements_under_title = {
+	#					title = PREV
+	#					enemy = FROM
+	#				}
+					any_realm_character = {
+						limit = {
+							has_character_flag = holy_war_target
+							NOT = { religion = ROOT }
+							OR = {
+								religion_group = pagan_group
+								is_heresy_of = ROOT
+								is_parent_religion = ROOT
+							}
+							NOT = { religion_group = muslim }
+						}
+						religion = ROOT
+						opinion = {
+							who = ROOT
+							years = 10
+							modifier = opinion_demanded_conversion
+						}
+					}
+					any_realm_character = {
+						limit = { has_character_flag = holy_war_target }
+						clr_character_flag = holy_war_target
 					}
 				}
-				any_realm_character = {
-					limit = { has_character_flag = holy_war_target }
-					clr_character_flag = holy_war_target
-				}
-			}
-			FROM = {
-				any_realm_character = {
-					limit = { has_character_flag = holy_war_target }
-					clr_character_flag = holy_war_target
+				FROM = {
+					any_realm_character = {
+						limit = { has_character_flag = holy_war_target }
+						clr_character_flag = holy_war_target
+					}
 				}
 			}
 		}
@@ -7973,31 +7979,33 @@ muslim_invasion = {
 	}
 	
 	on_success_title = {
-		custom_tooltip = tribal_invasion_succ_tip
-		hidden_tooltip = {
-			ROOT = {
-				vassalize_or_take_under_title = {
-					title = PREV
-					enemy = FROM
-					is_crusade = yes # Even if the title holder is not participating in the war, gain holdings occupied by all Crusade participants
+		custom_tooltip = {
+			text = invasion_succ_tip
+			hidden_tooltip = {
+				ROOT = {
+					vassalize_or_take_under_title = {
+						title = PREV
+						enemy = FROM
+						is_crusade = yes # Even if the title holder is not participating in the war, gain holdings occupied by all Crusade participants
+					}
 				}
-			}
-			any_de_jure_vassal_title = {
-				limit = {
-					holder_scope = {
-						independent = no
-						liege = {
-							character = PREV
-						}
-						any_war = {
-							defender = {
-								character = FROM
+				any_de_jure_vassal_title = {
+					limit = {
+						holder_scope = {
+							independent = no
+							liege = {
+								character = PREV
+							}
+							any_war = {
+								defender = {
+									character = FROM
+								}
 							}
 						}
 					}
-				}
-				holder_scope = {
-					set_defacto_liege = ROOT
+					holder_scope = {
+						set_defacto_liege = ROOT
+					}
 				}
 			}
 		}

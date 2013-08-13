@@ -496,19 +496,23 @@ character_event = {
 
 		random_list = {
 			33 = {
-				custom_tooltip = EVTTOOLTIPsiegeescaped
-				hidden_tooltip = {
-					character_event = { id = 1100099994 }
+				custom_tooltip = {
+					text = EVTTOOLTIPsiegeescaped
+					hidden_tooltip = {
+						character_event = { id = 1100099994 }
+					}
 				}
 			}
 			66 = {
-				ROOT = {
-					custom_tooltip = EVTTOOLTIPsiegecapturedenemy
-					set_character_flag = captured
-				}
-				hidden_tooltip = {
-					ROOT = { character_event = { id = 1100099993 } }		
-					siege = { enemy = { leader = { character_event = { id = 1100099997 } } } }
+				custom_tooltip = {
+					text = EVTTOOLTIPsiegecapturedenemy
+					hidden_tooltip = {
+						ROOT = { character_event = { id = 1100099993 } }
+						ROOT = {
+							set_character_flag = captured
+						}
+						siege = { enemy = { leader = { character_event = { id = 1100099997 } } } }
+					}
 				}
 			}	
 		}
@@ -600,56 +604,61 @@ character_event = {
 			chance = 1
 			add_trait = maimed
 		}
-		custom_tooltip = "dis_chance"
-		hidden_tooltip = {
-			random = {
-				chance = 1
-				add_trait = has_tuberculosis
-			}
-			random = {
-				chance = 1
-				add_trait = has_bubonic_plague
-			}
-			random = {
-				chance = 1
-				add_trait = has_typhoid_fever
-			}
-			random = {
-				chance = 1
-				add_trait = has_typhus
-			}
-			random = {
-				chance = 1
-				add_trait = has_small_pox
-			}
-			random = {
-				chance = 1
-				add_trait = has_measles
-			}
-			random = {
-				chance = 1
-				add_trait = leper
+		custom_tooltip = {
+			text = dis_chance
+			
+			hidden_tooltip = {
+				random = {
+					chance = 1
+					add_trait = has_tuberculosis
+				}
+				random = {
+					chance = 1
+					add_trait = has_bubonic_plague
+				}
+				random = {
+					chance = 1
+					add_trait = has_typhoid_fever
+				}
+				random = {
+					chance = 1
+					add_trait = has_typhus
+				}
+				random = {
+					chance = 1
+					add_trait = has_small_pox
+				}
+				random = {
+					chance = 1
+					add_trait = has_measles
+				}
+				random = {
+					chance = 1
+					add_trait = leper
+				}
 			}
 		}
-
 		
 		random_list = {
 			75 = {
-				custom_tooltip = EVTTOOLTIPsiegeescaped
-				hidden_tooltip = {
-					character_event = { id = 1100099995 }
+				custom_tooltip = {
+					text = EVTTOOLTIPsiegeescaped
+					hidden_tooltip = {
+						character_event = { id = 1100099995 }
+					}
 				}
 			}
 			25 = {
-				ROOT = {
-					custom_tooltip = EVTTOOLTIPsiegecapturedenemy
-					set_character_flag = captured
+				custom_tooltip = {
+					text = EVTTOOLTIPsiegecapturedenemy
+					hidden_tooltip = {
+						ROOT = { character_event = { id = 1100099993 } }
+						ROOT = {
+							set_character_flag = captured
+						}
+						siege = { enemy = { leader = { character_event = { id = 1100099997 } } } }
+					}
 				}
-				hidden_tooltip = {
-					ROOT = { character_event = { id = 1100099993 } }
-					siege = { enemy = { leader = { character_event = { id = 1100099997 } } } }
-				}
-				
 			}
 		}
 	}
@@ -747,19 +756,23 @@ character_event = {
 
 		random_list = {
 			70 = {
-				custom_tooltip = EVTTOOLTIPsiegeescaped
-				hidden_tooltip = {
-					character_event = { id = 1100099996 }
+				custom_tooltip = {
+					text = EVTTOOLTIPsiegeescaped
+					hidden_tooltip = {
+						character_event = { id = 1100099996 }
+					}
 				}
 			}
 			20 = {
-				ROOT = {
-					custom_tooltip = EVTTOOLTIPsiegecapturedenemy
-					set_character_flag = captured
-				}		
-				hidden_tooltip = {
-					ROOT = { character_event = { id = 1100099993 } }
-					siege = { enemy = { leader = { character_event = { id = 1100099997 } } } }
+				custom_tooltip = {
+					text = EVTTOOLTIPsiegecapturedenemy
+					hidden_tooltip = {
+						ROOT = { character_event = { id = 1100099993 } }
+						ROOT = {
+							set_character_flag = captured
+						}
+						siege = { enemy = { leader = { character_event = { id = 1100099997 } } } }
+					}
 				}
 			}
 			10 = {
@@ -832,7 +845,7 @@ character_event = {
 		name = "EVTOPWAYsiegecapture02"
 		remove_character_modifier = stalwart_defender
 		ROOT = {
-			custom_tooltip = EVTTOOLWAYfamilyhatesyou
+			custom_tooltip = { text = EVTTOOLWAYfamilyhatesyou }
 		}		
 	}
 }#escape by postern

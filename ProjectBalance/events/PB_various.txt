@@ -151,31 +151,33 @@ character_event = {
 	#Pay interest
 	option = {
 		name = meneth.203.a
-		custom_tooltip = pay_interest
-		hidden_tooltip = {
-			if = {
-				limit = {
-					has_character_modifier = small_loan
+		custom_tooltip = {
+			text = pay_interest
+			hidden_tooltip = {
+				if = {
+					limit = {
+						has_character_modifier = small_loan
+					}
+					wealth = -10
 				}
-				wealth = -10
-			}
-			if = {
-				limit = {
-					has_character_modifier = medium_loan
+				if = {
+					limit = {
+						has_character_modifier = medium_loan
+					}
+					wealth = -20
 				}
-				wealth = -20
-			}
-			if = {
-				limit = {
-					has_character_modifier = large_loan
+				if = {
+					limit = {
+						has_character_modifier = large_loan
+					}
+					wealth = -40
 				}
-				wealth = -40
-			}
-			if = {
-				limit = {
-					has_character_modifier = huge_loan
+				if = {
+					limit = {
+						has_character_modifier = huge_loan
+					}
+					wealth = -80
 				}
-				wealth = -80
 			}
 		}
 	}
@@ -185,63 +187,65 @@ character_event = {
 		trigger = {
 			wealth = 110
 		}
-		custom_tooltip = repay_loans
-		hidden_tooltip = {
-			if = {
-				limit = {
-					has_character_modifier = small_loan
+		custom_tooltip = {
+			text = repay_loans
+			hidden_tooltip = {
+				if = {
+					limit = {
+						has_character_modifier = small_loan
+					}
+					wealth = -10
 				}
-				wealth = -10
-			}
-			if = {
-				limit = {
-					has_character_modifier = medium_loan
+				if = {
+					limit = {
+						has_character_modifier = medium_loan
+					}
+					wealth = -20
 				}
-				wealth = -20
-			}
-			if = {
-				limit = {
-					has_character_modifier = large_loan
+				if = {
+					limit = {
+						has_character_modifier = large_loan
+					}
+					wealth = -40
 				}
-				wealth = -40
-			}
-			if = {
-				limit = {
-					has_character_modifier = huge_loan
+				if = {
+					limit = {
+						has_character_modifier = huge_loan
+					}
+					wealth = -80
 				}
-				wealth = -80
-			}
-			if = {
-				limit = {
-					has_character_modifier = huge_loan
-					wealth = 800
+				if = {
+					limit = {
+						has_character_modifier = huge_loan
+						wealth = 800
+					}
+					wealth = -800
+					remove_character_modifier = huge_loan
 				}
-				wealth = -800
-				remove_character_modifier = huge_loan
-			}
-			if = {
-				limit = {
-					has_character_modifier = large_loan
-					wealth = 400
+				if = {
+					limit = {
+						has_character_modifier = large_loan
+						wealth = 400
+					}
+					wealth = -400
+					remove_character_modifier = large_loan
 				}
-				wealth = -400
-				remove_character_modifier = large_loan
-			}
-			if = {
-				limit = {
-					has_character_modifier = medium_loan
-					wealth = 200
+				if = {
+					limit = {
+						has_character_modifier = medium_loan
+						wealth = 200
+					}
+					wealth = -200
+					remove_character_modifier = medium_loan
 				}
-				wealth = -200
-				remove_character_modifier = medium_loan
-			}
-			if = {
-				limit = {
-					has_character_modifier = small_loan
-					wealth = 100
+				if = {
+					limit = {
+						has_character_modifier = small_loan
+						wealth = 100
+					}
+					wealth = -100
+					remove_character_modifier = small_loan
 				}
-				wealth = -100
-				remove_character_modifier = small_loan
 			}
 		}
 	}

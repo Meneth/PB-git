@@ -3452,7 +3452,7 @@ character_event = {
 				}
 			}
 		}
-		custom_tooltip = preacher_imprisoned
+		custom_tooltip = { text = preacher_imprisoned }
 	}
 	option = {
 		name = EVTOPTB39600
@@ -3511,7 +3511,7 @@ character_event = {
 				character_event = { id = 39612 days = 1 }
 			}
 		}
-		custom_tooltip = preacher_allowed
+		custom_tooltip = { text = preacher_allowed }
 	}
 }
 
@@ -3576,7 +3576,7 @@ character_event = {
 				character_event = { id = 39614 days = 1 }
 			}
 		}
-		custom_tooltip = preacher_convert
+		custom_tooltip = { text = preacher_convert }
 	}
 	option = {
 		name = EVTOPTB39601
@@ -3630,7 +3630,7 @@ character_event = {
 				character_event = { id = 39613 days = 1 }
 			}
 		}
-		custom_tooltip = preacher_banished
+		custom_tooltip = { text = preacher_banished }
 	}
 }
 
@@ -3663,11 +3663,11 @@ character_event = {
 				}
 			}
 		}
-		custom_tooltip = preacher_imprisoned
+		custom_tooltip = { text = preacher_imprisoned }
 	}
 	option = {
 		name = EVTOPTB39602
-		custom_tooltip = preacher_allowed
+		custom_tooltip = { text = preacher_allowed }
 	}
 }
 

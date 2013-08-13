@@ -86,17 +86,19 @@ decisions = {
 				IF = {
 					any_courtier = {
 
-						custom_tooltip = EVTTOOLTIPprisreq
+						custom_tooltip = {
+							text = EVTTOOLTIPprisreq
 
-						limit = {
-							prisoner = yes
-							primary_title = { higher_tier_than = BARON }
-							war_with = ROOT
+							limit = {
+								prisoner = yes
+								primary_title = { higher_tier_than = BARON }
+								war_with = ROOT
+							}
+							hidden_tooltip = {
+								prisoner = no
+								prisoner = ROOT
+							}#hddn
 						}
-						hidden_tooltip = {
-							prisoner = no
-							prisoner = ROOT
-						}#hddn
 					}
 				}#if
 			}#rlmlord

@@ -178,12 +178,14 @@ imperial_reconquest = {
 	}
 
 	on_success_title = {
-		custom_tooltip = tribal_invasion_succ_tip
-		hidden_tooltip = {
-			ROOT = {
-				vassalize_or_take_under_title = {
-					title = PREV
-					enemy = FROM
+		custom_tooltip = {
+			text = tribal_invasion_succ_tip
+			hidden_tooltip = {
+				ROOT = {
+					vassalize_or_take_under_title = {
+						title = PREV
+						enemy = FROM
+					}
 				}
 			}
 		}

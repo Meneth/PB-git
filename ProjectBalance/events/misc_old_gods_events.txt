@@ -510,27 +510,28 @@ character_event = {
 			factor = 70
 		}
 		
-		custom_tooltip = EVTOPTA62900_TT
-		
-		# Prepare the invasion (these opinions control the mechanic)
-		hidden_tooltip = {
-			d_hereford = { # Mercia
-				holder_scope = {
-					reverse_opinion = {
-						who = FROM
-						modifier = preparing_to_invade
+		custom_tooltip = {
+			text = EVTOPTA62900_TT
+			# Prepare the invasion (these opinions control the mechanic)
+			hidden_tooltip = {
+				d_hereford = { # Mercia
+					holder_scope = {
+						reverse_opinion = {
+							who = FROM
+							modifier = preparing_to_invade
+						}
+						opinion = {
+							who = ROOT
+							modifier = preparing_to_invade_me
+						}
+						letter_event = { id = 62901 }
 					}
-					opinion = {
-						who = ROOT
-						modifier = preparing_to_invade_me
-					}
-					letter_event = { id = 62901 }
 				}
-			}
-			add_character_modifier = { 
-				name = launched_prepared_invasion
-				hidden = yes
-				days = -1 
+				add_character_modifier = { 
+					name = launched_prepared_invasion
+					hidden = yes
+					days = -1 
+				}
 			}
 		}
 		
@@ -592,27 +593,28 @@ character_event = {
 			factor = 10
 		}
 		
-		custom_tooltip = EVTOPTB62900_TT
-		
-		# Prepare the invasion
-		hidden_tooltip = {
-			d_somerset = { # Wessex
-				holder_scope = {
-					reverse_opinion = {
-						who = FROM
-						modifier = preparing_to_invade
+		custom_tooltip = {
+			text = EVTOPTB62900_TT
+			# Prepare the invasion
+			hidden_tooltip = {
+				d_somerset = { # Wessex
+					holder_scope = {
+						reverse_opinion = {
+							who = FROM
+							modifier = preparing_to_invade
+						}
+						opinion = {
+							who = ROOT
+							modifier = preparing_to_invade_me
+						}
+						letter_event = { id = 62901 }
 					}
-					opinion = {
-						who = ROOT
-						modifier = preparing_to_invade_me
-					}
-					letter_event = { id = 62901 }
 				}
-			}
-			add_character_modifier = { 
-				name = launched_prepared_invasion
-				hidden = yes
-				days = -1 
+				add_character_modifier = { 
+					name = launched_prepared_invasion
+					hidden = yes
+					days = -1 
+				}
 			}
 		}
 		
@@ -674,27 +676,28 @@ character_event = {
 			factor = 10
 		}
 		
-		custom_tooltip = EVTOPTC62900_TT
-		
-		# Prepare the invasion
-		hidden_tooltip = {
-			k_scotland = {
-				holder_scope = {
-					reverse_opinion = {
-						who = FROM
-						modifier = preparing_to_invade
+		custom_tooltip = {
+			text = EVTOPTC62900_TT
+			# Prepare the invasion
+			hidden_tooltip = {
+				k_scotland = {
+					holder_scope = {
+						reverse_opinion = {
+							who = FROM
+							modifier = preparing_to_invade
+						}
+						opinion = {
+							who = ROOT
+							modifier = preparing_to_invade_me
+						}
+						letter_event = { id = 62901 }
 					}
-					opinion = {
-						who = ROOT
-						modifier = preparing_to_invade_me
-					}
-					letter_event = { id = 62901 }
 				}
-			}
-			add_character_modifier = { 
-				name = launched_prepared_invasion
-				hidden = yes
-				days = -1 
+				add_character_modifier = { 
+					name = launched_prepared_invasion
+					hidden = yes
+					days = -1 
+				}
 			}
 		}
 		
@@ -804,97 +807,220 @@ narrative_event = {
 			}
 		}
 		
-		custom_tooltip = EVTOPTA62910_CUSTOM
-		
-		hidden_tooltip = {
-			any_playable_ruler = {
-				limit = {
-					NOT = { has_landed_title = k_hungary }
-					ai = no
-				}
-				narrative_event = { id = 62911 }
-			}
-			
-			any_realm_province = {
-				limit = {
-					kingdom = {
-						title = k_hungary
-					}
-				}
-				culture = hungarian
-				religion = ROOT
-			}
-			
-			random_realm_province = {
-				limit = {
-					culture = hungarian
-					kingdom = {
-						NOT = { title = k_hungary }
-					}
-					any_neighbor_province = {
-						NOT = { culture = hungarian }
-					}
-				}
-				random_neighbor_province = {
+		custom_tooltip = {
+			text = EVTOPTA62910_CUSTOM
+			hidden_tooltip = {
+				any_playable_ruler = {
 					limit = {
-						NOT = { culture = hungarian }
+						NOT = { has_landed_title = k_hungary }
+						ai = no
 					}
-					reverse_culture = PREV
-					reverse_religion = PREV
+					narrative_event = { id = 62911 }
 				}
-			}
-			random_realm_province = {
-				limit = {
-					culture = hungarian
-					kingdom = {
-						NOT = { title = k_hungary }
-					}
-					any_neighbor_province = {
-						NOT = { culture = hungarian }
-					}
 				}
-				random_neighbor_province = {
+				
+				any_realm_province = {
 					limit = {
-						NOT = { culture = hungarian }
+						kingdom = {
+							title = k_hungary
+						}
+	
+	
 					}
-					reverse_culture = PREV
-					reverse_religion = PREV
-				}
-			}
-			random_realm_province = {
-				limit = {
 					culture = hungarian
-					kingdom = {
-						NOT = { title = k_hungary }
-					}
-					any_neighbor_province = {
-						NOT = { culture = hungarian }
-					}
+					religion = ROOT
 				}
-				random_neighbor_province = {
+				
+				random_realm_province = {
 					limit = {
-						NOT = { culture = hungarian }
+						culture = hungarian
+						kingdom = {
+							NOT = { title = k_hungary }
+	
+	
+	
+	
+	
+	
+	
+						}
+						any_neighbor_province = {
+							NOT = { culture = hungarian }
+	
+	
+	
+	
+						}
 					}
-					reverse_culture = PREV
-					reverse_religion = PREV
+					random_neighbor_province = {
+						limit = {
+							NOT = { culture = hungarian }
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+						}
+						reverse_culture = PREV
+						reverse_religion = PREV
+					}
 				}
-			}
-			random_realm_province = {
-				limit = {
-					culture = hungarian
-					kingdom = {
-						NOT = { title = k_hungary }
-					}
-					any_neighbor_province = {
-						NOT = { culture = hungarian }
-					}
-				}
-				random_neighbor_province = {
+				random_realm_province = {
 					limit = {
-						NOT = { culture = hungarian }
+						culture = hungarian
+						kingdom = {
+							NOT = { title = k_hungary }
+	
+	
+	
+	
+	
+	
+	
+	
+						}
+						any_neighbor_province = {
+							NOT = { culture = hungarian }
+	
+	
+	
+	
+						}
 					}
-					reverse_culture = PREV
-					reverse_religion = PREV
+					random_neighbor_province = {
+						limit = {
+							NOT = { culture = hungarian }
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+						}
+						reverse_culture = PREV
+						reverse_religion = PREV
+					}
+				}
+				random_realm_province = {
+					limit = {
+						culture = hungarian
+						kingdom = {
+							NOT = { title = k_hungary }
+	
+	
+	
+	
+	
+	
+	
+	
+						}
+						any_neighbor_province = {
+							NOT = { culture = hungarian }
+	
+	
+	
+	
+						}
+					}
+					random_neighbor_province = {
+						limit = {
+							NOT = { culture = hungarian }
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+						}
+						reverse_culture = PREV
+						reverse_religion = PREV
+					}
+				}
+				random_realm_province = {
+					limit = {
+						culture = hungarian
+						kingdom = {
+							NOT = { title = k_hungary }
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+						}
+						any_neighbor_province = {
+							NOT = { culture = hungarian }
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+						}
+					}
+					random_neighbor_province = {
+						limit = {
+							NOT = { culture = hungarian }
+						}
+						reverse_culture = PREV
+						reverse_religion = PREV
+					}
 				}
 			}
 		}

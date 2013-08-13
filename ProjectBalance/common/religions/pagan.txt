@@ -70,6 +70,8 @@ pagan_group = {
 		
 		religious_clothing_head = 3
 		religious_clothing_priest = 3
+		
+		intermarry = norse_pagan
 	}		
 	
 	norse_pagan = {
@@ -111,6 +113,8 @@ pagan_group = {
 		
 		religious_clothing_head = 3
 		religious_clothing_priest = 3
+		
+		intermarry = norse_pagan_reformed
 	}	
 	
 	tengri_pagan_reformed = { # Mongols
@@ -507,7 +511,9 @@ pagan_group = {
 	
 	hellenic_pagan = {
 		graphical_culture = westerngfx
-
+		
+		pre_reformed = yes
+		
 		icon = 37
 		
 		color = { 0.6 0.1 0.1 }

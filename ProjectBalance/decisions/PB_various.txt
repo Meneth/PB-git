@@ -292,9 +292,11 @@ decisions = {
 					}
 					NOT = { religion_group = muslim }
 				}
-				custom_tooltip = become_kinslayer_tooltip
-				hidden_tooltip = {
-					ROOT = { add_trait = kinslayer }
+				custom_tooltip = {
+					text = become_kinslayer_tooltip
+					hidden_tooltip = {
+						ROOT = { add_trait = kinslayer }
+					}
 				}
 			}
 			any_courtier = {

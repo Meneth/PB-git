@@ -916,6 +916,8 @@ e_scandinavia = {
 				color={ 174 161 110 }
 				color2={ 255 255 255 }
 				
+				lappish=Finnmárku
+				
 				b_varghoeya = {
 				}
 				b_vardohus = {
@@ -1125,8 +1127,8 @@ e_scandinavia = {
 				
 			   	b_sigtuna = {
 				}
-			   	b_uppsala = {
-			   		# norse = Uppsalir
+				b_uppsala = {
+			   	# norse = Uppsalir
 					holy_site = norse_pagan
 					holy_site = norse_pagan_reformed
 				}
@@ -1456,7 +1458,7 @@ e_scandinavia = {
 				color2={ 255 255 255 }
 				
 				finnish=Lappi
-				lappish=Lappi
+				lappish=Sápmi
 				
 				b_lycksele = {
 				}

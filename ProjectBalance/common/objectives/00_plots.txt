@@ -1407,17 +1407,19 @@ plot_weaken_fellow_vassal = {
 	}
 	
 	success = {
-		hidden_tooltip = {
-			holder_scope = {
-				NOT = { 
-					has_opinion_modifier = {
-						modifier = opinion_plot_weaken_fellow_vassal
-						who = FROM			
+		custom_tooltip = {
+			text = PLOT_TOOLTIP_WEAKEN_VASSAL
+			hidden_tooltip = {
+				holder_scope = {
+					NOT = { 
+						has_opinion_modifier = {
+							modifier = opinion_plot_weaken_fellow_vassal
+							who = FROM			
+						}
 					}
 				}
 			}
 		}
-		custom_tooltip = PLOT_TOOLTIP_WEAKEN_VASSAL
 	}
 	abort = {
 		OR = {

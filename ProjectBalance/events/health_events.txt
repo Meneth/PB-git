@@ -2746,7 +2746,7 @@ narrative_event = {
 	
 	option = {
 		name = EVTOPTA6301
-		custom_tooltip = ignore_law
+		custom_tooltip = { text = ignore_law }
 	}
 }
 
@@ -2761,7 +2761,7 @@ narrative_event = {
 	
 	option = {
 		name = EVTOPTA6302
-		custom_tooltip = ignore_law
+		custom_tooltip = { text = ignore_law }
 	}
 }
 
@@ -2776,7 +2776,7 @@ narrative_event = {
 	
 	option = {
 		name = EVTOPTA6303
-		custom_tooltip = ignore_law
+		custom_tooltip = { text = ignore_law }
 	}
 }
 
@@ -2791,7 +2791,7 @@ narrative_event = {
 	
 	option = {
 		name = EVTOPTA6304
-		custom_tooltip = ignore_law
+		custom_tooltip = { text = ignore_law }
 	}
 }
 
@@ -2983,7 +2983,7 @@ character_event = {
 	option = {
 		name = EVTOPTA6318
 		prestige = -20
-		custom_tooltip = horse_chancellor
+		custom_tooltip = { text = horse_chancellor }
 	}
 }
 
