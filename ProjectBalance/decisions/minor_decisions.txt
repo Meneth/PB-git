@@ -351,10 +351,12 @@ decisions = {
 		effect = {
 			scaled_wealth = -0.20
 			set_character_flag = holding_nerge
-			hidden_tooltip = { 
-				character_event = { id = TOG.100 } 
+			custom_tooltip = {
+				text = prepare_nerge
+				hidden_tooltip = { 
+					character_event = { id = TOG.100 } 
+				}
 			}
-			custom_tooltip = prepare_nerge
 		}
 		revoke_allowed = {
 			always = no
@@ -411,10 +413,12 @@ decisions = {
 		effect = {
 			scaled_wealth = -0.20
 			set_character_flag = holding_blot
-			hidden_tooltip = { 
-				character_event = { id = TOG.600 } 
+			custom_tooltip = {
+				text = prepare_blot
+				hidden_tooltip = { 
+					character_event = { id = TOG.600 } 
+				}
 			}
-			custom_tooltip = prepare_blot
 		}
 		revoke_allowed = {
 			always = no
@@ -470,10 +474,12 @@ decisions = {
 		effect = {
 			scaled_wealth = -0.20
 			set_character_flag = holding_ukon_juhla
-			hidden_tooltip = { 
-				character_event = { id = TOG.700 } 
+			custom_tooltip = {
+				text = prepare_ukon_juhla
+				hidden_tooltip = { 
+					character_event = { id = TOG.700 } 
+				}
 			}
-			custom_tooltip = prepare_ukon_juhla
 		}
 		revoke_allowed = {
 			always = no
@@ -529,10 +535,12 @@ decisions = {
 		effect = {
 			scaled_wealth = -0.20
 			set_character_flag = holding_uzgavenes
-			hidden_tooltip = { 
-				character_event = { id = TOG.750 } 
+			custom_tooltip = {
+				text = prepare_uzgavenes
+				hidden_tooltip = { 
+					character_event = { id = TOG.750 } 
+				}
 			}
-			custom_tooltip = prepare_uzgavenes
 		}
 		revoke_allowed = {
 			always = no
@@ -588,10 +596,12 @@ decisions = {
 		effect = {
 			scaled_wealth = -0.20
 			set_character_flag = holding_jarilo
-			hidden_tooltip = { 
-				character_event = { id = TOG.800 } 
+			custom_tooltip = {
+				text = prepare_jarilo
+				hidden_tooltip = { 
+					character_event = { id = TOG.800 } 
+				}
 			}
-			custom_tooltip = prepare_jarilo
 		}
 		revoke_allowed = {
 			always = no

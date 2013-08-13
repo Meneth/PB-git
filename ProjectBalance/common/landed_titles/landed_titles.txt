@@ -288,8 +288,8 @@ d_sunni = {
 				trait = sayyid
 				piety = 1000
 			}
-			custom_tooltip = controls_mecca_medina
-			AND = {
+			custom_tooltip = { 
+				text = controls_mecca_medina
 				hidden_tooltip = {
 					719 = { # Mecca
 						owner = {
@@ -309,8 +309,8 @@ d_sunni = {
 					}
 				}
 			}
-			custom_tooltip = controls_jerusalem_damascus_baghdad
-			AND = {
+			custom_tooltip = {
+				text = controls_jerusalem_damascus_baghdad
 				hidden_tooltip = {
 					774 = { # Jerusalem
 						owner = {
@@ -390,8 +390,8 @@ k_shiite = {
 				trait = sayyid
 				piety = 1000
 			}
-			custom_tooltip = controls_mecca_medina
-			AND = {
+			custom_tooltip = {
+				text = controls_mecca_medina
 				hidden_tooltip = {
 					719 = { # Mecca
 						owner = {
@@ -411,8 +411,8 @@ k_shiite = {
 					}
 				}
 			}
-			custom_tooltip = controls_jerusalem_damascus_baghdad
-			AND = {
+			custom_tooltip = {
+				text = controls_jerusalem_damascus_baghdad
 				hidden_tooltip = {
 					774 = { # Jerusalem
 						owner = {
@@ -806,7 +806,10 @@ d_sunni_berber_company = {
 	
 	# Hire Trigger
 	allow = {
-		religion_group = muslim
+		OR = {
+			religion_group = muslim
+			religion_group = zoroastrian_group
+		}
 	}
 	
 	# Parent Religion 
@@ -840,7 +843,10 @@ d_sunni_bedouin_company = {
 	
 	# Hire Trigger
 	allow = {
-		religion_group = muslim
+		OR = {
+			religion_group = muslim
+			religion_group = zoroastrian_group
+		}
 	}
 	
 	# Parent Religion 
@@ -941,7 +947,10 @@ d_shiite_berber_company = {
 	
 	# Hire Trigger
 	allow = {
-		religion_group = muslim
+		OR = {
+			religion_group = muslim
+			religion_group = zoroastrian_group
+		}
 	}
 	
 	# Parent Religion 
@@ -975,7 +984,10 @@ d_shiite_bedouin_company = {
 	
 	# Hire Trigger
 	allow = {
-		religion_group = muslim
+		OR = {
+			religion_group = muslim
+			religion_group = zoroastrian_group
+		}
 	}
 	
 	# Parent Religion 
@@ -4509,18 +4521,24 @@ e_latin_empire = {
 		e_roman_empire = {
 			has_holder = no
 		}
-		custom_tooltip = controls_kaliopolis_thrake
-		hidden_tooltip = {
-			495 = { # Kaliopolis
-				OR = {
-					is_liege_or_above = ROOT
-					owner = { character = ROOT } 
+		custom_tooltip = {
+			text = controls_kaliopolis_thrake
+			hidden_tooltip = {
+				495 = { # Kaliopolis
+					owner = {
+						OR = {
+							is_liege_or_above = ROOT
+							character = ROOT
+						}
+					}
 				}
-			}
-			497 = { # Thrake
-				OR = {
-					is_liege_or_above = ROOT
-					owner = { character = ROOT } 
+				497 = { # Thrake
+					owner = {
+						OR = {
+							is_liege_or_above = ROOT
+							character = ROOT
+						}
+					}
 				}
 			}
 		}

@@ -419,18 +419,20 @@ decisions = {
 			any_realm_lord = { has_landed_title = c_roma }
 		}
 		effect = {
-			custom_tooltip = rome_capital
-			hidden_tooltip = {
-				random_realm_title = {
-					limit = {
-						tier = baron
-						holder_scope = { is_feudal = yes }
-						county = { title = c_roma }
+			custom_tooltip = {
+				text = rome_capital
+				hidden_tooltip = {
+					random_realm_title = {
+						limit = {
+							tier = baron
+							holder_scope = { is_feudal = yes }
+							county = { title = c_roma }
+						}
+						province_capital = yes
+						usurp_title = ROOT
+						set_name = Rome 
+						ROOT = { capital = PREV }
 					}
-					province_capital = yes
-					usurp_title = ROOT
-					set_name = Rome 
-					ROOT = { capital = PREV }
 				}
 			}
 		}
@@ -620,7 +622,9 @@ decisions = {
 			}
 		}
 		effect = {
-			custom_tooltip = EVTOPTA62910_CUSTOM
+			custom_tooltip = {
+				text = EVTOPTA62910_CUSTOM
+			}
 			k_hungary = {
 				grant_title = ROOT
 				copy_title_laws = k_magyar

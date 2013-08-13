@@ -52,43 +52,45 @@ viking_invasion = {
 	}
 	
 	on_success_title = {
-		custom_tooltip = tribal_invasion_succ_tip
-		hidden_tooltip = {
-			FROM = {
-				random_realm_province = {
-					limit = {
-						de_jure_liege_or_above = PREVPREV
-						OR = {
-							NOT = { culture = ROOT }
-							NOT = { religion = ROOT }
+		custom_tooltip = { 
+			text = tribal_invasion_succ_tip
+			hidden_tooltip = {
+				FROM = {
+					random_realm_province = {
+						limit = {
+							de_jure_liege_or_above = PREVPREV
+							OR = {
+								NOT = { culture = ROOT }
+								NOT = { religion = ROOT }
+							}
 						}
+						culture = ROOT
+						religion = ROOT
 					}
-					culture = ROOT
-					religion = ROOT
 				}
-			}
-			ROOT = {
-				occupy_minors_of_occupied_settlements = FROM
-				gain_all_occupied_titles = FROM
-				vassalize_or_take_under_title_destroy_duchies = {
-					title = PREV
-					enemy = FROM
+				ROOT = {
+					occupy_minors_of_occupied_settlements = FROM
+					gain_all_occupied_titles = FROM
+					vassalize_or_take_under_title_destroy_duchies = {
+						title = PREV
+						enemy = FROM
+					}
+					
+					# Settle the special invasion forces
+					disband_event_forces = prepared_invasion
+					any_demesne_title = {
+						limit = { tier = BARON }
+						remove_holding_modifier = recently_conquered
+						refill_holding_levy = yes
+					}
 				}
 				
-				# Settle the special invasion forces
-				disband_event_forces = prepared_invasion
-				any_demesne_title = {
-					limit = { tier = BARON }
-					remove_holding_modifier = recently_conquered
-					refill_holding_levy = yes
+				if = {
+					limit = {
+						FROM = { is_liege_or_above = ROOT }
+					}
+					FROM = { imprison = ROOT }
 				}
-			}
-			
-			if = {
-				limit = {
-					FROM = { is_liege_or_above = ROOT }
-				}
-				FROM = { imprison = ROOT }
 			}
 		}
 	}
@@ -378,12 +380,14 @@ pagan_subjugation = {
 		}
 		
 		# Vassalize the rest
-		custom_tooltip = pagan_subjugation_tip
-		hidden_tooltip = {
-			ROOT = {
-				subjugate_or_take_under_title = { # If the target only has territory within the kingdom, he is simply vassalized
-					title = PREV
-					enemy = FROM
+		custom_tooltip = {
+			text = pagan_subjugation_tip
+			hidden_tooltip = {
+				ROOT = {
+					subjugate_or_take_under_title = { # If the target only has territory within the kingdom, he is simply vassalized
+						title = PREV
+						enemy = FROM
+					}
 				}
 			}
 		}
@@ -719,35 +723,29 @@ liberation_revolt = {
 	}
 
 	on_success_title = {
-		custom_tooltip = tribal_invasion_succ_tip
-		hidden_tooltip = {
-			ROOT = {
-				vassalize_or_take_under_title = {
-					title = PREV
-					enemy = FROM
-				}
-				if = {
-					limit = {
-						num_of_count_titles = 5
-						PREV = { 
-							OR = {
-								has_holder = no 
-								holder_scope = {
-									character = FROM
+	
+		custom_tooltip = {
+			text = tribal_invasion_succ_tip
+			hidden_tooltip = {
+				ROOT = {
+					vassalize_or_take_under_title = {
+						title = PREV
+						enemy = FROM
+					}
+					if = {
+						limit = {
+							num_of_count_titles = 5
+							PREV = { 
+								OR = {
+									has_holder = no 
+									holder_scope = {
+										character = FROM
+									}
 								}
 							}
 						}
+						usurp_title = PREV
 					}
-					PREV = {
-						if = {
-							limit = { has_holder = no }
-							add_law = revokation_1
-							add_law = crown_levies_0
-							add_law = king_peace_0
-							add_law = inheritance_0
-						}
-					}
-					usurp_title = PREV
 				}
 			}
 		}
@@ -866,12 +864,14 @@ duchy_adventure = {
 	}
 
 	on_success_title = {
-		custom_tooltip = tribal_invasion_succ_tip
-		hidden_tooltip = {
-			ROOT = {
-				vassalize_or_take_under_title = {
-					title = PREV
-					enemy = FROM
+		custom_tooltip = {
+			text = tribal_invasion_succ_tip
+			hidden_tooltip = {
+				ROOT = {
+					vassalize_or_take_under_title = {
+						title = PREV
+						enemy = FROM
+					}
 				}
 			}
 		}
@@ -1029,12 +1029,14 @@ caliphal_subjugation = {
 	}
 	
 	on_success_title = {
-		custom_tooltip = pagan_subjugation_tip
-		hidden_tooltip = {
-			ROOT = {
-				subjugate_or_take_under_title = { # If the target only has territory within the kingdom, he is simply vassalized
-					title = PREV
-					enemy = FROM
+		custom_tooltip = {
+			text = pagan_subjugation_tip
+			hidden_tooltip = {
+				ROOT = {
+					subjugate_or_take_under_title = { # If the target only has territory within the kingdom, he is simply vassalized
+						title = PREV
+						enemy = FROM
+					}
 				}
 			}
 		}
@@ -1368,74 +1370,76 @@ shia_caliphate_rising = {
 	}
 	
 	on_success_title = {
-		custom_tooltip = tribal_invasion_succ_tip
-		hidden_tooltip = {
-			k_shiite = {
-				usurp_title = ROOT
-			}
-			FROM = {
-				random_realm_province = {
-					limit = {
-						de_jure_liege_or_above = PREVPREV
-						NOT = { religion = ROOT }
-						religion_group = muslim
-					}
-					religion = ROOT
+		custom_tooltip = {
+			text = tribal_invasion_succ_tip
+			hidden_tooltip = {
+				d_shiite = {
+					usurp_title = ROOT
 				}
-				random_realm_province = {
-					limit = {
-						de_jure_liege_or_above = PREVPREV
-						NOT = { religion = ROOT }
-						religion_group = muslim
+				FROM = {
+					random_realm_province = {
+						limit = {
+							de_jure_liege_or_above = PREVPREV
+							NOT = { religion = ROOT }
+							religion_group = muslim
+						}
+						religion = ROOT
 					}
-					religion = ROOT
-				}
-				random_realm_province = {
-					limit = {
-						de_jure_liege_or_above = PREVPREV
-						NOT = { religion = ROOT }
-						religion_group = muslim
+					random_realm_province = {
+						limit = {
+							de_jure_liege_or_above = PREVPREV
+							NOT = { religion = ROOT }
+							religion_group = muslim
+						}
+						religion = ROOT
 					}
-					religion = ROOT
-				}
-				random_realm_province = {
-					limit = {
-						de_jure_liege_or_above = PREVPREV
-						NOT = { religion = ROOT }
-						religion_group = muslim
+					random_realm_province = {
+						limit = {
+							de_jure_liege_or_above = PREVPREV
+							NOT = { religion = ROOT }
+							religion_group = muslim
+						}
+						religion = ROOT
 					}
-					religion = ROOT
-				}
-				random_realm_province = {
-					limit = {
-						de_jure_liege_or_above = PREVPREV
-						NOT = { religion = ROOT }
-						religion_group = muslim
+					random_realm_province = {
+						limit = {
+							de_jure_liege_or_above = PREVPREV
+							NOT = { religion = ROOT }
+							religion_group = muslim
+						}
+						religion = ROOT
 					}
-					religion = ROOT
+					random_realm_province = {
+						limit = {
+							de_jure_liege_or_above = PREVPREV
+							NOT = { religion = ROOT }
+							religion_group = muslim
+						}
+						religion = ROOT
+					}
 				}
-			}
-			ROOT = {
-				occupy_minors_of_occupied_settlements = FROM
-				gain_all_occupied_titles = FROM
-				vassalize_or_take_under_title = {
-					title = PREV
-					enemy = FROM
+				ROOT = {
+					occupy_minors_of_occupied_settlements = FROM
+					gain_all_occupied_titles = FROM
+					vassalize_or_take_under_title = {
+						title = PREV
+						enemy = FROM
+					}
+					
+					any_demesne_title = {
+						limit = { tier = BARON }
+						remove_holding_modifier = recently_conquered
+						refill_holding_levy = yes
+					}
+					usurp_title = PREV
 				}
 				
-				any_demesne_title = {
-					limit = { tier = BARON }
-					remove_holding_modifier = recently_conquered
-					refill_holding_levy = yes
+				if = {
+					limit = {
+						FROM = { is_liege_or_above = ROOT }
+					}
+					FROM = { imprison = ROOT }
 				}
-				usurp_title = PREV
-			}
-			
-			if = {
-				limit = {
-					FROM = { is_liege_or_above = ROOT }
-				}
-				FROM = { imprison = ROOT }
 			}
 		}
 	}

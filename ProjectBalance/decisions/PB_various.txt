@@ -52,6 +52,7 @@ decisions = {
 			e_hre_french = {
 				has_holder = no
 			}
+			tier = king
 		}
 		allow = {
 			has_landed_title = k_italy
@@ -124,6 +125,7 @@ decisions = {
 			e_hre_french = {
 				has_holder = no
 			}
+			tier = king
 		}
 		allow = {
 			completely_controls = k_france
@@ -290,9 +292,11 @@ decisions = {
 					}
 					NOT = { religion_group = muslim }
 				}
-				custom_tooltip = become_kinslayer_tooltip
-				hidden_tooltip = {
-					ROOT = { add_trait = kinslayer }
+				custom_tooltip = {
+					text = become_kinslayer_tooltip
+					hidden_tooltip = {
+						ROOT = { add_trait = kinslayer }
+					}
 				}
 			}
 			any_courtier = {
