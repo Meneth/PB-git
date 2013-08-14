@@ -908,76 +908,80 @@ retake_religious_lands = {
 				has_character_modifier = formation_of_rum
 			}
 		}
-		OR = {
-			NOT = {
-				OR = {
-					AND = {
-						OR = {
-							religion = miaphysite
-							religion = orthodox
-						}
-						culture_group = east_african
-						FROM = {
-							religion_group = muslim
-						}
-					}
-					AND = {
-						FROM = {
+		ROOT = {
+			OR = {
+				NOT = {
+					OR = {
+						AND = {
 							OR = {
 								religion = miaphysite
 								religion = orthodox
 							}
 							culture_group = east_african
+							FROM = {
+								religion_group = muslim
+							}
 						}
-						ROOT = {
-							religion_group = muslim
-						}
-					}
-				}
-			}
-			has_global_flag = rapid_conquest
-			has_global_flag = violated_baqt
-		}
-	}
-	
-	can_use = {
-		OR = {
-			NOT = { religion_group = FROM }
-			is_heresy_of = FROM
-			is_parent_religion = FROM
-			AND = {
-				religion_group = muslim
-				NOT = { religion = FROM }
-				FROM = {
-					NOT = { 
-						any_current_enemy = {
-							NOT = {
+						AND = {
+							FROM = {
+								OR = {
+									religion = miaphysite
+									religion = orthodox
+								}
+								culture_group = east_african
+							}
+							ROOT = {
 								religion_group = muslim
 							}
 						}
 					}
 				}
-			}
-			AND = {
-				religion_group = pagan_group
-				NOT = { religion = FROM }
+				has_global_flag = rapid_conquest
+				has_global_flag = violated_baqt
 			}
 		}
-		NOT = { same_realm = FROM }
 	}
-	top_liege = {
-		religion_group = ROOT
-		NOT = { religion = FROM }
-		OR = {
-			religion = ROOT
-			AND = {
-				is_heretic = no
-				ROOT = { is_heretic = no }
+	
+	can_use = {
+		ROOT = {
+			OR = {
+				NOT = { religion_group = FROM }
+				is_heresy_of = FROM
+				is_parent_religion = FROM
+				AND = {
+					religion_group = muslim
+					NOT = { religion = FROM }
+					FROM = {
+						NOT = { 
+							any_current_enemy = {
+								NOT = {
+									religion_group = muslim
+								}
+							}
+						}
+					}
+				}
+				AND = {
+					religion_group = pagan_group
+					NOT = { religion = FROM }
+				}
 			}
-		}
-		OR = {
-			NOT = { religion_group = pagan_group }
-			religion = ROOT
+			NOT = { same_realm = FROM }
+			top_liege = {
+				religion_group = ROOT
+				NOT = { religion = FROM }
+				OR = {
+					religion = ROOT
+					AND = {
+						is_heretic = no
+						ROOT = { is_heretic = no }
+					}
+				}
+				OR = {
+					NOT = { religion_group = pagan_group }
+					religion = ROOT
+				}
+			}
 		}
 	}
 	can_use_title = {
@@ -1264,43 +1268,45 @@ special_holy_war = {
 	}
 	
 	can_use = {
-		OR = {
-			NOT = { religion_group = FROM }
-			is_heresy_of = FROM
-			is_parent_religion = FROM
-			AND = {
-				religion_group = muslim
-				NOT = { religion = FROM }
-				FROM = {
-					NOT = { 
-						any_current_enemy = {
-							NOT = {
-								religion_group = muslim
+		ROOT = {
+			OR = {
+				NOT = { religion_group = FROM }
+				is_heresy_of = FROM
+				is_parent_religion = FROM
+				AND = {
+					religion_group = muslim
+					NOT = { religion = FROM }
+					FROM = {
+						NOT = { 
+							any_current_enemy = {
+								NOT = {
+									religion_group = muslim
+								}
 							}
 						}
 					}
 				}
+				AND = {
+					religion_group = pagan_group
+					NOT = { religion = FROM }
+				}
+				NOT = { same_realm = FROM }
 			}
-			AND = {
-				religion_group = pagan_group
+			top_liege = {
+				religion_group = ROOT
 				NOT = { religion = FROM }
+				OR = {
+					religion = ROOT
+					AND = {
+						is_heretic = no
+						ROOT = { is_heretic = no }
+					}
+				}
+				OR = {
+					NOT = { religion_group = pagan_group }
+					religion = ROOT
+				}
 			}
-			NOT = { same_realm = FROM }
-		}
-	}
-	top_liege = {
-		religion_group = ROOT
-		NOT = { religion = FROM }
-		OR = {
-			religion = ROOT
-			AND = {
-				is_heretic = no
-				ROOT = { is_heretic = no }
-			}
-		}
-		OR = {
-			NOT = { religion_group = pagan_group }
-			religion = ROOT
 		}
 	}
 	can_use_title = {

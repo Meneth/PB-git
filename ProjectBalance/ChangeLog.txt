@@ -1,3 +1,6 @@
+3.2.27
+	Fixed some issues with the holy war CBs
+
 3.2.26
 	Updated for CKII 1.11
 	Fixed a localisation issue with the holy war CBs
