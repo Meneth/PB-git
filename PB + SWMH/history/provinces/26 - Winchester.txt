@@ -1,19 +1,24 @@
-# 26 - Winchester
+# 26 - Winchester # Hamptonshire
 
 # County Title
 title = c_winchester
 
 # Settlements
 max_settlements = 5
-b_winchester = castle
-b_st_swithun = temple
-b_southampton = city
 
-#b_carisbrooke = castle
+b_winchester = castle
+b_southampton = city
+b_wolvesey = temple
+b_andover = city
 #b_portchester = castle
-#b_wherwell = castle
-#b_romsey = castle
-#b_andover = castle
+#b_odiham = castle
+#b_wherwell = temple
+#b_romsey = temple
+#b_lymington = city
+#b_lyndhurst = city
+#b_brockenhurst = city
+#b_netley = temple
+#b_basingstoke = city
 
 # Misc
 culture = saxon
@@ -21,6 +26,12 @@ religion = catholic
 
 # History
 867.1.1 = { b_southampton = ct_trade_post_1 }
-1070.1.1 = { capital = b_st_swithun }
+1070.1.1 = { capital = b_wolvesey}
+1080.1.1 = { b_portchester = castle }
 1100.11.11 = { culture = english } 
-1337.1.1 = { b_andover = castle }
+
+#Hugh Despencer, Earl of Winchester
+1322.1.1 = { capital = b_winchester }
+
+#Hugh Despencer, beheaded
+1326.11.27 = { capital = b_wolvesey }

@@ -1,24 +1,50 @@
-# 274 - Bergenshus
+# 274 - Bergenshus # Hordaland
 
 # County Title
 title = c_bergenshus
 
 # Settlements
-max_settlements = 4
-b_bergenhus = castle
-b_bergen = city
-b_kinsarvik = temple
-#b_vik = castle
-#b_hove = temple
-#b_aurland = castle
-#b_ask = castle
-#b_fedje = castle
+max_settlements = 6
+
+b_ask = castle # Askr
+b_aarstad = castle # Álreksstaðir
+b_stoele = castle # Stuðla
+#b_seim = castle # Sæheimr
+#b_bergenhus = castle # Hákonarhella
+#b_bergen = city # Bjørgvín
+#b_florvaagen = city # Flóruvagar
+#b_florvaagen = city # Flóruvagar
+#b_mosterhamm = temple # Mostr
+#b_onarheim = city # Ónarheimr
+#b_gjerdevik = castle # Gerði
+#b_vossevangen = city # Vangr
+#b_fitjar = castle # Fitjungr
+#b_halsnoey = temple # Halsney
+#b_torsnes = castle # Þórsnes 
 
 # Misc
-culture = norwegian
-religion = catholic
+culture = norse
+religion = norse_pagan
 
 # History
-
+867.1.1 = {
+	b_aarstad = ca_shipyard_1
+}
+900.1.1 = { remove_settlement = b_ask }
+900.1.1 = { capital = b_aarstad }
+900.1.1 = { b_seim = castle }
+1024.1.1 = { religion = catholic }
+1047.10.25 = { culture = norwegian } 
+1050.1.1 = { b_bergen = city 
+	b_bergen = ct_wall_1
+	b_bergen = ct_port_1
+        b_bergen = ct_port_2
+} 
+1066.1.1 = { remove_settlement = b_seim }
+1066.1.1 = { b_torsnes = castle }
 1066.1.1 = { trade_post = b_vatnsfiroingar }
+1080.1.1 = { b_bergenhus = castle } 
+1080.1.1 = { capital = b_bergenhus }
+1080.1.1 = { remove_settlement = b_aarstad }
+1164.1.1 = { b_halsnoey = temple }  
 1290.1.1 = { trade_post = b_warendorp }

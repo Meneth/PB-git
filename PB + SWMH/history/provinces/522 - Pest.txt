@@ -1,4 +1,4 @@
-# 522 - Pest
+# 522 - Pest # Szatmar
 
 # County Title
 title = c_pest
@@ -16,10 +16,11 @@ b_nemeti = temple
 #b_meggyes = castle
 
 # Misc
-culture = hungarian
-religion = catholic
+culture = avar
+religion = tengri_pagan
 
 # History
-
 867.1.1 = { b_kaplony = ct_trade_post_1 }
+890.1.1 = { religion = catholic }
+950.1.1 = { culture = romanian }
 

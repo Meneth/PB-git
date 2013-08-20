@@ -30,8 +30,8 @@ k_shiite = {
 				trait = sayyid
 				piety = 1000
 			}
-			custom_tooltip = controls_mecca_medina
-			AND = {
+			custom_tooltip = {
+				text = controls_mecca_medina
 				hidden_tooltip = {
 					719 = { # Mecca
 						owner = {
@@ -51,8 +51,8 @@ k_shiite = {
 					}
 				}
 			}
-			custom_tooltip = controls_jerusalem_damascus_baghdad
-			AND = {
+			custom_tooltip = {
+				text = controls_jerusalem_damascus_baghdad
 				hidden_tooltip = {
 					774 = { # Jerusalem
 						owner = {

@@ -20,13 +20,13 @@ b_sankore = temple
 #b_aglal = castle
 
 # Misc
-culture = zanata
-religion = sunni
+culture = songhai
+religion = west_african_pagan
 
 # History
 867.1.1 = { b_tirakka = ct_trade_post_1 }
 #berber colonization
-1070.1.1 = { culture = berber }
+1070.1.1 = { culture = zanata }
 
 1267.5.1 = {
 	b_timbuktu = castle

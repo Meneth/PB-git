@@ -17,11 +17,11 @@ b_wojnicz = castle
 #b_jerzejow = city
 #b_olkusz = castle
 #b_kleparz = city
-
 # Misc
 culture = polish
-religion = catholic
+religion = slavic_pagan
 
 # History
 867.1.1 = { b_krakow = ct_trade_post_1 }
-1187.1.1 = { b_kielce = city }
+990.1.1 = { religion = catholic }
+1187.1.1 = { b_kleparz = city }

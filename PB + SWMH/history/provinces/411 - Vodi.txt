@@ -11,7 +11,7 @@ b_noteborg = castle
 #b_kolin = castle
 
 # Misc
-culture = finnish
+culture = ingrian
 religion = finnish_pagan
 
 # History

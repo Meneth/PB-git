@@ -9,9 +9,6 @@ b_caerwent = castle
 #b_caerleon = castle
 b_newport = city
 
-#b_chepstow = castle
-b_monmouth = temple
-#b_tintern = castle
 
 # Misc
 culture = welsh

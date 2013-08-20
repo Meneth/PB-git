@@ -4,16 +4,18 @@
 title = c_essex
 
 # Settlements
-max_settlements = 4
-b_colchester = castle
+max_settlements = 5
 
+b_colchester = castle
 b_maldon = city
-b_waltham = temple
 #b_havering = castle
-#b_barking = castle
-#b_pleshey = castle
 #b_hedingham = castle
-#b_dunmow = castle
+#b_pleshey = castle
+#b_dunmow = city
+#b_walden = castle
+#b_rayleigh = castle
+#b_hadleigh = castle
+#b_watford = city
 
 # Misc
 culture = saxon
@@ -21,5 +23,10 @@ religion = catholic
 
 # History
 1050.1.1 = { trade_post = b_hoyer }
+1070.1.1 = { b_pleshey = castle }
+1086.1.1 = { b_hedingham = castle }
+1086.1.1 = { b_rayleigh = castle }
 1100.11.11 = { culture = english }
+1215.1.1 = { remove_settlement = b_whitby } # seat moved to Hadliegh
+1215.1.1 = { b_hadleigh = castle }
 1305.1.1 = { trade_post = b_vorrade }

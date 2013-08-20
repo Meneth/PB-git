@@ -22,13 +22,14 @@ b_vasylkiv = castle
 
 # Misc
 culture = russian
-religion = orthodox
+religion = slavic_pagan
 
 # History
 867.1.1 = {
 	b_iskorosten = ct_trade_post_1
 	b_iskorosten = ct_trade_post_2
 }
+988.1.1 = {religion = orthodox }
 1169.1.1 = { remove_settlement = b_vasylkiv } #sacked by Andrey Bogolyubsky
 1240.1.1 = { remove_settlement = b_vyshhorod } #sacked by Mongols
 

@@ -8,11 +8,14 @@
 	stewardship=8
 	religion="catholic"
 	culture="saxon"
-	add_trait="honest"
-	add_trait="grey_eminence"
+	trait="honest"
+	trait="grey_eminence"
 	father=102
 	943.8.7={
 		birth="943.8.7"
+	}
+        964.1.1 = {
+		add_spouse=1000226374 #Ælfthryth
 	}
 	975.7.8={
 		death="975.7.8"
@@ -29,7 +32,7 @@
 	stewardship=5
 	religion="catholic"
 	culture="saxon"
-	add_trait="martial_cleric"
+	trait="martial_cleric"
 	father=98
 	962.1.1={
 		birth="962.1.1"
@@ -52,11 +55,17 @@
 	stewardship=7
 	religion="catholic"
 	culture="saxon"
-	add_trait="honest"
-	add_trait="tough_soldier"
-	father = 7627
+        trait=ambitious #Went for the crown.
+        trait=proud #pressed his claim for the crown
+	#trait="honest"#?
+	trait="tough_soldier"
+        father=7627
+        mother=1000226338
 	874.1.1={
 		birth="874.1.1"
+	}
+        919.1.1 = {
+		add_spouse=1000226329 # Eadgifu of Kent, 3d wife
 	}
 	920.1.1 = {
 		give_nickname=nick_the_old
@@ -76,8 +85,8 @@
 	stewardship=8
 	religion="catholic"
 	culture="saxon"
-	add_trait="envious"
-	add_trait="fortune_builder"
+	trait="envious"
+	trait="fortune_builder"
 	father=100
 	910.1.1={
 		birth="910.1.1"
@@ -97,11 +106,14 @@
 	stewardship=4
 	religion="catholic"
 	culture="saxon"
-	add_trait="honest"
-	add_trait="tough_soldier"
+	trait="honest"
+	trait="tough_soldier"
 	father=100
 	922.1.1={
 		birth="922.1.1"
+	}
+        944.1.1 = {
+		add_spouse=1000226376 # Æthelflæd of Damerham
 	}
 	946.1.1 = {
 		give_nickname=nick_the_magnificent
@@ -122,7 +134,7 @@
 	stewardship=8
 	religion="catholic"
 	culture="saxon"
-	add_trait="flamboyant_schemer"
+	trait="flamboyant_schemer"
 	963.1.2={
 		birth="963.1.2"
 	}
@@ -141,8 +153,9 @@
 	stewardship=8
 	religion="catholic"
 	culture="saxon"
-	add_trait="skilled_tactician"
+	trait="skilled_tactician"
 	father=98
+        father=1000226374
 	968.1.1={
 		birth="968.1.1"
 	}
@@ -169,7 +182,7 @@
 	stewardship=7
 	religion="catholic"
 	culture="saxon"
-	add_trait="amateurish_plotter"
+	trait="amateurish_plotter"
 	969.1.2={
 		birth="969.1.2"
 	}
@@ -188,11 +201,14 @@
 	stewardship=5
 	religion="catholic"
 	culture="saxon"
-	add_trait="amateurish_plotter"
+	trait="amateurish_plotter"
 	father=106
 	mother=105
 	988.1.1={
 		birth="988.1.1"
+	}
+        1015.1.1 = {
+		add_spouse=1000226211 # Ealdgyth
 	}
 	1016.1.1 = {
 		give_nickname=nick_the_ironside
@@ -212,10 +228,11 @@
 	stewardship=5
 	religion="catholic"
 	culture="saxon"
-	add_trait="slothful"
-	add_trait="charitable"
-	add_trait="skilled_tactician"
+	trait="slothful"
+	trait="charitable"
+	trait="skilled_tactician"
 	father=108
+        mother=1000226211 # Ealdgyth
 	1016.1.1={
 		birth="1016.1.1"
 	}
@@ -236,7 +253,7 @@
 	stewardship=6
 	religion="catholic"
 	culture="saxon"
-	add_trait="thrifty_clerk"
+	trait="thrifty_clerk"
 	father=122
 	mother=131
 	1049.1.1={
@@ -260,11 +277,11 @@
 	stewardship=7
 	religion="catholic"
 	culture="saxon"
-	add_trait="tough_soldier"
-	add_trait="brave"
-	add_trait="diligent"
-	add_trait="gregarious"
-	add_trait="kind"
+	trait="tough_soldier"
+	trait="brave"
+	trait="diligent"
+	trait="gregarious"
+	trait="kind"
 	father=110
 	mother=41101
 	1050.1.1={
@@ -275,7 +292,7 @@
 	}
 	1066.1.5 = {
 		employer=122
-		add_trait="hunter"
+		trait="hunter"
 	}
 	1066.10.14={
 		employer=5644
@@ -301,8 +318,8 @@
 	stewardship=4
 	religion="catholic"
 	culture="saxon"
-	add_trait="cynical"
-	add_trait="martial_cleric"
+	trait="cynical"
+	trait="martial_cleric"
 	father=110
 	mother=41101
 	1045.1.1={
@@ -336,9 +353,9 @@
 	stewardship=5
 	religion="catholic"
 	culture="saxon"
-	add_trait="charitable"
-	add_trait="chaste"
-	add_trait="charismatic_negotiator"
+	trait="charitable"
+	trait="chaste"
+	trait="charismatic_negotiator"
 	father=106
 	mother=259
 	1003.1.1={
@@ -364,7 +381,7 @@
 	stewardship=6
 	religion="catholic"
 	culture="saxon"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	father=122
 	mother=131
 	1049.12.10={
@@ -387,7 +404,7 @@
 	stewardship=4
 	religion="catholic"
 	culture="saxon"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	father=122
 	mother=131
 	1051.6.10={
@@ -411,9 +428,9 @@
 	stewardship=7
 	religion="catholic"
 	culture="saxon"
-	add_trait="wroth"
-	add_trait="chaste"
-	add_trait="martial_cleric"
+	trait="wroth"
+	trait="chaste"
+	trait="martial_cleric"
 	father=110
 	mother=41101
 	1047.5.8={
@@ -446,7 +463,7 @@
 	stewardship=7
 	religion="catholic"
 	culture="saxon"
-	add_trait="fortune_builder"
+	trait="fortune_builder"
 	993.1.1={
 		birth="993.1.1"
 	}
@@ -468,8 +485,8 @@
 	stewardship=8
 	religion="catholic"
 	culture="saxon"
-	add_trait="wroth"
-	add_trait="martial_cleric"
+	trait="wroth"
+	trait="martial_cleric"
 	father=120
 	mother=101534
 	1021.1.1={
@@ -491,13 +508,13 @@
 	stewardship=6
 	religion="catholic"
 	culture="saxon"
-	add_trait="arbitrary"
-	add_trait="proud"
-	add_trait="skilled_tactician"
+	trait="arbitrary"
+	trait="proud"
+	trait="skilled_tactician"
 	father=120
 	mother=101534
 	1022.1.1={
-		birth="1022.1.1"
+		birth=yes
 	}
 	1048.1.1={
 		add_spouse=131 #Ealdgyth 'Swanneck'
@@ -578,9 +595,9 @@
 	stewardship=4
 	religion="catholic"
 	culture="saxon"
-	add_trait="proud"
-	add_trait="gluttonous"
-	add_trait="amateurish_plotter"
+	trait="proud"
+	trait="gluttonous"
+	trait="amateurish_plotter"
 	father=5642
 	mother=161280
 	1036.1.1={
@@ -600,9 +617,9 @@
 	stewardship=8
 	religion="catholic"
 	culture="saxon"
-	add_trait="lustful"
-	add_trait="greedy"
-	add_trait="flamboyant_schemer"
+	trait="lustful"
+	trait="greedy"
+	trait="flamboyant_schemer"
 	father=120
 	mother=101534
 	1025.1.1={
@@ -638,8 +655,8 @@
 	stewardship=5
 	religion="catholic"
 	culture="saxon"
-	add_trait="patient"
-	add_trait="thrifty_clerk"
+	trait="patient"
+	trait="thrifty_clerk"
 	father=124
 	mother=363
 	1052.1.2={
@@ -662,8 +679,8 @@
 	stewardship=7
 	religion="catholic"
 	culture="saxon"
-	add_trait="hunchback"
-	add_trait="thrifty_clerk"
+	trait="hunchback"
+	trait="thrifty_clerk"
 	father=124
 	mother=363
 	1054.1.2={
@@ -687,7 +704,7 @@
 	stewardship=4
 	religion="catholic"
 	culture="saxon"
-	add_trait="martial_cleric"
+	trait="martial_cleric"
 	father=122
 	mother=131
 	1053.1.2={
@@ -707,8 +724,8 @@
 	stewardship=4
 	religion="catholic"
 	culture="saxon"
-	add_trait="arbitrary"
-	add_trait="tough_soldier"
+	trait="arbitrary"
+	trait="tough_soldier"
 	father=120
 	mother=101534
 	1021.1.1={
@@ -729,7 +746,7 @@
 	stewardship=4
 	religion="catholic"
 	culture="saxon"
-	add_trait="martial_cleric"
+	trait="martial_cleric"
 	father=122
 	mother=131
 	1055.1.2={
@@ -749,7 +766,7 @@
 	stewardship=7
 	religion="catholic"
 	culture="saxon"
-	add_trait="thrifty_clerk"
+	trait="thrifty_clerk"
 	father=120
 	mother=101534
 	1038.1.1={
@@ -771,8 +788,8 @@
 	stewardship=7
 	religion="catholic"
 	culture="saxon"
-	add_trait="fair"
-	add_trait="fortune_builder"
+	trait="fair"
+	trait="fortune_builder"
 	1025.6.6={
 		birth="1025.6.6"
 	}
@@ -790,17 +807,17 @@
 	stewardship=5
 	religion="catholic"
 	culture="saxon"
-	add_trait="patient"
-	add_trait="brave"
-	add_trait="honest"
-	add_trait="skilled_tactician"
+	trait="patient"
+	trait="brave"
+	trait="honest"
+	trait="skilled_tactician"
 	father=120
 	mother=101534
 	1032.1.1={
 		birth="1032.1.1"
 	}
 	1050.1.1={
-		add_trait="hunter"
+		trait="hunter"
 	}
 	1066.10.14={
 		death="1066.10.14"
@@ -818,8 +835,8 @@
 	stewardship=6
 	religion="catholic"
 	culture="saxon"
-	add_trait="cynical"
-	add_trait="fortune_builder"
+	trait="cynical"
+	trait="fortune_builder"
 	996.1.2={
 		birth="996.1.2"
 	}
@@ -837,8 +854,8 @@
 	stewardship=6
 	religion="catholic"
 	culture="saxon"
-	add_trait="brave"
-	add_trait="flamboyant_schemer"
+	trait="brave"
+	trait="flamboyant_schemer"
 	955.1.2={
 		birth="955.1.2"
 	}
@@ -857,7 +874,7 @@
 	stewardship=8
 	religion="catholic"
 	culture="saxon"
-	add_trait="flamboyant_schemer"
+	trait="flamboyant_schemer"
 	father=186
 	974.1.1={
 		birth="974.1.1"
@@ -883,7 +900,7 @@
 	stewardship=6
 	religion="catholic"
 	culture="saxon"
-	add_trait="scholarly_theologian"
+	trait="scholarly_theologian"
 	father=188
 	mother=161261
 	1015.1.1={
@@ -903,10 +920,10 @@
 	stewardship=5
 	religion="catholic"
 	culture="saxon"
-	add_trait="honest"
-	add_trait="just"
-	add_trait="zealous"
-	add_trait="amateurish_plotter"
+	trait="honest"
+	trait="just"
+	trait="zealous"
+	trait="amateurish_plotter"
 	father=188
 	mother=161263
 	992.1.1={
@@ -926,9 +943,9 @@
 	stewardship=6
 	religion="catholic"
 	culture="saxon"
-	add_trait="temperate"
-	add_trait="wroth"
-	add_trait="amateurish_plotter"
+	trait="temperate"
+	trait="wroth"
+	trait="amateurish_plotter"
 	father=190
 	1032.1.1={
 		birth="1032.1.1"
@@ -947,7 +964,7 @@
 	stewardship=8
 	religion="catholic"
 	culture="saxon"
-	add_trait="underhanded_rogue"
+	trait="underhanded_rogue"
 	father=188
 	mother=161263
 	991.1.1={
@@ -969,7 +986,7 @@
 	stewardship=8
 	religion="catholic"
 	culture="saxon"
-	add_trait="charismatic_negotiator"
+	trait="charismatic_negotiator"
 	father=192
 	1023.1.1={
 		birth="1023.1.1"
@@ -989,8 +1006,8 @@
 	stewardship=7
 	religion="catholic"
 	culture="saxon"
-	add_trait="brave"
-	add_trait="tough_soldier"
+	trait="brave"
+	trait="tough_soldier"
 	1010.1.2={
 		birth="1010.1.2"
 	}
@@ -1011,9 +1028,9 @@
 	stewardship=7
 	religion="catholic"
 	culture="saxon"
-	add_trait="deceitful"
-	add_trait="underhanded_rogue"
-	add_trait="wroth"
+	trait="deceitful"
+	trait="underhanded_rogue"
+	trait="wroth"
 	father=196
 	mother=193
 	1050.1.2={
@@ -1037,8 +1054,8 @@
 	stewardship=5
 	religion="catholic"
 	culture="saxon"
-	add_trait="zealous"
-	add_trait="martial_cleric"
+	trait="zealous"
+	trait="martial_cleric"
 	father= 198
 	mother= 317
 	1074.1.1={
@@ -1059,8 +1076,8 @@
 	stewardship=7
 	religion="catholic"
 	culture="saxon"
-	add_trait="humble"
-	add_trait="scholarly_theologian"
+	trait="humble"
+	trait="scholarly_theologian"
 	1025.1.1={
 		birth="1025.1.1"
 	}
@@ -1078,7 +1095,7 @@
 	stewardship=7
 	religion="catholic"
 	culture="saxon"
-	add_trait="twin"
+	trait="twin"
 	father=122
 	mother=123
 	1066.11.8={
@@ -1109,7 +1126,7 @@
 	stewardship=8
 	religion="catholic"
 	culture="saxon"
-	add_trait="twin"
+	trait="twin"
 	father=122
 	mother=123
 	1066.11.8={
@@ -1135,7 +1152,7 @@
 	stewardship=9
 	religion="catholic"
 	culture="saxon"
-	add_trait="scholarly_theologian"
+	trait="scholarly_theologian"
 	father=100
 	922.1.2={
 		birth="922.1.2"
@@ -1154,7 +1171,7 @@
 	stewardship=5
 	religion="catholic"
 	culture="saxon"
-	add_trait="mastermind_theologian"
+	trait="mastermind_theologian"
 	995.1.1={
 		birth="995.1.1"
 	}
@@ -1172,9 +1189,9 @@
 	stewardship=6
 	religion="catholic"
 	culture="saxon"
-	add_trait="arbitrary"
-	add_trait="hunchback"
-	add_trait="scholarly_theologian"
+	trait="arbitrary"
+	trait="hunchback"
+	trait="scholarly_theologian"
 	1016.1.1={
 		birth="1016.1.1"
 	}
@@ -1182,9 +1199,8 @@
 		death="1066.1.1"
 	}
 }
-
 5640 = {
-	name="Leofric"
+	name="Leofric" #Earl of Mercia 1017-1057
 	dynasty=560
 	martial=6
 	diplomacy=5
@@ -1192,10 +1208,11 @@
 	stewardship=6
 	religion="catholic"
 	culture="saxon"
-	add_trait="envious"
-	add_trait="humble"
-	add_trait="cynical"
-	add_trait="skilled_tactician"
+	trait="envious"
+	trait="humble"
+	trait="cynical"
+	trait="skilled_tactician"
+        father=1000226316 # Leofwine Ealdorman of Hwicce 997-1028
 	968.1.1={
 		birth="968.1.1"
 	}
@@ -1207,9 +1224,8 @@
 		death="1057.10.30"
 	}
 }
-
 5642 = {
-	name="Ælfgar"
+	name="Ælfgar" # Earl of Mercia 1057-1062, lord of Coventry. Earl of Wast anglia 1051-1052 and 1053-1057
 	# AKA: aelfgar
 	dynasty=560
 	martial=7
@@ -1218,7 +1234,7 @@
 	stewardship=4
 	religion="catholic"
 	culture="saxon"
-	add_trait="skilled_tactician"
+	trait="skilled_tactician"
 	father=5640
 	mother=161279
 	1019.1.1={
@@ -1234,7 +1250,7 @@
 
 
 5644 = {
-	name="Eadwin"
+	name="Eadwin" # Earl of Mercia 1062-1071
 	dynasty=560
 	martial=7
 	diplomacy=5
@@ -1242,18 +1258,18 @@
 	stewardship=5
 	religion="catholic"
 	culture="saxon"
-	add_trait="greedy"
-	add_trait="brave"
-	add_trait="slothful"
-	add_trait="charismatic_negotiator"
-	add_trait="ambitious"
+	trait="greedy"
+	trait="brave"
+	trait="slothful"
+	trait="charismatic_negotiator"
+	trait="ambitious"
 	father=5642
 	mother=161280
 	1044.1.1={
 		birth="1044.1.1"
 	}
 	1066.1.1={
-		add_trait="hunter"
+		trait="hunter"
 	}
 	1071.1.1={
 		death="1071.1.1"
@@ -1270,8 +1286,8 @@
 #	stewardship=4
 #	religion="catholic"
 #	culture="saxon"
-#	add_trait="craven"
-#	add_trait="tough_soldier"
+#	trait="craven"
+#	trait="tough_soldier"
 #	father=5644
 #	1060.1.1={
 #		birth="1060.1.1"
@@ -1290,17 +1306,17 @@
 	stewardship=4
 	religion="catholic"
 	culture="saxon"
-	add_trait="arbitrary"
-	add_trait="brave"
-	add_trait="flamboyant_schemer"
-	add_trait="ambitious"
+	trait="arbitrary"
+	trait="brave"
+	trait="flamboyant_schemer"
+	trait="ambitious"
 	father=5642
 	mother=161280
 	1046.1.1={
 		birth="1046.1.1"
 	}
 	1066.1.1={
-		add_trait="hunter"
+		trait="hunter"
 	}
 	1078.1.1={
 		death="1078.1.1"
@@ -1316,9 +1332,9 @@
 	stewardship=8
 	religion="catholic"
 	culture="saxon"
-	add_trait="lustful"
-	add_trait="temperate"
-	add_trait="fortune_builder"
+	trait="lustful"
+	trait="temperate"
+	trait="fortune_builder"
 	1002.1.2={
 		birth="1002.1.2"
 	}
@@ -1397,15 +1413,19 @@
 	learning = 6
 	religion=catholic
 	culture=saxon
-	add_trait=honest
-	add_trait=just
-	add_trait=gregarious
-	add_trait=diligent
-	add_trait=quick
-	add_trait=brilliant_strategist
+	trait=honest
+	trait=just
+	trait=gregarious
+	trait=diligent
+	trait=quick
+	trait=brilliant_strategist
 	father=33355
+        mother=1000226366
 	849.1.1={
 		birth=yes
+	}
+        868.1.1 = {
+		add_spouse=1000226338
 	}
 	890.1.1 = {
 		give_nickname=nick_the_great
@@ -1425,8 +1445,9 @@
 	stewardship=9
 	religion="catholic"
 	culture="saxon"
-	add_trait="scholarly_theologian"
-	father=7627
+	trait="scholarly_theologian"
+        father=7627
+        mother=1000226338
 	870.1.1={
 		birth="870.1.1"
 	}
@@ -1481,8 +1502,8 @@
 	stewardship=7
 	religion="catholic"
 	culture="saxon"
-	add_trait="charitable"
-	add_trait="scholarly_theologian"
+	trait="charitable"
+	trait="scholarly_theologian"
 	1008.1.2={
 		birth="1008.1.2"
 	}
@@ -1537,7 +1558,7 @@
 	stewardship=8
 	religion="catholic"
 	culture="saxon"
-	add_trait="amateurish_plotter"
+	trait="amateurish_plotter"
 	father=120
 	mother=101534
 	1040.1.1={
@@ -1558,10 +1579,10 @@
 	stewardship=7
 	religion="catholic"
 	culture="saxon"
-	add_trait="wroth"
-	add_trait="brave"
-	add_trait="tough_soldier"
-	add_trait="ambitious"
+	trait="wroth"
+	trait="brave"
+	trait="tough_soldier"
+	trait="ambitious"
 	father=161278
 	1038.1.1={
 		birth="1038.1.1"
@@ -1580,10 +1601,10 @@
 	stewardship=6
 	religion="catholic"
 	culture="saxon"
-	add_trait="skilled_tactician"
-	add_trait="deceitful"
-	add_trait="proud"
-	add_trait="ambitious"
+	trait="skilled_tactician"
+	trait="deceitful"
+	trait="proud"
+	trait="ambitious"
 	1044.1.2={
 		birth="1044.1.2"
 	}
@@ -1604,7 +1625,7 @@
 	stewardship=8
 	religion="catholic"
 	culture="saxon"
-	add_trait="thrifty_clerk"
+	trait="thrifty_clerk"
 	1046.1.2={
 		birth="1046.1.2"
 	}
@@ -1633,7 +1654,7 @@
 }
 
 33350 = {
-	name="Æthelstan"
+	name="Æthelstan" # Ealdorman of Mercia 918-924(and 16 days as king of Mercia), king of the Angels 924-927, king of England 927-939
 	dynasty=100072
 	religion="catholic"
 	culture="saxon"
@@ -1699,6 +1720,9 @@
 	795.1.1={
 		birth="795.1.1"
 	}
+        833.1.1 = {
+		add_spouse=1000226366
+	}
 	858.1.13={
 		death="858.1.13"
 	}
@@ -1710,6 +1734,7 @@
 	religion="catholic"
 	culture="saxon"
 	father=33355
+        mother=1000226366
 	834.1.1={
 		birth="834.1.1"
 	}
@@ -1719,11 +1744,12 @@
 }
 
 33357 = {
-	name="Æthelbert"
+	name="Æthelbert" # Æþelberht, King of Wessex 860-865
 	dynasty=100072
 	religion="catholic"
 	culture="saxon"
 	father=33355
+        mother=1000226366
 	836.1.1={
 		birth="836.1.1"
 	}
@@ -1733,13 +1759,17 @@
 }
 
 33358 = {
-	name="Æthelred"
+	name="Æthelred" # Æþelræd, King of Wessex 865-871
 	dynasty=100072
 	religion="catholic"
 	culture="saxon"
 	father=33355
+        mother=1000226366
 	840.1.1={
 		birth="840.1.1"
+	}
+        864.1.1 = {
+		add_spouse=1000226383 #Wulfthryth daughter of Wulfhere earldorman of Wiltun.
 	}
 	871.1.1={
 		death="871.1.1"
@@ -1750,7 +1780,7 @@
 	name="Samson"
 	religion="catholic"
 	culture="saxon"
-	add_trait="lustful"
+	trait="lustful"
 	1056.1.1={
 		birth="1056.1.1"
 	}
@@ -1763,8 +1793,8 @@
 	name="Arnold"
 	religion="catholic"
 	culture="saxon"
-	add_trait="trusting"
-	add_trait="detached_priest"
+	trait="trusting"
+	trait="detached_priest"
 	1058.1.1 = {
 		birth="1058.1.1" 
 	}
@@ -1777,7 +1807,7 @@
 	name="Theulf"
 	religion="catholic"
 	culture="saxon"
-	add_trait="greedy"
+	trait="greedy"
 	1056.1.1 = {
 		birth="1056.1.1"
 	}
@@ -1793,7 +1823,7 @@
 	name="Edmund"
 	religion="catholic"
 	culture="saxon"
-	add_trait="martial_cleric"
+	trait="martial_cleric"
 	1060.1.1 = {
 		birth="1060.1.1"
 	}
@@ -1810,9 +1840,9 @@
 	dynasty=490
 	religion="catholic"
 	culture="saxon"
-	add_trait="legit_bastard"
-	add_trait="chaste"
-	add_trait="detached_priest"
+	trait="legit_bastard"
+	trait="chaste"
+	trait="detached_priest"
 	father=101513
 	1036.12.6={
 		birth="1036.12.6"
@@ -2054,7 +2084,7 @@
 
 161276 = {
 	name="Eadric" 
-	#Eadric Streona
+	#Eadric Streona earldorman of Mercia 1007-1017
 	dynasty=20022
 	religion="catholic"
 	culture="saxon"
@@ -2169,7 +2199,7 @@
 	dynasty=756
 	religion="catholic"
 	culture="saxon"
-	add_trait="legit_bastard"
+	trait="legit_bastard"
 	father=128
 	1047.1.1 = {
 		birth="1047.1.1"
@@ -2187,8 +2217,8 @@
 	dynasty=756
 	religion="catholic"
 	culture="saxon"
-	add_trait="chaste"
-	add_trait="detached_priest"
+	trait="chaste"
+	trait="detached_priest"
 	father=120
 	mother=101534
 	1035.1.1 = {
@@ -2223,6 +2253,7 @@
 	dynasty=626
 	religion="catholic"
 	culture="saxon"
+        father=1000226343
 	840.1.1 = {
 		birth="840.1.1"
 	}
@@ -2239,14 +2270,14 @@
 	}
 }
 163102 = {
-	name="Burghred"
-	dynasty=813
+	name="Burghred" # king of Mercia 852-870
+	dynasty=1000100026
 	religion="catholic"
 	culture="saxon"
 	830.1.1 = {
 		birth="830.1.1"
 	}
-	855.1.1 = {
+	853.1.1 = {
 		add_spouse=168594
 	}
 	874.1.1 = {
@@ -2264,11 +2295,11 @@
 	stewardship=3
 	intrigue=6
 	learning=5
-	add_trait=deceitful
-	add_trait=cruel
-	add_trait=arbitrary
-	add_trait=paranoid
-	add_trait=intricate_webweaver
+	trait=deceitful
+	trait=cruel
+	trait=arbitrary
+	trait=paranoid
+	trait=intricate_webweaver
 	
 	824.1.1 = {
 		birth=yes
@@ -2329,7 +2360,7 @@
 	religion="catholic"
 	culture="saxon"
 	learning=5
-	add_trait=scholarly_theologian
+	trait=scholarly_theologian
 	
 	829.1.1 = {
 		birth="829.1.1"
@@ -2418,12 +2449,13 @@
 }
 
 168594 = {
-	name="Æthelswith"
+	name="Æthelswith" #Wife of Burgred of Mercia
 	female=yes
 	dynasty=100072
 	religion="catholic"
 	culture="saxon"
 	father=33355
+        mother=1000226366
 	838.1.1={
 		birth=yes
 	}

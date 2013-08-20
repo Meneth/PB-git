@@ -16,9 +16,13 @@ b_vaksala = city
 #b_balstauppland = city
 
 # Misc
-culture = swedish
+culture = norse
 religion = norse_pagan
 
 # History
+867.1.1 = {
+	b_hatuna = ca_shipyard_1
+}
 867.1.1 = { b_vaksala = ct_trade_post_1 }
+1047.10.25 = { culture = swedish } 
 1090.1.1 = { religion = catholic }
