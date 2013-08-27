@@ -85,15 +85,15 @@ decisions = {
 			any_realm_lord = {
 				IF = {
 					any_courtier = {
-
+						limit = {
+							prisoner = yes
+							primary_title = { higher_tier_than = BARON }
+							war_with = ROOT
+						}
 						custom_tooltip = {
 							text = EVTTOOLTIPprisreq
 
-							limit = {
-								prisoner = yes
-								primary_title = { higher_tier_than = BARON }
-								war_with = ROOT
-							}
+							
 							hidden_tooltip = {
 								prisoner = no
 								prisoner = ROOT
