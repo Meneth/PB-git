@@ -3666,6 +3666,7 @@ religious = {
 					FROM = { religion_group = muslim }
 				}
 			}
+			NOT = { has_global_flag = rapid_conquest }
 		}
 		#Prevents duplicate CBs
 		NOT = {
@@ -3698,6 +3699,7 @@ religious = {
 					}
 				}
 			}
+			NOT = { has_global_flag = rapid_conquest }
 		}
 		# The attacker needs at least one county in the target kingdom, or a border, or be only two sea zones away from one of your counties
 		any_direct_de_jure_vassal_title = {
