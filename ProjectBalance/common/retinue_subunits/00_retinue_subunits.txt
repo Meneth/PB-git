@@ -121,13 +121,16 @@ RETTYPE_CUL_BULGARIAN =
 }
 RETTYPE_CUL_ROMANIAN = 
 {
-	first_type = 1
-	first_amount = 250
+	first_type = 3
+	first_amount = 200
+
+	second_type = 6
+	second_amount = 50
 	
 	culture = romanian
-	
+
 	modifier = {
-		heavy_infantry_offensive = 0.6
+		light_cavalry_offensive = 0.6
 	}
 }
 ########################
