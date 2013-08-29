@@ -1,6 +1,8 @@
 3.2.28
 	Fixed rulers occasionally imprisoning everyone in their realm
+	Avars can now form Carpathia
 	(Shattered Balance) Fixed duplicate holy war CBs
+	(PB+SWMH) Updated for SWMH 2.81
 
 3.2.27
 	Made sure PB is 1.111 compatible
