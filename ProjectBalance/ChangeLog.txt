@@ -1,4 +1,5 @@
 3.2.28
+	PB is now compatible with the CKII to EU4 converter. Note that I cannot guarantee that PB used with other mods will work with the converter
 	Fixed rulers occasionally imprisoning everyone in their realm
 	Avars can now form Carpathia
 	(Shattered Balance) Fixed duplicate holy war CBs
