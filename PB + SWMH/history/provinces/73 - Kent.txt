@@ -4,16 +4,26 @@
 title = c_kent
 
 # Settlements
-max_settlements = 5
+max_settlements = 6
+
 b_dover = castle
 b_canterbury = temple
 b_rochester = temple
-
-#b_faversham = castle
-#b_lympne = castle
 b_sandwich = city
-#b_romney = castle
+b_saltwood = castle
 #b_tonbridge = castle
+#b_faversham = temple
+#b_lympne  = castle
+#b_romney = city
+#b_hythe = city
+#b_margate = city
+#b_folkstone = city
+#b_leedsinkent= castle
+#b_eynsford = castle
+#b_chilham = castle
+#b_cooling = castle
+#b_whitstable = = city
+#b_gillingham = city
 
 # Misc
 culture = saxon

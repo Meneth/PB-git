@@ -6,13 +6,19 @@ title = c_osterreich
 # Settlements
 max_settlements = 6
 
-b_hohenwarth = castle
-b_raabs = castle
+b_pochlarn = castle #(Pöchlarn; old capital of the East March) 
 b_wien = city
-#b_melk = temple
-#b_stpolten = city
-#b_wagram = castle
-#b_steyr = castle
+b_melk = temple
+b_raabs = castle
+#b_klosterneuburg = temple #(Klosterneuburg)
+#b_heiligenkreuz = temple
+#b_stpolten = city #(Sankt Pölten)
+#b_modling = city #(Mödling)
+#b_hainburg = city
+#b_liechtenstein = castle
+#b_falkenstein = castle
+#b_stolzenworth = castle #(Stolzenwörth)
+#b_maissau= castle
 
 # Misc
 culture = german
@@ -20,4 +26,5 @@ religion = catholic
 
 # History
 867.1.1 = { b_wien = ct_trade_post_1 }
-1187.1.1 = { b_steyr = castle } 
+1114.1.1 = { b_klosterneuburg = temple } 
+1159.1.1 = { b_stpolten = city }

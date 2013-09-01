@@ -19,6 +19,7 @@ religion = catholic
 
 1066.1.1 = { 
 	b_jaca = ca_town_1
+	b_jaca = ca_town_2
 	b_jaca = ca_keep_1
 	b_jaca = ca_keep_2
 	b_jaca = ca_stable_1

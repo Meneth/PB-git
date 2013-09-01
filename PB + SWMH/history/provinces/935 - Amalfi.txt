@@ -18,6 +18,7 @@ religion = orthodox
 terrain = hills
 
 # History
+866.1.1 = { capital = b_amalfi }
 867.1.1 = { 
 	b_amalfi = ct_wall_1
 	b_amalfi = ct_wall_2
@@ -32,5 +33,6 @@ terrain = hills
 	b_amalfi = ct_trade_post_1
 	b_amalfi = ct_trade_post_2
 }
+870.1.1 = { capital = b_sorrento }
 1140.1.1 = { culture = neapolitan }
 1250.1.1 = { religion = catholic }

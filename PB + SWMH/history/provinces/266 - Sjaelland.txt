@@ -6,7 +6,6 @@ title = c_sjaelland
 # Settlements
 max_settlements = 6
 b_ringsted = castle
-b_lejre = temple
 b_roskilde = temple
 b_kobenhavn = city
 #b_helsingor = city
@@ -18,14 +17,16 @@ b_kobenhavn = city
 #b_koge = city
 
 # Misc
-culture = danish
-religion = catholic
+culture = norse
+religion = norse_pagan
 terrain = farmlands
 
 # History
+867.1.1 = { b_kobenhavn = ct_port_1 }
 867.1.1 = { b_kobenhavn = ct_trade_post_1 }
-#1065.1.1 = { remove_settlement = b_lejre } 
-1066.1.1 = { 
+1018.1.1 = { religion = catholic } 
+1047.10.25 = { culture = danish } 
+1066.1.1 = {       
 	b_ringsted = ca_keep_1
 	b_ringsted = ca_stable_1
 	b_ringsted = ca_militia_barracks_1

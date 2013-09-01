@@ -5,21 +5,22 @@ title = c_rogaland
 
 # Settlements
 max_settlements = 4
-b_eikundarsund = castle
-b_stavanger = city
-#b_roldal = temple 
 
-#b_naerbo = castle
-#b_bygdeborg = castle
-#b_klepp = city
-#b_hesby  = temple
-#b_jonegarden = castle
+b_avaldsnes = castle # Aagvaldnes
+b_haugesund = city # Haugar
+b_sola = castle # Sóli
+#b_utstein = temple # Útsteinn
+#b_aanestad = castle # Oprustaðir
+#b_kleppe = temple # Kleppr
+#b_lye = temple # Lýgi
 
 # Misc
-culture = norwegian
-religion = catholic
+culture = norse
+religion = norse_pagan
 
 # History
+1024.1.1 = { religion = catholic }
+1047.10.25 = { culture = norwegian } 
 1166.1.1 = { trade_post = b_hetvelt }
-
+1260.1.1 = { b_utstein = temple } 
 1285.1.1 = { trade_post = b_warendorp }

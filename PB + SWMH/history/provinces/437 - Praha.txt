@@ -20,10 +20,11 @@ b_boleslav = castle
 
 # Misc
 culture = bohemian
-religion = catholic
+religion = slavic_pagan
 
 # History
 867.1.1 = {
 	b_stare_mesto = ct_trade_post_1
 	b_stare_mesto = ct_trade_post_2
 }
+883.1.1 = { religion = catholic }

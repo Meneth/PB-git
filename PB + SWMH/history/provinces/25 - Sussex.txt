@@ -4,21 +4,28 @@
 title = c_sussex
 
 # Settlements
-max_settlements = 4
-b_arundel = castle
-b_chichester = temple
-
-#b_pevensey = castle
-b_lewes = city
-#b_hastings = castle
-#b_rye = castle
+max_settlements = 5
+b_pevensey = castle
+b_chichester = city
+b_selsey = temple
+#b_lewes = castle
+#b_arundel = castle 
+#b_hastings = castle 
 #b_bramber = castle
 #b_bodiam = castle
+#b_rye = city
+#b_winchelsea = city
+#b_worthing = city
+
+
 
 # Misc
 culture = saxon
 religion = catholic
 
 # History
+1067.11.11 = { b_arundel = castle } 
+1069.11.11 = { b_lewes = castle } 
+1069.11.11 = { capital = b_lewes } 
 1100.11.11 = { culture = english } 
 1266.1.1 = { trade_post = b_hoyer }

@@ -46,13 +46,12 @@ imperial_reconquest = {
 
 	can_use_title = {
 		OR = {
-			de_jure_liege_or_above = k_greece
+			de_jure_liege_or_above = k_byzantium
 			de_jure_liege_or_above = k_anatolia
 			de_jure_liege_or_above = k_nikaea
 			de_jure_liege_or_above = k_epirus
 			de_jure_liege_or_above = k_trebizond
 			de_jure_liege_or_above = k_cilician
-			de_jure_liege_or_above = k_rum
 			AND = {
 				OR = {
 					de_jure_liege_or_above = k_serbia
@@ -62,7 +61,7 @@ imperial_reconquest = {
 					de_jure_liege_or_above = d_antioch
 				}
 				ROOT = {
-					completely_controls = k_greece
+					completely_controls = k_byzantium
 					completely_controls = k_anatolia
 					completely_controls = k_nikaea
 					completely_controls = k_epirus
@@ -132,9 +131,7 @@ imperial_reconquest = {
 				}
 			}
 			AND = {
-				OR = {
-					de_jure_liege_or_above = e_france
-				}
+				de_jure_liege_or_above = e_france
 				ROOT = {
 					completely_controls = e_byzantium
 					completely_controls = e_iberia
@@ -160,7 +157,6 @@ imperial_reconquest = {
 					de_jure_liege_or_above = k_carinthia
 					de_jure_liege_or_above = k_lower_lorraine
 					de_jure_liege_or_above = k_upper_lorraine
-					title = d_brabant
 				}
 				ROOT = {
 					completely_controls = e_byzantium

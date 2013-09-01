@@ -1,0 +1,126 @@
+decisions = {
+	#Prepare save for converter
+	prepare_for_converter = {
+		potential = {
+			ai = no
+			NOT = { has_global_flag = SWMH }
+		}
+		effect = {
+			hidden_tooltip = {
+				primary_title = {
+					add_law = centralization_1
+					if = {
+						limit = {
+							OR = {
+								AND = {
+									has_law = revokation_0 # Realms with no revocation are extremely decentralized
+									NOT = { has_law = king_peace_2 }
+									NOT = { has_law = emperor_peace_2 }
+								}
+								AND = {
+									OR = {
+										has_law = king_peace_0
+										has_law = emperor_peace_0
+									}
+									NOT = { has_law = revokation_2 }
+									NOT = { has_law = crown_levies_2 }
+									NOT = { has_law = crown_levies_3 }
+									NOT = { has_law = crown_levies_4 }
+									NOT = { has_law = inheritance_1 }
+								}
+							}
+						}
+						add_law = centralization_0
+						revoke_law = centralization_1
+					}
+					if = {
+						limit = {
+							title = e_french_hre
+							NOT = { has_law = hre_law_0 }
+						}
+						holder_scope = {
+							e_hre = {
+								grant_title = PREV
+								copy_title_laws = e_french_hre
+							}
+							e_hre_french = {
+								any_direct_de_jure_vassal_title = {
+									de_jure_liege = e_hre
+								}
+							}
+						}
+						destroy_landed_title = THIS
+					}
+					if = {
+						limit = {
+							title = e_hre
+							NOT = { has_law = hre_law_0 }
+						}
+						add_law = centralization_4
+						revoke_law = centralization_0
+						revoke_law = centralization_1
+					}
+				}
+				any_independent_ruler = {
+					limit = {
+						higher_tier_than = duke
+					}
+					primary_title = {
+						add_law = centralization_1
+						if = {
+							limit = {
+								OR = {
+									AND = {
+										has_law = revokation_0 # Realms with no revocation are extremely decentralized
+										NOT = { has_law = king_peace_2 }
+										NOT = { has_law = emperor_peace_2 }
+									}
+									AND = {
+										OR = {
+											has_law = king_peace_0
+											has_law = emperor_peace_0
+										}
+										NOT = { has_law = revokation_2 }
+										NOT = { has_law = crown_levies_2 }
+										NOT = { has_law = crown_levies_3 }
+										NOT = { has_law = crown_levies_4 }
+										NOT = { has_law = inheritance_1 }
+									}
+								}
+							}
+							add_law = centralization_0
+							revoke_law = centralization_1
+						}
+						if = {
+							limit = {
+								title = e_french_hre
+								NOT = { has_law = hre_law_0 }
+							}
+							holder_scope = {
+								e_hre = {
+									grant_title = PREV
+									copy_title_laws = e_french_hre
+								}
+								e_hre_french = {
+									any_direct_de_jure_vassal_title = {
+										de_jure_liege = e_hre
+									}
+								}
+							}
+							destroy_landed_title = THIS
+						}
+						if = {
+							limit = {
+								title = e_hre
+								NOT = { has_law = hre_law_0 }
+							}
+							add_law = centralization_4
+							revoke_law = centralization_0
+							revoke_law = centralization_1
+						}
+					}
+				}
+			}
+		}
+	}
+}

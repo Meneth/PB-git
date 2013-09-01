@@ -2523,6 +2523,34 @@ berber_culture_modifier = {
     tech_growth_modifier_culture = 0.15
     fertility = -0.1
 }
+masmuda_culture_modifier = {
+
+    light_cavalry_offensive = 0.35
+    light_cavalry_defensive = 0.35
+    knights_offensive = -0.25
+    knights_defensive = -0.25
+    horse_archers_offensive = 0.2 
+    horse_archers_defensive = 0.2
+    pikemen_offensive = 0.1
+    pikemen_defensive = 0.1
+    archers_offensive = 0.3
+    archers_defensive = 0.3
+    light_infantry_offensive = 0.2   
+    light_infantry_defensive = 0.2   
+    heavy_infantry_offensive = -0.05
+    heavy_infantry_defensive = -0.05
+    land_organisation = 0.25
+    land_morale = 0.1
+    levy_reinforce_rate = 0.05
+    garrison_size = 0.15
+    build_time_modifier = -0.05
+    global_tax_modifier = 0.05
+    build_cost_modifier = 0.05
+    tech_growth_modifier_economy = 0.05
+    tech_growth_modifier_military = 0.15
+    tech_growth_modifier_culture = 0.15
+    fertility = -0.1
+}
 ##########################################################################
 # East african Static Modifiers
 ##########################################################################

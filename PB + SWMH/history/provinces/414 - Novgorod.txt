@@ -23,10 +23,14 @@ b_peryn = temple
 
 # Misc
 culture = russian
-religion = orthodox
+religion = slavic_pagan
 
 # History
+867.1.1 = {
+	b_novgorodkremlin = ca_shipyard_1
+}
 867.1.1 = { b_novgorod = ct_trade_post_1 }
+988.1.1 = {religion = orthodox }
 1136.1.1 = { b_solcyn = city } #Novgorod republic founded
 1136.1.1 = { capital = b_novgorod }
 1150.1.1 = { b_yurievmonestary = temple }

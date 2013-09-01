@@ -178,4 +178,8 @@ spriteTypes = {
 		name = "GFX_violate_baqt"
 		texturefile = "gfx\\interface\\decision_icon_violate_baqt.dds"
 	}
+	spriteType = {
+		name = "GFX_prepare_for_converter"
+		texturefile = "gfx\\interface\\decision_icon_eu4.dds"
+	}
 }
