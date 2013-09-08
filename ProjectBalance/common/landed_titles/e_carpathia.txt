@@ -4,6 +4,8 @@ e_carpathia = {
 	
 	capital = 522 # Pest
 	
+	name_tier = king
+	
 	culture = hungarian
 	
 	tengri_pagan_reformed = 100
