@@ -2,6 +2,7 @@
 	(No Ahistorical Empires) Fixed the kingdom of Mün in SWMH being a dejure part of the British empire
 	Set Carpathia to localize as a kingdom like most other empires
 	Fixed some issues with the triggers for holy wars
+	Lowered the warscore from battles moderately (from a multiplier of 175 to 150)
 
 3.2.28
 	PB is now compatible with the CKII to EU4 converter. Note that I cannot guarantee that PB used with other mods will work with the converter
