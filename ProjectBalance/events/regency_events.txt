@@ -799,11 +799,6 @@ character_event = {
 				random_courtier = {
 					limit = { has_minor_title = title_regent }
 					add_trait = wounded
-					hidden_tooltip = {
-						character_event = {
-							id = 38280 #Notify Wounded
-						}
-					}
 					opinion = {
 						modifier = opinion_mad_as_hell
 						who = ROOT
@@ -1132,11 +1127,15 @@ character_event = {
 	picture = GFX_evt_emissary
 	
 	trigger = {
-		has_character_flag = imprisoned_by_regent
 		any_courtier = {
 			has_minor_title = title_regent
 			NOT = { has_character_flag = declared_ruler_insane }
 		}
+		has_character_flag = imprisoned_by_regent
+	}
+	
+	mean_time_to_happen = {
+		days = 1
 	}
 	
 	option = {
@@ -1356,8 +1355,8 @@ character_event = {
 	option = {
 		name = EVTOPTA61166
 		random_list = {
-		50 = { add_trait = possessed }
-		50 = { }
+			50 = { add_trait = possessed }
+			50 = { }
 		}
 	}
 }

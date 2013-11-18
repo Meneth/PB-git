@@ -43,14 +43,6 @@ character_event = {
 		months = 4
 		
 		modifier = {
-			factor = 4
-			primary_title = { tier = COUNT }
-		}	
-		modifier = {
-			factor = 2
-			primary_title = { tier = DUKE }
-		}		
-		modifier = {
 			factor = 2
 			has_character_flag = feast_musicians
 		}
@@ -142,14 +134,6 @@ character_event = {
 	mean_time_to_happen = {
 		months = 4
 		
-		modifier = {
-			factor = 4
-			primary_title = { tier = COUNT }
-		}	
-		modifier = {
-			factor = 2
-			primary_title = { tier = DUKE }
-		}		
 		modifier = {
 			factor = 2
 			has_character_flag = feast_musicians
@@ -243,14 +227,6 @@ character_event = {
 		months = 4
 		
 		modifier = {
-			factor = 4
-			primary_title = { tier = COUNT }
-		}	
-		modifier = {
-			factor = 2
-			primary_title = { tier = DUKE }
-		}		
-		modifier = {
 			factor = 2
 			has_character_flag = feast_minstrel
 		}
@@ -343,7 +319,6 @@ character_event = {
 
 	option = {
 		name = EVTOPTA72003 #Spend lavishly on food
-		trigger = { NOT = { trait = temperate } }
 		ai_chance = {
 			factor = 30
 			
@@ -354,11 +329,7 @@ character_event = {
 			modifier = {
 				factor = 3
 				trait = gluttonous
-			}		
-			modifier = {
-				factor = 2
-				primary_title = { higher_tier_than = DUKE }
-			}			
+			}
 		}
 		set_character_flag = lavishly_food
 		scaled_wealth = -0.15
@@ -383,10 +354,6 @@ character_event = {
 				factor = 2
 				NOT = { trait = gluttonous }
 			}
-			modifier = {
-				factor = 2
-				primary_title = { tier = DUKE }
-			}			
 		}
 		set_character_flag = medium_food
 		scaled_wealth = -0.10
@@ -401,7 +368,6 @@ character_event = {
 	}
 	option = {
 		name = EVTOPTC72003 #Spend low on food
-		trigger = { NOT = { trait = gluttonous } }
 		ai_chance = {
 			factor = 30
 			
@@ -410,9 +376,9 @@ character_event = {
 				trait = greedy
 			}
 			modifier = {
-				factor = 2
-				primary_title = { tier = COUNT }
-			}			
+				factor = 0.5
+				trait = gluttonous
+			}
 		}
 		set_character_flag = low_food
 		scaled_wealth = -0.05
@@ -551,14 +517,6 @@ character_event = {
 		months = 4
 		
 		modifier = {
-			factor = 4
-			primary_title = { tier = COUNT }
-		}	
-		modifier = {
-			factor = 2
-			primary_title = { tier = DUKE }
-		}
-		modifier = {
 			factor = 2
 			has_character_flag = feast_minstrel
 		}
@@ -651,14 +609,6 @@ character_event = {
 		months = 4
 		
 		modifier = {
-			factor = 4
-			primary_title = { tier = COUNT }
-		}	
-		modifier = {
-			factor = 2
-			primary_title = { tier = DUKE }
-		}		
-		modifier = {
 			factor = 2
 			has_character_flag = feast_minstrel
 		}
@@ -729,12 +679,11 @@ character_event = {
 	desc = EVTDESC72008
 	picture = GFX_evt_hunt
 	
-	#min_age = 16
+	min_age = 16
 	prisoner = no
 	capable_only = yes
 	
 	trigger = {
-		is_adult = yes
 		war = no
 		has_character_modifier = holding_large_feast
 		NOT = {
@@ -778,12 +727,8 @@ character_event = {
 			}
 			random = {
 				chance = 5
+				
 				add_trait = wounded
-				hidden_tooltip = {
-					character_event = {
-						id = 38280 #Notify Wounded
-					}
-				}
 			}
 		}
 	}
@@ -812,12 +757,8 @@ character_event = {
 			}
 			random = {
 				chance = 5
+				
 				add_trait = wounded
-				hidden_tooltip = {
-					character_event = {
-						id = 38280 #Notify Wounded
-					}
-				}
 			}
 		}
 	}
@@ -829,12 +770,8 @@ character_event = {
 		}
 		random = {
 			chance = 5
+			
 			add_trait = wounded
-			hidden_tooltip = {
-				character_event = {
-					id = 38280 #Notify Wounded
-				}
-			}
 		}
 	}
 	option = {
@@ -869,14 +806,6 @@ character_event = {
 	mean_time_to_happen = {
 		months = 4
 		
-		modifier = {
-			factor = 4
-			primary_title = { tier = COUNT }
-		}	
-		modifier = {
-			factor = 2
-			primary_title = { tier = DUKE }
-		}		
 		modifier = {
 			factor = 2
 			has_character_flag = feast_minstrel
@@ -951,7 +880,7 @@ character_event = {
 	id = 72010
 	desc = EVTDESC72010
 	picture = GFX_evt_feast
-	
+
 	only_rulers = yes
 	capable_only = yes
 	prisoner = no
@@ -969,6 +898,9 @@ character_event = {
 		}
 	}
 	
+	mean_time_to_happen = {
+		days = 1
+	}
 
 	option = {
 		name = EVTOPTA72010
@@ -978,7 +910,7 @@ character_event = {
 				prisoner = no
 				war = no
 				in_command = no
-				is_adult = yes
+				age = 16
 			}
 			letter_event = {
 				id = 72011
@@ -1002,7 +934,7 @@ letter_event = {
 		name = EVTOPTA72011 #Travel to the feast
 		ai_chance = {
 			factor = 2
-			modifier = {
+			modifier  = {
 				factor = 2
 				opinion = { who = from value = -10 }
 			}
@@ -1025,14 +957,6 @@ letter_event = {
 				factor = 0
 				opinion = { who = from value = 25 }
 			}
-			modifier  = {
-				factor = 2
-				NOT = { opinion = { who = from value = -60 } }
-			}
-			modifier  = {
-				factor = 2
-				NOT = { opinion = { who = from value = -80 } }
-			}			
 		}
 		FROM = {
 			letter_event = {
@@ -1104,7 +1028,7 @@ character_event = {
 		set_character_flag = host_feast_started
 		any_vassal = {
 			limit = {
-				has_character_flag =  coming_to_feast
+				has_character_flag = coming_to_feast
 			}
 			character_event = {
 				id = 72016
@@ -1134,13 +1058,12 @@ character_event = {
 	desc = EVTDESC72020
 	picture = GFX_evt_feast
 	
-	#min_age = 16
+	min_age = 16
 	only_rulers = yes
 	capable_only = yes
 	prisoner = no
 	
 	trigger = {
-		is_adult = yes
 		war = no
 		has_character_flag = guest_feast_started
 		liege = {
@@ -1180,22 +1103,6 @@ character_event = {
 			liege = { num_of_vassals = 50 }
 		}
 		modifier = {
-			factor = 2
-			liege = { num_of_vassals = 60 }
-		}
-		modifier = {
-			factor = 2
-			liege = { num_of_vassals = 70 }
-		}	
-		modifier = {
-			factor = 2
-			liege = { num_of_vassals = 80 }
-		}
-		modifier = {
-			factor = 2
-			liege = { num_of_vassals = 90 }
-		}
-		modifier = {
 			factor = 3
 			liege = { num_of_vassals = 100 }
 		}
@@ -1203,15 +1110,16 @@ character_event = {
 	
 	option = {
 		name = EVTOPTA72020 #Approve publicly
-		trigger = {
-			NOT = { trait = temperate }
-		}		
 		ai_chance = {
 			factor = 20
 			
 			modifier = {
 				factor = 5
 				trait = gluttonous
+			}
+			modifier = {
+				factor = 0.1
+				trait = temperate
 			}
 		}
 		any_liege = {
@@ -1235,12 +1143,13 @@ character_event = {
 	}
 	option = {
 		name = EVTOPTB72020 #Disapprove
-		trigger = {
-			NOT = { trait = gluttonous }
-		}
 		ai_chance = {
 			factor = 20
 			
+			modifier = {
+				factor = 0.1
+				trait = gluttonous
+			}
 			modifier = {
 				factor = 5
 				trait = temperate
@@ -1277,13 +1186,12 @@ character_event = {
 	desc = EVTDESC72021
 	picture = GFX_evt_feast
 	
-	#min_age = 16
+	min_age = 16
 	only_rulers = yes
 	capable_only = yes
 	prisoner = no
 	
 	trigger = {
-		is_adult = yes
 		war = no
 		has_character_flag = guest_feast_started
 		any_liege = {
@@ -1321,22 +1229,6 @@ character_event = {
 		modifier = {
 			factor = 1.5
 			liege = { num_of_vassals = 50 }
-		}
-		modifier = {
-			factor = 2
-			liege = { num_of_vassals = 60 }
-		}
-		modifier = {
-			factor = 2.25
-			liege = { num_of_vassals = 70 }
-		}	
-		modifier = {
-			factor = 2.5
-			liege = { num_of_vassals = 80 }
-		}
-		modifier = {
-			factor = 2.75
-			liege = { num_of_vassals = 90 }
 		}
 		modifier = {
 			factor = 3
@@ -1399,13 +1291,12 @@ character_event = {
 	desc = EVTDESC72022
 	picture = GFX_evt_feast
 	
-	#min_age = 16
+	min_age = 16
 	only_rulers = yes
 	capable_only = yes
 	prisoner = no
 	
 	trigger = {
-		is_adult = yes
 		war = no
 		has_character_flag = guest_feast_started
 		any_liege = {
@@ -1445,22 +1336,6 @@ character_event = {
 			liege = { num_of_vassals = 50 }
 		}
 		modifier = {
-			factor = 2
-			liege = { num_of_vassals = 60 }
-		}
-		modifier = {
-			factor = 2.25
-			liege = { num_of_vassals = 70 }
-		}	
-		modifier = {
-			factor = 2.5
-			liege = { num_of_vassals = 80 }
-		}
-		modifier = {
-			factor = 2.75
-			liege = { num_of_vassals = 90 }
-		}
-		modifier = {
 			factor = 3
 			liege = { num_of_vassals = 100 }
 		}
@@ -1468,12 +1343,13 @@ character_event = {
 	
 	option = {
 		name = EVTOPTA72022 #Approve publicly
-		trigger = {
-			NOT = { trait = gluttonous }
-		}		
 		ai_chance = {
 			factor = 20
 			
+			modifier = {
+				factor = 0.1
+				trait = gluttonous
+			}
 			modifier = {
 				factor = 5
 				trait = temperate
@@ -1500,15 +1376,16 @@ character_event = {
 	}
 	option = {
 		name = EVTOPTB72022 #Disapprove
-		trigger = {
-			NOT = { trait = temperate }
-		}		
 		ai_chance = {
 			factor = 20
 			
 			modifier = {
 				factor = 5
 				trait = gluttonous
+			}
+			modifier = {
+				factor = 0.1
+				trait = temperate
 			}
 		}
 		any_liege = {
@@ -1551,11 +1428,6 @@ character_event = {
 			who = FROM
 			years = 2
 		}
-		reverse_opinion = {
-			modifier = opinion_approves
-			who = FROM
-			years = 2
-		}		
 	}
 }
 
@@ -1574,11 +1446,6 @@ character_event = {
 			who = FROM
 			years = 2
 		}
-		reverse_opinion = {
-			modifier = opinion_disapprove
-			who = FROM
-			years = 2
-		}		
 	}
 }
 
@@ -1598,7 +1465,7 @@ character_event = {
 			has_character_flag = host_feast_started
 			has_character_modifier = holding_large_feast
 			any_vassal = {
-				is_adult = yes
+				age = 16
 				has_character_flag = guest_feast_started
 				any_claim = {
 					NOT = {
@@ -1651,7 +1518,7 @@ character_event = {
 			random_vassal = {
 				limit = {
 					has_character_flag = guest_feast_started
-					is_adult = yes
+					age = 16
 					any_claim = {
 						holder_scope = {
 							character = ROOT
@@ -1711,7 +1578,7 @@ character_event = {
 				reverse_opinion = { who = ROOT value = 10 }
 			}
 			any_vassal = {
-				is_adult = yes
+				age = 16
 				has_character_flag = guest_feast_started
 				NOT = {
 					character = ROOT
@@ -1770,7 +1637,7 @@ character_event = {
 			random_vassal = {
 				limit = {
 					has_character_flag = guest_feast_started
-					is_adult = yes
+					age = 16
 
 					NOT = {
 						character = ROOT
@@ -1830,13 +1697,12 @@ character_event = {
 	desc = EVTDESC72030
 	picture = GFX_evt_melee
 	
-	#min_age = 16
+	min_age = 16
 	only_men = yes
 	capable_only = yes
 	prisoner = no
 	
 	trigger = {
-		is_adult = yes
 		war = no
 		in_command = no
 		has_character_flag = guest_feast_started
@@ -1866,7 +1732,7 @@ character_event = {
 			any_vassal = {
 				war = no
 				in_command = no
-				is_adult = yes
+				age = 16
 				is_female = no
 				prisoner = no
 				has_character_flag = guest_feast_started
@@ -1925,29 +1791,13 @@ character_event = {
 			liege = { num_of_vassals = 50 }
 		}
 		modifier = {
-			factor = 2
-			liege = { num_of_vassals = 60 }
-		}
-		modifier = {
-			factor = 2.25
-			liege = { num_of_vassals = 70 }
-		}	
-		modifier = {
-			factor = 2.5
-			liege = { num_of_vassals = 80 }
-		}
-		modifier = {
-			factor = 2.75
-			liege = { num_of_vassals = 90 }
-		}
-		modifier = {
 			factor = 3
 			liege = { num_of_vassals = 100 }
 		}
 	}
 	
 	option = {
-		name = EVTOPTA72030 #Accept
+		name = EVTOPTA72030
 		any_liege = {
 			limit = {
 				has_character_flag = host_feast_started
@@ -1958,7 +1808,7 @@ character_event = {
 				limit = {
 					war = no
 					in_command = no
-					is_adult = yes
+					age = 16
 					is_female = no
 					prisoner = no
 					has_character_flag = guest_feast_started
@@ -2545,14 +2395,13 @@ character_event = {
 	desc = EVTDESC72040
 	picture = GFX_evt_feast
 	
-	#min_age = 16
+	min_age = 16
 	max_age = 60
 	prisoner = no
 	only_rulers = yes
 	capable_only = yes
 	
 	trigger = {
-		is_marriage_adult = yes
 		war = no
 		has_character_flag = guest_feast_started
 		is_married = yes
@@ -2570,7 +2419,7 @@ character_event = {
 				has_character_flag = guest_feast_started
 				spouse = {
 					prisoner = no
-					is_adult = yes
+					age = 16
 					is_pregnant = no
 					is_alive = yes
 					is_abroad = no
@@ -2580,13 +2429,12 @@ character_event = {
 					NOT = {
 						age = 40
 					}
-					opinion = { who = ROOT value = 20 }				
+					opinion = { who = ROOT value = 20 }
 					NOT = { is_close_relative = ROOT }
 					
 					OR = {
 						AND = {
 							is_female = yes
-							is_pregnant = no
 							ROOT = {
 								is_female = no
 							}
@@ -2595,7 +2443,6 @@ character_event = {
 							is_female = no
 							ROOT = {
 								is_female = yes
-								is_pregnant = no
 							}
 						}
 					}
@@ -2608,12 +2455,8 @@ character_event = {
 		days = 60
 		
 		modifier = {
-			factor = 0.25
-			trait = lustful
-		}
-		modifier = {
 			factor = 0.5
-			trait = hedonist
+			trait = lustful
 		}
 		modifier = {
 			factor = 4
@@ -2641,22 +2484,6 @@ character_event = {
 			liege = { num_of_vassals = 50 }
 		}
 		modifier = {
-			factor = 2
-			liege = { num_of_vassals = 60 }
-		}
-		modifier = {
-			factor = 2.25
-			liege = { num_of_vassals = 70 }
-		}	
-		modifier = {
-			factor = 2.5
-			liege = { num_of_vassals = 80 }
-		}
-		modifier = {
-			factor = 2.75
-			liege = { num_of_vassals = 90 }
-		}
-		modifier = {
 			factor = 3
 			liege = { num_of_vassals = 100 }
 		}
@@ -2680,7 +2507,7 @@ character_event = {
 					has_character_flag = guest_feast_started
 					spouse = {
 						prisoner = no
-						is_adult = yes
+						age = 16
 						is_pregnant = no
 						is_alive = yes
 						is_abroad = no
@@ -2695,7 +2522,6 @@ character_event = {
 						OR = {
 							AND = {
 								is_female = yes
-								is_pregnant = no
 								ROOT = {
 									is_female = no
 								}
@@ -2704,7 +2530,6 @@ character_event = {
 								is_female = no
 								ROOT = {
 									is_female = yes
-									is_pregnant = no
 								}
 							}
 						}
@@ -2797,12 +2622,11 @@ character_event = {
 	desc = EVTDESC72045
 	picture = GFX_evt_feast
 	
-	#min_age = 16
+	min_age = 16
 	prisoner = no
 	capable_only = yes
 	
 	trigger = {
-		is_adult = yes
 		war = no
 		has_character_flag = guest_feast_started
 		NOT = {
@@ -2851,22 +2675,6 @@ character_event = {
 		modifier = {
 			factor = 1.5
 			liege = { num_of_vassals = 50 }
-		}
-		modifier = {
-			factor = 2
-			liege = { num_of_vassals = 60 }
-		}
-		modifier = {
-			factor = 2.25
-			liege = { num_of_vassals = 70 }
-		}	
-		modifier = {
-			factor = 2.5
-			liege = { num_of_vassals = 80 }
-		}
-		modifier = {
-			factor = 2.75
-			liege = { num_of_vassals = 90 }
 		}
 		modifier = {
 			factor = 3
@@ -2925,12 +2733,11 @@ character_event = {
 	desc = EVTDESC72046
 	picture = GFX_evt_feast
 	
-	#min_age = 16
+	min_age = 16
 	prisoner = no
 	capable_only = yes
 	
 	trigger = {
-		is_adult = yes
 		war = no
 		has_character_flag = guest_feast_started
 		trait = drunkard
@@ -3008,12 +2815,11 @@ character_event = {
 	desc = EVTDESC72048
 	picture = GFX_evt_feast
 	
-	#min_age = 16
+	min_age = 16
 	prisoner = no
 	capable_only = yes
 	
 	trigger = {
-		is_adult = yes
 		war = no
 		has_character_flag = guest_feast_started
 		trait = drunkard
@@ -3049,22 +2855,6 @@ character_event = {
 		modifier = {
 			factor = 1.5
 			liege = { num_of_vassals = 50 }
-		}
-		modifier = {
-			factor = 2
-			liege = { num_of_vassals = 60 }
-		}
-		modifier = {
-			factor = 2.25
-			liege = { num_of_vassals = 70 }
-		}	
-		modifier = {
-			factor = 2.5
-			liege = { num_of_vassals = 80 }
-		}
-		modifier = {
-			factor = 2.75
-			liege = { num_of_vassals = 90 }
 		}
 		modifier = {
 			factor = 3
@@ -3154,22 +2944,6 @@ character_event = {
 			liege = { num_of_vassals = 50 }
 		}
 		modifier = {
-			factor = 2
-			liege = { num_of_vassals = 60 }
-		}
-		modifier = {
-			factor = 2.25
-			liege = { num_of_vassals = 70 }
-		}	
-		modifier = {
-			factor = 2.5
-			liege = { num_of_vassals = 80 }
-		}
-		modifier = {
-			factor = 2.75
-			liege = { num_of_vassals = 90 }
-		}
-		modifier = {
 			factor = 3
 			liege = { num_of_vassals = 100 }
 		}
@@ -3219,12 +2993,11 @@ character_event = {
 	desc = EVTDESC72055
 	picture = GFX_evt_feast
 	
-	#min_age = 16
+	min_age = 16
 	prisoner = no
 	capable_only = yes
 	
 	trigger = {
-		is_adult = yes
 		war = no
 		has_character_flag = guest_feast_started
 		OR = {
@@ -3274,22 +3047,6 @@ character_event = {
 		modifier = {
 			factor = 1.5
 			liege = { num_of_vassals = 50 }
-		}
-		modifier = {
-			factor = 2
-			liege = { num_of_vassals = 60 }
-		}
-		modifier = {
-			factor = 2.25
-			liege = { num_of_vassals = 70 }
-		}	
-		modifier = {
-			factor = 2.5
-			liege = { num_of_vassals = 80 }
-		}
-		modifier = {
-			factor = 2.75
-			liege = { num_of_vassals = 90 }
 		}
 		modifier = {
 			factor = 3
@@ -3344,12 +3101,11 @@ character_event = {
 			modifier = opinion_tyrant
  			multiplier = 2
 		}		
-		add_trait = cruel
+		add_trait = just
 	}
 	option = {
 		name = EVTOPTC72056
 		scaled_wealth = -0.10
-		add_trait = just
 	}
 	option = {
 		name = EVTOPTB72056
@@ -4133,14 +3889,13 @@ character_event = {
 	picture = GFX_evt_feast
 	
 	only_men = yes
-	#min_age = 16
+	min_age = 16
 	max_age = 60
 	prisoner = no
 	only_rulers = yes
 	capable_only = yes
 	
 	trigger = {
-		is_marriage_adult = yes
 		war = no
 		has_character_flag = host_feast_started
 		has_character_modifier = holding_large_feast
@@ -4154,7 +3909,7 @@ character_event = {
 			has_character_flag = guest_feast_started
 			is_married = yes
 			spouse = {
-				is_adult = yes
+				age = 16
 				NOT = { is_close_relative = ROOT }
 				is_female = yes
 				is_pregnant = no
@@ -4179,12 +3934,8 @@ character_event = {
 		days = 60
 		
 		modifier = {
-			factor = 0.25
-			trait = lustful
-		}
-		modifier = {
 			factor = 0.5
-			trait = hedonist
+			trait = lustful
 		}
 		modifier = {
 			factor = 4
@@ -4195,7 +3946,7 @@ character_event = {
 	immediate = {
 		random_vassal = {
 			limit = {
-				is_adult = yes
+				age = 16
 				not = { age = 30 }
 				has_character_flag = guest_feast_started
 				is_married = yes
@@ -4222,7 +3973,7 @@ character_event = {
 				has_character_flag = guest_feast_started
 				is_married = yes
 				spouse = {
-					is_adult = yes
+					age = 16
 					NOT = { is_close_relative = ROOT }
 					is_female = yes
 					is_pregnant = no
@@ -4247,7 +3998,7 @@ character_event = {
 				has_character_flag = guest_feast_started
 				is_married = yes
 				spouse = {
-					is_adult = yes
+					age = 16
 					is_female = yes
 					is_pregnant = no
 					is_alive = yes
@@ -4587,7 +4338,7 @@ character_event = {
 	id = 72087
 	desc = EVTDESC72087
 	picture = GFX_evt_feast
-		
+
 	is_triggered_only = yes
 	
 	option = {
@@ -4676,7 +4427,7 @@ character_event = {
 				has_character_modifier = holding_large_feast
 			}
 			AND = {
-				is_marriage_adult = yes
+				age = 16
 				NOT = {
 					age = 26
 				}
@@ -4697,7 +4448,7 @@ character_event = {
 						is_betrothed = no
 						has_lover = no
 						NOT = { is_close_relative = ROOT }
-						is_adult = yes
+						age = 16
 						NOT = {
 							age = 26
 						}
@@ -4715,7 +4466,7 @@ character_event = {
 					has_lover = no
 					fertility = 0.4
 					NOT = { is_close_relative = ROOT }
-					is_adult = yes
+					age = 16
 					NOT = {
 						age = 26
 					}
@@ -4767,7 +4518,7 @@ character_event = {
 						fertility = 0.4
 						NOT = { is_close_relative = ROOT }
 
-						is_adult = yes
+						age = 16
 						NOT = {
 							age = 26
 						}
@@ -4815,7 +4566,7 @@ character_event = {
 						NOT = {
 							family = ROOT
 						}
-						is_adult = yes
+						age = 16
 						NOT = {
 							age = 26
 						}
@@ -4863,7 +4614,7 @@ character_event = {
 					fertility = 0.4
 					NOT = { is_close_relative = ROOT }
 
-					is_adult = yes
+					age = 16
 					NOT = {
 						age = 26
 					}
@@ -4904,7 +4655,8 @@ character_event = {
 					is_pregnant = no
 					fertility = 0.4
 					NOT = { is_close_relative = ROOT }
-					is_adult = yes
+
+					age = 16
 					NOT = {
 						age = 26
 					}
@@ -5401,15 +5153,6 @@ character_event = {
 				id = 72111
 				tooltip = EVTTOOLTIP72111
 			}
-			remove_opinion = {
-				modifier = opinion_enjoyed_feast
-				who = ROOT			
-			}
-			opinion = {
-				modifier = opinion_enjoyed_feast
-				who = ROOT
-				years = 2
-			}			
 			clr_character_flag = coming_to_feast
 			clr_character_flag = guest_feast_started
 			clr_character_flag = wounded_opponent
@@ -5510,7 +5253,7 @@ character_event = {
 	id = 4160
 	desc = EVTDESC4160
 	picture = GFX_evt_jugglers
-		
+	
 	trigger = {
 		war = no
 		in_command = no
@@ -5650,14 +5393,6 @@ character_event = {
 		months = 4
 		
 		modifier = {
-			factor = 4
-			primary_title = { tier = COUNT }
-		}	
-		modifier = {
-			factor = 2
-			primary_title = { tier = DUKE }
-		}		
-		modifier = {
 			factor = 2
 			has_character_flag = feast_minstrel
 		}
@@ -5727,7 +5462,7 @@ character_event = {
 	id = 4165
 	desc = EVTDESC4165
 	picture = GFX_evt_jugglers
-	
+
 	trigger = {
 		war = no
 		in_command = no

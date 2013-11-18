@@ -83,8 +83,19 @@ e_poland_lithuania = {
 			c_lubusz = {
 				color={ 135 30 30 }
 				color2={ 255 255 255 }
+				
+				german = Lebus
+				swedish = Lebus
+				norse = Lebus
+				norwegian = Lebus
+				danish = Lebus
 			
 				b_lubusz = {
+					german = Lebus
+					swedish = Lebus
+					norse = Lebus
+					norwegian = Lebus
+					danish = Lebus
 				}
 				b_mysliborz = {
 				}
@@ -104,8 +115,19 @@ e_poland_lithuania = {
 			c_gnieznienskie = {
 				color={ 125 6 2 }
 				color2={ 255 255 255 }
+				
+				german = Gnesen
+				swedish = Gnesen
+				norse = Gnesen
+				norwegian = Gnesen
+				danish = Gnesen
 			
 				b_gniezno = {
+					german = Gnesen
+					swedish = Gnesen
+					norse = Gnesen
+					norwegian = Gnesen
+					danish = Gnesen
 				}
 				b_lekno = {
 				}
@@ -125,8 +147,19 @@ e_poland_lithuania = {
 			c_poznanskie = {
 				color={ 145 6 2 }
 				color2={ 255 255 255 }
+				
+				german = Posen
+				swedish = Posen
+				norse = Posen
+				norwegian = Posen
+				danish = Posen
 			
 				b_poznan = {
+					german = Posen
+					swedish = Posen
+					norse = Posen
+					norwegian = Posen
+					danish = Posen
 				}
 				b_obrzycko = {
 				}
@@ -176,10 +209,25 @@ e_poland_lithuania = {
 				color2={ 255 255 255 }
 			
 				b_glogow = {
+					german = Glogau
+					swedish = Glogau
+					norse = Glogau
+					norwegian = Glogau
+					danish = Glogau
 				}
 				b_legnica = {
+					german = Liegnitz
+					swedish = Liegnitz
+					norse = Liegnitz
+					norwegian = Liegnitz
+					danish = Liegnitz
 				}
 				b_krosno = {
+					german = Krossen
+					swedish = Krossen
+					norse = Krossen
+					norwegian = Krossen
+					danish = Krossen
 				}
 				b_jawor = {
 				}
@@ -190,6 +238,11 @@ e_poland_lithuania = {
 				b_boleslawiec = {
 				}
 				b_zagan = {
+					german = Sagan
+					swedish = Sagan
+					norse = Sagan
+					norwegian = Sagan
+					danish = Sagan
 				}
 			}
 			c_upper_silesia = {
@@ -197,10 +250,25 @@ e_poland_lithuania = {
 				color2={ 255 255 255 }
 			
 				b_wroclaw = {
+					german = Breslau
+					swedish = Breslau
+					norse = Breslau
+					norwegian = Breslau
+					danish = Breslau
 				}
 				b_brzeg = {
+					german = Brieg
+					swedish = Brieg
+					norse = Brieg
+					norwegian = Brieg
+					danish = Brieg
 				}
 				b_zmigrod = {
+					german = Trachtenberg
+					swedish = Trachtenberg
+					norse = Trachtenberg
+					norwegian = Trachtenberg
+					danish = Trachtenberg
 				}
 				b_milicz = {
 				}
@@ -211,13 +279,29 @@ e_poland_lithuania = {
 				b_niemcza = {
 				}
 				b_henrykow = {
+					german = Heinrichau
+					swedish = Heinrichau
+					norse = Heinrichau
+					norwegian = Heinrichau
+					danish = Heinrichau
 				}
 			}
 			c_opole = {
 				color={ 218 37 15 }
 				color2={ 255 255 255 }
+				
+				german = Uppeln
+				swedish = Uppeln
+				norse = Uppeln
+				norwegian = Uppeln
+				danish = Uppeln
 			
 				b_opole = {
+					german = Uppeln
+					swedish = Uppeln
+					norse = Uppeln
+					norwegian = Uppeln
+					danish = Uppeln
 				}
 				b_czestochowa = {
 				} 
@@ -237,8 +321,19 @@ e_poland_lithuania = {
 			c_cieszyn = {
 				color={ 127 6 2 }
 				color2={ 255 255 255 }
+				
+				german = Teschen
+				swedish = Teschen
+				norse = Teschen
+				norwegian = Teschen
+				danish = Teschen
 			
 				b_cieszyn = {
+					german = Teschen
+					swedish = Teschen
+					norse = Teschen
+					norwegian = Teschen
+					danish = Teschen
 				}
 				b_oswiecim = {
 				}
@@ -265,8 +360,19 @@ e_poland_lithuania = {
 			c_krakowskie = {
 				color={ 137 6 20 }
 				color2={ 255 255 255 }
+				
+				german = Krakau
+				swedish = Krakau
+				norse = Krakau
+				norwegian = Krakau
+				danish = Krakau
 			
 				b_krakow = {
+					german = Krakau
+					swedish = Krakau
+					norse = Krakau
+					norwegian = Krakau
+					danish = Krakau
 				}
 				b_jedrzejow = {
 				}
@@ -286,8 +392,19 @@ e_poland_lithuania = {
 			c_sacz = {
 				color={ 117 6 2 }
 				color2={ 255 255 255 }
+				
+				german = Sandez
+				swedish = Sandez
+				norse = Sandez
+				norwegian = Sandez
+				danish = Sandez
 			
 				b_nowysacz = {
+					german = "Neu Sandez"
+					swedish = Nysand
+					norse = Nysand
+					norwegian = Nysand
+					danish = Nysand
 				}
 				b_gorlice = {
 				}
@@ -335,8 +452,19 @@ e_poland_lithuania = {
 			c_sieradzko-leczyckie = {
 				color={ 160 40 40 }
 				color2={ 255 255 255 }
+				
+				german = Schieratz
+				swedish = Schieratz
+				norse = Schieratz
+				norwegian = Schieratz
+				danish = Schieratz
 			
 				b_sieradz = {
+					german = Schieratz
+					swedish = Schieratz
+					norse = Schieratz
+					norwegian = Schieratz
+					danish = Schieratz
 				}
 				b_radomsko = {
 				}

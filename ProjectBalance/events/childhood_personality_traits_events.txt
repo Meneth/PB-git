@@ -31,7 +31,7 @@ character_event = {
 		has_guardian = yes
 	}
 	
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 		modifier = {
 			factor = 2
@@ -154,7 +154,7 @@ character_event = {
 		has_guardian = yes
 	}
 	
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 		modifier = {
 			factor = 2
@@ -279,7 +279,7 @@ character_event = {
 		has_guardian = yes
 	}
 	
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 		modifier = {
 			factor = 2
@@ -406,7 +406,7 @@ character_event = {
 		has_guardian = yes
 	}
 	
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 		modifier = {
 			factor = 2
@@ -533,7 +533,7 @@ character_event = {
 		has_guardian = yes
 	}
 	
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 		modifier = {
 			factor = 2
@@ -661,7 +661,7 @@ character_event = {
 		has_guardian = yes
 	}
 	
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 		modifier = {
 			factor = 2
@@ -789,7 +789,7 @@ character_event = {
 		has_guardian = yes
 	}
 	
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 		modifier = {
 			factor = 2
@@ -930,7 +930,7 @@ character_event = {
 		has_guardian = yes
 	}
 	
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 		modifier = {
 			factor = 0.5
@@ -1065,7 +1065,7 @@ character_event = {
 		has_guardian = yes
 	}
 	
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 		modifier = {
 			trait = clubfooted
@@ -1185,7 +1185,7 @@ character_event = {
 		has_guardian = yes
 	}
 	
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 		modifier = {
 			trait = clubfooted
@@ -1304,7 +1304,7 @@ character_event = {
 		has_guardian = yes
 	}
 	
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 
 		modifier = {
@@ -1424,7 +1424,7 @@ character_event = {
 		has_guardian = yes
 	}
 	
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 		modifier = {
 			trait = clubfooted
@@ -1545,7 +1545,7 @@ character_event = {
 		has_guardian = yes
 	}
 	
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 		modifier = {
 			trait = clubfooted
@@ -1667,7 +1667,7 @@ character_event = {
 		has_guardian = yes
 	}
 	
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 		modifier = {
 			trait = clubfooted
@@ -1784,7 +1784,7 @@ character_event = {
 		has_guardian = yes
 	}
 	
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 		modifier = {
 			trait = clubfooted
@@ -1883,7 +1883,7 @@ character_event = {
 		has_guardian = yes
 	}
 	
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 		modifier = {
 			trait = clubfooted
@@ -2002,7 +2002,7 @@ character_event = {
 		has_guardian = yes
 	}
 	
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 		modifier = {
 			trait = clubfooted
@@ -2121,7 +2121,7 @@ character_event = {
 		has_guardian = yes
 	}
 	
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 		modifier = {
 			trait = clubfooted
@@ -2241,7 +2241,7 @@ character_event = {
 		has_guardian = yes
 	}
 	
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 		modifier = {
 			trait = clubfooted
@@ -2360,7 +2360,7 @@ character_event = {
 		has_guardian = yes
 	}
 	
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 		modifier = {
 			trait = clubfooted
@@ -2480,7 +2480,7 @@ character_event = {
 		has_guardian = yes
 	}
 	
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 		modifier = {
 			factor = 2
@@ -2573,7 +2573,7 @@ character_event = {
 		has_guardian = yes
 	}
 	
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 		modifier = {
 			factor = 0.5
@@ -2666,7 +2666,7 @@ character_event = {
 		has_guardian = yes
 	}
 	
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 		modifier = {
 			trait = clubfooted
@@ -2785,7 +2785,7 @@ character_event = {
 		has_guardian = yes
 	}
 	
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 		modifier = {
 			trait = clubfooted
@@ -2907,7 +2907,7 @@ character_event = {
 		has_guardian = yes
 	}
 	
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 		modifier = {
 			trait = clubfooted
@@ -3024,7 +3024,7 @@ character_event = {
 		has_guardian = yes
 	}
 	
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 		modifier = {
 			trait = clubfooted
@@ -3144,7 +3144,7 @@ character_event = {
 		has_guardian = yes
 	}
 	
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 		modifier = {
 			trait = clubfooted
@@ -3533,7 +3533,7 @@ character_event = {
 
 	}
 	
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 		modifier = {
 			trait = clubfooted
@@ -3624,7 +3624,7 @@ character_event = {
 	
 	}
 	
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 		modifier = {
 			trait = clubfooted
@@ -3717,7 +3717,7 @@ character_event = {
 		NOT = { personality_traits = 5 }
 	}
 	
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 		modifier = {
 			trait = clubfooted
@@ -3810,7 +3810,7 @@ character_event = {
 		NOT = { personality_traits = 5 }
 	}
 	
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 		modifier = {
 			trait = clubfooted
@@ -3904,7 +3904,7 @@ character_event = {
 		NOT = { personality_traits = 5 }
 	}
 	
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 		modifier = {
 			trait = clubfooted
@@ -4000,7 +4000,7 @@ character_event = {
 		NOT = { personality_traits = 5 }
 	}
 	
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 
 		modifier = {
@@ -4095,7 +4095,7 @@ character_event = {
 		NOT = { personality_traits = 5 }
 	}
 	
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 		modifier = {
 			factor = 3
@@ -4191,7 +4191,7 @@ character_event = {
 		}
 	}
 	
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 		modifier = {
 			trait = clubfooted
@@ -4288,7 +4288,7 @@ character_event = {
 		NOT = { personality_traits = 5 }
 	}
 	
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 	}
 	
@@ -4322,7 +4322,7 @@ character_event = {
 		NOT = { personality_traits = 5 }
 	}
 	
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 		modifier = {
 			trait = clubfooted
@@ -4419,7 +4419,7 @@ character_event = {
 		NOT = { personality_traits = 5 }
 	}
 	
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 		modifier = {
 			trait = clubfooted
@@ -4512,7 +4512,7 @@ character_event = {
 		NOT = { personality_traits = 5 }
 	}
 	
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 		modifier = {
 			trait = clubfooted
@@ -4606,7 +4606,7 @@ character_event = {
 		NOT = { personality_traits = 5 }
 	}
 	
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 		modifier = {
 			trait = clubfooted
@@ -4701,7 +4701,7 @@ character_event = {
 		NOT = { personality_traits = 5 }
 	}
 	
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 		modifier = {
 			factor = 2
@@ -4748,7 +4748,7 @@ character_event = {
 		
 	}
 	
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 		modifier = {
 			trait = clubfooted
@@ -4845,7 +4845,7 @@ character_event = {
 		NOT = { trait = greedy }
 	}
 	
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 		modifier = {
 			trait = clubfooted
@@ -4939,7 +4939,7 @@ character_event = {
 		NOT = {	guardian = { trait = arbitrary } }
 	}
 	
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 		modifier = {
 			trait = clubfooted
@@ -5032,7 +5032,7 @@ character_event = {
 		NOT = {	trait = kind }
 	}
 	
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 		modifier = {
 			trait = clubfooted
@@ -5127,7 +5127,7 @@ character_event = {
 		NOT = { trait = diligent }
 	}
 	
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 		modifier = {
 			trait = clubfooted
@@ -5223,7 +5223,7 @@ character_event = {
 		NOT = { trait = gluttonous }
 	}
 	
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 		modifier = {
 			trait = clubfooted
@@ -5321,7 +5321,7 @@ character_event = {
 		NOT = { trait = arbitrary }
 	}
 	
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 		modifier = {
 			trait = clubfooted
@@ -5426,7 +5426,7 @@ character_event = {
 		}
 	}
 	
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 		modifier = {
 			trait = clubfooted
@@ -5521,7 +5521,7 @@ character_event = {
 		}
 	}
 	
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 		modifier = {
 			trait = clubfooted
@@ -5623,7 +5623,7 @@ character_event = {
 		}
 	}
 	
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 		modifier = {
 			trait = clubfooted
@@ -5731,7 +5731,7 @@ character_event = {
 		}
 	}
 	
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 		modifier = {
 			trait = clubfooted
@@ -5839,7 +5839,7 @@ character_event = {
 		}
 	}
 	
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 	}
 	
@@ -5881,7 +5881,7 @@ character_event = {
 		}
 	}
 	
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 	}
 	
@@ -5931,7 +5931,7 @@ character_event = {
 		}
 	}
 	
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 		modifier = {
 			trait = clubfooted
@@ -6037,7 +6037,7 @@ character_event = {
 		}
 	}
 	
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 		modifier = {
 			trait = clubfooted
@@ -6148,7 +6148,7 @@ character_event = {
 		}
 	}
 	
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 		modifier = {
 			trait = clubfooted
@@ -6259,7 +6259,7 @@ character_event = {
 		}
 	}
 	
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 		modifier = {
 			trait = clubfooted
@@ -6364,7 +6364,7 @@ character_event = {
 		}
 	}
 	
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 		modifier = {
 			trait = clubfooted
@@ -6472,7 +6472,7 @@ character_event = {
 		}
 	}
 	
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 		modifier = {
 			trait = clubfooted
@@ -6564,7 +6564,7 @@ character_event = {
 		trait = ill
 	}
 	
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 	}
 	
@@ -6595,7 +6595,7 @@ character_event = {
 		trait = homosexual
 	}
 	
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 	}
 	
@@ -6641,7 +6641,7 @@ character_event = {
 		}
 	}
 	
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 		modifier = {
 			trait = clubfooted

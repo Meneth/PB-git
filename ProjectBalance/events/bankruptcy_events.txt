@@ -372,7 +372,7 @@ character_event = {
 character_event = {
 	id = 38020
 	desc = EVTDESC38020
-	picture = GFX_evt_council
+	picture = GFX_evt_pope_feast
 	
 	only_playable = yes
 	
@@ -523,7 +523,7 @@ character_event = {
 character_event = {
 	id = 38022
 	desc = EVTDESC38022
-	picture = GFX_evt_lunatic
+	picture = GFX_evt_bad_news
 	
 	is_triggered_only = yes
 	

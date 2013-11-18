@@ -85,9 +85,9 @@ k_orthodox = {
 	# Regnal names
 	male_names = {
 		Alexios Antonios Athanasios Basileios Chariton Dionysios Dositheos Eustathios Eustratios Euthymios
-		Gennadios Georgios Gerasimos Germanos Gregoras Ioannes Iosephos Isidoros Kallistos Konstantinos
+		Gennadios Georgios Gerasimos Germanos Gregoras Ioannes Ioseph Isidoros Kallistos Konstantinos
 		Kosmas Leon Leontios Loukas Makarios Manuel Maximos Metrophanes Michael Neophytos Nephon Niketas
-		Nikolaos Nilos Matthaios Paulos Sergios Sisinnios Symeon Theodoros Theodosios Theodotos
+		Nikolaos Nilos Matthaios Pavlos Sergios Sisinnios Symeon Theodoros Theodosios Theodotos
 	}
 }
 
@@ -212,10 +212,313 @@ d_monothelite = {
 	
 	# Regnal names
 	male_names = {
+		Alexios Antonios Athanasios Basileios Dositheos Eustathios Eustratios Euthymios Gennadios 
+		Georgios Gerasimos Germanos Gregorios Ioannes Iosephos Isidoros Kallistos Konstantinos
+		Kosmas Leon Leontios Loukas Makarios Manuel Maximos Metrophanes Michael Neophytos Nephon Niketas
+		Nikolaos Matthaios Paulos Sergios Theodoros Theodosios Theodotos Akakios Alexandros Anastasios 
+		Anthimos Gabriel Ieremias Ignatios Ioakim Kallinikos Kyriakos Kyrillos Makedonios Markos Meletios 
+		Methodios Nikephoros Petros Photios Polykarpos Stephanos Sophronios Theophylaktos Thomas Timotheos
+	}
+}
+
+d_fraticelli = {
+	color={ 198 249 255 }
+	color2={ 220 220 0 }
+	
+	capital = 333 # Rome
+	
+	title = "POPE"
+	foa = "POPE_FOA"
+	short_name = yes
+	location_ruler_title = yes
+	
+	allow = {
+		always = no # Only by special decision
+	}
+	
+	# Always exists
+	landless = yes
+	
+	# Controls a religion
+	controls_religion = fraticelli
+	
+	religion = fraticelli
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+	
+	# Regnal names
+	male_names = {
+		John Gregory Benedict Clement Innocent Leo Pius Stephen Boniface Urban Alexander Adrian Paul
+		Celestine Martin Nicholas Sixtus Felix Sergius Anastasius Honorius Eugene Sylvester Victor
+		Lucius Callixtus Julius Pelagius Adeodatus Theodore Marinus Agapetus Damasus Paschal
+		Gelasius Marcellus "John Paul" Anacletus Evaristus Telesphorus Hyginus Anicetus Mark Hilarius 
+		Simplicius Symmachus Hormisdas Silverius Vigilius Sabinian Severinus Vitalian Donus Agatho
+		Conon Sisinnius Constantine Zachary Valentine Formosus Romanus Lando
+	}
+}
+
+d_iconoclast = {
+	color={ 153 50 125 }
+	color2={ 220 220 0 }
+	
+	capital = 496 # Constantinople
+	
+	title = "ECUMENICAL_PATRIARCH"
+	foa = "ECUMENICAL_PATRIARCH_FOA"
+	short_name = yes
+	
+	allow = {
+		always = no # Only by special decision
+	}
+
+	# Always exists
+	landless = yes
+	
+	# Controls a religion
+	controls_religion = iconoclast
+	
+	religion = iconoclast
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+	
+	# Regnal names
+	male_names = {
 		Alexios Antonios Athanasios Basileios Chariton Dionysios Dositheos Eustathios Eustratios Euthymios
 		Gennadios Georgios Gerasimos Germanos Gregoras Ioannes Iosephos Isidoros Kallistos Konstantinos
 		Kosmas Leon Leontios Loukas Makarios Manuel Maximos Metrophanes Michael Neophytos Nephon Niketas
 		Nikolaos Nilos Matthaios Paulos Sergios Sisinnios Symeon Theodoros Theodosios Theodotos
+	}
+}
+
+d_yazidi = {
+	color={ 20 50 160 }
+	color2={ 220 220 0 }
+	
+	capital = 697 # Mosul
+	
+	dignity = 80 # Counted as having this many more counties than it does
+	
+	title = "SHEIKH"
+	title_female = "SHEIKHA"
+	foa = "CALIPH_FOA"
+	short_name = yes
+	
+	religion=yazidi
+	
+	# Controls a religion
+	controls_religion = yazidi
+	
+	allow = {
+		piety = 1000
+	}
+	
+	caliphate = yes
+	
+	coat_of_arms=
+	{
+		data=
+		{
+			0 0 3 0 0 11 11
+		}
+		religion=yazidi
+	}
+}
+
+d_ibadi = {
+	color={ 20 130 20 }
+	color2={ 220 220 0 }
+	
+	capital = 719 # Mecca
+	
+	creation_requires_capital = no
+	
+	dignity = 80 # Counted as having this many more counties than it does
+	
+	title = "CALIPH"
+	title_female = "CALIPHA"
+	foa = "CALIPH_FOA"
+	short_name = yes
+	
+	religion=ibadi
+	
+	# Controls a religion
+	controls_religion = ibadi
+	
+	allow = {
+		OR = {
+			trait = mirza
+			trait = sayyid
+			piety = 1000
+		}
+		OR = {
+			AND = {
+				trait = sayyid
+				piety = 1000
+			}
+			custom_tooltip = { 
+				text = controls_mecca_medina
+				hidden_tooltip = {
+					719 = { # Mecca
+						owner = {
+							OR = {
+								is_liege_or_above = ROOT
+								character = ROOT
+							}
+						}
+					}
+					718 = { # Medina
+						owner = {
+							OR = {
+								is_liege_or_above = ROOT
+								character = ROOT
+							}
+						}
+					}
+				}
+			}
+			custom_tooltip = {
+				text = controls_jerusalem_damascus_baghdad
+				hidden_tooltip = {
+					774 = { # Jerusalem
+						owner = {
+							OR = {
+								is_liege_or_above = ROOT
+								character = ROOT
+							}
+						}
+					}
+					728 = { # Damascus
+						owner = {
+							OR = {
+								is_liege_or_above = ROOT
+								character = ROOT
+							}
+						}
+					}
+					693 = { # Baghdad
+						owner = {
+							OR = {
+								is_liege_or_above = ROOT
+								character = ROOT
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	caliphate = yes
+	
+	coat_of_arms=
+	{
+		data=
+		{
+			0 0 0 8 0 2 2
+		}
+		religion=ibadi
+	}
+}
+
+d_hurufi = {
+	color={ 80 220 80 }
+	color2={ 220 220 0 }
+	
+	capital = 719 # Mecca
+	
+	creation_requires_capital = no
+	
+	dignity = 100 # Counted as having this many more counties than it does
+	
+	title = "CALIPH"
+	title_female = "CALIPHA"
+	foa = "CALIPH_FOA"
+	short_name = yes
+	
+	religion=hurufi
+	
+	# Controls a religion
+	controls_religion = hurufi
+	
+	allow = {
+		OR = {
+			trait = mirza
+			trait = sayyid
+			piety = 1000
+		}
+		OR = {
+			AND = {
+				trait = sayyid
+				piety = 1000
+			}
+			custom_tooltip = {
+				text = controls_mecca_medina
+				hidden_tooltip = {
+					719 = { # Mecca
+						owner = {
+							OR = {
+								is_liege_or_above = ROOT
+								character = ROOT
+							}
+						}
+					}
+					718 = { # Medina
+						owner = {
+							OR = {
+								is_liege_or_above = ROOT
+								character = ROOT
+							}
+						}
+					}
+				}
+			}
+			custom_tooltip = {
+				text = controls_jerusalem_damascus_baghdad
+				hidden_tooltip = {
+					774 = { # Jerusalem
+						owner = {
+							OR = {
+								is_liege_or_above = ROOT
+								character = ROOT
+							}
+						}
+					}
+					728 = { # Damascus
+						owner = {
+							OR = {
+								is_liege_or_above = ROOT
+								character = ROOT
+							}
+						}
+					}
+					693 = { # Baghdad
+						owner = {
+							OR = {
+								is_liege_or_above = ROOT
+								character = ROOT
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	caliphate = yes
+	
+	coat_of_arms=
+	{
+		data=
+		{
+			0 0 0 7 1 7 7
+		}
+		religion=hurufi
 	}
 }
 
@@ -518,6 +821,8 @@ d_knights_templar = {
 	color={ 230 230 230 }
 	color2={ 255 255 255 }
 	
+	graphical_culture = holygfx
+	
 	capital = 138 # Orleans
 	
 	title = "GRANDMASTER"
@@ -528,12 +833,17 @@ d_knights_templar = {
 	
 	holy_order = yes
 	
+	culture = frankish
+	
 	# Parent Religion 
 	religion = catholic
 	
 	# Cannot be held as a secondary title
 	primary = yes
-
+	
+	# Extra income due to banking, etc
+	monthly_income = 10 # (Must be an integer between 1 and 512)
+	
 	modifier = d_knights_templar_modifier
 }
 
@@ -541,6 +851,8 @@ d_teutonic_order = {
 	
 	color={ 50 50 50 }
 	color2={ 255 255 255 }
+	
+	graphical_culture = holygfx
 	
 	capital = 258 # Lüneburg
 
@@ -559,6 +871,9 @@ d_teutonic_order = {
 	
 	# Cannot be held as a secondary title
 	primary = yes
+	
+	# Extra income due to donations, etc
+	monthly_income = 4 # (Must be an integer between 1 and 512)
 
 	modifier = d_teutonic_order_modifier
 }
@@ -567,6 +882,8 @@ d_knights_hospitaler = {
 
 	color={ 180 180 180 }
 	color2={ 255 255 255 }
+	
+	graphical_culture = holygfx
 	
 	capital = 333 # Rome
 
@@ -578,11 +895,16 @@ d_knights_hospitaler = {
 	
 	holy_order = yes
 	
+	culture = occitan
+	
 	# Parent Religion 
 	religion = catholic
 	
 	# Cannot be held as a secondary title
 	primary = yes
+	
+	# Extra income due to donations, etc
+	monthly_income = 6 # (Must be an integer between 1 and 512)
 
 	modifier = d_knights_hospitaler_modifier
 }
@@ -591,6 +913,8 @@ d_hashshashin = {
 
 	color={ 100 100 0 }
 	color2={ 255 255 255 }
+	
+	graphical_culture = hashshashingfx
 	
 	capital = 693 # Baghdad
 	
@@ -602,6 +926,8 @@ d_hashshashin = {
 	# Always exists
 	landless = yes
 	
+	culture = persian
+	
 	# Parent Religion 
 	religion = shiite
 	
@@ -610,14 +936,53 @@ d_hashshashin = {
 		
 	# Cannot be vassalized
 	independent = yes
+	
+	# Extra income due to donations, etc
+	monthly_income = 6 # (Must be an integer between 1 and 512)
 
 	modifier = d_hashshashin_modifier
 }
 
-d_jomsvikings = {
+d_bektashi = {
+
+	color={ 90 150 0 }
+	color2={ 255 255 255 }
 	
+	graphical_culture = bektashigfx
+	
+	capital = 753 # Ancyra
+	
+	title = "DEDEBABA"
+	foa = "GRANDHEADMASTER_FOA"
+	
+	holy_order = yes
+
+	# Always exists
+	landless = yes
+	
+	culture = persian
+	
+	# Parent Religion 
+	religion = sunni
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+	# Cannot be vassalized
+	independent = yes
+	
+	# Extra income due to donations, etc
+	monthly_income = 6 # (Must be an integer between 1 and 512)
+
+	modifier = d_bektashi_modifier
+}
+
+d_jomsvikings = {
+
 	color={ 50 50 50 }
 	color2={ 255 255 255 }
+	
+	graphical_culture = norseholygfx
 	
 	capital = 303
 
@@ -636,98 +1001,369 @@ d_jomsvikings = {
 	
 	# Cannot be held as a secondary title
 	primary = yes
+	
+	# Extra income due to donations, etc
+	monthly_income = 2 # (Must be an integer between 1 and 512)
 
 	modifier = d_jomsvikings_modifier
 }
 
-d_pecheneg_company = {
-	color = { 100 100 30 }
-	color2 = { 255 255 255 }
+d_immortals = {
 
-	capital = 512 # Belgorod
+	color={ 180 205 20 }
 	
-	title = "CAPTAIN"
-	foa = "CAPTAIN_FOA"
+	graphical_culture = immortalsgfx
 	
-	holy_order = yes
+	capital = 637
 
+	title = "GRANDMASTER"
+	foa = "GRANDMASTER_FOA"
+	
 	# Always exists
 	landless = yes
 	
+	holy_order = yes
+	
 	# Parent Religion 
-	religion = tengri_pagan
+	religion = zoroastrian
+	
+	culture = persian
 	
 	# Cannot be held as a secondary title
 	primary = yes
 	
-	modifier = d_pecheneg_company_modifier
+	# Extra income due to donations, etc
+	monthly_income = 2 # (Must be an integer between 1 and 512)
+
+	modifier = d_immortals_modifier
 }
 
-d_norse = {
+d_zealots = {
 
-	color={ 180 180 180 }
-	color2={ 255 255 255 }
+	color={ 20 100 255 }
 	
-	capital = 279 # Lappland
+	graphical_culture = jewishholygfx
 	
-	title = "CAPTAIN"
-	foa = "CAPTAIN_FOA"
-	
-	holy_order = yes
+	capital = 774
 
+	title = "GRANDMASTER"
+	foa = "GRANDMASTER_FOA"
+	
 	# Always exists
 	landless = yes
 	
+	holy_order = yes
+	
 	# Parent Religion 
-	religion = norse_pagan
+	religion = jewish
+	
+	culture = ashkenazi
 	
 	# Cannot be held as a secondary title
 	primary = yes
 	
-	modifier = d_norse
+	# Extra income due to donations, etc
+	monthly_income = 2 # (Must be an integer between 1 and 512)
+
+	modifier = d_zealots_modifier
 }
 
-d_romuva = {
-	color = { 155 100 205 }
-	color2 = { 255 255 255 }
+d_holy_sepulchre = {
 
-	capital = 260 # Mecklemburg
+	color={ 120 0 145 }
 	
-	title = "CAPTAIN"
-	foa = "CAPTAIN_FOA"
+	graphical_culture = orthodoxholygfx
 	
-	holy_order = yes
+	capital = 774
 
+	title = "GRANDMASTER"
+	foa = "GRANDMASTER_FOA"
+	
 	# Always exists
 	landless = yes
 	
+	holy_order = yes
+	
 	# Parent Religion 
-	religion = baltic_pagan
+	religion = orthodox
+	
+	culture = greek
 	
 	# Cannot be held as a secondary title
 	primary = yes
 	
-	modifier = d_romuva
+	# Extra income due to donations, etc
+	monthly_income = 2 # (Must be an integer between 1 and 512)
+
+	modifier = d_holy_sepulchre_modifier
 }
 
-d_suomenski = {
-	color = { 128 128 0 }
-	color2 = { 255 255 255 }
+d_saint_anthony = {
+
+	color={ 180 165 70 }
 	
-	capital = 382 # Finland
+	graphical_culture = holygfx
 	
-	holy_order = yes
+	capital = 875
+
+	title = "GRANDMASTER"
+	foa = "GRANDMASTER_FOA"
 	
 	# Always exists
 	landless = yes
 	
+	holy_order = yes
+	
 	# Parent Religion 
-	religion = finnish_pagan
+	religion = miaphysite
+	
+	culture = ethiopian
 	
 	# Cannot be held as a secondary title
 	primary = yes
 	
-	modifier = d_suomenski
+	# Extra income due to donations, etc
+	monthly_income = 2 # (Must be an integer between 1 and 512)
+
+	modifier = d_saint_anthony_modifier
+}
+
+d_sky_lords = {
+
+	color={ 220 200 140 }
+	
+	capital = 898
+
+	title = "WARCHIEF"
+	foa = "WARCHIEF_FOA"
+	
+	# Always exists
+	landless = yes
+	
+	holy_order = yes
+	
+	# Parent Religion 
+	religion = tengri_pagan_reformed
+	
+	culture = cuman
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Extra income due to donations, etc
+	monthly_income = 2 # (Must be an integer between 1 and 512)
+
+	modifier = d_sky_lords_modifier
+}
+
+d_spirit_guardians = {
+
+	color={ 120 120 55 }
+	
+	graphical_culture = westafricanholygfx
+	
+	capital = 925
+
+	title = "WARCHIEF"
+	foa = "WARCHIEF_FOA"
+	
+	# Always exists
+	landless = yes
+	
+	holy_order = yes
+	
+	# Parent Religion 
+	religion = west_african_pagan_reformed
+	
+	culture = manden
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Extra income due to donations, etc
+	monthly_income = 2 # (Must be an integer between 1 and 512)
+
+	modifier = d_spirit_guardians_modifier
+}
+
+d_warriors_perun = {
+
+	color={ 100 140 100 }
+	
+	graphical_culture = slavicholygfx
+	
+	capital = 547
+
+	title = "WARCHIEF"
+	foa = "WARCHIEF_FOA"
+	
+	# Always exists
+	landless = yes
+	
+	holy_order = yes
+	
+	# Parent Religion 
+	religion = slavic_pagan_reformed
+	
+	culture = russian
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Extra income due to donations, etc
+	monthly_income = 2 # (Must be an integer between 1 and 512)
+
+	modifier = d_warriors_perun_modifier
+}
+
+d_chosen_perkunas = {
+
+	color={ 200 45 45 }
+	
+	graphical_culture = balticholygfx
+	
+	capital = 374
+
+	title = "WARCHIEF"
+	foa = "WARCHIEF_FOA"
+	
+	# Always exists
+	landless = yes
+	
+	holy_order = yes
+	
+	# Parent Religion 
+	religion = baltic_pagan_reformed
+	
+	culture = lettigallish
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Extra income due to donations, etc
+	monthly_income = 2 # (Must be an integer between 1 and 512)
+
+	modifier = d_chosen_perkunas_modifier
+}
+
+d_sons_kaleva = {
+
+	color={ 140 130 105 }
+	
+	graphical_culture = finnishholygfx
+	
+	capital = 392
+
+	title = "WARCHIEF"
+	foa = "WARCHIEF_FOA"
+	
+	# Always exists
+	landless = yes
+	
+	holy_order = yes
+	
+	# Parent Religion 
+	religion = finnish_pagan_reformed
+	
+	culture = finnish
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Extra income due to donations, etc
+	monthly_income = 2 # (Must be an integer between 1 and 512)
+
+	modifier = d_sons_kaleva_modifier
+}
+
+d_huitzilopochtli = {
+
+	color={ 255 200 0 }
+	
+	graphical_culture = aztecholygfx
+	
+	capital = 843
+
+	title = "HIGHPRIEST"
+	foa = "GRANDMASTER_FOA"
+	
+	# Always exists
+	landless = yes
+	
+	holy_order = yes
+	
+	# Parent Religion 
+	religion = aztec_reformed
+	
+	culture = nahuatl
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Extra income due to donations, etc
+	monthly_income = 2 # (Must be an integer between 1 and 512)
+
+	modifier = d_huitzilopochtli_modifier
+}
+
+d_knights_santiago = {
+
+	color={ 255 130 0 }
+	
+	graphical_culture = holygfx
+	
+	capital = 157 # Santiago
+
+	title = "GRANDMASTER"
+	foa = "GRANDMASTER_FOA"
+
+	# Always exists
+	landless = yes
+	
+	holy_order = yes
+	
+	culture = castillan
+	
+	# Parent Religion 
+	religion = catholic
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Extra income due to donations, etc
+	monthly_income = 6 # (Must be an integer between 1 and 512)
+
+	modifier = d_knights_santiago_modifier
+}
+
+d_knights_calatrava = {
+
+	color={ 230 100 0 }
+	
+	graphical_culture = holygfx
+	
+	capital = 196 # Calatrava
+
+	title = "GRANDMASTER"
+	foa = "GRANDMASTER_FOA"
+
+	# Always exists
+	landless = yes
+	
+	holy_order = yes
+	
+	culture = castillan
+	
+	# Parent Religion 
+	religion = catholic
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Extra income due to donations, etc
+	monthly_income = 6 # (Must be an integer between 1 and 512)
+
+	modifier = d_knights_calatrava_modifier
 }
 
 # MERCS
@@ -1389,6 +2025,8 @@ d_varangian_guard = {
 	color={ 180 180 180 }
 	color2={ 255 255 255 }
 
+	graphical_culture = orthodoxholygfx
+	
 	capital = 290 # Uppland
 	
 	# Parent Religion 
@@ -2161,6 +2799,8 @@ d_mamluks = {
 	color={ 80 160 80 }
 	color2={ 255 255 255 }
 
+	graphical_culture = bektashigfx
+	
 	capital = 796 # Cairo
 	
 	# Hire Trigger
@@ -2358,6 +2998,8 @@ d_ghilman = {
 	color={ 60 165 80 }
 	color2={ 255 255 255 }
 
+	graphical_culture = bektashigfx
+	
 	capital = 627 # Kara-Kum
 	
 	# Hire Trigger
@@ -2686,6 +3328,13 @@ k_finland = {
 	culture = finnish
 	
 	catholic = 40 # Crusade target weight
+	
+	finnish = Suomi
+		lappish = Suomi
+		ugricbaltic = Suomi
+		komi = Suomi
+		samoyed = Suomi
+		mordvin = Suomi
 	
 	# Creation/usurpation trigger
 	allow = {
@@ -4491,6 +5140,19 @@ k_ziyanids = {
 	color = { 5 76 194 }
 }
 
+k_israel = {
+	color = { 20 138 255 }
+
+	title = "KING"
+	title_female = "QUEEN"
+
+	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+	
+	allow = {
+		always = no # Only created through special event
+	}
+}
+
 d_amalfi = {
 	color={ 140 200 230 }
 	capital = 935 # Amalfi
@@ -5036,6 +5698,30 @@ d_zoroastrian = {
 	controls_religion = zoroastrian
 	
 	religion = zoroastrian
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+}
+
+d_jewish = {
+	color = { 0 80 255 }
+	
+	capital = 774 #	Jerusalem
+	
+	title = "HEAD_KOHEN_GADOL"
+	foa = "POPE_FOA"
+	
+	short_name = yes
+	
+	# Always exists
+	landless = yes	
+	
+	# Controls a religion
+	controls_religion = jewish
+	
+	religion = jewish
 	
 	# Cannot be held as a secondary title
 	primary = yes

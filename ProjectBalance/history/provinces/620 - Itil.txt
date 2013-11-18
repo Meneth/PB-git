@@ -16,7 +16,7 @@ b_tumak = castle
 #b_alga = castle
 
 # Misc
-culture = turkish
+culture = khazar
 religion = jewish
 
 # History

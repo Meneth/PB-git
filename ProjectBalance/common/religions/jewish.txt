@@ -1,18 +1,1 @@
-jewish_group = {
-	has_coa_on_barony_only = yes
-	graphical_culture = muslimgfx
-	playable = yes
-	
-	jewish = {
-		graphical_culture = muslimgfx
-		icon = 38
-		color = { 0.0 0.0 0.5 }
-		crusade_name = "HOLY_WAR"
-		scripture_name = THE_TORAH
-		god_names = { 
-			GOD_ADONAI GOD_HASHEM
-		}
-		priests_can_marry = yes
-		can_grant_divorce = yes
-	}
-}
+#Override

@@ -2127,15 +2127,15 @@ e_byzantium = {
 				color={ 150 124 61 }
 				color2={ 255 255 255 }
 				
-				serbian = "Beograd"
-				croatian = "Beograd"
-				bulgarian = "Beograd"
+				serbian = "Belgrad"
+				croatian = "Belgrad"
+				bulgarian = "Belgrad"
 				greek = "Singidounon"
 				
 				b_belgrade = {
-					serbian = "Beograd"
-					croatian = "Beograd"
-					bulgarian = "Beograd"
+					serbian = "Belgrad"
+					croatian = "Belgrad"
+					bulgarian = "Belgrad"
 					greek = "Singidounon"
 				}
 				b_zemun = {

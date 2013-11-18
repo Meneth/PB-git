@@ -6,6 +6,7 @@ bookmark =
 	
 	character = 140 # William the Conqueror
 	character = 101515 # Svend Estridsen, King of Denmark
+	character = 20663 # Isaac of Khazaria
 }
 
 bookmark =
@@ -33,6 +34,7 @@ bookmark =
 	character = 140 # William the Conqueror
 	character = 122 # Harold Godwinson
 	character = 102531 # Harald Hårdråde
+	character = 20663 # Isaac of Khazaria
 }
 
 bookmark =

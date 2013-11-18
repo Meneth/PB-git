@@ -153,6 +153,9 @@
 285.7.1={
 	holder=145241
 }
+305.4.1={
+	holder=145293
+} # Maximian
 305.5.1={
 	holder=70524
 }
@@ -160,8 +163,11 @@
 	holder=145240
 }
 311.5.5={
+	holder=145294
+} # Maxentius
+311.6.5={
 	holder=145239
-}
+} # Maximinus II
 313.8.1={
 	holder=145238
 }
@@ -192,6 +198,9 @@
 378.8.9={
 	holder=145233
 }
+378.12.19={
+	holder=145234
+} # Valentinian II
 379.1.19={
 	holder=70534
 }
@@ -208,8 +217,8 @@
 	holder=70533
 }
 450.7.28={
-	holder=70531
-}
+	holder=145229
+} # Valentinian III
 450.8.25={
 	holder=70518
 }
@@ -395,8 +404,11 @@
 	law = themes_0
 }
 1067.5.22={
+	holder=1733
+} # Eudokia Makrembolites
+1068.1.1={
 	holder=1734
-}
+} # Romanos IV Diogenes
 1071.8.26={
 	holder=1736
 }

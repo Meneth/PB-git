@@ -5,8 +5,8 @@ title = c_malta
 
 # Settlements
 max_settlements = 4
-b_sliema = castle
-b_mdina = city
+b_mdina = castle
+b_sliema = city
 #b_sanpawl = temple
 
 #b_gozo = castle
@@ -18,7 +18,7 @@ b_mdina = city
 # Misc
 culture = greek
 religion = orthodox
-terrain = mountain
+terrain = hills
 
 # History
 

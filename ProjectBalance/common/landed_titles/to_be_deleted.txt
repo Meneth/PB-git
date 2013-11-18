@@ -1,5 +1,0 @@
-#Delete in 3.3.0
-d_piemonte = {
-	color={ 180 20 30 }
-	color2={ 255 255 255 }
-}
