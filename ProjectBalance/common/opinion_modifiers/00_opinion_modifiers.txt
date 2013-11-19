@@ -111,12 +111,12 @@ opinion_defending_my_titles = {
 
 # My liege is defending against infidels in some type of holy war
 opinion_defending_vs_infidel = {
-	opinion = 20
+	opinion = 25
 }
 
 # My liege is defending in a war against foreigners
 opinion_defending_vs_foreigners = {
-	opinion = 10
+	opinion = 15
 }
 
 opinion_pope_vs_antipope = {

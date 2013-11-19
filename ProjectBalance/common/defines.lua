@@ -719,7 +719,7 @@ NMilitary = {
 	MAX_LEADERSHIP_TRAITS = 2,
 	
 	LIEGE_LEVY_REINF_RATE = 0.025,
-	LIEGE_LEVY_SIZE_MULTIPLIER = 0.45,				-- The Size of the liege levy will be the total troops in the vassal subrealm * this
+	LIEGE_LEVY_SIZE_MULTIPLIER = 0.75,				-- The Size of the liege levy will be the total troops in the vassal subrealm * this
 	LIEGE_FLEET_SIZE_MULTIPLIER = 1.0,				-- As above but for galleys
 	LIEGE_LEVY_COST_MULTIPLIER = 1.0,				-- The vassal will pay regular maintenance * this for the liege levy
 	LIEGE_LEVY_SUBUNIT_SIZE_CUTOFF = 3000,			-- The max size of each liege levy subunit.

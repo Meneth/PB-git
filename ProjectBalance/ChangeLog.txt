@@ -1,3 +1,8 @@
+3.3.1
+	Increased the liege levy multiplier from 0.45 to 0.75
+	Increased the opinion modifiers for defending in a war by 5
+	Fixed some graphical issues
+
 3.3
 	Updated for CKII 2.0
 

@@ -1392,6 +1392,7 @@ objectTypes = {
 		actorfile = "gfx\models\Mapindicators\jewish_rabbi.xac"
 		
 		idle   = "gfx\models\Mapindicators\jewish_rabbi_idle.xsm"
+		scale = 1.0f
 	}
 
 	EMFXActorType = {
