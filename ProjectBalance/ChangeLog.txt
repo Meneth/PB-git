@@ -3,6 +3,7 @@
 	Increased the opinion modifiers for defending in a war by 5
 	Fixed some graphical issues
 	Removed PB's "Reclaim the Holy Land" event as this is now handled by vanilla
+	Removed PB's old localisation for Judaism
 
 3.3
 	Updated for CKII 2.0
