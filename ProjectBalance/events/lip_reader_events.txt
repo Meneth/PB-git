@@ -19,6 +19,7 @@ character_event = {
 
 	trigger = {
 		trait = deaf
+		NOT = { has_character_modifier = lip_reader }
 	}
 
 	mean_time_to_happen = {
@@ -68,6 +69,14 @@ character_event = {
 
 	option = { #Tries to learn lip-reading on own
 		name = EVTOPTA1000109212
+		trigger = {
+			NOT = {
+				trait = perceptive
+				intrigue = 10
+				trait = genius
+				trait = quick
+			}
+		}
 		random_list = {
 			70 = {
 			}
@@ -135,6 +144,7 @@ character_event = {
 
 	trigger = {
 		trait = deaf
+		NOT = { has_character_modifier = lip_reader }
 	}
 
 	mean_time_to_happen = {
@@ -184,6 +194,14 @@ character_event = {
 
 	option = { #Tries to learn lip-reading on own
 		name = EVTOPTA1000109046
+		trigger = {
+			NOT = {
+				trait = perceptive
+				intrigue = 10
+				trait = genius
+				trait = quick
+			}
+		}
 		random_list = {
 			70 = {
 			}
@@ -260,11 +278,3 @@ character_event = {
 		remove_character_modifier = lip_reader
 	}
 }
-
-
-
-
-
-
-
-
