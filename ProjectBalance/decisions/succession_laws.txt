@@ -784,6 +784,7 @@ gender_laws = {
 					has_law = cognatic_succession
 					OR = {
 						holder_scope = { culture = basque }
+						holder_scope = { religion = cathar }
 						holder_scope = {
 							is_female = yes
 							NOT = { trait = content }
