@@ -2,6 +2,7 @@
 	Increased the liege levy multiplier from 0.45 to 0.75
 	Increased the opinion modifiers for defending in a war by 5
 	Fixed some graphical issues
+	Removed PB's "Reclaim the Holy Land" event as this is now handled by vanilla
 
 3.3
 	Updated for CKII 2.0
