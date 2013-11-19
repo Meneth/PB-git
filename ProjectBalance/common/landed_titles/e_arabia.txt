@@ -1394,6 +1394,9 @@ e_arabia = {
 				color2={ 255 255 255 }
 			
 				b_attur = {
+					holy_site = jewish
+					holy_site = samaritan
+					holy_site = karaite
 				}
 				b_sharmelsheikh = {
 				}
@@ -1662,6 +1665,7 @@ e_arabia = {
 					holy_site = sunni
 					holy_site = shiite
 					holy_site = pagan
+					holy_site = yazidi
 				}
 				b_jeddah = {
 				}
@@ -2071,6 +2075,9 @@ e_arabia = {
 				color2={ 255 255 255 }
 			
 				b_salalah = {
+					holy_site = jewish
+					holy_site = samaritan
+					holy_site = karaite
 				}
 				b_thamarit = {
 				}
@@ -2389,6 +2396,10 @@ e_arabia = {
 					holy_site = monophysite
 					holy_site = nestorian
 					holy_site = pagan
+					holy_site = yazidi
+					holy_site = jewish
+					holy_site = samaritan
+					holy_site = karaite
 				}
 				b_nablus = {
 				}

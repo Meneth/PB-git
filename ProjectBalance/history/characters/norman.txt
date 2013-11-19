@@ -9,10 +9,10 @@
 	culture="norman"
 	trait="charismatic_negotiator"
 	990.1.2 = {
-		birth="990.1.2"
+		birth=yes
 	}
 	1019.1.2 = {
-		death="1019.1.2"
+		death=yes
 	}
 }
 
@@ -28,11 +28,11 @@
 	culture="norman"
 	trait="underhanded_rogue"
 	trait="patient"
-	1035.1.2 = {
-		birth="1035.1.2"
+	1035.1.1 = {
+		birth=yes
 	}
-	1085.1.2 = {
-		death="1085.1.2"
+	1085.1.1 = {
+		death=yes
 	}
 }
 
@@ -46,11 +46,11 @@
 	religion="catholic"
 	culture="norman"
 	trait="elusive_shadow"
-	999.1.2 = {
-		birth="999.1.2"
+	999.1.1 = {
+		birth=yes
 	}
-	1050.1.2 = {
-		death="1050.1.2"
+	1050.1.1 = {
+		death=yes
 	}
 }
 
@@ -66,10 +66,10 @@
 	culture="norman"
 	trait="greedy"
 	1000.1.1 = {
-		birth="1000.1.1"
+		birth=yes
 	}
 	1040.2.1 = {
-		death="1040.2.1"
+		death=yes
 	}
 }
 
@@ -87,13 +87,13 @@
 	father=20112
 	mother=10015
 	1039.1.1 = {
-		birth="1039.1.1"
+		birth=yes
 	}
 	1064.1.1 = {
 		add_spouse=10017
 	}
 	1118.1.1 = {
-		death="1118.1.1"
+		death=yes
 	}
 }
 

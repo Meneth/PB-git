@@ -1362,6 +1362,7 @@ e_italy = {
 					italian = "San Paolo"
 				}
 				b_gozo = {
+					greek = Ogygia
 					andalusian_arabic = "Ghawdesh"
 					maghreb_arabic = "Ghawdesh"
 					bedouin_arabic = "Ghawdesh"
@@ -1372,6 +1373,7 @@ e_italy = {
 					italian = "Birzebbugia"
 				}
 				b_marsascala = {
+					greek = Pyrgos
 					andalusian_arabic = "Marsa Sqalli"
 					maghreb_arabic = "Marsa Sqalli"
 					bedouin_arabic = "Marsa Sqalli"

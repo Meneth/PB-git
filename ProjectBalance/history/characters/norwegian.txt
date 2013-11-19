@@ -183,7 +183,7 @@
 	}
 	#Rebalanced starting forces
 	1066.9.14 = {
-		wealth = 750
+		wealth = 500
 		
 		effect = {
 			raise_levies = {

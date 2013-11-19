@@ -111,15 +111,6 @@ stay_strong = {
 	icon = 8
 }
 
-joan_darc = {
-	land_morale = 0.25
-	icon = 13
-}
-
-heretic_joan_darc = {
-	land_morale = -0.15
-	icon = 31
-}
 no_green_man = {
 	icon = 13
 }
@@ -671,7 +662,7 @@ force_converting = {
 }
 
 heretic_stronghold = {
-	local_revolt_risk = 0.05
+	local_revolt_risk = 0.5
 	icon = 35
 }
 
@@ -709,6 +700,16 @@ highway_robber_band = {
 harbour_the_homeless = {
 	castle_levy_size = -0.10
 	icon = 31
+}
+
+appeased_religious = {
+	local_revolt_risk = -0.08
+	icon = 17
+}
+
+realm_religious_fervor = {
+	global_revolt_risk = -0.05
+	icon = 17
 }
 
 # Timers
@@ -885,7 +886,7 @@ peasant_unrest = {
 
 religious_unrest = { 
 	icon = 35
-	local_revolt_risk = 0.1
+	local_revolt_risk = 0.5
 	local_tax_modifier = -0.5
 }
 
@@ -1352,6 +1353,31 @@ broken_spirit = {
 	icon = 40
 }
 
+expelled_jewish = {
+	icon = 3
+	diplomacy = -2
+}
+
+defied_church = {
+	icon = 35
+	church_opinion = -10
+}
+
+owns_relic = {
+	monthly_character_piety = 0.2
+	icon = 17
+}
+
+crushed_revolt = {
+	global_revolt_risk = -0.01
+	icon = 13
+}
+
+crushed_major_revolt = {
+	global_revolt_risk = -0.02
+	icon = 13
+}
+
 held_nerge_timer = { icon = 1 }
 
 held_blot_timer = { icon = 1 }
@@ -1361,6 +1387,10 @@ held_ukon_juhla_timer = { icon = 1 }
 held_uzgavenes_timer = { icon = 1 }
 
 held_jarilo_timer = { icon = 1 }
+
+held_passover_timer = { icon = 1 }
+
+expelled_jews_timer = { icon = 1 }
 
 faction_succ_seniority_ultimatum_timer = { icon = 1 }
 
@@ -1382,3 +1412,128 @@ planning_duchy_adventure = { icon = 1 }
 
 launched_prepared_invasion = { icon = 1 } # Used in the code - do NOT remove!
 launched_subjugation = { icon = 1 }
+
+expelled_knights_templar = {
+	icon = 35
+}
+expelled_knights_hospitaler = {
+	icon = 35
+}
+expelled_teutonic_order = {
+	icon = 35
+}
+expelled_jomsvikings = {
+	icon = 35
+}
+expelled_bektashi = {
+	icon = 35
+}
+expelled_assassins = {
+	icon = 35
+}
+expelled_holy_sepulchre = {
+	icon = 35
+}
+expelled_immortals = {
+	icon = 35
+}
+expelled_zealots = {
+	icon = 35
+}
+expelled_saint_anthony = {
+	icon = 35
+}
+expelled_sky_lords = {
+	icon = 35
+}
+expelled_spirit_guardians = {
+	icon = 35
+}
+expelled_warriors_perun = {
+	icon = 35
+}
+expelled_chosen_perkunas = {
+	icon = 35
+}
+expelled_sons_kaleva = {
+	icon = 35
+}
+expelled_huitzilopochtli = {
+	icon = 35
+}
+expelled_knights_santiago = {
+	icon = 35
+}
+expelled_knights_calatrava = {
+	icon = 35
+}
+
+active_inquisition = {
+	local_revolt_risk = 0.25
+	icon = 35
+}
+
+theological_dialogue = {
+	local_revolt_risk = -0.50
+	icon = 35
+}
+
+# Loans
+borrowed_from_knights_templar = {
+	icon = 24
+	church_opinion = -10
+}
+
+borrowed_from_assassins = {
+	icon = 24
+	church_opinion = -10
+}
+
+borrowed_from_bektashi = {
+	icon = 24
+	church_opinion = -10
+}
+borrowed_from_jews = {
+	icon = 24
+	church_opinion = -10
+}
+
+# Donations
+donated_to_holy_order = {
+	icon = 17
+	church_opinion = 10
+}
+
+# Hidden
+promised_to_clear_out_heresy = {
+	icon = 35
+}
+
+# Immoral/unworthy head of religion - affects religion's moral authority - HIDDEN
+bad_rel_head = {
+	icon = 35
+}
+
+demon_child_non_pagan = {
+	icon = 35
+	health = 3
+	fertility = 0.5
+}
+
+suspected_demon_spawn = {
+	icon = 35
+	general_opinion = -20
+	global_revolt_risk = 0.01
+}
+
+suspected_witch  = {
+	icon = 35
+	general_opinion = -20
+	global_revolt_risk = 0.01
+}
+
+known_witch  = {
+	icon = 35
+	general_opinion = -50
+	global_revolt_risk = 0.02
+}

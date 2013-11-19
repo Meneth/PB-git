@@ -106,7 +106,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	# On_action, so BIG is MORE OFTEN!
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 		modifier = {
 			factor = 1.25
@@ -216,7 +216,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	# On_action, so BIG is MORE OFTEN
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 		modifier = {
 			factor = 1.25
@@ -340,7 +340,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	# On_action, so BIG is MORE OFTEN
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 		modifier = {
 			factor = 1.25
@@ -817,15 +817,12 @@ narrative_event = {
 					}
 					narrative_event = { id = 62911 }
 				}
-				}
 				
 				any_realm_province = {
 					limit = {
 						kingdom = {
 							title = k_hungary
 						}
-	
-	
 					}
 					culture = hungarian
 					religion = ROOT

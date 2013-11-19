@@ -6,10 +6,10 @@
 	religion="zoroastrian"
 
 	820.1.1={
-		birth="820.1.1"
+		birth=yes
 	}
 	872.1.1={
-		death="872.1.1"
+		death=yes
 	}
 }
 
@@ -21,10 +21,10 @@
 	father=41701
 	mother=34263
 	1086.1.1={
-		birth="1086.1.1"
+		birth=yes
 	}
 	1116.1.1={
-		death="1116.1.1"
+		death=yes
 	}
 }
 
@@ -35,10 +35,10 @@
 	culture="turkish"
 	father=3042
 	1072.1.1={
-		birth="1072.1.1"
+		birth=yes
 	}
 	1094.1.1={
-		death="1094.1.1"
+		death=yes
 	}
 }
 
@@ -49,10 +49,10 @@
 	culture="turkish"
 	father=3042
 	1079.1.1={
-		birth="1079.1.1"
+		birth=yes
 	}
 	1105.3.1={
-		death="1105.3.1"
+		death=yes
 	}
 }
 
@@ -63,10 +63,10 @@
 	culture="turkish"
 	father=3042
 	1081.1.1={
-		birth="1081.1.1"
+		birth=yes
 	}
 	1118.4.18={
-		death="1118.4.18"
+		death=yes
 	}
 }
 
@@ -77,10 +77,10 @@
 	culture="turkish"
 	father=3042
 	1085.1.1={
-		birth="1085.1.1"
+		birth=yes
 	}
 	1157.5.8={
-		death="1157.5.8"
+		death=yes
 	}
 }
 
@@ -91,10 +91,10 @@
 	culture="turkish"
 	father=3044
 	1079.1.1={
-		birth="1079.1.1"
+		birth=yes
 	}
 	1113.1.1={
-		death="1113.1.1"
+		death=yes
 	}
 }
 
@@ -105,10 +105,10 @@
 	culture="turkish"
 	father=144020
 	1096.1.1={
-		birth="1096.1.1"
+		birth=yes
 	}
 	1114.1.1={
-		death="1114.1.1"
+		death=yes
 	}
 }
 
@@ -119,10 +119,10 @@
 	culture="turkish"
 	father=144020
 	1108.1.1={
-		birth="1108.1.1"
+		birth=yes
 	}
 	1123.1.1={
-		death="1123.1.1"
+		death=yes
 	}
 }
 
@@ -133,13 +133,12 @@
 	culture="turkish"
 	father=3044
 	1080.1.1={
-		birth="1080.1.1"
+		birth=yes
 	}
 	1104.6.1={
-		death="1104.6.1"
+		death=yes
 	}
 }
-
 
 144024 = {
 	name = "Tutush"
@@ -148,10 +147,10 @@
 	culture="turkish"
 	father=144023
 	1103.1.1={
-		birth="1103.1.1"
+		birth=yes
 	}
 	1105.1.1={
-		death="1105.1.1"
+		death=yes
 	}
 }
 
@@ -162,10 +161,10 @@
 	culture="turkish"
 	father=3041
 	1041.1.1={
-		birth="1041.1.1"
+		birth=yes
 	}
 	1074.1.1={
-		death="1074.1.1"
+		death=yes
 	}
 }
 
@@ -176,10 +175,10 @@
 	culture="turkish"
 	father=3041
 	1042.1.1={
-		birth="1042.1.1"
+		birth=yes
 	}
 	1075.1.1={
-		death="1075.1.1"
+		death=yes
 	}
 }
 
@@ -190,10 +189,10 @@
 	culture="turkish"
 	father=3041
 	1037.1.1={
-		birth="1037.1.1"
+		birth=yes
 	}
 	1097.1.1={
-		death="1097.1.1"
+		death=yes
 	}
 }
 
@@ -204,10 +203,10 @@
 	culture="turkish"
 	father=144027
 	1067.1.1={
-		birth="1067.1.1"
+		birth=yes
 	}
 	1101.1.1={
-		death="1101.1.1"
+		death=yes
 	}
 }
 

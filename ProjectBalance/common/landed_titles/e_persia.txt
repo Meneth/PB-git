@@ -124,6 +124,7 @@ e_persia = {
 				}
 				b_jajarm = {
 					holy_site = zoroastrian # The Great Fire of Adur Burzen-Mehr
+					holy_site = yazidi
 				}
 				b_tus = {
 				}
@@ -467,6 +468,7 @@ e_persia = {
 				}
 				b_kakhesasan = {
 					holy_site = zoroastrian # The Great Fire of Adur Farnbag
+					holy_site = yazidi
 				}
 				b_darab = {
 				}
@@ -556,6 +558,9 @@ e_persia = {
 				color2={ 255 255 255 }
 				
 				b_hamadan = {
+					holy_site = jewish
+					holy_site = samaritan
+					holy_site = karaite
 				}
 				b_nahavand = {
 				}
@@ -1449,6 +1454,7 @@ e_persia = {
 				b_bakhdida = {
 				}
 				b_karamlish = {
+					holy_site = yazidi
 				}
 				b_shekhan = {
 				}
@@ -2361,6 +2367,9 @@ e_persia = {
 				}
 				b_damascus = {
 					holy_site = shiite
+					holy_site = jewish
+					holy_site = samaritan
+					holy_site = karaite
 				}
 				b_daraa = {
 				}

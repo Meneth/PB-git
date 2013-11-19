@@ -360,7 +360,12 @@ other_claim = {
 		if = {
 			limit = {
 				controls_religion = yes
-				holder_scope = { religion = catholic }
+				holder_scope = { 
+					OR = {
+						religion = catholic
+						religion = fraticelli
+					}
+				}
 			}
 			holder_scope = {
 				abdicate_to = ROOT
@@ -371,13 +376,30 @@ other_claim = {
 				}
 				ROOT = { set_defacto_liege = FROMFROM }
 			}
+			
+			hidden_tooltip = {
+				ROOT = {
+					opinion = {
+						modifier = pressed_my_claim 
+						who = PREV
+						multiplier = 2
+					}
+				}
+			}
 		}
 		
 		if = {
 			limit = {
 				OR = {
 					controls_religion = no
-					NOT = { holder_scope = { religion = catholic } }
+					NOT = { 
+						holder_scope = {
+							OR = {
+								religion = catholic 
+								religion = fraticelli 
+							}
+						}
+					}
 				}
 			}
 			
@@ -3007,31 +3029,40 @@ crusade = {
 	truce_days = 3650
 	is_permanent = yes
 	is_holy_war = yes
+	battle_warscore_mult = 0.5
 	check_de_jure_tier = KING # this scans all de jure kingdoms for the counties which are held by or vassals(or below) of selected character. Only valid if is_permanent = yes
 
 	can_use_gui = {
 		NOT = { has_global_flag = shattered_balance }
-		OR = {
-			ROOT = {
-				religion_group = christian
-				has_global_flag = reclaim_the_holy_land
-			}
-			ROOT = {
-				religion = sunni 
-				year = 1187 # Allow if the Caliphate has survived this long
-			}
-			ROOT = {
-				religion = shiite 
-				year = 1187 # Allow if the Caliphate has survived this long
-			}
-			ROOT = { 
-				religion_group = pagan_group
-				year = 1100
-			}
-		}
+			
 		ROOT = {
 			has_called_crusade = no
 			religion_authority = 0.05
+			OR = {
+				religion_group = zoroastrian_group
+				religion_group = jewish_group
+				AND = {
+					religion_group = pagan_group
+					custom_tooltip = {
+						text = CTT_PAGAN_GHWS_UNLOCKED
+						has_global_flag = pagan_ghws_unlocked
+					}
+				}
+				AND = { 
+					religion_group = christian
+					custom_tooltip = {
+						text = CTT_CHRISTIAN_CRUSADES_UNLOCKED
+						has_global_flag = christian_crusades_unlocked
+					}
+				}
+				AND = {
+					religion_group = muslim
+					custom_tooltip = {
+						text = CTT_MUSLIM_JIHADS_UNLOCKED
+						has_global_flag = muslim_jihads_unlocked
+					}
+				}
+			}
 			is_landed = yes # Otherwise the war score starts at -100%
 			NOT = {
 				AND = {
@@ -3070,7 +3101,10 @@ crusade = {
 		}
 		NOT = { # Not if the Schism has been mended
 			AND = {
-				religion = catholic
+				OR = {
+					religion = catholic
+					religion = fraticelli
+				}
 				has_global_flag = schism_mended
 			}
 		}
@@ -5942,6 +5976,13 @@ dejure_county_claim = {
 				}
 			}
 		}
+		FROM = {
+			OR = {
+				holy_order = no
+				NOT = { religion = ROOT }
+				NOT = { has_dlc = "Sons of Abraham" }
+			}
+		}
 	}
 
 	is_valid_title = {
@@ -6147,6 +6188,13 @@ dejure_barony_claim = {
 				}
 			}
 		}
+		FROM = {
+			OR = {
+				holy_order = no
+				NOT = { religion = ROOT }
+				NOT = { has_dlc = "Sons of Abraham" }
+			}
+		}
 	}
 
 	is_valid_title = {
@@ -6310,6 +6358,13 @@ other_dejure_barony_claim = {
 				}
 			}
 		}
+		FROM = {
+			OR = {
+				holy_order = no
+				NOT = { religion = ROOT }
+				NOT = { has_dlc = "Sons of Abraham" }
+			}
+		}
 	}
 
 	is_valid_title = {
@@ -6431,6 +6486,13 @@ other_dejure_county_claim = {
 					religion = FROMFROM
 					primary_title = { tier = count }
 				}
+			}
+		}
+		FROM = {
+			OR = {
+				holy_order = no
+				NOT = { religion = ROOT }
+				NOT = { has_dlc = "Sons of Abraham" }
 			}
 		}
 	}

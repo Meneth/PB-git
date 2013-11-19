@@ -160,11 +160,11 @@ narrative_event = {
 				province = 299 # Farrah
 				troops =
 				{
-					horse_archers = { 7500 7500 }
-					light_cavalry = { 5000 5000 }
-					light_infantry = { 1500 1500 }
-					heavy_infantry = { 850 850 }
-					knights = { 150 150 }
+					horse_archers = { 3333 3333 }
+					light_cavalry = { 2222 2222 }
+					light_infantry = { 741 741 }
+					heavy_infantry = { 370 370 }
+					knights = { 67 67 }
 				}
 				attrition = 0.2
 			}
@@ -175,7 +175,33 @@ narrative_event = {
 			religion = tengri_pagan
 			culture = mongol
 			female = no
-			age = 40
+			age = 35
+			attributes = {
+				martial = 12
+			}
+			trait = brilliant_strategist
+		}
+		new_character = {
+			spawn_unit = {
+				province = 299 # Farrah
+				troops =
+				{
+					horse_archers = { 3333 3333 }
+					light_cavalry = { 2222 2222 }
+					light_infantry = { 741 741 }
+					heavy_infantry = { 370 370 }
+					knights = { 67 67 }
+				}
+				attrition = 0.2
+			}
+		}
+		create_character = {
+			random_traits = yes
+			dynasty = random
+			religion = tengri_pagan
+			culture = mongol
+			female = no
+			age = 39
 			attributes = {
 				martial = 12
 			}
@@ -195,39 +221,14 @@ narrative_event = {
 				attrition = 0.2
 			}
 		}
+		
 		create_character = {
 			random_traits = yes
 			dynasty = random
 			religion = tengri_pagan
 			culture = mongol
 			female = no
-			age = 40
-			attributes = {
-				martial = 12
-			}
-			trait = brilliant_strategist
-		}
-		new_character = {
-			spawn_unit = {
-				province = 299 # Farrah
-				troops =
-				{
-					horse_archers = { 7500 7500 }
-					light_cavalry = { 5000 5000 }
-					light_infantry = { 1500 1500 }
-					heavy_infantry = { 850 850 }
-					knights = { 150 150 }
-				}
-				attrition = 0.2
-			}
-		}
-		create_character = {
-			random_traits = yes
-			dynasty = random
-			religion = tengri_pagan
-			culture = mongol
-			female = no
-			age = 31
+			age = 30
 			attributes = {
 				martial = 12
 			}
@@ -238,11 +239,11 @@ narrative_event = {
 				province = 902 # Dashhowuz
 				troops =
 				{
-					horse_archers = { 7500 7500 }
-					light_cavalry = { 5000 5000 }
-					light_infantry = { 1500 1500 }
-					heavy_infantry = { 850 850 }
-					knights = { 150 150 }
+					horse_archers = { 3333 3333 }
+					light_cavalry = { 2222 2222 }
+					light_infantry = { 741 741 }
+					heavy_infantry = { 370 370 }
+					knights = { 67 67 }
 				}
 				attrition = 0.2
 			}
@@ -253,9 +254,9 @@ narrative_event = {
 			religion = tengri_pagan
 			culture = mongol
 			female = no
-			age = 36
+			age = 35
 			attributes = {
-				martial = 11
+				martial = 12
 			}
 			trait = brilliant_strategist
 		}
@@ -264,11 +265,11 @@ narrative_event = {
 				province = 902 # Dashhowuz
 				troops =
 				{
-					horse_archers = { 7500 7500 }
-					light_cavalry = { 5000 5000 }
-					light_infantry = { 1500 1500 }
-					heavy_infantry = { 850 850 }
-					knights = { 150 150 }
+					horse_archers = { 3333 3333 }
+					light_cavalry = { 2222 2222 }
+					light_infantry = { 741 741 }
+					heavy_infantry = { 370 370 }
+					knights = { 67 67 }
 				}
 				attrition = 0.2
 			}
@@ -279,9 +280,9 @@ narrative_event = {
 			religion = tengri_pagan
 			culture = mongol
 			female = no
-			age = 36
+			age = 39
 			attributes = {
-				martial = 11
+				martial = 12
 			}
 			trait = brilliant_strategist
 		}
@@ -290,71 +291,511 @@ narrative_event = {
 				province = 902 # Dashhowuz
 				troops =
 				{
-					horse_archers = { 7500 7500 }
-					light_cavalry = { 5000 5000 }
-					light_infantry = { 1500 1500 }
-					heavy_infantry = { 850 850 }
-					knights = { 150 150 }
+					horse_archers = { 3333 3333 }
+					light_cavalry = { 2222 2222 }
+					light_infantry = { 741 741 }
+					heavy_infantry = { 370 370 }
+					knights = { 67 67 }
 				}
 				attrition = 0.2
 			}
 		}
-		random = {
-			chance = 50
-			create_character = {
-				random_traits = yes
-				dynasty = random
-				religion = tengri_pagan
-				culture = mongol
-				female = no
-				age = 34
-				attributes = {
-					martial = 12
-				}
-				trait = brilliant_strategist
+		create_character = {
+			random_traits = yes
+			dynasty = random
+			religion = tengri_pagan
+			culture = mongol
+			female = no
+			age = 30
+			attributes = {
+				martial = 12
 			}
-			new_character = {
-				spawn_unit = {
-					province = 907 # Sabzevar
-					troops =
-					{
-						horse_archers = { 7500 7500 }
-						light_cavalry = { 5000 5000 }
-						light_infantry = { 1500 1500 }
-						heavy_infantry = { 850 850 }
-						knights = { 150 150 }
-					}
-					attrition = 0.2
-				}
-			}
+			trait = brilliant_strategist
 		}
-		random = {
-			chance = 50
-			create_character = {
-				random_traits = yes
-				dynasty = random
-				religion = tengri_pagan
-				culture = mongol
-				female = no
-				age = 26
-				attributes = {
-					martial = 12
+		new_character = {
+			spawn_unit = {
+				province = 907 # Sabzevar
+				troops =
+				{
+					horse_archers = { 3333 3333 }
+					light_cavalry = { 2222 2222 }
+					light_infantry = { 741 741 }
+					heavy_infantry = { 370 370 }
+					knights = { 67 67 }
 				}
-				trait = brilliant_strategist
-			}
-			new_character = {
-				spawn_unit = {
-					province = 907 # Sabzevar
-					troops =
-					{
-						horse_archers = { 7500 7500 }
-						light_cavalry = { 5000 5000 }
-						light_infantry = { 1500 1500 }
-						heavy_infantry = { 850 850 }
-						knights = { 150 150 }
-					}
-					attrition = 0.2
+				attrition = 0.2
 
+			}
+		}
+		create_character = {
+			random_traits = yes
+			dynasty = random
+			religion = tengri_pagan
+			culture = mongol
+			female = no
+			age = 35
+			attributes = {
+				martial = 12
+			}
+			trait = brilliant_strategist
+		}
+		new_character = {
+			spawn_unit = {
+				province = 907 # Sabzevar
+				troops =
+				{
+					horse_archers = { 3333 3333 }
+					light_cavalry = { 2222 2222 }
+					light_infantry = { 741 741 }
+					heavy_infantry = { 370 370 }
+					knights = { 67 67 }
+				}
+				attrition = 0.2
+
+			}
+		}
+		create_character = {
+			random_traits = yes
+			dynasty = random
+			religion = tengri_pagan
+			culture = mongol
+			female = no
+			age = 39
+			attributes = {
+				martial = 12
+			}
+			trait = brilliant_strategist
+		}
+		new_character = {
+			spawn_unit = {
+				province = 907 # Sabzevar
+				troops =
+				{
+					horse_archers = { 3333 3333 }
+					light_cavalry = { 2222 2222 }
+					light_infantry = { 741 741 }
+					heavy_infantry = { 370 370 }
+					knights = { 67 67 }
+				}
+				attrition = 0.2
+
+			}
+		}
+		
+		create_character = {
+			random_traits = yes
+			dynasty = random
+			religion = tengri_pagan
+			culture = mongol
+			female = no
+			age = 30
+			attributes = {
+				martial = 12
+			}
+			trait = brilliant_strategist
+		}
+		new_character = {
+			spawn_unit = {
+				province = 907 # Sabzevar
+				troops =
+				{
+					horse_archers = { 3333 3333 }
+					light_cavalry = { 2222 2222 }
+					light_infantry = { 741 741 }
+					heavy_infantry = { 370 370 }
+					knights = { 67 67 }
+				}
+				attrition = 0.2
+
+			}
+		}
+		create_character = {
+			random_traits = yes
+			dynasty = random
+			religion = tengri_pagan
+			culture = mongol
+			female = no
+			age = 35
+			attributes = {
+				martial = 12
+			}
+			trait = brilliant_strategist
+		}
+		new_character = {
+			spawn_unit = {
+				province = 907 # Sabzevar
+				troops =
+				{
+					horse_archers = { 3333 3333 }
+					light_cavalry = { 2222 2222 }
+					light_infantry = { 741 741 }
+					heavy_infantry = { 370 370 }
+					knights = { 67 67 }
+				}
+				attrition = 0.2
+
+			}
+		}
+		create_character = {
+			random_traits = yes
+			dynasty = random
+			religion = tengri_pagan
+			culture = mongol
+			female = no
+			age = 39
+			attributes = {
+				martial = 12
+			}
+			trait = brilliant_strategist
+		}
+		new_character = {
+			spawn_unit = {
+				province = 907 # Sabzevar
+				troops =
+				{
+					horse_archers = { 3333 3333 }
+					light_cavalry = { 2222 2222 }
+					light_infantry = { 741 741 }
+					heavy_infantry = { 370 370 }
+					knights = { 67 67 }
+				}
+				attrition = 0.2
+
+			}
+		}
+		
+		create_character = {
+			random_traits = yes
+			dynasty = random
+			religion = tengri_pagan
+			culture = mongol
+			female = no
+			age = 30
+			attributes = {
+				martial = 12
+			}
+			trait = brilliant_strategist
+		}
+		new_character = {
+			spawn_unit = {
+				province = 907 # Sabzevar
+				troops =
+				{
+					horse_archers = { 3333 3333 }
+					light_cavalry = { 2222 2222 }
+					light_infantry = { 741 741 }
+					heavy_infantry = { 370 370 }
+					knights = { 67 67 }
+				}
+				attrition = 0.2
+
+			}
+		}
+		create_character = {
+			random_traits = yes
+			dynasty = random
+			religion = tengri_pagan
+			culture = mongol
+			female = no
+			age = 35
+			attributes = {
+				martial = 12
+			}
+			trait = brilliant_strategist
+		}
+		new_character = {
+			spawn_unit = {
+				province = 902 # Dashhowuz
+				province = 907 # Sabzevar
+				troops =
+				{
+					horse_archers = { 3333 3333 }
+					light_cavalry = { 2222 2222 }
+					light_infantry = { 741 741 }
+					heavy_infantry = { 370 370 }
+					knights = { 67 67 }
+				}
+				attrition = 0.2
+
+			}
+		}
+		create_character = {
+			random_traits = yes
+			dynasty = random
+			religion = tengri_pagan
+			culture = mongol
+			female = no
+			age = 39
+			attributes = {
+				martial = 12
+			}
+			trait = brilliant_strategist
+		}
+		new_character = {
+			spawn_unit = {
+				province = 907 # Sabzevar
+				troops =
+				{
+					horse_archers = { 3333 3333 }
+					light_cavalry = { 2222 2222 }
+					light_infantry = { 741 741 }
+					heavy_infantry = { 370 370 }
+					knights = { 67 67 }
+				}
+				attrition = 0.2
+
+			}
+		}
+		
+		create_character = {
+			random_traits = yes
+			dynasty = random
+			religion = tengri_pagan
+			culture = mongol
+			female = no
+			age = 30
+			attributes = {
+				martial = 12
+			}
+			trait = brilliant_strategist
+		}
+		new_character = {
+			spawn_unit = {
+				province = 907 # Sabzevar
+				troops =
+				{
+					horse_archers = { 3333 3333 }
+					light_cavalry = { 2222 2222 }
+					light_infantry = { 741 741 }
+					heavy_infantry = { 370 370 }
+					knights = { 67 67 }
+				}
+				attrition = 0.2
+
+			}
+		}
+		create_character = {
+			random_traits = yes
+			dynasty = random
+			religion = tengri_pagan
+			culture = mongol
+			female = no
+			age = 35
+			attributes = {
+				martial = 12
+			}
+			trait = brilliant_strategist
+		}
+		new_character = {
+			spawn_unit = {
+				province = 907 # Sabzevar
+				troops =
+				{
+					horse_archers = { 3333 3333 }
+					light_cavalry = { 2222 2222 }
+					light_infantry = { 741 741 }
+					heavy_infantry = { 370 370 }
+					knights = { 67 67 }
+				}
+				attrition = 0.2
+
+			}
+		}
+		create_character = {
+			random_traits = yes
+			dynasty = random
+			religion = tengri_pagan
+			culture = mongol
+			female = no
+			age = 39
+			attributes = {
+				martial = 12
+			}
+			trait = brilliant_strategist
+		}
+		new_character = {
+			spawn_unit = {
+				province = 907 # Sabzevar
+				troops =
+				{
+					horse_archers = { 3333 3333 }
+					light_cavalry = { 2222 2222 }
+					light_infantry = { 741 741 }
+					heavy_infantry = { 370 370 }
+					knights = { 67 67 }
+				}
+				attrition = 0.2
+
+			}
+		}
+		
+		random = {
+			chance = 50
+			
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = tengri_pagan
+				culture = mongol
+				female = no
+				age = 30
+				attributes = {
+					martial = 12
+				}
+				trait = brilliant_strategist
+			}
+			new_character = {
+				spawn_unit = {
+					province = 907 # Sabzevar
+					troops =
+					{
+						horse_archers = { 3333 3333 }
+						light_cavalry = { 2222 2222 }
+						light_infantry = { 741 741 }
+						heavy_infantry = { 370 370 }
+						knights = { 67 67 }
+					}
+					attrition = 0.2
+	
+				}
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = tengri_pagan
+				culture = mongol
+				female = no
+				age = 35
+				attributes = {
+					martial = 12
+				}
+				trait = brilliant_strategist
+			}
+			new_character = {
+				spawn_unit = {
+					province = 907 # Sabzevar
+					troops =
+					{
+						horse_archers = { 3333 3333 }
+						light_cavalry = { 2222 2222 }
+						light_infantry = { 741 741 }
+						heavy_infantry = { 370 370 }
+						knights = { 67 67 }
+					}
+					attrition = 0.2
+	
+				}
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = tengri_pagan
+				culture = mongol
+				female = no
+				age = 39
+				attributes = {
+					martial = 12
+				}
+				trait = brilliant_strategist
+			}
+			new_character = {
+				spawn_unit = {
+					province = 907 # Sabzevar
+					province = 907 # Sabzevar
+					troops =
+					{
+						horse_archers = { 3333 3333 }
+						light_cavalry = { 2222 2222 }
+						light_infantry = { 741 741 }
+						heavy_infantry = { 370 370 }
+						knights = { 67 67 }
+					}
+					attrition = 0.2
+	
+				}
+			}
+		}
+		random = {
+			chance = 50
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = tengri_pagan
+				culture = mongol
+				female = no
+				age = 30
+				attributes = {
+					martial = 12
+				}
+				trait = brilliant_strategist
+			}
+			new_character = {
+				spawn_unit = {
+					province = 907 # Sabzevar
+					troops =
+					{
+						horse_archers = { 3333 3333 }
+						light_cavalry = { 2222 2222 }
+						light_infantry = { 741 741 }
+						heavy_infantry = { 370 370 }
+						knights = { 67 67 }
+					}
+					attrition = 0.2
+	
+				}
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = tengri_pagan
+				culture = mongol
+				female = no
+				age = 35
+				attributes = {
+					martial = 12
+				}
+				trait = brilliant_strategist
+			}
+			new_character = {
+				spawn_unit = {
+					province = 907 # Sabzevar
+					troops =
+					{
+						horse_archers = { 3333 3333 }
+						light_cavalry = { 2222 2222 }
+						light_infantry = { 741 741 }
+						heavy_infantry = { 370 370 }
+						knights = { 67 67 }
+					}
+					attrition = 0.2
+	
+				}
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = tengri_pagan
+				culture = mongol
+				female = no
+				age = 39
+				attributes = {
+					martial = 12
+				}
+				trait = brilliant_strategist
+			}
+			new_character = {
+				spawn_unit = {
+					province = 907 # Sabzevar
+					troops =
+					{
+						horse_archers = { 3333 3333 }
+						light_cavalry = { 2222 2222 }
+						light_infantry = { 741 741 }
+						heavy_infantry = { 370 370 }
+						knights = { 67 67 }
+					}
+					attrition = 0.2
+	
 				}
 			}
 		}
@@ -685,6 +1126,33 @@ narrative_event = {
 		}
 		
 		wealth = 5000
+		
+		create_character = {
+			random_traits = yes
+			dynasty = random
+			religion = tengri_pagan
+			culture = mongol
+			female = no
+			age = 30
+			attributes = {
+				martial = 12
+			}
+			trait = brilliant_strategist
+		}
+		new_character = {
+			spawn_unit = {
+				province = 893 # Surgut
+				troops =
+				{
+					horse_archers = { 3333 3333 }
+					light_cavalry = { 2222 2222 }
+					light_infantry = { 741 741 }
+					heavy_infantry = { 370 370 }
+					knights = { 67 67 }
+				}
+				attrition = 0.2
+			}
+		}
 		create_character = {
 			random_traits = yes
 			dynasty = random
@@ -702,11 +1170,11 @@ narrative_event = {
 				province = 893 # Surgut
 				troops =
 				{
-					horse_archers = { 7500 7500 }
-					light_cavalry = { 5000 5000 }
-					light_infantry = { 1500 1500 }
-					heavy_infantry = { 850 850 }
-					knights = { 150 150 }
+					horse_archers = { 3333 3333 }
+					light_cavalry = { 2222 2222 }
+					light_infantry = { 741 741 }
+					heavy_infantry = { 370 370 }
+					knights = { 67 67 }
 				}
 				attrition = 0.2
 			}
@@ -717,7 +1185,7 @@ narrative_event = {
 			religion = tengri_pagan
 			culture = mongol
 			female = no
-			age = 38
+			age = 39
 			attributes = {
 				martial = 12
 			}
@@ -728,11 +1196,11 @@ narrative_event = {
 				province = 893 # Surgut
 				troops =
 				{
-					horse_archers = { 7500 7500 }
-					light_cavalry = { 5000 5000 }
-					light_infantry = { 1500 1500 }
-					heavy_infantry = { 850 850 }
-					knights = { 150 150 }
+					horse_archers = { 3333 3333 }
+					light_cavalry = { 2222 2222 }
+					light_infantry = { 741 741 }
+					heavy_infantry = { 370 370 }
+					knights = { 67 67 }
 				}
 				attrition = 0.2
 			}
@@ -744,7 +1212,7 @@ narrative_event = {
 			religion = tengri_pagan
 			culture = mongol
 			female = no
-			age = 29
+			age = 30
 			attributes = {
 				martial = 12
 			}
@@ -752,19 +1220,18 @@ narrative_event = {
 		}
 		new_character = {
 			spawn_unit = {
-				province = 893 # Surgut
+				province = 887 # Yamalia
 				troops =
 				{
-					horse_archers = { 7500 7500 }
-					light_cavalry = { 5000 5000 }
-					light_infantry = { 1500 1500 }
-					heavy_infantry = { 850 850 }
-					knights = { 150 150 }
+					horse_archers = { 3333 3333 }
+					light_cavalry = { 2222 2222 }
+					light_infantry = { 741 741 }
+					heavy_infantry = { 370 370 }
+					knights = { 67 67 }
 				}
 				attrition = 0.2
 			}
 		}
-		
 		create_character = {
 			random_traits = yes
 			dynasty = random
@@ -782,11 +1249,64 @@ narrative_event = {
 				province = 887 # Yamalia
 				troops =
 				{
-					horse_archers = { 7500 7500 }
-					light_cavalry = { 5000 5000 }
-					light_infantry = { 1500 1500 }
-					heavy_infantry = { 850 850 }
-					knights = { 150 150 }
+					horse_archers = { 3333 3333 }
+					light_cavalry = { 2222 2222 }
+					light_infantry = { 741 741 }
+					heavy_infantry = { 370 370 }
+					knights = { 67 67 }
+				}
+				attrition = 0.2
+			}
+		}
+		create_character = {
+			random_traits = yes
+			dynasty = random
+			religion = tengri_pagan
+			culture = mongol
+			female = no
+			age = 39
+			attributes = {
+				martial = 12
+			}
+			trait = brilliant_strategist
+		}
+		new_character = {
+			spawn_unit = {
+				province = 887 # Yamalia
+				troops =
+				{
+					horse_archers = { 3333 3333 }
+					light_cavalry = { 2222 2222 }
+					light_infantry = { 741 741 }
+					heavy_infantry = { 370 370 }
+					knights = { 67 67 }
+				}
+				attrition = 0.2
+			}
+		}
+		
+		create_character = {
+			random_traits = yes
+			dynasty = random
+			religion = tengri_pagan
+			culture = mongol
+			female = no
+			age = 30
+			attributes = {
+				martial = 12
+			}
+			trait = brilliant_strategist
+		}
+		new_character = {
+			spawn_unit = {
+				province = 887 # Yamalia
+				troops =
+				{
+					horse_archers = { 3333 3333 }
+					light_cavalry = { 2222 2222 }
+					light_infantry = { 741 741 }
+					heavy_infantry = { 370 370 }
+					knights = { 67 67 }
 				}
 				attrition = 0.2
 			}
@@ -808,41 +1328,190 @@ narrative_event = {
 				province = 887 # Yamalia
 				troops =
 				{
-					horse_archers = { 7500 7500 }
-					light_cavalry = { 5000 5000 }
-					light_infantry = { 1500 1500 }
-					heavy_infantry = { 850 850 }
-					knights = { 150 150 }
+					horse_archers = { 3333 3333 }
+					light_cavalry = { 2222 2222 }
+					light_infantry = { 741 741 }
+					heavy_infantry = { 370 370 }
+					knights = { 67 67 }
 				}
 				attrition = 0.2
 			}
 		}
-		random = {
-			chance = 50
-			create_character = {
-				random_traits = yes
-				dynasty = random
-				religion = tengri_pagan
-				culture = mongol
-				female = no
-				age = 29
-				attributes = {
-					martial = 12
-				}
-				trait = brilliant_strategist
+		create_character = {
+			random_traits = yes
+			dynasty = random
+			religion = tengri_pagan
+			culture = mongol
+			female = no
+			age = 39
+			attributes = {
+				martial = 12
 			}
-			new_character = {
-				spawn_unit = {
-					province = 898 # Omsk
-					troops =
-					{
-						horse_archers = { 7500 7500 }
-						light_cavalry = { 5000 5000 }
-						light_infantry = { 1500 1500 }
-						heavy_infantry = { 850 850 }
-						knights = { 150 150 }
-					}
-					attrition = 0.2
+			trait = brilliant_strategist
+		}
+		new_character = {
+			spawn_unit = {
+				province = 887 # Yamalia
+				troops =
+				{
+					horse_archers = { 3333 3333 }
+					light_cavalry = { 2222 2222 }
+					light_infantry = { 741 741 }
+					heavy_infantry = { 370 370 }
+					knights = { 67 67 }
+				}
+				attrition = 0.2
+			}
+		}
+		create_character = {
+			random_traits = yes
+			dynasty = random
+			religion = tengri_pagan
+			culture = mongol
+			female = no
+			age = 30
+			attributes = {
+				martial = 12
+			}
+			trait = brilliant_strategist
+		}
+		new_character = {
+			spawn_unit = {
+				province = 887 # Yamalia
+				troops =
+				{
+					horse_archers = { 3333 3333 }
+					light_cavalry = { 2222 2222 }
+					light_infantry = { 741 741 }
+					heavy_infantry = { 370 370 }
+					knights = { 67 67 }
+				}
+				attrition = 0.2
+			}
+		}
+		create_character = {
+			random_traits = yes
+			dynasty = random
+			religion = tengri_pagan
+			culture = mongol
+			female = no
+			age = 35
+			attributes = {
+				martial = 12
+			}
+			trait = brilliant_strategist
+		}
+		new_character = {
+			spawn_unit = {
+				province = 887 # Yamalia
+				troops =
+				{
+					horse_archers = { 3333 3333 }
+					light_cavalry = { 2222 2222 }
+					light_infantry = { 741 741 }
+					heavy_infantry = { 370 370 }
+					knights = { 67 67 }
+				}
+				attrition = 0.2
+			}
+		}
+		create_character = {
+			random_traits = yes
+			dynasty = random
+			religion = tengri_pagan
+			culture = mongol
+			female = no
+			age = 39
+			attributes = {
+				martial = 12
+			}
+			trait = brilliant_strategist
+		}
+		new_character = {
+			spawn_unit = {
+				province = 887 # Yamalia
+				troops =
+				{
+					horse_archers = { 3333 3333 }
+					light_cavalry = { 2222 2222 }
+					light_infantry = { 741 741 }
+					heavy_infantry = { 370 370 }
+					knights = { 67 67 }
+				}
+			}
+		}
+		create_character = {
+			random_traits = yes
+			dynasty = random
+			religion = tengri_pagan
+			culture = mongol
+			female = no
+			age = 30
+			attributes = {
+				martial = 12
+			}
+			trait = brilliant_strategist
+		}
+		new_character = {
+			spawn_unit = {
+				province = 887 # Yamalia
+				troops =
+				{
+					horse_archers = { 3333 3333 }
+					light_cavalry = { 2222 2222 }
+					light_infantry = { 741 741 }
+					heavy_infantry = { 370 370 }
+					knights = { 67 67 }
+				}
+			}
+		}
+		create_character = {
+			random_traits = yes
+			dynasty = random
+			religion = tengri_pagan
+			culture = mongol
+			female = no
+			age = 35
+			attributes = {
+				martial = 12
+			}
+			trait = brilliant_strategist
+		}
+		new_character = {
+			spawn_unit = {
+				province = 887 # Yamalia
+				troops =
+				{
+					horse_archers = { 3333 3333 }
+					light_cavalry = { 2222 2222 }
+					light_infantry = { 741 741 }
+					heavy_infantry = { 370 370 }
+					knights = { 67 67 }
+				}
+			}
+		}
+		create_character = {
+			random_traits = yes
+			dynasty = random
+			religion = tengri_pagan
+			culture = mongol
+			female = no
+			age = 39
+			attributes = {
+				martial = 12
+			}
+			trait = brilliant_strategist
+		}
+		new_character = {
+			spawn_unit = {
+				province = 887 # Yamalia
+				troops =
+				{
+					horse_archers = { 3333 3333 }
+					light_cavalry = { 2222 2222 }
+					light_infantry = { 741 741 }
+					heavy_infantry = { 370 370 }
+					knights = { 67 67 }
 				}
 			}
 		}
@@ -854,7 +1523,7 @@ narrative_event = {
 				religion = tengri_pagan
 				culture = mongol
 				female = no
-				age = 24
+				age = 30
 				attributes = {
 					martial = 12
 				}
@@ -865,13 +1534,140 @@ narrative_event = {
 					province = 898 # Omsk
 					troops =
 					{
-						horse_archers = { 7500 7500 }
-						light_cavalry = { 5000 5000 }
-						light_infantry = { 1500 1500 }
-						heavy_infantry = { 850 850 }
-						knights = { 150 150 }
+						horse_archers = { 3333 3333 }
+						light_cavalry = { 2222 2222 }
+						light_infantry = { 741 741 }
+						heavy_infantry = { 370 370 }
+						knights = { 67 67 }
 					}
-					attrition = 0.2
+				}
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = tengri_pagan
+				culture = mongol
+				female = no
+				age = 35
+				attributes = {
+					martial = 12
+				}
+				trait = brilliant_strategist
+			}
+			new_character = {
+				spawn_unit = {
+					province = 898 # Omsk
+					troops =
+					{
+						horse_archers = { 3333 3333 }
+						light_cavalry = { 2222 2222 }
+						light_infantry = { 741 741 }
+						heavy_infantry = { 370 370 }
+						knights = { 67 67 }
+					}
+				}
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = tengri_pagan
+				culture = mongol
+				female = no
+				age = 39
+				attributes = {
+					martial = 12
+				}
+				trait = brilliant_strategist
+			}
+			new_character = {
+				spawn_unit = {
+					province = 898 # Omsk
+					troops =
+					{
+						horse_archers = { 3333 3333 }
+						light_cavalry = { 2222 2222 }
+						light_infantry = { 741 741 }
+						heavy_infantry = { 370 370 }
+						knights = { 67 67 }
+					}
+				}
+			}
+		}
+		random = {
+			chance = 50
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = tengri_pagan
+				culture = mongol
+				female = no
+				age = 30
+				attributes = {
+					martial = 12
+				}
+				trait = brilliant_strategist
+			}
+			new_character = {
+				spawn_unit = {
+					province = 898 # Omsk
+					troops =
+					{
+						horse_archers = { 3333 3333 }
+						light_cavalry = { 2222 2222 }
+						light_infantry = { 741 741 }
+						heavy_infantry = { 370 370 }
+						knights = { 67 67 }
+					}
+				}
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = tengri_pagan
+				culture = mongol
+				female = no
+				age = 35
+				attributes = {
+					martial = 12
+				}
+				trait = brilliant_strategist
+			}
+			new_character = {
+				spawn_unit = {
+					province = 898 # Omsk
+					troops =
+					{
+						horse_archers = { 3333 3333 }
+						light_cavalry = { 2222 2222 }
+						light_infantry = { 741 741 }
+						heavy_infantry = { 370 370 }
+						knights = { 67 67 }
+					}
+				}
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = tengri_pagan
+				culture = mongol
+				female = no
+				age = 39
+				attributes = {
+					martial = 12
+				}
+				trait = brilliant_strategist
+			}
+			new_character = {
+				spawn_unit = {
+					province = 898 # Omsk
+					troops =
+					{
+						horse_archers = { 3333 3333 }
+						light_cavalry = { 2222 2222 }
+						light_infantry = { 741 741 }
+						heavy_infantry = { 370 370 }
+						knights = { 67 67 }
+					}
 				}
 			}
 		}
@@ -1125,11 +1921,11 @@ narrative_event = {
 			leader = ROOT
 			troops =
 			{
-				horse_archers = { 7500 7500 }
-				light_cavalry = { 5000 5000 }
-				light_infantry = { 1500 1500 }
-				heavy_infantry = { 850 850 }
-				knights = { 150 150 }
+				horse_archers = { 3333 3333 }
+				light_cavalry = { 2222 2222 }
+				light_infantry = { 741 741 }
+				heavy_infantry = { 370 370 }
+				knights = { 67 67 }
 			}
 			attrition = 0.2
 		}
@@ -1140,7 +1936,7 @@ narrative_event = {
 			religion = ROOT
 			culture = mongol
 			female = no
-			age = 35
+			age = 28
 			attributes = {
 				martial = 12
 			}
@@ -1151,11 +1947,11 @@ narrative_event = {
 				province = 299 # Balkh
 				troops =
 				{
-					horse_archers = { 7500 7500 }
-					light_cavalry = { 5000 5000 }
-					light_infantry = { 1500 1500 }
-					heavy_infantry = { 850 850 }
-					knights = { 150 150 }
+					horse_archers = { 3333 3333 }
+					light_cavalry = { 2222 2222 }
+					light_infantry = { 741 741 }
+					heavy_infantry = { 370 370 }
+					knights = { 67 67 }
 				}
 				attrition = 0.2
 			}
@@ -1166,7 +1962,7 @@ narrative_event = {
 			religion = ROOT
 			culture = mongol
 			female = no
-			age = 38
+			age = 29
 			attributes = {
 				martial = 12
 			}
@@ -1177,41 +1973,16 @@ narrative_event = {
 				province = 299 # Balkh
 				troops =
 				{
-					horse_archers = { 7500 7500 }
-					light_cavalry = { 5000 5000 }
-					light_infantry = { 1500 1500 }
-					heavy_infantry = { 850 850 }
-					knights = { 150 150 }
+					horse_archers = { 3333 3333 }
+					light_cavalry = { 2222 2222 }
+					light_infantry = { 741 741 }
+					heavy_infantry = { 370 370 }
+					knights = { 67 67 }
 				}
 				attrition = 0.2
 			}
 		}
-		create_character = {
-			random_traits = yes
-			dynasty = random
-			religion = ROOT
-			culture = mongol
-			female = no
-			age = 38
-			attributes = {
-				martial = 12
-			}
-			trait = brilliant_strategist
-		}
-		new_character = {
-			spawn_unit = {
-				province = 299 # Balkh
-				troops =
-				{
-					horse_archers = { 7500 7500 }
-					light_cavalry = { 5000 5000 }
-					light_infantry = { 1500 1500 }
-					heavy_infantry = { 850 850 }
-					knights = { 150 150 }
-				}
-				attrition = 0.2
-			}
-		}
+		
 		create_character = {
 			random_traits = yes
 			dynasty = random
@@ -1219,6 +1990,32 @@ narrative_event = {
 			culture = mongol
 			female = no
 			age = 35
+			attributes = {
+				martial = 12
+			}
+			trait = brilliant_strategist
+		}
+		new_character = {
+			spawn_unit = {
+				province = 299 # Balkh
+				troops =
+				{
+					horse_archers = { 3333 3333 }
+					light_cavalry = { 2222 2222 }
+					light_infantry = { 741 741 }
+					heavy_infantry = { 370 370 }
+					knights = { 67 67 }
+				}
+				attrition = 0.2
+			}
+		}
+		create_character = {
+			random_traits = yes
+			dynasty = random
+			religion = ROOT
+			culture = mongol
+			female = no
+			age = 33
 			attributes = {
 				martial = 12
 			}
@@ -1229,26 +2026,281 @@ narrative_event = {
 				province = 902 # Dashhovuz
 				troops =
 				{
-					horse_archers = { 7500 7500 }
-					light_cavalry = { 5000 5000 }
-					light_infantry = { 1500 1500 }
-					heavy_infantry = { 850 850 }
-					knights = { 150 150 }
+					horse_archers = { 3333 3333 }
+					light_cavalry = { 2222 2222 }
+					light_infantry = { 741 741 }
+					heavy_infantry = { 370 370 }
+					knights = { 67 67 }
 				}
 				attrition = 0.2
 			}
 		}
+		create_character = {
+			random_traits = yes
+			dynasty = random
+			religion = ROOT
+			culture = mongol
+			female = no
+			age = 30
+			attributes = {
+				martial = 12
+			}
+			trait = brilliant_strategist
+		}
+		new_character = {
+			spawn_unit = {
+				province = 902 # Dashhovuz
+				troops =
+				{
+					horse_archers = { 3333 3333 }
+					light_cavalry = { 2222 2222 }
+					light_infantry = { 741 741 }
+					heavy_infantry = { 370 370 }
+					knights = { 67 67 }
+				}
+				attrition = 0.2
+			}
+		}
+		
+		create_character = {
+			random_traits = yes
+			dynasty = random
+			religion = shiite
+			culture = mongol
+			female = no
+			age = 30
+			attributes = {
+				martial = 12
+			}
+			trait = brilliant_strategist
+		}
+		new_character = {
+			spawn_unit = {
+				province = 901 # Khiva
+				troops =
+				{
+					horse_archers = { 3333 3333 }
+					light_cavalry = { 2222 2222 }
+					light_infantry = { 741 741 }
+					heavy_infantry = { 370 370 }
+					knights = { 67 67 }
+				}
+			}
+		}
+		create_character = {
+			random_traits = yes
+			dynasty = random
+			religion = shiite
+			culture = mongol
+			female = no
+			age = 36
+			attributes = {
+				martial = 12
+			}
+			trait = brilliant_strategist
+		}
+		new_character = {
+			spawn_unit = {
+				province = 901 # Khiva
+				troops =
+				{
+					horse_archers = { 3333 3333 }
+					light_cavalry = { 2222 2222 }
+					light_infantry = { 741 741 }
+					heavy_infantry = { 370 370 }
+					knights = { 67 67 }
+				}
+			}
+		}
+		create_character = {
+			random_traits = yes
+			dynasty = random
+			religion = shiite
+			culture = mongol
+			female = no
+			age = 37
+			attributes = {
+				martial = 12
+			}
+			trait = brilliant_strategist
+		}
+		new_character = {
+			spawn_unit = {
+				province = 901 # Khiva
+				troops =
+				{
+					horse_archers = { 3333 3333 }
+					light_cavalry = { 2222 2222 }
+					light_infantry = { 741 741 }
+					heavy_infantry = { 370 370 }
+					knights = { 67 67 }
+				}
+			}
+		}
+		
+		create_character = {
+			random_traits = yes
+			dynasty = random
+			religion = shiite
+			culture = mongol
+			female = no
+			age = 30
+			attributes = {
+				martial = 12
+			}
+			trait = brilliant_strategist
+		}
+		new_character = {
+			spawn_unit = {
+				province = 901 # Khiva
+				troops =
+				{
+					horse_archers = { 3333 3333 }
+					light_cavalry = { 2222 2222 }
+					light_infantry = { 741 741 }
+					heavy_infantry = { 370 370 }
+					knights = { 67 67 }
+				}
+			}
+		}
+		create_character = {
+			random_traits = yes
+			dynasty = random
+			religion = shiite
+			culture = mongol
+			female = no
+			age = 36
+			attributes = {
+				martial = 12
+			}
+			trait = brilliant_strategist
+		}
+		new_character = {
+			spawn_unit = {
+				province = 901 # Khiva
+				troops =
+				{
+					horse_archers = { 3333 3333 }
+					light_cavalry = { 2222 2222 }
+					light_infantry = { 741 741 }
+					heavy_infantry = { 370 370 }
+					knights = { 67 67 }
+				}
+			}
+		}
+		create_character = {
+			random_traits = yes
+			dynasty = random
+			religion = shiite
+			culture = mongol
+			female = no
+			age = 37
+			attributes = {
+				martial = 12
+			}
+			trait = brilliant_strategist
+		}
+		new_character = {
+			spawn_unit = {
+				province = 901 # Khiva
+				troops =
+				{
+					horse_archers = { 3333 3333 }
+					light_cavalry = { 2222 2222 }
+					light_infantry = { 741 741 }
+					heavy_infantry = { 370 370 }
+					knights = { 67 67 }
+				}
+			}
+		}
+		
+		create_character = {
+			random_traits = yes
+			dynasty = random
+			religion = shiite
+			culture = mongol
+			female = no
+			age = 30
+			attributes = {
+				martial = 12
+			}
+			trait = brilliant_strategist
+		}
+		new_character = {
+			spawn_unit = {
+				province = 902 # Dashhovuz
+				troops =
+				{
+					horse_archers = { 3333 3333 }
+					light_cavalry = { 2222 2222 }
+					light_infantry = { 741 741 }
+					heavy_infantry = { 370 370 }
+					knights = { 67 67 }
+				}
+			}
+		}
+		create_character = {
+			random_traits = yes
+			dynasty = random
+			religion = shiite
+			culture = mongol
+			female = no
+			age = 36
+			attributes = {
+				martial = 12
+			}
+			trait = brilliant_strategist
+		}
+		new_character = {
+			spawn_unit = {
+				province = 902 # Dashhovuz
+				troops =
+				{
+					horse_archers = { 3333 3333 }
+					light_cavalry = { 2222 2222 }
+					light_infantry = { 741 741 }
+					heavy_infantry = { 370 370 }
+					knights = { 67 67 }
+				}
+			}
+		}
+		create_character = {
+			random_traits = yes
+			dynasty = random
+			religion = shiite
+			culture = mongol
+			female = no
+			age = 37
+			attributes = {
+				martial = 12
+			}
+			trait = brilliant_strategist
+		}
+		new_character = {
+			spawn_unit = {
+				province = 902 # Dashhovuz
+				troops =
+				{
+					horse_archers = { 3333 3333 }
+					light_cavalry = { 2222 2222 }
+					light_infantry = { 741 741 }
+					heavy_infantry = { 370 370 }
+					knights = { 67 67 }
+				}
+			}
+		}
+		
 		random = {
 			chance = 50
 			create_character = {
 				random_traits = yes
 				dynasty = random
-				religion = ROOT
+				religion = shiite
 				culture = mongol
 				female = no
-				age = 33
+				age = 30
 				attributes = {
-					martial = 9
+					martial = 12
 				}
 				trait = brilliant_strategist
 			}
@@ -1257,27 +2309,23 @@ narrative_event = {
 					province = 902 # Dashhovuz
 					troops =
 					{
-						horse_archers = { 7500 7500 }
-						light_cavalry = { 5000 5000 }
-						light_infantry = { 1500 1500 }
-						heavy_infantry = { 850 850 }
-						knights = { 150 150 }
+						horse_archers = { 3333 3333 }
+						light_cavalry = { 2222 2222 }
+						light_infantry = { 741 741 }
+						heavy_infantry = { 370 370 }
+						knights = { 67 67 }
 					}
-					attrition = 0.2
 				}
 			}
-		}
-		random = {
-			chance = 50
 			create_character = {
 				random_traits = yes
 				dynasty = random
-				religion = ROOT
+				religion = shiite
 				culture = mongol
 				female = no
-				age = 33
+				age = 36
 				attributes = {
-					martial = 9
+					martial = 12
 				}
 				trait = brilliant_strategist
 			}
@@ -1286,13 +2334,37 @@ narrative_event = {
 					province = 902 # Dashhovuz
 					troops =
 					{
-						horse_archers = { 7500 7500 }
-						light_cavalry = { 5000 5000 }
-						light_infantry = { 1500 1500 }
-						heavy_infantry = { 850 850 }
-						knights = { 150 150 }
+						horse_archers = { 3333 3333 }
+						light_cavalry = { 2222 2222 }
+						light_infantry = { 741 741 }
+						heavy_infantry = { 370 370 }
+						knights = { 67 67 }
 					}
-					attrition = 0.2
+				}
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = shiite
+				culture = mongol
+				female = no
+				age = 37
+				attributes = {
+					martial = 12
+				}
+				trait = brilliant_strategist
+			}
+			new_character = {
+				spawn_unit = {
+					province = 902 # Dashhovuz
+					troops =
+					{
+						horse_archers = { 3333 3333 }
+						light_cavalry = { 2222 2222 }
+						light_infantry = { 741 741 }
+						heavy_infantry = { 370 370 }
+						knights = { 67 67 }
+					}
 				}
 			}
 		}
@@ -1301,12 +2373,90 @@ narrative_event = {
 			create_character = {
 				random_traits = yes
 				dynasty = random
-				religion = ROOT
+				religion = shiite
+				culture = mongol
+				female = no
+				age = 30
+				attributes = {
+					martial = 12
+				}
+				trait = brilliant_strategist
+			}
+			new_character = {
+				spawn_unit = {
+					province = 902 # Dashhovuz
+					troops =
+					{
+						horse_archers = { 3333 3333 }
+						light_cavalry = { 2222 2222 }
+						light_infantry = { 741 741 }
+						heavy_infantry = { 370 370 }
+						knights = { 67 67 }
+					}
+				}
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = shiite
+				culture = mongol
+				female = no
+				age = 36
+				attributes = {
+					martial = 12
+				}
+				trait = brilliant_strategist
+			}
+			new_character = {
+				spawn_unit = {
+					province = 902 # Dashhovuz
+					troops =
+					{
+						horse_archers = { 3333 3333 }
+						light_cavalry = { 2222 2222 }
+						light_infantry = { 741 741 }
+						heavy_infantry = { 370 370 }
+						knights = { 67 67 }
+					}
+				}
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = shiite
 				culture = mongol
 				female = no
 				age = 37
 				attributes = {
-					martial = 10
+					martial = 12
+				}
+				trait = brilliant_strategist
+			}
+			new_character = {
+				spawn_unit = {
+					province = 902 # Dashhovuz
+					troops =
+					{
+						horse_archers = { 3333 3333 }
+						light_cavalry = { 2222 2222 }
+						light_infantry = { 741 741 }
+						heavy_infantry = { 370 370 }
+						knights = { 67 67 }
+					}
+				}
+			}
+		}
+		random = {
+			chance = 50
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = shiite
+				culture = mongol
+				female = no
+				age = 30
+				attributes = {
+					martial = 12
 				}
 				trait = brilliant_strategist
 			}
@@ -1315,27 +2465,23 @@ narrative_event = {
 					province = 903 # Samarkand
 					troops =
 					{
-						horse_archers = { 7500 7500 }
-						light_cavalry = { 5000 5000 }
-						light_infantry = { 1500 1500 }
-						heavy_infantry = { 850 850 }
-						knights = { 150 150 }
+						horse_archers = { 3333 3333 }
+						light_cavalry = { 2222 2222 }
+						light_infantry = { 741 741 }
+						heavy_infantry = { 370 370 }
+						knights = { 67 67 }
 					}
-					attrition = 0.2
 				}
 			}
-		}
-		random = {
-			chance = 50
 			create_character = {
 				random_traits = yes
 				dynasty = random
-				religion = ROOT
+				religion = shiite
 				culture = mongol
 				female = no
-				age = 37
+				age = 36
 				attributes = {
-					martial = 10
+					martial = 12
 				}
 				trait = brilliant_strategist
 			}
@@ -1344,13 +2490,37 @@ narrative_event = {
 					province = 903 # Samarkand
 					troops =
 					{
-						horse_archers = { 7500 7500 }
-						light_cavalry = { 5000 5000 }
-						light_infantry = { 1500 1500 }
-						heavy_infantry = { 850 850 }
-						knights = { 150 150 }
+						horse_archers = { 3333 3333 }
+						light_cavalry = { 2222 2222 }
+						light_infantry = { 741 741 }
+						heavy_infantry = { 370 370 }
+						knights = { 67 67 }
 					}
-					attrition = 0.2
+				}
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = shiite
+				culture = mongol
+				female = no
+				age = 37
+				attributes = {
+					martial = 12
+				}
+				trait = brilliant_strategist
+			}
+			new_character = {
+				spawn_unit = {
+					province = 903 # Samarkand
+					troops =
+					{
+						horse_archers = { 3333 3333 }
+						light_cavalry = { 2222 2222 }
+						light_infantry = { 741 741 }
+						heavy_infantry = { 370 370 }
+						knights = { 67 67 }
+					}
 				}
 			}
 		}
@@ -1359,7 +2529,135 @@ narrative_event = {
 			create_character = {
 				random_traits = yes
 				dynasty = random
-				religion = ROOT
+				religion = shiite
+				culture = mongol
+				female = no
+				age = 30
+				attributes = {
+					martial = 12
+				}
+				trait = brilliant_strategist
+			}
+			new_character = {
+				spawn_unit = {
+					province = 903 # Samarkand
+					troops =
+					{
+						horse_archers = { 3333 3333 }
+						light_cavalry = { 2222 2222 }
+						light_infantry = { 741 741 }
+						heavy_infantry = { 370 370 }
+						knights = { 67 67 }
+					}
+				}
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = shiite
+				culture = mongol
+				female = no
+				age = 36
+				attributes = {
+					martial = 12
+				}
+				trait = brilliant_strategist
+			}
+			new_character = {
+				spawn_unit = {
+					province = 903 # Samarkand
+					troops =
+					{
+						horse_archers = { 3333 3333 }
+						light_cavalry = { 2222 2222 }
+						light_infantry = { 741 741 }
+						heavy_infantry = { 370 370 }
+						knights = { 67 67 }
+					}
+				}
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = shiite
+				culture = mongol
+				female = no
+				age = 37
+				attributes = {
+					martial = 12
+				}
+				trait = brilliant_strategist
+			}
+			new_character = {
+				spawn_unit = {
+					province = 903 # Samarkand
+					troops =
+					{
+						horse_archers = { 3333 3333 }
+						light_cavalry = { 2222 2222 }
+						light_infantry = { 741 741 }
+						heavy_infantry = { 370 370 }
+						knights = { 67 67 }
+					}
+				}
+			}
+		}
+		random = {
+			chance = 50
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = shiite
+				culture = mongol
+				female = no
+				age = 36
+				attributes = {
+					martial = 12
+				}
+				trait = brilliant_strategist
+			}
+			new_character = {
+				spawn_unit = {
+					province = 904 # Balkh
+					troops =
+					{
+						horse_archers = { 3333 3333 }
+						light_cavalry = { 2222 2222 }
+						light_infantry = { 741 741 }
+						heavy_infantry = { 370 370 }
+						knights = { 67 67 }
+					}
+				}
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = shiite
+				culture = mongol
+				female = no
+				age = 37
+				attributes = {
+					martial = 12
+				}
+				trait = brilliant_strategist
+			}
+			new_character = {
+				spawn_unit = {
+					province = 904 # Balkh
+					troops =
+					{
+						horse_archers = { 3333 3333 }
+						light_cavalry = { 2222 2222 }
+						light_infantry = { 741 741 }
+						heavy_infantry = { 370 370 }
+						knights = { 67 67 }
+					}
+				}
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = shiite
 				culture = mongol
 				female = no
 				age = 29
@@ -1370,16 +2668,15 @@ narrative_event = {
 			}
 			new_character = {
 				spawn_unit = {
-					province = 299 # Farrah
+					province = 904 # Balkh
 					troops =
 					{
-						horse_archers = { 7500 7500 }
-						light_cavalry = { 5000 5000 }
-						light_infantry = { 1500 1500 }
-						heavy_infantry = { 850 850 }
-						knights = { 150 150 }
+						horse_archers = { 3333 3333 }
+						light_cavalry = { 2222 2222 }
+						light_infantry = { 741 741 }
+						heavy_infantry = { 370 370 }
+						knights = { 67 67 }
 					}
-					attrition = 0.2
 				}
 			}
 		}
@@ -1388,27 +2685,76 @@ narrative_event = {
 			create_character = {
 				random_traits = yes
 				dynasty = random
-				religion = ROOT
+				religion = shiite
 				culture = mongol
 				female = no
-				age = 23
+				age = 36
 				attributes = {
-					martial = 10
+					martial = 12
 				}
 				trait = brilliant_strategist
 			}
 			new_character = {
 				spawn_unit = {
-					province = 299 # Farrah
+					province = 904 # Balkh
 					troops =
 					{
-						horse_archers = { 7500 7500 }
-						light_cavalry = { 5000 5000 }
-						light_infantry = { 1500 1500 }
-						heavy_infantry = { 850 850 }
-						knights = { 150 150 }
+						horse_archers = { 3333 3333 }
+						light_cavalry = { 2222 2222 }
+						light_infantry = { 741 741 }
+						heavy_infantry = { 370 370 }
+						knights = { 67 67 }
 					}
-					attrition = 0.2
+				}
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = shiite
+				culture = mongol
+				female = no
+				age = 37
+				attributes = {
+					martial = 12
+				}
+				trait = brilliant_strategist
+			}
+			new_character = {
+				spawn_unit = {
+					province = 904 # Balkh
+					troops =
+					{
+						horse_archers = { 3333 3333 }
+						light_cavalry = { 2222 2222 }
+						light_infantry = { 741 741 }
+						heavy_infantry = { 370 370 }
+						knights = { 67 67 }
+					}
+				}
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = shiite
+				culture = mongol
+				female = no
+				age = 29
+				attributes = {
+					martial = 12
+				}
+				trait = brilliant_strategist
+			}
+			new_character = {
+				spawn_unit = {
+					province = 904 # Balkh
+					troops =
+					{
+						horse_archers = { 3333 3333 }
+						light_cavalry = { 2222 2222 }
+						light_infantry = { 741 741 }
+						heavy_infantry = { 370 370 }
+						knights = { 67 67 }
+					}
 				}
 			}
 		}
@@ -1417,7 +2763,7 @@ narrative_event = {
 		create_character = {
 			random_traits = yes
 			dynasty = random
-			religion = ROOT
+			religion = shiite
 			culture = mongol
 			female = no
 			age = 16
@@ -1425,7 +2771,7 @@ narrative_event = {
 		create_character = {
 			random_traits = yes
 			dynasty = random
-			religion = ROOT
+			religion = shiite
 			culture = mongol
 			female = no
 			age = 18
@@ -1433,7 +2779,7 @@ narrative_event = {
 		create_character = {
 			random_traits = yes
 			dynasty = random
-			religion = ROOT
+			religion = shiite
 			culture = mongol
 			female = no
 			age = 18
@@ -1441,7 +2787,7 @@ narrative_event = {
 		create_character = {
 			random_traits = yes
 			dynasty = random
-			religion = ROOT
+			religion = shiite
 			culture = mongol
 			female = no
 			age = 20
@@ -1449,7 +2795,7 @@ narrative_event = {
 		create_character = {
 			random_traits = yes
 			dynasty = random
-			religion = ROOT
+			religion = shiite
 			culture = mongol
 			female = no
 			age = 25
@@ -1457,7 +2803,7 @@ narrative_event = {
 		create_character = {
 			random_traits = yes
 			dynasty = random
-			religion = ROOT
+			religion = shiite
 			culture = mongol
 			female = no
 			age = 26
@@ -1465,7 +2811,7 @@ narrative_event = {
 		create_character = {
 			random_traits = yes
 			dynasty = random
-			religion = ROOT
+			religion = shiite
 			culture = mongol
 			female = no
 			age = 28
@@ -1473,7 +2819,7 @@ narrative_event = {
 		create_character = {
 			random_traits = yes
 			dynasty = random
-			religion = ROOT
+			religion = shiite
 			culture = mongol
 			female = yes
 			age = 16
@@ -1481,7 +2827,7 @@ narrative_event = {
 		create_character = {
 			random_traits = yes
 			dynasty = random
-			religion = ROOT
+			religion = shiite
 			culture = mongol
 			female = yes
 			age = 17
@@ -1489,7 +2835,7 @@ narrative_event = {
 		create_character = {
 			random_traits = yes
 			dynasty = random
-			religion = ROOT
+			religion = shiite
 			culture = mongol
 			female = yes
 			age = 18
@@ -1497,7 +2843,7 @@ narrative_event = {
 		create_character = {
 			random_traits = yes
 			dynasty = random
-			religion = ROOT
+			religion = shiite
 			culture = mongol
 			female = yes
 			age = 18
@@ -1505,7 +2851,7 @@ narrative_event = {
 		create_character = {
 			random_traits = yes
 			dynasty = random
-			religion = ROOT
+			religion = shiite
 			culture = mongol
 			female = yes
 			age = 20
@@ -1566,21 +2912,120 @@ character_event = {
 		}
 		new_character = {
 			spawn_unit = {
-				province = 299 # Farrah
+				province = 904 # Balkh
 				troops =
 				{
-					horse_archers = { 7500 7500 }
-					light_cavalry = { 5000 5000 }
-					light_infantry = { 1500 1500 }
-					heavy_infantry = { 850 850 }
-					knights = { 150 150 }
+					horse_archers = { 3333 3333 }
+					light_cavalry = { 2222 2222 }
+					light_infantry = { 741 741 }
+					heavy_infantry = { 370 370 }
+					knights = { 67 67 }
 				}
-				attrition = 0.2
+			}
+		}
+		create_character = {
+			random_traits = yes
+			dynasty = random
+			religion = tengri_pagan
+			culture = mongol
+			female = no
+			age = 26
+			attributes = {
+				martial = 12
+			}
+			trait = brilliant_strategist
+		}
+		new_character = {
+			spawn_unit = {
+				province = 904 # Balkh
+				troops =
+				{
+					horse_archers = { 3333 3333 }
+					light_cavalry = { 2222 2222 }
+					light_infantry = { 741 741 }
+					heavy_infantry = { 370 370 }
+					knights = { 67 67 }
+				}
+			}
+		}
+		create_character = {
+			random_traits = yes
+			dynasty = random
+			religion = tengri_pagan
+			culture = mongol
+			female = no
+			age = 27
+			attributes = {
+				martial = 12
+			}
+			trait = brilliant_strategist
+		}
+		new_character = {
+			spawn_unit = {
+				province = 904 # Balkh
+				troops =
+				{
+					horse_archers = { 3333 3333 }
+					light_cavalry = { 2222 2222 }
+					light_infantry = { 741 741 }
+					heavy_infantry = { 370 370 }
+					knights = { 67 67 }
+				}
 			}
 		}
 		
 		random = {
 			chance = 50
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = tengri_pagan
+				culture = mongol
+				female = no
+				age = 25
+				attributes = {
+					martial = 12
+				}
+				trait = brilliant_strategist
+			}
+			new_character = {
+				spawn_unit = {
+					province = 904 # Balkh
+					troops =
+					{
+						horse_archers = { 3333 3333 }
+						light_cavalry = { 2222 2222 }
+						light_infantry = { 741 741 }
+						heavy_infantry = { 370 370 }
+						knights = { 67 67 }
+					}
+				}
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = tengri_pagan
+				culture = mongol
+				female = no
+				age = 26
+				attributes = {
+					martial = 12
+				}
+				trait = brilliant_strategist
+			}
+			new_character = {
+				spawn_unit = {
+					province = 904 # Balkh
+					troops =
+					{
+						horse_archers = { 3333 3333 }
+						light_cavalry = { 2222 2222 }
+						light_infantry = { 741 741 }
+						heavy_infantry = { 370 370 }
+						knights = { 67 67 }
+					}
+				}
+			}
 			create_character = {
 				random_traits = yes
 				dynasty = random
@@ -1595,16 +3040,15 @@ character_event = {
 			}
 			new_character = {
 				spawn_unit = {
-					province = 299 # Farrah
+					province = 904 # Balkh
 					troops =
 					{
-						horse_archers = { 7500 7500 }
-						light_cavalry = { 5000 5000 }
-						light_infantry = { 1500 1500 }
-						heavy_infantry = { 850 850 }
-						knights = { 150 150 }
+						horse_archers = { 3333 3333 }
+						light_cavalry = { 2222 2222 }
+						light_infantry = { 741 741 }
+						heavy_infantry = { 370 370 }
+						knights = { 67 67 }
 					}
-					attrition = 0.2
 				}
 			}
 		}
@@ -1663,11 +3107,61 @@ character_event = {
 				province = 893 # Surgut
 				troops =
 				{
-					horse_archers = { 7500 7500 }
-					light_cavalry = { 5000 5000 }
-					light_infantry = { 1500 1500 }
-					heavy_infantry = { 850 850 }
-					knights = { 150 150 }
+					horse_archers = { 3333 3333 }
+					light_cavalry = { 2222 2222 }
+					light_infantry = { 741 741 }
+					heavy_infantry = { 370 370 }
+					knights = { 67 67 }
+				}
+			}
+		}
+		create_character = {
+			random_traits = yes
+			dynasty = random
+			religion = tengri_pagan
+			culture = mongol
+			female = no
+			age = 32
+			attributes = {
+				martial = 12
+			}
+			trait = brilliant_strategist
+		}
+		new_character = {
+			spawn_unit = {
+				province = 893 # Surgut
+				troops =
+				{
+					horse_archers = { 3333 3333 }
+					light_cavalry = { 2222 2222 }
+					light_infantry = { 741 741 }
+					heavy_infantry = { 370 370 }
+					knights = { 67 67 }
+				}
+			}
+		}
+		create_character = {
+			random_traits = yes
+			dynasty = random
+			religion = tengri_pagan
+			culture = mongol
+			female = no
+			age = 36
+			attributes = {
+				martial = 12
+			}
+			trait = brilliant_strategist
+		}
+		new_character = {
+			spawn_unit = {
+				province = 893 # Surgut
+				troops =
+				{
+					horse_archers = { 3333 3333 }
+					light_cavalry = { 2222 2222 }
+					light_infantry = { 741 741 }
+					heavy_infantry = { 370 370 }
+					knights = { 67 67 }
 				}
 				attrition = 0.2
 			}
@@ -1722,14 +3216,64 @@ character_event = {
 		}
 		new_character = {
 			spawn_unit = {
-				province = 299 # Balkh
+				province = 901 # Khiva
 				troops =
 				{
-					horse_archers = { 7500 7500 }
-					light_cavalry = { 5000 5000 }
-					light_infantry = { 1500 1500 }
-					heavy_infantry = { 850 850 }
-					knights = { 150 150 }
+					horse_archers = { 3333 3333 }
+					light_cavalry = { 2222 2222 }
+					light_infantry = { 741 741 }
+					heavy_infantry = { 370 370 }
+					knights = { 67 67 }
+				}
+			}
+		}
+		create_character = {
+			random_traits = yes
+			dynasty = random
+			religion = shiite
+			culture = mongol
+			female = no
+			age = 24
+			attributes = {
+				martial = 12
+			}
+			trait = brilliant_strategist
+		}
+		new_character = {
+			spawn_unit = {
+				province = 901 # Khiva
+				troops =
+				{
+					horse_archers = { 3333 3333 }
+					light_cavalry = { 2222 2222 }
+					light_infantry = { 741 741 }
+					heavy_infantry = { 370 370 }
+					knights = { 67 67 }
+				}
+			}
+		}
+		create_character = {
+			random_traits = yes
+			dynasty = random
+			religion = shiite
+			culture = mongol
+			female = no
+			age = 38
+			attributes = {
+				martial = 12
+			}
+			trait = brilliant_strategist
+		}
+		new_character = {
+			spawn_unit = {
+				province = 901 # Khiva
+				troops =
+				{
+					horse_archers = { 3333 3333 }
+					light_cavalry = { 2222 2222 }
+					light_infantry = { 741 741 }
+					heavy_infantry = { 370 370 }
+					knights = { 67 67 }
 				}
 				attrition = 0.2
 			}
@@ -1739,10 +3283,10 @@ character_event = {
 			create_character = {
 				random_traits = yes
 				dynasty = random
-				religion = ROOT
+				religion = shiite
 				culture = mongol
 				female = no
-				age = 29
+				age = 32
 				attributes = {
 					martial = 12
 				}
@@ -1750,14 +3294,64 @@ character_event = {
 			}
 			new_character = {
 				spawn_unit = {
-					province = 299 # Balkh
+					province = 901 # Khiva
 					troops =
 					{
-						horse_archers = { 7500 7500 }
-						light_cavalry = { 5000 5000 }
-						light_infantry = { 1500 1500 }
-						heavy_infantry = { 850 850 }
-						knights = { 150 150 }
+						horse_archers = { 3333 3333 }
+						light_cavalry = { 2222 2222 }
+						light_infantry = { 741 741 }
+						heavy_infantry = { 370 370 }
+						knights = { 67 67 }
+					}
+				}
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = shiite
+				culture = mongol
+				female = no
+				age = 24
+				attributes = {
+					martial = 12
+				}
+				trait = brilliant_strategist
+			}
+			new_character = {
+				spawn_unit = {
+					province = 901 # Khiva
+					troops =
+					{
+						horse_archers = { 3333 3333 }
+						light_cavalry = { 2222 2222 }
+						light_infantry = { 741 741 }
+						heavy_infantry = { 370 370 }
+						knights = { 67 67 }
+					}
+				}
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = shiite
+				culture = mongol
+				female = no
+				age = 38
+				attributes = {
+					martial = 12
+				}
+				trait = brilliant_strategist
+			}
+			new_character = {
+				spawn_unit = {
+					province = 901 # Khiva
+					troops =
+					{
+						horse_archers = { 3333 3333 }
+						light_cavalry = { 2222 2222 }
+						light_infantry = { 741 741 }
+						heavy_infantry = { 370 370 }
+						knights = { 67 67 }
 					}
 					attrition = 0.2
 				}
@@ -4687,7 +6281,7 @@ narrative_event = {
 	desc = "EVTDESC60121"
 	major = yes
 	
-	picture = "GFX_evt_mongols"
+	picture = "GFX_evt_mecca_falls_soa"
 	border = "GFX_event_narrative_frame_war"
 	
 	is_triggered_only = yes
@@ -4887,11 +6481,91 @@ narrative_event = {
 			province = 299 # Farrah
 			troops =
 			{
-				horse_archers = { 7500 7500 }
-				light_cavalry = { 4000 4000 }
-				light_infantry = { 3000 3000 }
-				heavy_infantry = { 1500 1500 }
-				knights = { 200 200 }
+				horse_archers = { 2500 2500 }
+				light_cavalry = { 1333 1333 }
+				light_infantry = { 1000 1000 }
+				heavy_infantry = { 500 500 }
+				knights = { 67 67 }
+			}
+		}
+		
+		create_character = {
+			random_traits = yes
+			dynasty = random
+			religion = sunni
+			culture = turkish
+			female = no
+			age = 36
+			attributes = {
+				martial = 12
+			}
+			trait = brilliant_strategist
+		}
+		new_character = {
+			spawn_unit = {
+				province = 902 # Dashhowuz
+				owner = PREV
+				troops =
+				{
+					horse_archers = { 2500 2500 }
+					light_cavalry = { 1333 1333 }
+					light_infantry = { 1000 1000 }
+					heavy_infantry = { 500 500 }
+					knights = { 67 67 }
+				}
+			}
+		}
+		create_character = {
+			random_traits = yes
+			dynasty = random
+			religion = sunni
+			culture = turkish
+			female = no
+			age = 35
+			attributes = {
+				martial = 12
+			}
+			trait = brilliant_strategist
+		}
+		new_character = {
+			spawn_unit = {
+				province = 902 # Dashhowuz
+				owner = PREV
+				troops =
+				{
+					horse_archers = { 2500 2500 }
+					light_cavalry = { 1333 1333 }
+					light_infantry = { 1000 1000 }
+					heavy_infantry = { 500 500 }
+					knights = { 67 67 }
+				}
+			}
+		}
+		
+		create_character = {
+			random_traits = yes
+			dynasty = random
+			religion = sunni
+			culture = turkish
+			female = no
+			age = 35
+			attributes = {
+				martial = 12
+			}
+			trait = brilliant_strategist
+		}
+		new_character = {
+			spawn_unit = {
+				province = 902 # Dashhowuz
+				owner = PREV
+				troops =
+				{
+					horse_archers = { 2500 2500 }
+					light_cavalry = { 1333 1333 }
+					light_infantry = { 1000 1000 }
+					heavy_infantry = { 500 500 }
+					knights = { 67 67 }
+				}
 			}
 			attrition = 0.1
 		}
@@ -4901,7 +6575,7 @@ narrative_event = {
 			religion = sunni
 			culture = turkish
 			female = no
-			age = 40
+			age = 35
 			attributes = {
 				martial = 12
 			}
@@ -4909,17 +6583,16 @@ narrative_event = {
 		}
 		new_character = {
 			spawn_unit = {
-				province = 299 # Farrah
+				province = 902 # Dashhowuz
 				owner = PREV
 				troops =
 				{
-					horse_archers = { 7500 7500 }
-					light_cavalry = { 4000 4000 }
-					light_infantry = { 3000 3000 }
-					heavy_infantry = { 1500 1500 }
-					knights = { 200 200 }
+					horse_archers = { 2500 2500 }
+					light_cavalry = { 1333 1333 }
+					light_infantry = { 1000 1000 }
+					heavy_infantry = { 500 500 }
+					knights = { 67 67 }
 				}
-				attrition = 0.1
 			}
 		}
 		create_character = {
@@ -4928,7 +6601,60 @@ narrative_event = {
 			religion = sunni
 			culture = turkish
 			female = no
-			age = 40
+			age = 35
+			attributes = {
+				martial = 12
+			}
+			trait = brilliant_strategist
+		}
+		new_character = {
+			spawn_unit = {
+				province = 902 # Dashhowuz
+				owner = PREV
+				troops =
+				{
+					horse_archers = { 2500 2500 }
+					light_cavalry = { 1333 1333 }
+					light_infantry = { 1000 1000 }
+					heavy_infantry = { 500 500 }
+					knights = { 67 67 }
+				}
+			}
+		}
+		
+		create_character = {
+			random_traits = yes
+			dynasty = random
+			religion = sunni
+			culture = turkish
+			female = no
+			age = 35
+			attributes = {
+				martial = 12
+			}
+			trait = brilliant_strategist
+		}
+		new_character = {
+			spawn_unit = {
+				province = 902 # Dashhowuz
+				owner = PREV
+				troops =
+				{
+					horse_archers = { 2500 2500 }
+					light_cavalry = { 1333 1333 }
+					light_infantry = { 1000 1000 }
+					heavy_infantry = { 500 500 }
+					knights = { 67 67 }
+				}
+			}
+		}
+		create_character = {
+			random_traits = yes
+			dynasty = random
+			religion = sunni
+			culture = turkish
+			female = no
+			age = 35
 			attributes = {
 				martial = 12
 			}
@@ -4940,13 +6666,40 @@ narrative_event = {
 				owner = PREV
 				troops =
 				{
-					horse_archers = { 7500 7500 }
-					light_cavalry = { 4000 4000 }
-					light_infantry = { 3000 3000 }
-					heavy_infantry = { 1500 1500 }
-					knights = { 200 200 }
+					horse_archers = { 2500 2500 }
+					light_cavalry = { 1333 1333 }
+					light_infantry = { 1000 1000 }
+					heavy_infantry = { 500 500 }
+					knights = { 67 67 }
 				}
-				attrition = 0.1
+				attrition = 0.2
+			}
+		}
+		create_character = {
+			random_traits = yes
+			dynasty = random
+			religion = sunni
+			culture = turkish
+			female = no
+			age = 35
+			attributes = {
+				martial = 12
+			}
+			trait = brilliant_strategist
+		}
+		new_character = {
+			spawn_unit = {
+				province = 299 # Farrah
+				owner = PREV
+				troops =
+				{
+					horse_archers = { 2500 2500 }
+					light_cavalry = { 1333 1333 }
+					light_infantry = { 1000 1000 }
+					heavy_infantry = { 500 500 }
+					knights = { 67 67 }
+				}
+				attrition = 0.2
 			}
 		}
 		

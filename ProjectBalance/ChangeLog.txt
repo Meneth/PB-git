@@ -1,3 +1,6 @@
+3.3
+	Updated for CKII 2.0
+
 3.2.29
 	(No Ahistorical Empires) Fixed the kingdom of Mün in SWMH being a dejure part of the British empire
 	Set Carpathia to localize as a kingdom like most other empires

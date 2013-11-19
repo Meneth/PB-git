@@ -368,7 +368,10 @@ e_tartaria = {
 		
 		# Creation/Usurp Trigger
 		allow = {
-			always = no
+			OR = {
+				culture = khazar
+				religion_group = jewish_group
+			}
 		}
 		
 		d_bulgar = { 

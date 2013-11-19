@@ -192,8 +192,8 @@ e_scandinavia = {
 				english = Zealand
 				
 				b_kobenhavn = {
-					swedish = "Köpenhamn"
-					norse = Köpenhamn
+					swedish = Köpenhamn
+					norse = Hafn
 				}
 				b_roskilde = {
 				}
@@ -539,6 +539,11 @@ e_scandinavia = {
 			c_shetland = {
 				color={ 15 25 255 }
 				color2={ 255 255 255 }
+				
+				norwegian = "Hjaltland"
+				danish = "Hjaltland"
+				swedish = "Hjaltland"
+				norse = "Hjaltland"
 				
 				b_scalloway = {
 				}

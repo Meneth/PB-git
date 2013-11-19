@@ -2182,8 +2182,8 @@
 	culture="russian"
 	father=125130
 	mother=125141
-	1195.1.2={
-		birth="1195.1.2"
+	1229.1.2={
+		birth="1229.1.2"
 	}
 	1250.1.2={
 		death="1250.1.2"
@@ -4107,6 +4107,7 @@
 
 125257 = {
 	name="Danila"
+	dynasty=1042648
 	religion="orthodox"
 	culture="russian"
 	1290.1.2={
@@ -4154,6 +4155,7 @@
 
 125260 = {
 	name="Feodor"
+	dynasty=1042648
 	religion="orthodox"
 	culture="russian"
 	father=125257
@@ -5014,17 +5016,17 @@
 	culture="russian"
 	father=222522
 	mother=221514
-	1150.1.2={
-		birth="1150.1.2"
+	1154.1.2={
+		birth="1154.1.2"
 	}
 	1178.1.2={
-	add_spouse=222521
+		add_spouse=222521
 	}
 	1197.1.2={
-	remove_spouse=222521
+		remove_spouse=222521
 	}
 	1197.1.2={
-	add_spouse=125053
+		add_spouse=125053
 	}
 	1205.6.19={
 		death="1205.6.19"
@@ -5057,8 +5059,8 @@
 	1126.1.2={
 		birth="1126.1.2"
 	}
-	1149.1.2={
-	add_spouse=221514
+	1153.1.2={
+		add_spouse=221514
 	}
 	1170.8.19={
 		death="1170.8.19"
@@ -5073,11 +5075,11 @@
 	culture="russian"
 	father=222522
 	mother=221514
-	1153.1.2={
-		birth="1153.1.2"
+	1155.1.2={
+		birth="1155.1.2"
 	}
-	1195.1.2={
-		death="1195.1.2"
+	1195.4.2={
+		death="1195.4.2"
 	}
 }
 
@@ -5106,10 +5108,10 @@
 	dynasty=705
 	religion="orthodox"
 	culture="russian"
+	add_trait="bastard"
 	father=222522
-	mother=221514
-	1155.1.2={
-		birth="1155.1.2"
+	1152.1.2={
+		birth="1152.1.2"
 	}
 	1183.1.2={
 		death="1183.1.2"
@@ -5123,8 +5125,8 @@
 	culture="russian"
 	father=222522
 	mother=221514
-	1152.1.2={
-		birth="1152.1.2"
+	1156.1.2={
+		birth="1156.1.2"
 	}
 	1173.1.2={
 		death="1173.1.2"
@@ -11530,5 +11532,72 @@
 	}
 	1051.1.1={
 		death=yes
+	}
+}
+
+170087 = {
+	name="Anastasia" #Anastasia Aleksandrovna
+	female=yes
+	dynasty=705
+	religion="orthodox"
+	culture="russian"
+	father=125130
+	mother=125141
+	1210.1.1={
+		birth="1210.1.1"
+	}
+	1270.1.1={
+		death="1270.1.1"
+	}
+}
+
+170099 = {
+	name="Iaropolk"
+	dynasty=705
+	religion="orthodox"
+	culture="russian"
+	father=222525
+	mother=30201
+	1137.1.2={
+		birth="1137.1.2"
+	}
+	1168.1.2={
+		add_spouse=170100
+	}
+	1170.3.7={
+		death="1168.3.7"
+	}
+}
+
+170100 = {
+	name="Maria"
+	female=yes
+	dynasty=705
+	religion="orthodox"
+	culture="russian"
+	father=222650
+	mother=222651
+	1152.1.2={
+		birth="1152.1.2"
+	}
+	1223.1.2={
+		death="1223.1.2"
+	}
+}
+
+170101 = {
+	name="Vasilko"
+	dynasty=705
+	religion="orthodox"
+	culture="russian"
+	father=170099
+	1153.1.2={
+		birth="1153.1.2"
+	}
+	1175.1.2={
+		add_spouse=170102
+	}	
+	1178.1.2={
+		death="1178.1.2"
 	}
 }

@@ -522,6 +522,14 @@ e_france = {
 				b_macon = {
 				}
 				b_cluny = {
+					coat_of_arms=
+					{
+						data=
+						{
+						0 4 12 45 2 2 2 0 0 19 2 1 3 0 0 19 2 1 3 0 0 19 2 1 3
+						}
+						religion="catholic"
+					}
 				}
 				b_davaye = {
 				}

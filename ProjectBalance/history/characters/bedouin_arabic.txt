@@ -952,51 +952,6 @@
 	}
 }
 
-3220 = {
-	name="Samuel"
-	dynasty=101606
-	martial=8
-	diplomacy=7
-	intrigue=4
-	stewardship=4
-	religion="orthodox"
-	culture="bedouin_arabic"
-	trait="fortune_builder"
-	trait="kind"
-	trait="mastermind_theologian"
-	trait="humble"
-	trait="grey_eminence"
-	993.1.2={
-		birth="993.1.2"
-	}
-	1055.1.2={
-		death="1055.1.2"
-	}
-}
-
-3221 = {
-	name="Joseph"
-	dynasty=101606
-	martial=5
-	diplomacy=7
-	intrigue=5
-	stewardship=7
-	religion="orthodox"
-	culture="bedouin_arabic"
-	trait="proud"
-	trait="kind"
-	trait="thrifty_clerk"
-	trait="cynical"
-	trait="flamboyant_schemer"
-	father=3220
-	1025.1.2={
-		birth="1025.1.2"
-	}
-	1066.1.31={
-		death="1066.1.31"
-	}
-}
-
 3808 = {
 	name="Ali"
 	dynasty=588
@@ -1218,42 +1173,6 @@
 	}
 }
 
-41708 = {
-	name="Adina"
-	female = yes
-	martial=5
-	diplomacy=5
-	intrigue=5
-	stewardship=5
-	religion="orthodox"
-	culture="bedouin_arabic"
-	trait="thrifty_clerk"
-	1051.1.1={
-		birth="1051.1.1"
-	}
-	1101.1.1={
-		death="1101.1.1"
-	}
-}
-
-41710 = {
-	name="Ahava"
-	female = yes
-	martial=5
-	diplomacy=5
-	intrigue=5
-	stewardship=5
-	religion="orthodox"
-	culture="bedouin_arabic"
-	trait="thrifty_clerk"
-	1051.1.1={
-		birth="1051.1.1"
-	}
-	1101.1.1={
-		death="1101.1.1"
-	}
-}
-
 45029 = {
 	name="Abu"
 	# AKA: Abu al
@@ -1471,7 +1390,7 @@
 	religion="shiite"
 	culture="bedouin_arabic"
 	father=45043
-	1123.1.1={
+	1125.1.1={
 		birth="1125.1.1"
 	}
 	1166.1.1={
@@ -1489,7 +1408,7 @@
 	religion="shiite"
 	culture="bedouin_arabic"
 	father=45045
-	1139.1.1={
+	1165.1.1={
 		birth="1165.1.1"
 	}
 	1175.1.1={
@@ -1795,80 +1714,6 @@
 	}
 	1100.1.2={
 		death="1100.1.2"
-	}
-}
-
-90131 = {
-	name="Abu al-Fadl"
-	# AKA: Abu al
-	dynasty=20076
-	martial=8
-	diplomacy=7
-	intrigue=4
-	stewardship=4
-	religion="orthodox"
-	culture="bedouin_arabic"
-	trait="cynical"
-	trait="grey_eminence"
-	1040.1.2={
-		birth="1040.1.2"
-	}
-	1090.1.2={
-		death="1090.1.2"
-	}
-}
-
-90132 = {
-	name="Isaac"
-	dynasty=20077
-	martial=4
-	diplomacy=5
-	intrigue=6
-	stewardship=7
-	religion="orthodox"
-	culture="bedouin_arabic"
-	trait="underhanded_rogue"
-	1040.1.2={
-		birth="1040.1.2"
-	}
-	1090.1.2={
-		death="1090.1.2"
-	}
-}
-
-90133 = {
-	name="Joseph"
-	dynasty=20078
-	martial=5
-	diplomacy=8
-	intrigue=6
-	stewardship=4
-	religion="orthodox"
-	culture="bedouin_arabic"
-	trait="flamboyant_schemer"
-	1040.1.2={
-		birth="1040.1.2"
-	}
-	1090.1.2={
-		death="1090.1.2"
-	}
-}
-
-90134 = {
-	name="Abraham"
-	dynasty=20078
-	martial=4
-	diplomacy=6
-	intrigue=6
-	stewardship=6
-	religion="orthodox"
-	culture="bedouin_arabic"
-	trait="fortune_builder"
-	1040.1.2={
-		birth="1040.1.2"
-	}
-	1090.1.2={
-		death="1090.1.2"
 	}
 }
 
@@ -2603,6 +2448,7 @@
 	847.1.1={
 		birth=yes
 	}
+	#Removed ridiculous claims
 	869.1.1={
 		death=yes
 	}
@@ -3182,8 +3028,8 @@
 	1030.1.1={
 		birth="1030.1.1"
 	}
-	1094.1.1={ #owns d_medina
-		death="1094.1.1"
+	1090.1.1={
+		death="1090.1.1"
 	}
 }
 
@@ -4736,7 +4582,7 @@
 	religion="shiite"
 	culture="bedouin_arabic"
 	father=159380
-	950.1.1={
+	980.1.1={
 		birth="980.1.1"
 	}
 	1050.1.1={

@@ -1129,18 +1129,7 @@ objectTypes = {
 		
 		idle   = "gfx\models\Mapindicators\Western_Marshal_Idle.xsm"
 		scale = 1.0f
-	}
-
-
-	EMFXActorType = {
-		name = "westerngfx_GALLEYS"
-		actorfile = "gfx\models\Cog.xac"
-		
-		idle   = "gfx\models\Cog_Moving.xsm"
-		scale = 1.5f
-	}
-
-	
+	}	
 	
 	EMFXActorType = {
 		name = "norsegfx_LIGHT_INFANTRY"
@@ -1398,6 +1387,13 @@ objectTypes = {
 		scale = 1.0f
 	}
 	
+	EMFXActorType = {
+		name = "jewishgfx_job_spiritual"
+		actorfile = "gfx\models\Mapindicators\jewish_rabbi.xac"
+		
+		idle   = "gfx\models\Mapindicators\jewish_rabbi_idle.xsm"
+	}
+
 	EMFXActorType = {
 		name = "saxongfx_LIGHT_INFANTRY"
 		actorfile = "gfx\models\Norse_Light_Infantry.xac"

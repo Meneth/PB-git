@@ -1835,8 +1835,11 @@ plot_gain_fellow_vassal_title = {
 		claimed_by = FROM
 	}
 	abort = {
-		holder_scope = {
-			character = FROM
+		OR = {
+			holder_scope = {
+				character = FROM
+			}
+			has_holder = no
 		}
 	}
 	abort_effect = {

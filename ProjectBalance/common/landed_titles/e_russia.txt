@@ -9,6 +9,13 @@ e_russia = {
 	name_tier = king
 	short_name = yes
 	
+	finnish = Suomi
+	lappish = Suomi
+	ugricbaltic = Suomi
+	komi = Suomi
+	samoyed = Suomi
+	mordvin = Suomi
+	
 	k_kiev = {
 		color={ 10 90 180 }
 		color2={ 255 255 255 }
@@ -1053,6 +1060,16 @@ e_russia = {
 				b_shcheremenski = {
 				}
 				b_kingisepp = {
+					swedish = "Jamborg"
+					norse = "Jamborg"
+					danish = "Jamburg"
+					norwegian = "Jamburg"
+					german = "Jamburg"
+					finnish = "Jaama"
+					samoyed = "Jaama"
+					mordvin = "Jaama"
+					lappish = "Jaama"
+					komi = "Jaama"
 				}
 				b_volosovo = {
 				}
