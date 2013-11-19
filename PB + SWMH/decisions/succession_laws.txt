@@ -10,6 +10,14 @@ succession_laws = {
 	
 		potential = {
 			holder_scope = {
+				OR = {
+					independent = yes
+					NOT = {
+						any_liege = {
+							holy_order = yes
+						}
+					}
+				}
 				NOT = { religion_group = muslim }
 				is_merchant_republic = no
 				is_patrician = no
@@ -69,6 +77,15 @@ succession_laws = {
 	
 		potential = {
 			holder_scope = {
+				OR = {
+					independent = yes
+					NOT = {
+						any_liege = {
+							holy_order = yes
+						}
+					}
+				}
+				
 				NOT = { religion_group = muslim }
 				is_merchant_republic = no
 				
@@ -171,6 +188,14 @@ succession_laws = {
 		dynasty_opinion = -5
 		potential = {
 			holder_scope = {
+				OR = {
+					independent = yes
+					NOT = {
+						any_liege = {
+							holy_order = yes
+						}
+					}
+				}
 				NOT = { religion_group = muslim }
 				OR = {
 					NOT = { religion_group = pagan_group }
@@ -215,19 +240,19 @@ succession_laws = {
 				OR = {
 					AND = {
 						tier = count
-						prestige = 100
+						prestige = 200
 					}
 					AND = {
 						tier = duke
-						prestige = 250
-					}
-					AND = {
-						tier = king
 						prestige = 500
 					}
 					AND = {
-						tier = emperor
+						tier = king
 						prestige = 1000
+					}
+					AND = {
+						tier = emperor
+						prestige = 2000
 					}
 				}
 			}
@@ -249,6 +274,14 @@ succession_laws = {
 		vassal_opinion = 10
 		potential = {
 			holder_scope = {
+				OR = {
+					independent = yes
+					NOT = {
+						any_liege = {
+							holy_order = yes
+						}
+					}
+				}
 				NOT = { religion_group = muslim }
 				is_merchant_republic = no
 				is_patrician = no
@@ -322,6 +355,14 @@ succession_laws = {
 		vassal_opinion = 5
 		potential = {
 			holder_scope = {
+				OR = {
+					independent = yes
+					NOT = {
+						any_liege = {
+							holy_order = yes
+						}
+					}
+				}
 				NOT = { religion_group = muslim }
 				is_merchant_republic = no
 				is_patrician = no
@@ -401,6 +442,14 @@ succession_laws = {
 		dynasty_opinion = -5
 		potential = {
 			holder_scope = {
+				OR = {
+					independent = yes
+					NOT = {
+						any_liege = {
+							holy_order = yes
+						}
+					}
+				}
 				OR = {
 					culture = mongol
 					NOT = { religion_group = pagan_group }
@@ -487,6 +536,14 @@ succession_laws = {
 				is_tribal_type_title = yes
 			}
 			holder_scope = {
+				OR = {
+					independent = yes
+					NOT = {
+						any_liege = {
+							holy_order = yes
+						}
+					}
+				}
 				is_republic = no
 				is_merchant_republic = no
 				is_patrician = no
@@ -501,8 +558,42 @@ succession_laws = {
 			always = no
 		}			
 	}
+	succ_papal_succession = {
+		potential = {
+			title = k_papal_state
+		}
+		
+		effect = {
+			succession = papal_succession
+		}
+		revoke_allowed = {
+			always = no
+		}		
+	}
+	
+	# Titles revert back to the liege on death
+	succ_appointment = {
+		potential = {
+			holder_scope = {
+				is_feudal = yes
+				independent = no
+				any_liege = {
+					holy_order = yes
+				}
+				is_merchant_republic = no
+			}
+		}
+		effect = {
+			succession = appointment
+		}
+		revoke_allowed = {
+			always = no
+		}		
+	}
+	
 	succ_open_elective = {
 		potential = {
+			NOT = { title = k_papal_state }
 			OR = {
 				is_primary_type_title = yes
 				AND = {
@@ -532,13 +623,23 @@ succession_laws = {
 			OR = {
 				is_landless_type_title = yes
 				holder_scope = { is_theocracy = no }
-				holder_scope = {
+				holder_scope = { 
 					NOT = { religion = catholic }
+					NOT = { religion = fraticelli }
 				}
 			}
-			holder_scope = {
+			holder_scope = { 
 				is_patrician = no
 				is_merchant_republic = no
+				OR = {
+					independent = yes
+					is_feudal = no
+					NOT = {
+						any_liege = {
+							holy_order = yes
+						}
+					}
+				}
 			}
 		}
 		allow = {
@@ -554,12 +655,11 @@ succession_laws = {
 		}
 		revoke_allowed = {
 			always = no
-		}			
+		}
 	}
 	succ_catholic_bishopric = {
 		potential = {
 			is_landless_type_title = no
-			
 			OR = {
 				AND = {
 					tier = baron
@@ -569,8 +669,20 @@ succession_laws = {
 			}
 			
 			holder_scope = {
-				religion = catholic
+				OR = {
+					religion = catholic
+					religion = fraticelli
+				}
 				is_merchant_republic = no
+				OR = {
+					independent = yes
+					is_feudal = no
+					NOT = {
+						any_liege = {
+							holy_order = yes
+						}
+					}
+				}
 			}
 			is_primary_type_title = no
 		}
@@ -599,6 +711,15 @@ gender_laws = {
 	cognatic_succession = {
 		potential = {
 			holder_scope = {
+				OR = {
+					independent = yes
+					NOT = {
+						any_liege = {
+							holy_order = yes
+						}
+					}
+					is_merchant_republic = yes
+				}
 				NOT = { religion_group = muslim }
 				NOT = { religion = tengri_pagan_reformed }
 				NOT = { religion = tengri_pagan }
@@ -654,7 +775,7 @@ gender_laws = {
 		male_dynasty_opinion = -10
 		
 		potential = {
-			holder_scope = {
+			holder_scope = { 
 				NOT = { religion_group = muslim }
 				NOT = { religion = tengri_pagan_reformed }
 				NOT = { religion = tengri_pagan }
@@ -676,44 +797,56 @@ gender_laws = {
 			is_primary_type_title = no
 		}
 		allow = {
-			OR = {
-				has_law = cognatic_succession
-				has_law = enatic_cognatic_succession
-			}
 			holder_scope = { prestige = 1000 }
 			OR = {
-				holder_scope = { culture = basque }
-				holder_scope = {
-					is_female = yes
-					NOT = { trait = content }
+				AND = {
+					has_law = cognatic_succession
 					OR = {
-						has_nickname = nick_the_conqueror
-						has_nickname = nick_the_holy
-						has_nickname = nick_the_able
-						has_nickname = nick_the_kind
-						has_nickname = nick_the_good
-						has_nickname = nick_the_troubadour
-						has_nickname = nick_the_strong
-						has_nickname = nick_the_magnanimous
-						has_nickname = nick_the_merry
-						has_nickname = nick_the_noble
-						has_nickname = nick_the_gentle
-						has_nickname = nick_the_silent
-						has_nickname = nick_the_just
-						has_nickname = nick_the_wise
-						has_nickname = nick_the_pious
-						has_nickname = nick_the_apostle
-						has_nickname = nick_the_blessed
-						has_nickname = nick_the_confessor
-						has_nickname = nick_the_monk
-						has_nickname = nick_the_ironside
-						has_nickname = nick_the_lion
-						has_nickname = nick_the_lionheart
-						has_nickname = nick_the_bold
-						has_nickname = nick_the_magnificent
-						has_nickname = nick_the_great
-						has_nickname = nick_the_saoshyant
+						holder_scope = { culture = basque }
+						holder_scope = { religion = cathar }
+						holder_scope = {
+							is_female = yes
+							NOT = { trait = content }
+							OR = {
+								has_nickname = nick_the_conqueror
+								has_nickname = nick_the_holy
+								has_nickname = nick_the_able
+								has_nickname = nick_the_kind
+								has_nickname = nick_the_good
+								has_nickname = nick_the_troubadour
+								has_nickname = nick_the_strong
+								has_nickname = nick_the_magnanimous
+								has_nickname = nick_the_merry
+								has_nickname = nick_the_noble
+								has_nickname = nick_the_gentle
+								has_nickname = nick_the_silent
+								has_nickname = nick_the_just
+								has_nickname = nick_the_wise
+								has_nickname = nick_the_pious
+								has_nickname = nick_the_apostle
+								has_nickname = nick_the_blessed
+								has_nickname = nick_the_confessor
+								has_nickname = nick_the_monk
+								has_nickname = nick_the_ironside
+								has_nickname = nick_the_lion
+								has_nickname = nick_the_lionheart
+								has_nickname = nick_the_bold
+								has_nickname = nick_the_magnificent
+								has_nickname = nick_the_great
+								has_nickname = nick_the_saoshyant
+							}
+						}
 					}
+				}
+				has_law = enatic_cognatic_succession
+				AND = {
+					holder_scope = {
+						custom_tooltip = {
+							text = gender_equality
+							has_global_flag = gender_equality
+						}
+					}
+					has_law = true_cognatic_succession
 				}
 			}
 		}
@@ -751,46 +884,58 @@ gender_laws = {
 			is_primary_type_title = no
 		}
 		allow = {
+			holder_scope = { prestige = 1000 }
 			OR = {
-				has_law = true_cognatic_succession
-				has_law = enatic_succession
-			}
-			holder_scope = {
-				prestige = 2000
-				is_female = yes
-				OR = {
-					trait = ambitious
-					trait = diligent
+				AND = {
+					has_law = true_cognatic_succession
+					holder_scope = {
+						prestige = 2000
+						is_female = yes
+						OR = {
+							trait = ambitious
+							trait = diligent
+						}
+						NOT = { trait = content }
+						NOT = { trait = slothful }
+						OR = {
+							has_nickname = nick_the_conqueror
+							has_nickname = nick_the_holy
+							has_nickname = nick_the_able
+							has_nickname = nick_the_kind
+							has_nickname = nick_the_good
+							has_nickname = nick_the_troubadour
+							has_nickname = nick_the_strong
+							has_nickname = nick_the_magnanimous
+							has_nickname = nick_the_merry
+							has_nickname = nick_the_noble
+							has_nickname = nick_the_gentle
+							has_nickname = nick_the_silent
+							has_nickname = nick_the_just
+							has_nickname = nick_the_wise
+							has_nickname = nick_the_pious
+							has_nickname = nick_the_apostle
+							has_nickname = nick_the_blessed
+							has_nickname = nick_the_confessor
+							has_nickname = nick_the_monk
+							has_nickname = nick_the_ironside
+							has_nickname = nick_the_lion
+							has_nickname = nick_the_lionheart
+							has_nickname = nick_the_bold
+							has_nickname = nick_the_magnificent
+							has_nickname = nick_the_great
+							has_nickname = nick_the_saoshyant
+						}
+					}
 				}
-				NOT = { trait = content }
-				NOT = { trait = slothful }
-				OR = {
-					has_nickname = nick_the_conqueror
-					has_nickname = nick_the_holy
-					has_nickname = nick_the_able
-					has_nickname = nick_the_kind
-					has_nickname = nick_the_good
-					has_nickname = nick_the_troubadour
-					has_nickname = nick_the_strong
-					has_nickname = nick_the_magnanimous
-					has_nickname = nick_the_merry
-					has_nickname = nick_the_noble
-					has_nickname = nick_the_gentle
-					has_nickname = nick_the_silent
-					has_nickname = nick_the_just
-					has_nickname = nick_the_wise
-					has_nickname = nick_the_pious
-					has_nickname = nick_the_apostle
-					has_nickname = nick_the_blessed
-					has_nickname = nick_the_confessor
-					has_nickname = nick_the_monk
-					has_nickname = nick_the_ironside
-					has_nickname = nick_the_lion
-					has_nickname = nick_the_lionheart
-					has_nickname = nick_the_bold
-					has_nickname = nick_the_magnificent
-					has_nickname = nick_the_great
-					has_nickname = nick_the_saoshyant
+				has_law = enatic_succession
+				AND = {
+					holder_scope = {
+						custom_tooltip = {
+							text = gender_equality
+							has_global_flag = gender_equality
+						}
+					}
+					has_law = true_cognatic_succession
 				}
 			}
 		}
@@ -832,38 +977,47 @@ gender_laws = {
 		}
 		allow = {
 			has_law = enatic_cognatic_succession
-			holder_scope = {
-				prestige = 3000
-				trait = ambitious
-				trait = diligent
-				is_female = yes
-				OR = {
-					has_nickname = nick_the_conqueror
-					has_nickname = nick_the_holy
-					has_nickname = nick_the_able
-					has_nickname = nick_the_kind
-					has_nickname = nick_the_good
-					has_nickname = nick_the_troubadour
-					has_nickname = nick_the_strong
-					has_nickname = nick_the_magnanimous
-					has_nickname = nick_the_merry
-					has_nickname = nick_the_noble
-					has_nickname = nick_the_gentle
-					has_nickname = nick_the_silent
-					has_nickname = nick_the_just
-					has_nickname = nick_the_wise
-					has_nickname = nick_the_pious
-					has_nickname = nick_the_apostle
-					has_nickname = nick_the_blessed
-					has_nickname = nick_the_confessor
-					has_nickname = nick_the_monk
-					has_nickname = nick_the_ironside
-					has_nickname = nick_the_lion
-					has_nickname = nick_the_lionheart
-					has_nickname = nick_the_bold
-					has_nickname = nick_the_magnificent
-					has_nickname = nick_the_great
-					has_nickname = nick_the_saoshyant
+			OR = {
+				holder_scope = {
+					prestige = 1000
+					trait = ambitious
+					trait = diligent
+					is_female = yes
+					OR = {
+						has_nickname = nick_the_conqueror
+						has_nickname = nick_the_holy
+						has_nickname = nick_the_able
+						has_nickname = nick_the_kind
+						has_nickname = nick_the_good
+						has_nickname = nick_the_troubadour
+						has_nickname = nick_the_strong
+						has_nickname = nick_the_magnanimous
+						has_nickname = nick_the_merry
+						has_nickname = nick_the_noble
+						has_nickname = nick_the_gentle
+						has_nickname = nick_the_silent
+						has_nickname = nick_the_just
+						has_nickname = nick_the_wise
+						has_nickname = nick_the_pious
+						has_nickname = nick_the_apostle
+						has_nickname = nick_the_blessed
+						has_nickname = nick_the_confessor
+						has_nickname = nick_the_monk
+						has_nickname = nick_the_ironside
+						has_nickname = nick_the_lion
+						has_nickname = nick_the_lionheart
+						has_nickname = nick_the_bold
+						has_nickname = nick_the_magnificent
+						has_nickname = nick_the_great
+						has_nickname = nick_the_saoshyant
+					}
+				}
+				holder_scope = {
+					prestige = 500
+					custom_tooltip = {
+						text = gender_equality
+						has_global_flag = gender_equality
+					}
 				}
 			}
 		}

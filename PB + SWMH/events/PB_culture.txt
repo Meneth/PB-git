@@ -787,7 +787,7 @@ character_event = {
 		culture_group = north_germanic
 		capital_scope = {
 			culture_group = celtic
-			NOT = { culture = norsegaelicic }
+			NOT = { culture = norsegaelic }
 			religion = ROOT
 		}
 	}
@@ -894,7 +894,7 @@ character_event = {
 		culture_group = north_germanic
 		location = {
 			culture_group = celtic
-			NOT = { culture = norsegaelicic }
+			NOT = { culture = norsegaelic }
 			religion = ROOT
 		}
 	}
@@ -979,7 +979,7 @@ province_event = {
 	
 	trigger = {
 		culture_group = celtic
-		NOT = { culture = norsegaelicic }
+		NOT = { culture = norsegaelic }
 		owner = {
 			culture_group = north_germanic
 		}
@@ -1091,7 +1091,7 @@ province_event = {
 	
 	trigger = {
 		culture_group = celtic
-		NOT = { culture = norsegaelicic }
+		NOT = { culture = norsegaelic }
 		owner = {
 			culture_group = north_germanic
 			top_liege = {
