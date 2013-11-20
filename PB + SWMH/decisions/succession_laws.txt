@@ -122,12 +122,11 @@ succession_laws = {
 		}
 		
 		allow = {
-				NOT = { title = d_swabia}
-				NOT = { title = d_lower_lorraine}
-				NOT = { title = d_bavaria}
-				NOT = { title = d_carinthia}
-				NOT = { title = d_saxony}
-				NOT = { title = d_franconia}
+            NOT = { title = d_swabia}
+            NOT = { title = d_lower_lorraine}
+            NOT = { title = d_bavaria}
+            NOT = { title = d_saxony}
+            NOT = { title = d_franconia}
 			OR = {
 				hidden_tooltip = {
 					has_crown_law_title = no
@@ -310,7 +309,6 @@ succession_laws = {
 			NOT = { title = d_swabia}
 			NOT = { title = d_lower_lorraine}
 			NOT = { title = d_bavaria}
-			NOT = { title = d_carinthia}
 			NOT = { title = d_saxony}
 			NOT = { title = d_franconia}			
 			NOT = { has_law = revokation_2 }
@@ -642,14 +640,7 @@ succession_laws = {
 				}
 			}
 		}
-		allow = {
-			NOT = { title = d_swabia}
-			NOT = { title = d_lower_lorraine}
-			NOT = { title = d_bavaria}
-			NOT = { title = d_carinthia}
-			NOT = { title = d_saxony}
-			NOT = { title = d_franconia}
-		}
+		
 		effect = {
 			succession = open_elective
 		}

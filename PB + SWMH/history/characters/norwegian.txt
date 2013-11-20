@@ -165,7 +165,8 @@
 	stewardship=5
 	religion=catholic
 	culture=norwegian
-	trait=just
+	trait=ambitious
+	trait=cruel # wouldn't really be "Hårdråde" without :)
 	trait=zealous
 	trait=envious
 	trait=brave

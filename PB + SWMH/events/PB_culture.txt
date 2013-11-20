@@ -164,6 +164,38 @@ province_event = {
 				culture = turkish
 			}
 		}
+		#Decentralized HRE
+		modifier = {
+			factor = 2.5
+			NOT = { culture = pommeranian }
+			NOT = { culture_group = baltic }
+			owner = {
+				top_liege = {
+					culture = PREV
+					primary_title = { has_law = hre_law_0 }
+				}
+			}
+		}
+		#Byzantine Theme System
+		modifier = {
+			factor = 3
+			owner = {
+				top_liege = {
+					culture = PREV
+					primary_title = { has_law = themes_0 }
+				}
+			}
+		}
+		#Byzantine Theme System
+		modifier = {
+			factor = 2
+			owner = {
+				top_liege = {
+					culture = PREV
+					primary_title = { has_law = themes_1 }
+				}
+			}
+		}
 	}
 
 	option = {
@@ -240,7 +272,7 @@ province_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 2100
+		months = 4500
 
 		modifier = {
 			factor = 1.5
@@ -259,20 +291,52 @@ province_event = {
 			owner = { NOT = { stewardship = 5 }}
 		}
 		modifier = {
-			factor = 0.75
+			factor = 0.84
 			owner = { stewardship = 10 }
 		}
 		modifier = {
-			factor = 0.75
+			factor = 0.84
 			owner = { stewardship = 11}
 		}
 		modifier = {
-			factor = 0.75
+			factor = 0.84
 			owner = { stewardship = 12 }
 		}
 		modifier = {
-			factor = 0.75
+			factor = 0.84
 			owner = { stewardship = 13 }
+		}
+		#Decentralized HRE
+		modifier = {
+			factor = 2.5
+			NOT = { culture = pommeranian }
+			NOT = { culture_group = baltic }
+			owner = {
+				top_liege = {
+					culture = PREV
+					primary_title = { has_law = hre_law_0 }
+				}
+			}
+		}
+		#Byzantine Theme System
+		modifier = {
+			factor = 3
+			owner = {
+				top_liege = {
+					culture = PREV
+					primary_title = { has_law = themes_0 }
+				}
+			}
+		}
+		#Byzantine Theme System
+		modifier = {
+			factor = 2
+			owner = {
+				top_liege = {
+					culture = PREV
+					primary_title = { has_law = themes_1 }
+				}
+			}
 		}
 	}
 

@@ -124,7 +124,7 @@
 }
 
 105 = {
-	name="Ælflæd"
+	name="Ælfgifu"
 	# AKA: Aelflaed
 	female = yes
 	dynasty=100052
@@ -135,11 +135,13 @@
 	religion="catholic"
 	culture="saxon"
 	trait="flamboyant_schemer"
-	963.1.2={
-		birth="963.1.2"
+	963.1.1={
+		birth=yes
 	}
 	1002.1.9={
-		death="1002.1.9"
+		death = {
+			death_reason = death_childbirth
+		}
 	}
 }
 
@@ -583,7 +585,6 @@
 		}
 	}
 }
-
 123 = {
 	name="Ældgyth" # of Mercia
 	# AKA: Ealdgyth
