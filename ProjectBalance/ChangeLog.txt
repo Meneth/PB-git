@@ -1,5 +1,6 @@
 3.3.2
 	(VIET Traits) Fixed lip-reading events happening even if the character already knows how to read lips
+	(VIET Traits) Updated to the latest version, adding 4 new traits (calm voice, absentminded, imposing, fertile)
 
 3.3.1
 	Updated to reflect the changes in CKII 2.0.1 (beta)
