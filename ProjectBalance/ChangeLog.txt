@@ -1,5 +1,6 @@
 3.3.2
 	(PB+SWMH) Updated to work with SWMH 2.85
+	(PB Module Pack) Ensured all modules work properly with CKII 2.0 and 2.0.1
 	(VIET Traits) Fixed lip-reading events happening even if the character already knows how to read lips
 	(VIET Traits) Updated to the latest version, adding 3 new traits (calm voice, imposing, fertile)
 	The formation of Rum no longer gives Rum the dejure kingdom of Nikaea with the exception of of the province of Nikaea (captured in 1075 historically)
