@@ -303,6 +303,7 @@ character_event = {
 					limit = {
 						trait = melodious_voice
 						NOT = { ROOT = { trait = powerful_voice } }
+						NOT = { ROOT = { trait = calm_voice } }
 					}
 					random = {
 						chance = 5
@@ -313,10 +314,22 @@ character_event = {
 					limit = {
 						trait = powerful_voice
 						NOT = { ROOT = { trait = melodious_voice } }
+						NOT = { ROOT = { trait = calm_voice } }
 					}
 					random = {
 						chance = 5
 						ROOT = { add_trait = powerful_voice }
+					}
+				}
+				if = {
+					limit = {
+						trait = calm_voice
+						NOT = { ROOT = { trait = powerful_voice } }
+						NOT = { ROOT = { trait = melodious_voice } }
+					}
+					random = {
+						chance = 5
+						ROOT = { add_trait = calm_voice }
 					}
 				}
 				if = {
@@ -351,6 +364,20 @@ character_event = {
 					random = {
 						chance = 5
 						ROOT = { add_trait = deaf }
+					}
+				}
+				if = {
+					limit = { trait = fertile }
+					random = {
+						chance = 10
+						ROOT = { add_trait = fertile }
+					}
+				}
+				if = {
+					limit = { trait = imposing }
+					random = {
+						chance = 5
+						ROOT = { add_trait = imposing }
 					}
 				}
 				if = {
@@ -587,6 +614,7 @@ character_event = {
 					limit = {
 						trait = melodious_voice
 						NOT = { ROOT = { trait = powerful_voice } }
+						NOT = { ROOT = { trait = calm_voice } }
 					}
 					random = {
 						chance = 5
@@ -597,10 +625,22 @@ character_event = {
 					limit = {
 						trait = powerful_voice
 						NOT = { ROOT = { trait = melodious_voice } }
+						NOT = { ROOT = { trait = calm_voice } }
 					}
 					random = {
 						chance = 5
 						ROOT = { add_trait = powerful_voice }
+					}
+				}
+				if = {
+					limit = {
+						trait = calm_voice
+						NOT = { ROOT = { trait = powerful_voice } }
+						NOT = { ROOT = { trait = melodious_voice } }
+					}
+					random = {
+						chance = 5
+						ROOT = { add_trait = calm_voice }
 					}
 				}
 				if = {
@@ -635,6 +675,20 @@ character_event = {
 					random = {
 						chance = 5
 						ROOT = { add_trait = deaf }
+					}
+				}
+				if = {
+					limit = { trait = fertile }
+					random = {
+						chance = 10
+						ROOT = { add_trait = fertile }
+					}
+				}
+				if = {
+					limit = { trait = imposing }
+					random = {
+						chance = 5
+						ROOT = { add_trait = imposing }
 					}
 				}
 				if = {
@@ -873,6 +927,7 @@ character_event = {
 					limit = {
 						trait = melodious_voice
 						NOT = { ROOT = { trait = powerful_voice } }
+						NOT = { ROOT = { trait = calm_voice } }
 					}
 					random = {
 						chance = 5
@@ -883,10 +938,22 @@ character_event = {
 					limit = {
 						trait = powerful_voice
 						NOT = { ROOT = { trait = melodious_voice } }
+						NOT = { ROOT = { trait = calm_voice } }
 					}
 					random = {
 						chance = 5
 						ROOT = { add_trait = powerful_voice }
+					}
+				}
+				if = {
+					limit = {
+						trait = calm_voice
+						NOT = { ROOT = { trait = powerful_voice } }
+						NOT = { ROOT = { trait = melodious_voice } }
+					}
+					random = {
+						chance = 5
+						ROOT = { add_trait = calm_voice }
 					}
 				}
 				if = {
@@ -921,6 +988,20 @@ character_event = {
 					random = {
 						chance = 5
 						ROOT = { add_trait = deaf }
+					}
+				}
+				if = {
+					limit = { trait = fertile }
+					random = {
+						chance = 10
+						ROOT = { add_trait = fertile }
+					}
+				}
+				if = {
+					limit = { trait = imposing }
+					random = {
+						chance = 5
+						ROOT = { add_trait = imposing }
 					}
 				}
 				if = {
@@ -1157,6 +1238,7 @@ character_event = {
 					limit = {
 						trait = melodious_voice
 						NOT = { ROOT = { trait = powerful_voice } }
+						NOT = { ROOT = { trait = calm_voice } }
 					}
 					random = {
 						chance = 5
@@ -1167,10 +1249,22 @@ character_event = {
 					limit = {
 						trait = powerful_voice
 						NOT = { ROOT = { trait = melodious_voice } }
+						NOT = { ROOT = { trait = calm_voice } }
 					}
 					random = {
 						chance = 5
 						ROOT = { add_trait = powerful_voice }
+					}
+				}
+				if = {
+					limit = {
+						trait = calm_voice
+						NOT = { ROOT = { trait = powerful_voice } }
+						NOT = { ROOT = { trait = melodious_voice } }
+					}
+					random = {
+						chance = 5
+						ROOT = { add_trait = calm_voice }
 					}
 				}
 				if = {
@@ -1205,6 +1299,20 @@ character_event = {
 					random = {
 						chance = 5
 						ROOT = { add_trait = deaf }
+					}
+				}
+				if = {
+					limit = { trait = fertile }
+					random = {
+						chance = 10
+						ROOT = { add_trait = fertile }
+					}
+				}
+				if = {
+					limit = { trait = imposing }
+					random = {
+						chance = 5
+						ROOT = { add_trait = imposing }
 					}
 				}
 				if = {

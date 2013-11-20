@@ -54,9 +54,9 @@ narrative_event = {
 		879 = { religion = miaphysite }
 		880 = { religion = miaphysite }
 		881 = { religion = pagan }
-		882 = { religion = miaphysite }
-		883 = { religion = miaphysite }
-		884 = { religion = miaphysite }
+		882 = { religion = jewish }
+		883 = { religion = jewish }
+		884 = { religion = jewish }
 		885 = { religion = miaphysite }
 		if = {
 			limit = { NOT = { year = 1080 } }

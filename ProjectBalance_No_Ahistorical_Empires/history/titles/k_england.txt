@@ -12,6 +12,7 @@
 
 927.7.12={
 	holder=33350 # Aethelstan the Glorious
+	law = succ_feudal_elective
 }
 939.10.28={
 	holder=102 # Edmund the Magnificent
@@ -58,6 +59,7 @@
 1066.10.14={
 	holder=140 # William the Conqueror
 	conquest_culture = norman
+	law = succ_primogeniture
 }
 1087.9.9={
 	holder = 146 #William II Rufus

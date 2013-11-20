@@ -911,26 +911,6 @@ d_pecheneg_band_modifier = {
 	light_cavalry = 300
 }
 
-d_romuva = {
-	levy_size = 5
-	light_infantry = 150
-	heavy_infantry = 300
-	light_cavalry = 50
-}
-
-d_suomenski = {
-	levy_size = 5
-	light_infantry = 150
-	heavy_infantry = 300
-	light_cavalry = 50
-}
-
-d_norse = {
-	levy_size = 6
-	light_infantry = 150
-	heavy_infantry = 350
-}
-
 d_norman_company_modifier = {
 	levy_size = 2
 	archers = 300
@@ -976,6 +956,7 @@ d_pecheneg_band_modifier = {
 	horse_archers = 300
 	light_cavalry = 300
 }
+
 
 d_turkic_band_modifier = {
 	levy_size = 1

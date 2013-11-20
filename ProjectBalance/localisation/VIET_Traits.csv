@@ -22,8 +22,6 @@ deaf_desc;This character is hard of hearing, or, worse, cannot hear at all. Such
 lip_reader;Lip-reader;Lip-reader;Lip-reader;;Lip-reader;;;;;;;;;x
 lip_reader_desc;This character has overcome their deafness by learning how to read lips.;This character has overcome their deafness by learning how to read lips.;This character has overcome their deafness by learning how to read lips.;;This character has overcome their deafness by learning how to read lips.;;;;;;;;;x
 wrymouth_death;of health complications due to wrymouth;of health complications due to wrymouth;of health complications due to wrymouth;;of health complications due to wrymouth;;;;;;;;;x
-creative;Creative;Creative;Creative;;Creative;;;;;;;;;x
-creative_desc;This character is renowned for their ability to develop imaginative solutions to problems and think outside the box.;x;x;;x;;;;;;;;;x
 EVTDESC1000109211;I’ve been deaf for as long as I can remember. I can’t understand anything when people talk to me, and it’s a real hassle when I communicate with anybody. There must be a way for me to understand others’ speech. Perhaps I can try to watch the way their lips move…;I’ve been deaf for as long as I can remember. I can’t understand anything when people talk to me, and it’s a real hassle when I communicate with anybody. There must be a way for me to understand others’ speech. Perhaps I can try to watch the way their lips move…;I’ve been deaf for as long as I can remember. I can’t understand anything when people talk to me, and it’s a real hassle when I communicate with anybody. There must be a way for me to understand others’ speech. Perhaps I can try to watch the way their lips move…;;I’ve been deaf for as long as I can remember. I can’t understand anything when people talk to me, and it’s a real hassle when I communicate with anybody. There must be a way for me to understand others’ speech. Perhaps I can try to watch the way their lips move…;;;;;;;;;x
 EVTOPTA1000109211;Let’s try this!;Let’s try this!;Let’s try this!;;Let’s try this!;;;;;;;;;x
 EVTOPTB1000109211;I should carefully observe everyone’s lips when they speak.;I should carefully observe everyone’s lips when they speak.;I should carefully observe everyone’s lips when they speak.;;I should carefully observe everyone’s lips when they speak.;;;;;;;;;x
@@ -38,3 +36,12 @@ nick_longshanks;Longshanks;;;;;;;;;;;;;x
 nick_wrymouth;Wrymouth;;;;;;;;;;;;;x
 nick_deaf;the Deaf;;;;;;;;;;;;;x
 nick_swift;the Swift;;;;;;;;;;;;;x
+nick_the_terrifying;the Terrifying;;;;;;;;;;;;;x
+#creative;Creative;Creative;Creative;;Creative;;;;;;;;;x
+#creative_desc;This character is more imaginative than most, able to concoct innovative solutions and come up with exceptional, unexpected ideas.;;;;;;;;;;;;;x
+calm_voice;Calm Voice;Calm Voice;Calm Voice;;Calm Voice;;;;;;;;;x
+calm_voice_desc;This character's voice is naturally soothing. While it is neither powerful nor melodious, its mildness can calm even the angriest of people, and slyly persuade even the most skeptical of men.;;;;;;;;;;;;;x
+imposing;Imposing;Imposing;Imposing;;Imposing;;;;;;;;;x
+imposing_desc;Whether because of their physical stature or just their typical complexion, this character has a striking posture and a commanding presence. To some, they are even terrifying at times.;;;;;;;;;;;;;x
+fertile;Fertile;Fertile;Fertile;;Fertile;;;;;;;;;x
+fertile_desc;This character is unusually fertile, and seems to be made for producing healthy heirs.;;;;;;;;;;;;;x

@@ -1,3 +1,12 @@
+3.3.2
+	(PB+SWMH) Updated to work with SWMH 2.85
+	(PB Module Pack) Ensured all modules work properly with CKII 2.0 and 2.0.1
+	(VIET Traits) Fixed lip-reading events happening even if the character already knows how to read lips
+	(VIET Traits) Updated to the latest version, adding 3 new traits (calm voice, imposing, fertile)
+	The formation of Rum no longer gives Rum the dejure kingdom of Nikaea with the exception of of the province of Nikaea (captured in 1075 historically)
+	Ensured the formation of Rum does not give them the county of Rhodos
+	Ensured that the formation of Rum does not leave Rum with enclaves in Persia
+
 3.3.1
 	Updated to reflect the changes in CKII 2.0.1 (beta)
 	Increased the liege levy multiplier from 0.45 to 0.75
