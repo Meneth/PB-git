@@ -1890,6 +1890,7 @@ e_britannia = {
 			culture = saxon
 			culture = norman
 			culture = norse
+			culture = norsegael
 			culture_group = celtic
 		}
 		OR = {
