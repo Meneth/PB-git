@@ -155,58 +155,50 @@ character_event = {
 		decadence = -20
 		set_global_flag = rum_formed
 		set_global_flag = rum_invaded_nikaea
-		k_nikaea = {
-			any_de_jure_vassal_title = {
-				limit = {
-					NOT = { title = d_cyprus }
-					holder_scope = {
-						OR = {
-							liege = { has_landed_title = e_byzantium }
-							AND = {
-								independent = no
-								liege = { character = PREV }
-								e_byzantium = {
-									holder_scope = {
-										war_with = PREVPREV
-									}
-								}
-							}
-						}
-						NOT = { has_landed_title = d_cyprus }
-						NOT = {
-							any_realm_title = {
-								NOT = { de_jure_liege_or_above = k_nikaea }
-								NOT = { de_jure_liege_or_above = k_trebizond }
-							}
-						}
+		c_nikaea = {
+			holder_scope = {
+				if = {
+					limit = {
+						tier = count
+						NOT = { num_of_count_titles = 2 }
 					}
-				}
-				holder_scope = {
 					set_defacto_liege = ROOT
 				}
-			}
-			any_de_jure_vassal_title = {
-				limit = {
-					NOT = { de_jure_liege_or_above = d_cyprus }
-					NOT = { title = d_cyprus }
-					holder_scope = {
-						top_liege = {
-							OR = {
-								has_landed_title = e_byzantium
-								AND = {
-									independent = no
-									liege = { character = PREV }
-									e_byzantium = {
-										holder_scope = {
-											war_with = PREVPREV
-										}
-									}
-								}
+				if = {
+					limit = {
+						NOT = {
+							AND = {
+								tier = count
+								NOT = { num_of_count_titles = 2 }
 							}
 						}
 					}
+					c_nikaea = { grant_title = ROOT }
 				}
-				grant_title = ROOT
+			}
+		}
+		c_rhodos = {
+			holder_scope = {
+				if = {
+					limit = {
+						tier = count
+						NOT = { num_of_count_titles = 2 }
+						culture = greek
+					}
+					set_defacto_liege = e_byzantium
+				}
+				if = {
+					limit = {
+						NOT = {
+							AND = {
+								tier = count
+								NOT = { num_of_count_titles = 2 }
+								culture = greek
+							}
+						}
+					}
+					e_byzantium = { holder_scope = { c_rhodos = { grant_title = PREV } } }
+				}
 			}
 		}
 		k_trebizond = {
@@ -457,6 +449,7 @@ narrative_event = {
 						liege = { character = FROM }
 						NOT = { has_landed_title = d_azerbaijan }
 						NOT = { has_landed_title = d_vaspurakan }
+						NOT = { has_landed_title = d_edessa }
 					}
 				}
 				holder_scope = {
@@ -477,6 +470,7 @@ narrative_event = {
 						liege = { character = FROM }
 						NOT = { has_landed_title = d_azerbaijan }
 						NOT = { has_landed_title = d_vaspurakan }
+						NOT = { has_landed_title = d_edessa }
 					}
 				}
 				holder_scope = {
@@ -592,6 +586,23 @@ narrative_event = {
 				NOT = { religion = ROOT }
 			}
 			religion = ROOT
+		}
+		#Ensures Rum doesn't have enclaves in Persia
+		e_persia = {
+			holder_scope = {
+				e_persia = {
+					any_de_jure_vassal_title = {
+						limit = {
+							NOT = { de_jure_liege_or_above = k_armenia }
+							tier = count
+							holder_scope = {
+								liege = { character = ROOT }
+							}
+						}
+						grant_title = PREVPREV
+					}
+				}
+			}
 		}
 	}
 	option = {
