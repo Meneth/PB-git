@@ -1,3 +1,6 @@
+3.3.3
+	(PB+SWMH) Fixed some dependency issues, potentially fixing certain CTDs
+
 3.3.2
 	(PB+SWMH) Updated to work with SWMH 2.85
 	(PB Module Pack) Ensured all modules work properly with CKII 2.0 and 2.0.1
