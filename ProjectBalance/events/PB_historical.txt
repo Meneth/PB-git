@@ -201,6 +201,49 @@ character_event = {
 				}
 			}
 		}
+		d_paphlagonia = {
+			holder_scope = {
+				if = {
+					limit = {
+						has_global_flag = SWMH
+						NOT = {
+							any_realm_title = {
+								tier = count
+								duchy = { NOT = { title = d_paphlagonia } }
+							}
+						}
+					}
+					set_defacto_liege = ROOT
+				}
+				if = {
+					limit = {
+						has_global_flag = SWMH
+						any_realm_title = {
+							tier = count
+							duchy = { NOT = { title = d_paphlagonia } }
+						}
+					}
+					d_paphlagonia = {
+						any_de_jure_vassal_title = {
+							if = {
+								limit = {
+									holder_scope = { tier = count }
+								}
+								holder_scope = { set_defacto_liege = ROOT }
+							}
+							if = {
+								limit = {
+									holder_scope = { NOT = { tier = count } }
+								}
+								grant_title = ROOT
+							}
+						}
+						destroy_landed_title = THIS
+					}
+					e_byzantium = { holder_scope = { c_rhodos = { grant_title = PREV } } }
+				}
+			}
+		}
 		k_trebizond = {
 			any_de_jure_vassal_title = {
 				limit = {

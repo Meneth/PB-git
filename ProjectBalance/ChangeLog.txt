@@ -1,3 +1,10 @@
+3.3.3
+	(PB+SWMH) Fixed some dependency issues, potentially fixing certain CTDs
+	(PB+SWMH) Fixed a CTD when certain holy orders are formed
+	(PB+SWMH) Fixed the formation of Rum not giving Rum the duchy of Paphlagonia
+	(No Ahistorical Empires) Fixed some ahistorical empires still partially existing dejure in PB+SWMH
+	The "no tribal invasions against other Mongols before 1350" limitation now properly applies
+
 3.3.2
 	(PB+SWMH) Updated to work with SWMH 2.85
 	(PB Module Pack) Ensured all modules work properly with CKII 2.0 and 2.0.1
