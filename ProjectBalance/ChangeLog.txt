@@ -1,5 +1,6 @@
 3.3.3
 	(PB+SWMH) Fixed some dependency issues, potentially fixing certain CTDs
+	(No Ahistorical Empires) Fixed some ahistorical empires still partially existing dejure in PB+SWMH
 
 3.3.2
 	(PB+SWMH) Updated to work with SWMH 2.85
