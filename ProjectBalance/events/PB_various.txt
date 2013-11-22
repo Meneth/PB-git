@@ -1223,5 +1223,206 @@ character_event = {
 		}
 	}
 }
+
+#AI joins autonomy faction
+character_event = {
+	id = meneth.211
+	
+	desc = meneth.211.desc
+	picture = GFX_evt_battle
+	border = GFX_event_normal_frame_religion
+	
+	trigger = {
+		ai = yes
+		independent = no
+		is_adult = yes
+		is_landed = yes
+		liege = { is_feudal = yes }
+		liege = {
+			OR = {
+				tier = king
+				tier = emperor
+			}
+		}
+		NOT = { has_character_flag = desires_autonomy }
+		#Character needs some reason to join
+		OR = {
+			trait = ambitious
+			trait = envious
+			trait = deceitful
+			trait = greedy
+			NOT = { opinion = { who = LIEGE value = 0 } }
+			liege = { has_law = king_peace_2 }
+			liege = { has_law = emperor_peace_2 }
+			liege = { has_law = revokation_2 }
+		}
+		
+	}
+	mean_time_to_happen = {
+		months = 12
+		modifier = {
+			factor = 100
+			has_opinion_modifier = {
+				who = LIEGE
+				modifier = opinion_coerced_into_leaving_faction
+			}
+		}
+		modifier = {
+			factor = 0.5
+			tier = duke
+		}
+		modifier = {
+			factor = 0.1
+			tier = king
+		}
+		modifier = {
+			factor = 2
+			tier = count
+		}
+		modifier = {
+			factor = 0.75
+			NOT = { opinion = { who = LIEGE value = -10 } }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { opinion = { who = LIEGE value = -50 } }
+		}
+		modifier = {
+			factor = 0.25
+			NOT = { opinion = { who = LIEGE value = -75 } }
+		}
+		modifier = {
+			factor = 2
+			opinion = { who = LIEGE value = 25 }
+		}
+		modifier = {
+			factor = 5
+			opinion = { who = LIEGE value = 50 }
+		}
+		modifier = {
+			factor = 10
+			opinion = { who = LIEGE value = 75 }
+		}
+		modifier = {
+			factor = 0.75
+			has_law = king_peace_1
+		}
+		modifier = {
+			factor = 0.5
+			has_law = king_peace_2
+		}
+		modifier = {
+			factor = 0.75
+			has_law = revokation_1
+		}
+		modifier = {
+			factor = 0.5
+			has_law = revokation_2
+		}
+		modifier = {
+			factor = 0.9
+			has_law = crown_levies_1
+		}
+		modifier = {
+			factor = 0.8
+			has_law = crown_levies_2
+		}
+		modifier = {
+			factor = 0.7
+			has_law = crown_levies_3
+		}
+		modifier = {
+			factor = 0.6
+			has_law = crown_levies_4
+		}
+		modifier = {
+			factor = 0.8
+			has_law = inheritance_1
+		}
+		modifier = {
+			factor = 10
+			trait = content
+		}
+		modifier = {
+			factor = 10
+			trait = imbecile
+		}
+		modifier = {
+			factor = 10
+			trait = inbred
+		}
+		modifier = {
+			factor = 10
+			trait = craven
+		}
+		modifier = {
+			factor = 10
+			trait = slow
+		}
+		modifier = {
+			factor = 2
+			trait = kind
+		}
+		modifier = {
+			factor = 2
+			trait = charitable
+		}
+		modifier = {
+			factor = 2
+			trait = honest
+		}
+		modifier = {
+			factor = 1.5
+			trait = humble
+		}
+		modifier = {
+			factor = 1.5
+			trait = just
+		}
+		modifier = {
+			factor = 0.75
+			trait = proud
+		}
+		modifier = {
+			factor = 0.75
+			trait = brave
+		}
+		modifier = {
+			factor = 0.75
+			trait = arbitrary
+		}
+		modifier = {
+			factor = 0.5
+			trait = envious
+		}
+		modifier = {
+			factor = 0.5
+			trait = greedy
+		}
+		modifier = {
+			factor = 0.5
+			trait = impaler
+		}
+		modifier = {
+			factor = 0.5
+			trait = deceitful
+		}
+		modifier = {
+			factor = 0.25
+			trait = ambitious
+		}
+		modifier = {
+			factor = 0.2
+			liege = {
+				has_law = hre_law_0
+			}
+		}
+	}
+	option = {
+		name = OK
+		set_character_flag = desires_autonomy
+	}
+}
+
 #meneth.218 taken
 #meneth.211 free

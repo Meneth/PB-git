@@ -487,7 +487,6 @@ faction_remove_king_peace = {
 			factor = 4.0
 			NOT = { opinion = { who = LIEGE value = -75 } }
 		}
-		
 		modifier = {
 			factor = 1.5
 			has_law = king_peace_2
@@ -520,7 +519,6 @@ faction_remove_king_peace = {
 			factor = 1.25
 			has_law = inheritance_1
 		}
-		
 		modifier = {
 			factor = 0.01
 			trait = content

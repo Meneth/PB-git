@@ -1,0 +1,98 @@
+# Desires autonomy
+faction_autonomy = {
+	type = character
+	
+	# Plotter scope
+	potential = {
+		prisoner = no
+		is_adult = yes
+		is_ruler = yes
+		independent = no
+		is_landed = yes
+		liege = { is_feudal = yes }
+		primary_title = { higher_tier_than = BARON }
+		NOT = { trait = incapable }
+		NOT = { trait = imbecile }
+		liege = {
+			OR = {
+				tier = king
+				tier = emperor
+			}
+		}
+	}
+	
+	chance = {
+		factor = 100
+		
+		modifier = {
+			factor = 0
+			holder_scope = {
+				any_spouse = { character = FROM }
+			}
+		}
+		modifier = {
+			factor = 0
+			current_heir = {
+				character = FROM
+			}
+		}
+		modifier = {
+			factor = 0
+			FROM = {
+				OR = {
+					trait = content
+					trait = imbecile
+					trait = inbred
+					trait = craven
+					trait = slow
+					NOT = { has_character_flag = desires_autonomy }
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			FROM = {
+				primary_title = { is_primary_type_title = yes } # Mercs, the Pope, Holy Orders, etc
+			}
+		}
+	}
+	
+	# AI membership weight: ROOT is the prospective member. FROM is the faction leader. FROMFROM is the target title or character.
+	membership = {
+		factor = 100
+		
+		modifier = {
+			factor = 0
+			OR = {
+				prisoner = yes
+				trait = incapable
+				NOT = { age = 16 }
+				is_landed = no
+				NOT = { has_character_flag = desires_autonomy }
+			}
+		}
+		modifier = {
+			factor = 0
+			FROMFROM = {
+				current_heir = {
+					character = ROOT
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			primary_title = { is_primary_type_title = yes } # Mercs, the Pope, Holy Orders, etc
+		}
+	}
+	
+	success = {
+		always = no
+	}
+	abort = {
+		always = no
+	}
+	abort_effect = {
+	}
+	effect = {
+	}
+}
