@@ -257,7 +257,12 @@ plot_gain_title = {
 	}
 	effect = {
 		FROM = {
-			change_intrigue = 1
+			if = {
+				limit = {
+					NOT = { intrigue = 10 }
+				}
+				change_intrigue = 1
+			}
 			any_plot_backer = {
 				reverse_opinion = {
 					modifier = opinion_grateful
@@ -598,7 +603,6 @@ plot_gain_vassal_title = {
 	}
 	effect = {
 		FROM = {
-			change_intrigue = 1
 			any_plot_backer = {
 				reverse_opinion = {
 					modifier = opinion_grateful
@@ -1446,7 +1450,12 @@ plot_weaken_fellow_vassal = {
 	}
 	effect = {
 		FROM = {
-			change_intrigue = 1
+			if = {
+				limit = {
+					NOT = { intrigue = 10 }
+				}
+				change_intrigue = 1
+			}
 			any_plot_backer = {
 				reverse_opinion = {
 					modifier = opinion_grateful
@@ -1852,7 +1861,12 @@ plot_gain_fellow_vassal_title = {
 	}
 	effect = {
 		FROM = {
-			change_intrigue = 1
+			if = {
+				limit = {
+					NOT = { intrigue = 10 }
+				}
+				change_intrigue = 1
+			}
 			any_plot_backer = {
 				reverse_opinion = {
 					modifier = opinion_grateful

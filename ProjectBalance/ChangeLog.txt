@@ -1,3 +1,6 @@
+3.3.4
+	Updated to correspond with CKII 2.0.1 (non-beta)
+
 3.3.3
 	(PB+SWMH) Fixed some dependency issues, potentially fixing certain CTDs
 	(PB+SWMH) Fixed a CTD when certain holy orders are formed
