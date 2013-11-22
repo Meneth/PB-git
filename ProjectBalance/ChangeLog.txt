@@ -1,6 +1,7 @@
 3.3.4
 	Updated to correspond with CKII 2.0.1 (non-beta)
 	Fixed Serbia being held by a Bolghar in its title history
+	Ghana is now playable in 867
 
 3.3.3
 	(PB+SWMH) Fixed some dependency issues, potentially fixing certain CTDs
