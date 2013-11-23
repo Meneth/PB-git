@@ -5,6 +5,7 @@
 	Fixed the Kipchak horde disintegrating when starting a campaign (credit goes to jordarkelf)
 	Fixed some positioning issues (credit goes to jordarkelf)
 	Added custom icons for the Remove Title Revocation and Reduce Crown Levies factions, and for mending the Schism as a Catholic (credit goes to AnaxXiphos)
+	Shortened crown law descriptions to prevent/reduce text overflow
 
 3.3.3
 	(PB+SWMH) Fixed some dependency issues, potentially fixing certain CTDs
