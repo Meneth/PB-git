@@ -3,6 +3,7 @@
 	Fixed Serbia being held by a Bolghar in its title history
 	Ghana is now playable in 867
 	Fixed the Kipchak horde disintegrating when starting a campaign
+	Added custom icons for the Remove Title Revocation and Reduce Crown Levies factions
 
 3.3.3
 	(PB+SWMH) Fixed some dependency issues, potentially fixing certain CTDs
