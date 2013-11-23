@@ -65,6 +65,14 @@ character_event = {
 			change_variable = { which = "autonomy_desire" value = 15 }
 		}
 		if = {
+			limit = { liege = { dynasty = ROOT } }
+			change_variable = { which = "autonomy_desire" value = -5 }
+		}
+		if = {
+			limit = { liege = { is_close_relative = ROOT } }
+			change_variable = { which = "autonomy_desire" value = -5 }
+		}
+		if = {
 			limit = { NOT = { opinion = { who = LIEGE value = -10 } } }
 			change_variable = { which = "autonomy_desire" value = 5 }
 		}
@@ -232,6 +240,304 @@ character_event = {
 		if = {
 			limit = { NOT = { check_variable = { which = autonomy_desire value = -5 } } }
 			clr_character_flag = desires_autonomy
+		}
+	}
+}
+
+#Faction meeting
+character_event = {
+	id = meneth.219
+	is_triggered_only = yes
+	
+	desc = meneth.219.desc
+	picture = GFX_evt_emissary
+	border = GFX_event_normal_frame_religion
+	
+	trigger = {
+		leads_faction = faction_autonomy
+	}
+	option = {
+		name = OK
+		set_variable = { which = "autonomy_mood" value = 0 }
+		any_faction_backer = {
+			limit = { in_faction = faction_autonomy }
+			character_event = { id = meneth.220 days = 1 }
+		}
+		character_event = { id = meneth.220 }
+		character_event = { id = meneth.221 days = 3 }
+	}
+}
+
+#Faction meeting mood
+character_event = {
+	id = meneth.220
+	is_triggered_only = yes
+	
+	desc = meneth.220.desc
+	picture = GFX_evt_emissary
+	border = GFX_event_normal_frame_religion
+	
+	option = { #Happy
+		name = OK
+		FROM = { change_variable = { which = "autonomy_mood" value = 1 } }
+		if = {
+			limit = { FROM = { character = ROOT } }
+			set_character_flag = faction_autonomy_happy
+		}
+		if = {
+			limit = { tier = duke }
+			FROM = { change_variable = { which = "autonomy_mood" value = 1 } }
+		}
+		if = {
+			limit = { tier = king }
+			FROM = { change_variable = { which = "autonomy_mood" value = 2 } }
+		}
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				factor = 1.5
+				opinion = { who = LIEGE value = 10 }
+			}
+			modifier = {
+				factor = 1.5
+				opinion = { who = LIEGE value = 30 }
+			}
+			modifier = {
+				factor = 1.5
+				opinion = { who = LIEGE value = 50 }
+			}
+			modifier = {
+				factor = 1.5
+				opinion = { who = LIEGE value = 75 }
+			}
+			modifier = {
+				factor = 5
+				trait = content
+			}
+			modifier = {
+				factor = 4
+				trait = imbecile
+			}
+			modifier = {
+				factor = 4
+				trait = inbred
+			}
+			modifier = {
+				factor = 3
+				trait = slow
+			}
+			modifier = {
+				factor = 2
+				trait = kind
+			}
+			modifier = {
+				factor = 2
+				trait = charitable
+			}
+			modifier = {
+				factor = 2
+				liege = { dynasty = ROOT }
+			}
+			modifier = {
+				factor = 2
+				liege = { is_close_relative = ROOT }
+			}
+		}
+	}
+	option = { #Neutral
+		name = OK
+		if = {
+			limit = { FROM = { character = ROOT } }
+			set_character_flag = faction_autonomy_neutral
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	option = { #Angry
+		name = OK
+		FROM = { change_variable = { which = "autonomy_mood" value = -1 } }
+		if = {
+			limit = { tier = duke }
+			FROM = { change_variable = { which = "autonomy_mood" value = -1 } }
+		}
+		if = {
+			limit = { tier = king }
+			FROM = { change_variable = { which = "autonomy_mood" value = -2 } }
+		}
+		if = {
+			limit = { FROM = { character = ROOT } }
+			set_character_flag = faction_autonomy_angry
+		}
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				factor = 2
+				NOT = { opinion = { who = LIEGE value = -10 } }
+			}
+			modifier = {
+				factor = 2
+				NOT = { opinion = { who = LIEGE value = -30 } }
+			}
+			modifier = {
+				factor = 2
+				NOT = { opinion = { who = LIEGE value = -50 } }
+			}
+			modifier = {
+				factor = 2
+				NOT = { opinion = { who = LIEGE value = -75 } }
+			}
+			modifier = {
+				factor = 1.5
+				crownlaw_title = { has_law = king_peace_1 }
+			}
+			modifier = {
+				factor = 2
+				crownlaw_title = { has_law = king_peace_2 }
+			}
+			modifier = {
+				factor = 1.6
+				crownlaw_title = { has_law = emperor_peace_1 }
+			}
+			modifier = {
+				factor = 2.5
+				crownlaw_title = { has_law = emperor_peace_2 }
+			}
+			modifier = {
+				factor = 1.75
+				crownlaw_title = { has_law = revokation_1 }
+			}
+			modifier = {
+				factor = 2
+				crownlaw_title = { has_law = revokation_2 }
+			}
+			modifier = {
+				factor = 1.2
+				crownlaw_title = { has_law = crown_levies_1 }
+			}
+			modifier = {
+				factor = 1.4
+				crownlaw_title = { has_law = crown_levies_2 }
+			}
+			modifier = {
+				factor = 1.7
+				crownlaw_title = { has_law = crown_levies_3 }
+			}
+			modifier = {
+				factor = 2
+				crownlaw_title = { has_law = crown_levies_4 }
+			}
+			modifier = {
+				factor = 1.3
+				crownlaw_title = { has_law = inheritance_1 }
+			}
+			modifier = {
+				factor = 0.75
+				trait = kind
+			}
+			modifier = {
+				factor = 0.75
+				trait = charitable
+			}
+			modifier = {
+				factor = 0.75
+				trait = honest
+			}
+			modifier = {
+				factor = 0.75
+				trait = humble
+			}
+			modifier = {
+				factor = 0.75
+				trait = just
+			}
+			modifier = {
+				factor = 1.5
+				trait = proud
+			}
+			modifier = {
+				factor = 1.5
+				trait = arbitrary
+			}
+			modifier = {
+				factor = 2
+				trait = envious
+			}
+			modifier = {
+				factor = 2
+				trait = greedy
+			}
+			modifier = {
+				factor = 2
+				trait = impaler
+			}
+			modifier = {
+				factor = 2
+				trait = deceitful
+			}
+			modifier = {
+				factor = 5
+				trait = ambitious
+			}
+		}
+	}
+}
+
+#Mood gauged
+character_event = {
+	id = meneth.221
+	is_triggered_only = yes
+	
+	desc = meneth.221.desc
+	picture = GFX_evt_emissary
+	border = GFX_event_normal_frame_religion
+	
+	option = { #Happy meeting
+		name = meneth.221.a
+		trigger = {
+			check_variable = { which = "autonomy_mood" value = 0 }
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 1000
+				has_character_flag = faction_autonomy_happy
+			}
+			modifier = {
+				factor = 0
+				has_character_flag = faction_autonomy_angry
+			}
+		}
+	}
+	option = { #Neutral meeting
+		name = meneth.221.b
+		trigger = {
+			check_variable = { which = "autonomy_mood" value = -5 }
+			NOT = { check_variable = { which = "autonomy_mood" value = 5 } }
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 1000
+				has_character_flag = faction_autonomy_neutral
+			}
+		}
+	}
+	option = { #Angry meeting
+		name = meneth.221.c
+		trigger = {
+			NOT = { check_variable = { which = "autonomy_mood" value = 0 } }
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 1000
+				has_character_flag = faction_autonomy_angry
+			}
+			modifier = {
+				factor = 0
+				has_character_flag = faction_autonomy_happy
+			}
 		}
 	}
 }
