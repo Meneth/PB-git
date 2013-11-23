@@ -43,6 +43,13 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 	spriteType = {
+		name = "GFX_faction_autonomy"
+		texturefile = "gfx/ambitions/plot_lower_crown_authority.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
 		name = "GFX_obj_amass_fortune"
 		texturefile = "gfx/ambitions/obj_amass_wealth.tga"
 		noOfFrames = 1

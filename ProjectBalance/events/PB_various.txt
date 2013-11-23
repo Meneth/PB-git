@@ -1252,6 +1252,11 @@ character_event = {
 				tier = king
 				tier = emperor
 			}
+			OR = { #Ensures someone at least moderately strong creates the faction
+				any_vassal = { leads_faction = faction_autonomy }
+				ROOT = { tier = duke }
+				NOT = { any_vassal = { tier = duke } }
+			}
 		}
 		#Character needs some reason to join
 		OR = {
