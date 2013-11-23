@@ -152,7 +152,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_mend_great_schism_catholic"
-		texturefile = "gfx\\interface\\decision_icon_mend_great_schism.dds"
+		texturefile = "gfx\\interface\\decision_icon_mend_great_schism_catholic.tga"
 	}
 	spriteType = {
 		name = "GFX_toggle_marriage_decisions"
