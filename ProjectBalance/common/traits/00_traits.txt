@@ -1346,7 +1346,7 @@ just = {
 	ai_zeal = 10
 	
 	command_modifier = {
-		morale_defence = 0.2
+		morale_defence = 0.02
 		damage = -0.03
 	}
 }
@@ -1396,7 +1396,7 @@ zealous = {
 	ai_zeal = 100
 	
 	command_modifier = {
-		damage = 0.1
+		damage = 0.01
 		religious_enemy = 0.03
 	}
 }
