@@ -719,7 +719,7 @@ NMilitary = {
 	MAX_LEADERSHIP_TRAITS = 2,
 	
 	LIEGE_LEVY_REINF_RATE = 0.025,
-	LIEGE_LEVY_SIZE_MULTIPLIER = 0.75,				-- The Size of the liege levy will be the total troops in the vassal subrealm * this
+	LIEGE_LEVY_SIZE_MULTIPLIER = 1,				-- The Size of the liege levy will be the total troops in the vassal subrealm * this
 	LIEGE_FLEET_SIZE_MULTIPLIER = 1.0,				-- As above but for galleys
 	LIEGE_LEVY_COST_MULTIPLIER = 1.0,				-- The vassal will pay regular maintenance * this for the liege levy
 	LIEGE_LEVY_SUBUNIT_SIZE_CUTOFF = 3000,			-- The max size of each liege levy subunit.
@@ -817,16 +817,16 @@ NMilitary = {
 	CAPITAL_COUNTY_VASSAL_COUNT_LEVY_MULT = 1,	-- Used instead of CAPITAL_COUNTY_LEVY_MULT for vassal counts
 	CAPITAL_COUNTY_VASSAL_LEVY_MULT = 1.25,		-- Used instead of CAPITAL_COUNTY_LEVY_MULT for non-count vassals
 	CAPITAL_COUNTY_LEVY_MULT = 1.5,				-- Multiplier to direct levies in the capital county
-	CAPITAL_COUNTY_LIEGE_LEVY_MULT = 1,			-- Multiplier to liege levies in the capital county
+	CAPITAL_COUNTY_LIEGE_LEVY_MULT = 0.7,			-- Multiplier to liege levies in the capital county
 	CAPITAL_DUCHY_VASSAL_LEVY_MULT = 1.15,		-- Used instead of CAPITAL_DUCHY_LEVY_MULT for non-count vassals
 	CAPITAL_DUCHY_LEVY_MULT = 1.25,
-	CAPITAL_DUCHY_LIEGE_LEVY_MULT = 0.85,
+	CAPITAL_DUCHY_LIEGE_LEVY_MULT = 0.6,
 	CAPITAL_KINGDOM_LEVY_MULT = 1,
-	CAPITAL_KINGDOM_LIEGE_LEVY_MULT = 0.65,
+	CAPITAL_KINGDOM_LIEGE_LEVY_MULT = 0.5,
 	CAPITAL_EMPIRE_LEVY_MULT = 1,
-	CAPITAL_EMPIRE_LIEGE_LEVY_MULT = 0.50,
+	CAPITAL_EMPIRE_LIEGE_LEVY_MULT = 0.4,
 	OUTSIDE_LEVY_MULT = 1,						-- Multiplier to direct levies outside all capital regions
-	OUTSIDE_LIEGE_LEVY_MULT = 0.40				-- Multiplier to liege levies outside all capital regions
+	OUTSIDE_LIEGE_LEVY_MULT = 0.3				-- Multiplier to liege levies outside all capital regions
 },
 
 NTechnology = {

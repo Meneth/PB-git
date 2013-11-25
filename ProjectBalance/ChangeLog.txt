@@ -9,6 +9,8 @@
 	Applied the increased levy cost via a multiplier (new in CKII 2.0) rather than as direct maintenance. As a result, most units now cost a bit less retinue cap, while general maintenance is mostly the same
 	Increased the overall liege levy multiplier to 100% (from 75%)
 	Reduced the severity of liege levy drop-off based on dejure status (70%, 60%, 50%, 40% instead of 100%, 75%, 50%, 35%, 25%). Overall levies will be roughly the same for small rulers, and slightly higher for large rulers
+	Reduced the opinion bonus from technology to 8 (from 12/10)
+	Reduced the cultural flexibility modifier from technology to 30% (from 40%)
 
 3.3.3
 	(PB+SWMH) Fixed some dependency issues, potentially fixing certain CTDs
