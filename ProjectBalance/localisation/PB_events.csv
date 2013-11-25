@@ -34,6 +34,30 @@ meneth.213.desc;[FromFrom.GetTitledFirstName] has requested an exchange of priso
 meneth.214.desc;[From.GetTitledFirstName] has agreed to release [FromFrom.GetTitledFirstName], and we've in turn released one of their dynasty members.;;;;;;;;;;;;;x
 meneth.215.desc;[From.GetTitledFirstName] has not agreed to release [FromFrom.GetTitledFirstName].;;;;;;;;;;;;;x
 meneth.217.desc;The laws of your realm prevent you from instituting anything but minimal obligations from your vassals. Your demesne laws have therefore been returned to minimum.;;;;;;;;;;;;;x
+meneth.219.desc;It is time for a faction meeting. We will determine what action to take, if any, once we know how everyone feels about our liege's rule.;;;;;;;;;;;;;x
+meneth.220.desc;A faction meeting has begun, and the first point on the agenda is determining how the faction as a whole feels about our liege's rule. What is your opinion of their rule?;;;;;;;;;;;;;x
+meneth.220.a;Their rule is just;;;;;;;;;;;;;x
+meneth.220.b;No opinion;;;;;;;;;;;;;x
+meneth.220.c;Inustices must be righted;;;;;;;;;;;;;x
+meneth.221.desc;Based on the faction vote, the following options are available to us. What action should we take? Your choice will be put to a vote.;;;;;;;;;;;;;x
+meneth.221.a;Provide financial support;;;;;;;;;;;;;x
+meneth.221.b;Preserve status quo;;;;;;;;;;;;;x
+meneth.221.c;Demand lower obligations;;;;;;;;;;;;;x
+meneth.221.d;Demand revocation removed;;;;;;;;;;;;;x
+meneth.221.e;Demand internal peace removed;;;;;;;;;;;;;x
+meneth.222.desc;A vote has been called on whether or not to provide our liege with financial support for his current war. It is proposed that we all give up a tenth of our income this year to fund the war. Do you support this?;;;;;;;;;;;;;x
+meneth.223.desc;All the votes have been tallied.;;;;;;;;;;;;;x
+meneth.223.a;The vote succeeded;;;;;;;;;;;;;x
+meneth.223.b;The vote failed;;;;;;;;;;;;;x
+meneth.224.desc;All the votes have been tallied. The vote succeeded;;;;;;;;;;;;;x
+meneth.225.desc;All the votes have been tallied. The vote failed;;;;;;;;;;;;;x
+meneth.226.desc;Our vassals have decided to provide us with financial support in our current war.;;;;;;;;;;;;;x
+meneth.227.desc;A vote has been called on whether or not to demand lower obligations. It is proposed that we present our liege with an ultimatum. Do you support this?;;;;;;;;;;;;;x
+meneth.228.desc;Our vassals demand that we lower their obligations. Should we do this?;;;;;;;;;;;;;x
+meneth.229.desc;A vote has been called on whether or not to demand title revocation removed. It is proposed that we present our liege with an ultimatum. Do you support this?;;;;;;;;;;;;;x
+meneth.230.desc;Our vassals demand that we get rid of title revocation. Should we do this?;;;;;;;;;;;;;x
+meneth.231.desc;A vote has been called on whether or not to demand internal peace removed. It is proposed that we present our liege with an ultimatum. Do you support this?;;;;;;;;;;;;;x
+meneth.232.desc;Our vassals demand that we get rid of internal peace. Should we do this?;;;;;;;;;;;;;x
 meneth.400.desc;It is time we asserted our dominion over Anatolia. We should invade Iconium.;;;;;;;;;;;;;x
 meneth.400.a;To war!;;;;;;;;;;;;;x
 meneth.400.b;I'd rather not;;;;;;;;;;;;;x

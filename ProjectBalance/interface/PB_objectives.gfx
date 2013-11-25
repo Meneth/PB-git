@@ -44,7 +44,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_faction_autonomy"
-		texturefile = "gfx/ambitions/plot_lower_crown_authority.tga"
+		texturefile = "gfx/ambitions/faction_autonomy.tga"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
