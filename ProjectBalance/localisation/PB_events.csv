@@ -1,4 +1,6 @@
 #CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+Yes;Yes;;;;;;;;;;;;;x
+No;No;;;;;;;;;;;;;x
 meneth.0.desc;Our family has assimilated the local culture.;;;;;;;;;;;;;x
 meneth.0.a;Assimilate the local culture;;;;;;;;;;;;;x
 meneth.0.b;Do nothing;;;;;;;;;;;;;x
@@ -58,6 +60,11 @@ meneth.229.desc;A vote has been called on whether or not to demand title revocat
 meneth.230.desc;Our vassals demand that we get rid of title revocation. Should we do this?;;;;;;;;;;;;;x
 meneth.231.desc;A vote has been called on whether or not to demand internal peace removed. It is proposed that we present our liege with an ultimatum. Do you support this?;;;;;;;;;;;;;x
 meneth.232.desc;Our vassals demand that we get rid of internal peace. Should we do this?;;;;;;;;;;;;;x
+meneth.233.desc;Our liege has refused our ultimatum! Should we call for open revolt?;;;;;;;;;;;;;x
+meneth.234.desc;Our liege has refused our ultimatum, and the faction leader is calling for an open revolt! Is revolt the right choice?;;;;;;;;;;;;;x
+meneth.235.desc;The votes have been tallied.;;;;;;;;;;;;;x
+meneth.235.a;To war!;;;;;;;;;;;;;x
+meneth.235.b;Peace in our time;;;;;;;;;;;;;x
 meneth.400.desc;It is time we asserted our dominion over Anatolia. We should invade Iconium.;;;;;;;;;;;;;x
 meneth.400.a;To war!;;;;;;;;;;;;;x
 meneth.400.b;I'd rather not;;;;;;;;;;;;;x

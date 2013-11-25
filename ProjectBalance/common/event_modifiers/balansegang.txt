@@ -90,3 +90,9 @@ baqt = {
 	icon = 6
 	local_tax_modifier = 0.5
 }
+
+reduced_obligations = {
+	icon = 34
+	castle_vassal_max_levy = -0.2
+	castle_vassal_tax_modifier = -0.1
+}
