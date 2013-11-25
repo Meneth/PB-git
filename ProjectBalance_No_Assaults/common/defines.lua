@@ -613,7 +613,7 @@ NMilitary = {
 	NUMBER_OF_TROOPS_PER_GALLEY = 200,				-- Number of men each galley can hold
 	FRIENDLY_TERRITORY_LEVY_RETURN_PERCENT = 1.0,	-- Percent of subunit that returns to levy when unit is disbanded in friendly territory
 	OTHER_TERRITORY_LEVY_RETURN_PERCENT = 0.5,		-- Percent of subunit that returns to levy when unit is disbanded in non-friendly territory
-	LEVY_MAINTENANCE_FACTOR = 1.5,					-- General maintenance factor for levy troops
+	LEVY_MAINTENANCE_FACTOR = 2,					-- General maintenance factor for levy troops
 	HOLDING_LEVY_SIZE_OWNER_MARTIAL_BASE = 0.50,	
 	HOLDING_LEVY_SIZE_OWNER_MARTIAL_MULT = 0.05,	-- Levy size modifier: Each point of the holding owner's Martial skill is multiplied with this and added to HOLDING_LEVY_SIZE_OWNER_MARTIAL_BASE
 	MERCENARY_MAINTENANCE_FACTOR = 3.0,				-- Maintenance factor for NORMAL mercenary units
@@ -736,7 +736,7 @@ NMilitary = {
 	LIGHT_INFANTRY_GRAPHICAL_FACTOR = 1,
 
 	HEAVY_INFANTRY_MORALE = 5,
-	HEAVY_INFANTRY_MAINTENANCE = 3,
+	HEAVY_INFANTRY_MAINTENANCE = 2,
 	HEAVY_INFANTRY_PHASE_SKIRMISH_ATTACK = 0.25,
 	HEAVY_INFANTRY_PHASE_MELEE_ATTACK = 6,
 	HEAVY_INFANTRY_PHASE_PURSUE_ATTACK = 2,
@@ -746,7 +746,7 @@ NMilitary = {
 	HEAVY_INFANTRY_GRAPHICAL_FACTOR = 1.25,
 
 	PIKEMEN_MORALE = 6,
-	PIKEMEN_MAINTENANCE = 3,
+	PIKEMEN_MAINTENANCE = 2,
 	PIKEMEN_PHASE_SKIRMISH_ATTACK = 0.1,
 	PIKEMEN_PHASE_MELEE_ATTACK = 5,
 	PIKEMEN_PHASE_PURSUE_ATTACK = 0.2,
@@ -756,7 +756,7 @@ NMilitary = {
 	PIKEMEN_GRAPHICAL_FACTOR = 1.5,
 
 	LIGHT_CAVALRY_MORALE = 4,
-	LIGHT_CAVALRY_MAINTENANCE = 3,
+	LIGHT_CAVALRY_MAINTENANCE = 2,
 	LIGHT_CAVALRY_PHASE_SKIRMISH_ATTACK = 1.5,
 	LIGHT_CAVALRY_PHASE_MELEE_ATTACK = 4.5,
 	LIGHT_CAVALRY_PHASE_PURSUE_ATTACK = 15,
@@ -766,7 +766,7 @@ NMilitary = {
 	LIGHT_CAVALRY_GRAPHICAL_FACTOR = 1,
 	
 	KNIGHTS_MORALE = 10,
-	KNIGHTS_MAINTENANCE = 8,
+	KNIGHTS_MAINTENANCE = 6,
 	KNIGHTS_PHASE_SKIRMISH_ATTACK = 0.5,
 	KNIGHTS_PHASE_MELEE_ATTACK = 10,
 	KNIGHTS_PHASE_PURSUE_ATTACK = 8,
@@ -820,13 +820,13 @@ NMilitary = {
 	CAPITAL_COUNTY_LIEGE_LEVY_MULT = 1,			-- Multiplier to liege levies in the capital county
 	CAPITAL_DUCHY_VASSAL_LEVY_MULT = 1.15,		-- Used instead of CAPITAL_DUCHY_LEVY_MULT for non-count vassals
 	CAPITAL_DUCHY_LEVY_MULT = 1.25,
-	CAPITAL_DUCHY_LIEGE_LEVY_MULT = 0.75,
+	CAPITAL_DUCHY_LIEGE_LEVY_MULT = 0.85,
 	CAPITAL_KINGDOM_LEVY_MULT = 1,
-	CAPITAL_KINGDOM_LIEGE_LEVY_MULT = 0.5,
+	CAPITAL_KINGDOM_LIEGE_LEVY_MULT = 0.65,
 	CAPITAL_EMPIRE_LEVY_MULT = 1,
-	CAPITAL_EMPIRE_LIEGE_LEVY_MULT = 0.35,
+	CAPITAL_EMPIRE_LIEGE_LEVY_MULT = 0.50,
 	OUTSIDE_LEVY_MULT = 1,						-- Multiplier to direct levies outside all capital regions
-	OUTSIDE_LIEGE_LEVY_MULT = 0.25				-- Multiplier to liege levies outside all capital regions
+	OUTSIDE_LIEGE_LEVY_MULT = 0.40				-- Multiplier to liege levies outside all capital regions
 },
 
 NTechnology = {
