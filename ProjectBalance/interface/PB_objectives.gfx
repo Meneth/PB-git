@@ -23,7 +23,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_faction_remove_revokation"
-		texturefile = "gfx/ambitions/plot_lower_crown_authority.tga"
+		texturefile = "gfx/interface/plot_remove_revokation.tga"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -37,7 +37,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_faction_lower_crown_levies"
-		texturefile = "gfx/ambitions/plot_lower_crown_authority.tga"
+		texturefile = "gfx/interface/plot_lower_crown_levies.tga"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"

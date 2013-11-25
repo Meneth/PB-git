@@ -77,7 +77,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_faction_remove_revokation_decision"
-		texturefile = "gfx\\interface\\decision_icon_faction_lower_crown_authority_ultimatum.dds"
+		texturefile = "gfx\\interface\\decision_icon_faction_remove_revokation_ultimatum.tga"
 	}
 	spriteType = {
 		name = "GFX_faction_remove_inheritance_decision"
@@ -85,7 +85,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_faction_lower_crown_levies_decision"
-		texturefile = "gfx\\interface\\decision_icon_faction_lower_crown_authority_ultimatum.dds"
+		texturefile = "gfx\\interface\\decision_icon_faction_lower_crown_levies_ultimatum.tga"
 	}
 	#Prisoner interactions
 	spriteType = {
@@ -152,7 +152,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_mend_great_schism_catholic"
-		texturefile = "gfx\\interface\\decision_icon_mend_great_schism.dds"
+		texturefile = "gfx\\interface\\decision_icon_mend_great_schism_catholic.tga"
 	}
 	spriteType = {
 		name = "GFX_toggle_marriage_decisions"

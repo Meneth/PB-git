@@ -767,7 +767,6 @@
 	trait="cruel"
 	trait="wroth"
 	trait="slow"
-	add_claim = d_shiite
 	father=45050
 	1066.1.1={
 		birth="1066.1.1"
@@ -785,10 +784,10 @@
 	trait="arbitrary"
 	trait="humble"
 	trait="charitable"
-	add_claim = d_shiite
 	father=45048
 	1049.1.1={
 		birth="1049.1.1"
+		add_claim = k_shiite
 	}
 	1110.1.1={
 		death="1110.1.1"
@@ -821,10 +820,10 @@
 	trait="kinslayer"
 	trait="zealous"
 	trait="ambitious"
-	add_claim = d_shiite
 	father=159422
 	1017.1.1={
 		birth="1017.1.1"
+		add_claim = k_shiite
 	}
 	1078.1.1={
 		death="1078.1.1"
@@ -839,10 +838,12 @@
 	trait="chaste"
 	trait="craven"
 	trait="paranoid"
-	add_claim = d_shiite
 	father=1000158155
 	1039.1.1={
 		birth="1039.1.1"
+	}
+	1078.1.1={
+		add_claim = k_shiite
 	}
 	1086.1.1={
 		death="1086.1.1"
@@ -875,10 +876,12 @@
 	trait="temperate"
 	trait="patient"
 	trait="envious"
-	add_claim = d_shiite
 	father=1000158155
 	1044.1.1={
 		birth="1044.1.1"
+	}
+	1078.1.1={
+		add_claim = k_shiite
 	}
 	1123.1.1={
 		death="1123.1.1"
