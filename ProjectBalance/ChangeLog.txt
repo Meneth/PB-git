@@ -6,6 +6,7 @@
 	Fixed some positioning issues (credit goes to jordarkelf)
 	Added custom icons for the Remove Title Revocation and Reduce Crown Levies factions, and for mending the Schism as a Catholic (credit goes to AnaxXiphos)
 	Shortened crown law descriptions to prevent/reduce text overflow
+	Applied the increased levy cost via a multiplier (new in CKII 2.0) rather than as direct maintenance. As a result, most units now cost a bit less retinue cap, while general maintenance is mostly the same
 
 3.3.3
 	(PB+SWMH) Fixed some dependency issues, potentially fixing certain CTDs
