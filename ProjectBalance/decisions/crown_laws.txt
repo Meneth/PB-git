@@ -9,10 +9,6 @@ de_jure_laws = {
 		group = crown_levies
 		default = yes
 		
-		feudal_opinion = 3
-		city_opinion = 3
-		temple_opinion = 3
-		
 		potential = {
 			holder_scope = { is_republic = no }
 			NOT = { title = e_byzantium }
@@ -51,6 +47,10 @@ de_jure_laws = {
 	crown_levies_1 = {
 		show_as_title = yes
 		group = crown_levies
+		
+		feudal_opinion = -3
+		city_opinion = -3
+		temple_opinion = -3
 		
 		potential = {
 			holder_scope = { is_republic = no }
@@ -151,9 +151,9 @@ de_jure_laws = {
 		show_as_title = yes
 		group = crown_levies
 		
-		feudal_opinion = -5
-		city_opinion = -5
-		temple_opinion = -5
+		feudal_opinion = -8
+		city_opinion = -8
+		temple_opinion = -8
 		
 		potential = {
 			holder_scope = { is_republic = no }
@@ -275,9 +275,9 @@ de_jure_laws = {
 		show_as_title = yes
 		group = crown_levies
 		
-		feudal_opinion = -10
-		city_opinion = -10
-		temple_opinion = -10
+		feudal_opinion = -12
+		city_opinion = -12
+		temple_opinion = -12
 		
 		potential = {
 			holder_scope = { is_republic = no }
