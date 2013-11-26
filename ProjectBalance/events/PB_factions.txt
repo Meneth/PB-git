@@ -50,6 +50,7 @@ character_event = {
 			crownlaw_title = { has_law = king_peace_2 }
 			crownlaw_title = { has_law = emperor_peace_2 }
 			crownlaw_title = { has_law = revokation_2 }
+			tier = duke
 			tier = king
 		}
 	}
@@ -234,17 +235,17 @@ character_event = {
 			change_variable = { which = "autonomy_desire" value = 50 }
 		}
 		if = {
-			limit = { check_variable = { which = autonomy_desire value = 0 } }
+			limit = { check_variable = { which = autonomy_desire value = -5 } }
 			set_character_flag = desires_autonomy
 		}
 		if = {
-			limit = { NOT = { check_variable = { which = autonomy_desire value = -15 } } }
+			limit = { NOT = { check_variable = { which = autonomy_desire value = -20 } } }
 			clr_character_flag = desires_autonomy
 		}
 	}
 }
 
-#Faction meeting
+#Faction meeting called
 character_event = {
 	id = meneth.219
 	
@@ -291,7 +292,7 @@ character_event = {
 	}
 }
 
-#Faction meeting mood
+#Faction meeting mood vote
 character_event = {
 	id = meneth.220
 	is_triggered_only = yes
@@ -510,11 +511,19 @@ character_event = {
 				factor = 5
 				trait = ambitious
 			}
+			modifier = {
+				factor = 1.5
+				liege = { demesne_size = 1.01 } # Over demesne limit
+			}
+			modifier = {
+				factor = 2
+				liege = { demesne_size = 1.5 } # Far over demesne limit
+			}
 		}
 	}
 }
 
-#Mood gauged
+#Order of business based on mood
 character_event = {
 	id = meneth.221
 	is_triggered_only = yes
@@ -529,6 +538,8 @@ character_event = {
 		clr_character_flag = faction_autonomy_lower_obligations
 		clr_character_flag = faction_autonomy_no_revocation
 		clr_character_flag = faction_autonomy_no_internal_peace
+		clr_character_flag = faction_autonomy_release_prisoners
+		clr_character_flag = faction_autonomy_give_away_county
 	}
 	option = { #Provide support against invasion
 		name = meneth.221.a
@@ -580,19 +591,159 @@ character_event = {
 				has_character_flag = faction_autonomy_neutral
 			}
 			modifier = {
-				factor = 0.01
+				factor = 0.5
 				OR = {
 					has_character_flag = faction_autonomy_happy
 					has_character_flag = faction_autonomy_angry
 				}
 			}
+			modifier = {
+				factor = 2
+				trait = content
+			}
 		}
 	}
-	option = { #Demand lower obligations
+	option = { #Reduce authority
 		name = meneth.221.c
 		trigger = {
 			NOT = { check_variable = { which = "autonomy_mood" value = 0 } }
 		}
+		character_event = { id = meneth.235 } #What law to revoke
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				has_character_flag = faction_autonomy_happy
+			}
+			modifier = {
+				factor = 2
+				trait = greedy
+			}
+			modifier = {
+				factor = 4
+				trait = ambitious
+			}
+			modifier = {
+				factor = 0.1
+				liege = {
+					has_law = feudal_obligations_0
+					has_law = crown_levies_0
+					NOT = {
+						has_law = king_peace_1
+						has_law = king_peace_2
+						has_law = emperor_peace_1
+						has_law = emperor_peace_2
+						has_law = revokation_1
+						has_law = revokation_2
+					}
+				}
+			}
+			modifier = {
+				factor = 1.5
+				liege = {
+					has_law = crown_levies_1
+				}
+			}
+			modifier = {
+				factor = 2
+				liege = {
+					has_law = crown_levies_2
+				}
+			}
+			modifier = {
+				factor = 2.5
+				liege = {
+					has_law = crown_levies_3
+				}
+			}
+			modifier = {
+				factor = 3
+				liege = {
+					has_law = crown_levies_4
+				}
+			}
+			modifier = {
+				factor = 2
+				liege = {
+					has_law = king_peace_1
+				}
+			}
+			modifier = {
+				factor = 3
+				liege = {
+					has_law = king_peace_2
+				}
+			}
+			modifier = {
+				factor = 2
+				liege = {
+					has_law = emperor_peace_1
+				}
+			}
+			modifier = {
+				factor = 3
+				liege = {
+					has_law = emperor_peace_2
+				}
+			}
+			modifier = {
+				factor = 2
+				liege = {
+					has_law = revokation_1
+				}
+			}
+			modifier = {
+				factor = 3
+				liege = {
+					has_law = revokation_2
+				}
+			}
+		}
+	}
+	option = { #Weaken liege
+		name = meneth.221.d
+		trigger = {
+			NOT = { check_variable = { which = "autonomy_mood" value = 0 } }
+		}
+		character_event = { id = meneth.236 } #How to weaken liege
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 1.5
+				trait = craven
+			}
+			modifier = {
+				factor = 2
+				trait = ambitious
+			}
+			modifier = {
+				factor = 2
+				trait = greedy
+			}
+			modifier = {
+				factor = 2
+				liege = {
+					any_vassal = {
+						prisoner = yes
+						host = { character = PREVPREV }
+						reverse_opinion = { who = ROOT value = 50 }
+					}
+				}
+			}
+		}
+	}
+}
+
+#What law to revoke?
+character_event = {
+	id = meneth.236
+	is_triggered_only = yes
+	
+	desc = meneth.236.desc
+	picture = GFX_evt_emissary
+	border = GFX_event_normal_frame_religion
+	option = { #Demand lower obligations
+		name = meneth.236.a
 		set_character_flag = faction_autonomy_lower_obligations
 		any_faction_backer = {
 			limit = { in_faction = faction_autonomy }
@@ -647,9 +798,8 @@ character_event = {
 		}
 	}
 	option = { #Demand revocation removed
-		name = meneth.221.d
+		name = meneth.236.b
 		trigger = {
-			NOT = { check_variable = { which = "autonomy_mood" value = 0 } }
 			liege = {
 				OR = {
 					has_law = revokation_1
@@ -688,9 +838,8 @@ character_event = {
 		}
 	}
 	option = { #Demand internal peace removed
-		name = meneth.221.e
+		name = meneth.236.c
 		trigger = {
-			NOT = { check_variable = { which = "autonomy_mood" value = 0 } }
 			liege = {
 				OR = {
 					has_law = king_peace_1
@@ -733,192 +882,131 @@ character_event = {
 	}
 }
 
-#Give financial support?
+#How to weaken liege?
 character_event = {
-	id = meneth.222
+	id = meneth.237
 	is_triggered_only = yes
 	
-	desc = meneth.222.desc
+	desc = meneth.237.desc
 	picture = GFX_evt_emissary
 	border = GFX_event_normal_frame_religion
-	
-	immediate = {
-		if = {
-			limit = { FROM = { character = ROOT } }
-			character_event = { id = meneth.223 days = 3 }
+	option = { #Demand release of prisoners
+		trigger = {
+			liege = {
+				any_vassal = {
+					prisoner = yes
+					host = { character = PREVPREV }
+				}
+			}
 		}
-	}
-	option = { #Yes
-		name = Yes
-		FROM = { change_variable = { which = "faction_vote" value = 1 } }
-		if = {
-			limit = { FROM = { character = ROOT } }
-			change_variable = { which = "faction_vote" value = 1 }
+		name = meneth.237.a
+		set_character_flag = faction_autonomy_release_prisoners
+		any_faction_backer = {
+			limit = { in_faction = faction_autonomy }
+			character_event = { id = meneth.238 days = 1 }
 		}
-		if = {
-			limit = { tier = duke }
-			FROM = { change_variable = { which = "faction_vote" value = 1 } }
-		}
-		if = {
-			limit = { tier = king }
-			FROM = { change_variable = { which = "faction_vote" value = 2 } }
-		}
+		character_event = { id = meneth.238 }
 		ai_chance = {
 			factor = 2
 			modifier = {
-				factor = 1.5
-				opinion = { who = LIEGE value = 10 }
+				factor = 0 #If they dislike all the prisoners they don't want them released
+				liege = {
+					NOT = {
+						any_vassal = {
+							prisoner = yes
+							host = { character = PREVPREV }
+							reverse_opinion = { who = ROOT value = 0 }
+						}
+					}
+				}
 			}
 			modifier = {
-				factor = 1.5
-				opinion = { who = LIEGE value = 30 }
+				factor = 5 #If they like one of the prisoners they want them released
+				liege = {
+					any_vassal = {
+						prisoner = yes
+						host = { character = PREVPREV }
+						reverse_opinion = { who = ROOT value = 50 }
+					}
+				}
 			}
-			modifier = {
-				factor = 1.5
-				opinion = { who = LIEGE value = 50 }
+		}
+	}
+	option = { #Demand that liege give away a title
+		trigger = {
+			liege = {
+				demesne_size = 1.01 #Over demesne limit
+				any_demesne_title = {
+					tier = count #Has a county to give away
+					can_be_given_away = yes
+					NOT = {
+						location = {
+							is_capital = yes
+						}
+					}
+				}
 			}
+		}
+		name = meneth.237.b
+		set_character_flag = faction_autonomy_give_away_county
+		any_faction_backer = {
+			limit = { in_faction = faction_autonomy }
+			character_event = { id = meneth.240 days = 1 }
+		}
+		character_event = { id = meneth.240 }
+		ai_chance = {
+			factor = 2
 			modifier = {
-				factor = 1.5
-				opinion = { who = LIEGE value = 75 }
-			}
-			modifier = {
-				factor = 5
-				trait = content
-			}
-			modifier = {
-				factor = 4
-				trait = imbecile
-			}
-			modifier = {
-				factor = 4
-				trait = inbred
-			}
-			modifier = {
-				factor = 3
-				trait = slow
+				factor = 2
+				liege = { demesne_size = 1.2 }
 			}
 			modifier = {
 				factor = 2
-				trait = kind
+				liege = { demesne_size = 1.4 }
+			}
+			modifier = {
+				factor = 2
+				liege = { demesne_size = 1.5 }
 			}
 			modifier = {
 				factor = 10
-				trait = charitable
-			}
-			modifier = {
-				factor = 2
-				liege = { dynasty = ROOT }
-			}
-			modifier = {
-				factor = 2
-				liege = { is_close_relative = ROOT }
+				liege = { demesne_size = 2 }
 			}
 		}
 	}
-	option = { #No
-		name = No
-		FROM = { change_variable = { which = "faction_vote" value = -1 } }
-		if = {
-			limit = { tier = duke }
-			FROM = { change_variable = { which = "faction_vote" value = -1 } }
+	option = { #Demand that liege give money to all faction members
+		name = meneth.237.c
+		set_character_flag = faction_autonomy_give_away_county
+		any_faction_backer = {
+			limit = { in_faction = faction_autonomy }
+			character_event = { id = meneth.242 days = 1 }
 		}
-		if = {
-			limit = { tier = king }
-			FROM = { change_variable = { which = "faction_vote" value = -2 } }
-		}
-		if = {
-			limit = { FROM = { character = ROOT } }
-			change_variable = { which = "faction_vote" value = -1 }
-		}
+		character_event = { id = meneth.242 }
 		ai_chance = {
-			factor = 2
+			factor = 1
 			modifier = {
-				factor = 2
-				NOT = { opinion = { who = LIEGE value = -10 } }
+				factor = 0.1
+				NOT = { liege = { scaled_wealth = 0 } }
 			}
 			modifier = {
 				factor = 2
-				NOT = { opinion = { who = LIEGE value = -30 } }
+				liege = { scaled_wealth = 1 }
 			}
 			modifier = {
 				factor = 2
-				NOT = { opinion = { who = LIEGE value = -50 } }
+				liege = { scaled_wealth = 3 }
 			}
 			modifier = {
 				factor = 2
-				NOT = { opinion = { who = LIEGE value = -75 } }
+				NOT = { wealth = 0 }
 			}
 			modifier = {
-				factor = 1.5
-				crownlaw_title = { has_law = king_peace_1 }
-			}
-			modifier = {
-				factor = 2
-				crownlaw_title = { has_law = king_peace_2 }
-			}
-			modifier = {
-				factor = 1.6
-				crownlaw_title = { has_law = emperor_peace_1 }
-			}
-			modifier = {
-				factor = 2.5
-				crownlaw_title = { has_law = emperor_peace_2 }
-			}
-			modifier = {
-				factor = 1.75
-				crownlaw_title = { has_law = revokation_1 }
-			}
-			modifier = {
-				factor = 2
-				crownlaw_title = { has_law = revokation_2 }
-			}
-			modifier = {
-				factor = 1.2
-				crownlaw_title = { has_law = crown_levies_1 }
-			}
-			modifier = {
-				factor = 1.4
-				crownlaw_title = { has_law = crown_levies_2 }
-			}
-			modifier = {
-				factor = 1.7
-				crownlaw_title = { has_law = crown_levies_3 }
-			}
-			modifier = {
-				factor = 2
-				crownlaw_title = { has_law = crown_levies_4 }
-			}
-			modifier = {
-				factor = 1.3
-				crownlaw_title = { has_law = inheritance_1 }
-			}
-			modifier = {
-				factor = 1.5
-				trait = proud
-			}
-			modifier = {
-				factor = 1.5
-				trait = arbitrary
-			}
-			modifier = {
-				factor = 2
-				trait = envious
+				factor = 0.01
+				trait = charitable
 			}
 			modifier = {
 				factor = 10
 				trait = greedy
-			}
-			modifier = {
-				factor = 2
-				trait = impaler
-			}
-			modifier = {
-				factor = 2
-				trait = deceitful
-			}
-			modifier = {
-				factor = 5
-				trait = ambitious
 			}
 		}
 	}
@@ -983,7 +1071,7 @@ character_event = {
 	}
 }
 
-#Successful vote
+#Vote succeeded, alert
 character_event = {
 	id = meneth.224
 	is_triggered_only = yes
@@ -996,7 +1084,7 @@ character_event = {
 	}
 }
 
-#Failed vote
+#Vote failed, alert
 character_event = {
 	id = meneth.225
 	is_triggered_only = yes
@@ -1403,11 +1491,19 @@ character_event = {
 				factor = 2
 				liege = { is_close_relative = ROOT }
 			}
+			modifier = {
+				factor = 1.5
+				FROM = { has_character_flag = faction_autonomy_release_prisoners }
+			}
+			modifier = {
+				factor = 2
+				FROM = { has_character_flag = faction_autonomy_give_away_county }
+			}
 		}
 	}
 }
 
-#Vote on revolt
+#Vote on revolt results
 character_event = {
 	id = meneth.235
 	is_triggered_only = yes
@@ -1451,14 +1547,222 @@ character_event = {
 				}
 			}
 		}
+		if = {
+			limit = {
+				OR = {
+					has_character_flag = faction_autonomy_release_prisoners
+					has_character_flag = faction_autonomy_give_away_county
+				}
+			}
+			liege = {
+				reverse_war = {
+					target = ROOT
+					casus_belli = depose_liege
+					faction = faction_autonomy
+				}
+			}
+		}
 		clr_character_flag = faction_autonomy_lower_obligations
 		clr_character_flag = faction_autonomy_no_revocation
 		clr_character_flag = faction_autonomy_no_internal_peace
+		clr_character_flag = faction_autonomy_release_prisoners
+		clr_character_flag = faction_autonomy_give_away_county
 	}
 	option = {
 		name = meneth.235.b
 		trigger = {
 			NOT = { check_variable = { which = "faction_vote" value = 0 } }
+		}
+	}
+}
+
+#Give financial support?
+character_event = {
+	id = meneth.222
+	is_triggered_only = yes
+	
+	desc = meneth.222.desc
+	picture = GFX_evt_emissary
+	border = GFX_event_normal_frame_religion
+	
+	immediate = {
+		if = {
+			limit = { FROM = { character = ROOT } }
+			character_event = { id = meneth.223 days = 3 }
+		}
+	}
+	option = { #Yes
+		name = Yes
+		FROM = { change_variable = { which = "faction_vote" value = 1 } }
+		if = {
+			limit = { FROM = { character = ROOT } }
+			change_variable = { which = "faction_vote" value = 1 }
+		}
+		if = {
+			limit = { tier = duke }
+			FROM = { change_variable = { which = "faction_vote" value = 1 } }
+		}
+		if = {
+			limit = { tier = king }
+			FROM = { change_variable = { which = "faction_vote" value = 2 } }
+		}
+		ai_chance = {
+			factor = 2
+			modifier = {
+				factor = 1.5
+				opinion = { who = LIEGE value = 10 }
+			}
+			modifier = {
+				factor = 1.5
+				opinion = { who = LIEGE value = 30 }
+			}
+			modifier = {
+				factor = 1.5
+				opinion = { who = LIEGE value = 50 }
+			}
+			modifier = {
+				factor = 1.5
+				opinion = { who = LIEGE value = 75 }
+			}
+			modifier = {
+				factor = 5
+				trait = content
+			}
+			modifier = {
+				factor = 4
+				trait = imbecile
+			}
+			modifier = {
+				factor = 4
+				trait = inbred
+			}
+			modifier = {
+				factor = 3
+				trait = slow
+			}
+			modifier = {
+				factor = 2
+				trait = kind
+			}
+			modifier = {
+				factor = 10
+				trait = charitable
+			}
+			modifier = {
+				factor = 2
+				liege = { dynasty = ROOT }
+			}
+			modifier = {
+				factor = 2
+				liege = { is_close_relative = ROOT }
+			}
+		}
+	}
+	option = { #No
+		name = No
+		FROM = { change_variable = { which = "faction_vote" value = -1 } }
+		if = {
+			limit = { tier = duke }
+			FROM = { change_variable = { which = "faction_vote" value = -1 } }
+		}
+		if = {
+			limit = { tier = king }
+			FROM = { change_variable = { which = "faction_vote" value = -2 } }
+		}
+		if = {
+			limit = { FROM = { character = ROOT } }
+			change_variable = { which = "faction_vote" value = -1 }
+		}
+		ai_chance = {
+			factor = 2
+			modifier = {
+				factor = 2
+				NOT = { opinion = { who = LIEGE value = -10 } }
+			}
+			modifier = {
+				factor = 2
+				NOT = { opinion = { who = LIEGE value = -30 } }
+			}
+			modifier = {
+				factor = 2
+				NOT = { opinion = { who = LIEGE value = -50 } }
+			}
+			modifier = {
+				factor = 2
+				NOT = { opinion = { who = LIEGE value = -75 } }
+			}
+			modifier = {
+				factor = 1.5
+				crownlaw_title = { has_law = king_peace_1 }
+			}
+			modifier = {
+				factor = 2
+				crownlaw_title = { has_law = king_peace_2 }
+			}
+			modifier = {
+				factor = 1.6
+				crownlaw_title = { has_law = emperor_peace_1 }
+			}
+			modifier = {
+				factor = 2.5
+				crownlaw_title = { has_law = emperor_peace_2 }
+			}
+			modifier = {
+				factor = 1.75
+				crownlaw_title = { has_law = revokation_1 }
+			}
+			modifier = {
+				factor = 2
+				crownlaw_title = { has_law = revokation_2 }
+			}
+			modifier = {
+				factor = 1.2
+				crownlaw_title = { has_law = crown_levies_1 }
+			}
+			modifier = {
+				factor = 1.4
+				crownlaw_title = { has_law = crown_levies_2 }
+			}
+			modifier = {
+				factor = 1.7
+				crownlaw_title = { has_law = crown_levies_3 }
+			}
+			modifier = {
+				factor = 2
+				crownlaw_title = { has_law = crown_levies_4 }
+			}
+			modifier = {
+				factor = 1.3
+				crownlaw_title = { has_law = inheritance_1 }
+			}
+			modifier = {
+				factor = 1.5
+				trait = proud
+			}
+			modifier = {
+				factor = 1.5
+				trait = arbitrary
+			}
+			modifier = {
+				factor = 2
+				trait = envious
+			}
+			modifier = {
+				factor = 10
+				trait = greedy
+			}
+			modifier = {
+				factor = 2
+				trait = impaler
+			}
+			modifier = {
+				factor = 2
+				trait = deceitful
+			}
+			modifier = {
+				factor = 5
+				trait = ambitious
+			}
 		}
 	}
 }
@@ -2565,6 +2869,1135 @@ character_event = {
 				OR = {
 					in_faction = faction_autonomy
 					leads_faction = faction_autonomy
+				}
+			}
+			opinion = {
+				who = ROOT
+				modifier = opinion_accepted_ultimatum
+				years = 10
+			}
+		}
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 1.25
+				trait = weak
+			}
+			modifier = {
+				factor = 1.25
+				trait = craven
+			}
+			modifier = {
+				factor = 1.25
+				trait = humble
+			}
+			modifier = {
+				factor = 1.25
+				trait = kind
+			}
+			modifier = {
+				factor = 1.25
+				trait = charitable
+			}
+			modifier = {
+				factor = 1.25
+				trait = patient
+			}
+			modifier = {
+				factor = 1.25
+				trait = content
+			}
+		}
+	}
+	option = {
+		name = No
+		any_vassal = {
+			limit = {
+				OR = {
+					in_faction = faction_autonomy
+					leads_faction = faction_autonomy
+				}
+			}
+			opinion = {
+				who = ROOT
+				modifier = opinion_refused_ultimatum
+				years = 20
+			}
+		}
+		FROM = { character_event = { id = meneth.233 days = 3 } }
+		ai_chance = {
+			factor = 80
+			modifier = {
+				factor = 1.25
+				trait = strong
+			}
+			modifier = {
+				factor = 1.25
+				trait = brave
+			}
+			modifier = {
+				factor = 1.25
+				trait = proud
+			}
+			modifier = {
+				factor = 1.25
+				trait = envious
+			}
+			modifier = {
+				factor = 1.25
+				trait = greedy
+			}
+			modifier = {
+				factor = 1.25
+				trait = wroth
+			}
+			modifier = {
+				factor = 1.25
+				trait = ambitious
+			}
+			modifier = {
+				factor = 0.5
+				FROM = {
+					faction_power = 
+					{
+						faction = faction_autonomy
+						power = 3.0
+					}
+				}
+			}
+			modifier = {
+				factor = 0.5
+				FROM = {
+					faction_power = 
+					{
+						faction = faction_autonomy
+						power = 2.0
+					}
+				}
+			}
+			modifier = {
+				factor = 0.5
+				FROM = {
+					faction_power = 
+					{
+						faction = faction_autonomy
+						power = 1.0
+					}
+				}
+			}
+		}
+	}
+}
+
+#Demand fellow vassals released from prison
+character_event = {
+	id = meneth.238
+	is_triggered_only = yes
+	
+	desc = meneth.238.desc
+	picture = GFX_evt_emissary
+	border = GFX_event_normal_frame_religion
+	
+	immediate = {
+		if = {
+			limit = { FROM = { character = ROOT } }
+			character_event = { id = meneth.223 days = 3 }
+		}
+	}
+	option = { #Yes
+		name = Yes
+		FROM = { change_variable = { which = "faction_vote" value = 1 } }
+		if = {
+			limit = { FROM = { character = ROOT } }
+			change_variable = { which = "faction_vote" value = 1 }
+		}
+		if = {
+			limit = { tier = duke }
+			FROM = { change_variable = { which = "faction_vote" value = 1 } }
+		}
+		if = {
+			limit = { tier = king }
+			FROM = { change_variable = { which = "faction_vote" value = 2 } }
+		}
+		ai_chance = {
+			factor = 2
+			modifier = {
+				factor = 2
+				NOT = { opinion = { who = LIEGE value = -10 } }
+			}
+			modifier = {
+				factor = 2
+				NOT = { opinion = { who = LIEGE value = -30 } }
+			}
+			modifier = {
+				factor = 2
+				NOT = { opinion = { who = LIEGE value = -50 } }
+			}
+			modifier = {
+				factor = 2
+				NOT = { opinion = { who = LIEGE value = -75 } }
+			}
+			modifier = {
+				factor = 1.5
+				crownlaw_title = { has_law = king_peace_1 }
+			}
+			modifier = {
+				factor = 2
+				crownlaw_title = { has_law = king_peace_2 }
+			}
+			modifier = {
+				factor = 1.6
+				crownlaw_title = { has_law = emperor_peace_1 }
+			}
+			modifier = {
+				factor = 2.5
+				crownlaw_title = { has_law = emperor_peace_2 }
+			}
+			modifier = {
+				factor = 1.75
+				crownlaw_title = { has_law = revokation_1 }
+			}
+			modifier = {
+				factor = 2
+				crownlaw_title = { has_law = revokation_2 }
+			}
+			modifier = {
+				factor = 1.2
+				crownlaw_title = { has_law = crown_levies_1 }
+			}
+			modifier = {
+				factor = 1.4
+				crownlaw_title = { has_law = crown_levies_2 }
+			}
+			modifier = {
+				factor = 1.7
+				crownlaw_title = { has_law = crown_levies_3 }
+			}
+			modifier = {
+				factor = 2
+				crownlaw_title = { has_law = crown_levies_4 }
+			}
+			modifier = {
+				factor = 1.3
+				crownlaw_title = { has_law = inheritance_1 }
+			}
+			modifier = {
+				factor = 1.5
+				trait = proud
+			}
+			modifier = {
+				factor = 1.5
+				trait = arbitrary
+			}
+			modifier = {
+				factor = 2
+				trait = envious
+			}
+			modifier = {
+				factor = 2
+				trait = greedy
+			}
+			modifier = {
+				factor = 2
+				trait = impaler
+			}
+			modifier = {
+				factor = 2
+				trait = deceitful
+			}
+			modifier = {
+				factor = 4
+				trait = ambitious
+			}
+			modifier = {
+				factor = 0 #If they dislike all the prisoners they don't want them released
+				liege = {
+					NOT = {
+						any_vassal = {
+							prisoner = yes
+							host = { character = PREVPREV }
+							reverse_opinion = { who = ROOT value = 0 }
+						}
+					}
+				}
+			}
+			modifier = {
+				factor = 5 #If they like one of the prisoners they want them released
+				liege = {
+					any_vassal = {
+						prisoner = yes
+						host = { character = PREVPREV }
+						reverse_opinion = { who = ROOT value = 50 }
+					}
+				}
+			}
+		}
+	}
+	option = { #No
+		name = No
+		FROM = { change_variable = { which = "faction_vote" value = -1 } }
+		if = {
+			limit = { tier = duke }
+			FROM = { change_variable = { which = "faction_vote" value = -1 } }
+		}
+		if = {
+			limit = { tier = king }
+			FROM = { change_variable = { which = "faction_vote" value = -2 } }
+		}
+		if = {
+			limit = { FROM = { character = ROOT } }
+			change_variable = { which = "faction_vote" value = -1 }
+		}
+		
+		ai_chance = {
+			factor = 2
+			modifier = {
+				factor = 1.5
+				opinion = { who = LIEGE value = 10 }
+			}
+			modifier = {
+				factor = 1.5
+				opinion = { who = LIEGE value = 30 }
+			}
+			modifier = {
+				factor = 1.5
+				opinion = { who = LIEGE value = 50 }
+			}
+			modifier = {
+				factor = 1.5
+				opinion = { who = LIEGE value = 75 }
+			}
+			modifier = {
+				factor = 5
+				trait = content
+			}
+			modifier = {
+				factor = 4
+				trait = imbecile
+			}
+			modifier = {
+				factor = 4
+				trait = inbred
+			}
+			modifier = {
+				factor = 3
+				trait = slow
+			}
+			modifier = {
+				factor = 2
+				trait = kind
+			}
+			modifier = {
+				factor = 2
+				trait = charitable
+			}
+			modifier = {
+				factor = 2
+				liege = { dynasty = ROOT }
+			}
+			modifier = {
+				factor = 2
+				liege = { is_close_relative = ROOT }
+			}
+		}
+	}
+}
+
+#Ultimatum to release vassal prisoners
+character_event = {
+	id = meneth.239
+	is_triggered_only = yes
+	
+	desc = meneth.239.desc
+	picture = GFX_evt_emissary
+	border = GFX_event_normal_frame_religion
+	
+	option = {
+		name = Yes
+		any_vassal = {
+			limit = {
+				prisoner = yes
+				host = { character = ROOT }
+			}
+			imprison = no
+		}
+		any_vassal = {
+			limit = {
+				OR = {
+					in_faction = faction_autonomy
+					leads_faction = faction_autonomy
+				}
+			}
+			opinion = {
+				who = ROOT
+				modifier = opinion_accepted_ultimatum
+				years = 10
+			}
+		}
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 1.25
+				trait = weak
+			}
+			modifier = {
+				factor = 1.25
+				trait = craven
+			}
+			modifier = {
+				factor = 1.25
+				trait = humble
+			}
+			modifier = {
+				factor = 1.25
+				trait = kind
+			}
+			modifier = {
+				factor = 1.25
+				trait = charitable
+			}
+			modifier = {
+				factor = 1.25
+				trait = patient
+			}
+			modifier = {
+				factor = 1.25
+				trait = content
+			}
+		}
+	}
+	option = {
+		name = No
+		any_vassal = {
+			limit = {
+				OR = {
+					in_faction = faction_autonomy
+					leads_faction = faction_autonomy
+				}
+			}
+			opinion = {
+				who = ROOT
+				modifier = opinion_refused_ultimatum
+				years = 20
+			}
+		}
+		FROM = { character_event = { id = meneth.233 days = 3 } }
+		ai_chance = {
+			factor = 80
+			modifier = {
+				factor = 1.25
+				trait = strong
+			}
+			modifier = {
+				factor = 1.25
+				trait = brave
+			}
+			modifier = {
+				factor = 1.25
+				trait = proud
+			}
+			modifier = {
+				factor = 1.25
+				trait = envious
+			}
+			modifier = {
+				factor = 1.25
+				trait = greedy
+			}
+			modifier = {
+				factor = 1.25
+				trait = wroth
+			}
+			modifier = {
+				factor = 1.25
+				trait = ambitious
+			}
+			modifier = {
+				factor = 0.5
+				FROM = {
+					faction_power = 
+					{
+						faction = faction_autonomy
+						power = 3.0
+					}
+				}
+			}
+			modifier = {
+				factor = 0.5
+				FROM = {
+					faction_power = 
+					{
+						faction = faction_autonomy
+						power = 2.0
+					}
+				}
+			}
+			modifier = {
+				factor = 0.5
+				FROM = {
+					faction_power = 
+					{
+						faction = faction_autonomy
+						power = 1.0
+					}
+				}
+			}
+		}
+	}
+}
+
+#Demand a county given away
+character_event = {
+	id = meneth.240
+	is_triggered_only = yes
+	
+	desc = meneth.240.desc
+	picture = GFX_evt_emissary
+	border = GFX_event_normal_frame_religion
+	
+	immediate = {
+		if = {
+			limit = { FROM = { character = ROOT } }
+			character_event = { id = meneth.223 days = 3 }
+		}
+	}
+	option = { #Yes
+		name = Yes
+		FROM = { change_variable = { which = "faction_vote" value = 1 } }
+		if = {
+			limit = { FROM = { character = ROOT } }
+			change_variable = { which = "faction_vote" value = 1 }
+		}
+		if = {
+			limit = { tier = duke }
+			FROM = { change_variable = { which = "faction_vote" value = 1 } }
+		}
+		if = {
+			limit = { tier = king }
+			FROM = { change_variable = { which = "faction_vote" value = 2 } }
+		}
+		ai_chance = {
+			factor = 2
+			modifier = {
+				factor = 2
+				NOT = { opinion = { who = LIEGE value = -10 } }
+			}
+			modifier = {
+				factor = 2
+				NOT = { opinion = { who = LIEGE value = -30 } }
+			}
+			modifier = {
+				factor = 2
+				NOT = { opinion = { who = LIEGE value = -50 } }
+			}
+			modifier = {
+				factor = 2
+				NOT = { opinion = { who = LIEGE value = -75 } }
+			}
+			modifier = {
+				factor = 1.5
+				crownlaw_title = { has_law = king_peace_1 }
+			}
+			modifier = {
+				factor = 2
+				crownlaw_title = { has_law = king_peace_2 }
+			}
+			modifier = {
+				factor = 1.6
+				crownlaw_title = { has_law = emperor_peace_1 }
+			}
+			modifier = {
+				factor = 2.5
+				crownlaw_title = { has_law = emperor_peace_2 }
+			}
+			modifier = {
+				factor = 1.75
+				crownlaw_title = { has_law = revokation_1 }
+			}
+			modifier = {
+				factor = 2
+				crownlaw_title = { has_law = revokation_2 }
+			}
+			modifier = {
+				factor = 1.2
+				crownlaw_title = { has_law = crown_levies_1 }
+			}
+			modifier = {
+				factor = 1.4
+				crownlaw_title = { has_law = crown_levies_2 }
+			}
+			modifier = {
+				factor = 1.7
+				crownlaw_title = { has_law = crown_levies_3 }
+			}
+			modifier = {
+				factor = 2
+				crownlaw_title = { has_law = crown_levies_4 }
+			}
+			modifier = {
+				factor = 1.3
+				crownlaw_title = { has_law = inheritance_1 }
+			}
+			modifier = {
+				factor = 1.5
+				trait = proud
+			}
+			modifier = {
+				factor = 1.5
+				trait = arbitrary
+			}
+			modifier = {
+				factor = 2
+				trait = envious
+			}
+			modifier = {
+				factor = 2
+				trait = greedy
+			}
+			modifier = {
+				factor = 2
+				trait = impaler
+			}
+			modifier = {
+				factor = 2
+				trait = deceitful
+			}
+			modifier = {
+				factor = 4
+				trait = ambitious
+			}
+			modifier = {
+				factor = 2
+				liege = { demesne_size = 1.2 }
+			}
+			modifier = {
+				factor = 2
+				liege = { demesne_size = 1.4 }
+			}
+			modifier = {
+				factor = 2
+				liege = { demesne_size = 1.5 }
+			}
+			modifier = {
+				factor = 10
+				liege = { demesne_size = 2 }
+			}
+		}
+	}
+	option = { #No
+		name = No
+		FROM = { change_variable = { which = "faction_vote" value = -1 } }
+		if = {
+			limit = { tier = duke }
+			FROM = { change_variable = { which = "faction_vote" value = -1 } }
+		}
+		if = {
+			limit = { tier = king }
+			FROM = { change_variable = { which = "faction_vote" value = -2 } }
+		}
+		if = {
+			limit = { FROM = { character = ROOT } }
+			change_variable = { which = "faction_vote" value = -1 }
+		}
+		
+		ai_chance = {
+			factor = 2
+			modifier = {
+				factor = 1.5
+				opinion = { who = LIEGE value = 10 }
+			}
+			modifier = {
+				factor = 1.5
+				opinion = { who = LIEGE value = 30 }
+			}
+			modifier = {
+				factor = 1.5
+				opinion = { who = LIEGE value = 50 }
+			}
+			modifier = {
+				factor = 1.5
+				opinion = { who = LIEGE value = 75 }
+			}
+			modifier = {
+				factor = 5
+				trait = content
+			}
+			modifier = {
+				factor = 4
+				trait = imbecile
+			}
+			modifier = {
+				factor = 4
+				trait = inbred
+			}
+			modifier = {
+				factor = 3
+				trait = slow
+			}
+			modifier = {
+				factor = 2
+				trait = kind
+			}
+			modifier = {
+				factor = 2
+				trait = charitable
+			}
+			modifier = {
+				factor = 2
+				liege = { dynasty = ROOT }
+			}
+			modifier = {
+				factor = 2
+				liege = { is_close_relative = ROOT }
+			}
+		}
+	}
+}
+
+#Ultimatum to give away a county
+character_event = {
+	id = meneth.241
+	is_triggered_only = yes
+	
+	desc = meneth.241.desc
+	picture = GFX_evt_emissary
+	border = GFX_event_normal_frame_religion
+	
+	option = {
+		name = Yes
+		if = {
+			limit = {
+				any_vassal = {
+					OR = {
+						in_faction = faction_autonomy
+						leads_faction = faction_autonomy
+					}
+					any_claim = {
+						holder_scope = { character = ROOT }
+						tier = count #Has a county to give away
+						can_be_given_away = yes
+						NOT = {
+							location = {
+								is_capital = yes
+							}
+						}
+					}
+				}
+			}
+			random_vassal = {
+				limit = {
+					OR = {
+						in_faction = faction_autonomy
+						leads_faction = faction_autonomy
+					}
+					any_claim = {
+						holder_scope = { character = ROOT }
+						tier = count #Has a county to give away
+						can_be_given_away = yes
+						NOT = {
+							location = {
+								is_capital = yes
+							}
+						}
+					}
+				}
+				random_claim = {
+					limit = {
+						holder_scope = { character = ROOT }
+						tier = count #Has a county to give away
+						can_be_given_away = yes
+						NOT = {
+							location = {
+								is_capital = yes
+							}
+						}
+					}
+					grant_title = PREV #Give to someone with a claim if possible
+				}
+			}
+			set_character_flag = county_given_away
+		}
+		if = {
+			limit = { NOT = { has_character_flag = county_given_away } }
+			random_demesne_title = {
+				limit = {
+					tier = count #Has a county to give away
+					can_be_given_away = yes
+					NOT = {
+						location = {
+							is_capital = yes
+						}
+					}
+				}
+				grant_title = FROM #Give to faction leader if not
+			}
+		}
+		any_vassal = {
+			limit = {
+				OR = {
+					in_faction = faction_autonomy
+					leads_faction = faction_autonomy
+				}
+			}
+			opinion = {
+				who = ROOT
+				modifier = opinion_accepted_ultimatum
+				years = 10
+			}
+		}
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 1.25
+				trait = weak
+			}
+			modifier = {
+				factor = 1.25
+				trait = craven
+			}
+			modifier = {
+				factor = 1.25
+				trait = humble
+			}
+			modifier = {
+				factor = 1.25
+				trait = kind
+			}
+			modifier = {
+				factor = 1.25
+				trait = charitable
+			}
+			modifier = {
+				factor = 1.25
+				trait = patient
+			}
+			modifier = {
+				factor = 1.25
+				trait = content
+			}
+		}
+	}
+	option = {
+		name = No
+		any_vassal = {
+			limit = {
+				OR = {
+					in_faction = faction_autonomy
+					leads_faction = faction_autonomy
+				}
+			}
+			opinion = {
+				who = ROOT
+				modifier = opinion_refused_ultimatum
+				years = 20
+			}
+		}
+		FROM = { character_event = { id = meneth.233 days = 3 } }
+		ai_chance = {
+			factor = 80
+			modifier = {
+				factor = 1.25
+				trait = strong
+			}
+			modifier = {
+				factor = 1.25
+				trait = brave
+			}
+			modifier = {
+				factor = 1.25
+				trait = proud
+			}
+			modifier = {
+				factor = 1.25
+				trait = envious
+			}
+			modifier = {
+				factor = 1.25
+				trait = greedy
+			}
+			modifier = {
+				factor = 1.25
+				trait = wroth
+			}
+			modifier = {
+				factor = 1.25
+				trait = ambitious
+			}
+			modifier = {
+				factor = 0.5
+				FROM = {
+					faction_power = 
+					{
+						faction = faction_autonomy
+						power = 3.0
+					}
+				}
+			}
+			modifier = {
+				factor = 0.5
+				FROM = {
+					faction_power = 
+					{
+						faction = faction_autonomy
+						power = 2.0
+					}
+				}
+			}
+			modifier = {
+				factor = 0.5
+				FROM = {
+					faction_power = 
+					{
+						faction = faction_autonomy
+						power = 1.0
+					}
+				}
+			}
+		}
+	}
+}
+
+#Demand a money for faction members
+character_event = {
+	id = meneth.242
+	is_triggered_only = yes
+	
+	desc = meneth.242.desc
+	picture = GFX_evt_emissary
+	border = GFX_event_normal_frame_religion
+	
+	immediate = {
+		if = {
+			limit = { FROM = { character = ROOT } }
+			character_event = { id = meneth.223 days = 3 }
+		}
+	}
+	option = { #Yes
+		name = Yes
+		FROM = { change_variable = { which = "faction_vote" value = 1 } }
+		if = {
+			limit = { FROM = { character = ROOT } }
+			change_variable = { which = "faction_vote" value = 1 }
+		}
+		if = {
+			limit = { tier = duke }
+			FROM = { change_variable = { which = "faction_vote" value = 1 } }
+		}
+		if = {
+			limit = { tier = king }
+			FROM = { change_variable = { which = "faction_vote" value = 2 } }
+		}
+		ai_chance = {
+			factor = 2
+			modifier = {
+				factor = 2
+				NOT = { opinion = { who = LIEGE value = -10 } }
+			}
+			modifier = {
+				factor = 2
+				NOT = { opinion = { who = LIEGE value = -30 } }
+			}
+			modifier = {
+				factor = 2
+				NOT = { opinion = { who = LIEGE value = -50 } }
+			}
+			modifier = {
+				factor = 2
+				NOT = { opinion = { who = LIEGE value = -75 } }
+			}
+			modifier = {
+				factor = 1.5
+				crownlaw_title = { has_law = king_peace_1 }
+			}
+			modifier = {
+				factor = 2
+				crownlaw_title = { has_law = king_peace_2 }
+			}
+			modifier = {
+				factor = 1.6
+				crownlaw_title = { has_law = emperor_peace_1 }
+			}
+			modifier = {
+				factor = 2.5
+				crownlaw_title = { has_law = emperor_peace_2 }
+			}
+			modifier = {
+				factor = 1.75
+				crownlaw_title = { has_law = revokation_1 }
+			}
+			modifier = {
+				factor = 2
+				crownlaw_title = { has_law = revokation_2 }
+			}
+			modifier = {
+				factor = 1.2
+				crownlaw_title = { has_law = crown_levies_1 }
+			}
+			modifier = {
+				factor = 1.4
+				crownlaw_title = { has_law = crown_levies_2 }
+			}
+			modifier = {
+				factor = 1.7
+				crownlaw_title = { has_law = crown_levies_3 }
+			}
+			modifier = {
+				factor = 2
+				crownlaw_title = { has_law = crown_levies_4 }
+			}
+			modifier = {
+				factor = 1.3
+				crownlaw_title = { has_law = inheritance_1 }
+			}
+			modifier = {
+				factor = 1.5
+				trait = proud
+			}
+			modifier = {
+				factor = 1.5
+				trait = arbitrary
+			}
+			modifier = {
+				factor = 2
+				trait = envious
+			}
+			modifier = {
+				factor = 10
+				trait = greedy
+			}
+			modifier = {
+				factor = 2
+				trait = impaler
+			}
+			modifier = {
+				factor = 2
+				trait = deceitful
+			}
+			modifier = {
+				factor = 4
+				trait = ambitious
+			}
+			modifier = {
+				factor = 2
+				liege = { scaled_wealth = 1 }
+			}
+			modifier = {
+				factor = 2
+				liege = { scaled_wealth = 3 }
+			}
+			modifier = {
+				factor = 2
+				NOT = { wealth = 0 }
+			}
+		}
+	}
+	option = { #No
+		name = No
+		FROM = { change_variable = { which = "faction_vote" value = -1 } }
+		if = {
+			limit = { tier = duke }
+			FROM = { change_variable = { which = "faction_vote" value = -1 } }
+		}
+		if = {
+			limit = { tier = king }
+			FROM = { change_variable = { which = "faction_vote" value = -2 } }
+		}
+		if = {
+			limit = { FROM = { character = ROOT } }
+			change_variable = { which = "faction_vote" value = -1 }
+		}
+		
+		ai_chance = {
+			factor = 2
+			modifier = {
+				factor = 1.5
+				opinion = { who = LIEGE value = 10 }
+			}
+			modifier = {
+				factor = 1.5
+				opinion = { who = LIEGE value = 30 }
+			}
+			modifier = {
+				factor = 1.5
+				opinion = { who = LIEGE value = 50 }
+			}
+			modifier = {
+				factor = 1.5
+				opinion = { who = LIEGE value = 75 }
+			}
+			modifier = {
+				factor = 5
+				trait = content
+			}
+			modifier = {
+				factor = 4
+				trait = imbecile
+			}
+			modifier = {
+				factor = 4
+				trait = inbred
+			}
+			modifier = {
+				factor = 3
+				trait = slow
+			}
+			modifier = {
+				factor = 2
+				trait = kind
+			}
+			modifier = {
+				factor = 10
+				trait = charitable
+			}
+			modifier = {
+				factor = 2
+				liege = { dynasty = ROOT }
+			}
+			modifier = {
+				factor = 2
+				liege = { is_close_relative = ROOT }
+			}
+		}
+	}
+}
+
+#Ultimatum to give money to faction members
+character_event = {
+	id = meneth.243
+	is_triggered_only = yes
+	
+	desc = meneth.243.desc
+	picture = GFX_evt_emissary
+	border = GFX_event_normal_frame_religion
+	
+	option = {
+		name = Yes
+		any_vassal = {
+			limit = {
+				OR = {
+					in_faction = faction_autonomy
+					leads_faction = faction_autonomy
+				}
+			}
+			if = {
+				limit = { tier = count }
+				transfer_scaled_wealth = {
+					to = ROOT
+					value = 0.05
+				}
+			}
+			if = {
+				limit = { tier = duke }
+				transfer_scaled_wealth = {
+					to = ROOT
+					value = 0.1
+				}
+			}
+			if = {
+				limit = { tier = king }
+				transfer_scaled_wealth = {
+					to = ROOT
+					value = 0.2
 				}
 			}
 			opinion = {

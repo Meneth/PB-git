@@ -44,9 +44,8 @@ meneth.220.c;Inustices must be righted;;;;;;;;;;;;;x
 meneth.221.desc;Based on the faction vote, the following options are available to us. What action should we take? Your choice will be put to a vote.;;;;;;;;;;;;;x
 meneth.221.a;Provide financial support;;;;;;;;;;;;;x
 meneth.221.b;Preserve status quo;;;;;;;;;;;;;x
-meneth.221.c;Demand lower obligations;;;;;;;;;;;;;x
-meneth.221.d;Demand revocation removed;;;;;;;;;;;;;x
-meneth.221.e;Demand internal peace removed;;;;;;;;;;;;;x
+meneth.221.c;Demand crown authority reduced;;;;;;;;;;;;;x
+meneth.221.d;Weaken liege;;;;;;;;;;;;;x
 meneth.222.desc;A vote has been called on whether or not to provide our liege with financial support for his current war. It is proposed that we all give up a tenth of our income this year to fund the war. Do you support this?;;;;;;;;;;;;;x
 meneth.223.desc;All the votes have been tallied.;;;;;;;;;;;;;x
 meneth.223.a;The vote succeeded;;;;;;;;;;;;;x
@@ -65,6 +64,20 @@ meneth.234.desc;Our liege has refused our ultimatum, and the faction leader is c
 meneth.235.desc;The votes have been tallied.;;;;;;;;;;;;;x
 meneth.235.a;To war!;;;;;;;;;;;;;x
 meneth.235.b;Peace in our time;;;;;;;;;;;;;x
+meneth.236.desc;We have decided to call a vote for the reduction of crown authority. How should it be reduced?;;;;;;;;;;;;;x
+meneth.236.a;Lower obligations;;;;;;;;;;;;;x
+meneth.236.b;No revocation;;;;;;;;;;;;;x
+meneth.236.c;No internal peace;;;;;;;;;;;;;x
+meneth.237.desc;We have decided to call a vote to weaken our liege. How should he be weakened?;;;;;;;;;;;;;x
+meneth.237.a;Force release of imprisoned vassals;;;;;;;;;;;;;x
+meneth.237.b;Give away a county;;;;;;;;;;;;;x
+meneth.237.c;Give money to faction;;;;;;;;;;;;;x
+meneth.238.desc;The faction leader wants our liege to release all vassals currently held prisoner. Do you support this?;;;;;;;;;;;;;x
+meneth.239.desc;Our vassals demand that we release all vassals currently held prisoner. Should we do this?;;;;;;;;;;;;;x
+meneth.240.desc;The faction leader wants our liege to give away a county. Do you support this?;;;;;;;;;;;;;x
+meneth.241.desc;Our vassals demand that we give away a county. Should we do this?;;;;;;;;;;;;;x
+meneth.242.desc;The faction leader wants our liege to give all faction members money. Do you support this?;;;;;;;;;;;;;x
+meneth.243.desc;Our vassals demand that we give them money. Should we do this?;;;;;;;;;;;;;x
 meneth.400.desc;It is time we asserted our dominion over Anatolia. We should invade Iconium.;;;;;;;;;;;;;x
 meneth.400.a;To war!;;;;;;;;;;;;;x
 meneth.400.b;I'd rather not;;;;;;;;;;;;;x
