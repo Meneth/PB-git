@@ -291,6 +291,10 @@ character_event = {
 			factor = 2 #Slow it down if an ultimatum has recently been accepted
 			has_opinion_modifier = { who = LIEGE modifier = opinion_accepted_ultimatum }
 		}
+		modifier = {
+			factor = 0.5
+			NOT = { has_character_flag = faction_meeting }
+		}
 	}
 	option = {
 		name = OK
@@ -300,6 +304,7 @@ character_event = {
 			character_event = { id = meneth.220 days = 1 }
 		}
 		character_event = { id = meneth.220 }
+		clr_character_flag = faction_meeting
 		set_character_flag = faction_meeting
 	}
 }
