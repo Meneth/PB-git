@@ -525,11 +525,11 @@ character_event = {
 			}
 			modifier = {
 				factor = 1.5
-				liege = { demesne_size = 1.01 } # Over demesne limit
+				liege = { demesne_efficiency = 1.01 } # Over demesne limit
 			}
 			modifier = {
 				factor = 2
-				liege = { demesne_size = 1.5 } # Far over demesne limit
+				liege = { demesne_efficiency = 1.5 } # Far over demesne limit
 			}
 		}
 	}
@@ -948,7 +948,7 @@ character_event = {
 	option = { #Demand that liege give away a title
 		trigger = {
 			liege = {
-				demesne_size = 1.01 #Over demesne limit
+				demesne_efficiency = 1.01 #Over demesne limit
 				any_demesne_title = {
 					tier = count #Has a county to give away
 					can_be_given_away = yes
@@ -971,19 +971,19 @@ character_event = {
 			factor = 2
 			modifier = {
 				factor = 2
-				liege = { demesne_size = 1.2 }
+				liege = { demesne_efficiency = 1.2 }
 			}
 			modifier = {
 				factor = 2
-				liege = { demesne_size = 1.4 }
+				liege = { demesne_efficiency = 1.4 }
 			}
 			modifier = {
 				factor = 2
-				liege = { demesne_size = 1.5 }
+				liege = { demesne_efficiency = 1.5 }
 			}
 			modifier = {
 				factor = 10
-				liege = { demesne_size = 2 }
+				liege = { demesne_efficiency = 2 }
 			}
 		}
 	}
@@ -3493,19 +3493,19 @@ character_event = {
 			}
 			modifier = {
 				factor = 2
-				liege = { demesne_size = 1.2 }
+				liege = { demesne_efficiency = 1.2 }
 			}
 			modifier = {
 				factor = 2
-				liege = { demesne_size = 1.4 }
+				liege = { demesne_efficiency = 1.4 }
 			}
 			modifier = {
 				factor = 2
-				liege = { demesne_size = 1.5 }
+				liege = { demesne_efficiency = 1.5 }
 			}
 			modifier = {
 				factor = 10
-				liege = { demesne_size = 2 }
+				liege = { demesne_efficiency = 2 }
 			}
 		}
 	}
