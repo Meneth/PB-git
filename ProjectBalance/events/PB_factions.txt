@@ -3981,23 +3981,29 @@ character_event = {
 			}
 			if = {
 				limit = { tier = count }
-				transfer_scaled_wealth = {
-					to = ROOT
-					value = 0.05
+				ROOT = {
+					transfer_scaled_wealth = {
+						to = PREV
+						value = 0.05
+					}
 				}
 			}
 			if = {
 				limit = { tier = duke }
-				transfer_scaled_wealth = {
-					to = ROOT
-					value = 0.1
+				ROOT = {
+					transfer_scaled_wealth = {
+						to = PREV
+						value = 0.1
+					}
 				}
 			}
 			if = {
 				limit = { tier = king }
-				transfer_scaled_wealth = {
-					to = ROOT
-					value = 0.2
+				ROOT = {
+					transfer_scaled_wealth = {
+						to = PREV
+						value = 0.2
+					}
 				}
 			}
 			opinion = {
