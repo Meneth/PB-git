@@ -235,6 +235,18 @@ character_event = {
 			change_variable = { which = "autonomy_desire" value = 50 }
 		}
 		if = {
+			limit = { #Liege imprisoning character ruler likes
+				liege = {
+					any_vassal = {
+						prisoner = yes
+						host = { character = PREVPREV }
+						reverse_opinion = { who = ROOT value = 50 }
+					}
+				}
+			}
+			change_variable = { which = "autonomy_desire" value = 5 }
+		}
+		if = {
 			limit = { check_variable = { which = autonomy_desire value = -5 } }
 			set_character_flag = desires_autonomy
 		}
@@ -540,6 +552,7 @@ character_event = {
 		clr_character_flag = faction_autonomy_no_internal_peace
 		clr_character_flag = faction_autonomy_release_prisoners
 		clr_character_flag = faction_autonomy_give_away_county
+		clr_character_flag = faction_autonomy_give_money
 	}
 	option = { #Provide support against invasion
 		name = meneth.221.a
@@ -976,7 +989,7 @@ character_event = {
 	}
 	option = { #Demand that liege give money to all faction members
 		name = meneth.237.c
-		set_character_flag = faction_autonomy_give_away_county
+		set_character_flag = faction_autonomy_give_money
 		any_faction_backer = {
 			limit = { in_faction = faction_autonomy }
 			character_event = { id = meneth.242 days = 1 }
@@ -1051,6 +1064,18 @@ character_event = {
 			if = {
 				limit = { ROOT = { has_character_flag = faction_autonomy_no_internal_peace } }
 				character_event = { id = meneth.232 } #Ultimatum to remove internal peace
+			}
+			if = {
+				limit = { ROOT = { has_character_flag = faction_autonomy_release_prisoners } }
+				character_event = { id = meneth.239 } #Ultimatum to release prisoners
+			}
+			if = {
+				limit = { ROOT = { has_character_flag = faction_autonomy_give_away_county } }
+				character_event = { id = meneth.241 } #Ultimatum to give away county
+			}
+			if = {
+				limit = { ROOT = { has_character_flag = faction_autonomy_give_money } }
+				character_event = { id = meneth.243 } #Ultimatum to give away money
 			}
 		}
 	}
