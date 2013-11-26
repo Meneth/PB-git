@@ -621,7 +621,7 @@ character_event = {
 		trigger = {
 			NOT = { check_variable = { which = "autonomy_mood" value = 0 } }
 		}
-		character_event = { id = meneth.235 } #What law to revoke
+		character_event = { id = meneth.236 } #What law to revoke
 		ai_chance = {
 			factor = 1
 			modifier = {
@@ -718,7 +718,7 @@ character_event = {
 		trigger = {
 			NOT = { check_variable = { which = "autonomy_mood" value = 0 } }
 		}
-		character_event = { id = meneth.236 } #How to weaken liege
+		character_event = { id = meneth.237 } #How to weaken liege
 		ai_chance = {
 			factor = 1
 			modifier = {
