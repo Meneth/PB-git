@@ -558,6 +558,7 @@ character_event = {
 		clr_character_flag = faction_autonomy_release_prisoners
 		clr_character_flag = faction_autonomy_give_away_county
 		clr_character_flag = faction_autonomy_give_money
+		clr_character_flag = faction_autonomy_external_inheritance
 	}
 	option = { #Provide support against invasion
 		name = meneth.221.a
@@ -771,10 +772,6 @@ character_event = {
 		ai_chance = {
 			factor = 1
 			modifier = {
-				factor = 0
-				has_character_flag = faction_autonomy_happy
-			}
-			modifier = {
 				factor = 5
 				trait = greedy
 			}
@@ -834,10 +831,6 @@ character_event = {
 		ai_chance = {
 			factor = 2
 			modifier = {
-				factor = 0
-				has_character_flag = faction_autonomy_happy
-			}
-			modifier = {
 				factor = 1.5
 				liege = { has_law = revokation_2 }
 			}
@@ -876,10 +869,6 @@ character_event = {
 		ai_chance = {
 			factor = 2
 			modifier = {
-				factor = 0
-				has_character_flag = faction_autonomy_happy
-			}
-			modifier = {
 				factor = 2
 				liege = { has_law = king_peace_2 }
 			}
@@ -894,6 +883,30 @@ character_event = {
 						independent = yes
 						same_realm = ROOT
 					}
+				}
+			}
+		}
+	}
+	option = { #Demand protected inheritance removed
+		name = meneth.236.c
+		trigger = {
+			liege = {
+				has_law = inheritance_1
+			}
+		}
+		set_character_flag = faction_autonomy_external_inheritance
+		any_faction_backer = {
+			limit = { in_faction = faction_autonomy }
+			character_event = { id = meneth.244 days = 1 }
+		}
+		character_event = { id = meneth.244 }
+		ai_chance = {
+			factor = 1
+			modifier = { #Has family outside the realm
+				factor = 3
+				any_dynasty_member = {
+					is_landed = yes
+					NOT = { same_realm = ROOT }
 				}
 			}
 		}
@@ -1081,6 +1094,10 @@ character_event = {
 			if = {
 				limit = { ROOT = { has_character_flag = faction_autonomy_give_money } }
 				character_event = { id = meneth.243 } #Ultimatum to give away money
+			}
+			if = {
+				limit = { ROOT = { has_character_flag = faction_autonomy_external_inheritance } }
+				character_event = { id = meneth.245 } #Ultimatum to allow external inheritance
 			}
 		}
 	}
@@ -1573,6 +1590,16 @@ character_event = {
 				reverse_war = {
 					target = ROOT
 					casus_belli = remove_internal_peace
+					faction = faction_autonomy
+				}
+			}
+		}
+		if = {
+			limit = { has_character_flag = faction_autonomy_external_inheritance }
+			liege = {
+				reverse_war = {
+					target = ROOT
+					casus_belli = remove_inheritance
 					faction = faction_autonomy
 				}
 			}
@@ -4034,6 +4061,345 @@ character_event = {
 						to = PREV
 						value = 0.2
 					}
+				}
+			}
+			opinion = {
+				who = ROOT
+				modifier = opinion_accepted_ultimatum
+				years = 10
+			}
+		}
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 1.25
+				trait = weak
+			}
+			modifier = {
+				factor = 1.25
+				trait = craven
+			}
+			modifier = {
+				factor = 1.25
+				trait = humble
+			}
+			modifier = {
+				factor = 1.25
+				trait = kind
+			}
+			modifier = {
+				factor = 1.25
+				trait = charitable
+			}
+			modifier = {
+				factor = 1.25
+				trait = patient
+			}
+			modifier = {
+				factor = 1.25
+				trait = content
+			}
+		}
+	}
+	option = {
+		name = No
+		any_vassal = {
+			limit = {
+				OR = {
+					in_faction = faction_autonomy
+					leads_faction = faction_autonomy
+				}
+			}
+			opinion = {
+				who = ROOT
+				modifier = opinion_refused_ultimatum
+				years = 20
+			}
+		}
+		FROM = { character_event = { id = meneth.233 days = 3 } }
+		ai_chance = {
+			factor = 80
+			modifier = {
+				factor = 1.25
+				trait = strong
+			}
+			modifier = {
+				factor = 1.25
+				trait = brave
+			}
+			modifier = {
+				factor = 1.25
+				trait = proud
+			}
+			modifier = {
+				factor = 1.25
+				trait = envious
+			}
+			modifier = {
+				factor = 1.25
+				trait = greedy
+			}
+			modifier = {
+				factor = 1.25
+				trait = wroth
+			}
+			modifier = {
+				factor = 1.25
+				trait = ambitious
+			}
+			modifier = {
+				factor = 0.5
+				FROM = {
+					faction_power = 
+					{
+						faction = faction_autonomy
+						power = 3.0
+					}
+				}
+			}
+			modifier = {
+				factor = 0.5
+				FROM = {
+					faction_power = 
+					{
+						faction = faction_autonomy
+						power = 2.0
+					}
+				}
+			}
+			modifier = {
+				factor = 0.5
+				FROM = {
+					faction_power = 
+					{
+						faction = faction_autonomy
+						power = 1.0
+					}
+				}
+			}
+		}
+	}
+}
+
+#Demand external inheritance
+character_event = {
+	id = meneth.244
+	is_triggered_only = yes
+	
+	desc = meneth.244.desc
+	picture = GFX_evt_emissary
+	border = GFX_event_normal_frame_religion
+	
+	immediate = {
+		if = {
+			limit = { FROM = { character = ROOT } }
+			character_event = { id = meneth.223 days = 3 }
+		}
+	}
+	option = { #Yes
+		name = Yes
+		FROM = { change_variable = { which = "faction_vote" value = 1 } }
+		if = {
+			limit = { FROM = { character = ROOT } }
+			change_variable = { which = "faction_vote" value = 1 }
+		}
+		if = {
+			limit = { tier = duke }
+			FROM = { change_variable = { which = "faction_vote" value = 1 } }
+		}
+		if = {
+			limit = { tier = king }
+			FROM = { change_variable = { which = "faction_vote" value = 2 } }
+		}
+		ai_chance = {
+			factor = 2
+			modifier = {
+				factor = 2
+				NOT = { opinion = { who = LIEGE value = -10 } }
+			}
+			modifier = {
+				factor = 2
+				NOT = { opinion = { who = LIEGE value = -30 } }
+			}
+			modifier = {
+				factor = 2
+				NOT = { opinion = { who = LIEGE value = -50 } }
+			}
+			modifier = {
+				factor = 2
+				NOT = { opinion = { who = LIEGE value = -75 } }
+			}
+			modifier = {
+				factor = 1.5
+				crownlaw_title = { has_law = king_peace_1 }
+			}
+			modifier = {
+				factor = 2
+				crownlaw_title = { has_law = king_peace_2 }
+			}
+			modifier = {
+				factor = 1.6
+				crownlaw_title = { has_law = emperor_peace_1 }
+			}
+			modifier = {
+				factor = 2.5
+				crownlaw_title = { has_law = emperor_peace_2 }
+			}
+			modifier = {
+				factor = 1.75
+				crownlaw_title = { has_law = revokation_1 }
+			}
+			modifier = {
+				factor = 2
+				crownlaw_title = { has_law = revokation_2 }
+			}
+			modifier = {
+				factor = 1.2
+				crownlaw_title = { has_law = crown_levies_1 }
+			}
+			modifier = {
+				factor = 1.4
+				crownlaw_title = { has_law = crown_levies_2 }
+			}
+			modifier = {
+				factor = 1.7
+				crownlaw_title = { has_law = crown_levies_3 }
+			}
+			modifier = {
+				factor = 2
+				crownlaw_title = { has_law = crown_levies_4 }
+			}
+			modifier = {
+				factor = 1.3
+				crownlaw_title = { has_law = inheritance_1 }
+			}
+			modifier = {
+				factor = 1.5
+				trait = proud
+			}
+			modifier = {
+				factor = 1.5
+				trait = arbitrary
+			}
+			modifier = {
+				factor = 2
+				trait = envious
+			}
+			modifier = {
+				factor = 2
+				trait = greedy
+			}
+			modifier = {
+				factor = 2
+				trait = impaler
+			}
+			modifier = {
+				factor = 2
+				trait = deceitful
+			}
+			modifier = {
+				factor = 4
+				trait = ambitious
+			}
+			modifier = { #Has family outside realm
+				factor = 3
+				any_dynasty_member = {
+					is_landed = yes
+					NOT = { same_realm = ROOT }
+				}
+			}
+		}
+	}
+	option = { #No
+		name = No
+		FROM = { change_variable = { which = "faction_vote" value = -1 } }
+		if = {
+			limit = { tier = duke }
+			FROM = { change_variable = { which = "faction_vote" value = -1 } }
+		}
+		if = {
+			limit = { tier = king }
+			FROM = { change_variable = { which = "faction_vote" value = -2 } }
+		}
+		if = {
+			limit = { FROM = { character = ROOT } }
+			change_variable = { which = "faction_vote" value = -1 }
+		}
+		
+		ai_chance = {
+			factor = 2
+			modifier = {
+				factor = 1.5
+				opinion = { who = LIEGE value = 10 }
+			}
+			modifier = {
+				factor = 1.5
+				opinion = { who = LIEGE value = 30 }
+			}
+			modifier = {
+				factor = 1.5
+				opinion = { who = LIEGE value = 50 }
+			}
+			modifier = {
+				factor = 1.5
+				opinion = { who = LIEGE value = 75 }
+			}
+			modifier = {
+				factor = 5
+				trait = content
+			}
+			modifier = {
+				factor = 4
+				trait = imbecile
+			}
+			modifier = {
+				factor = 4
+				trait = inbred
+			}
+			modifier = {
+				factor = 3
+				trait = slow
+			}
+			modifier = {
+				factor = 2
+				trait = kind
+			}
+			modifier = {
+				factor = 2
+				trait = charitable
+			}
+			modifier = {
+				factor = 2
+				liege = { dynasty = ROOT }
+			}
+			modifier = {
+				factor = 2
+				liege = { is_close_relative = ROOT }
+			}
+		}
+	}
+}
+
+#Ultimatum for external inheritance
+character_event = {
+	id = meneth.245
+	is_triggered_only = yes
+	
+	desc = meneth.245.desc
+	picture = GFX_evt_emissary
+	border = GFX_event_normal_frame_religion
+	
+	option = {
+		name = Yes
+		any_demesne_title = {
+			limit = { has_law = inheritance_1 }
+			add_law = inheritance_0
+		}
+		any_vassal = {
+			limit = {
+				OR = {
+					in_faction = faction_autonomy
+					leads_faction = faction_autonomy
 				}
 			}
 			opinion = {

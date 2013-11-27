@@ -255,14 +255,8 @@ remove_inheritance = {
 	can_use = {
 		ROOT = {
 			vassal_of = FROM
-			has_character_flag = faction_autonomy_lower_obligations
+			has_character_flag = faction_autonomy_external_inheritance
 		}
-	}
-	
-	can_use_title = {
-		holder_scope = { independent = yes }
-		higher_tier_than = duke
-		NOT = { has_law = inheritance_0 }
 	}
 
 	on_success = {
@@ -288,10 +282,12 @@ remove_inheritance = {
 			}
 		}
 		FROM = { hidden_tooltip = { disband_event_forces = faction_loyalists } }
-	}
-
-	on_success_title = {
-		add_law_w_cooldown = inheritance_0
+		FROM = {
+			any_demesne_title = {
+				limit = { has_law = inheritance_1 }
+				add_law_w_cooldown = inheritance_0
+			}
+		}
 	}
 
 	on_fail = {
