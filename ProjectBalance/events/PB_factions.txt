@@ -1616,6 +1616,7 @@ character_event = {
 				OR = {
 					has_character_flag = faction_autonomy_release_prisoners
 					has_character_flag = faction_autonomy_give_away_county
+					has_character_flag = faction_autonomy_abdicate
 				}
 			}
 			liege = {
