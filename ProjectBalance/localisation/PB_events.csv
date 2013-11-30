@@ -80,6 +80,8 @@ meneth.242.desc;The faction leader wants our liege to give all faction members m
 meneth.243.desc;Our vassals demand that we give them money. Should we do this?;;;;;;;;;;;;;x
 meneth.244.desc;The faction leader wants our liege to allow external inheritance. Do you support this?;;;;;;;;;;;;;x
 meneth.245.desc;Our vassals demand that we allow external inheritance. Should we do this?;;;;;;;;;;;;;x
+meneth.246.desc;The faction leader wants our liege to abdicate. Do you support this?;;;;;;;;;;;;;x
+meneth.247.desc;Our vassals demand that we abdicate. Should we do this?;;;;;;;;;;;;;x
 meneth.400.desc;It is time we asserted our dominion over Anatolia. We should invade Iconium.;;;;;;;;;;;;;x
 meneth.400.a;To war!;;;;;;;;;;;;;x
 meneth.400.b;I'd rather not;;;;;;;;;;;;;x
