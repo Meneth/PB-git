@@ -14,6 +14,7 @@
 	Tweaked opinion penalities from crown levies
 	Content no longer gives a bonus to vassal opinion
 	(Gender Equality) Fixed the strict requirements for Absolute Cognatic not being waived
+	Fixed it being possible for rulers unaffected by the Baqt to abolish it if they held one of the Baqt provinces
 
 3.3.3
 	(PB+SWMH) Fixed some dependency issues, potentially fixing certain CTDs
