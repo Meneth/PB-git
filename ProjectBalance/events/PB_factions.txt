@@ -1047,7 +1047,9 @@ character_event = {
 			OR = {
 				has_opinion_modifier = { who = liege modifier = opinion_tyrant }
 				liege = { trait = incapable }
-				liege = { trait = impaler }
+				liege = { trait = imbecile }
+				liege = { trait = homosexual }
+				liege = { trait = arbitrary }
 			}
 		}
 		set_character_flag = faction_autonomy_abdicate
@@ -1063,8 +1065,16 @@ character_event = {
 				liege = { trait = incapable }
 			}
 			modifier = {
-				factor = 3
-				liege = { trait = impaler }
+				factor = 2
+				liege = { trait = imbecile }
+			}
+			modifier = {
+				factor = 2
+				liege = { trait = homosexual }
+			}
+			modifier = {
+				factor = 2
+				liege = { trait = arbitrary }
 			}
 			modifier = {
 				factor = 3
@@ -4653,8 +4663,16 @@ character_event = {
 				liege = { trait = incapable }
 			}
 			modifier = {
-				factor = 3
-				liege = { trait = impaler }
+				factor = 2
+				liege = { trait = homosexual }
+			}
+			modifier = {
+				factor = 2
+				liege = { trait = arbitrary }
+			}
+			modifier = {
+				factor = 2
+				liege = { trait = imbecile }
 			}
 			modifier = {
 				factor = 3
