@@ -1293,8 +1293,6 @@ content = {
 	opposites =  {
 		ambitious
 	}
-
-	vassal_opinion = 5
 	
 	intrigue = -1
 	
