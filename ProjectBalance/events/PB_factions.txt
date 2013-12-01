@@ -1464,14 +1464,6 @@ character_event = {
 			}
 			modifier = {
 				factor = 2
-				NOT = { check_variable = { which = "autonomy_personal_mood" value = -20 } }
-			}
-			modifier = {
-				factor = 2
-				NOT = { check_variable = { which = "autonomy_personal_mood" value = -25 } }
-			}
-			modifier = {
-				factor = 2
 				FROM = { has_character_flag = faction_autonomy_abdicate }
 			}
 		}
@@ -1505,18 +1497,6 @@ character_event = {
 			modifier = {
 				factor = 2
 				check_variable = { which = "autonomy_personal_mood" value = 5 }
-			}
-			modifier = {
-				factor = 2
-				check_variable = { which = "autonomy_personal_mood" value = 10 }
-			}
-			modifier = {
-				factor = 2
-				check_variable = { which = "autonomy_personal_mood" value = 15 }
-			}
-			modifier = {
-				factor = 2
-				check_variable = { which = "autonomy_personal_mood" value = 20 }
 			}
 			modifier = {
 				factor = 1.5
@@ -1663,14 +1643,6 @@ character_event = {
 				check_variable = { which = "autonomy_personal_mood" value = 10 }
 			}
 			modifier = {
-				factor = 2
-				check_variable = { which = "autonomy_personal_mood" value = 15 }
-			}
-			modifier = {
-				factor = 2
-				check_variable = { which = "autonomy_personal_mood" value = 20 }
-			}
-			modifier = {
 				factor = 10
 				trait = charitable
 			}
@@ -1704,22 +1676,6 @@ character_event = {
 			modifier = {
 				factor = 2
 				NOT = { check_variable = { which = "autonomy_personal_mood" value = -5 } }
-			}
-			modifier = {
-				factor = 2
-				NOT = { check_variable = { which = "autonomy_personal_mood" value = -10 } }
-			}
-			modifier = {
-				factor = 2
-				NOT = { check_variable = { which = "autonomy_personal_mood" value = -15 } }
-			}
-			modifier = {
-				factor = 2
-				NOT = { check_variable = { which = "autonomy_personal_mood" value = -20 } }
-			}
-			modifier = {
-				factor = 2
-				NOT = { check_variable = { which = "autonomy_personal_mood" value = -25 } }
 			}
 			modifier = {
 				factor = 10
@@ -1808,18 +1764,6 @@ character_event = {
 				NOT = { check_variable = { which = "autonomy_personal_mood" value = -10 } }
 			}
 			modifier = {
-				factor = 2
-				NOT = { check_variable = { which = "autonomy_personal_mood" value = -15 } }
-			}
-			modifier = {
-				factor = 2
-				NOT = { check_variable = { which = "autonomy_personal_mood" value = -20 } }
-			}
-			modifier = {
-				factor = 2
-				NOT = { check_variable = { which = "autonomy_personal_mood" value = -25 } }
-			}
-			modifier = {
 				factor = 10
 				trait = greedy
 			}
@@ -1853,18 +1797,6 @@ character_event = {
 			modifier = {
 				factor = 2
 				check_variable = { which = "autonomy_personal_mood" value = 5 }
-			}
-			modifier = {
-				factor = 2
-				check_variable = { which = "autonomy_personal_mood" value = 10 }
-			}
-			modifier = {
-				factor = 2
-				check_variable = { which = "autonomy_personal_mood" value = 15 }
-			}
-			modifier = {
-				factor = 2
-				check_variable = { which = "autonomy_personal_mood" value = 20 }
 			}
 			modifier = {
 				factor = 10
@@ -2229,18 +2161,6 @@ character_event = {
 				factor = 2
 				NOT = { check_variable = { which = "autonomy_personal_mood" value = -10 } }
 			}
-			modifier = {
-				factor = 2
-				NOT = { check_variable = { which = "autonomy_personal_mood" value = -15 } }
-			}
-			modifier = {
-				factor = 2
-				NOT = { check_variable = { which = "autonomy_personal_mood" value = -20 } }
-			}
-			modifier = {
-				factor = 2
-				NOT = { check_variable = { which = "autonomy_personal_mood" value = -25 } }
-			}
 			modifier = { #If the liege has a claim on one of their titles they might want to revoke it
 				factor = 5
 				liege = {
@@ -2280,18 +2200,6 @@ character_event = {
 			modifier = {
 				factor = 2
 				check_variable = { which = "autonomy_personal_mood" value = 5 }
-			}
-			modifier = {
-				factor = 2
-				check_variable = { which = "autonomy_personal_mood" value = 10 }
-			}
-			modifier = {
-				factor = 2
-				check_variable = { which = "autonomy_personal_mood" value = 15 }
-			}
-			modifier = {
-				factor = 2
-				check_variable = { which = "autonomy_personal_mood" value = 20 }
 			}
 		}
 	}
@@ -2491,18 +2399,6 @@ character_event = {
 				NOT = { check_variable = { which = "autonomy_personal_mood" value = -10 } }
 			}
 			modifier = {
-				factor = 2
-				NOT = { check_variable = { which = "autonomy_personal_mood" value = -15 } }
-			}
-			modifier = {
-				factor = 2
-				NOT = { check_variable = { which = "autonomy_personal_mood" value = -20 } }
-			}
-			modifier = {
-				factor = 2
-				NOT = { check_variable = { which = "autonomy_personal_mood" value = -25 } }
-			}
-			modifier = {
 				factor = 10
 				trait = ambitious
 			}
@@ -2546,18 +2442,6 @@ character_event = {
 			modifier = {
 				factor = 2
 				check_variable = { which = "autonomy_personal_mood" value = 5 }
-			}
-			modifier = {
-				factor = 2
-				check_variable = { which = "autonomy_personal_mood" value = 10 }
-			}
-			modifier = {
-				factor = 2
-				check_variable = { which = "autonomy_personal_mood" value = 15 }
-			}
-			modifier = {
-				factor = 2
-				check_variable = { which = "autonomy_personal_mood" value = 20 }
 			}
 		}
 	}
@@ -2760,18 +2644,6 @@ character_event = {
 				NOT = { check_variable = { which = "autonomy_personal_mood" value = -10 } }
 			}
 			modifier = {
-				factor = 2
-				NOT = { check_variable = { which = "autonomy_personal_mood" value = -15 } }
-			}
-			modifier = {
-				factor = 2
-				NOT = { check_variable = { which = "autonomy_personal_mood" value = -20 } }
-			}
-			modifier = {
-				factor = 2
-				NOT = { check_variable = { which = "autonomy_personal_mood" value = -25 } }
-			}
-			modifier = {
 				factor = 0 #If they dislike all the prisoners they don't want them released
 				liege = {
 					NOT = {
@@ -2824,18 +2696,6 @@ character_event = {
 			modifier = {
 				factor = 2
 				check_variable = { which = "autonomy_personal_mood" value = 5 }
-			}
-			modifier = {
-				factor = 2
-				check_variable = { which = "autonomy_personal_mood" value = 10 }
-			}
-			modifier = {
-				factor = 2
-				check_variable = { which = "autonomy_personal_mood" value = 15 }
-			}
-			modifier = {
-				factor = 2
-				check_variable = { which = "autonomy_personal_mood" value = 20 }
 			}
 		}
 	}
@@ -3034,18 +2894,6 @@ character_event = {
 			}
 			modifier = {
 				factor = 2
-				NOT = { check_variable = { which = "autonomy_personal_mood" value = -15 } }
-			}
-			modifier = {
-				factor = 2
-				NOT = { check_variable = { which = "autonomy_personal_mood" value = -20 } }
-			}
-			modifier = {
-				factor = 2
-				NOT = { check_variable = { which = "autonomy_personal_mood" value = -25 } }
-			}
-			modifier = {
-				factor = 2
 				liege = { demesne_efficiency = 1.2 }
 			}
 			modifier = {
@@ -3091,18 +2939,6 @@ character_event = {
 			modifier = {
 				factor = 2
 				check_variable = { which = "autonomy_personal_mood" value = 5 }
-			}
-			modifier = {
-				factor = 2
-				check_variable = { which = "autonomy_personal_mood" value = 10 }
-			}
-			modifier = {
-				factor = 2
-				check_variable = { which = "autonomy_personal_mood" value = 15 }
-			}
-			modifier = {
-				factor = 2
-				check_variable = { which = "autonomy_personal_mood" value = 20 }
 			}
 		}
 	}
@@ -3360,18 +3196,6 @@ character_event = {
 				NOT = { check_variable = { which = "autonomy_personal_mood" value = -10 } }
 			}
 			modifier = {
-				factor = 2
-				NOT = { check_variable = { which = "autonomy_personal_mood" value = -15 } }
-			}
-			modifier = {
-				factor = 2
-				NOT = { check_variable = { which = "autonomy_personal_mood" value = -20 } }
-			}
-			modifier = {
-				factor = 2
-				NOT = { check_variable = { which = "autonomy_personal_mood" value = -25 } }
-			}
-			modifier = {
 				factor = 10
 				trait = greedy
 			}
@@ -3418,18 +3242,6 @@ character_event = {
 			modifier = {
 				factor = 2
 				check_variable = { which = "autonomy_personal_mood" value = 5 }
-			}
-			modifier = {
-				factor = 2
-				check_variable = { which = "autonomy_personal_mood" value = 10 }
-			}
-			modifier = {
-				factor = 2
-				check_variable = { which = "autonomy_personal_mood" value = 15 }
-			}
-			modifier = {
-				factor = 2
-				check_variable = { which = "autonomy_personal_mood" value = 20 }
 			}
 			modifier = {
 				factor = 10
@@ -3650,18 +3462,6 @@ character_event = {
 				factor = 2
 				NOT = { check_variable = { which = "autonomy_personal_mood" value = -10 } }
 			}
-			modifier = {
-				factor = 2
-				NOT = { check_variable = { which = "autonomy_personal_mood" value = -15 } }
-			}
-			modifier = {
-				factor = 2
-				NOT = { check_variable = { which = "autonomy_personal_mood" value = -20 } }
-			}
-			modifier = {
-				factor = 2
-				NOT = { check_variable = { which = "autonomy_personal_mood" value = -25 } }
-			}
 			modifier = { #Has family outside realm
 				factor = 3
 				any_dynasty_member = {
@@ -3700,18 +3500,6 @@ character_event = {
 			modifier = {
 				factor = 2
 				check_variable = { which = "autonomy_personal_mood" value = 5 }
-			}
-			modifier = {
-				factor = 2
-				check_variable = { which = "autonomy_personal_mood" value = 10 }
-			}
-			modifier = {
-				factor = 2
-				check_variable = { which = "autonomy_personal_mood" value = 15 }
-			}
-			modifier = {
-				factor = 2
-				check_variable = { which = "autonomy_personal_mood" value = 20 }
 			}
 		}
 	}
@@ -3910,14 +3698,6 @@ character_event = {
 				NOT = { check_variable = { which = "autonomy_personal_mood" value = -15 } }
 			}
 			modifier = {
-				factor = 2
-				NOT = { check_variable = { which = "autonomy_personal_mood" value = -20 } }
-			}
-			modifier = {
-				factor = 2
-				NOT = { check_variable = { which = "autonomy_personal_mood" value = -25 } }
-			}
-			modifier = {
 				factor = 3
 				liege = { trait = incapable }
 			}
@@ -3968,18 +3748,6 @@ character_event = {
 			modifier = {
 				factor = 2
 				check_variable = { which = "autonomy_personal_mood" value = 5 }
-			}
-			modifier = {
-				factor = 2
-				check_variable = { which = "autonomy_personal_mood" value = 10 }
-			}
-			modifier = {
-				factor = 2
-				check_variable = { which = "autonomy_personal_mood" value = 15 }
-			}
-			modifier = {
-				factor = 2
-				check_variable = { which = "autonomy_personal_mood" value = 20 }
 			}
 		}
 	}
