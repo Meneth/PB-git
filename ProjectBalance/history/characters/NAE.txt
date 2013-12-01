@@ -469,18 +469,18 @@
 	}
 }
 
-1000033200 = { #Gao - historical, but shifted in time a fair bit
-	name="Kusoy"
-	dynasty=1000011002
-	religion="sunni"
-	culture="mande"
-	1009.1.1={
-	birth="1009.1.1"
-	}
-	1067.1.1={
-	death="1067.1.1"
-	}
-}
+#1000033200 = { #Gao - historical, but shifted in time a fair bit
+#	name="Kusoy"
+#	dynasty=1000011002
+#	religion="sunni"
+#	culture="mande"
+#	1009.1.1={
+#	birth="1009.1.1"
+#	}
+#	1067.1.1={
+#	death="1067.1.1"
+#	}
+#}
 
 1000033201 = { #Sikasso - entirely fictitious
 	name="Alboury"
@@ -754,18 +754,18 @@
 	}
 }
 
-1000034002 = {
-	name = "Ghana" #Imperial Ghana
-	dynasty = 1000011101
-	religion="west_african_pagan"
-	culture="sosso"
-	1040.1.1={
-		birth="1040.1.1"
-	}
-	1076.1.1={
-		death="1076.1.1"
-	}
-}
+#1000034002 = {
+#	name = "Ghana" #Imperial Ghana
+#	dynasty = 1000011101
+#	religion="west_african_pagan"
+#	culture="sosso"
+#	1040.1.1={
+#		birth="1040.1.1"
+#	}
+#	1076.1.1={
+#		death="1076.1.1"
+#	}
+#}
 
 1000034003 = { #fictitious post-sack
 	name = "Samory"

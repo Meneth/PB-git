@@ -505,7 +505,6 @@ narrative_event = {
 		}
 		new_character = {
 			spawn_unit = {
-				province = 902 # Dashhowuz
 				province = 907 # Sabzevar
 				troops =
 				{

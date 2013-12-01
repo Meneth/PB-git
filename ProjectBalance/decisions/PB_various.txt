@@ -337,6 +337,14 @@ decisions = {
 			any_realm_province = {
 				has_province_modifier = baqt
 			}
+			OR = {
+				culture = miaphysite
+				AND = {
+					religion = orthodox
+					culture_group = east_african
+				}
+				religion_group = muslim
+			}
 		}
 		allow = {
 			OR = {

@@ -4,19 +4,19 @@ crown_levies;Crown Levies;;;;;;;;;;;;;x
 crown_levies_desc;Crown Levies dictate how many levies vassals have to give you, which will override their opinion of you and your demesne laws if they'd result in less levies. As you increase your levy laws your vassals will become less happy with you, and might even rebel or plot to reduce the crown levies.;;;;;;;;;;;;;x
 crown_levies_0;No Crown Levies;;;;;;;;;;;;;x
 crown_levies_0_option;None;;;;;;;;;;;;;x
-crown_levies_0_desc;Crown Levies dictate how many levies vassals have to give you, which will override their opinion of you and your demesne laws if they'd result in less levies. As you increase your levy laws your vassals will become less happy with you, and might even rebel or plot to reduce the crown levies. This level will not give you any crown levies.;;;;;;;;;;;;;x
+crown_levies_0_desc;Crown Levies dictate how many levies vassals have to give you, which will override their opinion of you and your demesne laws if they'd result in less levies.;;;;;;;;;;;;;x
 crown_levies_1;Low Crown Levies;;;;;;;;;;;;;x
 crown_levies_1_option;Low;;;;;;;;;;;;;x
-crown_levies_1_desc;Crown Levies dictate how many levies vassals have to give you, which will override their opinion of you and your demesne laws if they'd result in less levies. As you increase your levy laws your vassals will become less happy with you, and might even rebel or plot to reduce the crown levies. This level will give you 5% higher crown levies.;;;;;;;;;;;;;x
+crown_levies_1_desc;Crown Levies dictate how many levies vassals have to give you, which will override their opinion of you and your demesne laws if they'd result in less levies.;;;;;;;;;;;;;x
 crown_levies_2;Medium Crown Levies;;;;;;;;;;;;;x
 crown_levies_2_option;Medium;;;;;;;;;;;;;x
-crown_levies_2_desc;Crown Levies dictate how many levies vassals have to give you, which will override their opinion of you and your demesne laws if they'd result in less levies. As you increase your levy laws your vassals will become less happy with you, and might even rebel or plot to reduce the crown levies. This level will give you 10% higher crown levies.;;;;;;;;;;;;;x
+crown_levies_2_desc;Crown Levies dictate how many levies vassals have to give you, which will override their opinion of you and your demesne laws if they'd result in less levies.;;;;;;;;;;;;;x
 crown_levies_3;High Crown Levies;;;;;;;;;;;;;x
 crown_levies_3_option;High;;;;;;;;;;;;;x
-crown_levies_3_desc;Crown Levies dictate how many levies vassals have to give you, which will override their opinion of you and your demesne laws if they'd result in less levies. As you increase your levy laws your vassals will become less happy with you, and might even rebel or plot to reduce the crown levies. This level will give you 15% higher crown levies.;;;;;;;;;;;;;x
+crown_levies_3_desc;Crown Levies dictate how many levies vassals have to give you, which will override their opinion of you and your demesne laws if they'd result in less levies.;;;;;;;;;;;;;x
 crown_levies_4;Harsh Crown Levies;;;;;;;;;;;;;x
 crown_levies_4_option;Harsh;;;;;;;;;;;;;x
-crown_levies_4_desc;Crown Levies dictate how many levies vassals have to give you, which will override their opinion of you and your demesne laws if they'd result in less levies. As you increase your levy laws your vassals will become less happy with you, and might even rebel or plot to reduce the crown levies. This level will give you 20% higher crown levies.;;;;;;;;;;;;;x
+crown_levies_4_desc;Crown Levies dictate how many levies vassals have to give you, which will override their opinion of you and your demesne laws if they'd result in less levies.;;;;;;;;;;;;;x
 king_peace;The King's Peace;;;;;;;;;;;;;x
 king_peace_desc;The King's Peace dictates who vassals can declare war upon.;;;;;;;;;;;;;x
 king_peace_0;No King's Peace;;;;;;;;;;;;;x
@@ -24,10 +24,10 @@ king_peace_0_option;None;;;;;;;;;;;;;x
 king_peace_0_desc;The King's Peace dictates who vassals can declare war upon. At this level they will be able to declare war upon anyone as long as they have a valid casus belli.;;;;;;;;;;;;;x
 king_peace_1;Internal King's Peace;;;;;;;;;;;;;x
 king_peace_1_option;Internal;;;;;;;;;;;;;x
-king_peace_1_desc;The King's Peace dictates who vassals can declare war upon. At this level they will not be able to declare war upon other vassals unless they're rebelling against them. Crown levies will also be increased by 5%.;;;;;;;;;;;;;x
+king_peace_1_desc;The King's Peace dictates who vassals can declare war upon. At this level they will not be able to declare war upon other vassals unless they're rebelling against them.;;;;;;;;;;;;;x
 king_peace_2;Complete King's Peace;;;;;;;;;;;;;x
 king_peace_2_option;Total;;;;;;;;;;;;;x
-king_peace_2_desc;The King's Peace dictates who vassals can declare war upon. At this level they will not be able to declare war upon anyone unless they're rebelling against them. Crown levies will also be increased by 10%.;;;;;;;;;;;;;x
+king_peace_2_desc;The King's Peace dictates who vassals can declare war upon. At this level they will not be able to declare war upon anyone unless they're rebelling against them.;;;;;;;;;;;;;x
 emperor_peace;The Emperor's Peace;;;;;;;;;;;;;x
 emperor_peace_desc;The Emperor's Peace dictates who vassals can declare war upon.;;;;;;;;;;;;;x
 emperor_peace_0;No Emperor's Peace;;;;;;;;;;;;;x
@@ -35,10 +35,10 @@ emperor_peace_0_option;None;;;;;;;;;;;;;x
 emperor_peace_0_desc;The Emperor's Peace dictates who vassals can declare war upon. At this level they will be able to declare war upon anyone as long as they have a valid casus belli.;;;;;;;;;;;;;x
 emperor_peace_1;Internal Emperor's Peace;;;;;;;;;;;;;x
 emperor_peace_1_option;Internal;;;;;;;;;;;;;x
-emperor_peace_1_desc;The Emperor's Peace dictates who vassals can declare war upon. At this level they will not be able to declare war upon other vassals unless they're rebelling against them. Crown levies will also be increased by 5%.;;;;;;;;;;;;;x
+emperor_peace_1_desc;The Emperor's Peace dictates who vassals can declare war upon. At this level they will not be able to declare war upon other vassals unless they're rebelling against them.;;;;;;;;;;;;;x
 emperor_peace_2;Complete Emperor's Peace;;;;;;;;;;;;;x
 emperor_peace_2_option;Total;;;;;;;;;;;;;x
-emperor_peace_2_desc;The Emperor's Peace dictates who vassals can declare war upon. At this level they will not be able to declare war upon anyone unless they're rebelling against them. Crown levies will also be increased by 10%.;;;;;;;;;;;;;x
+emperor_peace_2_desc;The Emperor's Peace dictates who vassals can declare war upon. At this level they will not be able to declare war upon anyone unless they're rebelling against them.;;;;;;;;;;;;;x
 revokation;Title Revocation;;;;;;;;;;;;;x
 revokation_desc;Title Revocation decides if characters can revoke their vassals' titles.;;;;;;;;;;;;;x
 revokation_0;No Title Revocation;;;;;;;;;;;;;x
@@ -46,10 +46,10 @@ revokation_0_option;Banned;;;;;;;;;;;;;x
 revokation_0_desc;Title Revocation decides if characters can revoke their vassals' titles. At this level revocation is not possible.;;;;;;;;;;;;;x
 revokation_1;Title Revocation Allowed;;;;;;;;;;;;;x
 revokation_1_option;Allowed;;;;;;;;;;;;;x
-revokation_1_desc;Title Revocation decides if characters can revoke their vassals' titles. At this level revocation is possible but will give a major opinion penalty with all vassals unless you have a valid reason, for example rebellion.;;;;;;;;;;;;;x
+revokation_1_desc;Title Revocation decides if characters can revoke their vassals' titles. At this level revocation is possible but will give a major opinion penalty with all vassals unless you have a valid reason.;;;;;;;;;;;;;x
 revokation_2;Free Infidel Revocation;;;;;;;;;;;;;x
 revokation_2_option;Infidels;;;;;;;;;;;;;x
-revokation_2_desc;Title Revocation decides if characters can revoke their vassals' titles. At this level revocation is possible but will give a major opinion penalty with all vassals unless you have a valid cause such as rebellion. At this level being an infidel or heretic is considered a valid reason.;;;;;;;;;;;;;x
+revokation_2_desc;Title Revocation decides if characters can revoke their vassals' titles. At this level revocation is possible but will give a major opinion penalty with all vassals unless you have a valid reason. At this level being an infidel or heretic is considered a valid reason.;;;;;;;;;;;;;x
 inheritance;External Inheritance;;;;;;;;;;;;;x
 inheritance_desc;External Inheritance controls whether characters outside the realm can inherit.;;;;;;;;;;;;;x
 inheritance_0;External Inheritance Allowed;;;;;;;;;;;;;x
