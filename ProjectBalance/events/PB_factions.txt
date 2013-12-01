@@ -323,13 +323,148 @@ character_event = {
 			limit = { FROM = { character = ROOT } }
 			character_event = { id = meneth.221 days = 3 }
 		}
+		if = {
+			limit = { NOT = { opinion = { who = LIEGE value = -75 } } }
+			change_variable = { which = "autonomy_personal_mood" value = -2 }
+		}
+		if = {
+			limit = { NOT = { opinion = { who = LIEGE value = -50 } } }
+			change_variable = { which = "autonomy_personal_mood" value = -2 }
+		}
+		if = {
+			limit = { NOT = { opinion = { who = LIEGE value = -30 } } }
+			change_variable = { which = "autonomy_personal_mood" value = -2 }
+		}
+		if = {
+			limit = { NOT = { opinion = { who = LIEGE value = -10 } } }
+			change_variable = { which = "autonomy_personal_mood" value = -2 }
+		}
+		if = {
+			limit = { opinion = { who = LIEGE value = 10 } }
+			change_variable = { which = "autonomy_personal_mood" value = 2 }
+		}
+		if = {
+			limit = { opinion = { who = LIEGE value = 30 } }
+			change_variable = { which = "autonomy_personal_mood" value = 2 }
+		}
+		if = {
+			limit = { opinion = { who = LIEGE value = 50 } }
+			change_variable = { which = "autonomy_personal_mood" value = 2 }
+		}
+		if = {
+			limit = { opinion = { who = LIEGE value = 75 } }
+			change_variable = { which = "autonomy_personal_mood" value = 2 }
+		}
+		if = {
+			limit = { trait = content }
+			change_variable = { which = "autonomy_personal_mood" value = 5 }
+		}
+		if = {
+			limit = { trait = imbecile }
+			change_variable = { which = "autonomy_personal_mood" value = 4 }
+		}
+		if = {
+			limit = { trait = inbred }
+			change_variable = { which = "autonomy_personal_mood" value = 4 }
+		}
+		if = {
+			limit = { trait = slow }
+			change_variable = { which = "autonomy_personal_mood" value = 3 }
+		}
+		if = {
+			limit = { trait = kind }
+			change_variable = { which = "autonomy_personal_mood" value = 2 }
+		}
+		if = {
+			limit = { trait = charitable }
+			change_variable = { which = "autonomy_personal_mood" value = 2 }
+		}
+		if = {
+			limit = { trait = greedy }
+			change_variable = { which = "autonomy_personal_mood" value = -2 }
+		}
+		if = {
+			limit = { trait = proud }
+			change_variable = { which = "autonomy_personal_mood" value = -1 }
+		}
+		if = {
+			limit = { trait = arbitrary }
+			change_variable = { which = "autonomy_personal_mood" value = -1 }
+		}
+		if = {
+			limit = { trait = impaler }
+			change_variable = { which = "autonomy_personal_mood" value = -2 }
+		}
+		if = {
+			limit = { trait = deceitful }
+			change_variable = { which = "autonomy_personal_mood" value = -3 }
+		}
+		if = {
+			limit = { liege = { demesne_efficiency = 1.01 } } #Over demesne limit
+			change_variable = { which = "autonomy_personal_mood" value = -2 }
+		}
+		if = {
+			limit = { liege = { demesne_efficiency = 1.5 } } #Over demesne limit
+			change_variable = { which = "autonomy_personal_mood" value = -3 }
+		}
+		if = {
+			limit = { liege = { dynasty = ROOT } }
+			change_variable = { which = "autonomy_personal_mood" value = 2 }
+		}
+		if = {
+			limit = { liege = { is_close_relative = ROOT } }
+			change_variable = { which = "autonomy_personal_mood" value = 2 }
+		}
+		if = {
+			limit = { crownlaw_title = { has_law = king_peace_1 } }
+			change_variable = { which = "autonomy_personal_mood" value = -3 }
+		}
+		if = {
+			limit = { crownlaw_title = { has_law = king_peace_2 } }
+			change_variable = { which = "autonomy_personal_mood" value = -5 }
+		}
+		if = {
+			limit = { crownlaw_title = { has_law = emperor_peace_1 } }
+			change_variable = { which = "autonomy_personal_mood" value = -4 }
+		}
+		if = {
+			limit = { crownlaw_title = { has_law = emperor_peace_2 } }
+			change_variable = { which = "autonomy_personal_mood" value = -6 }
+		}
+		if = {
+			limit = { crownlaw_title = { has_law = revokation_1 } }
+			change_variable = { which = "autonomy_personal_mood" value = -4 }
+		}
+		if = {
+			limit = { crownlaw_title = { has_law = revokation_2 } }
+			change_variable = { which = "autonomy_personal_mood" value = -5 }
+		}
+		if = {
+			limit = { crownlaw_title = { has_law = crown_levies_1 } }
+			change_variable = { which = "autonomy_personal_mood" value = -1 }
+		}
+		if = {
+			limit = { crownlaw_title = { has_law = crown_levies_2 } }
+			change_variable = { which = "autonomy_personal_mood" value = -2 }
+		}
+		if = {
+			limit = { crownlaw_title = { has_law = crown_levies_3 } }
+			change_variable = { which = "autonomy_personal_mood" value = -3 }
+		}
+		if = {
+			limit = { crownlaw_title = { has_law = crown_levies_4 } }
+			change_variable = { which = "autonomy_personal_mood" value = -4 }
+		}
+		if = {
+			limit = { crownlaw_title = { has_law = inheritance_1 } }
+			change_variable = { which = "autonomy_personal_mood" value = -1 }
+		}
 	}
 	option = { #Happy
 		name = meneth.220.a
 		FROM = { change_variable = { which = "autonomy_mood" value = 1 } }
 		if = {
 			limit = { FROM = { character = ROOT } }
-			set_character_flag = faction_autonomy_happy
 			change_variable = { which = "autonomy_mood" value = 1 }
 		}
 		if = {
@@ -341,65 +476,37 @@ character_event = {
 			FROM = { change_variable = { which = "autonomy_mood" value = 2 } }
 		}
 		ai_chance = {
-			factor = 2
+			factor = 1
 			modifier = {
-				factor = 1.5
-				opinion = { who = LIEGE value = 10 }
-			}
-			modifier = {
-				factor = 1.5
-				opinion = { who = LIEGE value = 30 }
-			}
-			modifier = {
-				factor = 1.5
-				opinion = { who = LIEGE value = 50 }
-			}
-			modifier = {
-				factor = 1.5
-				opinion = { who = LIEGE value = 75 }
-			}
-			modifier = {
-				factor = 5
-				trait = content
-			}
-			modifier = {
-				factor = 4
-				trait = imbecile
-			}
-			modifier = {
-				factor = 4
-				trait = inbred
-			}
-			modifier = {
-				factor = 3
-				trait = slow
+				factor = 0 #If quite angry, will never vote positively
+				NOT = { check_variable = { which = "autonomy_personal_mood" value = -10 } }
 			}
 			modifier = {
 				factor = 2
-				trait = kind
+				check_variable = { which = "autonomy_personal_mood" value = 0 }
 			}
 			modifier = {
 				factor = 2
-				trait = charitable
+				check_variable = { which = "autonomy_personal_mood" value = 5 }
 			}
 			modifier = {
 				factor = 2
-				liege = { dynasty = ROOT }
+				check_variable = { which = "autonomy_personal_mood" value = 10 }
 			}
 			modifier = {
 				factor = 2
-				liege = { is_close_relative = ROOT }
+				check_variable = { which = "autonomy_personal_mood" value = 15 }
+			}
+			modifier = {
+				factor = 2
+				check_variable = { which = "autonomy_personal_mood" value = 20 }
 			}
 		}
 	}
 	option = { #Neutral
 		name = meneth.220.b
-		if = {
-			limit = { FROM = { character = ROOT } }
-			set_character_flag = faction_autonomy_neutral
-		}
 		ai_chance = {
-			factor = 15
+			factor = 4
 		}
 	}
 	option = { #Angry
@@ -415,126 +522,37 @@ character_event = {
 		}
 		if = {
 			limit = { FROM = { character = ROOT } }
-			set_character_flag = faction_autonomy_angry
 			change_variable = { which = "autonomy_mood" value = -1 }
 		}
 		ai_chance = {
-			factor = 2
+			factor = 1
 			modifier = {
-				factor = 2
-				NOT = { opinion = { who = LIEGE value = -10 } }
+				factor = 0 #If quite happy, will never vote negatively
+				check_variable = { which = "autonomy_personal_mood" value = 10 }
 			}
 			modifier = {
 				factor = 2
-				NOT = { opinion = { who = LIEGE value = -30 } }
+				NOT = { check_variable = { which = "autonomy_personal_mood" value = 0 } }
 			}
 			modifier = {
 				factor = 2
-				NOT = { opinion = { who = LIEGE value = -50 } }
+				NOT = { check_variable = { which = "autonomy_personal_mood" value = -5 } }
 			}
 			modifier = {
 				factor = 2
-				NOT = { opinion = { who = LIEGE value = -75 } }
-			}
-			modifier = {
-				factor = 1.5
-				crownlaw_title = { has_law = king_peace_1 }
+				NOT = { check_variable = { which = "autonomy_personal_mood" value = -10 } }
 			}
 			modifier = {
 				factor = 2
-				crownlaw_title = { has_law = king_peace_2 }
-			}
-			modifier = {
-				factor = 1.6
-				crownlaw_title = { has_law = emperor_peace_1 }
-			}
-			modifier = {
-				factor = 2.5
-				crownlaw_title = { has_law = emperor_peace_2 }
-			}
-			modifier = {
-				factor = 1.75
-				crownlaw_title = { has_law = revokation_1 }
+				NOT = { check_variable = { which = "autonomy_personal_mood" value = -15 } }
 			}
 			modifier = {
 				factor = 2
-				crownlaw_title = { has_law = revokation_2 }
-			}
-			modifier = {
-				factor = 1.2
-				crownlaw_title = { has_law = crown_levies_1 }
-			}
-			modifier = {
-				factor = 1.4
-				crownlaw_title = { has_law = crown_levies_2 }
-			}
-			modifier = {
-				factor = 1.7
-				crownlaw_title = { has_law = crown_levies_3 }
+				NOT = { check_variable = { which = "autonomy_personal_mood" value = -20 } }
 			}
 			modifier = {
 				factor = 2
-				crownlaw_title = { has_law = crown_levies_4 }
-			}
-			modifier = {
-				factor = 1.3
-				crownlaw_title = { has_law = inheritance_1 }
-			}
-			modifier = {
-				factor = 0.75
-				trait = kind
-			}
-			modifier = {
-				factor = 0.75
-				trait = charitable
-			}
-			modifier = {
-				factor = 0.75
-				trait = honest
-			}
-			modifier = {
-				factor = 0.75
-				trait = humble
-			}
-			modifier = {
-				factor = 0.75
-				trait = just
-			}
-			modifier = {
-				factor = 1.5
-				trait = proud
-			}
-			modifier = {
-				factor = 1.5
-				trait = arbitrary
-			}
-			modifier = {
-				factor = 2
-				trait = envious
-			}
-			modifier = {
-				factor = 2
-				trait = greedy
-			}
-			modifier = {
-				factor = 2
-				trait = impaler
-			}
-			modifier = {
-				factor = 2
-				trait = deceitful
-			}
-			modifier = {
-				factor = 5
-				trait = ambitious
-			}
-			modifier = {
-				factor = 1.5
-				liege = { demesne_efficiency = 1.01 } # Over demesne limit
-			}
-			modifier = {
-				factor = 2
-				liege = { demesne_efficiency = 1.5 } # Far over demesne limit
+				NOT = { check_variable = { which = "autonomy_personal_mood" value = -25 } }
 			}
 		}
 	}
@@ -578,7 +596,7 @@ character_event = {
 			factor = 1
 			modifier = {
 				factor = 0
-				has_character_flag = faction_autonomy_angry
+				NOT = { check_variable = { which = "autonomy_personal_mood" value = -5 } }
 			}
 			modifier = {
 				factor = 0
@@ -612,8 +630,8 @@ character_event = {
 			modifier = {
 				factor = 0.5
 				OR = {
-					has_character_flag = faction_autonomy_happy
-					has_character_flag = faction_autonomy_angry
+					NOT = { check_variable = { which = "autonomy_personal_mood" value = -5 } }
+					check_variable = { which = "autonomy_personal_mood" value = 5 }
 				}
 			}
 			modifier = {
@@ -631,8 +649,8 @@ character_event = {
 		ai_chance = {
 			factor = 1
 			modifier = {
-				factor = 0
-				has_character_flag = faction_autonomy_happy
+				factor = 0.001
+				check_variable = { which = "autonomy_personal_mood" value = 5 }
 			}
 			modifier = {
 				factor = 2
@@ -748,6 +766,10 @@ character_event = {
 						reverse_opinion = { who = ROOT value = 50 }
 					}
 				}
+			}
+			modifier = {
+				factor = 0.001
+				check_variable = { which = "autonomy_personal_mood" value = 5 }
 			}
 		}
 	}
@@ -1396,92 +1418,32 @@ character_event = {
 		ai_chance = {
 			factor = 1
 			modifier = {
-				factor = 2
-				NOT = { opinion = { who = LIEGE value = -10 } }
+				factor = 0 #If quite happy, will never vote negatively
+				check_variable = { which = "autonomy_personal_mood" value = 10 }
 			}
 			modifier = {
 				factor = 2
-				NOT = { opinion = { who = LIEGE value = -30 } }
+				NOT = { check_variable = { which = "autonomy_personal_mood" value = 0 } }
 			}
 			modifier = {
 				factor = 2
-				NOT = { opinion = { who = LIEGE value = -50 } }
+				NOT = { check_variable = { which = "autonomy_personal_mood" value = -5 } }
 			}
 			modifier = {
 				factor = 2
-				NOT = { opinion = { who = LIEGE value = -75 } }
-			}
-			modifier = {
-				factor = 1.5
-				crownlaw_title = { has_law = king_peace_1 }
+				NOT = { check_variable = { which = "autonomy_personal_mood" value = -10 } }
 			}
 			modifier = {
 				factor = 2
-				crownlaw_title = { has_law = king_peace_2 }
-			}
-			modifier = {
-				factor = 1.6
-				crownlaw_title = { has_law = emperor_peace_1 }
-			}
-			modifier = {
-				factor = 2.5
-				crownlaw_title = { has_law = emperor_peace_2 }
-			}
-			modifier = {
-				factor = 1.75
-				crownlaw_title = { has_law = revokation_1 }
+				NOT = { check_variable = { which = "autonomy_personal_mood" value = -15 } }
 			}
 			modifier = {
 				factor = 2
-				crownlaw_title = { has_law = revokation_2 }
-			}
-			modifier = {
-				factor = 1.2
-				crownlaw_title = { has_law = crown_levies_1 }
-			}
-			modifier = {
-				factor = 1.4
-				crownlaw_title = { has_law = crown_levies_2 }
-			}
-			modifier = {
-				factor = 1.7
-				crownlaw_title = { has_law = crown_levies_3 }
+				NOT = { check_variable = { which = "autonomy_personal_mood" value = -20 } }
 			}
 			modifier = {
 				factor = 2
-				crownlaw_title = { has_law = crown_levies_4 }
-			}
-			modifier = {
-				factor = 1.3
-				crownlaw_title = { has_law = inheritance_1 }
-			}
-			modifier = {
-				factor = 1.5
-				trait = proud
-			}
-			modifier = {
-				factor = 1.5
-				trait = arbitrary
-			}
-			modifier = {
-				factor = 2
-				trait = envious
-			}
-			modifier = {
-				factor = 2
-				trait = greedy
-			}
-			modifier = {
-				factor = 2
-				trait = impaler
-			}
-			modifier = {
-				factor = 2
-				trait = deceitful
-			}
-			modifier = {
-				factor = 5
-				trait = ambitious
+				NOT = { check_variable = { which = "autonomy_personal_mood" value = -25 } }
 			}
 			modifier = {
 				factor = 2
@@ -1508,52 +1470,28 @@ character_event = {
 		ai_chance = {
 			factor = 5
 			modifier = {
-				factor = 2
-				opinion = { who = LIEGE value = 10 }
+				factor = 0 #If quite angry, will never vote positively
+				NOT = { check_variable = { which = "autonomy_personal_mood" value = -20 } }
 			}
 			modifier = {
 				factor = 2
-				opinion = { who = LIEGE value = 30 }
+				check_variable = { which = "autonomy_personal_mood" value = 0 }
 			}
 			modifier = {
 				factor = 2
-				opinion = { who = LIEGE value = 50 }
+				check_variable = { which = "autonomy_personal_mood" value = 5 }
 			}
 			modifier = {
 				factor = 2
-				opinion = { who = LIEGE value = 75 }
-			}
-			modifier = {
-				factor = 5
-				trait = content
-			}
-			modifier = {
-				factor = 4
-				trait = imbecile
-			}
-			modifier = {
-				factor = 4
-				trait = inbred
-			}
-			modifier = {
-				factor = 3
-				trait = slow
+				check_variable = { which = "autonomy_personal_mood" value = 10 }
 			}
 			modifier = {
 				factor = 2
-				trait = kind
+				check_variable = { which = "autonomy_personal_mood" value = 15 }
 			}
 			modifier = {
 				factor = 2
-				trait = charitable
-			}
-			modifier = {
-				factor = 2
-				liege = { dynasty = ROOT }
-			}
-			modifier = {
-				factor = 2
-				liege = { is_close_relative = ROOT }
+				check_variable = { which = "autonomy_personal_mood" value = 20 }
 			}
 			modifier = {
 				factor = 1.5
@@ -1684,52 +1622,32 @@ character_event = {
 		ai_chance = {
 			factor = 2
 			modifier = {
-				factor = 1.5
-				opinion = { who = LIEGE value = 10 }
-			}
-			modifier = {
-				factor = 1.5
-				opinion = { who = LIEGE value = 30 }
-			}
-			modifier = {
-				factor = 1.5
-				opinion = { who = LIEGE value = 50 }
-			}
-			modifier = {
-				factor = 1.5
-				opinion = { who = LIEGE value = 75 }
-			}
-			modifier = {
-				factor = 5
-				trait = content
-			}
-			modifier = {
-				factor = 4
-				trait = imbecile
-			}
-			modifier = {
-				factor = 4
-				trait = inbred
-			}
-			modifier = {
-				factor = 3
-				trait = slow
+				factor = 0 #If quite angry, will never vote positively
+				NOT = { check_variable = { which = "autonomy_personal_mood" value = -10 } }
 			}
 			modifier = {
 				factor = 2
-				trait = kind
+				check_variable = { which = "autonomy_personal_mood" value = 0 }
+			}
+			modifier = {
+				factor = 2
+				check_variable = { which = "autonomy_personal_mood" value = 5 }
+			}
+			modifier = {
+				factor = 2
+				check_variable = { which = "autonomy_personal_mood" value = 10 }
+			}
+			modifier = {
+				factor = 2
+				check_variable = { which = "autonomy_personal_mood" value = 15 }
+			}
+			modifier = {
+				factor = 2
+				check_variable = { which = "autonomy_personal_mood" value = 20 }
 			}
 			modifier = {
 				factor = 10
 				trait = charitable
-			}
-			modifier = {
-				factor = 2
-				liege = { dynasty = ROOT }
-			}
-			modifier = {
-				factor = 2
-				liege = { is_close_relative = ROOT }
 			}
 		}
 	}
@@ -1751,92 +1669,36 @@ character_event = {
 		ai_chance = {
 			factor = 2
 			modifier = {
-				factor = 2
-				NOT = { opinion = { who = LIEGE value = -10 } }
+				factor = 0 #If quite happy, will never vote negatively
+				check_variable = { which = "autonomy_personal_mood" value = 15 }
 			}
 			modifier = {
 				factor = 2
-				NOT = { opinion = { who = LIEGE value = -30 } }
+				NOT = { check_variable = { which = "autonomy_personal_mood" value = 0 } }
 			}
 			modifier = {
 				factor = 2
-				NOT = { opinion = { who = LIEGE value = -50 } }
+				NOT = { check_variable = { which = "autonomy_personal_mood" value = -5 } }
 			}
 			modifier = {
 				factor = 2
-				NOT = { opinion = { who = LIEGE value = -75 } }
-			}
-			modifier = {
-				factor = 1.5
-				crownlaw_title = { has_law = king_peace_1 }
+				NOT = { check_variable = { which = "autonomy_personal_mood" value = -10 } }
 			}
 			modifier = {
 				factor = 2
-				crownlaw_title = { has_law = king_peace_2 }
-			}
-			modifier = {
-				factor = 1.6
-				crownlaw_title = { has_law = emperor_peace_1 }
-			}
-			modifier = {
-				factor = 2.5
-				crownlaw_title = { has_law = emperor_peace_2 }
-			}
-			modifier = {
-				factor = 1.75
-				crownlaw_title = { has_law = revokation_1 }
+				NOT = { check_variable = { which = "autonomy_personal_mood" value = -15 } }
 			}
 			modifier = {
 				factor = 2
-				crownlaw_title = { has_law = revokation_2 }
-			}
-			modifier = {
-				factor = 1.2
-				crownlaw_title = { has_law = crown_levies_1 }
-			}
-			modifier = {
-				factor = 1.4
-				crownlaw_title = { has_law = crown_levies_2 }
-			}
-			modifier = {
-				factor = 1.7
-				crownlaw_title = { has_law = crown_levies_3 }
+				NOT = { check_variable = { which = "autonomy_personal_mood" value = -20 } }
 			}
 			modifier = {
 				factor = 2
-				crownlaw_title = { has_law = crown_levies_4 }
-			}
-			modifier = {
-				factor = 1.3
-				crownlaw_title = { has_law = inheritance_1 }
-			}
-			modifier = {
-				factor = 1.5
-				trait = proud
-			}
-			modifier = {
-				factor = 1.5
-				trait = arbitrary
-			}
-			modifier = {
-				factor = 2
-				trait = envious
+				NOT = { check_variable = { which = "autonomy_personal_mood" value = -25 } }
 			}
 			modifier = {
 				factor = 10
 				trait = greedy
-			}
-			modifier = {
-				factor = 2
-				trait = impaler
-			}
-			modifier = {
-				factor = 2
-				trait = deceitful
-			}
-			modifier = {
-				factor = 5
-				trait = ambitious
 			}
 		}
 	}
@@ -1905,92 +1767,36 @@ character_event = {
 		ai_chance = {
 			factor = 2
 			modifier = {
-				factor = 2
-				NOT = { opinion = { who = LIEGE value = -10 } }
+				factor = 0 #If quite happy, will never vote negatively
+				check_variable = { which = "autonomy_personal_mood" value = 10 }
 			}
 			modifier = {
 				factor = 2
-				NOT = { opinion = { who = LIEGE value = -30 } }
+				NOT = { check_variable = { which = "autonomy_personal_mood" value = 0 } }
 			}
 			modifier = {
 				factor = 2
-				NOT = { opinion = { who = LIEGE value = -50 } }
+				NOT = { check_variable = { which = "autonomy_personal_mood" value = -5 } }
 			}
 			modifier = {
 				factor = 2
-				NOT = { opinion = { who = LIEGE value = -75 } }
-			}
-			modifier = {
-				factor = 1.5
-				crownlaw_title = { has_law = king_peace_1 }
+				NOT = { check_variable = { which = "autonomy_personal_mood" value = -10 } }
 			}
 			modifier = {
 				factor = 2
-				crownlaw_title = { has_law = king_peace_2 }
-			}
-			modifier = {
-				factor = 1.6
-				crownlaw_title = { has_law = emperor_peace_1 }
-			}
-			modifier = {
-				factor = 2.5
-				crownlaw_title = { has_law = emperor_peace_2 }
-			}
-			modifier = {
-				factor = 1.75
-				crownlaw_title = { has_law = revokation_1 }
+				NOT = { check_variable = { which = "autonomy_personal_mood" value = -15 } }
 			}
 			modifier = {
 				factor = 2
-				crownlaw_title = { has_law = revokation_2 }
-			}
-			modifier = {
-				factor = 1.5
-				crownlaw_title = { has_law = crown_levies_1 }
+				NOT = { check_variable = { which = "autonomy_personal_mood" value = -20 } }
 			}
 			modifier = {
 				factor = 2
-				crownlaw_title = { has_law = crown_levies_2 }
-			}
-			modifier = {
-				factor = 3
-				crownlaw_title = { has_law = crown_levies_3 }
-			}
-			modifier = {
-				factor = 4
-				crownlaw_title = { has_law = crown_levies_4 }
-			}
-			modifier = {
-				factor = 1.3
-				crownlaw_title = { has_law = inheritance_1 }
-			}
-			modifier = {
-				factor = 1.5
-				trait = proud
-			}
-			modifier = {
-				factor = 1.5
-				trait = arbitrary
-			}
-			modifier = {
-				factor = 2
-				trait = envious
+				NOT = { check_variable = { which = "autonomy_personal_mood" value = -25 } }
 			}
 			modifier = {
 				factor = 10
 				trait = greedy
-			}
-			modifier = {
-				factor = 2
-				trait = impaler
-			}
-			modifier = {
-				factor = 2
-				trait = deceitful
-			}
-			modifier = {
-				factor = 5
-				trait = ambitious
 			}
 		}
 	}
@@ -2012,52 +1818,32 @@ character_event = {
 		ai_chance = {
 			factor = 2
 			modifier = {
-				factor = 1.5
-				opinion = { who = LIEGE value = 10 }
-			}
-			modifier = {
-				factor = 1.5
-				opinion = { who = LIEGE value = 30 }
-			}
-			modifier = {
-				factor = 1.5
-				opinion = { who = LIEGE value = 50 }
-			}
-			modifier = {
-				factor = 1.5
-				opinion = { who = LIEGE value = 75 }
-			}
-			modifier = {
-				factor = 5
-				trait = content
-			}
-			modifier = {
-				factor = 4
-				trait = imbecile
-			}
-			modifier = {
-				factor = 4
-				trait = inbred
-			}
-			modifier = {
-				factor = 3
-				trait = slow
+				factor = 0 #If quite angry, will never vote positively
+				NOT = { check_variable = { which = "autonomy_personal_mood" value = -15 } }
 			}
 			modifier = {
 				factor = 2
-				trait = kind
+				check_variable = { which = "autonomy_personal_mood" value = 0 }
+			}
+			modifier = {
+				factor = 2
+				check_variable = { which = "autonomy_personal_mood" value = 5 }
+			}
+			modifier = {
+				factor = 2
+				check_variable = { which = "autonomy_personal_mood" value = 10 }
+			}
+			modifier = {
+				factor = 2
+				check_variable = { which = "autonomy_personal_mood" value = 15 }
+			}
+			modifier = {
+				factor = 2
+				check_variable = { which = "autonomy_personal_mood" value = 20 }
 			}
 			modifier = {
 				factor = 10
 				trait = charitable
-			}
-			modifier = {
-				factor = 2
-				liege = { dynasty = ROOT }
-			}
-			modifier = {
-				factor = 2
-				liege = { is_close_relative = ROOT }
 			}
 		}
 	}
@@ -2403,92 +2189,32 @@ character_event = {
 		ai_chance = {
 			factor = 2
 			modifier = {
-				factor = 2
-				NOT = { opinion = { who = LIEGE value = -10 } }
+				factor = 0 #If quite happy, will never vote negatively
+				check_variable = { which = "autonomy_personal_mood" value = 10 }
 			}
 			modifier = {
 				factor = 2
-				NOT = { opinion = { who = LIEGE value = -30 } }
+				NOT = { check_variable = { which = "autonomy_personal_mood" value = 0 } }
 			}
 			modifier = {
 				factor = 2
-				NOT = { opinion = { who = LIEGE value = -50 } }
+				NOT = { check_variable = { which = "autonomy_personal_mood" value = -5 } }
 			}
 			modifier = {
 				factor = 2
-				NOT = { opinion = { who = LIEGE value = -75 } }
-			}
-			modifier = {
-				factor = 1.5
-				crownlaw_title = { has_law = king_peace_1 }
+				NOT = { check_variable = { which = "autonomy_personal_mood" value = -10 } }
 			}
 			modifier = {
 				factor = 2
-				crownlaw_title = { has_law = king_peace_2 }
-			}
-			modifier = {
-				factor = 1.6
-				crownlaw_title = { has_law = emperor_peace_1 }
-			}
-			modifier = {
-				factor = 2.5
-				crownlaw_title = { has_law = emperor_peace_2 }
-			}
-			modifier = {
-				factor = 1.75
-				crownlaw_title = { has_law = revokation_1 }
+				NOT = { check_variable = { which = "autonomy_personal_mood" value = -15 } }
 			}
 			modifier = {
 				factor = 2
-				crownlaw_title = { has_law = revokation_2 }
-			}
-			modifier = {
-				factor = 1.2
-				crownlaw_title = { has_law = crown_levies_1 }
-			}
-			modifier = {
-				factor = 1.4
-				crownlaw_title = { has_law = crown_levies_2 }
-			}
-			modifier = {
-				factor = 1.7
-				crownlaw_title = { has_law = crown_levies_3 }
+				NOT = { check_variable = { which = "autonomy_personal_mood" value = -20 } }
 			}
 			modifier = {
 				factor = 2
-				crownlaw_title = { has_law = crown_levies_4 }
-			}
-			modifier = {
-				factor = 1.3
-				crownlaw_title = { has_law = inheritance_1 }
-			}
-			modifier = {
-				factor = 1.5
-				trait = proud
-			}
-			modifier = {
-				factor = 1.5
-				trait = arbitrary
-			}
-			modifier = {
-				factor = 2
-				trait = envious
-			}
-			modifier = {
-				factor = 2
-				trait = greedy
-			}
-			modifier = {
-				factor = 2
-				trait = impaler
-			}
-			modifier = {
-				factor = 2
-				trait = deceitful
-			}
-			modifier = {
-				factor = 5
-				trait = ambitious
+				NOT = { check_variable = { which = "autonomy_personal_mood" value = -25 } }
 			}
 			modifier = { #If the liege has a claim on one of their titles they might want to revoke it
 				factor = 5
@@ -2519,52 +2245,28 @@ character_event = {
 		ai_chance = {
 			factor = 2
 			modifier = {
-				factor = 1.5
-				opinion = { who = LIEGE value = 10 }
-			}
-			modifier = {
-				factor = 1.5
-				opinion = { who = LIEGE value = 30 }
-			}
-			modifier = {
-				factor = 1.5
-				opinion = { who = LIEGE value = 50 }
-			}
-			modifier = {
-				factor = 1.5
-				opinion = { who = LIEGE value = 75 }
-			}
-			modifier = {
-				factor = 5
-				trait = content
-			}
-			modifier = {
-				factor = 4
-				trait = imbecile
-			}
-			modifier = {
-				factor = 4
-				trait = inbred
-			}
-			modifier = {
-				factor = 3
-				trait = slow
+				factor = 0 #If quite angry, will never vote positively
+				NOT = { check_variable = { which = "autonomy_personal_mood" value = -15 } }
 			}
 			modifier = {
 				factor = 2
-				trait = kind
+				check_variable = { which = "autonomy_personal_mood" value = 0 }
 			}
 			modifier = {
 				factor = 2
-				trait = charitable
+				check_variable = { which = "autonomy_personal_mood" value = 5 }
 			}
 			modifier = {
 				factor = 2
-				liege = { dynasty = ROOT }
+				check_variable = { which = "autonomy_personal_mood" value = 10 }
 			}
 			modifier = {
 				factor = 2
-				liege = { is_close_relative = ROOT }
+				check_variable = { which = "autonomy_personal_mood" value = 15 }
+			}
+			modifier = {
+				factor = 2
+				check_variable = { which = "autonomy_personal_mood" value = 20 }
 			}
 		}
 	}
@@ -2748,88 +2450,32 @@ character_event = {
 		ai_chance = {
 			factor = 2
 			modifier = {
-				factor = 2
-				NOT = { opinion = { who = LIEGE value = -10 } }
+				factor = 0 #If quite happy, will never vote negatively
+				check_variable = { which = "autonomy_personal_mood" value = 10 }
 			}
 			modifier = {
 				factor = 2
-				NOT = { opinion = { who = LIEGE value = -30 } }
+				NOT = { check_variable = { which = "autonomy_personal_mood" value = 0 } }
 			}
 			modifier = {
 				factor = 2
-				NOT = { opinion = { who = LIEGE value = -50 } }
+				NOT = { check_variable = { which = "autonomy_personal_mood" value = -5 } }
 			}
 			modifier = {
 				factor = 2
-				NOT = { opinion = { who = LIEGE value = -75 } }
-			}
-			modifier = {
-				factor = 1.5
-				crownlaw_title = { has_law = king_peace_1 }
+				NOT = { check_variable = { which = "autonomy_personal_mood" value = -10 } }
 			}
 			modifier = {
 				factor = 2
-				crownlaw_title = { has_law = king_peace_2 }
-			}
-			modifier = {
-				factor = 1.6
-				crownlaw_title = { has_law = emperor_peace_1 }
-			}
-			modifier = {
-				factor = 2.5
-				crownlaw_title = { has_law = emperor_peace_2 }
-			}
-			modifier = {
-				factor = 1.75
-				crownlaw_title = { has_law = revokation_1 }
+				NOT = { check_variable = { which = "autonomy_personal_mood" value = -15 } }
 			}
 			modifier = {
 				factor = 2
-				crownlaw_title = { has_law = revokation_2 }
-			}
-			modifier = {
-				factor = 1.2
-				crownlaw_title = { has_law = crown_levies_1 }
-			}
-			modifier = {
-				factor = 1.4
-				crownlaw_title = { has_law = crown_levies_2 }
-			}
-			modifier = {
-				factor = 1.7
-				crownlaw_title = { has_law = crown_levies_3 }
+				NOT = { check_variable = { which = "autonomy_personal_mood" value = -20 } }
 			}
 			modifier = {
 				factor = 2
-				crownlaw_title = { has_law = crown_levies_4 }
-			}
-			modifier = {
-				factor = 1.3
-				crownlaw_title = { has_law = inheritance_1 }
-			}
-			modifier = {
-				factor = 1.5
-				trait = proud
-			}
-			modifier = {
-				factor = 1.5
-				trait = arbitrary
-			}
-			modifier = {
-				factor = 2
-				trait = envious
-			}
-			modifier = {
-				factor = 2
-				trait = greedy
-			}
-			modifier = {
-				factor = 2
-				trait = impaler
-			}
-			modifier = {
-				factor = 2
-				trait = deceitful
+				NOT = { check_variable = { which = "autonomy_personal_mood" value = -25 } }
 			}
 			modifier = {
 				factor = 10
@@ -2865,52 +2511,28 @@ character_event = {
 		ai_chance = {
 			factor = 2
 			modifier = {
-				factor = 1.5
-				opinion = { who = LIEGE value = 10 }
-			}
-			modifier = {
-				factor = 1.5
-				opinion = { who = LIEGE value = 30 }
-			}
-			modifier = {
-				factor = 1.5
-				opinion = { who = LIEGE value = 50 }
-			}
-			modifier = {
-				factor = 1.5
-				opinion = { who = LIEGE value = 75 }
-			}
-			modifier = {
-				factor = 5
-				trait = content
-			}
-			modifier = {
-				factor = 4
-				trait = imbecile
-			}
-			modifier = {
-				factor = 4
-				trait = inbred
-			}
-			modifier = {
-				factor = 3
-				trait = slow
+				factor = 0 #If quite angry, will never vote positively
+				NOT = { check_variable = { which = "autonomy_personal_mood" value = -15 } }
 			}
 			modifier = {
 				factor = 2
-				trait = kind
+				check_variable = { which = "autonomy_personal_mood" value = 0 }
 			}
 			modifier = {
 				factor = 2
-				trait = charitable
+				check_variable = { which = "autonomy_personal_mood" value = 5 }
 			}
 			modifier = {
 				factor = 2
-				liege = { dynasty = ROOT }
+				check_variable = { which = "autonomy_personal_mood" value = 10 }
 			}
 			modifier = {
 				factor = 2
-				liege = { is_close_relative = ROOT }
+				check_variable = { which = "autonomy_personal_mood" value = 15 }
+			}
+			modifier = {
+				factor = 2
+				check_variable = { which = "autonomy_personal_mood" value = 20 }
 			}
 		}
 	}
@@ -3097,92 +2719,32 @@ character_event = {
 		ai_chance = {
 			factor = 2
 			modifier = {
-				factor = 2
-				NOT = { opinion = { who = LIEGE value = -10 } }
+				factor = 0 #If quite happy, will never vote negatively
+				check_variable = { which = "autonomy_personal_mood" value = 10 }
 			}
 			modifier = {
 				factor = 2
-				NOT = { opinion = { who = LIEGE value = -30 } }
+				NOT = { check_variable = { which = "autonomy_personal_mood" value = 0 } }
 			}
 			modifier = {
 				factor = 2
-				NOT = { opinion = { who = LIEGE value = -50 } }
+				NOT = { check_variable = { which = "autonomy_personal_mood" value = -5 } }
 			}
 			modifier = {
 				factor = 2
-				NOT = { opinion = { who = LIEGE value = -75 } }
-			}
-			modifier = {
-				factor = 1.5
-				crownlaw_title = { has_law = king_peace_1 }
+				NOT = { check_variable = { which = "autonomy_personal_mood" value = -10 } }
 			}
 			modifier = {
 				factor = 2
-				crownlaw_title = { has_law = king_peace_2 }
-			}
-			modifier = {
-				factor = 1.6
-				crownlaw_title = { has_law = emperor_peace_1 }
-			}
-			modifier = {
-				factor = 2.5
-				crownlaw_title = { has_law = emperor_peace_2 }
-			}
-			modifier = {
-				factor = 1.75
-				crownlaw_title = { has_law = revokation_1 }
+				NOT = { check_variable = { which = "autonomy_personal_mood" value = -15 } }
 			}
 			modifier = {
 				factor = 2
-				crownlaw_title = { has_law = revokation_2 }
-			}
-			modifier = {
-				factor = 1.2
-				crownlaw_title = { has_law = crown_levies_1 }
-			}
-			modifier = {
-				factor = 1.4
-				crownlaw_title = { has_law = crown_levies_2 }
-			}
-			modifier = {
-				factor = 1.7
-				crownlaw_title = { has_law = crown_levies_3 }
+				NOT = { check_variable = { which = "autonomy_personal_mood" value = -20 } }
 			}
 			modifier = {
 				factor = 2
-				crownlaw_title = { has_law = crown_levies_4 }
-			}
-			modifier = {
-				factor = 1.3
-				crownlaw_title = { has_law = inheritance_1 }
-			}
-			modifier = {
-				factor = 1.5
-				trait = proud
-			}
-			modifier = {
-				factor = 1.5
-				trait = arbitrary
-			}
-			modifier = {
-				factor = 2
-				trait = envious
-			}
-			modifier = {
-				factor = 2
-				trait = greedy
-			}
-			modifier = {
-				factor = 2
-				trait = impaler
-			}
-			modifier = {
-				factor = 2
-				trait = deceitful
-			}
-			modifier = {
-				factor = 4
-				trait = ambitious
+				NOT = { check_variable = { which = "autonomy_personal_mood" value = -25 } }
 			}
 			modifier = {
 				factor = 0 #If they dislike all the prisoners they don't want them released
@@ -3227,52 +2789,28 @@ character_event = {
 		ai_chance = {
 			factor = 2
 			modifier = {
-				factor = 1.5
-				opinion = { who = LIEGE value = 10 }
-			}
-			modifier = {
-				factor = 1.5
-				opinion = { who = LIEGE value = 30 }
-			}
-			modifier = {
-				factor = 1.5
-				opinion = { who = LIEGE value = 50 }
-			}
-			modifier = {
-				factor = 1.5
-				opinion = { who = LIEGE value = 75 }
-			}
-			modifier = {
-				factor = 5
-				trait = content
-			}
-			modifier = {
-				factor = 4
-				trait = imbecile
-			}
-			modifier = {
-				factor = 4
-				trait = inbred
-			}
-			modifier = {
-				factor = 3
-				trait = slow
+				factor = 0 #If quite angry, will never vote positively
+				NOT = { check_variable = { which = "autonomy_personal_mood" value = -15 } }
 			}
 			modifier = {
 				factor = 2
-				trait = kind
+				check_variable = { which = "autonomy_personal_mood" value = 0 }
 			}
 			modifier = {
 				factor = 2
-				trait = charitable
+				check_variable = { which = "autonomy_personal_mood" value = 5 }
 			}
 			modifier = {
 				factor = 2
-				liege = { dynasty = ROOT }
+				check_variable = { which = "autonomy_personal_mood" value = 10 }
 			}
 			modifier = {
 				factor = 2
-				liege = { is_close_relative = ROOT }
+				check_variable = { which = "autonomy_personal_mood" value = 15 }
+			}
+			modifier = {
+				factor = 2
+				check_variable = { which = "autonomy_personal_mood" value = 20 }
 			}
 		}
 	}
@@ -3454,92 +2992,32 @@ character_event = {
 		ai_chance = {
 			factor = 2
 			modifier = {
-				factor = 2
-				NOT = { opinion = { who = LIEGE value = -10 } }
+				factor = 0 #If quite happy, will never vote negatively
+				check_variable = { which = "autonomy_personal_mood" value = 10 }
 			}
 			modifier = {
 				factor = 2
-				NOT = { opinion = { who = LIEGE value = -30 } }
+				NOT = { check_variable = { which = "autonomy_personal_mood" value = 0 } }
 			}
 			modifier = {
 				factor = 2
-				NOT = { opinion = { who = LIEGE value = -50 } }
+				NOT = { check_variable = { which = "autonomy_personal_mood" value = -5 } }
 			}
 			modifier = {
 				factor = 2
-				NOT = { opinion = { who = LIEGE value = -75 } }
-			}
-			modifier = {
-				factor = 1.5
-				crownlaw_title = { has_law = king_peace_1 }
+				NOT = { check_variable = { which = "autonomy_personal_mood" value = -10 } }
 			}
 			modifier = {
 				factor = 2
-				crownlaw_title = { has_law = king_peace_2 }
-			}
-			modifier = {
-				factor = 1.6
-				crownlaw_title = { has_law = emperor_peace_1 }
-			}
-			modifier = {
-				factor = 2.5
-				crownlaw_title = { has_law = emperor_peace_2 }
-			}
-			modifier = {
-				factor = 1.75
-				crownlaw_title = { has_law = revokation_1 }
+				NOT = { check_variable = { which = "autonomy_personal_mood" value = -15 } }
 			}
 			modifier = {
 				factor = 2
-				crownlaw_title = { has_law = revokation_2 }
-			}
-			modifier = {
-				factor = 1.2
-				crownlaw_title = { has_law = crown_levies_1 }
-			}
-			modifier = {
-				factor = 1.4
-				crownlaw_title = { has_law = crown_levies_2 }
-			}
-			modifier = {
-				factor = 1.7
-				crownlaw_title = { has_law = crown_levies_3 }
+				NOT = { check_variable = { which = "autonomy_personal_mood" value = -20 } }
 			}
 			modifier = {
 				factor = 2
-				crownlaw_title = { has_law = crown_levies_4 }
-			}
-			modifier = {
-				factor = 1.3
-				crownlaw_title = { has_law = inheritance_1 }
-			}
-			modifier = {
-				factor = 1.5
-				trait = proud
-			}
-			modifier = {
-				factor = 1.5
-				trait = arbitrary
-			}
-			modifier = {
-				factor = 2
-				trait = envious
-			}
-			modifier = {
-				factor = 2
-				trait = greedy
-			}
-			modifier = {
-				factor = 2
-				trait = impaler
-			}
-			modifier = {
-				factor = 2
-				trait = deceitful
-			}
-			modifier = {
-				factor = 4
-				trait = ambitious
+				NOT = { check_variable = { which = "autonomy_personal_mood" value = -25 } }
 			}
 			modifier = {
 				factor = 2
@@ -3578,52 +3056,28 @@ character_event = {
 		ai_chance = {
 			factor = 2
 			modifier = {
-				factor = 1.5
-				opinion = { who = LIEGE value = 10 }
-			}
-			modifier = {
-				factor = 1.5
-				opinion = { who = LIEGE value = 30 }
-			}
-			modifier = {
-				factor = 1.5
-				opinion = { who = LIEGE value = 50 }
-			}
-			modifier = {
-				factor = 1.5
-				opinion = { who = LIEGE value = 75 }
-			}
-			modifier = {
-				factor = 5
-				trait = content
-			}
-			modifier = {
-				factor = 4
-				trait = imbecile
-			}
-			modifier = {
-				factor = 4
-				trait = inbred
-			}
-			modifier = {
-				factor = 3
-				trait = slow
+				factor = 0 #If quite angry, will never vote positively
+				NOT = { check_variable = { which = "autonomy_personal_mood" value = -15 } }
 			}
 			modifier = {
 				factor = 2
-				trait = kind
+				check_variable = { which = "autonomy_personal_mood" value = 0 }
 			}
 			modifier = {
 				factor = 2
-				trait = charitable
+				check_variable = { which = "autonomy_personal_mood" value = 5 }
 			}
 			modifier = {
 				factor = 2
-				liege = { dynasty = ROOT }
+				check_variable = { which = "autonomy_personal_mood" value = 10 }
 			}
 			modifier = {
 				factor = 2
-				liege = { is_close_relative = ROOT }
+				check_variable = { which = "autonomy_personal_mood" value = 15 }
+			}
+			modifier = {
+				factor = 2
+				check_variable = { which = "autonomy_personal_mood" value = 20 }
 			}
 		}
 	}
@@ -3865,92 +3319,36 @@ character_event = {
 		ai_chance = {
 			factor = 2
 			modifier = {
-				factor = 2
-				NOT = { opinion = { who = LIEGE value = -10 } }
+				factor = 0 #If quite happy, will never vote negatively
+				check_variable = { which = "autonomy_personal_mood" value = 10 }
 			}
 			modifier = {
 				factor = 2
-				NOT = { opinion = { who = LIEGE value = -30 } }
+				NOT = { check_variable = { which = "autonomy_personal_mood" value = 0 } }
 			}
 			modifier = {
 				factor = 2
-				NOT = { opinion = { who = LIEGE value = -50 } }
+				NOT = { check_variable = { which = "autonomy_personal_mood" value = -5 } }
 			}
 			modifier = {
 				factor = 2
-				NOT = { opinion = { who = LIEGE value = -75 } }
-			}
-			modifier = {
-				factor = 1.5
-				crownlaw_title = { has_law = king_peace_1 }
+				NOT = { check_variable = { which = "autonomy_personal_mood" value = -10 } }
 			}
 			modifier = {
 				factor = 2
-				crownlaw_title = { has_law = king_peace_2 }
-			}
-			modifier = {
-				factor = 1.6
-				crownlaw_title = { has_law = emperor_peace_1 }
-			}
-			modifier = {
-				factor = 2.5
-				crownlaw_title = { has_law = emperor_peace_2 }
-			}
-			modifier = {
-				factor = 1.75
-				crownlaw_title = { has_law = revokation_1 }
+				NOT = { check_variable = { which = "autonomy_personal_mood" value = -15 } }
 			}
 			modifier = {
 				factor = 2
-				crownlaw_title = { has_law = revokation_2 }
-			}
-			modifier = {
-				factor = 1.2
-				crownlaw_title = { has_law = crown_levies_1 }
-			}
-			modifier = {
-				factor = 1.4
-				crownlaw_title = { has_law = crown_levies_2 }
-			}
-			modifier = {
-				factor = 1.7
-				crownlaw_title = { has_law = crown_levies_3 }
+				NOT = { check_variable = { which = "autonomy_personal_mood" value = -20 } }
 			}
 			modifier = {
 				factor = 2
-				crownlaw_title = { has_law = crown_levies_4 }
-			}
-			modifier = {
-				factor = 1.3
-				crownlaw_title = { has_law = inheritance_1 }
-			}
-			modifier = {
-				factor = 1.5
-				trait = proud
-			}
-			modifier = {
-				factor = 1.5
-				trait = arbitrary
-			}
-			modifier = {
-				factor = 2
-				trait = envious
+				NOT = { check_variable = { which = "autonomy_personal_mood" value = -25 } }
 			}
 			modifier = {
 				factor = 10
 				trait = greedy
-			}
-			modifier = {
-				factor = 2
-				trait = impaler
-			}
-			modifier = {
-				factor = 2
-				trait = deceitful
-			}
-			modifier = {
-				factor = 4
-				trait = ambitious
 			}
 			modifier = {
 				factor = 2
@@ -3985,52 +3383,32 @@ character_event = {
 		ai_chance = {
 			factor = 2
 			modifier = {
-				factor = 1.5
-				opinion = { who = LIEGE value = 10 }
-			}
-			modifier = {
-				factor = 1.5
-				opinion = { who = LIEGE value = 30 }
-			}
-			modifier = {
-				factor = 1.5
-				opinion = { who = LIEGE value = 50 }
-			}
-			modifier = {
-				factor = 1.5
-				opinion = { who = LIEGE value = 75 }
-			}
-			modifier = {
-				factor = 5
-				trait = content
-			}
-			modifier = {
-				factor = 4
-				trait = imbecile
-			}
-			modifier = {
-				factor = 4
-				trait = inbred
-			}
-			modifier = {
-				factor = 3
-				trait = slow
+				factor = 0 #If quite angry, will never vote positively
+				NOT = { check_variable = { which = "autonomy_personal_mood" value = -15 } }
 			}
 			modifier = {
 				factor = 2
-				trait = kind
+				check_variable = { which = "autonomy_personal_mood" value = 0 }
+			}
+			modifier = {
+				factor = 2
+				check_variable = { which = "autonomy_personal_mood" value = 5 }
+			}
+			modifier = {
+				factor = 2
+				check_variable = { which = "autonomy_personal_mood" value = 10 }
+			}
+			modifier = {
+				factor = 2
+				check_variable = { which = "autonomy_personal_mood" value = 15 }
+			}
+			modifier = {
+				factor = 2
+				check_variable = { which = "autonomy_personal_mood" value = 20 }
 			}
 			modifier = {
 				factor = 10
 				trait = charitable
-			}
-			modifier = {
-				factor = 2
-				liege = { dynasty = ROOT }
-			}
-			modifier = {
-				factor = 2
-				liege = { is_close_relative = ROOT }
 			}
 		}
 	}
@@ -4232,92 +3610,32 @@ character_event = {
 		ai_chance = {
 			factor = 2
 			modifier = {
-				factor = 2
-				NOT = { opinion = { who = LIEGE value = -10 } }
+				factor = 0 #If quite happy, will never vote negatively
+				check_variable = { which = "autonomy_personal_mood" value = 10 }
 			}
 			modifier = {
 				factor = 2
-				NOT = { opinion = { who = LIEGE value = -30 } }
+				NOT = { check_variable = { which = "autonomy_personal_mood" value = 0 } }
 			}
 			modifier = {
 				factor = 2
-				NOT = { opinion = { who = LIEGE value = -50 } }
+				NOT = { check_variable = { which = "autonomy_personal_mood" value = -5 } }
 			}
 			modifier = {
 				factor = 2
-				NOT = { opinion = { who = LIEGE value = -75 } }
-			}
-			modifier = {
-				factor = 1.5
-				crownlaw_title = { has_law = king_peace_1 }
+				NOT = { check_variable = { which = "autonomy_personal_mood" value = -10 } }
 			}
 			modifier = {
 				factor = 2
-				crownlaw_title = { has_law = king_peace_2 }
-			}
-			modifier = {
-				factor = 1.6
-				crownlaw_title = { has_law = emperor_peace_1 }
-			}
-			modifier = {
-				factor = 2.5
-				crownlaw_title = { has_law = emperor_peace_2 }
-			}
-			modifier = {
-				factor = 1.75
-				crownlaw_title = { has_law = revokation_1 }
+				NOT = { check_variable = { which = "autonomy_personal_mood" value = -15 } }
 			}
 			modifier = {
 				factor = 2
-				crownlaw_title = { has_law = revokation_2 }
-			}
-			modifier = {
-				factor = 1.2
-				crownlaw_title = { has_law = crown_levies_1 }
-			}
-			modifier = {
-				factor = 1.4
-				crownlaw_title = { has_law = crown_levies_2 }
-			}
-			modifier = {
-				factor = 1.7
-				crownlaw_title = { has_law = crown_levies_3 }
+				NOT = { check_variable = { which = "autonomy_personal_mood" value = -20 } }
 			}
 			modifier = {
 				factor = 2
-				crownlaw_title = { has_law = crown_levies_4 }
-			}
-			modifier = {
-				factor = 1.3
-				crownlaw_title = { has_law = inheritance_1 }
-			}
-			modifier = {
-				factor = 1.5
-				trait = proud
-			}
-			modifier = {
-				factor = 1.5
-				trait = arbitrary
-			}
-			modifier = {
-				factor = 2
-				trait = envious
-			}
-			modifier = {
-				factor = 2
-				trait = greedy
-			}
-			modifier = {
-				factor = 2
-				trait = impaler
-			}
-			modifier = {
-				factor = 2
-				trait = deceitful
-			}
-			modifier = {
-				factor = 4
-				trait = ambitious
+				NOT = { check_variable = { which = "autonomy_personal_mood" value = -25 } }
 			}
 			modifier = { #Has family outside realm
 				factor = 3
@@ -4347,52 +3665,28 @@ character_event = {
 		ai_chance = {
 			factor = 2
 			modifier = {
-				factor = 1.5
-				opinion = { who = LIEGE value = 10 }
-			}
-			modifier = {
-				factor = 1.5
-				opinion = { who = LIEGE value = 30 }
-			}
-			modifier = {
-				factor = 1.5
-				opinion = { who = LIEGE value = 50 }
-			}
-			modifier = {
-				factor = 1.5
-				opinion = { who = LIEGE value = 75 }
-			}
-			modifier = {
-				factor = 5
-				trait = content
-			}
-			modifier = {
-				factor = 4
-				trait = imbecile
-			}
-			modifier = {
-				factor = 4
-				trait = inbred
-			}
-			modifier = {
-				factor = 3
-				trait = slow
+				factor = 0 #If quite angry, will never vote positively
+				NOT = { check_variable = { which = "autonomy_personal_mood" value = -15 } }
 			}
 			modifier = {
 				factor = 2
-				trait = kind
+				check_variable = { which = "autonomy_personal_mood" value = 0 }
 			}
 			modifier = {
 				factor = 2
-				trait = charitable
+				check_variable = { which = "autonomy_personal_mood" value = 5 }
 			}
 			modifier = {
 				factor = 2
-				liege = { dynasty = ROOT }
+				check_variable = { which = "autonomy_personal_mood" value = 10 }
 			}
 			modifier = {
 				factor = 2
-				liege = { is_close_relative = ROOT }
+				check_variable = { which = "autonomy_personal_mood" value = 15 }
+			}
+			modifier = {
+				factor = 2
+				check_variable = { which = "autonomy_personal_mood" value = 20 }
 			}
 		}
 	}
@@ -4569,94 +3863,34 @@ character_event = {
 			FROM = { change_variable = { which = "faction_vote" value = 2 } }
 		}
 		ai_chance = {
-			factor = 2
+			factor = 3
 			modifier = {
-				factor = 2
-				NOT = { opinion = { who = LIEGE value = -10 } }
+				factor = 0 #If quite happy, will never vote negatively
+				check_variable = { which = "autonomy_personal_mood" value = 10 }
 			}
 			modifier = {
 				factor = 2
-				NOT = { opinion = { who = LIEGE value = -30 } }
+				NOT = { check_variable = { which = "autonomy_personal_mood" value = 0 } }
 			}
 			modifier = {
 				factor = 2
-				NOT = { opinion = { who = LIEGE value = -50 } }
+				NOT = { check_variable = { which = "autonomy_personal_mood" value = -5 } }
 			}
 			modifier = {
 				factor = 2
-				NOT = { opinion = { who = LIEGE value = -75 } }
-			}
-			modifier = {
-				factor = 1.5
-				crownlaw_title = { has_law = king_peace_1 }
+				NOT = { check_variable = { which = "autonomy_personal_mood" value = -10 } }
 			}
 			modifier = {
 				factor = 2
-				crownlaw_title = { has_law = king_peace_2 }
-			}
-			modifier = {
-				factor = 1.6
-				crownlaw_title = { has_law = emperor_peace_1 }
-			}
-			modifier = {
-				factor = 2.5
-				crownlaw_title = { has_law = emperor_peace_2 }
-			}
-			modifier = {
-				factor = 1.75
-				crownlaw_title = { has_law = revokation_1 }
+				NOT = { check_variable = { which = "autonomy_personal_mood" value = -15 } }
 			}
 			modifier = {
 				factor = 2
-				crownlaw_title = { has_law = revokation_2 }
-			}
-			modifier = {
-				factor = 1.2
-				crownlaw_title = { has_law = crown_levies_1 }
-			}
-			modifier = {
-				factor = 1.4
-				crownlaw_title = { has_law = crown_levies_2 }
-			}
-			modifier = {
-				factor = 1.7
-				crownlaw_title = { has_law = crown_levies_3 }
+				NOT = { check_variable = { which = "autonomy_personal_mood" value = -20 } }
 			}
 			modifier = {
 				factor = 2
-				crownlaw_title = { has_law = crown_levies_4 }
-			}
-			modifier = {
-				factor = 1.3
-				crownlaw_title = { has_law = inheritance_1 }
-			}
-			modifier = {
-				factor = 1.5
-				trait = proud
-			}
-			modifier = {
-				factor = 1.5
-				trait = arbitrary
-			}
-			modifier = {
-				factor = 2
-				trait = envious
-			}
-			modifier = {
-				factor = 2
-				trait = greedy
-			}
-			modifier = {
-				factor = 2
-				trait = impaler
-			}
-			modifier = {
-				factor = 2
-				trait = deceitful
-			}
-			modifier = {
-				factor = 4
-				trait = ambitious
+				NOT = { check_variable = { which = "autonomy_personal_mood" value = -25 } }
 			}
 			modifier = {
 				factor = 3
@@ -4697,54 +3931,30 @@ character_event = {
 		}
 		
 		ai_chance = {
-			factor = 2
+			factor = 5
 			modifier = {
-				factor = 1.5
-				opinion = { who = LIEGE value = 10 }
-			}
-			modifier = {
-				factor = 1.5
-				opinion = { who = LIEGE value = 30 }
-			}
-			modifier = {
-				factor = 1.5
-				opinion = { who = LIEGE value = 50 }
-			}
-			modifier = {
-				factor = 1.5
-				opinion = { who = LIEGE value = 75 }
-			}
-			modifier = {
-				factor = 5
-				trait = content
-			}
-			modifier = {
-				factor = 4
-				trait = imbecile
-			}
-			modifier = {
-				factor = 4
-				trait = inbred
-			}
-			modifier = {
-				factor = 3
-				trait = slow
+				factor = 0 #If quite angry, will never vote positively
+				NOT = { check_variable = { which = "autonomy_personal_mood" value = -20 } }
 			}
 			modifier = {
 				factor = 2
-				trait = kind
+				check_variable = { which = "autonomy_personal_mood" value = 0 }
 			}
 			modifier = {
 				factor = 2
-				trait = charitable
+				check_variable = { which = "autonomy_personal_mood" value = 5 }
 			}
 			modifier = {
 				factor = 2
-				liege = { dynasty = ROOT }
+				check_variable = { which = "autonomy_personal_mood" value = 10 }
 			}
 			modifier = {
 				factor = 2
-				liege = { is_close_relative = ROOT }
+				check_variable = { which = "autonomy_personal_mood" value = 15 }
+			}
+			modifier = {
+				factor = 2
+				check_variable = { which = "autonomy_personal_mood" value = 20 }
 			}
 		}
 	}
