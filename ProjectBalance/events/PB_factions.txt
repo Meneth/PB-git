@@ -400,6 +400,10 @@ character_event = {
 			change_variable = { which = "autonomy_personal_mood" value = -3 }
 		}
 		if = {
+			limit = { trait = deceitful }
+			change_variable = { which = "autonomy_personal_mood" value = -5 }
+		}
+		if = {
 			limit = { liege = { demesne_efficiency = 1.01 } } #Over demesne limit
 			change_variable = { which = "autonomy_personal_mood" value = -2 }
 		}
@@ -408,7 +412,13 @@ character_event = {
 			change_variable = { which = "autonomy_personal_mood" value = -3 }
 		}
 		if = {
-			limit = { liege = { dynasty = ROOT } }
+			limit = {
+				liege = {
+					dynasty = ROOT
+					any_spouse = { is_close_relative = ROOT }
+					ROOT = { any_spouse = { is_close_relative = PREVPREV } }
+				}
+			}
 			change_variable = { which = "autonomy_personal_mood" value = 2 }
 		}
 		if = {
@@ -458,6 +468,21 @@ character_event = {
 		if = {
 			limit = { crownlaw_title = { has_law = inheritance_1 } }
 			change_variable = { which = "autonomy_personal_mood" value = -1 }
+		}
+		if = {
+			limit = {
+				OR = { #Claim on liege, or liege has claim on root
+					liege = {
+						any_claim = {
+							holder_scope = { character = ROOT }
+						}
+					}
+					any_claim = {
+						holder_scope = { any_vassal = { character = ROOT } }
+					}
+				}
+			}
+			change_variable = { which = "autonomy_personal_mood" value = -3 }
 		}
 	}
 	option = { #Happy

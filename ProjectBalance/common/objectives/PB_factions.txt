@@ -39,14 +39,7 @@ faction_autonomy = {
 		modifier = {
 			factor = 0
 			FROM = {
-				OR = {
-					trait = content
-					trait = imbecile
-					trait = inbred
-					trait = craven
-					trait = slow
-					NOT = { has_character_flag = desires_autonomy }
-				}
+				NOT = { has_character_flag = desires_autonomy }
 			}
 		}
 		modifier = {
