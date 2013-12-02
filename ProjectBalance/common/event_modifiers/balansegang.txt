@@ -96,3 +96,17 @@ reduced_obligations = {
 	castle_vassal_max_levy = -0.2
 	castle_vassal_tax_modifier = -0.1
 }
+
+military_cooperation = {
+	icon = 16
+	levy_reinforce_rate = 0.25
+	levy_size = 0.25
+	garrison_size = 0.25
+}
+
+economic_cooperation = {
+	icon = 16
+	local_tax_modifier = 0.25
+	build_time_modifier = -0.25
+	build_cost_modifier = -0.25
+}

@@ -633,19 +633,9 @@ character_event = {
 			}
 		}
 	}
-	option = { #Status quo
+	option = { #Neutral
 		name = meneth.221.b
-		trigger = {
-			check_variable = { which = "autonomy_mood" value = -5 }
-			OR = {
-				NOT = { check_variable = { which = "autonomy_mood" value = 5 } }
-				NOT = {
-					liege = {
-						any_war = { defender = { character = PREVPREV } }
-					}
-				}
-			}
-		}
+		character_event = { id = meneth.248 } #What actiont to take
 		ai_chance = {
 			factor = 1
 			modifier = {
@@ -662,6 +652,13 @@ character_event = {
 			modifier = {
 				factor = 2
 				trait = content
+			}
+			modifier = {
+				factor = 3
+				capital_scope = {
+					NOT = { has_province_modifier = military_cooperation }
+					NOT = { has_province_modifier = economic_cooperation }
+				}
 			}
 		}
 	}
@@ -1126,6 +1123,94 @@ character_event = {
 			modifier = {
 				factor = 3
 				has_opinion_modifier = { who = liege modifier = opinion_tyrant }
+			}
+		}
+	}
+}
+
+#What neutral action?
+character_event = {
+	id = meneth.248
+	is_triggered_only = yes
+	
+	desc = meneth.248.desc
+	picture = GFX_evt_emissary
+	border = GFX_event_normal_frame_religion
+	immediate = {
+		clr_character_flag = military_cooperation
+		clr_character_flag = economic_cooperation
+	}
+	option = { #Status quo
+		name = meneth.248.a
+		trigger = {
+			capital_scope = {
+				OR = {
+					has_province_modifier = military_cooperation
+					has_province_modifier = economic_cooperation
+				}
+			}
+		}
+	}
+	option = { #Military co-operation
+		trigger = {
+			capital_scope = {
+				NOT = { has_province_modifier = military_cooperation }
+				NOT = { has_province_modifier = economic_cooperation }
+			}
+		}
+		name = meneth.248.b
+		capital_scope = {
+			add_province_modifier = { name = military_cooperation duration = 5475 }
+		}
+		any_faction_backer = {
+			limit = { in_faction = faction_autonomy }
+			character_event = { id = meneth.249 days = 1 } #Alert
+		}
+		set_character_flag = military_cooperation
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 2
+				martial = 10
+			}
+			modifier = {
+				factor = 2
+				OR = {
+					trait = misguided_warrior
+					trait = tough_soldier
+					trait = skilled_tactician
+					trait = brilliant_strategist
+				}
+			}
+		}
+	}
+	option = { #Economic co-operation
+		trigger = {
+			capital_scope = {
+				NOT = { has_province_modifier = military_cooperation }
+				NOT = { has_province_modifier = economic_cooperation }
+			}
+		}
+		name = meneth.248.c
+		any_faction_backer = {
+			limit = { in_faction = faction_autonomy }
+			character_event = { id = meneth.249 days = 1 } #Alert
+		}
+		set_character_flag = economic_cooperation
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 2
+				stewardship = 10
+			}
+			modifier = {
+				factor = 2
+				OR = {
+					trait = indulgent_wastrel
+					trait = thrifty_clerk
+					trait = fortune_builder
+					trait = midas_touched
+				}
 			}
 		}
 	}
@@ -1986,7 +2071,7 @@ character_event = {
 		}
 		add_character_modifier = {
 			name = reduced_obligations
-			duration = 3650
+			duration = 5475
 		}
 		any_vassal = {
 			limit = {
@@ -3886,6 +3971,34 @@ character_event = {
 					}
 				}
 			}
+		}
+	}
+}
+
+#Alert of military/economic cooperation
+character_event = {
+	id = meneth.249
+	is_triggered_only = yes
+	
+	desc = meneth.249.desc
+	picture = GFX_evt_emissary
+	border = GFX_event_normal_frame_religion
+	option = {
+		trigger = {
+			FROM = { has_character_flag = military_cooperation }
+		}
+		name = meneth.249.a
+		capital_scope = {
+			add_province_modifier = { name = military_cooperation duration = 5475 }
+		}
+	}
+	option = {
+		trigger = {
+			FROM = { has_character_flag = economic_cooperation }
+		}
+		name = meneth.249.b
+		capital_scope = {
+			add_province_modifier = { name = economic_cooperation duration = 5475 }
 		}
 	}
 }
