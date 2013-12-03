@@ -1,3 +1,6 @@
+3.3.5
+	Extended the list of nicknames that unlock Absolute Cognatic and Enatic succession
+
 3.3.4
 	Updated to correspond with CKII 2.0.1 (non-beta)
 	Fixed Serbia being held by a Bolghar in its title history
