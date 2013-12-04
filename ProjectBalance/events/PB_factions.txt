@@ -604,7 +604,9 @@ character_event = {
 		clr_character_flag = faction_autonomy_external_inheritance
 	}
 	option = { #Help liege
-		check_variable = { which = "autonomy_mood" value = 0 }
+		trigger = {
+			check_variable = { which = "autonomy_mood" value = 0 }
+		}
 		name = meneth.221.a
 		character_event = { id = meneth.250 } #What action to take
 		ai_chance = {
@@ -802,7 +804,7 @@ character_event = {
 				NOT = { any_war = { defender = { character = PREVPREV } } }
 				OR = {
 					NOT = { has_character_modifier = autonomy_commended }
-					reverse_has_opinon = { who = ROOT value = 0 }
+					reverse_opinion = { who = ROOT value = 0 }
 				}
 			}
 		}
@@ -841,7 +843,7 @@ character_event = {
 		trigger = {
 			liege = {
 				NOT = { has_character_modifier = autonomy_commended }
-				reverse_has_opinon = { who = ROOT value = 0 }
+				reverse_opinion = { who = ROOT value = 0 }
 			}
 		}
 		set_character_flag = faction_autonomy_commend_liege
@@ -1223,7 +1225,7 @@ character_event = {
 			character_event = { id = meneth.249 days = 1 } #Alert
 		}
 		set_character_flag = military_cooperation
-		ai_will_do = {
+		ai_chance = {
 			factor = 1
 			modifier = {
 				factor = 2
@@ -1253,7 +1255,7 @@ character_event = {
 			character_event = { id = meneth.249 days = 1 } #Alert
 		}
 		set_character_flag = economic_cooperation
-		ai_will_do = {
+		ai_chance = {
 			factor = 1
 			modifier = {
 				factor = 2
@@ -1328,6 +1330,18 @@ character_event = {
 				limit = { ROOT = { has_character_flag = faction_autonomy_external_inheritance } }
 				character_event = { id = meneth.245 } #Ultimatum to allow external inheritance
 			}
+			if = {
+				limit = { ROOT = { has_character_flag = faction_autonomy_abdicate } }
+				character_event = { id = meneth.247 } #Ultimatum to abdicate
+			}
+			if = {
+				limit = { ROOT = { has_character_flag = faction_autonomy_abdicate } }
+				character_event = { id = meneth.247 } #Ultimatum to abdicate
+			}
+			if = {
+				limit = { ROOT = { has_character_flag = faction_autonomy_commend_liege } }
+				character_event = { id = meneth.252 } #Commend liege
+			}
 		}
 	}
 	option = {
@@ -1382,6 +1396,31 @@ character_event = {
 	picture = GFX_evt_emissary
 	border = GFX_event_normal_frame_religion
 	
+	immediate = {
+		any_faction_backer = {
+			limit = { in_faction = faction_autonomy }
+			opinion = {
+				who = liege
+				modifier = opinion_recently_refused_ultimatum
+				years = 5
+			}
+			opinion = {
+				who = liege
+				modifier = opinion_refused_ultimatum
+				years = 20
+			}
+		}
+		opinion = {
+			who = liege
+			modifier = opinion_recently_refused_ultimatum
+			years = 5
+		}
+		opinion = {
+			who = liege
+			modifier = opinion_refused_ultimatum
+			years = 20
+		}
+	}
 	option = {
 		name = Yes
 		set_variable = { which = "faction_vote" value = 0 }
@@ -2176,19 +2215,6 @@ character_event = {
 	}
 	option = {
 		name = No
-		any_vassal = {
-			limit = {
-				OR = {
-					in_faction = faction_autonomy
-					leads_faction = faction_autonomy
-				}
-			}
-			opinion = {
-				who = ROOT
-				modifier = opinion_refused_ultimatum
-				years = 20
-			}
-		}
 		FROM = { character_event = { id = meneth.233 days = 3 } }
 		ai_chance = {
 			factor = 80
@@ -2413,19 +2439,6 @@ character_event = {
 	}
 	option = {
 		name = No
-		any_vassal = {
-			limit = {
-				OR = {
-					in_faction = faction_autonomy
-					leads_faction = faction_autonomy
-				}
-			}
-			opinion = {
-				who = ROOT
-				modifier = opinion_refused_ultimatum
-				years = 20
-			}
-		}
 		FROM = { character_event = { id = meneth.233 days = 3 } }
 		ai_chance = {
 			factor = 80
@@ -2658,19 +2671,6 @@ character_event = {
 	}
 	option = {
 		name = No
-		any_vassal = {
-			limit = {
-				OR = {
-					in_faction = faction_autonomy
-					leads_faction = faction_autonomy
-				}
-			}
-			opinion = {
-				who = ROOT
-				modifier = opinion_refused_ultimatum
-				years = 20
-			}
-		}
 		FROM = { character_event = { id = meneth.233 days = 3 } }
 		ai_chance = {
 			factor = 80
@@ -2907,19 +2907,6 @@ character_event = {
 	}
 	option = {
 		name = No
-		any_vassal = {
-			limit = {
-				OR = {
-					in_faction = faction_autonomy
-					leads_faction = faction_autonomy
-				}
-			}
-			opinion = {
-				who = ROOT
-				modifier = opinion_refused_ultimatum
-				years = 20
-			}
-		}
 		FROM = { character_event = { id = meneth.233 days = 3 } }
 		ai_chance = {
 			factor = 80
@@ -3210,19 +3197,6 @@ character_event = {
 	}
 	option = {
 		name = No
-		any_vassal = {
-			limit = {
-				OR = {
-					in_faction = faction_autonomy
-					leads_faction = faction_autonomy
-				}
-			}
-			opinion = {
-				who = ROOT
-				modifier = opinion_refused_ultimatum
-				years = 20
-			}
-		}
 		FROM = { character_event = { id = meneth.233 days = 3 } }
 		ai_chance = {
 			factor = 80
@@ -3477,19 +3451,6 @@ character_event = {
 	}
 	option = {
 		name = No
-		any_vassal = {
-			limit = {
-				OR = {
-					in_faction = faction_autonomy
-					leads_faction = faction_autonomy
-				}
-			}
-			opinion = {
-				who = ROOT
-				modifier = opinion_refused_ultimatum
-				years = 20
-			}
-		}
 		FROM = { character_event = { id = meneth.233 days = 3 } }
 		ai_chance = {
 			factor = 80
@@ -3708,19 +3669,6 @@ character_event = {
 	}
 	option = {
 		name = No
-		any_vassal = {
-			limit = {
-				OR = {
-					in_faction = faction_autonomy
-					leads_faction = faction_autonomy
-				}
-			}
-			opinion = {
-				who = ROOT
-				modifier = opinion_refused_ultimatum
-				years = 20
-			}
-		}
 		FROM = { character_event = { id = meneth.233 days = 3 } }
 		ai_chance = {
 			factor = 80
@@ -3899,7 +3847,7 @@ character_event = {
 	id = meneth.247
 	is_triggered_only = yes
 	
-	desc = meneth.245.desc
+	desc = meneth.247.desc
 	picture = GFX_evt_emissary
 	border = GFX_event_normal_frame_religion
 	
@@ -3953,19 +3901,6 @@ character_event = {
 	}
 	option = {
 		name = No
-		any_vassal = {
-			limit = {
-				OR = {
-					in_faction = faction_autonomy
-					leads_faction = faction_autonomy
-				}
-			}
-			opinion = {
-				who = ROOT
-				modifier = opinion_refused_ultimatum
-				years = 20
-			}
-		}
 		FROM = { character_event = { id = meneth.233 days = 3 } }
 		ai_chance = {
 			factor = 90
@@ -4109,11 +4044,11 @@ character_event = {
 			}
 			modifier = {
 				factor = 5
-				has_opinion = { who = liege value = 50 }
+				opinion = { who = liege value = 50 }
 			}
 			modifier = {
 				factor = 0
-				NOT = { has_opinion = { who = liege value = 0 } }
+				NOT = { opinion = { who = liege value = 0 } }
 			}
 		}
 	}
@@ -4160,7 +4095,7 @@ character_event = {
 	border = GFX_event_normal_frame_religion
 	option = {
 		name = OK
-		add_character_modifier = { which = autonomy_commended duration = 3650 }
+		add_character_modifier = { name = autonomy_commended duration = 3650 }
 		prestige = 100
 	}
 }

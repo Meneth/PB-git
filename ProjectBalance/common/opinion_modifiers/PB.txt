@@ -15,7 +15,10 @@ opinion_fame_glory = {
 }
 
 opinion_refused_ultimatum = {
-	opinion = -25
+	opinion = -15
+}
+opinion_recently_refused_ultimatum = {
+	opinion = -10
 }
 opinion_accepted_ultimatum = {
 	opinion = 25
