@@ -72,6 +72,7 @@ meneth.237.desc;We have decided to call a vote to weaken our liege. How should h
 meneth.237.a;Force release of imprisoned vassals;;;;;;;;;;;;;x
 meneth.237.b;Give away a county;;;;;;;;;;;;;x
 meneth.237.c;Give money to faction;;;;;;;;;;;;;x
+meneth.237.d;Abdicate;;;;;;;;;;;;;x
 meneth.238.desc;The faction leader wants our liege to release all vassals currently held prisoner. Do you support this?;;;;;;;;;;;;;x
 meneth.239.desc;Our vassals demand that we release all vassals currently held prisoner. Should we do this?;;;;;;;;;;;;;x
 meneth.240.desc;The faction leader wants our liege to give away a county. Do you support this?;;;;;;;;;;;;;x
