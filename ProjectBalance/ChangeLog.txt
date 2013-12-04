@@ -1,5 +1,6 @@
 3.3.5
 	Extended the list of nicknames that unlock Absolute Cognatic and Enatic succession
+	Minor fix to the Violate Baqt decision
 
 3.3.4
 	Updated to correspond with CKII 2.0.1 (non-beta)
