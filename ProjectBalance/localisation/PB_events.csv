@@ -42,7 +42,7 @@ meneth.220.a;Their rule is just;;;;;;;;;;;;;x
 meneth.220.b;No opinion;;;;;;;;;;;;;x
 meneth.220.c;Inustices must be righted;;;;;;;;;;;;;x
 meneth.221.desc;Based on the faction vote, the following options are available to us. What action should we take? Your choice will be put to a vote.;;;;;;;;;;;;;x
-meneth.221.a;Help our liege;;;;;;;;;;;;;x
+meneth.221.a;Support our liege;;;;;;;;;;;;;x
 meneth.221.b;Strengthen our position;;;;;;;;;;;;;x
 meneth.221.c;Demand crown authority reduced;;;;;;;;;;;;;x
 meneth.221.d;Weaken liege;;;;;;;;;;;;;x
@@ -89,8 +89,11 @@ meneth.248.c;Economic cooperation;;;;;;;;;;;;;x
 meneth.249.desc;The faction leader has called for increased cooperation between faction members. This can only be good.;;;;;;;;;;;;;x
 meneth.249.a;Military cooperation begins;;;;;;;;;;;;;x
 meneth.249.b;Economic cooperation begins;;;;;;;;;;;;;x
-meneth.250.desc;The faction leader wants to commend our liege for his good rule. Do you support this?;;;;;;;;;;;;;x
-meneth.251.desc;Our vassals have commended us for our good rule. Only good can come of this.;;;;;;;;;;;;;x
+meneth.250.desc;We have decided to support our liege. What action should we take?;;;;;;;;;;;;;x
+meneth.250.a;Provide financial support;;;;;;;;;;;;;x
+meneth.250.b;Give commendation;;;;;;;;;;;;;x
+meneth.251.desc;The faction leader wants to commend our liege for his good rule. Do you support this?;;;;;;;;;;;;;x
+meneth.252.desc;Our vassals have commended us for our good rule. Only good can come of this.;;;;;;;;;;;;;x
 meneth.400.desc;It is time we asserted our dominion over Anatolia. We should invade Iconium.;;;;;;;;;;;;;x
 meneth.400.a;To war!;;;;;;;;;;;;;x
 meneth.400.b;I'd rather not;;;;;;;;;;;;;x
