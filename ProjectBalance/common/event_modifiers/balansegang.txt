@@ -110,3 +110,9 @@ economic_cooperation = {
 	build_time_modifier = -0.25
 	build_cost_modifier = -0.25
 }
+
+autonomy_commended = {
+	icon = 16
+	vassal_opinion = 5
+	monthly_character_prestige = 0.25
+}

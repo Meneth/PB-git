@@ -603,20 +603,10 @@ character_event = {
 		clr_character_flag = faction_autonomy_give_money
 		clr_character_flag = faction_autonomy_external_inheritance
 	}
-	option = { #Provide support against invasion
+	option = { #Help liege
+		check_variable = { which = "autonomy_mood" value = 0 }
 		name = meneth.221.a
-		trigger = {
-			check_variable = { which = "autonomy_mood" value = 0 }
-			liege = {
-				any_war = { defender = { character = PREVPREV } }
-			}
-		}
-		set_character_flag = faction_autonomy_financial_support
-		any_faction_backer = {
-			limit = { in_faction = faction_autonomy }
-			character_event = { id = meneth.222 days = 1 }
-		}
-		character_event = { id = meneth.222 }
+		character_event = { id = meneth.250 } #What action to take
 		ai_chance = {
 			factor = 1
 			modifier = {
@@ -624,7 +614,7 @@ character_event = {
 				NOT = { check_variable = { which = "autonomy_personal_mood" value = -5 } }
 			}
 			modifier = {
-				factor = 0
+				factor = 0.1
 				trait = greedy
 			}
 			modifier = {
@@ -633,9 +623,9 @@ character_event = {
 			}
 		}
 	}
-	option = { #Neutral
+	option = { #Strengthen own position
 		name = meneth.221.b
-		character_event = { id = meneth.248 } #What actiont to take
+		character_event = { id = meneth.248 } #What action to take
 		ai_chance = {
 			factor = 1
 			modifier = {
@@ -794,6 +784,72 @@ character_event = {
 				check_variable = { which = "autonomy_personal_mood" value = 5 }
 			}
 		}
+	}
+}
+
+#How to help liege?
+character_event = {
+	id = meneth.250
+	is_triggered_only = yes
+	
+	desc = meneth.250.desc
+	picture = GFX_evt_emissary
+	border = GFX_event_normal_frame_religion
+	option = { #Status quo
+		name = meneth.248.a #Only available if no other option
+		trigger = {
+			liege = {
+				NOT = { any_war = { defender = { character = PREVPREV } } }
+				OR = {
+					NOT = { has_character_modifier = autonomy_commended }
+					reverse_has_opinon = { who = ROOT value = 0 }
+				}
+			}
+		}
+	}
+	option = { #Provide support against invasion
+		name = meneth.250.a
+		trigger = {
+			liege = {
+				any_war = { defender = { character = PREVPREV } }
+			}
+		}
+		set_character_flag = faction_autonomy_financial_support
+		any_faction_backer = {
+			limit = { in_faction = faction_autonomy }
+			character_event = { id = meneth.222 days = 1 }
+		}
+		character_event = { id = meneth.222 }
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { check_variable = { which = "autonomy_personal_mood" value = -5 } }
+			}
+			modifier = {
+				factor = 0
+				trait = greedy
+			}
+			modifier = {
+				factor = 5
+				trait = charitable
+			}
+		}
+	}
+	option = { #Commend liege
+		name = meneth.250.b
+		trigger = {
+			liege = {
+				NOT = { has_character_modifier = autonomy_commended }
+				reverse_has_opinon = { who = ROOT value = 0 }
+			}
+		}
+		set_character_flag = faction_autonomy_commend_liege
+		any_faction_backer = {
+			limit = { in_faction = faction_autonomy }
+			character_event = { id = meneth.251 days = 1 }
+		}
+		character_event = { id = meneth.251 }
 	}
 }
 
@@ -4000,5 +4056,111 @@ character_event = {
 		capital_scope = {
 			add_province_modifier = { name = economic_cooperation duration = 5475 }
 		}
+	}
+}
+
+#Give commendation?
+character_event = {
+	id = meneth.251
+	is_triggered_only = yes
+	
+	desc = meneth.251.desc
+	picture = GFX_evt_emissary
+	border = GFX_event_normal_frame_religion
+	
+	immediate = {
+		if = {
+			limit = { FROM = { character = ROOT } }
+			character_event = { id = meneth.252 days = 3 }
+		}
+	}
+	option = { #Yes
+		name = Yes
+		FROM = { change_variable = { which = "faction_vote" value = 1 } }
+		if = {
+			limit = { FROM = { character = ROOT } }
+			change_variable = { which = "faction_vote" value = 1 }
+		}
+		if = {
+			limit = { tier = duke }
+			FROM = { change_variable = { which = "faction_vote" value = 1 } }
+		}
+		if = {
+			limit = { tier = king }
+			FROM = { change_variable = { which = "faction_vote" value = 2 } }
+		}
+		ai_chance = {
+			factor = 2
+			modifier = {
+				factor = 0 #If quite angry, will never vote positively
+				NOT = { check_variable = { which = "autonomy_personal_mood" value = -10 } }
+			}
+			modifier = {
+				factor = 2
+				check_variable = { which = "autonomy_personal_mood" value = 0 }
+			}
+			modifier = {
+				factor = 2
+				check_variable = { which = "autonomy_personal_mood" value = 5 }
+			}
+			modifier = {
+				factor = 2
+				check_variable = { which = "autonomy_personal_mood" value = 10 }
+			}
+			modifier = {
+				factor = 5
+				has_opinion = { who = liege value = 50 }
+			}
+			modifier = {
+				factor = 0
+				NOT = { has_opinion = { who = liege value = 0 } }
+			}
+		}
+	}
+	option = { #No
+		name = No
+		FROM = { change_variable = { which = "faction_vote" value = -1 } }
+		if = {
+			limit = { tier = duke }
+			FROM = { change_variable = { which = "faction_vote" value = -1 } }
+		}
+		if = {
+			limit = { tier = king }
+			FROM = { change_variable = { which = "faction_vote" value = -2 } }
+		}
+		if = {
+			limit = { FROM = { character = ROOT } }
+			change_variable = { which = "faction_vote" value = -1 }
+		}
+		ai_chance = {
+			factor = 2
+			modifier = {
+				factor = 0 #If quite happy, will never vote negatively
+				check_variable = { which = "autonomy_personal_mood" value = 15 }
+			}
+			modifier = {
+				factor = 2
+				NOT = { check_variable = { which = "autonomy_personal_mood" value = 0 } }
+			}
+			modifier = {
+				factor = 2
+				NOT = { check_variable = { which = "autonomy_personal_mood" value = -5 } }
+			}
+		}
+	}
+}
+
+#Receives commendation
+character_event = {
+	id = meneth.252
+	is_triggered_only = yes
+	
+	desc = meneth.252.desc
+	picture = GFX_evt_emissary
+	border = GFX_event_normal_frame_religion
+	option = {
+		name = OK
+		add_character_modifier = { which = autonomy_commended duration = 3650 }
+		prestige = 100
 	}
 }
