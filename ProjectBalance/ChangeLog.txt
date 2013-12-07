@@ -1,6 +1,7 @@
 3.3.5
 	Extended the list of nicknames that unlock Absolute Cognatic and Enatic succession
 	Minor fix to the Violate Baqt decision
+	(PB+SWMH) Added a modifier for Saharan provinces that lowers supply limits considerably, lowers tax income by 25%, and lowers levy size by 50%
 
 3.3.4
 	Updated to correspond with CKII 2.0.1 (non-beta)
