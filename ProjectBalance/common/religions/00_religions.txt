@@ -37,6 +37,7 @@ christian = {
 		}
 		
 		investiture = yes
+		can_have_antipopes = yes
 		can_excommunicate = yes
 		can_grant_divorce = yes
 		can_grant_invasion_cb = invasion
@@ -57,6 +58,8 @@ christian = {
 		color = { 0.5 0.5 0.9 }
 		parent = catholic
 		
+		crusade_name = CRUSADE
+
 		can_retire_to_monastery = yes
 		female_temple_holders = yes
 		
@@ -72,7 +75,10 @@ christian = {
 		color = { 0.7 0.7 0.4 }
 		parent = catholic
 		
+		crusade_name = CRUSADE
+
 		investiture = yes
+		can_have_antipopes = yes
 		can_excommunicate = yes
 		can_grant_divorce = yes
 		can_grant_invasion_cb = invasion
@@ -93,6 +99,8 @@ christian = {
 		color = { 0.4 0.4 0.7 }
 		parent = catholic
 		
+		crusade_name = CRUSADE
+
 		can_retire_to_monastery = yes
 		priests_can_inherit = no
 		
@@ -108,6 +116,8 @@ christian = {
 		color = { 0.5 0.8 0.8 }
 		parent = catholic
 		
+		crusade_name = CRUSADE
+
 		can_retire_to_monastery = yes
 		priests_can_inherit = no
 		
@@ -135,7 +145,6 @@ christian = {
 			SATAN LUCIFER THE_DEVIL
 		}
 		
-		investiture = no
 		autocephaly = yes
 		can_excommunicate = yes
 		can_grant_divorce = yes
@@ -170,7 +179,6 @@ christian = {
 			SATAN LUCIFER THE_DEVIL
 		}
 		
-		investiture = no
 		autocephaly = yes
 		can_excommunicate = yes
 		can_grant_divorce = yes
@@ -193,7 +201,8 @@ christian = {
 		color = { 0.8 0.4 0.1 }
 		parent = miaphysite
 		
-		investiture = no
+		crusade_name = CRUSADE
+
 		autocephaly = yes
 		can_excommunicate = yes
 		can_grant_divorce = yes
@@ -216,6 +225,8 @@ christian = {
 		color = { 0.7 0 0.2 }
 		parent = orthodox
 		
+		crusade_name = CRUSADE
+
 		can_retire_to_monastery = yes
 		female_temple_holders = yes
 		
@@ -232,7 +243,8 @@ christian = {
 		color = { 0.8 0.3 0.5 }
 		parent = orthodox
 		
-		investiture = no
+		crusade_name = CRUSADE
+
 		autocephaly = yes
 		can_excommunicate = yes
 		can_grant_divorce = yes
@@ -255,7 +267,8 @@ christian = {
 		color = { 0.5 0 0.3 }
 		parent = orthodox
 		
-		investiture = no
+		crusade_name = CRUSADE
+
 		autocephaly = yes
 		can_excommunicate = yes
 		can_grant_divorce = yes
@@ -278,7 +291,8 @@ christian = {
 		color = { 0.5 0.2 0.4 }
 		parent = orthodox
 		
-		investiture = no
+		crusade_name = CRUSADE
+
 		autocephaly = yes
 		can_excommunicate = yes
 		can_grant_divorce = yes
@@ -330,6 +344,7 @@ muslim = {
 		can_hold_temples = yes
 		psc_marriage = no # Disallow uncle-nice and aunt-nephew marriages
 		max_wives = 4
+		matrilineal_marriages = no
 	}
 	zikri = {
 		graphical_culture = muslimgfx
@@ -340,10 +355,13 @@ muslim = {
 		color = { 0.2 0.6 0.2 }
 		parent = sunni
 		
+		crusade_name = JIHAD
+
 		priests_can_marry = yes
 		can_hold_temples = yes
 		psc_marriage = no
 		max_wives = 4
+		matrilineal_marriages = no
 	}
 	yazidi = {
 		graphical_culture = muslimgfx
@@ -369,6 +387,7 @@ muslim = {
 		can_hold_temples = yes
 		can_excommunicate = yes
 		max_wives = 4
+		matrilineal_marriages = no
 	}
 	ibadi = {
 		graphical_culture = muslimgfx
@@ -376,6 +395,8 @@ muslim = {
 		icon = 3
 		heresy_icon = 8
 		
+		crusade_name = JIHAD
+
 		color = { 0.3 0.6 0.3 }
 		parent = sunni
 		can_grant_claim = yes
@@ -384,6 +405,7 @@ muslim = {
 		can_hold_temples = yes
 		psc_marriage = no # Disallow uncle-nice and aunt-nephew marriages
 		max_wives = 4
+		matrilineal_marriages = no
 	}
 	shiite = {
 		graphical_culture = muslimgfx
@@ -409,6 +431,7 @@ muslim = {
 		can_hold_temples = yes
 		psc_marriage = no
 		max_wives = 4
+		matrilineal_marriages = no
 	}
 	druze = {
 		graphical_culture = muslimgfx
@@ -416,6 +439,7 @@ muslim = {
 		icon = 4
 		heresy_icon = 9
 		
+		crusade_name = JIHAD
 		scripture_name = THE_EPISTLES_OF_WISDOM
 		
 		color = { 0.0 0.9 0.4 }
@@ -424,6 +448,7 @@ muslim = {
 		can_hold_temples = yes
 		psc_marriage = no
 		max_wives = 4
+		matrilineal_marriages = no
 	}
 	hurufi = {
 		graphical_culture = muslimgfx
@@ -433,10 +458,14 @@ muslim = {
 		
 		color = { 0.4 0.9 0.0 }
 		parent = shiite
+
+		crusade_name = JIHAD
+
 		priests_can_marry = yes
 		can_hold_temples = yes
 		psc_marriage = no
 		max_wives = 4
+		matrilineal_marriages = no
 	}
 }
 
@@ -447,12 +476,12 @@ pagan_group = {
 	
 	# Names given only to Pagan characters (base names)
 	male_names = {
-		Anund AsbjÃ¶rn Aslak Audun Bagge Balder Brage Egil Emund Frej Gnupa Gorm Gudmund GudrÃ¶d Hardeknud Helge Odd Orm 
-		Orvar Ottar Rikulfr Rurik SigbjÃ¶rn StyrbjÃ¶rn Starkad Styrkar SÃ¤mund SÃ¶lve SÃ¶rkver Thorolf Tjudmund Toke Tolir 
-		TorbjÃ¶rn Torbrand Torfinn Torgeir Toste Tyke
+		Anund Asbjörn Aslak Audun Bagge Balder Brage Egil Emund Frej Gnupa Gorm Gudmund Gudröd Hardeknud Helge Odd Orm 
+		Orvar Ottar Rikulfr Rurik Sigbjörn Styrbjörn Starkad Styrkar Sämund Sölve Sörkver Thorolf Tjudmund Toke Tolir 
+		Torbjörn Torbrand Torfinn Torgeir Toste Tyke
 	}
 	female_names = {
-		Aslaug Bothild BjÃ¶rg Freja Grima Gytha KrÃ¡ka Malmfrid Thora Thordis Thyra Ragnfrid Ragnhild Svanhild Ulvhilde
+		Aslaug Bothild Björg Freja Grima Gytha Kráka Malmfrid Thora Thordis Thyra Ragnfrid Ragnhild Svanhild Ulvhilde
 	}
 
 	pagan = { # Use for misc other pagans
@@ -1120,6 +1149,7 @@ zoroastrian_group = {
 		
 		color = { 0.3 0.65 0.25 }
 		
+		crusade_name = GREAT_HOLY_WAR
 		scripture_name = THE_GREAT_SECRET
 		
 		god_names = {
@@ -1143,6 +1173,7 @@ zoroastrian_group = {
 		heresy_icon = 12
 		
 		color = { 0.7 0.7 0.4 }
+		crusade_name = GREAT_HOLY_WAR
 		god_names = {
 			GOD_ZURVAN GOD_OHRMAZD PROPHET_MANI GOD_MIHRYAZD
 		}
@@ -1166,7 +1197,7 @@ jewish_group = {
 	
 	# Names given only to Jewish characters (base names)
 	male_names = {
-		Ezra Isaac Hezekiah Manasseh Hanukkah Levi Zebulun Simeon
+		Belet Ezra Hanukkah Hezekiah Isaac Levi Manasseh Nisi Simeon Yavdi Zebulun
 	}
 
 	jewish = {
@@ -1208,6 +1239,8 @@ jewish_group = {
 		
 		parent = jewish
 		
+		crusade_name = GREAT_HOLY_WAR
+
 		can_grant_divorce = yes
 		can_call_crusade = yes
 		can_grant_invasion_cb = invasion
@@ -1229,6 +1262,8 @@ jewish_group = {
 		
 		parent = jewish
 		
+		crusade_name = GREAT_HOLY_WAR
+
 		can_grant_divorce = yes
 		can_call_crusade = yes
 		can_grant_invasion_cb = invasion

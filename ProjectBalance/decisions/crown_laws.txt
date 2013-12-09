@@ -1677,7 +1677,14 @@ de_jure_laws = {
 		group = investiture_law
 		default = yes
 		potential = {
-			holder_scope = { religion = catholic }
+			holder_scope = {
+				OR = {
+					religion = catholic
+					religion = fraticelli
+				}
+			}
+		}
+		allow = {
 			year = 1000
 		}
 		revoke_allowed = {
@@ -1706,7 +1713,12 @@ de_jure_laws = {
 		temple_all_opinion = 10 # Bishops will be grateful to their liege for their appointment
 		group = investiture_law
 		potential = {
-			holder_scope = { religion = catholic }
+			holder_scope = {
+				OR = {
+					religion = catholic
+					religion = fraticelli
+				}
+			}
 		}
 		revoke_allowed = {
 			always = no

@@ -1406,6 +1406,8 @@ faction_independence_ultimatum_timer = { icon = 1 }
 
 faction_claimant_timer = { icon = 1 }
 
+faction_antiking_ultimatum_timer = { icon = 1 }
+
 # hidden
 planning_claimant_adventure = { icon = 1 }
 planning_duchy_adventure = { icon = 1 }

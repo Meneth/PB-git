@@ -115,4 +115,10 @@ autonomy_commended = {
 	icon = 16
 	vassal_opinion = 5
 	monthly_character_prestige = 0.25
+
+sahara = {
+	icon = 31
+	supply_limit = -4
+	local_tax_modifier = -0.25
+	levy_size = -0.5
 }

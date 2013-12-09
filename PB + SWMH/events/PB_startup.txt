@@ -65,6 +65,12 @@ narrative_event = {
 			797 = { religion = miaphysite }
 			802 = { religion = miaphysite }
 		}
+		any_independent_ruler = {
+			any_realm_province = {
+				limit = { continent = region_sahara }
+				add_province_modifier = { name = sahara duration = -1 }
+			}
+		}
 	}
 	
 	option = {
