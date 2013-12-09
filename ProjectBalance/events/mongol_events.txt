@@ -160,11 +160,11 @@ narrative_event = {
 				province = 299 # Farrah
 				troops =
 				{
-					horse_archers = { 3333 3333 }
-					light_cavalry = { 2222 2222 }
-					light_infantry = { 741 741 }
-					heavy_infantry = { 370 370 }
-					knights = { 67 67 }
+					horse_archers = { 2700 2700 }
+					light_cavalry = { 1600 1600 }
+					light_infantry = { 541 541 }
+					heavy_infantry = { 210 210 }
+					knights = { 47 47 }
 				}
 				attrition = 0.2
 			}
@@ -186,11 +186,11 @@ narrative_event = {
 				province = 299 # Farrah
 				troops =
 				{
-					horse_archers = { 3333 3333 }
-					light_cavalry = { 2222 2222 }
-					light_infantry = { 741 741 }
-					heavy_infantry = { 370 370 }
-					knights = { 67 67 }
+					horse_archers = { 2700 2700 }
+					light_cavalry = { 1600 1600 }
+					light_infantry = { 541 541 }
+					heavy_infantry = { 210 210 }
+					knights = { 47 47 }
 				}
 				attrition = 0.2
 			}
@@ -239,11 +239,11 @@ narrative_event = {
 				province = 902 # Dashhowuz
 				troops =
 				{
-					horse_archers = { 3333 3333 }
-					light_cavalry = { 2222 2222 }
-					light_infantry = { 741 741 }
-					heavy_infantry = { 370 370 }
-					knights = { 67 67 }
+					horse_archers = { 2700 2700 }
+					light_cavalry = { 1600 1600 }
+					light_infantry = { 541 541 }
+					heavy_infantry = { 210 210 }
+					knights = { 47 47 }
 				}
 				attrition = 0.2
 			}
@@ -265,11 +265,11 @@ narrative_event = {
 				province = 902 # Dashhowuz
 				troops =
 				{
-					horse_archers = { 3333 3333 }
-					light_cavalry = { 2222 2222 }
-					light_infantry = { 741 741 }
-					heavy_infantry = { 370 370 }
-					knights = { 67 67 }
+					horse_archers = { 2700 2700 }
+					light_cavalry = { 1600 1600 }
+					light_infantry = { 541 541 }
+					heavy_infantry = { 210 210 }
+					knights = { 47 47 }
 				}
 				attrition = 0.2
 			}
@@ -291,11 +291,11 @@ narrative_event = {
 				province = 902 # Dashhowuz
 				troops =
 				{
-					horse_archers = { 3333 3333 }
-					light_cavalry = { 2222 2222 }
-					light_infantry = { 741 741 }
-					heavy_infantry = { 370 370 }
-					knights = { 67 67 }
+					horse_archers = { 2700 2700 }
+					light_cavalry = { 1600 1600 }
+					light_infantry = { 541 541 }
+					heavy_infantry = { 210 210 }
+					knights = { 47 47 }
 				}
 				attrition = 0.2
 			}
@@ -317,11 +317,11 @@ narrative_event = {
 				province = 907 # Sabzevar
 				troops =
 				{
-					horse_archers = { 3333 3333 }
-					light_cavalry = { 2222 2222 }
-					light_infantry = { 741 741 }
-					heavy_infantry = { 370 370 }
-					knights = { 67 67 }
+					horse_archers = { 2700 2700 }
+					light_cavalry = { 1600 1600 }
+					light_infantry = { 541 541 }
+					heavy_infantry = { 210 210 }
+					knights = { 47 47 }
 				}
 				attrition = 0.2
 
@@ -344,11 +344,11 @@ narrative_event = {
 				province = 907 # Sabzevar
 				troops =
 				{
-					horse_archers = { 3333 3333 }
-					light_cavalry = { 2222 2222 }
-					light_infantry = { 741 741 }
-					heavy_infantry = { 370 370 }
-					knights = { 67 67 }
+					horse_archers = { 2700 2700 }
+					light_cavalry = { 1600 1600 }
+					light_infantry = { 541 541 }
+					heavy_infantry = { 210 210 }
+					knights = { 47 47 }
 				}
 				attrition = 0.2
 
@@ -371,11 +371,11 @@ narrative_event = {
 				province = 907 # Sabzevar
 				troops =
 				{
-					horse_archers = { 3333 3333 }
-					light_cavalry = { 2222 2222 }
-					light_infantry = { 741 741 }
-					heavy_infantry = { 370 370 }
-					knights = { 67 67 }
+					horse_archers = { 2700 2700 }
+					light_cavalry = { 1600 1600 }
+					light_infantry = { 541 541 }
+					heavy_infantry = { 210 210 }
+					knights = { 47 47 }
 				}
 				attrition = 0.2
 
@@ -399,11 +399,11 @@ narrative_event = {
 				province = 907 # Sabzevar
 				troops =
 				{
-					horse_archers = { 3333 3333 }
-					light_cavalry = { 2222 2222 }
-					light_infantry = { 741 741 }
-					heavy_infantry = { 370 370 }
-					knights = { 67 67 }
+					horse_archers = { 2700 2700 }
+					light_cavalry = { 1600 1600 }
+					light_infantry = { 541 541 }
+					heavy_infantry = { 210 210 }
+					knights = { 47 47 }
 				}
 				attrition = 0.2
 
@@ -426,11 +426,11 @@ narrative_event = {
 				province = 907 # Sabzevar
 				troops =
 				{
-					horse_archers = { 3333 3333 }
-					light_cavalry = { 2222 2222 }
-					light_infantry = { 741 741 }
-					heavy_infantry = { 370 370 }
-					knights = { 67 67 }
+					horse_archers = { 2700 2700 }
+					light_cavalry = { 1600 1600 }
+					light_infantry = { 541 541 }
+					heavy_infantry = { 210 210 }
+					knights = { 47 47 }
 				}
 				attrition = 0.2
 
@@ -453,11 +453,11 @@ narrative_event = {
 				province = 907 # Sabzevar
 				troops =
 				{
-					horse_archers = { 3333 3333 }
-					light_cavalry = { 2222 2222 }
-					light_infantry = { 741 741 }
-					heavy_infantry = { 370 370 }
-					knights = { 67 67 }
+					horse_archers = { 2700 2700 }
+					light_cavalry = { 1600 1600 }
+					light_infantry = { 541 541 }
+					heavy_infantry = { 210 210 }
+					knights = { 47 47 }
 				}
 				attrition = 0.2
 
@@ -481,11 +481,11 @@ narrative_event = {
 				province = 907 # Sabzevar
 				troops =
 				{
-					horse_archers = { 3333 3333 }
-					light_cavalry = { 2222 2222 }
-					light_infantry = { 741 741 }
-					heavy_infantry = { 370 370 }
-					knights = { 67 67 }
+					horse_archers = { 2700 2700 }
+					light_cavalry = { 1600 1600 }
+					light_infantry = { 541 541 }
+					heavy_infantry = { 210 210 }
+					knights = { 47 47 }
 				}
 				attrition = 0.2
 
@@ -508,11 +508,11 @@ narrative_event = {
 				province = 907 # Sabzevar
 				troops =
 				{
-					horse_archers = { 3333 3333 }
-					light_cavalry = { 2222 2222 }
-					light_infantry = { 741 741 }
-					heavy_infantry = { 370 370 }
-					knights = { 67 67 }
+					horse_archers = { 2700 2700 }
+					light_cavalry = { 1600 1600 }
+					light_infantry = { 541 541 }
+					heavy_infantry = { 210 210 }
+					knights = { 47 47 }
 				}
 				attrition = 0.2
 
@@ -535,11 +535,11 @@ narrative_event = {
 				province = 907 # Sabzevar
 				troops =
 				{
-					horse_archers = { 3333 3333 }
-					light_cavalry = { 2222 2222 }
-					light_infantry = { 741 741 }
-					heavy_infantry = { 370 370 }
-					knights = { 67 67 }
+					horse_archers = { 2700 2700 }
+					light_cavalry = { 1600 1600 }
+					light_infantry = { 541 541 }
+					heavy_infantry = { 210 210 }
+					knights = { 47 47 }
 				}
 				attrition = 0.2
 
@@ -563,11 +563,11 @@ narrative_event = {
 				province = 907 # Sabzevar
 				troops =
 				{
-					horse_archers = { 3333 3333 }
-					light_cavalry = { 2222 2222 }
-					light_infantry = { 741 741 }
-					heavy_infantry = { 370 370 }
-					knights = { 67 67 }
+					horse_archers = { 2700 2700 }
+					light_cavalry = { 1600 1600 }
+					light_infantry = { 541 541 }
+					heavy_infantry = { 210 210 }
+					knights = { 47 47 }
 				}
 				attrition = 0.2
 
@@ -590,11 +590,11 @@ narrative_event = {
 				province = 907 # Sabzevar
 				troops =
 				{
-					horse_archers = { 3333 3333 }
-					light_cavalry = { 2222 2222 }
-					light_infantry = { 741 741 }
-					heavy_infantry = { 370 370 }
-					knights = { 67 67 }
+					horse_archers = { 2700 2700 }
+					light_cavalry = { 1600 1600 }
+					light_infantry = { 541 541 }
+					heavy_infantry = { 210 210 }
+					knights = { 47 47 }
 				}
 				attrition = 0.2
 
@@ -617,11 +617,11 @@ narrative_event = {
 				province = 907 # Sabzevar
 				troops =
 				{
-					horse_archers = { 3333 3333 }
-					light_cavalry = { 2222 2222 }
-					light_infantry = { 741 741 }
-					heavy_infantry = { 370 370 }
-					knights = { 67 67 }
+					horse_archers = { 2700 2700 }
+					light_cavalry = { 1600 1600 }
+					light_infantry = { 541 541 }
+					heavy_infantry = { 210 210 }
+					knights = { 47 47 }
 				}
 				attrition = 0.2
 
@@ -648,11 +648,11 @@ narrative_event = {
 					province = 907 # Sabzevar
 					troops =
 					{
-						horse_archers = { 3333 3333 }
-						light_cavalry = { 2222 2222 }
-						light_infantry = { 741 741 }
-						heavy_infantry = { 370 370 }
-						knights = { 67 67 }
+						horse_archers = { 2700 2700 }
+						light_cavalry = { 1600 1600 }
+						light_infantry = { 541 541 }
+						heavy_infantry = { 210 210 }
+						knights = { 47 47 }
 					}
 					attrition = 0.2
 	
@@ -675,11 +675,11 @@ narrative_event = {
 					province = 907 # Sabzevar
 					troops =
 					{
-						horse_archers = { 3333 3333 }
-						light_cavalry = { 2222 2222 }
-						light_infantry = { 741 741 }
-						heavy_infantry = { 370 370 }
-						knights = { 67 67 }
+						horse_archers = { 2700 2700 }
+						light_cavalry = { 1600 1600 }
+						light_infantry = { 541 541 }
+						heavy_infantry = { 210 210 }
+						knights = { 47 47 }
 					}
 					attrition = 0.2
 	
@@ -703,11 +703,11 @@ narrative_event = {
 					province = 907 # Sabzevar
 					troops =
 					{
-						horse_archers = { 3333 3333 }
-						light_cavalry = { 2222 2222 }
-						light_infantry = { 741 741 }
-						heavy_infantry = { 370 370 }
-						knights = { 67 67 }
+						horse_archers = { 2700 2700 }
+						light_cavalry = { 1600 1600 }
+						light_infantry = { 541 541 }
+						heavy_infantry = { 210 210 }
+						knights = { 47 47 }
 					}
 					attrition = 0.2
 	
@@ -733,11 +733,11 @@ narrative_event = {
 					province = 907 # Sabzevar
 					troops =
 					{
-						horse_archers = { 3333 3333 }
-						light_cavalry = { 2222 2222 }
-						light_infantry = { 741 741 }
-						heavy_infantry = { 370 370 }
-						knights = { 67 67 }
+						horse_archers = { 2700 2700 }
+						light_cavalry = { 1600 1600 }
+						light_infantry = { 541 541 }
+						heavy_infantry = { 210 210 }
+						knights = { 47 47 }
 					}
 					attrition = 0.2
 	
@@ -760,11 +760,11 @@ narrative_event = {
 					province = 907 # Sabzevar
 					troops =
 					{
-						horse_archers = { 3333 3333 }
-						light_cavalry = { 2222 2222 }
-						light_infantry = { 741 741 }
-						heavy_infantry = { 370 370 }
-						knights = { 67 67 }
+						horse_archers = { 2700 2700 }
+						light_cavalry = { 1600 1600 }
+						light_infantry = { 541 541 }
+						heavy_infantry = { 210 210 }
+						knights = { 47 47 }
 					}
 					attrition = 0.2
 	
@@ -787,11 +787,11 @@ narrative_event = {
 					province = 907 # Sabzevar
 					troops =
 					{
-						horse_archers = { 3333 3333 }
-						light_cavalry = { 2222 2222 }
-						light_infantry = { 741 741 }
-						heavy_infantry = { 370 370 }
-						knights = { 67 67 }
+						horse_archers = { 2700 2700 }
+						light_cavalry = { 1600 1600 }
+						light_infantry = { 541 541 }
+						heavy_infantry = { 210 210 }
+						knights = { 47 47 }
 					}
 					attrition = 0.2
 	
@@ -907,24 +907,15 @@ narrative_event = {
 	option = {
 		name = "EVTOPTC60001"
 		trigger = {
-			OR = {
-				religion_group = christian
-				AND = {
-					NOT = { religion_group = muslim }
-					NOT = { religion_group = pagan_group }
-					NOT = { religion_group = zoroastrian_group }
-				}
-			}
+			religion_group = christian
 			NOT = { has_landed_title = e_il-khanate }
 		}
 	}
 	option = {
 		name = "EVTOPTD60001"
 		trigger = {
-			OR = {
-				religion_group = pagan_group
-				religion_group = zoroastrian_group
-			}
+			NOT = { religion_group = christian }
+			NOT = { religion_group = muslim }
 			NOT = { has_landed_title = e_il-khanate }
 		}
 	}
@@ -1143,11 +1134,11 @@ narrative_event = {
 				province = 893 # Surgut
 				troops =
 				{
-					horse_archers = { 3333 3333 }
-					light_cavalry = { 2222 2222 }
-					light_infantry = { 741 741 }
-					heavy_infantry = { 370 370 }
-					knights = { 67 67 }
+					horse_archers = { 2700 2700 }
+					light_cavalry = { 1600 1600 }
+					light_infantry = { 541 541 }
+					heavy_infantry = { 210 210 }
+					knights = { 47 47 }
 				}
 				attrition = 0.2
 			}
@@ -1169,11 +1160,11 @@ narrative_event = {
 				province = 893 # Surgut
 				troops =
 				{
-					horse_archers = { 3333 3333 }
-					light_cavalry = { 2222 2222 }
-					light_infantry = { 741 741 }
-					heavy_infantry = { 370 370 }
-					knights = { 67 67 }
+					horse_archers = { 2700 2700 }
+					light_cavalry = { 1600 1600 }
+					light_infantry = { 541 541 }
+					heavy_infantry = { 210 210 }
+					knights = { 47 47 }
 				}
 				attrition = 0.2
 			}
@@ -1195,11 +1186,11 @@ narrative_event = {
 				province = 893 # Surgut
 				troops =
 				{
-					horse_archers = { 3333 3333 }
-					light_cavalry = { 2222 2222 }
-					light_infantry = { 741 741 }
-					heavy_infantry = { 370 370 }
-					knights = { 67 67 }
+					horse_archers = { 2700 2700 }
+					light_cavalry = { 1600 1600 }
+					light_infantry = { 541 541 }
+					heavy_infantry = { 210 210 }
+					knights = { 47 47 }
 				}
 				attrition = 0.2
 			}
@@ -1222,11 +1213,11 @@ narrative_event = {
 				province = 887 # Yamalia
 				troops =
 				{
-					horse_archers = { 3333 3333 }
-					light_cavalry = { 2222 2222 }
-					light_infantry = { 741 741 }
-					heavy_infantry = { 370 370 }
-					knights = { 67 67 }
+					horse_archers = { 2700 2700 }
+					light_cavalry = { 1600 1600 }
+					light_infantry = { 541 541 }
+					heavy_infantry = { 210 210 }
+					knights = { 47 47 }
 				}
 				attrition = 0.2
 			}
@@ -1248,11 +1239,11 @@ narrative_event = {
 				province = 887 # Yamalia
 				troops =
 				{
-					horse_archers = { 3333 3333 }
-					light_cavalry = { 2222 2222 }
-					light_infantry = { 741 741 }
-					heavy_infantry = { 370 370 }
-					knights = { 67 67 }
+					horse_archers = { 2700 2700 }
+					light_cavalry = { 1600 1600 }
+					light_infantry = { 541 541 }
+					heavy_infantry = { 210 210 }
+					knights = { 47 47 }
 				}
 				attrition = 0.2
 			}
@@ -1274,11 +1265,11 @@ narrative_event = {
 				province = 887 # Yamalia
 				troops =
 				{
-					horse_archers = { 3333 3333 }
-					light_cavalry = { 2222 2222 }
-					light_infantry = { 741 741 }
-					heavy_infantry = { 370 370 }
-					knights = { 67 67 }
+					horse_archers = { 2700 2700 }
+					light_cavalry = { 1600 1600 }
+					light_infantry = { 541 541 }
+					heavy_infantry = { 210 210 }
+					knights = { 47 47 }
 				}
 				attrition = 0.2
 			}
@@ -1301,11 +1292,11 @@ narrative_event = {
 				province = 887 # Yamalia
 				troops =
 				{
-					horse_archers = { 3333 3333 }
-					light_cavalry = { 2222 2222 }
-					light_infantry = { 741 741 }
-					heavy_infantry = { 370 370 }
-					knights = { 67 67 }
+					horse_archers = { 2700 2700 }
+					light_cavalry = { 1600 1600 }
+					light_infantry = { 541 541 }
+					heavy_infantry = { 210 210 }
+					knights = { 47 47 }
 				}
 				attrition = 0.2
 			}
@@ -1327,11 +1318,11 @@ narrative_event = {
 				province = 887 # Yamalia
 				troops =
 				{
-					horse_archers = { 3333 3333 }
-					light_cavalry = { 2222 2222 }
-					light_infantry = { 741 741 }
-					heavy_infantry = { 370 370 }
-					knights = { 67 67 }
+					horse_archers = { 2700 2700 }
+					light_cavalry = { 1600 1600 }
+					light_infantry = { 541 541 }
+					heavy_infantry = { 210 210 }
+					knights = { 47 47 }
 				}
 				attrition = 0.2
 			}
@@ -1353,11 +1344,11 @@ narrative_event = {
 				province = 887 # Yamalia
 				troops =
 				{
-					horse_archers = { 3333 3333 }
-					light_cavalry = { 2222 2222 }
-					light_infantry = { 741 741 }
-					heavy_infantry = { 370 370 }
-					knights = { 67 67 }
+					horse_archers = { 2700 2700 }
+					light_cavalry = { 1600 1600 }
+					light_infantry = { 541 541 }
+					heavy_infantry = { 210 210 }
+					knights = { 47 47 }
 				}
 				attrition = 0.2
 			}
@@ -1379,11 +1370,11 @@ narrative_event = {
 				province = 887 # Yamalia
 				troops =
 				{
-					horse_archers = { 3333 3333 }
-					light_cavalry = { 2222 2222 }
-					light_infantry = { 741 741 }
-					heavy_infantry = { 370 370 }
-					knights = { 67 67 }
+					horse_archers = { 2700 2700 }
+					light_cavalry = { 1600 1600 }
+					light_infantry = { 541 541 }
+					heavy_infantry = { 210 210 }
+					knights = { 47 47 }
 				}
 				attrition = 0.2
 			}
@@ -1405,11 +1396,11 @@ narrative_event = {
 				province = 887 # Yamalia
 				troops =
 				{
-					horse_archers = { 3333 3333 }
-					light_cavalry = { 2222 2222 }
-					light_infantry = { 741 741 }
-					heavy_infantry = { 370 370 }
-					knights = { 67 67 }
+					horse_archers = { 2700 2700 }
+					light_cavalry = { 1600 1600 }
+					light_infantry = { 541 541 }
+					heavy_infantry = { 210 210 }
+					knights = { 47 47 }
 				}
 				attrition = 0.2
 			}
@@ -1431,11 +1422,11 @@ narrative_event = {
 				province = 887 # Yamalia
 				troops =
 				{
-					horse_archers = { 3333 3333 }
-					light_cavalry = { 2222 2222 }
-					light_infantry = { 741 741 }
-					heavy_infantry = { 370 370 }
-					knights = { 67 67 }
+					horse_archers = { 2700 2700 }
+					light_cavalry = { 1600 1600 }
+					light_infantry = { 541 541 }
+					heavy_infantry = { 210 210 }
+					knights = { 47 47 }
 				}
 			}
 		}
@@ -1456,11 +1447,11 @@ narrative_event = {
 				province = 887 # Yamalia
 				troops =
 				{
-					horse_archers = { 3333 3333 }
-					light_cavalry = { 2222 2222 }
-					light_infantry = { 741 741 }
-					heavy_infantry = { 370 370 }
-					knights = { 67 67 }
+					horse_archers = { 2700 2700 }
+					light_cavalry = { 1600 1600 }
+					light_infantry = { 541 541 }
+					heavy_infantry = { 210 210 }
+					knights = { 47 47 }
 				}
 			}
 		}
@@ -1481,11 +1472,11 @@ narrative_event = {
 				province = 887 # Yamalia
 				troops =
 				{
-					horse_archers = { 3333 3333 }
-					light_cavalry = { 2222 2222 }
-					light_infantry = { 741 741 }
-					heavy_infantry = { 370 370 }
-					knights = { 67 67 }
+					horse_archers = { 2700 2700 }
+					light_cavalry = { 1600 1600 }
+					light_infantry = { 541 541 }
+					heavy_infantry = { 210 210 }
+					knights = { 47 47 }
 				}
 			}
 		}
@@ -1506,11 +1497,11 @@ narrative_event = {
 				province = 887 # Yamalia
 				troops =
 				{
-					horse_archers = { 3333 3333 }
-					light_cavalry = { 2222 2222 }
-					light_infantry = { 741 741 }
-					heavy_infantry = { 370 370 }
-					knights = { 67 67 }
+					horse_archers = { 2700 2700 }
+					light_cavalry = { 1600 1600 }
+					light_infantry = { 541 541 }
+					heavy_infantry = { 210 210 }
+					knights = { 47 47 }
 				}
 			}
 		}
@@ -1533,11 +1524,11 @@ narrative_event = {
 					province = 898 # Omsk
 					troops =
 					{
-						horse_archers = { 3333 3333 }
-						light_cavalry = { 2222 2222 }
-						light_infantry = { 741 741 }
-						heavy_infantry = { 370 370 }
-						knights = { 67 67 }
+						horse_archers = { 2700 2700 }
+						light_cavalry = { 1600 1600 }
+						light_infantry = { 541 541 }
+						heavy_infantry = { 210 210 }
+						knights = { 47 47 }
 					}
 				}
 			}
@@ -1558,11 +1549,11 @@ narrative_event = {
 					province = 898 # Omsk
 					troops =
 					{
-						horse_archers = { 3333 3333 }
-						light_cavalry = { 2222 2222 }
-						light_infantry = { 741 741 }
-						heavy_infantry = { 370 370 }
-						knights = { 67 67 }
+						horse_archers = { 2700 2700 }
+						light_cavalry = { 1600 1600 }
+						light_infantry = { 541 541 }
+						heavy_infantry = { 210 210 }
+						knights = { 47 47 }
 					}
 				}
 			}
@@ -1583,11 +1574,11 @@ narrative_event = {
 					province = 898 # Omsk
 					troops =
 					{
-						horse_archers = { 3333 3333 }
-						light_cavalry = { 2222 2222 }
-						light_infantry = { 741 741 }
-						heavy_infantry = { 370 370 }
-						knights = { 67 67 }
+						horse_archers = { 2700 2700 }
+						light_cavalry = { 1600 1600 }
+						light_infantry = { 541 541 }
+						heavy_infantry = { 210 210 }
+						knights = { 47 47 }
 					}
 				}
 			}
@@ -1611,11 +1602,11 @@ narrative_event = {
 					province = 898 # Omsk
 					troops =
 					{
-						horse_archers = { 3333 3333 }
-						light_cavalry = { 2222 2222 }
-						light_infantry = { 741 741 }
-						heavy_infantry = { 370 370 }
-						knights = { 67 67 }
+						horse_archers = { 2700 2700 }
+						light_cavalry = { 1600 1600 }
+						light_infantry = { 541 541 }
+						heavy_infantry = { 210 210 }
+						knights = { 47 47 }
 					}
 				}
 			}
@@ -1636,11 +1627,11 @@ narrative_event = {
 					province = 898 # Omsk
 					troops =
 					{
-						horse_archers = { 3333 3333 }
-						light_cavalry = { 2222 2222 }
-						light_infantry = { 741 741 }
-						heavy_infantry = { 370 370 }
-						knights = { 67 67 }
+						horse_archers = { 2700 2700 }
+						light_cavalry = { 1600 1600 }
+						light_infantry = { 541 541 }
+						heavy_infantry = { 210 210 }
+						knights = { 47 47 }
 					}
 				}
 			}
@@ -1661,11 +1652,11 @@ narrative_event = {
 					province = 898 # Omsk
 					troops =
 					{
-						horse_archers = { 3333 3333 }
-						light_cavalry = { 2222 2222 }
-						light_infantry = { 741 741 }
-						heavy_infantry = { 370 370 }
-						knights = { 67 67 }
+						horse_archers = { 2700 2700 }
+						light_cavalry = { 1600 1600 }
+						light_infantry = { 541 541 }
+						heavy_infantry = { 210 210 }
+						knights = { 47 47 }
 					}
 				}
 			}
@@ -1772,14 +1763,7 @@ narrative_event = {
 	option = {
 		name = "EVTOPTB60002"
 		trigger = {
-			OR = {
-				religion_group = christian
-				AND = {
-					NOT = { religion_group = muslim }
-					NOT = { religion_group = pagan_group }
-					NOT = { religion_group = zoroastrian_group }
-				}
-			}
+			religion_group = christian
 			NOT = { has_landed_title = e_golden_horde }
 		}
 	}
@@ -1793,10 +1777,8 @@ narrative_event = {
 	option = {
 		name = "EVTOPTD60002"
 		trigger = {
-			OR = {
-				religion_group = pagan_group
-				religion_group = zoroastrian_group
-			}
+			NOT = { religion_group = christian }
+			NOT = { religion_group = muslim }
 			NOT = { has_landed_title = e_golden_horde }
 		}
 	}
@@ -1920,11 +1902,11 @@ narrative_event = {
 			leader = ROOT
 			troops =
 			{
-				horse_archers = { 3333 3333 }
-				light_cavalry = { 2222 2222 }
-				light_infantry = { 741 741 }
-				heavy_infantry = { 370 370 }
-				knights = { 67 67 }
+				horse_archers = { 2700 2700 }
+				light_cavalry = { 1600 1600 }
+				light_infantry = { 541 541 }
+				heavy_infantry = { 210 210 }
+				knights = { 47 47 }
 			}
 			attrition = 0.2
 		}
@@ -1946,11 +1928,11 @@ narrative_event = {
 				province = 299 # Balkh
 				troops =
 				{
-					horse_archers = { 3333 3333 }
-					light_cavalry = { 2222 2222 }
-					light_infantry = { 741 741 }
-					heavy_infantry = { 370 370 }
-					knights = { 67 67 }
+					horse_archers = { 2700 2700 }
+					light_cavalry = { 1600 1600 }
+					light_infantry = { 541 541 }
+					heavy_infantry = { 210 210 }
+					knights = { 47 47 }
 				}
 				attrition = 0.2
 			}
@@ -1972,11 +1954,11 @@ narrative_event = {
 				province = 299 # Balkh
 				troops =
 				{
-					horse_archers = { 3333 3333 }
-					light_cavalry = { 2222 2222 }
-					light_infantry = { 741 741 }
-					heavy_infantry = { 370 370 }
-					knights = { 67 67 }
+					horse_archers = { 2700 2700 }
+					light_cavalry = { 1600 1600 }
+					light_infantry = { 541 541 }
+					heavy_infantry = { 210 210 }
+					knights = { 47 47 }
 				}
 				attrition = 0.2
 			}
@@ -1999,11 +1981,11 @@ narrative_event = {
 				province = 299 # Balkh
 				troops =
 				{
-					horse_archers = { 3333 3333 }
-					light_cavalry = { 2222 2222 }
-					light_infantry = { 741 741 }
-					heavy_infantry = { 370 370 }
-					knights = { 67 67 }
+					horse_archers = { 2700 2700 }
+					light_cavalry = { 1600 1600 }
+					light_infantry = { 541 541 }
+					heavy_infantry = { 210 210 }
+					knights = { 47 47 }
 				}
 				attrition = 0.2
 			}
@@ -2025,11 +2007,11 @@ narrative_event = {
 				province = 902 # Dashhovuz
 				troops =
 				{
-					horse_archers = { 3333 3333 }
-					light_cavalry = { 2222 2222 }
-					light_infantry = { 741 741 }
-					heavy_infantry = { 370 370 }
-					knights = { 67 67 }
+					horse_archers = { 2700 2700 }
+					light_cavalry = { 1600 1600 }
+					light_infantry = { 541 541 }
+					heavy_infantry = { 210 210 }
+					knights = { 47 47 }
 				}
 				attrition = 0.2
 			}
@@ -2051,11 +2033,11 @@ narrative_event = {
 				province = 902 # Dashhovuz
 				troops =
 				{
-					horse_archers = { 3333 3333 }
-					light_cavalry = { 2222 2222 }
-					light_infantry = { 741 741 }
-					heavy_infantry = { 370 370 }
-					knights = { 67 67 }
+					horse_archers = { 2700 2700 }
+					light_cavalry = { 1600 1600 }
+					light_infantry = { 541 541 }
+					heavy_infantry = { 210 210 }
+					knights = { 47 47 }
 				}
 				attrition = 0.2
 			}
@@ -2078,11 +2060,11 @@ narrative_event = {
 				province = 901 # Khiva
 				troops =
 				{
-					horse_archers = { 3333 3333 }
-					light_cavalry = { 2222 2222 }
-					light_infantry = { 741 741 }
-					heavy_infantry = { 370 370 }
-					knights = { 67 67 }
+					horse_archers = { 2700 2700 }
+					light_cavalry = { 1600 1600 }
+					light_infantry = { 541 541 }
+					heavy_infantry = { 210 210 }
+					knights = { 47 47 }
 				}
 			}
 		}
@@ -2103,11 +2085,11 @@ narrative_event = {
 				province = 901 # Khiva
 				troops =
 				{
-					horse_archers = { 3333 3333 }
-					light_cavalry = { 2222 2222 }
-					light_infantry = { 741 741 }
-					heavy_infantry = { 370 370 }
-					knights = { 67 67 }
+					horse_archers = { 2700 2700 }
+					light_cavalry = { 1600 1600 }
+					light_infantry = { 541 541 }
+					heavy_infantry = { 210 210 }
+					knights = { 47 47 }
 				}
 			}
 		}
@@ -2128,11 +2110,11 @@ narrative_event = {
 				province = 901 # Khiva
 				troops =
 				{
-					horse_archers = { 3333 3333 }
-					light_cavalry = { 2222 2222 }
-					light_infantry = { 741 741 }
-					heavy_infantry = { 370 370 }
-					knights = { 67 67 }
+					horse_archers = { 2700 2700 }
+					light_cavalry = { 1600 1600 }
+					light_infantry = { 541 541 }
+					heavy_infantry = { 210 210 }
+					knights = { 47 47 }
 				}
 			}
 		}
@@ -2154,11 +2136,11 @@ narrative_event = {
 				province = 901 # Khiva
 				troops =
 				{
-					horse_archers = { 3333 3333 }
-					light_cavalry = { 2222 2222 }
-					light_infantry = { 741 741 }
-					heavy_infantry = { 370 370 }
-					knights = { 67 67 }
+					horse_archers = { 2700 2700 }
+					light_cavalry = { 1600 1600 }
+					light_infantry = { 541 541 }
+					heavy_infantry = { 210 210 }
+					knights = { 47 47 }
 				}
 			}
 		}
@@ -2179,11 +2161,11 @@ narrative_event = {
 				province = 901 # Khiva
 				troops =
 				{
-					horse_archers = { 3333 3333 }
-					light_cavalry = { 2222 2222 }
-					light_infantry = { 741 741 }
-					heavy_infantry = { 370 370 }
-					knights = { 67 67 }
+					horse_archers = { 2700 2700 }
+					light_cavalry = { 1600 1600 }
+					light_infantry = { 541 541 }
+					heavy_infantry = { 210 210 }
+					knights = { 47 47 }
 				}
 			}
 		}
@@ -2204,11 +2186,11 @@ narrative_event = {
 				province = 901 # Khiva
 				troops =
 				{
-					horse_archers = { 3333 3333 }
-					light_cavalry = { 2222 2222 }
-					light_infantry = { 741 741 }
-					heavy_infantry = { 370 370 }
-					knights = { 67 67 }
+					horse_archers = { 2700 2700 }
+					light_cavalry = { 1600 1600 }
+					light_infantry = { 541 541 }
+					heavy_infantry = { 210 210 }
+					knights = { 47 47 }
 				}
 			}
 		}
@@ -2230,11 +2212,11 @@ narrative_event = {
 				province = 902 # Dashhovuz
 				troops =
 				{
-					horse_archers = { 3333 3333 }
-					light_cavalry = { 2222 2222 }
-					light_infantry = { 741 741 }
-					heavy_infantry = { 370 370 }
-					knights = { 67 67 }
+					horse_archers = { 2700 2700 }
+					light_cavalry = { 1600 1600 }
+					light_infantry = { 541 541 }
+					heavy_infantry = { 210 210 }
+					knights = { 47 47 }
 				}
 			}
 		}
@@ -2255,11 +2237,11 @@ narrative_event = {
 				province = 902 # Dashhovuz
 				troops =
 				{
-					horse_archers = { 3333 3333 }
-					light_cavalry = { 2222 2222 }
-					light_infantry = { 741 741 }
-					heavy_infantry = { 370 370 }
-					knights = { 67 67 }
+					horse_archers = { 2700 2700 }
+					light_cavalry = { 1600 1600 }
+					light_infantry = { 541 541 }
+					heavy_infantry = { 210 210 }
+					knights = { 47 47 }
 				}
 			}
 		}
@@ -2280,11 +2262,11 @@ narrative_event = {
 				province = 902 # Dashhovuz
 				troops =
 				{
-					horse_archers = { 3333 3333 }
-					light_cavalry = { 2222 2222 }
-					light_infantry = { 741 741 }
-					heavy_infantry = { 370 370 }
-					knights = { 67 67 }
+					horse_archers = { 2700 2700 }
+					light_cavalry = { 1600 1600 }
+					light_infantry = { 541 541 }
+					heavy_infantry = { 210 210 }
+					knights = { 47 47 }
 				}
 			}
 		}
@@ -2308,11 +2290,11 @@ narrative_event = {
 					province = 902 # Dashhovuz
 					troops =
 					{
-						horse_archers = { 3333 3333 }
-						light_cavalry = { 2222 2222 }
-						light_infantry = { 741 741 }
-						heavy_infantry = { 370 370 }
-						knights = { 67 67 }
+						horse_archers = { 2700 2700 }
+						light_cavalry = { 1600 1600 }
+						light_infantry = { 541 541 }
+						heavy_infantry = { 210 210 }
+						knights = { 47 47 }
 					}
 				}
 			}
@@ -2333,11 +2315,11 @@ narrative_event = {
 					province = 902 # Dashhovuz
 					troops =
 					{
-						horse_archers = { 3333 3333 }
-						light_cavalry = { 2222 2222 }
-						light_infantry = { 741 741 }
-						heavy_infantry = { 370 370 }
-						knights = { 67 67 }
+						horse_archers = { 2700 2700 }
+						light_cavalry = { 1600 1600 }
+						light_infantry = { 541 541 }
+						heavy_infantry = { 210 210 }
+						knights = { 47 47 }
 					}
 				}
 			}
@@ -2358,11 +2340,11 @@ narrative_event = {
 					province = 902 # Dashhovuz
 					troops =
 					{
-						horse_archers = { 3333 3333 }
-						light_cavalry = { 2222 2222 }
-						light_infantry = { 741 741 }
-						heavy_infantry = { 370 370 }
-						knights = { 67 67 }
+						horse_archers = { 2700 2700 }
+						light_cavalry = { 1600 1600 }
+						light_infantry = { 541 541 }
+						heavy_infantry = { 210 210 }
+						knights = { 47 47 }
 					}
 				}
 			}
@@ -2386,11 +2368,11 @@ narrative_event = {
 					province = 902 # Dashhovuz
 					troops =
 					{
-						horse_archers = { 3333 3333 }
-						light_cavalry = { 2222 2222 }
-						light_infantry = { 741 741 }
-						heavy_infantry = { 370 370 }
-						knights = { 67 67 }
+						horse_archers = { 2700 2700 }
+						light_cavalry = { 1600 1600 }
+						light_infantry = { 541 541 }
+						heavy_infantry = { 210 210 }
+						knights = { 47 47 }
 					}
 				}
 			}
@@ -2411,11 +2393,11 @@ narrative_event = {
 					province = 902 # Dashhovuz
 					troops =
 					{
-						horse_archers = { 3333 3333 }
-						light_cavalry = { 2222 2222 }
-						light_infantry = { 741 741 }
-						heavy_infantry = { 370 370 }
-						knights = { 67 67 }
+						horse_archers = { 2700 2700 }
+						light_cavalry = { 1600 1600 }
+						light_infantry = { 541 541 }
+						heavy_infantry = { 210 210 }
+						knights = { 47 47 }
 					}
 				}
 			}
@@ -2436,11 +2418,11 @@ narrative_event = {
 					province = 902 # Dashhovuz
 					troops =
 					{
-						horse_archers = { 3333 3333 }
-						light_cavalry = { 2222 2222 }
-						light_infantry = { 741 741 }
-						heavy_infantry = { 370 370 }
-						knights = { 67 67 }
+						horse_archers = { 2700 2700 }
+						light_cavalry = { 1600 1600 }
+						light_infantry = { 541 541 }
+						heavy_infantry = { 210 210 }
+						knights = { 47 47 }
 					}
 				}
 			}
@@ -2464,11 +2446,11 @@ narrative_event = {
 					province = 903 # Samarkand
 					troops =
 					{
-						horse_archers = { 3333 3333 }
-						light_cavalry = { 2222 2222 }
-						light_infantry = { 741 741 }
-						heavy_infantry = { 370 370 }
-						knights = { 67 67 }
+						horse_archers = { 2700 2700 }
+						light_cavalry = { 1600 1600 }
+						light_infantry = { 541 541 }
+						heavy_infantry = { 210 210 }
+						knights = { 47 47 }
 					}
 				}
 			}
@@ -2489,11 +2471,11 @@ narrative_event = {
 					province = 903 # Samarkand
 					troops =
 					{
-						horse_archers = { 3333 3333 }
-						light_cavalry = { 2222 2222 }
-						light_infantry = { 741 741 }
-						heavy_infantry = { 370 370 }
-						knights = { 67 67 }
+						horse_archers = { 2700 2700 }
+						light_cavalry = { 1600 1600 }
+						light_infantry = { 541 541 }
+						heavy_infantry = { 210 210 }
+						knights = { 47 47 }
 					}
 				}
 			}
@@ -2514,11 +2496,11 @@ narrative_event = {
 					province = 903 # Samarkand
 					troops =
 					{
-						horse_archers = { 3333 3333 }
-						light_cavalry = { 2222 2222 }
-						light_infantry = { 741 741 }
-						heavy_infantry = { 370 370 }
-						knights = { 67 67 }
+						horse_archers = { 2700 2700 }
+						light_cavalry = { 1600 1600 }
+						light_infantry = { 541 541 }
+						heavy_infantry = { 210 210 }
+						knights = { 47 47 }
 					}
 				}
 			}
@@ -2542,11 +2524,11 @@ narrative_event = {
 					province = 903 # Samarkand
 					troops =
 					{
-						horse_archers = { 3333 3333 }
-						light_cavalry = { 2222 2222 }
-						light_infantry = { 741 741 }
-						heavy_infantry = { 370 370 }
-						knights = { 67 67 }
+						horse_archers = { 2700 2700 }
+						light_cavalry = { 1600 1600 }
+						light_infantry = { 541 541 }
+						heavy_infantry = { 210 210 }
+						knights = { 47 47 }
 					}
 				}
 			}
@@ -2567,11 +2549,11 @@ narrative_event = {
 					province = 903 # Samarkand
 					troops =
 					{
-						horse_archers = { 3333 3333 }
-						light_cavalry = { 2222 2222 }
-						light_infantry = { 741 741 }
-						heavy_infantry = { 370 370 }
-						knights = { 67 67 }
+						horse_archers = { 2700 2700 }
+						light_cavalry = { 1600 1600 }
+						light_infantry = { 541 541 }
+						heavy_infantry = { 210 210 }
+						knights = { 47 47 }
 					}
 				}
 			}
@@ -2592,11 +2574,11 @@ narrative_event = {
 					province = 903 # Samarkand
 					troops =
 					{
-						horse_archers = { 3333 3333 }
-						light_cavalry = { 2222 2222 }
-						light_infantry = { 741 741 }
-						heavy_infantry = { 370 370 }
-						knights = { 67 67 }
+						horse_archers = { 2700 2700 }
+						light_cavalry = { 1600 1600 }
+						light_infantry = { 541 541 }
+						heavy_infantry = { 210 210 }
+						knights = { 47 47 }
 					}
 				}
 			}
@@ -2620,11 +2602,11 @@ narrative_event = {
 					province = 904 # Balkh
 					troops =
 					{
-						horse_archers = { 3333 3333 }
-						light_cavalry = { 2222 2222 }
-						light_infantry = { 741 741 }
-						heavy_infantry = { 370 370 }
-						knights = { 67 67 }
+						horse_archers = { 2700 2700 }
+						light_cavalry = { 1600 1600 }
+						light_infantry = { 541 541 }
+						heavy_infantry = { 210 210 }
+						knights = { 47 47 }
 					}
 				}
 			}
@@ -2645,11 +2627,11 @@ narrative_event = {
 					province = 904 # Balkh
 					troops =
 					{
-						horse_archers = { 3333 3333 }
-						light_cavalry = { 2222 2222 }
-						light_infantry = { 741 741 }
-						heavy_infantry = { 370 370 }
-						knights = { 67 67 }
+						horse_archers = { 2700 2700 }
+						light_cavalry = { 1600 1600 }
+						light_infantry = { 541 541 }
+						heavy_infantry = { 210 210 }
+						knights = { 47 47 }
 					}
 				}
 			}
@@ -2670,11 +2652,11 @@ narrative_event = {
 					province = 904 # Balkh
 					troops =
 					{
-						horse_archers = { 3333 3333 }
-						light_cavalry = { 2222 2222 }
-						light_infantry = { 741 741 }
-						heavy_infantry = { 370 370 }
-						knights = { 67 67 }
+						horse_archers = { 2700 2700 }
+						light_cavalry = { 1600 1600 }
+						light_infantry = { 541 541 }
+						heavy_infantry = { 210 210 }
+						knights = { 47 47 }
 					}
 				}
 			}
@@ -2698,11 +2680,11 @@ narrative_event = {
 					province = 904 # Balkh
 					troops =
 					{
-						horse_archers = { 3333 3333 }
-						light_cavalry = { 2222 2222 }
-						light_infantry = { 741 741 }
-						heavy_infantry = { 370 370 }
-						knights = { 67 67 }
+						horse_archers = { 2700 2700 }
+						light_cavalry = { 1600 1600 }
+						light_infantry = { 541 541 }
+						heavy_infantry = { 210 210 }
+						knights = { 47 47 }
 					}
 				}
 			}
@@ -2723,11 +2705,11 @@ narrative_event = {
 					province = 904 # Balkh
 					troops =
 					{
-						horse_archers = { 3333 3333 }
-						light_cavalry = { 2222 2222 }
-						light_infantry = { 741 741 }
-						heavy_infantry = { 370 370 }
-						knights = { 67 67 }
+						horse_archers = { 2700 2700 }
+						light_cavalry = { 1600 1600 }
+						light_infantry = { 541 541 }
+						heavy_infantry = { 210 210 }
+						knights = { 47 47 }
 					}
 				}
 			}
@@ -2748,11 +2730,11 @@ narrative_event = {
 					province = 904 # Balkh
 					troops =
 					{
-						horse_archers = { 3333 3333 }
-						light_cavalry = { 2222 2222 }
-						light_infantry = { 741 741 }
-						heavy_infantry = { 370 370 }
-						knights = { 67 67 }
+						horse_archers = { 2700 2700 }
+						light_cavalry = { 1600 1600 }
+						light_infantry = { 541 541 }
+						heavy_infantry = { 210 210 }
+						knights = { 47 47 }
 					}
 				}
 			}
@@ -2914,11 +2896,11 @@ character_event = {
 				province = 904 # Balkh
 				troops =
 				{
-					horse_archers = { 3333 3333 }
-					light_cavalry = { 2222 2222 }
-					light_infantry = { 741 741 }
-					heavy_infantry = { 370 370 }
-					knights = { 67 67 }
+					horse_archers = { 2700 2700 }
+					light_cavalry = { 1600 1600 }
+					light_infantry = { 541 541 }
+					heavy_infantry = { 210 210 }
+					knights = { 47 47 }
 				}
 			}
 		}
@@ -2939,11 +2921,11 @@ character_event = {
 				province = 904 # Balkh
 				troops =
 				{
-					horse_archers = { 3333 3333 }
-					light_cavalry = { 2222 2222 }
-					light_infantry = { 741 741 }
-					heavy_infantry = { 370 370 }
-					knights = { 67 67 }
+					horse_archers = { 2700 2700 }
+					light_cavalry = { 1600 1600 }
+					light_infantry = { 541 541 }
+					heavy_infantry = { 210 210 }
+					knights = { 47 47 }
 				}
 			}
 		}
@@ -2964,11 +2946,11 @@ character_event = {
 				province = 904 # Balkh
 				troops =
 				{
-					horse_archers = { 3333 3333 }
-					light_cavalry = { 2222 2222 }
-					light_infantry = { 741 741 }
-					heavy_infantry = { 370 370 }
-					knights = { 67 67 }
+					horse_archers = { 2700 2700 }
+					light_cavalry = { 1600 1600 }
+					light_infantry = { 541 541 }
+					heavy_infantry = { 210 210 }
+					knights = { 47 47 }
 				}
 			}
 		}
@@ -2992,11 +2974,11 @@ character_event = {
 					province = 904 # Balkh
 					troops =
 					{
-						horse_archers = { 3333 3333 }
-						light_cavalry = { 2222 2222 }
-						light_infantry = { 741 741 }
-						heavy_infantry = { 370 370 }
-						knights = { 67 67 }
+						horse_archers = { 2700 2700 }
+						light_cavalry = { 1600 1600 }
+						light_infantry = { 541 541 }
+						heavy_infantry = { 210 210 }
+						knights = { 47 47 }
 					}
 				}
 			}
@@ -3017,11 +2999,11 @@ character_event = {
 					province = 904 # Balkh
 					troops =
 					{
-						horse_archers = { 3333 3333 }
-						light_cavalry = { 2222 2222 }
-						light_infantry = { 741 741 }
-						heavy_infantry = { 370 370 }
-						knights = { 67 67 }
+						horse_archers = { 2700 2700 }
+						light_cavalry = { 1600 1600 }
+						light_infantry = { 541 541 }
+						heavy_infantry = { 210 210 }
+						knights = { 47 47 }
 					}
 				}
 			}
@@ -3042,11 +3024,11 @@ character_event = {
 					province = 904 # Balkh
 					troops =
 					{
-						horse_archers = { 3333 3333 }
-						light_cavalry = { 2222 2222 }
-						light_infantry = { 741 741 }
-						heavy_infantry = { 370 370 }
-						knights = { 67 67 }
+						horse_archers = { 2700 2700 }
+						light_cavalry = { 1600 1600 }
+						light_infantry = { 541 541 }
+						heavy_infantry = { 210 210 }
+						knights = { 47 47 }
 					}
 				}
 			}
@@ -3106,11 +3088,11 @@ character_event = {
 				province = 893 # Surgut
 				troops =
 				{
-					horse_archers = { 3333 3333 }
-					light_cavalry = { 2222 2222 }
-					light_infantry = { 741 741 }
-					heavy_infantry = { 370 370 }
-					knights = { 67 67 }
+					horse_archers = { 2700 2700 }
+					light_cavalry = { 1600 1600 }
+					light_infantry = { 541 541 }
+					heavy_infantry = { 210 210 }
+					knights = { 47 47 }
 				}
 			}
 		}
@@ -3131,11 +3113,11 @@ character_event = {
 				province = 893 # Surgut
 				troops =
 				{
-					horse_archers = { 3333 3333 }
-					light_cavalry = { 2222 2222 }
-					light_infantry = { 741 741 }
-					heavy_infantry = { 370 370 }
-					knights = { 67 67 }
+					horse_archers = { 2700 2700 }
+					light_cavalry = { 1600 1600 }
+					light_infantry = { 541 541 }
+					heavy_infantry = { 210 210 }
+					knights = { 47 47 }
 				}
 			}
 		}
@@ -3156,11 +3138,11 @@ character_event = {
 				province = 893 # Surgut
 				troops =
 				{
-					horse_archers = { 3333 3333 }
-					light_cavalry = { 2222 2222 }
-					light_infantry = { 741 741 }
-					heavy_infantry = { 370 370 }
-					knights = { 67 67 }
+					horse_archers = { 2700 2700 }
+					light_cavalry = { 1600 1600 }
+					light_infantry = { 541 541 }
+					heavy_infantry = { 210 210 }
+					knights = { 47 47 }
 				}
 				attrition = 0.2
 			}
@@ -3218,11 +3200,11 @@ character_event = {
 				province = 901 # Khiva
 				troops =
 				{
-					horse_archers = { 3333 3333 }
-					light_cavalry = { 2222 2222 }
-					light_infantry = { 741 741 }
-					heavy_infantry = { 370 370 }
-					knights = { 67 67 }
+					horse_archers = { 2700 2700 }
+					light_cavalry = { 1600 1600 }
+					light_infantry = { 541 541 }
+					heavy_infantry = { 210 210 }
+					knights = { 47 47 }
 				}
 			}
 		}
@@ -3243,11 +3225,11 @@ character_event = {
 				province = 901 # Khiva
 				troops =
 				{
-					horse_archers = { 3333 3333 }
-					light_cavalry = { 2222 2222 }
-					light_infantry = { 741 741 }
-					heavy_infantry = { 370 370 }
-					knights = { 67 67 }
+					horse_archers = { 2700 2700 }
+					light_cavalry = { 1600 1600 }
+					light_infantry = { 541 541 }
+					heavy_infantry = { 210 210 }
+					knights = { 47 47 }
 				}
 			}
 		}
@@ -3268,11 +3250,11 @@ character_event = {
 				province = 901 # Khiva
 				troops =
 				{
-					horse_archers = { 3333 3333 }
-					light_cavalry = { 2222 2222 }
-					light_infantry = { 741 741 }
-					heavy_infantry = { 370 370 }
-					knights = { 67 67 }
+					horse_archers = { 2700 2700 }
+					light_cavalry = { 1600 1600 }
+					light_infantry = { 541 541 }
+					heavy_infantry = { 210 210 }
+					knights = { 47 47 }
 				}
 				attrition = 0.2
 			}
@@ -3296,11 +3278,11 @@ character_event = {
 					province = 901 # Khiva
 					troops =
 					{
-						horse_archers = { 3333 3333 }
-						light_cavalry = { 2222 2222 }
-						light_infantry = { 741 741 }
-						heavy_infantry = { 370 370 }
-						knights = { 67 67 }
+						horse_archers = { 2700 2700 }
+						light_cavalry = { 1600 1600 }
+						light_infantry = { 541 541 }
+						heavy_infantry = { 210 210 }
+						knights = { 47 47 }
 					}
 				}
 			}
@@ -3321,11 +3303,11 @@ character_event = {
 					province = 901 # Khiva
 					troops =
 					{
-						horse_archers = { 3333 3333 }
-						light_cavalry = { 2222 2222 }
-						light_infantry = { 741 741 }
-						heavy_infantry = { 370 370 }
-						knights = { 67 67 }
+						horse_archers = { 2700 2700 }
+						light_cavalry = { 1600 1600 }
+						light_infantry = { 541 541 }
+						heavy_infantry = { 210 210 }
+						knights = { 47 47 }
 					}
 				}
 			}
@@ -3346,11 +3328,11 @@ character_event = {
 					province = 901 # Khiva
 					troops =
 					{
-						horse_archers = { 3333 3333 }
-						light_cavalry = { 2222 2222 }
-						light_infantry = { 741 741 }
-						heavy_infantry = { 370 370 }
-						knights = { 67 67 }
+						horse_archers = { 2700 2700 }
+						light_cavalry = { 1600 1600 }
+						light_infantry = { 541 541 }
+						heavy_infantry = { 210 210 }
+						knights = { 47 47 }
 					}
 					attrition = 0.2
 				}
@@ -3440,24 +3422,15 @@ character_event = {
 	option = {
 		name = "EXCELLENT"
 		trigger = {
-			OR = {
-				religion_group = christian
-				AND = {
-					NOT = { religion_group = muslim }
-					NOT = { religion_group = pagan_group }
-					NOT = { religion_group = zoroastrian_group }
-				}
-			}
+			religion_group = christian
 			NOT = { has_landed_title = e_il-khanate }
 		}
 	}
 	option = {
 		name = "EVTOPTD60010"
 		trigger = {
-			OR = {
-				religion_group = pagan_group
-				religion_group = zoroastrian_group
-			}
+			NOT = { religion_group = christian }
+			NOT = { religion_group = muslim }
 			NOT = { has_landed_title = e_il-khanate }
 		}
 	}
@@ -3538,24 +3511,15 @@ character_event = {
 	option = {
 		name = "EXCELLENT"
 		trigger = {
-			OR = {
-				religion_group = christian
-				AND = {
-					NOT = { religion_group = muslim }
-					NOT = { religion_group = pagan_group }
-					NOT = { religion_group = zoroastrian_group }
-				}
-			}
+			religion_group = christian
 			NOT = { has_landed_title = e_il-khanate }
 		}
 	}
 	option = {
 		name = "EVTOPTD60010"
 		trigger = {
-			OR = {
-				religion_group = pagan_group
-				religion_group = zoroastrian_group
-			}
+			NOT = { religion_group = christian }
+			NOT = { religion_group = muslim }
 			NOT = { has_landed_title = e_il-khanate }
 		}
 	}
@@ -3636,24 +3600,15 @@ character_event = {
 	option = {
 		name = "EVTOPTC60010"
 		trigger = {
-			OR = {
-				religion_group = christian
-				AND = {
-					NOT = { religion_group = muslim }
-					NOT = { religion_group = pagan_group }
-					NOT = { religion_group = zoroastrian_group }
-				}
-			}
+			religion_group = christian
 			NOT = { has_landed_title = e_il-khanate }
 		}
 	}
 	option = {
 		name = "EVTOPTD60010"
 		trigger = {
-			OR = {
-				religion_group = pagan_group
-				religion_group = zoroastrian_group
-			}
+			NOT = { religion_group = christian }
+			NOT = { religion_group = muslim }
 			NOT = { has_landed_title = e_il-khanate }
 		}
 	}
@@ -3735,24 +3690,15 @@ character_event = {
 	option = {
 		name = "EVTOPTC60010"
 		trigger = {
-			OR = {
-				religion_group = christian
-				AND = {
-					NOT = { religion_group = muslim }
-					NOT = { religion_group = pagan_group }
-					NOT = { religion_group = zoroastrian_group }
-				}
-			}
+			religion_group = christian
 			NOT = { has_landed_title = e_il-khanate }
 		}
 	}
 	option = {
 		name = "EVTOPTD60010"
 		trigger = {
-			OR = {
-				religion_group = pagan_group
-				religion_group = zoroastrian_group
-			}
+			NOT = { religion_group = christian }
+			NOT = { religion_group = muslim }
 			NOT = { has_landed_title = e_il-khanate }
 		}
 	}
@@ -3833,24 +3779,15 @@ character_event = {
 	option = {
 		name = "EXCELLENT"
 		trigger = {
-			OR = {
-				religion_group = christian
-				AND = {
-					NOT = { religion_group = muslim }
-					NOT = { religion_group = pagan_group }
-					NOT = { religion_group = zoroastrian_group }
-				}
-			}
+			religion_group = christian
 			NOT = { has_landed_title = e_il-khanate }
 		}
 	}
 	option = {
 		name = "EVTOPTD60010"
 		trigger = {
-			OR = {
-				religion_group = pagan_group
-				religion_group = zoroastrian_group
-			}
+			NOT = { religion_group = christian }
+			NOT = { religion_group = muslim }
 			NOT = { has_landed_title = e_il-khanate }
 		}
 	}
@@ -3935,24 +3872,15 @@ character_event = {
 	option = {
 		name = "EXCELLENT"
 		trigger = {
-			OR = {
-				religion_group = christian
-				AND = {
-					NOT = { religion_group = muslim }
-					NOT = { religion_group = pagan_group }
-					NOT = { religion_group = zoroastrian_group }
-				}
-			}
+			religion_group = christian
 			NOT = { has_landed_title = e_golden_horde }
 		}
 	}
 	option = {
 		name = "EVTOPTD60010"
 		trigger = {
-			OR = {
-				religion_group = pagan_group
-				religion_group = zoroastrian_group
-			}
+			NOT = { religion_group = christian }
+			NOT = { religion_group = muslim }
 			NOT = { has_landed_title = e_golden_horde }
 		}
 	}
@@ -4034,24 +3962,15 @@ character_event = {
 	option = {
 		name = "EXCELLENT"
 		trigger = {
-			OR = {
-				religion_group = christian
-				AND = {
-					NOT = { religion_group = muslim }
-					NOT = { religion_group = pagan_group }
-					NOT = { religion_group = zoroastrian_group }
-				}
-			}
+			religion_group = christian
 			NOT = { has_landed_title = e_golden_horde }
 		}
 	}
 	option = {
 		name = "EVTOPTD60010"
 		trigger = {
-			OR = {
-				religion_group = pagan_group
-				religion_group = zoroastrian_group
-			}
+			NOT = { religion_group = christian }
+			NOT = { religion_group = muslim }
 			NOT = { has_landed_title = e_golden_horde }
 		}
 	}
@@ -4133,24 +4052,15 @@ character_event = {
 	option = {
 		name = "EVTOPTC60010"
 		trigger = {
-			OR = {
-				religion_group = christian
-				AND = {
-					NOT = { religion_group = muslim }
-					NOT = { religion_group = pagan_group }
-					NOT = { religion_group = zoroastrian_group }
-				}
-			}
+			religion_group = christian
 			NOT = { has_landed_title = e_golden_horde }
 		}
 	}
 	option = {
 		name = "EVTOPTD60010"
 		trigger = {
-			OR = {
-				religion_group = pagan_group
-				religion_group = zoroastrian_group
-			}
+			NOT = { religion_group = christian }
+			NOT = { religion_group = muslim }
 			NOT = { has_landed_title = e_golden_horde }
 		}
 	}
@@ -4232,24 +4142,15 @@ character_event = {
 	option = {
 		name = "EVTOPTC60010"
 		trigger = {
-			OR = {
-				religion_group = christian
-				AND = {
-					NOT = { religion_group = muslim }
-					NOT = { religion_group = pagan_group }
-					NOT = { religion_group = zoroastrian_group }
-				}
-			}
+			religion_group = christian
 			NOT = { has_landed_title = e_golden_horde }
 		}
 	}
 	option = {
 		name = "EVTOPTD60010"
 		trigger = {
-			OR = {
-				religion_group = pagan_group
-				religion_group = zoroastrian_group
-			}
+			NOT = { religion_group = christian }
+			NOT = { religion_group = muslim }
 			NOT = { has_landed_title = e_golden_horde }
 		}
 	}
@@ -4328,24 +4229,15 @@ character_event = {
 	option = {
 		name = "EXCELLENT"
 		trigger = {
-			OR = {
-				religion_group = christian
-				AND = {
-					NOT = { religion_group = muslim }
-					NOT = { religion_group = pagan_group }
-					NOT = { religion_group = zoroastrian_group }
-				}
-			}
+			religion_group = christian
 			NOT = { has_landed_title = e_golden_horde }
 		}
 	}
 	option = {
 		name = "EVTOPTD60010"
 		trigger = {
-			OR = {
-				religion_group = pagan_group
-				religion_group = zoroastrian_group
-			}
+			NOT = { religion_group = christian }
+			NOT = { religion_group = muslim }
 			NOT = { has_landed_title = e_golden_horde }
 		}
 	}
@@ -4907,7 +4799,7 @@ narrative_event = {
 	desc = "EVTDESC60106"
 	major = yes
 	
-	picture = "GFX_evt_mongols"
+	picture = "GFX_evt_rome_falls"
 	border = "GFX_event_narrative_frame_war"
 	
 	is_triggered_only = yes
@@ -6480,11 +6372,11 @@ narrative_event = {
 			province = 299 # Farrah
 			troops =
 			{
-				horse_archers = { 2500 2500 }
-				light_cavalry = { 1333 1333 }
-				light_infantry = { 1000 1000 }
-				heavy_infantry = { 500 500 }
-				knights = { 67 67 }
+				horse_archers = { 2200 2200 }
+				light_cavalry = { 1000 1000 }
+				light_infantry = { 800 800 }
+				heavy_infantry = { 400 400 }
+				knights = { 47 47 }
 			}
 		}
 		
@@ -6506,11 +6398,11 @@ narrative_event = {
 				owner = PREV
 				troops =
 				{
-					horse_archers = { 2500 2500 }
-					light_cavalry = { 1333 1333 }
-					light_infantry = { 1000 1000 }
-					heavy_infantry = { 500 500 }
-					knights = { 67 67 }
+					horse_archers = { 2200 2200 }
+					light_cavalry = { 1000 1000 }
+					light_infantry = { 800 800 }
+					heavy_infantry = { 400 400 }
+					knights = { 47 47 }
 				}
 			}
 		}
@@ -6532,11 +6424,11 @@ narrative_event = {
 				owner = PREV
 				troops =
 				{
-					horse_archers = { 2500 2500 }
-					light_cavalry = { 1333 1333 }
-					light_infantry = { 1000 1000 }
-					heavy_infantry = { 500 500 }
-					knights = { 67 67 }
+					horse_archers = { 2200 2200 }
+					light_cavalry = { 1000 1000 }
+					light_infantry = { 800 800 }
+					heavy_infantry = { 400 400 }
+					knights = { 47 47 }
 				}
 			}
 		}
@@ -6559,11 +6451,11 @@ narrative_event = {
 				owner = PREV
 				troops =
 				{
-					horse_archers = { 2500 2500 }
-					light_cavalry = { 1333 1333 }
-					light_infantry = { 1000 1000 }
-					heavy_infantry = { 500 500 }
-					knights = { 67 67 }
+					horse_archers = { 2200 2200 }
+					light_cavalry = { 1000 1000 }
+					light_infantry = { 800 800 }
+					heavy_infantry = { 400 400 }
+					knights = { 47 47 }
 				}
 			}
 			attrition = 0.1
@@ -6586,11 +6478,11 @@ narrative_event = {
 				owner = PREV
 				troops =
 				{
-					horse_archers = { 2500 2500 }
-					light_cavalry = { 1333 1333 }
-					light_infantry = { 1000 1000 }
-					heavy_infantry = { 500 500 }
-					knights = { 67 67 }
+					horse_archers = { 2200 2200 }
+					light_cavalry = { 1000 1000 }
+					light_infantry = { 800 800 }
+					heavy_infantry = { 400 400 }
+					knights = { 47 47 }
 				}
 			}
 		}
@@ -6612,11 +6504,11 @@ narrative_event = {
 				owner = PREV
 				troops =
 				{
-					horse_archers = { 2500 2500 }
-					light_cavalry = { 1333 1333 }
-					light_infantry = { 1000 1000 }
-					heavy_infantry = { 500 500 }
-					knights = { 67 67 }
+					horse_archers = { 2200 2200 }
+					light_cavalry = { 1000 1000 }
+					light_infantry = { 800 800 }
+					heavy_infantry = { 400 400 }
+					knights = { 47 47 }
 				}
 			}
 		}
@@ -6639,11 +6531,11 @@ narrative_event = {
 				owner = PREV
 				troops =
 				{
-					horse_archers = { 2500 2500 }
-					light_cavalry = { 1333 1333 }
-					light_infantry = { 1000 1000 }
-					heavy_infantry = { 500 500 }
-					knights = { 67 67 }
+					horse_archers = { 2200 2200 }
+					light_cavalry = { 1000 1000 }
+					light_infantry = { 800 800 }
+					heavy_infantry = { 400 400 }
+					knights = { 47 47 }
 				}
 			}
 		}
@@ -6665,11 +6557,11 @@ narrative_event = {
 				owner = PREV
 				troops =
 				{
-					horse_archers = { 2500 2500 }
-					light_cavalry = { 1333 1333 }
-					light_infantry = { 1000 1000 }
-					heavy_infantry = { 500 500 }
-					knights = { 67 67 }
+					horse_archers = { 2200 2200 }
+					light_cavalry = { 1000 1000 }
+					light_infantry = { 800 800 }
+					heavy_infantry = { 400 400 }
+					knights = { 47 47 }
 				}
 				attrition = 0.2
 			}
@@ -6692,11 +6584,11 @@ narrative_event = {
 				owner = PREV
 				troops =
 				{
-					horse_archers = { 2500 2500 }
-					light_cavalry = { 1333 1333 }
-					light_infantry = { 1000 1000 }
-					heavy_infantry = { 500 500 }
-					knights = { 67 67 }
+					horse_archers = { 2200 2200 }
+					light_cavalry = { 1000 1000 }
+					light_infantry = { 800 800 }
+					heavy_infantry = { 400 400 }
+					knights = { 47 47 }
 				}
 				attrition = 0.2
 			}
@@ -6786,24 +6678,15 @@ narrative_event = {
 	option = {
 		name = "EVTOPTC60201"
 		trigger = {
-			OR = {
-				religion_group = christian
-				AND = {
-					NOT = { religion_group = muslim }
-					NOT = { religion_group = pagan_group }
-					NOT = { religion_group = zoroastrian_group }
-				}
-			}
+			religion_group = christian
 			NOT = { has_landed_title = k_seljuk_turks }
 		}
 	}
 	option = {
 		name = "EVTOPTD60201"
 		trigger = {
-			OR = {
-				religion_group = pagan_group
-				religion_group = zoroastrian_group
-			}
+			NOT = { religion_group = christian }
+			NOT = { religion_group = muslim }
 			NOT = { has_landed_title = k_seljuk_turks }
 		}
 	}

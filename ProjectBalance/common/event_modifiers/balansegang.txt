@@ -90,3 +90,9 @@ baqt = {
 	icon = 6
 	local_tax_modifier = 0.5
 }
+sahara = {
+	icon = 31
+	supply_limit = -4
+	local_tax_modifier = -0.25
+	levy_size = -0.5
+}

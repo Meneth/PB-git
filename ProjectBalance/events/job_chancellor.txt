@@ -668,7 +668,10 @@ letter_event = {
 		trigger = {
 			OR = {
 				primary_title = { tier = COUNT }
-				is_patrician = yes
+				AND = {
+					is_patrician = yes
+					primary_title = { NOT = { higher_tier_than = COUNT } }
+				}
 			}
 		}
 		ai_chance = {

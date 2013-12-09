@@ -27,6 +27,7 @@ decisions = {
 				}
 			}			
 			num_of_vassals = 1
+			NOT = { has_character_flag = do_not_disturb }
 			NOT = { has_character_flag = upcoming_feast }
 		}
 		allow = {
@@ -84,6 +85,7 @@ decisions = {
 				has_character_modifier = summer_fair_timer
 			}
 			num_of_vassals = 1
+			NOT = { has_character_flag = do_not_disturb }
 			NOT = { has_character_flag = upcoming_fair }
 		}
 		allow = {
@@ -134,6 +136,7 @@ decisions = {
 				}
 			}
 			NOT = {	has_character_flag = holding_grand_hunt }
+			NOT = { has_character_flag = do_not_disturb }
 			NOT = {	has_character_flag = upcoming_hunt }
 		}
 		allow = {
@@ -180,13 +183,11 @@ decisions = {
 	
 	catholic_pilgrimage = {
 		potential = {
-		has_dlc = "Sons of Abraham"
-		is_ruler = yes
-		religion_group = christian
-		NOT = { trait = pilgrim }
-		NOT = { trait = on_pilgrimage }
-		NOT = { has_character_flag = activated_pilgrimage }
-		NOT = { has_character_flag = preparing_pilgrimage }
+			has_dlc = "Sons of Abraham"
+			is_ruler = yes
+			religion_group = christian
+			NOT = { trait = pilgrim }
+			NOT = { has_character_flag = do_not_disturb }
 		}
 		allow = {
 			war = no
@@ -226,7 +227,7 @@ decisions = {
 			always = no
 		}
 		ai_will_do = {
-			factor = 0.001             # Only a minority of Catholics ever go on a pilgrimage
+			factor = 0.001             # Only a small minority of Christians ever go on a pilgrimage
 			modifier = {
 				factor = 0
 				NOT = { age = 25 }
@@ -249,6 +250,7 @@ decisions = {
 			NOT = {	has_character_flag = preparing_hajj }
 			NOT = {	has_character_flag = ramadan }
 			NOT = {	has_character_flag = activated_hajj }
+			NOT = {	has_character_flag = do_not_disturb }
 		}
 		allow = {
 			war = no
@@ -278,6 +280,7 @@ decisions = {
 			scaled_wealth = -0.20
 			clr_character_flag = promise_hajj
 			set_character_flag = activated_hajj
+			set_character_flag = do_not_disturb
 
 			hidden_tooltip = {
 				letter_event = { 
@@ -394,7 +397,7 @@ decisions = {
 		ai_will_do = {
 			factor = 1
 		}
-	}	
+	}
 	
 	hold_nerge = {
 		is_high_prio = yes
@@ -412,6 +415,7 @@ decisions = {
 			}
 			NOT = { has_character_modifier = morale_from_nerge }
 			NOT = {	has_character_flag = holding_nerge }
+			NOT = {	has_character_flag = do_not_disturb }
 		}
 		allow = {
 			war = no
@@ -426,6 +430,7 @@ decisions = {
 		effect = {
 			scaled_wealth = -0.20
 			set_character_flag = holding_nerge
+			set_character_flag = do_not_disturb
 			custom_tooltip = {
 				text = prepare_nerge
 				hidden_tooltip = { 
@@ -461,6 +466,7 @@ decisions = {
 			}
 			NOT = { has_character_modifier = held_blot_timer }
 			NOT = {	has_character_flag = holding_blot }
+			NOT = {	has_character_flag = do_not_disturb }
 		}
 		allow = {
 			war = no
@@ -477,6 +483,7 @@ decisions = {
 		effect = {
 			scaled_wealth = -0.20
 			set_character_flag = holding_blot
+			set_character_flag = do_not_disturb
 			custom_tooltip = {
 				text = prepare_blot
 				hidden_tooltip = { 
@@ -511,6 +518,7 @@ decisions = {
 			}
 			NOT = { has_character_modifier = held_ukon_juhla_timer }
 			NOT = {	has_character_flag = holding_ukon_juhla }
+			NOT = {	has_character_flag = do_not_disturb }
 		}
 		allow = {
 			war = no
@@ -527,6 +535,7 @@ decisions = {
 		effect = {
 			scaled_wealth = -0.20
 			set_character_flag = holding_ukon_juhla
+			set_character_flag = do_not_disturb
 			custom_tooltip = {
 				text = prepare_ukon_juhla
 				hidden_tooltip = { 
@@ -561,6 +570,7 @@ decisions = {
 			}
 			NOT = { has_character_modifier = held_uzgavenes_timer }
 			NOT = {	has_character_flag = holding_uzgavenes }
+			NOT = {	has_character_flag = do_not_disturb }
 		}
 		allow = {
 			war = no
@@ -577,6 +587,7 @@ decisions = {
 		effect = {
 			scaled_wealth = -0.20
 			set_character_flag = holding_uzgavenes
+			set_character_flag = do_not_disturb
 			custom_tooltip = {
 				text = prepare_uzgavenes
 				hidden_tooltip = { 
@@ -611,6 +622,7 @@ decisions = {
 			}
 			NOT = { has_character_modifier = held_jarilo_timer }
 			NOT = {	has_character_flag = holding_jarilo }
+			NOT = {	has_character_flag = do_not_disturb }
 		}
 		allow = {
 			war = no
@@ -627,6 +639,7 @@ decisions = {
 		effect = {
 			scaled_wealth = -0.20
 			set_character_flag = holding_jarilo
+			set_character_flag = do_not_disturb
 			custom_tooltip = {
 				text = prepare_jarilo
 				hidden_tooltip = { 
@@ -659,6 +672,7 @@ decisions = {
 			religion_group = jewish_group
 			NOT = { has_character_modifier = held_passover_timer }
 			NOT = {	has_character_flag = holding_passover }
+			NOT = {	has_character_flag = do_not_disturb }
 		}
 		allow = {
 			war = no
@@ -675,6 +689,7 @@ decisions = {
 		effect = {
 			scaled_wealth = -0.20
 			set_character_flag = holding_passover
+			set_character_flag = do_not_disturb
 			custom_tooltip = {
 				text = passover_celebrations
 				hidden_tooltip = { 
@@ -712,7 +727,6 @@ decisions = {
 			NOT = { has_character_modifier = borrowed_from_jews }
 			has_dlc = "Sons of Abraham"
 			is_playable = yes
-			age = 16
 			prisoner = no
 		}
 		
