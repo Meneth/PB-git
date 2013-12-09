@@ -30,6 +30,7 @@ decisions = {
 		}
 		effect = {
 			set_character_flag = epic_tournament
+			set_character_flag = do_not_disturb
 			clr_character_flag = tournament_has_ended
 			wealth = -200
 			prestige = 100
@@ -340,22 +341,78 @@ decisions = {
 				has_landed_title = e_byzantium
 				has_landed_title = e_roman_empire
 			}
-			religion = orthodox
+			OR = {
+				religion = orthodox
+				religion = nestorian
+				religion = monothelite
+				religion = iconoclast
+			}
+			is_heretic = no
 			NOT = { has_global_flag = schism_mended }
 		}
 		allow = {
 			piety = 2000
 			religion_authority = 0.9
 			completely_controls = c_byzantion
-			b_hagiasophia = { holder_scope = { religion = orthodox } }
+			b_hagiasophia = {
+				holder_scope = {
+					OR = {
+						religion = orthodox
+						religion = nestorian
+						religion = monothelite
+						religion = iconoclast
+					}
+					is_heretic = no
+				}
+			}
 			completely_controls = c_antiocheia
-			b_antiocheia = { holder_scope = { religion = orthodox } }
+			b_antiocheia = {
+				holder_scope = {
+					OR = {
+						religion = orthodox
+						religion = nestorian
+						religion = monothelite
+						religion = iconoclast
+					}
+					is_heretic = no
+				}
+			}
 			completely_controls = c_jerusalem
-			b_jerusalem = { holder_scope = { religion = orthodox } }
+			b_jerusalem = {
+				holder_scope = {
+					OR = {
+						religion = orthodox
+						religion = nestorian
+						religion = monothelite
+						religion = iconoclast
+					}
+					is_heretic = no
+				}
+			}
 			completely_controls = c_alexandria
-			b_alexandria = { holder_scope = { religion = orthodox } }
+			b_alexandria = {
+				holder_scope = {
+					OR = {
+						religion = orthodox
+						religion = nestorian
+						religion = monothelite
+						religion = iconoclast
+					}
+					is_heretic = no
+				}
+			}
 			completely_controls = c_roma
-			b_roma = { holder_scope = { religion = orthodox } }
+			b_roma = {
+				holder_scope = {
+					OR = {
+						religion = orthodox
+						religion = nestorian
+						religion = monothelite
+						religion = iconoclast
+					}
+					is_heretic = no
+				}
+			}
 		}
 		effect = {
 			narrative_event = { id = LoR.210 tooltip = EVTTOOLTIPLoR.210}
@@ -773,7 +830,7 @@ decisions = {
 		allow = {
 			completely_controls = c_jerusalem
 			774 = {
-				religion = jewish
+				religion = ROOT
 			}
 			wealth = 1500
 			piety = 1500
@@ -797,7 +854,7 @@ decisions = {
 		is_high_prio = yes
 		potential = {
 			has_dlc = "Sons of Abraham"
-			religion_group = jewish_group
+			religion = jewish
 			has_landed_title = k_israel
 			has_global_flag = third_temple_built
 			NOT = { has_global_flag = jewish_priesthood_founded }
@@ -815,7 +872,7 @@ decisions = {
 			hidden_tooltip = {
 				create_random_priest = {
 					random_traits = yes
-					religion = jewish
+					religion = ROOT
 					culture = ROOT
 					dynasty = random
 					female = no
@@ -858,7 +915,7 @@ decisions = {
 			completely_controls = d_galilee
 			completely_controls = d_oultrejourdain
 			774 = {
-				religion_group = jewish_group
+				religion = ROOT
 			}
 			piety = 500
 			prestige = 500
@@ -918,7 +975,7 @@ decisions = {
 				religion_group = jewish_group
 				has_character_modifier = expelled_jewish
 				trait = incapable
-				any_realm_province = { religion = jewish }
+				any_realm_province = { religion_group = jewish_group }
 			}
 			independent = yes
 			is_playable = yes
@@ -958,20 +1015,20 @@ decisions = {
 			modifier = {
 				factor = 0
 				any_courtier = {
-					religion = jewish
+					religion_group = jewish_group
 					reverse_opinion = { who = ROOT value = 20 }
 				}
 			}
 			modifier = {
 				factor = 0
 				any_spouse = {
-					religion = jewish
+					religion_group = jewish_group
 				}
 			}
 			modifier = {
 				factor = 0
 				any_child = {
-					religion = jewish
+					religion_group = jewish_group
 				}
 			}
 			modifier = {

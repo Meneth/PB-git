@@ -4,6 +4,11 @@ e_britannia = {
 	color2={ 255 255 255 }
 	capital = 32 # Middlesex
 	
+	welsh = Prydain
+	irish = Alba
+	scottish = Alba
+	breton = Prydain
+	
 	name_tier = king
 	short_name = yes
 	
