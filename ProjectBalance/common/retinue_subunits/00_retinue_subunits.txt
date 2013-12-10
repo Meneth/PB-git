@@ -622,7 +622,7 @@ RETTYPE_CUL_JEWISH =
 	first_type = 1
 	first_amount = 250
 	
-	religion_group = israelite
+	culture_group = israelite
 	
 	modifier = {
 		heavy_infantry_defensive = 0.6

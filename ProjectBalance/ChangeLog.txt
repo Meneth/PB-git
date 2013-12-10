@@ -1,3 +1,6 @@
+3.3.6
+	Fixed the Jewish retinue being available to everyone
+
 3.3.5
 	Updated for 2.0.2 (beta)
 	Extended the list of nicknames that unlock Absolute Cognatic and Enatic succession
