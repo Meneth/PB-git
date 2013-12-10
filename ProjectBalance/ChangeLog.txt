@@ -1,5 +1,6 @@
 3.3.6
 	Fixed the Jewish retinue being available to everyone
+	(PB+SWMH) Removed the penalty to levies in the Sahara. Their holdings being mostly cities should be plenty
 
 3.3.5
 	Updated for 2.0.2 (beta)
