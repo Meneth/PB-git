@@ -533,6 +533,15 @@ character_event = {
 		ai_chance = {
 			factor = 4
 		}
+		FROM = { change_variable = { which = "autonomy_mood" value = 0.25 } }
+		if = {
+			limit = { tier = duke }
+			FROM = { change_variable = { which = "autonomy_mood" value = 0.25 } }
+		}
+		if = {
+			limit = { tier = king }
+			FROM = { change_variable = { which = "autonomy_mood" value = 0.5 } }
+		}
 	}
 	option = { #Angry
 		name = meneth.220.c
