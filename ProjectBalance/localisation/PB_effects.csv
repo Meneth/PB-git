@@ -4,7 +4,7 @@ desc_religious_defense;We're defending against a holy war. Everyone is doing wha
 disorganized;Disorganized;Disorganized;Disorganized;;Disorganized;;;;;;;;;x
 desc_disorganized;We're rather disorganized at the moment.;;We're rather disorganized at the moment.;;We're rather disorganized at the moment.;;;We're rather disorganized at the moment.;;;;;;;;;x
 muslim_merchant_republic;Muslim Merchant Republic;;;;;;;;;;;;;x
-desc_muslim_merchant_republic;Historically, Muslims never become a major trading force.;;;;;;;;;;;;;x
+desc_muslim_merchant_republic;Historically, Muslims never become a major trading force in the Mediterranean.;;;;;;;;;;;;;x
 low_decadence;Low Decadence;;;;;;;;;;;;;x
 desc_low_decadence;Our decadence is low, making everyone like us more.;;;;;;;;;;;;;x
 medium_decadence;Decadent;;;;;;;;;;;;;x
