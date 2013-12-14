@@ -618,6 +618,7 @@ character_event = {
 		}
 		name = meneth.221.a
 		character_event = { id = meneth.250 } #What action to take
+		liege = { character_event = { id = meneth.253 } } #Notify liege positive
 		ai_chance = {
 			factor = 1
 			modifier = {
@@ -637,12 +638,9 @@ character_event = {
 	option = { #Strengthen own position
 		name = meneth.221.b
 		character_event = { id = meneth.248 } #What action to take
+		liege = { character_event = { id = meneth.254 } } #Notify liege neutral
 		ai_chance = {
 			factor = 1
-			modifier = {
-				factor = 1000
-				has_character_flag = faction_autonomy_neutral
-			}
 			modifier = {
 				factor = 0.5
 				OR = {
@@ -669,6 +667,7 @@ character_event = {
 			NOT = { check_variable = { which = "autonomy_mood" value = 0 } }
 		}
 		character_event = { id = meneth.236 } #What law to revoke
+		liege = { character_event = { id = meneth.255 } } #Notify liege negative
 		ai_chance = {
 			factor = 1
 			modifier = {
@@ -766,6 +765,7 @@ character_event = {
 			NOT = { check_variable = { which = "autonomy_mood" value = 0 } }
 		}
 		character_event = { id = meneth.237 } #How to weaken liege
+		liege = { character_event = { id = meneth.255 } } #Notify liege negative
 		ai_chance = {
 			factor = 1
 			modifier = {
@@ -4106,5 +4106,44 @@ character_event = {
 		name = OK
 		add_character_modifier = { name = autonomy_commended duration = 3650 }
 		prestige = 100
+	}
+}
+
+#Positive faction meeting alert
+character_event = {
+	id = meneth.253
+	is_triggered_only = yes
+	
+	desc = meneth.253.desc
+	picture = GFX_evt_emissary
+	border = GFX_event_normal_frame_religion
+	option = {
+		name = OK
+	}
+}
+
+#Neutral faction meeting alert
+character_event = {
+	id = meneth.254
+	is_triggered_only = yes
+	
+	desc = meneth.254.desc
+	picture = GFX_evt_emissary
+	border = GFX_event_normal_frame_religion
+	option = {
+		name = OK
+	}
+}
+
+#Negative faction meeting alert
+character_event = {
+	id = meneth.255
+	is_triggered_only = yes
+	
+	desc = meneth.255.desc
+	picture = GFX_evt_emissary
+	border = GFX_event_normal_frame_religion
+	option = {
+		name = OK
 	}
 }
