@@ -491,7 +491,7 @@ character_event = {
 					modifier = opinion_coerced_into_leaving_faction
 				}
 			}
-			change_variable = { which = "autonomy_personal_mood" value = -5 }
+			change_variable = { which = "autonomy_personal_mood" value = 5 }
 		}
 	}
 	option = { #Happy
