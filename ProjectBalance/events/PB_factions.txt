@@ -1789,6 +1789,7 @@ character_event = {
 		trigger = {
 			NOT = { check_variable = { which = "faction_vote" value = 0 } }
 		}
+		liege = { character_event = { id = meneth.256 } } #Alert liege of no revolt
 	}
 }
 
@@ -4150,6 +4151,19 @@ character_event = {
 	is_triggered_only = yes
 	
 	desc = meneth.255.desc
+	picture = GFX_evt_emissary
+	border = GFX_event_normal_frame_religion
+	option = {
+		name = OK
+	}
+}
+
+#No revolt alert
+character_event = {
+	id = meneth.256
+	is_triggered_only = yes
+	
+	desc = meneth.256.desc
 	picture = GFX_evt_emissary
 	border = GFX_event_normal_frame_religion
 	option = {
