@@ -1,3 +1,6 @@
+3.3.7
+	Fixed a few minor event bugs
+
 3.3.6
 	Updated retinues to correspond with the newest 2.0.2 beta. If you're not using 2.0.2, retinues might break
 	Fixed the Jewish retinue being available to everyone

@@ -1637,6 +1637,12 @@ letter_event = {
 			}
 			primary_title = { approve_law = city_obligations_2 }
 		}
+		if = {
+			limit = {
+				primary_title = { has_law = city_obligations_4 }
+			}
+			primary_title = { approve_law = city_obligations_3 }
+		}
 	}
 	option = {
 		name = EVTOPTB63061 # Very well (Muslim)

@@ -700,7 +700,6 @@ narrative_event = {
 			new_character = {
 				spawn_unit = {
 					province = 907 # Sabzevar
-					province = 907 # Sabzevar
 					troops =
 					{
 						horse_archers = { 2700 2700 }
@@ -6457,8 +6456,8 @@ narrative_event = {
 					heavy_infantry = { 400 400 }
 					knights = { 47 47 }
 				}
+				attrition = 0.1
 			}
-			attrition = 0.1
 		}
 		create_character = {
 			random_traits = yes
