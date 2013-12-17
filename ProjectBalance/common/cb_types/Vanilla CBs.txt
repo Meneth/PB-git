@@ -2736,11 +2736,10 @@ tribal_invasion = {
 					NOT = { culture = finnish }
 					NOT = { culture = lappish }
 				}
-				NOT = {
-					ROOT = {
-						primary_title = { is_tribal_type_title = yes }
-						has_horde_culture = yes
-						NOT = { religion_group = christian }
+				AND = {
+					mercenary = yes
+					NOT = {
+						num_of_titles = 2
 					}
 				}
 				ROOT = {
