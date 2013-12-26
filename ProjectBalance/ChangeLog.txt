@@ -1,3 +1,10 @@
+3.3.7
+	Fixed a few minor event bugs
+	Made the requirements for Tribal Invasions more obvious
+	Got rid of nearly all flags in PB that exist in vanilla. Most of them were grandfathered in from North African Expansion or the Lotharinga and Lowlands mod. Most of them were either identical to vanilla or of comparable quality. Only 10 flags that are better than vanilla's were kept. For better flags, use ARKO
+	Added ARKO as a dependency, simplifying the use of ARKO + PB (no files have to be deleted any more). Makes no difference for users not using ARKO
+	Improved the localisation of some CB restrictions
+
 3.3.6
 	Updated retinues to correspond with the newest 2.0.2 beta. If you're not using 2.0.2, retinues might break
 	Fixed the Jewish retinue being available to everyone

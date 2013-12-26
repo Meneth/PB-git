@@ -4190,7 +4190,7 @@ narrative_event = {
 		religion_group = muslim
 		NOT = { religion = shiite }
 		higher_tier_than = DUKE
-		d_shiite = {
+		k_shiite = {
 			has_holder = no
 		}
 		decadence = 10
