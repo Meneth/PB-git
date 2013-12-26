@@ -15,7 +15,7 @@ RETTYPE_CUL_ROMAN =
 	first_type = 1
 	first_amount = 250
 	
-	culture = roman
+	potential = { culture = roman }
 	
 	modifier = {
 		heavy_infantry_defensive = 0.6
@@ -29,8 +29,12 @@ RETTYPE_CUL_ITA =
 	second_type = 3
 	second_amount = 100
 	
-	culture = italian
-	culture = sicilian
+	potential = {
+		OR = {
+			culture = italian
+			culture = sicilian
+		}
+	}
 	
 	modifier = {
 		knights_defensive = 0.6
@@ -47,7 +51,7 @@ RETTYPE_CUL_BOHEMIAN =
 	second_type = 3
 	second_amount = 100
 	
-	culture = bohemian
+	potential = { culture = bohemian }
 	
 	modifier = {
 		knights_offensive = 0.6
@@ -61,7 +65,7 @@ RETTYPE_CUL_POLISH =
 	second_type = 3
 	second_amount = 100
 	
-	culture = polish
+	potential = { culture = polish }
 	
 	modifier = {
 		knights_defensive = 0.3
@@ -73,7 +77,7 @@ RETTYPE_CUL_POMMERANIAN =
 	first_type = 1
 	first_amount = 250
 	
-	culture = pommeranian
+	potential = { culture = pommeranian }
 	
 	modifier = {
 		heavy_infantry_offensive = 0.6
@@ -88,7 +92,7 @@ RETTYPE_CUL_CROATIAN =
 	first_type = 1
 	first_amount = 250
 	
-	culture = croatian
+	potential = { culture = croatian }
 	
 	modifier = {
 		heavy_infantry_offensive = 0.6
@@ -102,7 +106,7 @@ RETTYPE_CUL_SERBIAN =
 	second_type = 3
 	second_amount = 100
 	
-	culture = serbian
+	potential = { culture = serbian }
 	
 	modifier = {
 		knights_offensive = 0.6
@@ -113,7 +117,7 @@ RETTYPE_CUL_BULGARIAN =
 	first_type = 1
 	first_amount = 250	
 	
-	culture = bulgarian
+	potential = { culture = bulgarian }
 	
 	modifier = {
 		heavy_infantry_defensive = 0.6
@@ -127,7 +131,7 @@ RETTYPE_CUL_ROMANIAN =
 	second_type = 6
 	second_amount = 50
 	
-	culture = romanian
+	potential = { culture = romanian }
 
 	modifier = {
 		light_cavalry_offensive = 0.6
@@ -144,7 +148,7 @@ RETTYPE_CUL_HUNG =
 	second_type = 3
 	second_amount = 100
 	
-	culture = hungarian
+	potential = { culture = hungarian }
 	
 	modifier = {
 		knights_offensive = 0.3
@@ -162,7 +166,7 @@ RETTYPE_CUL_RUS =
 	second_type = 6
 	second_amount = 100
 	
-	culture = russian
+	potential = { culture = russian }
 	modifier = {
 		knights_offensive = 0.3
 		horse_archers_offensive = 0.3
@@ -180,8 +184,12 @@ RETTYPE_CUL_BALT =
 	second_type = 0
 	second_amount = 100
 	
-	culture = livonian
-	culture = lettigallish
+	potential = {
+		OR = {
+			culture = lettigallish
+			culture = livonian
+		}
+	}
 	
 	modifier = {
 		heavy_infantry_offensive = 0.6
@@ -192,8 +200,12 @@ RETTYPE_CUL_LITHUANIAN =
 	first_type = 1
 	first_amount = 250
 	
-	culture = lithuanian
-	culture = prussian
+	potential = {
+		OR = {
+			culture = lithuanian
+			culture = prussian
+		}
+	}
 	
 	modifier = {
 		heavy_infantry_offensive = 0.6
@@ -207,11 +219,15 @@ RETTYPE_CUL_FINNO_UGRIC =
 	first_type = 5
 	first_amount = 250
 	
-	culture = finnish
-	culture = lappish
-	culture = komi
-	culture = mordvins
-	culture = samoyeds
+	potential = {
+		OR = {
+			culture = finnish
+			culture = lappish
+			culture = komi
+			culture = mordvin
+			culture = samoyed
+		}
+	}
 	
 	modifier = {
 		archers_offensive = 0.3
@@ -226,7 +242,7 @@ RETTYPE_CUL_IRISH =
 	first_type = 1
 	first_amount = 250
 	
-	culture = irish
+	potential = { culture = irish }
 	
 	modifier = {
 		heavy_infantry_defensive = 0.6
@@ -237,7 +253,7 @@ RETTYPE_CUL_SCOT =
 	first_type = 2
 	first_amount = 250
 	
-	culture = scottish
+	potential = { culture = scottish }
 	
 	modifier = {
 		pikemen_defensive = 0.6
@@ -254,8 +270,12 @@ RETTYPE_CUL_FRANKISH =
 	second_type = 3
 	second_amount = 100
 	
-	culture = frankish
-	culture = occitan
+	potential = {
+		OR = {
+			culture = frankish
+			culture = occitan
+		}
+	}
 	
 	modifier = {
 		knights_offensive = 0.3
@@ -270,8 +290,12 @@ RETTYPE_CUL_NORMAN =
 	second_type = 3
 	second_amount = 100
 	
-	culture = norman
-	culture = breton
+	potential = {
+		OR = {
+			culture = norman
+			culture = breton
+		}
+	}
 	
 	modifier = {
 		knights_offensive = 0.6
@@ -285,7 +309,7 @@ RETTYPE_CUL_PORTUGESE =
 	first_type = 3
 	first_amount = 250
 	
-	culture = portuguese
+	potential = { culture = portuguese }
 	
 	modifier = {
 		light_cavalry_offensive = 0.6
@@ -296,7 +320,7 @@ RETTYPE_CUL_BASQUE =
 	first_type = 1
 	first_amount = 250
 	
-	culture = basque
+	potential = { culture = basque }
 	
 	modifier = {
 		heavy_infantry_offensive = 0.3
@@ -308,7 +332,7 @@ RETTYPE_CUL_CASTILLIAN =
 	first_type = 3
 	first_amount = 250
 	
-	culture = castillan
+	potential = { culture = castillan }
 	
 	modifier = {
 		light_cavalry_offensive = 0.6
@@ -319,7 +343,7 @@ RETTYPE_CUL_CATALAN =
 	first_type = 0
 	first_amount = 250
 	
-	culture = catalan
+	potential = { culture = catalan }
 	
 	modifier = {
 		light_infantry_offensive = 1.0
@@ -331,7 +355,7 @@ RETTYPE_CUL_ANDALUSIAN =
 	first_type = 3
 	first_amount = 250
 	
-	culture = andalusian_arabic
+	potential = { culture = andalusian_arabic }
 	
 	modifier = {
 		light_cavalry_defensive = 0.6
@@ -345,9 +369,13 @@ RETTYPE_CUL_NORSE =
 	first_type = 1
 	first_amount = 250
 	
-	culture = norse
-	culture = danish
-	culture = swedish
+	potential = {
+		OR = {
+			culture = norse
+			culture = danish
+			culture = swedish
+		}
+	}
 	
 	modifier = {
 		heavy_infantry_offensive = 0.6
@@ -358,7 +386,7 @@ RETTYPE_CUL_NORWEGIAN =
 	first_type = 1
 	first_amount = 250
 	
-	culture = norwegian
+	potential = { culture = norwegian }
 	
 	modifier = {
 		heavy_infantry_offensive = 0.6
@@ -372,8 +400,12 @@ RETTYPE_CUL_ENG =
 	first_type = 5
 	first_amount = 250
 	
-	culture = english
-	culture = welsh
+	potential = {
+		OR = {
+			culture = english
+			culture = welsh
+		}
+	}
 	
 	modifier = {
 		archers_offensive = 0.6
@@ -384,7 +416,7 @@ RETTYPE_CUL_SAXON =
 	first_type = 1
 	first_amount = 250
 	
-	culture = saxon
+	potential = { culture = saxon }
 	
 	modifier = {
 		heavy_infantry_offensive = 0.2
@@ -403,8 +435,12 @@ RETTYPE_CUL_DUTCH =
 	second_type = 2
 	second_amount = 100
 	
-	culture = dutch
-	culture = frisian
+	potential = {
+		OR = {
+			culture = dutch
+			culture = frisian
+		}
+	}
 	
 	modifier = {
 		light_infantry_offensive = 0.3
@@ -419,7 +455,7 @@ RETTYPE_CUL_GERMAN =
 	second_type = 3
 	second_amount = 100
 	
-	culture = german
+	potential = { culture = german }
 	
 	modifier = {
 		knights_offensive = 0.6
@@ -436,10 +472,13 @@ RETTYPE_CUL_BYZ =
 	second_type = 6
 	second_amount = 100
 
-
-	culture = alan
-	culture = sicilian_greek
-	culture = greek
+	potential = {
+		OR = {
+			culture = alan
+			culture = greek
+			culture = sicilian_greek
+		}
+	}
 
 	modifier = {
 		knights_offensive = 0.3
@@ -454,8 +493,7 @@ RETTYPE_CUL_ARMENIAN =
 	second_type = 6
 	second_amount = 100
 
-
-	culture = armenian
+	potential = { culture = armenian }
 
 	modifier = {
 		knights_offensive = 0.3
@@ -470,7 +508,7 @@ RETTYPE_CUL_GEORGIAN =
 	second_type = 3
 	second_amount = 100
 	
-	culture = georgian
+	potential = { culture = georgian }
 	
 	modifier = {
 		knights_offensive = 0.6
@@ -488,7 +526,7 @@ RETTYPE_CUL_IRANIAN =
 	second_type = 3
 	second_amount = 120
 	
-	culture_group = iranian
+	potential = { culture_group = iranian }
 	
 	modifier = {
 		horse_archers_offensive = 0.4
@@ -507,10 +545,14 @@ RETTYPE_CUL_ALTAIC =
 	second_type = 3
 	second_amount = 120
 	
-	culture = cuman
-	culture = khazar
-	culture = pecheneg
-	culture = mongol
+	potential = {
+		OR = {
+			culture = cuman
+			culture = khazar
+			culture = pecheneg
+			culture = mongol
+		}
+	}
 
 	modifier = {
 		horse_archers_offensive = 0.4
@@ -525,8 +567,12 @@ RETTYPE_CUL_AVAR =
 	second_type = 6
 	second_amount = 100
 	
-	culture = cuman
-	culture = pecheneg
+	potential = {
+		OR = {
+			culture = cuman
+			culture = pecheneg
+		}
+	}
 	modifier = {
 		knights_defensive = 0.6
 		horse_archers_offensive = 0.3
@@ -540,7 +586,7 @@ RETTYPE_CUL_TURKISH =
 	second_type = 3
 	second_amount = 120
 	
-	culture = turkish
+	potential = { culture = turkish }
 
 	modifier = {
 		horse_archers_offensive = 0.4
@@ -555,7 +601,7 @@ RETTYPE_CUL_ARAB =
 	first_type = 3
 	first_amount = 250
 	
-	culture_group = arabic
+	potential = { culture_group = arabic }
 	
 	modifier = {
 		light_cavalry_offensive = 0.6
@@ -573,7 +619,7 @@ RETTYPE_CUL_W_AFR =
 	second_type = 5
 	second_amount = 100
 	
-	culture_group = west_african
+	potential = { culture_group = west_african }
 	
 	modifier = {
 		light_infantry_offensive = 0.6
@@ -591,7 +637,7 @@ RETTYPE_CUL_E_AFR =
 	second_type = 5
 	second_amount = 100
 	
-	culture_group = east_african
+	potential = { culture_group = east_african }
 	
 	modifier = {
 		light_infantry_offensive = 0.6
@@ -609,7 +655,7 @@ RETTYPE_CUL_NAHUA =
 	second_type = 1
 	second_amount = 125
 	
-	culture = nahuatl
+	potential = { culture = nahuatl }
 	
 	modifier = {
 		light_infantry_offensive = 0.3
@@ -622,7 +668,7 @@ RETTYPE_CUL_JEWISH =
 	first_type = 1
 	first_amount = 250
 	
-	religion_group = israelite
+	potential = { culture_group = israelite }
 	
 	modifier = {
 		heavy_infantry_defensive = 0.6

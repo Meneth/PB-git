@@ -1,3 +1,8 @@
+3.3.6
+	Updated retinues to correspond with the newest 2.0.2 beta. If you're not using 2.0.2, retinues might break
+	Fixed the Jewish retinue being available to everyone
+	(PB+SWMH) Removed the penalty to levies in the Sahara. Their holdings being mostly cities should be plenty
+
 3.3.5
 	Updated for 2.0.2 (beta)
 	Extended the list of nicknames that unlock Absolute Cognatic and Enatic succession
