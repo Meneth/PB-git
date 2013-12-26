@@ -4,6 +4,7 @@
 	Got rid of nearly all flags in PB that exist in vanilla. Most of them were grandfathered in from North African Expansion or the Lotharinga and Lowlands mod. Most of them were either identical to vanilla or of comparable quality. Only 10 flags that are better than vanilla's were kept. For better flags, use ARKO
 	Added ARKO as a dependency, simplifying the use of ARKO + PB (no files have to be deleted any more). Makes no difference for users not using ARKO
 	Improved the localisation of some CB restrictions
+	Fixed it not being possible to appoint female councillors when using Enatic or Absolute Enatic succession. Women can now lead armies and be marshals under Enatic and Absolute Enatic succession
 
 3.3.6
 	Updated retinues to correspond with the newest 2.0.2 beta. If you're not using 2.0.2, retinues might break
@@ -24,6 +25,7 @@
 	Fixed some positioning issues (credit goes to jordarkelf)
 	Added custom icons for the Remove Title Revocation and Reduce Crown Levies factions, and for mending the Schism as a Catholic (credit goes to AnaxXiphos)
 	Shortened crown law descriptions to prevent/reduce text overflow
+	Toned down the independence faction a bit
 	Applied the increased levy cost via a multiplier (new in CKII 2.0) rather than as direct maintenance. As a result, most units now cost a bit less retinue cap, while general maintenance is mostly the same
 	Increased the overall liege levy multiplier to 100% (from 75%)
 	Reduced the severity of liege levy drop-off based on dejure status (70%, 60%, 50%, 40% instead of 100%, 75%, 50%, 35%, 25%). Overall levies will be roughly the same for small rulers, and slightly higher for large rulers
