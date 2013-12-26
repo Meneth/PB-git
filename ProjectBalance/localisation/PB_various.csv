@@ -17,3 +17,5 @@ immortal;Immortal;;;;;;;;;;;;;x
 immortal_desc;Immortals will never succumb to old age, but they can still die from other causes.;;;;;;;;;;;;;x
 gluttonous_death;of gluttony;;;;;;;;;;;;;x
 rum;Ignore the man behind the courtain;;;;;;;;;;;;;x
+is_not_allied;Target is not an ally\n;;;;;;;;;;;;;x
+religious_enemy;Target is a religious enemy\n;;;;;;;;;;;;;x
