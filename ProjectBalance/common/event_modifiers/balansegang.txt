@@ -86,10 +86,6 @@ culture_clash = {
 	#local_tax_modifier = -0.5
 	local_revolt_risk = 0.01
 }
-baqt = {
-	icon = 6
-	local_tax_modifier = 0.5
-}
 sahara = {
 	icon = 31
 	supply_limit = -4
