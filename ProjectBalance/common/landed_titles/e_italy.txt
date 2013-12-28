@@ -1435,6 +1435,7 @@ e_italy = {
 		OR = {
 			culture = italian
 			culture = greek
+			culture = sicilian
 		}
 		num_of_king_titles = 3
 		has_landed_title = k_italy

@@ -6,6 +6,7 @@
 	Improved the localisation of some CB restrictions
 	Fixed it not being possible to appoint female councillors when using Enatic or Absolute Enatic succession. Women can now lead armies and be marshals under Enatic and Absolute Enatic succession
 	Councillors opinion of their liege now has a minor effect on their job performance (credit goes to zijistark)
+	Italia (empire-tier) can now be formed by Sicilians
 
 3.3.6
 	Updated retinues to correspond with the newest 2.0.2 beta. If you're not using 2.0.2, retinues might break
