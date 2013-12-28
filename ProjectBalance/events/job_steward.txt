@@ -110,7 +110,7 @@ character_event = {
 		modifier = {
 			factor = 0.96        
 			opinion = { who = liege value = 35 }
-			ai = yes
+			liege = { ai = yes }
 		}
 		modifier = {
 			factor = 0.96        
@@ -451,7 +451,7 @@ character_event = {
 		modifier = {
 			factor = 1.04        
 			opinion = { who = liege value = 35 }
-			ai = yes
+			liege = { ai = yes }
 		}
 		modifier = {
 			factor = 1.04        
@@ -640,7 +640,7 @@ character_event = {
 		modifier = {
 			factor = 0.96        
 			opinion = { who = liege value = 35 }
-			ai = yes
+			liege = { ai = yes }
 		}
 		modifier = {
 			factor = 0.96        
