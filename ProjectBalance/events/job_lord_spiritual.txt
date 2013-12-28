@@ -195,6 +195,19 @@ character_event = {
 			location = { religion_group = muslim }
 			religion_group = muslim
 		}
+
+		# PB standard employer opinion factors
+		modifier = { factor = 1.09  not = { opinion = { who = liege value = -99 } } }
+		modifier = { factor = 1.06  not = { opinion = { who = liege value = -80 } } }
+		modifier = { factor = 1.06  not = { opinion = { who = liege value = -60 } } }
+		modifier = { factor = 1.06  not = { opinion = { who = liege value = -40 } } }
+		modifier = { factor = 1.06  not = { opinion = { who = liege value = -20 } } }
+		modifier = { factor = 1.06  not = { opinion = { who = liege value =   0 } } }
+		modifier = { factor = 1.03  not = { opinion = { who = liege value =  20 } } }
+		modifier = { factor = 0.96          opinion = { who = liege value =  35 } }
+		modifier = { factor = 0.96          opinion = { who = liege value =  55 } }
+		modifier = { factor = 0.96          opinion = { who = liege value =  75 } }
+		modifier = { factor = 0.96          opinion = { who = liege value =  95 } }
 	}
 
 	option = {
@@ -359,6 +372,19 @@ character_event = {
 			religion_group = pagan_group
 			is_reformed_religion = no
 		}
+
+		# PB standard employer opinion factors
+		modifier = { factor = 1.09  not = { opinion = { who = liege value = -99 } } }
+		modifier = { factor = 1.06  not = { opinion = { who = liege value = -80 } } }
+		modifier = { factor = 1.06  not = { opinion = { who = liege value = -60 } } }
+		modifier = { factor = 1.06  not = { opinion = { who = liege value = -40 } } }
+		modifier = { factor = 1.06  not = { opinion = { who = liege value = -20 } } }
+		modifier = { factor = 1.06  not = { opinion = { who = liege value =   0 } } }
+		modifier = { factor = 1.03  not = { opinion = { who = liege value =  20 } } }
+		modifier = { factor = 0.96          opinion = { who = liege value =  35 } }
+		modifier = { factor = 0.96          opinion = { who = liege value =  55 } }
+		modifier = { factor = 0.96          opinion = { who = liege value =  75 } }
+		modifier = { factor = 0.96          opinion = { who = liege value =  95 } }
 	}
 	
 	option = {
@@ -1028,6 +1054,19 @@ character_event = {
 			factor = 2.0
 			religion_authority = 0.8
 		}
+		
+		# PB inverse employer opinion factors
+		modifier = { factor = 0.91  not = { opinion = { who = liege value = -99 } } }
+		modifier = { factor = 0.94  not = { opinion = { who = liege value = -80 } } }
+		modifier = { factor = 0.94  not = { opinion = { who = liege value = -60 } } }
+		modifier = { factor = 0.94  not = { opinion = { who = liege value = -40 } } }
+		modifier = { factor = 0.94  not = { opinion = { who = liege value = -20 } } }
+		modifier = { factor = 0.94  not = { opinion = { who = liege value =   0 } } }
+		modifier = { factor = 0.97  not = { opinion = { who = liege value =  20 } } }
+		modifier = { factor = 1.04          opinion = { who = liege value =  35 } }
+		modifier = { factor = 1.04          opinion = { who = liege value =  55 } }
+		modifier = { factor = 1.04          opinion = { who = liege value =  75 } }
+		modifier = { factor = 1.04          opinion = { who = liege value =  95 } }
 	}
 
 	option = {
@@ -1227,6 +1266,19 @@ character_event = {
 			factor = 0.75
 			religion_authority = 0.8
 		}
+		
+		# PB standard employer opinion factors
+		modifier = { factor = 1.09  not = { opinion = { who = liege value = -99 } } }
+		modifier = { factor = 1.06  not = { opinion = { who = liege value = -80 } } }
+		modifier = { factor = 1.06  not = { opinion = { who = liege value = -60 } } }
+		modifier = { factor = 1.06  not = { opinion = { who = liege value = -40 } } }
+		modifier = { factor = 1.06  not = { opinion = { who = liege value = -20 } } }
+		modifier = { factor = 1.06  not = { opinion = { who = liege value =   0 } } }
+		modifier = { factor = 1.03  not = { opinion = { who = liege value =  20 } } }
+		modifier = { factor = 0.96          opinion = { who = liege value =  35 } }
+		modifier = { factor = 0.96          opinion = { who = liege value =  55 } }
+		modifier = { factor = 0.96          opinion = { who = liege value =  75 } }
+		modifier = { factor = 0.96          opinion = { who = liege value =  95 } }
 	}
 	
 	option = {
@@ -1315,6 +1367,19 @@ character_event = {
 			factor = 0.75
 			religion_authority = 0.8
 		}
+
+		# PB standard employer opinion factors
+		modifier = { factor = 1.09  not = { opinion = { who = liege value = -99 } } }
+		modifier = { factor = 1.06  not = { opinion = { who = liege value = -80 } } }
+		modifier = { factor = 1.06  not = { opinion = { who = liege value = -60 } } }
+		modifier = { factor = 1.06  not = { opinion = { who = liege value = -40 } } }
+		modifier = { factor = 1.06  not = { opinion = { who = liege value = -20 } } }
+		modifier = { factor = 1.06  not = { opinion = { who = liege value =   0 } } }
+		modifier = { factor = 1.03  not = { opinion = { who = liege value =  20 } } }
+		modifier = { factor = 0.96          opinion = { who = liege value =  35 } }
+		modifier = { factor = 0.96          opinion = { who = liege value =  55 } }
+		modifier = { factor = 0.96          opinion = { who = liege value =  75 } }
+		modifier = { factor = 0.96          opinion = { who = liege value =  95 } }
 	}
 	
 	option = {
@@ -1508,6 +1573,19 @@ character_event = {
 			factor = 0.75
 			religion_authority = 0.8
 		}
+		
+		# PB standard employer opinion factors
+		modifier = { factor = 1.09  not = { opinion = { who = liege value = -99 } } }
+		modifier = { factor = 1.06  not = { opinion = { who = liege value = -80 } } }
+		modifier = { factor = 1.06  not = { opinion = { who = liege value = -60 } } }
+		modifier = { factor = 1.06  not = { opinion = { who = liege value = -40 } } }
+		modifier = { factor = 1.06  not = { opinion = { who = liege value = -20 } } }
+		modifier = { factor = 1.06  not = { opinion = { who = liege value =   0 } } }
+		modifier = { factor = 1.03  not = { opinion = { who = liege value =  20 } } }
+		modifier = { factor = 0.96          opinion = { who = liege value =  35 } }
+		modifier = { factor = 0.96          opinion = { who = liege value =  55 } }
+		modifier = { factor = 0.96          opinion = { who = liege value =  75 } }
+		modifier = { factor = 0.96          opinion = { who = liege value =  95 } }
 	}
 	
 	option = {
@@ -1630,6 +1708,19 @@ character_event = {
 			factor = 0.75
 			learning = 13
 		}
+
+		# PB standard employer opinion factors
+		modifier = { factor = 1.09  not = { opinion = { who = liege value = -99 } } }
+		modifier = { factor = 1.06  not = { opinion = { who = liege value = -80 } } }
+		modifier = { factor = 1.06  not = { opinion = { who = liege value = -60 } } }
+		modifier = { factor = 1.06  not = { opinion = { who = liege value = -40 } } }
+		modifier = { factor = 1.06  not = { opinion = { who = liege value = -20 } } }
+		modifier = { factor = 1.06  not = { opinion = { who = liege value =   0 } } }
+		modifier = { factor = 1.03  not = { opinion = { who = liege value =  20 } } }
+		modifier = { factor = 0.96          opinion = { who = liege value =  35 } }
+		modifier = { factor = 0.96          opinion = { who = liege value =  55 } }
+		modifier = { factor = 0.96          opinion = { who = liege value =  75 } }
+		modifier = { factor = 0.96          opinion = { who = liege value =  95 } }
 	}
 	
 	option = {
@@ -1752,6 +1843,19 @@ character_event = {
 			factor = 0.75
 			learning = 13
 		}
+		
+		# PB standard employer opinion factors
+		modifier = { factor = 1.09  not = { opinion = { who = liege value = -99 } } }
+		modifier = { factor = 1.06  not = { opinion = { who = liege value = -80 } } }
+		modifier = { factor = 1.06  not = { opinion = { who = liege value = -60 } } }
+		modifier = { factor = 1.06  not = { opinion = { who = liege value = -40 } } }
+		modifier = { factor = 1.06  not = { opinion = { who = liege value = -20 } } }
+		modifier = { factor = 1.06  not = { opinion = { who = liege value =   0 } } }
+		modifier = { factor = 1.03  not = { opinion = { who = liege value =  20 } } }
+		modifier = { factor = 0.96          opinion = { who = liege value =  35 } }
+		modifier = { factor = 0.96          opinion = { who = liege value =  55 } }
+		modifier = { factor = 0.96          opinion = { who = liege value =  75 } }
+		modifier = { factor = 0.96          opinion = { who = liege value =  95 } }
 	}
 	
 	option = {
@@ -1851,11 +1955,28 @@ character_event = {
 			factor = 0.75
 			learning = 13
 		}
+		
+		# NOTE: no PB employer opinion factors for heretic MTTH, only for AI chance to become one once the event's already triggered.
 	}
 	
 	option = {
 		name = "EVTOPTA927"
-		ai_chance = { factor = 80 }
+		ai_chance = {
+			factor = 80
+			
+			# PB standard employer opinion factors (would be inverse set but is an ai_chance, not an MTTH)
+			modifier = { factor = 1.09  not = { opinion = { who = liege value = -99 } } }
+			modifier = { factor = 1.06  not = { opinion = { who = liege value = -80 } } }
+			modifier = { factor = 1.06  not = { opinion = { who = liege value = -60 } } }
+			modifier = { factor = 1.06  not = { opinion = { who = liege value = -40 } } }
+			modifier = { factor = 1.06  not = { opinion = { who = liege value = -20 } } }
+			modifier = { factor = 1.06  not = { opinion = { who = liege value =   0 } } }
+			modifier = { factor = 1.03  not = { opinion = { who = liege value =  20 } } }
+			modifier = { factor = 0.96          opinion = { who = liege value =  35 } }
+			modifier = { factor = 0.96          opinion = { who = liege value =  55 } }
+			modifier = { factor = 0.96          opinion = { who = liege value =  75 } }
+			modifier = { factor = 0.96          opinion = { who = liege value =  95 } }
+		}
 		become_heretic = yes
 		hidden_tooltip = {
 			liege = { letter_event = { id = 20270 days = 2 } }
@@ -1878,7 +1999,7 @@ letter_event = {
 	option = {
 		name = "EVTOPTA20270"
 		ai_chance = { factor = 100 }
-		FROM = { imprison = yes }
+		FROM = { imprison = yes } # chaplains who hate their lieges are, in this case, more likely to end up in prison and consequently hate the liege forever
 	}
 	option = {
 		name = "EVTOPTB20270"
@@ -1964,6 +2085,19 @@ character_event = {
 			factor = 0.75
 			religion_authority = 0.8
 		}
+		
+		# PB standard employer opinion factors
+		modifier = { factor = 1.09  not = { opinion = { who = liege value = -99 } } }
+		modifier = { factor = 1.06  not = { opinion = { who = liege value = -80 } } }
+		modifier = { factor = 1.06  not = { opinion = { who = liege value = -60 } } }
+		modifier = { factor = 1.06  not = { opinion = { who = liege value = -40 } } }
+		modifier = { factor = 1.06  not = { opinion = { who = liege value = -20 } } }
+		modifier = { factor = 1.06  not = { opinion = { who = liege value =   0 } } }
+		modifier = { factor = 1.03  not = { opinion = { who = liege value =  20 } } }
+		modifier = { factor = 0.96          opinion = { who = liege value =  35 } }
+		modifier = { factor = 0.96          opinion = { who = liege value =  55 } }
+		modifier = { factor = 0.96          opinion = { who = liege value =  75 } }
+		modifier = { factor = 0.96          opinion = { who = liege value =  95 } }
 	}
 	
 	option = {
@@ -2210,6 +2344,19 @@ character_event = {
 			factor = 0.75
 			trait = envious
 		}
+
+		# PB inverse employer opinion factors
+		modifier = { factor = 0.91  not = { opinion = { who = liege value = -99 } } }
+		modifier = { factor = 0.94  not = { opinion = { who = liege value = -80 } } }
+		modifier = { factor = 0.94  not = { opinion = { who = liege value = -60 } } }
+		modifier = { factor = 0.94  not = { opinion = { who = liege value = -40 } } }
+		modifier = { factor = 0.94  not = { opinion = { who = liege value = -20 } } }
+		modifier = { factor = 0.94  not = { opinion = { who = liege value =   0 } } }
+		modifier = { factor = 0.97  not = { opinion = { who = liege value =  20 } } }
+		modifier = { factor = 1.04          opinion = { who = liege value =  35 } }
+		modifier = { factor = 1.04          opinion = { who = liege value =  55 } }
+		modifier = { factor = 1.04          opinion = { who = liege value =  75 } }
+		modifier = { factor = 1.04          opinion = { who = liege value =  95 } }
 	}
 	
 	option = {
@@ -2298,6 +2445,19 @@ character_event = {
 			factor = 0.75
 			learning = 13
 		}
+
+		# PB standard employer opinion factors
+		modifier = { factor = 1.09  not = { opinion = { who = liege value = -99 } } }
+		modifier = { factor = 1.06  not = { opinion = { who = liege value = -80 } } }
+		modifier = { factor = 1.06  not = { opinion = { who = liege value = -60 } } }
+		modifier = { factor = 1.06  not = { opinion = { who = liege value = -40 } } }
+		modifier = { factor = 1.06  not = { opinion = { who = liege value = -20 } } }
+		modifier = { factor = 1.06  not = { opinion = { who = liege value =   0 } } }
+		modifier = { factor = 1.03  not = { opinion = { who = liege value =  20 } } }
+		modifier = { factor = 0.96          opinion = { who = liege value =  35 } }
+		modifier = { factor = 0.96          opinion = { who = liege value =  55 } }
+		modifier = { factor = 0.96          opinion = { who = liege value =  75 } }
+		modifier = { factor = 0.96          opinion = { who = liege value =  95 } }
 	}
 	
 	option = {
