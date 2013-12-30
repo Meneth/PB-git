@@ -1,0 +1,629 @@
+e_turkish = {
+	color = { 220 140 40 }
+	
+	culture = turkish
+	short_name = yes
+	name_tier = king
+	creation_requires_capital = no
+	
+	allow = {
+		culture = turkish
+		num_of_king_titles = 3
+		war = no
+		ruled_years = 5
+		is_adult = yes
+		NOT = { tier = emperor }
+	}
+}
+
+e_cuman = {
+	color = { 180 115 25 }
+	
+	culture = cuman
+	short_name = yes
+	name_tier = king
+	creation_requires_capital = no
+	
+	allow = {
+		culture = cuman
+		num_of_king_titles = 3
+		war = no
+		ruled_years = 5
+		is_adult = yes
+		NOT = { tier = emperor }
+	}
+}
+
+e_pecheneg = {
+	color = { 160 100 25 }
+	
+	culture = pecheneg
+	short_name = yes
+	name_tier = king
+	creation_requires_capital = no
+	
+	allow = {
+		culture = pecheneg
+		num_of_king_titles = 3
+		war = no
+		ruled_years = 5
+		is_adult = yes
+		NOT = { tier = emperor }
+	}
+}
+
+e_khazar = {
+	color = { 180 115 25 }
+	
+	culture = khazar
+	short_name = yes
+	name_tier = king
+	creation_requires_capital = no
+	
+	allow = {
+		culture = khazar
+		num_of_king_titles = 3
+		war = no
+		ruled_years = 5
+		is_adult = yes
+		NOT = { tier = emperor }
+	}
+}
+
+e_bolghar = {
+	color = { 180 180 75 }
+	
+	culture = bolghar
+	short_name = yes
+	name_tier = king
+	creation_requires_capital = no
+	
+	allow = {
+		culture = bolghar
+		num_of_king_titles = 3
+		war = no
+		ruled_years = 5
+		is_adult = yes
+		NOT = { tier = emperor }
+	}
+}
+
+e_avar = {
+	color = { 180 180 75 }
+	
+	culture = avar
+	short_name = yes
+	name_tier = king
+	creation_requires_capital = no
+	
+	allow = {
+		culture = avar
+		num_of_king_titles = 3
+		war = no
+		ruled_years = 5
+		is_adult = yes
+		NOT = { tier = emperor }
+	}
+}
+
+e_avar = {
+	color = { 180 180 75 }
+	
+	culture = avar
+	short_name = yes
+	name_tier = king
+	creation_requires_capital = no
+	
+	allow = {
+		culture = avar
+		num_of_king_titles = 3
+		war = no
+		ruled_years = 5
+		is_adult = yes
+		NOT = { tier = emperor }
+	}
+}
+
+e_bedouin_arabic = {
+	color = { 25 190 25 }
+	
+	culture = bedouin_arabic
+	short_name = yes
+	name_tier = king
+	creation_requires_capital = no
+	
+	allow = {
+		culture = bedouin_arabic
+		num_of_king_titles = 3
+		war = no
+		ruled_years = 5
+		is_adult = yes
+		NOT = { tier = emperor }
+	}
+}
+
+e_maghreb_arabic = {
+	color = { 50 235 50 }
+	
+	culture = maghreb_arabic
+	short_name = yes
+	name_tier = king
+	creation_requires_capital = no
+	
+	allow = {
+		culture = maghreb_arabic
+		num_of_king_titles = 3
+		war = no
+		ruled_years = 5
+		is_adult = yes
+		NOT = { tier = emperor }
+	}
+}
+
+e_levantine_arabic = {
+	color = { 75 245 75 }
+	
+	culture = levantine_arabic
+	short_name = yes
+	name_tier = king
+	creation_requires_capital = no
+	
+	allow = {
+		culture = levantine_arabic
+		num_of_king_titles = 3
+		war = no
+		ruled_years = 5
+		is_adult = yes
+		NOT = { tier = emperor }
+	}
+}
+
+e_egyptian_arabic = {
+	color = { 25 155 25 }
+	
+	culture = egyptian_arabic
+	short_name = yes
+	name_tier = king
+	creation_requires_capital = no
+	
+	allow = {
+		culture = egyptian_arabic
+		num_of_king_titles = 3
+		war = no
+		ruled_years = 5
+		is_adult = yes
+		NOT = { tier = emperor }
+	}
+}
+
+e_andalusian_arabic = {
+	color = { 100 155 25 }
+	
+	culture = andalusian_arabic
+	short_name = yes
+	name_tier = king
+	creation_requires_capital = no
+	
+	allow = {
+		culture = andalusian_arabic
+		num_of_king_titles = 3
+		war = no
+		ruled_years = 5
+		is_adult = yes
+		NOT = { tier = emperor }
+	}
+}
+
+e_lettigallish = {
+	color = { 130 130 25 }
+	
+	culture = lettigallish
+	short_name = yes
+	name_tier = king
+	creation_requires_capital = no
+	
+	allow = {
+		culture = lettigallish
+		num_of_king_titles = 3
+		war = no
+		ruled_years = 5
+		is_adult = yes
+		NOT = { tier = emperor }
+	}
+}
+
+e_lithuanian = {
+	color = { 140 140 50 }
+	
+	culture = lithuanian
+	short_name = yes
+	name_tier = king
+	creation_requires_capital = no
+	
+	allow = {
+		culture = lithuanian
+		num_of_king_titles = 3
+		war = no
+		ruled_years = 5
+		is_adult = yes
+		NOT = { tier = emperor }
+	}
+}
+
+e_prussian = {
+	color = { 140 140 100 }
+	
+	culture = prussian
+	short_name = yes
+	name_tier = king
+	creation_requires_capital = no
+	
+	allow = {
+		culture = prussian
+		num_of_king_titles = 3
+		war = no
+		ruled_years = 5
+		is_adult = yes
+		NOT = { tier = emperor }
+	}
+}
+
+e_armenian = {
+	color = { 130 50 130 }
+	
+	culture = armenian
+	short_name = yes
+	name_tier = king
+	creation_requires_capital = no
+	
+	allow = {
+		culture = armenian
+		num_of_king_titles = 3
+		war = no
+		ruled_years = 5
+		is_adult = yes
+		NOT = { tier = emperor }
+	}
+}
+
+e_greek = {
+	color = { 205 75 205 }
+	
+	culture = greek
+	short_name = yes
+	name_tier = king
+	creation_requires_capital = no
+	
+	allow = {
+		culture = greek
+		num_of_king_titles = 3
+		war = no
+		ruled_years = 5
+		is_adult = yes
+		NOT = { tier = emperor }
+	}
+}
+
+e_alan = {
+	color = { 180 130 180 }
+	
+	culture = alan
+	short_name = yes
+	name_tier = king
+	creation_requires_capital = no
+	
+	allow = {
+		culture = alan
+		num_of_king_titles = 3
+		war = no
+		ruled_years = 5
+		is_adult = yes
+		NOT = { tier = emperor }
+	}
+}
+
+e_georgian = {
+	color = { 155 75 205 }
+	
+	culture = georgian
+	short_name = yes
+	name_tier = king
+	creation_requires_capital = no
+	
+	allow = {
+		culture = georgian
+		num_of_king_titles = 3
+		war = no
+		ruled_years = 5
+		is_adult = yes
+		NOT = { tier = emperor }
+	}
+}
+
+e_irish = {
+	color = { 75 205 205 }
+	
+	culture = irish
+	short_name = yes
+	name_tier = king
+	creation_requires_capital = no
+	
+	allow = {
+		culture = irish
+		num_of_king_titles = 3
+		war = no
+		ruled_years = 5
+		is_adult = yes
+		NOT = { tier = emperor }
+	}
+}
+
+e_scottish = {
+	color = { 75 180 180 }
+	
+	culture = scottish
+	short_name = yes
+	name_tier = king
+	creation_requires_capital = no
+	
+	allow = {
+		culture = scottish
+		num_of_king_titles = 3
+		war = no
+		ruled_years = 5
+		is_adult = yes
+		NOT = { tier = emperor }
+	}
+}
+
+e_welsh = {
+	color = { 75 205 155 }
+	
+	culture = welsh
+	short_name = yes
+	name_tier = king
+	creation_requires_capital = no
+	
+	allow = {
+		culture = welsh
+		num_of_king_titles = 3
+		war = no
+		ruled_years = 5
+		is_adult = yes
+		NOT = { tier = emperor }
+	}
+}
+
+e_breton = {
+	color = { 75 130 100 }
+	
+	culture = breton
+	short_name = yes
+	name_tier = king
+	creation_requires_capital = no
+	
+	allow = {
+		culture = breton
+		num_of_king_titles = 3
+		war = no
+		ruled_years = 5
+		is_adult = yes
+		NOT = { tier = emperor }
+	}
+}
+
+e_german = {
+	color = { 130 130 130 }
+	
+	culture = german
+	short_name = yes
+	name_tier = king
+	creation_requires_capital = no
+	
+	allow = {
+		culture = german
+		num_of_king_titles = 3
+		war = no
+		ruled_years = 5
+		is_adult = yes
+		NOT = { tier = emperor }
+	}
+}
+
+e_dutch = {
+	color = { 205 100 50 }
+	
+	culture = dutch
+	short_name = yes
+	name_tier = king
+	creation_requires_capital = no
+	
+	allow = {
+		culture = dutch
+		num_of_king_titles = 3
+		war = no
+		ruled_years = 5
+		is_adult = yes
+		NOT = { tier = emperor }
+	}
+}
+
+e_ethiopian = {
+	color = { 100 100 75 }
+	
+	culture = ethiopian
+	short_name = yes
+	name_tier = king
+	creation_requires_capital = no
+	
+	allow = {
+		culture = ethiopian
+		num_of_king_titles = 3
+		war = no
+		ruled_years = 5
+		is_adult = yes
+		NOT = { tier = emperor }
+	}
+}
+
+e_nubian = {
+	color = { 100 130 205 }
+	
+	culture = nubian
+	short_name = yes
+	name_tier = king
+	creation_requires_capital = no
+	
+	allow = {
+		culture = nubian
+		num_of_king_titles = 3
+		war = no
+		ruled_years = 5
+		is_adult = yes
+		NOT = { tier = emperor }
+	}
+}
+
+e_somali = {
+	color = { 75 75 130 }
+	
+	culture = somali
+	short_name = yes
+	name_tier = king
+	creation_requires_capital = no
+	
+	allow = {
+		culture = somali
+		num_of_king_titles = 3
+		war = no
+		ruled_years = 5
+		is_adult = yes
+		NOT = { tier = emperor }
+	}
+}
+
+e_russian = {
+	color = { 50 100 25 }
+	
+	culture = russian
+	short_name = yes
+	name_tier = king
+	creation_requires_capital = no
+	
+	allow = {
+		culture = russian
+		num_of_king_titles = 3
+		war = no
+		ruled_years = 5
+		is_adult = yes
+		NOT = { tier = emperor }
+	}
+}
+
+e_finnish = {
+	color = { 25 155 155 }
+	
+	culture = finnish
+	short_name = yes
+	name_tier = king
+	creation_requires_capital = no
+	
+	allow = {
+		culture = finnish
+		num_of_king_titles = 3
+		war = no
+		ruled_years = 5
+		is_adult = yes
+		NOT = { tier = emperor }
+	}
+}
+
+e_lappish = {
+	color = { 50 165 165 }
+	
+	culture = lappish
+	short_name = yes
+	name_tier = king
+	creation_requires_capital = no
+	
+	allow = {
+		culture = lappish
+		num_of_king_titles = 3
+		war = no
+		ruled_years = 5
+		is_adult = yes
+		NOT = { tier = emperor }
+	}
+}
+
+e_ugricbaltic = {
+	color = { 75 180 180 }
+	
+	culture = ugricbaltic
+	short_name = yes
+	name_tier = king
+	creation_requires_capital = no
+	
+	allow = {
+		culture = ugricbaltic
+		num_of_king_titles = 3
+		war = no
+		ruled_years = 5
+		is_adult = yes
+		NOT = { tier = emperor }
+	}
+}
+
+e_komi = {
+	color = { 75 190 190 }
+	
+	culture = komi
+	short_name = yes
+	name_tier = king
+	creation_requires_capital = no
+	
+	allow = {
+		culture = komi
+		num_of_king_titles = 3
+		war = no
+		ruled_years = 5
+		is_adult = yes
+		NOT = { tier = emperor }
+	}
+}
+
+e_samoyed = {
+	color = { 75 190 190 }
+	
+	culture = samoyed
+	short_name = yes
+	name_tier = king
+	creation_requires_capital = no
+	
+	allow = {
+		culture = samoyed
+		num_of_king_titles = 3
+		war = no
+		ruled_years = 5
+		is_adult = yes
+		NOT = { tier = emperor }
+	}
+}
+
+e_mordvin = {
+	color = { 75 180 180 }
+	
+	culture = mordvin
+	short_name = yes
+	name_tier = king
+	creation_requires_capital = no
+	
+	allow = {
+		culture = mordvin
+		num_of_king_titles = 3
+		war = no
+		ruled_years = 5
+		is_adult = yes
+		NOT = { tier = emperor }
+	}
+}
