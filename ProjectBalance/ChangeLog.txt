@@ -8,6 +8,7 @@
 	Councillors opinion of their liege now has a minor effect on their job performance (credit goes to zijistark)
 	Italia (empire-tier) can now be formed by Sicilians
 	(PB+SWMH) Reduced the Baqt tax modifier to 40% (from 50%). Remains at 50% in PB without SWMH
+	Jews can now use the "seize county" CB if they form a merchant republic
 
 3.3.6
 	Updated retinues to correspond with the newest 2.0.2 beta. If you're not using 2.0.2, retinues might break
