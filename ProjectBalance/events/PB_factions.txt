@@ -266,6 +266,9 @@ character_event = {
 	border = GFX_event_normal_frame_religion
 	
 	trigger = {
+		NOT = {
+			liege = { has_character_flag = autonomy_faction_revolt }
+		}
 		leads_faction = faction_autonomy
 		OR = {
 			NOT = { has_character_flag = faction_meeting }
@@ -1722,6 +1725,8 @@ character_event = {
 		trigger = {
 			check_variable = { which = "faction_vote" value = 0 }
 		}
+		liege = { set_character_flag = autonomy_faction_revolt }
+		clr_character_flag = faction_meeting
 		if = {
 			limit = { has_character_flag = faction_autonomy_lower_obligations }
 			liege = {

@@ -49,6 +49,7 @@ remove_internal_peace = {
 				}
 			}
 		}
+		FROM = { clr_character_flag = autonomy_faction_revolt }
 	}
 
 	on_fail = {
@@ -75,6 +76,7 @@ remove_internal_peace = {
 			}
 		}
 		FROM = { hidden_tooltip = { disband_event_forces = faction_loyalists } }
+		FROM = { clr_character_flag = autonomy_faction_revolt }
 	}
 
 	on_reverse_demand = {
@@ -103,6 +105,7 @@ remove_internal_peace = {
 			}
 		}
 		FROM = { hidden_tooltip = { disband_event_forces = faction_loyalists } }
+		FROM = { clr_character_flag = autonomy_faction_revolt }
 	}
 
 	attacker_ai_victory_worth = {
@@ -171,6 +174,7 @@ remove_revokation = {
 				add_law_w_cooldown = revokation_0
 			}
 		}
+		FROM = { clr_character_flag = autonomy_faction_revolt }
 	}
 
 	on_fail = {
@@ -197,6 +201,7 @@ remove_revokation = {
 			}
 		}
 		FROM = { hidden_tooltip = { disband_event_forces = faction_loyalists } }
+		FROM = { clr_character_flag = autonomy_faction_revolt }
 	}
 
 	on_reverse_demand = {
@@ -225,6 +230,7 @@ remove_revokation = {
 			}
 		}
 		FROM = { hidden_tooltip = { disband_event_forces = faction_loyalists } }
+		FROM = { clr_character_flag = autonomy_faction_revolt }
 	}
 
 	attacker_ai_victory_worth = {
@@ -288,6 +294,7 @@ remove_inheritance = {
 				add_law_w_cooldown = inheritance_0
 			}
 		}
+		FROM = { clr_character_flag = autonomy_faction_revolt }
 	}
 
 	on_fail = {
@@ -314,6 +321,7 @@ remove_inheritance = {
 			}
 		}
 		FROM = { hidden_tooltip = { disband_event_forces = faction_loyalists } }
+		FROM = { clr_character_flag = autonomy_faction_revolt }
 	}
 
 	on_reverse_demand = {
@@ -342,6 +350,7 @@ remove_inheritance = {
 			}
 		}
 		FROM = { hidden_tooltip = { disband_event_forces = faction_loyalists } }
+		FROM = { clr_character_flag = autonomy_faction_revolt }
 	}
 
 	attacker_ai_victory_worth = {
@@ -438,25 +447,7 @@ reduce_crown_levies = {
 				duration = 3650
 			}
 		}
-	}
-
-	on_success_title = {
-		if = {
-			limit = { has_law = crown_levies_1 }
-			add_law_w_cooldown = crown_levies_0
-		}
-		if = {
-			limit = { has_law = crown_levies_2 }
-			add_law_w_cooldown = crown_levies_1
-		}
-		if = {
-			limit = { has_law = crown_levies_3 }
-			add_law_w_cooldown = crown_levies_2
-		}
-		if = {
-			limit = { has_law = crown_levies_4 }
-			add_law_w_cooldown = crown_levies_3
-		}
+		FROM = { clr_character_flag = autonomy_faction_revolt }
 	}
 
 	on_fail = {
@@ -483,6 +474,7 @@ reduce_crown_levies = {
 			}
 		}
 		FROM = { hidden_tooltip = { disband_event_forces = faction_loyalists } }
+		FROM = { clr_character_flag = autonomy_faction_revolt }
 	}
 
 	on_reverse_demand = {
@@ -511,6 +503,7 @@ reduce_crown_levies = {
 			}
 		}
 		FROM = { hidden_tooltip = { disband_event_forces = faction_loyalists } }
+		FROM = { clr_character_flag = autonomy_faction_revolt }
 	}
 
 	attacker_ai_victory_worth = {
