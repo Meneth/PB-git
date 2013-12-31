@@ -496,6 +496,39 @@ character_event = {
 			}
 			change_variable = { which = "autonomy_personal_mood" value = 5 }
 		}
+		#Legalism
+		if = {
+			limit = { capital_scope = { NOT = { TECH_LEGALISM = 1 } } }
+			change_variable = { which = "autonomy_personal_mood" value = -1 }
+		}
+		if = {
+			limit = { capital_scope = { NOT = { TECH_LEGALISM = 2 } } }
+			change_variable = { which = "autonomy_personal_mood" value = -1 }
+		}
+		if = {
+			limit = { capital_scope = { TECH_LEGALISM = 3 } }
+			change_variable = { which = "autonomy_personal_mood" value = 1 }
+		}
+		if = {
+			limit = { capital_scope = { TECH_LEGALISM = 4 } }
+			change_variable = { which = "autonomy_personal_mood" value = 1 }
+		}
+		if = {
+			limit = { capital_scope = { TECH_LEGALISM = 5 } }
+			change_variable = { which = "autonomy_personal_mood" value = 1 }
+		}
+		if = {
+			limit = { capital_scope = { TECH_LEGALISM = 6 } }
+			change_variable = { which = "autonomy_personal_mood" value = 1 }
+		}
+		if = {
+			limit = { capital_scope = { TECH_LEGALISM = 7 } }
+			change_variable = { which = "autonomy_personal_mood" value = 1 }
+		}
+		if = {
+			limit = { capital_scope = { TECH_LEGALISM = 8 } }
+			change_variable = { which = "autonomy_personal_mood" value = 1 }
+		}
 	}
 	option = { #Happy
 		name = meneth.220.a
