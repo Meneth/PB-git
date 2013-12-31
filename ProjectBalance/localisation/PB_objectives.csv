@@ -1,24 +1,6 @@
 #CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
-faction_remove_king_peace_decision;Demand Removal of The King's Peace;;;;;;;;;;;;;x
-faction_remove_king_peace_decision_desc;Present an ultimatum to §Y[Root.Liege.GetBestName]§!, demanding the removal of The King's Peace. If [Root.Liege.GetSubjectPronoun] refuses to comply, your Faction will rise in revolt.;;;;;;;;;;;;;x
-faction_remove_king_peace_title;Remove The King's Peace in [This.GetName];;;;;;;;;;;;;x
-faction_remove_king_peace_desc;Members seek to remove The King's Peace in [This.GetName]. When sufficiently powerful, §Y[From.GetBestName]§! may present an ultimatum to §Y[From.Liege.GetBestName]§!.;;;;;;;;;;;;;x
-faction_remove_emperor_peace_decision;Demand Removal of The Emperor's Peace;;;;;;;;;;;;;x
-faction_remove_emperor_peace_decision_desc;Present an ultimatum to §Y[Root.Liege.GetBestName]§!, demanding the removal of The Emperor's Peace. If [Root.Liege.GetSubjectPronoun] refuses to comply, your Faction will rise in revolt.;;;;;;;;;;;;;x
-faction_remove_emperor_peace_title;Remove The Emperor's Peace in [This.GetName];;;;;;;;;;;;;x
-faction_remove_emperor_peace_desc;Members seek to remove The Emperor's Peace in [This.GetName]. When sufficiently powerful, §Y[From.GetBestName]§! may present an ultimatum to §Y[From.Liege.GetBestName]§!.;;;;;;;;;;;;;x
-faction_remove_revokation_decision;Demand Removal of Title Revocation;;;;;;;;;;;;;x
-faction_remove_revokation_decision_desc;Present an ultimatum to §Y[Root.Liege.GetBestName]§!, demanding the removal of Title Revocation. If [Root.Liege.GetSubjectPronoun] refuses to comply, your Faction will rise in revolt.;;;;;;;;;;;;;x
-faction_remove_revokation_title;Remove Title Revocation in [This.GetName];;;;;;;;;;;;;x
-faction_remove_revokation_desc;Members seek to remove Title Revocation in [This.GetName]. When sufficiently powerful, §Y[From.GetBestName]§! may present an ultimatum to §Y[From.Liege.GetBestName]§!.;;;;;;;;;;;;;x
-faction_remove_inheritance_decision;Demand Removal of Protected Inheritance;;;;;;;;;;;;;x
-faction_remove_inheritance_decision_desc;Present an ultimatum to §Y[Root.Liege.GetBestName]§!, demanding the removal of Protected Inheritance. If [Root.Liege.GetSubjectPronoun] refuses to comply, your Faction will rise in revolt.;;;;;;;;;;;;;x
-faction_remove_inheritance_title;Remove Protected Inheritance in [This.GetName];;;;;;;;;;;;;x
-faction_remove_inheritance_desc;Members seek to remove Protected Inheritance in [This.GetName]. When sufficiently powerful, §Y[From.GetBestName]§! may present an ultimatum to §Y[From.Liege.GetBestName]§!.;;;;;;;;;;;;;x
-faction_lower_crown_levies_decision;Demand Reduced Crown Levies;;;;;;;;;;;;;x
-faction_lower_crown_levies_decision_desc;Present an ultimatum to §Y[Root.Liege.GetBestName]§!, demanding lower Crown Levies. If [Root.Liege.GetSubjectPronoun] refuses to comply, your Faction will rise in revolt.;;;;;;;;;;;;;x
-faction_lower_crown_levies_title;Reduce Crown Levies in [This.GetName];;;;;;;;;;;;;x
-faction_lower_crown_levies_desc;Members seek to reduce Crown Levies in [This.GetName]. When sufficiently powerful, §Y[From.GetBestName]§! may present an ultimatum to §Y[From.Liege.GetBestName]§!.;;;;;;;;;;;;;x
+faction_autonomy_title;Autonomy;;;;;;;;;;;;;x
+faction_autonomy_desc;Members seek to increase their autonomy within §Y[From.Liege.GetBestName]§'s realm.;;;;;;;;;;;;;x
 obj_convert_a_province_title;Convert a Province;;;;;;;;;;;;;x
 obj_convert_a_province_desc;You want to convert a province, making your religious head happy and showing your piety to the world. Your stewardship will be reduced by two as you're busy helping your court chaplain convert the heathens.;;;;;;;;;;;;;x
 obj_amass_fortune_title;Amass Fortune;;;;;;;;;;;;;x

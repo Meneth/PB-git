@@ -13,3 +13,13 @@ opinion_known_virtue = {
 opinion_fame_glory = {
 	opinion = 5
 }
+
+opinion_refused_ultimatum = {
+	opinion = -15
+}
+opinion_recently_refused_ultimatum = {
+	opinion = -10
+}
+opinion_accepted_ultimatum = {
+	opinion = 25
+}
