@@ -328,19 +328,19 @@ character_event = {
 		}
 		if = {
 			limit = { NOT = { opinion = { who = LIEGE value = -75 } } }
-			change_variable = { which = "autonomy_personal_mood" value = -2 }
+			change_variable = { which = "autonomy_personal_mood" value = -3 }
 		}
 		if = {
 			limit = { NOT = { opinion = { who = LIEGE value = -50 } } }
-			change_variable = { which = "autonomy_personal_mood" value = -2 }
+			change_variable = { which = "autonomy_personal_mood" value = -3 }
 		}
 		if = {
 			limit = { NOT = { opinion = { who = LIEGE value = -30 } } }
-			change_variable = { which = "autonomy_personal_mood" value = -2 }
+			change_variable = { which = "autonomy_personal_mood" value = -3 }
 		}
 		if = {
 			limit = { NOT = { opinion = { who = LIEGE value = -10 } } }
-			change_variable = { which = "autonomy_personal_mood" value = -2 }
+			change_variable = { which = "autonomy_personal_mood" value = -3 }
 		}
 		if = {
 			limit = { opinion = { who = LIEGE value = 10 } }
@@ -352,11 +352,11 @@ character_event = {
 		}
 		if = {
 			limit = { opinion = { who = LIEGE value = 50 } }
-			change_variable = { which = "autonomy_personal_mood" value = 2 }
+			change_variable = { which = "autonomy_personal_mood" value = 3 }
 		}
 		if = {
 			limit = { opinion = { who = LIEGE value = 75 } }
-			change_variable = { which = "autonomy_personal_mood" value = 2 }
+			change_variable = { which = "autonomy_personal_mood" value = 3 }
 		}
 		if = {
 			limit = { trait = content }
