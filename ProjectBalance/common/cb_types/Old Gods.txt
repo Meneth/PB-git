@@ -1484,7 +1484,7 @@ shia_caliphate_rising = {
 		custom_tooltip = {
 			text = tribal_invasion_succ_tip
 			hidden_tooltip = {
-				d_shiite = {
+				k_shiite = {
 					usurp_title = ROOT
 				}
 				FROM = {
