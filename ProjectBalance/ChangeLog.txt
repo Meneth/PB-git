@@ -11,6 +11,7 @@
 	(PB+SWMH) Reduced the Baqt tax modifier to 40% (from 50%). Remains at 50% in PB without SWMH
 	Jews can now use the "seize county" CB if they form a merchant republic
 	(Gender Equality) There's no longer an opinion penalty for female rulers/heirs
+	Ensured that randomly generated characters cannot get the Rum and Immortal traits
 
 3.3.6
 	Updated retinues to correspond with the newest 2.0.2 beta. If you're not using 2.0.2, retinues might break
