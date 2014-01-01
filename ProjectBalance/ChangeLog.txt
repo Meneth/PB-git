@@ -13,6 +13,7 @@
 	(Gender Equality) There's no longer an opinion penalty for female rulers/heirs
 	Ensured that randomly generated characters cannot get the Rum and Immortal traits
 	Fixed the creation of a French HRE triggering the event about a German HRE being formed
+	Added correct text for new Italian mounted crossbowmen (cavalry) cultural buildings [zijistark]
 
 3.3.6
 	Updated retinues to correspond with the newest 2.0.2 beta. If you're not using 2.0.2, retinues might break
