@@ -1,22 +1,16 @@
 #CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
-CB_NAME_TRIBAL_RAID;Tribal Raid on §Y$TITLE$§!;;;;;;;;;;;;;x
-WAR_NAME_TRIBAL_RAID;$ORDER$$FIRST_ADJ$ Raid Upon $SECOND$;;;;;;;;;;;;;x
-tribal_raid_desc;Tribes do not bother with just causes - might makes right! §Y$CLAIMANT$§! can invade the §Y$TITLE$§!. If successful, we will demand tribute.;;;;;;;;;;;;;x
-CB_NAME_REMOVE_KING_PEACE;Remove The King's Peace;;;;;;;;;;;;;x
-WAR_NAME_REMOVE_KING_PEACE;$ORDER$$SECOND_ADJ$ Civil War to Remove The King's Peace;;;;;;;;;;;;;x
-remove_king_peace_desc;§Y$CLAIMANT$§! can declare war to remove The King's Peace in the §Y$TITLE$§!;;;;;;;;;;;;;x
-CB_NAME_REMOVE_EMPEROR_PEACE;Remove The Emperor's Peace;;;;;;;;;;;;;x
-WAR_NAME_REMOVE_EMPEROR_PEACE;$ORDER$$SECOND_ADJ$ Civil War to Remove The Emperor's Peace;;;;;;;;;;;;;x
-remove_emperor_peace_desc;§Y$CLAIMANT$§! can declare war to remove The Emperor's Peace in the §Y$TITLE$§!;;;;;;;;;;;;;x
+CB_NAME_REMOVE_INTERNAL_PEACE;Remove Internal Peace;;;;;;;;;;;;;x
+WAR_NAME_REMOVE_INTERNAL_PEACE;$ORDER$$SECOND_ADJ$ Civil War to Remove The King's Peace;;;;;;;;;;;;;x
+remove_internal_peace_desc;§Y$CLAIMANT$§! can declare war to remove internal peace!;;;;;;;;;;;;;x
 CB_NAME_REMOVE_REVOKATION;Remove Title Revocation;;;;;;;;;;;;;x
 WAR_NAME_REMOVE_REVOKATION;$ORDER$$SECOND_ADJ$ Civil War to Remove Title Revocation;;;;;;;;;;;;;x
-remove_revokation_desc;§Y$CLAIMANT$§! can declare war to remove title revocation in the §Y$TITLE$§!;;;;;;;;;;;;;x
+remove_revokation_desc;§Y$CLAIMANT$§! can declare war to remove title revocation!;;;;;;;;;;;;;x
 CB_NAME_REMOVE_INHERITANCE;Remove Protected Inheritance;;;;;;;;;;;;;x
 WAR_NAME_REMOVE_INHERITANCE;$ORDER$$SECOND_ADJ$ Civil War to Remove Protected Inheritance;;;;;;;;;;;;;x
 remove_inheritance_desc;§Y$CLAIMANT$§! can declare war to remove protected inheritance in the §Y$TITLE$§!;;;;;;;;;;;;;x
-CB_NAME_REDUCE_CROWN_LEVIES;Reduce Crown Levies;;;;;;;;;;;;;x
-WAR_NAME_REDUCE_CROWN_LEVIES;$ORDER$$SECOND_ADJ$ Civil War to Reduce Crown Levies;;;;;;;;;;;;;x
-reduce_crown_levies_desc;§Y$CLAIMANT$§! can declare war to reduce crown levies in the §Y$TITLE$§!;;;;;;;;;;;;;x
+CB_NAME_REDUCE_CROWN_LEVIES;Reduce Obligations;;;;;;;;;;;;;x
+WAR_NAME_REDUCE_CROWN_LEVIES;$ORDER$$SECOND_ADJ$ Civil War to Reduce Obligations;;;;;;;;;;;;;x
+reduce_crown_levies_desc;§Y$CLAIMANT$§! can declare war to reduce obligations!;;;;;;;;;;;;;x
 CB_NAME_RETAKE_THE_COAST;Retake the coast;;;;;;;;;;;;;x
 WAR_NAME_RETAKE_THE_COAST;$ORDER$$FIRST_ADJ$ War to Retake the Coast;;;;;;;;;;;;;x
 retake_the_coast_desc;§Y$CLAIMANT$§! can declare war to retake the Anatolian coast.;;;;;;;;;;;;;x

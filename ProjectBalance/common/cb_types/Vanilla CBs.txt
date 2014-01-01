@@ -4739,6 +4739,7 @@ depose_liege = {
 		ROOT = {
 			prestige = -100
 		}
+		FROM = { clr_character_flag = autonomy_faction_revolt }
 	}
 
 	on_reverse_demand = {
@@ -4754,6 +4755,7 @@ depose_liege = {
 			limit = { NOT = { character = FROM } }
 			hidden_tooltip = { participation_scaled_prestige = 50 }
 		}
+		FROM = { clr_character_flag = autonomy_faction_revolt }
 	}
 	
 	on_defender_leader_death = {
@@ -7075,7 +7077,7 @@ coastal_county_republic = {
 		ROOT = {
 			OR = {
 				religion_group = christian
-				religion_group = jewish
+				religion_group = jewish_group
 			}
 			NOT = { has_character_modifier = coastal_republic_cooldown }
 			NOT = { trait = content }

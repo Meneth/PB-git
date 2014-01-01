@@ -2,6 +2,7 @@
 on_yearly_pulse = {
 	events = {
 		meneth.203 #Interest on loans
+		meneth.211 #Factions
 	}
 	random_events = {
 		

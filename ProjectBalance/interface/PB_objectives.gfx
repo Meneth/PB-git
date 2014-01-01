@@ -8,36 +8,8 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 	spriteType = {
-		name = "GFX_faction_remove_king_peace"
-		texturefile = "gfx/ambitions/plot_lower_crown_authority.tga"
-		noOfFrames = 1
-		norefcount = yes
-		effectFile = "gfx/FX/buttonstate.lua"
-	}
-	spriteType = {
-		name = "GFX_faction_remove_emperor_peace"
-		texturefile = "gfx/ambitions/plot_lower_crown_authority.tga"
-		noOfFrames = 1
-		norefcount = yes
-		effectFile = "gfx/FX/buttonstate.lua"
-	}
-	spriteType = {
-		name = "GFX_faction_remove_revokation"
-		texturefile = "gfx/interface/plot_remove_revokation.tga"
-		noOfFrames = 1
-		norefcount = yes
-		effectFile = "gfx/FX/buttonstate.lua"
-	}
-	spriteType = {
-		name = "GFX_faction_remove_inheritance"
-		texturefile = "gfx/ambitions/plot_lower_crown_authority.tga"
-		noOfFrames = 1
-		norefcount = yes
-		effectFile = "gfx/FX/buttonstate.lua"
-	}
-	spriteType = {
-		name = "GFX_faction_lower_crown_levies"
-		texturefile = "gfx/interface/plot_lower_crown_levies.tga"
+		name = "GFX_faction_autonomy"
+		texturefile = "gfx/ambitions/faction_autonomy.tga"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"

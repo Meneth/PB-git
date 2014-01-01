@@ -1223,5 +1223,5 @@ character_event = {
 		}
 	}
 }
-#meneth.218 taken
-#meneth.211 free
+
+# up to meneth.219 taken

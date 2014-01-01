@@ -139,7 +139,7 @@ decisions = {
 			ruled_years = 10
 		}
 		effect = {
-			narrative_event = { id = meneth.427 tooltip = create_hre_tooltip }
+			narrative_event = { id = meneth.437 tooltip = create_hre_tooltip }
 			if = {
 				limit = { has_nickname = no }
 				give_nickname = nick_the_great

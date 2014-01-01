@@ -13,6 +13,8 @@ high_decadence;Highly Decadent;;;;;;;;;;;;;x
 desc_high_decadence;We are highly decadent and many are therefore questioning our legitimate rule;;;;;;;;;;;;;x
 TECH_CASTLES;Infrastructure;;;;;;;;;;;;;x
 TECH_CASTLES_DESC;Improved infrastructure makes supplying armies easier.;;;;;;;;;;;;;x
+immortal;Immortal;;;;;;;;;;;;;x
+immortal_desc;Immortals will never succumb to old age, but they can still die from other causes.;;;;;;;;;;;;;x
 formation_of_rum;Newly Formed Realm;;;;;;;;;;;;;x
 war_torn;War-torn;;;;;;;;;;;;;x
 bulgarian_unrest;Bulgarian Unrest;;;;;;;;;;;;;x
@@ -24,3 +26,11 @@ theme_system_2;Intact Theme System;;;;;;;;;;;;;x
 launched_subjugation;Subjugation Cooldown;;;;;;;;;;;;;x
 baqt;Baqt;;;;;;;;;;;;;x
 sahara;Sahara;;;;;;;;;;;;;x
+military_cooperation;Military co-operation;;;;;;;;;;;;;x
+economic_cooperation;Economic co-operation;;;;;;;;;;;;;x
+autonomy_commended;Commended by vassals;;;;;;;;;;;;;x
+rum;Ignore the man behind the curtain;;;;;;;;;;;;;x
+opinion_refused_ultimatum;Refused ultimatum;;;;;;;;;;;;;x
+opinion_recently_refused_ultimatum;Recently refused ultimatum;;;;;;;;;;;;;x
+opinion_accepted_ultimatum;Accepted ultimatum;;;;;;;;;;;;;x
+reduced_obligations;Reduced obligations;;;;;;;;;;;;;x

@@ -1,4 +1,5 @@
 3.3.7
+	Added a new faction system. All crown authority factions have been merged into a single faction that is more responsive to the actions of their liege, and have more actions they can take. Every 3 to 7 years they hold a meeting to determine what action they'll take. If they're in a bad mood they might issue an ultimatum to their liege, but if treated well they will not be much of a threat. They're potentially a much greater threat than the old factions however, as the faction is global to the realm rather than specific to a single dejure kingdom or empire
 	Fixed a few minor event bugs
 	Made the requirements for Tribal Invasions more obvious
 	Got rid of nearly all flags in PB that exist in vanilla. Most of them were grandfathered in from North African Expansion or the Lotharinga and Lowlands mod. Most of them were either identical to vanilla or of comparable quality. Only 10 flags that are better than vanilla's were kept. For better flags, use ARKO
@@ -10,6 +11,8 @@
 	(PB+SWMH) Reduced the Baqt tax modifier to 40% (from 50%). Remains at 50% in PB without SWMH
 	Jews can now use the "seize county" CB if they form a merchant republic
 	(Gender Equality) There's no longer an opinion penalty for female rulers/heirs
+	Ensured that randomly generated characters cannot get the Rum and Immortal traits
+	Fixed the creation of a French HRE triggering the event about a German HRE being formed
 
 3.3.6
 	Updated retinues to correspond with the newest 2.0.2 beta. If you're not using 2.0.2, retinues might break
