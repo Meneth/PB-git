@@ -537,6 +537,123 @@ character_event = {
 			limit = { capital_scope = { TECH_LEGALISM = 8 } }
 			change_variable = { which = "autonomy_personal_mood" value = 1 }
 		}
+		if = {
+			limit = { liege = { trait = augustus } }
+			change_variable = { which = "autonomy_personal_mood" value = 10 }
+		}
+		if = {
+			limit = { liege = { trait = saoshyant } }
+			change_variable = { which = "autonomy_personal_mood" value = 10 }
+		}
+		if = {
+			limit = { liege = { trait = impaler } }
+			change_variable = { which = "autonomy_personal_mood" value = 3 }
+		}
+		if = {
+			limit = { liege = { trait = just } }
+			change_variable = { which = "autonomy_personal_mood" value = 1 }
+		}
+		if = {
+			limit = { liege = { trait = arbitrary } }
+			change_variable = { which = "autonomy_personal_mood" value = -1 }
+		}
+		if = {
+			limit = { liege = { trait = gregarious } }
+			change_variable = { which = "autonomy_personal_mood" value = 1 }
+		}
+		if = {
+			limit = { liege = { trait = kind } }
+			change_variable = { which = "autonomy_personal_mood" value = 1 }
+		}
+		if = {
+			limit = { liege = { trait = cruel } }
+			change_variable = { which = "autonomy_personal_mood" value = -1 }
+		}
+		if = {
+			limit = {
+				liege = {
+					OR = {
+						trait = amateurish_plotter
+						trait = naive_appeaser
+						trait = indulgent_wastrel
+						trait = misguided_warrior
+						trait = detached_priest
+					}
+				}
+			}
+			change_variable = { which = "autonomy_personal_mood" value = -1 }
+		}
+		if = {
+			limit = {
+				liege = {
+					OR = {
+						trait = elusive_shadow
+						trait = grey_eminence
+						trait = midas_touched
+						trait = brilliant_strategist
+						trait = mastermind_theologian
+					}
+				}
+			}
+			change_variable = { which = "autonomy_personal_mood" value = 1 }
+		}
+		if = {
+			limit = { liege = { trait = lunatic } }
+			change_variable = { which = "autonomy_personal_mood" value = -5 }
+		}
+		if = {
+			limit = { liege = { trait = possessed } }
+			change_variable = { which = "autonomy_personal_mood" value = -5 }
+		}
+		if = {
+			limit = {
+				liege = { trait = homosexual }
+				NOT = { trait = homosexual }
+			}
+			change_variable = { which = "autonomy_personal_mood" value = -2 }
+		}
+		if = {
+			limit = { liege = { trait = incapable } }
+			change_variable = { which = "autonomy_personal_mood" value = -3 }
+		}
+		if = {
+			limit = { liege = { trait = kinslayer } }
+			change_variable = { which = "autonomy_personal_mood" value = -2 }
+		}
+		if = {
+			limit = {
+				liege = { trait = excommunicated }
+				liege = { religion = ROOT }
+			}
+			change_variable = { which = "autonomy_personal_mood" value = -2 }
+		}
+		if = {
+			limit = {
+				liege = { trait = crusader }
+				liege = { religion = ROOT }
+			}
+			change_variable = { which = "autonomy_personal_mood" value = -2 }
+		}
+		if = {
+			limit = { liege = { trait = quick } }
+			change_variable = { which = "autonomy_personal_mood" value = 1 }
+		}
+		if = {
+			limit = { liege = { trait = genius } }
+			change_variable = { which = "autonomy_personal_mood" value = 2 }
+		}
+		if = {
+			limit = { liege = { trait = slow } }
+			change_variable = { which = "autonomy_personal_mood" value = -1 }
+		}
+		if = {
+			limit = { liege = { trait = imbecile } }
+			change_variable = { which = "autonomy_personal_mood" value = -3 }
+		}
+		if = {
+			limit = { liege = { trait = inbred } }
+			change_variable = { which = "autonomy_personal_mood" value = -2 }
+		}
 	}
 	option = { #Happy
 		name = meneth.220.a
