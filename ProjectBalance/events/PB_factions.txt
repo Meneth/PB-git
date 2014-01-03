@@ -546,6 +546,10 @@ character_event = {
 			change_variable = { which = "autonomy_personal_mood" value = 10 }
 		}
 		if = {
+			limit = { liege = { trait = saoshyant_descendant } }
+			change_variable = { which = "autonomy_personal_mood" value = 1 }
+		}
+		if = {
 			limit = { liege = { trait = impaler } }
 			change_variable = { which = "autonomy_personal_mood" value = 3 }
 		}
