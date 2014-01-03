@@ -16,6 +16,7 @@
 	Added correct text for new Italian mounted crossbowmen (cavalry) cultural buildings [zijistark]
 	(PB+SWMH) Fixed the conditions for gender laws being a bit outdated
 	(PB+SWMH) Fixed issues with historical setup in Ethiopia
+	(No Ahistorical Empires) Fixed it breaking Imperial Reconquest
 
 3.3.6
 	Updated retinues to correspond with the newest 2.0.2 beta. If you're not using 2.0.2, retinues might break

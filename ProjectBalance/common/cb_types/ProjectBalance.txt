@@ -65,11 +65,6 @@ remove_internal_peace = {
 			hidden_tooltip = { participation_scaled_prestige = 50 }
 		}
 		hidden_tooltip = {
-			ROOT = {
-				cancel_objective = faction_remove_king_peace
-			}
-		}
-		hidden_tooltip = {
 			any_attacker = {
 				limit = { liege = { character = FROM } }
 				disband_event_forces = faction_revolters
@@ -83,11 +78,6 @@ remove_internal_peace = {
 		ROOT = {
 			prestige = -200
 			imprison = FROM
-		}
-		hidden_tooltip = {
-			ROOT = {
-				cancel_objective = faction_remove_king_peace
-			}
 		}
 		any_defender = {
 			limit = { character = FROM }
@@ -190,11 +180,6 @@ remove_revokation = {
 			hidden_tooltip = { participation_scaled_prestige = 50 }
 		}
 		hidden_tooltip = {
-			ROOT = {
-				cancel_objective = faction_remove_revokation
-			}
-		}
-		hidden_tooltip = {
 			any_attacker = {
 				limit = { liege = { character = FROM } }
 				disband_event_forces = faction_revolters
@@ -208,11 +193,6 @@ remove_revokation = {
 		ROOT = {
 			prestige = -200
 			imprison = FROM
-		}
-		hidden_tooltip = {
-			ROOT = {
-				cancel_objective = faction_remove_revokation
-			}
 		}
 		any_defender = {
 			limit = { character = FROM }
@@ -310,11 +290,6 @@ remove_inheritance = {
 			hidden_tooltip = { participation_scaled_prestige = 50 }
 		}
 		hidden_tooltip = {
-			ROOT = {
-				cancel_objective = faction_remove_inheritance
-			}
-		}
-		hidden_tooltip = {
 			any_attacker = {
 				limit = { liege = { character = FROM } }
 				disband_event_forces = faction_revolters
@@ -328,11 +303,6 @@ remove_inheritance = {
 		ROOT = {
 			prestige = -200
 			imprison = FROM
-		}
-		hidden_tooltip = {
-			ROOT = {
-				cancel_objective = faction_remove_inheritance
-			}
 		}
 		any_defender = {
 			limit = { character = FROM }
@@ -463,11 +433,6 @@ reduce_crown_levies = {
 			hidden_tooltip = { participation_scaled_prestige = 50 }
 		}
 		hidden_tooltip = {
-			ROOT = {
-				cancel_objective = faction_lower_crown_levies
-			}
-		}
-		hidden_tooltip = {
 			any_attacker = {
 				limit = { liege = { character = FROM } }
 				disband_event_forces = faction_revolters
@@ -481,11 +446,6 @@ reduce_crown_levies = {
 		ROOT = {
 			prestige = -200
 			imprison = FROM
-		}
-		hidden_tooltip = {
-			ROOT = {
-				cancel_objective = faction_lower_crown_levies
-			}
 		}
 		any_defender = {
 			limit = { character = FROM }
