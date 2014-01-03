@@ -1874,6 +1874,10 @@ character_event = {
 				FROM = { has_character_flag = faction_autonomy_give_away_county }
 			}
 			modifier = {
+				factor = 2.5
+				FROM = { has_character_flag = faction_autonomy_give_money }
+			}
+			modifier = {
 				factor = 1.5
 				trait = craven
 			}
@@ -1943,6 +1947,7 @@ character_event = {
 					has_character_flag = faction_autonomy_release_prisoners
 					has_character_flag = faction_autonomy_give_away_county
 					has_character_flag = faction_autonomy_abdicate
+					has_character_flag = faction_autonomy_give_money
 				}
 			}
 			liege = {
@@ -1956,8 +1961,11 @@ character_event = {
 		clr_character_flag = faction_autonomy_lower_obligations
 		clr_character_flag = faction_autonomy_no_revocation
 		clr_character_flag = faction_autonomy_no_internal_peace
+		clr_character_flag = faction_autonomy_external_inheritance
 		clr_character_flag = faction_autonomy_release_prisoners
 		clr_character_flag = faction_autonomy_give_away_county
+		clr_character_flag = faction_autonomy_abdicate
+		clr_character_flag = faction_autonomy_give_money
 	}
 	option = {
 		name = meneth.235.b
