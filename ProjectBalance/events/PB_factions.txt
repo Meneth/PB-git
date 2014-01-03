@@ -387,6 +387,10 @@ character_event = {
 			change_variable = { which = "autonomy_personal_mood" value = 2 }
 		}
 		if = {
+			limit = { trait = slothful }
+			change_variable = { which = "autonomy_personal_mood" value = 2 }
+		}
+		if = {
 			limit = { trait = greedy }
 			change_variable = { which = "autonomy_personal_mood" value = -2 }
 		}
