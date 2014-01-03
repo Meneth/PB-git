@@ -99,6 +99,9 @@ meneth.253.desc;Many of our vassals are holding a meeting, discussing their opin
 meneth.254.desc;Many of our vassals are holding a meeting, discussing their opinion of our rule. According to our spymaster they are favoring the status quo. It is no matter to us.;;;;;;;;;;;;;x
 meneth.255.desc;Many of our vassals are holding a meeting, discussing their opinion of our rule. According to our spymaster they are not happy with our rule. If anything comes of it we will know within days.;;;;;;;;;;;;;x
 meneth.256.desc;Our vassals have wisely decided not to act upon our refusal to heed their ultimatum. We should take notice that they might not be so forgiving in the future.;;;;;;;;;;;;;x
+meneth.257.desc;Many of our vassals have decided to cooperate in order to improve their own situation. While this has no direct effect upon us, it does make them a greater potential danger to our rule.;;;;;;;;;;;;;x
+meneth.257.a;Their economy will be improved
+meneth.257.b;Their military will be improved
 meneth.400.desc;It is time we asserted our dominion over Anatolia. We should invade Iconium.;;;;;;;;;;;;;x
 meneth.400.a;To war!;;;;;;;;;;;;;x
 meneth.400.b;I'd rather not;;;;;;;;;;;;;x

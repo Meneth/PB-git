@@ -4196,6 +4196,34 @@ character_event = {
 	}
 }
 
+#Liege alert of military/economic cooperation
+character_event = {
+	id = meneth.257
+	is_triggered_only = yes
+	
+	desc = meneth.257.desc
+	picture = GFX_evt_emissary
+	border = GFX_event_normal_frame_religion
+	option = {
+		trigger = {
+			FROM = { has_character_flag = military_cooperation }
+		}
+		name = meneth.249.a
+		capital_scope = {
+			add_province_modifier = { name = military_cooperation duration = 5475 }
+		}
+	}
+	option = {
+		trigger = {
+			FROM = { has_character_flag = economic_cooperation }
+		}
+		name = meneth.249.b
+		capital_scope = {
+			add_province_modifier = { name = economic_cooperation duration = 5475 }
+		}
+	}
+}
+
 #Give commendation?
 character_event = {
 	id = meneth.251
