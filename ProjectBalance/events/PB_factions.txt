@@ -383,6 +383,10 @@ character_event = {
 			change_variable = { which = "autonomy_personal_mood" value = 2 }
 		}
 		if = {
+			limit = { trait = just }
+			change_variable = { which = "autonomy_personal_mood" value = 2 }
+		}
+		if = {
 			limit = { trait = greedy }
 			change_variable = { which = "autonomy_personal_mood" value = -2 }
 		}
@@ -1700,6 +1704,10 @@ character_event = {
 				factor = 2
 				FROM = { has_character_flag = faction_autonomy_abdicate }
 			}
+			modifier = {
+				factor = 1.5
+				trait = brave
+			}
 		}
 	}
 	option = { #No
@@ -1739,6 +1747,10 @@ character_event = {
 			modifier = {
 				factor = 2
 				FROM = { has_character_flag = faction_autonomy_give_away_county }
+			}
+			modifier = {
+				factor = 1.5
+				trait = craven
 			}
 		}
 	}
