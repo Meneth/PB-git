@@ -1,0 +1,101 @@
+###################################
+#
+# No Ahistorical Empires
+#
+# Id meneth.512 is reserved
+#
+#
+###################################
+
+namespace = meneth
+#Remove ahistorical dejure titles
+narrative_event = {
+	id = meneth.512
+	title = "meneth.200.name"
+	desc = "meneth.200.desc"
+	is_triggered_only = yes
+	
+	picture = "GFX_evt_battle"
+	option = {
+		name = OK
+		k_abyssinia = { de_jure_liege = 0 }
+		k_africa = { de_jure_liege = 0 }
+		k_andalusia = { de_jure_liege = 0 }
+		k_alania = { de_jure_liege = 0 }
+		k_alodia = { de_jure_liege = 0 }
+		k_aquitaine = { de_jure_liege = 0 }
+		k_arabia = { de_jure_liege = 0 }
+		k_aragon = { de_jure_liege = 0 }
+		k_asturias = { de_jure_liege = 0 }
+		k_bosnia = { de_jure_liege = 0 }
+		k_brittany = { de_jure_liege = 0 }
+		k_burgundy = { de_jure_liege = 0 }
+		k_castille = { de_jure_liege = 0 }
+		k_croatia = { de_jure_liege = 0 }
+		k_denmark = { de_jure_liege = 0 }
+		k_egypt = { de_jure_liege = 0 }
+		k_england = { de_jure_liege = 0 }
+		k_finland = { de_jure_liege = 0 }
+		k_france = { de_jure_liege = 0 }
+		k_genoa = { de_jure_liege = 0 }
+		k_ghana = { de_jure_liege = 0 }
+		k_hungary = { de_jure_liege = 0 }
+		k_iceland = { de_jure_liege = 0 }
+		k_ireland = { de_jure_liege = 0 }
+		k_italy = { de_jure_liege = 0 }
+		k_jerusalem = { de_jure_liege = 0 }
+		k_khazaria = { de_jure_liege = 0 }
+		k_leon = { de_jure_liege = 0 }
+		k_lithuania = { de_jure_liege = 0 }
+		k_makuria = { de_jure_liege = 0 }
+		k_mauretania = { de_jure_liege = 0 }
+		k_navarra = { de_jure_liege = 0 }
+		k_norway = { de_jure_liege = 0 }
+		k_novgorod = { de_jure_liege = 0 }
+		k_novgorod_republic = { de_jure_liege = 0 }
+		k_nubia = { de_jure_liege = 0 }
+		k_papal_state = { de_jure_liege = 0 }
+		k_pisa = { de_jure_liege = 0 }
+		k_poland = { de_jure_liege = 0 }
+		k_portugal = { de_jure_liege = 0 }
+		k_scotland = { de_jure_liege = 0 }
+		k_serbia = { de_jure_liege = 0 }
+		k_sicily = { de_jure_liege = 0 }
+		k_spanish_galicia = { de_jure_liege = 0 }
+		k_sweden = { de_jure_liege = 0 }
+		k_venice = { de_jure_liege = 0 }
+		k_wales = { de_jure_liege = 0 }
+		if = {
+			limit = { NOT = { has_global_flag = SWMH } }
+			k_algeria = { de_jure_liege = 0 }
+			k_beja = { de_jure_liege = 0 }
+			k_crimea = { de_jure_liege = 0 }
+			k_dacia = { de_jure_liege = 0 }
+			k_jolof = { de_jure_liege = 0 }
+			k_kiev = { de_jure_liege = 0 }
+			k_oman = { de_jure_liege = 0 }
+			k_semien = { de_jure_liege = 0 }
+			k_somalia = { de_jure_liege = 0 }
+			k_songhai = { de_jure_liege = 0 }
+			k_tunisia = { de_jure_liege = 0 }
+		}
+		if = {
+			limit = { has_global_flag = SWMH }
+			k_ellan_vannin = { de_jure_liege = 0 }
+			k_galicia = { de_jure_liege = 0 }
+			k_geats = { de_jure_liege = 0 }
+			k_maikelebahr = { de_jure_liege = 0 }
+			k_mali = { de_jure_liege = 0 }
+			k_moldau = { de_jure_liege = 0 }
+			k_patrimoniumpetri = { de_jure_liege = 0 }
+			k_polotsk = { de_jure_liege = 0 }
+			k_ruthenia = { de_jure_liege = 0 }
+			k_sardinia = { de_jure_liege = 0 }
+			k_sennar = { de_jure_liege = 0 }
+			k_songhay = { de_jure_liege = 0 }
+			k_takrur = { de_jure_liege = 0 }
+			k_vladimir = { de_jure_liege = 0 }
+			k_wallachia = { de_jure_liege = 0 }
+		}
+	}
+}
