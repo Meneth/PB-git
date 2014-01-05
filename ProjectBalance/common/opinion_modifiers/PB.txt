@@ -23,3 +23,8 @@ opinion_recently_refused_ultimatum = {
 opinion_accepted_ultimatum = {
 	opinion = 25
 }
+opinion_betrayed_autonomy_faction = {
+	opinion = -50
+	prison_reason = yes
+	revoke_reason = yes
+}

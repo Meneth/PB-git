@@ -102,6 +102,13 @@ meneth.256.desc;Our vassals have wisely decided not to act upon our refusal to h
 meneth.257.desc;Many of our vassals have decided to cooperate in order to improve their own situation. While this has no direct effect upon us, it does make them a greater potential danger to our rule.;;;;;;;;;;;;;x
 meneth.257.a;Their economy will be improved
 meneth.257.b;Their military will be improved
+meneth.258.desc;The result of the vote is that we are to revolt. If we have any second thoughts, now is the time to voice them. The war will be declared in three weeks.;;;;;;;;;;;;;x
+meneth.258.a;To war!;;;;;;;;;;;;;x
+meneth.258.b;Remain loyal to our liege;;;;;;;;;;;;;x
+faction_members_angry; This will ruin our relations with everyone in the faction except those who also stay loyal to our liege.;;;;;;;;;;;;;x
+meneth.259.desc;The result of the vote is that there will be no revolt.;;;;;;;;;;;;;x
+meneth.260.desc;It is time to launch our revolt!;;;;;;;;;;;;;x
+meneth.261.desc;Our vassals have decided to act upon our refusal to heed their ultimatum. We must prepare for war starting within a month.;;;;;;;;;;;;;x
 meneth.400.desc;It is time we asserted our dominion over Anatolia. We should invade Iconium.;;;;;;;;;;;;;x
 meneth.400.a;To war!;;;;;;;;;;;;;x
 meneth.400.b;I'd rather not;;;;;;;;;;;;;x

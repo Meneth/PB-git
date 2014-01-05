@@ -1407,6 +1407,7 @@ character_event = {
 			limit = { in_faction = faction_autonomy }
 			character_event = { id = meneth.249 days = 1 } #Alert
 		}
+		liege = { character_event = { id = meneth.257 days = 1 } }
 		set_character_flag = military_cooperation
 		ai_chance = {
 			factor = 1
@@ -1437,6 +1438,7 @@ character_event = {
 			limit = { in_faction = faction_autonomy }
 			character_event = { id = meneth.249 days = 1 } #Alert
 		}
+		liege = { character_event = { id = meneth.257 days = 1 } }
 		set_character_flag = economic_cooperation
 		ai_chance = {
 			factor = 1
@@ -1795,6 +1797,7 @@ character_event = {
 	option = { #Yes
 		name = Yes
 		FROM = { change_variable = { which = "faction_vote" value = 1 } }
+		clr_character_flag = voted_no_autonomy_revolt
 		if = {
 			limit = { tier = duke }
 			FROM = { change_variable = { which = "faction_vote" value = 1 } }
@@ -1838,6 +1841,7 @@ character_event = {
 	option = { #No
 		name = No
 		FROM = { change_variable = { which = "faction_vote" value = -1 } }
+		set_character_flag = voted_no_autonomy_revolt
 		if = {
 			limit = { tier = duke }
 			FROM = { change_variable = { which = "faction_vote" value = -1 } }
@@ -1893,12 +1897,119 @@ character_event = {
 	desc = meneth.235.desc
 	picture = GFX_evt_emissary
 	border = GFX_event_normal_frame_religion
-	
 	option = {
-		name = meneth.235.a
+		name = meneth.235.b
 		trigger = {
 			check_variable = { which = "faction_vote" value = 0 }
 		}
+		any_faction_backer = {
+			limit = { in_faction = faction_autonomy }
+			character_event = { id = meneth.258 } #Alert backers of upcoming revolt
+		}
+		liege = { character_event = { id = meneth.261 } } #Alert liege of upcoming revolt
+		character_event = { id = meneth.260 days = 21 }
+	}
+	option = {
+		name = meneth.235.b
+		trigger = {
+			NOT = { check_variable = { which = "faction_vote" value = 0 } }
+		}
+		hidden_tooltip = {
+			any_faction_backer = {
+				limit = {
+					in_faction = faction_autonomy
+					ai = no
+				}
+				character_event = { id = meneth.259 } #Alert players of no revolt
+			}
+		}
+		liege = { character_event = { id = meneth.256 } } #Alert liege of no revolt
+	}
+}
+
+#Alert of upcoming revolt. Chance to back out
+character_event = {
+	id = meneth.258
+	is_triggered_only = yes
+	
+	desc = meneth.258.desc
+	picture = GFX_evt_emissary
+	border = GFX_event_normal_frame_religion
+	option = {
+		name = meneth.258.a
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = meneth.258.b
+		trigger = { has_character_flag = voted_no_autonomy_revolt }
+		clr_character_flag = left_autonomy_faction
+		set_character_flag = left_autonomy_faction
+		custom_tooltip = { text = faction_members_angry }
+		hidden_tooltip = { character_event = { id = meneth.262 days = 1 } }
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 0
+				NOT = { opinion = { who = LIEGE value = 50 } }
+			}
+			modifier = {
+				factor = 0
+				NOT = { check_variable = { which = "autonomy_personal_mood" value = 0 } }
+			}
+		}
+	}
+}
+
+#Assign opinion for leaving
+character_event = {
+	id = meneth.262
+	is_triggered_only = yes
+	hide_window = yes
+	
+	desc = meneth.258.desc
+	picture = GFX_evt_emissary
+	border = GFX_event_normal_frame_religion
+	immediate = {
+		FROMFROM = {
+			any_faction_backer = {
+				limit = { in_faction = faction_autonomy }
+				opinion = {
+					who = ROOT
+					modifier = opinion_betrayed_autonomy_faction
+					years = 25
+				}
+			}
+		}
+	}
+	option = { name = OK }
+}
+
+#Alert of no revolt
+character_event = {
+	id = meneth.259
+	is_triggered_only = yes
+	
+	desc = meneth.259.desc
+	picture = GFX_evt_emissary
+	border = GFX_event_normal_frame_religion
+	option = {
+		name = OK
+	}
+}
+
+#Revolt happens
+character_event = {
+	id = meneth.260
+	is_triggered_only = yes
+	
+	desc = meneth.260.desc
+	picture = GFX_evt_emissary
+	border = GFX_event_normal_frame_religion
+	
+	option = {
+		name = meneth.235.a
 		liege = { set_character_flag = autonomy_faction_revolt }
 		clr_character_flag = faction_meeting
 		if = {
@@ -1966,13 +2077,6 @@ character_event = {
 		clr_character_flag = faction_autonomy_give_away_county
 		clr_character_flag = faction_autonomy_abdicate
 		clr_character_flag = faction_autonomy_give_money
-	}
-	option = {
-		name = meneth.235.b
-		trigger = {
-			NOT = { check_variable = { which = "faction_vote" value = 0 } }
-		}
-		liege = { character_event = { id = meneth.256 } } #Alert liege of no revolt
 	}
 }
 
@@ -4208,19 +4312,13 @@ character_event = {
 		trigger = {
 			FROM = { has_character_flag = military_cooperation }
 		}
-		name = meneth.249.a
-		capital_scope = {
-			add_province_modifier = { name = military_cooperation duration = 5475 }
-		}
+		name = meneth.257.a
 	}
 	option = {
 		trigger = {
 			FROM = { has_character_flag = economic_cooperation }
 		}
-		name = meneth.249.b
-		capital_scope = {
-			add_province_modifier = { name = economic_cooperation duration = 5475 }
-		}
+		name = meneth.257.b
 	}
 }
 
@@ -4375,6 +4473,19 @@ character_event = {
 	is_triggered_only = yes
 	
 	desc = meneth.256.desc
+	picture = GFX_evt_emissary
+	border = GFX_event_normal_frame_religion
+	option = {
+		name = OK
+	}
+}
+
+#Revolt alert
+character_event = {
+	id = meneth.261
+	is_triggered_only = yes
+	
+	desc = meneth.261.desc
 	picture = GFX_evt_emissary
 	border = GFX_event_normal_frame_religion
 	option = {

@@ -76,6 +76,11 @@ faction_autonomy = {
 			factor = 0
 			primary_title = { is_primary_type_title = yes } # Mercs, the Pope, Holy Orders, etc
 		}
+		modifier = {
+			factor = 0
+			has_character_flag = left_autonomy_faction
+			NOT = { had_character_flag = { flag = left_autonomy_faction days = 30 } }
+		}
 	}
 	
 	success = {
