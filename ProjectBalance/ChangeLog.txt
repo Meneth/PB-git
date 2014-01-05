@@ -18,7 +18,7 @@
 	(PB+SWMH) Fixed issues with historical setup in Ethiopia
 	Fixed No Ahistorical Empires breaking Imperial Reconquest
 	(No Ahistorical Empires) Now works by event instead of history files. Should therefore be less prone to a number of issues
-	Updated the implementation of the New Duel Engine to its latest version. PB's own combat trait assignment event is kept for now
+	Updated the implementation of the New Duel Engine to its latest version. Overhauled its assignment system to give a better starting balance of traits
 
 3.3.6
 	Updated retinues to correspond with the newest 2.0.2 beta. If you're not using 2.0.2, retinues might break
