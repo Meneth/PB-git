@@ -100,9 +100,9 @@ meneth.254.desc;Many of our vassals are holding a meeting, discussing their opin
 meneth.255.desc;Many of our vassals are holding a meeting, discussing their opinion of our rule. According to our spymaster they are not happy with our rule. If anything comes of it we will know within days.;;;;;;;;;;;;;x
 meneth.256.desc;Our vassals have wisely decided not to act upon our refusal to heed their ultimatum. We should take notice that they might not be so forgiving in the future.;;;;;;;;;;;;;x
 meneth.257.desc;Many of our vassals have decided to cooperate in order to improve their own situation. While this has no direct effect upon us, it does make them a greater potential danger to our rule.;;;;;;;;;;;;;x
-meneth.257.a;Their economy will be improved
-meneth.257.b;Their military will be improved
-meneth.258.desc;The result of the vote is that we are to revolt. If we have any second thoughts, now is the time to voice them. The war will be declared in three weeks.;;;;;;;;;;;;;x
+meneth.257.a;Their economy will be improved;;;;;;;;;;;;;x
+meneth.257.b;Their military will be improved;;;;;;;;;;;;;x
+meneth.258.desc;The result of the vote is that we are to revolt. If we have any second thoughts, now is the time to voice them. The war will be declared in three weeks. Note that as a player you'll have to leave the faction manually in order to stay loyal.;;;;;;;;;;;;;x
 meneth.258.a;To war!;;;;;;;;;;;;;x
 meneth.258.b;Remain loyal to our liege;;;;;;;;;;;;;x
 faction_members_angry; This will ruin our relations with everyone in the faction except those who also stay loyal to our liege.;;;;;;;;;;;;;x
