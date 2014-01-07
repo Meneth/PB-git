@@ -7,7 +7,7 @@ poor_warrior = {
 		skilled_warrior
 		master_warrior
 	}
-	customizer = no
+	customizer = yes
 	random = no
 }
 
@@ -19,7 +19,7 @@ trained_warrior = {
 		skilled_warrior
 		master_warrior
 	}
-	customizer = no
+	customizer = yes
 	random = no
 }
 
@@ -34,7 +34,7 @@ skilled_warrior = {
 		trained_warrior
 		master_warrior
 	}
-	customizer = no
+	customizer = yes
 	random = no
 }
 
@@ -49,6 +49,6 @@ master_warrior = {
 		trained_warrior
 		skilled_warrior
 	}
-	customizer = no
+	customizer = yes
 	random = no
 }

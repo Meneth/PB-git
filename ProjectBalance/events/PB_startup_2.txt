@@ -20,6 +20,14 @@ narrative_event = {
 	
 	immediate = {
 		any_playable_ruler = {
+			limit = {
+				NOT = { # only assign a combat trait to characters that don't already have one
+					trait = poor_warrior
+					trait = trained_warrior
+					trait = skilled_warrior
+					trait = master_warrior
+				}
+			}
 			set_variable = { which = "combat_skill" value = 0 }
 			if = {
 				limit = { trait = misguided_warrior }
@@ -58,6 +66,10 @@ narrative_event = {
 				change_variable = { which = "combat_skill" value = 2 }
 			}
 			if = {
+				limit = { trait = agile }
+				change_variable = { which = "combat_skill" value = 1 }
+			}
+			if = {
 				limit = { trait = weak }
 				change_variable = { which = "combat_skill" value = -2 }
 			}
@@ -72,6 +84,10 @@ narrative_event = {
 			if = {
 				limit = { trait = inbred }
 				change_variable = { which = "combat_skill" value = -2 }
+			}
+			if = {
+				limit = { trait = clubfooted }
+				change_variable = { which = "combat_skill" value = -1 }
 			}
 			if = {
 				limit = { trait = slothful }
@@ -111,6 +127,7 @@ narrative_event = {
 				}
 				add_trait = poor_warrior
 			}
+			set_variable = { which = "combat_skill" value = 0 } # free memory (per character)
 		}
 		if = {
 			limit = { year = 1066 }
