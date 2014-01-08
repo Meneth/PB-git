@@ -1,3 +1,6 @@
+3.4.1
+	Combat/fighter traits (for the duel engine) are again customizable in the Ruler Designer [zijistark]
+
 3.4.0
 	Added a new faction system. All crown authority factions have been merged into a single faction that is more responsive to the actions of their liege, and have more actions they can take. Every 3 to 7 years they hold a meeting to determine what action they'll take. If they're in a bad mood they might issue an ultimatum to their liege, but if treated well they will not be much of a threat. They're potentially a much greater threat than the old factions however, as the faction is global to the realm rather than specific to a single dejure kingdom or empire
 	Fixed a few minor event bugs
