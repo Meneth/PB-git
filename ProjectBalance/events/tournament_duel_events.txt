@@ -7,99 +7,44 @@ character_event = { # Tournament Joust Start (hidden)
 	desc = EVTDESCjoust.0
 	picture = GFX_evt_joust
 	
-	hide_FROM = yes
+	hide_from = yes
 	
 	capable_only = yes
 	min_age = 15
+	prisoner = no
 		
 	trigger = {
-		prisoner = no
-		is_pregnant = no
+		ai = yes
 		NOT = { trait = maimed }
+		NOT = { trait = joust_target }
 		NOT = { check_variable = { which = tournament_rounds value = 8 } }
 		NOT = { check_variable = { which = tournament_loss value = 2 } }
 		has_character_flag = attending_tournament
 		NOT = { has_character_flag = tournament_spectator }
 		NOT = { has_character_modifier = jousting }
 		NOT = { has_character_flag = no_more_jousts }
-		NOT = { has_character_flag = winner }
-		NOT = { has_character_flag = second_place }
-		NOT = { has_character_flag = third_place }
+		NOT = { has_character_flag = tournament_winner }
+		NOT = { has_character_flag = tournament_second_place }
+		NOT = { has_character_flag = tournament_third_place }
 		OR = {
 			NOT = { has_character_flag = jousted_tournament }
 			had_character_flag = { flag = jousted_tournament days = 30 }
 		}
 		OR = {
 			AND = {
-				has_character_flag = epic_tournament
-				has_character_flag = tourny_in_progress
+				higher_tier_than = DUKE
 				has_character_flag = tournament_begins
-				NOT = { has_character_flag = third_place }
 				NOT = { has_character_flag = tournament_has_ended }
+				NOT = { has_character_flag = third_place }
 			}
 			top_liege = {
-				has_character_flag = epic_tournament
-				has_character_flag = tourny_in_progress
+				reverse_has_opinion_modifier = { who = ROOT modifier = opinion_attending_tournament }
 				has_character_flag = tournament_begins
-				NOT = { has_character_flag = third_place }
 				NOT = { has_character_flag = tournament_has_ended }
-			}
-			top_liege = {
-				any_realm_lord = {
-						has_character_flag = epic_tournament
-					has_character_flag = tourny_in_progress
-						has_character_flag = tournament_begins
-					NOT = { has_character_flag = third_place }
-					NOT = { has_character_flag = tournament_has_ended }
-				}
+				NOT = { has_character_flag = third_place }
 			}
 		}
-		top_liege = {
-			any_realm_character = {
-				prisoner = no
-				is_pregnant = no
-				age = 15
-				NOT = { trait = incapable }
-				NOT = { trait = maimed }
-				OR = {
-					ai = yes
-					ROOT = { ai = yes }
-				}
-				NOT = { check_variable = { which = tournament_rounds value = 8 } }
-				NOT = { check_variable = { which = tournament_loss value = 2 } }
-				has_character_flag = attending_tournament
-				NOT = { has_character_flag = tournament_spectator }
-				OR = {
-					AND = {
-						has_character_flag = king_tourny
-						ROOT = { has_character_flag = king_tourny }
-					}
-					AND = {
-						has_character_flag = grand_tourny
-						ROOT = { has_character_flag = grand_tourny }
-					}
-					AND = {
-						has_character_flag = normal_tourny
-						ROOT = { has_character_flag = normal_tourny }
-					}
-					AND = {
-						has_character_flag = small_tourny
-						ROOT = { has_character_flag = small_tourny }
-					}
-				}
-				NOT = { has_opinion_modifier = { who = ROOT modifier = opinion_jousting_target } }
-				NOT = { character = ROOT }
-				NOT = { has_character_flag = winner }
-				NOT = { has_character_flag = second_place }
-				NOT = { has_character_flag = third_place }
-				NOT = { has_character_flag = no_more_jousts }
-				NOT = { has_character_modifier = jousting }
-				OR = {
-					NOT = { has_character_flag = jousted_tournament }
-					had_character_flag = { flag = jousted_tournament days = 30 }
-				}
-			}
-		}				
+		NOT = { top_liege = { has_character_modifier = ongoing_joust } }
 	}
 	
 	mean_time_to_happen = {
@@ -118,56 +63,60 @@ character_event = { # Tournament Joust Start (hidden)
 		}
 		top_liege = {
 			random_realm_character = {
-				limit = { 
+				limit = {
 					prisoner = no
 					is_pregnant = no
 					age = 15
 					NOT = { trait = incapable }
 					NOT = { trait = maimed }
-					OR = { 
-						ai = yes
-						ROOT = { ai = yes }
-					}
+					NOT = { trait = joust_target }
 					NOT = { check_variable = { which = tournament_rounds value = 8 } }
 					NOT = { check_variable = { which = tournament_loss value = 2 } }
 					has_character_flag = attending_tournament
 					NOT = { has_character_flag = tournament_spectator }
-					OR = {
-						AND = {
-							has_character_flag = king_tourny
-							ROOT = { has_character_flag = king_tourny }
-						}
-						AND = {
-							has_character_flag = grand_tourny
-							ROOT = { has_character_flag = grand_tourny }
-						}
-						AND = {
-							has_character_flag = normal_tourny
-							ROOT = { has_character_flag = normal_tourny }
-						}
-						AND = {
-							has_character_flag = small_tourny
-							ROOT = { has_character_flag = small_tourny }
-						}
-					}
 					NOT = { has_opinion_modifier = { who = ROOT modifier = opinion_jousting_target } }
 					NOT = { character = ROOT }
-					NOT = { has_character_flag = winner }
-					NOT = { has_character_flag = second_place }
-					NOT = { has_character_flag = third_place }
+					same_realm = ROOT
+					NOT = { has_character_flag = tournament_winner }
+					NOT = { has_character_flag = tournament_second_place }
+					NOT = { has_character_flag = tournament_third_place }
 					NOT = { has_character_flag = no_more_jousts }
 					NOT = { has_character_modifier = jousting }
 					OR = {
 						NOT = { has_character_flag = jousted_tournament }
 						had_character_flag = { flag = jousted_tournament days = 30 }
 					}
+					OR = {
+						AND = {
+							higher_tier_than = BARON
+							ROOT = { higher_tier_than = BARON }
+						}
+						AND = {
+							OR = {
+								tier = BARON
+								is_ruler = no
+							}
+							OR = {
+								ROOT = { tier = BARON }
+								ROOT = { is_ruler = no }
+							}
+						}
+					}
+					top_liege = {
+						reverse_has_opinion_modifier = { who = PREV modifier = opinion_attending_tournament } #PREV = random_realm_character
+					}
 				}
 				opinion = { who = ROOT modifier = opinion_jousting_target }
 				reverse_opinion = { who = ROOT modifier = opinion_jousting_target }
+				# Target lock
 				add_character_modifier = {
 					name = jousting
-					duration = 30
+					duration = 20
 				}
+			}
+			add_character_modifier = {
+				name = ongoing_joust
+				duration = 2
 			}
 		}
 	}
@@ -199,21 +148,21 @@ character_event = {
 		name = EVTOPTAjoust.1
 		FROM = { character_event = { id = joust.2 tooltip = EVTTOOLTIPjoust.2 } }
 		ai_chance = {
-			factor = 85
+			factor = 80
 			modifier = {
 				factor = 2
 				trait = poor_warrior
 			}
 			modifier = {
-				factor = 4
+				factor = 3
 				trait = trained_warrior
 			}
 			modifier = {
-				factor = 6
+				factor = 4
 				trait = skilled_warrior
 			}
 			modifier = {
-				factor = 8
+				factor = 5
 				trait = master_warrior
 			}
 			modifier = {
@@ -221,7 +170,7 @@ character_event = {
 				trait = duelist
 			}
 			modifier = {
-				factor = 3
+				factor = 2
 				trait = brave
 			}
 			modifier = {
@@ -245,6 +194,7 @@ character_event = {
 		if = {
 			limit = { 
 				NOT = { trait = craven }
+				NOT = { trait = wounded }
 				NOT = { check_variable = { which = tournament_rounds value = 1 } } #someone who has jousted already is not a coward
 			}
 			random = {
@@ -255,7 +205,11 @@ character_event = {
 		set_character_flag = no_more_jousts
 		set_variable = { which = tournament_loss value = 2 }
 		ai_chance = {
-			factor = 15
+			factor = 20
+			modifier = {
+				factor = 0
+				FROM = { ai = no }
+			}
 			modifier = {
 				factor = 2
 				FROM = { trait = poor_warrior }
@@ -273,15 +227,15 @@ character_event = {
 				FROM = { trait = master_warrior }
 			}
 			modifier = {
-				factor = 2
+				factor = 3
 				FROM = { trait = duelist }
 			}
 			modifier = {
-				factor = 1.5
+				factor = 2
 				FROM = { trait = strong }
 			}
 			modifier = {
-				factor = 5
+				factor = 2
 				trait = craven
 			}
 			modifier = {
@@ -305,7 +259,7 @@ character_event = {
 				trait = leper
 			}
 			modifier = {
-				factor = 3
+				factor = 2
 				trait = wounded
 				NOT = { trait = lunatic }
 				NOT = { trait = brave }
@@ -313,7 +267,7 @@ character_event = {
 				NOT = { trait = wroth }
 			}
 			modifier = {
-				factor = 20
+				factor = 10
 				trait = blinded
 				NOT = { trait = lunatic }
 				NOT = { trait = brave }
@@ -339,29 +293,31 @@ character_event = {
 		set_character_flag = flag_duel_tourney
 		set_character_flag = tournament_jouster
 		clr_character_flag = jousted_tournament
-		FROM = { set_character_flag = flag_duel_friendly }
-		FROM = { set_character_flag = flag_duel_tourney }
-		FROM = { set_character_flag = tournament_jouster }
-		FROM = { clr_character_flag = jousted_tournament }
+		FROM = { 
+			set_character_flag = flag_duel_friendly
+			set_character_flag = flag_duel_tourney
+			set_character_flag = tournament_jouster
+			clr_character_flag = jousted_tournament
+		}
 		
 		# Begin joust
-		hidden_tooltip = { e_rebels = { holder_scope = { character_event = { id = duel.1 } } } }
+		hidden_tooltip = { e_rebels = { holder_scope = { character_event = { id = joustduel.1 } } } }
 		ai_chance = {
-			factor = 85
+			factor = 80
 			modifier = {
 				factor = 2
 				trait = poor_warrior
 			}
 			modifier = {
-				factor = 4
+				factor = 3
 				trait = trained_warrior
 			}
 			modifier = {
-				factor = 6
+				factor = 4
 				trait = skilled_warrior
 			}
 			modifier = {
-				factor = 8
+				factor = 5
 				trait = master_warrior
 			}
 			modifier = {
@@ -369,7 +325,7 @@ character_event = {
 				trait = duelist
 			}
 			modifier = {
-				factor = 3
+				factor = 2
 				trait = brave
 			}
 			modifier = {
@@ -393,6 +349,7 @@ character_event = {
 		if = {
 			limit = { 
 				NOT = { trait = craven }
+				NOT = { trait = wounded }
 				NOT = { check_variable = { which = tournament_rounds value = 1 } } #someone who has jousted already is not a coward
 			}
 			random = {
@@ -403,7 +360,11 @@ character_event = {
 		set_character_flag = no_more_jousts
 		set_variable = { which = tournament_loss value = 2 }
 		ai_chance = {
-			factor = 15
+			factor = 20
+			modifier = {
+				factor = 0
+				FROM = { ai = no }
+			}
 			modifier = {
 				factor = 2
 				FROM = { trait = poor_warrior }
@@ -421,15 +382,15 @@ character_event = {
 				FROM = { trait = master_warrior }
 			}
 			modifier = {
-				factor = 2
+				factor = 3
 				FROM = { trait = duelist }
 			}
 			modifier = {
-				factor = 1.5
+				factor = 2
 				FROM = { trait = strong }
 			}
 			modifier = {
-				factor = 3
+				factor = 2
 				trait = craven
 			}
 			modifier = {
@@ -453,7 +414,7 @@ character_event = {
 				trait = leper
 			}
 			modifier = {
-				factor = 3
+				factor = 2
 				trait = wounded
 				NOT = { trait = lunatic }
 				NOT = { trait = brave }
@@ -461,7 +422,7 @@ character_event = {
 				NOT = { trait = wroth }
 			}
 			modifier = {
-				factor = 20
+				factor = 10
 				trait = blinded
 				NOT = { trait = lunatic }
 				NOT = { trait = brave }
@@ -524,7 +485,7 @@ character_event = {
 			FROMFROM = { change_variable = { which = tournament_rounds value = 1 } }
 			FROMFROM = { character_event = { id = 70011 days = 1 } }
 		}
-		prestige = 0
+		tooltip = { }
 	}
 }
 
@@ -546,7 +507,7 @@ character_event = {
 			FROMFROM = { change_variable = { which = tournament_rounds value = 1 } }
 			FROMFROM = { character_event = { id = 70010 days = 1 } }
 		}
-		prestige = 0
+		tooltip = { }
 	}
 }
 
@@ -568,7 +529,7 @@ character_event = {
 			FROMFROM = { change_variable = { which = tournament_rounds value = 1 } }
 			FROMFROM = { character_event = { id = 70009 days = 1 } }
 		}
-		prestige = 0
+		tooltip = { }
 	}
 }
 
