@@ -19,11 +19,6 @@ culture = bedouin_arabic
 religion = shiite
 
 # History
-867.1.1 = {
-	b_basra = ct_trade_post_1
-	b_basra = ct_trade_post_2
-	b_basra = ct_trade_post_3
-}
 1066.1.1 = {
 	trade_post = b_abdullid
 }

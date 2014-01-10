@@ -7,9 +7,9 @@ title = c_guines
 max_settlements = 4
 b_guines = castle
 b_saintomer = temple
+b_calais = city #Needed for trade post
 
 
-b_calais = city
 #b_ardres = castle
 #b_bourbourg = castle
 #b_marck = castle
@@ -22,6 +22,5 @@ religion = catholic
 
 # History
 
-867.1.1 = { b_calais = ct_trade_post_1 }
 1315.1.1 = { trade_post = b_vorrade }
 

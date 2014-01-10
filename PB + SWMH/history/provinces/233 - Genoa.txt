@@ -34,11 +34,7 @@ religion = catholic
 
 # History
 
-867.1.1 = { 
-	b_genoa = ct_trade_post_1
-	b_genoa = ct_trade_post_2
-	b_genoa = ct_trade_post_3
-	b_genoa = ct_trade_post_4
+867.1.1 = {
 	b_genoa = ct_wall_1
 	b_genoa = ct_wall_2
 	b_genoa = ct_marketplace_1

@@ -26,7 +26,6 @@ religion = norse_pagan
 	b_ath_cliath = ca_militia_barracks_1
 	b_ath_cliath = ca_wall_1
 	b_dublin = ct_marketplace_1
-	b_dublin = ct_trade_post_1
 }
 1000.1.1 = { religion = catholic } 
 1028.1.1 = {

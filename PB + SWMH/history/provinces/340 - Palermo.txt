@@ -32,8 +32,6 @@ religion = sunni
 
 # History
 867.1.1 = { 
-	b_palermo = ct_trade_post_1
-	b_palermo = ct_trade_post_2
 	b_palermo = ct_wall_1
 	b_palermo = ct_wall_2
 	b_palermo = ct_marketplace_1

@@ -7,7 +7,7 @@ title = c_gwent
 max_settlements = 3
 b_caerwent = castle
 #b_caerleon = castle
-b_newport = city
+b_newport = city #Needed for trade post
 
 
 # Misc
@@ -16,4 +16,3 @@ religion = catholic
 terrain = hills
 
 # History
-867.1.1 = { b_newport = ct_trade_post_1 }

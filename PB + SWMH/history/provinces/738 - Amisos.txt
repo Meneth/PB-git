@@ -8,7 +8,7 @@ max_settlements = 4
 b_amisos = castle
 b_thermodon = temple
 #b_zela = castle
-b_neokaisarea = city
+b_neokaisarea = city #Needed for trade post
 
 # Misc
 culture = greek
@@ -17,7 +17,7 @@ terrain = mountain
 
 # History
 
-867.1.1 = { b_neokaisarea = ct_trade_post_1 }
+
 
 1214.1.1 = { culture = turkish }
 1214.1.1 = { religion = sunni }

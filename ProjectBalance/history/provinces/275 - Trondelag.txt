@@ -21,10 +21,12 @@ religion = norse_pagan
 # History
 867.1.1 = {
 	b_trondheim = ct_marketplace_1
+	b_audunborg = ca_shipyard_1
+	b_steinvikholm = ca_shipyard_1
+	b_nidaros = tp_shipyard_1
 }
 1066.1.1 = {
 	culture = norwegian
 	religion = catholic
 }
-1066.1.1 = { b_trondheim = ct_trade_post_1 }
 1066.1.1 = { trade_post = b_svinfellingar }

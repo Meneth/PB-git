@@ -20,7 +20,6 @@ culture = bedouin_arabic
 religion = sunni
 
 # History
-867.1.1 = { b_aden = ct_trade_post_1 }
 1066.1.1 = {
 	capital = b_aden
 	trade_post = b_sulaihid

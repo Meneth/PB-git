@@ -20,7 +20,6 @@ religion = sunni
 
 
 # History
-867.1.1 = { b_gandia = ct_trade_post_1 }
 1094.1.1 = { culture = castillan }
 1094.1.1 = { religion = catholic }
 1102.1.1 = { culture = andalusian_arabic }

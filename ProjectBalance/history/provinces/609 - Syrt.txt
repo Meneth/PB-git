@@ -19,7 +19,6 @@ culture = bolghar
 religion = tengri_pagan
 
 # History
-
 1227.1.1 = { religion = sunni } 
 
 #Mongol Invasion

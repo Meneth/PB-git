@@ -22,10 +22,6 @@ religion = druze
 # History
 
 867.1.1 = { 
-	b_marabout = ct_trade_post_1
-	b_marabout = ct_trade_post_2
-	b_marabout = ct_trade_post_3
-	b_marabout = ct_trade_post_4
 	b_abukir = ca_keep_1
 	b_abukir = ca_training_grounds_1
 	b_abukir = ca_stable_1

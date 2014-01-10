@@ -30,8 +30,6 @@ terrain = hills
 	b_amalfi = ct_training_grounds_1
 	b_amalfi = ct_shipyard_1
 	b_sorrento = ca_shipyard_1
-	b_amalfi = ct_trade_post_1
-	b_amalfi = ct_trade_post_2
 }
 870.1.1 = { capital = b_sorrento }
 1140.1.1 = { culture = neapolitan }

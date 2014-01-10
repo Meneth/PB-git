@@ -21,6 +21,8 @@ religion = norse_pagan
 # History
 867.1.1 = {
 	b_bergen = ct_marketplace_1
+	b_bergenhus = ca_shipyard_1
+	b_kinsarvik = tp_shipyard_1
 }
 1066.1.1 = {
 	culture = norwegian

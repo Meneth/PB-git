@@ -9,7 +9,7 @@ b_guines = castle
 b_saintomer = castle
 b_coulogne = temple
 
-b_calais = city
+b_calais = city #Needed for trade post
 
 #b_dunkerque = city
 #b_bourbourg = castle
@@ -22,7 +22,5 @@ culture = frankish
 religion = catholic
 
 # History
-
-867.1.1 = { b_calais = ct_trade_post_1 }
 1315.1.1 = { trade_post = b_vorrade }
 

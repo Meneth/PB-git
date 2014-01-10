@@ -19,10 +19,6 @@ culture = andalusian_arabic
 religion = sunni
 
 # History
-867.1.1 = {
-	b_setubal = ct_trade_post_1
-	b_setubal = ct_trade_post_2
-}
 1121.1.1 = { trade_post = b_spinola }
 1162.1.1 = { culture = portuguese }
 1162.1.1 = { religion = catholic }

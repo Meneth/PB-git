@@ -17,5 +17,4 @@ religion = druze
 
 # History
 
-867.1.1 = { b_atbara = ct_trade_post_1 }
 1187.1.1 = { b_soba = castle } 

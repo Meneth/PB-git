@@ -23,7 +23,8 @@ religion = norse_pagan
 # History
 867.1.1 = {
 	b_birka = ct_marketplace_1
-	b_sigtuna = ct_trade_post_1
+	b_uppsala = tp_shipyard_1
+	b_hatuna = ca_shipyard_1
 }
 960.1.1 = {
 	b_birka = 0

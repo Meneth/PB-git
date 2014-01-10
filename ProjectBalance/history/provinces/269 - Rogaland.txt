@@ -20,6 +20,9 @@ culture = norse
 religion = norse_pagan
 
 # History
+867.1.1 = {
+	b_eikundarsund = ca_shipyard_1
+}
 1066.1.1 = {
 	culture = norwegian
 	religion = catholic
