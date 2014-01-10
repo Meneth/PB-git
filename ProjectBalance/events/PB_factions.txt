@@ -415,11 +415,11 @@ character_event = {
 			change_variable = { which = "autonomy_personal_mood" value = -5 }
 		}
 		if = {
-			limit = { liege = { demesne_efficiency = 1.01 } } #Over demesne limit
+			limit = { liege = { NOT = { demesne_efficiency = 1 } } } #Over demesne limit
 			change_variable = { which = "autonomy_personal_mood" value = -2 }
 		}
 		if = {
-			limit = { liege = { demesne_efficiency = 1.5 } } #Over demesne limit
+			limit = { liege = { NOT = { demesne_efficiency = 0.8 } } } #Over demesne limit
 			change_variable = { which = "autonomy_personal_mood" value = -3 }
 		}
 		if = {
@@ -1251,7 +1251,7 @@ character_event = {
 	option = { #Demand that liege give away a title
 		trigger = {
 			liege = {
-				demesne_efficiency = 1.01 #Over demesne limit
+				NOT = { demesne_efficiency = 1 } #Over demesne limit
 				any_demesne_title = {
 					tier = count #Has a county to give away
 					can_be_given_away = yes
@@ -1274,19 +1274,19 @@ character_event = {
 			factor = 2
 			modifier = {
 				factor = 2
-				liege = { demesne_efficiency = 1.2 }
+				NOT = { demesne_efficiency = 0.9 }
 			}
 			modifier = {
 				factor = 2
-				liege = { demesne_efficiency = 1.4 }
+				liege = { demesne_efficiency = 0.8 }
 			}
 			modifier = {
 				factor = 2
-				liege = { demesne_efficiency = 1.5 }
+				liege = { demesne_efficiency = 0.65 }
 			}
 			modifier = {
 				factor = 10
-				liege = { demesne_efficiency = 2 }
+				liege = { demesne_efficiency = 0.5 }
 			}
 		}
 	}
@@ -3328,19 +3328,19 @@ character_event = {
 			}
 			modifier = {
 				factor = 2
-				liege = { demesne_efficiency = 1.2 }
+				NOT = { liege = { demesne_efficiency = 0.9 } }
 			}
 			modifier = {
 				factor = 2
-				liege = { demesne_efficiency = 1.4 }
+				NOT = { liege = { demesne_efficiency = 0.8 } }
 			}
 			modifier = {
 				factor = 2
-				liege = { demesne_efficiency = 1.5 }
+				NOT = { liege = { demesne_efficiency = 0.65 } }
 			}
 			modifier = {
 				factor = 10
-				liege = { demesne_efficiency = 2 }
+				NOT = { liege = { demesne_efficiency = 0.5 } }
 			}
 		}
 	}
