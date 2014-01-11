@@ -4,6 +4,7 @@
 	The starting trade posts are now built by event rather than using the history files, simplifying maintenance of PB, and reducing the chance of bugs
 	Fixed the Autonomy faction being able to demand a county be given away when their liege was under, rather than over, the demesne limit
 	(PB+SWMH) Tweaks to culture/religion in the Caucasus
+	Hamburg now has a tier 2 center of trade
 
 3.4.0
 	Added a new faction system. All crown authority factions have been merged into a single faction that is more responsive to the actions of their liege, and have more actions they can take. Every 3 to 7 years they hold a meeting to determine what action they'll take. If they're in a bad mood they might issue an ultimatum to their liege, but if treated well they will not be much of a threat. They're potentially a much greater threat than the old factions however, as the faction is global to the realm rather than specific to a single dejure kingdom or empire

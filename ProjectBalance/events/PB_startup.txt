@@ -172,6 +172,10 @@ narrative_event = {
 			add_building = ct_trade_post_1
 			add_building = ct_trade_post_2
 		}
+		b_hamburg = {
+			add_building = ct_trade_post_1
+			add_building = ct_trade_post_2
+		}
 		b_paris = {
 			add_building = ct_trade_post_1
 			add_building = ct_trade_post_2
