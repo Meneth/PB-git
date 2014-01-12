@@ -2,10 +2,21 @@ decisions = {
 	#Show loan decisions
 	toggle_loan_decisions = {
 		potential = {
-			ai = no
+			OR = {
+				religion_group = christian
+				religion_group = muslim
+				religion_group = zoroastrian_group
+				has_character_flag = loan_decisions
+			}
 			OR = {
 				prisoner = no
 				has_character_flag = loan_decisions
+			}
+		}
+		allow = {
+			NOT = { 
+				has_character_modifier = expelled_jewish
+				top_liege = { has_character_modifier = expelled_jewish }
 			}
 		}
 		effect = {
@@ -36,19 +47,36 @@ decisions = {
 			prisoner = no
 			NOT = { has_character_modifier = small_loan }
 			has_character_flag = loan_decisions
+			OR = {
+				religion_group = christian
+				religion_group = muslim
+				religion_group = zoroastrian_group
+			}
 		}
 		allow = {
+			NOT = { 
+				has_character_modifier = expelled_jewish
+				top_liege = { has_character_modifier = expelled_jewish }
+			}
 			yearly_income = 10
 		}
 		effect = {
 			add_character_modifier = {
 				name = small_loan
 				duration = -1
+				inherit = yes
 			}
 			wealth = 100
 		}
 		ai_will_do = {
-			factor = 0
+			factor = 1
+			modifier = {
+				factor = 0
+				wealth = 0
+			}
+			modifier = {
+				factor = 0.01 # Slow it down
+			}
 		}
 	}
 	#Medium loan - 200
@@ -57,8 +85,17 @@ decisions = {
 			prisoner = no
 			NOT = { has_character_modifier = medium_loan }
 			has_character_flag = loan_decisions
+			OR = {
+				religion_group = christian
+				religion_group = muslim
+				religion_group = zoroastrian_group
+			}
 		}
 		allow = {
+			NOT = { 
+				has_character_modifier = expelled_jewish
+				top_liege = { has_character_modifier = expelled_jewish }
+			}
 			OR = {
 				higher_tier_than = count
 				is_patrician = yes
@@ -69,11 +106,23 @@ decisions = {
 			add_character_modifier = {
 				name = medium_loan
 				duration = -1
+				inherit = yes
 			}
 			wealth = 200
 		}
 		ai_will_do = {
-			factor = 0
+			factor = 1
+			modifier = {
+				factor = 0
+				wealth = 0
+			}
+			modifier = {
+				factor = 0
+				NOT = { has_character_modifier = small_loan }
+			}
+			modifier = {
+				factor = 0.01 # Slow it down
+			}
 		}
 	}
 	#Large loan - 400
@@ -82,8 +131,17 @@ decisions = {
 			prisoner = no
 			NOT = { has_character_modifier = large_loan }
 			has_character_flag = loan_decisions
+			OR = {
+				religion_group = christian
+				religion_group = muslim
+				religion_group = zoroastrian_group
+			}
 		}
 		allow = {
+			NOT = { 
+				has_character_modifier = expelled_jewish
+				top_liege = { has_character_modifier = expelled_jewish }
+			}
 			OR = {
 				higher_tier_than = duke
 				is_merchant_republic = yes
@@ -94,11 +152,27 @@ decisions = {
 			add_character_modifier = {
 				name = large_loan
 				duration = -1
+				inherit = yes
 			}
 			wealth = 400
 		}
 		ai_will_do = {
-			factor = 0
+			factor = 1
+			modifier = {
+				factor = 0
+				wealth = 0
+			}
+			modifier = {
+				factor = 0
+				NOT = { has_character_modifier = small_loan }
+			}
+			modifier = {
+				factor = 0
+				NOT = { has_character_modifier = medium_loan }
+			}
+			modifier = {
+				factor = 0.01 # Slow it down
+			}
 		}
 	}
 	#Huge loan - 800
@@ -107,8 +181,17 @@ decisions = {
 			prisoner = no
 			NOT = { has_character_modifier = huge_loan }
 			has_character_flag = loan_decisions
+			OR = {
+				religion_group = christian
+				religion_group = muslim
+				religion_group = zoroastrian_group
+			}
 		}
 		allow = {
+			NOT = { 
+				has_character_modifier = expelled_jewish
+				top_liege = { has_character_modifier = expelled_jewish }
+			}
 			higher_tier_than = duke
 			yearly_income = 80
 		}
@@ -116,11 +199,31 @@ decisions = {
 			add_character_modifier = {
 				name = huge_loan
 				duration = -1
+				inherit = yes
 			}
 			wealth = 800
 		}
 		ai_will_do = {
-			factor = 0
+			factor = 1
+			modifier = {
+				factor = 0
+				wealth = 0
+			}
+			modifier = {
+				factor = 0
+				NOT = { has_character_modifier = small_loan }
+			}
+			modifier = {
+				factor = 0
+				NOT = { has_character_modifier = medium_loan }
+			}
+			modifier = {
+				factor = 0
+				NOT = { has_character_modifier = large_loan }
+			}
+			modifier = {
+				factor = 0.01 # Slow it down
+			}
 		}
 	}
 	#Repay small loan - 100
@@ -136,7 +239,14 @@ decisions = {
 			wealth = -110
 		}
 		ai_will_do = {
-			factor = 0
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { wealth = 150 }
+			}
+			modifier = {
+				factor = 0.1 # Slow it down
+			}
 		}
 	}
 	#Repay medium loan - 200
@@ -152,7 +262,14 @@ decisions = {
 			wealth = -220
 		}
 		ai_will_do = {
-			factor = 0
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { wealth = 300 }
+			}
+			modifier = {
+				factor = 0.1 # Slow it down
+			}
 		}
 	}
 	#Repay large loan - 400
@@ -168,7 +285,14 @@ decisions = {
 			wealth = -440
 		}
 		ai_will_do = {
-			factor = 0
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { wealth = 550 }
+			}
+			modifier = {
+				factor = 0.1 # Slow it down
+			}
 		}
 	}
 	#Repay huge loan - 800
@@ -184,7 +308,14 @@ decisions = {
 			wealth = -880
 		}
 		ai_will_do = {
-			factor = 0
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { wealth = 1000 }
+			}
+			modifier = {
+				factor = 0.1 # Slow it down
+			}
 		}
 	}
 }

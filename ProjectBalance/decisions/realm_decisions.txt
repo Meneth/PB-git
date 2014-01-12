@@ -1080,8 +1080,20 @@ decisions = {
 		}
 		effect = {
 			if = {
-				limit = { has_character_modifier = borrowed_from_jews }
-				remove_character_modifier = borrowed_from_jews
+				limit = { has_character_modifier = small_loan }
+				remove_character_modifier = small_loan
+			}
+			if = {
+				limit = { has_character_modifier = medium_loan }
+				remove_character_modifier = medium_loan
+			}
+			if = {
+				limit = { has_character_modifier = large_loan }
+				remove_character_modifier = large_loan
+			}
+			if = {
+				limit = { has_character_modifier = huge_loan }
+				remove_character_modifier = huge_loan
 			}
 			add_character_modifier = {
 				name = expelled_jewish
