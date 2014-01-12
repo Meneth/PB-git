@@ -14,9 +14,12 @@ decisions = {
 			}
 		}
 		allow = {
-			NOT = { 
-				has_character_modifier = expelled_jewish
-				top_liege = { has_character_modifier = expelled_jewish }
+			OR = {
+				NOT = {
+					has_character_modifier = expelled_jewish
+					top_liege = { has_character_modifier = expelled_jewish }
+				}
+				has_character_flag = loan_decisions
 			}
 		}
 		effect = {
