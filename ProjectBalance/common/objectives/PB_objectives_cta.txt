@@ -1,9 +1,9 @@
 ##############################################################
-# Project Balance [CTA] ambitions (Combat Trait Advancement) #
+# Project Balance: Combat Trait Advancement (CTA): Ambitions #
 # zijistark <azrinon@gmail.com>                              #
 ##############################################################
 
-#No combat trait -> poor_warrior
+# no combat trait -> poor_warrior
 obj_cta_0 = {
 	type = character
 	

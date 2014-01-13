@@ -3,21 +3,25 @@
 #                                           #
 # Events to complement the integrated New   #
 # Duel Engine with combat trait advancement #
+# via:                                      #
+# - cta.0, on_combat_pulse                  #
+# - cta.10, victorious duel engine output   #
 #                                           #
 # zijistark <azrinon@gmail.com>             #
 #############################################
 
 namespace = cta
 
+# cta.0
 # on_combat_pulse on_action event:
 #
-# character either advances to 1/2-progress toward next level
-# or to next level if they already reached 1/2-progress point.
+# character linearly advances through the 3 experience point (XP)
+# tiers required to level-up their combat trait.
 #
-# valid for all characters that can take the ambition (could
-# be open to more), whether they've enabled ambition or not.
-# of course, enabling the ambition dramatically increases the
-# odds of this event firing.
+# valid for all characters that can take the ambition (could be
+# open to more), whether they've enabled the ambition or not. of
+# course, enabling the ambition dramatically increases the odds
+# of this event firing.
 
 character_event = {
 	id = cta.0
@@ -166,11 +170,13 @@ character_event = {
 	option = {
 		name = OK # reminder: event is hidden, only does the bookkeeping, and forwards all visible events from here
 		
-		# notify player for debugging purposes... if ROOT is the player, he won't receive the debugging notifications
-		random_playable_ruler = {
-			limit = { ai = no same_realm = ROOT }
-			character_event = { id = cta.110 }
-			character_event = { id = cta.111 }
+		if = {
+			limit = { has_global_flag = debug_cta }
+			random_playable_ruler = {
+				limit = { ai = no same_realm = ROOT }
+				character_event = { id = cta.110 }
+				character_event = { id = cta.111 }
+			}
 		}
 
 		if = { limit = { has_character_flag = ctxp1 } # have 2nd, just earned 3rd experience tier (of 3)
@@ -197,16 +203,20 @@ character_event = {
 				# (at a significantly reduced expected frequency of firing this event)
 			}
 			
-			random_playable_ruler = {
-				limit = { ai = no same_realm = ROOT }
-				character_event = { id = cta.114 }
+			if = {
+				limit = { has_global_flag = debug_cta }
+				random_playable_ruler = {
+					limit = { ai = no same_realm = ROOT }
+					character_event = { id = cta.114 }
+				}
 			}
 			
 			# notify character of level-up (level-up is an effect of that event, forcing the Ambition Fulfilled popup to only appear afterward, if applicable)
 			character_event = { id = cta.3 }
 		}
 		
-		if = { limit = { has_character_flag = ctxp0 } # have 1st, just earned 2nd experience tier (of 3)
+		if = {
+			limit = { has_character_flag = ctxp0 } # have 1st, just earned 2nd experience tier (of 3)
 
 			clr_character_flag = ctxp0
 			set_character_flag = ctxp1
@@ -456,14 +466,12 @@ character_event = {
 		
 			# cool. advanced an XP tier.
 
-			# notify player for debugging purposes...
-			random_playable_ruler = {
-				limit = { ai = no same_realm = ROOT }
-				character_event = { id = cta.112 }
-			}
-			
-			if = { limit = { ai = no }
-				character_event = { id = cta.112 }
+			if = {
+				limit = { has_global_flag = debug_cta }
+				random_playable_ruler = {
+					limit = { ai = no same_realm = ROOT }
+					character_event = { id = cta.112 }
+				}
 			}
 			
 			if = {
@@ -483,10 +491,12 @@ character_event = {
 					set_character_flag = cta_done
 				}
 				
-				# notify player for debugging purposes...
-				random_playable_ruler = {
-					limit = { ai = no same_realm = ROOT }
-					character_event = { id = cta.114 }
+				if = {
+					limit = { has_global_flag = debug_cta }
+					random_playable_ruler = {
+						limit = { ai = no same_realm = ROOT }
+						character_event = { id = cta.114 }
+					}
 				}
 				
 				# notify character of level-up (actual level-up is an effect of that event)
@@ -512,14 +522,13 @@ character_event = {
 			
 		} # END: if advanced an XP tier
 
-		if = { limit = { NOT = { has_character_flag = cta_xp } }
-
+		if = {
+			limit = {
+				has_global_flag = debug_cta
+				NOT = { has_character_flag = cta_xp }
+			}
 			random_playable_ruler = {
 				limit = { ai = no same_realm = ROOT }
-				character_event = { id = cta.113 }
-			}
-			
-			if = { limit = { ai = no }
 				character_event = { id = cta.113 }
 			}
 		}
@@ -530,7 +539,7 @@ character_event = {
 }
 
 
-# silly scope bouncer for cta.10.  initial entry point from duel_output.
+# silly scope bouncer for cta.10. initial entry point from duel_output.* (duel_engine_output_events.txt)
 # FROM = winner.  ROOT = loser.
 character_event = {
 	id = cta.11
@@ -545,7 +554,6 @@ character_event = {
 	
 	option = { name = OK }
 }
-	
 
 
 #############
