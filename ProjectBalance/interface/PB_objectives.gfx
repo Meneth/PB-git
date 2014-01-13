@@ -8,6 +8,34 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 	spriteType = {
+		name = "GFX_obj_cta_0"
+		texturefile = "gfx/ambitions/obj_cta.tga" # modified verson of obj_improve_martial.dds from vanilla. a more custom icon would be nice.
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_obj_cta_1"
+		texturefile = "gfx/ambitions/obj_cta.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_obj_cta_2"
+		texturefile = "gfx/ambitions/obj_cta.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_obj_cta_3"
+		texturefile = "gfx/ambitions/obj_cta.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
 		name = "GFX_faction_autonomy"
 		texturefile = "gfx/ambitions/faction_autonomy.tga"
 		noOfFrames = 1

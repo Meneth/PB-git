@@ -623,6 +623,8 @@ on_combat_pulse = {
 		20 = TOG.3002 # Berserker Wounded
 		15 = TOG.3003 # Berserker Killed
 		25 = TOG.3004 # Berserker Kills Many
+		
+		25 = cta.0 # Earn CTA (combat trait advancement) experience
 	}
 }
 
