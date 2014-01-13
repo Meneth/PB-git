@@ -239,7 +239,29 @@ decisions = {
 		}
 		effect = {
 			remove_character_modifier = small_loan
-			wealth = -110
+			wealth = -100
+			if = {
+				limit = { NOT = { stewardship = 5 } }
+				wealth = -10
+			}
+			if = {
+				limit = {
+					stewardship = 5
+					NOT = { stewardship = 10 }
+				}
+				wealth = -9
+			}
+			if = {
+				limit = {
+					stewardship = 10
+					NOT = { stewardship = 15 }
+				}
+				wealth = -8
+			}
+			if = {
+				limit = { stewardship = 15 }
+				wealth = -7
+			}
 		}
 		ai_will_do = {
 			factor = 1
@@ -258,11 +280,32 @@ decisions = {
 			has_character_modifier = medium_loan
 		}
 		allow = {
-			wealth = 220
+			wealth = 200
 		}
 		effect = {
 			remove_character_modifier = medium_loan
-			wealth = -220
+			if = {
+				limit = { NOT = { stewardship = 5 } }
+				wealth = -20
+			}
+			if = {
+				limit = {
+					stewardship = 5
+					NOT = { stewardship = 10 }
+				}
+				wealth = -18
+			}
+			if = {
+				limit = {
+					stewardship = 10
+					NOT = { stewardship = 15 }
+				}
+				wealth = -16
+			}
+			if = {
+				limit = { stewardship = 15 }
+				wealth = -14
+			}
 		}
 		ai_will_do = {
 			factor = 1
@@ -285,7 +328,29 @@ decisions = {
 		}
 		effect = {
 			remove_character_modifier = large_loan
-			wealth = -440
+			wealth = -400
+			if = {
+				limit = { NOT = { stewardship = 5 } }
+				wealth = -40
+			}
+			if = {
+				limit = {
+					stewardship = 5
+					NOT = { stewardship = 10 }
+				}
+				wealth = -36
+			}
+			if = {
+				limit = {
+					stewardship = 10
+					NOT = { stewardship = 15 }
+				}
+				wealth = -32
+			}
+			if = {
+				limit = { stewardship = 15 }
+				wealth = -28
+			}
 		}
 		ai_will_do = {
 			factor = 1
@@ -308,7 +373,28 @@ decisions = {
 		}
 		effect = {
 			remove_character_modifier = huge_loan
-			wealth = -880
+			if = {
+				limit = { NOT = { stewardship = 5 } }
+				wealth = -80
+			}
+			if = {
+				limit = {
+					stewardship = 5
+					NOT = { stewardship = 10 }
+				}
+				wealth = -72
+			}
+			if = {
+				limit = {
+					stewardship = 10
+					NOT = { stewardship = 15 }
+				}
+				wealth = -64
+			}
+			if = {
+				limit = { stewardship = 15 }
+				wealth = -56
+			}
 		}
 		ai_will_do = {
 			factor = 1

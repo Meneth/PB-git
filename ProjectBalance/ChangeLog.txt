@@ -6,6 +6,7 @@
 	(PB+SWMH) Tweaks to culture/religion in the Caucasus
 	Hamburg now has a tier 2 center of trade
 	Merged the loans from Jewish bankers with PB's system. Main difference is that expelling Jews now frees one from PB's loans, and that loans are inherited by one's heir. The AI will now also take loans if bankrupt
+	Stewardship now reduces the interest charged on loans by 1% per 5 stewardship, capping out at a 3% reduction (7% interest rate)
 	Portage across the Suez now takes approximately six weeks rather than one
 
 3.4.0
