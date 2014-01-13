@@ -273,28 +273,110 @@ character_event = {
 			text = repay_loans
 			hidden_tooltip = {
 				if = {
-					limit = {
-						has_character_modifier = small_loan
+					limit = { has_character_modifier = small_loan }
+					if = {
+						limit = { NOT = { stewardship = 5 } }
+						wealth = -10
 					}
-					wealth = -10
+					if = {
+						limit = {
+							stewardship = 5
+							NOT = { stewardship = 10 }
+						}
+						wealth = -9
+					}
+					if = {
+						limit = {
+							stewardship = 10
+							NOT = { stewardship = 15 }
+						}
+						wealth = -8
+					}
+					if = {
+						limit = { stewardship = 15 }
+						wealth = -7
+					}
 				}
 				if = {
 					limit = {
 						has_character_modifier = medium_loan
 					}
-					wealth = -20
+					if = {
+						limit = { NOT = { stewardship = 5 } }
+						wealth = -20
+					}
+					if = {
+						limit = {
+							stewardship = 5
+							NOT = { stewardship = 10 }
+						}
+						wealth = -18
+					}
+					if = {
+						limit = {
+							stewardship = 10
+							NOT = { stewardship = 15 }
+						}
+						wealth = -16
+					}
+					if = {
+						limit = { stewardship = 15 }
+						wealth = -14
+					}
 				}
 				if = {
 					limit = {
 						has_character_modifier = large_loan
 					}
-					wealth = -40
+					if = {
+						limit = { NOT = { stewardship = 5 } }
+						wealth = -40
+					}
+					if = {
+						limit = {
+							stewardship = 5
+							NOT = { stewardship = 10 }
+						}
+						wealth = -36
+					}
+					if = {
+						limit = {
+							stewardship = 10
+							NOT = { stewardship = 15 }
+						}
+						wealth = -32
+					}
+					if = {
+						limit = { stewardship = 15 }
+						wealth = -28
+					}
 				}
 				if = {
 					limit = {
 						has_character_modifier = huge_loan
 					}
-					wealth = -80
+					if = {
+						limit = { NOT = { stewardship = 5 } }
+						wealth = -80
+					}
+					if = {
+						limit = {
+							stewardship = 5
+							NOT = { stewardship = 10 }
+						}
+						wealth = -72
+					}
+					if = {
+						limit = {
+							stewardship = 10
+							NOT = { stewardship = 15 }
+						}
+						wealth = -64
+					}
+					if = {
+						limit = { stewardship = 15 }
+						wealth = -56
+					}
 				}
 				if = {
 					limit = {
