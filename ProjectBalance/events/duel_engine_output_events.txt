@@ -249,6 +249,15 @@ character_event = {
 		# End of Tournament rival duel block
 		####################################
 		
+		##########################
+		# Generic duel victory forwarder for combat trait advancement in cta.10 (PB_cta.txt)
+		#
+		# Bounce the loser scope into FROM via cta.11 so that cta.10's potential child events
+		# will have access to the loser in the FROMFROM scope like duel_output's children.
+		
+		FROM = { character_event = { id = cta.11 } }
+		
+		
 		#############################
 		# Special Context Flag Cleanup
 		#############################
@@ -328,6 +337,19 @@ character_event = {
 		}
 		# End of tournament jousts block
 		################################
+		
+		##########################
+		# Generic duel victory forwarder for combat trait advancement in cta.10 (PB_cta.txt)
+		#
+		# Bounce the loser scope into FROM via cta.11 so that cta.10's potential child events
+		# will have access to the loser in the FROMFROM scope like duel_output's children.
+		#
+		# Assumption: duel_output.2 is only ever triggered on the winner of a joust,
+		#             like duel_output.1, by the loser in the FROM scope (from inspection of
+		#             tournament_events.txt / joust.*, that appears to be the case).
+		
+		FROM = { character_event = { id = cta.11 } }
+		
 		
 		#############################
 		# Special Context Flag Cleanup
