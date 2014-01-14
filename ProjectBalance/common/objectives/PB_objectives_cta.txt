@@ -22,6 +22,29 @@ obj_cta_0 = {
 			trait = blinded
 		}
 		
+		# ladies, if you can command armies for your liege/yourself (and meet the base criteria),
+		# then this ambition is for you too.
+		OR = {
+			is_female = no
+			AND = {
+				religion = cathar
+				liege = { religion = cathar }
+			}
+			liege = {
+				primary_title = {
+					OR = {
+						has_law = enatic_cognatic_succession
+						has_law = enatic_succession
+					}
+				}
+			}
+			has_character_flag = special_marshal
+			AND = {
+				has_global_flag = gender_equality
+				NOT = { liege = { religion_group = muslim } }
+			}
+		}
+		
 		NOT = {
 			trait = poor_warrior
 			trait = trained_warrior
@@ -29,7 +52,7 @@ obj_cta_0 = {
 			trait = master_warrior
 		}
 		
-		NOT = { has_character_flag = cta_done } # weird things happen (external code)
+		NOT = { has_character_flag = cta_done } # weird things happen (cta_done is not normally set for the 0->1 tier transition)
 	}
 	chance = {
 		factor = 100
@@ -37,11 +60,6 @@ obj_cta_0 = {
 		modifier = {
 			factor = 0
 			NOT = { martial = 8 }
-		}
-		modifier = {
-			factor = 0 # TODO: needs proper integration with GE module (+ enatic realms and all other cases)
-			is_female = yes
-			not = { has_character_flag = special_marshal }
 		}
 		modifier = {
 			factor = 10
@@ -208,6 +226,28 @@ obj_cta_0 = {
 			prisoner = yes
 			trait = incapable
 			trait = blinded
+			
+			# and ladies should abort if conditions change such that they can no longer command armies
+			NOT = {
+				is_female = no
+				AND = {
+					religion = cathar
+					liege = { religion = cathar }
+				}
+				liege = {
+					primary_title = {
+						OR = {
+							has_law = enatic_cognatic_succession
+							has_law = enatic_succession
+						}
+					}
+				}
+				has_character_flag = special_marshal
+				AND = {
+					has_global_flag = gender_equality
+					NOT = { liege = { religion_group = muslim } }
+				}
+			}
 		}
 	}
 	abort_effect = {
@@ -238,6 +278,28 @@ obj_cta_1 = {
 			trait = blinded
 		}
 		
+		# ladies, if you can command armies (and meet the base criteria), then this ambition is for you too.
+		OR = {
+			is_female = no
+			AND = {
+				religion = cathar
+				liege = { religion = cathar }
+			}
+			liege = {
+				primary_title = {
+					OR = {
+						has_law = enatic_cognatic_succession
+						has_law = enatic_succession
+					}
+				}
+			}
+			has_character_flag = special_marshal
+			AND = {
+				has_global_flag = gender_equality
+				NOT = { liege = { religion_group = muslim } }
+			}
+		}
+		
 		trait = poor_warrior
 		NOT = {
 			trait = trained_warrior
@@ -253,11 +315,6 @@ obj_cta_1 = {
 		modifier = {
 			factor = 0
 			NOT = { martial = 8 }
-		}
-		modifier = {
-			factor = 0 # TODO: needs proper integration with GE module (+ enatic realms and all other cases)
-			is_female = yes
-			not = { has_character_flag = special_marshal }
 		}
 		modifier = {
 			factor = 10
@@ -424,6 +481,28 @@ obj_cta_1 = {
 			trait = incapable
 			trait = blinded
 			
+			# and ladies should abort if conditions change such that they can no longer command armies
+			NOT = {
+				is_female = no
+				AND = {
+					religion = cathar
+					liege = { religion = cathar }
+				}
+				liege = {
+					primary_title = {
+						OR = {
+							has_law = enatic_cognatic_succession
+							has_law = enatic_succession
+						}
+					}
+				}
+				has_character_flag = special_marshal
+				AND = {
+					has_global_flag = gender_equality
+					NOT = { liege = { religion_group = muslim } }
+				}
+			}
+			
 			NOT = { # external code might demote a character
 				trait = poor_warrior
 				trait = trained_warrior
@@ -460,6 +539,28 @@ obj_cta_2 = {
 			trait = blinded
 		}
 		
+		# ladies, if you can command armies (and meet the base criteria), then this ambition is for you too.
+		OR = {
+			is_female = no
+			AND = {
+				religion = cathar
+				liege = { religion = cathar }
+			}
+			liege = {
+				primary_title = {
+					OR = {
+						has_law = enatic_cognatic_succession
+						has_law = enatic_succession
+					}
+				}
+			}
+			has_character_flag = special_marshal
+			AND = {
+				has_global_flag = gender_equality
+				NOT = { liege = { religion_group = muslim } }
+			}
+		}
+		
 		trait = trained_warrior
 		NOT = {
 			trait = poor_warrior
@@ -475,11 +576,6 @@ obj_cta_2 = {
 		modifier = {
 			factor = 0
 			NOT = { martial = 8 }
-		}
-		modifier = {
-			factor = 0 # TODO: needs proper integration with GE module (+ enatic realms and all other cases)
-			is_female = yes
-			not = { has_character_flag = special_marshal }
 		}
 		modifier = {
 			factor = 10
@@ -644,6 +740,28 @@ obj_cta_2 = {
 			prisoner = yes
 			trait = incapable
 			trait = blinded
+			
+			# and ladies should abort if conditions change such that they can no longer command armies
+			NOT = {
+				is_female = no
+				AND = {
+					religion = cathar
+					liege = { religion = cathar }
+				}
+				liege = {
+					primary_title = {
+						OR = {
+							has_law = enatic_cognatic_succession
+							has_law = enatic_succession
+						}
+					}
+				}
+				has_character_flag = special_marshal
+				AND = {
+					has_global_flag = gender_equality
+					NOT = { liege = { religion_group = muslim } }
+				}
+			}
 			
 			# external code might demote a character
 			trait = poor_warrior
@@ -683,6 +801,28 @@ obj_cta_3 = {
 			trait = blinded
 		}
 		
+		# ladies, if you can command armies (and meet the base criteria), then this ambition is for you too.
+		OR = {
+			is_female = no
+			AND = {
+				religion = cathar
+				liege = { religion = cathar }
+			}
+			liege = {
+				primary_title = {
+					OR = {
+						has_law = enatic_cognatic_succession
+						has_law = enatic_succession
+					}
+				}
+			}
+			has_character_flag = special_marshal
+			AND = {
+				has_global_flag = gender_equality
+				NOT = { liege = { religion_group = muslim } }
+			}
+		}
+		
 		trait = skilled_warrior
 		NOT = {
 			trait = poor_warrior
@@ -698,11 +838,6 @@ obj_cta_3 = {
 		modifier = {
 			factor = 0
 			NOT = { martial = 8 }
-		}
-		modifier = {
-			factor = 0 # TODO: needs proper integration with GE module (+ enatic realms and all other cases)
-			is_female = yes
-			not = { has_character_flag = special_marshal }
 		}
 		modifier = {
 			factor = 10
@@ -864,6 +999,28 @@ obj_cta_3 = {
 			prisoner = yes
 			trait = incapable
 			trait = blinded
+			
+			# and ladies should abort if conditions change such that they can no longer command armies
+			NOT = {
+				is_female = no
+				AND = {
+					religion = cathar
+					liege = { religion = cathar }
+				}
+				liege = {
+					primary_title = {
+						OR = {
+							has_law = enatic_cognatic_succession
+							has_law = enatic_succession
+						}
+					}
+				}
+				has_character_flag = special_marshal
+				AND = {
+					has_global_flag = gender_equality
+					NOT = { liege = { religion_group = muslim } }
+				}
+			}
 			
 			# external code might demote a character
 			trait = poor_warrior
