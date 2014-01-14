@@ -388,6 +388,20 @@ character_event = {
 				}
 				if = {
 					limit = {
+						has_character_modifier = huge_loan
+						NOT = { has_character_modifier = large_loan }
+						wealth = 400
+					}
+					wealth = -400
+					remove_character_modifier = huge_loan
+					add_character_modifier = {
+						name = large_loan
+						duration = -1
+						inherit = yes
+					}
+				}
+				if = {
+					limit = {
 						has_character_modifier = large_loan
 						wealth = 400
 					}
@@ -396,11 +410,39 @@ character_event = {
 				}
 				if = {
 					limit = {
+						has_character_modifier = large_loan
+						NOT = { has_character_modifier = medium_loan }
+						wealth = 200
+					}
+					wealth = -200
+					remove_character_modifier = large_loan
+					add_character_modifier = {
+						name = medium_loan
+						duration = -1
+						inherit = yes
+					}
+				}
+				if = {
+					limit = {
 						has_character_modifier = medium_loan
 						wealth = 200
 					}
 					wealth = -200
 					remove_character_modifier = medium_loan
+				}
+				if = {
+					limit = {
+						has_character_modifier = medium_loan
+						NOT = { has_character_modifier = small_loan }
+						wealth = 100
+					}
+					wealth = -100
+					remove_character_modifier = medium_loan
+					add_character_modifier = {
+						name = small_loan
+						duration = -1
+						inherit = yes
+					}
 				}
 				if = {
 					limit = {
