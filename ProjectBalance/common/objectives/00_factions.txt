@@ -3378,6 +3378,11 @@ faction_claimant = {
 					}
 				}
 			}
+			#Prevent theocracies
+			OR = {
+				is_theocracy = no
+				ROOT = { is_theocracy = yes }
+			}
 		}
 		
 		NOT = {

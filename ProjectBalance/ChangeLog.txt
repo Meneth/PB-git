@@ -10,6 +10,7 @@
 	It is now possible to repay half a loan (except 100g loans) if the size of loan below it is available. E.G., if you've got a 400g loan but no 200g loan you can repay 200g of the 400g loan
 	Portage across the Suez now takes approximately six weeks rather than one
 	Added combat/fighter trait advancement system for adults under 50. Select ambition(s) to advance your trait (optional), earn points toward trait level-up via personal participation in battles and all types of victorious duels. Age, skill tier, and traits will impact your rate of progress. You may only advance 1 level beyond that with which you reach adulthood except when starting adulthood with no combat education at all, in which case you are allowed to advance up to 2 levels. [zijistark]
+	The claimant faction can no longer be started if the claimant is theocratic and the target title is not
 
 3.4.0
 	Added a new faction system. All crown authority factions have been merged into a single faction that is more responsive to the actions of their liege, and have more actions they can take. Every 3 to 7 years they hold a meeting to determine what action they'll take. If they're in a bad mood they might issue an ultimatum to their liege, but if treated well they will not be much of a threat. They're potentially a much greater threat than the old factions however, as the faction is global to the realm rather than specific to a single dejure kingdom or empire
