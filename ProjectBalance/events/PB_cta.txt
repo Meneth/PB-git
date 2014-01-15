@@ -22,6 +22,15 @@ namespace = cta
 # open to more), whether they've enabled the ambition or not. of
 # course, enabling the ambition dramatically increases the odds
 # of this event firing.
+#
+# the associated ambitions are strict about gender: females can
+# only take them when conditions are such that they are allowed
+# to participate in battle.  neither this on_combat_pulse series
+# nor the victorious duel series enforce that directly (in the
+# first case because it's implied by the event firing at all and
+# in the second because XP advancement is just fine if a female
+# somehow gets into a duel when she can't participate in battles,
+# as it is for non-rulers and non-marshals as well). 
 
 character_event = {
 	id = cta.0
@@ -51,8 +60,17 @@ character_event = {
 	weight_multiplier = {
 		days = 1
 		
+		# basically, you must select a CTA ambition to advance.
+		#
+		# on top of the 4x factor:
+		#
+		# in practice, AI will select an ambitions in the relevant cases, will be
+		# present in the same pool of characters for on_combat_pulse, and thus they
+		# will then harshly outweigh the random chance of firing this event for a
+		# player that hasn't selected the ambition.
+
 		modifier = {
-			factor = 4.0 # basically, you must select the ambition (in practice, AI will do so in the relevant cases, and they will outweigh you otherwise)
+			factor = 4.0
 			OR = {
 				has_ambition = obj_cta_0
 				has_ambition = obj_cta_1
@@ -61,6 +79,26 @@ character_event = {
 			}
 		}
 		
+		# give the AI a flat 33% higher random weight bonus with a CTA ambition selected.
+		#
+		# a) further lengthens amount of time/battles/duels player must commit to advance,
+		#    as a player character in the same random selection pool becomes lower weight
+		#    relative to the chance divisor.
+		# b) I don't want the AI stuck on the ambitions for too long.  it can't reason about
+		#    when is a reasonable time to cancel the ambition.
+		# c) mild AI handicaps => good (lacking an actual interface to AI scripting).
+
+		modifier = {
+			factor = 1.333
+			ai = yes
+			OR = {
+				has_ambition = obj_cta_0
+				has_ambition = obj_cta_1
+				has_ambition = obj_cta_2
+				has_ambition = obj_cta_3
+			}
+		}
+
 		# it is increasingly less likely to earn a combat impulse with higher tiers of combat traits
 		modifier = {
 			factor = 0.8
@@ -99,12 +137,10 @@ character_event = {
 			age = 45
 		}
 		
-		# ambition selection, tier difficulty, and age should dominate traits (which are the primary influences upon AI ambition selection anyway)
-		# thus, only traits that seem immediately relevant to the chance of progression given a combat impulse appear here.  in other words, this
-		# stuff is here especially to influence progression when a CTA ambition is not selected (though unlikely to fire at all) and slightly amplify
-		# these stats' importance regardless of CTA ambition selection.  should also be true: those AI characters which selected the ambition are much
-		# more likely to succeed relatively quickly than a player arbitrarily selecting the ambition regardless of their traits and stats (and age).
-		# that's good, because the AI has no idea what it needs to do complete the ambition.
+		# direct trait influence is minimized in the random weight multiplier.  if character is a player,
+		# this probably means more flexible advancement for any given set of traits.  if character is AI,
+		# traits are heavily covered in CTA ambition selection chance and so are redundant here beyond
+		# these basics:
 
 		modifier = {
 			factor = 1.25
@@ -125,9 +161,11 @@ character_event = {
 		
 		# higher martial skill should equate to more ease in understanding
 		# the art of personal combat, whether it's a lot of a base skill
-		# level or predominantly from various traits (amplifying the effect
-		# of traits with any martial bonus or malus, e.g., agile or crusader
-		# or weak, further).
+		# level or predominantly from various traits (further amplifying
+		# the effects of traits with any martial bonus or malus, e.g., agile,
+		# crusader, martial educations, hunchback, or weak).  while combat
+		# traits are "personal combat" and not "military theory," in practice
+		# the martial attribute encodes both.
 		
 		modifier = {
 			factor = 1.08
@@ -164,6 +202,14 @@ character_event = {
 		modifier = {
 			factor = 1.05
 			martial = 18
+		}
+		modifier = {
+			factor = 1.04
+			martial = 19
+		}
+		modifier = {
+			factor = 1.04
+			martial = 20
 		}
 	}
 	
