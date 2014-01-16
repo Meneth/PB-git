@@ -1104,11 +1104,11 @@ decisions = {
 				text = jews_are_expelled
 			}
 			hidden_tooltip = {
-				character_event = { id = SoA.105 }
-				add_character_modifier = {
-					name = expelled_jews_timer
-					duration = 7300
-					hidden = yes
+				character_event = { id = SoA.105 } # in theory, this would now default all loans in the realm.
+				add_character_modifier = {         # however, it is probably best left as it is.  the jewish
+					name = expelled_jews_timer     # merchants can just keep collecting yearly interest on
+					duration = 7300                # the rest of the realm via the Jewish Underground Mafia
+					hidden = yes                   # or something similarly persuasive.
 				}
 			}
 		}
