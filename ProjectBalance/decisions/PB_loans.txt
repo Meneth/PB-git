@@ -562,7 +562,7 @@ decisions = {
 		}
 		effect = {			
 			remove_character_modifier = huge_loan
-				
+			wealth = -800
 			if = {
 				limit = { NOT = { stewardship = 5 } }
 				wealth = -80

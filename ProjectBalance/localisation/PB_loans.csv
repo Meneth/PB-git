@@ -14,7 +14,7 @@ repay_small_loan_desc;Repay your small loan, paying 100¤ for the loan itself and
 repay_medium_loan;Repay Medium Loan;;;;;;;;;;;;;x
 repay_medium_loan_desc;Repay your medium loan, paying 200¤ for the loan itself and 20¤ in interest.;;;;;;;;;
 repay_large_loan;Repay Large Loan;;;;;;;;;;;;;x
-repay_largeloan_desc;Repay your large loan, paying 400¤ for the loan itself and 40¤ in interest.;;;;;;;;;
+repay_large_loan_desc;Repay your large loan, paying 400¤ for the loan itself and 40¤ in interest.;;;;;;;;;
 repay_huge_loan;Repay Huge Loan;;;;;;;;;;;;;x
 repay_huge_loan_desc;Repay your huge loan, paying 800¤ for the loan itself and 80¤ in interest.;;;;;;;;;
 meneth.203.desc;We've got to pay interest on our loans.;;;;;;;;;;;;;x
