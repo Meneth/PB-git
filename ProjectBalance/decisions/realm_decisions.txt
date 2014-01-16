@@ -1082,18 +1082,34 @@ decisions = {
 			if = {
 				limit = { has_character_modifier = small_loan }
 				remove_character_modifier = small_loan
+				if = {
+					limit = { has_global_flag = debug_loans }
+					change_variable = { which = loan1_expel_count value = 1 }
+				}
 			}
 			if = {
 				limit = { has_character_modifier = medium_loan }
 				remove_character_modifier = medium_loan
+				if = {
+					limit = { has_global_flag = debug_loans }
+					change_variable = { which = loan2_expel_count value = 1 }
+				}
 			}
 			if = {
 				limit = { has_character_modifier = large_loan }
 				remove_character_modifier = large_loan
+				if = {
+					limit = { has_global_flag = debug_loans }
+					change_variable = { which = loan3_expel_count value = 1 }
+				}
 			}
 			if = {
 				limit = { has_character_modifier = huge_loan }
 				remove_character_modifier = huge_loan
+				if = {
+					limit = { has_global_flag = debug_loans }
+					change_variable = { which = loan4_expel_count value = 1 }
+				}
 			}
 			add_character_modifier = {
 				name = expelled_jewish
@@ -1104,11 +1120,11 @@ decisions = {
 				text = jews_are_expelled
 			}
 			hidden_tooltip = {
-				character_event = { id = SoA.105 }
-				add_character_modifier = {
-					name = expelled_jews_timer
-					duration = 7300
-					hidden = yes
+				character_event = { id = SoA.105 } # in theory, this would now default all loans in the realm.
+				add_character_modifier = {         # however, it is probably best left as it is.  the jewish
+					name = expelled_jews_timer     # merchants can just keep collecting yearly interest on
+					duration = 7300                # the rest of the realm via the Jewish Underground Mafia
+					hidden = yes                   # or something similarly persuasive.
 				}
 			}
 		}
