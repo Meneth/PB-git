@@ -273,11 +273,6 @@ character_event = {
 						limit = { stewardship = 15 }
 						wealth = -7
 					}
-					
-					if = {
-						limit = { has_global_flag = debug_loans }
-						change_variable = { which = loan1_pmt_count value = 1 }
-					}
 				}
 				if = {
 					limit = {
@@ -304,11 +299,6 @@ character_event = {
 					if = {
 						limit = { stewardship = 15 }
 						wealth = -14
-					}
-					
-					if = {
-						limit = { has_global_flag = debug_loans }
-						change_variable = { which = loan2_pmt_count value = 1 }
 					}
 				}
 				if = {
@@ -337,11 +327,6 @@ character_event = {
 						limit = { stewardship = 15 }
 						wealth = -28
 					}
-					
-					if = {
-						limit = { has_global_flag = debug_loans }
-						change_variable = { which = loan3_pmt_count value = 1 }
-					}
 				}
 				if = {
 					limit = {
@@ -368,11 +353,6 @@ character_event = {
 					if = {
 						limit = { stewardship = 15 }
 						wealth = -56
-					}
-					
-					if = {
-						limit = { has_global_flag = debug_loans }
-						change_variable = { which = loan4_pmt_count value = 1 }
 					}
 				}
 			}
@@ -418,11 +398,6 @@ character_event = {
 						limit = { stewardship = 15 }
 						wealth = -7
 					}
-					
-					if = {
-						limit = { has_global_flag = debug_loans }
-						change_variable = { which = loan1_pmt_count value = 1 }
-					}
 				}
 				if = {
 					limit = {
@@ -449,11 +424,6 @@ character_event = {
 					if = {
 						limit = { stewardship = 15 }
 						wealth = -14
-					}
-					
-					if = {
-						limit = { has_global_flag = debug_loans }
-						change_variable = { which = loan2_pmt_count value = 1 }
 					}
 				}
 				if = {
@@ -482,11 +452,6 @@ character_event = {
 						limit = { stewardship = 15 }
 						wealth = -28
 					}
-					
-					if = {
-						limit = { has_global_flag = debug_loans }
-						change_variable = { which = loan3_pmt_count value = 1 }
-					}
 				}
 				if = {
 					limit = {
@@ -514,11 +479,6 @@ character_event = {
 						limit = { stewardship = 15 }
 						wealth = -56
 					}
-					
-					if = {
-						limit = { has_global_flag = debug_loans }
-						change_variable = { which = loan4_pmt_count value = 1 }
-					}
 				}
 				if = {
 					limit = {
@@ -527,11 +487,6 @@ character_event = {
 					}
 					wealth = -800
 					remove_character_modifier = huge_loan
-					
-					if = {
-						limit = { has_global_flag = debug_loans }
-						change_variable = { which = loan4_paid_count value = 1 }
-					}
 				}
 				if = {
 					limit = {
@@ -546,14 +501,6 @@ character_event = {
 						duration = -1
 						inherit = yes
 					}
-										
-					# basic debt consolidation. beautiful.
-					
-					if = {
-						limit = { has_global_flag = debug_loans }
-						change_variable = { which = loan4_paid_count value = 1 }
-						change_variable = { which = loan3_take_count value = 1 }
-					}
 				}
 				if = {
 					limit = {
@@ -562,11 +509,6 @@ character_event = {
 					}
 					wealth = -400
 					remove_character_modifier = large_loan
-					
-					if = {
-						limit = { has_global_flag = debug_loans }
-						change_variable = { which = loan3_paid_count value = 1 }
-					}
 				}
 				if = {
 					limit = {
@@ -581,12 +523,6 @@ character_event = {
 						duration = -1
 						inherit = yes
 					}
-					
-					if = {
-						limit = { has_global_flag = debug_loans }
-						change_variable = { which = loan3_paid_count value = 1 }
-						change_variable = { which = loan2_take_count value = 1 }
-					}
 				}
 				if = {
 					limit = {
@@ -595,11 +531,6 @@ character_event = {
 					}
 					wealth = -200
 					remove_character_modifier = medium_loan
-					
-					if = {
-						limit = { has_global_flag = debug_loans }
-						change_variable = { which = loan2_paid_count value = 1 }
-					}
 				}
 				if = {
 					limit = {
@@ -614,12 +545,6 @@ character_event = {
 						duration = -1
 						inherit = yes
 					}
-					
-					if = {
-						limit = { has_global_flag = debug_loans }
-						change_variable = { which = loan2_paid_count value = 1 }
-						change_variable = { which = loan1_take_count value = 1 }
-					}
 				}
 				if = {
 					limit = {
@@ -628,11 +553,6 @@ character_event = {
 					}
 					wealth = -100
 					remove_character_modifier = small_loan
-					
-					if = {
-						limit = { has_global_flag = debug_loans }
-						change_variable = { which = loan1_paid_count value = 1 }
-					}
 				}
 			}
 		}
