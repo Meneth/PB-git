@@ -2,7 +2,7 @@
 	Updated the implementation of the New Duel Engine to its latest version
 	Combat/fighter traits (for the duel engine) are again customizable in the Ruler Designer [zijistark]
 	Added combat trait advancement (CTA) system for adult rulers under 50 (and their marshals). Earn experience points toward trait level-up via personal participation in battles and all types of victorious duels. Dramatically decrease the time taken to advance by applying yourself toward the new, associated set of ambitions. Age, skill tier, and traits will also impact your rate of progress. You may only advance 1 level beyond that with which you reach adulthood. In the exceptional case that you start with no combat education whatsoever, then you are allowed to advance up to 2 levels. [zijistark]
-	Swanky ambition icon for CTA (credit goes to AnaxXiphos)
+	Added swanky ambition icon for all four CTA ambitions (credit goes to AnaxXiphos)
 	The starting trade posts are now built by event rather than using the history files, simplifying maintenance of PB, and reducing the chance of bugs
 	Fixed the Autonomy faction being able to demand a county be given away when their liege was under, rather than over, the demesne limit
 	(PB+SWMH) Tweaks to culture/religion in the Caucasus
