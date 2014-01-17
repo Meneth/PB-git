@@ -22,6 +22,8 @@ terrain = hills
 # History
 867.1.1 = {
 	b_rushen = ca_wall_1
+	b_rushen = ca_shipyard_1
+	b_peel = tp_shipyard_1
 }
 1000.1.1 = { religion = catholic } 
 1066.1.1 = { culture = norsegael } 

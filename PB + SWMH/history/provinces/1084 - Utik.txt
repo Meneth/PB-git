@@ -15,7 +15,7 @@ b_khoranashat = temple
  
 
 # Misc
-culture = persian
+culture = georgian
 religion = sunni
 
 # History

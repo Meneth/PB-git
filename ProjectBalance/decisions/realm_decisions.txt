@@ -11,7 +11,10 @@ decisions = {
 				religion_group = pagan_group
 			}
 			independent = yes
-			NOT = { is_female = yes	}
+			OR = {
+				is_female = no
+				trait = strong
+			}				
 			OR = {
 				tier = king
 				tier = emperor 
@@ -37,20 +40,96 @@ decisions = {
 			character_event = { id = 70033 tooltip = "tournament_invite" }
 			hidden_tooltip = {
 				character_event = { id = 70001 days = 60 } # Tournament start
-				clr_character_flag = tournament_has_ended
-				any_realm_character = {
-					limit = {
-						is_feudal = yes
-						NOT = { has_job_title = job_spiritual }
-						age = 16
-						NOT = { age = 50 }
-						NOT = { trait = incapable }
-						prisoner = no	
-						is_female = no
+				top_liege = {
+					any_realm_character = { #invite all eligible realm lords and previous winners
+						limit = {
+							NOT = { has_character_flag = do_not_disturb }
+							NOT = { character = ROOT }
+							prisoner = no
+							is_pregnant = no
+							is_alive = yes
+							NOT = { trait = incapable }
+							age = 15
+							OR = {	
+								has_character_flag = normal_tourny_1st
+								has_character_flag = normal_tourny_2nd
+								has_character_flag = normal_tourny_3rd
+								OR = {
+									is_ruler = yes
+									any_dynasty_member = { primary_title = { higher_tier_than = BARON } }
+								}
+								OR = {
+									trait = poor_warrior
+									trait = trained_warrior
+									trait = skilled_warrior
+									trait = master_warrior
+									trait = misguided_warrior
+									trait = tough_soldier
+									trait = skilled_tactician
+									trait = brilliant_strategist
+									trait = martial_cleric
+									has_job_title = job_marshal
+									martial = 10
+									in_command = yes
+								}			
+							}
+							OR = {
+								is_female = no
+								trait = strong
+								trait = misguided_warrior
+								trait = tough_soldier
+								trait = skilled_tactician
+								trait = brilliant_strategist
+							}
+						}
+						clr_character_flag = tournament_has_ended
+						letter_event = { id = 70000 }
 					}
-					clr_character_flag = tournament_has_ended
-					character_event = { id = 70000 }
-				}
+					any_realm_character = { #invite all non-eligible realm characters to spectate
+						limit = {
+							NOT = { has_character_flag = do_not_disturb }
+							NOT = { character = ROOT }
+							prisoner = no
+							NOT = { trait = incapable }
+							age = 15
+							NOT = {
+								OR = {	
+									has_character_flag = normal_tourny_1st
+									has_character_flag = normal_tourny_2nd
+									has_character_flag = normal_tourny_3rd
+									OR = {
+										is_ruler = yes
+										any_dynasty_member = { primary_title = { higher_tier_than = BARON } }
+									}
+									OR = {
+										trait = poor_warrior
+										trait = trained_warrior
+										trait = skilled_warrior
+										trait = master_warrior
+										trait = misguided_warrior
+										trait = tough_soldier
+										trait = skilled_tactician
+										trait = brilliant_strategist
+										trait = martial_cleric
+										has_job_title = job_marshal
+										martial = 10
+										in_command = yes
+									}			
+								}
+								OR = {
+									is_female = no
+									trait = strong
+									trait = misguided_warrior
+									trait = tough_soldier
+									trait = skilled_tactician
+									trait = brilliant_strategist
+								}
+							}
+						}
+						clr_character_flag = tournament_has_ended
+						letter_event = { id = 70086 }
+					}	
+				}			
 			}
 		}
 		ai_will_do = {
@@ -64,6 +143,21 @@ decisions = {
 					}
 				}
 			}
+		}
+	}
+
+	show_me_the_medal_winners = {
+		potential = {
+			ai = no
+		}
+		allow = {
+				
+		}
+		effect = {
+			character_event = { id = 70078 }
+		}
+		ai_will_do = {
+			factor = 0 
 		}
 	}
 	
@@ -986,8 +1080,20 @@ decisions = {
 		}
 		effect = {
 			if = {
-				limit = { has_character_modifier = borrowed_from_jews }
-				remove_character_modifier = borrowed_from_jews
+				limit = { has_character_modifier = small_loan }
+				remove_character_modifier = small_loan
+			}
+			if = {
+				limit = { has_character_modifier = medium_loan }
+				remove_character_modifier = medium_loan
+			}
+			if = {
+				limit = { has_character_modifier = large_loan }
+				remove_character_modifier = large_loan
+			}
+			if = {
+				limit = { has_character_modifier = huge_loan }
+				remove_character_modifier = huge_loan
 			}
 			add_character_modifier = {
 				name = expelled_jewish
@@ -998,11 +1104,11 @@ decisions = {
 				text = jews_are_expelled
 			}
 			hidden_tooltip = {
-				character_event = { id = SoA.105 }
-				add_character_modifier = {
-					name = expelled_jews_timer
-					duration = 7300
-					hidden = yes
+				character_event = { id = SoA.105 } # in theory, this would now default all loans in the realm.
+				add_character_modifier = {         # however, it is probably best left as it is.  the jewish
+					name = expelled_jews_timer     # merchants can just keep collecting yearly interest on
+					duration = 7300                # the rest of the realm via the Jewish Underground Mafia
+					hidden = yes                   # or something similarly persuasive.
 				}
 			}
 		}

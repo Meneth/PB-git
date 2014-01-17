@@ -7,7 +7,7 @@ title = c_toledo
 max_settlements = 5
 b_toledo = castle
 b_orgaz = temple
-b_illescas = city
+b_illescas = city #Needed for trade post
 #b_tolemora = temple
 #b_consuegra = castle
 #b_fuensalida = castle
@@ -17,10 +17,6 @@ culture = andalusian_arabic
 religion = sunni
 
 # History
-867.1.1 = {
-	b_illescas = ct_trade_post_1
-	b_illescas = ct_trade_post_2
-	b_illescas = ct_trade_post_3
-}
+
 1100.5.25 = { culture = castillan }
 1100.5.25 = { religion = catholic }

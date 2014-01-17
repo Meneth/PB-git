@@ -90,6 +90,53 @@ character_event = {
 			factor = 0.75
 			diplomacy = 18
 		}
+		
+		# PB standard employer opinion factors
+		modifier = {
+			factor = 1.09
+			NOT = { opinion = { who = liege value = -99 } }
+		}
+		modifier = {
+			factor = 1.06
+			NOT = { opinion = { who = liege value = -80 } }
+		}
+		modifier = {
+			factor = 1.06
+			NOT = { opinion = { who = liege value = -60 } }
+		}
+		modifier = {
+			factor = 1.06
+			NOT = { opinion = { who = liege value = -40 } }
+		}
+		modifier = {
+			factor = 1.06
+			NOT = { opinion = { who = liege value = -20 } }
+		}
+		modifier = {
+			factor = 1.06
+			NOT = { opinion = { who = liege value = 0 } }
+		}
+		modifier = {
+			factor = 1.03
+			NOT = { opinion = { who = liege value = 20 } }
+		}
+		modifier = {
+			factor = 0.96        
+			opinion = { who = liege value = 35 }
+			liege = { ai = yes }
+		}
+		modifier = {
+			factor = 0.96        
+			opinion = { who = liege value = 55 }
+		}
+		modifier = {
+			factor = 0.96        
+			opinion = { who = liege value = 75 }
+		}
+		modifier = {
+			factor = 0.96        
+			opinion = { who = liege value = 95 }
+		}
 	}
 	
 	option = {
@@ -211,6 +258,53 @@ character_event = {
 		modifier = {
 			factor = 1.25
 			diplomacy = 13
+		}
+		
+		# PB inverse employer opinion factors
+		modifier = {
+			factor = 0.91
+			NOT = { opinion = { who = liege value = -99 } }
+		}
+		modifier = {
+			factor = 0.94
+			NOT = { opinion = { who = liege value = -80 } }
+		}
+		modifier = {
+			factor = 0.94
+			NOT = { opinion = { who = liege value = -60 } }
+		}
+		modifier = {
+			factor = 0.94
+			NOT = { opinion = { who = liege value = -40 } }
+		}
+		modifier = {
+			factor = 0.94
+			NOT = { opinion = { who = liege value = -20 } }
+		}
+		modifier = {
+			factor = 0.94
+			NOT = { opinion = { who = liege value = 0 } }
+		}
+		modifier = {
+			factor = 0.97
+			NOT = { opinion = { who = liege value = 20 } }
+		}
+		modifier = {
+			factor = 1.04        
+			opinion = { who = liege value = 35 }
+			liege = { ai = yes }
+		}
+		modifier = {
+			factor = 1.04        
+			opinion = { who = liege value = 55 }
+		}
+		modifier = {
+			factor = 1.04        
+			opinion = { who = liege value = 75 }
+		}
+		modifier = {
+			factor = 1.04        
+			opinion = { who = liege value = 95 }
 		}
 	}
 	
@@ -393,6 +487,53 @@ character_event = {
 		modifier = {
 			factor = 0.95
 			diplomacy = 20
+		}
+		
+		# PB standard employer opinion factors
+		modifier = {
+			factor = 1.09
+			NOT = { opinion = { who = liege value = -99 } }
+		}
+		modifier = {
+			factor = 1.06
+			NOT = { opinion = { who = liege value = -80 } }
+		}
+		modifier = {
+			factor = 1.06
+			NOT = { opinion = { who = liege value = -60 } }
+		}
+		modifier = {
+			factor = 1.06
+			NOT = { opinion = { who = liege value = -40 } }
+		}
+		modifier = {
+			factor = 1.06
+			NOT = { opinion = { who = liege value = -20 } }
+		}
+		modifier = {
+			factor = 1.06
+			NOT = { opinion = { who = liege value = 0 } }
+		}
+		modifier = {
+			factor = 1.03
+			NOT = { opinion = { who = liege value = 20 } }
+		}
+		modifier = {
+			factor = 0.96        
+			opinion = { who = liege value = 35 }
+			liege = { ai = yes }
+		}
+		modifier = {
+			factor = 0.96        
+			opinion = { who = liege value = 55 }
+		}
+		modifier = {
+			factor = 0.96        
+			opinion = { who = liege value = 75 }
+		}
+		modifier = {
+			factor = 0.96        
+			opinion = { who = liege value = 95 }
 		}
 	}
 	
@@ -947,6 +1088,53 @@ character_event = {
 			factor = 1.25
 			diplomacy = 13
 		}
+		
+		# PB inverse employer opinion factors
+		modifier = {
+			factor = 0.91
+			NOT = { opinion = { who = liege value = -99 } }
+		}
+		modifier = {
+			factor = 0.94
+			NOT = { opinion = { who = liege value = -80 } }
+		}
+		modifier = {
+			factor = 0.94
+			NOT = { opinion = { who = liege value = -60 } }
+		}
+		modifier = {
+			factor = 0.94
+			NOT = { opinion = { who = liege value = -40 } }
+		}
+		modifier = {
+			factor = 0.94
+			NOT = { opinion = { who = liege value = -20 } }
+		}
+		modifier = {
+			factor = 0.94
+			NOT = { opinion = { who = liege value = 0 } }
+		}
+		modifier = {
+			factor = 0.97
+			NOT = { opinion = { who = liege value = 20 } }
+		}
+		modifier = {
+			factor = 1.04        
+			opinion = { who = liege value = 35 }
+			liege = { ai = yes }
+		}
+		modifier = {
+			factor = 1.04        
+			opinion = { who = liege value = 55 }
+		}
+		modifier = {
+			factor = 1.04        
+			opinion = { who = liege value = 75 }
+		}
+		modifier = {
+			factor = 1.04        
+			opinion = { who = liege value = 95 }
+		}
 	}
 	
 	option = {
@@ -1057,6 +1245,57 @@ letter_event = {
 	
 	option = {
 		name = "EVTOPTA20144"
+		ai_chance = {
+			factor = 10
+			
+			# PB standard employer opinion factors (direct modifier of chance to take the bribe)
+			modifier = {
+				factor = 1.09
+				NOT = { opinion = { who = liege value = -99 } }
+			}
+			modifier = {
+				factor = 1.06
+				NOT = { opinion = { who = liege value = -80 } }
+			}
+			modifier = {
+				factor = 1.06
+				NOT = { opinion = { who = liege value = -60 } }
+			}
+			modifier = {
+				factor = 1.06
+				NOT = { opinion = { who = liege value = -40 } }
+			}
+			modifier = {
+				factor = 1.06
+				NOT = { opinion = { who = liege value = -20 } }
+			}
+			modifier = {
+				factor = 1.06
+				NOT = { opinion = { who = liege value = 0 } }
+			}
+			modifier = {
+				factor = 1.03
+				NOT = { opinion = { who = liege value = 20 } }
+			}
+			modifier = {
+				factor = 0.96        
+				opinion = { who = liege value = 35 }
+				liege = { ai = yes }
+			}
+			modifier = {
+				factor = 0.96        
+				opinion = { who = liege value = 55 }
+			}
+			modifier = {
+				factor = 0.96        
+				opinion = { who = liege value = 75 }
+			}
+			modifier = {
+				factor = 0.96        
+				opinion = { who = liege value = 95 }
+			}
+		}
+		
 		wealth = 50
 		FROM = {
 			letter_event = { id = 20145 days = 7 tooltip = "EVTTOOLTIP20145" }
@@ -1071,6 +1310,7 @@ letter_event = {
 	}
 	option = {
 		name = "EVTOPTB20144"
+		ai_chance = { factor = 10 }
 		prestige = 5
 		FROM = { letter_event = { id = 20146 days = 7 tooltip = "EVTTOOLTIP20146" } }
 	}
@@ -1188,6 +1428,53 @@ character_event = {
 		modifier = {
 			factor = 0.75
 			diplomacy = 13
+		}
+		
+		# PB standard employer opinion factors
+		modifier = {
+			factor = 1.09
+			NOT = { opinion = { who = liege value = -99 } }
+		}
+		modifier = {
+			factor = 1.06
+			NOT = { opinion = { who = liege value = -80 } }
+		}
+		modifier = {
+			factor = 1.06
+			NOT = { opinion = { who = liege value = -60 } }
+		}
+		modifier = {
+			factor = 1.06
+			NOT = { opinion = { who = liege value = -40 } }
+		}
+		modifier = {
+			factor = 1.06
+			NOT = { opinion = { who = liege value = -20 } }
+		}
+		modifier = {
+			factor = 1.06
+			NOT = { opinion = { who = liege value = 0 } }
+		}
+		modifier = {
+			factor = 1.03
+			NOT = { opinion = { who = liege value = 20 } }
+		}
+		modifier = {
+			factor = 0.96        
+			opinion = { who = liege value = 35 }
+			liege = { ai = yes }
+		}
+		modifier = {
+			factor = 0.96        
+			opinion = { who = liege value = 55 }
+		}
+		modifier = {
+			factor = 0.96        
+			opinion = { who = liege value = 75 }
+		}
+		modifier = {
+			factor = 0.96        
+			opinion = { who = liege value = 95 }
 		}
 	}
 	

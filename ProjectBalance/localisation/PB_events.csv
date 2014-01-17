@@ -1,4 +1,6 @@
 #CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+Yes;Yes;;;;;;;;;;;;;x
+No;No;;;;;;;;;;;;;x
 meneth.0.desc;Our family has assimilated the local culture.;;;;;;;;;;;;;x
 meneth.0.a;Assimilate the local culture;;;;;;;;;;;;;x
 meneth.0.b;Do nothing;;;;;;;;;;;;;x
@@ -9,7 +11,7 @@ meneth.100.desc;It's dangerous to go alone! Take this piety!;;;;;;;;;;;;;x
 meneth.100.a;Free piety! Thanks;;;;;;;;;;;;;x
 meneth.101.desc;EVTDESC60013;The great [Root.GetTitledName] and all [Root.GetHerHis] vassals have converted and embraced the Shiite faith!;;;;;;;;;;;;;x
 meneth.200.name;Welcome;;;;;;;;;;;;;x
-meneth.200.desc;Welcome to Project Balance. This event is here to set up the campaign and to give you a brief introduction to Project Balance. \nProject Balance is much more minimalist than most major mods. Instead of trying to remake the game I've made tweaks in order to make the game both more enjoyable and more historically plausible.\nMake sure to check the "is war possible?" decision to see if you meet the restrictions. \nIf you encounter any issues or have any questions or feedback you can contact me in Project Balance's thread on the Paradoxplaza forums. Alternatively you can send me a PM on Paradoxplaza or on Reddit. \nI hope you'll enjoy the mod, \n- Meneth;;;;;;;;;;;;;x
+meneth.200.desc;Welcome to Project Balance. This event is here to set up the campaign and to give you a brief introduction to Project Balance. \nProject Balance is much more minimalist than most major mods. Instead of trying to remake the game I've made tweaks in order to make the game both more enjoyable and more historically plausible.\nMake sure to check the "is war possible?" decision to see if you meet the restrictions. \nIf you encounter any issues or have any questions or feedback you can contact me in Project Balance's thread on the Paradoxplaza forums. Alternatively you can send me a PM on Paradoxplaza or on reddit. \nI hope you'll enjoy the mod, \n- Meneth;;;;;;;;;;;;;x
 meneth.200.a;OK;;;;;;;;;;;;;x
 meneth.201.desc;Sudden Death;;;;;;;;;;;;;x
 meneth.201.a;Seems I am no longer needed in this cruel world.;;;;;;;;;;;;;x
@@ -34,6 +36,79 @@ meneth.213.desc;[FromFrom.GetTitledFirstName] has requested an exchange of priso
 meneth.214.desc;[From.GetTitledFirstName] has agreed to release [FromFrom.GetTitledFirstName], and we've in turn released one of their dynasty members.;;;;;;;;;;;;;x
 meneth.215.desc;[From.GetTitledFirstName] has not agreed to release [FromFrom.GetTitledFirstName].;;;;;;;;;;;;;x
 meneth.217.desc;The laws of your realm prevent you from instituting anything but minimal obligations from your vassals. Your demesne laws have therefore been returned to minimum.;;;;;;;;;;;;;x
+meneth.219.desc;It is time for a faction meeting. We will determine what action to take, if any, once we know how everyone feels about our liege's rule.;;;;;;;;;;;;;x
+meneth.220.desc;A faction meeting has begun, and the first point on the agenda is determining how the faction as a whole feels about our liege's rule. What is your opinion of their rule?;;;;;;;;;;;;;x
+meneth.220.a;Their rule is just;;;;;;;;;;;;;x
+meneth.220.b;No opinion;;;;;;;;;;;;;x
+meneth.220.c;Inustices must be righted;;;;;;;;;;;;;x
+meneth.221.desc;Based on the faction vote, the following options are available to us. What action should we take? Your choice will be put to a vote.;;;;;;;;;;;;;x
+meneth.221.a;Support our liege;;;;;;;;;;;;;x
+meneth.221.b;Strengthen our position;;;;;;;;;;;;;x
+meneth.221.c;Demand crown authority reduced;;;;;;;;;;;;;x
+meneth.221.d;Weaken liege;;;;;;;;;;;;;x
+meneth.222.desc;A vote has been called on whether or not to provide our liege with financial support for his current war. It is proposed that we all give up a tenth of our income this year to fund the war. Do you support this?;;;;;;;;;;;;;x
+meneth.223.desc;All the votes have been tallied.;;;;;;;;;;;;;x
+meneth.223.a;The vote succeeded;;;;;;;;;;;;;x
+meneth.223.b;The vote failed;;;;;;;;;;;;;x
+meneth.224.desc;All the votes have been tallied. The vote succeeded;;;;;;;;;;;;;x
+meneth.225.desc;All the votes have been tallied. The vote failed;;;;;;;;;;;;;x
+meneth.226.desc;Our vassals have decided to provide us with financial support in our current war.;;;;;;;;;;;;;x
+meneth.227.desc;A vote has been called on whether or not to demand lower obligations. It is proposed that we present our liege with an ultimatum. Do you support this?;;;;;;;;;;;;;x
+meneth.228.desc;Our vassals demand that we lower their obligations. Should we do this?;;;;;;;;;;;;;x
+meneth.229.desc;A vote has been called on whether or not to demand title revocation removed. It is proposed that we present our liege with an ultimatum. Do you support this?;;;;;;;;;;;;;x
+meneth.230.desc;Our vassals demand that we get rid of title revocation. Should we do this?;;;;;;;;;;;;;x
+meneth.231.desc;A vote has been called on whether or not to demand internal peace removed. It is proposed that we present our liege with an ultimatum. Do you support this?;;;;;;;;;;;;;x
+meneth.232.desc;Our vassals demand that we get rid of internal peace. Should we do this?;;;;;;;;;;;;;x
+meneth.233.desc;Our liege has refused our ultimatum! Should we call for open revolt?;;;;;;;;;;;;;x
+meneth.234.desc;Our liege has refused our ultimatum, and the faction leader is calling for an open revolt! Is revolt the right choice?;;;;;;;;;;;;;x
+meneth.235.desc;The votes have been tallied.;;;;;;;;;;;;;x
+meneth.235.a;To war!;;;;;;;;;;;;;x
+meneth.235.b;Peace in our time;;;;;;;;;;;;;x
+meneth.236.desc;We have decided to call a vote for the reduction of crown authority. How should it be reduced?;;;;;;;;;;;;;x
+meneth.236.a;Lower obligations;;;;;;;;;;;;;x
+meneth.236.b;No revocation;;;;;;;;;;;;;x
+meneth.236.c;No internal peace;;;;;;;;;;;;;x
+meneth.237.desc;We have decided to call a vote to weaken our liege. How should he be weakened?;;;;;;;;;;;;;x
+meneth.237.a;Force release of imprisoned vassals;;;;;;;;;;;;;x
+meneth.237.b;Give away a county;;;;;;;;;;;;;x
+meneth.237.c;Give money to faction;;;;;;;;;;;;;x
+meneth.237.d;Abdicate;;;;;;;;;;;;;x
+meneth.238.desc;The faction leader wants our liege to release all vassals currently held prisoner. Do you support this?;;;;;;;;;;;;;x
+meneth.239.desc;Our vassals demand that we release all vassals currently held prisoner. Should we do this?;;;;;;;;;;;;;x
+meneth.240.desc;The faction leader wants our liege to give away a county. Do you support this?;;;;;;;;;;;;;x
+meneth.241.desc;Our vassals demand that we give away a county. Should we do this?;;;;;;;;;;;;;x
+meneth.242.desc;The faction leader wants our liege to give all faction members money. Do you support this?;;;;;;;;;;;;;x
+meneth.243.desc;Our vassals demand that we give them money. Should we do this?;;;;;;;;;;;;;x
+meneth.244.desc;The faction leader wants our liege to allow external inheritance. Do you support this?;;;;;;;;;;;;;x
+meneth.245.desc;Our vassals demand that we allow external inheritance. Should we do this?;;;;;;;;;;;;;x
+meneth.246.desc;The faction leader wants our liege to abdicate. Do you support this?;;;;;;;;;;;;;x
+meneth.247.desc;Our vassals demand that we abdicate. Should we do this?;;;;;;;;;;;;;x
+meneth.248.desc;We have decided to take an action that won't hurt nor harm our liege. What action should we take?;;;;;;;;;;;;;x
+meneth.248.a;Preserve status quo;;;;;;;;;;;;;x
+meneth.248.b;Military cooperation;;;;;;;;;;;;;x
+meneth.248.c;Economic cooperation;;;;;;;;;;;;;x
+meneth.249.desc;The faction leader has called for increased cooperation between faction members. This can only be good.;;;;;;;;;;;;;x
+meneth.249.a;Military cooperation begins;;;;;;;;;;;;;x
+meneth.249.b;Economic cooperation begins;;;;;;;;;;;;;x
+meneth.250.desc;We have decided to support our liege. What action should we take?;;;;;;;;;;;;;x
+meneth.250.a;Provide financial support;;;;;;;;;;;;;x
+meneth.250.b;Give commendation;;;;;;;;;;;;;x
+meneth.251.desc;The faction leader wants to commend our liege for his good rule. Do you support this?;;;;;;;;;;;;;x
+meneth.252.desc;Our vassals have commended us for our good rule. Only good can come of this.;;;;;;;;;;;;;x
+meneth.253.desc;Many of our vassals are holding a meeting, discussing their opinion of our rule. According to our spymaster they are happy with our rule. If anything comes of it we will know within days.;;;;;;;;;;;;;x
+meneth.254.desc;Many of our vassals are holding a meeting, discussing their opinion of our rule. According to our spymaster they are favoring the status quo. It is no matter to us.;;;;;;;;;;;;;x
+meneth.255.desc;Many of our vassals are holding a meeting, discussing their opinion of our rule. According to our spymaster they are not happy with our rule. If anything comes of it we will know within days.;;;;;;;;;;;;;x
+meneth.256.desc;Our vassals have wisely decided not to act upon our refusal to heed their ultimatum. We should take notice that they might not be so forgiving in the future.;;;;;;;;;;;;;x
+meneth.257.desc;Many of our vassals have decided to cooperate in order to improve their own situation. While this has no direct effect upon us, it does make them a greater potential danger to our rule.;;;;;;;;;;;;;x
+meneth.257.a;Their economy will improve;;;;;;;;;;;;;x
+meneth.257.b;Their military will improve;;;;;;;;;;;;;x
+meneth.258.desc;The result of the vote is that we are to revolt. If we have any second thoughts, now is the time to voice them. The war will be declared in three weeks. Note that as a player you'll have to leave the faction manually in order to stay loyal.;;;;;;;;;;;;;x
+meneth.258.a;To war!;;;;;;;;;;;;;x
+meneth.258.b;Remain loyal to our liege;;;;;;;;;;;;;x
+faction_members_angry; This will ruin our relations with everyone in the faction except those who also stay loyal to our liege.;;;;;;;;;;;;;x
+meneth.259.desc;The result of the vote is that there will be no revolt.;;;;;;;;;;;;;x
+meneth.260.desc;It is time to launch our revolt!;;;;;;;;;;;;;x
+meneth.261.desc;Our vassals have decided to act upon our refusal to heed their ultimatum. We must prepare for war starting within a month.;;;;;;;;;;;;;x
 meneth.400.desc;It is time we asserted our dominion over Anatolia. We should invade Iconium.;;;;;;;;;;;;;x
 meneth.400.a;To war!;;;;;;;;;;;;;x
 meneth.400.b;I'd rather not;;;;;;;;;;;;;x

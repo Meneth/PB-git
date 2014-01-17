@@ -11,7 +11,7 @@ b_abukir = city
 b_alexandria = temple
 b_marabout = city
 
-#b_damanhur = temple
+#b_dukhayla = castle
 #b_naucratis = castle
 #b_elkanoun = castle
 
@@ -21,20 +21,16 @@ religion = druze
 
 # History
 
-867.1.1 = { 
-	b_abukir = ct_trade_post_1
-	b_abukir = ct_trade_post_2
-	b_abukir = ct_trade_post_3
-	b_abukir = ct_trade_post_4
-	b_abukir = ct_marketplace_1
-	b_abukir = ct_wall_1
-	b_abukir = ct_barracks_1
+1066.1.1 = { 
 	b_hammam = ca_keep_1
 	b_hammam = ca_training_grounds_1
 	b_hammam = ca_stable_1
 	b_hammam = ca_wall_1
 	b_hammam = ca_wall_2
 	b_hammam = ca_militia_barracks_1
+	b_abukir = ct_marketplace_1
+	b_abukir = ct_wall_1
+	b_abukir = ct_barracks_1
 	b_alexandria = tp_monastery_1
 	b_alexandria = tp_monastery_2
 	b_alexandria = tp_wall_1

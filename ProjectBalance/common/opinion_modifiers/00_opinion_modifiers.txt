@@ -96,14 +96,6 @@ opinion_demesne_too_big = {
 	opinion = -10
 }
 
-opinion_female_heir = {
-	opinion = -5
-}
-
-opinion_female_ruler = {
-	opinion = -10
-}
-
 # My liege is defending my titles against claimants
 opinion_defending_my_titles = {
 	opinion = 100

@@ -148,35 +148,212 @@ character_event = {
 			has_character_modifier = huge_loan
 		}
 	}
+	
 	#Pay interest
 	option = {
 		name = meneth.203.a
+		ai_chance = {
+			factor = 10 # AI will prefer piecemeal, since the event is yearly and the AI will also
+						# be considering repayment in full via decision fairly regularly. if they have
+						# no wars going on and 40% of their yearly income in reserves and enough cash
+						# to do at least a half-payment (if possible) or otherwise a full and retain a
+						# slight buffer, then the scales will tip significantly toward repayment of
+						# whatever they can, however.
+			
+			modifier = {
+				factor = 10 # AI should pay piecemeal if they don't have enough reserves for 3 months of
+				            # expenses, assuming a worst-case operating net income near zero (maybe would
+							# stretch 6 months if operating quite profitably)
+				NOT = { scaled_wealth = 0.25 }
+			}
+			modifier = {
+				factor = 2
+				scaled_wealth = 0.25
+				NOT = { scaled_wealth = 0.4 } # after 40%, we don't really care compared to other factors.
+			}
+			modifier = {
+				factor = 10 # a demesne war combined with a liege's war having raised our levies, and we
+				war = yes   # are essentially guaranteed to go with the piecemeal payment option.
+			}
+			modifier = {
+				factor = 5
+				# approx. half the maintenance will need to be paid if our liege levy is raised, relative
+				# to funding our own demesne war. same for relative importance of not running out of funds.
+				
+				any_liege = {
+					war = yes
+					has_raised_levies = ROOT
+				}
+			}
+			
+			# can we pay the maximum possible at this time and get away relatively unscathed?
+			modifier = {
+				factor = 0.2 # counteracts our levies being raised (half a personal war, half a severe
+				             # short-term savings deficit-- significantly exceeds all other factors)
+				OR = {
+					AND = {
+						wealth = 150 # buffer above max. cost of half-paid (same minimums as decisions)
+						OR = {
+							has_character_modifier = small_loan
+							AND = {
+								NOT = { has_character_modifier = small_loan } # poorman's XOR at work
+								has_character_modifier = medium_loan
+							}
+						}
+					}
+					AND = {
+						wealth = 300
+						OR = {
+							has_character_modifier = medium_loan
+							AND = {
+								NOT = { has_character_modifier = medium_loan }
+								has_character_modifier = large_loan
+							}
+						}
+					}
+					AND = {
+						wealth = 550
+						OR = {
+							has_character_modifier = large_loan
+							AND = {
+								NOT = { has_character_modifier = large_loan }
+								has_character_modifier = huge_loan
+							}
+						}
+					}
+					AND = {
+						wealth = 1000
+						has_character_modifier = huge_loan
+					}
+				}
+			}
+			
+			# the more our reserves in terms of our time horizon's operating costs (which must include
+			# investments like holding upgrades, though scaled_wealth doesn't), the more likely we are
+			# to prefer to pay as much as possible to minimize future interest (and other loan maluses),
+			# ceteris paribus.
+			modifier = {
+				factor = 0.75
+				scaled_wealth = 1.25
+			}
+			modifier = {
+				factor = 0.75
+				scaled_wealth = 2.5
+			}
+			modifier = {
+				factor = 0.75
+				scaled_wealth = 3.75
+			}
+		}
+		
 		custom_tooltip = {
 			text = pay_interest
 			hidden_tooltip = {
 				if = {
-					limit = {
-						has_character_modifier = small_loan
+					limit = { has_character_modifier = small_loan }
+					if = {
+						limit = { NOT = { stewardship = 5 } }
+						wealth = -10
 					}
-					wealth = -10
+					if = {
+						limit = {
+							stewardship = 5
+							NOT = { stewardship = 10 }
+						}
+						wealth = -9
+					}
+					if = {
+						limit = {
+							stewardship = 10
+							NOT = { stewardship = 15 }
+						}
+						wealth = -8
+					}
+					if = {
+						limit = { stewardship = 15 }
+						wealth = -7
+					}
 				}
 				if = {
 					limit = {
 						has_character_modifier = medium_loan
 					}
-					wealth = -20
+					if = {
+						limit = { NOT = { stewardship = 5 } }
+						wealth = -20
+					}
+					if = {
+						limit = {
+							stewardship = 5
+							NOT = { stewardship = 10 }
+						}
+						wealth = -18
+					}
+					if = {
+						limit = {
+							stewardship = 10
+							NOT = { stewardship = 15 }
+						}
+						wealth = -16
+					}
+					if = {
+						limit = { stewardship = 15 }
+						wealth = -14
+					}
 				}
 				if = {
 					limit = {
 						has_character_modifier = large_loan
 					}
-					wealth = -40
+					if = {
+						limit = { NOT = { stewardship = 5 } }
+						wealth = -40
+					}
+					if = {
+						limit = {
+							stewardship = 5
+							NOT = { stewardship = 10 }
+						}
+						wealth = -36
+					}
+					if = {
+						limit = {
+							stewardship = 10
+							NOT = { stewardship = 15 }
+						}
+						wealth = -32
+					}
+					if = {
+						limit = { stewardship = 15 }
+						wealth = -28
+					}
 				}
 				if = {
 					limit = {
 						has_character_modifier = huge_loan
 					}
-					wealth = -80
+					if = {
+						limit = { NOT = { stewardship = 5 } }
+						wealth = -80
+					}
+					if = {
+						limit = {
+							stewardship = 5
+							NOT = { stewardship = 10 }
+						}
+						wealth = -72
+					}
+					if = {
+						limit = {
+							stewardship = 10
+							NOT = { stewardship = 15 }
+						}
+						wealth = -64
+					}
+					if = {
+						limit = { stewardship = 15 }
+						wealth = -56
+					}
 				}
 			}
 		}
@@ -185,34 +362,123 @@ character_event = {
 	option = {
 		name = meneth.203.b
 		trigger = {
-			wealth = 110
+			wealth = 110 # TODO: needs to be revised to actually cover the
+			             # minimum based upon what loan tiers have been taken.
+						 # otherwise, the char might get to skip yearly interest
+						 # (a relatively rare chance for the AI, though).
 		}
+		ai_chance = {
+			factor = 10
+		}
+		
 		custom_tooltip = {
 			text = repay_loans
-			hidden_tooltip = {
+			hidden_tooltip = {		
 				if = {
-					limit = {
-						has_character_modifier = small_loan
+					limit = { has_character_modifier = small_loan }
+					if = {
+						limit = { NOT = { stewardship = 5 } }
+						wealth = -10
 					}
-					wealth = -10
+					if = {
+						limit = {
+							stewardship = 5
+							NOT = { stewardship = 10 }
+						}
+						wealth = -9
+					}
+					if = {
+						limit = {
+							stewardship = 10
+							NOT = { stewardship = 15 }
+						}
+						wealth = -8
+					}
+					if = {
+						limit = { stewardship = 15 }
+						wealth = -7
+					}
 				}
 				if = {
 					limit = {
 						has_character_modifier = medium_loan
 					}
-					wealth = -20
+					if = {
+						limit = { NOT = { stewardship = 5 } }
+						wealth = -20
+					}
+					if = {
+						limit = {
+							stewardship = 5
+							NOT = { stewardship = 10 }
+						}
+						wealth = -18
+					}
+					if = {
+						limit = {
+							stewardship = 10
+							NOT = { stewardship = 15 }
+						}
+						wealth = -16
+					}
+					if = {
+						limit = { stewardship = 15 }
+						wealth = -14
+					}
 				}
 				if = {
 					limit = {
 						has_character_modifier = large_loan
 					}
-					wealth = -40
+					if = {
+						limit = { NOT = { stewardship = 5 } }
+						wealth = -40
+					}
+					if = {
+						limit = {
+							stewardship = 5
+							NOT = { stewardship = 10 }
+						}
+						wealth = -36
+					}
+					if = {
+						limit = {
+							stewardship = 10
+							NOT = { stewardship = 15 }
+						}
+						wealth = -32
+					}
+					if = {
+						limit = { stewardship = 15 }
+						wealth = -28
+					}
 				}
 				if = {
 					limit = {
 						has_character_modifier = huge_loan
 					}
-					wealth = -80
+					if = {
+						limit = { NOT = { stewardship = 5 } }
+						wealth = -80
+					}
+					if = {
+						limit = {
+							stewardship = 5
+							NOT = { stewardship = 10 }
+						}
+						wealth = -72
+					}
+					if = {
+						limit = {
+							stewardship = 10
+							NOT = { stewardship = 15 }
+						}
+						wealth = -64
+					}
+					if = {
+						limit = { stewardship = 15 }
+						wealth = -56
+					}
 				}
 				if = {
 					limit = {
@@ -224,6 +490,20 @@ character_event = {
 				}
 				if = {
 					limit = {
+						has_character_modifier = huge_loan
+						NOT = { has_character_modifier = large_loan }
+						wealth = 400
+					}
+					wealth = -400
+					remove_character_modifier = huge_loan
+					add_character_modifier = {
+						name = large_loan
+						duration = -1
+						inherit = yes
+					}
+				}
+				if = {
+					limit = {
 						has_character_modifier = large_loan
 						wealth = 400
 					}
@@ -232,11 +512,39 @@ character_event = {
 				}
 				if = {
 					limit = {
+						has_character_modifier = large_loan
+						NOT = { has_character_modifier = medium_loan }
+						wealth = 200
+					}
+					wealth = -200
+					remove_character_modifier = large_loan
+					add_character_modifier = {
+						name = medium_loan
+						duration = -1
+						inherit = yes
+					}
+				}
+				if = {
+					limit = {
 						has_character_modifier = medium_loan
 						wealth = 200
 					}
 					wealth = -200
 					remove_character_modifier = medium_loan
+				}
+				if = {
+					limit = {
+						has_character_modifier = medium_loan
+						NOT = { has_character_modifier = small_loan }
+						wealth = 100
+					}
+					wealth = -100
+					remove_character_modifier = medium_loan
+					add_character_modifier = {
+						name = small_loan
+						duration = -1
+						inherit = yes
+					}
 				}
 				if = {
 					limit = {
@@ -1223,5 +1531,5 @@ character_event = {
 		}
 	}
 }
-#meneth.218 taken
-#meneth.211 free
+
+# up to meneth.219 taken

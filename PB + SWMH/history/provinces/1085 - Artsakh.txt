@@ -16,8 +16,8 @@ b_jrvshtik = temple
  
 
 # Misc
-culture = kurdish
-religion = sunni
+culture = armenian
+religion = miaphysite
 
 # History
 1084.1.1 = { culture = kurdish }

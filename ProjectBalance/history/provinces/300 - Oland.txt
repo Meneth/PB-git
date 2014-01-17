@@ -23,6 +23,7 @@ religion = norse_pagan
 # History
 867.1.1 = {
 	b_kopingsvik = ct_marketplace_1
+	b_borgholm = ca_shipyard_1
 }
 1066.1.1 = {
 	culture = swedish

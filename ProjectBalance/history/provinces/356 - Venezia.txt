@@ -21,11 +21,7 @@ religion = catholic
 
 # History
 
-867.1.1 = {
-	b_venezia = ct_trade_post_1
-	b_venezia = ct_trade_post_2
-	b_venezia = ct_trade_post_3
-	b_venezia = ct_trade_post_4
+867.1.1 = { 
 	b_venezia = ct_wall_1
 	b_venezia = ct_wall_2
 	b_venezia = ct_shipyard_1
@@ -44,6 +40,13 @@ religion = catholic
 	b_rialto = tp_wall_1
 	b_rialto = tp_wall_2
 	b_rialto = tp_town_1
+	b_rialto = tp_shipyard_1
+	b_jesolo = ct_shipyard_1
+	b_lido = ct_shipyard_1
+}
+
+1066.1.1 = { 
+	b_venezia = ct_port_3
 	trade_post = b_contarini
 }
 

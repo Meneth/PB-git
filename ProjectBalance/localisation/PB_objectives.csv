@@ -1,24 +1,6 @@
 #CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
-faction_remove_king_peace_decision;Demand Removal of The King's Peace;;;;;;;;;;;;;x
-faction_remove_king_peace_decision_desc;Present an ultimatum to §Y[Root.Liege.GetBestName]§!, demanding the removal of The King's Peace. If [Root.Liege.GetSubjectPronoun] refuses to comply, your Faction will rise in revolt.;;;;;;;;;;;;;x
-faction_remove_king_peace_title;Remove The King's Peace in [This.GetName];;;;;;;;;;;;;x
-faction_remove_king_peace_desc;Members seek to remove The King's Peace in [This.GetName]. When sufficiently powerful, §Y[From.GetBestName]§! may present an ultimatum to §Y[From.Liege.GetBestName]§!.;;;;;;;;;;;;;x
-faction_remove_emperor_peace_decision;Demand Removal of The Emperor's Peace;;;;;;;;;;;;;x
-faction_remove_emperor_peace_decision_desc;Present an ultimatum to §Y[Root.Liege.GetBestName]§!, demanding the removal of The Emperor's Peace. If [Root.Liege.GetSubjectPronoun] refuses to comply, your Faction will rise in revolt.;;;;;;;;;;;;;x
-faction_remove_emperor_peace_title;Remove The Emperor's Peace in [This.GetName];;;;;;;;;;;;;x
-faction_remove_emperor_peace_desc;Members seek to remove The Emperor's Peace in [This.GetName]. When sufficiently powerful, §Y[From.GetBestName]§! may present an ultimatum to §Y[From.Liege.GetBestName]§!.;;;;;;;;;;;;;x
-faction_remove_revokation_decision;Demand Removal of Title Revocation;;;;;;;;;;;;;x
-faction_remove_revokation_decision_desc;Present an ultimatum to §Y[Root.Liege.GetBestName]§!, demanding the removal of Title Revocation. If [Root.Liege.GetSubjectPronoun] refuses to comply, your Faction will rise in revolt.;;;;;;;;;;;;;x
-faction_remove_revokation_title;Remove Title Revocation in [This.GetName];;;;;;;;;;;;;x
-faction_remove_revokation_desc;Members seek to remove Title Revocation in [This.GetName]. When sufficiently powerful, §Y[From.GetBestName]§! may present an ultimatum to §Y[From.Liege.GetBestName]§!.;;;;;;;;;;;;;x
-faction_remove_inheritance_decision;Demand Removal of Protected Inheritance;;;;;;;;;;;;;x
-faction_remove_inheritance_decision_desc;Present an ultimatum to §Y[Root.Liege.GetBestName]§!, demanding the removal of Protected Inheritance. If [Root.Liege.GetSubjectPronoun] refuses to comply, your Faction will rise in revolt.;;;;;;;;;;;;;x
-faction_remove_inheritance_title;Remove Protected Inheritance in [This.GetName];;;;;;;;;;;;;x
-faction_remove_inheritance_desc;Members seek to remove Protected Inheritance in [This.GetName]. When sufficiently powerful, §Y[From.GetBestName]§! may present an ultimatum to §Y[From.Liege.GetBestName]§!.;;;;;;;;;;;;;x
-faction_lower_crown_levies_decision;Demand Reduced Crown Levies;;;;;;;;;;;;;x
-faction_lower_crown_levies_decision_desc;Present an ultimatum to §Y[Root.Liege.GetBestName]§!, demanding lower Crown Levies. If [Root.Liege.GetSubjectPronoun] refuses to comply, your Faction will rise in revolt.;;;;;;;;;;;;;x
-faction_lower_crown_levies_title;Reduce Crown Levies in [This.GetName];;;;;;;;;;;;;x
-faction_lower_crown_levies_desc;Members seek to reduce Crown Levies in [This.GetName]. When sufficiently powerful, §Y[From.GetBestName]§! may present an ultimatum to §Y[From.Liege.GetBestName]§!.;;;;;;;;;;;;;x
+faction_autonomy_title;Autonomy;;;;;;;;;;;;;x
+faction_autonomy_desc;Members seek to increase their autonomy within §Y[From.Liege.GetBestName]§'s realm.;;;;;;;;;;;;;x
 obj_convert_a_province_title;Convert a Province;;;;;;;;;;;;;x
 obj_convert_a_province_desc;You want to convert a province, making your religious head happy and showing your piety to the world. Your stewardship will be reduced by two as you're busy helping your court chaplain convert the heathens.;;;;;;;;;;;;;x
 obj_amass_fortune_title;Amass Fortune;;;;;;;;;;;;;x
@@ -33,5 +15,13 @@ obj_become_distinguished_title;Become Distinguished Among the Nobility;;;;;;;;;;
 obj_become_distinguished_desc;[This.GetTitledFirstName] seeks to become distinguished among the nobility;;;;;;;;;;;;;x
 obj_seek_fame_glory_title;Seek Fame and Glory;;;;;;;;;;;;;x
 obj_seek_fame_glory_desc;While already notable, [This.GetTitledFirstName] thinks [This.GetObjectPronoun] deserves true fame and glory for [This.GetHerHis] deeds.;;;;;;;;;;;;;x
+obj_cta_0_title;Develop Personal Combat Skills;;;;;;;;;;;;;x
+obj_cta_0_desc;[This.GetTitledFirstName] has no education in the art of personal combat and wants to change that through combat experience.;;;;;;;;;;;;;x
+obj_cta_1_title;Become a Trained Fighter;;;;;;;;;;;;;x
+obj_cta_1_desc;[This.GetTitledFirstName] has a meager education in the art of personal combat and wants to change that through combat experience.;;;;;;;;;;;;;x
+obj_cta_2_title;Become a Skilled Fighter;;;;;;;;;;;;;x
+obj_cta_2_desc;While [This.GetTitledFirstName] is already well-trained in personal combat, [This.GetSheHe]'d like to take [This.GetHerHis] skills to the next level through experience in the field.;;;;;;;;;;;;;x
+obj_cta_3_title;Become a Formidable Fighter;;;;;;;;;;;;;x
+obj_cta_3_desc;While many already consider [This.GetTitledFirstName] to be one of the more skilled fighters in the realm, [This.GetSheHe] desires true mastery of [This.GetHerHis] art, and no better way to attain such heights exists than through experience in the field.;;;;;;;;;;;;;x
 opinion_known_virtue;Virtuous;;;;;;;;;;;;;x
 opinion_fame_glory;Glorious;;;;;;;;;;;;;x

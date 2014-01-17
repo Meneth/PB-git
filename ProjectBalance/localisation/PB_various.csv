@@ -13,7 +13,10 @@ cultural_flexibility;Cultural Flexibility;;;;;;;;;;;;;x
 opinion_increased_crown_levies;Increased Crown Levies;;;;;;;;;;;;;x
 opinion_protected_inheritance;Disabled External Inheritance;;;;;;;;;;;;;x
 RETINUE_EXPL_DEL;Your Retinue is a standing army consisting of §Y250-man§! regiments. Unlike Army Levies, retinues are always on the map and reinforce slowly. Retinues cost the most maintenance while reinforcing, but will still cost one fourth of their maximum reinforcement cost when simply being maintained.\nThe maximum number of retinue regiments you can field depends on your §YMilitary Organization§! technology, the size of all the levies in your realm, and the buildings in your demesne.;;;;;;;;;;;;;x
+gluttonous_death;of gluttony;;;;;;;;;;;;;x
 immortal;Immortal;;;;;;;;;;;;;x
 immortal_desc;Immortals will never succumb to old age, but they can still die from other causes.;;;;;;;;;;;;;x
 gluttonous_death;of gluttony;;;;;;;;;;;;;x
 rum;Ignore the man behind the courtain;;;;;;;;;;;;;x
+is_not_allied;Target is not an ally\n;;;;;;;;;;;;;x
+religious_enemy;Target is a religious enemy\n;;;;;;;;;;;;;x

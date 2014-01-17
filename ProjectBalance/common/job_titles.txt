@@ -20,20 +20,19 @@ job_chancellor = {
 	
 	allow = {
 		OR = {
+			is_female = no
 			AND = {
-				OR = {
-					is_female = no
-					AND = {
-						religion = cathar
-						liege = { religion = cathar }
-					}
-				}
-				is_adult = yes
+				religion = cathar
+				liege = { religion = cathar }
 			}
 			has_character_flag = special_chancellor
 			liege = {
 				primary_title = {
-					has_law = true_cognatic_succession
+					OR = {
+						has_law = true_cognatic_succession
+						has_law = enatic_cognatic_succession
+						has_law = enatic_succession
+					}
 				}
 			}
 			AND = {
@@ -41,7 +40,10 @@ job_chancellor = {
 				NOT = { liege = { religion_group = muslim } }
 			}
 		}
-		is_adult = yes
+		OR = {
+			is_adult = yes
+			has_character_flag = special_chancellor
+		}
 		prisoner = no
 		NOT = { trait = incapable }
 	}
@@ -104,15 +106,18 @@ job_marshal = {
 	
 	allow = {
 		OR = {
+			is_female = no
 			AND = {
-				OR = {
-					is_female = no
-					AND = {
-						religion = cathar
-						liege = { religion = cathar }
+				religion = cathar
+				liege = { religion = cathar }
+			}
+			liege = {
+				primary_title = {
+					OR = {
+						has_law = enatic_cognatic_succession
+						has_law = enatic_succession
 					}
 				}
-				is_adult = yes
 			}
 			has_character_flag = special_marshal
 			AND = {
@@ -120,7 +125,10 @@ job_marshal = {
 				NOT = { liege = { religion_group = muslim } }
 			}
 		}
-		is_adult = yes
+		OR = {
+			is_adult = yes
+			has_character_flag = special_marshal
+		}
 		prisoner = no
 		NOT = { trait = incapable }
 	}
@@ -183,15 +191,10 @@ job_treasurer = {
 	
 	allow = {
 		OR = {
+			is_female = no
 			AND = {
-				OR = {
-					is_female = no
-					AND = {
-						religion = cathar
-						liege = { religion = cathar }
-					}
-				}
-				is_adult = yes
+				religion = cathar
+				liege = { religion = cathar }
 			}
 			has_character_flag = special_treasurer
 			liege = {
@@ -210,7 +213,10 @@ job_treasurer = {
 			is_female = no
 			NOT = { liege = { religion_group = muslim } }
 		}
-		is_adult = yes
+		OR = {
+			is_adult = yes
+			has_character_flag = special_treasurer
+		}
 		prisoner = no
 		NOT = { trait = incapable }
 	}
@@ -344,9 +350,9 @@ job_spiritual = {
 			AND = {
 				religion_group = pagan_group
 				NOT = { religion = aztec }
-				NOT = { religion = aztec_reformed}
+				NOT = { religion = aztec_reformed }
 				NOT = { religion = tengri_pagan }
-				NOT = { religion = tengri_pagan_reformed}
+				NOT = { religion = tengri_pagan_reformed }
 			}
 			AND = {
 				has_global_flag = gender_equality

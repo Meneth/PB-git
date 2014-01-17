@@ -2485,7 +2485,7 @@ faction_independence = {
 	
 	# AI creation weight
 	chance = {
-		factor = 3
+		factor = 2
 		
 		modifier = {
 			factor = 0
@@ -2585,11 +2585,11 @@ faction_independence = {
 			OR = {
 				AND = {
 					NOT = { leads_faction = faction_independence }
-					opinion = { who = LIEGE value = 75 }
+					opinion = { who = LIEGE value = 65 }
 				}
 				AND = {
 					leads_faction = faction_independence
-					opinion = { who = LIEGE value = 80 } 
+					opinion = { who = LIEGE value = 75 } 
 				}
 			}
 		}
@@ -2818,7 +2818,7 @@ faction_independence = {
 	
 	# AI membership weight: ROOT is the prospective member. FROM is the faction leader. FROMFROM is the target title or character.
 	membership = {
-		factor = 5
+		factor = 3
 		
 		modifier = {
 			factor = 0
@@ -2931,11 +2931,11 @@ faction_independence = {
 			OR = {
 				AND = {
 					NOT = { in_faction = faction_independence }
-					opinion = { who = LIEGE value = 75 }
+					opinion = { who = LIEGE value = 65 }
 				}
 				AND = {
 					in_faction = faction_independence
-					opinion = { who = LIEGE value = 80 }
+					opinion = { who = LIEGE value = 75 }
 				}
 			}
 			
@@ -3377,6 +3377,11 @@ faction_claimant = {
 						}
 					}
 				}
+			}
+			#Prevent theocracies
+			OR = {
+				is_theocracy = no
+				ROOT = { is_theocracy = yes }
 			}
 		}
 		
