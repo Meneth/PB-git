@@ -1,5 +1,4 @@
 #CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
-#cta.0.desc;CTA: Combat XP advancement impulse (Ambition: [Root.GetAmbition], Age: [Root.GetAgeYears], Martial: [Root.GetMartial]).;;;;;;;;;;;;;x
 cta.1.desc;This war, this opportunity to prove my mettle in combat, has opened my eyes to my true potential as a warrior. My personal combat skills are improving...;;;;;;;;;;;;;x
 cta.1.opt.1;May [Root.Religion.GetRandomGodNameCap] guide my heart, hand, and steel.;;;;;;;;;;;;;x
 cta.1.opt.1.CTT;§Y[Root.GetTitledFirstName]§! begins advancement of [Root.GetHerHis] personal combat skills...\n;;;;;;;;;;;;;x
@@ -25,4 +24,11 @@ cta.114.opt.1;Hmm... now [From.GetSheHe]'s a poor fighter.;;;;;;;;;;;;;x
 cta.114.opt.2;Now [From.GetSheHe]'s a trained fighter.;;;;;;;;;;;;;x
 cta.114.opt.3;Now [From.GetSheHe]'s a skilled fighter.;;;;;;;;;;;;;x
 cta.114.opt.4;Now [From.GetSheHe]'s a formidable fighter!;;;;;;;;;;;;;x
-#cta.115.desc;My [GetFromRelation], [From.GetBestName], lost a duel to [FromFrom.GetBestName].;;;;;;;;;;;;;x
+obj_cta_0_title;Develop Personal Combat Skills;;;;;;;;;;;;;x
+obj_cta_0_desc;[This.GetTitledFirstName] has no education in the art of personal combat and wants to change that through combat experience.;;;;;;;;;;;;;x
+obj_cta_1_title;Become a Trained Fighter;;;;;;;;;;;;;x
+obj_cta_1_desc;[This.GetTitledFirstName] has a meager education in the art of personal combat and wants to change that through combat experience.;;;;;;;;;;;;;x
+obj_cta_2_title;Become a Skilled Fighter;;;;;;;;;;;;;x
+obj_cta_2_desc;While [This.GetTitledFirstName] is already well-trained in personal combat, [This.GetSheHe]'d like to take [This.GetHerHis] skills to the next level through experience in the field.;;;;;;;;;;;;;x
+obj_cta_3_title;Become a Formidable Fighter;;;;;;;;;;;;;x
+obj_cta_3_desc;While many already consider [This.GetTitledFirstName] to be one of the more skilled fighters in the realm, [This.GetSheHe] desires true mastery of [This.GetHerHis] art, and no better way to attain such heights exists than through experience in the field.;;;;;;;;;;;;;x

@@ -1,5 +1,5 @@
 ##############################################################
-# Project Balance: Combat Trait Advancement (CTA): Ambitions #
+# CTA: Combat Trait Advancement: Ambitions                   #
 # zijistark <azrinon@gmail.com>                              #
 ##############################################################
 
