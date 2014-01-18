@@ -1,3 +1,6 @@
+3.4.2
+	(PB+SWMH) Fixed three provinces in Ethiopia having no holdings
+
 3.4.1
 	Updated the implementation of the New Duel Engine to its latest version
 	Combat/fighter traits (for the duel engine) are again customizable in the Ruler Designer [zijistark]
