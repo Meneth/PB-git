@@ -383,7 +383,7 @@ static_learning_mod = {
 
 base_values = {
 	land_organisation = 0.2			#20% morale recovery.
-	fertility = -0.1
+	fertility = -0.05
 }
 
 war = {
