@@ -33,3 +33,5 @@ violate_baqt;Violate the Baqt;;;;;;;;;;;;;x
 violate_baqt_desc;By violating the Baqt, free trade between Muslims and Ethiopians will cease, and they will once more be allowed to attack one another.;;;;;;;;;;;;;x
 prepare_for_converter;Prepare game for EU4 conversion;;;;;;;;;;;;;x
 prepare_for_converter_desc;This decision makes your game ready for converting to EU4. If you do not execute the decision before conversion then the converter will assume that all realms have autonomous vassals, and thus release major vassals as vassal nations. Do note that this decision will cause certain crown authority laws to show up on the dejure kingdom/empire maps, so you should not run it until right before you plan to convert.;;;;;;;;;;;;;x
+shattered_balance;Enable Shattered Balance;;;;;;;;;;;;;x
+shattered_balance_desc;Every county in the world will become independent. Various customization options will be received by event.;;;;;;;;;;;;;x
