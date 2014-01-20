@@ -3103,11 +3103,9 @@ crusade = {
 				}
 			}
 			is_landed = yes # Otherwise the war score starts at -100%
-			NOT = {
-				AND = {
-					religion_group = muslim
-					FROM = { religion_group = pagan_group }
-				}
+			OR = {
+				NOT = { religion_group = muslim }
+				NOT = { FROM = { religion_group = pagan_group } }
 			}
 		}
 		OR = {
