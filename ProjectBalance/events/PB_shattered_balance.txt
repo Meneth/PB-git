@@ -27,12 +27,14 @@ narrative_event = {
 				is_merchant_republic = no
 				primary_title = { is_primary_type_title = no } # Mercs, the Pope, Holy Orders, etc
 			}
+			any_war = { end_war = invalid }
 			any_realm_lord = {
 				limit = {
 					is_merchant_republic = no
 					is_patrician = no
 					higher_tier_than = baron
 				}
+				any_war = { end_war = invalid }
 				any_demesne_title = {
 					limit = {
 						higher_tier_than = count

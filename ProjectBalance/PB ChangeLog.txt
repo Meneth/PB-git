@@ -1,4 +1,5 @@
 3.4.2
+	Shattered Balance, No Ahistorical Empires, and Gender Equality can now be enabled in-game before first unpausing the game
 	(PB+SWMH) Fixed three provinces in Ethiopia having no holdings
 	Reduced PB's across the board fertility penalty to 5% (from 10%)
 	(PB+SWMH+NBRT+) Fixed an issue where movement involving a few specific provinces would take months rather than days
