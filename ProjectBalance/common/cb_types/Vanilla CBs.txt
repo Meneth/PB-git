@@ -71,7 +71,9 @@ claim = {
 					}
 				}
 			}
-			ROOT = { dynasty = 25061 } #Karlings
+			hidden_tooltip = { # You can't change dynasty, so no point showing it
+				ROOT = { dynasty = 25061 } #Karlings
+			}
 		}
 	}
 	can_use = {
@@ -289,7 +291,9 @@ other_claim = {
 					}
 				}
 			}
-			FROMFROM = { dynasty = 25061 } #Karlings
+			hidden_tooltip = { # You can't change dynasty, so no point showing it
+				FROMFROM = { dynasty = 25061 } #Karlings
+			}
 		}
 	}
 	
@@ -1716,7 +1720,9 @@ claim_all = {
 					}
 				}
 			}
-			ROOT = { dynasty = 25061 } #Karlings
+			hidden_tooltip = { # You can't change dynasty, so no point showing it
+				ROOT = { dynasty = 25061 } #Karlings
+			}
 		}
 	}
 	

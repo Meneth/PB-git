@@ -6,7 +6,7 @@
 	Fixed mismatched localisation for autonomy faction military vs. economic cooperation (they were doing the opposite of what they informed you). [zijistark]
 	Autonomy faction military and economic cooperation now effect the entire subrealm of each faction member, providing a small but significant realm-level boost to the military or economic might of faction members relative to their liege. A bit more danger for the liege and yet also good for his/her realm if the faction votes for it. [zijistark]
 	The autonomy faction factor from legalism tech now ranges from 0 to 8 instead of -2 to 6
-	Improved the localisation for the requirements for declaring Jihad
+	Improved the localisation for some CB requirement localisation
 
 3.4.1
 	Updated the implementation of the New Duel Engine to its latest version
