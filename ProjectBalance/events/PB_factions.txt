@@ -506,12 +506,12 @@ character_event = {
 		}
 		#Legalism
 		if = {
-			limit = { capital_scope = { NOT = { TECH_LEGALISM = 1 } } }
-			change_variable = { which = "autonomy_personal_mood" value = -1 }
+			limit = { capital_scope = { TECH_LEGALISM = 1 } }
+			change_variable = { which = "autonomy_personal_mood" value = 1 }
 		}
 		if = {
-			limit = { capital_scope = { NOT = { TECH_LEGALISM = 2 } } }
-			change_variable = { which = "autonomy_personal_mood" value = -1 }
+			limit = { capital_scope = { TECH_LEGALISM = 2 } }
+			change_variable = { which = "autonomy_personal_mood" value = 1 }
 		}
 		if = {
 			limit = { capital_scope = { TECH_LEGALISM = 3 } }
