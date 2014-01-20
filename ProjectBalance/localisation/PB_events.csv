@@ -95,13 +95,13 @@ meneth.250.a;Provide financial support;;;;;;;;;;;;;x
 meneth.250.b;Give commendation;;;;;;;;;;;;;x
 meneth.251.desc;The faction leader wants to commend our liege for his good rule. Do you support this?;;;;;;;;;;;;;x
 meneth.252.desc;Our vassals have commended us for our good rule. Only good can come of this.;;;;;;;;;;;;;x
-meneth.253.desc;Many of our vassals are holding a meeting, discussing their opinion of our rule. According to our spymaster they are happy with our rule. If anything comes of it we will know within days.;;;;;;;;;;;;;x
-meneth.254.desc;Many of our vassals are holding a meeting, discussing their opinion of our rule. According to our spymaster they are favoring the status quo. It is no matter to us.;;;;;;;;;;;;;x
-meneth.255.desc;Many of our vassals are holding a meeting, discussing their opinion of our rule. According to our spymaster they are not happy with our rule. If anything comes of it we will know within days.;;;;;;;;;;;;;x
+meneth.253.desc;Many of our important vassals sent riders to let us know that they are meeting to discuss our rule, with all due respect to the law.  All in all, they seem to be happy with us. If anything comes of it, we will know within days.;;;;;;;;;;;;;x
+meneth.254.desc;Many of our vassals are holding a meeting, discussing their opinion of our rule. They're probably in favor the status quo.;;;;;;;;;;;;;x
+meneth.255.desc;A solid group of our vassals have been riding for days in order to meet, many openly criticizing our rule. Our spymaster, [Root.job_spymaster.GetBestName], reports that a number seem to be pretty disgruntled. If anything actually comes of the their complaining, we will know within days.;;;;;;;;;;;;;x
 meneth.256.desc;Our vassals have wisely decided not to act upon our refusal to heed their ultimatum. We should take notice that they might not be so forgiving in the future.;;;;;;;;;;;;;x
 meneth.257.desc;Many of our vassals have decided to cooperate in order to improve their own situation. While this has no direct effect upon us, it does make them a greater potential danger to our rule.;;;;;;;;;;;;;x
-meneth.257.a;Their economy will improve;;;;;;;;;;;;;x
-meneth.257.b;Their military will improve;;;;;;;;;;;;;x
+meneth.257.a;They will be able to field more soldiers;;;;;;;;;;;;;x
+meneth.257.b;They'll cooperate in economic development;;;;;;;;;;;;;x
 meneth.258.desc;The result of the vote is that we are to revolt. If we have any second thoughts, now is the time to voice them. The war will be declared in three weeks. Note that as a player you'll have to leave the faction manually in order to stay loyal.;;;;;;;;;;;;;x
 meneth.258.a;To war!;;;;;;;;;;;;;x
 meneth.258.b;Remain loyal to our liege;;;;;;;;;;;;;x

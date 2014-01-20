@@ -92,18 +92,33 @@ reduced_obligations = {
 	castle_vassal_tax_modifier = -0.1
 }
 
-military_cooperation = {
+
+####
+# Autonomy Faction Modifiers
+#
+# the new mil/eco modifiers:
+# - due to the different approach taken, they're more simply looked at as
+#   a realm-wide modifier (excluding the liege's personal demesne).
+# - in theory, they could stack.  currently, if a different AF (different
+#   liege in same realm) applies a cooperation modifier, it cannot be
+#   discerned from one applied by another AF (perhaps a tier above),
+#   so the latter AF will be forced to take the status quo option. to solve
+#   this, we need a hidden character modifier applied to the AF members
+#   when the province modifiers are, enabling application of a second-tier
+#   province modifier to the overlapping AF sub-realm safely.
+
+af_mil_cooperation_t1 = {
 	icon = 16
-	levy_reinforce_rate = 0.25
-	levy_size = 0.25
-	garrison_size = 0.25
+	levy_reinforce_rate = 0.1
+	levy_size = 0.08
+	garrison_size = 0.08
 }
 
-economic_cooperation = {
+af_eco_cooperation_t1 = {
 	icon = 16
-	local_tax_modifier = 0.25
-	build_time_modifier = -0.25
-	build_cost_modifier = -0.25
+	local_tax_modifier = 0.1
+	local_build_time_modifier = -0.1
+	local_build_cost_modifier = -0.1
 }
 
 autonomy_commended = {

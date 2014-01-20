@@ -1377,17 +1377,19 @@ character_event = {
 	desc = meneth.248.desc
 	picture = GFX_evt_emissary
 	border = GFX_event_normal_frame_religion
+	
 	immediate = {
 		clr_character_flag = military_cooperation
 		clr_character_flag = economic_cooperation
 	}
+	
 	option = { #Status quo
 		name = meneth.248.a
 		trigger = {
 			capital_scope = {
 				OR = {
-					has_province_modifier = military_cooperation
-					has_province_modifier = economic_cooperation
+					has_province_modifier = af_mil_cooperation_t1
+					has_province_modifier = af_eco_cooperation_t1
 				}
 			}
 		}
@@ -1395,20 +1397,20 @@ character_event = {
 	option = { #Military co-operation
 		trigger = {
 			capital_scope = {
-				NOT = { has_province_modifier = military_cooperation }
-				NOT = { has_province_modifier = economic_cooperation }
+				NOT = {
+					has_province_modifier = af_mil_cooperation_t1
+					has_province_modifier = af_eco_cooperation_t1
+				}
 			}
 		}
 		name = meneth.248.b
-		capital_scope = {
-			add_province_modifier = { name = military_cooperation duration = 5475 }
-		}
+		set_character_flag = military_cooperation
 		any_faction_backer = {
 			limit = { in_faction = faction_autonomy }
 			character_event = { id = meneth.249 days = 1 } #Alert
 		}
+		character_event = { id = meneth.249 }
 		liege = { character_event = { id = meneth.257 days = 1 } }
-		set_character_flag = military_cooperation
 		ai_chance = {
 			factor = 1
 			modifier = {
@@ -1429,17 +1431,20 @@ character_event = {
 	option = { #Economic co-operation
 		trigger = {
 			capital_scope = {
-				NOT = { has_province_modifier = military_cooperation }
-				NOT = { has_province_modifier = economic_cooperation }
+				NOT = {
+					has_province_modifier = af_mil_cooperation_t1
+					has_province_modifier = af_eco_cooperation_t1
+				}
 			}
 		}
 		name = meneth.248.c
+		set_character_flag = economic_cooperation
 		any_faction_backer = {
 			limit = { in_faction = faction_autonomy }
 			character_event = { id = meneth.249 days = 1 } #Alert
 		}
+		character_event = { id = meneth.249 }
 		liege = { character_event = { id = meneth.257 days = 1 } }
-		set_character_flag = economic_cooperation
 		ai_chance = {
 			factor = 1
 			modifier = {
@@ -4285,8 +4290,20 @@ character_event = {
 			FROM = { has_character_flag = military_cooperation }
 		}
 		name = meneth.249.a
-		capital_scope = {
-			add_province_modifier = { name = military_cooperation duration = 5475 }
+		any_demesne_title = {
+			limit = { tier = count }
+			location = {
+				add_province_modifier = { name = af_mil_cooperation_t1 duration = 5475 }
+			}
+		}
+		any_realm_lord = {
+			limit = { is_liege_or_above = ROOT }
+			any_demesne_title = {
+				limit = { tier = count }
+				location = {
+					add_province_modifier = { name = af_mil_cooperation_t1 duration = 5475 }
+				}
+			}
 		}
 	}
 	option = {
@@ -4294,8 +4311,20 @@ character_event = {
 			FROM = { has_character_flag = economic_cooperation }
 		}
 		name = meneth.249.b
-		capital_scope = {
-			add_province_modifier = { name = economic_cooperation duration = 5475 }
+		any_demesne_title = {
+			limit = { tier = count }
+			location = {
+				add_province_modifier = { name = af_eco_cooperation_t1 duration = 5475 }
+			}
+		}
+		any_realm_lord = {
+			limit = { is_liege_or_above = ROOT }
+			any_demesne_title = {
+				limit = { tier = count }
+				location = {
+					add_province_modifier = { name = af_eco_cooperation_t1 duration = 5475 }
+				}
+			}
 		}
 	}
 }
