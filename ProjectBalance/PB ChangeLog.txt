@@ -9,6 +9,7 @@
 	Improved the localisation for some CB requirement localisation
 	Fixed Muslim city vassal request event so it works properly when city obligations are set to maximum [AnaxXiphos]
 	Members of the Autonomy faction that have been coerced by their liege's spymaster will now always vote in their liege's favor when it comes to negative actions. They will never vote for the angry faction mood
+	(PB+SWMH) Fixed Imperial Reconquest not working in the French tier
 
 3.4.1
 	Updated the implementation of the New Duel Engine to its latest version
