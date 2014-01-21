@@ -138,12 +138,12 @@ letter_event = {
 	id = meneth.503
 	desc = meneth.503.desc
 	border = GFX_event_letter_frame_religion
+	is_triggered_only = yes
 	
 	trigger = {
 		ai = no
 		NOT = { has_global_flag = shattered_balance_setup_worked }
 	}
-	mean_time_to_happen = { days = 1 }
 	immediate = {
 		set_global_flag = shattered_balance_setup_worked
 		any_independent_ruler = {
