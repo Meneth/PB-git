@@ -2760,17 +2760,16 @@ character_event = {
 	picture = GFX_evt_emissary
 	border = GFX_event_normal_frame_religion
 	
-	trigger = { NOT = { has_character_modifier = ca_revoke_cooldown } }
-	
 	option = {
 		name = Yes
 		any_demesne_title = {
-			limit = { has_law = revokation_1 }
+			limit = {
+				OR = {
+					has_law = revokation_1
+					has_law = revokation_2
+				}
+			}
 			add_law = revokation_0
-		}
-		any_demesne_title = {
-			limit = { has_law = revokation_2 }
-			add_law = revokation_1
 		}
 		add_character_modifier = {
 			name = ca_revoke_cooldown

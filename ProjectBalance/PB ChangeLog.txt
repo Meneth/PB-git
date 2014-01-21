@@ -13,7 +13,6 @@
 	Crown law revocation via faction ultimatums or _any kind_ of revolt now induce a cooldown period of 15 years before a crown law may again be revoked via such a mechanism. NOTES: If a claimant of any kind usurps the throne, all CA sliders are reduced regardless of any cooldown, and if present, it's removed. If the liege is deposed, overthrown, or replaced due to a succession war and all CA sliders are reduced due to lack of cooldown protection, a new cooldown period starts for the new liege. Finally, the cooldown is removed from a title if the liege grants it to a new ruler [zijistark]
 	Fixed double-abdication bug with the autonomy faction's abdication ultimatum (child pretenders on the throne, anyone?) [zijistark]
 	Various minor bugfixes for the autonomy faction [zijistark]
-	A succesful autonomy faction revolt to remove a title revocation law will no longer revoke all tiers of the revocation law slider for all of the liege's crown titles at once. One tier will be revoked from the current law of each title instead [zijistark]
 	Successful faction revolts that revoke crown laws no longer "use-up" the liege's once-in-a-lifetime right to change a crown law, if he/she hadn't already changed one beforehand. This was already the case for some faction revolts and is now consistent [zijistark]
 
 3.4.1
