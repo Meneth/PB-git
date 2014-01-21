@@ -720,6 +720,14 @@ character_event = {
 	option = { #Angry
 		name = meneth.220.c
 		FROM = { change_variable = { which = "autonomy_mood" value = -1 } }
+		trigger = {
+			NOT = {
+				has_opinion_modifier = {
+					who = LIEGE
+					modifier = opinion_coerced_into_leaving_faction
+				}
+			}
+		}
 		if = {
 			limit = { tier = duke }
 			FROM = { change_variable = { which = "autonomy_mood" value = -1 } }
@@ -1613,6 +1621,14 @@ character_event = {
 	}
 	option = {
 		name = Yes
+		trigger = {
+			NOT = {
+				has_opinion_modifier = {
+					who = LIEGE
+					modifier = opinion_coerced_into_leaving_faction
+				}
+			}
+		}
 		set_variable = { which = "faction_vote" value = 0 }
 		change_variable = { which = "faction_vote" value = 2 }
 		if = {
@@ -2223,6 +2239,14 @@ character_event = {
 	}
 	option = { #Yes
 		name = Yes
+		trigger = {
+			NOT = {
+				has_opinion_modifier = {
+					who = LIEGE
+					modifier = opinion_coerced_into_leaving_faction
+				}
+			}
+		}
 		FROM = { change_variable = { which = "faction_vote" value = 1 } }
 		if = {
 			limit = { FROM = { character = ROOT } }
@@ -2608,6 +2632,14 @@ character_event = {
 	}
 	option = { #Yes
 		name = Yes
+		trigger = {
+			NOT = {
+				has_opinion_modifier = {
+					who = LIEGE
+					modifier = opinion_coerced_into_leaving_faction
+				}
+			}
+		}
 		FROM = { change_variable = { which = "faction_vote" value = 1 } }
 		if = {
 			limit = { FROM = { character = ROOT } }
@@ -2832,6 +2864,14 @@ character_event = {
 	}
 	option = { #Yes
 		name = Yes
+		trigger = {
+			NOT = {
+				has_opinion_modifier = {
+					who = LIEGE
+					modifier = opinion_coerced_into_leaving_faction
+				}
+			}
+		}
 		FROM = { change_variable = { which = "faction_vote" value = 1 } }
 		if = {
 			limit = { FROM = { character = ROOT } }
@@ -3064,6 +3104,14 @@ character_event = {
 	}
 	option = { #Yes
 		name = Yes
+		trigger = {
+			NOT = {
+				has_opinion_modifier = {
+					who = LIEGE
+					modifier = opinion_coerced_into_leaving_faction
+				}
+			}
+		}
 		FROM = { change_variable = { which = "faction_vote" value = 1 } }
 		if = {
 			limit = { FROM = { character = ROOT } }
@@ -3300,6 +3348,14 @@ character_event = {
 	}
 	option = { #Yes
 		name = Yes
+		trigger = {
+			NOT = {
+				has_opinion_modifier = {
+					who = LIEGE
+					modifier = opinion_coerced_into_leaving_faction
+				}
+			}
+		}
 		FROM = { change_variable = { which = "faction_vote" value = 1 } }
 		if = {
 			limit = { FROM = { character = ROOT } }
@@ -3590,6 +3646,14 @@ character_event = {
 	}
 	option = { #Yes
 		name = Yes
+		trigger = {
+			NOT = {
+				has_opinion_modifier = {
+					who = LIEGE
+					modifier = opinion_coerced_into_leaving_faction
+				}
+			}
+		}
 		FROM = { change_variable = { which = "faction_vote" value = 1 } }
 		if = {
 			limit = { FROM = { character = ROOT } }
@@ -3844,6 +3908,14 @@ character_event = {
 	}
 	option = { #Yes
 		name = Yes
+		trigger = {
+			NOT = {
+				has_opinion_modifier = {
+					who = LIEGE
+					modifier = opinion_coerced_into_leaving_faction
+				}
+			}
+		}
 		FROM = { change_variable = { which = "faction_vote" value = 1 } }
 		if = {
 			limit = { FROM = { character = ROOT } }
@@ -4062,6 +4134,14 @@ character_event = {
 	}
 	option = { #Yes
 		name = Yes
+		trigger = {
+			NOT = {
+				has_opinion_modifier = {
+					who = LIEGE
+					modifier = opinion_coerced_into_leaving_faction
+				}
+			}
+		}
 		FROM = { change_variable = { which = "faction_vote" value = 1 } }
 		if = {
 			limit = { FROM = { character = ROOT } }

@@ -8,6 +8,7 @@
 	The autonomy faction factor from legalism tech now ranges from 0 to 8 instead of -2 to 6
 	Improved the localisation for some CB requirement localisation
 	Fixed Muslim city vassal request event so it works properly when city obligations are set to maximum [AnaxXiphos]
+	Members of the Autonomy faction that have been coerced by their liege's spymaster will now always vote in their liege's favor when it comes to negative actions. They will never vote for the angry faction mood
 
 3.4.1
 	Updated the implementation of the New Duel Engine to its latest version
