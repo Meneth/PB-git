@@ -854,11 +854,9 @@ retake_religious_lands = {
 		}
 	}
 	can_use_title = {
-		OR = {
-			NOT = { 
-				any_direct_de_jure_vassal_title = {
-					location = { continent = region_sahara }
-				}
+		NOT = { 
+			any_direct_de_jure_vassal_title = {
+				location = { continent = region_sahara }
 			}
 		}
 		#Target must have at least one province of declarer's religion
@@ -1179,11 +1177,9 @@ special_holy_war = {
 		}
 	}
 	can_use_title = {
-		OR = {
-			NOT = { 
-				any_direct_de_jure_vassal_title = {
-					location = { continent = region_sahara }
-				}
+		NOT = { 
+			any_direct_de_jure_vassal_title = {
+				location = { continent = region_sahara }
 			}
 		}
 		OR = {
