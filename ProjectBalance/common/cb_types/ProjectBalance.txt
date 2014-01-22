@@ -59,11 +59,14 @@ remove_internal_peace = {
 					add_law = emperor_peace_0
 				}
 			}
-			hidden_tooltip = {
-				add_character_modifier = {
-					name = ca_revoke_cooldown
-					duration = 5475
-					inherit = yes
+			custom_tooltip = {
+				text = ca_revoke_cooldown_ctt
+				hidden_tooltip = {
+					add_character_modifier = {
+						name = ca_revoke_cooldown
+						duration = 5475
+						inherit = yes
+					}
 				}
 			}
 		}
@@ -190,11 +193,14 @@ remove_revokation = {
 				}
 				add_law = revokation_0
 			}
-			hidden_tooltip = {
-				add_character_modifier = {
-					name = ca_revoke_cooldown
-					duration = 5475
-					inherit = yes
+			custom_tooltip = {
+				text = ca_revoke_cooldown_ctt
+				hidden_tooltip = {
+					add_character_modifier = {
+						name = ca_revoke_cooldown
+						duration = 5475
+						inherit = yes
+					}
 				}
 			}
 		}
@@ -311,11 +317,14 @@ remove_inheritance = {
 				limit = { has_law = inheritance_1 }
 				add_law = inheritance_0
 			}
-			hidden_tooltip = {
-				add_character_modifier = {
-					name = ca_revoke_cooldown
-					duration = 5475
-					inherit = yes
+			custom_tooltip = {
+				text = ca_revoke_cooldown_ctt
+				hidden_tooltip = {
+					add_character_modifier = {
+						name = ca_revoke_cooldown
+						duration = 5475
+						inherit = yes
+					}
 				}
 			}
 		}
@@ -454,11 +463,14 @@ reduce_crown_levies = {
 						add_law = crown_levies_3
 					}
 				}
-				hidden_tooltip = {
-					add_character_modifier = {
-						name = ca_revoke_cooldown
-						duration = 5475
-						inherit = yes
+				custom_tooltip = {
+					text = ca_revoke_cooldown_ctt
+					hidden_tooltip = {
+						add_character_modifier = {
+							name = ca_revoke_cooldown
+							duration = 5475
+							inherit = yes
+						}
 					}
 				}
 			}

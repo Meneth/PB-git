@@ -2380,10 +2380,15 @@ character_event = {
 			limit = { has_law = crown_levies_4 }
 			add_law = crown_levies_3
 		}
-		add_character_modifier = {
-			name = ca_revoke_cooldown
-			duration = 5475
-			inherit = yes
+		custom_tooltip = {
+			text = ca_revoke_cooldown_ctt
+			hidden_tooltip = {
+				add_character_modifier = {
+					name = ca_revoke_cooldown
+					duration = 5475
+					inherit = yes
+				}
+			}
 		}
 		any_vassal = {
 			limit = {
@@ -2771,10 +2776,15 @@ character_event = {
 			}
 			add_law = revokation_0
 		}
-		add_character_modifier = {
-			name = ca_revoke_cooldown
-			duration = 5475
-			inherit = yes
+		custom_tooltip = {
+			text = ca_revoke_cooldown_ctt
+			hidden_tooltip = {
+				add_character_modifier = {
+					name = ca_revoke_cooldown
+					duration = 5475
+					inherit = yes
+				}
+			}
 		}
 		any_vassal = {
 			limit = {
@@ -3002,8 +3012,6 @@ character_event = {
 	picture = GFX_evt_emissary
 	border = GFX_event_normal_frame_religion
 	
-	trigger = { NOT = { has_character_modifier = ca_revoke_cooldown } }
-	
 	option = {
 		name = Yes
 		any_demesne_title = {
@@ -3020,10 +3028,15 @@ character_event = {
 			}
 			add_law = emperor_peace_0
 		}
-		add_character_modifier = {
-			name = ca_revoke_cooldown
-			duration = 5475
-			inherit = yes
+		custom_tooltip = {
+			text = ca_revoke_cooldown_ctt
+			hidden_tooltip = {
+				add_character_modifier = {
+					name = ca_revoke_cooldown
+					duration = 5475
+					inherit = yes
+				}
+			}
 		}
 		any_vassal = {
 			limit = {
@@ -4049,18 +4062,21 @@ character_event = {
 	picture = GFX_evt_emissary
 	border = GFX_event_normal_frame_religion
 	
-	trigger = { NOT = { has_character_modifier = ca_revoke_cooldown } }
-	
 	option = {
 		name = Yes
 		any_demesne_title = {
 			limit = { has_law = inheritance_1 }
 			add_law = inheritance_0
 		}
-		add_character_modifier = {
-			name = ca_revoke_cooldown
-			duration = 5475
-			inherit = yes
+		custom_tooltip = {
+			text = ca_revoke_cooldown_ctt
+			hidden_tooltip = {
+				add_character_modifier = {
+					name = ca_revoke_cooldown
+					duration = 5475
+					inherit = yes
+				}
+			}
 		}
 		any_vassal = {
 			limit = {

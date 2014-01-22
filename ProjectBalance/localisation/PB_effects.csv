@@ -30,7 +30,7 @@ af_mil_cooperation_t1;Military cooperation;;;;;;;;;;;;;x
 af_eco_cooperation_t1;Economic cooperation;;;;;;;;;;;;;x
 autonomy_commended;Commended by vassals;;;;;;;;;;;;;x
 ca_revoke_cooldown;Crown law revocation cooldown;;;;;;;;;;;;;x
-ca_revoke_cooldown_desc;Crown authority laws were recently revoked due to a faction ultimatum or revolt. It will take some time before vassals are willing to support their realm's remaining laws being forcibly revoked again, if at all.;;;;;;;;;;;;;x
+ca_revoke_cooldown_desc;Crown authority laws were recently revoked due to a faction ultimatum or revolt. It will take time before the realm's nobles are willing to support the revocation of their remaining laws.;;;;;;;;;;;;;x
 ca_revoke_cooldown_ctt;§Y[This.GetTitledFirstName]§!'s realm enters a crown law revocation cooldown period.\n;;;;;;;;;;;;;x
 rum;Ignore the man behind the curtain;;;;;;;;;;;;;x
 opinion_refused_ultimatum;Refused ultimatum;;;;;;;;;;;;;x
