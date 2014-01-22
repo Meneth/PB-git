@@ -885,16 +885,19 @@ character_event = {
 			}
 			modifier = {
 				factor = 0.1
-				liege = {
-					has_law = feudal_obligations_0
-					has_law = crown_levies_0
-					NOT = {
-						has_law = king_peace_1
-						has_law = king_peace_2
-						has_law = emperor_peace_1
-						has_law = emperor_peace_2
-						has_law = revokation_1
-						has_law = revokation_2
+				OR = {
+					has_character_modifier = ca_revoke_cooldown #Cooldown makes this decision set pointless usually
+					liege = {
+						has_law = feudal_obligations_0
+						has_law = crown_levies_0
+						NOT = {
+							has_law = king_peace_1
+							has_law = king_peace_2
+							has_law = emperor_peace_1
+							has_law = emperor_peace_2
+							has_law = revokation_1
+							has_law = revokation_2
+						}
 					}
 				}
 			}
