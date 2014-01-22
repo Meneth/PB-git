@@ -74,6 +74,14 @@ character_event = {
 			change_variable = { which = "autonomy_desire" value = -5 }
 		}
 		if = {
+			limit = { liege = { is_close_relative = ROOT } }
+			change_variable = { which = "autonomy_desire" value = -5 }
+		}
+		if = {
+			limit = { liege = { current_heir = { character = ROOT } } } # (only applies to feudal elective)
+			change_variable = { which = "autonomy_desire" value = -5 }
+		}
+		if = {
 			limit = { NOT = { opinion = { who = LIEGE value = -10 } } }
 			change_variable = { which = "autonomy_desire" value = 5 }
 		}
@@ -606,7 +614,7 @@ character_event = {
 			change_variable = { which = "autonomy_personal_mood" value = -5 }
 		}
 		if = {
-			limit = { liege = { trait = possessed } }
+			limit = { liege = { trait = possessed } } # FIXME: game models possessed on Joan d'Arc, manifesting in trait changes only, either all good or all bad.
 			change_variable = { which = "autonomy_personal_mood" value = -5 }
 		}
 		if = {
@@ -633,10 +641,21 @@ character_event = {
 		}
 		if = {
 			limit = {
-				liege = { trait = crusader }
-				liege = { religion = ROOT }
+				liege = {
+					trait = crusader
+					religion = ROOT
+				}
 			}
-			change_variable = { which = "autonomy_personal_mood" value = -2 }
+			change_variable = { which = "autonomy_personal_mood" value = 2 }
+		}
+		if = {
+			limit = {
+				liege = {
+					trait = mujahid
+					religion = ROOT
+				}
+			}
+			change_variable = { which = "autonomy_personal_mood" value = 2 }
 		}
 		if = {
 			limit = { liege = { trait = quick } }
@@ -1109,9 +1128,12 @@ character_event = {
 		name = meneth.236.b
 		trigger = {
 			liege = {
-				OR = {
-					has_law = revokation_1
-					has_law = revokation_2
+				NOT = { has_character_modifier = ca_revoke_cooldown }
+				any_demesne_title = {
+					OR = {
+						has_law = revokation_1
+						has_law = revokation_2
+					}
 				}
 			}
 		}
@@ -1145,11 +1167,14 @@ character_event = {
 		name = meneth.236.c
 		trigger = {
 			liege = {
-				OR = {
-					has_law = king_peace_1
-					has_law = king_peace_2
-					has_law = emperor_peace_1
-					has_law = emperor_peace_2
+				NOT = { has_character_modifier = ca_revoke_cooldown }
+				any_demesne_title = {
+					OR = {
+						has_law = king_peace_1
+						has_law = king_peace_2
+						has_law = emperor_peace_1
+						has_law = emperor_peace_2
+					}
 				}
 			}
 		}
@@ -1184,7 +1209,8 @@ character_event = {
 		name = meneth.236.c
 		trigger = {
 			liege = {
-				has_law = inheritance_1
+				NOT = { has_character_modifier = ca_revoke_cooldown }
+				any_demesne_title = { has_law = inheritance_1 }
 			}
 		}
 		set_character_flag = faction_autonomy_external_inheritance
@@ -1527,10 +1553,6 @@ character_event = {
 			if = {
 				limit = { ROOT = { has_character_flag = faction_autonomy_external_inheritance } }
 				character_event = { id = meneth.245 } #Ultimatum to allow external inheritance
-			}
-			if = {
-				limit = { ROOT = { has_character_flag = faction_autonomy_abdicate } }
-				character_event = { id = meneth.247 } #Ultimatum to abdicate
 			}
 			if = {
 				limit = { ROOT = { has_character_flag = faction_autonomy_abdicate } }
@@ -2332,6 +2354,7 @@ character_event = {
 	option = {
 		name = Yes
 		trigger = {
+			NOT = { has_character_modifier = ca_revoke_cooldown }
 			any_demesne_title = {
 				OR = {
 					has_law = crown_levies_1
@@ -2356,6 +2379,16 @@ character_event = {
 		any_demesne_title = {
 			limit = { has_law = crown_levies_4 }
 			add_law = crown_levies_3
+		}
+		custom_tooltip = {
+			text = ca_revoke_cooldown_ctt
+			hidden_tooltip = {
+				add_character_modifier = {
+					name = ca_revoke_cooldown
+					duration = 5475
+					inherit = yes
+				}
+			}
 		}
 		any_vassal = {
 			limit = {
@@ -2411,12 +2444,17 @@ character_event = {
 				has_law = feudal_obligations_3
 				has_law = feudal_obligations_4
 			}
-			NOT = {
-				OR = {
-					has_law = crown_levies_1
-					has_law = crown_levies_2
-					has_law = crown_levies_3
-					has_law = crown_levies_4
+			OR = {
+				has_character_modifier = ca_revoke_cooldown
+				NOT = {
+					any_demesne_title = {
+						OR = {
+							has_law = crown_levies_1
+							has_law = crown_levies_2
+							has_law = crown_levies_3
+							has_law = crown_levies_4
+						}
+					}
 				}
 			}
 		}
@@ -2485,12 +2523,15 @@ character_event = {
 		name = Yes
 		trigger = {
 			NOT = {
-				any_demesne_title = {
-					OR = {
-						has_law = crown_levies_1
-						has_law = crown_levies_2
-						has_law = crown_levies_3
-						has_law = crown_levies_4
+				AND = {
+					NOT = { has_character_modifier = ca_revoke_cooldown }
+					any_demesne_title = {
+						OR = {
+							has_law = crown_levies_1
+							has_law = crown_levies_2
+							has_law = crown_levies_3
+							has_law = crown_levies_4
+						}
 					}
 				}
 				has_law = feudal_obligations_1
@@ -2729,11 +2770,21 @@ character_event = {
 		any_demesne_title = {
 			limit = {
 				OR = {
-					tier = king
-					tier = emperor
+					has_law = revokation_1
+					has_law = revokation_2
 				}
 			}
 			add_law = revokation_0
+		}
+		custom_tooltip = {
+			text = ca_revoke_cooldown_ctt
+			hidden_tooltip = {
+				add_character_modifier = {
+					name = ca_revoke_cooldown
+					duration = 5475
+					inherit = yes
+				}
+			}
 		}
 		any_vassal = {
 			limit = {
@@ -2966,14 +3017,26 @@ character_event = {
 		any_demesne_title = {
 			limit = {
 				tier = king
+				NOT = { has_law = king_peace_0 }
 			}
 			add_law = king_peace_0
 		}
 		any_demesne_title = {
 			limit = {
 				tier = emperor
+				NOT = { has_law = emperor_peace_0 }
 			}
 			add_law = emperor_peace_0
+		}
+		custom_tooltip = {
+			text = ca_revoke_cooldown_ctt
+			hidden_tooltip = {
+				add_character_modifier = {
+					name = ca_revoke_cooldown
+					duration = 5475
+					inherit = yes
+				}
+			}
 		}
 		any_vassal = {
 			limit = {
@@ -4004,6 +4067,16 @@ character_event = {
 		any_demesne_title = {
 			limit = { has_law = inheritance_1 }
 			add_law = inheritance_0
+		}
+		custom_tooltip = {
+			text = ca_revoke_cooldown_ctt
+			hidden_tooltip = {
+				add_character_modifier = {
+					name = ca_revoke_cooldown
+					duration = 5475
+					inherit = yes
+				}
+			}
 		}
 		any_vassal = {
 			limit = {

@@ -126,3 +126,10 @@ autonomy_commended = {
 	vassal_opinion = 5
 	monthly_character_prestige = 0.25
 }
+
+# Crown law revocation cooldown (CA-only-- investiture excluded).
+# Inherited and pinned on the liege.
+
+ca_revoke_cooldown = {
+	icon = 11
+}
