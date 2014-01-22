@@ -886,7 +886,7 @@ character_event = {
 			modifier = {
 				factor = 0.1
 				OR = {
-					has_character_modifier = ca_revoke_cooldown #Cooldown makes this decision set pointless usually
+					liege = { has_character_modifier = ca_revoke_cooldown } #Cooldown makes this decision set pointless usually
 					liege = {
 						has_law = feudal_obligations_0
 						has_law = crown_levies_0
