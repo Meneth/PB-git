@@ -226,6 +226,7 @@ plot_decisions = {
 		allow = {
 			war = no
 			prisoner = no
+			has_regent = no
 			liege = {
 				NOT = { war_with = ROOT }
 				NOT = { reverse_has_truce = ROOT }
@@ -273,7 +274,18 @@ plot_decisions = {
 			}
 			
 			modifier = {
-				factor = 0.4 # Slow it down a bit
+				factor = 0.2
+				NOT = { 
+					faction_power = 
+					{
+						faction = faction_succ_feudal_elective
+						power = 1.35
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 0.2 # Slow it down a bit
 			}
 			
 			modifier = {
