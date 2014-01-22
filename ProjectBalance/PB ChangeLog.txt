@@ -14,6 +14,7 @@
 	Fixed double-abdication bug with the autonomy faction's abdication ultimatum (child pretenders on the throne, anyone?) [zijistark]
 	Various minor bugfixes for the autonomy faction [zijistark]
 	Successful faction revolts that revoke crown laws no longer "use-up" the liege's once-in-a-lifetime right to change a crown law, if he/she hadn't already changed one beforehand. This was already the case for some faction revolts and is now consistent [zijistark]
+	Regular factions (non-autonomy) will now now wait to submit a revolt ultimatum until after their liege is no longer using ANY of the 3 holy war CBs in PB [zijistark]
 
 3.4.1
 	Updated the implementation of the New Duel Engine to its latest version
