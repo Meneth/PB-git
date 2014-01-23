@@ -1869,7 +1869,10 @@ faction_succ_feudal_elective = {
 		has_law = inheritance_0
 		OR = {
 			has_law = crown_levies_0
-			has_law = crown_levies_1
+			AND = {
+				holder_scope = { ai = no }
+				has_law = crown_levies_1
+			}
 		}
 		
 		OR = {
@@ -1902,6 +1905,11 @@ faction_succ_feudal_elective = {
 		modifier = {
 			factor = 0
 			FROM = { prisoner = yes }
+		}
+		
+		modifier = {
+			factor = 0
+			FROM = { has_regent = yes }
 		}
 		
 		modifier = {
@@ -1966,6 +1974,7 @@ faction_succ_feudal_elective = {
 				OR = {
 					NOT = { culture = FROM }
 					NOT = { religion = FROM }
+					NOT = { reverse_opinion = { who = FROM value = 20 } }
 				}
 				any_demesne_title = {
 					OR = {
@@ -1978,7 +1987,7 @@ faction_succ_feudal_elective = {
 						}
 					}
 					any_claimant = {
-						culture = FROM
+						culture_group = FROM # actual requirement is merely a group match
 						religion = FROM
 					}
 				}
@@ -1991,11 +2000,11 @@ faction_succ_feudal_elective = {
 				OR = {
 					AND = {
 						NOT = { leads_faction = faction_succ_feudal_elective }
-						opinion = { who = LIEGE value = 50 } 
+						opinion = { who = LIEGE value = 40 } 
 					}
 					AND = {
 						leads_faction = faction_succ_feudal_elective
-						opinion = { who = LIEGE value = 75 } 
+						opinion = { who = LIEGE value = 50 }
 					}
 				}
 			}
@@ -2012,17 +2021,17 @@ faction_succ_feudal_elective = {
 				OR = {
 					AND = {
 						NOT = { leads_faction = faction_succ_feudal_elective }
-						liege = { 
+						PREV = { # actual heir of title in question, not liege
 							current_heir = {
-								reverse_opinion = { who = FROM value = 50 }
+								reverse_opinion = { who = FROM value = 40 }
 							}
 						}
 					}
 					AND = {
 						leads_faction = faction_succ_feudal_elective
-						liege = { 
+						PREV = { 
 							current_heir = {
-								reverse_opinion = { who = FROM value = 75 }
+								reverse_opinion = { who = FROM value = 50 }
 							}
 						}
 					}
@@ -2040,12 +2049,16 @@ faction_succ_feudal_elective = {
 			NOT = { FROM = { opinion = { who = LIEGE value = 0 } } }
 		}
 		modifier = {
-			factor = 2.0
-			NOT = { FROM = { opinion = { who = LIEGE value = -50 } } }
+			factor = 1.5
+			NOT = { FROM = { opinion = { who = LIEGE value = -40 } } }
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { FROM = { opinion = { who = LIEGE value = -60 } } }
 		}
 		modifier = {
 			factor = 4.0
-			NOT = { FROM = { opinion = { who = LIEGE value = -75 } } }
+			NOT = { FROM = { opinion = { who = LIEGE value = -80 } } }
 		}
 		
 		modifier = {
@@ -2086,12 +2099,12 @@ faction_succ_feudal_elective = {
 			FROM = { trait = honest }
 		}
 		modifier = {
-			factor = 0.75
-			FROM = { trait = humble }
+			factor = 0.5
+			FROM = { trait = just }
 		}
 		modifier = {
 			factor = 0.75
-			FROM = { trait = just }
+			FROM = { trait = humble }
 		}
 		modifier = {
 			factor = 1.5
@@ -2106,20 +2119,12 @@ faction_succ_feudal_elective = {
 			FROM = { trait = arbitrary }
 		}
 		modifier = {
+			factor = 1.5
+			FROM = { trait = deceitful }
+		}
+		modifier = {
 			factor = 2.0
 			FROM = { trait = envious }
-		}
-		modifier = {
-			factor = 2.0
-			FROM = { trait = greedy }
-		}
-		modifier = {
-			factor = 2.0
-			FROM = { trait = impaler }
-		}
-		modifier = {
-			factor = 2.0
-			FROM = { trait = deceitful }
 		}
 		modifier = {
 			factor = 4.0
@@ -2138,7 +2143,7 @@ faction_succ_feudal_elective = {
 					who = LIEGE
 					modifier = opinion_coerced_into_leaving_faction
 				}
-				opinion = { who = LIEGE value = -25 }
+				opinion = { who = LIEGE value = -40 }
 			}
 		}
 	}
@@ -2152,6 +2157,7 @@ faction_succ_feudal_elective = {
 			OR = {
 				prisoner = yes
 				trait = incapable
+				has_regent = yes
 				is_adult = no
 				is_landed = no
 				preparing_invasion = yes
@@ -2163,6 +2169,25 @@ faction_succ_feudal_elective = {
 			FROMFROM = {
 				current_heir = {
 					character = ROOT
+				}
+			}
+		}
+		
+
+		modifier = {
+			factor = 0
+			FROMFROM = {
+				holder_scope = {
+					any_spouse = { character = ROOT }
+				}
+			}
+		}
+		
+		modifier = {
+			factor = 0
+			FROMFROM = {
+				current_heir = {
+					any_spouse = { character = ROOT }
 				}
 			}
 		}
@@ -2179,6 +2204,11 @@ faction_succ_feudal_elective = {
 		modifier = {
 			factor = 0
 			
+			# FIXME: why are these in here (for faction_succ_feudal_elective)?
+			# the faction leader isn't even guaranteed to hold an elector title,
+			# let alone be eligible for succession, what the faction aims to
+			# accomplish.
+			
 			OR = {
 				AND = {
 					NOT = { in_faction = faction_succ_feudal_elective }
@@ -2194,16 +2224,19 @@ faction_succ_feudal_elective = {
 					opinion_diff = {
 						first = LIEGE
 						second = FROM
-						value = 25
+						value = 20
 						as_if_liege = yes
 					}
 				}
 			}
 			
-			NOT = {	
-				has_opinion_modifier = {
-					who = FROM
-					modifier = opinion_coerced_into_joining_faction
+			NOT = {
+				AND = {
+					has_opinion_modifier = {
+						who = FROM
+						modifier = opinion_coerced_into_joining_faction
+					}
+					opinion = { who = FROM value = 0 }
 				}
 			}
 		}
@@ -2213,17 +2246,20 @@ faction_succ_feudal_elective = {
 			OR = {
 				AND = {
 					NOT = { in_faction = faction_succ_feudal_elective }
-					opinion = { who = LIEGE value = 50 } 
+					opinion = { who = LIEGE value = 40 } 
 				}
 				AND = {
 					in_faction = faction_succ_feudal_elective
-					opinion = { who = LIEGE value = 75 } 
+					opinion = { who = LIEGE value = 50 } 
 				}
 			}
-			NOT = {	
-				has_opinion_modifier = {
-					who = FROM
-					modifier = opinion_coerced_into_joining_faction
+			NOT = {
+				AND = {
+					has_opinion_modifier = {
+						who = FROM
+						modifier = opinion_coerced_into_joining_faction
+					}
+					opinion = { who = FROM value = 0 }
 				}
 			}
 		}
@@ -2233,25 +2269,28 @@ faction_succ_feudal_elective = {
 			OR = {
 				AND = {
 					NOT = { in_faction = faction_succ_feudal_elective }
-					liege = { 
+					FROMFROM = { 
+						current_heir = {
+							reverse_opinion = { who = ROOT value = 40 }
+						}
+					}
+				}
+				AND = {
+					in_faction = faction_succ_feudal_elective
+					FROMFROM = { 
 						current_heir = {
 							reverse_opinion = { who = ROOT value = 50 }
 						}
 					}
 				}
-				AND = {
-					in_faction = faction_succ_feudal_elective
-					liege = { 
-						current_heir = {
-							reverse_opinion = { who = ROOT value = 75 }
-						}
-					}
-				}
 			}
-			NOT = {	
-				has_opinion_modifier = {
-					who = FROM
-					modifier = opinion_coerced_into_joining_faction
+			NOT = {
+				AND = {
+					has_opinion_modifier = {
+						who = FROM
+						modifier = opinion_coerced_into_joining_faction
+					}
+					opinion = { who = FROM value = 0 }
 				}
 			}
 		}
@@ -2280,8 +2319,18 @@ faction_succ_feudal_elective = {
 		}
 		
 		modifier = {
+			factor = 0.75
+			opinion = { who = LIEGE value = 10 }
+		}
+		
+		modifier = {
 			factor = 0.5
-			opinion = { who = LIEGE value = 25 } 
+			opinion = { who = LIEGE value = 20 } 
+		}
+		
+		modifier = {
+			factor = 0.5
+			opinion = { who = LIEGE value = 35 } 
 		}
 		
 		modifier = {
@@ -2290,10 +2339,15 @@ faction_succ_feudal_elective = {
 				who = FROM
 				modifier = opinion_coerced_into_joining_faction
 			}
+			opinion = { who = FROM value = 0 }
 		}
 		
 		modifier = {
 			factor = 2.0
+			# FIXME: again, a weird modifier for feudal elective, but at least in this
+			# case, it's a fairly dramatic difference in opinion between liege and the
+			# faction leader, so one could make a 'roleplaying' argument for more
+			# likelihood of following the faction leader rather than the liege.
 			opinion_diff = {
 				first = FROM
 				second = LIEGE
@@ -2335,12 +2389,12 @@ faction_succ_feudal_elective = {
 			trait = honest
 		}
 		modifier = {
-			factor = 0.75
-			trait = humble
+			factor = 0.5
+			trait = just
 		}
 		modifier = {
 			factor = 0.75
-			trait = just
+			trait = humble
 		}
 		modifier = {
 			factor = 1.5
@@ -2355,20 +2409,12 @@ faction_succ_feudal_elective = {
 			trait = arbitrary
 		}
 		modifier = {
+			factor = 1.5
+			trait = deceitful
+		}
+		modifier = {
 			factor = 2.0
 			trait = envious
-		}
-		modifier = {
-			factor = 2.0
-			trait = greedy
-		}
-		modifier = {
-			factor = 2.0
-			trait = impaler
-		}
-		modifier = {
-			factor = 2.0
-			trait = deceitful
 		}
 		modifier = {
 			factor = 4.0
@@ -2376,7 +2422,14 @@ faction_succ_feudal_elective = {
 		}
 		#Slow it down a bit
 		modifier = {
-			factor = 0.5
+			factor = 0.35 # it may take just under 3 years (vs. 2) for all members to join that possibly
+			              # will, except for some with reasonably acceptable opinions of the liege, which
+						  # could possibly take longer.  hence, the ultimatums have been slowed to wait
+						  # for higher faction power as well.  this will at least make an elective faction
+						  # revolt more easy to dissuade, more expected, and less subject to transient
+						  # conditions which affect its membership, such as the current heir to their
+						  # succ_law_title being a not-quite-of-age child, duchies not being created
+						  # and granted appropriately, de jure transfers not done yet, etc.
 		}
 		modifier = {
 			factor = 0
@@ -2388,7 +2441,7 @@ faction_succ_feudal_elective = {
 				who = LIEGE
 				modifier = opinion_coerced_into_leaving_faction
 			}
-			opinion = { who = LIEGE value = -25 }
+			opinion = { who = LIEGE value = -40 }
 		}
 	}
 	
@@ -3349,7 +3402,7 @@ faction_claimant = {
 			OR = {
 				is_female = no
 				AND = {
-					NOT = { religion_group = muslim } 
+					NOT = { religion_group = muslim }
 					NOT = { ROOT = { succ_law_title = { has_law = agnatic_succession } } }
 				}
 			}

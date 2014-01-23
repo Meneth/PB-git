@@ -285,7 +285,7 @@ plot_decisions = {
 			}
 			
 			modifier = {
-				factor = 0.2 # Slow it down a bit
+				factor = 0.25 # Slow it down a bit
 			}
 			
 			modifier = {
