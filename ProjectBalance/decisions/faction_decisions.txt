@@ -70,6 +70,21 @@ plot_decisions = {
 					any_war = {
 						OR = {
 							AND = {
+								# Notice how PREV is apparently used when PREVPREV
+								# should be used, clearly. Yet, zijistark constructed
+								# a whole, rigorous test case in-game exercising this
+								# usage, and using PREV vs. PREVPREV appears to be
+								# indistinguishable.  In other words, serious magic
+								# is going-on, or the 'character' command also takes
+								# a war scope and matches against any participant
+								# referenced in the war object (or remembers whether
+								# its enclosing scope was 'defender' or 'attacker'
+								# or potentially 'any_attacker' and so on).  I can't
+								# see a reason to 'fix' the vanilla usage; I assume
+								# this is some kind of hack that was added for war
+								# scopes when much fewer levels of PREV (e.g., no
+								# PREVPREV) were supported by the game.
+								
 								defender = { character = PREV }
 								NOT = { using_cb = depose_liege }
 								NOT = { using_cb = overthrow_ruler }
@@ -82,6 +97,8 @@ plot_decisions = {
 								OR = {
 									using_cb = invasion
 									using_cb = religious
+									using_cb = retake_religious_lands
+									using_cb = special_holy_war
 									using_cb = tribal_invasion
 									using_cb = muslim_invasion
 									using_cb = viking_invasion
@@ -178,6 +195,8 @@ plot_decisions = {
 								OR = {
 									using_cb = invasion
 									using_cb = religious
+									using_cb = retake_religious_lands
+									using_cb = special_holy_war
 									using_cb = tribal_invasion
 									using_cb = muslim_invasion
 									using_cb = viking_invasion
@@ -207,6 +226,7 @@ plot_decisions = {
 		allow = {
 			war = no
 			prisoner = no
+			has_regent = no
 			liege = {
 				NOT = { war_with = ROOT }
 				NOT = { reverse_has_truce = ROOT }
@@ -254,7 +274,18 @@ plot_decisions = {
 			}
 			
 			modifier = {
-				factor = 0.4 # Slow it down a bit
+				factor = 0.5
+				NOT = { 
+					faction_power = 
+					{
+						faction = faction_succ_feudal_elective
+						power = 1.35
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 0.3 # Slow it down a bit
 			}
 			
 			modifier = {
@@ -275,6 +306,8 @@ plot_decisions = {
 								OR = {
 									using_cb = invasion
 									using_cb = religious
+									using_cb = retake_religious_lands
+									using_cb = special_holy_war
 									using_cb = tribal_invasion
 									using_cb = muslim_invasion
 									using_cb = viking_invasion
@@ -371,6 +404,8 @@ plot_decisions = {
 								OR = {
 									using_cb = invasion
 									using_cb = religious
+									using_cb = retake_religious_lands
+									using_cb = special_holy_war
 									using_cb = tribal_invasion
 									using_cb = muslim_invasion
 									using_cb = viking_invasion
@@ -490,6 +525,8 @@ plot_decisions = {
 							AND = {
 								defender = { character = PREV }
 								OR = {
+									using_cb = retake_religious_lands
+									using_cb = special_holy_war
 									using_cb = religious
 									using_cb = muslim_invasion
 									using_cb = viking_invasion
@@ -755,6 +792,8 @@ plot_decisions = {
 								}
 								OR = {
 									using_cb = religious
+									using_cb = retake_religious_lands
+									using_cb = special_holy_war
 									using_cb = crusade
 									using_cb = muslim_invasion
 									using_cb = viking_invasion
