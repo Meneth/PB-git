@@ -1,7 +1,0 @@
-opinion_female_heir = {
-	opinion = 0
-}
-
-opinion_female_ruler = {
-	opinion = 0
-}

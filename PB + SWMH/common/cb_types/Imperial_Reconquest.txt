@@ -144,9 +144,11 @@ imperial_reconquest = {
 				}
 			}
 			AND = {
-				de_jure_liege_or_above = k_france
-				de_jure_liege_or_above = k_aquitaine
-				de_jure_liege_or_above = k_brittany
+				OR = {
+					de_jure_liege_or_above = k_france
+					de_jure_liege_or_above = k_aquitaine
+					de_jure_liege_or_above = k_brittany
+				}
 				ROOT = {
 					completely_controls = e_byzantium
 					completely_controls = k_leon

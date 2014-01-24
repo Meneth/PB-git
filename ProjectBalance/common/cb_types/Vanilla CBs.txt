@@ -71,7 +71,9 @@ claim = {
 					}
 				}
 			}
-			ROOT = { dynasty = 25061 } #Karlings
+			hidden_tooltip = { # You can't change dynasty, so no point showing it
+				ROOT = { dynasty = 25061 } #Karlings
+			}
 		}
 	}
 	can_use = {
@@ -289,7 +291,9 @@ other_claim = {
 					}
 				}
 			}
-			FROMFROM = { dynasty = 25061 } #Karlings
+			hidden_tooltip = { # You can't change dynasty, so no point showing it
+				FROMFROM = { dynasty = 25061 } #Karlings
+			}
 		}
 	}
 	
@@ -1716,7 +1720,9 @@ claim_all = {
 					}
 				}
 			}
-			ROOT = { dynasty = 25061 } #Karlings
+			hidden_tooltip = { # You can't change dynasty, so no point showing it
+				ROOT = { dynasty = 25061 } #Karlings
+			}
 		}
 	}
 	
@@ -1910,110 +1916,137 @@ change_seniority_succession_law = {
 	on_success = {
 		FROM = {
 			hidden_tooltip = { disband_event_forces = faction_loyalists }
-			any_demesne_title = { # All titles
+			
+			if = {
 				limit = {
-					OR = {
-						tier = king
-						tier = emperor
-					}
-#					is_titular = no
-					OR = {
-						NOT = { has_law = crown_levies_0 }
-						NOT = { has_law = revokation_0 }
-						NOT = { has_law = inheritance_0 }
-						AND = {
-							NOT = { has_law = king_peace_0 }
-							NOT = { has_law = emperor_peace_0 }
+					NOT = { has_character_modifier = ca_revoke_cooldown }
+					any_demesne_title = {
+						higher_tier_than = duke
+						OR = {
+							NOT = { has_law = crown_levies_0 }
+							NOT = { has_law = revokation_0 }
+							NOT = { has_law = inheritance_0 }
+							AND = {
+								NOT = { has_law = king_peace_0 }
+								NOT = { has_law = emperor_peace_0 }
+							}
 						}
 					}
 				}
 				
-				if = {
-					limit = {
-						OR = {
-							has_law = king_peace_0
-							has_law = emperor_peace_0
+				any_demesne_title = { # All titles
+					limit = { higher_tier_than = duke }
+					
+					# NOTE: as the effect of this scope was not terribly obvious in its
+					# ability to answer the question "is a CA reduction always guaranteed?"
+					# I did formally verify it in combination with the limit trigger,
+					# and, indeed, 89 of the 90 possible law combinations (combining king's
+					# and emperor's peace) must change at least one law, and 90th case is
+					# just zero CA.  it's reused as boilerplate extensively, so I modified
+					# the effect to take account of the 90th case and moved the trigger to
+					# the outer limit where it determines whether it's a valid case to add
+					# the CA revocation cooldown, most importantly not using any temp. flags
+					# so that a custom tooltip can be used for the cooldown.
+					
+					if = {
+						limit = {
+							OR = {
+								has_law = king_peace_0
+								has_law = emperor_peace_0
+							}
+							has_law = revokation_0
+							has_law = crown_levies_0
+							NOT = { has_law = inheritance_0 }
 						}
-						has_law = revokation_0
-						has_law = crown_levies_0
+						add_law = inheritance_0
 					}
-					add_law = inheritance_0
+					if = {
+						limit = {
+							has_law = crown_levies_1
+							OR = {
+								has_law = king_peace_0
+								has_law = emperor_peace_0
+							}
+							has_law = revokation_0
+						}
+						add_law = crown_levies_0
+					}
+					if = {
+						limit = {
+							has_law = crown_levies_2
+							OR = {
+								has_law = king_peace_0
+								has_law = emperor_peace_0
+							}
+							has_law = revokation_0
+						}
+						add_law = crown_levies_1
+					}
+					if = {
+						limit = {
+							has_law = crown_levies_3
+							OR = {
+								has_law = king_peace_0
+								has_law = emperor_peace_0
+							}
+							has_law = revokation_0
+						}
+						add_law = crown_levies_2
+					}
+					if = {
+						limit = {
+							has_law = crown_levies_4
+							OR = {
+								has_law = king_peace_0
+								has_law = emperor_peace_0
+							}
+							has_law = revokation_0
+						}
+						add_law = crown_levies_3
+					}
+					if = {
+						limit = {
+							OR = {
+								has_law = revokation_1
+								has_law = revokation_2
+							}
+							OR = {
+								has_law = king_peace_0
+								has_law = emperor_peace_0
+							}
+						}
+						add_law = revokation_0
+					}
+					if = {
+						limit = {
+							OR = {
+								has_law = king_peace_1
+								has_law = king_peace_2
+							}
+						}
+						add_law = king_peace_0
+					}
+					if = {
+						limit = {
+							OR = {
+								has_law = emperor_peace_1
+								has_law = emperor_peace_2
+							}
+						}
+						add_law = emperor_peace_0
+					}
+				} # END: All titles
+
+				custom_tooltip = {
+					text = ca_revoke_cooldown_ctt
+					hidden_tooltip = {
+						add_character_modifier = {
+							name = ca_revoke_cooldown
+							duration = 5475
+							inherit = yes
+						}
+					}
 				}
-				if = {
-					limit = {
-						has_law = crown_levies_1
-						OR = {
-							has_law = king_peace_0
-							has_law = emperor_peace_0
-						}
-						has_law = revokation_0
-					}
-					add_law = crown_levies_0
-				}
-				if = {
-					limit = {
-						has_law = crown_levies_2
-						OR = {
-							has_law = king_peace_0
-							has_law = emperor_peace_0
-						}
-						has_law = revokation_0
-					}
-					add_law = crown_levies_1
-				}
-				if = {
-					limit = {
-						has_law = crown_levies_3
-						OR = {
-							has_law = king_peace_0
-							has_law = emperor_peace_0
-						}
-						has_law = revokation_0
-					}
-					add_law = crown_levies_2
-				}
-				if = {
-					limit = {
-						has_law = crown_levies_4
-						OR = {
-							has_law = king_peace_0
-							has_law = emperor_peace_0
-						}
-						has_law = revokation_0
-					}
-					add_law = crown_levies_3
-				}
-				if = {
-					limit = {
-						OR = {
-							has_law = revokation_1
-							has_law = revokation_2
-						}
-						OR = {
-							has_law = king_peace_0
-							has_law = emperor_peace_0
-						}
-					}
-					add_law = revokation_0
-				}
-				if = {
-					limit = {
-						OR = {
-							has_law = king_peace_1
-							has_law = king_peace_2
-						}
-					}
-					add_law = king_peace_0
-				}
-				if = {
-					limit = {
-						OR = {
-							has_law = emperor_peace_1
-							has_law = emperor_peace_2
-						}
-					}
-					add_law = emperor_peace_0
-				}	
 			}
 		}
 		any_attacker = {
@@ -2139,110 +2172,126 @@ change_primogeniture_succession_law = {
 	on_success = {
 		FROM = {
 			hidden_tooltip = { disband_event_forces = faction_loyalists }
-			any_demesne_title = { # All titles
+			
+			if = {
 				limit = {
-					OR = {
-						tier = king
-						tier = emperor
-					}
-#					is_titular = no
-					OR = {
-						NOT = { has_law = crown_levies_0 }
-						NOT = { has_law = revokation_0 }
-						NOT = { has_law = inheritance_0 }
-						AND = {
-							NOT = { has_law = king_peace_0 }
-							NOT = { has_law = emperor_peace_0 }
+					NOT = { has_character_modifier = ca_revoke_cooldown }
+					any_demesne_title = {
+						higher_tier_than = duke
+						OR = {
+							NOT = { has_law = crown_levies_0 }
+							NOT = { has_law = revokation_0 }
+							NOT = { has_law = inheritance_0 }
+							AND = {
+								NOT = { has_law = king_peace_0 }
+								NOT = { has_law = emperor_peace_0 }
+							}
 						}
 					}
 				}
 				
-				if = {
-					limit = {
-						OR = {
-							has_law = king_peace_0
-							has_law = emperor_peace_0
+				any_demesne_title = { # All titles
+					limit = { higher_tier_than = duke }
+					
+					if = {
+						limit = {
+							OR = {
+								has_law = king_peace_0
+								has_law = emperor_peace_0
+							}
+							has_law = revokation_0
+							has_law = crown_levies_0
+							NOT = { has_law = inheritance_0 }
 						}
-						has_law = revokation_0
-						has_law = crown_levies_0
+						add_law = inheritance_0
 					}
-					add_law = inheritance_0
+					if = {
+						limit = {
+							has_law = crown_levies_1
+							OR = {
+								has_law = king_peace_0
+								has_law = emperor_peace_0
+							}
+							has_law = revokation_0
+						}
+						add_law = crown_levies_0
+					}
+					if = {
+						limit = {
+							has_law = crown_levies_2
+							OR = {
+								has_law = king_peace_0
+								has_law = emperor_peace_0
+							}
+							has_law = revokation_0
+						}
+						add_law = crown_levies_1
+					}
+					if = {
+						limit = {
+							has_law = crown_levies_3
+							OR = {
+								has_law = king_peace_0
+								has_law = emperor_peace_0
+							}
+							has_law = revokation_0
+						}
+						add_law = crown_levies_2
+					}
+					if = {
+						limit = {
+							has_law = crown_levies_4
+							OR = {
+								has_law = king_peace_0
+								has_law = emperor_peace_0
+							}
+							has_law = revokation_0
+						}
+						add_law = crown_levies_3
+					}
+					if = {
+						limit = {
+							OR = {
+								has_law = revokation_1
+								has_law = revokation_2
+							}
+							OR = {
+								has_law = king_peace_0
+								has_law = emperor_peace_0
+							}
+						}
+						add_law = revokation_0
+					}
+					if = {
+						limit = {
+							OR = {
+								has_law = king_peace_1
+								has_law = king_peace_2
+							}
+						}
+						add_law = king_peace_0
+					}
+					if = {
+						limit = {
+							OR = {
+								has_law = emperor_peace_1
+								has_law = emperor_peace_2
+							}
+						}
+						add_law = emperor_peace_0
+					}
+				} # END: All titles
+
+				custom_tooltip = {
+					text = ca_revoke_cooldown_ctt
+					hidden_tooltip = {
+						add_character_modifier = {
+							name = ca_revoke_cooldown
+							duration = 5475
+							inherit = yes
+						}
+					}
 				}
-				if = {
-					limit = {
-						has_law = crown_levies_1
-						OR = {
-							has_law = king_peace_0
-							has_law = emperor_peace_0
-						}
-						has_law = revokation_0
-					}
-					add_law = crown_levies_0
-				}
-				if = {
-					limit = {
-						has_law = crown_levies_2
-						OR = {
-							has_law = king_peace_0
-							has_law = emperor_peace_0
-						}
-						has_law = revokation_0
-					}
-					add_law = crown_levies_1
-				}
-				if = {
-					limit = {
-						has_law = crown_levies_3
-						OR = {
-							has_law = king_peace_0
-							has_law = emperor_peace_0
-						}
-						has_law = revokation_0
-					}
-					add_law = crown_levies_2
-				}
-				if = {
-					limit = {
-						has_law = crown_levies_4
-						OR = {
-							has_law = king_peace_0
-							has_law = emperor_peace_0
-						}
-						has_law = revokation_0
-					}
-					add_law = crown_levies_3
-				}
-				if = {
-					limit = {
-						OR = {
-							has_law = revokation_1
-							has_law = revokation_2
-						}
-						OR = {
-							has_law = king_peace_0
-							has_law = emperor_peace_0
-						}
-					}
-					add_law = revokation_0
-				}
-				if = {
-					limit = {
-						OR = {
-							has_law = king_peace_1
-							has_law = king_peace_2
-						}
-					}
-					add_law = king_peace_0
-				}
-				if = {
-					limit = {
-						OR = {
-							has_law = emperor_peace_1
-							has_law = emperor_peace_2
-						}
-					}
-					add_law = emperor_peace_0
-				}	
 			}
 		}
 		any_attacker = {
@@ -2367,110 +2416,126 @@ change_feudal_elective_succession_law = {
 	on_success = {
 		FROM = {
 			hidden_tooltip = { disband_event_forces = faction_loyalists }
-			any_demesne_title = { # All titles
+			
+			if = {
 				limit = {
-					OR = {
-						tier = king
-						tier = emperor
-					}
-#					is_titular = no
-					OR = {
-						NOT = { has_law = crown_levies_0 }
-						NOT = { has_law = revokation_0 }
-						NOT = { has_law = inheritance_0 }
-						AND = {
-							NOT = { has_law = king_peace_0 }
-							NOT = { has_law = emperor_peace_0 }
+					NOT = { has_character_modifier = ca_revoke_cooldown }
+					any_demesne_title = {
+						higher_tier_than = duke
+						OR = {
+							NOT = { has_law = crown_levies_0 }
+							NOT = { has_law = revokation_0 }
+							NOT = { has_law = inheritance_0 }
+							AND = {
+								NOT = { has_law = king_peace_0 }
+								NOT = { has_law = emperor_peace_0 }
+							}
 						}
 					}
 				}
 				
-				if = {
-					limit = {
-						OR = {
-							has_law = king_peace_0
-							has_law = emperor_peace_0
+				any_demesne_title = { # All titles
+					limit = { higher_tier_than = duke }
+					
+					if = {
+						limit = {
+							OR = {
+								has_law = king_peace_0
+								has_law = emperor_peace_0
+							}
+							has_law = revokation_0
+							has_law = crown_levies_0
+							NOT = { has_law = inheritance_0 }
 						}
-						has_law = revokation_0
-						has_law = crown_levies_0
+						add_law = inheritance_0
 					}
-					add_law = inheritance_0
+					if = {
+						limit = {
+							has_law = crown_levies_1
+							OR = {
+								has_law = king_peace_0
+								has_law = emperor_peace_0
+							}
+							has_law = revokation_0
+						}
+						add_law = crown_levies_0
+					}
+					if = {
+						limit = {
+							has_law = crown_levies_2
+							OR = {
+								has_law = king_peace_0
+								has_law = emperor_peace_0
+							}
+							has_law = revokation_0
+						}
+						add_law = crown_levies_1
+					}
+					if = {
+						limit = {
+							has_law = crown_levies_3
+							OR = {
+								has_law = king_peace_0
+								has_law = emperor_peace_0
+							}
+							has_law = revokation_0
+						}
+						add_law = crown_levies_2
+					}
+					if = {
+						limit = {
+							has_law = crown_levies_4
+							OR = {
+								has_law = king_peace_0
+								has_law = emperor_peace_0
+							}
+							has_law = revokation_0
+						}
+						add_law = crown_levies_3
+					}
+					if = {
+						limit = {
+							OR = {
+								has_law = revokation_1
+								has_law = revokation_2
+							}
+							OR = {
+								has_law = king_peace_0
+								has_law = emperor_peace_0
+							}
+						}
+						add_law = revokation_0
+					}
+					if = {
+						limit = {
+							OR = {
+								has_law = king_peace_1
+								has_law = king_peace_2
+							}
+						}
+						add_law = king_peace_0
+					}
+					if = {
+						limit = {
+							OR = {
+								has_law = emperor_peace_1
+								has_law = emperor_peace_2
+							}
+						}
+						add_law = emperor_peace_0
+					}
+				} # END: All titles
+
+				custom_tooltip = {
+					text = ca_revoke_cooldown_ctt
+					hidden_tooltip = {
+						add_character_modifier = {
+							name = ca_revoke_cooldown
+							duration = 5475
+							inherit = yes
+						}
+					}
 				}
-				if = {
-					limit = {
-						has_law = crown_levies_1
-						OR = {
-							has_law = king_peace_0
-							has_law = emperor_peace_0
-						}
-						has_law = revokation_0
-					}
-					add_law = crown_levies_0
-				}
-				if = {
-					limit = {
-						has_law = crown_levies_2
-						OR = {
-							has_law = king_peace_0
-							has_law = emperor_peace_0
-						}
-						has_law = revokation_0
-					}
-					add_law = crown_levies_1
-				}
-				if = {
-					limit = {
-						has_law = crown_levies_3
-						OR = {
-							has_law = king_peace_0
-							has_law = emperor_peace_0
-						}
-						has_law = revokation_0
-					}
-					add_law = crown_levies_2
-				}
-				if = {
-					limit = {
-						has_law = crown_levies_4
-						OR = {
-							has_law = king_peace_0
-							has_law = emperor_peace_0
-						}
-						has_law = revokation_0
-					}
-					add_law = crown_levies_3
-				}
-				if = {
-					limit = {
-						OR = {
-							has_law = revokation_1
-							has_law = revokation_2
-						}
-						OR = {
-							has_law = king_peace_0
-							has_law = emperor_peace_0
-						}
-					}
-					add_law = revokation_0
-				}
-				if = {
-					limit = {
-						OR = {
-							has_law = king_peace_1
-							has_law = king_peace_2
-						}
-					}
-					add_law = king_peace_0
-				}
-				if = {
-					limit = {
-						OR = {
-							has_law = emperor_peace_1
-							has_law = emperor_peace_2
-						}
-					}
-					add_law = emperor_peace_0
-				}	
 			}
 		}
 		any_attacker = {
@@ -3103,11 +3168,9 @@ crusade = {
 				}
 			}
 			is_landed = yes # Otherwise the war score starts at -100%
-			NOT = {
-				AND = {
-					religion_group = muslim
-					FROM = { religion_group = pagan_group }
-				}
+			OR = {
+				NOT = { religion_group = muslim }
+				NOT = { FROM = { religion_group = pagan_group } }
 			}
 		}
 		OR = {
@@ -4382,109 +4445,124 @@ bid_for_independence = {
 		}
 
 		FROM = {
-			any_demesne_title = { # All titles
+			if = {
 				limit = {
-					OR = {
-						tier = king
-						tier = emperor
-					}
-#					is_titular = no
-					OR = {
-						NOT = { has_law = crown_levies_0 }
-						NOT = { has_law = revokation_0 }
-						NOT = { has_law = inheritance_0 }
-						AND = {
-							NOT = { has_law = king_peace_0 }
-							NOT = { has_law = emperor_peace_0 }
+					NOT = { has_character_modifier = ca_revoke_cooldown }
+					any_demesne_title = {
+						higher_tier_than = duke
+						OR = {
+							NOT = { has_law = crown_levies_0 }
+							NOT = { has_law = revokation_0 }
+							NOT = { has_law = inheritance_0 }
+							AND = {
+								NOT = { has_law = king_peace_0 }
+								NOT = { has_law = emperor_peace_0 }
+							}
 						}
 					}
 				}
 				
-				if = {
-					limit = {
-						OR = {
-							has_law = king_peace_0
-							has_law = emperor_peace_0
+				any_demesne_title = { # All titles
+					limit = { higher_tier_than = duke }
+					
+					if = {
+						limit = {
+							OR = {
+								has_law = king_peace_0
+								has_law = emperor_peace_0
+							}
+							has_law = revokation_0
+							has_law = crown_levies_0
+							NOT = { has_law = inheritance_0 }
 						}
-						has_law = revokation_0
-						has_law = crown_levies_0
+						add_law = inheritance_0
 					}
-					add_law = inheritance_0
-				}
-				if = {
-					limit = {
-						has_law = crown_levies_1
-						OR = {
-							has_law = king_peace_0
-							has_law = emperor_peace_0
+					if = {
+						limit = {
+							has_law = crown_levies_1
+							OR = {
+								has_law = king_peace_0
+								has_law = emperor_peace_0
+							}
+							has_law = revokation_0
 						}
-						has_law = revokation_0
+						add_law = crown_levies_0
 					}
-					add_law = crown_levies_0
-				}
-				if = {
-					limit = {
-						has_law = crown_levies_2
-						OR = {
-							has_law = king_peace_0
-							has_law = emperor_peace_0
+					if = {
+						limit = {
+							has_law = crown_levies_2
+							OR = {
+								has_law = king_peace_0
+								has_law = emperor_peace_0
+							}
+							has_law = revokation_0
 						}
-						has_law = revokation_0
+						add_law = crown_levies_1
 					}
-					add_law = crown_levies_1
-				}
-				if = {
-					limit = {
-						has_law = crown_levies_3
-						OR = {
-							has_law = king_peace_0
-							has_law = emperor_peace_0
+					if = {
+						limit = {
+							has_law = crown_levies_3
+							OR = {
+								has_law = king_peace_0
+								has_law = emperor_peace_0
+							}
+							has_law = revokation_0
 						}
-						has_law = revokation_0
+						add_law = crown_levies_2
 					}
-					add_law = crown_levies_2
-				}
-				if = {
-					limit = {
-						has_law = crown_levies_4
-						OR = {
-							has_law = king_peace_0
-							has_law = emperor_peace_0
+					if = {
+						limit = {
+							has_law = crown_levies_4
+							OR = {
+								has_law = king_peace_0
+								has_law = emperor_peace_0
+							}
+							has_law = revokation_0
 						}
-						has_law = revokation_0
+						add_law = crown_levies_3
 					}
-					add_law = crown_levies_3
-				}
-				if = {
-					limit = {
-						OR = {
-							has_law = revokation_1
-							has_law = revokation_2
+					if = {
+						limit = {
+							OR = {
+								has_law = revokation_1
+								has_law = revokation_2
+							}
+							OR = {
+								has_law = king_peace_0
+								has_law = emperor_peace_0
+							}
 						}
-						OR = {
-							has_law = king_peace_0
-							has_law = emperor_peace_0
+						add_law = revokation_0
+					}
+					if = {
+						limit = {
+							OR = {
+								has_law = king_peace_1
+								has_law = king_peace_2
+							}
+						}
+						add_law = king_peace_0
+					}
+					if = {
+						limit = {
+							OR = {
+								has_law = emperor_peace_1
+								has_law = emperor_peace_2
+							}
+						}
+						add_law = emperor_peace_0
+					}
+				} # END: All titles
+
+				custom_tooltip = {
+					text = ca_revoke_cooldown_ctt
+					hidden_tooltip = {
+						add_character_modifier = {
+							name = ca_revoke_cooldown
+							duration = 5475
+							inherit = yes
 						}
 					}
-					add_law = revokation_0
-				}
-				if = {
-					limit = {
-						OR = {
-							has_law = king_peace_1
-							has_law = king_peace_2
-						}
-					}
-					add_law = king_peace_0
-				}
-				if = {
-					limit = {
-						OR = {
-							has_law = emperor_peace_1
-							has_law = emperor_peace_2
-						}
-					}
-					add_law = emperor_peace_0
 				}
 			}
 		}
@@ -4618,112 +4696,140 @@ depose_liege = {
 
 	on_success = {
 		FROM = {
-			any_demesne_title = { # All titles
+			if = {
 				limit = {
-					OR = {
-						tier = king
-						tier = emperor
-					}
-#					is_titular = no
-					OR = {
-						NOT = { has_law = crown_levies_0 }
-						NOT = { has_law = revokation_0 }
-						NOT = { has_law = inheritance_0 }
-						AND = {
-							NOT = { has_law = king_peace_0 }
-							NOT = { has_law = emperor_peace_0 }
-						}
-					}
+					NOT = { has_character_modifier = ca_revoke_cooldown }
 				}
 				
-				if = {
+				any_demesne_title = { # All titles
 					limit = {
+						higher_tier_than = duke
 						OR = {
-							has_law = king_peace_0
-							has_law = emperor_peace_0
-						}
-						has_law = revokation_0
-						has_law = crown_levies_0
-					}
-					add_law = inheritance_0
-				}
-				if = {
-					limit = {
-						has_law = crown_levies_1
-						OR = {
-							has_law = king_peace_0
-							has_law = emperor_peace_0
-						}
-						has_law = revokation_0
-					}
-					add_law = crown_levies_0
-				}
-				if = {
-					limit = {
-						has_law = crown_levies_2
-						OR = {
-							has_law = king_peace_0
-							has_law = emperor_peace_0
-						}
-						has_law = revokation_0
-					}
-					add_law = crown_levies_1
-				}
-				if = {
-					limit = {
-						has_law = crown_levies_3
-						OR = {
-							has_law = king_peace_0
-							has_law = emperor_peace_0
-						}
-						has_law = revokation_0
-					}
-					add_law = crown_levies_2
-				}
-				if = {
-					limit = {
-						has_law = crown_levies_4
-						OR = {
-							has_law = king_peace_0
-							has_law = emperor_peace_0
-						}
-						has_law = revokation_0
-					}
-					add_law = crown_levies_3
-				}
-				if = {
-					limit = {
-						OR = {
-							has_law = revokation_1
-							has_law = revokation_2
-						}
-						OR = {
-							has_law = king_peace_0
-							has_law = emperor_peace_0
+							NOT = { has_law = crown_levies_0 }
+							NOT = { has_law = revokation_0 }
+							NOT = { has_law = inheritance_0 }
+							AND = {
+								NOT = { has_law = king_peace_0 }
+								NOT = { has_law = emperor_peace_0 }
+							}
 						}
 					}
-					add_law = revokation_0
-				}
-				if = {
-					limit = {
-						OR = {
-							has_law = king_peace_1
-							has_law = king_peace_2
+					
+					# for the three CBs which result in a liege unknown a priori,
+					# we don't bother with getting the custom tooltip right, and
+					# we just make sure that the cooldown is set in the right cases.
+					# these CBs are: depose_liege (this), overthrow_ruler, and
+					#                overthrow_ruler_no_calls
+					
+					PREV = { set_character_flag = ca_revoke_cooldown_temp }
+					
+					if = {
+						limit = {
+							OR = {
+								has_law = king_peace_0
+								has_law = emperor_peace_0
+							}
+							has_law = revokation_0
+							has_law = crown_levies_0
 						}
+						add_law = inheritance_0
 					}
-					add_law = king_peace_0
-				}
-				if = {
-					limit = {
-						OR = {
-							has_law = emperor_peace_1
-							has_law = emperor_peace_2
+					if = {
+						limit = {
+							has_law = crown_levies_1
+							OR = {
+								has_law = king_peace_0
+								has_law = emperor_peace_0
+							}
+							has_law = revokation_0
 						}
+						add_law = crown_levies_0
 					}
-					add_law = emperor_peace_0
-				}	
+					if = {
+						limit = {
+							has_law = crown_levies_2
+							OR = {
+								has_law = king_peace_0
+								has_law = emperor_peace_0
+							}
+							has_law = revokation_0
+						}
+						add_law = crown_levies_1
+					}
+					if = {
+						limit = {
+							has_law = crown_levies_3
+							OR = {
+								has_law = king_peace_0
+								has_law = emperor_peace_0
+							}
+							has_law = revokation_0
+						}
+						add_law = crown_levies_2
+					}
+					if = {
+						limit = {
+							has_law = crown_levies_4
+							OR = {
+								has_law = king_peace_0
+								has_law = emperor_peace_0
+							}
+							has_law = revokation_0
+						}
+						add_law = crown_levies_3
+					}
+					if = {
+						limit = {
+							OR = {
+								has_law = revokation_1
+								has_law = revokation_2
+							}
+							OR = {
+								has_law = king_peace_0
+								has_law = emperor_peace_0
+							}
+						}
+						add_law = revokation_0
+					}
+					if = {
+						limit = {
+							OR = {
+								has_law = king_peace_1
+								has_law = king_peace_2
+							}
+						}
+						add_law = king_peace_0
+					}
+					if = {
+						limit = {
+							OR = {
+								has_law = emperor_peace_1
+								has_law = emperor_peace_2
+							}
+						}
+						add_law = emperor_peace_0
+					}
+				} # END: All titles
 			}
+
 			abdicate_to_most_liked_by = ROOT
+				
+			if = {
+				limit = { has_character_flag = ca_revoke_cooldown_temp }
+				hidden_tooltip = {
+					ROOT = {
+						liege = {
+							add_character_modifier = {
+								name = ca_revoke_cooldown
+								duration = 5475
+								inherit = yes
+							}
+						}
+					}
+				}
+			}
+			
+			clr_character_flag = ca_revoke_cooldown_temp
 		}
 		any_attacker = {
 			limit = { character = ROOT }
@@ -4831,116 +4937,143 @@ overthrow_ruler = {
 				who = ROOT
 				modifier = declared_war
 			}
-			any_demesne_title = { # All titles
+			if = {
 				limit = {
-					OR = {
-						tier = king
-						tier = emperor
-					}
-#					is_titular = no
-					OR = {
-						NOT = { has_law = crown_levies_0 }
-						NOT = { has_law = revokation_0 }
-						NOT = { has_law = inheritance_0 }
-						AND = {
-							NOT = { has_law = king_peace_0 }
-							NOT = { has_law = emperor_peace_0 }
-						}
-					}
+					NOT = { has_character_modifier = ca_revoke_cooldown }
 				}
 				
-				if = {
+				any_demesne_title = { # All titles
 					limit = {
+						higher_tier_than = duke
 						OR = {
-							has_law = king_peace_0
-							has_law = emperor_peace_0
-						}
-						has_law = revokation_0
-						has_law = crown_levies_0
-					}
-					add_law = inheritance_0
-				}
-				if = {
-					limit = {
-						has_law = crown_levies_1
-						OR = {
-							has_law = king_peace_0
-							has_law = emperor_peace_0
-						}
-						has_law = revokation_0
-					}
-					add_law = crown_levies_0
-				}
-				if = {
-					limit = {
-						has_law = crown_levies_2
-						OR = {
-							has_law = king_peace_0
-							has_law = emperor_peace_0
-						}
-						has_law = revokation_0
-					}
-					add_law = crown_levies_1
-				}
-				if = {
-					limit = {
-						has_law = crown_levies_3
-						OR = {
-							has_law = king_peace_0
-							has_law = emperor_peace_0
-						}
-						has_law = revokation_0
-					}
-					add_law = crown_levies_2
-				}
-				if = {
-					limit = {
-						has_law = crown_levies_4
-						OR = {
-							has_law = king_peace_0
-							has_law = emperor_peace_0
-						}
-						has_law = revokation_0
-					}
-					add_law = crown_levies_3
-				}
-				if = {
-					limit = {
-						OR = {
-							has_law = revokation_1
-							has_law = revokation_2
-						}
-						OR = {
-							has_law = king_peace_0
-							has_law = emperor_peace_0
+							NOT = { has_law = crown_levies_0 }
+							NOT = { has_law = revokation_0 }
+							NOT = { has_law = inheritance_0 }
+							AND = {
+								NOT = { has_law = king_peace_0 }
+								NOT = { has_law = emperor_peace_0 }
+							}
 						}
 					}
-					add_law = revokation_0
-				}
-				if = {
-					limit = {
-						OR = {
-							has_law = king_peace_1
-							has_law = king_peace_2
+					
+					# for the two CBs which result in a liege unknown a priori,
+					# we don't bother with getting the custom tooltip right, and
+					# we just make sure that the cooldown is set in the right cases.
+					
+					PREV = { set_character_flag = ca_revoke_cooldown_temp }
+					
+					if = {
+						limit = {
+							OR = {
+								has_law = king_peace_0
+								has_law = emperor_peace_0
+							}
+							has_law = revokation_0
+							has_law = crown_levies_0
 						}
+						add_law = inheritance_0
 					}
-					add_law = king_peace_0
-				}
-				if = {
-					limit = {
-						OR = {
-							has_law = emperor_peace_1
-							has_law = emperor_peace_2
+					if = {
+						limit = {
+							has_law = crown_levies_1
+							OR = {
+								has_law = king_peace_0
+								has_law = emperor_peace_0
+							}
+							has_law = revokation_0
 						}
+						add_law = crown_levies_0
 					}
-					add_law = emperor_peace_0
-				}	
+					if = {
+						limit = {
+							has_law = crown_levies_2
+							OR = {
+								has_law = king_peace_0
+								has_law = emperor_peace_0
+							}
+							has_law = revokation_0
+						}
+						add_law = crown_levies_1
+					}
+					if = {
+						limit = {
+							has_law = crown_levies_3
+							OR = {
+								has_law = king_peace_0
+								has_law = emperor_peace_0
+							}
+							has_law = revokation_0
+						}
+						add_law = crown_levies_2
+					}
+					if = {
+						limit = {
+							has_law = crown_levies_4
+							OR = {
+								has_law = king_peace_0
+								has_law = emperor_peace_0
+							}
+							has_law = revokation_0
+						}
+						add_law = crown_levies_3
+					}
+					if = {
+						limit = {
+							OR = {
+								has_law = revokation_1
+								has_law = revokation_2
+							}
+							OR = {
+								has_law = king_peace_0
+								has_law = emperor_peace_0
+							}
+						}
+						add_law = revokation_0
+					}
+					if = {
+						limit = {
+							OR = {
+								has_law = king_peace_1
+								has_law = king_peace_2
+							}
+						}
+						add_law = king_peace_0
+					}
+					if = {
+						limit = {
+							OR = {
+								has_law = emperor_peace_1
+								has_law = emperor_peace_2
+							}
+						}
+						add_law = emperor_peace_0
+					}
+				} # END: All titles
 			}
+
 			current_heir = {
 				prestige = -200
 				inherit = PREV
 			}
+			
 			abdicate = yes
+				
+			if = {
+				limit = { has_character_flag = ca_revoke_cooldown_temp }
+				hidden_tooltip = {
+					ROOT = {
+						liege = {
+							add_character_modifier = {
+								name = ca_revoke_cooldown
+								duration = 5475
+								inherit = yes
+							}
+						}
+					}
+				}
+			}
+			
+			clr_character_flag = ca_revoke_cooldown_temp
 		}
 		any_attacker = {
 			limit = { character = ROOT }
@@ -5054,112 +5187,137 @@ overthrow_ruler_no_calls = {
 				who = ROOT
 				modifier = declared_war
 			}
-			any_demesne_title = { # All titles
-				limit = {
-					OR = {
-						tier = king
-						tier = emperor
-					}
-#					is_titular = no
-					OR = {
-						NOT = { has_law = crown_levies_0 }
-						NOT = { has_law = revokation_0 }
-						NOT = { has_law = inheritance_0 }
-						AND = {
-							NOT = { has_law = king_peace_0 }
-							NOT = { has_law = emperor_peace_0 }
-						}
-					}
-				}
+			
+			if = {
+				limit = { NOT = { has_character_modifier = ca_revoke_cooldown } }
 				
-				if = {
+				any_demesne_title = { # All titles
 					limit = {
 						OR = {
-							has_law = king_peace_0
-							has_law = emperor_peace_0
+							tier = king
+							tier = emperor
 						}
-						has_law = revokation_0
-						has_law = crown_levies_0
-					}
-					add_law = inheritance_0
-				}
-				if = {
-					limit = {
-						has_law = crown_levies_1
+#						is_titular = no
 						OR = {
-							has_law = king_peace_0
-							has_law = emperor_peace_0
-						}
-						has_law = revokation_0
-					}
-					add_law = crown_levies_0
-				}
-				if = {
-					limit = {
-						has_law = crown_levies_2
-						OR = {
-							has_law = king_peace_0
-							has_law = emperor_peace_0
-						}
-						has_law = revokation_0
-					}
-					add_law = crown_levies_1
-				}
-				if = {
-					limit = {
-						has_law = crown_levies_3
-						OR = {
-							has_law = king_peace_0
-							has_law = emperor_peace_0
-						}
-						has_law = revokation_0
-					}
-					add_law = crown_levies_2
-				}
-				if = {
-					limit = {
-						has_law = crown_levies_4
-						OR = {
-							has_law = king_peace_0
-							has_law = emperor_peace_0
-						}
-						has_law = revokation_0
-					}
-					add_law = crown_levies_3
-				}
-				if = {
-					limit = {
-						OR = {
-							has_law = revokation_1
-							has_law = revokation_2
-						}
-						OR = {
-							has_law = king_peace_0
-							has_law = emperor_peace_0
+							NOT = { has_law = crown_levies_0 }
+							NOT = { has_law = revokation_0 }
+							NOT = { has_law = inheritance_0 }
+							AND = {
+								NOT = { has_law = king_peace_0 }
+								NOT = { has_law = emperor_peace_0 }
+							}
 						}
 					}
-					add_law = revokation_0
-				}
-				if = {
-					limit = {
-						OR = {
-							has_law = king_peace_1
-							has_law = king_peace_2
+					
+					PREV = { set_character_flag = ca_law_revoked_temp }
+					
+					if = {
+						limit = {
+							OR = {
+								has_law = king_peace_0
+								has_law = emperor_peace_0
+							}
+							has_law = revokation_0
+							has_law = crown_levies_0
 						}
+						add_law = inheritance_0
 					}
-					add_law = king_peace_0
-				}
-				if = {
-					limit = {
-						OR = {
-							has_law = emperor_peace_1
-							has_law = emperor_peace_2
+					if = {
+						limit = {
+							has_law = crown_levies_1
+							OR = {
+								has_law = king_peace_0
+								has_law = emperor_peace_0
+							}
+							has_law = revokation_0
 						}
+						add_law = crown_levies_0
 					}
-					add_law = emperor_peace_0
-				}	
-			}
+					if = {
+						limit = {
+							has_law = crown_levies_2
+							OR = {
+								has_law = king_peace_0
+								has_law = emperor_peace_0
+							}
+							has_law = revokation_0
+						}
+						add_law = crown_levies_1
+					}
+					if = {
+						limit = {
+							has_law = crown_levies_3
+							OR = {
+								has_law = king_peace_0
+								has_law = emperor_peace_0
+							}
+							has_law = revokation_0
+						}
+						add_law = crown_levies_2
+					}
+					if = {
+						limit = {
+							has_law = crown_levies_4
+							OR = {
+								has_law = king_peace_0
+								has_law = emperor_peace_0
+							}
+							has_law = revokation_0
+						}
+						add_law = crown_levies_3
+					}
+					if = {
+						limit = {
+							OR = {
+								has_law = revokation_1
+								has_law = revokation_2
+							}
+							OR = {
+								has_law = king_peace_0
+								has_law = emperor_peace_0
+							}
+						}
+						add_law = revokation_0
+					}
+					if = {
+						limit = {
+							OR = {
+								has_law = king_peace_1
+								has_law = king_peace_2
+							}
+						}
+						add_law = king_peace_0
+					}
+					if = {
+						limit = {
+							OR = {
+								has_law = emperor_peace_1
+								has_law = emperor_peace_2
+							}
+						}
+						add_law = emperor_peace_0
+					}
+				} # END: All titles
+			} # END: unless CA reduction cooldown
+			
 			abdicate = yes
+			
+			if = {
+				limit = { has_character_flag = ca_law_revoked_temp }
+				hidden_tooltip = {
+					ROOT = {
+						liege = {
+							add_character_modifier = {
+								name = ca_revoke_cooldown
+								duration = 5475
+								inherit = yes
+							}
+						}
+					}
+				}
+			}
+				
+			clr_character_flag = ca_law_revoked_temp
 		}
 	}
 
@@ -5255,109 +5413,133 @@ succession_on_liege = {
 	on_success_title = {
 		if = {
 			limit = {
+				NOT = { FROM = { has_character_modifier = ca_revoke_cooldown } }
+				higher_tier_than = duke
 				OR = {
-					tier = king
-					tier = emperor
-				}
-#				is_titular = no
-				OR = {
-						NOT = { has_law = crown_levies_0 }
-						NOT = { has_law = revokation_0 }
-						NOT = { has_law = inheritance_0 }
-						AND = {
-							NOT = { has_law = king_peace_0 }
-							NOT = { has_law = emperor_peace_0 }
-						}
+					NOT = { has_law = crown_levies_0 }
+					NOT = { has_law = revokation_0 }
+					NOT = { has_law = inheritance_0 }
+					AND = {
+						NOT = { has_law = king_peace_0 }
+						NOT = { has_law = emperor_peace_0 }
 					}
 				}
-				
-				if = {
-					limit = {
-						OR = {
-							has_law = king_peace_0
-							has_law = emperor_peace_0
-						}
-						has_law = revokation_0
-						has_law = crown_levies_0
+			}
+			
+			# like depose_liege, overthrow_ruler, and overthrow_ruler_no_calls (unknown new liege),
+			# we also don't bother with generating a tooltip that includes whether or not a revocation
+			# cooldown is to be enacted on ROOT for succession wars, because they are per-title, and
+			# there's no simple trigger to tell us, after the fact, that a crown law was indeed
+			# revoked (without the use of flags, which won't do for a tooltip).
+			
+			FROM = { set_character_flag = ca_law_revoked_temp }
+					
+			if = {
+				limit = {
+					OR = {
+						has_law = king_peace_0
+						has_law = emperor_peace_0
 					}
-					add_law = inheritance_0
+					has_law = revokation_0
+					has_law = crown_levies_0
 				}
-				if = {
-					limit = {
-						has_law = crown_levies_1
-						OR = {
-							has_law = king_peace_0
-							has_law = emperor_peace_0
-						}
-						has_law = revokation_0
+				add_law = inheritance_0
+			}
+			if = {
+				limit = {
+					has_law = crown_levies_1
+					OR = {
+						has_law = king_peace_0
+						has_law = emperor_peace_0
 					}
-					add_law = crown_levies_0
+					has_law = revokation_0
 				}
-				if = {
-					limit = {
-						has_law = crown_levies_2
-						OR = {
-							has_law = king_peace_0
-							has_law = emperor_peace_0
-						}
-						has_law = revokation_0
+				add_law = crown_levies_0
+			}
+			if = {
+				limit = {
+					has_law = crown_levies_2
+					OR = {
+						has_law = king_peace_0
+						has_law = emperor_peace_0
 					}
-					add_law = crown_levies_1
+					has_law = revokation_0
 				}
-				if = {
-					limit = {
-						has_law = crown_levies_3
-						OR = {
-							has_law = king_peace_0
-							has_law = emperor_peace_0
-						}
-						has_law = revokation_0
+				add_law = crown_levies_1
+			}
+			if = {
+				limit = {
+					has_law = crown_levies_3
+					OR = {
+						has_law = king_peace_0
+						has_law = emperor_peace_0
 					}
-					add_law = crown_levies_2
+					has_law = revokation_0
 				}
-				if = {
-					limit = {
-						has_law = crown_levies_4
-						OR = {
-							has_law = king_peace_0
-							has_law = emperor_peace_0
-						}
-						has_law = revokation_0
+				add_law = crown_levies_2
+			}
+			if = {
+				limit = {
+					has_law = crown_levies_4
+					OR = {
+						has_law = king_peace_0
+						has_law = emperor_peace_0
 					}
-					add_law = crown_levies_3
+					has_law = revokation_0
 				}
-				if = {
-					limit = {
-						OR = {
-							has_law = revokation_1
-							has_law = revokation_2
-						}
-						OR = {
-							has_law = king_peace_0
-							has_law = emperor_peace_0
-						}
+				add_law = crown_levies_3
+			}
+			if = {
+				limit = {
+					OR = {
+						has_law = revokation_1
+						has_law = revokation_2
 					}
-					add_law = revokation_0
-				}
-				if = {
-					limit = {
-						OR = {
-							has_law = king_peace_1
-							has_law = king_peace_2
-						}
+					OR = {
+						has_law = king_peace_0
+						has_law = emperor_peace_0
 					}
-					add_law = king_peace_0
 				}
-				if = {
-					limit = {
-						OR = {
-							has_law = emperor_peace_1
-							has_law = emperor_peace_2
-						}
+				add_law = revokation_0
+			}
+			if = {
+				limit = {
+					OR = {
+						has_law = king_peace_1
+						has_law = king_peace_2
 					}
-					add_law = emperor_peace_0
 				}
+				add_law = king_peace_0
+			}
+			if = {
+				limit = {
+					OR = {
+						has_law = emperor_peace_1
+						has_law = emperor_peace_2
+					}
+				}
+				add_law = emperor_peace_0
+			}
+		} # END: if title needs a CA reduction
+		
+		# NOTE: this may add the cooldown modifier multiple times in a row
+		# (due to multiple crown law titles transferred), but that will do
+		# no harm.  could restructure the CB a bit and avoid it, but this
+		# is minimal.
+		
+		if = { limit = { FROM = { has_character_flag = ca_law_revoked_temp } }
+			hidden_tooltip = {
+				ROOT = {
+					add_character_modifier = {
+						name = ca_revoke_cooldown
+						duration = 5475
+						inherit = yes
+					}
+				}
+			}
 		}
+		
+		FROM = { clr_character_flag = ca_law_revoked_temp }
 	}
 	
 	on_fail = {
@@ -5490,109 +5672,127 @@ other_succession = {
 		usurp_title_plus_barony_if_unlanded = ROOT
 		if = {
 			limit = {
+				NOT = { FROM = { has_character_modifier = ca_revoke_cooldown } }
+				higher_tier_than = duke
 				OR = {
-					tier = king
-					tier = emperor
-				}
-#				is_titular = no
-				OR = {
-						NOT = { has_law = crown_levies_0 }
-						NOT = { has_law = revokation_0 }
-						NOT = { has_law = inheritance_0 }
-						AND = {
-							NOT = { has_law = king_peace_0 }
-							NOT = { has_law = emperor_peace_0 }
-						}
+					NOT = { has_law = crown_levies_0 }
+					NOT = { has_law = revokation_0 }
+					NOT = { has_law = inheritance_0 }
+					AND = {
+						NOT = { has_law = king_peace_0 }
+						NOT = { has_law = emperor_peace_0 }
 					}
 				}
-				
-				if = {
-					limit = {
-						OR = {
-							has_law = king_peace_0
-							has_law = emperor_peace_0
-						}
-						has_law = revokation_0
-						has_law = crown_levies_0
+			}
+			
+			FROM = { set_character_flag = ca_law_revoked_temp }
+
+			if = {
+				limit = {
+					OR = {
+						has_law = king_peace_0
+						has_law = emperor_peace_0
 					}
-					add_law = inheritance_0
+					has_law = revokation_0
+					has_law = crown_levies_0
 				}
-				if = {
-					limit = {
-						has_law = crown_levies_1
-						OR = {
-							has_law = king_peace_0
-							has_law = emperor_peace_0
-						}
-						has_law = revokation_0
+				add_law = inheritance_0
+			}
+			if = {
+				limit = {
+					has_law = crown_levies_1
+					OR = {
+						has_law = king_peace_0
+						has_law = emperor_peace_0
 					}
-					add_law = crown_levies_0
+					has_law = revokation_0
 				}
-				if = {
-					limit = {
-						has_law = crown_levies_2
-						OR = {
-							has_law = king_peace_0
-							has_law = emperor_peace_0
-						}
-						has_law = revokation_0
+				add_law = crown_levies_0
+			}
+			if = {
+				limit = {
+					has_law = crown_levies_2
+					OR = {
+						has_law = king_peace_0
+						has_law = emperor_peace_0
 					}
-					add_law = crown_levies_1
+					has_law = revokation_0
 				}
-				if = {
-					limit = {
-						has_law = crown_levies_3
-						OR = {
-							has_law = king_peace_0
-							has_law = emperor_peace_0
-						}
-						has_law = revokation_0
+				add_law = crown_levies_1
+			}
+			if = {
+				limit = {
+					has_law = crown_levies_3
+					OR = {
+						has_law = king_peace_0
+						has_law = emperor_peace_0
 					}
-					add_law = crown_levies_2
+					has_law = revokation_0
 				}
-				if = {
-					limit = {
-						has_law = crown_levies_4
-						OR = {
-							has_law = king_peace_0
-							has_law = emperor_peace_0
-						}
-						has_law = revokation_0
+				add_law = crown_levies_2
+			}
+			if = {
+				limit = {
+					has_law = crown_levies_4
+					OR = {
+						has_law = king_peace_0
+						has_law = emperor_peace_0
 					}
-					add_law = crown_levies_3
+					has_law = revokation_0
 				}
-				if = {
-					limit = {
-						OR = {
-							has_law = revokation_1
-							has_law = revokation_2
-						}
-						OR = {
-							has_law = king_peace_0
-							has_law = emperor_peace_0
-						}
+				add_law = crown_levies_3
+			}
+			if = {
+				limit = {
+					OR = {
+						has_law = revokation_1
+						has_law = revokation_2
 					}
-					add_law = revokation_0
-				}
-				if = {
-					limit = {
-						OR = {
-							has_law = king_peace_1
-							has_law = king_peace_2
-						}
+					OR = {
+						has_law = king_peace_0
+						has_law = emperor_peace_0
 					}
-					add_law = king_peace_0
 				}
-				if = {
-					limit = {
-						OR = {
-							has_law = emperor_peace_1
-							has_law = emperor_peace_2
-						}
+				add_law = revokation_0
+			}
+			if = {
+				limit = {
+					OR = {
+						has_law = king_peace_1
+						has_law = king_peace_2
 					}
-					add_law = emperor_peace_0
 				}
+				add_law = king_peace_0
+			}
+			if = {
+				limit = {
+					OR = {
+						has_law = emperor_peace_1
+						has_law = emperor_peace_2
+					}
+				}
+				add_law = emperor_peace_0
+			}
+		} # END: if title needs a CA reduction
+		
+		# NOTE: this may add the cooldown modifier multiple times in a row
+		# (due to multiple crown law titles transferred), but that will do
+		# no harm.  we could add it to post-title, but I'd rather limit the
+		# scope of the temp. flag.
+		
+		if = { limit = { FROM = { has_character_flag = ca_law_revoked_temp } }
+			hidden_tooltip = {
+				ROOT = {
+					add_character_modifier = {
+						name = ca_revoke_cooldown
+						duration = 5475
+						inherit = yes
+					}
+				}
+			}
 		}
+		
+		FROM = { clr_character_flag = ca_law_revoked_temp }
 	}
 
 	on_success_posttitle = {
@@ -5731,6 +5931,12 @@ other_succession_on_liege = {
 		}
 		
 		FROM = {
+			# you'd think we could add the tooltipped revocation cooldown to
+			# the successful pretender here a priori, but there is no way to
+			# scope to this CB instance's affected titles, so any_demesne_title
+			# won't work as per usual. they aren't the same-tier titles as the
+			# snippet below might suggest at first either.
+		
 			any_demesne_title = {
 				limit = {
 					tier = FROM
@@ -5751,109 +5957,122 @@ other_succession_on_liege = {
 	on_success_title = {
 		if = {
 			limit = {
+				NOT = { FROM = { has_character_modifier = ca_revoke_cooldown } }
+				higher_tier_than = duke
 				OR = {
-					tier = king
-					tier = emperor
-				}
-#				is_titular = no
-				OR = {
-						NOT = { has_law = crown_levies_0 }
-						NOT = { has_law = revokation_0 }
-						NOT = { has_law = inheritance_0 }
-						AND = {
-							NOT = { has_law = king_peace_0 }
-							NOT = { has_law = emperor_peace_0 }
-						}
+					NOT = { has_law = crown_levies_0 }
+					NOT = { has_law = revokation_0 }
+					NOT = { has_law = inheritance_0 }
+					AND = {
+						NOT = { has_law = king_peace_0 }
+						NOT = { has_law = emperor_peace_0 }
 					}
 				}
-				
-				if = {
-					limit = {
-						OR = {
-							has_law = king_peace_0
-							has_law = emperor_peace_0
-						}
-						has_law = revokation_0
-						has_law = crown_levies_0
+			}
+			
+			FROM = { set_character_flag = ca_law_revoked_temp }
+
+			if = {
+				limit = {
+					OR = {
+						has_law = king_peace_0
+						has_law = emperor_peace_0
 					}
-					add_law = inheritance_0
+					has_law = revokation_0
+					has_law = crown_levies_0
 				}
-				if = {
-					limit = {
-						has_law = crown_levies_1
-						OR = {
-							has_law = king_peace_0
-							has_law = emperor_peace_0
-						}
-						has_law = revokation_0
+				add_law = inheritance_0
+			}
+			if = {
+				limit = {
+					has_law = crown_levies_1
+					OR = {
+						has_law = king_peace_0
+						has_law = emperor_peace_0
 					}
-					add_law = crown_levies_0
+					has_law = revokation_0
 				}
-				if = {
-					limit = {
-						has_law = crown_levies_2
-						OR = {
-							has_law = king_peace_0
-							has_law = emperor_peace_0
-						}
-						has_law = revokation_0
+				add_law = crown_levies_0
+			}
+			if = {
+				limit = {
+					has_law = crown_levies_2
+					OR = {
+						has_law = king_peace_0
+						has_law = emperor_peace_0
 					}
-					add_law = crown_levies_1
+					has_law = revokation_0
 				}
-				if = {
-					limit = {
-						has_law = crown_levies_3
-						OR = {
-							has_law = king_peace_0
-							has_law = emperor_peace_0
-						}
-						has_law = revokation_0
+				add_law = crown_levies_1
+			}
+			if = {
+				limit = {
+					has_law = crown_levies_3
+					OR = {
+						has_law = king_peace_0
+						has_law = emperor_peace_0
 					}
-					add_law = crown_levies_2
+					has_law = revokation_0
 				}
-				if = {
-					limit = {
-						has_law = crown_levies_4
-						OR = {
-							has_law = king_peace_0
-							has_law = emperor_peace_0
-						}
-						has_law = revokation_0
+				add_law = crown_levies_2
+			}
+			if = {
+				limit = {
+					has_law = crown_levies_4
+					OR = {
+						has_law = king_peace_0
+						has_law = emperor_peace_0
 					}
-					add_law = crown_levies_3
+					has_law = revokation_0
 				}
-				if = {
-					limit = {
-						OR = {
-							has_law = revokation_1
-							has_law = revokation_2
-						}
-						OR = {
-							has_law = king_peace_0
-							has_law = emperor_peace_0
-						}
+				add_law = crown_levies_3
+			}
+			if = {
+				limit = {
+					OR = {
+						has_law = revokation_1
+						has_law = revokation_2
 					}
-					add_law = revokation_0
-				}
-				if = {
-					limit = {
-						OR = {
-							has_law = king_peace_1
-							has_law = king_peace_2
-						}
+					OR = {
+						has_law = king_peace_0
+						has_law = emperor_peace_0
 					}
-					add_law = king_peace_0
 				}
-				if = {
-					limit = {
-						OR = {
-							has_law = emperor_peace_1
-							has_law = emperor_peace_2
-						}
+				add_law = revokation_0
+			}
+			if = {
+				limit = {
+					OR = {
+						has_law = king_peace_1
+						has_law = king_peace_2
 					}
-					add_law = emperor_peace_0
 				}
+				add_law = king_peace_0
+			}
+			if = {
+				limit = {
+					OR = {
+						has_law = emperor_peace_1
+						has_law = emperor_peace_2
+					}
+				}
+				add_law = emperor_peace_0
+			}
+		} # END: if title needs a CA reduction
+		
+		if = { limit = { FROM = { has_character_flag = ca_law_revoked_temp } }
+			hidden_tooltip = {
+				ROOT = {
+					add_character_modifier = {
+						name = ca_revoke_cooldown
+						duration = 5475
+						inherit = yes
+					}
+				}
+			}
 		}
+		
+		FROM = { clr_character_flag = ca_law_revoked_temp }
 	}
 
 	on_success_posttitle = {
@@ -6728,109 +6947,136 @@ change_gavelkind_succession_law = {
 	on_success = {
 		FROM = {
 			hidden_tooltip = { disband_event_forces = faction_loyalists }
-			any_demesne_title = { # All titles
+			
+			if = {
 				limit = {
-					OR = {
-						tier = king
-						tier = emperor
-					}
-#					is_titular = no
-					OR = {
-						NOT = { has_law = crown_levies_0 }
-						NOT = { has_law = revokation_0 }
-						NOT = { has_law = inheritance_0 }
-						AND = {
-							NOT = { has_law = king_peace_0 }
-							NOT = { has_law = emperor_peace_0 }
+					NOT = { has_character_modifier = ca_revoke_cooldown }
+					any_demesne_title = {
+						higher_tier_than = duke
+						OR = {
+							NOT = { has_law = crown_levies_0 }
+							NOT = { has_law = revokation_0 }
+							NOT = { has_law = inheritance_0 }
+							AND = {
+								NOT = { has_law = king_peace_0 }
+								NOT = { has_law = emperor_peace_0 }
+							}
 						}
 					}
 				}
 				
-				if = {
-					limit = {
-						OR = {
-							has_law = king_peace_0
-							has_law = emperor_peace_0
+				any_demesne_title = { # All titles
+					limit = { higher_tier_than = duke }
+					
+					# NOTE: as the effect of this scope was not terribly obvious in its
+					# ability to answer the question "is a CA reduction always guaranteed?"
+					# I did formally verify it in combination with the limit trigger,
+					# and, indeed, 89 of the 90 possible law combinations (combining king's
+					# and emperor's peace) must change at least one law, and 90th case is
+					# just zero CA.  it's reused as boilerplate extensively, so I modified
+					# the effect to take account of the 90th case and moved the trigger to
+					# the outer limit where it determines whether it's a valid case to add
+					# the CA revocation cooldown, most importantly not using any temp. flags
+					# so that a custom tooltip can be used for the cooldown.
+					
+					if = {
+						limit = {
+							OR = {
+								has_law = king_peace_0
+								has_law = emperor_peace_0
+							}
+							has_law = revokation_0
+							has_law = crown_levies_0
+							NOT = { has_law = inheritance_0 }
 						}
-						has_law = revokation_0
-						has_law = crown_levies_0
+						add_law = inheritance_0
 					}
-					add_law = inheritance_0
-				}
-				if = {
-					limit = {
-						has_law = crown_levies_1
-						OR = {
-							has_law = king_peace_0
-							has_law = emperor_peace_0
+					if = {
+						limit = {
+							has_law = crown_levies_1
+							OR = {
+								has_law = king_peace_0
+								has_law = emperor_peace_0
+							}
+							has_law = revokation_0
 						}
-						has_law = revokation_0
+						add_law = crown_levies_0
 					}
-					add_law = crown_levies_0
-				}
-				if = {
-					limit = {
-						has_law = crown_levies_2
-						OR = {
-							has_law = king_peace_0
-							has_law = emperor_peace_0
+					if = {
+						limit = {
+							has_law = crown_levies_2
+							OR = {
+								has_law = king_peace_0
+								has_law = emperor_peace_0
+							}
+							has_law = revokation_0
 						}
-						has_law = revokation_0
+						add_law = crown_levies_1
 					}
-					add_law = crown_levies_1
-				}
-				if = {
-					limit = {
-						has_law = crown_levies_3
-						OR = {
-							has_law = king_peace_0
-							has_law = emperor_peace_0
+					if = {
+						limit = {
+							has_law = crown_levies_3
+							OR = {
+								has_law = king_peace_0
+								has_law = emperor_peace_0
+							}
+							has_law = revokation_0
 						}
-						has_law = revokation_0
+						add_law = crown_levies_2
 					}
-					add_law = crown_levies_2
-				}
-				if = {
-					limit = {
-						has_law = crown_levies_4
-						OR = {
-							has_law = king_peace_0
-							has_law = emperor_peace_0
+					if = {
+						limit = {
+							has_law = crown_levies_4
+							OR = {
+								has_law = king_peace_0
+								has_law = emperor_peace_0
+							}
+							has_law = revokation_0
 						}
-						has_law = revokation_0
+						add_law = crown_levies_3
 					}
-					add_law = crown_levies_3
-				}
-				if = {
-					limit = {
-						OR = {
-							has_law = revokation_1
-							has_law = revokation_2
+					if = {
+						limit = {
+							OR = {
+								has_law = revokation_1
+								has_law = revokation_2
+							}
+							OR = {
+								has_law = king_peace_0
+								has_law = emperor_peace_0
+							}
 						}
-						OR = {
-							has_law = king_peace_0
-							has_law = emperor_peace_0
+						add_law = revokation_0
+					}
+					if = {
+						limit = {
+							OR = {
+								has_law = king_peace_1
+								has_law = king_peace_2
+							}
+						}
+						add_law = king_peace_0
+					}
+					if = {
+						limit = {
+							OR = {
+								has_law = emperor_peace_1
+								has_law = emperor_peace_2
+							}
+						}
+						add_law = emperor_peace_0
+					}
+				} # END: All titles
+
+				custom_tooltip = {
+					text = ca_revoke_cooldown_ctt
+					hidden_tooltip = {
+						add_character_modifier = {
+							name = ca_revoke_cooldown
+							duration = 5475
+							inherit = yes
 						}
 					}
-					add_law = revokation_0
-				}
-				if = {
-					limit = {
-						OR = {
-							has_law = king_peace_1
-							has_law = king_peace_2
-						}
-					}
-					add_law = king_peace_0
-				}
-				if = {
-					limit = {
-						OR = {
-							has_law = emperor_peace_1
-							has_law = emperor_peace_2
-						}
-					}
-					add_law = emperor_peace_0
 				}
 			}
 		}
@@ -7306,109 +7552,137 @@ weaken_vassal_plot = {
 			participation_scaled_prestige = 100
 		}
 		FROM = {
-			any_demesne_title = { # All titles
+			hidden_tooltip = { disband_event_forces = faction_loyalists }
+			
+			if = {
 				limit = {
-					OR = {
-						tier = king
-						tier = emperor
-					}
-#					is_titular = no
-					OR = {
-						NOT = { has_law = crown_levies_0 }
-						NOT = { has_law = revokation_0 }
-						NOT = { has_law = inheritance_0 }
-						AND = {
-							NOT = { has_law = king_peace_0 }
-							NOT = { has_law = emperor_peace_0 }
+					NOT = { has_character_modifier = ca_revoke_cooldown }
+					any_demesne_title = {
+						higher_tier_than = duke
+						OR = {
+							NOT = { has_law = crown_levies_0 }
+							NOT = { has_law = revokation_0 }
+							NOT = { has_law = inheritance_0 }
+							AND = {
+								NOT = { has_law = king_peace_0 }
+								NOT = { has_law = emperor_peace_0 }
+							}
 						}
 					}
 				}
 				
-				if = {
-					limit = {
-						OR = {
-							has_law = king_peace_0
-							has_law = emperor_peace_0
+				any_demesne_title = { # All titles
+					limit = { higher_tier_than = duke }
+					
+					# NOTE: as the effect of this scope was not terribly obvious in its
+					# ability to answer the question "is a CA reduction always guaranteed?"
+					# I did formally verify it in combination with the limit trigger,
+					# and, indeed, 89 of the 90 possible law combinations (combining king's
+					# and emperor's peace) must change at least one law, and 90th case is
+					# just zero CA.  it's reused as boilerplate extensively, so I modified
+					# the effect to take account of the 90th case and moved the trigger to
+					# the outer limit where it determines whether it's a valid case to add
+					# the CA revocation cooldown, most importantly not using any temp. flags
+					# so that a custom tooltip can be used for the cooldown.
+					
+					if = {
+						limit = {
+							OR = {
+								has_law = king_peace_0
+								has_law = emperor_peace_0
+							}
+							has_law = revokation_0
+							has_law = crown_levies_0
+							NOT = { has_law = inheritance_0 }
 						}
-						has_law = revokation_0
-						has_law = crown_levies_0
+						add_law = inheritance_0
 					}
-					add_law = inheritance_0
-				}
-				if = {
-					limit = {
-						has_law = crown_levies_1
-						OR = {
-							has_law = king_peace_0
-							has_law = emperor_peace_0
+					if = {
+						limit = {
+							has_law = crown_levies_1
+							OR = {
+								has_law = king_peace_0
+								has_law = emperor_peace_0
+							}
+							has_law = revokation_0
 						}
-						has_law = revokation_0
+						add_law = crown_levies_0
 					}
-					add_law = crown_levies_0
-				}
-				if = {
-					limit = {
-						has_law = crown_levies_2
-						OR = {
-							has_law = king_peace_0
-							has_law = emperor_peace_0
+					if = {
+						limit = {
+							has_law = crown_levies_2
+							OR = {
+								has_law = king_peace_0
+								has_law = emperor_peace_0
+							}
+							has_law = revokation_0
 						}
-						has_law = revokation_0
+						add_law = crown_levies_1
 					}
-					add_law = crown_levies_1
-				}
-				if = {
-					limit = {
-						has_law = crown_levies_3
-						OR = {
-							has_law = king_peace_0
-							has_law = emperor_peace_0
+					if = {
+						limit = {
+							has_law = crown_levies_3
+							OR = {
+								has_law = king_peace_0
+								has_law = emperor_peace_0
+							}
+							has_law = revokation_0
 						}
-						has_law = revokation_0
+						add_law = crown_levies_2
 					}
-					add_law = crown_levies_2
-				}
-				if = {
-					limit = {
-						has_law = crown_levies_4
-						OR = {
-							has_law = king_peace_0
-							has_law = emperor_peace_0
+					if = {
+						limit = {
+							has_law = crown_levies_4
+							OR = {
+								has_law = king_peace_0
+								has_law = emperor_peace_0
+							}
+							has_law = revokation_0
 						}
-						has_law = revokation_0
+						add_law = crown_levies_3
 					}
-					add_law = crown_levies_3
-				}
-				if = {
-					limit = {
-						OR = {
-							has_law = revokation_1
-							has_law = revokation_2
+					if = {
+						limit = {
+							OR = {
+								has_law = revokation_1
+								has_law = revokation_2
+							}
+							OR = {
+								has_law = king_peace_0
+								has_law = emperor_peace_0
+							}
 						}
-						OR = {
-							has_law = king_peace_0
-							has_law = emperor_peace_0
+						add_law = revokation_0
+					}
+					if = {
+						limit = {
+							OR = {
+								has_law = king_peace_1
+								has_law = king_peace_2
+							}
+						}
+						add_law = king_peace_0
+					}
+					if = {
+						limit = {
+							OR = {
+								has_law = emperor_peace_1
+								has_law = emperor_peace_2
+							}
+						}
+						add_law = emperor_peace_0
+					}
+				} # END: All titles
+
+				custom_tooltip = {
+					text = ca_revoke_cooldown_ctt
+					hidden_tooltip = {
+						add_character_modifier = {
+							name = ca_revoke_cooldown
+							duration = 5475
+							inherit = yes
 						}
 					}
-					add_law = revokation_0
-				}
-				if = {
-					limit = {
-						OR = {
-							has_law = king_peace_1
-							has_law = king_peace_2
-						}
-					}
-					add_law = king_peace_0
-				}
-				if = {
-					limit = {
-						OR = {
-							has_law = emperor_peace_1
-							has_law = emperor_peace_2
-						}
-					}
-					add_law = emperor_peace_0
 				}
 			}
 		}
@@ -8282,127 +8556,137 @@ cb_faction_independence = {
 		}
 
 		FROM = {
-			
 			hidden_tooltip = { disband_event_forces = faction_loyalists }
-		
-			any_demesne_title = { # All titles
+			
+			if = {
 				limit = {
-					OR = {
-						tier = king
-						tier = emperor
-					}
-#					is_titular = no
-					OR = {
-						NOT = { has_law = crown_levies_0 }
-						NOT = { has_law = revokation_0 }
-						NOT = { has_law = inheritance_0 }
-						AND = {
-							NOT = { has_law = king_peace_0 }
-							NOT = { has_law = emperor_peace_0 }
+					NOT = { has_character_modifier = ca_revoke_cooldown }
+					any_demesne_title = {
+						higher_tier_than = duke
+						OR = {
+							NOT = { has_law = crown_levies_0 }
+							NOT = { has_law = revokation_0 }
+							NOT = { has_law = inheritance_0 }
+							AND = {
+								NOT = { has_law = king_peace_0 }
+								NOT = { has_law = emperor_peace_0 }
+							}
 						}
 					}
 				}
 				
-				if = {
-					limit = {
-						OR = {
-							has_law = king_peace_0
-							has_law = emperor_peace_0
+				any_demesne_title = { # All titles
+					limit = { higher_tier_than = duke }
+					
+					# NOTE: as the effect of this scope was not terribly obvious in its
+					# ability to answer the question "is a CA reduction always guaranteed?"
+					# I did formally verify it in combination with the limit trigger,
+					# and, indeed, 89 of the 90 possible law combinations (combining king's
+					# and emperor's peace) must change at least one law, and 90th case is
+					# just zero CA.  it's reused as boilerplate extensively, so I modified
+					# the effect to take account of the 90th case and moved the trigger to
+					# the outer limit where it determines whether it's a valid case to add
+					# the CA revocation cooldown, most importantly not using any temp. flags
+					# so that a custom tooltip can be used for the cooldown.
+					
+					if = {
+						limit = {
+							OR = {
+								has_law = king_peace_0
+								has_law = emperor_peace_0
+							}
+							has_law = revokation_0
+							has_law = crown_levies_0
+							NOT = { has_law = inheritance_0 }
 						}
-						has_law = revokation_0
-						has_law = crown_levies_0
+						add_law = inheritance_0
 					}
-					add_law = inheritance_0
-				}
-				if = {
-					limit = {
-						has_law = crown_levies_1
-						OR = {
-							has_law = king_peace_0
-							has_law = emperor_peace_0
+					if = {
+						limit = {
+							has_law = crown_levies_1
+							OR = {
+								has_law = king_peace_0
+								has_law = emperor_peace_0
+							}
+							has_law = revokation_0
 						}
-						has_law = revokation_0
+						add_law = crown_levies_0
 					}
-					add_law = crown_levies_0
-				}
-				if = {
-					limit = {
-						has_law = crown_levies_2
-						OR = {
-							has_law = king_peace_0
-							has_law = emperor_peace_0
+					if = {
+						limit = {
+							has_law = crown_levies_2
+							OR = {
+								has_law = king_peace_0
+								has_law = emperor_peace_0
+							}
+							has_law = revokation_0
 						}
-						has_law = revokation_0
+						add_law = crown_levies_1
 					}
-					add_law = crown_levies_1
-				}
-				if = {
-					limit = {
-						has_law = crown_levies_3
-						OR = {
-							has_law = king_peace_0
-							has_law = emperor_peace_0
+					if = {
+						limit = {
+							has_law = crown_levies_3
+							OR = {
+								has_law = king_peace_0
+								has_law = emperor_peace_0
+							}
+							has_law = revokation_0
 						}
-						has_law = revokation_0
+						add_law = crown_levies_2
 					}
-					add_law = crown_levies_2
-				}
-				if = {
-					limit = {
-						has_law = crown_levies_4
-						OR = {
-							has_law = king_peace_0
-							has_law = emperor_peace_0
+					if = {
+						limit = {
+							has_law = crown_levies_4
+							OR = {
+								has_law = king_peace_0
+								has_law = emperor_peace_0
+							}
+							has_law = revokation_0
 						}
-						has_law = revokation_0
+						add_law = crown_levies_3
 					}
-					add_law = crown_levies_3
-				}
-				if = {
-					limit = {
-						OR = {
-							has_law = revokation_1
-							has_law = revokation_2
+					if = {
+						limit = {
+							OR = {
+								has_law = revokation_1
+								has_law = revokation_2
+							}
+							OR = {
+								has_law = king_peace_0
+								has_law = emperor_peace_0
+							}
 						}
-						OR = {
-							has_law = king_peace_0
-							has_law = emperor_peace_0
-						}
+						add_law = revokation_0
 					}
-					add_law = revokation_0
-				}
-				if = {
-					limit = {
-						OR = {
-							has_law = king_peace_1
-							has_law = king_peace_2
+					if = {
+						limit = {
+							OR = {
+								has_law = king_peace_1
+								has_law = king_peace_2
+							}
 						}
+						add_law = king_peace_0
 					}
-					add_law = king_peace_0
-				}
-				if = {
-					limit = {
-						OR = {
-							has_law = emperor_peace_1
-							has_law = emperor_peace_2
+					if = {
+						limit = {
+							OR = {
+								has_law = emperor_peace_1
+								has_law = emperor_peace_2
+							}
 						}
+						add_law = emperor_peace_0
 					}
-					add_law = emperor_peace_0
-				}	
-			}
-		}
-		if = {
-			limit = {
-				FROM = { has_landed_title = e_hre }
-			}
-			FROM = {
-				any_vassal = {
-					limit = {
-						NOT = { 
-							any_realm_title = { de_jure_liege_or_above = e_hre }
+				} # END: All titles
+
+				custom_tooltip = {
+					text = ca_revoke_cooldown_ctt
+					hidden_tooltip = {
+						add_character_modifier = {
+							name = ca_revoke_cooldown
+							duration = 5475
+							inherit = yes
 						}
 					}
-					set_defacto_liege = THIS
 				}
 			}
 		}

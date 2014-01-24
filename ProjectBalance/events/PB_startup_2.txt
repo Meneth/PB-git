@@ -19,6 +19,7 @@ narrative_event = {
 	picture = "GFX_evt_battle"
 	
 	immediate = {
+		set_global_flag = project_balance
 		any_playable_ruler = {
 			limit = {
 				NOT = { # only assign a combat trait to characters that don't already have one

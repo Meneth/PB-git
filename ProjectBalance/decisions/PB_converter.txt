@@ -35,13 +35,13 @@ decisions = {
 					}
 					if = {
 						limit = {
-							title = e_french_hre
+							title = e_hre_french
 							NOT = { has_law = hre_law_0 }
 						}
 						holder_scope = {
 							e_hre = {
 								grant_title = PREV
-								copy_title_laws = e_french_hre
+								copy_title_laws = e_hre_french
 							}
 							e_hre_french = {
 								any_direct_de_jure_vassal_title = {
@@ -93,13 +93,13 @@ decisions = {
 						}
 						if = {
 							limit = {
-								title = e_french_hre
+								title = e_hre_french
 								NOT = { has_law = hre_law_0 }
 							}
 							holder_scope = {
 								e_hre = {
 									grant_title = PREV
-									copy_title_laws = e_french_hre
+									copy_title_laws = e_hre_french
 								}
 								e_hre_french = {
 									any_direct_de_jure_vassal_title = {

@@ -623,8 +623,6 @@ pagan_group = {
 			key = "tengri_pagan"
 		}
 		
-		can_call_crusade = yes
-		
 		crusade_name = GREAT_HOLY_WAR
 		scripture_name = THE_LEGENDS
 		priest_title = SHAMAN
@@ -697,8 +695,6 @@ pagan_group = {
 		evil_god_names = {
 			VELNIAS
 		}
-		
-		can_call_crusade = yes
 		
 		unit_modifier = {
 			heavy_infantry_offensive = 0.3
@@ -773,8 +769,6 @@ pagan_group = {
 		evil_god_names = {
 			TUONI TUONETAR
 		}
-		
-		can_call_crusade = yes
 		
 		unit_modifier = {		
 			heavy_infantry_offensive = 0.3
@@ -938,8 +932,6 @@ pagan_group = {
 			
 			key = "DEF_RELIGION_HOME_TERRITORY"
 		}
-		
-		can_call_crusade = yes
 		
 		priests_can_marry = yes
 		female_temple_holders = yes

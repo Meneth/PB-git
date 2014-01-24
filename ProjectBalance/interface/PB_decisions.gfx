@@ -123,11 +123,11 @@ spriteTypes = {
 	#Various
 	spriteType = {
 		name = "GFX_create_hre"
-		texturefile = "gfx\\interface\\decision_icon_create_hre.dds"
+		texturefile = "gfx\\interface\\decision_icon_create_hre.DDS"
 	}
 	spriteType = {
 		name = "GFX_create_hre_france"
-		texturefile = "gfx\\interface\\decision_icon_create_hre.dds"
+		texturefile = "gfx\\interface\\decision_icon_create_hre.DDS"
 	}
 	spriteType = {
 		name = "GFX_mend_great_schism_catholic"
@@ -159,6 +159,19 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_prepare_for_converter"
-		texturefile = "gfx\\interface\\decision_icon_eu4.dds"
+		texturefile = "gfx\\interface\\decision_icon_prepare_for_converter.tga"
+	}
+	# Customization Options
+	spriteType = {
+		name = "GFX_shattered_balance"
+		texturefile = "gfx\\interface\\decision_icon_shattered_balance.tga"
+	}
+	spriteType = {
+		name = "GFX_no_ahistorical_empires"
+		texturefile = "gfx\\interface\\decision_icon_no_ahistorical_empires.tga"
+	}
+	spriteType = {
+		name = "GFX_gender_equality"
+		texturefile = "gfx\\interface\\decision_icon_gender_equality.tga"
 	}
 }

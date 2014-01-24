@@ -1,5 +1,5 @@
 #############################################
-# Project Balance: Combat Trait Advancement #
+# CTA: Combat Trait Advancement             #
 #                                           #
 # Events to complement the integrated New   #
 # Duel Engine with combat trait advancement #

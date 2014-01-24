@@ -13,6 +13,8 @@ character_event = {
 	picture = GFX_evt_battle
 	border = GFX_event_normal_frame_religion
 	
+	only_rulers = yes
+	
 	trigger = {
 		NOT = { has_character_flag = desires_autonomy }
 		ai = yes
@@ -25,19 +27,25 @@ character_event = {
 		}
 		liege = {
 			is_feudal = yes
-			OR = {
-				current_heir = { NOT = { character = ROOT } }
-				has_law = succ_feudal_elective
-			}
-			OR = {
-				tier = king
-				tier = emperor
-			}
+			higher_tier_than = duke
 			OR = { #Ensures someone at least moderately strong creates the faction
 				any_vassal = { leads_faction = faction_autonomy }
 				ROOT = { tier = duke }
 				ROOT = { tier = king }
 				NOT = { any_vassal = { tier = duke } }
+			}
+			
+			# properly allow for gavelkind or any other decentralized succession laws as well as ensure that
+			# vassals that are affected by a foreign crown law title will favor autonomy, regardless of
+			# whether they are the current heir to that title
+			ROOT = {
+				crownlaw_title = {
+					OR = {
+						NOT = { holder_scope = { character = PREVPREVPREV } }
+						current_heir = { NOT = { character = ROOT } }
+						has_law = succ_feudal_elective
+					}
+				}
 			}
 		}
 		#Character needs some reason to join
@@ -47,11 +55,22 @@ character_event = {
 			trait = deceitful
 			trait = greedy
 			NOT = { opinion = { who = LIEGE value = 0 } }
-			crownlaw_title = { has_law = king_peace_2 }
-			crownlaw_title = { has_law = emperor_peace_2 }
-			crownlaw_title = { has_law = revokation_2 }
-			tier = duke
-			tier = king
+			liege = {
+				ROOT = {
+					crownlaw_title = {
+						AND = { # make sure the liege actually holds the title with CA
+							holder_scope = { character = PREVPREVPREV }
+							OR = {
+								has_law = king_peace_2
+								has_law = emperor_peace_2
+								has_law = revokation_2
+								has_law = inheritance_1
+							}
+						}
+					}
+				}
+			}
+			higher_tier_than = count
 		}
 	}
 	option = {
@@ -71,6 +90,23 @@ character_event = {
 		}
 		if = {
 			limit = { liege = { is_close_relative = ROOT } }
+			change_variable = { which = "autonomy_desire" value = -5 }
+		}
+		if = {
+			limit = { liege = { is_close_relative = ROOT } }
+			change_variable = { which = "autonomy_desire" value = -5 }
+		}
+		if = {
+			limit = {
+				liege = {
+					ROOT = {
+						crownlaw_title = {
+							holder_scope = { character = PREVPREVPREV }
+							current_heir = { character = ROOT }
+						}
+					}
+				}
+			}
 			change_variable = { which = "autonomy_desire" value = -5 }
 		}
 		if = {
@@ -266,11 +302,36 @@ character_event = {
 	border = GFX_event_normal_frame_religion
 	
 	trigger = {
-		NOT = {
-			liege = { has_character_flag = autonomy_faction_revolt }
+		liege = {
+			NOT = {
+
+				# TODO: autonomy_faction_revolt state should be obsoleted or kept in
+				# a hidden, inherited character modifier for robustness against liege
+				# changes.
+				
+				has_character_flag = autonomy_faction_revolt
+
+				any_war = {
+					# electing to not use the weird single-PREV usage of vanilla in, e.g., faction_decisions.
+					# apparently, it works either way from my testing, so might as well go with the logical
+					# option (the `character' trigger is otherwise given a war scope target-- weird, right?)
+					defender = { character = PREVPREV }
+					OR = {
+						# the liege's revolt flag should cover these [most], so long as the liege didn't change.
+						# explicitly checking can only help, though.
+						
+						using_cb = remove_internal_peace
+						using_cb = remove_revokation
+						using_cb = remove_inheritance
+						using_cb = reduce_crown_levies
+						using_cb = depose_liege
+					}
+				}
+			}
 		}
 		leads_faction = faction_autonomy
 		OR = {
+			has_character_flag = forced_faction_meeting # special flag to programmatically force meeting timing
 			NOT = { has_character_flag = faction_meeting }
 			had_character_flag = { flag = faction_meeting days = 1095 }
 		}
@@ -291,6 +352,11 @@ character_event = {
 			has_character_flag = faction_meeting
 		}
 		modifier = {
+			factor = 0.1 # allow conditional delays up to 3 more years (10yr)
+			had_character_flag = { flag = faction_meeting days = 3650 }
+			has_character_flag = faction_meeting
+		}
+		modifier = {
 			factor = 2 #Slow it down if an ultimatum has recently been accepted
 			has_opinion_modifier = { who = LIEGE modifier = opinion_accepted_ultimatum }
 		}
@@ -298,6 +364,62 @@ character_event = {
 			factor = 0.5
 			NOT = { has_character_flag = faction_meeting }
 		}
+		modifier = {
+			factor = 1000 # balances the final 7yr soft limit and otherwise roughly overrides until 10yr
+			liege = {
+				OR = {
+					any_war = {
+						any_attacker = { character = PREVPREV }
+						using_cb = crusade
+						
+						# there is currently no autonomy faction outcome to help the liege (when happy, which we
+						# don't even know yet) as a crusade participant, so this just makes it very unlikely for
+						# popups and potential ultimatums to be launched while participating in an offensive crusade.
+						# eco/mil cooperation renewal, if currently relevant, can wait too.  faction meetings during
+						# crusades are a bit immersion-breaking.  NOTE: delay during such a war will likely result in
+						# a faction meeting shortly after the war is over.
+					}
+					
+					any_war = {
+						attacker = { character = PREVPREV }
+						# likewise logic for the following ongoing, large-scale offensive wars:
+						
+						OR = {
+							using_cb = invasion
+							using_cb = viking_invasion
+							using_cb = tribal_invasion
+							using_cb = muslim_invasion
+							
+							# a [incomplete] way to delay faction meetings while their liege is probably pushing
+							# a claim for a member.  we *should* also check the thirdparty_title's claimants for
+							# faction member match or scope to the thirdparty character (not sure how to do that
+							# off the top of my head at the moment) from this war scope and ensure it is a faction
+							# member (or vassal thereof) whose claim is being pressed.  for AI behavior, this
+							# trigger alone covers it in at least 99% of cases, though.
+							using_cb = other_claim
+						}
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 10 # not too much delay as time passes, never getting past the normal 7 year threshold
+			liege = {
+				any_war = {
+					attacker = { character = PREVPREV }
+					
+					OR = {
+						# likewise logic (can't help the liege, shouldn't hurt the liege) for the following:
+						using_cb = religious
+						using_cb = retake_religious_lands
+						using_cb = special_holy_war
+					}
+				}
+			}
+		}
+	}
+	immediate = {
+		clr_character_flag = forced_faction_meeting
 	}
 	option = {
 		name = OK
@@ -506,12 +628,12 @@ character_event = {
 		}
 		#Legalism
 		if = {
-			limit = { capital_scope = { NOT = { TECH_LEGALISM = 1 } } }
-			change_variable = { which = "autonomy_personal_mood" value = -1 }
+			limit = { capital_scope = { TECH_LEGALISM = 1 } }
+			change_variable = { which = "autonomy_personal_mood" value = 1 }
 		}
 		if = {
-			limit = { capital_scope = { NOT = { TECH_LEGALISM = 2 } } }
-			change_variable = { which = "autonomy_personal_mood" value = -1 }
+			limit = { capital_scope = { TECH_LEGALISM = 2 } }
+			change_variable = { which = "autonomy_personal_mood" value = 1 }
 		}
 		if = {
 			limit = { capital_scope = { TECH_LEGALISM = 3 } }
@@ -606,7 +728,7 @@ character_event = {
 			change_variable = { which = "autonomy_personal_mood" value = -5 }
 		}
 		if = {
-			limit = { liege = { trait = possessed } }
+			limit = { liege = { trait = possessed } } # FIXME: game models possessed on Joan d'Arc, manifesting in trait changes only, either all good or all bad.
 			change_variable = { which = "autonomy_personal_mood" value = -5 }
 		}
 		if = {
@@ -633,10 +755,21 @@ character_event = {
 		}
 		if = {
 			limit = {
-				liege = { trait = crusader }
-				liege = { religion = ROOT }
+				liege = {
+					trait = crusader
+					religion = ROOT
+				}
 			}
-			change_variable = { which = "autonomy_personal_mood" value = -2 }
+			change_variable = { which = "autonomy_personal_mood" value = 2 }
+		}
+		if = {
+			limit = {
+				liege = {
+					trait = mujahid
+					religion = ROOT
+				}
+			}
+			change_variable = { which = "autonomy_personal_mood" value = 2 }
 		}
 		if = {
 			limit = { liege = { trait = quick } }
@@ -720,6 +853,14 @@ character_event = {
 	option = { #Angry
 		name = meneth.220.c
 		FROM = { change_variable = { which = "autonomy_mood" value = -1 } }
+		trigger = {
+			NOT = {
+				has_opinion_modifier = {
+					who = LIEGE
+					modifier = opinion_coerced_into_leaving_faction
+				}
+			}
+		}
 		if = {
 			limit = { tier = duke }
 			FROM = { change_variable = { which = "autonomy_mood" value = -1 } }
@@ -858,16 +999,19 @@ character_event = {
 			}
 			modifier = {
 				factor = 0.1
-				liege = {
-					has_law = feudal_obligations_0
-					has_law = crown_levies_0
-					NOT = {
-						has_law = king_peace_1
-						has_law = king_peace_2
-						has_law = emperor_peace_1
-						has_law = emperor_peace_2
-						has_law = revokation_1
-						has_law = revokation_2
+				OR = {
+					liege = { has_character_modifier = ca_revoke_cooldown } #Cooldown makes this decision set pointless usually
+					liege = {
+						has_law = feudal_obligations_0
+						has_law = crown_levies_0
+						NOT = {
+							has_law = king_peace_1
+							has_law = king_peace_2
+							has_law = emperor_peace_1
+							has_law = emperor_peace_2
+							has_law = revokation_1
+							has_law = revokation_2
+						}
 					}
 				}
 			}
@@ -1101,9 +1245,12 @@ character_event = {
 		name = meneth.236.b
 		trigger = {
 			liege = {
-				OR = {
-					has_law = revokation_1
-					has_law = revokation_2
+				NOT = { has_character_modifier = ca_revoke_cooldown }
+				any_demesne_title = {
+					OR = {
+						has_law = revokation_1
+						has_law = revokation_2
+					}
 				}
 			}
 		}
@@ -1137,11 +1284,14 @@ character_event = {
 		name = meneth.236.c
 		trigger = {
 			liege = {
-				OR = {
-					has_law = king_peace_1
-					has_law = king_peace_2
-					has_law = emperor_peace_1
-					has_law = emperor_peace_2
+				NOT = { has_character_modifier = ca_revoke_cooldown }
+				any_demesne_title = {
+					OR = {
+						has_law = king_peace_1
+						has_law = king_peace_2
+						has_law = emperor_peace_1
+						has_law = emperor_peace_2
+					}
 				}
 			}
 		}
@@ -1176,7 +1326,8 @@ character_event = {
 		name = meneth.236.c
 		trigger = {
 			liege = {
-				has_law = inheritance_1
+				NOT = { has_character_modifier = ca_revoke_cooldown }
+				any_demesne_title = { has_law = inheritance_1 }
 			}
 		}
 		set_character_flag = faction_autonomy_external_inheritance
@@ -1377,17 +1528,19 @@ character_event = {
 	desc = meneth.248.desc
 	picture = GFX_evt_emissary
 	border = GFX_event_normal_frame_religion
+	
 	immediate = {
 		clr_character_flag = military_cooperation
 		clr_character_flag = economic_cooperation
 	}
+	
 	option = { #Status quo
 		name = meneth.248.a
 		trigger = {
 			capital_scope = {
 				OR = {
-					has_province_modifier = military_cooperation
-					has_province_modifier = economic_cooperation
+					has_province_modifier = af_mil_cooperation_t1
+					has_province_modifier = af_eco_cooperation_t1
 				}
 			}
 		}
@@ -1395,20 +1548,20 @@ character_event = {
 	option = { #Military co-operation
 		trigger = {
 			capital_scope = {
-				NOT = { has_province_modifier = military_cooperation }
-				NOT = { has_province_modifier = economic_cooperation }
+				NOT = {
+					has_province_modifier = af_mil_cooperation_t1
+					has_province_modifier = af_eco_cooperation_t1
+				}
 			}
 		}
 		name = meneth.248.b
-		capital_scope = {
-			add_province_modifier = { name = military_cooperation duration = 5475 }
-		}
+		set_character_flag = military_cooperation
 		any_faction_backer = {
 			limit = { in_faction = faction_autonomy }
 			character_event = { id = meneth.249 days = 1 } #Alert
 		}
+		character_event = { id = meneth.249 }
 		liege = { character_event = { id = meneth.257 days = 1 } }
-		set_character_flag = military_cooperation
 		ai_chance = {
 			factor = 1
 			modifier = {
@@ -1429,17 +1582,20 @@ character_event = {
 	option = { #Economic co-operation
 		trigger = {
 			capital_scope = {
-				NOT = { has_province_modifier = military_cooperation }
-				NOT = { has_province_modifier = economic_cooperation }
+				NOT = {
+					has_province_modifier = af_mil_cooperation_t1
+					has_province_modifier = af_eco_cooperation_t1
+				}
 			}
 		}
 		name = meneth.248.c
+		set_character_flag = economic_cooperation
 		any_faction_backer = {
 			limit = { in_faction = faction_autonomy }
 			character_event = { id = meneth.249 days = 1 } #Alert
 		}
+		character_event = { id = meneth.249 }
 		liege = { character_event = { id = meneth.257 days = 1 } }
-		set_character_flag = economic_cooperation
 		ai_chance = {
 			factor = 1
 			modifier = {
@@ -1514,10 +1670,6 @@ character_event = {
 			if = {
 				limit = { ROOT = { has_character_flag = faction_autonomy_external_inheritance } }
 				character_event = { id = meneth.245 } #Ultimatum to allow external inheritance
-			}
-			if = {
-				limit = { ROOT = { has_character_flag = faction_autonomy_abdicate } }
-				character_event = { id = meneth.247 } #Ultimatum to abdicate
 			}
 			if = {
 				limit = { ROOT = { has_character_flag = faction_autonomy_abdicate } }
@@ -1608,6 +1760,14 @@ character_event = {
 	}
 	option = {
 		name = Yes
+		trigger = {
+			NOT = {
+				has_opinion_modifier = {
+					who = LIEGE
+					modifier = opinion_coerced_into_leaving_faction
+				}
+			}
+		}
 		set_variable = { which = "faction_vote" value = 0 }
 		change_variable = { which = "faction_vote" value = 2 }
 		if = {
@@ -2218,6 +2378,14 @@ character_event = {
 	}
 	option = { #Yes
 		name = Yes
+		trigger = {
+			NOT = {
+				has_opinion_modifier = {
+					who = LIEGE
+					modifier = opinion_coerced_into_leaving_faction
+				}
+			}
+		}
 		FROM = { change_variable = { which = "faction_vote" value = 1 } }
 		if = {
 			limit = { FROM = { character = ROOT } }
@@ -2303,6 +2471,7 @@ character_event = {
 	option = {
 		name = Yes
 		trigger = {
+			NOT = { has_character_modifier = ca_revoke_cooldown }
 			any_demesne_title = {
 				OR = {
 					has_law = crown_levies_1
@@ -2327,6 +2496,16 @@ character_event = {
 		any_demesne_title = {
 			limit = { has_law = crown_levies_4 }
 			add_law = crown_levies_3
+		}
+		custom_tooltip = {
+			text = ca_revoke_cooldown_ctt
+			hidden_tooltip = {
+				add_character_modifier = {
+					name = ca_revoke_cooldown
+					duration = 5475
+					inherit = yes
+				}
+			}
 		}
 		any_vassal = {
 			limit = {
@@ -2382,12 +2561,17 @@ character_event = {
 				has_law = feudal_obligations_3
 				has_law = feudal_obligations_4
 			}
-			NOT = {
-				OR = {
-					has_law = crown_levies_1
-					has_law = crown_levies_2
-					has_law = crown_levies_3
-					has_law = crown_levies_4
+			OR = {
+				has_character_modifier = ca_revoke_cooldown
+				NOT = {
+					any_demesne_title = {
+						OR = {
+							has_law = crown_levies_1
+							has_law = crown_levies_2
+							has_law = crown_levies_3
+							has_law = crown_levies_4
+						}
+					}
 				}
 			}
 		}
@@ -2456,12 +2640,15 @@ character_event = {
 		name = Yes
 		trigger = {
 			NOT = {
-				any_demesne_title = {
-					OR = {
-						has_law = crown_levies_1
-						has_law = crown_levies_2
-						has_law = crown_levies_3
-						has_law = crown_levies_4
+				AND = {
+					NOT = { has_character_modifier = ca_revoke_cooldown }
+					any_demesne_title = {
+						OR = {
+							has_law = crown_levies_1
+							has_law = crown_levies_2
+							has_law = crown_levies_3
+							has_law = crown_levies_4
+						}
 					}
 				}
 				has_law = feudal_obligations_1
@@ -2603,6 +2790,14 @@ character_event = {
 	}
 	option = { #Yes
 		name = Yes
+		trigger = {
+			NOT = {
+				has_opinion_modifier = {
+					who = LIEGE
+					modifier = opinion_coerced_into_leaving_faction
+				}
+			}
+		}
 		FROM = { change_variable = { which = "faction_vote" value = 1 } }
 		if = {
 			limit = { FROM = { character = ROOT } }
@@ -2692,11 +2887,21 @@ character_event = {
 		any_demesne_title = {
 			limit = {
 				OR = {
-					tier = king
-					tier = emperor
+					has_law = revokation_1
+					has_law = revokation_2
 				}
 			}
 			add_law = revokation_0
+		}
+		custom_tooltip = {
+			text = ca_revoke_cooldown_ctt
+			hidden_tooltip = {
+				add_character_modifier = {
+					name = ca_revoke_cooldown
+					duration = 5475
+					inherit = yes
+				}
+			}
 		}
 		any_vassal = {
 			limit = {
@@ -2827,6 +3032,14 @@ character_event = {
 	}
 	option = { #Yes
 		name = Yes
+		trigger = {
+			NOT = {
+				has_opinion_modifier = {
+					who = LIEGE
+					modifier = opinion_coerced_into_leaving_faction
+				}
+			}
+		}
 		FROM = { change_variable = { which = "faction_vote" value = 1 } }
 		if = {
 			limit = { FROM = { character = ROOT } }
@@ -2921,14 +3134,26 @@ character_event = {
 		any_demesne_title = {
 			limit = {
 				tier = king
+				NOT = { has_law = king_peace_0 }
 			}
 			add_law = king_peace_0
 		}
 		any_demesne_title = {
 			limit = {
 				tier = emperor
+				NOT = { has_law = emperor_peace_0 }
 			}
 			add_law = emperor_peace_0
+		}
+		custom_tooltip = {
+			text = ca_revoke_cooldown_ctt
+			hidden_tooltip = {
+				add_character_modifier = {
+					name = ca_revoke_cooldown
+					duration = 5475
+					inherit = yes
+				}
+			}
 		}
 		any_vassal = {
 			limit = {
@@ -3059,6 +3284,14 @@ character_event = {
 	}
 	option = { #Yes
 		name = Yes
+		trigger = {
+			NOT = {
+				has_opinion_modifier = {
+					who = LIEGE
+					modifier = opinion_coerced_into_leaving_faction
+				}
+			}
+		}
 		FROM = { change_variable = { which = "faction_vote" value = 1 } }
 		if = {
 			limit = { FROM = { character = ROOT } }
@@ -3295,6 +3528,14 @@ character_event = {
 	}
 	option = { #Yes
 		name = Yes
+		trigger = {
+			NOT = {
+				has_opinion_modifier = {
+					who = LIEGE
+					modifier = opinion_coerced_into_leaving_faction
+				}
+			}
+		}
 		FROM = { change_variable = { which = "faction_vote" value = 1 } }
 		if = {
 			limit = { FROM = { character = ROOT } }
@@ -3585,6 +3826,14 @@ character_event = {
 	}
 	option = { #Yes
 		name = Yes
+		trigger = {
+			NOT = {
+				has_opinion_modifier = {
+					who = LIEGE
+					modifier = opinion_coerced_into_leaving_faction
+				}
+			}
+		}
 		FROM = { change_variable = { which = "faction_vote" value = 1 } }
 		if = {
 			limit = { FROM = { character = ROOT } }
@@ -3839,6 +4088,14 @@ character_event = {
 	}
 	option = { #Yes
 		name = Yes
+		trigger = {
+			NOT = {
+				has_opinion_modifier = {
+					who = LIEGE
+					modifier = opinion_coerced_into_leaving_faction
+				}
+			}
+		}
 		FROM = { change_variable = { which = "faction_vote" value = 1 } }
 		if = {
 			limit = { FROM = { character = ROOT } }
@@ -3927,6 +4184,16 @@ character_event = {
 		any_demesne_title = {
 			limit = { has_law = inheritance_1 }
 			add_law = inheritance_0
+		}
+		custom_tooltip = {
+			text = ca_revoke_cooldown_ctt
+			hidden_tooltip = {
+				add_character_modifier = {
+					name = ca_revoke_cooldown
+					duration = 5475
+					inherit = yes
+				}
+			}
 		}
 		any_vassal = {
 			limit = {
@@ -4057,6 +4324,14 @@ character_event = {
 	}
 	option = { #Yes
 		name = Yes
+		trigger = {
+			NOT = {
+				has_opinion_modifier = {
+					who = LIEGE
+					modifier = opinion_coerced_into_leaving_faction
+				}
+			}
+		}
 		FROM = { change_variable = { which = "faction_vote" value = 1 } }
 		if = {
 			limit = { FROM = { character = ROOT } }
@@ -4285,8 +4560,20 @@ character_event = {
 			FROM = { has_character_flag = military_cooperation }
 		}
 		name = meneth.249.a
-		capital_scope = {
-			add_province_modifier = { name = military_cooperation duration = 5475 }
+		any_demesne_title = {
+			limit = { tier = count }
+			location = {
+				add_province_modifier = { name = af_mil_cooperation_t1 duration = 5475 }
+			}
+		}
+		any_realm_lord = {
+			limit = { is_liege_or_above = ROOT }
+			any_demesne_title = {
+				limit = { tier = count }
+				location = {
+					add_province_modifier = { name = af_mil_cooperation_t1 duration = 5475 }
+				}
+			}
 		}
 	}
 	option = {
@@ -4294,8 +4581,20 @@ character_event = {
 			FROM = { has_character_flag = economic_cooperation }
 		}
 		name = meneth.249.b
-		capital_scope = {
-			add_province_modifier = { name = economic_cooperation duration = 5475 }
+		any_demesne_title = {
+			limit = { tier = count }
+			location = {
+				add_province_modifier = { name = af_eco_cooperation_t1 duration = 5475 }
+			}
+		}
+		any_realm_lord = {
+			limit = { is_liege_or_above = ROOT }
+			any_demesne_title = {
+				limit = { tier = count }
+				location = {
+					add_province_modifier = { name = af_eco_cooperation_t1 duration = 5475 }
+				}
+			}
 		}
 	}
 }

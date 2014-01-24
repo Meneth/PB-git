@@ -1,3 +1,24 @@
+3.4.2
+	Shattered Balance, No Ahistorical Empires, and Gender Equality can now be enabled in-game before first unpausing the game
+	(PB+SWMH) Fixed three provinces in Ethiopia having no holdings
+	Reduced PB's across the board fertility penalty to 5% (from 10%)
+	(PB+SWMH+NBRT+) Fixed an issue where movement involving a few specific provinces would take months rather than days
+	Fixed mismatched localisation for autonomy faction military vs. economic cooperation (they were doing the opposite of what they informed you) [zijistark]
+	Autonomy faction military and economic cooperation now effect the entire subrealm of each faction member, providing a small but significant realm-level boost to the military or economic might of faction members relative to their liege. A bit more danger for the liege and yet also good for his/her realm if the faction votes for it [zijistark]
+	The autonomy faction factor from legalism tech now ranges from 0 to 8 instead of -2 to 6
+	Improved the localisation for some CB requirement localisation
+	Fixed Muslim city vassal request event so it works properly when city obligations are set to maximum [AnaxXiphos]
+	Members of the Autonomy faction that have been coerced by their liege's spymaster will now always vote in their liege's favor when it comes to negative actions. They will never vote for the angry faction mood
+	(PB+SWMH) Fixed Imperial Reconquest not working in the French tier
+	Crown law revocation via faction ultimatums or _any kind_ of revolt now induce a cooldown period of 15 years before a crown law may again be revoked via such a mechanism. NOTES: If a claimant of any kind usurps the throne, all CA sliders are reduced regardless of any cooldown, and if present, it's removed. If the liege is deposed, overthrown, or replaced due to a succession war and all CA sliders are reduced due to lack of cooldown protection, a new cooldown period starts for the new liege. Finally, the cooldown is removed from a title if the liege grants it to a new ruler [zijistark]
+	Fixed double-abdication bug with the autonomy faction's abdication ultimatum (child pretenders on the throne, anyone?) [zijistark]
+	Various minor bugfixes for the autonomy faction [zijistark]
+	Successful faction revolts that revoke crown laws no longer "use-up" the liege's once-in-a-lifetime right to change a crown law, if he/she hadn't already changed one beforehand. This was already the case for some faction revolts and is now consistent [zijistark]
+	Regular factions (non-autonomy) will now now wait to submit a revolt ultimatum until after their liege is no longer using ANY of the 3 holy war CBs in PB [zijistark]
+	Moderate nerf of the feudal elective faction. The faction is generally more tolerant than the other succession law factions, more easily dissuaded/coerced, less subject to transient issues which will definitely be solved-- at least by the AI-- in due time, and generally slower to jump to an ultimatum. Testing shows that it's quite possible, e.g., for an AI France to avoid an overwhelming elective faction revolt within 5 years of the 1066 start (previously a problem) but that the faction still remains a threat in those scenarios [zijistark]
+	Autonomy faction event text overhauled to add flavor and be read from a first-person perspective like other CKII events [zijistark]
+	Autonomy faction now highly unlikely to call a meeting while their liege is in the middle of a large-scale offensive war such as a crusade, invasion, or holy war; actual tolerated delay and chance of a meeting being called anyway past a certain point vary by the war's casus belli [zijistark]
+
 3.4.1
 	Updated the implementation of the New Duel Engine to its latest version
 	Combat/fighter traits (for the duel engine) are again customizable in the Ruler Designer [zijistark]
