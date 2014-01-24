@@ -13,6 +13,8 @@ character_event = {
 	picture = GFX_evt_battle
 	border = GFX_event_normal_frame_religion
 	
+	only_rulers = yes
+	
 	trigger = {
 		NOT = { has_character_flag = desires_autonomy }
 		ai = yes
@@ -25,19 +27,25 @@ character_event = {
 		}
 		liege = {
 			is_feudal = yes
-			OR = {
-				current_heir = { NOT = { character = ROOT } }
-				has_law = succ_feudal_elective
-			}
-			OR = {
-				tier = king
-				tier = emperor
-			}
+			higher_tier_than = duke
 			OR = { #Ensures someone at least moderately strong creates the faction
 				any_vassal = { leads_faction = faction_autonomy }
 				ROOT = { tier = duke }
 				ROOT = { tier = king }
 				NOT = { any_vassal = { tier = duke } }
+			}
+			
+			# properly allow for gavelkind or any other decentralized succession laws as well as ensure that
+			# vassals that are affected by a foreign crown law title will favor autonomy, regardless of
+			# whether they are the current heir to that title
+			ROOT = {
+				crownlaw_title = {
+					OR = {
+						NOT = { holder_scope = { character = PREVPREVPREV } }
+						current_heir = { NOT = { character = ROOT } }
+						has_law = succ_feudal_elective
+					}
+				}
 			}
 		}
 		#Character needs some reason to join
@@ -47,11 +55,22 @@ character_event = {
 			trait = deceitful
 			trait = greedy
 			NOT = { opinion = { who = LIEGE value = 0 } }
-			crownlaw_title = { has_law = king_peace_2 }
-			crownlaw_title = { has_law = emperor_peace_2 }
-			crownlaw_title = { has_law = revokation_2 }
-			tier = duke
-			tier = king
+			liege = {
+				ROOT = {
+					crownlaw_title = {
+						AND = { # make sure the liege actually holds the title with CA
+							holder_scope = { character = PREVPREVPREV }
+							OR = {
+								has_law = king_peace_2
+								has_law = emperor_peace_2
+								has_law = revokation_2
+								has_law = inheritance_1
+							}
+						}
+					}
+				}
+			}
+			higher_tier_than = count
 		}
 	}
 	option = {
@@ -78,7 +97,16 @@ character_event = {
 			change_variable = { which = "autonomy_desire" value = -5 }
 		}
 		if = {
-			limit = { liege = { current_heir = { character = ROOT } } } # (only applies to feudal elective)
+			limit = {
+				liege = {
+					ROOT = {
+						crownlaw_title = {
+							holder_scope = { character = PREVPREVPREV }
+							current_heir = { character = ROOT }
+						}
+					}
+				}
+			}
 			change_variable = { which = "autonomy_desire" value = -5 }
 		}
 		if = {
@@ -274,11 +302,36 @@ character_event = {
 	border = GFX_event_normal_frame_religion
 	
 	trigger = {
-		NOT = {
-			liege = { has_character_flag = autonomy_faction_revolt }
+		liege = {
+			NOT = {
+
+				# TODO: autonomy_faction_revolt state should be obsoleted or kept in
+				# a hidden, inherited character modifier for robustness against liege
+				# changes.
+				
+				has_character_flag = autonomy_faction_revolt
+
+				any_war = {
+					# electing to not use the weird single-PREV usage of vanilla in, e.g., faction_decisions.
+					# apparently, it works either way from my testing, so might as well go with the logical
+					# option (the `character' trigger is otherwise given a war scope target-- weird, right?)
+					defender = { character = PREVPREV }
+					OR = {
+						# the liege's revolt flag should cover these [most], so long as the liege didn't change.
+						# explicitly checking can only help, though.
+						
+						using_cb = remove_internal_peace
+						using_cb = remove_revokation
+						using_cb = remove_inheritance
+						using_cb = reduce_crown_levies
+						using_cb = depose_liege
+					}
+				}
+			}
 		}
 		leads_faction = faction_autonomy
 		OR = {
+			has_character_flag = forced_faction_meeting # special flag to programmatically force meeting timing
 			NOT = { has_character_flag = faction_meeting }
 			had_character_flag = { flag = faction_meeting days = 1095 }
 		}
@@ -299,6 +352,11 @@ character_event = {
 			has_character_flag = faction_meeting
 		}
 		modifier = {
+			factor = 0.1 # allow conditional delays up to 3 more years (10yr)
+			had_character_flag = { flag = faction_meeting days = 3650 }
+			has_character_flag = faction_meeting
+		}
+		modifier = {
 			factor = 2 #Slow it down if an ultimatum has recently been accepted
 			has_opinion_modifier = { who = LIEGE modifier = opinion_accepted_ultimatum }
 		}
@@ -306,6 +364,62 @@ character_event = {
 			factor = 0.5
 			NOT = { has_character_flag = faction_meeting }
 		}
+		modifier = {
+			factor = 1000 # balances the final 7yr soft limit and otherwise roughly overrides until 10yr
+			liege = {
+				OR = {
+					any_war = {
+						any_attacker = { character = PREVPREV }
+						using_cb = crusade
+						
+						# there is currently no autonomy faction outcome to help the liege (when happy, which we
+						# don't even know yet) as a crusade participant, so this just makes it very unlikely for
+						# popups and potential ultimatums to be launched while participating in an offensive crusade.
+						# eco/mil cooperation renewal, if currently relevant, can wait too.  faction meetings during
+						# crusades are a bit immersion-breaking.  NOTE: delay during such a war will likely result in
+						# a faction meeting shortly after the war is over.
+					}
+					
+					any_war = {
+						attacker = { character = PREVPREV }
+						# likewise logic for the following ongoing, large-scale offensive wars:
+						
+						OR = {
+							using_cb = invasion
+							using_cb = viking_invasion
+							using_cb = tribal_invasion
+							using_cb = muslim_invasion
+							
+							# a [incomplete] way to delay faction meetings while their liege is probably pushing
+							# a claim for a member.  we *should* also check the thirdparty_title's claimants for
+							# faction member match or scope to the thirdparty character (not sure how to do that
+							# off the top of my head at the moment) from this war scope and ensure it is a faction
+							# member (or vassal thereof) whose claim is being pressed.  for AI behavior, this
+							# trigger alone covers it in at least 99% of cases, though.
+							using_cb = other_claim
+						}
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 10 # not too much delay as time passes, never getting past the normal 7 year threshold
+			liege = {
+				any_war = {
+					attacker = { character = PREVPREV }
+					
+					OR = {
+						# likewise logic (can't help the liege, shouldn't hurt the liege) for the following:
+						using_cb = religious
+						using_cb = retake_religious_lands
+						using_cb = special_holy_war
+					}
+				}
+			}
+		}
+	}
+	immediate = {
+		clr_character_flag = forced_faction_meeting
 	}
 	option = {
 		name = OK
