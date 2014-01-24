@@ -47,11 +47,22 @@ character_event = {
 			trait = deceitful
 			trait = greedy
 			NOT = { opinion = { who = LIEGE value = 0 } }
-			crownlaw_title = { has_law = king_peace_2 }
-			crownlaw_title = { has_law = emperor_peace_2 }
-			crownlaw_title = { has_law = revokation_2 }
-			tier = duke
-			tier = king
+			liege = {
+				ROOT = {
+					crownlaw_title = {
+						AND = {
+							holder_scope = { character = PREVPREVPREV }
+							OR = {
+								has_law = king_peace_2
+								has_law = emperor_peace_2
+								has_law = revokation_2
+								has_law = inheritance_1
+							}
+						}
+					}
+				}
+			}
+			higher_tier_than = count
 		}
 	}
 	option = {
@@ -374,7 +385,7 @@ character_event = {
 			}
 		}
 		modifier = {
-			factor = 10 # not too much delay as time passes, never getting past the end of the 7 year threshold
+			factor = 10 # not too much delay as time passes, never getting past the normal 7 year threshold
 			liege = {
 				any_war = {
 					attacker = { character = PREVPREV }
