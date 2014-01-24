@@ -932,7 +932,6 @@ character_event = {
 			check_variable = { which = "autonomy_mood" value = 0 }
 		}
 		name = meneth.221.a
-		clr_character_flag = force_faction_happy
 		character_event = { id = meneth.250 } #What action to take
 		liege = { character_event = { id = meneth.253 } } #Notify liege positive
 		ai_chance = {
