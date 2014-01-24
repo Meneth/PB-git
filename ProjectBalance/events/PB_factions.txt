@@ -42,12 +42,8 @@ character_event = {
 				crownlaw_title = {
 					OR = {
 						NOT = { holder_scope = { character = PREVPREVPREV } }
-						succ_law_title = {
-							OR = {
-								current_heir = { NOT = { character = ROOT } }
-								has_law = succ_feudal_elective
-							}
-						}
+						current_heir = { NOT = { character = ROOT } }
+						has_law = succ_feudal_elective
 					}
 				}
 			}
@@ -101,7 +97,16 @@ character_event = {
 			change_variable = { which = "autonomy_desire" value = -5 }
 		}
 		if = {
-			limit = { liege = { current_heir = { character = ROOT } } } # (only applies to feudal elective)
+			limit = {
+				liege = {
+					ROOT = {
+						crownlaw_title = {
+							holder_scope = { character = PREVPREVPREV }
+							current_heir = { character = ROOT }
+						}
+					}
+				}
+			}
 			change_variable = { which = "autonomy_desire" value = -5 }
 		}
 		if = {
@@ -326,6 +331,7 @@ character_event = {
 		}
 		leads_faction = faction_autonomy
 		OR = {
+			has_character_flag = forced_faction_meeting # special flag to programmatically force meeting timing
 			NOT = { has_character_flag = faction_meeting }
 			had_character_flag = { flag = faction_meeting days = 1095 }
 		}
@@ -411,6 +417,9 @@ character_event = {
 				}
 			}
 		}
+	}
+	immediate = {
+		clr_character_flag = forced_faction_meeting
 	}
 	option = {
 		name = OK
@@ -923,6 +932,7 @@ character_event = {
 			check_variable = { which = "autonomy_mood" value = 0 }
 		}
 		name = meneth.221.a
+		clr_character_flag = force_faction_happy
 		character_event = { id = meneth.250 } #What action to take
 		liege = { character_event = { id = meneth.253 } } #Notify liege positive
 		ai_chance = {
