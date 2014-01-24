@@ -6,6 +6,8 @@ remove_internal_peace = {
 	truce_days = 3650
 	can_call_allies = no
 	can_ask_to_join_war = no
+	is_revolt_cb = yes
+	major_revolt = yes
 	
 	can_use = {
 		FROM = {
@@ -143,6 +145,8 @@ remove_revokation = {
 	truce_days = 3650
 	can_call_allies = no
 	can_ask_to_join_war = no
+	is_revolt_cb = yes
+	major_revolt = yes
 	
 	can_use = {
 		FROM = {
@@ -277,6 +281,8 @@ remove_inheritance = {
 	truce_days = 3650
 	can_call_allies = no
 	can_ask_to_join_war = no
+	is_revolt_cb = yes
+	major_revolt = yes
 	
 	can_use = {
 		FROM = {
@@ -402,6 +408,8 @@ reduce_crown_levies = {
 	truce_days = 3650
 	can_call_allies = no
 	can_ask_to_join_war = no
+	is_revolt_cb = yes
+	major_revolt = yes
 	
 	can_use = {
 		ROOT = {
