@@ -13,6 +13,8 @@ character_event = {
 	picture = GFX_evt_battle
 	border = GFX_event_normal_frame_religion
 	
+	only_rulers = yes
+	
 	trigger = {
 		NOT = { has_character_flag = desires_autonomy }
 		ai = yes
@@ -25,19 +27,29 @@ character_event = {
 		}
 		liege = {
 			is_feudal = yes
-			OR = {
-				current_heir = { NOT = { character = ROOT } }
-				has_law = succ_feudal_elective
-			}
-			OR = {
-				tier = king
-				tier = emperor
-			}
+			higher_tier_than = duke
 			OR = { #Ensures someone at least moderately strong creates the faction
 				any_vassal = { leads_faction = faction_autonomy }
 				ROOT = { tier = duke }
 				ROOT = { tier = king }
 				NOT = { any_vassal = { tier = duke } }
+			}
+			
+			# properly allow for gavelkind or any other decentralized succession laws as well as ensure that
+			# vassals that are affected by a foreign crown law title will favor autonomy, regardless of
+			# whether they are the current heir to that title
+			ROOT = {
+				crownlaw_title = {
+					OR = {
+						NOT = { holder_scope = { character = PREVPREVPREV } }
+						succ_law_title = {
+							OR = {
+								current_heir = { NOT = { character = ROOT } }
+								has_law = succ_feudal_elective
+							}
+						}
+					}
+				}
 			}
 		}
 		#Character needs some reason to join
@@ -50,7 +62,7 @@ character_event = {
 			liege = {
 				ROOT = {
 					crownlaw_title = {
-						AND = {
+						AND = { # make sure the liege actually holds the title with CA
 							holder_scope = { character = PREVPREVPREV }
 							OR = {
 								has_law = king_peace_2
