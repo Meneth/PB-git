@@ -6,6 +6,7 @@ decisions = {
 				religion_group = christian
 				religion_group = muslim
 				religion_group = zoroastrian_group
+				religion_group = jewish_group
 				has_character_flag = loan_decisions
 			}
 			OR = {
