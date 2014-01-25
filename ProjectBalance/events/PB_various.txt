@@ -56,7 +56,12 @@ character_event = {
 	
 	option = {
 		name = meneth.201.a
-		death = { death_reason = death_accident }
+		random_list = {
+			50 = { death = { death_reason = death_poor_health } }
+			28 = { death = { death_reason = death_natural } }
+			20 = { death = { death_reason = death_accident } }
+			2 = { death = { death_reason = death_suicide } }
+		}
 	}
 }
 
@@ -1243,7 +1248,7 @@ character_event = {
 	id = meneth.209
 	
 	desc = meneth.209.desc
-	picture = GFX_evt_battle
+	picture = GFX_evt_pope
 	border = GFX_event_normal_frame_religion
 	
 	only_rulers = yes
@@ -1497,7 +1502,7 @@ character_event = {
 	id = meneth.217
 	
 	desc = meneth.217.desc
-	picture = GFX_evt_battle
+	picture = GFX_evt_council
 	border = GFX_event_normal_frame_religion
 	
 	only_independent = yes
