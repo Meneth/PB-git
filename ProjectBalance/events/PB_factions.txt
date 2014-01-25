@@ -107,7 +107,7 @@ character_event = {
 					}
 				}
 			}
-			change_variable = { which = "autonomy_desire" value = -5 }
+			change_variable = { which = "autonomy_desire" value = -10 }
 		}
 		if = {
 			limit = { NOT = { opinion = { who = LIEGE value = -10 } } }
