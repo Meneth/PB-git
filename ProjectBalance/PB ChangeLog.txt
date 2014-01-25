@@ -1,6 +1,7 @@
 3.4.3
 	Bugfix for Jewish players not being able to take loans via the decisions menu. AI Jews could still take loans [zijistark]
 	Autonomy faction is now guaranteed to not be created by the AI for 6 months after game startup. This allows a player vassal plenty of time to start the faction (i.e., be the leader) if they so desire. Ideally, the faction will become even more democratic in future releases, but the leader currently plays a pivotal role in setting the agenda of meetings [zijistark]
+	Extremely minor flavor improvements: Changed a few event pictures and added varied death causes to the useless courtier killing event [AnaxXiphos]
 
 3.4.2
 	Shattered Balance, No Ahistorical Empires, and Gender Equality can now be enabled in-game before first unpausing the game
