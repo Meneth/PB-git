@@ -38,8 +38,27 @@ faction_autonomy = {
 		}
 		modifier = {
 			factor = 0
+			current_heir = {
+				any_spouse = { character = FROM }
+			}
+		}
+		modifier = {
+			factor = 0
 			FROM = {
 				NOT = { has_character_flag = desires_autonomy }
+			}
+		}
+		modifier = {
+			factor = 0
+			FROM = {
+				# guarantee to player that AI won't create faction 'til 6mos since
+				# game startup, allowing them to assume the role of faction leader
+				# if they prefer.  leader may be a less important role in the future,
+				# but until then, player should get first-pick even if they forget
+				# before unpausing.
+				ai = yes
+				has_global_flag = project_balance
+				NOT = { had_global_flag = { flag = project_balance days = 180 } }
 			}
 		}
 		modifier = {
