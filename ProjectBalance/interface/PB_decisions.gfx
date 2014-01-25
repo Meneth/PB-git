@@ -69,23 +69,23 @@ spriteTypes = {
 	#Prisoner interactions
 	spriteType = {
 		name = "GFX_exchange_prisoners"
-		texturefile = "gfx\\interface\\decision_icon_exchange_prisoners.dds"
+		texturefile = "gfx\\interface\\decision_icon_exchange_prisoners.tga"
 	}
 	spriteType = {
 		name = "GFX_request_important_prisoners"
-		texturefile = "gfx\\interface\\decision_icon_important_prisoners.dds"
+		texturefile = "gfx\\interface\\decision_icon_request_important_prisoners.tga"
 	}
 	spriteType = {
 		name = "GFX_ransom_all"
-		texturefile = "gfx\\interface\\decision_icon_ransom_all.dds"
+		texturefile = "gfx\\interface\\decision_icon_ransom_all.tga"
 	}
 	spriteType = {
 		name = "GFX_release_prisoners"
-		texturefile = "gfx\\interface\\decision_icon_release_all.dds"
+		texturefile = "gfx\\interface\\decision_icon_release_prisoners.tga"
 	}
 	spriteType = {
 		name = "GFX_execute_prisoners"
-		texturefile = "gfx\\interface\\decision_icon_execute_all.dds"
+		texturefile = "gfx\\interface\\decision_icon_execute_prisoners.tga"
 	}
 	#War checks
 	spriteType = {
@@ -151,7 +151,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_bring_out_of_hiding"
-		texturefile = "gfx\\interface\\decision_icon_end_hiding.dds"
+		texturefile = "gfx\\interface\\decision_icon_bring_out_of_hiding.tga"
 	}
 	spriteType = {
 		name = "GFX_violate_baqt"
