@@ -3715,6 +3715,10 @@ character_event = {
 	mean_time_to_happen = {
 		months = 480
 		modifier = {
+			factor = 0.375
+			liege = { ai = yes }
+		}
+		modifier = {
 			factor = 5.0
 			trait = slothful
 		}
