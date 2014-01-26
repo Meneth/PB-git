@@ -161,6 +161,10 @@ spriteTypes = {
 		name = "GFX_prepare_for_converter"
 		texturefile = "gfx\\interface\\decision_icon_prepare_for_converter.tga"
 	}
+	spriteType = {
+		name = "GFX_bring_child_home"
+		texturefile = "gfx\\interface\\decision_icon_bring_child_home.tga"
+	}
 	# Customization Options
 	spriteType = {
 		name = "GFX_shattered_balance"
