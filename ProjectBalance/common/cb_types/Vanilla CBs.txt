@@ -3406,6 +3406,13 @@ crusade = {
 			}
 		}
 		
+		if = {
+			limit = {
+				holder_scope = { character = FROM }
+			}
+			destroy_landed_title = THIS
+		}
+		
 		any_attacker = {
 			limit = { character = ROOT }
 			participation_scaled_prestige = 500
