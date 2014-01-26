@@ -22,6 +22,9 @@ create_hre_desc;We are clearly the rightful successor to Rome, so we should ther
 create_hre_tooltip;I am crowned Holy Roman Emperor.;;;;;;;;;x
 create_hre_france;Create the Holy Roman Empire;;;;;;;;;x
 create_hre_france_desc;We are clearly the rightful successor to Rome, so we should therefore unify our realm under one empire.;;;;;;;;;x
+bring_child_home;Bring [Root.GetTitledFirstName] Home;;;;;;;;;x
+bring_child_home_desc;Your child, §Y[Root.GetTitledFirstName]§!, is in the foreign court of §Y[Root.Liege.GetBestName]§!. You can order [Root.GetHerHim] to return home at once.;;;;;;;;;x
+bring_child_home_ctt;§Y[Root.GetTitledFirstName]§! will join your court in §Y[From.Capital.GetName]§!.;;;;;;;;;x
 exchange_prisoners;Arrange Exchange for [Root.GetTitledFirstName];;;;;;;;;;;;;x
 exchange_prisoners_desc;Arrange a prisoner exchange for [Root.GetTitledFirstName]. If the ruler holding [Root.GetObjectPronoun] prisoner accepts, a member of his dynasty will be released from your dungeons in exchange.;;;;;;;;;;;;;x
 release_prisoners;Release All Prisoners;;;;;;;;;;;;;x
