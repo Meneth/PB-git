@@ -4,6 +4,7 @@
 	Extremely minor flavor improvements: Changed a few event pictures and added varied death causes to the useless courtier killing event [AnaxXiphos]
 	First round of decision icon improvements: Updated all prisoner related icons [AnaxXiphos]
 	Whenever your children are not in your court (e.g., as a result of a political marriage) and lack a good reason for it, you will be alerted with the decision to bring them home. Rank restrictions apply to multiplayer
+	Guardian events: fixed those that assume age of adulthood is 16 and that child was actually part of liege's court, increased likelihood of a good candidate for guardianship when vassals offer, increased delay before a vassal offers to mentor your newly-6-year-old child (fewer and less annoying popups), and so on
 
 3.4.2
 	Shattered Balance, No Ahistorical Empires, and Gender Equality can now be enabled in-game before first unpausing the game
