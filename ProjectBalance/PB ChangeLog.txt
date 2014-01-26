@@ -7,6 +7,7 @@
 	Guardian events: fixed those that assume age of adulthood is 16 and that child was actually part of liege's court, increased likelihood of a good candidate for guardianship when vassals offer, increased delay before a vassal offers to mentor your newly-6-year-old child (fewer and less annoying popups), and so on
 	Ensured that the crusade target is always destroyed if it cannot be usurped and the war target holds the title
 	(PB+SWMH) Fixed there being no centers of trade
+	Ported depose_antipope and cb_install_antiking casus belli as well as the Anti-King Faction from vanilla
 
 3.4.2
 	Shattered Balance, No Ahistorical Empires, and Gender Equality can now be enabled in-game before first unpausing the game
