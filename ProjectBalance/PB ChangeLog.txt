@@ -3,10 +3,10 @@
 	Autonomy faction is now guaranteed to not be created by the AI for 6 months after game startup. This allows a player vassal plenty of time to start the faction (i.e., be the leader) if they so desire. Ideally, the faction will become even more democratic in future releases, but the leader currently plays a pivotal role in setting the agenda of meetings
 	Extremely minor flavor improvements: Changed a few event pictures and added varied death causes to the useless courtier killing event [AnaxXiphos]
 	First round of decision icon improvements: Updated all prisoner related icons [AnaxXiphos]
-	Whenever your children are not in your court (e.g., as a result of a political marriage) and lack a good reason for it, you will be alerted with the decision to bring them home. Rank restrictions apply to multiplayer
+	Whenever your children are not in your court (e.g., as a result of a political marriage) and lack a good reason for it, you will be alerted with the decision to bring them home. Rank restrictions apply to multiplayer. Icon by AnaxXiphos
 	Guardian events: fixed those that assume age of adulthood is 16 and that child was actually part of liege's court, increased likelihood of a good candidate for guardianship when vassals offer, increased delay before a vassal offers to mentor your newly-6-year-old child (fewer and less annoying popups), and so on
 	Ensured that the crusade target is always destroyed if it cannot be usurped and the war target holds the title
-	Added decision icon for bringing children home [AnaxXiphos]
+	(PB+SWMH) Fixed there being no centers of trade
 
 3.4.2
 	Shattered Balance, No Ahistorical Empires, and Gender Equality can now be enabled in-game before first unpausing the game
