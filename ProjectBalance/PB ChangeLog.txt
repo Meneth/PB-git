@@ -9,7 +9,7 @@
 	(PB+SWMH) Fixed there being no centers of trade
 	Ported depose_antipope and cb_install_antiking casus belli as well as the Anti-King Faction from vanilla
 	Ankara falling to Muslims will no longer trigger the Crusades, seeing as it fell in 1071 historically without triggering anything
-	Different crusades from different religious heads cannot call crusades for the same title simultaneously
+	Different religious heads cannot call crusades for the same title simultaneously
 
 3.4.2
 	Shattered Balance, No Ahistorical Empires, and Gender Equality can now be enabled in-game before first unpausing the game
