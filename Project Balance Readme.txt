@@ -12,12 +12,6 @@ PB + SWMH:
 3.    Enable PB, PB+SWMH, and SWMH in the launcher
 4.    Have fun
 
-Project Balance Module Pack:
-
-1.    Extract the modules you want, and their .mod file
-2.    Enable PB and any modules you'd like in the launcher (all are compatible with SWMH)
-3.    Have fun
-
 This mod is created, owned, and maintained by Meneth. If you want to include it in any publicly released mod you need my permission.
 
 If you encounter any issues or are wondering about anything you can ask in the Project Balance thread on the Paradox Forums: http://forum.paradoxplaza.com/forum/showthread.php?594436
@@ -28,9 +22,7 @@ Paradox Forums (Private Message): http://forum.paradoxplaza.com/forum/private.ph
 E-mail: pb@meneth.com
 Reddit: http://www.reddit.com/message/compose/?to=Meneth
 
-What the modules do:
+What the modules available on day 0 in-game do:
 - Gender Equality - People of both genders can staff all council positions and command armies. All non-Muslim realms start with Absolute Cognatic succession
-- No Assaults - Holdings cannot be assaulted during sieges
-- Vanilla Demesne Laws - Vanilla demesne laws are restored, rather than Project Balance's new set of demesne laws. Crown laws are unaffected
 - No Ahistorical Empires: Only two empires have dejure land; Byzantium and the HRE
 - Shattered Balance: All counties are independent. Perfect if you want alt-history or to expand as a specific dynasty. Note: Not compatible with No Assaults
