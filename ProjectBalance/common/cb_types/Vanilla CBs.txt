@@ -3213,6 +3213,11 @@ crusade = {
 	}
 
 	can_use_title = {
+		NOT = {
+			any_war = { # when used in title scope, checks all wars for that title
+				using_cb = crusade
+			}
+		}
 		FROM = {
 			any_realm_title = {
 				de_jure_liege_or_above = PREVPREV
