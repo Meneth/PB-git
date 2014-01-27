@@ -14,7 +14,7 @@ character_event = {
 	id = meneth.400
 	desc = meneth.400.desc
 	picture = GFX_evt_battle
-	border = GFX_event_normal_frame_religion
+	border = GFX_event_normal_frame_war
 	
 	min_age = 16
 	only_men = yes
@@ -125,7 +125,7 @@ character_event = {
 	id = meneth.401
 	desc = meneth.401.desc
 	picture = GFX_evt_battle
-	border = GFX_event_normal_frame_religion
+	border = GFX_event_normal_frame_war
 	
 	is_triggered_only = yes
 	
@@ -671,8 +671,8 @@ narrative_event = {
 character_event = {
 	id = meneth.402
 	desc = meneth.402.desc
-	picture = GFX_evt_battle
-	border = GFX_event_normal_frame_religion
+	picture = GFX_evt_emissary_byzantine
+	border = GFX_event_normal_frame_diplomacy
 	
 	min_age = 16
 	only_rulers = yes
@@ -735,7 +735,7 @@ character_event = {
 letter_event = {
 	id = meneth.403
 	desc = meneth.403.desc
-	border = GFX_event_letter_frame_religion
+	border = GFX_event_letter_frame_diplomacy
 	
 	is_triggered_only = yes
 	option = {
@@ -818,7 +818,7 @@ letter_event = {
 letter_event = {
 	id = meneth.404
 	desc = meneth.404.desc
-	border = GFX_event_letter_frame_religion
+	border = GFX_event_letter_frame_diplomacy
 	
 	is_triggered_only = yes
 	option = {
@@ -832,7 +832,7 @@ letter_event = {
 letter_event = {
 	id = meneth.405
 	desc = meneth.405.desc
-	border = GFX_event_letter_frame_religion
+	border = GFX_event_letter_frame_war
 	
 	is_triggered_only = yes
 	option = {
@@ -872,7 +872,7 @@ character_event = {
 	id = meneth.406
 	desc = meneth.406.desc
 	picture = GFX_evt_battle
-	border = GFX_event_normal_frame_religion
+	border = GFX_event_normal_frame_war
 	
 	min_age = 16
 	only_rulers = yes
@@ -900,7 +900,7 @@ character_event = {
 	id = meneth.407
 	desc = meneth.407.desc
 	picture = GFX_evt_battle
-	border = GFX_event_normal_frame_religion
+	border = GFX_event_normal_frame_war
 	
 	min_age = 16
 	only_men = yes
@@ -987,7 +987,7 @@ character_event = {
 	id = meneth.408
 	desc = meneth.408.desc
 	picture = GFX_evt_battle
-	border = GFX_event_normal_frame_religion
+	border = GFX_event_normal_frame_war
 	
 	is_triggered_only = yes
 	
@@ -1073,7 +1073,7 @@ character_event = {
 	id = meneth.409
 	desc = meneth.409.desc
 	picture = GFX_evt_battle
-	border = GFX_event_normal_frame_religion
+	border = GFX_event_normal_frame_war
 	
 	min_age = 16
 	only_men = yes
@@ -1162,7 +1162,7 @@ character_event = {
 	id = meneth.410
 	desc = meneth.410.desc
 	picture = GFX_evt_battle
-	border = GFX_event_normal_frame_religion
+	border = GFX_event_normal_frame_war
 	
 	is_triggered_only = yes
 	
@@ -1236,8 +1236,8 @@ character_event = {
 character_event = {
 	id = meneth.413
 	desc = meneth.413.desc
-	picture = GFX_evt_battle
-	border = GFX_event_normal_frame_religion
+	picture = GFX_evt_council
+	border = GFX_event_normal_frame_diplomacy
 	
 	trigger = {
 		has_landed_title = e_byzantium
@@ -1554,8 +1554,8 @@ character_event = {
 character_event = {
 	id = meneth.416
 	desc = meneth.416.desc
-	picture = GFX_evt_battle
-	border = GFX_event_normal_frame_religion
+	picture = GFX_evt_peasants
+	border = GFX_event_normal_frame_diplomacy
 	
 	is_triggered_only = yes
 	option = {
@@ -1576,8 +1576,8 @@ character_event = {
 character_event = {
 	id = meneth.417
 	desc = meneth.417.desc
-	picture = GFX_evt_battle
-	border = GFX_event_normal_frame_religion
+	picture = GFX_evt_courier
+	border = GFX_event_normal_frame_diplomacy
 	
 	is_triggered_only = yes
 	
@@ -1590,8 +1590,8 @@ character_event = {
 province_event = {
 	id = meneth.414
 	desc = meneth.414.desc
-	picture = GFX_evt_battle
-	border = GFX_event_normal_frame_religion
+	picture = GFX_evt_peasants
+	border = GFX_event_normal_frame_diplomacy
 	
 	trigger = {
 		owner = { top_liege = { has_landed_title = e_byzantium } }
@@ -1665,8 +1665,8 @@ province_event = {
 province_event = {
 	id = meneth.415
 	desc = meneth.415.desc
-	picture = GFX_evt_battle
-	border = GFX_event_normal_frame_religion
+	picture = GFX_evt_stone_church
+	border = GFX_event_normal_frame_diplomacy
 	
 	trigger = {
 		OR = {
@@ -1711,7 +1711,7 @@ character_event = {
 	id = meneth.418
 	desc = meneth.418.desc
 	picture = GFX_evt_battle
-	border = GFX_event_normal_frame_religion
+	border = GFX_event_normal_frame_war
 	
 	trigger = {
 		has_landed_title = e_byzantium
@@ -1838,7 +1838,7 @@ character_event = {
 	id = meneth.419
 	desc = meneth.419.desc
 	picture = GFX_evt_battle
-	border = GFX_event_normal_frame_religion
+	border = GFX_event_normal_frame_war
 	
 	only_rulers = yes
 	is_triggered_only = yes
@@ -1919,8 +1919,8 @@ character_event = {
 character_event = {
 	id = meneth.423
 	desc = meneth.423.desc
-	picture = GFX_evt_battle
-	border = GFX_event_normal_frame_religion
+	picture = GFX_evt_battle_byzantine
+	border = GFX_event_normal_frame_war
 	
 	only_rulers = yes
 	
@@ -1964,8 +1964,8 @@ character_event = {
 character_event = {
 	id = meneth.428
 	desc = meneth.428.desc
-	picture = GFX_evt_battle
-	border = GFX_event_normal_frame_religion
+	picture = GFX_evt_emissary_byzantine
+	border = GFX_event_normal_frame_diplomacy
 	
 	only_rulers = yes
 	
@@ -1992,8 +1992,8 @@ character_event = {
 character_event = {
 	id = meneth.420
 	desc = meneth.420.desc
-	picture = GFX_evt_battle
-	border = GFX_event_normal_frame_religion
+	picture = GFX_evt_throne_room
+	border = GFX_event_normal_frame_diplomacy
 	
 	only_rulers = yes
 	
@@ -2262,8 +2262,8 @@ character_event = {
 character_event = {
 	id = meneth.424
 	desc = meneth.424.desc
-	picture = GFX_evt_battle
-	border = GFX_event_normal_frame_religion
+	picture = GFX_evt_emissary
+	border = GFX_event_normal_frame_war
 	
 	only_rulers = yes
 	
@@ -2301,8 +2301,8 @@ character_event = {
 character_event = {
 	id = meneth.425
 	desc = meneth.425.desc
-	picture = GFX_evt_battle
-	border = GFX_event_normal_frame_religion
+	picture = GFX_evt_large_army
+	border = GFX_event_normal_frame_war
 	
 	only_rulers = yes
 	
@@ -2332,7 +2332,7 @@ character_event = {
 	id = meneth.426
 	desc = meneth.426.desc
 	picture = GFX_evt_battle
-	border = GFX_event_normal_frame_religion
+	border = GFX_event_normal_frame_war
 	
 	is_triggered_only = yes
 	
@@ -2399,7 +2399,7 @@ narrative_event = {
 	id = meneth.427
 	title = meneth.427
 	desc = meneth.427.desc
-	picture = GFX_evt_battle
+	picture = GFX_evt_holy_emperor
 	
 	major = yes
 	only_rulers = yes
@@ -2415,7 +2415,7 @@ narrative_event = {
 	id = meneth.437
 	title = meneth.427
 	desc = meneth.437.desc
-	picture = GFX_evt_battle
+	picture = GFX_evt_holy_emperor
 	
 	major = yes
 	only_rulers = yes
@@ -2430,7 +2430,7 @@ narrative_event = {
 character_event = {
 	id = meneth.436
 	desc = meneth.436.desc
-	picture = GFX_evt_battle
+	picture = GFX_evt_pope
 	border = GFX_event_normal_frame_religion
 	
 	only_rulers = yes
