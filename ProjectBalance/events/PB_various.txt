@@ -1354,8 +1354,8 @@ character_event = {
 	id = meneth.213
 	
 	desc = meneth.213.desc
-	picture = GFX_evt_battle
-	border = GFX_event_normal_frame_religion
+	picture = GFX_evt_emissary
+	border = GFX_event_normal_frame_diplomacy
 	
 	is_triggered_only = yes
 	
@@ -1433,8 +1433,8 @@ character_event = {
 	id = meneth.214
 	
 	desc = meneth.214.desc
-	picture = GFX_evt_battle
-	border = GFX_event_normal_frame_religion
+	picture = GFX_evt_garden
+	border = GFX_event_normal_frame_diplomacy
 	
 	is_triggered_only = yes
 	
@@ -1448,8 +1448,8 @@ character_event = {
 	id = meneth.215
 	
 	desc = meneth.215.desc
-	picture = GFX_evt_battle
-	border = GFX_event_normal_frame_religion
+	picture = GFX_evt_into_the_dungeon
+	border = GFX_event_normal_frame_diplomacy
 	
 	is_triggered_only = yes
 	
