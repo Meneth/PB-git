@@ -8,6 +8,7 @@
 	Ensured that the crusade target is always destroyed if it cannot be usurped and the war target holds the title
 	(PB+SWMH) Fixed there being no centers of trade
 	Ported depose_antipope and cb_install_antiking casus belli as well as the Anti-King Faction from vanilla
+	Ankara falling to Muslims will no longer trigger the Crusades, seeing as it fell in 1071 historically without triggering anything
 
 3.4.2
 	Shattered Balance, No Ahistorical Empires, and Gender Equality can now be enabled in-game before first unpausing the game

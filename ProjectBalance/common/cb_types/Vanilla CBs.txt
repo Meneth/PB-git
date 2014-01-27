@@ -3343,16 +3343,8 @@ crusade = {
 				PREV = {
 					any_de_jure_vassal_title = {
 						limit = {
-							holder_scope = {
-								independent = no
-								liege = {
-									character = PREV
-								}
-								any_war = {
-									defender = {
-										character = FROM
-									}
-								}
+							holder_scope = { #Handle revolters
+								liege_before_war = { character = FROM }
 							}
 						}
 						PREV = {
