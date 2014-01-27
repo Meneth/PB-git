@@ -3309,11 +3309,10 @@ crusade = {
 			any_de_jure_vassal_title = {
 				limit = {
 					holder_scope = { #Handle revolters
-						in_revolt = yes
-						liege_before_war = {
-							OR = {
+						top_liege = { #Should work at any level of revolt
+							in_revolt = yes
+							liege_before_war = {
 								character = FROM
-								is_liege_or_above = FROM
 							}
 						}
 					}
@@ -3347,11 +3346,10 @@ crusade = {
 					any_de_jure_vassal_title = {
 						limit = {
 							holder_scope = { #Handle revolters
-								in_revolt = yes
-								liege_before_war = {
-									OR = {
+								top_liege = { #Should work at any level of revolt
+									in_revolt = yes
+									liege_before_war = {
 										character = FROM
-										is_liege_or_above = FROM
 									}
 								}
 							}
