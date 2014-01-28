@@ -3317,7 +3317,7 @@ crusade = {
 						}
 					}
 				}
-				PREV = {
+				kingdom = {
 					holder_scope = {
 						usurp_title = PREVPREV
 					}
@@ -3354,7 +3354,7 @@ crusade = {
 								}
 							}
 						}
-						PREV = {
+						kingdom = {
 							holder_scope = {
 								usurp_title = PREVPREVPREV
 							}
