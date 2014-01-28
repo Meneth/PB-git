@@ -3342,25 +3342,6 @@ crusade = {
 					title = PREV
 					enemy = FROM
 				}
-				PREV = {
-					any_de_jure_vassal_title = {
-						limit = {
-							holder_scope = { #Handle revolters
-								top_liege = { #Should work at any level of revolt
-									in_revolt = yes
-									liege_before_war = {
-										character = FROM
-									}
-								}
-							}
-						}
-						kingdom = {
-							holder_scope = {
-								usurp_title = PREVPREVPREV
-							}
-						}
-					}
-				}
 				if  = {
 					limit = {
 						#primary_title = { is_primary_type_title = no } # Mercs, the Pope, Holy Orders, etc
@@ -3374,6 +3355,26 @@ crusade = {
 						}
 					}
 					usurp_title = PREV
+					
+					PREV = {
+						any_de_jure_vassal_title = {
+							limit = {
+								holder_scope = { #Handle revolters
+									top_liege = { #Should work at any level of revolt
+										in_revolt = yes
+										liege_before_war = {
+											character = FROM
+										}
+									}
+								}
+							}
+							kingdom = {
+								holder_scope = {
+									usurp_title = PREVPREV
+								}
+							}
+						}
+					}
 					
 					if = {
 						limit = {
