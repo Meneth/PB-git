@@ -5907,13 +5907,27 @@ other_succession_on_liege = {
 			}
 		}
 		
+		# If the claimant has the wrong government type, take care of that first.
+		if = {
+			limit = {
+				FROM = {
+					primary_title = {
+						higher_tier_than = ROOT
+					}
+					is_feudal = yes
+				}
+				ROOT = {
+					is_ruler = yes
+					OR = {
+						is_theocracy = yes
+						is_republic = yes
+					}
+				}
+			}
+			ROOT = { abdicate = yes }
+		}
+
 		FROM = {
-			# you'd think we could add the tooltipped revocation cooldown to
-			# the successful pretender here a priori, but there is no way to
-			# scope to this CB instance's affected titles, so any_demesne_title
-			# won't work as per usual. they aren't the same-tier titles as the
-			# snippet below might suggest at first either.
-		
 			any_demesne_title = {
 				limit = {
 					tier = FROM
@@ -5921,6 +5935,7 @@ other_succession_on_liege = {
 				usurp_title_plus_barony_if_unlanded = ROOT
 			}
 		}
+
 		any_attacker = {
 			limit = { character = ROOT }
 			participation_scaled_prestige = 100

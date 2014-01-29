@@ -13,8 +13,9 @@
 	Upon winning a crusade, the Pope, mercenary bands, and holy orders now always grant the crusader state to a new, highborn ruler with no possible inheritance ties to elsewhere. Other AI winners are still more likely to grant it to a secondary son, brother, relative, etc., although they never keep it for themselves.
 	All de jure titles within a crusade (or jihad) target kingdom and within the realm of the defending ruler should now always be transferred to the crusade winner, regardless of whether they were involved in a revolt against the defending ruler at the time of crusade success.
 	A lot of internal changes to the crusade/jihad casus belli: mechanics now differ for Jihads in one notable case (if the target kingdom has not yet been created or the title has been destroyed and the most participating attacker is the initiating Caliph, they will now actually create the target title like Catholics)
-	[BETA-ONLY ISSUE] No more duplicate 'Depose Antipope' CBs (credit goes to Olem)
-	Gavelkind succession faction CB now has a consistent 5-year truce and missing AI victory/defeat worth weights (credit goes to AnaxXiphos)
+	[BETA-ONLY ISSUE] No more duplicate 'Depose Antipope' CBs (reporting and troubleshooting credit goes to Olem)
+	Gavelkind succession faction CB now has a consistent 5-year truce and missing AI victory/defeat worth weights (reporting credit goes to AnaxXiphos)
+	The CB other_succession_on_liege (third-party pushing a succession claim against his liege) now properly converts the claimant to feudal type (vs. clergy, e.g.), whenever appropriate (reporting credit goes to AnaxXiphos)
 
 3.4.2
 	Shattered Balance, No Ahistorical Empires, and Gender Equality can now be enabled in-game before first unpausing the game
