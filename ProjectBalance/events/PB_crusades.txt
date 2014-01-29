@@ -1,10 +1,11 @@
 
 namespace = pb_crusades
 
+# pb_crusades.0
 # Handle crusade revolter cleanup immediately (CB supplement)
 #
-# FROMFROM is CB giver (loser in this case), ROOT is the winner,
-# and FROM is the Pope (or Caliph or whatever).
+# FROMFROM is CB giver (loser in this case), ROOT is the winner, and
+# FROM is the Pope (or Caliph or whoever was the primary attacker).
 character_event = {
 	id = pb_crusades.0
 	desc = OK
@@ -14,9 +15,9 @@ character_event = {
 	immediate = {
 		random_demesne_title = {
 			limit = { has_law = the_crusade_target }
-			#Usurp from smallest to largest tier of de jure vassal titles
+			# Usurp from smallest to largest tier of de jure vassal titles.
 			# Otherwise, it is arbitrary whether we will usurp all affected
-			# titles (and very highly unlikely)
+			# titles (and very highly unlikely).
 			any_de_jure_vassal_title = {
 				limit = {
 					tier = baron
@@ -66,7 +67,8 @@ character_event = {
 }
 
 
-# Give away the Crusader State?
+# pb_crusades.1
+# Give away the Crusader State? (CB supplement)
 #
 # Moved from meneth.204 out of PB_various.txt
 #
@@ -132,11 +134,7 @@ character_event = {
 			
 			modifier = {
 				factor = 2000
-				OR = {
-					character = FROM # The Pope (non-Catholics don't get this event except for the following cases)
-					primary_title = { holy_order = yes } # A holy order
-					primary_title = { mercenary = yes } # A mercenary band
-				}
+				primary_title = { is_primary_type_title = yes }
 			}
 		}
 	}
@@ -151,7 +149,10 @@ character_event = {
 				is_ruler = no
 				is_primary_heir = no
 			}
-			# TODO: disable entirely in the Pope / holy order / mercenary case
+			OR = {
+				ai = no
+				primary_title = { is_primary_type_title = no }
+			}
 		}
 		prestige = 200
 		random_child = {
@@ -179,7 +180,10 @@ character_event = {
 				is_ruler = no
 				is_primary_heir = no
 			}
-			# TODO: disable entirely in the Pope / holy order / mercenary case
+			OR = {
+				ai = no
+				primary_title = { is_primary_type_title = no }
+			}
 		}
 		prestige = 200
 		random_sibling = {
@@ -218,7 +222,10 @@ character_event = {
 				is_primary_heir = no
 				is_close_relative = ROOT
 			}
-			# TODO: disable entirely in the Pope / holy order / mercenary case
+			OR = {
+				ai = no
+				primary_title = { is_primary_type_title = no }
+			}
 		}
 		prestige = 200
 		random_dynasty_member = {
@@ -247,7 +254,10 @@ character_event = {
 				is_ruler = no
 				is_primary_heir = no
 			}
-			# TODO: disable entirely in the Pope / holy order / mercenary case
+			OR = {
+				ai = no
+				primary_title = { is_primary_type_title = no }
+			}
 		}
 		prestige = 200
 		random_dynasty_member = {
@@ -278,7 +288,10 @@ character_event = {
 				reverse_opinion = { who = ROOT value = 0 }
 				trait = crusader
 			}
-			# TODO: disable entirely in the Pope / holy order / mercenary case
+			OR = {
+				ai = no
+				primary_title = { is_primary_type_title = no }
+			}
 		}
 		prestige = 200
 		random_realm_character = {
@@ -301,7 +314,8 @@ character_event = {
 }
 
 
-# Crusader States
+# pb_crusades.2
+# Crusader State Granted to New Ruler (CB supplement)
 #
 # Moved from meneth.207 (out of PB_various.txt)
 #
