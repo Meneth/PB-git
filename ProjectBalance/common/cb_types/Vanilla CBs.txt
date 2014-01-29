@@ -3309,6 +3309,7 @@ crusade = {
 			hidden_tooltip = {
 				add_law = the_crusade_target
 				holder_scope = { character_event = { id = pb_crusades.0 } } #Handle revolters [immediately]
+				revoke_law = the_crusade_target #Remove targeting law when not exported to interactive event
 			}
 		}
 		
@@ -3357,12 +3358,23 @@ crusade = {
 						}
 						character_event = { id = pb_crusades.1 } #Give away the kingdom [potentially]
 					}
+					
+					if = {
+						limit = {
+							NOT = {
+								ROOT = { religion = catholic }
+								primary_title = { holy_order = yes }
+								primary_title = { mercenary = yes }
+							}
+						}
+						PREV = { revoke_law = the_crusade_target } #Remove targeting law when not exported to interactive event
+					}
 				}
 			}
 		}
 		
-		# Z: this should clearly no longer be possible, but it can't hurt, so I'm leaving it.
 		hidden_tooltip = {
+			# Z: this should clearly no longer be possible, but it can't hurt, so I'm leaving it.
 			if = {
 				limit = {
 					holder_scope = { character = FROM }
