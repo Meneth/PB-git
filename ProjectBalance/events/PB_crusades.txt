@@ -404,7 +404,9 @@ character_event = {
 		prestige = 200
 		piety = 100
 		capital_scope = {
-			root = {
+			religion = ROOT # Capital's official religion changes to crusaders'
+		
+			ROOT = {
 				# Spawn 3 regiments, each with 1000 troops and a good, but randomized, commander
 				create_character = {
 					random_traits = yes
@@ -419,7 +421,6 @@ character_event = {
 				}
 				new_character = {
 					character_event = { id = pb_crusades.4 } # Assign appropriate traits/attributes [immediate]
-
 					spawn_unit = {
 						province = PREVPREV
 						home = PREVPREV
@@ -449,7 +450,6 @@ character_event = {
 				}
 				new_character = {
 					character_event = { id = pb_crusades.4 } # Assign appropriate traits/attributes [immediate]
-
 					spawn_unit = {
 						province = PREVPREV
 						home = PREVPREV
@@ -479,7 +479,6 @@ character_event = {
 				}
 				new_character = {
 					character_event = { id = pb_crusades.4 } # Assign appropriate traits/attributes [immediate]
-
 					spawn_unit = {
 						province = PREVPREV
 						home = PREVPREV
@@ -540,11 +539,6 @@ character_event = {
 			female = no
 			religion = ROOT
 			culture = ROOT
-		}
-		capital_scope = { # FIXME: this is currently a random county that
-						  # that is highly unlikely to be the capital after
-						  # a couple game-days pass.
-			religion = ROOT
 		}
 		# NOTE: presently impossible, since all options leading to this event
 		#       grant only to non-rulers, and all the titles transferred are
