@@ -376,13 +376,19 @@ character_event = {
 				knights = { 500 500 }
 			}
 		}
-		# TODO: fix opposites
 		random_list = {
-			20 = { add_trait = strong }
-			20 = { add_trait = brave }
-			20 = { add_trait = ambitious }
-			20 = { add_trait = zealous }
-			20 = { add_trait = diligent }
+			20 = { remove_trait = weak add_trait = strong }
+			20 = { remove_trait = craven add_trait = brave }
+			20 = { remove_trait = content add_trait = ambitious }
+			20 = { remove_trait = cynical add_trait = zealous }
+			20 = { remove_trait = slothful add_trait = diligent }
+		}
+		random_list = {
+			20 = { remove_trait = weak add_trait = strong }
+			20 = { remove_trait = craven add_trait = brave }
+			20 = { remove_trait = content add_trait = ambitious }
+			20 = { remove_trait = cynical add_trait = zealous }
+			20 = { remove_trait = slothful add_trait = diligent }
 		}
 		wealth = 500 #Z: was 250, but some characters were starting slightly in the red
 		prestige = 200
