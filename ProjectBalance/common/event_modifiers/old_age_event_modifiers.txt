@@ -4,7 +4,7 @@ old_age = {
 	learning = 1
 	health = -1
 	fertility = -0.35
-	icon = 26
+	icon = 40
 }
 lip_reader = {
 	diplomacy = 1

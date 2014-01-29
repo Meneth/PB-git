@@ -1,7 +1,7 @@
 3.4.3 [BETA]
 	Bugfix for Jewish players not being able to take loans via the decisions menu. AI Jews could still take loans
 	Autonomy faction is now guaranteed to not be created by the AI for 6 months after game startup. This allows a player vassal plenty of time to start the faction (i.e., be the leader) if they so desire. Ideally, the faction will become even more democratic in future releases, but the leader currently plays a pivotal role in setting the agenda of meetings
-	Minor flavor improvements: Changed a bunch of event pictures and added varied death causes to the useless courtier killing event [AnaxXiphos]
+	Minor flavor improvements: Changed a bunch of event pictures, added varied death causes to the useless courtier killing event, added new hourglass modifier icons, tweaked event modifier icon choices [AnaxXiphos]
 	Decision icon improvements: Updated all icons except employment and marriage [AnaxXiphos]
 	Whenever your children are not in your court (e.g., as a result of a political marriage) and lack a good reason for it, you will be alerted with the decision to bring them home. Rank restrictions apply to multiplayer. Icon by AnaxXiphos
 	Guardian events: fixed those that assume age of adulthood is 16 and that child was actually part of liege's court, increased likelihood of a good candidate for guardianship when vassals offer, increased delay before a vassal offers to mentor your newly-6-year-old child (fewer and less annoying popups), and so on
