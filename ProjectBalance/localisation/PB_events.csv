@@ -16,14 +16,14 @@ meneth.200.a;OK;;;;;;;;;;;;;x
 meneth.201.desc;Sudden Death;;;;;;;;;;;;;x
 meneth.201.a;Seems I am no longer needed in this cruel world.;;;;;;;;;;;;;x
 EVTDESC55000;Populace embraces your culture.;Populace embraces your culture.;Populace embraces your culture.;;Populace embraces your culture.;;;;;;;;;x
-meneth.204.desc;We've just won a kingdom in a Crusade. We could choose to keep the kingdom for ourselves or we could give it to someone else in our family.;;;;;;;;;;;;;x
-meneth.204.a;Keep it for myself.;;;;;;;;;;;;;x
-meneth.204.b;Give it to my son.;;;;;;;;;;;;;x
-meneth.204.c;Give it to my brother.;;;;;;;;;;;;;x
-meneth.204.d;Give it to a close relative.;;;;;;;;;;;;;x
-meneth.204.e;Give it to a relative.;;;;;;;;;;;;;x
-meneth.204.f;Give it to a courtier.;;;;;;;;;;;;;x
-meneth.204.g;You shouldn't be seeing this button; you're not a bot.;;;;;;;;;;;;;x
+pb_crusades.1.desc;I've just won a kingdom in a Crusade. I could choose to keep the kingdom for myself, or I could give it to someone else.;;;;;;;;;;;;;x
+pb_crusades.1.a;Keep it for myself.;;;;;;;;;;;;;x
+pb_crusades.1.b;You shouldn't be seeing this button; you're not a bot.;;;;;;;;;;;;;x
+pb_crusades.1.c;Give it to my son.;;;;;;;;;;;;;x
+pb_crusades.1.d;Give it to my brother.;;;;;;;;;;;;;x
+pb_crusades.1.e;Give it to a close relative.;;;;;;;;;;;;;x
+pb_crusades.1.f;Give it to a dynasty member.;;;;;;;;;;;;;x
+pb_crusades.1.g;Give it to someone from my realm.;;;;;;;;;;;;;x
 meneth.205.desc;Feeling little loyalty to their far off ruler, the peasant rebels of [Root.GetName] desire to align with a nearby ruler instead!;;;;;;;;;;;;;x
 meneth.206.desc;The pious are rewarded for their efforts.;;;;;;;;;;;;;x
 meneth.206.a;OK;;;;;;;;;;;;;x

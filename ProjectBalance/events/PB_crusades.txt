@@ -1,0 +1,445 @@
+
+namespace = pb_crusades
+
+# pb_crusades.0
+# Handle crusade revolter cleanup immediately (CB supplement)
+#
+# FROMFROM is CB giver (loser in this case), ROOT is the winner, and
+# FROM is the Pope (or Caliph or whoever was the primary attacker).
+character_event = {
+	id = pb_crusades.0
+	desc = OK
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		random_demesne_title = {
+			limit = { has_law = the_crusade_target }
+			# Usurp from smallest to largest tier of de jure vassal titles.
+			# Otherwise, it is arbitrary whether we will usurp all affected
+			# titles (and very highly unlikely).
+			any_de_jure_vassal_title = {
+				limit = {
+					tier = baron
+					holder_scope = {
+						top_liege = { #Should work at any level of revolt
+							in_revolt = yes
+							liege_before_war = {
+								character = FROMFROM
+							}
+						}
+					}
+				}
+				usurp_title = ROOT
+				# TODO: possibly need to modify succession law (as we may need to
+				#       do with the target kingdom in general in the CB)
+			}
+			any_de_jure_vassal_title = {
+				limit = {
+					tier = count
+					holder_scope = {
+						top_liege = { #Should work at any level of revolt
+							in_revolt = yes
+							liege_before_war = {
+								character = FROMFROM
+							}
+						}
+					}
+				}
+				usurp_title = ROOT
+			}
+			any_de_jure_vassal_title = {
+				limit = {
+					tier = duke
+					holder_scope = {
+						top_liege = { #Should work at any level of revolt
+							in_revolt = yes
+							liege_before_war = {
+								character = FROMFROM
+							}
+						}
+					}
+				}
+				usurp_title = ROOT
+			}
+		}
+	}
+	
+	option = { name = OK }
+}
+
+
+# pb_crusades.1
+# Give away the Crusader State? (CB supplement)
+#
+# Moved from meneth.204 out of PB_various.txt
+#
+# FROMFROM is the loser of the crusade, ROOT is the winner
+# and holds the target kingdom title, and FROM is the caller
+# of the crusade (Pope, Caliph, etc.)
+#
+# ROOT might be any religion, not just catholic.  They'll be
+# a holy order or mercenary grandmaster if non-catholic.
+# ROOT may also be FROM (the Pope, specifically).
+character_event = {
+	id = pb_crusades.1
+	desc = pb_crusades.1.desc
+	picture = GFX_evt_crusaders
+	
+	is_triggered_only = yes
+	
+	#Keep it
+	option = {
+		name = meneth.204.a
+		trigger = {
+			ai = no
+		}
+		hidden_tooltip = {
+			revoke_law = the_crusade_target
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+	#Generate a new character
+	option = {
+		name = pb_crusades.1.b
+		trigger = {
+			ai = yes
+		}
+		prestige = 200
+		create_character = {
+			random_traits = no
+			age = 25
+			dynasty = random
+			female = no
+			religion = ROOT
+			culture = ROOT
+			trait = crusader
+			trait = diligent
+			trait = quick
+			trait = brave
+			trait = brilliant_strategist
+			attributes = {
+				martial = 10
+				learning = 5
+				stewardship = 7
+				intrigue = 5
+				diplomacy = 7
+			}
+		}
+		new_character = {		
+			character_event = { id = pb_crusades.2 }
+		}
+		ai_chance = {
+			factor = 5
+			
+			modifier = {
+				factor = 2000
+				primary_title = { is_primary_type_title = yes }
+			}
+		}
+	}
+	#Give it to a secondary son
+	option = {
+		name = pb_crusades.1.c
+		trigger = {
+			any_child = {
+				is_female = no
+				is_adult = yes
+				is_alive = yes
+				is_ruler = no
+				is_primary_heir = no
+			}
+			OR = {
+				ai = no
+				primary_title = { is_primary_type_title = no }
+			}
+		}
+		prestige = 200
+		random_child = {
+			limit = {
+				is_female = no
+				is_adult = yes
+				is_alive = yes
+				is_ruler = no
+				is_primary_heir = no
+			}
+			character_event = { id = pb_crusades.2 }
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+	#Give it to a brother
+	option = {
+		name = pb_crusades.1.d
+		trigger = {
+			any_sibling = {
+				is_female = no
+				is_adult = yes
+				is_alive = yes
+				is_ruler = no
+				is_primary_heir = no
+			}
+			OR = {
+				ai = no
+				primary_title = { is_primary_type_title = no }
+			}
+		}
+		prestige = 200
+		random_sibling = {
+			limit = {
+				is_female = no
+				is_adult = yes
+				is_alive = yes
+				is_ruler = no
+				is_primary_heir = no
+			}
+			character_event = { id = pb_crusades.2 }
+		}
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 0
+				any_child = {
+					is_female = no
+					is_adult = yes
+					is_alive = yes
+					is_ruler = no
+					is_primary_heir = no
+				}
+			}
+		}
+	}
+	#Give it to a close relative
+	option = {
+		name = pb_crusades.1.e
+		trigger = {
+			any_dynasty_member = {
+				is_female = no
+				is_adult = yes
+				is_alive = yes
+				is_ruler = no
+				is_primary_heir = no
+				is_close_relative = ROOT
+			}
+			OR = {
+				ai = no
+				primary_title = { is_primary_type_title = no }
+			}
+		}
+		prestige = 200
+		random_dynasty_member = {
+			limit = {
+				is_female = no
+				is_adult = yes
+				is_alive = yes
+				is_ruler = no
+				is_primary_heir = no
+				is_close_relative = ROOT
+			}
+			character_event = { id = pb_crusades.2 }
+		}
+		ai_chance = {
+			factor = 50
+		}
+	}
+	#Give it to a dynasty member
+	option = {
+		name = pb_crusades.1.f
+		trigger = {
+			any_dynasty_member = {
+				is_female = no
+				is_adult = yes
+				is_alive = yes
+				is_ruler = no
+				is_primary_heir = no
+			}
+			OR = {
+				ai = no
+				primary_title = { is_primary_type_title = no }
+			}
+		}
+		prestige = 200
+		random_dynasty_member = {
+			limit = {
+				is_female = no
+				is_adult = yes
+				is_alive = yes
+				is_ruler = no
+				is_primary_heir = no
+			}
+			character_event = { id = pb_crusades.2 }
+		}
+		ai_chance = {
+			factor = 25
+		}
+	}
+	#Give it to someone from my realm
+	option = {
+		name = pb_crusades.1.g
+		trigger = {
+			any_realm_character = {
+				is_female = no
+				is_adult = yes
+				is_alive = yes
+				is_ruler = no
+				is_primary_heir = no
+				opinion = { who = ROOT value = 0 }
+				reverse_opinion = { who = ROOT value = 30 }
+				trait = crusader
+			}
+			OR = {
+				ai = no
+				primary_title = { is_primary_type_title = no }
+			}
+		}
+		prestige = 200
+		random_realm_character = {
+			limit = {
+				is_female = no
+				is_adult = yes
+				is_alive = yes
+				is_ruler = no
+				is_primary_heir = no
+				opinion = { who = ROOT value = 0 }
+				reverse_opinion = { who = ROOT value = 30 }
+				trait = crusader
+			}
+			character_event = { id = pb_crusades.2 }
+		}
+		ai_chance = {
+			factor = 15
+		}
+	}
+}
+
+
+# pb_crusades.2
+# Crusader State Granted to New Ruler (CB supplement)
+#
+# Moved from meneth.207 (out of PB_various.txt)
+#
+# ROOT = non-ruler (ergo, AI)
+# FROM = giver of crusade target kingdom
+# FROMFROM = initiator of crusade
+character_event = {
+	id = pb_crusades.2
+	desc = OK # Should only be reached by AI characters
+	picture = GFX_evt_crusaders
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = OK
+		FROM = {
+			random_demesne_title = {
+				limit = {
+					has_law = the_crusade_target
+				}
+				hidden_tooltip = {
+					# FIXME: is there a dejure_capital type trigger?
+					# (seeing as there are such flags in landed_titles)
+					# if so, it would be smart to grant the DJ capital
+					# county title first.
+					any_de_jure_vassal_title = {
+						limit = {
+							is_feudal = yes
+							holder_scope = { character = PREVPREVPREV }
+						}
+						grant_title = ROOT
+					}
+					any_de_jure_vassal_title = {
+						limit = {
+							holder_scope = { character = PREVPREVPREV }
+						}
+						grant_title = ROOT
+					}
+				}
+				grant_title = ROOT
+				revoke_law = the_crusade_target
+			}
+		}
+		set_defacto_liege = THIS
+		add_character_modifier = {
+			name = formation_of_rum
+			duration = 9125
+		}
+		# TODO: fix scopes
+		spawn_unit = {
+			province = PREV
+			home = PREV
+			troops =
+			{
+				heavy_infantry = { 2000 2000 }
+				knights = { 500 500 }
+			}
+		}
+		# TODO: fix opposites
+		random_list = {
+			20 = { add_trait = strong }
+			20 = { add_trait = brave }
+			20 = { add_trait = ambitious }
+			20 = { add_trait = zealous }
+			20 = { add_trait = diligent }
+		}
+		wealth = 250
+		prestige = 200
+		piety = 100
+		#Ensure some decent councilors
+		create_random_priest = {
+			random_traits = yes
+			dynasty = random
+			female = no
+			religion = ROOT
+			culture = ROOT
+		}
+		create_random_steward = {
+			random_traits = yes
+			dynasty = random
+			female = no
+			religion = ROOT
+			culture = ROOT
+		}
+		create_random_soldier = {
+			random_traits = yes
+			dynasty = random
+			female = no
+			religion = ROOT
+			culture = ROOT
+		}
+		create_random_intriguer = {
+			random_traits = yes
+			dynasty = random
+			female = no
+			religion = ROOT
+			culture = ROOT
+		}
+		create_random_diplomat = {
+			random_traits = yes
+			dynasty = random
+			female = no
+			religion = ROOT
+			culture = ROOT
+		}
+		capital_scope = { # FIXME: this is currently a random county that
+						  # that is highly unlikely to be the capital after
+						  # a couple game-days pass.
+			religion = ROOT
+		}
+		# NOTE: presently impossible, since all options leading to this event
+		#       grant only to non-rulers, and all the titles transferred are
+		#       directly in the demesne of the new ruler (whom should have no
+		#       vassals yet).  also, if we wanted to give-up our land back home,
+		#       we're not actually giving our demesne titles that are not de
+		#       jure vassals of our new crusader state to FROM, so he would
+		#       be getting, e.g., barons without control of the county.
+		any_vassal = {
+			limit = {
+				NOT = { de_jure_liege_or_above = ROOT }
+			}
+			set_defacto_liege = FROM
+		}
+	}
+}
