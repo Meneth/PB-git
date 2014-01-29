@@ -32,39 +32,39 @@ spriteTypes = {
 	#Loans
 	spriteType = {
 		name = "GFX_toggle_loan_decisions"
-		texturefile = "gfx\\interface\\decision_icon_loans.dds"
+		texturefile = "gfx\\interface\\decision_icon_take_loan.tga"
 	}
 	spriteType = {
 		name = "GFX_take_small_loan"
-		texturefile = "gfx\\interface\\decision_icon_loans.dds"
+		texturefile = "gfx\\interface\\decision_icon_take_loan.tga"
 	}
 	spriteType = {
 		name = "GFX_take_medium_loan"
-		texturefile = "gfx\\interface\\decision_icon_loans.dds"
+		texturefile = "gfx\\interface\\decision_icon_take_loan.tga"
 	}
 	spriteType = {
 		name = "GFX_take_large_loan"
-		texturefile = "gfx\\interface\\decision_icon_loans.dds"
+		texturefile = "gfx\\interface\\decision_icon_take_loan.tga"
 	}
 	spriteType = {
 		name = "GFX_take_huge_loan"
-		texturefile = "gfx\\interface\\decision_icon_loans.dds"
+		texturefile = "gfx\\interface\\decision_icon_take_loan.tga"
 	}
 	spriteType = {
 		name = "GFX_repay_small_loan"
-		texturefile = "gfx\\interface\\decision_icon_loans.dds"
+		texturefile = "gfx\\interface\\decision_icon_repay_loan.tga"
 	}
 	spriteType = {
 		name = "GFX_repay_medium_loan"
-		texturefile = "gfx\\interface\\decision_icon_loans.dds"
+		texturefile = "gfx\\interface\\decision_icon_repay_loan.tga"
 	}
 	spriteType = {
 		name = "GFX_repay_large_loan"
-		texturefile = "gfx\\interface\\decision_icon_loans.dds"
+		texturefile = "gfx\\interface\\decision_icon_repay_loan.tga"
 	}
 	spriteType = {
 		name = "GFX_repay_huge_loan"
-		texturefile = "gfx\\interface\\decision_icon_loans.dds"
+		texturefile = "gfx\\interface\\decision_icon_repay_loan.tga"
 	}
 	#Prisoner interactions
 	spriteType = {
@@ -90,44 +90,44 @@ spriteTypes = {
 	#War checks
 	spriteType = {
 		name = "GFX_holy_war_cb"
-		texturefile = "gfx\\interface\\decision_icon_war_checks.dds"
+		texturefile = "gfx\\interface\\decision_icon_war_checks.tga"
 	}
 	spriteType = {
 		name = "GFX_holy_war_clear"
-		texturefile = "gfx\\interface\\decision_icon_war_checks.dds"
+		texturefile = "gfx\\interface\\decision_icon_war_checks.tga"
 	}
 	spriteType = {
 		name = "GFX_holy_war_any"
-		texturefile = "gfx\\interface\\decision_icon_war_holy.dds"
+		texturefile = "gfx\\interface\\decision_icon_war_holy.tga"
 	}
 	spriteType = {
 		name = "GFX_holy_war_pagan"
-		texturefile = "gfx\\interface\\decision_icon_war_holy.dds"
+		texturefile = "gfx\\interface\\decision_icon_war_holy.tga"
 	}
 	spriteType = {
 		name = "GFX_holy_war_non_de_jure"
-		texturefile = "gfx\\interface\\decision_icon_war_holy.dds"
+		texturefile = "gfx\\interface\\decision_icon_war_holy.tga"
 	}
 	spriteType = {
 		name = "GFX_holy_war_no_border"
-		texturefile = "gfx\\interface\\decision_icon_war_holy.dds"
+		texturefile = "gfx\\interface\\decision_icon_war_holy.tga"
 	}
 	spriteType = {
 		name = "GFX_pagan_subjugation_check"
-		texturefile = "gfx\\interface\\decision_icon_war_subjugation.dds"
+		texturefile = "gfx\\interface\\decision_icon_war_subjugation.tga"
 	}
 	spriteType = {
 		name = "GFX_pagan_subjugation_wrong_kingdom_check"
-		texturefile = "gfx\\interface\\decision_icon_war_subjugation.dds"
+		texturefile = "gfx\\interface\\decision_icon_war_subjugation.tga"
 	}
 	#Various
 	spriteType = {
 		name = "GFX_create_hre"
-		texturefile = "gfx\\interface\\decision_icon_create_hre.DDS"
+		texturefile = "gfx\\interface\\decision_icon_create_hre.tga"
 	}
 	spriteType = {
 		name = "GFX_create_hre_france"
-		texturefile = "gfx\\interface\\decision_icon_create_hre.DDS"
+		texturefile = "gfx\\interface\\decision_icon_create_hre.tga"
 	}
 	spriteType = {
 		name = "GFX_mend_great_schism_catholic"
@@ -147,7 +147,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_request_dejure_vassal_transfer"
-		texturefile = "gfx\\interface\\decision_icon_dejure_transfer.dds"
+		texturefile = "gfx\\interface\\decision_icon_request_dejure_vassal_transfer.tga"
 	}
 	spriteType = {
 		name = "GFX_bring_out_of_hiding"
@@ -155,7 +155,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_violate_baqt"
-		texturefile = "gfx\\interface\\decision_icon_violate_baqt.dds"
+		texturefile = "gfx\\interface\\decision_icon_violate_baqt.tga"
 	}
 	spriteType = {
 		name = "GFX_prepare_for_converter"
