@@ -384,7 +384,7 @@ character_event = {
 			20 = { add_trait = zealous }
 			20 = { add_trait = diligent }
 		}
-		wealth = 250
+		wealth = 500 #Z: was 250, but some characters were starting slightly in the red
 		prestige = 200
 		piety = 100
 		#Ensure some decent councilors
