@@ -10,6 +10,9 @@
 	Ported depose_antipope and cb_install_antiking casus belli as well as the Anti-King Faction from vanilla
 	Ankara falling to Muslims will no longer trigger the Crusades, seeing as it fell in 1071 historically without triggering anything
 	Different religious heads cannot call crusades for the same title simultaneously
+	Upon winning a crusade, the Pope, mercenary bands, and holy orders now always grant the crusader state to a new, highborn ruler with no possible inheritance ties to elsewhere. Other AI winners are still more likely to grant it to a secondary son, brother, relative, etc., although they never keep it for themselves.
+	All de jure titles within a crusade (or jihad) target kingdom and within the realm of the defending ruler should now always be transferred to the crusade winner, regardless of whether they were involved in a revolt against the defending ruler at the time of crusade success.
+	A lot of internal changes to the crusade/jihad casus belli: mechanics now differ for Jihads in one notable case (if the target kingdom has not yet been created or the title has been destroyed and the most participating attacker is the initiating Caliph, they will now actually create the target title like Catholics)
 
 3.4.2
 	Shattered Balance, No Ahistorical Empires, and Gender Equality can now be enabled in-game before first unpausing the game

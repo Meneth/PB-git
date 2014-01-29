@@ -31,6 +31,8 @@ character_event = {
 					}
 				}
 				usurp_title = ROOT
+				# TODO: possibly need to modify succession law (as we may need to
+				#       do with the target kingdom in general in the CB)
 			}
 			any_de_jure_vassal_title = {
 				limit = {
@@ -285,7 +287,7 @@ character_event = {
 				is_ruler = no
 				is_primary_heir = no
 				opinion = { who = ROOT value = 0 }
-				reverse_opinion = { who = ROOT value = 0 }
+				reverse_opinion = { who = ROOT value = 30 }
 				trait = crusader
 			}
 			OR = {
@@ -302,7 +304,7 @@ character_event = {
 				is_ruler = no
 				is_primary_heir = no
 				opinion = { who = ROOT value = 0 }
-				reverse_opinion = { who = ROOT value = 0 }
+				reverse_opinion = { who = ROOT value = 30 }
 				trait = crusader
 			}
 			character_event = { id = pb_crusades.2 }
@@ -337,6 +339,10 @@ character_event = {
 					has_law = the_crusade_target
 				}
 				hidden_tooltip = {
+					# FIXME: is there a dejure_capital type trigger?
+					# (seeing as there are such flags in landed_titles)
+					# if so, it would be smart to grant the DJ capital
+					# county title first.
 					any_de_jure_vassal_title = {
 						limit = {
 							is_feudal = yes
@@ -417,12 +423,18 @@ character_event = {
 			religion = ROOT
 			culture = ROOT
 		}
-		capital_scope = {
+		capital_scope = { # FIXME: this is currently a random county that
+						  # that is highly unlikely to be the capital after
+						  # a couple game-days pass.
 			religion = ROOT
 		}
-		# TODO: should be impossible, since all options leading to this event
+		# NOTE: presently impossible, since all options leading to this event
 		#       grant only to non-rulers, and all the titles transferred are
-		#       directly in the demesne of the new ruler
+		#       directly in the demesne of the new ruler (whom should have no
+		#       vassals yet).  also, if we wanted to give-up our land back home,
+		#       we're not actually giving our demesne titles that are not de
+		#       jure vassals of our new crusader state to FROM, so he would
+		#       be getting, e.g., barons without control of the county.
 		any_vassal = {
 			limit = {
 				NOT = { de_jure_liege_or_above = ROOT }
