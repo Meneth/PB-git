@@ -400,14 +400,102 @@ character_event = {
 			name = formation_of_rum
 			duration = 9125
 		}
-		# TODO: fix scopes
-		spawn_unit = {
-			province = PREV
-			home = PREV
-			troops =
-			{
-				heavy_infantry = { 2000 2000 }
-				knights = { 500 500 }
+		wealth = 500 #Z: was 250, but some characters were starting slightly in the red
+		prestige = 200
+		piety = 100
+		capital_scope = {
+			root = {
+				# Spawn 3 regiments, each with 1000 troops and a good, but randomized, commander
+				create_character = {
+					random_traits = yes
+					dynasty = random
+					religion = ROOT
+					culture = ROOT
+					female = no
+					age = 30
+					attributes = {
+						martial = 12
+					}
+				}
+				new_character = {
+					character_event = { id = pb_crusades.4 } # Assign appropriate traits/attributes [immediate]
+
+					spawn_unit = {
+						province = PREVPREV
+						home = PREVPREV
+						owner = ROOT
+						leader = THIS
+						attrition = 1.0
+						troops =
+						{ # Unit total: 1000
+							archers = { 150 150 }
+							pikemen = { 150 150 }
+							heavy_infantry = { 250 250 }
+							light_cavalry = { 250 250 }
+							knights = { 200 200 }
+						}
+					}
+				}
+				create_character = {
+					random_traits = yes
+					dynasty = random
+					religion = ROOT
+					culture = ROOT
+					female = no
+					age = 35
+					attributes = {
+						martial = 12
+					}
+				}
+				new_character = {
+					character_event = { id = pb_crusades.4 } # Assign appropriate traits/attributes [immediate]
+
+					spawn_unit = {
+						province = PREVPREV
+						home = PREVPREV
+						owner = ROOT
+						leader = THIS
+						attrition = 1.0
+						troops =
+						{ # Unit total: 1000
+							archers = { 150 150 }
+							pikemen = { 150 150 }
+							heavy_infantry = { 250 250 }
+							light_cavalry = { 250 250 }
+							knights = { 200 200 }
+						}
+					}
+				}
+				create_character = {
+					random_traits = yes
+					dynasty = random
+					religion = ROOT
+					culture = ROOT
+					female = no
+					age = 27
+					attributes = {
+						martial = 12
+					}
+				}
+				new_character = {
+					character_event = { id = pb_crusades.4 } # Assign appropriate traits/attributes [immediate]
+
+					spawn_unit = {
+						province = PREVPREV
+						home = PREVPREV
+						owner = ROOT
+						leader = THIS
+						attrition = 1.0
+						troops =
+						{ # Unit total: 1000
+							archers = { 150 150 }
+							pikemen = { 150 150 }
+							heavy_infantry = { 250 250 }
+							light_cavalry = { 250 250 }
+							knights = { 200 200 }
+						}
+					}
+				}
 			}
 		}
 		random_list = {
@@ -424,10 +512,7 @@ character_event = {
 			20 = { remove_trait = cynical add_trait = zealous }
 			20 = { remove_trait = slothful add_trait = diligent }
 		}
-		wealth = 500 #Z: was 250, but some characters were starting slightly in the red
-		prestige = 200
-		piety = 100
-		#Ensure some decent councilors
+		#Ensure some decent councilors (aside from the marshal, who can come from the crusader generals)
 		create_random_priest = {
 			random_traits = yes
 			dynasty = random
@@ -436,13 +521,6 @@ character_event = {
 			culture = ROOT
 		}
 		create_random_steward = {
-			random_traits = yes
-			dynasty = random
-			female = no
-			religion = ROOT
-			culture = ROOT
-		}
-		create_random_soldier = {
 			random_traits = yes
 			dynasty = random
 			female = no
@@ -483,3 +561,105 @@ character_event = {
 		}
 	}
 }
+
+
+# pb_crusades.3
+# Remove all education traits [immediate]
+#
+# Useful for all random character generation, may
+# eventually belong somewher else.
+character_event = {
+	id = pb_crusades.3
+	desc = OK
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		remove_trait = amateurish_plotter
+		remove_trait = flamboyant_schemer
+		remove_trait = intricate_webweaver
+		remove_trait = elusive_shadow
+		remove_trait = naive_appeaser
+		remove_trait = underhanded_rogue
+		remove_trait = charismatic_negotiator
+		remove_trait = grey_eminence
+		remove_trait = indulgent_wastrel
+		remove_trait = thrifty_clerk
+		remove_trait = fortune_builder
+		remove_trait = midas_touched
+		remove_trait = misguided_warrior
+		remove_trait = tough_soldier
+		remove_trait = skilled_tactician
+		remove_trait = brilliant_strategist
+		remove_trait = detached_priest
+		remove_trait = martial_cleric
+		remove_trait = scholarly_theologian
+		remove_trait = mastermind_theologian
+	}
+	
+	option = { name = OK }
+}
+
+
+# pb_crusades.4
+# Adjust the traits/attributes of a randomized crusader general [immediate]
+character_event = {
+	id = pb_crusades.4
+	desc = OK
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		character_event = { id = pb_crusades.3 } # Remove ed. traits [immediately]
+		random_list = {
+			67 = { add_trait = brilliant_strategist }
+			33 = { add_trait = skilled_tactician }
+		}
+		if = {
+			limit = { trait = brilliant_strategist }
+			random_list = {
+				75 = { add_trait = master_warrior }
+				25 = { add_trait = skilled_warrior }
+			}
+			# Brilliant strategists get one free leadership trait by default
+			random_list = {
+				50  = { add_trait = light_foot_leader }
+				50  = { add_trait = heavy_infantry_leader }
+				100 = { add_trait = cavalry_leader }
+				100 = { add_trait = inspiring_leader }
+				100 = { add_trait = trickster }
+				100 = { add_trait = organizer }
+				100 = { add_trait = defensive_leader }
+				100 = { add_trait = experimenter }
+				100 = { add_trait = flanker }
+				100 = { add_trait = aggressive_leader }
+				100 = { add_trait = siege_leader }
+				100 = { add_trait = narrow_flank_leader }
+				20  = { add_trait = flat_terrain_leader }
+				20  = { add_trait = rough_terrain_leader }
+				20  = { add_trait = mountain_terrain_leader }
+				200 = { add_trait = desert_terrain_leader }
+				250 = { add_trait = holy_warrior }
+				100 = { add_trait = unyielding_leader }
+			}
+		}
+		if = {
+			limit = { trait = skilled_tactician }
+			random_list = {
+				33 = { add_trait = master_warrior }
+				67 = { add_trait = skilled_warrior }
+			}
+		}
+		# Slightly randomize the martial attribute (+/- 2 from 12, uniform)
+		random_list = {
+			20 = { change_martial = -2 }
+			20 = { change_martial = -1 }
+			20 = { }
+			20 = { change_martial =  1 }
+			20 = { change_martial =  2 }
+		}
+	}
+	
+	option = { name = OK }
+}
+
