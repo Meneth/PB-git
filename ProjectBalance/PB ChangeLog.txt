@@ -16,6 +16,8 @@
 	[BETA-ONLY ISSUE] No more duplicate 'Depose Antipope' CBs (reporting and troubleshooting credit goes to Olem)
 	Gavelkind succession faction CB now has a consistent 5-year truce and missing AI victory/defeat worth weights (reporting credit goes to AnaxXiphos)
 	The CB other_succession_on_liege (third-party pushing a succession claim against his liege) now properly converts the claimant to feudal type (vs. clergy, e.g.), whenever appropriate (reporting credit goes to AnaxXiphos)
+	Fixed an issue with the CB description localisation/text for Muslim County Conquest (reporting credit goes to AnaxXiphos)
+	Very slightly buffed new crusader state formation; added consistency, flavor, and fixes
 
 3.4.2
 	Shattered Balance, No Ahistorical Empires, and Gender Equality can now be enabled in-game before first unpausing the game
