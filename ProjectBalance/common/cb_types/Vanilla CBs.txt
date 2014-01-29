@@ -3306,22 +3306,9 @@ crusade = {
 					is_crusade = yes # Even if the title holder is not participating in the war, gain holdings occupied by all Crusade participants
 				}
 			}
-			any_de_jure_vassal_title = {
-				limit = {
-					holder_scope = { #Handle revolters
-						top_liege = { #Should work at any level of revolt
-							in_revolt = yes
-							liege_before_war = {
-								character = FROM
-							}
-						}
-					}
-				}
-				kingdom = {
-					holder_scope = {
-						usurp_title = PREVPREV
-					}
-				}
+			hidden_tooltip = {
+				add_law = the_crusade_target
+				holder_scope = { character_event = { id = pb_crusades.0 } } #Handle revolters [immediately]
 			}
 		}
 		
@@ -3342,75 +3329,40 @@ crusade = {
 					title = PREV
 					enemy = FROM
 				}
-				if  = {
-					limit = {
-						#primary_title = { is_primary_type_title = no } # Mercs, the Pope, Holy Orders, etc
-						PREV = { has_holder = no }
-						OR = {
-							NOT = { character = ROOT }
-							independent = yes
-							liege = {
-								tier = EMPEROR
-							}
-						}
-					}
-					usurp_title = PREV
-					
-					PREV = {
-						any_de_jure_vassal_title = {
-							limit = {
-								holder_scope = { #Handle revolters
-									top_liege = { #Should work at any level of revolt
-										in_revolt = yes
-										liege_before_war = {
-											character = FROM
-										}
-									}
-								}
-							}
-							kingdom = {
-								holder_scope = {
-									usurp_title = PREVPREV
-								}
-							}
-						}
-					}
-					
+				usurp_title = PREV #Z: a slight change to PB crusade mechanics for non-catholics
+				hidden_tooltip = {
 					if = {
 						limit = {
 							NOT = { culture = PREV }
 						}
-						hidden_tooltip = { PREV = { conquest_culture = THIS } }
+						PREV = { conquest_culture = THIS }
 					}
-				}
-				if = {
-					limit = { ROOT = { religion = catholic } }
-					PREV = {
-						add_law = the_crusade_target
-					}
+				
+					PREV = { add_law = the_crusade_target }
+					character_event = { id = pb_crusades.0 } #Handle revolters [immediately]
+
 					if = {
 						limit = {
-							NOT = {
-								PREV = {
-									holder_scope = {
-										character = PREVPREV
-									}
-								}
+							OR = {
+								ROOT = { religion = catholic } #A catholic crusade
+								primary_title = { holy_order = yes } #Also want to give away the kingdom if a holy order won it
+								primary_title = { mercenary = yes } #Also want to give away the kingdom if a mercenary won it
 							}
 						}
-						destroy_landed_title = PREV
-						usurp_title = PREV
+						character_event = { id = pb_crusades.1 } #Give away the kingdom [potentially]
 					}
-					character_event = { id = meneth.204 } #Give away the kingdom
 				}
 			}
 		}
 		
-		if = {
-			limit = {
-				holder_scope = { character = FROM }
+		# Z: this should clearly no longer be possible, but it can't hurt, so I'm leaving it.
+		hidden_tooltip = {
+			if = {
+				limit = {
+					holder_scope = { character = FROM }
+				}
+				destroy_landed_title = THIS
 			}
-			destroy_landed_title = THIS
 		}
 		
 		any_attacker = {
