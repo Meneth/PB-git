@@ -338,24 +338,58 @@ character_event = {
 				limit = {
 					has_law = the_crusade_target
 				}
-				hidden_tooltip = {
-					# FIXME: is there a dejure_capital type trigger?
-					# (seeing as there are such flags in landed_titles)
-					# if so, it would be smart to grant the DJ capital
-					# county title first.
-					any_de_jure_vassal_title = {
-						limit = {
+				
+				# If possible, first grant the de jure capital county title
+				# Obviously, this is catholic-focused.
+				if = { # Jerusalem
+					limit = {
+						c_jerusalem = {
+							de_jure_liege_or_above = PREV
 							is_feudal = yes
-							holder_scope = { character = PREVPREVPREV }
 						}
-						grant_title = ROOT
 					}
-					any_de_jure_vassal_title = {
-						limit = {
-							holder_scope = { character = PREVPREVPREV }
+					c_jerusalem = { grant_title = ROOT }
+				}
+				if = { # Andalusia
+					limit = {
+						c_cordoba = {
+							de_jure_liege_or_above = PREV
+							is_feudal = yes
 						}
-						grant_title = ROOT
 					}
+					c_cordoba = { grant_title = ROOT }
+				}
+				if = { # Byzantium / Thessalonika
+					limit = {
+						c_byzantion = {
+							de_jure_liege_or_above = PREV
+							is_feudal = yes
+						}
+					}
+					c_byzantion = { grant_title = ROOT }
+				}
+				if = { # Sicily
+					limit = {
+						c_palermo = {
+							de_jure_liege_or_above = PREV
+							is_feudal = yes
+						}
+					}
+					c_palermo = { grant_title = ROOT }
+				}
+				
+				any_de_jure_vassal_title = {
+					limit = {
+						is_feudal = yes
+						holder_scope = { character = PREVPREVPREV }
+					}
+					grant_title = ROOT
+				}
+				any_de_jure_vassal_title = {
+					limit = {
+						holder_scope = { character = PREVPREVPREV }
+					}
+					grant_title = ROOT
 				}
 				grant_title = ROOT
 				revoke_law = the_crusade_target
