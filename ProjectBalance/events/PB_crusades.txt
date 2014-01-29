@@ -90,7 +90,7 @@ character_event = {
 	
 	#Keep it
 	option = {
-		name = meneth.204.a
+		name = pb_crusades.1.a
 		trigger = {
 			ai = no
 		}
