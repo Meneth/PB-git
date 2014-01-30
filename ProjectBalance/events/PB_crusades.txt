@@ -150,6 +150,7 @@ character_event = {
 				is_alive = yes
 				is_ruler = no
 				is_primary_heir = no
+				religion = ROOT
 			}
 			OR = {
 				ai = no
@@ -164,6 +165,7 @@ character_event = {
 				is_alive = yes
 				is_ruler = no
 				is_primary_heir = no
+				religion = ROOT
 			}
 			character_event = { id = pb_crusades.2 }
 		}
@@ -181,6 +183,7 @@ character_event = {
 				is_alive = yes
 				is_ruler = no
 				is_primary_heir = no
+				religion = ROOT
 			}
 			OR = {
 				ai = no
@@ -195,6 +198,7 @@ character_event = {
 				is_alive = yes
 				is_ruler = no
 				is_primary_heir = no
+				religion = ROOT
 			}
 			character_event = { id = pb_crusades.2 }
 		}
@@ -208,6 +212,7 @@ character_event = {
 					is_alive = yes
 					is_ruler = no
 					is_primary_heir = no
+					religion = ROOT
 				}
 			}
 		}
@@ -223,6 +228,7 @@ character_event = {
 				is_ruler = no
 				is_primary_heir = no
 				is_close_relative = ROOT
+				religion = ROOT
 			}
 			OR = {
 				ai = no
@@ -238,6 +244,7 @@ character_event = {
 				is_ruler = no
 				is_primary_heir = no
 				is_close_relative = ROOT
+				religion = ROOT
 			}
 			character_event = { id = pb_crusades.2 }
 		}
@@ -255,6 +262,7 @@ character_event = {
 				is_alive = yes
 				is_ruler = no
 				is_primary_heir = no
+				religion = ROOT
 			}
 			OR = {
 				ai = no
@@ -269,6 +277,7 @@ character_event = {
 				is_alive = yes
 				is_ruler = no
 				is_primary_heir = no
+				religion = ROOT
 			}
 			character_event = { id = pb_crusades.2 }
 		}
@@ -289,6 +298,7 @@ character_event = {
 				opinion = { who = ROOT value = 0 }
 				reverse_opinion = { who = ROOT value = 30 }
 				trait = crusader
+				religion = ROOT
 			}
 			OR = {
 				ai = no
@@ -306,6 +316,7 @@ character_event = {
 				opinion = { who = ROOT value = 0 }
 				reverse_opinion = { who = ROOT value = 30 }
 				trait = crusader
+				religion = ROOT
 			}
 			character_event = { id = pb_crusades.2 }
 		}
@@ -317,7 +328,7 @@ character_event = {
 
 
 # pb_crusades.2
-# Crusader State Granted to New Ruler (CB supplement)
+# Crusader State Granted to New Ruler [immediate]
 #
 # Moved from meneth.207 (out of PB_various.txt)
 #
@@ -326,61 +337,29 @@ character_event = {
 # FROMFROM = initiator of crusade
 character_event = {
 	id = pb_crusades.2
-	desc = OK # Should only be reached by AI characters
-	picture = GFX_evt_crusaders
-	
+	desc = OK # Should only be reached by AI characters	
+	hide_window = yes
 	is_triggered_only = yes
 	
-	option = {
-		name = OK
+	immediate = {
 		FROM = {
 			random_demesne_title = {
-				limit = {
-					has_law = the_crusade_target
-				}
-				
-				# If possible, first grant the de jure capital county title
-				# Obviously, this is catholic-focused.
-				if = { # Jerusalem
-					limit = {
-						c_jerusalem = {
-							de_jure_liege_or_above = PREV
-							is_feudal = yes
-						}
-					}
-					c_jerusalem = { grant_title = ROOT }
-				}
-				if = { # Andalusia
-					limit = {
-						c_cordoba = {
-							de_jure_liege_or_above = PREV
-							is_feudal = yes
-						}
-					}
-					c_cordoba = { grant_title = ROOT }
-				}
-				if = { # Byzantium / Thessalonika
-					limit = {
-						c_byzantion = {
-							de_jure_liege_or_above = PREV
-							is_feudal = yes
-						}
-					}
-					c_byzantion = { grant_title = ROOT }
-				}
-				if = { # Sicily
-					limit = {
-						c_palermo = {
-							de_jure_liege_or_above = PREV
-							is_feudal = yes
-						}
-					}
-					c_palermo = { grant_title = ROOT }
-				}
+				limit = { has_law = the_crusade_target }
+
+				# NOTE: When FROM is a holy order, mercenary, the Pope, independent
+				#       theocrat, or a republican, the trigger 'is_feudal = yes'
+				#       may not be true until the game has run for a couple of days.
+				#       However, we can ensure that a castle is granted to the
+				#       character first by checking the holding_type trigger, and
+				#       that's sufficient. All succession laws are ensured to be
+				#       properly feudal, wherever appropriate, by pb_crusades.5
 				
 				any_de_jure_vassal_title = {
 					limit = {
-						is_feudal = yes
+						OR = {
+							is_feudal = yes
+							holding_type = castle
+						}
 						holder_scope = { character = PREVPREVPREV }
 					}
 					grant_title = ROOT
@@ -391,18 +370,68 @@ character_event = {
 					}
 					grant_title = ROOT
 				}
+				
 				grant_title = ROOT
-				revoke_law = the_crusade_target
+				revoke_law = the_crusade_target # No need to track the crusade target any longer
 			}
-		}
+		} # Title transfer complete
+		
 		set_defacto_liege = THIS
+		character_event = { id = pb_crusades.5 } # Ensure desirable succession laws now that independent
+
+		# Try to set the capital to the de jure capital of the crusader state.
+		# The AI will do whatever it wants afterward, of course.
+		
+		# Rather than worry about whether the de jure capital of the crusader state
+		# is_feudal = yes yet, simply set the character's capital to the de jure
+		# capital province, and let them sort out any possible character type
+		# issues automatically (whether the province_capital is no longer a castle
+		# for some reason or succession law changes haven't yet taken effect).
+
+		random_demesne_title = {
+			limit = { tier = king }
+			
+			if = { limit = { c_jerusalem = { de_jure_liege_or_above = PREV } }
+				c_jerusalem = { location = { ROOT = { capital = PREV } } } # Jerusalem
+			}
+			if = { limit = { c_cordoba = { de_jure_liege_or_above = PREV } }
+				c_cordoba = { location = { ROOT = { capital = PREV } } } # Andalusia
+			}
+			if = { limit = { c_byzantion = { de_jure_liege_or_above = PREV } }
+				c_byzantion = { location = { ROOT = { capital = PREV } } } # Byzantium / Thessalonika
+			}
+			if = { limit = { c_palermo = { de_jure_liege_or_above = PREV } }
+				c_palermo = { location = { ROOT = { capital = PREV } } } # Sicily
+			}
+			# TODO: Egypt
+		}
+		
+		# And now we leave all titles and laws of the realm behind...
+
 		add_character_modifier = {
 			name = formation_of_rum
 			duration = 9125
 		}
+		
 		wealth = 500 #Z: was 250, but some characters were starting slightly in the red
 		prestige = 200
 		piety = 100
+		
+		random_list = {
+			20 = { remove_trait = weak add_trait = strong }
+			20 = { remove_trait = craven add_trait = brave }
+			20 = { remove_trait = content add_trait = ambitious }
+			20 = { remove_trait = cynical add_trait = zealous }
+			20 = { remove_trait = slothful add_trait = diligent }
+		}
+		random_list = {
+			20 = { remove_trait = weak add_trait = strong }
+			20 = { remove_trait = craven add_trait = brave }
+			20 = { remove_trait = content add_trait = ambitious }
+			20 = { remove_trait = cynical add_trait = zealous }
+			20 = { remove_trait = slothful add_trait = diligent }
+		}
+		
 		capital_scope = {
 			religion = ROOT # Capital's official religion changes to crusaders'
 		
@@ -497,21 +526,8 @@ character_event = {
 				}
 			}
 		}
-		random_list = {
-			20 = { remove_trait = weak add_trait = strong }
-			20 = { remove_trait = craven add_trait = brave }
-			20 = { remove_trait = content add_trait = ambitious }
-			20 = { remove_trait = cynical add_trait = zealous }
-			20 = { remove_trait = slothful add_trait = diligent }
-		}
-		random_list = {
-			20 = { remove_trait = weak add_trait = strong }
-			20 = { remove_trait = craven add_trait = brave }
-			20 = { remove_trait = content add_trait = ambitious }
-			20 = { remove_trait = cynical add_trait = zealous }
-			20 = { remove_trait = slothful add_trait = diligent }
-		}
-		#Ensure some decent councilors (aside from the marshal, who can come from the crusader generals)
+		
+		#Ensure some decent councilors (aside from marshal-- a crusader general is a better pick)
 		create_random_priest = {
 			random_traits = yes
 			dynasty = random
@@ -540,20 +556,9 @@ character_event = {
 			religion = ROOT
 			culture = ROOT
 		}
-		# NOTE: presently impossible, since all options leading to this event
-		#       grant only to non-rulers, and all the titles transferred are
-		#       directly in the demesne of the new ruler (whom should have no
-		#       vassals yet).  also, if we wanted to give-up our land back home,
-		#       we're not actually giving our demesne titles that are not de
-		#       jure vassals of our new crusader state to FROM, so he would
-		#       be getting, e.g., barons without control of the county.
-		any_vassal = {
-			limit = {
-				NOT = { de_jure_liege_or_above = ROOT }
-			}
-			set_defacto_liege = FROM
-		}
 	}
+	
+	option = { name = OK }
 }
 
 
@@ -561,7 +566,7 @@ character_event = {
 # Remove all education traits [immediate]
 #
 # Useful for all random character generation, may
-# eventually belong somewher else.
+# eventually belong somewhere else.
 character_event = {
 	id = pb_crusades.3
 	desc = OK
@@ -651,6 +656,100 @@ character_event = {
 			20 = { }
 			20 = { change_martial =  1 }
 			20 = { change_martial =  2 }
+		}
+	}
+	
+	option = { name = OK }
+}
+
+
+# pb_crusades.5
+# Normalize succession laws of target kingdom [immediate]
+#
+# NOTE: Meant to be called from pb_crusades.2 after title transfer from giver
+#
+# ROOT = AI ruler of crusader state
+# FROM = ROOT
+# FROMFROM = giver of crusade target kingdom
+character_event = {
+	id = pb_crusades.5
+	desc = OK
+	hide_window = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		# Only alter the succession laws if FROMFROM's were undesirable for the
+		# crusader state. Otherwise, copy their primary title's succession law.
+		# Gender succession laws are always left as-is, currently.
+		FROMFROM = {
+			primary_title = {
+				NOT = {
+					has_law = succ_gavelkind
+					has_law = succ_primogeniture
+					has_law = succ_seniority
+					has_law = succ_feudal_elective
+#					has_law = succ_tanistry
+					has_law = succ_turkish_succession
+				}
+			}
+		}
+	}
+	
+	immediate = {
+		random_demesne_title = {
+			limit = { tier = king }
+
+			if = {
+				limit = { ROOT = { NOT = { religion_group = muslim } } }
+				
+				# Non-muslims default to gavelkind for the new realm
+
+				# NOTE: Feudal elective might be a more accurate choice for
+				#       these crusader states and also prevent, say, the KoJ
+				#       from being inherited by the giver/winner or a landed
+				#       relative back home.
+				
+				if = {
+					limit = { NOT = { has_law = succ_gavelkind } }
+					add_law = succ_gavelkind # To the target kingdom
+				}
+				
+				# For the feudal titles... (the rest will auto-correct)
+				any_de_jure_vassal_title = {
+					limit = {
+						OR = {
+							higher_tier_than = baron # If a county capital is not a castle, this won't matter
+							holding_type = castle
+						}
+						NOT = { has_law = succ_gavelkind }
+					}
+					add_law = succ_gavelkind
+				}
+			} # Non-muslim
+			
+			if = {
+				limit = { ROOT = { religion_group = muslim } }
+				
+				# Muslim feudal titles always use agnatic open.
+				
+				if = {
+					limit = { NOT = { has_law = succ_turkish_succession } }
+					add_law = succ_turkish_succession # To the target kingdom
+				}
+				
+				# For the feudal titles... (the rest will auto-correct)
+				any_de_jure_vassal_title = {
+					limit = {
+						OR = {
+							higher_tier_than = baron # If a county capital is a city, this won't matter
+							holding_type = castle
+							holding_type = temple
+						}
+						NOT = { has_law = succ_turkish_succession }
+					}
+					add_law = succ_turkish_succession
+				}
+			} # Muslim
 		}
 	}
 	
