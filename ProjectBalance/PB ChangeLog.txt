@@ -1,8 +1,8 @@
-3.4.3
+3.4.3 [BETA]
 	Bugfix for Jewish players not being able to take loans via the decisions menu. AI Jews could still take loans
 	Autonomy faction is now guaranteed to not be created by the AI for 6 months after game startup. This allows a player vassal plenty of time to start the faction (i.e., be the leader) if they so desire. Ideally, the faction will become even more democratic in future releases, but the leader currently plays a pivotal role in setting the agenda of meetings
-	Minor flavor improvements: Changed a bunch of event pictures and added varied death causes to the useless courtier killing event [AnaxXiphos]
-	First round of decision icon improvements: Updated all prisoner related icons [AnaxXiphos]
+	Minor flavor improvements: Changed a bunch of event pictures, added varied death causes to the useless courtier killing event, added new hourglass modifier icons, tweaked event modifier icon choices, improved localisations for pagan subjugation CB and Become King ambition [AnaxXiphos]
+	Decision icon improvements: Updated all icons except employment and marriage [AnaxXiphos]
 	Whenever your children are not in your court (e.g., as a result of a political marriage) and lack a good reason for it, you will be alerted with the decision to bring them home. Rank restrictions apply to multiplayer. Icon by AnaxXiphos
 	Guardian events: fixed those that assume age of adulthood is 16 and that child was actually part of liege's court, increased likelihood of a good candidate for guardianship when vassals offer, increased delay before a vassal offers to mentor your newly-6-year-old child (fewer and less annoying popups), and so on
 	Ensured that the crusade target is always destroyed if it cannot be usurped and the war target holds the title
@@ -10,6 +10,17 @@
 	Ported depose_antipope and cb_install_antiking casus belli as well as the Anti-King Faction from vanilla
 	Ankara falling to Muslims will no longer trigger the Crusades, seeing as it fell in 1071 historically without triggering anything
 	Different religious heads cannot call crusades for the same title simultaneously
+	Upon winning a crusade, the Pope, mercenary bands, and holy orders now always grant the crusader state to a new, highborn ruler with no possible inheritance ties to elsewhere. Other AI winners are still more likely to grant it to a secondary son, brother, relative, etc., although they never keep it for themselves
+	All de jure titles within a crusade (or jihad) target kingdom and within the realm of the defending ruler should now always be transferred to the crusade winner, regardless of whether they were involved in a revolt against the defending ruler at the time of crusade success.
+	A lot of internal changes to the crusade/jihad casus belli: mechanics now differ for Jihads in one notable case (if the target kingdom has not yet been created or the title has been destroyed and the most participating attacker is the initiating Caliph, they will now actually create the target title like Catholics)
+	[BETA-ONLY ISSUE] No more duplicate 'Depose Antipope' CBs (reporting and troubleshooting credit goes to Olem)
+	Gavelkind succession faction CB now has a consistent 5-year truce and missing AI victory/defeat worth weights (reporting credit goes to AnaxXiphos)
+	The CB other_succession_on_liege (third-party pushing a succession claim against his liege) now properly converts the claimant to feudal type (vs. clergy, e.g.), whenever appropriate (reporting credit goes to AnaxXiphos)
+	Fixed an issue with the CB description localisation/text for Muslim County Conquest (reporting credit goes to AnaxXiphos)
+	Very slightly buffed new crusader state formation; added consistency, flavor, and fixes
+	Fixed tribal invasion cb not allowing Mongols to invade non-Mongols
+	Whenever a crusade/jihad is won and the crusade/jihad target kingdom changes hands or is newly created, all of the new realm's succession laws are now guaranteed to be appropriately feudal
+	For most crusade targets, the AI will use and automatically convert the religion of the kingdom's de jure capital
 
 3.4.2
 	Shattered Balance, No Ahistorical Empires, and Gender Equality can now be enabled in-game before first unpausing the game
