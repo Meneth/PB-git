@@ -135,15 +135,15 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_toggle_marriage_decisions"
-		texturefile = "gfx\\interface\\decision_icon_marriage.dds"
+		texturefile = "gfx\\interface\\decision_icon_marriage.tga"
 	}
 	spriteType = {
 		name = "GFX_marry_courtiers"
-		texturefile = "gfx\\interface\\decision_icon_marriage.dds"
+		texturefile = "gfx\\interface\\decision_icon_marriage.tga"
 	}
 	spriteType = {
 		name = "GFX_marry_courtier"
-		texturefile = "gfx\\interface\\decision_icon_marriage.dds"
+		texturefile = "gfx\\interface\\decision_icon_marriage.tga"
 	}
 	spriteType = {
 		name = "GFX_request_dejure_vassal_transfer"
