@@ -46,10 +46,12 @@ claim = {
 				text = religious_enemy
 				hidden_tooltip = {
 					ROOT = {
-						NOT = { religion_group = FROM }
-						is_heresy_of = FROM
-						is_parent_religion = FROM
-						FROM = { excommunicated_for = ROOT }
+						OR = {
+							NOT = { religion_group = FROM }
+							is_heresy_of = FROM
+							is_parent_religion = FROM
+							FROM = { excommunicated_for = ROOT }
+						}
 					}
 				}
 			}
@@ -266,10 +268,12 @@ other_claim = {
 				text = religious_enemy
 				hidden_tooltip = {
 					FROMFROM = {
-						NOT = { religion_group = FROM }
-						is_heresy_of = FROM
-						is_parent_religion = FROM
-						FROM = { excommunicated_for = FROMFROM }
+						OR = {
+							NOT = { religion_group = FROM }
+							is_heresy_of = FROM
+							is_parent_religion = FROM
+							FROM = { excommunicated_for = FROMFROM }
+						}
 					}
 				}
 			}
@@ -1695,10 +1699,12 @@ claim_all = {
 				text = religious_enemy
 				hidden_tooltip = {
 					ROOT = {
-						NOT = { religion_group = FROM }
-						is_heresy_of = FROM
-						is_parent_religion = FROM
-						FROM = { excommunicated_for = ROOT }
+						OR = {
+							NOT = { religion_group = FROM }
+							is_heresy_of = FROM
+							is_parent_religion = FROM
+							FROM = { excommunicated_for = ROOT }
+						}
 					}
 				}
 			}

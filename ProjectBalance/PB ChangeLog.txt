@@ -21,6 +21,7 @@
 	Fixed tribal invasion cb not allowing Mongols to invade non-Mongols
 	Whenever a crusade/jihad is won and the crusade/jihad target kingdom changes hands or is newly created, all of the new realm's succession laws are now guaranteed to be appropriately feudal
 	For most crusade targets, the AI will use and automatically convert the religion of the kingdom's de jure capital
+	Fixed an issue causing religious enemies not to be recognized for the purpose of bypassing the alliance restrictions on some CBs
 
 3.4.2
 	Shattered Balance, No Ahistorical Empires, and Gender Equality can now be enabled in-game before first unpausing the game
