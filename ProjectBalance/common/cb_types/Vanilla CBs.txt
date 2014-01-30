@@ -2855,8 +2855,10 @@ tribal_invasion = {
 		}
 		OR = {
 			NOT = {
+				AND = {
 				FROM = { culture = mongol }
 				ROOT = { culture = mongol }
+				}
 			}
 			year = 1350
 		}
