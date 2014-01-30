@@ -150,6 +150,7 @@ character_event = {
 				is_alive = yes
 				is_ruler = no
 				is_primary_heir = no
+				religion = ROOT
 			}
 			OR = {
 				ai = no
@@ -164,6 +165,7 @@ character_event = {
 				is_alive = yes
 				is_ruler = no
 				is_primary_heir = no
+				religion = ROOT
 			}
 			character_event = { id = pb_crusades.2 }
 		}
@@ -181,6 +183,7 @@ character_event = {
 				is_alive = yes
 				is_ruler = no
 				is_primary_heir = no
+				religion = ROOT
 			}
 			OR = {
 				ai = no
@@ -195,6 +198,7 @@ character_event = {
 				is_alive = yes
 				is_ruler = no
 				is_primary_heir = no
+				religion = ROOT
 			}
 			character_event = { id = pb_crusades.2 }
 		}
@@ -208,6 +212,7 @@ character_event = {
 					is_alive = yes
 					is_ruler = no
 					is_primary_heir = no
+					religion = ROOT
 				}
 			}
 		}
@@ -223,6 +228,7 @@ character_event = {
 				is_ruler = no
 				is_primary_heir = no
 				is_close_relative = ROOT
+				religion = ROOT
 			}
 			OR = {
 				ai = no
@@ -238,6 +244,7 @@ character_event = {
 				is_ruler = no
 				is_primary_heir = no
 				is_close_relative = ROOT
+				religion = ROOT
 			}
 			character_event = { id = pb_crusades.2 }
 		}
@@ -255,6 +262,7 @@ character_event = {
 				is_alive = yes
 				is_ruler = no
 				is_primary_heir = no
+				religion = ROOT
 			}
 			OR = {
 				ai = no
@@ -269,6 +277,7 @@ character_event = {
 				is_alive = yes
 				is_ruler = no
 				is_primary_heir = no
+				religion = ROOT
 			}
 			character_event = { id = pb_crusades.2 }
 		}
@@ -289,6 +298,7 @@ character_event = {
 				opinion = { who = ROOT value = 0 }
 				reverse_opinion = { who = ROOT value = 30 }
 				trait = crusader
+				religion = ROOT
 			}
 			OR = {
 				ai = no
@@ -306,6 +316,7 @@ character_event = {
 				opinion = { who = ROOT value = 0 }
 				reverse_opinion = { who = ROOT value = 30 }
 				trait = crusader
+				religion = ROOT
 			}
 			character_event = { id = pb_crusades.2 }
 		}
