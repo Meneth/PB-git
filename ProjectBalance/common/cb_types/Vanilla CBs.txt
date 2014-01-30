@@ -3568,7 +3568,8 @@ crusade = {
 		factor = 100
 	}
 }
-
+# This CB is far more restricted in PB than in vanilla. Primarily this is achieved by adding trait requirements
+# Many of the requirements are waived base
 religious = {
 	name = CB_NAME_RELIGIOUS
 	war_name = WAR_NAME_RELIGIOUS

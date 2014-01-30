@@ -1,6 +1,6 @@
 # Castle
+#This set of buildings prevents barons and counts with only one county from raising any retinues, as for them it is a pointless moneysink
 castle = {
-	# Prevents barons from having retinues
 	ca_retinues = {
 		auto_add_at_year = 10
 		trigger = { TECH_FORTIFICATIONS_CONSTRUCTION = 0 }
@@ -22,7 +22,6 @@ castle = {
 	}
 }
 city = {
-	# Prevents barons from having retinues
 	ct_retinues = {
 		auto_add_at_year = 10
 		trigger = { TECH_FORTIFICATIONS_CONSTRUCTION = 0 }
@@ -44,7 +43,6 @@ city = {
 	}
 }
 temple = {
-	# Prevents barons from having retinues
 	tp_retinues = {
 		auto_add_at_year = 10
 		trigger = { TECH_FORTIFICATIONS_CONSTRUCTION = 0 }

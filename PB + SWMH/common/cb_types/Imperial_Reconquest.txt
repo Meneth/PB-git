@@ -1,3 +1,11 @@
+#This casus belli replaces the vanilla one, and instead uses a tier system to determine what kingdoms are valid targets
+#To unlock a tier, all tiers before it have to be completely conquered
+#Tier 1: Byzantium
+#Tier 2: Balkans and Sicily
+#Tier 3: Italy, Levant, and Eastern/Central North Africa
+#Tier 4: Western North Africa and Iberia
+#Tier 5: France
+#Tier 6: England, Wales, and (southern) Germany
 imperial_reconquest = {
 	name = CB_NAME_IMPERIAL
 	war_name = WAR_NAME_IMPERIAL

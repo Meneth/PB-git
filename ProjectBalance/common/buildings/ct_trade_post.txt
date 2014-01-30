@@ -1,4 +1,6 @@
 # City
+# This set of building provides historical centers of trade with increased tax revenue and tech growth
+# Much of the technology spread in PB is based around trade centers. They can also manually be constructed, but are very expensive
 city = {
 	ct_trade_post_1 = {
 		prerequisites = {
