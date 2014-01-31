@@ -23,6 +23,7 @@
 	For most crusade targets, the AI will use and automatically convert the religion of the kingdom's de jure capital
 	Fixed an issue causing religious enemies not to be recognized for the purpose of bypassing the alliance restrictions on some CBs
 	Improved the localisation of the requirements for enacting tanistry
+	Added new icons for the gender laws, including Enatic-Cognatic and Enatic which both had no icon, by AnaxXiphos
 
 3.4.2
 	Shattered Balance, No Ahistorical Empires, and Gender Equality can now be enabled in-game before first unpausing the game
