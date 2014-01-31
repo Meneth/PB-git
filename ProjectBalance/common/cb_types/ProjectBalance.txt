@@ -1,4 +1,4 @@
-#Plots to remove or lower dejure laws
+# This CB can be used by the Autonomy faction in order to remove the Internal Peace crown law
 remove_internal_peace = {
 	name = CB_NAME_REMOVE_INTERNAL_PEACE
 	war_name = WAR_NAME_REMOVE_INTERNAL_PEACE
@@ -61,7 +61,7 @@ remove_internal_peace = {
 					add_law = emperor_peace_0
 				}
 			}
-			custom_tooltip = {
+			custom_tooltip = { # 15 year cooldown before another law can be revoked
 				text = ca_revoke_cooldown_ctt
 				hidden_tooltip = {
 					add_character_modifier = {
@@ -137,7 +137,7 @@ remove_internal_peace = {
 		factor = 100
 	}
 }
-
+# This CB can be used by the Autonomy faction in order to remove the Title Revocation crown law
 remove_revokation = {
 	name = CB_NAME_REMOVE_REVOKATION
 	war_name = WAR_NAME_REMOVE_REVOKATION
@@ -197,7 +197,7 @@ remove_revokation = {
 				}
 				add_law = revokation_0
 			}
-			custom_tooltip = {
+			custom_tooltip = { # 15 year cooldown before revoking another law
 				text = ca_revoke_cooldown_ctt
 				hidden_tooltip = {
 					add_character_modifier = {
@@ -273,7 +273,7 @@ remove_revokation = {
 		factor = 100
 	}
 }
-
+# This CB can be used by the Autonomy faction in order to remove the Protected Inheritance crown law
 remove_inheritance = {
 	name = CB_NAME_REMOVE_INHERITANCE
 	war_name = WAR_NAME_REMOVE_INHERITANCE
@@ -323,7 +323,7 @@ remove_inheritance = {
 				limit = { has_law = inheritance_1 }
 				add_law = inheritance_0
 			}
-			custom_tooltip = {
+			custom_tooltip = { # 15 year cooldown before removing another crown law
 				text = ca_revoke_cooldown_ctt
 				hidden_tooltip = {
 					add_character_modifier = {
@@ -399,8 +399,8 @@ remove_inheritance = {
 		factor = 100
 	}
 }
-
-# also for merely reducing obligations when crown levies cannot be reduced
+# This CB can be used by the Autonomy faction in order to reduce the Crown Levies crown law
+# Will merely reducing obligations when crown levies cannot be reduced
 reduce_crown_levies = {
 	name = CB_NAME_REDUCE_CROWN_LEVIES
 	war_name = WAR_NAME_REDUCE_CROWN_LEVIES
@@ -471,7 +471,7 @@ reduce_crown_levies = {
 						add_law = crown_levies_3
 					}
 				}
-				custom_tooltip = {
+				custom_tooltip = { # 15 year cooldown before removing another crown law
 					text = ca_revoke_cooldown_ctt
 					hidden_tooltip = {
 						add_character_modifier = {
@@ -569,8 +569,10 @@ reduce_crown_levies = {
 		factor = 100
 	}
 }
-
-#Retake the coast
+# If the Sultanate of Rum forms, the Byzantines will later usually get the chance to attempt to retake the coast
+# This CB cannot be used at any other time. It will cause every coastal county held by Rum in the dejure Byzantine empire 
+# to revert to Byzantine control. Failure (not white peace) to retake the coast will cause the Byzantines to lose their
+# dejure claims to Anatolia, and all of Anatolia bar Cilicia will become dejure Rum
 retake_the_coast = {
 	name = CB_NAME_RETAKE_THE_COAST
 	war_name = WAR_NAME_RETAKE_THE_COAST
@@ -656,8 +658,9 @@ retake_the_coast = {
 		factor = 100
 	}
 }
-
-#Norman Conquest of the Balkans
+#Between 1066 and his death, Robert of Apulia starts at war with the Byzantines, as happened historically
+#A victory will gain him much of the Balkan coast. Loss (not white peace) removes his claims
+#The target of the war is the kingdom of Epirus, though not all of the kingdom will be taken in a victory
 conquest_of_the_balkans = {
 	name = CB_NAME_INVASION
 	war_name = WAR_NAME_INVASION
@@ -741,8 +744,9 @@ conquest_of_the_balkans = {
 		factor = 100
 	}
 }
-
-#Bulgarian uprising
+#If the sultanate of Rum forms, Bulgarian unrest will usually start. If the Byzantines decide to crack down on it,
+#the Bulgarians may revolt. Victory will cause all of the dejure Bulgarian Empire held by Byzantium to be forfeit
+#Loss (not white peace) will cause the Bulgarian Empire to cease to exist dejure, becoming Byzantine once more
 bulgarian_uprising = {
 	name = CB_NAME_INVASION
 	war_name = BULGARIAN_UPRISING
@@ -843,7 +847,8 @@ bulgarian_uprising = {
 		factor = 100
 	}
 }
-
+#This CB is an alternative to the regular holy war. It can only target duchies with at least one province of the attacker's religion,
+#but otherwise has far more relaxed requirements than holy war
 retake_religious_lands = {
 	name = CB_NAME_RETAKE_RELIGIOUS
 	war_name = WAR_NAME_RETAKE_RELIGIOUS
@@ -859,7 +864,7 @@ retake_religious_lands = {
 			is_patrician = no
 			is_merchant_republic = no
 		}
-		NOT = {
+		NOT = { # The Rum Sultanate often needs a bit of help stabilizing
 			FROM = {
 				has_character_modifier = formation_of_rum
 			}
@@ -1197,7 +1202,8 @@ retake_religious_lands = {
 		factor = 100
 	}
 }
-
+# This CB is unique to a few specific titles. Some of the Christian holy orders get to use it with nearly no restrictions against specific religious groups
+# The king of Jerusalem also gets to use it freely within his dejure kingdom
 special_holy_war = {
 	name = CB_NAME_SPECIAL_RELIGIOUS
 	war_name = WAR_NAME_RELIGIOUS

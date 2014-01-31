@@ -56,7 +56,12 @@ character_event = {
 	
 	option = {
 		name = meneth.201.a
-		death = { death_reason = death_accident }
+		random_list = {
+			50 = { death = { death_reason = death_poor_health } }
+			28 = { death = { death_reason = death_natural } }
+			20 = { death = { death_reason = death_accident } }
+			2 = { death = { death_reason = death_suicide } }
+		}
 	}
 }
 
@@ -559,319 +564,15 @@ character_event = {
 	}
 }
 
-#Crusader States
-character_event = {
-	id = meneth.204
-	desc = meneth.204.desc
-	picture = GFX_evt_crusaders
-	
-	is_triggered_only = yes
-	
-	#Keep it
-	option = {
-		name = meneth.204.a
-		trigger = {
-			ai = no
-		}
-		revoke_law = the_crusade_target
-		ai_chance = {
-			factor = 0
-		}
-	}
-	#Give it to a secondary son
-	option = {
-		name = meneth.204.b
-		trigger = {
-			any_child = {
-				is_female = no
-				is_adult = yes
-				is_alive = yes
-				is_ruler = no
-				is_primary_heir = no
-			}
-		}
-		prestige = 200
-		random_child = {
-			limit = {
-				is_female = no
-				is_adult = yes
-				is_alive = yes
-				is_ruler = no
-				is_primary_heir = no
-			}
-			character_event = { id = meneth.207 }
-		}
-		ai_chance = {
-			factor = 100
-		}
-	}
-	#Give it to a brother
-	option = {
-		name = meneth.204.c
-		trigger = {
-			any_sibling = {
-				is_female = no
-				is_adult = yes
-				is_alive = yes
-				is_ruler = no
-				is_primary_heir = no
-			}
-		}
-		prestige = 200
-		random_sibling = {
-			limit = {
-				is_female = no
-				is_adult = yes
-				is_alive = yes
-				is_ruler = no
-				is_primary_heir = no
-			}
-			character_event = { id = meneth.207 }
-		}
-		ai_chance = {
-			factor = 100
-			modifier = {
-				factor = 0
-				any_child = {
-					is_female = no
-					is_adult = yes
-					is_alive = yes
-					is_ruler = no
-					is_primary_heir = no
-				}
-			}
-		}
-	}
-	#Give it to a close relative
-	option = {
-		name = meneth.204.d
-		trigger = {
-			any_dynasty_member = {
-				is_female = no
-				is_adult = yes
-				is_alive = yes
-				is_ruler = no
-				is_primary_heir = no
-				is_close_relative = ROOT
-			}
-		}
-		prestige = 200
-		random_dynasty_member = {
-			limit = {
-				is_female = no
-				is_adult = yes
-				is_alive = yes
-				is_ruler = no
-				is_primary_heir = no
-				is_close_relative = ROOT
-			}
-			character_event = { id = meneth.207 }
-		}
-		ai_chance = {
-			factor = 50
-		}
-	}
-	#Give it to a dynasty member
-	option = {
-		name = meneth.204.e
-		trigger = {
-			any_dynasty_member = {
-				is_female = no
-				is_adult = yes
-				is_alive = yes
-				is_ruler = no
-				is_primary_heir = no
-			}
-		}
-		prestige = 200
-		random_dynasty_member = {
-			limit = {
-				is_female = no
-				is_adult = yes
-				is_alive = yes
-				is_ruler = no
-				is_primary_heir = no
-			}
-			character_event = { id = meneth.207 }
-		}
-		ai_chance = {
-			factor = 25
-		}
-	}
-	#Give it to a courtier
-	option = {
-		name = meneth.204.f
-		trigger = {
-			any_realm_character = {
-				is_female = no
-				is_adult = yes
-				is_alive = yes
-				is_ruler = no
-				is_primary_heir = no
-				opinion = { who = ROOT value = 0 }
-				reverse_opinion = { who = ROOT value = 0 }
-				trait = crusader
-			}
-		}
-		prestige = 200
-		random_realm_character = {
-			limit = {
-				is_female = no
-				is_adult = yes
-				is_alive = yes
-				is_ruler = no
-				is_primary_heir = no
-				opinion = { who = ROOT value = 0 }
-				reverse_opinion = { who = ROOT value = 0 }
-				trait = crusader
-			}
-			character_event = { id = meneth.207 }
-		}
-		ai_chance = {
-			factor = 15
-		}
-	}
-	#Generate a new character
-	option = {
-		name = meneth.204.g
-		trigger = {
-			ai = yes
-		}
-		prestige = 200
-		create_character = {
-			random_traits = no
-			age = 25
-			dynasty = random
-			female = no
-			religion = ROOT
-			culture = ROOT
-			trait = crusader
-			trait = diligent
-			trait = quick
-			trait = brave
-			trait = brilliant_strategist
-			attributes = {
-				martial = 10
-				learning = 5
-				stewardship = 7
-				intrigue = 5
-				diplomacy = 7
-			}
-		}
-		new_character = {
-			character_event = { id = meneth.207 }
-		}
-		ai_chance = {
-			factor = 5
-		}
-	}
-}
+###
+# meneth.204 -> pb_crusades.1 (PB_crusades.txt)
+# FREE
+###
 
-#Crusader States
-character_event = {
-	id = meneth.207
-	desc = meneth.200.desc
-	picture = GFX_evt_crusaders
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = meneth.204.a
-		FROM = {
-			random_demesne_title = {
-				limit = {
-					has_law = the_crusade_target
-				}
-				hidden_tooltip = {
-					any_de_jure_vassal_title = {
-						limit = {
-							is_feudal = yes
-							holder_scope = { character = PREVPREVPREV }
-						}
-						grant_title = ROOT
-					}
-					any_de_jure_vassal_title = {
-						limit = {
-							holder_scope = { character = PREVPREVPREV }
-						}
-						grant_title = ROOT
-					}
-				}
-				grant_title = ROOT
-				revoke_law = the_crusade_target
-			}
-		}
-		set_defacto_liege = THIS
-		add_character_modifier = {
-			name = formation_of_rum
-			duration = 9125
-		}
-		spawn_unit = {
-			province = PREV
-			home = PREV
-			troops =
-			{
-				heavy_infantry = { 2000 2000 }
-				knights = { 500 500 }
-			}
-		}
-		random_list = {
-			20 = { add_trait = strong }
-			20 = { add_trait = brave }
-			20 = { add_trait = ambitious }
-			20 = { add_trait = zealous }
-			20 = { add_trait = diligent }
-		}
-		wealth = 250
-		prestige = 200
-		piety = 100
-		#Ensure some decent councilors
-		create_random_priest = {
-			random_traits = yes
-			dynasty = random
-			female = no
-			religion = ROOT
-			culture = ROOT
-		}
-		create_random_steward = {
-			random_traits = yes
-			dynasty = random
-			female = no
-			religion = ROOT
-			culture = ROOT
-		}
-		create_random_soldier = {
-			random_traits = yes
-			dynasty = random
-			female = no
-			religion = ROOT
-			culture = ROOT
-		}
-		create_random_intriguer = {
-			random_traits = yes
-			dynasty = random
-			female = no
-			religion = ROOT
-			culture = ROOT
-		}
-		create_random_diplomat = {
-			random_traits = yes
-			dynasty = random
-			female = no
-			religion = ROOT
-			culture = ROOT
-		}
-		capital_scope = {
-			religion = ROOT
-		}
-		any_vassal = {
-			limit = {
-				NOT = { de_jure_liege_or_above = ROOT }
-			}
-			set_defacto_liege = FROM
-		}
-	}
-}
+###
+# meneth.207 -> pb_crusades.2 (PB_crusades.txt)
+# FREE
+###
 
 # Revolt in isolated province
 province_event = {
@@ -1243,7 +944,7 @@ character_event = {
 	id = meneth.209
 	
 	desc = meneth.209.desc
-	picture = GFX_evt_battle
+	picture = GFX_evt_pope
 	border = GFX_event_normal_frame_religion
 	
 	only_rulers = yes
@@ -1349,8 +1050,8 @@ character_event = {
 	id = meneth.213
 	
 	desc = meneth.213.desc
-	picture = GFX_evt_battle
-	border = GFX_event_normal_frame_religion
+	picture = GFX_evt_emissary
+	border = GFX_event_normal_frame_diplomacy
 	
 	is_triggered_only = yes
 	
@@ -1428,8 +1129,8 @@ character_event = {
 	id = meneth.214
 	
 	desc = meneth.214.desc
-	picture = GFX_evt_battle
-	border = GFX_event_normal_frame_religion
+	picture = GFX_evt_garden
+	border = GFX_event_normal_frame_diplomacy
 	
 	is_triggered_only = yes
 	
@@ -1443,8 +1144,8 @@ character_event = {
 	id = meneth.215
 	
 	desc = meneth.215.desc
-	picture = GFX_evt_battle
-	border = GFX_event_normal_frame_religion
+	picture = GFX_evt_into_the_dungeon
+	border = GFX_event_normal_frame_diplomacy
 	
 	is_triggered_only = yes
 	
@@ -1497,7 +1198,7 @@ character_event = {
 	id = meneth.217
 	
 	desc = meneth.217.desc
-	picture = GFX_evt_battle
+	picture = GFX_evt_council
 	border = GFX_event_normal_frame_religion
 	
 	only_independent = yes

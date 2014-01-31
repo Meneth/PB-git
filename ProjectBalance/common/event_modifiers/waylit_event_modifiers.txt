@@ -4,7 +4,7 @@ stalwart_defender = {
 	martial = 2
 	monthly_character_prestige = 0.5
 	monthly_character_piety = 1
-	icon = 9
+	icon = 1
 }
 
 modifier_hidden = {
@@ -20,5 +20,5 @@ escaped_siege = {
 
 left_at_siege = {
 	martial = 1
-	icon = 9
+	icon = 1
 }

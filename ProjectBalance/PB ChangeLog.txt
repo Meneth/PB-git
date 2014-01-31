@@ -1,28 +1,55 @@
+3.4.3
+	Bugfix for Jewish players not being able to take loans via the decisions menu. AI Jews could still take loans
+	Autonomy faction is now guaranteed to not be created by the AI for 6 months after game startup. This allows a player vassal plenty of time to start the faction (i.e., be the leader) if they so desire. Ideally, the faction will become even more democratic in future releases, but the leader currently plays a pivotal role in setting the agenda of meetings
+	Minor flavor improvements: Changed a bunch of event pictures, added varied death causes to the useless courtier killing event, added new hourglass modifier icons, tweaked event modifier icon choices, improved localisations for pagan subjugation CB and Become King ambition [AnaxXiphos]
+	Decision icon improvements: Updated all icons except employment [AnaxXiphos]
+	Whenever your children are not in your court (e.g., as a result of a political marriage) and lack a good reason for it, you will be alerted with the decision to bring them home. Rank restrictions apply to multiplayer. Icon by AnaxXiphos
+	Guardian events: fixed those that assume age of adulthood is 16 and that child was actually part of liege's court, increased likelihood of a good candidate for guardianship when vassals offer, increased delay before a vassal offers to mentor your newly-6-year-old child (fewer and less annoying popups), and so on
+	Ensured that the crusade target is always destroyed if it cannot be usurped and the war target holds the title
+	(PB+SWMH) Fixed there being no centers of trade
+	Ported depose_antipope and cb_install_antiking casus belli as well as the Anti-King Faction from vanilla
+	Ankara falling to Muslims will no longer trigger the Crusades, seeing as it fell in 1071 historically without triggering anything
+	Different religious heads cannot call crusades for the same title simultaneously
+	Upon winning a crusade, the Pope, mercenary bands, and holy orders now always grant the crusader state to a new, highborn ruler with no possible inheritance ties to elsewhere. Other AI winners are still more likely to grant it to a secondary son, brother, relative, etc., although they never keep it for themselves
+	All de jure titles within a crusade (or jihad) target kingdom and within the realm of the defending ruler should now always be transferred to the crusade winner, regardless of whether they were involved in a revolt against the defending ruler at the time of crusade success.
+	A lot of internal changes to the crusade/jihad casus belli: mechanics now differ for Jihads in one notable case (if the target kingdom has not yet been created or the title has been destroyed and the most participating attacker is the initiating Caliph, they will now actually create the target title like Catholics)
+	Gavelkind succession faction CB now has a consistent 5-year truce and missing AI victory/defeat worth weights (reporting credit goes to AnaxXiphos)
+	The CB other_succession_on_liege (third-party pushing a succession claim against his liege) now properly converts the claimant to feudal type (vs. clergy, e.g.), whenever appropriate (reporting credit goes to AnaxXiphos)
+	Fixed an issue with the CB description localisation/text for Muslim County Conquest (reporting credit goes to AnaxXiphos)
+	Very slightly buffed new crusader state formation; added consistency, flavor, and fixes
+	Fixed tribal invasion cb not allowing Mongols to invade non-Mongols
+	Whenever a crusade/jihad is won and the crusade/jihad target kingdom changes hands or is newly created, all of the new realm's succession laws are now guaranteed to be appropriately feudal
+	For most crusade targets, the AI will use and automatically convert the religion of the kingdom's de jure capital
+	Fixed an issue causing religious enemies not to be recognized for the purpose of bypassing the alliance restrictions on some CBs
+	Improved the localisation of the requirements for enacting tanistry
+	Added new icons for the gender laws, including Enatic-Cognatic and Enatic which both had no icon, by AnaxXiphos
+	"Blinded" is now considered a health trait, which for example means it'll prevent you from conducting grand hunts
+
 3.4.2
 	Shattered Balance, No Ahistorical Empires, and Gender Equality can now be enabled in-game before first unpausing the game
 	(PB+SWMH) Fixed three provinces in Ethiopia having no holdings
 	Reduced PB's across the board fertility penalty to 5% (from 10%)
 	(PB+SWMH+NBRT+) Fixed an issue where movement involving a few specific provinces would take months rather than days
-	Fixed mismatched localisation for autonomy faction military vs. economic cooperation (they were doing the opposite of what they informed you) [zijistark]
-	Autonomy faction military and economic cooperation now effect the entire subrealm of each faction member, providing a small but significant realm-level boost to the military or economic might of faction members relative to their liege. A bit more danger for the liege and yet also good for his/her realm if the faction votes for it [zijistark]
+	Fixed mismatched localisation for autonomy faction military vs. economic cooperation (they were doing the opposite of what they informed you)
+	Autonomy faction military and economic cooperation now effect the entire subrealm of each faction member, providing a small but significant realm-level boost to the military or economic might of faction members relative to their liege. A bit more danger for the liege and yet also good for his/her realm if the faction votes for it
 	The autonomy faction factor from legalism tech now ranges from 0 to 8 instead of -2 to 6
 	Improved the localisation for some CB requirement localisation
 	Fixed Muslim city vassal request event so it works properly when city obligations are set to maximum [AnaxXiphos]
 	Members of the Autonomy faction that have been coerced by their liege's spymaster will now always vote in their liege's favor when it comes to negative actions. They will never vote for the angry faction mood
 	(PB+SWMH) Fixed Imperial Reconquest not working in the French tier
-	Crown law revocation via faction ultimatums or _any kind_ of revolt now induce a cooldown period of 15 years before a crown law may again be revoked via such a mechanism. NOTES: If a claimant of any kind usurps the throne, all CA sliders are reduced regardless of any cooldown, and if present, it's removed. If the liege is deposed, overthrown, or replaced due to a succession war and all CA sliders are reduced due to lack of cooldown protection, a new cooldown period starts for the new liege. Finally, the cooldown is removed from a title if the liege grants it to a new ruler [zijistark]
-	Fixed double-abdication bug with the autonomy faction's abdication ultimatum (child pretenders on the throne, anyone?) [zijistark]
-	Various minor bugfixes for the autonomy faction [zijistark]
-	Successful faction revolts that revoke crown laws no longer "use-up" the liege's once-in-a-lifetime right to change a crown law, if he/she hadn't already changed one beforehand. This was already the case for some faction revolts and is now consistent [zijistark]
-	Regular factions (non-autonomy) will now now wait to submit a revolt ultimatum until after their liege is no longer using ANY of the 3 holy war CBs in PB [zijistark]
-	Moderate nerf of the feudal elective faction. The faction is generally more tolerant than the other succession law factions, more easily dissuaded/coerced, less subject to transient issues which will definitely be solved-- at least by the AI-- in due time, and generally slower to jump to an ultimatum. Testing shows that it's quite possible, e.g., for an AI France to avoid an overwhelming elective faction revolt within 5 years of the 1066 start (previously a problem) but that the faction still remains a threat in those scenarios [zijistark]
-	Autonomy faction event text overhauled to add flavor and be read from a first-person perspective like other CKII events [zijistark]
-	Autonomy faction now highly unlikely to call a meeting while their liege is in the middle of a large-scale offensive war such as a crusade, invasion, or holy war; actual tolerated delay and chance of a meeting being called anyway past a certain point vary by the war's casus belli [zijistark]
+	Crown law revocation via faction ultimatums or _any kind_ of revolt now induce a cooldown period of 15 years before a crown law may again be revoked via such a mechanism. NOTES: If a claimant of any kind usurps the throne, all CA sliders are reduced regardless of any cooldown, and if present, it's removed. If the liege is deposed, overthrown, or replaced due to a succession war and all CA sliders are reduced due to lack of cooldown protection, a new cooldown period starts for the new liege. Finally, the cooldown is removed from a title if the liege grants it to a new ruler
+	Fixed double-abdication bug with the autonomy faction's abdication ultimatum (child pretenders on the throne, anyone?)
+	Various minor bugfixes for the autonomy faction
+	Successful faction revolts that revoke crown laws no longer "use-up" the liege's once-in-a-lifetime right to change a crown law, if he/she hadn't already changed one beforehand. This was already the case for some faction revolts and is now consistent
+	Regular factions (non-autonomy) will now now wait to submit a revolt ultimatum until after their liege is no longer using ANY of the 3 holy war CBs in PB
+	Moderate nerf of the feudal elective faction. The faction is generally more tolerant than the other succession law factions, more easily dissuaded/coerced, less subject to transient issues which will definitely be solved-- at least by the AI-- in due time, and generally slower to jump to an ultimatum. Testing shows that it's quite possible, e.g., for an AI France to avoid an overwhelming elective faction revolt within 5 years of the 1066 start (previously a problem) but that the faction still remains a threat in those scenarios
+	Autonomy faction event text overhauled to add flavor and be read from a first-person perspective like other CKII events
+	Autonomy faction now highly unlikely to call a meeting while their liege is in the middle of a large-scale offensive war such as a crusade, invasion, or holy war; actual tolerated delay and chance of a meeting being called anyway past a certain point vary by the war's casus belli
 
 3.4.1
 	Updated the implementation of the New Duel Engine to its latest version
-	Combat/fighter traits (for the duel engine) are again customizable in the Ruler Designer [zijistark]
-	Added combat trait advancement (CTA) system for adult rulers under 50 (and their marshals). Earn experience points toward trait level-up via personal participation in battles and all types of victorious duels. Dramatically decrease the time taken to advance by applying yourself toward the new, associated set of ambitions. Age, skill tier, and traits will also impact your rate of progress. You may only advance 1 level beyond that with which you reach adulthood. In the exceptional case that you start with no combat education whatsoever, then you are allowed to advance up to 2 levels. [zijistark]
+	Combat/fighter traits (for the duel engine) are again customizable in the Ruler Designer
+	Added combat trait advancement (CTA) system for adult rulers under 50 (and their marshals). Earn experience points toward trait level-up via personal participation in battles and all types of victorious duels. Dramatically decrease the time taken to advance by applying yourself toward the new, associated set of ambitions. Age, skill tier, and traits will also impact your rate of progress. You may only advance 1 level beyond that with which you reach adulthood. In the exceptional case that you start with no combat education whatsoever, then you are allowed to advance up to 2 levels.
 	Added swanky ambition icon for all four CTA ambitions (credit goes to AnaxXiphos)
 	The starting trade posts are now built by event rather than using the history files, simplifying maintenance of PB, and reducing the chance of bugs
 	Fixed the Autonomy faction being able to demand a county be given away when their liege was under, rather than over, the demesne limit
@@ -31,9 +58,9 @@
 	Merged the loans from Jewish bankers with PB's system. Main difference is that expelling Jews now frees one from PB's loans, and that loans are inherited by one's heir. The AI will now also take loans if bankrupt
 	Stewardship now reduces the interest charged on loans by 1% per 5 stewardship, capping out at a 3% reduction (7% interest rate)
 	It is now possible to repay half a loan (except 100g loans) if the size of loan below it is available. E.G., if you've got a 400g loan but no 200g loan you can repay 200g of the 400g loan
-	AI loan-taking and loan-repayment are now much more prompt, esp. when at war (inversely so for repayment during war) [zijistark]
-	Jewish rulers may now also take loans, although they cannot escape their debts by simply "Expelling the Jewry" [zijistark]
-	Closed some borrowing loopholes that would allow holy orders, mercenary bands, claimant adventurers, rebels, etc. to take loans from Jewish merchants [zijistark]
+	AI loan-taking and loan-repayment are now much more prompt, esp. when at war (inversely so for repayment during war)
+	Jewish rulers may now also take loans, although they cannot escape their debts by simply "Expelling the Jewry"
+	Closed some borrowing loopholes that would allow holy orders, mercenary bands, claimant adventurers, rebels, etc. to take loans from Jewish merchants
 	Portage across the Suez now takes approximately six weeks rather than one
 	The claimant faction can no longer be started if the claimant is theocratic and the target title is not
 
@@ -45,14 +72,14 @@
 	Added ARKO as a dependency, simplifying the use of ARKO + PB (no files have to be deleted any more). Makes no difference for users not using ARKO
 	Improved the localisation of some CB restrictions
 	Fixed it not being possible to appoint female councillors when using Enatic or Absolute Enatic succession. Women can now lead armies and be marshals under Enatic and Absolute Enatic succession
-	Councillors opinion of their liege now has a minor effect on their job performance (credit goes to zijistark)
+	Councillors opinion of their liege now has a minor effect on their job performance
 	Italia (empire-tier) can now be formed by Sicilians
 	(PB+SWMH) Reduced the Baqt tax modifier to 40% (from 50%). Remains at 50% in PB without SWMH
 	The coastal county conquest CB now specifically bans Muslims from using it, instead of only allowing Christians to use it
 	(Gender Equality) There's no longer an opinion penalty for female rulers/heirs
 	Ensured that randomly generated characters cannot get the Rum and Immortal traits
 	Fixed the creation of a French HRE triggering the event about a German HRE being formed
-	Added correct text for new Italian mounted crossbowmen (cavalry) cultural buildings [zijistark]
+	Added correct text for new Italian mounted crossbowmen (cavalry) cultural buildings
 	(PB+SWMH) Fixed the conditions for gender laws being a bit outdated
 	(PB+SWMH) Fixed issues with historical setup in Ethiopia
 	Fixed No Ahistorical Empires breaking Imperial Reconquest

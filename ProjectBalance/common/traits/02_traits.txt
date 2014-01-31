@@ -20,7 +20,7 @@ blinded = {
 	health = -1
 	
 	customizer = no
-	
+	is_health = yes
 	blinding = yes
 	
 	command_modifier = {

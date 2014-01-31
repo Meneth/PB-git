@@ -397,14 +397,10 @@ succession_laws = {
 					culture_group = celtic
 					AND = {
 						ai = no
-						NOT = {
-							OR = {
-								trait = content
-								trait = craven
-								trait = slothful
-								trait = stressed
-							}
-						}
+						NOT = { trait = content }
+						NOT = { trait = craven }
+						NOT = { trait = slothful }
+						NOT = { trait = stressed }
 						OR = {
 							trait = ambitious
 							trait = brave
