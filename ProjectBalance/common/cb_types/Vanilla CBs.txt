@@ -254,8 +254,8 @@ other_claim = {
 		OR = {
 			custom_tooltip = {
 				text = is_not_allied
-				FROMFROM = {
-					ROOT = {
+				hidden_tooltip = {
+					FROMFROM = {
 						NOT = { dynasty = FROM }
 						NOT = { is_close_relative = FROM }
 						NOT = { any_spouse = { character = FROM } }
