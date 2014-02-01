@@ -2,15 +2,15 @@ spriteTypes = {
 	#Employment
 	spriteType = {
 		name = "GFX_employ_soldier"
-		texturefile = "gfx\\interface\\decision_icon_employ_soldier.dds"
+		texturefile = "gfx\\interface\\decision_icon_employ_soldier.tga"
 	}
 	spriteType = {
 		name = "GFX_employ_spy"
-		texturefile = "gfx\\interface\\decision_icon_employ_spy.dds"
+		texturefile = "gfx\\interface\\decision_icon_employ_spy.tga"
 	}
 	spriteType = {
 		name = "GFX_employ_diplomat"
-		texturefile = "gfx\\interface\\decision_icon_employ_diplomat.dds"
+		texturefile = "gfx\\interface\\decision_icon_employ_diplomat.tga"
 	}
 	#Tournaments
 	spriteType = {
