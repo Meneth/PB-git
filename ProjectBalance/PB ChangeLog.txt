@@ -2,6 +2,7 @@
 	(PB+VIET) Fixed some trait icons being missing when VIET Immersion is active
 	Fixed an issue with pushing the claims of vassals/courtiers
 	Updated employment decision icons [AnaxXiphos]
+	(PB+SWMH) Fixed an issue with the Imperial Reconquest CB
 
 3.4.3
 	Bugfix for Jewish players not being able to take loans via the decisions menu. AI Jews could still take loans
