@@ -2833,39 +2833,33 @@ tribal_invasion = {
 	can_use_gui = {
 		FROM = {
 			OR = {
-				AND = {
+				AND = { # Eliminate silly targets
 					NOT = { religion = catholic }
 					NOT = { is_heresy_of = catholic }
 					NOT = { culture = finnish }
 					NOT = { culture = lappish }
 				}
-				NOT = {
+				NOT = { # Restrictions only apply to these guys
 					ROOT = {
 						primary_title = { is_tribal_type_title = yes }
 						has_horde_culture = yes
 						NOT = { religion_group = christian }
 					}
 				}
-				ROOT = {
-					primary_title = {
-						title = e_mexikha
-					}
+				ROOT = { # Aztecs bypass all requirements
+					primary_title = { title = e_mexikha }
 				}
-				ROOT = {
+				ROOT = { # Magyars bypass all requirements
 					primary_title = { title = k_magyar }
 				}
-				ROOT = {
+				ROOT = { # Special bypass flag (vanilla) bypasses all requirements
 					has_character_flag = tribal_inv_requirements_bypass
 				}
 			}
 		}
-		OR = {
-			NOT = {
-				AND = {
-				FROM = { culture = mongol }
-				ROOT = { culture = mongol }
-				}
-			}
+		OR = { # Mongols shouldn't be declaring war on one another early-game
+			NOT = { FROM = { culture = mongol } }
+			NOT = { ROOT = { culture = mongol } }
 			year = 1350
 		}
 	}
