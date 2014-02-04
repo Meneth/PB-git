@@ -47,7 +47,7 @@ decisions = {
 		}
 		effect = {
 			custom_tooltip = {
-				text = gender_equality
+				text = gender_equality_enabled
 			}
 			hidden_tooltip = {
 				random_realm_character = {

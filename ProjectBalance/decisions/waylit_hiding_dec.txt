@@ -76,37 +76,32 @@ decisions = {
 					war_with = ROOT
 				}
 			}
-		}#pot
+		}
 
 		allow = { prestige = 0 }
 
 		effect = {
-			
 			any_realm_lord = {
-				IF = {
-					any_courtier = {
-						limit = {
-							prisoner = yes
-							primary_title = { higher_tier_than = BARON }
-							war_with = ROOT
-						}
-						custom_tooltip = {
-							text = EVTTOOLTIPprisreq
+				any_courtier = {
+					limit = {
+						prisoner = yes
+						primary_title = { higher_tier_than = BARON }
+						war_with = ROOT
+					}
+					custom_tooltip = {
+						text = EVTTOOLTIPprisreq
 
-							
-							hidden_tooltip = {
-								prisoner = no
-								prisoner = ROOT
-							}#hddn
+						
+						hidden_tooltip = {
+							prisoner = no
+							prisoner = ROOT
 						}
 					}
-				}#if
-			}#rlmlord
-			
-		}#effect
+				}
+			}
+		}
 		ai_will_do = {
 			factor = 1
 		}
-	}#request
-	
-}#decisions
+	}
+}

@@ -223,4 +223,4 @@ pb_vassal_opinion_neg_15;No direct duke or king vassals (except prisoners) with 
 pb_vassal_opinion_neg_10;No direct duke or king vassals (except prisoners) with an opinion of you lower than -10.;;;;;;;;;;;;;x
 pb_vassal_opinion_neg_5;No direct duke or king vassals (except prisoners) with an opinion of you lower than -5.;;;;;;;;;;;;;x
 pb_vassal_opinion_neg_0;No direct duke or king vassals (except prisoners) with an opinion of you lower than 0.;;;;;;;;;;;;;x
-gender_equality;Gender Equality module enabled.\n;;;;;;;;;;;;;x
+gender_equality_enabled;Gender Equality module enabled.\n;;;;;;;;;;;;;x

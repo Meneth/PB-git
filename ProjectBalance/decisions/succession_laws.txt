@@ -830,7 +830,7 @@ gender_laws = {
 				AND = {
 					holder_scope = {
 						custom_tooltip = {
-							text = gender_equality
+							text = gender_equality_enabled
 							has_global_flag = gender_equality
 						}
 					}
@@ -930,7 +930,7 @@ gender_laws = {
 				AND = {
 					holder_scope = {
 						custom_tooltip = {
-							text = gender_equality
+							text = gender_equality_enabled
 							has_global_flag = gender_equality
 						}
 					}
@@ -1025,7 +1025,7 @@ gender_laws = {
 				holder_scope = {
 					prestige = 500
 					custom_tooltip = {
-						text = gender_equality
+						text = gender_equality_enabled
 						has_global_flag = gender_equality
 					}
 				}
