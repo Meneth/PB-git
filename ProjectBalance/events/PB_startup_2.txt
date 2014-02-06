@@ -541,7 +541,7 @@ narrative_event = {
 	
 	is_triggered_only = yes
 	
-	picture = "GFX_evt_battle"
+	picture = GFX_evt_monk_muslim
 	
 	trigger = {
 		NOT = { has_global_flag = shattered_balance }
@@ -570,7 +570,7 @@ narrative_event = {
 	is_triggered_only = yes
 	hide_from = yes
 	
-	picture = "GFX_evt_battle"
+	picture = GFX_evt_monk_muslim
 	
 	trigger = {
 		NOT = { has_global_flag = shattered_balance }
