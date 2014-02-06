@@ -1,7 +1,7 @@
 3.4.4
 	(PB+VIET) Fixed some trait icons being missing when VIET Immersion is active
 	Fixed an issue with pushing the claims of vassals/courtiers
-	Updated employment decision icons [AnaxXiphos]
+	Updated employment decision icons, changed more event pictures [AnaxXiphos]
 	(PB+SWMH) Fixed an issue with the Imperial Reconquest CB
 
 3.4.3
