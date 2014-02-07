@@ -4,6 +4,7 @@
 	Updated employment decision icons, changed more event pictures [AnaxXiphos]
 	(PB+SWMH) Fixed an issue with the Imperial Reconquest CB
 	Bugfix for immediately-invalidated Muslim Invasion CB; muslim-vs.-muslim invasion (due to hostile denomination) is now 60% more expensive than vanilla to wage and more difficult to qualify, but all other cases mirror vanilla
+	The Yazidi Caliphate, if it comes into existence, may now also use the Caliphal Subjugation CB
 
 3.4.3
 	Bugfix for Jewish players not being able to take loans via the decisions menu. AI Jews could still take loans
