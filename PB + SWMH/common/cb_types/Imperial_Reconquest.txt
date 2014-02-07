@@ -79,28 +79,16 @@ imperial_reconquest = {
 			}
 			AND = {
 				OR = {
-					de_jure_liege_or_above = k_sicily
 					de_jure_liege_or_above = k_antioch
 					de_jure_liege_or_above = k_sardinia
-
-				}
-				ROOT = {
-					completely_controls = e_byzantium
-					completely_controls = k_serbia
-					completely_controls = d_antioch
-				}
-			}
-			AND = {
-				OR = {
 					de_jure_liege_or_above = k_croatia
+					de_jure_liege_or_above = k_sicily
 					de_jure_liege_or_above = k_bosnia
 				}
 				ROOT = {
 					completely_controls = e_byzantium
 					completely_controls = k_serbia
-					completely_controls = k_sicily
-					completely_controls = k_antioch
-					completely_controls = k_sardinia
+					completely_controls = d_antioch
 				}
 			}
 			AND = {

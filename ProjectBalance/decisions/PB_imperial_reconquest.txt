@@ -1,0 +1,227 @@
+decisions = {
+	#Shattered Balance
+	imperial_reconquest_t1 = {
+		potential = {
+			has_character_flag = holy_war_check
+			OR = {
+				has_landed_title = e_byzantium
+				has_landed_title = e_roman_empire
+			}
+			religion_group = christian
+			OR = {
+				NOT = { completely_controls = k_byzantium }
+				NOT = { completely_controls = k_anatolia }
+				NOT = { completely_controls = k_nikaea }
+				NOT = { completely_controls = k_epirus }
+				NOT = { completely_controls = k_trebizond }
+				NOT = { completely_controls = k_cilician }
+		}
+		allow = {
+			completely_controls = k_byzantium
+			completely_controls = k_anatolia
+			completely_controls = k_nikaea
+			completely_controls = k_epirus
+			completely_controls = k_trebizond
+			completely_controls = k_cilician
+		}
+		effect = {
+			hidden_tooltip = {
+				clr_character_flag = holy_war_check
+			}
+		}
+	}
+	imperial_reconquest_t2 = {
+		potential = {
+			has_character_flag = holy_war_check
+			OR = {
+				has_landed_title = e_byzantium
+				has_landed_title = e_roman_empire
+			}
+			religion_group = christian
+			completely_controls = e_byzantium
+			OR = {
+				NOT = { completely_controls = k_serbia }
+				NOT = { completely_controls = d_antioch }
+			}
+		}
+		allow = {
+			completely_controls = k_serbia
+			completely_controls = d_antioch
+		}
+		effect = {
+			hidden_tooltip = {
+				clr_character_flag = holy_war_check
+			}
+		}
+	}
+	imperial_reconquest_t3 = {
+		potential = {
+			has_character_flag = holy_war_check
+			OR = {
+				has_landed_title = e_byzantium
+				has_landed_title = e_roman_empire
+			}
+			religion_group = christian
+			completely_controls = e_byzantium
+			completely_controls = k_serbia
+			OR = {
+				NOT = { completely_controls = k_bosnia }
+				NOT = { completely_controls = k_croatia }
+				NOT = { completely_controls = k_sicily }
+				NOT = { completely_controls = k_antioch }
+				NOT = { completely_controls = k_sardinia }
+			}
+		}
+		allow = {
+			completely_controls = k_bosnia
+			completely_controls = k_croatia
+			completely_controls = k_sicily
+			completely_controls = k_antioch
+			completely_controls = k_sardinia
+		}
+		effect = {
+			hidden_tooltip = {
+				clr_character_flag = holy_war_check
+			}
+		}
+	}
+	imperial_reconquest_t4 = {
+		potential = {
+			has_character_flag = holy_war_check
+			OR = {
+				has_landed_title = e_byzantium
+				has_landed_title = e_roman_empire
+			}
+			religion_group = christian
+			completely_controls = e_byzantium
+			completely_controls = k_serbia
+			completely_controls = k_bosnia
+			completely_controls = k_croatia
+			completely_controls = k_sicily
+			completely_controls = k_antioch
+			completely_controls = k_sardinia
+			OR = {
+				NOT = { completely_controls = k_venice }
+				NOT = { completely_controls = k_syria }
+				NOT = { completely_controls = k_jerusalem }
+				NOT = { completely_controls = k_egypt }
+				NOT = { completely_controls = k_genoa }
+				NOT = { completely_controls = k_pisa }
+				NOT = { completely_controls = k_patrimoniumpetri }
+			}
+		}
+		allow = {
+			completely_controls = k_venice
+			completely_controls = k_syria
+			completely_controls = k_jerusalem
+			completely_controls = k_egypt
+			completely_controls = k_genoa
+			completely_controls = k_pisa
+			completely_controls = k_patrimoniumpetri
+		}
+		effect = {
+			hidden_tooltip = {
+				clr_character_flag = holy_war_check
+			}
+		}
+	}
+	imperial_reconquest_t5 = {
+		potential = {
+			has_character_flag = holy_war_check
+			OR = {
+				has_landed_title = e_byzantium
+				has_landed_title = e_roman_empire
+			}
+			religion_group = christian
+			completely_controls = e_byzantium
+			completely_controls = k_serbia
+			completely_controls = k_bosnia
+			completely_controls = k_croatia
+			completely_controls = k_sicily
+			completely_controls = k_antioch
+			completely_controls = k_sardinia
+			completely_controls = k_venice
+			completely_controls = k_syria
+			completely_controls = k_jerusalem
+			completely_controls = k_egypt
+			completely_controls = k_genoa
+			completely_controls = k_pisa
+			completely_controls = k_patrimoniumpetri
+			OR = {
+				NOT = { completely_controls = k_africa }
+				NOT = { completely_controls = k_mauretania }
+				NOT = { completely_controls = k_leon }
+				NOT = { completely_controls = k_castille }
+				NOT = { completely_controls = k_portugal }
+				NOT = { completely_controls = k_navarra }
+				NOT = { completely_controls = k_aragon }
+				NOT = { completely_controls = k_andalusia }
+				NOT = { completely_controls = k_asturias }
+			}
+		}
+		allow = {
+			completely_controls = k_africa
+			completely_controls = k_mauretania
+			completely_controls = k_leon
+			completely_controls = k_castille
+			completely_controls = k_portugal
+			completely_controls = k_navarra
+			completely_controls = k_aragon
+			completely_controls = k_andalusia
+			completely_controls = k_asturias
+		}
+		effect = {
+			hidden_tooltip = {
+				clr_character_flag = holy_war_check
+			}
+		}
+	}
+	imperial_reconquest_t6 = {
+		potential = {
+			has_character_flag = holy_war_check
+			OR = {
+				has_landed_title = e_byzantium
+				has_landed_title = e_roman_empire
+			}
+			religion_group = christian
+			completely_controls = e_byzantium
+			completely_controls = k_serbia
+			completely_controls = k_bosnia
+			completely_controls = k_croatia
+			completely_controls = k_sicily
+			completely_controls = k_antioch
+			completely_controls = k_sardinia
+			completely_controls = k_venice
+			completely_controls = k_syria
+			completely_controls = k_jerusalem
+			completely_controls = k_egypt
+			completely_controls = k_genoa
+			completely_controls = k_pisa
+			completely_controls = k_patrimoniumpetri
+			completely_controls = k_africa
+			completely_controls = k_mauretania
+			completely_controls = k_leon
+			completely_controls = k_castille
+			completely_controls = k_portugal
+			completely_controls = k_navarra
+			completely_controls = k_aragon
+			completely_controls = k_andalusia
+			completely_controls = k_asturias
+			OR = {
+				NOT = { completely_controls = k_france }
+				NOT = { completely_controls = k_aquitaine }
+				NOT = { completely_controls = k_brittany }
+			}
+		}
+		allow = {
+			completely_controls = k_france
+			completely_controls = k_aquitaine
+			completely_controls = k_brittany
+		}
+		effect = {
+			hidden_tooltip = {
+				clr_character_flag = holy_war_check
+			}
+		}
+	}
+}
