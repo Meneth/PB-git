@@ -3332,13 +3332,7 @@ crusade = {
 					title = PREV
 					enemy = FROM
 				}
-				usurp_title = PREV #Z: A slight change to PB crusade mechanics for non-catholics
-				# TODO: We may need to modify the target kingdom's succession law and possibly
-				#       reset the succession laws of all the titles which were transferred by
-				#       gain_settlements_under_title, depending upon the succession laws of
-				#       most_participating_attacker (problem case being the Pope himself, or
-				#       more likely, a holy order-- leading to an open elective Kingdom with
-				#       potentially all open elective de jure vassal titles)
+				usurp_title = PREV
 				hidden_tooltip = {
 					if = {
 						limit = {
