@@ -1086,7 +1086,8 @@ caliphal_subjugation = {
 			OR = {
 				has_landed_title = d_sunni
 				has_landed_title = k_shiite
-				has_landed_title = d_yazidi #Also has a qualifying head of religion
+				has_landed_title = d_yazidi
+				has_landed_title = d_ibadi
 			}
 			has_horde_culture = no # Should use tribal invasion instead
 			NOT = { has_character_modifier = launched_subjugation }
