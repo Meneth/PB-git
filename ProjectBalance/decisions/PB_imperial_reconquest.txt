@@ -15,6 +15,7 @@ decisions = {
 				NOT = { completely_controls = k_epirus }
 				NOT = { completely_controls = k_trebizond }
 				NOT = { completely_controls = k_cilician }
+			}
 		}
 		allow = {
 			completely_controls = k_byzantium

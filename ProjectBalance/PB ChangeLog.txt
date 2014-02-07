@@ -1,7 +1,7 @@
 3.4.4
 	(PB+VIET) Fixed some trait icons being missing when VIET Immersion is active
 	Fixed an issue with pushing the claims of vassals/courtiers
-	Updated employment decision icons, changed more event pictures [AnaxXiphos]
+	Updated employment decision icons, changed more event pictures, added icon for Imperial Reconquest check [AnaxXiphos]
 	(PB+SWMH) Fixed an issue with the Imperial Reconquest CB
 	Bugfix for immediately-invalidated Muslim Invasion CB; muslim-vs.-muslim invasion (due to hostile denomination) is now 60% more expensive than vanilla to wage and more difficult to qualify, but all other cases mirror vanilla
 	The Yazidi Caliphate, if it comes into existence, may now also use the Caliphal Subjugation CB
