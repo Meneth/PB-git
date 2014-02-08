@@ -67,7 +67,7 @@ imperial_reconquest = {
 					de_jure_liege_or_above = k_cyprus
 					title = d_antioch
 				}
-				ROOT = {
+				ROOT = { # Tier 1
 					completely_controls = k_byzantium
 					completely_controls = k_anatolia
 					completely_controls = k_nikaea
@@ -85,7 +85,7 @@ imperial_reconquest = {
 					de_jure_liege_or_above = k_sicily
 					de_jure_liege_or_above = k_bosnia
 				}
-				ROOT = {
+				ROOT = { # Tier 2
 					completely_controls = e_byzantium
 					completely_controls = k_serbia
 					completely_controls = d_antioch
@@ -103,7 +103,7 @@ imperial_reconquest = {
 					de_jure_liege_or_above = k_jerusalem
 					de_jure_liege_or_above = k_egypt
 				}
-				ROOT = {
+				ROOT = { # Tier 3
 					completely_controls = e_byzantium
 					completely_controls = k_serbia
 					completely_controls = k_sicily
@@ -125,7 +125,7 @@ imperial_reconquest = {
 					de_jure_liege_or_above = k_andalusia
 					de_jure_liege_or_above = k_asturias
 				}
-				ROOT = {
+				ROOT = { # Tier 4
 					completely_controls = e_byzantium
 					completely_controls = k_italy
 					completely_controls = k_sicily
@@ -145,7 +145,7 @@ imperial_reconquest = {
 					de_jure_liege_or_above = k_aquitaine
 					de_jure_liege_or_above = k_brittany
 				}
-				ROOT = {
+				ROOT = { # Tier 5
 					completely_controls = e_byzantium
 					completely_controls = k_leon
 					completely_controls = k_castille
@@ -180,7 +180,7 @@ imperial_reconquest = {
 					de_jure_liege_or_above = k_lower_lorraine
 					de_jure_liege_or_above = k_upper_lorraine
 				}
-				ROOT = {
+				ROOT = { # Tier 6
 					completely_controls = e_byzantium
 					completely_controls = k_france
 					completely_controls = k_aquitaine
@@ -206,6 +206,8 @@ imperial_reconquest = {
 					completely_controls = k_jerusalem
 				}
 			}
+			
+			#Z: WTF happened to Tier 7? Pretty big hole here.
 		}
 	}
 	
