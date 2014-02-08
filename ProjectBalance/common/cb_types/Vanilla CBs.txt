@@ -254,8 +254,8 @@ other_claim = {
 		OR = {
 			custom_tooltip = {
 				text = is_not_allied
-				FROMFROM = {
-					ROOT = {
+				hidden_tooltip = {
+					FROMFROM = {
 						NOT = { dynasty = FROM }
 						NOT = { is_close_relative = FROM }
 						NOT = { any_spouse = { character = FROM } }
@@ -409,8 +409,8 @@ other_claim = {
 			hidden_tooltip = {
 				ROOT = {
 					opinion = {
-						modifier = pressed_my_claim 
-						who = PREV
+						modifier = pressed_my_claim
+						who = FROMFROM #Z: Think this was a vanilla bug (PREV).
 						multiplier = 2
 					}
 				}
@@ -2833,39 +2833,33 @@ tribal_invasion = {
 	can_use_gui = {
 		FROM = {
 			OR = {
-				AND = {
+				AND = { # Eliminate silly targets
 					NOT = { religion = catholic }
 					NOT = { is_heresy_of = catholic }
 					NOT = { culture = finnish }
 					NOT = { culture = lappish }
 				}
-				NOT = {
+				NOT = { # Restrictions only apply to these guys
 					ROOT = {
 						primary_title = { is_tribal_type_title = yes }
 						has_horde_culture = yes
 						NOT = { religion_group = christian }
 					}
 				}
-				ROOT = {
-					primary_title = {
-						title = e_mexikha
-					}
+				ROOT = { # Aztecs bypass all requirements
+					primary_title = { title = e_mexikha }
 				}
-				ROOT = {
+				ROOT = { # Magyars bypass all requirements
 					primary_title = { title = k_magyar }
 				}
-				ROOT = {
+				ROOT = { # Special bypass flag (vanilla) bypasses all requirements
 					has_character_flag = tribal_inv_requirements_bypass
 				}
 			}
 		}
-		OR = {
-			NOT = {
-				AND = {
-				FROM = { culture = mongol }
-				ROOT = { culture = mongol }
-				}
-			}
+		OR = { # Mongols shouldn't be declaring war on one another early-game
+			NOT = { FROM = { culture = mongol } }
+			NOT = { ROOT = { culture = mongol } }
 			year = 1350
 		}
 	}
@@ -3235,7 +3229,7 @@ crusade = {
 			
 			OR = {
 				num_of_realm_counties = {
-					value = 5
+					value = 6
 					title = PREV
 				}
 				has_landed_title = PREV
@@ -3338,13 +3332,7 @@ crusade = {
 					title = PREV
 					enemy = FROM
 				}
-				usurp_title = PREV #Z: A slight change to PB crusade mechanics for non-catholics
-				# TODO: We may need to modify the target kingdom's succession law and possibly
-				#       reset the succession laws of all the titles which were transferred by
-				#       gain_settlements_under_title, depending upon the succession laws of
-				#       most_participating_attacker (problem case being the Pope himself, or
-				#       more likely, a holy order-- leading to an open elective Kingdom with
-				#       potentially all open elective de jure vassal titles)
+				usurp_title = PREV
 				hidden_tooltip = {
 					if = {
 						limit = {
@@ -8216,25 +8204,49 @@ muslim_invasion = {
 	can_use_gui = {
 		ROOT = {
 			NOT = { has_character_modifier = holy_war_cooldown }
-			piety = 500
+			NOT = { decadence = 50 } # Helps curb decadence growth anyway: no titles in this CB are usurped
+			
 			NOT = { trait = content }
 			NOT = { trait = slothful }
 			NOT = { trait = imbecile }
 			NOT = { trait = craven }
-			NOT = { decadence = 50 }
+			
 			is_republic = no
 			is_patrician = no
+			
+			# ROOT is a muslim, but FROM is not the same religion (due to can_use)...
+			
 			OR = {
-				FROM = { religion_group = ROOT }
-				trait = brave
-				trait = wroth
-				trait = zealous
-				trait = lunatic
-				trait = possessed
+				AND = { # Standard vanilla case, but we only use their requirements outside the muslim group
+					FROM = { NOT = { religion_group = muslim } }
+					piety = 500 # Costs piety (in addition to DoW initial cost)
+				}
+				AND = {	# If FROM _is also_ a Muslim (of a hostile denomination), ROOT meets more strict requirements
+					FROM = { religion_group = muslim }
+					piety = 800 # Costs 60% more piety; no piety cycle in this CB (also DoW cost and monthly cost)
+					prestige = 800 # Not a cost, but prestige must be built before MvM invasion is enabled
+					
+					OR = { # More serious trait requirements than usual (possibly too strict)
+						AND = {
+							trait = zealous # Deal-breaker
+							OR = {
+								FROM = { trait = zealous } # Zeal v. zeal crime (hostile Muslims)
+								trait = brave
+								trait = wroth
+								trait = ambitious
+							}
+						}
+						trait = lunatic
+						trait = possessed
+					}
+				}
 			}
 		}
+		
+		#Muslims cannot invade pagans with this CB; zoroastrians and jews (and hindus) are fine
 		FROM = { NOT = { religion_group = pagan_group } }
-		OR = {
+		
+		OR = { #Enforce the Baqt
 			NOT = {
 				FROM = {
 					OR = {
@@ -8246,7 +8258,7 @@ muslim_invasion = {
 			}
 			has_global_flag = violated_baqt
 		}
-		OR = {
+		OR = { #Avoid mongol-on-mongol crime before 1350
 			NOT = {
 				FROM = { culture = mongol }
 				ROOT = { culture = mongol }
@@ -8257,18 +8269,22 @@ muslim_invasion = {
 	
 	on_add = {
 		ROOT = {
-			piety = -500
+			if = { limit = { FROM = { religion_group = muslim } }
+				piety = -800 #MvM invasion costs more (avoid piety cycle, note on_success does as well with decadence)
+			}
+			if = { limit = { FROM = { NOT = { religion_group = muslim } } }
+				piety = -500 #Vanilla (always)
+			}
 			add_character_modifier = {
 				name = holy_war_cooldown
 				duration = 1825
 			}
 		}
 	}
-	
+
 	can_use = {
 		ROOT = {
 			religion_group = muslim
-			NOT = { is_liege_or_above = FROM }
 		}
 		
 		NOT = {
@@ -8290,6 +8306,10 @@ muslim_invasion = {
 		}
 		
 		FROM = { NOT = { religion = ROOT } }
+		
+		ROOT = {
+			NOT = { is_liege_or_above = FROM }
+		}
 	}
 	
 	can_use_title = {
@@ -8300,6 +8320,14 @@ muslim_invasion = {
 				title = PREV
 			}
 		}
+
+		# Z: The bordering case in vanilla is "broken" (only requires bordering _any_
+		#    province in the target kingdom if no provinces of own within kingdom--
+		#    that province does not need to be one over which FROM is overlord, and
+		#    that is a recipe for Blobs Without Borders (or, Holey Blobs, if you must).
+		#
+		#    TODO: Fix should probably be applied, elsewhere as well. Held for now.
+
 		# The attacker needs at least one county in the target kingdom, or a border
 		any_direct_de_jure_vassal_title = {
 			any_direct_de_jure_vassal_title = {
@@ -8311,6 +8339,13 @@ muslim_invasion = {
 						}
 					}
 					location = {
+						# Pre-staged "fix" for Blobs w/ Holes
+#						owner = {
+#							OR = {
+#								character = FROM
+#								is_liege_or_above = FROM
+#							}
+#						}
 						any_neighbor_province = {
 							owner = {
 								OR = {
@@ -8323,7 +8358,7 @@ muslim_invasion = {
 				}
 			}
 		}
-		OR = {
+		OR = { #No targets covering Saharan provinces
 			has_global_flag = rapid_conquest
 			NOT = {
 				any_direct_de_jure_vassal_title = {
@@ -8336,9 +8371,10 @@ muslim_invasion = {
 	}
 	
 	is_valid = {
-		FROM = {
-			NOT = { religion_group = muslim }
+		ROOT = {
+			religion_group = muslim
 		}
+		FROM = { NOT = { religion = ROOT } }
 	}
 	
 	is_valid_title = {
@@ -8359,23 +8395,40 @@ muslim_invasion = {
 			participation_scaled_prestige = 200
 			
 			if = {
-				limit = {
-					religion_group = muslim
-					FROM = { NOT = { religion_group = muslim } }
+				limit = { religion_group = muslim }
+				if = {
+					limit = {
+						FROM = { NOT = { religion_group = muslim } }
+					}
+					participation_scaled_decadence = -20
 				}
-				participation_scaled_decadence = -20
+				if = {
+					limit = {
+						FROM = { religion_group = muslim }
+					}
+					participation_scaled_decadence = -10 #Less decadence loss for [hostile] MvM war
+				}
 			}
 		}
 		any_attacker = {
 			limit = { NOT = { character = ROOT } }
 			hidden_tooltip = { 
-				participation_scaled_prestige = 200 
+				participation_scaled_prestige = 200
+				
 				if = {
-					limit = {
-						religion_group = muslim
-						FROM = { NOT = { religion_group = muslim } }
+					limit = { religion_group = muslim }
+					if = {
+						limit = {
+							FROM = { NOT = { religion_group = muslim } }
+						}
+						participation_scaled_decadence = -20
 					}
-					participation_scaled_decadence = -20
+					if = {
+						limit = {
+							religion_group = FROM
+						}
+						participation_scaled_decadence = -10 #Less decadence loss for [hostile] MvM war, allied
+					}
 				}
 			}
 		}
@@ -8385,32 +8438,14 @@ muslim_invasion = {
 	}
 	
 	on_success_title = {
-		custom_tooltip = {
-			text = invasion_succ_tip
+		custom_tooltip = { 
+			text = tribal_invasion_succ_tip
 			hidden_tooltip = {
 				ROOT = {
-					vassalize_or_take_under_title = {
+					vassalize_or_take_under_title_destroy_duchies = {
 						title = PREV
 						enemy = FROM
 						is_crusade = yes # Even if the title holder is not participating in the war, gain holdings occupied by all Crusade participants
-					}
-				}
-				any_de_jure_vassal_title = {
-					limit = {
-						holder_scope = {
-							independent = no
-							liege = {
-								character = PREV
-							}
-							any_war = {
-								defender = {
-									character = FROM
-								}
-							}
-						}
-					}
-					holder_scope = {
-						set_defacto_liege = ROOT
 					}
 				}
 			}

@@ -356,8 +356,8 @@ letter_event = {
 		piety = 100
 		add_trait = ambitious
 		spawn_unit = {
-			province = PREV
-			home = PREV
+			province = ROOT
+			home = ROOT
 			troops =
 			{
 				light_cavalry = { 500 500 }
@@ -426,8 +426,8 @@ letter_event = {
 		piety = 100
 		add_trait = ambitious
 		spawn_unit = {
-			province = PREV
-			home = PREV
+			province = ROOT
+			home = ROOT
 			troops =
 			{
 				light_cavalry = { 500 500 }

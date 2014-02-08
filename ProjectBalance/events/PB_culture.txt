@@ -1038,7 +1038,7 @@ character_event = {
 province_event = {
 	id = meneth.4
 	desc = "EVTDESC55000"
-	picture = GFX_evt_throne_room
+	picture = GFX_evt_carriage
 	
 	trigger = {
 		culture_group = celtic
@@ -1149,7 +1149,7 @@ province_event = {
 province_event = {
 	id = meneth.5
 	desc = "EVTDESC55001"
-	picture = GFX_evt_carriage
+	picture = GFX_evt_busy_trading_dock_republic
 	
 	trigger = {
 		culture_group = celtic
@@ -1222,7 +1222,7 @@ province_event = {
 province_event = {
 	id = meneth.6
 	desc = "EVTDESC55000"
-	picture = GFX_evt_throne_room
+	picture = GFX_evt_carriage
 	
 	trigger = {
 		OR = {
@@ -1351,7 +1351,7 @@ province_event = {
 province_event = {
 	id = meneth.7
 	desc = "EVTDESC55001"
-	picture = GFX_evt_carriage
+	picture = GFX_evt_busy_trading_dock_republic
 	
 	trigger = {
 		OR = {

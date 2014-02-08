@@ -57,15 +57,13 @@ character_event = {
 			NOT = { opinion = { who = LIEGE value = 0 } }
 			liege = {
 				ROOT = {
-					crownlaw_title = {
-						AND = { # make sure the liege actually holds the title with CA
-							holder_scope = { character = PREVPREVPREV }
-							OR = {
-								has_law = king_peace_2
-								has_law = emperor_peace_2
-								has_law = revokation_2
-								has_law = inheritance_1
-							}
+					crownlaw_title = { # make sure the liege actually holds the title with CA
+						holder_scope = { character = PREVPREVPREV }
+						OR = {
+							has_law = king_peace_2
+							has_law = emperor_peace_2
+							has_law = revokation_2
+							has_law = inheritance_1
 						}
 					}
 				}
@@ -970,8 +968,8 @@ character_event = {
 			modifier = {
 				factor = 3
 				capital_scope = {
-					NOT = { has_province_modifier = military_cooperation }
-					NOT = { has_province_modifier = economic_cooperation }
+					NOT = { has_province_modifier = af_mil_cooperation_t1 }
+					NOT = { has_province_modifier = af_eco_cooperation_t1 }
 				}
 			}
 		}

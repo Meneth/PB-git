@@ -124,8 +124,8 @@ character_event = {
 character_event = {
 	id = meneth.401
 	desc = meneth.401.desc
-	picture = GFX_evt_battle
-	border = GFX_event_normal_frame_war
+	picture = GFX_evt_council_muslim
+	border = GFX_event_normal_frame_diplomacy
 	
 	is_triggered_only = yes
 	
@@ -2020,7 +2020,7 @@ character_event = {
 	id = meneth.422
 	desc = meneth.422.desc
 	picture = GFX_evt_battle
-	border = GFX_event_normal_frame_religion
+	border = GFX_event_normal_frame_war
 	
 	only_rulers = yes
 	
@@ -2056,7 +2056,7 @@ character_event = {
 	id = meneth.429
 	desc = meneth.429.desc
 	picture = GFX_evt_battle
-	border = GFX_event_normal_frame_religion
+	border = GFX_event_normal_frame_war
 	
 	only_rulers = yes
 	
@@ -2089,7 +2089,7 @@ character_event = {
 	id = meneth.430
 	desc = meneth.430.desc
 	picture = GFX_evt_battle
-	border = GFX_event_normal_frame_religion
+	border = GFX_event_normal_frame_war
 	
 	only_rulers = yes
 	
@@ -2119,7 +2119,7 @@ character_event = {
 	id = meneth.431
 	desc = meneth.431.desc
 	picture = GFX_evt_battle
-	border = GFX_event_normal_frame_religion
+	border = GFX_event_normal_frame_war
 	
 	only_rulers = yes
 	
@@ -2149,7 +2149,7 @@ character_event = {
 	id = meneth.432
 	desc = meneth.432.desc
 	picture = GFX_evt_battle
-	border = GFX_event_normal_frame_religion
+	border = GFX_event_normal_frame_war
 	
 	only_rulers = yes
 	
@@ -2193,7 +2193,7 @@ character_event = {
 	id = meneth.433
 	desc = meneth.433.desc
 	picture = GFX_evt_battle
-	border = GFX_event_normal_frame_religion
+	border = GFX_event_normal_frame_war
 	
 	only_rulers = yes
 	
@@ -2229,7 +2229,7 @@ character_event = {
 	id = meneth.434
 	desc = meneth.432.desc
 	picture = GFX_evt_battle
-	border = GFX_event_normal_frame_religion
+	border = GFX_event_normal_frame_war
 	
 	only_rulers = yes
 	
@@ -2331,8 +2331,8 @@ character_event = {
 character_event = {
 	id = meneth.426
 	desc = meneth.426.desc
-	picture = GFX_evt_battle
-	border = GFX_event_normal_frame_war
+	picture = GFX_evt_carriage
+	border = GFX_event_normal_frame_diplomacy
 	
 	is_triggered_only = yes
 	

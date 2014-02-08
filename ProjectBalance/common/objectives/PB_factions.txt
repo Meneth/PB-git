@@ -26,9 +26,7 @@ faction_autonomy = {
 		
 		modifier = {
 			factor = 0
-			holder_scope = {
-				any_spouse = { character = FROM }
-			}
+			any_spouse = { character = FROM }
 		}
 		modifier = {
 			factor = 0

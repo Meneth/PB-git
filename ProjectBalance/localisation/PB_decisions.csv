@@ -42,3 +42,15 @@ gender_equality;Enable Gender Equality;;;;;;;;;;;;;x
 gender_equality_desc;Every non-Muslim title in the world will adopt Absolute Cognatic succession. The restrictions on Enatic succession will be lifted. All council positions will open up to women.;;;;;;;;;;;;;x
 no_ahistorical_empires;Remove Ahistorical Empires;;;;;;;;;;;;;x
 no_ahistorical_empires_desc;All empires except the HRE, the Byzantine Empire, and the Persian Empire will cease to exist dejure. They can still be formed as titular titles.;;;;;;;;;;;;;x
+imperial_reconquest_t1;Imperial Reconquest - Tier 1;;;;;;;;;;;;;x
+imperial_reconquest_t2;Imperial Reconquest - Tier 2;;;;;;;;;;;;;x
+imperial_reconquest_t3;Imperial Reconquest - Tier 3;;;;;;;;;;;;;x
+imperial_reconquest_t4;Imperial Reconquest - Tier 4;;;;;;;;;;;;;x
+imperial_reconquest_t5;Imperial Reconquest - Tier 5;;;;;;;;;;;;;x
+imperial_reconquest_t6;Imperial Reconquest - Tier 6;;;;;;;;;;;;;x
+imperial_reconquest_t1_desc;Hovering over this decision will tell you what territory you need to control to advance to the next Imperial Reconquest tier.;;;;;;;;;;;;;x
+imperial_reconquest_t2_desc;Hovering over this decision will tell you what territory you need to control to advance to the next Imperial Reconquest tier.;;;;;;;;;;;;;x
+imperial_reconquest_t3_desc;Hovering over this decision will tell you what territory you need to control to advance to the next Imperial Reconquest tier.;;;;;;;;;;;;;x
+imperial_reconquest_t4_desc;Hovering over this decision will tell you what territory you need to control to advance to the next Imperial Reconquest tier.;;;;;;;;;;;;;x
+imperial_reconquest_t5_desc;Hovering over this decision will tell you what territory you need to control to advance to the next Imperial Reconquest tier.;;;;;;;;;;;;;x
+imperial_reconquest_t6_desc;Hovering over this decision will tell you what territory you need to control to advance to the next Imperial Reconquest tier.;;;;;;;;;;;;;x

@@ -97,15 +97,11 @@ decisions = {
 			factor = 1
 			modifier = {
 				factor = 0
-				wealth = 0
+				wealth = -100 # AI routinely starts even an offensive war with slightly less than zero-balance
 			}
 			modifier = {
-				factor = 10 # if at war personally, loan option is forced to AI attention ca. 10x/year
+				factor = 30 # If at war personally, loan option is considered ca. 30x/year
 				war = yes
-			}
-			modifier = {
-				factor = 0  # 75% monthly chance randomizer that AI will take loan if it's in the red
-				random = 75 # in any given month (and would otherwise take it). slight slow-down.
 			}
 		}
 	}
@@ -162,19 +158,15 @@ decisions = {
 			factor = 1
 			modifier = {
 				factor = 0
-				wealth = 0
+				wealth = -200
 			}
 			modifier = {
 				factor = 0
 				NOT = { has_character_modifier = small_loan }
 			}
 			modifier = {
-				factor = 10 # if at war personally, loan option is forced to AI attention ca. 10x/year
+				factor = 30 # If at war personally, loan option is considered ca. 30x/year
 				war = yes
-			}
-			modifier = {
-				factor = 0  # 75% monthly chance randomizer that AI will take loan if it's in the red
-				random = 75 # in any given month (and would otherwise take it). slight slow-down.
 			}
 		}
 	}
@@ -231,7 +223,7 @@ decisions = {
 			factor = 1
 			modifier = {
 				factor = 0
-				wealth = 0
+				wealth = -250 # Prevent bankruptcy modifier
 			}
 			modifier = {
 				factor = 0
@@ -242,12 +234,8 @@ decisions = {
 				NOT = { has_character_modifier = medium_loan }
 			}
 			modifier = {
-				factor = 10 # if at war personally, loan option is forced to AI attention ca. 10x/year
+				factor = 30 # If at war personally, loan option is considered ca. 30x/year
 				war = yes
-			}
-			modifier = {
-				factor = 0  # 75% monthly chance randomizer that AI will take loan if it's in the red
-				random = 75 # in any given month (and would otherwise take it). slight slow-down.
 			}
 		}
 	}
@@ -301,7 +289,7 @@ decisions = {
 			factor = 1
 			modifier = {
 				factor = 0
-				wealth = 0
+				wealth = -250 # Prevent bankruptcy modifier
 			}
 			modifier = {
 				factor = 0
@@ -316,12 +304,8 @@ decisions = {
 				NOT = { has_character_modifier = large_loan }
 			}
 			modifier = {
-				factor = 10 # if at war personally, loan option is forced to AI attention ca. 10x/year
+				factor = 30 # If at war personally, loan option is considered ca. 30x/year
 				war = yes
-			}
-			modifier = {
-				factor = 0  # 75% monthly chance randomizer that AI will take loan if it's in the red
-				random = 75 # in any given month (and would otherwise take it). slight slow-down.
 			}
 		}
 	}

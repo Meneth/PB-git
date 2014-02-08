@@ -31,8 +31,6 @@ character_event = {
 					}
 				}
 				usurp_title = ROOT
-				# TODO: possibly need to modify succession law (as we may need to
-				#       do with the target kingdom in general in the CB)
 			}
 			any_de_jure_vassal_title = {
 				limit = {
