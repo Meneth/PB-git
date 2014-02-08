@@ -100,12 +100,8 @@ decisions = {
 				wealth = 0
 			}
 			modifier = {
-				factor = 10 # if at war personally, loan option is forced to AI attention ca. 10x/year
+				factor = 20 # if at war personally, loan option is forced to AI attention ca. 20x/year
 				war = yes
-			}
-			modifier = {
-				factor = 0  # 75% monthly chance randomizer that AI will take loan if it's in the red
-				random = 75 # in any given month (and would otherwise take it). slight slow-down.
 			}
 		}
 	}
@@ -169,12 +165,8 @@ decisions = {
 				NOT = { has_character_modifier = small_loan }
 			}
 			modifier = {
-				factor = 10 # if at war personally, loan option is forced to AI attention ca. 10x/year
+				factor = 20 # if at war personally, loan option is forced to AI attention ca. 20x/year
 				war = yes
-			}
-			modifier = {
-				factor = 0  # 75% monthly chance randomizer that AI will take loan if it's in the red
-				random = 75 # in any given month (and would otherwise take it). slight slow-down.
 			}
 		}
 	}
@@ -242,12 +234,8 @@ decisions = {
 				NOT = { has_character_modifier = medium_loan }
 			}
 			modifier = {
-				factor = 10 # if at war personally, loan option is forced to AI attention ca. 10x/year
+				factor = 20 # if at war personally, loan option is forced to AI attention ca. 20x/year
 				war = yes
-			}
-			modifier = {
-				factor = 0  # 75% monthly chance randomizer that AI will take loan if it's in the red
-				random = 75 # in any given month (and would otherwise take it). slight slow-down.
 			}
 		}
 	}
@@ -316,12 +304,8 @@ decisions = {
 				NOT = { has_character_modifier = large_loan }
 			}
 			modifier = {
-				factor = 10 # if at war personally, loan option is forced to AI attention ca. 10x/year
+				factor = 20 # if at war personally, loan option is forced to AI attention ca. 20x/year
 				war = yes
-			}
-			modifier = {
-				factor = 0  # 75% monthly chance randomizer that AI will take loan if it's in the red
-				random = 75 # in any given month (and would otherwise take it). slight slow-down.
 			}
 		}
 	}
