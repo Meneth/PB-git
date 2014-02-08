@@ -409,8 +409,8 @@ other_claim = {
 			hidden_tooltip = {
 				ROOT = {
 					opinion = {
-						modifier = pressed_my_claim 
-						who = PREV # Z: BUG: PREV is not a character. It's a title.
+						modifier = pressed_my_claim
+						who = FROMFROM #Z: Think this was a vanilla bug (PREV).
 						multiplier = 2
 					}
 				}
