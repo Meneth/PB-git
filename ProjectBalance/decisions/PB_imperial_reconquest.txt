@@ -1,7 +1,7 @@
 decisions = {
-	#Shattered Balance
 	imperial_reconquest_t1 = {
 		potential = {
+			ai = no
 			has_character_flag = holy_war_check
 			OR = {
 				has_landed_title = e_byzantium
@@ -30,9 +30,13 @@ decisions = {
 				clr_character_flag = holy_war_check
 			}
 		}
+		ai_will_do = {
+			factor = 0
+		}
 	}
 	imperial_reconquest_t2 = {
 		potential = {
+			ai = no
 			has_character_flag = holy_war_check
 			OR = {
 				has_landed_title = e_byzantium
@@ -54,9 +58,13 @@ decisions = {
 				clr_character_flag = holy_war_check
 			}
 		}
+		ai_will_do = {
+			factor = 0
+		}
 	}
 	imperial_reconquest_t3 = {
 		potential = {
+			ai = no
 			has_character_flag = holy_war_check
 			OR = {
 				has_landed_title = e_byzantium
@@ -85,9 +93,13 @@ decisions = {
 				clr_character_flag = holy_war_check
 			}
 		}
+		ai_will_do = {
+			factor = 0
+		}
 	}
 	imperial_reconquest_t4 = {
 		potential = {
+			ai = no
 			has_character_flag = holy_war_check
 			OR = {
 				has_landed_title = e_byzantium
@@ -125,9 +137,13 @@ decisions = {
 				clr_character_flag = holy_war_check
 			}
 		}
+		ai_will_do = {
+			factor = 0
+		}
 	}
 	imperial_reconquest_t5 = {
 		potential = {
+			ai = no
 			has_character_flag = holy_war_check
 			OR = {
 				has_landed_title = e_byzantium
@@ -176,9 +192,13 @@ decisions = {
 				clr_character_flag = holy_war_check
 			}
 		}
+		ai_will_do = {
+			factor = 0
+		}
 	}
 	imperial_reconquest_t6 = {
 		potential = {
+			ai = no
 			has_character_flag = holy_war_check
 			OR = {
 				has_landed_title = e_byzantium
@@ -223,6 +243,9 @@ decisions = {
 			hidden_tooltip = {
 				clr_character_flag = holy_war_check
 			}
+		}
+		ai_will_do = {
+			factor = 0
 		}
 	}
 }
