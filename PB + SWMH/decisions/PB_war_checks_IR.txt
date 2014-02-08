@@ -1,38 +1,30 @@
 decisions = {
-	#Shattered Balance
 	imperial_reconquest_t1 = {
 		potential = {
+			ai = no
 			has_character_flag = holy_war_check
 			OR = {
 				has_landed_title = e_byzantium
 				has_landed_title = e_roman_empire
 			}
 			religion_group = christian
-			OR = {
-				NOT = { completely_controls = k_byzantium }
-				NOT = { completely_controls = k_anatolia }
-				NOT = { completely_controls = k_nikaea }
-				NOT = { completely_controls = k_epirus }
-				NOT = { completely_controls = k_trebizond }
-				NOT = { completely_controls = k_cilician }
-			}
+			NOT = { completely_controls = e_byzantium }
 		}
 		allow = {
-			completely_controls = k_byzantium
-			completely_controls = k_anatolia
-			completely_controls = k_nikaea
-			completely_controls = k_epirus
-			completely_controls = k_trebizond
-			completely_controls = k_cilician
+			completely_controls = e_byzantium
 		}
 		effect = {
 			hidden_tooltip = {
 				clr_character_flag = holy_war_check
 			}
 		}
+		ai_will_do = {
+			factor = 0
+		}
 	}
 	imperial_reconquest_t2 = {
 		potential = {
+			ai = no
 			has_character_flag = holy_war_check
 			OR = {
 				has_landed_title = e_byzantium
@@ -54,9 +46,13 @@ decisions = {
 				clr_character_flag = holy_war_check
 			}
 		}
+		ai_will_do = {
+			factor = 0
+		}
 	}
 	imperial_reconquest_t3 = {
 		potential = {
+			ai = no
 			has_character_flag = holy_war_check
 			OR = {
 				has_landed_title = e_byzantium
@@ -65,29 +61,34 @@ decisions = {
 			religion_group = christian
 			completely_controls = e_byzantium
 			completely_controls = k_serbia
+			completely_controls = d_antioch
 			OR = {
+				NOT = { completely_controls = k_sicily }
+				NOT = { completely_controls = k_antioch } #Z: k_antioch != d_antioch
 				NOT = { completely_controls = k_bosnia }
 				NOT = { completely_controls = k_croatia }
-				NOT = { completely_controls = k_sicily }
-				NOT = { completely_controls = k_antioch }
 				NOT = { completely_controls = k_sardinia }
 			}
 		}
 		allow = {
-			completely_controls = k_bosnia
-			completely_controls = k_croatia
 			completely_controls = k_sicily
 			completely_controls = k_antioch
+			completely_controls = k_bosnia
+			completely_controls = k_croatia
 			completely_controls = k_sardinia
 		}
 		effect = {
 			hidden_tooltip = {
 				clr_character_flag = holy_war_check
 			}
+		}
+		ai_will_do = {
+			factor = 0
 		}
 	}
 	imperial_reconquest_t4 = {
 		potential = {
+			ai = no
 			has_character_flag = holy_war_check
 			OR = {
 				has_landed_title = e_byzantium
@@ -96,38 +97,38 @@ decisions = {
 			religion_group = christian
 			completely_controls = e_byzantium
 			completely_controls = k_serbia
-			completely_controls = k_bosnia
-			completely_controls = k_croatia
 			completely_controls = k_sicily
 			completely_controls = k_antioch
+			completely_controls = k_bosnia
+			completely_controls = k_croatia
 			completely_controls = k_sardinia
 			OR = {
+				NOT = { completely_controls = k_italy }
 				NOT = { completely_controls = k_venice }
 				NOT = { completely_controls = k_syria }
 				NOT = { completely_controls = k_jerusalem }
 				NOT = { completely_controls = k_egypt }
-				NOT = { completely_controls = k_genoa }
-				NOT = { completely_controls = k_pisa }
-				NOT = { completely_controls = k_patrimoniumpetri }
 			}
 		}
 		allow = {
+			completely_controls = k_italy
 			completely_controls = k_venice
+			completely_controls = k_egypt
 			completely_controls = k_syria
 			completely_controls = k_jerusalem
-			completely_controls = k_egypt
-			completely_controls = k_genoa
-			completely_controls = k_pisa
-			completely_controls = k_patrimoniumpetri
 		}
 		effect = {
 			hidden_tooltip = {
 				clr_character_flag = holy_war_check
 			}
 		}
+		ai_will_do = {
+			factor = 0
+		}
 	}
 	imperial_reconquest_t5 = {
 		potential = {
+			ai = no
 			has_character_flag = holy_war_check
 			OR = {
 				has_landed_title = e_byzantium
@@ -136,18 +137,15 @@ decisions = {
 			religion_group = christian
 			completely_controls = e_byzantium
 			completely_controls = k_serbia
+			completely_controls = k_antioch
+			completely_controls = k_sicily
 			completely_controls = k_bosnia
 			completely_controls = k_croatia
-			completely_controls = k_sicily
-			completely_controls = k_antioch
-			completely_controls = k_sardinia
+			completely_controls = k_italy
 			completely_controls = k_venice
 			completely_controls = k_syria
 			completely_controls = k_jerusalem
 			completely_controls = k_egypt
-			completely_controls = k_genoa
-			completely_controls = k_pisa
-			completely_controls = k_patrimoniumpetri
 			OR = {
 				NOT = { completely_controls = k_africa }
 				NOT = { completely_controls = k_mauretania }
@@ -176,9 +174,13 @@ decisions = {
 				clr_character_flag = holy_war_check
 			}
 		}
+		ai_will_do = {
+			factor = 0
+		}
 	}
 	imperial_reconquest_t6 = {
 		potential = {
+			ai = no
 			has_character_flag = holy_war_check
 			OR = {
 				has_landed_title = e_byzantium
@@ -187,18 +189,15 @@ decisions = {
 			religion_group = christian
 			completely_controls = e_byzantium
 			completely_controls = k_serbia
+			completely_controls = k_antioch
+			completely_controls = k_sicily
 			completely_controls = k_bosnia
 			completely_controls = k_croatia
-			completely_controls = k_sicily
-			completely_controls = k_antioch
-			completely_controls = k_sardinia
+			completely_controls = k_italy
 			completely_controls = k_venice
 			completely_controls = k_syria
 			completely_controls = k_jerusalem
 			completely_controls = k_egypt
-			completely_controls = k_genoa
-			completely_controls = k_pisa
-			completely_controls = k_patrimoniumpetri
 			completely_controls = k_africa
 			completely_controls = k_mauretania
 			completely_controls = k_leon
@@ -224,5 +223,12 @@ decisions = {
 				clr_character_flag = holy_war_check
 			}
 		}
+		ai_will_do = {
+			factor = 0
+		}
 	}
 }
+			
+#Z: WTF happened to Tier 7?
+#   England, Wales, Burgundy (incl. Provence, the Roman Empire's first "province"),
+#   S. Germany/Rhine, Carinthia/Illyria, ... Hmm.

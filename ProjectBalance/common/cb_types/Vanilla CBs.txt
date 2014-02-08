@@ -409,8 +409,8 @@ other_claim = {
 			hidden_tooltip = {
 				ROOT = {
 					opinion = {
-						modifier = pressed_my_claim 
-						who = PREV
+						modifier = pressed_my_claim
+						who = FROMFROM #Z: Think this was a vanilla bug (PREV).
 						multiplier = 2
 					}
 				}
@@ -3229,7 +3229,7 @@ crusade = {
 			
 			OR = {
 				num_of_realm_counties = {
-					value = 5
+					value = 6
 					title = PREV
 				}
 				has_landed_title = PREV
@@ -3332,13 +3332,7 @@ crusade = {
 					title = PREV
 					enemy = FROM
 				}
-				usurp_title = PREV #Z: A slight change to PB crusade mechanics for non-catholics
-				# TODO: We may need to modify the target kingdom's succession law and possibly
-				#       reset the succession laws of all the titles which were transferred by
-				#       gain_settlements_under_title, depending upon the succession laws of
-				#       most_participating_attacker (problem case being the Pope himself, or
-				#       more likely, a holy order-- leading to an open elective Kingdom with
-				#       potentially all open elective de jure vassal titles)
+				usurp_title = PREV
 				hidden_tooltip = {
 					if = {
 						limit = {
@@ -8224,11 +8218,11 @@ muslim_invasion = {
 			
 			OR = {
 				AND = { # Standard vanilla case, but we only use their requirements outside the muslim group
-					FROM = { NOT = { religion_group = ROOT } } }
+					FROM = { NOT = { religion_group = muslim } }
 					piety = 500 # Costs piety (in addition to DoW initial cost)
 				}
 				AND = {	# If FROM _is also_ a Muslim (of a hostile denomination), ROOT meets more strict requirements
-					FROM = { religion_group = ROOT }
+					FROM = { religion_group = muslim }
 					piety = 800 # Costs 60% more piety; no piety cycle in this CB (also DoW cost and monthly cost)
 					prestige = 800 # Not a cost, but prestige must be built before MvM invasion is enabled
 					
@@ -8275,10 +8269,10 @@ muslim_invasion = {
 	
 	on_add = {
 		ROOT = {
-			if = { limit = { religion_group = FROM }
+			if = { limit = { FROM = { religion_group = muslim } }
 				piety = -800 #MvM invasion costs more (avoid piety cycle, note on_success does as well with decadence)
 			}
-			if = { limit = { NOT = { religion_group = FROM } }
+			if = { limit = { FROM = { NOT = { religion_group = muslim } } }
 				piety = -500 #Vanilla (always)
 			}
 			add_character_modifier = {
