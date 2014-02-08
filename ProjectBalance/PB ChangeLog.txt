@@ -7,6 +7,8 @@
 	Updated the implementation of Sniggles' Bookmarks to the latest version
 	The Yazidi Caliphate and Ibadi Imamate, if they are created, may now also use the Caliphal Subjugation CB
 	(PB+SWMH) A comprehensive set of conquest checks has been added for the Imperial Reconquest CB under the "Is war possible?" menu. It should now be much more straightforward to traverse the CB's tiers. Regular PB support for the same will follow
+	Bankruptcy triggered modifier re-enabled: A negative balance at the turn of the month will hit you with -0.25 land_morale so long as the balance remains negative
+	AI loan-taking: More aggressive and deterministic when in need, waits to reach a more negative threshold than a zero balance, avoids bankruptcy triggered modifier
 
 3.4.3
 	Bugfix for Jewish players not being able to take loans via the decisions menu. AI Jews could still take loans
