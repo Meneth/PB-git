@@ -60,7 +60,7 @@ imperial_reconquest = {
 			title = d_mesopotamia
 			AND = {
 				de_jure_liege_or_above = k_serbia
-				ROOT = {
+				ROOT = { # Tier 1
 					completely_controls = e_byzantium
 				}
 			}
@@ -69,7 +69,7 @@ imperial_reconquest = {
 					de_jure_liege_or_above = k_croatia
 					de_jure_liege_or_above = k_sicily
 				}
-				ROOT = {
+				ROOT = { # Tier 2
 					completely_controls = e_byzantium
 					completely_controls = k_serbia
 				}
@@ -85,7 +85,7 @@ imperial_reconquest = {
 					de_jure_liege_or_above = k_africa
 					de_jure_liege_or_above = k_tunisia
 				}
-				ROOT = {
+				ROOT = { # Tier 3
 					completely_controls = e_byzantium
 					completely_controls = k_serbia
 					completely_controls = k_sicily
@@ -104,7 +104,7 @@ imperial_reconquest = {
 					de_jure_liege_or_above = k_andalusia
 					de_jure_liege_or_above = k_asturias
 				}
-				ROOT = {
+				ROOT = { # Tier 4
 					completely_controls = e_byzantium
 					completely_controls = k_italy
 					completely_controls = k_sicily
@@ -123,9 +123,8 @@ imperial_reconquest = {
 					de_jure_liege_or_above = k_france
 					de_jure_liege_or_above = k_aquitaine
 					de_jure_liege_or_above = k_brittany
-					title = d_flanders
 				}
-				ROOT = {
+				ROOT = { # Tier 5
 					completely_controls = e_byzantium
 					completely_controls = k_italy
 					completely_controls = k_sicily
@@ -156,7 +155,7 @@ imperial_reconquest = {
 					de_jure_liege_or_above = k_bavaria
 					title = d_brabant
 				}
-				ROOT = {
+				ROOT = { # Tier 6
 					completely_controls = e_byzantium
 					completely_controls = k_italy
 					completely_controls = k_sicily
@@ -180,7 +179,6 @@ imperial_reconquest = {
 					completely_controls = k_algeria
 					completely_controls = k_mauretania
 					completely_controls = k_brittany
-					completely_controls = d_flanders
 				}
 			}
 		}
