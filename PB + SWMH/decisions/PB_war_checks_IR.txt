@@ -14,9 +14,6 @@ decisions = {
 			completely_controls = e_byzantium
 		}
 		effect = {
-			hidden_tooltip = {
-				clr_character_flag = holy_war_check
-			}
 		}
 		ai_will_do = {
 			factor = 0
@@ -42,9 +39,6 @@ decisions = {
 			completely_controls = d_antioch
 		}
 		effect = {
-			hidden_tooltip = {
-				clr_character_flag = holy_war_check
-			}
 		}
 		ai_will_do = {
 			factor = 0
@@ -78,9 +72,6 @@ decisions = {
 			completely_controls = k_sardinia
 		}
 		effect = {
-			hidden_tooltip = {
-				clr_character_flag = holy_war_check
-			}
 		}
 		ai_will_do = {
 			factor = 0
@@ -118,9 +109,6 @@ decisions = {
 			completely_controls = k_jerusalem
 		}
 		effect = {
-			hidden_tooltip = {
-				clr_character_flag = holy_war_check
-			}
 		}
 		ai_will_do = {
 			factor = 0
@@ -170,9 +158,6 @@ decisions = {
 			completely_controls = k_asturias
 		}
 		effect = {
-			hidden_tooltip = {
-				clr_character_flag = holy_war_check
-			}
 		}
 		ai_will_do = {
 			factor = 0
@@ -219,16 +204,9 @@ decisions = {
 			completely_controls = k_brittany
 		}
 		effect = {
-			hidden_tooltip = {
-				clr_character_flag = holy_war_check
-			}
 		}
 		ai_will_do = {
 			factor = 0
 		}
 	}
 }
-			
-#Z: WTF happened to Tier 7?
-#   England, Wales, Burgundy (incl. Provence, the Roman Empire's first "province"),
-#   S. Germany/Rhine, Carinthia/Illyria, ... Hmm.

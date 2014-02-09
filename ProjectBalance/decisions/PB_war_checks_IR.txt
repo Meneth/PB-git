@@ -14,9 +14,6 @@ decisions = {
 			completely_controls = e_byzantium
 		}
 		effect = {
-			hidden_tooltip = {
-				clr_character_flag = holy_war_check
-			}
 		}
 		ai_will_do = {
 			factor = 0
@@ -38,9 +35,6 @@ decisions = {
 			completely_controls = k_serbia
 		}
 		effect = {
-			hidden_tooltip = {
-				clr_character_flag = holy_war_check
-			}
 		}
 		ai_will_do = {
 			factor = 0
@@ -67,9 +61,6 @@ decisions = {
 			completely_controls = k_sicily
 		}
 		effect = {
-			hidden_tooltip = {
-				clr_character_flag = holy_war_check
-			}
 		}
 		ai_will_do = {
 			factor = 0
@@ -108,9 +99,6 @@ decisions = {
 			completely_controls = k_tunisia
 		}
 		effect = {
-			hidden_tooltip = {
-				clr_character_flag = holy_war_check
-			}
 		}
 		ai_will_do = {
 			factor = 0
@@ -160,9 +148,6 @@ decisions = {
 			completely_controls = k_asturias
 		}
 		effect = {
-			hidden_tooltip = {
-				clr_character_flag = holy_war_check
-			}
 		}
 		ai_will_do = {
 			factor = 0
@@ -209,9 +194,6 @@ decisions = {
 			completely_controls = k_brittany
 		}
 		effect = {
-			hidden_tooltip = {
-				clr_character_flag = holy_war_check
-			}
 		}
 		ai_will_do = {
 			factor = 0
