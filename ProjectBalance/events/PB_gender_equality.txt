@@ -29,6 +29,21 @@ narrative_event = {
 				}
 				any_demesne_title = {
 					add_law = true_cognatic_succession
+					
+					any_de_jure_vassal = {
+						remove_opinion = {
+							modifier = good_succ_law_change
+							who = PREVPREV
+						}
+						remove_opinion = {
+							modifier = bad_succ_law_change
+							who = PREVPREV
+						}
+						remove_opinion = {
+							modifier = succ_law_change
+							who = PREVPREV
+						}
+					}
 				}
 				any_vassal = {
 					remove_opinion = {
@@ -60,43 +75,56 @@ narrative_event = {
 				}
 			}
 			any_realm_lord = {
-				if = {
-					limit = {
-						NOT = { religion_group = muslim }
-						has_horde_culture = no
-						is_merchant_republic = no
-						is_patrician = no
-					}
-					any_demesne_title = {
-						add_law = true_cognatic_succession
-					}
-					any_vassal = {
+				limit = {
+					NOT = { religion_group = muslim }
+					has_horde_culture = no
+					is_merchant_republic = no
+					is_patrician = no
+				}
+				any_demesne_title = {
+					add_law = true_cognatic_succession
+					
+					any_de_jure_vassal = {
 						remove_opinion = {
 							modifier = good_succ_law_change
-							who = liege
+							who = PREVPREV
 						}
 						remove_opinion = {
 							modifier = bad_succ_law_change
-							who = liege
+							who = PREVPREV
 						}
 						remove_opinion = {
 							modifier = succ_law_change
-							who = liege
+							who = PREVPREV
 						}
 					}
-					any_courtier = {
-						remove_opinion = {
-							modifier = good_succ_law_change
-							who = liege
-						}
-						remove_opinion = {
-							modifier = bad_succ_law_change
-							who = liege
-						}
-						remove_opinion = {
-							modifier = succ_law_change
-							who = liege
-						}
+				}
+				any_vassal = {
+					remove_opinion = {
+						modifier = good_succ_law_change
+						who = liege
+					}
+					remove_opinion = {
+						modifier = bad_succ_law_change
+						who = liege
+					}
+					remove_opinion = {
+						modifier = succ_law_change
+						who = liege
+					}
+				}
+				any_courtier = {
+					remove_opinion = {
+						modifier = good_succ_law_change
+						who = liege
+					}
+					remove_opinion = {
+						modifier = bad_succ_law_change
+						who = liege
+					}
+					remove_opinion = {
+						modifier = succ_law_change
+						who = liege
 					}
 				}
 			}
