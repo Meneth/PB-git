@@ -1,0 +1,41 @@
+####################################################
+# Randomized Historical Rulers (and Courtiers)     #
+#                                                  #
+# D-Day scenario customization option invoked      #
+# by decision (decisions/PB_customization.txt)     #
+#                                                  #
+# Realistically randomizes personality, education, #
+# and congenital traits from the fully extended    #
+# PB trait set.                                    #
+####################################################
+
+namespace = pb_rr
+
+# pb_rr.0
+#
+# Entry point from D-Day customization decision
+narrative_event = {
+	id     = pb_rr.0
+	title  = pb_rr.0.title
+	desc   = pb_rr.0.desc
+	border = GFX_event_narrative_frame_diplomacy
+	
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = pb_rr.0.opt.notme
+		
+		set_global_flag = random_rulers
+	}
+	
+	option = {
+		name = pb_rr.0.opt.all
+		
+		set_global_flag = random_rulers
+	}
+	
+	option = {
+		name = pb_rr.0.opt.cancel
+	}
+}
