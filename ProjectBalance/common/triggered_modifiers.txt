@@ -7,7 +7,6 @@
 # Bankruptcy
 negative_money = {
 	potential = {
-		ai = no
 		is_ruler = yes
 	}
 	
@@ -18,28 +17,8 @@ negative_money = {
 	icon = 24
 	
 	land_morale = -0.25
-}
-
-negative_money = {
-	potential = {
-		ai = yes
-		is_ruler = yes
-	}
 	
-	trigger = {
-		primary_title = {
-			NOT = { # Exempt
-				title = k_papal_state
-				holy_order = yes
-				mercenary = yes
-			}
-		}
-		NOT = { wealth = -250 }
-	}
-	
-	icon = 24
-	
-	land_morale = -0.25
+	active = no
 }
 
 #Defending Against Holy War

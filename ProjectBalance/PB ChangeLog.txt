@@ -1,5 +1,6 @@
 3.4.5 [BETA]
 	Added a set of tiered conquest checks for the Imperial Reconquest CB under the "Is war possible?" menu. Now works for both PB and PB+SWMH (only the latter in the previous release)
+	Flawed bankruptcy triggered modifier from previous release removed. No extra land_morale hit when bankrupt now, but most importantly, no rapidly-toggling "Lack of Funds" notification in your High Priority Messages tab
 
 3.4.4
 	(PB+VIET) Fixed some trait icons being missing when VIET Immersion is active
