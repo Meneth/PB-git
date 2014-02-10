@@ -25,7 +25,7 @@ narrative_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = pb_rr.0.opt.notme
+		name = pb_rr.0.opt.notme # Everyone but me
 		trigger = { # Single-player
 			NOT = {
 				any_playable_ruler = {
@@ -35,11 +35,16 @@ narrative_event = {
 			}
 		}
 		
-		set_global_flag = random_rulers
+		custom_tooltip = {
+			text = pb_rr.0.opt.notme.ctt
+			hidden_tooltip = {
+				e_rebels = { owner = { character_event = { id = pb_rr.1 } } }
+			}
+		}
 	}
 	
 	option = {
-		name = pb_rr.0.opt.notme_mp
+		name = pb_rr.0.opt.notme_mp # Everyone but us
 		trigger = { # Multi-player
 			any_playable_ruler = {
 				ai = no
@@ -47,11 +52,17 @@ narrative_event = {
 			}
 		}
 		
-		set_global_flag = random_rulers
+		custom_tooltip = {
+			text = pb_rr.0.opt.notme_mp.ctt
+			hidden_tooltip = {
+				e_rebels = { owner = { character_event = { id = pb_rr.1 } } }
+				#TODO: notify other players
+			}
+		}
 	}
 	
 	option = {
-		name = pb_rr.0.opt.all
+		name = pb_rr.0.opt.all # Everyone
 		trigger = { # Single-player
 			NOT = {
 				any_playable_ruler = {
@@ -61,11 +72,20 @@ narrative_event = {
 			}
 		}
 		
-		set_global_flag = random_rulers
+		set_global_flag = random_rulers_all
+		
+		custom_tooltip = {
+			text = pb_rr.0.opt.all.ctt
+			hidden_tooltip = {
+				e_rebels = { owner = { character_event = { id = pb_rr.1 } } }
+			}
+		}
+		
+		clr_global_flag = random_rulers_all
 	}
 	
 	option = {
-		name = pb_rr.0.opt.all_mp
+		name = pb_rr.0.opt.all_mp # Everyone
 		trigger = { # Multi-player
 			any_playable_ruler = {
 				ai = no
@@ -73,10 +93,42 @@ narrative_event = {
 			}
 		}
 		
-		set_global_flag = random_rulers
+		set_global_flag = random_rulers_all
+		
+		custom_tooltip = {
+			text = pb_rr.0.opt.all_mp.ctt
+			hidden_tooltip = {
+				e_rebels = { owner = { character_event = { id = pb_rr.1 } } }
+				#TODO: notify other players
+			}
+		}
+		
+		clr_global_flag = random_rulers_all
 	}
 	
 	option = {
-		name = pb_rr.0.opt.cancel
+		name = pb_rr.0.opt.cancel # Nevermind
+	}
+}
+
+
+# pb_rr.1
+#
+# Top-level randomization event
+#
+# ROOT = Rebels
+# FROM = player that initiated randomization
+character_event = {
+	id = pb_rr.1
+	desc = OK
+	hide_window = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = OK
+		
+		set_global_flag = random_rulers
+		
+		
 	}
 }
