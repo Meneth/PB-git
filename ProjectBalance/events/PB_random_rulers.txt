@@ -15,22 +15,63 @@ namespace = pb_rr
 #
 # Entry point from D-Day customization decision
 narrative_event = {
-	id     = pb_rr.0
-	title  = pb_rr.0.title
-	desc   = pb_rr.0.desc
-	border = GFX_event_narrative_frame_diplomacy
+	id      = pb_rr.0
+	title   = pb_rr.0.title
+	desc    = pb_rr.0.desc
+	picture = GFX_evt_family
+	border  = GFX_event_narrative_frame_religion
 	
-	major = yes
+	hide_from = yes
 	is_triggered_only = yes
 	
 	option = {
 		name = pb_rr.0.opt.notme
+		trigger = { # Single-player
+			NOT = {
+				any_playable_ruler = {
+					ai = no
+					NOT = { character = ROOT }
+				}
+			}
+		}
+		
+		set_global_flag = random_rulers
+	}
+	
+	option = {
+		name = pb_rr.0.opt.notme_mp
+		trigger = { # Multi-player
+			any_playable_ruler = {
+				ai = no
+				NOT = { character = ROOT }
+			}
+		}
 		
 		set_global_flag = random_rulers
 	}
 	
 	option = {
 		name = pb_rr.0.opt.all
+		trigger = { # Single-player
+			NOT = {
+				any_playable_ruler = {
+					ai = no
+					NOT = { character = ROOT }
+				}
+			}
+		}
+		
+		set_global_flag = random_rulers
+	}
+	
+	option = {
+		name = pb_rr.0.opt.all_mp
+		trigger = { # Multi-player
+			any_playable_ruler = {
+				ai = no
+				NOT = { character = ROOT }
+			}
+		}
 		
 		set_global_flag = random_rulers
 	}
