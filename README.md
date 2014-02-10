@@ -1,25 +1,12 @@
 # Project Balance
 
-## Installation:
+## Installing the beta when using HIP:
 
-1. Important: Delete your **Project Balance** folder if you have one
-2. Extract the **Project Balance** folder and the `ProjectBalance.mod` file to your mod-folder `Crusader Kings II\mod`
-3. Enable it when launching the game
-4. Have fun
-
-#### PB + SWMH:
-
-1. Download and install **SWMH**
-2. Extract the **PB+SWMH** folder, and the `PB+SWMH.mod` file to your mod-folder `Crusader Kings II\mod`
-3. Enable **PB**, **PB+SWMH**, and **SWMH** in the launcher
-4. Have fun
-
-#### Project Balance Module Pack:
-
-1. Extract the modules you want, and their `.mod` file
-2. Enable **PB** and any modules you'd like in the launcher (all are compatible with **SWMH**)
-3. Have fun
-
+1. Extract your Historical Immersion Project download
+2. Replace the ProjectBalance folder in the "modules" folder with the one from this Git repo
+3. Replace the PB+SWMH folder in the "modules" folder with the one from this Git repo
+4. Install HIP normally
+5. Have fun
 
 ## Information:
 
@@ -38,7 +25,5 @@
 
 #### What the modules do:
 - `Gender Equality`: People of both genders can staff all council positions and command armies. All non-Muslim realms start with Absolute Cognatic succession
-- `No Assaults`: Holdings cannot be assaulted during sieges
-- `Vanilla Demesne Laws`: Vanilla demesne laws are restored, rather than Project Balance's new set of demesne laws. Crown laws are unaffected
 - `No Ahistorical Empires`: Only two empires have dejure land; Byzantium and the HRE
 - `Shattered Balance`: All counties are independent. Perfect if you want alt-history or to expand as a specific dynasty. Note: Not compatible with No Assaults
