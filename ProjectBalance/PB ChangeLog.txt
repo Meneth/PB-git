@@ -2,6 +2,7 @@
 	Added a set of tiered conquest checks for the Imperial Reconquest CB under the "Is war possible?" menu. Now works for both PB and PB+SWMH (only the latter in the previous release)
 	Flawed bankruptcy triggered modifier from previous release removed. No extra land_morale hit when bankrupt now, but most importantly, no rapidly-toggling "Lack of Funds" notification in your High Priority Messages tab
 	(Gender Equality) Fixed a case where certain characters could be upset at rulers due to their startup succession law change to True Cognatic
+	Day-1 scenario customization decisions prioritized to top of intrigue menu. Some "high-priority" decisions that can't actually be executed on day 1 anyway will now only show up after the first game day (e.g., Hold a Grand Tournament). Later saves will always be after day 1 (and the scenario customization options disappear by then), so those decisions are all still available before unpausing in the normal case of loading a game
 
 3.4.4
 	(PB+VIET) Fixed some trait icons being missing when VIET Immersion is active
