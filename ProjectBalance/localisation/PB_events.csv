@@ -195,3 +195,4 @@ pb_rr.0.opt.notme.ctt;§Y[Root.GetBestName]§!'s traits will remain the same, but 
 pb_rr.0.opt.notme_mp.ctt;All players' traits will remain the same, but all AI characters' will be randomized.\n;;;;;;;;;;;;;x
 pb_rr.0.opt.all.ctt;Along with all other characters, §Y[Root.GetBestName]§!'s traits will be randomized.\n;;;;;;;;;;;;;x
 pb_rr.0.opt.all_mp.ctt;The traits of all players and AI characters alike will be randomized.\n;;;;;;;;;;;;;x
+pb_rr.0.opt.cancel.ctt;All characters remain the same as always.\n;;;;;;;;;;;;;x

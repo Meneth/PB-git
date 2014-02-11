@@ -26,6 +26,7 @@ narrative_event = {
 	
 	option = {
 		name = pb_rr.0.opt.notme # Everyone but me
+		
 		trigger = { # Single-player
 			NOT = {
 				any_playable_ruler = {
@@ -37,6 +38,7 @@ narrative_event = {
 		
 		custom_tooltip = {
 			text = pb_rr.0.opt.notme.ctt
+			
 			hidden_tooltip = {
 				e_rebels = { owner = { character_event = { id = pb_rr.1 } } }
 			}
@@ -45,6 +47,7 @@ narrative_event = {
 	
 	option = {
 		name = pb_rr.0.opt.notme_mp # Everyone but us
+		
 		trigger = { # Multi-player
 			any_playable_ruler = {
 				ai = no
@@ -54,6 +57,7 @@ narrative_event = {
 		
 		custom_tooltip = {
 			text = pb_rr.0.opt.notme_mp.ctt
+			
 			hidden_tooltip = {
 				e_rebels = { owner = { character_event = { id = pb_rr.1 } } }
 				#TODO: notify other players
@@ -63,6 +67,7 @@ narrative_event = {
 	
 	option = {
 		name = pb_rr.0.opt.all # Everyone
+		
 		trigger = { # Single-player
 			NOT = {
 				any_playable_ruler = {
@@ -72,20 +77,20 @@ narrative_event = {
 			}
 		}
 		
-		set_global_flag = random_rulers_all
+		set_global_flag = rr_all
 		
 		custom_tooltip = {
 			text = pb_rr.0.opt.all.ctt
+			
 			hidden_tooltip = {
 				e_rebels = { owner = { character_event = { id = pb_rr.1 } } }
 			}
 		}
-		
-		clr_global_flag = random_rulers_all
 	}
 	
 	option = {
 		name = pb_rr.0.opt.all_mp # Everyone
+		
 		trigger = { # Multi-player
 			any_playable_ruler = {
 				ai = no
@@ -93,21 +98,24 @@ narrative_event = {
 			}
 		}
 		
-		set_global_flag = random_rulers_all
+		set_global_flag = rr_all
 		
 		custom_tooltip = {
 			text = pb_rr.0.opt.all_mp.ctt
+			
 			hidden_tooltip = {
 				e_rebels = { owner = { character_event = { id = pb_rr.1 } } }
 				#TODO: notify other players
 			}
 		}
-		
-		clr_global_flag = random_rulers_all
 	}
 	
 	option = {
 		name = pb_rr.0.opt.cancel # Nevermind
+		
+		custom_tooltip = {
+			text = pb_rr.0.opt.cancel.ctt
+		}	
 	}
 }
 
@@ -116,7 +124,7 @@ narrative_event = {
 #
 # Top-level randomization event
 #
-# ROOT = Rebels
+# ROOT = referee
 # FROM = player that initiated randomization
 character_event = {
 	id = pb_rr.1
@@ -129,6 +137,5254 @@ character_event = {
 		
 		set_global_flag = random_rulers
 		
+		# Need to get into every court in the game, but we'd rather handle realm lords (and their
+		# top_lieges before them) before their respective courts for heuristic trait inheritance
+		# coherency reasons, so we don't just use a limited form of any_realm_character.
 		
+		# We also want to a) hit spouses of rulers, then b) hit children of rulers before regular
+		# courtiers for maximum inheritance coherence.
+		
+		# Rulers above baron-tier are essentially always historical on D-Day, so we don't enforce
+		# that condition (which is ultimately just an optimization, since all non-historical
+		# characters in the game will already be randomized).
+		
+		any_independent_ruler = {
+			character_event = { id = pb_rr.2 } # Randomize character
+			
+			any_spouse = { # Spouses are always historical on D-Day
+				character_event = { id = pb_rr.2 }
+			}
+			any_child = { # As are children
+				character_event = { id = pb_rr.2 }
+			}
+			any_courtier = {
+				limit = {
+					historical = yes
+					NOT = { spouse = { character = PREVPREV } } # Re-randomizing a spouse may reduce inherit coherency
+					NOT = { is_child_of = PREV } # Re-randomizing a child will increase trait inheritance chance
+				}
+				character_event = { id = pb_rr.2 }
+			}
+
+			any_realm_lord = {
+				limit = { higher_tier_than = baron } # Barons don't have real courtiers
+
+				character_event = { id = pb_rr.2 }
+				any_spouse = { character_event = { id = pb_rr.2 } }
+				any_child = { character_event = { id = pb_rr.2 } }
+				
+				any_courtier = {
+					limit = {
+						historical = yes
+						NOT = { spouse = { character = PREVPREV } }
+						NOT = { is_child_of = PREV }
+					}
+					character_event = { id = pb_rr.2 }
+				}
+			}
+			
+			# But we still want to catch historical barons/patricians
+			any_realm_lord = {
+				limit = {
+					tier = baron
+					historical = yes
+				}
+				character_event = { id = pb_rr.2 }
+				any_spouse = { character_event = { id = pb_rr.2 } }
+				any_child = { character_event = { id = pb_rr.2 } }
+			}
+		}
+		
+		# Phew. We just touched every character in the game at least once. All done!
+		# For every character that was randomized, up to ~10x as many events ran.
+		# Hopefully there was enough random seed, considering that the game hasn't
+		# been started yet.
+		
+		clr_global_flag = rr_all
+	}
+}
+
+
+# pb_rr.2
+#
+# Randomize a character
+# - Education selection (quality increased by tier, if ruler)
+# - Personality selection (up to 5 traits, depending upon age)
+# - Potential lifestyle selection (chance tiers after age 25, 35,
+#   and 45)
+# - Genetics selection (both random and [randomly] inherited)
+# - Avoid stupid things like a Pope/Patriarch not having a
+#   ecclesiastical education
+# - Recalculation of combat trait based upon new persona
+# - Leadership traits (1 for brilliant_strategist, else none)
+# - Smart recognition and respect of random=no traits, opposites,
+#   and other dynamic trait definition properties
+# - All health/illness traits are left at preexisting state,
+#   as are any traits that affect succession or other core game
+#   mechanics (characters keep their claims, after all)
+# - Expect worldwide council reshuffling after completing chain
+# - Expect a significantly longer delay when executing in an MP
+#   game, though this particular event has been heavily optimized
+#   to flatten what would otherwise be about a dozen sub-events
+#   per invocation
+#
+# Parts of this event are generated by a script that parses the
+# trait definitions.  Code generation is also used to exchange
+# some text redundancy for skipping a few factors more sub-event
+# overhead. The main reason to use external code generation is
+# to be able to easily update the probabilities, trait lists,
+# and relevant trait properties (e.g., opposites) in the future
+# when traits are updated, added, or tweaked, but the event
+# overhead improvement is a _requirement_ for multiplayer sync.
+# We're already running this for thousands of characters,
+# sometimes hitting a character twice.
+#
+# The script is called pb_rr.pl, and I'll likely upload it as a
+# gist on GitHub.  It works well at what it needs to do, although
+# it is far from a "complete" or "optimal" anything.  I may
+# refactor it to directly insert/replace the auto-generated portions
+# of this file, but the need to update should be very rare (and
+# "need" wouldn't be the right word at all).
+#
+# ROOT = character
+# FROM = referee
+# FROMFROM = player that initiated randomization
+character_event = {
+	id = pb_rr.2
+	desc = OK
+	hide_window = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		is_alive = yes
+		OR = { # Block players that didn't choose self-randomization
+			ai = yes
+			has_global_flag = rr_all
+		}
+	}
+	
+	option = {
+		name = OK
+		
+		##### EDUCATION SELECTION #####
+		
+		if = {
+			limit = { is_adult = yes } # Children don't have education/leadership traits
+			
+			# Remove education traits
+			remove_trait = amateurish_plotter
+			remove_trait = flamboyant_schemer
+			remove_trait = intricate_webweaver
+			remove_trait = elusive_shadow
+			remove_trait = naive_appeaser
+			remove_trait = underhanded_rogue
+			remove_trait = charismatic_negotiator
+			remove_trait = grey_eminence
+			remove_trait = indulgent_wastrel
+			remove_trait = thrifty_clerk
+			remove_trait = fortune_builder
+			remove_trait = midas_touched
+			remove_trait = misguided_warrior
+			remove_trait = tough_soldier
+			remove_trait = skilled_tactician
+			remove_trait = brilliant_strategist
+			remove_trait = detached_priest
+			remove_trait = martial_cleric
+			remove_trait = scholarly_theologian
+			remove_trait = mastermind_theologian
+			
+			# Remove leadership traits
+			# % pb_rr.pl --codegen=rm_leaders
+			remove_trait = light_foot_leader
+			remove_trait = heavy_infantry_leader
+			remove_trait = cavalry_leader
+			remove_trait = inspiring_leader
+			remove_trait = trickster
+			remove_trait = organizer
+			remove_trait = defensive_leader
+			remove_trait = experimenter
+			remove_trait = flanker
+			remove_trait = aggressive_leader
+			remove_trait = siege_leader
+			remove_trait = flat_terrain_leader
+			remove_trait = rough_terrain_leader
+			remove_trait = mountain_terrain_leader
+			remove_trait = desert_terrain_leader
+			remove_trait = holy_warrior
+			remove_trait = unyielding_leader
+			remove_trait = narrow_flank_leader
+			
+			# Special case for most religious leaders (Caliphs are not ecclesiastically-required)
+			
+			if = {
+				limit = {
+					NOT = { religion_group = muslim }
+					controls_religion = yes
+				}
+				
+				# Always a theological education, highly skewed toward high tier
+				random_list = {
+					600 = { add_trait = mastermind_theologian }
+					300 = { add_trait = scholarly_theologian }
+					100 = { add_trait = martial_cleric }
+					33  = { add_trait = detached_priest }
+				}
+				set_character_flag = specialist_tmp
+			}
+			
+			# Special case for holy orders and mercenaries
+			# Grandmasters and their marshals are guaranteed martial education
+			# and HIGHLY-skewed towards top-tier
+			
+			if = {
+				limit = {
+					OR = {
+						primary_title = {
+							OR = {
+								holy_order = yes
+								mercenary = yes
+							}
+						}
+						liege = {
+							primary_title = {
+								OR = {
+									holy_order = yes
+									mercenary = yes
+								}
+							}
+							job_marshal = {
+								character = ROOT
+							}
+						}
+					}
+				}
+				random_list = {
+					1000 = { add_trait = brilliant_strategist }
+					500  = { add_trait = skilled_tactician }
+					100  = { add_trait = tough_soldier }
+					20   = { add_trait = misguided_warrior }
+				}
+				set_character_flag = specialist_tmp
+			}
+			
+			if = {
+				limit = {
+					NOT = { has_character_flag = specialist_tmp }
+				}
+				
+				##### GUTS OF EDUCATION TRAIT SELECTION #####
+
+				# Distribution of ed. trait tiers varies by character tier (<=count, duke, king, emperor)
+
+				# Base case (<=count) splits the 4 ed. tiers into 15%/30%/30%/25% (somewhat of a bell curve)
+
+				# As ruler tier increases, percentage chance is shifted upward by 10% each ruler tier step
+				# and skewed. E.g., duke distribution is 10%/25%/30%/35%, king is 5%/20%/30%/45%, and
+				# emperor is 0%/15%/30%/55%.  This may not be immediately obvious from the random weights,
+				# because the code generator accounts for less-likely ecclesiastical educations and factors
+				# weights.
+				
+				# In all cases, priest education probabilities are significantly reduced relative
+				# to the other 3 education categories (25% as likely). The other 3 education categories
+				# are equally likely. This results in, on average, a priest education trait being selected
+				# for 1 out of every 13 adult historical characters.
+				
+				if = {
+					limit = {
+						OR = {
+							is_ruler = no
+							lower_tier_than = duke
+						}
+					}
+					# % pb_rr.pl --codegen=ed_select_0
+					random_list = {
+						12 = { add_trait = amateurish_plotter }
+						24 = { add_trait = flamboyant_schemer }
+						24 = { add_trait = intricate_webweaver }
+						20 = { add_trait = elusive_shadow }
+						12 = { add_trait = naive_appeaser }
+						24 = { add_trait = underhanded_rogue }
+						24 = { add_trait = charismatic_negotiator }
+						20 = { add_trait = grey_eminence }
+						12 = { add_trait = indulgent_wastrel }
+						24 = { add_trait = thrifty_clerk }
+						24 = { add_trait = fortune_builder }
+						20 = { add_trait = midas_touched }
+						12 = { add_trait = misguided_warrior }
+						24 = { add_trait = tough_soldier }
+						24 = { add_trait = skilled_tactician }
+						20 = { add_trait = brilliant_strategist }
+						3 = { add_trait = detached_priest }
+						6 = { add_trait = martial_cleric }
+						6 = { add_trait = scholarly_theologian }
+						5 = { add_trait = mastermind_theologian }
+					}
+				}
+				
+				if = {
+					limit = { tier = duke }
+					# % pb_rr.pl --codegen=ed_select_1
+					random_list = {
+						8 = { add_trait = amateurish_plotter }
+						20 = { add_trait = flamboyant_schemer }
+						24 = { add_trait = intricate_webweaver }
+						28 = { add_trait = elusive_shadow }
+						8 = { add_trait = naive_appeaser }
+						20 = { add_trait = underhanded_rogue }
+						24 = { add_trait = charismatic_negotiator }
+						28 = { add_trait = grey_eminence }
+						8 = { add_trait = indulgent_wastrel }
+						20 = { add_trait = thrifty_clerk }
+						24 = { add_trait = fortune_builder }
+						28 = { add_trait = midas_touched }
+						8 = { add_trait = misguided_warrior }
+						20 = { add_trait = tough_soldier }
+						24 = { add_trait = skilled_tactician }
+						28 = { add_trait = brilliant_strategist }
+						2 = { add_trait = detached_priest }
+						5 = { add_trait = martial_cleric }
+						6 = { add_trait = scholarly_theologian }
+						7 = { add_trait = mastermind_theologian }
+					}
+				}
+				
+				if = {
+					limit = { tier = king }
+					# % pb_rr.pl --codegen=ed_select_2
+					random_list = {
+						4 = { add_trait = amateurish_plotter }
+						16 = { add_trait = flamboyant_schemer }
+						24 = { add_trait = intricate_webweaver }
+						36 = { add_trait = elusive_shadow }
+						4 = { add_trait = naive_appeaser }
+						16 = { add_trait = underhanded_rogue }
+						24 = { add_trait = charismatic_negotiator }
+						36 = { add_trait = grey_eminence }
+						4 = { add_trait = indulgent_wastrel }
+						16 = { add_trait = thrifty_clerk }
+						24 = { add_trait = fortune_builder }
+						36 = { add_trait = midas_touched }
+						4 = { add_trait = misguided_warrior }
+						16 = { add_trait = tough_soldier }
+						24 = { add_trait = skilled_tactician }
+						36 = { add_trait = brilliant_strategist }
+						1 = { add_trait = detached_priest }
+						4 = { add_trait = martial_cleric }
+						6 = { add_trait = scholarly_theologian }
+						9 = { add_trait = mastermind_theologian }
+					}
+				}
+				
+				if = {
+					limit = { tier = emperor }
+					# % pb_rr.pl --codegen=ed_select_3
+					random_list = {
+						12 = { add_trait = flamboyant_schemer }
+						24 = { add_trait = intricate_webweaver }
+						44 = { add_trait = elusive_shadow }
+						12 = { add_trait = underhanded_rogue }
+						24 = { add_trait = charismatic_negotiator }
+						44 = { add_trait = grey_eminence }
+						12 = { add_trait = thrifty_clerk }
+						24 = { add_trait = fortune_builder }
+						44 = { add_trait = midas_touched }
+						12 = { add_trait = tough_soldier }
+						24 = { add_trait = skilled_tactician }
+						44 = { add_trait = brilliant_strategist }
+						3 = { add_trait = martial_cleric }
+						6 = { add_trait = scholarly_theologian }
+						11 = { add_trait = mastermind_theologian }
+					}
+				}
+			}
+			
+			clr_character_flag = specialist_tmp
+			
+			# If we selected brilliant_strategist, we need to assign a
+			# leadership trait as well.
+			
+			if = {
+				limit = { trait = brilliant_strategist }
+				# % pb_rr.pl --codegen=leader_select
+				random_list = {
+					10 = { add_trait = light_foot_leader }
+					10 = { add_trait = heavy_infantry_leader }
+					10 = { add_trait = cavalry_leader }
+					10 = { add_trait = inspiring_leader }
+					10 = { add_trait = trickster }
+					10 = { add_trait = organizer }
+					10 = { add_trait = defensive_leader }
+					10 = { add_trait = experimenter }
+					10 = { add_trait = flanker }
+					10 = { add_trait = aggressive_leader }
+					10 = { add_trait = siege_leader }
+					10 = { add_trait = holy_warrior }
+					10 = { add_trait = unyielding_leader }
+					10 = { add_trait = narrow_flank_leader }
+				}
+			}
+		}
+		
+		###### PERSONALITY TRAIT SELECTION ######
+		
+		# Remove personality traits
+		
+		if = {
+			limit = {
+				personality_traits = 1 # Any optimizations that can be made...
+			}
+			# % pb_rr.pl --codegen=rm_persona
+			remove_trait = lustful
+			remove_trait = chaste
+			remove_trait = gluttonous
+			remove_trait = temperate
+			remove_trait = greedy
+			remove_trait = charitable
+			remove_trait = slothful
+			remove_trait = diligent
+			remove_trait = envious
+			remove_trait = kind
+			remove_trait = wroth
+			remove_trait = patient
+			remove_trait = proud
+			remove_trait = humble
+			remove_trait = deceitful
+			remove_trait = honest
+			remove_trait = craven
+			remove_trait = brave
+			remove_trait = shy
+			remove_trait = gregarious
+			remove_trait = ambitious
+			remove_trait = content
+			remove_trait = arbitrary
+			remove_trait = just
+			remove_trait = cynical
+			remove_trait = zealous
+			remove_trait = paranoid
+			remove_trait = trusting
+			remove_trait = cruel
+		}
+		
+		# Varying with age (progress toward adulthood and max. at adulthood), ideally select 1-5
+		# personality traits for characters with age >= 6.
+		
+		# By age range, select _up to_:
+		# 6-8 years,   1 trait
+		# 8-10 years,  2 traits
+		# 10-12 years, 3 traits
+		# 12-14 years, 4 traits
+		# >= 14 years, 5 traits
+		
+		# Each selection is an independent trial which has a small chance of not succeeding due to
+		# already having selected an opposite trait in a previous trial. All personality traits are
+		# considered equally likely. In practice, due to asymmetric opposite sets as well as limiting
+		# potential clauses for some traits (e.g., chaste is not available to muslims), some traits
+		# will be less likely on average-- e.g., kind.
+		
+		if = {
+			limit = {
+				age = 6
+				NOT = { age = 8 }
+			}
+			# % pb_rr.pl --codegen=persona_select_1
+
+			# Roll a new personality trait: ROUND 1 OF 1
+			random_list = {
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = chaste }
+						}
+						add_trait = lustful
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = {
+								religion_group = muslim
+								trait = lustful
+							}
+						}
+						add_trait = chaste
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = temperate }
+						}
+						add_trait = gluttonous
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = gluttonous }
+						}
+						add_trait = temperate
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = charitable }
+						}
+						add_trait = greedy
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = greedy }
+						}
+						add_trait = charitable
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = diligent }
+						}
+						add_trait = slothful
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = slothful }
+						}
+						add_trait = diligent
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = kind }
+						}
+						add_trait = envious
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = {
+								trait = envious
+								trait = cruel
+							}
+						}
+						add_trait = kind
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = patient }
+						}
+						add_trait = wroth
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = wroth }
+						}
+						add_trait = patient
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = humble }
+						}
+						add_trait = proud
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = proud }
+						}
+						add_trait = humble
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = honest }
+						}
+						add_trait = deceitful
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = deceitful }
+						}
+						add_trait = honest
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = brave }
+						}
+						add_trait = craven
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = craven }
+						}
+						add_trait = brave
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = gregarious }
+						}
+						add_trait = shy
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = shy }
+						}
+						add_trait = gregarious
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = content }
+						}
+						add_trait = ambitious
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = ambitious }
+						}
+						add_trait = content
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = just }
+						}
+						add_trait = arbitrary
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = arbitrary }
+						}
+						add_trait = just
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = zealous }
+						}
+						add_trait = cynical
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = {
+								trait = cynical
+								trait = sympathy_christendom
+								trait = sympathy_islam
+								trait = sympathy_pagans
+								trait = sympathy_zoroastrianism
+								trait = sympathy_judaism
+							}
+						}
+						add_trait = zealous
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = trusting }
+						}
+						add_trait = paranoid
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = paranoid }
+						}
+						add_trait = trusting
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = kind }
+						}
+						add_trait = cruel
+					}
+				}
+			}
+		} # END: Age 6-8
+		if = {
+			limit = {
+				age = 8
+				NOT = { age = 10 }
+			}
+			# % pb_rr.pl --codegen=persona_select_2
+
+			# Roll a new personality trait: ROUND 1 OF 2
+			random_list = {
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = chaste }
+						}
+						add_trait = lustful
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = {
+								religion_group = muslim
+								trait = lustful
+							}
+						}
+						add_trait = chaste
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = temperate }
+						}
+						add_trait = gluttonous
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = gluttonous }
+						}
+						add_trait = temperate
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = charitable }
+						}
+						add_trait = greedy
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = greedy }
+						}
+						add_trait = charitable
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = diligent }
+						}
+						add_trait = slothful
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = slothful }
+						}
+						add_trait = diligent
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = kind }
+						}
+						add_trait = envious
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = {
+								trait = envious
+								trait = cruel
+							}
+						}
+						add_trait = kind
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = patient }
+						}
+						add_trait = wroth
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = wroth }
+						}
+						add_trait = patient
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = humble }
+						}
+						add_trait = proud
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = proud }
+						}
+						add_trait = humble
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = honest }
+						}
+						add_trait = deceitful
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = deceitful }
+						}
+						add_trait = honest
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = brave }
+						}
+						add_trait = craven
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = craven }
+						}
+						add_trait = brave
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = gregarious }
+						}
+						add_trait = shy
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = shy }
+						}
+						add_trait = gregarious
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = content }
+						}
+						add_trait = ambitious
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = ambitious }
+						}
+						add_trait = content
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = just }
+						}
+						add_trait = arbitrary
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = arbitrary }
+						}
+						add_trait = just
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = zealous }
+						}
+						add_trait = cynical
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = {
+								trait = cynical
+								trait = sympathy_christendom
+								trait = sympathy_islam
+								trait = sympathy_pagans
+								trait = sympathy_zoroastrianism
+								trait = sympathy_judaism
+							}
+						}
+						add_trait = zealous
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = trusting }
+						}
+						add_trait = paranoid
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = paranoid }
+						}
+						add_trait = trusting
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = kind }
+						}
+						add_trait = cruel
+					}
+				}
+			}
+			# Roll a new personality trait: ROUND 2 OF 2
+			random_list = {
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = chaste }
+						}
+						add_trait = lustful
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = {
+								religion_group = muslim
+								trait = lustful
+							}
+						}
+						add_trait = chaste
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = temperate }
+						}
+						add_trait = gluttonous
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = gluttonous }
+						}
+						add_trait = temperate
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = charitable }
+						}
+						add_trait = greedy
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = greedy }
+						}
+						add_trait = charitable
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = diligent }
+						}
+						add_trait = slothful
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = slothful }
+						}
+						add_trait = diligent
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = kind }
+						}
+						add_trait = envious
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = {
+								trait = envious
+								trait = cruel
+							}
+						}
+						add_trait = kind
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = patient }
+						}
+						add_trait = wroth
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = wroth }
+						}
+						add_trait = patient
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = humble }
+						}
+						add_trait = proud
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = proud }
+						}
+						add_trait = humble
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = honest }
+						}
+						add_trait = deceitful
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = deceitful }
+						}
+						add_trait = honest
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = brave }
+						}
+						add_trait = craven
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = craven }
+						}
+						add_trait = brave
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = gregarious }
+						}
+						add_trait = shy
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = shy }
+						}
+						add_trait = gregarious
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = content }
+						}
+						add_trait = ambitious
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = ambitious }
+						}
+						add_trait = content
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = just }
+						}
+						add_trait = arbitrary
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = arbitrary }
+						}
+						add_trait = just
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = zealous }
+						}
+						add_trait = cynical
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = {
+								trait = cynical
+								trait = sympathy_christendom
+								trait = sympathy_islam
+								trait = sympathy_pagans
+								trait = sympathy_zoroastrianism
+								trait = sympathy_judaism
+							}
+						}
+						add_trait = zealous
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = trusting }
+						}
+						add_trait = paranoid
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = paranoid }
+						}
+						add_trait = trusting
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = kind }
+						}
+						add_trait = cruel
+					}
+				}
+			}
+		} # END: Age 8-10
+		if = {
+			limit = {
+				age = 10
+				NOT = { age = 12 }
+			}
+			# % pb_rr.pl --codegen=persona_select_3
+
+			# Roll a new personality trait: ROUND 1 OF 3
+			random_list = {
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = chaste }
+						}
+						add_trait = lustful
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = {
+								religion_group = muslim
+								trait = lustful
+							}
+						}
+						add_trait = chaste
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = temperate }
+						}
+						add_trait = gluttonous
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = gluttonous }
+						}
+						add_trait = temperate
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = charitable }
+						}
+						add_trait = greedy
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = greedy }
+						}
+						add_trait = charitable
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = diligent }
+						}
+						add_trait = slothful
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = slothful }
+						}
+						add_trait = diligent
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = kind }
+						}
+						add_trait = envious
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = {
+								trait = envious
+								trait = cruel
+							}
+						}
+						add_trait = kind
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = patient }
+						}
+						add_trait = wroth
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = wroth }
+						}
+						add_trait = patient
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = humble }
+						}
+						add_trait = proud
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = proud }
+						}
+						add_trait = humble
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = honest }
+						}
+						add_trait = deceitful
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = deceitful }
+						}
+						add_trait = honest
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = brave }
+						}
+						add_trait = craven
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = craven }
+						}
+						add_trait = brave
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = gregarious }
+						}
+						add_trait = shy
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = shy }
+						}
+						add_trait = gregarious
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = content }
+						}
+						add_trait = ambitious
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = ambitious }
+						}
+						add_trait = content
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = just }
+						}
+						add_trait = arbitrary
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = arbitrary }
+						}
+						add_trait = just
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = zealous }
+						}
+						add_trait = cynical
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = {
+								trait = cynical
+								trait = sympathy_christendom
+								trait = sympathy_islam
+								trait = sympathy_pagans
+								trait = sympathy_zoroastrianism
+								trait = sympathy_judaism
+							}
+						}
+						add_trait = zealous
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = trusting }
+						}
+						add_trait = paranoid
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = paranoid }
+						}
+						add_trait = trusting
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = kind }
+						}
+						add_trait = cruel
+					}
+				}
+			}
+			# Roll a new personality trait: ROUND 2 OF 3
+			random_list = {
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = chaste }
+						}
+						add_trait = lustful
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = {
+								religion_group = muslim
+								trait = lustful
+							}
+						}
+						add_trait = chaste
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = temperate }
+						}
+						add_trait = gluttonous
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = gluttonous }
+						}
+						add_trait = temperate
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = charitable }
+						}
+						add_trait = greedy
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = greedy }
+						}
+						add_trait = charitable
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = diligent }
+						}
+						add_trait = slothful
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = slothful }
+						}
+						add_trait = diligent
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = kind }
+						}
+						add_trait = envious
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = {
+								trait = envious
+								trait = cruel
+							}
+						}
+						add_trait = kind
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = patient }
+						}
+						add_trait = wroth
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = wroth }
+						}
+						add_trait = patient
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = humble }
+						}
+						add_trait = proud
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = proud }
+						}
+						add_trait = humble
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = honest }
+						}
+						add_trait = deceitful
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = deceitful }
+						}
+						add_trait = honest
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = brave }
+						}
+						add_trait = craven
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = craven }
+						}
+						add_trait = brave
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = gregarious }
+						}
+						add_trait = shy
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = shy }
+						}
+						add_trait = gregarious
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = content }
+						}
+						add_trait = ambitious
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = ambitious }
+						}
+						add_trait = content
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = just }
+						}
+						add_trait = arbitrary
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = arbitrary }
+						}
+						add_trait = just
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = zealous }
+						}
+						add_trait = cynical
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = {
+								trait = cynical
+								trait = sympathy_christendom
+								trait = sympathy_islam
+								trait = sympathy_pagans
+								trait = sympathy_zoroastrianism
+								trait = sympathy_judaism
+							}
+						}
+						add_trait = zealous
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = trusting }
+						}
+						add_trait = paranoid
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = paranoid }
+						}
+						add_trait = trusting
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = kind }
+						}
+						add_trait = cruel
+					}
+				}
+			}
+			# Roll a new personality trait: ROUND 3 OF 3
+			random_list = {
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = chaste }
+						}
+						add_trait = lustful
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = {
+								religion_group = muslim
+								trait = lustful
+							}
+						}
+						add_trait = chaste
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = temperate }
+						}
+						add_trait = gluttonous
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = gluttonous }
+						}
+						add_trait = temperate
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = charitable }
+						}
+						add_trait = greedy
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = greedy }
+						}
+						add_trait = charitable
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = diligent }
+						}
+						add_trait = slothful
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = slothful }
+						}
+						add_trait = diligent
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = kind }
+						}
+						add_trait = envious
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = {
+								trait = envious
+								trait = cruel
+							}
+						}
+						add_trait = kind
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = patient }
+						}
+						add_trait = wroth
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = wroth }
+						}
+						add_trait = patient
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = humble }
+						}
+						add_trait = proud
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = proud }
+						}
+						add_trait = humble
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = honest }
+						}
+						add_trait = deceitful
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = deceitful }
+						}
+						add_trait = honest
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = brave }
+						}
+						add_trait = craven
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = craven }
+						}
+						add_trait = brave
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = gregarious }
+						}
+						add_trait = shy
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = shy }
+						}
+						add_trait = gregarious
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = content }
+						}
+						add_trait = ambitious
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = ambitious }
+						}
+						add_trait = content
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = just }
+						}
+						add_trait = arbitrary
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = arbitrary }
+						}
+						add_trait = just
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = zealous }
+						}
+						add_trait = cynical
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = {
+								trait = cynical
+								trait = sympathy_christendom
+								trait = sympathy_islam
+								trait = sympathy_pagans
+								trait = sympathy_zoroastrianism
+								trait = sympathy_judaism
+							}
+						}
+						add_trait = zealous
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = trusting }
+						}
+						add_trait = paranoid
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = paranoid }
+						}
+						add_trait = trusting
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = kind }
+						}
+						add_trait = cruel
+					}
+				}
+			}
+		} # END: Age 10-12
+		if = {
+			limit = {
+				age = 12
+				NOT = { age = 14 }
+			}
+			# % pb_rr.pl --codegen=persona_select_4
+
+			# Roll a new personality trait: ROUND 1 OF 4
+			random_list = {
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = chaste }
+						}
+						add_trait = lustful
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = {
+								religion_group = muslim
+								trait = lustful
+							}
+						}
+						add_trait = chaste
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = temperate }
+						}
+						add_trait = gluttonous
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = gluttonous }
+						}
+						add_trait = temperate
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = charitable }
+						}
+						add_trait = greedy
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = greedy }
+						}
+						add_trait = charitable
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = diligent }
+						}
+						add_trait = slothful
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = slothful }
+						}
+						add_trait = diligent
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = kind }
+						}
+						add_trait = envious
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = {
+								trait = envious
+								trait = cruel
+							}
+						}
+						add_trait = kind
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = patient }
+						}
+						add_trait = wroth
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = wroth }
+						}
+						add_trait = patient
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = humble }
+						}
+						add_trait = proud
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = proud }
+						}
+						add_trait = humble
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = honest }
+						}
+						add_trait = deceitful
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = deceitful }
+						}
+						add_trait = honest
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = brave }
+						}
+						add_trait = craven
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = craven }
+						}
+						add_trait = brave
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = gregarious }
+						}
+						add_trait = shy
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = shy }
+						}
+						add_trait = gregarious
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = content }
+						}
+						add_trait = ambitious
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = ambitious }
+						}
+						add_trait = content
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = just }
+						}
+						add_trait = arbitrary
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = arbitrary }
+						}
+						add_trait = just
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = zealous }
+						}
+						add_trait = cynical
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = {
+								trait = cynical
+								trait = sympathy_christendom
+								trait = sympathy_islam
+								trait = sympathy_pagans
+								trait = sympathy_zoroastrianism
+								trait = sympathy_judaism
+							}
+						}
+						add_trait = zealous
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = trusting }
+						}
+						add_trait = paranoid
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = paranoid }
+						}
+						add_trait = trusting
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = kind }
+						}
+						add_trait = cruel
+					}
+				}
+			}
+			# Roll a new personality trait: ROUND 2 OF 4
+			random_list = {
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = chaste }
+						}
+						add_trait = lustful
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = {
+								religion_group = muslim
+								trait = lustful
+							}
+						}
+						add_trait = chaste
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = temperate }
+						}
+						add_trait = gluttonous
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = gluttonous }
+						}
+						add_trait = temperate
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = charitable }
+						}
+						add_trait = greedy
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = greedy }
+						}
+						add_trait = charitable
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = diligent }
+						}
+						add_trait = slothful
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = slothful }
+						}
+						add_trait = diligent
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = kind }
+						}
+						add_trait = envious
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = {
+								trait = envious
+								trait = cruel
+							}
+						}
+						add_trait = kind
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = patient }
+						}
+						add_trait = wroth
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = wroth }
+						}
+						add_trait = patient
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = humble }
+						}
+						add_trait = proud
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = proud }
+						}
+						add_trait = humble
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = honest }
+						}
+						add_trait = deceitful
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = deceitful }
+						}
+						add_trait = honest
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = brave }
+						}
+						add_trait = craven
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = craven }
+						}
+						add_trait = brave
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = gregarious }
+						}
+						add_trait = shy
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = shy }
+						}
+						add_trait = gregarious
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = content }
+						}
+						add_trait = ambitious
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = ambitious }
+						}
+						add_trait = content
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = just }
+						}
+						add_trait = arbitrary
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = arbitrary }
+						}
+						add_trait = just
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = zealous }
+						}
+						add_trait = cynical
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = {
+								trait = cynical
+								trait = sympathy_christendom
+								trait = sympathy_islam
+								trait = sympathy_pagans
+								trait = sympathy_zoroastrianism
+								trait = sympathy_judaism
+							}
+						}
+						add_trait = zealous
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = trusting }
+						}
+						add_trait = paranoid
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = paranoid }
+						}
+						add_trait = trusting
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = kind }
+						}
+						add_trait = cruel
+					}
+				}
+			}
+			# Roll a new personality trait: ROUND 3 OF 4
+			random_list = {
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = chaste }
+						}
+						add_trait = lustful
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = {
+								religion_group = muslim
+								trait = lustful
+							}
+						}
+						add_trait = chaste
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = temperate }
+						}
+						add_trait = gluttonous
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = gluttonous }
+						}
+						add_trait = temperate
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = charitable }
+						}
+						add_trait = greedy
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = greedy }
+						}
+						add_trait = charitable
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = diligent }
+						}
+						add_trait = slothful
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = slothful }
+						}
+						add_trait = diligent
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = kind }
+						}
+						add_trait = envious
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = {
+								trait = envious
+								trait = cruel
+							}
+						}
+						add_trait = kind
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = patient }
+						}
+						add_trait = wroth
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = wroth }
+						}
+						add_trait = patient
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = humble }
+						}
+						add_trait = proud
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = proud }
+						}
+						add_trait = humble
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = honest }
+						}
+						add_trait = deceitful
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = deceitful }
+						}
+						add_trait = honest
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = brave }
+						}
+						add_trait = craven
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = craven }
+						}
+						add_trait = brave
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = gregarious }
+						}
+						add_trait = shy
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = shy }
+						}
+						add_trait = gregarious
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = content }
+						}
+						add_trait = ambitious
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = ambitious }
+						}
+						add_trait = content
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = just }
+						}
+						add_trait = arbitrary
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = arbitrary }
+						}
+						add_trait = just
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = zealous }
+						}
+						add_trait = cynical
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = {
+								trait = cynical
+								trait = sympathy_christendom
+								trait = sympathy_islam
+								trait = sympathy_pagans
+								trait = sympathy_zoroastrianism
+								trait = sympathy_judaism
+							}
+						}
+						add_trait = zealous
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = trusting }
+						}
+						add_trait = paranoid
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = paranoid }
+						}
+						add_trait = trusting
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = kind }
+						}
+						add_trait = cruel
+					}
+				}
+			}
+			# Roll a new personality trait: ROUND 4 OF 4
+			random_list = {
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = chaste }
+						}
+						add_trait = lustful
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = {
+								religion_group = muslim
+								trait = lustful
+							}
+						}
+						add_trait = chaste
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = temperate }
+						}
+						add_trait = gluttonous
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = gluttonous }
+						}
+						add_trait = temperate
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = charitable }
+						}
+						add_trait = greedy
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = greedy }
+						}
+						add_trait = charitable
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = diligent }
+						}
+						add_trait = slothful
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = slothful }
+						}
+						add_trait = diligent
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = kind }
+						}
+						add_trait = envious
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = {
+								trait = envious
+								trait = cruel
+							}
+						}
+						add_trait = kind
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = patient }
+						}
+						add_trait = wroth
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = wroth }
+						}
+						add_trait = patient
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = humble }
+						}
+						add_trait = proud
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = proud }
+						}
+						add_trait = humble
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = honest }
+						}
+						add_trait = deceitful
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = deceitful }
+						}
+						add_trait = honest
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = brave }
+						}
+						add_trait = craven
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = craven }
+						}
+						add_trait = brave
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = gregarious }
+						}
+						add_trait = shy
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = shy }
+						}
+						add_trait = gregarious
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = content }
+						}
+						add_trait = ambitious
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = ambitious }
+						}
+						add_trait = content
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = just }
+						}
+						add_trait = arbitrary
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = arbitrary }
+						}
+						add_trait = just
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = zealous }
+						}
+						add_trait = cynical
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = {
+								trait = cynical
+								trait = sympathy_christendom
+								trait = sympathy_islam
+								trait = sympathy_pagans
+								trait = sympathy_zoroastrianism
+								trait = sympathy_judaism
+							}
+						}
+						add_trait = zealous
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = trusting }
+						}
+						add_trait = paranoid
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = paranoid }
+						}
+						add_trait = trusting
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = kind }
+						}
+						add_trait = cruel
+					}
+				}
+			}
+		} # END: Age 12-14
+		if = {
+			limit = {
+				age = 14
+			}
+			# % pb_rr.pl --codegen=persona_select_5
+
+			# Roll a new personality trait: ROUND 1 OF 5
+			random_list = {
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = chaste }
+						}
+						add_trait = lustful
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = {
+								religion_group = muslim
+								trait = lustful
+							}
+						}
+						add_trait = chaste
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = temperate }
+						}
+						add_trait = gluttonous
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = gluttonous }
+						}
+						add_trait = temperate
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = charitable }
+						}
+						add_trait = greedy
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = greedy }
+						}
+						add_trait = charitable
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = diligent }
+						}
+						add_trait = slothful
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = slothful }
+						}
+						add_trait = diligent
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = kind }
+						}
+						add_trait = envious
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = {
+								trait = envious
+								trait = cruel
+							}
+						}
+						add_trait = kind
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = patient }
+						}
+						add_trait = wroth
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = wroth }
+						}
+						add_trait = patient
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = humble }
+						}
+						add_trait = proud
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = proud }
+						}
+						add_trait = humble
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = honest }
+						}
+						add_trait = deceitful
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = deceitful }
+						}
+						add_trait = honest
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = brave }
+						}
+						add_trait = craven
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = craven }
+						}
+						add_trait = brave
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = gregarious }
+						}
+						add_trait = shy
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = shy }
+						}
+						add_trait = gregarious
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = content }
+						}
+						add_trait = ambitious
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = ambitious }
+						}
+						add_trait = content
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = just }
+						}
+						add_trait = arbitrary
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = arbitrary }
+						}
+						add_trait = just
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = zealous }
+						}
+						add_trait = cynical
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = {
+								trait = cynical
+								trait = sympathy_christendom
+								trait = sympathy_islam
+								trait = sympathy_pagans
+								trait = sympathy_zoroastrianism
+								trait = sympathy_judaism
+							}
+						}
+						add_trait = zealous
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = trusting }
+						}
+						add_trait = paranoid
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = paranoid }
+						}
+						add_trait = trusting
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = kind }
+						}
+						add_trait = cruel
+					}
+				}
+			}
+			# Roll a new personality trait: ROUND 2 OF 5
+			random_list = {
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = chaste }
+						}
+						add_trait = lustful
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = {
+								religion_group = muslim
+								trait = lustful
+							}
+						}
+						add_trait = chaste
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = temperate }
+						}
+						add_trait = gluttonous
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = gluttonous }
+						}
+						add_trait = temperate
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = charitable }
+						}
+						add_trait = greedy
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = greedy }
+						}
+						add_trait = charitable
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = diligent }
+						}
+						add_trait = slothful
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = slothful }
+						}
+						add_trait = diligent
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = kind }
+						}
+						add_trait = envious
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = {
+								trait = envious
+								trait = cruel
+							}
+						}
+						add_trait = kind
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = patient }
+						}
+						add_trait = wroth
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = wroth }
+						}
+						add_trait = patient
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = humble }
+						}
+						add_trait = proud
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = proud }
+						}
+						add_trait = humble
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = honest }
+						}
+						add_trait = deceitful
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = deceitful }
+						}
+						add_trait = honest
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = brave }
+						}
+						add_trait = craven
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = craven }
+						}
+						add_trait = brave
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = gregarious }
+						}
+						add_trait = shy
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = shy }
+						}
+						add_trait = gregarious
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = content }
+						}
+						add_trait = ambitious
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = ambitious }
+						}
+						add_trait = content
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = just }
+						}
+						add_trait = arbitrary
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = arbitrary }
+						}
+						add_trait = just
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = zealous }
+						}
+						add_trait = cynical
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = {
+								trait = cynical
+								trait = sympathy_christendom
+								trait = sympathy_islam
+								trait = sympathy_pagans
+								trait = sympathy_zoroastrianism
+								trait = sympathy_judaism
+							}
+						}
+						add_trait = zealous
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = trusting }
+						}
+						add_trait = paranoid
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = paranoid }
+						}
+						add_trait = trusting
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = kind }
+						}
+						add_trait = cruel
+					}
+				}
+			}
+			# Roll a new personality trait: ROUND 3 OF 5
+			random_list = {
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = chaste }
+						}
+						add_trait = lustful
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = {
+								religion_group = muslim
+								trait = lustful
+							}
+						}
+						add_trait = chaste
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = temperate }
+						}
+						add_trait = gluttonous
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = gluttonous }
+						}
+						add_trait = temperate
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = charitable }
+						}
+						add_trait = greedy
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = greedy }
+						}
+						add_trait = charitable
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = diligent }
+						}
+						add_trait = slothful
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = slothful }
+						}
+						add_trait = diligent
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = kind }
+						}
+						add_trait = envious
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = {
+								trait = envious
+								trait = cruel
+							}
+						}
+						add_trait = kind
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = patient }
+						}
+						add_trait = wroth
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = wroth }
+						}
+						add_trait = patient
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = humble }
+						}
+						add_trait = proud
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = proud }
+						}
+						add_trait = humble
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = honest }
+						}
+						add_trait = deceitful
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = deceitful }
+						}
+						add_trait = honest
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = brave }
+						}
+						add_trait = craven
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = craven }
+						}
+						add_trait = brave
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = gregarious }
+						}
+						add_trait = shy
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = shy }
+						}
+						add_trait = gregarious
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = content }
+						}
+						add_trait = ambitious
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = ambitious }
+						}
+						add_trait = content
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = just }
+						}
+						add_trait = arbitrary
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = arbitrary }
+						}
+						add_trait = just
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = zealous }
+						}
+						add_trait = cynical
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = {
+								trait = cynical
+								trait = sympathy_christendom
+								trait = sympathy_islam
+								trait = sympathy_pagans
+								trait = sympathy_zoroastrianism
+								trait = sympathy_judaism
+							}
+						}
+						add_trait = zealous
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = trusting }
+						}
+						add_trait = paranoid
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = paranoid }
+						}
+						add_trait = trusting
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = kind }
+						}
+						add_trait = cruel
+					}
+				}
+			}
+			# Roll a new personality trait: ROUND 4 OF 5
+			random_list = {
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = chaste }
+						}
+						add_trait = lustful
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = {
+								religion_group = muslim
+								trait = lustful
+							}
+						}
+						add_trait = chaste
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = temperate }
+						}
+						add_trait = gluttonous
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = gluttonous }
+						}
+						add_trait = temperate
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = charitable }
+						}
+						add_trait = greedy
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = greedy }
+						}
+						add_trait = charitable
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = diligent }
+						}
+						add_trait = slothful
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = slothful }
+						}
+						add_trait = diligent
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = kind }
+						}
+						add_trait = envious
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = {
+								trait = envious
+								trait = cruel
+							}
+						}
+						add_trait = kind
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = patient }
+						}
+						add_trait = wroth
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = wroth }
+						}
+						add_trait = patient
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = humble }
+						}
+						add_trait = proud
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = proud }
+						}
+						add_trait = humble
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = honest }
+						}
+						add_trait = deceitful
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = deceitful }
+						}
+						add_trait = honest
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = brave }
+						}
+						add_trait = craven
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = craven }
+						}
+						add_trait = brave
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = gregarious }
+						}
+						add_trait = shy
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = shy }
+						}
+						add_trait = gregarious
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = content }
+						}
+						add_trait = ambitious
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = ambitious }
+						}
+						add_trait = content
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = just }
+						}
+						add_trait = arbitrary
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = arbitrary }
+						}
+						add_trait = just
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = zealous }
+						}
+						add_trait = cynical
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = {
+								trait = cynical
+								trait = sympathy_christendom
+								trait = sympathy_islam
+								trait = sympathy_pagans
+								trait = sympathy_zoroastrianism
+								trait = sympathy_judaism
+							}
+						}
+						add_trait = zealous
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = trusting }
+						}
+						add_trait = paranoid
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = paranoid }
+						}
+						add_trait = trusting
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = kind }
+						}
+						add_trait = cruel
+					}
+				}
+			}
+			# Roll a new personality trait: ROUND 5 OF 5
+			random_list = {
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = chaste }
+						}
+						add_trait = lustful
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = {
+								religion_group = muslim
+								trait = lustful
+							}
+						}
+						add_trait = chaste
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = temperate }
+						}
+						add_trait = gluttonous
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = gluttonous }
+						}
+						add_trait = temperate
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = charitable }
+						}
+						add_trait = greedy
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = greedy }
+						}
+						add_trait = charitable
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = diligent }
+						}
+						add_trait = slothful
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = slothful }
+						}
+						add_trait = diligent
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = kind }
+						}
+						add_trait = envious
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = {
+								trait = envious
+								trait = cruel
+							}
+						}
+						add_trait = kind
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = patient }
+						}
+						add_trait = wroth
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = wroth }
+						}
+						add_trait = patient
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = humble }
+						}
+						add_trait = proud
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = proud }
+						}
+						add_trait = humble
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = honest }
+						}
+						add_trait = deceitful
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = deceitful }
+						}
+						add_trait = honest
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = brave }
+						}
+						add_trait = craven
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = craven }
+						}
+						add_trait = brave
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = gregarious }
+						}
+						add_trait = shy
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = shy }
+						}
+						add_trait = gregarious
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = content }
+						}
+						add_trait = ambitious
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = ambitious }
+						}
+						add_trait = content
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = just }
+						}
+						add_trait = arbitrary
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = arbitrary }
+						}
+						add_trait = just
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = zealous }
+						}
+						add_trait = cynical
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = {
+								trait = cynical
+								trait = sympathy_christendom
+								trait = sympathy_islam
+								trait = sympathy_pagans
+								trait = sympathy_zoroastrianism
+								trait = sympathy_judaism
+							}
+						}
+						add_trait = zealous
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = trusting }
+						}
+						add_trait = paranoid
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = paranoid }
+						}
+						add_trait = trusting
+					}
+				}
+				10 = {
+					if = {
+						limit = {
+							NOT = { trait = kind }
+						}
+						add_trait = cruel
+					}
+				}
+			}
+		} # END: Age >= 14
+		
+		# Phew.
+		
+		##### DONE SETTING PERSONALITY TRAITS ######
+		
+		# TODO: Reset lifestyle traits and then give each character over 25 a chance,
+		# increasing beyond age 35 and beyond age 45, to get a lifestyle trait.  Ensure
+		# obvious persona incompatibilities don't happen (e.g., a kind impaler or chaste
+		# hedonist). I think those are all marked as opposites in the trait definitions,
+		# so the code generator should take care of them. Selection process is similar
+		# to personality traits but much more limited.
+		
+		##### GENETICS SELECTION #####
+		
+		# Remove congenital traits
+		
+		# % pb_rr.pl --codegen=rm_genes
+		remove_trait = clubfooted
+		remove_trait = harelip
+		remove_trait = hunchback
+		remove_trait = lisp
+		remove_trait = stutter
+		remove_trait = fair
+		remove_trait = ugly
+		remove_trait = dwarf
+		remove_trait = genius
+		remove_trait = quick
+		remove_trait = slow
+		remove_trait = imbecile
+		remove_trait = strong
+		remove_trait = weak
+		remove_trait = tall
+		remove_trait = agile
+		remove_trait = perceptive
+		remove_trait = melodious_voice
+		remove_trait = powerful_voice
+		remove_trait = ambidextrous
+		remove_trait = lefthanded
+		remove_trait = wrymouth
+		remove_trait = deaf
+		remove_trait = absentminded
+		remove_trait = calm_voice
+		remove_trait = fertile
+		remove_trait = imposing
+		
+		# Select possible genes to express from all genotypes derived from birth
+		# trait definitions in the code generator.  Probabilities are directly
+		# based upon the trait definition (and exactly the same as the base game's
+		# probabilities used for birth). We don't worry about inheritance at this
+		# independent gene selection stage.  Inheritance is afterward and overrides
+		# independent gene selection.
+
+		# % pb_rr.pl --codegen=gene_select
+
+		# Genotype: AbsentmindedPerceptive
+		random_list = {
+			100 = { add_trait = perceptive }
+			100 = { add_trait = absentminded }
+			9800 = { }
+		}
+
+		# Genotype: Agile
+		random_list = {
+			100 = { add_trait = agile }
+			9900 = { }
+		}
+
+		# Genotype: AmbidextrousLefthanded
+		random_list = {
+			50 = { add_trait = ambidextrous }
+			250 = { add_trait = lefthanded }
+			9700 = { }
+		}
+
+		# Genotype: CalmVoiceMelodiousVoicePowerfulVoice
+		random_list = {
+			100 = { add_trait = melodious_voice }
+			100 = { add_trait = powerful_voice }
+			100 = { add_trait = calm_voice }
+			9700 = { }
+		}
+
+		# Genotype: Clubfooted
+		random_list = {
+			100 = { add_trait = clubfooted }
+			9900 = { }
+		}
+
+		# Genotype: Deaf
+		random_list = {
+			50 = { add_trait = deaf }
+			9950 = { }
+		}
+
+		# Genotype: DwarfTall
+		random_list = {
+			50 = { add_trait = dwarf }
+			150 = { add_trait = tall }
+			9800 = { }
+		}
+
+		# Genotype: FairUgly
+		random_list = {
+			200 = { add_trait = fair }
+			200 = { add_trait = ugly }
+			9600 = { }
+		}
+
+		# Genotype: Fertile
+		random_list = {
+			100 = { add_trait = fertile }
+			9900 = { }
+		}
+
+		# Genotype: GeniusImbecileQuickSlow
+		random_list = {
+			100 = { add_trait = genius }
+			100 = { add_trait = imbecile }
+			200 = { add_trait = slow }
+			200 = { add_trait = quick }
+			9400 = { }
+		}
+
+		# Genotype: Harelip
+		random_list = {
+			100 = { add_trait = harelip }
+			9900 = { }
+		}
+
+		# Genotype: Hunchback
+		random_list = {
+			100 = { add_trait = hunchback }
+			9900 = { }
+		}
+
+		# Genotype: Imposing
+		random_list = {
+			50 = { add_trait = imposing }
+			9950 = { }
+		}
+
+		# Genotype: Lisp
+		random_list = {
+			100 = { add_trait = lisp }
+			9900 = { }
+		}
+
+		# Genotype: StrongWeak
+		random_list = {
+			200 = { add_trait = strong }
+			200 = { add_trait = weak }
+			9600 = { }
+		}
+
+		# Genotype: Stutter
+		random_list = {
+			100 = { add_trait = stutter }
+			9900 = { }
+		}
+
+		# Genotype: Wrymouth
+		random_list = {
+			50 = { add_trait = wrymouth }
+			9950 = { }
+		}
+
+		##### GENETICS INHERITANCE ######
+		
+		# We check for all congenital traits' presence first in the mother
+		# and then in the father (father's traits will take precedence if
+		# there is a conflict with mother's).
+		
+		# Anyway, if we find a congenital trait present in a parent, it induces
+		# an independent trial, probability equaling the trait's inherit_chance,
+		# to determine the trait's selection for this character.  If the trait
+		# is selected, it will remove any preexisting opposites in its genotype.
+		# The precedence is arbitrary (i.e., brown hair does not take precedence
+		# over blonde) for any given genotype, though an inherent bias from the
+		# trait evaluation ordering cannot be avoided this way.
+		
+		# % pb_rr.pl --codegen=gene_inherit
+
+		# Inherit mother's traits...
+		if = {
+			limit = {
+				mother_even_if_dead = { trait = clubfooted }
+			}
+			random = {
+				chance = 15
+				add_trait = clubfooted
+			}
+		}
+		if = {
+			limit = {
+				mother_even_if_dead = { trait = harelip }
+			}
+			random = {
+				chance = 15
+				add_trait = harelip
+			}
+		}
+		if = {
+			limit = {
+				mother_even_if_dead = { trait = hunchback }
+			}
+			random = {
+				chance = 15
+				add_trait = hunchback
+			}
+		}
+		if = {
+			limit = {
+				mother_even_if_dead = { trait = lisp }
+			}
+			random = {
+				chance = 15
+				add_trait = lisp
+			}
+		}
+		if = {
+			limit = {
+				mother_even_if_dead = { trait = stutter }
+			}
+			random = {
+				chance = 15
+				add_trait = stutter
+			}
+		}
+		if = {
+			limit = {
+				mother_even_if_dead = { trait = fair } #FairUgly
+			}
+			random = {
+				chance = 15
+				remove_trait = ugly
+				add_trait = fair
+			}
+		}
+		if = {
+			limit = {
+				mother_even_if_dead = { trait = ugly } #FairUgly
+			}
+			random = {
+				chance = 15
+				remove_trait = fair
+				add_trait = ugly
+			}
+		}
+		if = {
+			limit = {
+				mother_even_if_dead = { trait = dwarf } #DwarfTall
+			}
+			random = {
+				chance = 50
+				remove_trait = tall
+				add_trait = dwarf
+			}
+		}
+		if = {
+			limit = {
+				mother_even_if_dead = { trait = genius } #GeniusImbecileQuickSlow
+			}
+			random = {
+				chance = 15
+				remove_trait = imbecile
+				remove_trait = slow
+				remove_trait = quick
+				add_trait = genius
+			}
+		}
+		if = {
+			limit = {
+				mother_even_if_dead = { trait = quick } #GeniusImbecileQuickSlow
+			}
+			random = {
+				chance = 15
+				remove_trait = genius
+				remove_trait = imbecile
+				remove_trait = slow
+				add_trait = quick
+			}
+		}
+		if = {
+			limit = {
+				mother_even_if_dead = { trait = slow } #GeniusImbecileQuickSlow
+			}
+			random = {
+				chance = 15
+				remove_trait = genius
+				remove_trait = imbecile
+				remove_trait = quick
+				add_trait = slow
+			}
+		}
+		if = {
+			limit = {
+				mother_even_if_dead = { trait = imbecile } #GeniusImbecileQuickSlow
+			}
+			random = {
+				chance = 15
+				remove_trait = genius
+				remove_trait = slow
+				remove_trait = quick
+				add_trait = imbecile
+			}
+		}
+		if = {
+			limit = {
+				mother_even_if_dead = { trait = strong } #StrongWeak
+			}
+			random = {
+				chance = 15
+				remove_trait = weak
+				add_trait = strong
+			}
+		}
+		if = {
+			limit = {
+				mother_even_if_dead = { trait = weak } #StrongWeak
+			}
+			random = {
+				chance = 15
+				remove_trait = strong
+				add_trait = weak
+			}
+		}
+		if = {
+			limit = {
+				mother_even_if_dead = { trait = tall } #DwarfTall
+			}
+			random = {
+				chance = 35
+				remove_trait = dwarf
+				add_trait = tall
+			}
+		}
+		if = {
+			limit = {
+				mother_even_if_dead = { trait = agile }
+			}
+			random = {
+				chance = 20
+				add_trait = agile
+			}
+		}
+		if = {
+			limit = {
+				mother_even_if_dead = { trait = perceptive } #AbsentmindedPerceptive
+			}
+			random = {
+				chance = 25
+				remove_trait = absentminded
+				add_trait = perceptive
+			}
+		}
+		if = {
+			limit = {
+				mother_even_if_dead = { trait = melodious_voice } #CalmVoiceMelodiousVoicePowerfulVoice
+			}
+			random = {
+				chance = 20
+				remove_trait = powerful_voice
+				remove_trait = calm_voice
+				add_trait = melodious_voice
+			}
+		}
+		if = {
+			limit = {
+				mother_even_if_dead = { trait = powerful_voice } #CalmVoiceMelodiousVoicePowerfulVoice
+			}
+			random = {
+				chance = 20
+				remove_trait = melodious_voice
+				remove_trait = calm_voice
+				add_trait = powerful_voice
+			}
+		}
+		if = {
+			limit = {
+				mother_even_if_dead = { trait = ambidextrous } #AmbidextrousLefthanded
+			}
+			random = {
+				chance = 15
+				remove_trait = lefthanded
+				add_trait = ambidextrous
+			}
+		}
+		if = {
+			limit = {
+				mother_even_if_dead = { trait = lefthanded } #AmbidextrousLefthanded
+			}
+			random = {
+				chance = 15
+				remove_trait = ambidextrous
+				add_trait = lefthanded
+			}
+		}
+		if = {
+			limit = {
+				mother_even_if_dead = { trait = wrymouth }
+			}
+			random = {
+				chance = 20
+				add_trait = wrymouth
+			}
+		}
+		if = {
+			limit = {
+				mother_even_if_dead = { trait = deaf }
+			}
+			random = {
+				chance = 10
+				add_trait = deaf
+			}
+		}
+		if = {
+			limit = {
+				mother_even_if_dead = { trait = absentminded } #AbsentmindedPerceptive
+			}
+			random = {
+				chance = 20
+				remove_trait = perceptive
+				add_trait = absentminded
+			}
+		}
+		if = {
+			limit = {
+				mother_even_if_dead = { trait = calm_voice } #CalmVoiceMelodiousVoicePowerfulVoice
+			}
+			random = {
+				chance = 25
+				remove_trait = melodious_voice
+				remove_trait = powerful_voice
+				add_trait = calm_voice
+			}
+		}
+		if = {
+			limit = {
+				mother_even_if_dead = { trait = fertile }
+			}
+			random = {
+				chance = 25
+				add_trait = fertile
+			}
+		}
+		if = {
+			limit = {
+				mother_even_if_dead = { trait = imposing }
+			}
+			random = {
+				chance = 25
+				add_trait = imposing
+			}
+		}
+
+		# Inherit father's traits...
+		if = {
+			limit = {
+				father_even_if_dead = { trait = clubfooted }
+			}
+			random = {
+				chance = 15
+				add_trait = clubfooted
+			}
+		}
+		if = {
+			limit = {
+				father_even_if_dead = { trait = harelip }
+			}
+			random = {
+				chance = 15
+				add_trait = harelip
+			}
+		}
+		if = {
+			limit = {
+				father_even_if_dead = { trait = hunchback }
+			}
+			random = {
+				chance = 15
+				add_trait = hunchback
+			}
+		}
+		if = {
+			limit = {
+				father_even_if_dead = { trait = lisp }
+			}
+			random = {
+				chance = 15
+				add_trait = lisp
+			}
+		}
+		if = {
+			limit = {
+				father_even_if_dead = { trait = stutter }
+			}
+			random = {
+				chance = 15
+				add_trait = stutter
+			}
+		}
+		if = {
+			limit = {
+				father_even_if_dead = { trait = fair } #FairUgly
+			}
+			random = {
+				chance = 15
+				remove_trait = ugly
+				add_trait = fair
+			}
+		}
+		if = {
+			limit = {
+				father_even_if_dead = { trait = ugly } #FairUgly
+			}
+			random = {
+				chance = 15
+				remove_trait = fair
+				add_trait = ugly
+			}
+		}
+		if = {
+			limit = {
+				father_even_if_dead = { trait = dwarf } #DwarfTall
+			}
+			random = {
+				chance = 50
+				remove_trait = tall
+				add_trait = dwarf
+			}
+		}
+		if = {
+			limit = {
+				father_even_if_dead = { trait = genius } #GeniusImbecileQuickSlow
+			}
+			random = {
+				chance = 15
+				remove_trait = imbecile
+				remove_trait = slow
+				remove_trait = quick
+				add_trait = genius
+			}
+		}
+		if = {
+			limit = {
+				father_even_if_dead = { trait = quick } #GeniusImbecileQuickSlow
+			}
+			random = {
+				chance = 15
+				remove_trait = genius
+				remove_trait = imbecile
+				remove_trait = slow
+				add_trait = quick
+			}
+		}
+		if = {
+			limit = {
+				father_even_if_dead = { trait = slow } #GeniusImbecileQuickSlow
+			}
+			random = {
+				chance = 15
+				remove_trait = genius
+				remove_trait = imbecile
+				remove_trait = quick
+				add_trait = slow
+			}
+		}
+		if = {
+			limit = {
+				father_even_if_dead = { trait = imbecile } #GeniusImbecileQuickSlow
+			}
+			random = {
+				chance = 15
+				remove_trait = genius
+				remove_trait = slow
+				remove_trait = quick
+				add_trait = imbecile
+			}
+		}
+		if = {
+			limit = {
+				father_even_if_dead = { trait = strong } #StrongWeak
+			}
+			random = {
+				chance = 15
+				remove_trait = weak
+				add_trait = strong
+			}
+		}
+		if = {
+			limit = {
+				father_even_if_dead = { trait = weak } #StrongWeak
+			}
+			random = {
+				chance = 15
+				remove_trait = strong
+				add_trait = weak
+			}
+		}
+		if = {
+			limit = {
+				father_even_if_dead = { trait = tall } #DwarfTall
+			}
+			random = {
+				chance = 35
+				remove_trait = dwarf
+				add_trait = tall
+			}
+		}
+		if = {
+			limit = {
+				father_even_if_dead = { trait = agile }
+			}
+			random = {
+				chance = 20
+				add_trait = agile
+			}
+		}
+		if = {
+			limit = {
+				father_even_if_dead = { trait = perceptive } #AbsentmindedPerceptive
+			}
+			random = {
+				chance = 25
+				remove_trait = absentminded
+				add_trait = perceptive
+			}
+		}
+		if = {
+			limit = {
+				father_even_if_dead = { trait = melodious_voice } #CalmVoiceMelodiousVoicePowerfulVoice
+			}
+			random = {
+				chance = 20
+				remove_trait = powerful_voice
+				remove_trait = calm_voice
+				add_trait = melodious_voice
+			}
+		}
+		if = {
+			limit = {
+				father_even_if_dead = { trait = powerful_voice } #CalmVoiceMelodiousVoicePowerfulVoice
+			}
+			random = {
+				chance = 20
+				remove_trait = melodious_voice
+				remove_trait = calm_voice
+				add_trait = powerful_voice
+			}
+		}
+		if = {
+			limit = {
+				father_even_if_dead = { trait = ambidextrous } #AmbidextrousLefthanded
+			}
+			random = {
+				chance = 15
+				remove_trait = lefthanded
+				add_trait = ambidextrous
+			}
+		}
+		if = {
+			limit = {
+				father_even_if_dead = { trait = lefthanded } #AmbidextrousLefthanded
+			}
+			random = {
+				chance = 15
+				remove_trait = ambidextrous
+				add_trait = lefthanded
+			}
+		}
+		if = {
+			limit = {
+				father_even_if_dead = { trait = wrymouth }
+			}
+			random = {
+				chance = 20
+				add_trait = wrymouth
+			}
+		}
+		if = {
+			limit = {
+				father_even_if_dead = { trait = deaf }
+			}
+			random = {
+				chance = 10
+				add_trait = deaf
+			}
+		}
+		if = {
+			limit = {
+				father_even_if_dead = { trait = absentminded } #AbsentmindedPerceptive
+			}
+			random = {
+				chance = 20
+				remove_trait = perceptive
+				add_trait = absentminded
+			}
+		}
+		if = {
+			limit = {
+				father_even_if_dead = { trait = calm_voice } #CalmVoiceMelodiousVoicePowerfulVoice
+			}
+			random = {
+				chance = 25
+				remove_trait = melodious_voice
+				remove_trait = powerful_voice
+				add_trait = calm_voice
+			}
+		}
+		if = {
+			limit = {
+				father_even_if_dead = { trait = fertile }
+			}
+			random = {
+				chance = 25
+				add_trait = fertile
+			}
+		}
+		if = {
+			limit = {
+				father_even_if_dead = { trait = imposing }
+			}
+			random = {
+				chance = 25
+				add_trait = imposing
+			}
+		}
+		
+		##### DONE WITH GENETICS #####
+		
+		##### DEFAULT COMBAT TRAIT CALCULATION #####
+		
+		# Normally, we only calculate default combat traits for adults. Here, instead,
+		# we allow historical children to use the same calculation method for determining
+		# a combat trait as adults to simulate guardianship.  We do disallow any combat
+		# traits under age 6, though.  The younger they are, the fewer important factors
+		# which increase combat_skill will possibly be available to the child.  Also, we
+		# reduce combat_skill based upon degree of youth, as separate factors.  Further,
+		# if the child still gets a high combat trait at a young age, it must be due to
+		# intensely good genetics, so by the time they're able to use the trait for anything,
+		# it should be a fair representation.
+		
+		# Note that we're covering many more characters than the default startup
+		# distribution event, which only covers rulers.
+		
+		# Note that my trait factors and weights differ from the startup distribution
+		# event very significantly. They should ideally be unified (and this is one case
+		# where I'm willing to add sub-event overhead here so that the logic can be unified
+		# in a single helper event for both systems). It will double the number of events
+		# plus random seeds to sync for this chain in multiplayer, though.
+		
+		# Remove combat traits
+		remove_trait = poor_warrior
+		remove_trait = trained_warrior
+		remove_trait = skilled_warrior
+		remove_trait = master_warrior
+		
+		if = {
+			limit = {
+				age = 6
+				NOT = {
+					trait = blinded
+					trait = incapable
+					age = 65
+				}
+			}
+			
+			# Martial education
+			if = {
+				limit = { trait = misguided_warrior }
+				change_variable = { which = "combat_skill" value = 1.5 }
+			}
+			if = {
+				limit = { trait = tough_soldier }
+				change_variable = { which = "combat_skill" value = 3 }
+			}
+			if = {
+				limit = { trait = skilled_tactician }
+				change_variable = { which = "combat_skill" value = 5.5 }
+			}
+			if = {
+				limit = { trait = brilliant_strategist }
+				change_variable = { which = "combat_skill" value = 8 }
+			}
+			# Demographics
+			if = { # General norse (religion) inclination to combat
+				limit = {
+					OR = {
+						is_female = no
+						has_global_flag = gender_equality
+					}
+					OR = {
+						religion = norse_pagan_reformed
+						religion = norse_pagan
+					}
+				}
+				change_variable = { which = "combat_skill" value = 1 }
+			}
+			if = { # Women stick to knitting-- not wielding warhammers, right?
+				limit = {
+					is_female = yes
+					NOT = { has_global_flag = gender_equality }
+				}
+				change_variable = { which = "combat_skill" value = -3.5 }
+			}
+			if = { # In a holy order / mercenary company
+				limit = {
+					OR = {
+						primary_title = { holy_order = yes }
+						primary_title = { mercenary = yes }
+						liege = {
+							primary_title = {
+								OR = {
+									holy_order = yes
+									mercenary = yes
+								}
+							}
+						}
+					}
+				}
+				change_variable = { which = "combat_skill" value = 2 }
+			}
+			# Growing older
+			if = {
+				limit = {
+					age = 55
+				}
+				change_variable = { which = "combat_skill" value = -1 }
+			}
+			if = {
+				limit = {
+					age = 45
+				}
+				change_variable = { which = "combat_skill" value = -0.5 }
+			}
+			# Personality traits
+			if = {
+				limit = { trait = diligent }
+				change_variable = { which = "combat_skill" value = 1 }
+			}
+			if = {
+				limit = { trait = slothful }
+				change_variable = { which = "combat_skill" value = -1 }
+			}
+			if = {
+				limit = { trait = brave }
+				change_variable = { which = "combat_skill" value = 2 }
+			}
+			if = {
+				limit = { trait = craven }
+				change_variable = { which = "combat_skill" value = -1.5 }
+			}
+			# Lifestyle-ish traits
+			if = {
+				limit = { trait = duelist }
+				change_variable = { which = "combat_skill" value = 2.5 }
+			}
+			if = {
+				limit = { trait = impaler }
+				change_variable = { which = "combat_skill" value = 0.5 }
+			}
+			if = {
+				limit = { trait = viking }
+				change_variable = { which = "combat_skill" value = 1.5 }
+			}
+			if = {
+				limit = { trait = maimed }
+				change_variable = { which = "combat_skill" value = -1 }
+			}
+			if = {
+				limit = { # Joan d'Arc, for kicks (though this is how CK2 models possessed)
+					trait = possessed
+					OR = {
+						trait = brave
+						trait = zealous
+					}
+				}
+				change_variable = { which = "combat_skill" value = 3 }
+			}
+			# Congenital traits
+			if = {
+				limit = { trait = quick }
+				change_variable = { which = "combat_skill" value = 1 }
+			}
+			if = {
+				limit = { trait = slow }
+				change_variable = { which = "combat_skill" value = -1 }
+			}
+			if = {
+				limit = { trait = genius }
+				change_variable = { which = "combat_skill" value = 1.5 }
+			}
+			if = {
+				limit = { trait = imbecile }
+				change_variable = { which = "combat_skill" value = -3 }
+			}
+			if = {
+				limit = { trait = strong }
+				change_variable = { which = "combat_skill" value = 1.5 }
+			}
+			if = {
+				limit = { trait = weak }
+				change_variable = { which = "combat_skill" value = -2 }
+			}
+			if = {
+				limit = { trait = tall }
+				change_variable = { which = "combat_skill" value = 1 }
+			}
+			if = {
+				limit = { trait = dwarf }
+				change_variable = { which = "combat_skill" value = -2.5 }
+			}
+			if = {
+				limit = { trait = perceptive }
+				change_variable = { which = "combat_skill" value = 0.5 }
+			}
+			if = {
+				limit = { trait = agile }
+				change_variable = { which = "combat_skill" value = 1.5 }
+			}
+			if = {
+				limit = { trait = ambidextrous }
+				change_variable = { which = "combat_skill" value = 1.5 }
+			}
+			if = {
+				limit = { trait = inbred }
+				change_variable = { which = "combat_skill" value = -2 }
+			}
+			if = {
+				limit = { trait = clubfooted }
+				change_variable = { which = "combat_skill" value = -0.5 }
+			}
+			# Child-specific cases
+			if = {
+				limit = { is_adult = no }
+				# Youth maluses
+				if = {
+					limit = { NOT = { age = 12 } }
+					change_variable = { which = "combat_skill" value = -1 }
+				}
+				if = {
+					limit = { NOT = { age = 10 } }
+					change_variable = { which = "combat_skill" value = -1 }
+				}
+				if = {
+					limit = { NOT = { age = 9 } }
+					change_variable = { which = "combat_skill" value = -2 }
+				}
+				if = {
+					limit = { NOT = { age = 8 } }
+					change_variable = { which = "combat_skill" value = -2 }
+				}
+				if = {
+					limit = { NOT = { age = 7 } }
+					change_variable = { which = "combat_skill" value = -2.5 }
+				}
+			}
+			# Aristocratic traditions / rulers
+			if = {
+				limit = {
+					OR = {
+						father = { higher_tier_than = duke }
+						mother = { higher_tier_than = duke }
+						higher_tier_than = duke
+					}
+				}
+				change_variable = { which = "combat_skill" value = 1 }
+			}
+			if = {
+				limit = {
+					OR = {
+						father = { tier = count }
+						mother = { tier = count }
+						AND = {
+							is_ruler = yes
+							is_patrician = no
+							lower_tier_than = duke
+						}
+					}
+				}
+				change_variable = { which = "combat_skill" value = 0.5 }
+			}
+			if = {
+				limit = {
+					NOT = {
+						father = { is_ruler = yes }
+						mother = { is_ruler = yes }
+						is_ruler = yes
+						trait = brilliant_strategist
+						trait = skilled_tactician
+						martial = 12
+					}
+				}
+				change_variable = { which = "combat_skill" value = -1.5 }
+			}
+			# Close exposure to masters of the martial art
+			if = {
+				limit = {
+					OR = {
+						father_even_if_dead = { trait = master_warrior }
+						mother_even_if_dead = { trait = master_warrior }
+						guardian = { trait = master_warrior }
+						job_marshal = { trait = master_warrior }
+						AND = {
+							is_ruler = no
+							liege = {
+								job_marshal = { trait = master_warrior }
+							}
+						}
+					}
+				}
+				change_variable = { which = "combat_skill" value = 1 }
+			}
+			# ENOUGH factors already, award the trait
+			if = {
+				limit = {
+					check_variable = { which = "combat_skill" value = 9 }
+				}
+				add_trait = master_warrior
+			}
+			if = {
+				limit = {
+					check_variable = { which = "combat_skill" value = 6.5 }
+					NOT = { trait = master_warrior }
+				}
+				add_trait = skilled_warrior
+			}
+			if = {
+				limit = {
+					check_variable = { which = "combat_skill" value = 4 }
+					NOT = { trait = master_warrior }
+					NOT = { trait = skilled_warrior }
+				}
+				add_trait = trained_warrior
+			}
+			if = {
+				limit = {
+					check_variable = { which = "combat_skill" value = 1.5 }
+					NOT = { trait = master_warrior }
+					NOT = { trait = skilled_warrior }
+					NOT = { trait = trained_warrior }
+				}
+				add_trait = poor_warrior
+			}
+			set_variable = { which = "combat_skill" value = 0 }
+		}
 	}
 }
