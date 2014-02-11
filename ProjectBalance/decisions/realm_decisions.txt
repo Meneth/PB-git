@@ -3,6 +3,8 @@ decisions = {
 	hold_a_epic_tournament  = {
 		is_high_prio = yes
 		potential = {
+			has_global_flag = project_balance
+			had_global_flag = { flag = project_balance days = 1 }
 			NOT = {
 				has_character_flag = epic_tournament
 			}
@@ -14,7 +16,7 @@ decisions = {
 			OR = {
 				is_female = no
 				trait = strong
-			}				
+			}
 			OR = {
 				tier = king
 				tier = emperor 
@@ -148,6 +150,8 @@ decisions = {
 
 	show_me_the_medal_winners = {
 		potential = {
+			has_global_flag = project_balance
+			had_global_flag = { flag = project_balance days = 1 }
 			ai = no
 		}
 		allow = {
@@ -163,6 +167,8 @@ decisions = {
 	
 	buy_indulgence_for_sins = {
 		potential = {
+			has_global_flag = project_balance
+			had_global_flag = { flag = project_balance days = 1 }
 			religion = catholic
 			is_adult = yes
 			demesne_size = 1
@@ -197,6 +203,8 @@ decisions = {
 
 	issue_declaration_of_repentance = {
 		potential = {
+			has_global_flag = project_balance
+			had_global_flag = { flag = project_balance days = 1 }
 			religion = catholic
 			is_adult = yes
 			demesne_size = 1
@@ -231,6 +239,8 @@ decisions = {
 	demand_liege_title = {
 		is_high_prio = yes
 		potential = {
+			has_global_flag = project_balance
+			had_global_flag = { flag = project_balance days = 1 }
 			NOT = { has_character_flag = requested_de_jure_title }
 			liege = {
 				NOT = { character = ROOT }
@@ -276,6 +286,8 @@ decisions = {
 	
 	sadaqah_saddka  = {
 		potential = {
+			has_global_flag = project_balance
+			had_global_flag = { flag = project_balance days = 1 }
 			ai = no
 			religion_group = muslim
 			is_adult = yes
@@ -318,6 +330,8 @@ decisions = {
 	hold_a_furusiyya  = {
 		is_high_prio = yes
 		potential = {
+			has_global_flag = project_balance
+			had_global_flag = { flag = project_balance days = 1 }
 			NOT = {
 				has_character_flag = epic_tournament_furusiyya
 			}
@@ -389,6 +403,8 @@ decisions = {
 	restore_roman_empire = {
 		is_high_prio = yes
 		potential = {
+			has_global_flag = project_balance
+			had_global_flag = { flag = project_balance days = 1 }
 			has_dlc = "Legacy of Rome"
 			is_adult = yes
 			prisoner = no
@@ -427,6 +443,8 @@ decisions = {
 	mend_great_schism = {
 		is_high_prio = yes
 		potential = {
+			has_global_flag = project_balance
+			had_global_flag = { flag = project_balance days = 1 }
 			has_dlc = "Legacy of Rome"
 			is_adult = yes
 			prisoner = no
@@ -520,6 +538,8 @@ decisions = {
 	claim_constantinople = {
 		is_high_prio = yes
 		potential = {
+			has_global_flag = project_balance
+			had_global_flag = { flag = project_balance days = 1 }
 			#has_dlc = "Legacy of Rome"
 			NOT = { has_landed_title = c_byzantion }
 			has_landed_title = e_byzantium
@@ -549,6 +569,8 @@ decisions = {
 	make_rome_capital = {
 		is_high_prio = yes
 		potential = {
+			has_global_flag = project_balance
+			had_global_flag = { flag = project_balance days = 1 }
 			has_dlc = "Legacy of Rome"
 			has_landed_title = e_roman_empire
 			capital_scope = {
@@ -594,6 +616,8 @@ decisions = {
 	petition_doge_for_tp = {
 		is_high_prio = yes
 		potential = {
+			has_global_flag = project_balance
+			had_global_flag = { flag = project_balance days = 1 }
 			is_merchant_republic = no
 			is_patrician = yes
 			liege = { is_merchant_republic = yes }
@@ -641,6 +665,8 @@ decisions = {
 	usurp_tp = {
 		is_high_prio = yes
 		potential = {
+			has_global_flag = project_balance
+			had_global_flag = { flag = project_balance days = 1 }
 			is_merchant_republic = yes
 			is_patrician = yes
 			NOT = { has_character_flag = usurp_tp_taken }
@@ -715,6 +741,8 @@ decisions = {
 	organize_varangian_guard = {
 		is_high_prio = yes
 		potential = {
+			has_global_flag = project_balance
+			had_global_flag = { flag = project_balance days = 1 }
 			has_landed_title = e_byzantium
 			is_female = no
 			prisoner = no
@@ -757,6 +785,7 @@ decisions = {
 	create_hungary = {
 		is_high_prio = yes
 		potential = {
+			#Z: No day 1 restriction because it could be executed on day 1
 			has_landed_title = k_magyar
 			culture = hungarian
 			k_hungary = {
@@ -797,6 +826,8 @@ decisions = {
 	become_saoshyant = {
 		is_high_prio = yes
 		potential = {
+			has_global_flag = project_balance
+			had_global_flag = { flag = project_balance days = 1 }
 			has_dlc = "The Old Gods"
 			religion_group = zoroastrian_group
 			NOT = { has_global_flag = saoshyant_appears }
@@ -841,6 +872,7 @@ decisions = {
 	create_leon = {
 		is_high_prio = yes
 		potential = {
+			#Z: No day 1 restriction because it could be executed on day 1
 			has_landed_title = k_asturias
 			k_leon = {
 				has_holder = no
@@ -870,6 +902,8 @@ decisions = {
 	restore_priesthood = {
 		is_high_prio = yes
 		potential = {
+			has_global_flag = project_balance
+			had_global_flag = { flag = project_balance days = 1 }
 			has_dlc = "The Old Gods"
 			religion_group = zoroastrian_group
 			NOT = { has_global_flag = zoroastrian_priesthood_founded }
@@ -916,6 +950,8 @@ decisions = {
 	build_third_temple = {
 		is_high_prio = yes
 		potential = {
+			has_global_flag = project_balance
+			had_global_flag = { flag = project_balance days = 1 }
 			has_dlc = "Sons of Abraham"
 			religion_group = jewish_group
 			NOT = { has_global_flag = third_temple_built }
@@ -947,6 +983,8 @@ decisions = {
 	restore_high_priesthood = {
 		is_high_prio = yes
 		potential = {
+			has_global_flag = project_balance
+			had_global_flag = { flag = project_balance days = 1 }
 			has_dlc = "Sons of Abraham"
 			religion = jewish
 			has_landed_title = k_israel
@@ -997,6 +1035,8 @@ decisions = {
 	create_israel = {
 		is_high_prio = yes
 		potential = {
+			has_global_flag = project_balance
+			had_global_flag = { flag = project_balance days = 1 }
 			has_dlc = "Sons of Abraham"
 			religion_group = jewish_group
 			k_israel = {
@@ -1025,6 +1065,8 @@ decisions = {
 	
 	welcome_jews = {
 		potential = {
+			has_global_flag = project_balance
+			had_global_flag = { flag = project_balance days = 1 }
 			has_dlc = "Sons of Abraham"
 			NOT = { 
 				religion_group = jewish_group 
@@ -1059,6 +1101,9 @@ decisions = {
 	
 	expel_jews = {
 		potential = {
+			# Z: could be executed on day 1 but doesn't need to be
+			has_global_flag = project_balance
+			had_global_flag = { flag = project_balance days = 1 }
 			has_dlc = "Sons of Abraham"
 			OR = {
 				religion_group = christian
@@ -1156,6 +1201,8 @@ decisions = {
 	
 	embrace_mutazila = {
 		potential = {
+			has_global_flag = project_balance
+			had_global_flag = { flag = project_balance days = 1 }
 			has_dlc = "Sons of Abraham"
 			religion = sunni
 			NOT = { 
@@ -1203,7 +1250,9 @@ decisions = {
 		}
 	}
 	embrace_ashari = {
-		potential = {	
+		potential = {
+			has_global_flag = project_balance
+			had_global_flag = { flag = project_balance days = 1 }
 			has_dlc = "Sons of Abraham"
 			religion = sunni
 			NOT = { 
