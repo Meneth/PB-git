@@ -242,6 +242,8 @@ decisions = {
 	go_on_hajj = {
 		is_high_prio = yes
 		potential = {
+			has_global_flag = project_balance
+			had_global_flag = { flag = project_balance days = 1 }
 			is_female = no
 			is_ruler = yes
 			religion_group = muslim
@@ -402,6 +404,8 @@ decisions = {
 	hold_nerge = {
 		is_high_prio = yes
 		potential = {
+			has_global_flag = project_balance
+			had_global_flag = { flag = project_balance days = 1 }
 			has_dlc = "The Old Gods"
 			is_ruler = yes
 			age = 16
@@ -456,6 +460,8 @@ decisions = {
 	hold_blot = {
 		is_high_prio = yes
 		potential = {
+			has_global_flag = project_balance
+			had_global_flag = { flag = project_balance days = 1 }
 			has_dlc = "The Old Gods"
 			is_ruler = yes
 			age = 16
@@ -665,6 +671,8 @@ decisions = {
 	celebrate_passover = {
 		is_high_prio = yes
 		potential = {
+			has_global_flag = project_balance
+			had_global_flag = { flag = project_balance days = 1 }
 			has_dlc = "Sons of Abraham"
 			is_ruler = yes
 			age = 16
