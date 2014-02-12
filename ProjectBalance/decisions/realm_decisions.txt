@@ -150,8 +150,6 @@ decisions = {
 
 	show_me_the_medal_winners = {
 		potential = {
-			has_global_flag = project_balance
-			had_global_flag = { flag = project_balance days = 1 }
 			ai = no
 		}
 		allow = {
@@ -167,8 +165,6 @@ decisions = {
 	
 	buy_indulgence_for_sins = {
 		potential = {
-			has_global_flag = project_balance
-			had_global_flag = { flag = project_balance days = 1 }
 			religion = catholic
 			is_adult = yes
 			demesne_size = 1
@@ -203,8 +199,6 @@ decisions = {
 
 	issue_declaration_of_repentance = {
 		potential = {
-			has_global_flag = project_balance
-			had_global_flag = { flag = project_balance days = 1 }
 			religion = catholic
 			is_adult = yes
 			demesne_size = 1
@@ -286,8 +280,6 @@ decisions = {
 	
 	sadaqah_saddka  = {
 		potential = {
-			has_global_flag = project_balance
-			had_global_flag = { flag = project_balance days = 1 }
 			ai = no
 			religion_group = muslim
 			is_adult = yes
@@ -1065,8 +1057,6 @@ decisions = {
 	
 	welcome_jews = {
 		potential = {
-			has_global_flag = project_balance
-			had_global_flag = { flag = project_balance days = 1 }
 			has_dlc = "Sons of Abraham"
 			NOT = { 
 				religion_group = jewish_group 
@@ -1101,9 +1091,6 @@ decisions = {
 	
 	expel_jews = {
 		potential = {
-			# Z: could be executed on day 1 but doesn't need to be
-			has_global_flag = project_balance
-			had_global_flag = { flag = project_balance days = 1 }
 			has_dlc = "Sons of Abraham"
 			OR = {
 				religion_group = christian
@@ -1201,8 +1188,6 @@ decisions = {
 	
 	embrace_mutazila = {
 		potential = {
-			has_global_flag = project_balance
-			had_global_flag = { flag = project_balance days = 1 }
 			has_dlc = "Sons of Abraham"
 			religion = sunni
 			NOT = { 
@@ -1251,8 +1236,6 @@ decisions = {
 	}
 	embrace_ashari = {
 		potential = {
-			has_global_flag = project_balance
-			had_global_flag = { flag = project_balance days = 1 }
 			has_dlc = "Sons of Abraham"
 			religion = sunni
 			NOT = { 
