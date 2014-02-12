@@ -65,6 +65,8 @@ decisions = {
 	request_important_prisoners = {
 		is_high_prio = yes
 		potential = {
+			has_global_flag = project_balance
+			had_global_flag = { flag = project_balance days = 1 }
 			prisoner = no
 			is_ruler = yes
 			primary_title = { higher_tier_than = BARON }
