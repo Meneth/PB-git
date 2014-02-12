@@ -4631,7 +4631,7 @@ character_event = {
 	immediate = {
 		if = {
 			limit = { FROM = { character = ROOT } }
-			character_event = { id = meneth.252 days = 3 }
+			character_event = { id = meneth.223 days = 3 }
 		}
 	}
 	option = { #Yes
