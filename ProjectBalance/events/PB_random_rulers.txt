@@ -124,10 +124,10 @@ character_event = {
 			# have the same traits) due to game limitations regarding the RNG, but this is slick for the
 			# much more common case of single-player.
 			
-			FROM = {
-				character_event = { id = pb_rr.3 } # Instantly randomize initiator
-				set_character_flag = rr_skip # Do not later re-randomize by any means of traversal
-			}
+			#FROM = {
+			#	character_event = { id = pb_rr.3 } # Instantly randomize initiator
+			#	set_character_flag = rr_skip # Do not later re-randomize by any means of traversal
+			#}
 			
 			# Need to get into every court in the game, but we'd rather handle realm lords before their
 			# respective courts for heuristic trait inheritance coherency reasons, so we don't just use
@@ -189,7 +189,6 @@ character_event = {
 	
 	option = {
 		name = OK
-		
 		
 		if = {
 			limit = { NOT = { has_character_flag = rr_do_realm } } #Start case
