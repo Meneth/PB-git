@@ -873,57 +873,43 @@ character_event = {
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = temperate }
-						}
+						limit = { NOT = { trait = temperate } }
 						add_trait = gluttonous
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = gluttonous }
-						}
+						limit = { NOT = { trait = gluttonous } }
 						add_trait = temperate
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = charitable }
-						}
+						limit = { NOT = { trait = charitable } }
 						add_trait = greedy
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = greedy }
-						}
+						limit = { NOT = { trait = greedy } }
 						add_trait = charitable
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = diligent }
-						}
+						limit = { NOT = { trait = diligent } }
 						add_trait = slothful
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = slothful }
-						}
+						limit = { NOT = { trait = slothful } }
 						add_trait = diligent
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = kind }
-						}
+						limit = { NOT = { trait = kind } }
 						add_trait = envious
 					}
 				}
@@ -941,121 +927,91 @@ character_event = {
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = patient }
-						}
+						limit = { NOT = { trait = patient } }
 						add_trait = wroth
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = wroth }
-						}
+						limit = { NOT = { trait = wroth } }
 						add_trait = patient
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = humble }
-						}
+						limit = { NOT = { trait = humble } }
 						add_trait = proud
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = proud }
-						}
+						limit = { NOT = { trait = proud } }
 						add_trait = humble
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = honest }
-						}
+						limit = { NOT = { trait = honest } }
 						add_trait = deceitful
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = deceitful }
-						}
+						limit = { NOT = { trait = deceitful } }
 						add_trait = honest
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = brave }
-						}
+						limit = { NOT = { trait = brave } }
 						add_trait = craven
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = craven }
-						}
+						limit = { NOT = { trait = craven } }
 						add_trait = brave
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = gregarious }
-						}
+						limit = { NOT = { trait = gregarious } }
 						add_trait = shy
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = shy }
-						}
+						limit = { NOT = { trait = shy } }
 						add_trait = gregarious
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = content }
-						}
+						limit = { NOT = { trait = content } }
 						add_trait = ambitious
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = ambitious }
-						}
+						limit = { NOT = { trait = ambitious } }
 						add_trait = content
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = just }
-						}
+						limit = { NOT = { trait = just } }
 						add_trait = arbitrary
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = arbitrary }
-						}
+						limit = { NOT = { trait = arbitrary } }
 						add_trait = just
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = zealous }
-						}
+						limit = { NOT = { trait = zealous } }
 						add_trait = cynical
 					}
 				}
@@ -1076,25 +1032,19 @@ character_event = {
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = trusting }
-						}
+						limit = { NOT = { trait = trusting } }
 						add_trait = paranoid
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = paranoid }
-						}
+						limit = { NOT = { trait = paranoid } }
 						add_trait = trusting
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = kind }
-						}
+						limit = { NOT = { trait = kind } }
 						add_trait = cruel
 					}
 				}
@@ -1133,57 +1083,43 @@ character_event = {
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = temperate }
-						}
+						limit = { NOT = { trait = temperate } }
 						add_trait = gluttonous
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = gluttonous }
-						}
+						limit = { NOT = { trait = gluttonous } }
 						add_trait = temperate
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = charitable }
-						}
+						limit = { NOT = { trait = charitable } }
 						add_trait = greedy
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = greedy }
-						}
+						limit = { NOT = { trait = greedy } }
 						add_trait = charitable
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = diligent }
-						}
+						limit = { NOT = { trait = diligent } }
 						add_trait = slothful
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = slothful }
-						}
+						limit = { NOT = { trait = slothful } }
 						add_trait = diligent
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = kind }
-						}
+						limit = { NOT = { trait = kind } }
 						add_trait = envious
 					}
 				}
@@ -1201,121 +1137,91 @@ character_event = {
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = patient }
-						}
+						limit = { NOT = { trait = patient } }
 						add_trait = wroth
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = wroth }
-						}
+						limit = { NOT = { trait = wroth } }
 						add_trait = patient
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = humble }
-						}
+						limit = { NOT = { trait = humble } }
 						add_trait = proud
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = proud }
-						}
+						limit = { NOT = { trait = proud } }
 						add_trait = humble
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = honest }
-						}
+						limit = { NOT = { trait = honest } }
 						add_trait = deceitful
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = deceitful }
-						}
+						limit = { NOT = { trait = deceitful } }
 						add_trait = honest
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = brave }
-						}
+						limit = { NOT = { trait = brave } }
 						add_trait = craven
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = craven }
-						}
+						limit = { NOT = { trait = craven } }
 						add_trait = brave
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = gregarious }
-						}
+						limit = { NOT = { trait = gregarious } }
 						add_trait = shy
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = shy }
-						}
+						limit = { NOT = { trait = shy } }
 						add_trait = gregarious
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = content }
-						}
+						limit = { NOT = { trait = content } }
 						add_trait = ambitious
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = ambitious }
-						}
+						limit = { NOT = { trait = ambitious } }
 						add_trait = content
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = just }
-						}
+						limit = { NOT = { trait = just } }
 						add_trait = arbitrary
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = arbitrary }
-						}
+						limit = { NOT = { trait = arbitrary } }
 						add_trait = just
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = zealous }
-						}
+						limit = { NOT = { trait = zealous } }
 						add_trait = cynical
 					}
 				}
@@ -1336,25 +1242,19 @@ character_event = {
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = trusting }
-						}
+						limit = { NOT = { trait = trusting } }
 						add_trait = paranoid
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = paranoid }
-						}
+						limit = { NOT = { trait = paranoid } }
 						add_trait = trusting
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = kind }
-						}
+						limit = { NOT = { trait = kind } }
 						add_trait = cruel
 					}
 				}
@@ -1386,57 +1286,43 @@ character_event = {
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = temperate }
-						}
+						limit = { NOT = { trait = temperate } }
 						add_trait = gluttonous
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = gluttonous }
-						}
+						limit = { NOT = { trait = gluttonous } }
 						add_trait = temperate
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = charitable }
-						}
+						limit = { NOT = { trait = charitable } }
 						add_trait = greedy
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = greedy }
-						}
+						limit = { NOT = { trait = greedy } }
 						add_trait = charitable
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = diligent }
-						}
+						limit = { NOT = { trait = diligent } }
 						add_trait = slothful
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = slothful }
-						}
+						limit = { NOT = { trait = slothful } }
 						add_trait = diligent
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = kind }
-						}
+						limit = { NOT = { trait = kind } }
 						add_trait = envious
 					}
 				}
@@ -1454,121 +1340,91 @@ character_event = {
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = patient }
-						}
+						limit = { NOT = { trait = patient } }
 						add_trait = wroth
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = wroth }
-						}
+						limit = { NOT = { trait = wroth } }
 						add_trait = patient
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = humble }
-						}
+						limit = { NOT = { trait = humble } }
 						add_trait = proud
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = proud }
-						}
+						limit = { NOT = { trait = proud } }
 						add_trait = humble
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = honest }
-						}
+						limit = { NOT = { trait = honest } }
 						add_trait = deceitful
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = deceitful }
-						}
+						limit = { NOT = { trait = deceitful } }
 						add_trait = honest
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = brave }
-						}
+						limit = { NOT = { trait = brave } }
 						add_trait = craven
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = craven }
-						}
+						limit = { NOT = { trait = craven } }
 						add_trait = brave
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = gregarious }
-						}
+						limit = { NOT = { trait = gregarious } }
 						add_trait = shy
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = shy }
-						}
+						limit = { NOT = { trait = shy } }
 						add_trait = gregarious
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = content }
-						}
+						limit = { NOT = { trait = content } }
 						add_trait = ambitious
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = ambitious }
-						}
+						limit = { NOT = { trait = ambitious } }
 						add_trait = content
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = just }
-						}
+						limit = { NOT = { trait = just } }
 						add_trait = arbitrary
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = arbitrary }
-						}
+						limit = { NOT = { trait = arbitrary } }
 						add_trait = just
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = zealous }
-						}
+						limit = { NOT = { trait = zealous } }
 						add_trait = cynical
 					}
 				}
@@ -1589,25 +1445,19 @@ character_event = {
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = trusting }
-						}
+						limit = { NOT = { trait = trusting } }
 						add_trait = paranoid
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = paranoid }
-						}
+						limit = { NOT = { trait = paranoid } }
 						add_trait = trusting
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = kind }
-						}
+						limit = { NOT = { trait = kind } }
 						add_trait = cruel
 					}
 				}
@@ -1646,57 +1496,43 @@ character_event = {
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = temperate }
-						}
+						limit = { NOT = { trait = temperate } }
 						add_trait = gluttonous
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = gluttonous }
-						}
+						limit = { NOT = { trait = gluttonous } }
 						add_trait = temperate
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = charitable }
-						}
+						limit = { NOT = { trait = charitable } }
 						add_trait = greedy
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = greedy }
-						}
+						limit = { NOT = { trait = greedy } }
 						add_trait = charitable
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = diligent }
-						}
+						limit = { NOT = { trait = diligent } }
 						add_trait = slothful
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = slothful }
-						}
+						limit = { NOT = { trait = slothful } }
 						add_trait = diligent
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = kind }
-						}
+						limit = { NOT = { trait = kind } }
 						add_trait = envious
 					}
 				}
@@ -1714,121 +1550,91 @@ character_event = {
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = patient }
-						}
+						limit = { NOT = { trait = patient } }
 						add_trait = wroth
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = wroth }
-						}
+						limit = { NOT = { trait = wroth } }
 						add_trait = patient
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = humble }
-						}
+						limit = { NOT = { trait = humble } }
 						add_trait = proud
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = proud }
-						}
+						limit = { NOT = { trait = proud } }
 						add_trait = humble
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = honest }
-						}
+						limit = { NOT = { trait = honest } }
 						add_trait = deceitful
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = deceitful }
-						}
+						limit = { NOT = { trait = deceitful } }
 						add_trait = honest
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = brave }
-						}
+						limit = { NOT = { trait = brave } }
 						add_trait = craven
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = craven }
-						}
+						limit = { NOT = { trait = craven } }
 						add_trait = brave
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = gregarious }
-						}
+						limit = { NOT = { trait = gregarious } }
 						add_trait = shy
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = shy }
-						}
+						limit = { NOT = { trait = shy } }
 						add_trait = gregarious
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = content }
-						}
+						limit = { NOT = { trait = content } }
 						add_trait = ambitious
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = ambitious }
-						}
+						limit = { NOT = { trait = ambitious } }
 						add_trait = content
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = just }
-						}
+						limit = { NOT = { trait = just } }
 						add_trait = arbitrary
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = arbitrary }
-						}
+						limit = { NOT = { trait = arbitrary } }
 						add_trait = just
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = zealous }
-						}
+						limit = { NOT = { trait = zealous } }
 						add_trait = cynical
 					}
 				}
@@ -1849,25 +1655,19 @@ character_event = {
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = trusting }
-						}
+						limit = { NOT = { trait = trusting } }
 						add_trait = paranoid
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = paranoid }
-						}
+						limit = { NOT = { trait = paranoid } }
 						add_trait = trusting
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = kind }
-						}
+						limit = { NOT = { trait = kind } }
 						add_trait = cruel
 					}
 				}
@@ -1899,57 +1699,43 @@ character_event = {
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = temperate }
-						}
+						limit = { NOT = { trait = temperate } }
 						add_trait = gluttonous
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = gluttonous }
-						}
+						limit = { NOT = { trait = gluttonous } }
 						add_trait = temperate
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = charitable }
-						}
+						limit = { NOT = { trait = charitable } }
 						add_trait = greedy
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = greedy }
-						}
+						limit = { NOT = { trait = greedy } }
 						add_trait = charitable
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = diligent }
-						}
+						limit = { NOT = { trait = diligent } }
 						add_trait = slothful
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = slothful }
-						}
+						limit = { NOT = { trait = slothful } }
 						add_trait = diligent
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = kind }
-						}
+						limit = { NOT = { trait = kind } }
 						add_trait = envious
 					}
 				}
@@ -1967,121 +1753,91 @@ character_event = {
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = patient }
-						}
+						limit = { NOT = { trait = patient } }
 						add_trait = wroth
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = wroth }
-						}
+						limit = { NOT = { trait = wroth } }
 						add_trait = patient
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = humble }
-						}
+						limit = { NOT = { trait = humble } }
 						add_trait = proud
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = proud }
-						}
+						limit = { NOT = { trait = proud } }
 						add_trait = humble
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = honest }
-						}
+						limit = { NOT = { trait = honest } }
 						add_trait = deceitful
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = deceitful }
-						}
+						limit = { NOT = { trait = deceitful } }
 						add_trait = honest
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = brave }
-						}
+						limit = { NOT = { trait = brave } }
 						add_trait = craven
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = craven }
-						}
+						limit = { NOT = { trait = craven } }
 						add_trait = brave
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = gregarious }
-						}
+						limit = { NOT = { trait = gregarious } }
 						add_trait = shy
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = shy }
-						}
+						limit = { NOT = { trait = shy } }
 						add_trait = gregarious
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = content }
-						}
+						limit = { NOT = { trait = content } }
 						add_trait = ambitious
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = ambitious }
-						}
+						limit = { NOT = { trait = ambitious } }
 						add_trait = content
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = just }
-						}
+						limit = { NOT = { trait = just } }
 						add_trait = arbitrary
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = arbitrary }
-						}
+						limit = { NOT = { trait = arbitrary } }
 						add_trait = just
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = zealous }
-						}
+						limit = { NOT = { trait = zealous } }
 						add_trait = cynical
 					}
 				}
@@ -2102,25 +1858,19 @@ character_event = {
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = trusting }
-						}
+						limit = { NOT = { trait = trusting } }
 						add_trait = paranoid
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = paranoid }
-						}
+						limit = { NOT = { trait = paranoid } }
 						add_trait = trusting
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = kind }
-						}
+						limit = { NOT = { trait = kind } }
 						add_trait = cruel
 					}
 				}
@@ -2152,57 +1902,43 @@ character_event = {
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = temperate }
-						}
+						limit = { NOT = { trait = temperate } }
 						add_trait = gluttonous
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = gluttonous }
-						}
+						limit = { NOT = { trait = gluttonous } }
 						add_trait = temperate
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = charitable }
-						}
+						limit = { NOT = { trait = charitable } }
 						add_trait = greedy
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = greedy }
-						}
+						limit = { NOT = { trait = greedy } }
 						add_trait = charitable
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = diligent }
-						}
+						limit = { NOT = { trait = diligent } }
 						add_trait = slothful
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = slothful }
-						}
+						limit = { NOT = { trait = slothful } }
 						add_trait = diligent
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = kind }
-						}
+						limit = { NOT = { trait = kind } }
 						add_trait = envious
 					}
 				}
@@ -2220,121 +1956,91 @@ character_event = {
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = patient }
-						}
+						limit = { NOT = { trait = patient } }
 						add_trait = wroth
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = wroth }
-						}
+						limit = { NOT = { trait = wroth } }
 						add_trait = patient
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = humble }
-						}
+						limit = { NOT = { trait = humble } }
 						add_trait = proud
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = proud }
-						}
+						limit = { NOT = { trait = proud } }
 						add_trait = humble
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = honest }
-						}
+						limit = { NOT = { trait = honest } }
 						add_trait = deceitful
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = deceitful }
-						}
+						limit = { NOT = { trait = deceitful } }
 						add_trait = honest
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = brave }
-						}
+						limit = { NOT = { trait = brave } }
 						add_trait = craven
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = craven }
-						}
+						limit = { NOT = { trait = craven } }
 						add_trait = brave
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = gregarious }
-						}
+						limit = { NOT = { trait = gregarious } }
 						add_trait = shy
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = shy }
-						}
+						limit = { NOT = { trait = shy } }
 						add_trait = gregarious
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = content }
-						}
+						limit = { NOT = { trait = content } }
 						add_trait = ambitious
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = ambitious }
-						}
+						limit = { NOT = { trait = ambitious } }
 						add_trait = content
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = just }
-						}
+						limit = { NOT = { trait = just } }
 						add_trait = arbitrary
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = arbitrary }
-						}
+						limit = { NOT = { trait = arbitrary } }
 						add_trait = just
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = zealous }
-						}
+						limit = { NOT = { trait = zealous } }
 						add_trait = cynical
 					}
 				}
@@ -2355,25 +2061,19 @@ character_event = {
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = trusting }
-						}
+						limit = { NOT = { trait = trusting } }
 						add_trait = paranoid
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = paranoid }
-						}
+						limit = { NOT = { trait = paranoid } }
 						add_trait = trusting
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = kind }
-						}
+						limit = { NOT = { trait = kind } }
 						add_trait = cruel
 					}
 				}
@@ -2412,57 +2112,43 @@ character_event = {
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = temperate }
-						}
+						limit = { NOT = { trait = temperate } }
 						add_trait = gluttonous
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = gluttonous }
-						}
+						limit = { NOT = { trait = gluttonous } }
 						add_trait = temperate
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = charitable }
-						}
+						limit = { NOT = { trait = charitable } }
 						add_trait = greedy
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = greedy }
-						}
+						limit = { NOT = { trait = greedy } }
 						add_trait = charitable
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = diligent }
-						}
+						limit = { NOT = { trait = diligent } }
 						add_trait = slothful
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = slothful }
-						}
+						limit = { NOT = { trait = slothful } }
 						add_trait = diligent
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = kind }
-						}
+						limit = { NOT = { trait = kind } }
 						add_trait = envious
 					}
 				}
@@ -2480,121 +2166,91 @@ character_event = {
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = patient }
-						}
+						limit = { NOT = { trait = patient } }
 						add_trait = wroth
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = wroth }
-						}
+						limit = { NOT = { trait = wroth } }
 						add_trait = patient
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = humble }
-						}
+						limit = { NOT = { trait = humble } }
 						add_trait = proud
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = proud }
-						}
+						limit = { NOT = { trait = proud } }
 						add_trait = humble
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = honest }
-						}
+						limit = { NOT = { trait = honest } }
 						add_trait = deceitful
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = deceitful }
-						}
+						limit = { NOT = { trait = deceitful } }
 						add_trait = honest
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = brave }
-						}
+						limit = { NOT = { trait = brave } }
 						add_trait = craven
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = craven }
-						}
+						limit = { NOT = { trait = craven } }
 						add_trait = brave
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = gregarious }
-						}
+						limit = { NOT = { trait = gregarious } }
 						add_trait = shy
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = shy }
-						}
+						limit = { NOT = { trait = shy } }
 						add_trait = gregarious
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = content }
-						}
+						limit = { NOT = { trait = content } }
 						add_trait = ambitious
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = ambitious }
-						}
+						limit = { NOT = { trait = ambitious } }
 						add_trait = content
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = just }
-						}
+						limit = { NOT = { trait = just } }
 						add_trait = arbitrary
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = arbitrary }
-						}
+						limit = { NOT = { trait = arbitrary } }
 						add_trait = just
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = zealous }
-						}
+						limit = { NOT = { trait = zealous } }
 						add_trait = cynical
 					}
 				}
@@ -2615,25 +2271,19 @@ character_event = {
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = trusting }
-						}
+						limit = { NOT = { trait = trusting } }
 						add_trait = paranoid
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = paranoid }
-						}
+						limit = { NOT = { trait = paranoid } }
 						add_trait = trusting
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = kind }
-						}
+						limit = { NOT = { trait = kind } }
 						add_trait = cruel
 					}
 				}
@@ -2665,57 +2315,43 @@ character_event = {
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = temperate }
-						}
+						limit = { NOT = { trait = temperate } }
 						add_trait = gluttonous
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = gluttonous }
-						}
+						limit = { NOT = { trait = gluttonous } }
 						add_trait = temperate
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = charitable }
-						}
+						limit = { NOT = { trait = charitable } }
 						add_trait = greedy
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = greedy }
-						}
+						limit = { NOT = { trait = greedy } }
 						add_trait = charitable
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = diligent }
-						}
+						limit = { NOT = { trait = diligent } }
 						add_trait = slothful
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = slothful }
-						}
+						limit = { NOT = { trait = slothful } }
 						add_trait = diligent
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = kind }
-						}
+						limit = { NOT = { trait = kind } }
 						add_trait = envious
 					}
 				}
@@ -2733,121 +2369,91 @@ character_event = {
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = patient }
-						}
+						limit = { NOT = { trait = patient } }
 						add_trait = wroth
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = wroth }
-						}
+						limit = { NOT = { trait = wroth } }
 						add_trait = patient
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = humble }
-						}
+						limit = { NOT = { trait = humble } }
 						add_trait = proud
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = proud }
-						}
+						limit = { NOT = { trait = proud } }
 						add_trait = humble
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = honest }
-						}
+						limit = { NOT = { trait = honest } }
 						add_trait = deceitful
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = deceitful }
-						}
+						limit = { NOT = { trait = deceitful } }
 						add_trait = honest
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = brave }
-						}
+						limit = { NOT = { trait = brave } }
 						add_trait = craven
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = craven }
-						}
+						limit = { NOT = { trait = craven } }
 						add_trait = brave
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = gregarious }
-						}
+						limit = { NOT = { trait = gregarious } }
 						add_trait = shy
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = shy }
-						}
+						limit = { NOT = { trait = shy } }
 						add_trait = gregarious
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = content }
-						}
+						limit = { NOT = { trait = content } }
 						add_trait = ambitious
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = ambitious }
-						}
+						limit = { NOT = { trait = ambitious } }
 						add_trait = content
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = just }
-						}
+						limit = { NOT = { trait = just } }
 						add_trait = arbitrary
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = arbitrary }
-						}
+						limit = { NOT = { trait = arbitrary } }
 						add_trait = just
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = zealous }
-						}
+						limit = { NOT = { trait = zealous } }
 						add_trait = cynical
 					}
 				}
@@ -2868,25 +2474,19 @@ character_event = {
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = trusting }
-						}
+						limit = { NOT = { trait = trusting } }
 						add_trait = paranoid
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = paranoid }
-						}
+						limit = { NOT = { trait = paranoid } }
 						add_trait = trusting
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = kind }
-						}
+						limit = { NOT = { trait = kind } }
 						add_trait = cruel
 					}
 				}
@@ -2918,57 +2518,43 @@ character_event = {
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = temperate }
-						}
+						limit = { NOT = { trait = temperate } }
 						add_trait = gluttonous
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = gluttonous }
-						}
+						limit = { NOT = { trait = gluttonous } }
 						add_trait = temperate
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = charitable }
-						}
+						limit = { NOT = { trait = charitable } }
 						add_trait = greedy
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = greedy }
-						}
+						limit = { NOT = { trait = greedy } }
 						add_trait = charitable
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = diligent }
-						}
+						limit = { NOT = { trait = diligent } }
 						add_trait = slothful
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = slothful }
-						}
+						limit = { NOT = { trait = slothful } }
 						add_trait = diligent
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = kind }
-						}
+						limit = { NOT = { trait = kind } }
 						add_trait = envious
 					}
 				}
@@ -2986,121 +2572,91 @@ character_event = {
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = patient }
-						}
+						limit = { NOT = { trait = patient } }
 						add_trait = wroth
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = wroth }
-						}
+						limit = { NOT = { trait = wroth } }
 						add_trait = patient
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = humble }
-						}
+						limit = { NOT = { trait = humble } }
 						add_trait = proud
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = proud }
-						}
+						limit = { NOT = { trait = proud } }
 						add_trait = humble
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = honest }
-						}
+						limit = { NOT = { trait = honest } }
 						add_trait = deceitful
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = deceitful }
-						}
+						limit = { NOT = { trait = deceitful } }
 						add_trait = honest
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = brave }
-						}
+						limit = { NOT = { trait = brave } }
 						add_trait = craven
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = craven }
-						}
+						limit = { NOT = { trait = craven } }
 						add_trait = brave
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = gregarious }
-						}
+						limit = { NOT = { trait = gregarious } }
 						add_trait = shy
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = shy }
-						}
+						limit = { NOT = { trait = shy } }
 						add_trait = gregarious
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = content }
-						}
+						limit = { NOT = { trait = content } }
 						add_trait = ambitious
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = ambitious }
-						}
+						limit = { NOT = { trait = ambitious } }
 						add_trait = content
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = just }
-						}
+						limit = { NOT = { trait = just } }
 						add_trait = arbitrary
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = arbitrary }
-						}
+						limit = { NOT = { trait = arbitrary } }
 						add_trait = just
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = zealous }
-						}
+						limit = { NOT = { trait = zealous } }
 						add_trait = cynical
 					}
 				}
@@ -3121,25 +2677,19 @@ character_event = {
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = trusting }
-						}
+						limit = { NOT = { trait = trusting } }
 						add_trait = paranoid
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = paranoid }
-						}
+						limit = { NOT = { trait = paranoid } }
 						add_trait = trusting
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = kind }
-						}
+						limit = { NOT = { trait = kind } }
 						add_trait = cruel
 					}
 				}
@@ -3171,57 +2721,43 @@ character_event = {
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = temperate }
-						}
+						limit = { NOT = { trait = temperate } }
 						add_trait = gluttonous
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = gluttonous }
-						}
+						limit = { NOT = { trait = gluttonous } }
 						add_trait = temperate
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = charitable }
-						}
+						limit = { NOT = { trait = charitable } }
 						add_trait = greedy
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = greedy }
-						}
+						limit = { NOT = { trait = greedy } }
 						add_trait = charitable
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = diligent }
-						}
+						limit = { NOT = { trait = diligent } }
 						add_trait = slothful
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = slothful }
-						}
+						limit = { NOT = { trait = slothful } }
 						add_trait = diligent
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = kind }
-						}
+						limit = { NOT = { trait = kind } }
 						add_trait = envious
 					}
 				}
@@ -3239,121 +2775,91 @@ character_event = {
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = patient }
-						}
+						limit = { NOT = { trait = patient } }
 						add_trait = wroth
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = wroth }
-						}
+						limit = { NOT = { trait = wroth } }
 						add_trait = patient
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = humble }
-						}
+						limit = { NOT = { trait = humble } }
 						add_trait = proud
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = proud }
-						}
+						limit = { NOT = { trait = proud } }
 						add_trait = humble
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = honest }
-						}
+						limit = { NOT = { trait = honest } }
 						add_trait = deceitful
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = deceitful }
-						}
+						limit = { NOT = { trait = deceitful } }
 						add_trait = honest
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = brave }
-						}
+						limit = { NOT = { trait = brave } }
 						add_trait = craven
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = craven }
-						}
+						limit = { NOT = { trait = craven } }
 						add_trait = brave
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = gregarious }
-						}
+						limit = { NOT = { trait = gregarious } }
 						add_trait = shy
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = shy }
-						}
+						limit = { NOT = { trait = shy } }
 						add_trait = gregarious
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = content }
-						}
+						limit = { NOT = { trait = content } }
 						add_trait = ambitious
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = ambitious }
-						}
+						limit = { NOT = { trait = ambitious } }
 						add_trait = content
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = just }
-						}
+						limit = { NOT = { trait = just } }
 						add_trait = arbitrary
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = arbitrary }
-						}
+						limit = { NOT = { trait = arbitrary } }
 						add_trait = just
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = zealous }
-						}
+						limit = { NOT = { trait = zealous } }
 						add_trait = cynical
 					}
 				}
@@ -3374,25 +2880,19 @@ character_event = {
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = trusting }
-						}
+						limit = { NOT = { trait = trusting } }
 						add_trait = paranoid
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = paranoid }
-						}
+						limit = { NOT = { trait = paranoid } }
 						add_trait = trusting
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = kind }
-						}
+						limit = { NOT = { trait = kind } }
 						add_trait = cruel
 					}
 				}
@@ -3430,57 +2930,43 @@ character_event = {
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = temperate }
-						}
+						limit = { NOT = { trait = temperate } }
 						add_trait = gluttonous
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = gluttonous }
-						}
+						limit = { NOT = { trait = gluttonous } }
 						add_trait = temperate
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = charitable }
-						}
+						limit = { NOT = { trait = charitable } }
 						add_trait = greedy
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = greedy }
-						}
+						limit = { NOT = { trait = greedy } }
 						add_trait = charitable
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = diligent }
-						}
+						limit = { NOT = { trait = diligent } }
 						add_trait = slothful
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = slothful }
-						}
+						limit = { NOT = { trait = slothful } }
 						add_trait = diligent
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = kind }
-						}
+						limit = { NOT = { trait = kind } }
 						add_trait = envious
 					}
 				}
@@ -3498,121 +2984,91 @@ character_event = {
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = patient }
-						}
+						limit = { NOT = { trait = patient } }
 						add_trait = wroth
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = wroth }
-						}
+						limit = { NOT = { trait = wroth } }
 						add_trait = patient
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = humble }
-						}
+						limit = { NOT = { trait = humble } }
 						add_trait = proud
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = proud }
-						}
+						limit = { NOT = { trait = proud } }
 						add_trait = humble
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = honest }
-						}
+						limit = { NOT = { trait = honest } }
 						add_trait = deceitful
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = deceitful }
-						}
+						limit = { NOT = { trait = deceitful } }
 						add_trait = honest
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = brave }
-						}
+						limit = { NOT = { trait = brave } }
 						add_trait = craven
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = craven }
-						}
+						limit = { NOT = { trait = craven } }
 						add_trait = brave
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = gregarious }
-						}
+						limit = { NOT = { trait = gregarious } }
 						add_trait = shy
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = shy }
-						}
+						limit = { NOT = { trait = shy } }
 						add_trait = gregarious
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = content }
-						}
+						limit = { NOT = { trait = content } }
 						add_trait = ambitious
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = ambitious }
-						}
+						limit = { NOT = { trait = ambitious } }
 						add_trait = content
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = just }
-						}
+						limit = { NOT = { trait = just } }
 						add_trait = arbitrary
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = arbitrary }
-						}
+						limit = { NOT = { trait = arbitrary } }
 						add_trait = just
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = zealous }
-						}
+						limit = { NOT = { trait = zealous } }
 						add_trait = cynical
 					}
 				}
@@ -3633,25 +3089,19 @@ character_event = {
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = trusting }
-						}
+						limit = { NOT = { trait = trusting } }
 						add_trait = paranoid
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = paranoid }
-						}
+						limit = { NOT = { trait = paranoid } }
 						add_trait = trusting
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = kind }
-						}
+						limit = { NOT = { trait = kind } }
 						add_trait = cruel
 					}
 				}
@@ -3683,57 +3133,43 @@ character_event = {
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = temperate }
-						}
+						limit = { NOT = { trait = temperate } }
 						add_trait = gluttonous
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = gluttonous }
-						}
+						limit = { NOT = { trait = gluttonous } }
 						add_trait = temperate
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = charitable }
-						}
+						limit = { NOT = { trait = charitable } }
 						add_trait = greedy
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = greedy }
-						}
+						limit = { NOT = { trait = greedy } }
 						add_trait = charitable
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = diligent }
-						}
+						limit = { NOT = { trait = diligent } }
 						add_trait = slothful
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = slothful }
-						}
+						limit = { NOT = { trait = slothful } }
 						add_trait = diligent
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = kind }
-						}
+						limit = { NOT = { trait = kind } }
 						add_trait = envious
 					}
 				}
@@ -3751,121 +3187,91 @@ character_event = {
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = patient }
-						}
+						limit = { NOT = { trait = patient } }
 						add_trait = wroth
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = wroth }
-						}
+						limit = { NOT = { trait = wroth } }
 						add_trait = patient
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = humble }
-						}
+						limit = { NOT = { trait = humble } }
 						add_trait = proud
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = proud }
-						}
+						limit = { NOT = { trait = proud } }
 						add_trait = humble
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = honest }
-						}
+						limit = { NOT = { trait = honest } }
 						add_trait = deceitful
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = deceitful }
-						}
+						limit = { NOT = { trait = deceitful } }
 						add_trait = honest
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = brave }
-						}
+						limit = { NOT = { trait = brave } }
 						add_trait = craven
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = craven }
-						}
+						limit = { NOT = { trait = craven } }
 						add_trait = brave
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = gregarious }
-						}
+						limit = { NOT = { trait = gregarious } }
 						add_trait = shy
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = shy }
-						}
+						limit = { NOT = { trait = shy } }
 						add_trait = gregarious
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = content }
-						}
+						limit = { NOT = { trait = content } }
 						add_trait = ambitious
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = ambitious }
-						}
+						limit = { NOT = { trait = ambitious } }
 						add_trait = content
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = just }
-						}
+						limit = { NOT = { trait = just } }
 						add_trait = arbitrary
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = arbitrary }
-						}
+						limit = { NOT = { trait = arbitrary } }
 						add_trait = just
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = zealous }
-						}
+						limit = { NOT = { trait = zealous } }
 						add_trait = cynical
 					}
 				}
@@ -3886,25 +3292,19 @@ character_event = {
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = trusting }
-						}
+						limit = { NOT = { trait = trusting } }
 						add_trait = paranoid
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = paranoid }
-						}
+						limit = { NOT = { trait = paranoid } }
 						add_trait = trusting
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = kind }
-						}
+						limit = { NOT = { trait = kind } }
 						add_trait = cruel
 					}
 				}
@@ -3936,57 +3336,43 @@ character_event = {
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = temperate }
-						}
+						limit = { NOT = { trait = temperate } }
 						add_trait = gluttonous
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = gluttonous }
-						}
+						limit = { NOT = { trait = gluttonous } }
 						add_trait = temperate
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = charitable }
-						}
+						limit = { NOT = { trait = charitable } }
 						add_trait = greedy
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = greedy }
-						}
+						limit = { NOT = { trait = greedy } }
 						add_trait = charitable
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = diligent }
-						}
+						limit = { NOT = { trait = diligent } }
 						add_trait = slothful
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = slothful }
-						}
+						limit = { NOT = { trait = slothful } }
 						add_trait = diligent
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = kind }
-						}
+						limit = { NOT = { trait = kind } }
 						add_trait = envious
 					}
 				}
@@ -4004,121 +3390,91 @@ character_event = {
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = patient }
-						}
+						limit = { NOT = { trait = patient } }
 						add_trait = wroth
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = wroth }
-						}
+						limit = { NOT = { trait = wroth } }
 						add_trait = patient
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = humble }
-						}
+						limit = { NOT = { trait = humble } }
 						add_trait = proud
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = proud }
-						}
+						limit = { NOT = { trait = proud } }
 						add_trait = humble
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = honest }
-						}
+						limit = { NOT = { trait = honest } }
 						add_trait = deceitful
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = deceitful }
-						}
+						limit = { NOT = { trait = deceitful } }
 						add_trait = honest
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = brave }
-						}
+						limit = { NOT = { trait = brave } }
 						add_trait = craven
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = craven }
-						}
+						limit = { NOT = { trait = craven } }
 						add_trait = brave
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = gregarious }
-						}
+						limit = { NOT = { trait = gregarious } }
 						add_trait = shy
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = shy }
-						}
+						limit = { NOT = { trait = shy } }
 						add_trait = gregarious
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = content }
-						}
+						limit = { NOT = { trait = content } }
 						add_trait = ambitious
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = ambitious }
-						}
+						limit = { NOT = { trait = ambitious } }
 						add_trait = content
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = just }
-						}
+						limit = { NOT = { trait = just } }
 						add_trait = arbitrary
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = arbitrary }
-						}
+						limit = { NOT = { trait = arbitrary } }
 						add_trait = just
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = zealous }
-						}
+						limit = { NOT = { trait = zealous } }
 						add_trait = cynical
 					}
 				}
@@ -4139,25 +3495,19 @@ character_event = {
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = trusting }
-						}
+						limit = { NOT = { trait = trusting } }
 						add_trait = paranoid
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = paranoid }
-						}
+						limit = { NOT = { trait = paranoid } }
 						add_trait = trusting
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = kind }
-						}
+						limit = { NOT = { trait = kind } }
 						add_trait = cruel
 					}
 				}
@@ -4189,57 +3539,43 @@ character_event = {
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = temperate }
-						}
+						limit = { NOT = { trait = temperate } }
 						add_trait = gluttonous
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = gluttonous }
-						}
+						limit = { NOT = { trait = gluttonous } }
 						add_trait = temperate
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = charitable }
-						}
+						limit = { NOT = { trait = charitable } }
 						add_trait = greedy
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = greedy }
-						}
+						limit = { NOT = { trait = greedy } }
 						add_trait = charitable
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = diligent }
-						}
+						limit = { NOT = { trait = diligent } }
 						add_trait = slothful
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = slothful }
-						}
+						limit = { NOT = { trait = slothful } }
 						add_trait = diligent
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = kind }
-						}
+						limit = { NOT = { trait = kind } }
 						add_trait = envious
 					}
 				}
@@ -4257,121 +3593,91 @@ character_event = {
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = patient }
-						}
+						limit = { NOT = { trait = patient } }
 						add_trait = wroth
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = wroth }
-						}
+						limit = { NOT = { trait = wroth } }
 						add_trait = patient
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = humble }
-						}
+						limit = { NOT = { trait = humble } }
 						add_trait = proud
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = proud }
-						}
+						limit = { NOT = { trait = proud } }
 						add_trait = humble
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = honest }
-						}
+						limit = { NOT = { trait = honest } }
 						add_trait = deceitful
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = deceitful }
-						}
+						limit = { NOT = { trait = deceitful } }
 						add_trait = honest
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = brave }
-						}
+						limit = { NOT = { trait = brave } }
 						add_trait = craven
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = craven }
-						}
+						limit = { NOT = { trait = craven } }
 						add_trait = brave
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = gregarious }
-						}
+						limit = { NOT = { trait = gregarious } }
 						add_trait = shy
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = shy }
-						}
+						limit = { NOT = { trait = shy } }
 						add_trait = gregarious
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = content }
-						}
+						limit = { NOT = { trait = content } }
 						add_trait = ambitious
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = ambitious }
-						}
+						limit = { NOT = { trait = ambitious } }
 						add_trait = content
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = just }
-						}
+						limit = { NOT = { trait = just } }
 						add_trait = arbitrary
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = arbitrary }
-						}
+						limit = { NOT = { trait = arbitrary } }
 						add_trait = just
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = zealous }
-						}
+						limit = { NOT = { trait = zealous } }
 						add_trait = cynical
 					}
 				}
@@ -4392,25 +3698,19 @@ character_event = {
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = trusting }
-						}
+						limit = { NOT = { trait = trusting } }
 						add_trait = paranoid
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = paranoid }
-						}
+						limit = { NOT = { trait = paranoid } }
 						add_trait = trusting
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = kind }
-						}
+						limit = { NOT = { trait = kind } }
 						add_trait = cruel
 					}
 				}
@@ -4442,57 +3742,43 @@ character_event = {
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = temperate }
-						}
+						limit = { NOT = { trait = temperate } }
 						add_trait = gluttonous
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = gluttonous }
-						}
+						limit = { NOT = { trait = gluttonous } }
 						add_trait = temperate
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = charitable }
-						}
+						limit = { NOT = { trait = charitable } }
 						add_trait = greedy
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = greedy }
-						}
+						limit = { NOT = { trait = greedy } }
 						add_trait = charitable
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = diligent }
-						}
+						limit = { NOT = { trait = diligent } }
 						add_trait = slothful
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = slothful }
-						}
+						limit = { NOT = { trait = slothful } }
 						add_trait = diligent
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = kind }
-						}
+						limit = { NOT = { trait = kind } }
 						add_trait = envious
 					}
 				}
@@ -4510,121 +3796,91 @@ character_event = {
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = patient }
-						}
+						limit = { NOT = { trait = patient } }
 						add_trait = wroth
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = wroth }
-						}
+						limit = { NOT = { trait = wroth } }
 						add_trait = patient
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = humble }
-						}
+						limit = { NOT = { trait = humble } }
 						add_trait = proud
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = proud }
-						}
+						limit = { NOT = { trait = proud } }
 						add_trait = humble
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = honest }
-						}
+						limit = { NOT = { trait = honest } }
 						add_trait = deceitful
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = deceitful }
-						}
+						limit = { NOT = { trait = deceitful } }
 						add_trait = honest
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = brave }
-						}
+						limit = { NOT = { trait = brave } }
 						add_trait = craven
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = craven }
-						}
+						limit = { NOT = { trait = craven } }
 						add_trait = brave
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = gregarious }
-						}
+						limit = { NOT = { trait = gregarious } }
 						add_trait = shy
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = shy }
-						}
+						limit = { NOT = { trait = shy } }
 						add_trait = gregarious
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = content }
-						}
+						limit = { NOT = { trait = content } }
 						add_trait = ambitious
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = ambitious }
-						}
+						limit = { NOT = { trait = ambitious } }
 						add_trait = content
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = just }
-						}
+						limit = { NOT = { trait = just } }
 						add_trait = arbitrary
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = arbitrary }
-						}
+						limit = { NOT = { trait = arbitrary } }
 						add_trait = just
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = zealous }
-						}
+						limit = { NOT = { trait = zealous } }
 						add_trait = cynical
 					}
 				}
@@ -4645,25 +3901,19 @@ character_event = {
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = trusting }
-						}
+						limit = { NOT = { trait = trusting } }
 						add_trait = paranoid
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = paranoid }
-						}
+						limit = { NOT = { trait = paranoid } }
 						add_trait = trusting
 					}
 				}
 				10 = {
 					if = {
-						limit = {
-							NOT = { trait = kind }
-						}
+						limit = { NOT = { trait = kind } }
 						add_trait = cruel
 					}
 				}
