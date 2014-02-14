@@ -2919,20 +2919,45 @@ tribal_invasion = {
 					title = e_mexikha
 				}
 			}
+			# Z: The bordering case in vanilla is "broken" (only requires bordering _any_
+			#    province in the target kingdom if no provinces of own within kingdom--
+			#    that province does not need to be one over which FROM is overlord, and
+			#    that is a recipe for Blobs Without Borders (or, Holey Blobs, if you must).
+			#
+			#    We require the attacker to have at least one county in the target kingdom
+			#    or a realm province which directly borders a province within the target
+			#    kingdom in the realm of FROM. It is no longer enough to simply border
+			#    some other realm's province within the target kingdom.
+			#
+			#    Modified tribal_invasion to have the same mechanics as muslim_invasion
+			#    (plus the extra cases in this OR block) as well (may also just hold a
+			#    province within the target kingdom, which implies a border), though this
+			#    technically could encourage more non-contingent realms in rare cases.
+
+			# The attacker needs at least one county in the target kingdom, or a border if
+			# they don't fulfill one of the other conditions
 			any_direct_de_jure_vassal_title = {
 				any_direct_de_jure_vassal_title = {
-					holder_scope = {
-						OR = {
-							character = FROM
-							is_liege_or_above = FROM
+					OR = {
+						holder_scope = {
+							OR = {
+								character = ROOT
+								is_liege_or_above = ROOT
+							}
 						}
-					}
-					location = {
-						any_neighbor_province = {
+						location = {
 							owner = {
 								OR = {
-									character = ROOT
-									is_liege_or_above = ROOT
+									character = FROM
+									is_liege_or_above = FROM
+								}
+							}
+							any_neighbor_province = {
+								owner = {
+									OR = {
+										character = ROOT
+										is_liege_or_above = ROOT
+									}
 								}
 							}
 						}
@@ -8326,7 +8351,10 @@ muslim_invasion = {
 		#    that province does not need to be one over which FROM is overlord, and
 		#    that is a recipe for Blobs Without Borders (or, Holey Blobs, if you must).
 		#
-		#    TODO: Fix should probably be applied, elsewhere as well. Held for now.
+		#    We require the attacker to have at least one county in the target kingdom
+		#    or a realm province which directly borders a province within the target
+		#    kingdom in the realm of FROM. It is no longer enough to simply border
+		#    some other realm's province within the target kingdom.
 
 		# The attacker needs at least one county in the target kingdom, or a border
 		any_direct_de_jure_vassal_title = {
@@ -8339,13 +8367,12 @@ muslim_invasion = {
 						}
 					}
 					location = {
-						# Pre-staged "fix" for Blobs w/ Holes
-#						owner = {
-#							OR = {
-#								character = FROM
-#								is_liege_or_above = FROM
-#							}
-#						}
+						owner = { # Vanilla fix
+							OR = {
+								character = FROM
+								is_liege_or_above = FROM
+							}
+						}
 						any_neighbor_province = {
 							owner = {
 								OR = {
