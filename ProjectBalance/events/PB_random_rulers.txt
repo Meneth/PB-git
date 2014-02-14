@@ -37,7 +37,14 @@ narrative_event = {
 					set_character_flag = rr_skip
 				}
 				set_character_flag = rr_skip
+				
 				e_rebels = { owner = { character_event = { id = pb_rr.1 } } }
+				
+				any_playable_ruler = {
+					limit = { ai = no }
+					clr_character_flag = rr_skip
+				}
+				clr_character_flag = rr_skip
 			}
 		}
 	}
@@ -71,7 +78,9 @@ narrative_event = {
 # FROM = player that initiated randomization
 #
 # Afterward, ROOT = FROM = referee for an arbitrary number of invocations,
-# as this event recurses.
+# as this event-- along with all but the actual character randomization
+# event, pb_rr.6-- is fundamentally recursive and does not use traditional
+# looping constructs.
 character_event = {
 	id = pb_rr.1
 	desc = OK
@@ -4713,124 +4722,124 @@ character_event = {
 		# independent gene selection.
 
 		# As the code-generation option below suggests, I've chosen to amplify the
-		# chance of all birth traits by +100% (i.e., if it was a chance of 0.5% in
-		# the trait definition, it becomes a chance of 1% for the randomizer) in
+		# chance of all birth traits by +50% (i.e., if it was a chance of 1% in
+		# the trait definition, it becomes a chance of 1.5% for the randomizer) in
 		# order to emphasize the genetic diversity for startup characters.  This
 		# provides a more interesting selection as well as a seed for future
 		# generations (which will inherit at the normal probability).
 		
-		# % pb_rr.pl --codegen=gene_select:chance_mult=2
+		# % pb_rr.pl --codegen=gene_select:chance_mult=1.5
 
 		# Genotype: AbsentmindedPerceptive
 		random_list = {
-			200 = { add_trait = perceptive }
-			200 = { add_trait = absentminded }
-			9600 = { }
+			150 = { add_trait = perceptive }
+			150 = { add_trait = absentminded }
+			9700 = { }
 		}
 
 		# Genotype: Agile
 		random_list = {
-			200 = { add_trait = agile }
-			9800 = { }
+			150 = { add_trait = agile }
+			9850 = { }
 		}
 
 		# Genotype: AmbidextrousLefthanded
 		random_list = {
-			100 = { add_trait = ambidextrous }
-			500 = { add_trait = lefthanded }
-			9400 = { }
+			75 = { add_trait = ambidextrous }
+			375 = { add_trait = lefthanded }
+			9550 = { }
 		}
 
 		# Genotype: CalmVoiceMelodiousVoicePowerfulVoice
 		random_list = {
-			200 = { add_trait = melodious_voice }
-			200 = { add_trait = powerful_voice }
-			200 = { add_trait = calm_voice }
-			9400 = { }
+			150 = { add_trait = melodious_voice }
+			150 = { add_trait = powerful_voice }
+			150 = { add_trait = calm_voice }
+			9550 = { }
 		}
 
 		# Genotype: Clubfooted
 		random_list = {
-			200 = { add_trait = clubfooted }
-			9800 = { }
+			150 = { add_trait = clubfooted }
+			9850 = { }
 		}
 
 		# Genotype: Deaf
 		random_list = {
-			100 = { add_trait = deaf }
-			9900 = { }
+			75 = { add_trait = deaf }
+			9925 = { }
 		}
 
 		# Genotype: DwarfTall
 		random_list = {
-			100 = { add_trait = dwarf }
-			300 = { add_trait = tall }
-			9600 = { }
+			75 = { add_trait = dwarf }
+			225 = { add_trait = tall }
+			9700 = { }
 		}
 
 		# Genotype: FairUgly
 		random_list = {
-			400 = { add_trait = fair }
-			400 = { add_trait = ugly }
-			9200 = { }
+			300 = { add_trait = fair }
+			300 = { add_trait = ugly }
+			9400 = { }
 		}
 
 		# Genotype: Fertile
 		random_list = {
-			200 = { add_trait = fertile }
-			9800 = { }
+			150 = { add_trait = fertile }
+			9850 = { }
 		}
 
 		# Genotype: GeniusImbecileQuickSlow
 		random_list = {
-			200 = { add_trait = genius }
-			200 = { add_trait = imbecile }
-			400 = { add_trait = slow }
-			400 = { add_trait = quick }
-			8800 = { }
+			150 = { add_trait = genius }
+			150 = { add_trait = imbecile }
+			300 = { add_trait = slow }
+			300 = { add_trait = quick }
+			9100 = { }
 		}
 
 		# Genotype: Harelip
 		random_list = {
-			200 = { add_trait = harelip }
-			9800 = { }
+			150 = { add_trait = harelip }
+			9850 = { }
 		}
 
 		# Genotype: Hunchback
 		random_list = {
-			200 = { add_trait = hunchback }
-			9800 = { }
+			150 = { add_trait = hunchback }
+			9850 = { }
 		}
 
 		# Genotype: Imposing
 		random_list = {
-			100 = { add_trait = imposing }
-			9900 = { }
+			75 = { add_trait = imposing }
+			9925 = { }
 		}
 
 		# Genotype: Lisp
 		random_list = {
-			200 = { add_trait = lisp }
-			9800 = { }
+			150 = { add_trait = lisp }
+			9850 = { }
 		}
 
 		# Genotype: StrongWeak
 		random_list = {
-			400 = { add_trait = strong }
-			400 = { add_trait = weak }
-			9200 = { }
+			300 = { add_trait = strong }
+			300 = { add_trait = weak }
+			9400 = { }
 		}
 
 		# Genotype: Stutter
 		random_list = {
-			200 = { add_trait = stutter }
-			9800 = { }
+			150 = { add_trait = stutter }
+			9850 = { }
 		}
 
 		# Genotype: Wrymouth
 		random_list = {
-			100 = { add_trait = wrymouth }
-			9900 = { }
+			75 = { add_trait = wrymouth }
+			9925 = { }
 		}
 
 		##### GENETICS INHERITANCE ######
