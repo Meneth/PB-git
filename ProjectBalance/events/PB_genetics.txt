@@ -19,7 +19,7 @@ character_event = {
 	
 	option = {
 		name = OK
-		father_even_if_dead = {
+		father = {
 			if = {
 				limit = { trait = genius }
 				ROOT = {
@@ -60,7 +60,7 @@ character_event = {
 				}
 			}
 		}
-		mother_even_if_dead = {
+		mother = {
 			if = {
 				limit = { trait = genius }
 				ROOT = {
@@ -101,8 +101,8 @@ character_event = {
 				}
 			}
 		}
-		father_even_if_dead = {
-			father_even_if_dead = {
+		father = {
+			father = {
 				if = {
 					limit = { trait = clubfooted }
 					random = {
@@ -413,7 +413,7 @@ character_event = {
 					}
 				}
 			}
-			mother_even_if_dead = {
+			mother = {
 				if = {
 					limit = { trait = clubfooted }
 					random = {
@@ -725,8 +725,8 @@ character_event = {
 				}
 			}
 		}
-		mother_even_if_dead = {
-			father_even_if_dead = {
+		mother = {
+			father = {
 				if = {
 					limit = { trait = clubfooted }
 					random = {
@@ -1037,7 +1037,7 @@ character_event = {
 					}
 				}
 			}
-			mother_even_if_dead = {
+			mother = {
 				if = {
 					limit = { trait = clubfooted }
 					random = {

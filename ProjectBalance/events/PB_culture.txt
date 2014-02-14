@@ -818,7 +818,7 @@ character_event = {
 			factor = 2
 			OR = {
 				is_patrician = yes
-				father_even_if_dead = {
+				father = {
 					is_patrician = yes
 				}
 				mother = {

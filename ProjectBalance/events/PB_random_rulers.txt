@@ -584,8 +584,8 @@ character_event = {
 							AND = {
 								is_ruler = no
 								OR = {
-									father_even_if_dead = { tier = emperor }
-									mother_even_if_dead = { tier = emperor }
+									father = { tier = emperor }
+									mother = { tier = emperor }
 								}
 							}
 						}
@@ -624,8 +624,8 @@ character_event = {
 							AND = {
 								is_ruler = no
 								OR = {
-									father_even_if_dead = { tier = king }
-									mother_even_if_dead = { tier = king }
+									father = { tier = king }
+									mother = { tier = king }
 								}
 							}
 						}
@@ -664,8 +664,8 @@ character_event = {
 							AND = {
 								is_ruler = no
 								OR = {
-									father_even_if_dead = { tier = duke }
-									mother_even_if_dead = { tier = duke }
+									father = { tier = duke }
+									mother = { tier = duke }
 								}
 							}
 						}
@@ -4119,7 +4119,7 @@ character_event = {
 		# % pb_rr.pl --codegen=gene_inherit:chance_offset=20
 
 		# Inherit mother's traits...
-		mother_even_if_dead = {
+		mother = {
 			if = { #AbsentmindedPerceptive
 				limit = { trait = perceptive }
 				random = {
@@ -4374,7 +4374,7 @@ character_event = {
 		}
 
 		# Inherit father's traits...
-		father_even_if_dead = {
+		father = {
 			if = { #AbsentmindedPerceptive
 				limit = { trait = perceptive }
 				random = {
@@ -4866,8 +4866,8 @@ character_event = {
 				limit = { # >= duke
 					OR = {
 						higher_tier_than = count
-						father_even_if_dead = { higher_tier_than = count }
-						mother_even_if_dead = { higher_tier_than = count }
+						father = { higher_tier_than = count }
+						mother = { higher_tier_than = count }
 					}
 				}
 				change_variable = { which = "combat_skill" value = 1 }
@@ -4880,8 +4880,8 @@ character_event = {
 							is_patrician = no
 							lower_tier_than = duke
 						}
-						father_even_if_dead = { tier = count }
-						mother_even_if_dead = { tier = count }
+						father = { tier = count }
+						mother = { tier = count }
 					}
 				}
 				change_variable = { which = "combat_skill" value = 0.5 }
@@ -4901,8 +4901,8 @@ character_event = {
 			if = {
 				limit = {
 					OR = {
-						father_even_if_dead = { trait = master_warrior }
-						mother_even_if_dead = { trait = master_warrior }
+						father = { trait = master_warrior }
+						mother = { trait = master_warrior }
 						guardian = { trait = master_warrior }
 						job_marshal = { trait = master_warrior }
 						AND = {
