@@ -1,4 +1,4 @@
-# 498 - Mesembria
+# 498 - Mesembria # Zagore
 
 # County Title
 title = c_mesembria
@@ -6,15 +6,16 @@ title = c_mesembria
 # Settlements
 max_settlements = 5
 
-b_mesembria = castle
-b_varna = city
-b_anchilios = temple
-
-#b_sozopolis = castle
-#b_aetos = castle
-#b_odessos = castle
+b_yambol = castle
+b_mesembria = temple
+b_pomorie = city
+b_aetos = castle
+#b_markeli = castle
+#b_lardea = castle
+#b_rusokastro = castle
+#b_debelt = city
+#b_sozopol = temple
 #b_bourgas = castle
-#b_valchidol = castle
 
 # Misc
 culture = bulgarian
@@ -24,4 +25,3 @@ religion = orthodox
 950.1.1 = { religion = bogomilist }
 1216.1.1 = { trade_post = b_doria }
  
-1337.1.1 = { b_bourgas = castle }

@@ -1,17 +1,17 @@
-# 508 - Dorostotum
+# 508 - Dorostotum # Preslav
 
 # County Title
 title = c_dorostotum
 
 # Settlements
-max_settlements = 4
+max_settlements = 5
 
-b_maglizh = castle
-b_irinopolis = city
-#b_hisarya = castle
-#b_opan = castle
-#b_chirpan = castle
-#b_kazanlak = castle
+b_pliska = castle
+b_preslav = castle
+b_silistra = temple
+#b_shumen = city
+#b_cherven = castle
+#b_ivanovo = temple
 
 
 # Misc
@@ -19,4 +19,6 @@ culture = bulgarian
 religion = orthodox
 
 # History
+893.1.1 = { capital = b_preslav }
 950.1.1 = { religion = bogomilist }
+972.1.1 = { remove_settlement = b_pliska } # Demolished by the Byzzies

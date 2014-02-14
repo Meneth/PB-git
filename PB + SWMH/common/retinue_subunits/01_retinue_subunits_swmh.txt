@@ -313,3 +313,30 @@ RETTYPE_CUL_N_AFR =
 		light_cavalry_offensive = 0.6
 	}
 }
+
+########################
+#Bedouin nomads group
+########################
+RETTYPE_CUL_BEDOUIN_NOMAD = 
+{
+	first_type = 3
+	first_amount = 250
+	
+	potential = {
+    OR = {		
+  		culture = tagelmust
+  		culture = tuareg
+  		culture = zanata
+  		culture = beja
+  		culture = bedouin_arabic
+  		culture = afar
+  		culture = zaghawa
+  		culture = daju
+  		culture = mossi
+      }
+    }
+	
+	modifier = {
+		light_cavalry_offensive = 0.6
+	}
+}
