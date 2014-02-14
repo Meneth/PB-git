@@ -42,6 +42,9 @@ gender_equality;Enable Gender Equality;;;;;;;;;;;;;x
 gender_equality_desc;Every non-Muslim title in the world will adopt Absolute Cognatic succession. The restrictions on Enatic succession will be lifted. All council positions will open up to women.;;;;;;;;;;;;;x
 no_ahistorical_empires;Remove Ahistorical Empires;;;;;;;;;;;;;x
 no_ahistorical_empires_desc;All empires except the HRE, the Byzantine Empire, and the Persian Empire will cease to exist dejure. They can still be formed as titular titles.;;;;;;;;;;;;;x
+random_rulers;Randomize Rulers;;;;;;;;;;;;;x
+random_rulers_desc;All rulers and courtiers, excluding your own if preferred, will receive a new, realistic, and coherent set of random personality, education, and congenital traits (with family inheritance chance). The randomizer employs the full set of Project Balance's extended traits. Multiplayer-friendly. Never play the same game twice!;;;;;;;;;;;;;x
+random_rulers_ctt;After selecting whether to exclude yourself, the world's aristocracy will be randomized.\n;;;;;;;;;;;;;x
 imperial_reconquest_t1;Imperial Reconquest - Tier 1;;;;;;;;;;;;;x
 imperial_reconquest_t2;Imperial Reconquest - Tier 2;;;;;;;;;;;;;x
 imperial_reconquest_t3;Imperial Reconquest - Tier 3;;;;;;;;;;;;;x

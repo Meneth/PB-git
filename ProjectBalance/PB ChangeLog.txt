@@ -6,6 +6,7 @@
 	(No Ahistorical Empires) The Bulgarian Empire is now properly removed upon enacting the scenario customization decision in the 867 start date
 	Vanilla trait AI weighting tweaks. AI behavior due to traits should be slightly more ambitious and willing to take risks but generally more accurately reflect trait semantics.
 	Bugfix for issue that prevented the autonomy faction from ever actually succeeding at commending their liege when in a happy mood despite a successful vote in favor. Faction leader was hogging the glory and commending himself without even checking the vote results, as it turns out.
+	Introduction of the new Day-1 (or, D-Day, alternately) scenario customization decison 'Randomize Rulers,' which assigns a new, random face to all historical rulers and their courtiers worldwide.  They will receive a new, highly realistic, and coherent set of random personality, education, leadership, and genetic traits. New family traits which arise will also potentially be inherited by all living descendants. Project Balance features a significantly extended trait set, so startup characters can now benefit from all of them. Will fundamentally alter the political landscape for a fresh experience that leaves the worldwide balance of power and other expectations of your selected scenario fully intact.
 
 3.4.4
 	(PB+VIET) Fixed some trait icons being missing when VIET Immersion is active

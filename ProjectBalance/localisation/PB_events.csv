@@ -184,3 +184,11 @@ siege_disease;§GEnemy:§! Attacking troops take §R2.5%§! losses.;;;;;;;;;;;;;x
 meneth.601;The Baqt;;;;;;;;;;;;;x
 meneth.601.desc;The Baqt was an agreement between the Ethiopian kingdom of Makuria and the Muslim rulers of Egypt. In exchange for free trade between the peoples, they were to live in peace with one another. Maintaining the Baqt provides safety and revenue, but prevents expansion. An ambitious ruler can seek to violate the Baqt and earn power through war rather than trade.;;;;;;;;;;;;;x
 meneth.601.a;Interesting;;;;;;;;;;;;;x
+pb_rr.0.title;New Face For The Nobility;;;;;;;;;;;;;x
+pb_rr.0.desc;This scenario customization option allows you to give a random face to all historical rulers and their courtiers worldwide.  They will receive a new, realistic, and coherent set of random personality, education, and congenital traits. New family traits which arise will also potentially be inherited by all living descendants. Project Balance features a significantly extended trait set, so startup characters can benefit from all of them.\n\nWorld politics will be fundamentally altered: wars will be waged that would not have been, the strong may become weak, and the weak may become strong.\n\nGenerating an all new cast of characters takes time: behind the scenes, this event will fire tens of thousands of other events before it completes, taking up to 25-50 seconds. Don't be alarmed by the delay: it is guaranteed to finish.\n;;;;;;;;;;;;;x
+pb_rr.0.opt.ai_only;I'm fine with my character as it is. Randomize AI characters only.;;;;;;;;;;;;;x
+pb_rr.0.opt.all;Randomize all characters, including mine.;;;;;;;;;;;;;x
+pb_rr.0.opt.cancel;No thanks. I'll stick to the usual suspects for now...;;;;;;;;;;;;;x
+pb_rr.0.opt.ai_only.ctt;All players' traits will remain the same, but AI characters' will be randomized.\n;;;;;;;;;;;;;x
+pb_rr.0.opt.all.ctt;The traits of all players and AI characters alike will be randomized.\n;;;;;;;;;;;;;x
+pb_rr.0.opt.cancel.ctt;Nothing new and interesting will ever happen in your games-- never, ever again.\n;;;;;;;;;;;;;x
