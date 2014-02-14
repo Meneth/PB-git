@@ -1,8 +1,8 @@
 ####################################################
-# Randomized Historical Rulers (and Courtiers)     #
+# Randomized Historical Characters                 #
 #                                                  #
 # D-Day scenario customization option invoked      #
-# by decision (decisions/PB_customization.txt)     #
+# by decision (decisions/00_PB_customization.txt)  #
 #                                                  #
 # Realistically randomizes personality, education, #
 # and congenital traits from the fully extended    #
@@ -24,64 +24,29 @@ narrative_event = {
 	hide_from = yes
 	is_triggered_only = yes
 	
+	trigger = { ai = no }
+	
 	option = {
-		name = pb_rr.0.opt.notme # Everyone but me
-		
-		trigger = { # Single-player
-			NOT = {
-				any_playable_ruler = {
-					ai = no
-					NOT = { character = ROOT }
-				}
-			}
-		}
+		name = pb_rr.0.opt.ai_only # Randomize only AI historical characters
 		
 		custom_tooltip = {
-			text = pb_rr.0.opt.notme.ctt
-			
+			text = pb_rr.0.opt.ai_only.ctt
 			hidden_tooltip = {
+				any_playable_ruler = {
+					limit = { ai = no }
+					set_character_flag = rr_skip
+				}
+				set_character_flag = rr_skip
 				e_rebels = { owner = { character_event = { id = pb_rr.1 } } }
 			}
 		}
 	}
 	
 	option = {
-		name = pb_rr.0.opt.notme_mp # Everyone but us
-		
-		trigger = { # Multi-player
-			any_playable_ruler = {
-				ai = no
-				NOT = { character = ROOT }
-			}
-		}
-		
-		custom_tooltip = {
-			text = pb_rr.0.opt.notme_mp.ctt
-			
-			hidden_tooltip = {
-				e_rebels = { owner = { character_event = { id = pb_rr.1 } } }
-				#TODO: notify other players
-			}
-		}
-	}
-	
-	option = {
-		name = pb_rr.0.opt.all # Everyone
-		
-		trigger = { # Single-player
-			NOT = {
-				any_playable_ruler = {
-					ai = no
-					NOT = { character = ROOT }
-				}
-			}
-		}
-		
-		set_global_flag = rr_all
+		name = pb_rr.0.opt.all # Randomize all historical characters
 		
 		custom_tooltip = {
 			text = pb_rr.0.opt.all.ctt
-			
 			hidden_tooltip = {
 				e_rebels = { owner = { character_event = { id = pb_rr.1 } } }
 			}
@@ -89,33 +54,10 @@ narrative_event = {
 	}
 	
 	option = {
-		name = pb_rr.0.opt.all_mp # Everyone
-		
-		trigger = { # Multi-player
-			any_playable_ruler = {
-				ai = no
-				NOT = { character = ROOT }
-			}
-		}
-		
-		set_global_flag = rr_all
-		
-		custom_tooltip = {
-			text = pb_rr.0.opt.all_mp.ctt
-			
-			hidden_tooltip = {
-				e_rebels = { owner = { character_event = { id = pb_rr.1 } } }
-				#TODO: notify other players
-			}
-		}
-	}
-	
-	option = {
-		name = pb_rr.0.opt.cancel # Nevermind
-		
+		name = pb_rr.0.opt.cancel
 		custom_tooltip = {
 			text = pb_rr.0.opt.cancel.ctt
-		}	
+		}
 	}
 }
 
@@ -124,95 +66,340 @@ narrative_event = {
 #
 # Top-level randomization event
 #
+# On first invocation:
 # ROOT = referee
 # FROM = player that initiated randomization
+#
+# Afterward, ROOT = FROM = referee for an arbitrary number of invocations,
+# as this event recurses.
 character_event = {
 	id = pb_rr.1
 	desc = OK
 	hide_window = yes
 	is_triggered_only = yes
 	
+	trigger = {
+		OR = {
+			NOT = { has_global_flag = random_rulers } # Start case
+			any_independent_ruler = { # Recursive case
+				has_character_flag = rr_do_realm
+			}
+		}
+	}
+	
+	immediate = {
+		random_list = { #Advance random seed
+			50 = { if = { limit = { always = yes } } } #Fool the engine
+			50 = { }
+		}
+	}
+	
 	option = {
 		name = OK
 		
-		set_global_flag = random_rulers
-		
-		# Need to get into every court in the game, but we'd rather handle realm lords (and their
-		# top_lieges before them) before their respective courts for heuristic trait inheritance
-		# coherency reasons, so we don't just use a limited form of any_realm_character.
-		
-		# We also want to a) hit spouses of rulers, then b) hit children of rulers before regular
-		# courtiers for maximum inheritance coherence.
-		
-		# Rulers above baron-tier are essentially always historical on D-Day, so we don't enforce
-		# that condition (which is ultimately just an optimization, since all non-historical
-		# characters in the game will already be randomized).
-		
-		any_independent_ruler = {
-			character_event = { id = pb_rr.2 } # Randomize character
-			
-			any_spouse = { # Spouses are always historical on D-Day
-				character_event = { id = pb_rr.2 }
-			}
-			any_child = { # As are children
-				character_event = { id = pb_rr.2 }
-			}
-			any_courtier = {
-				limit = {
-					historical = yes
-					NOT = { spouse = { character = PREVPREV } } # Re-randomizing a spouse may reduce inherit coherency
-					NOT = { is_child_of = PREV } # Re-randomizing a child will increase trait inheritance chance
-				}
-				character_event = { id = pb_rr.2 }
-			}
-
-			any_realm_lord = {
-				limit = { higher_tier_than = baron } # Barons don't have real courtiers
-
-				character_event = { id = pb_rr.2 }
-				any_spouse = { character_event = { id = pb_rr.2 } }
-				any_child = { character_event = { id = pb_rr.2 } }
-				
-				any_courtier = {
-					limit = {
-						historical = yes
-						NOT = { spouse = { character = PREVPREV } }
-						NOT = { is_child_of = PREV }
-					}
-					character_event = { id = pb_rr.2 }
-				}
-			}
-			
-			# But we still want to catch historical barons/patricians
-			any_realm_lord = {
-				limit = {
-					tier = baron
-					historical = yes
-				}
-				character_event = { id = pb_rr.2 }
-				any_spouse = { character_event = { id = pb_rr.2 } }
-				any_child = { character_event = { id = pb_rr.2 } }
+		if = {
+			limit = { has_global_flag = random_rulers }
+			# Select a random independent realm and randomize it
+			random_independent_ruler = {
+				limit = { has_character_flag = rr_do_realm }
+				character_event = { id = pb_rr.2 } # Randomize realm
 			}
 		}
 		
-		# Phew. We just touched every character in the game at least once. All done!
-		# For every character that was randomized, up to ~10x as many events ran.
-		# Hopefully there was enough random seed, considering that the game hasn't
-		# been started yet.
+		if = {
+			limit = { NOT = { has_global_flag = random_rulers } }
+			set_global_flag = random_rulers
+			
+			# If randomization includes the player, let the one which initiated this scenario have his
+			# traits immediately before unpause.  We can't do this for multiple characters (they'll all
+			# have the same traits) due to game limitations regarding the RNG, but this is slick for the
+			# much more common case of single-player.
+			
+			FROM = {
+				character_event = { id = pb_rr.3 } # Instantly randomize initiator
+				set_character_flag = rr_skip # Do not later re-randomize by any means of traversal
+			}
+			
+			# Need to get into every court in the game, but we'd rather handle realm lords before their
+			# respective courts for heuristic trait inheritance coherency reasons, so we don't just use
+			# a limited form of any_realm_character for every independent realm.
+			
+			# We also want to a) hit spouses of rulers, then b) hit children of rulers before regular
+			# courtiers for maximum inheritance coherence.
+			
+			# It turns out that to get any reasonable degree of randomness from the game's RNG without
+			# unpausing, we have to jump through serious hoops.
+			
+			# One way in which we can do this is through the use of recursive events rather than just
+			# any_* effects.  For this event, we will recurse once for each independent ruler in the
+			# game, then use similiar strategies to handle their realm lords, then their realm lords'
+			# spouses, children, and other courtiers.
+
+			# Setup recursion state
+			any_independent_ruler = {
+				set_character_flag = rr_do_realm
+			}
+			
+			# Cleanup any persistent state needed during randomization once it's all done and notify
+			# all players that randomization is complete.
+			FROM = { narrative_event = { id = pb_rr.10 days = 4 } }
+		}
 		
-		clr_global_flag = rr_all
+		character_event = { id = pb_rr.1 } #Recurse
 	}
 }
 
 
 # pb_rr.2
 #
+# Randomize independent realm
+#
+# ROOT = independent ruler
+# FROM = referee|ROOT
+character_event = {
+	id = pb_rr.2
+	desc = OK
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		OR = {
+			has_character_flag = rr_do_realm #Start
+			any_realm_lord = { #Recurse
+				has_character_flag = rr_do_ruler
+			}
+		}
+	}
+	
+	immediate = {
+		random_list = { #Advance random seed
+			50 = { if = { limit = { always = yes } } } #Fool the engine
+			50 = { }
+		}
+	}
+	
+	option = {
+		name = OK
+		
+		
+		if = {
+			limit = { NOT = { has_character_flag = rr_do_realm } } #Start case
+			# Select a ruler and randomize his court
+			random_realm_lord = {
+				limit = { has_character_flag = rr_do_ruler }
+				character_event = { id = pb_rr.3 days = 0 random = 0 }
+			}
+		}
+		
+		if = {
+			limit = { has_character_flag = rr_do_realm } #Start case
+			clr_character_flag = rr_do_realm
+			
+			# First, randomize the top liege's court
+			set_character_flag = rr_do_ruler
+			character_event = { id = pb_rr.3 days = 0 random = 0 }
+			
+			# Set realm lords' courts which we will randomize
+			
+			# We assume counts and above are historical. Even if they weren't,
+			# a historical character could've been placed in their court for
+			# some reason-- primarily due to their historic employer being
+			# dead at this start date or usage of the Ruler Designer, which
+			# displaces the historical ruler and his court from the spot taken
+			# by the custom-designed player.
+			
+			# For baron-tier lords, they're almost all ahistorical (random),
+			# and they don't have actual courts of their own, so we do use
+			# the new 2.0 trigger `historical' on them to filter-out already-
+			# randomized (natively, by the game) rulers. However, it's still
+			# important to catch the few historical ones as they are generally
+			# either patricians or members of a famous dynasty.
+			
+			any_realm_lord = {
+				limit = {
+					tier = baron
+					historical = yes
+				}
+				set_character_flag = rr_do_ruler
+			}
+			any_realm_lord = {
+				limit = { higher_tier_than = baron }
+				set_character_flag = rr_do_ruler
+			}
+		}
+		
+		# Recurse
+		character_event = { id = pb_rr.2 }
+	}
+}
+
+
+# pb_rr.3
+#
+# Randomize one ruler's coherent unit of self, spouse, children,
+# and then all remaining historical courtiers. This is the fundamental
+# unit of randomization coherency, hence the ordering of nested
+# recursion to maximize the likelihood of accurate trait inheritance.
+#
+# Fundamentally, this event is only tail-recursive on the non-immediate-
+# family historical courtiers of the ruler.  However, its start case
+# includes a nested tail-recursion (in effect-- it's actually mutually
+# recursive under the hood) sub-event-chain for spouses and then children
+# of the ruler.
+#
+# ROOT = ruler
+# FROM = top_liege|ROOT
+character_event = {
+	id = pb_rr.3
+	desc = OK
+	hide_window = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		OR = {
+			has_character_flag = rr_do_ruler #Start
+			any_courtier = { #Recursive
+				has_character_flag = rr_do_courtier
+			}
+		}
+	}
+	
+	immediate = {
+		random_list = { #Advance random seed
+			50 = { if = { limit = { always = yes } } } #Fool the engine
+			50 = { }
+		}
+	}
+	
+	option = {
+		name = OK
+		
+		if = {
+			limit = { NOT = { has_character_flag = rr_do_ruler } }
+			random_courtier = {
+				limit = { has_character_flag = rr_do_courtier }
+				clr_character_flag = rr_do_courtier
+				character_event = { id = pb_rr.6 days = 0 random = 0 } # Randomize courtier
+			}
+		}
+		
+		if = {
+			limit = { has_character_flag = rr_do_ruler } #Start case
+			clr_character_flag = rr_do_ruler
+			
+			character_event = { id = pb_rr.6 } # Randomize self 
+			character_event = { id = pb_rr.4 } # Randomize spouses (return here after all are done)
+			character_event = { id = pb_rr.5 } # Randomize children
+			
+			# Cleanup childrens' and spouses' mess
+			any_spouse = { clr_character_flag = rr_spouse_done }
+			any_child = { clr_character_flag = rr_child_done }
+			
+			# Select courtiers to randomize
+			any_courtier = {
+				limit = {
+					historical = yes
+					NOT = { spouse = { character = ROOT } } # Re-randomizing a spouse may reduce inherit coherency
+					NOT = { is_child_of = ROOT } # Re-randomizing a child will increase trait inheritance chance
+				}
+				set_character_flag = rr_do_courtier
+			}
+		}
+		
+		# Recurse
+		character_event = { id = pb_rr.3 }
+	}
+}
+
+
+# pb_rr.4
+#
+# Randomize spouses
+#
+# ROOT = ruler
+# FROM = ROOT
+character_event = {
+	id = pb_rr.4
+	desc = OK
+	hide_window = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		any_spouse = {
+			NOT = { has_character_flag = rr_spouse_done }
+		}
+	}
+	
+	immediate = {
+		random_list = { #Advance random seed
+			50 = { if = { limit = { always = yes } } } #Fool the engine
+			50 = { }
+		}
+	}
+	
+	option = {
+		name = OK
+		
+		random_spouse = {
+			limit = { NOT = { has_character_flag = rr_spouse_done } }
+			set_character_flag = rr_spouse_done
+			character_event = { id = pb_rr.6 } # Randomize spouse
+		}
+		
+		# Recurse
+		character_event = { id = pb_rr.4 }
+	}
+}
+
+
+# pb_rr.5
+#
+# Randomize children
+#
+# ROOT = ruler
+# FROM = ROOT
+character_event = {
+	id = pb_rr.5
+	desc = OK
+	hide_window = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		any_child = {
+			NOT = { has_character_flag = rr_child_done }
+		}
+	}
+	
+	immediate = {
+		random_list = { #Advance random seed
+			50 = { if = { limit = { always = yes } } } #Fool the engine
+			50 = { }
+		}
+	}
+	
+	option = {
+		name = OK
+
+		random_child = {
+			limit = { NOT = { has_character_flag = rr_child_done } }
+			set_character_flag = rr_child_done
+			character_event = { id = pb_rr.6 days = 0 random = 0 } # Randomize child
+		}
+		
+		# Recurse
+		character_event = { id = pb_rr.5 }
+	}
+}
+
+
+# pb_rr.6
+#
 # Randomize a character
 # - Education selection (quality increased by tier, if ruler)
 # - Personality selection (up to 5 traits, depending upon age)
 # - Potential lifestyle selection (chance tiers after age 25, 35,
-#   and 45)
-# - Genetics selection (both random and [randomly] inherited)
+#   and 45) [TODO]
+# - Genetics selection (both random and inherited)
 # - Avoid stupid things like a Pope/Patriarch not having a
 #   ecclesiastical education
 # - Recalculation of combat trait based upon new persona
@@ -247,20 +434,16 @@ character_event = {
 # "need" wouldn't be the right word at all).
 #
 # ROOT = character
-# FROM = referee
-# FROMFROM = player that initiated randomization
+# FROM = ruler tied to character (a parent, a spouse, the host of the character's court, or ROOT)
 character_event = {
-	id = pb_rr.2
+	id = pb_rr.6
 	desc = OK
 	hide_window = yes
 	is_triggered_only = yes
 	
 	trigger = {
-		is_alive = yes
-		OR = { # Block players that didn't choose self-randomization
-			ai = yes
-			has_global_flag = rr_all
-		}
+		# Characters can be silently skipped with rr_skip
+		NOT = { has_character_flag = rr_skip }
 	}
 	
 	option = {
@@ -271,7 +454,7 @@ character_event = {
 		if = {
 			limit = { is_adult = yes } # Children don't have education/leadership traits
 			
-			# Remove education traits
+			# Remove preexisting education traits
 			remove_trait = amateurish_plotter
 			remove_trait = flamboyant_schemer
 			remove_trait = intricate_webweaver
@@ -293,51 +476,13 @@ character_event = {
 			remove_trait = scholarly_theologian
 			remove_trait = mastermind_theologian
 			
-			# Remove leadership traits
-			# % pb_rr.pl --codegen=rm_leaders
-			remove_trait = light_foot_leader
-			remove_trait = heavy_infantry_leader
-			remove_trait = cavalry_leader
-			remove_trait = inspiring_leader
-			remove_trait = trickster
-			remove_trait = organizer
-			remove_trait = defensive_leader
-			remove_trait = experimenter
-			remove_trait = flanker
-			remove_trait = aggressive_leader
-			remove_trait = siege_leader
-			remove_trait = flat_terrain_leader
-			remove_trait = rough_terrain_leader
-			remove_trait = mountain_terrain_leader
-			remove_trait = desert_terrain_leader
-			remove_trait = holy_warrior
-			remove_trait = unyielding_leader
-			remove_trait = narrow_flank_leader
-			
-			# Special case for most religious leaders (Caliphs are not ecclesiastically-required)
-			
-			if = {
-				limit = {
-					NOT = { religion_group = muslim }
-					controls_religion = yes
-				}
-				
-				# Always a theological education, highly skewed toward high tier
-				random_list = {
-					600 = { add_trait = mastermind_theologian }
-					300 = { add_trait = scholarly_theologian }
-					100 = { add_trait = martial_cleric }
-					33  = { add_trait = detached_priest }
-				}
-				set_character_flag = specialist_tmp
-			}
-			
 			# Special case for holy orders and mercenaries
 			# Grandmasters and their marshals are guaranteed martial education
 			# and HIGHLY-skewed towards top-tier
 			
 			if = {
 				limit = {
+					NOT = { has_character_flag = specialist_tmp }
 					OR = {
 						primary_title = {
 							OR = {
@@ -366,6 +511,34 @@ character_event = {
 				}
 				set_character_flag = specialist_tmp
 			}
+
+			# Special case for religious leaders (except Caliphs)
+
+			# I've not yet confirmed (though it is easy enough to do) whether religious
+			# titles can be checked with `has_minor_title`. There certainly isn't a
+			# `has_religious_title`, so I can't see any other way to detect if a character
+			# is a cardinal.
+			
+			if = {
+				limit = {
+					NOT = { has_character_flag = specialist_tmp }
+					NOT = { religion_group = muslim }
+					OR = {
+						controls_religion = yes
+						has_minor_title = title_cardinal
+						has_minor_title = title_fraticelli_cardinal
+					}
+				}
+				
+				# Always a theological education, highly skewed toward high tier
+				random_list = {
+					600 = { add_trait = mastermind_theologian }
+					300 = { add_trait = scholarly_theologian }
+					100 = { add_trait = martial_cleric }
+					30  = { add_trait = detached_priest }
+				}
+				set_character_flag = specialist_tmp
+			}
 			
 			if = {
 				limit = {
@@ -375,8 +548,14 @@ character_event = {
 				##### GUTS OF EDUCATION TRAIT SELECTION #####
 
 				# Distribution of ed. trait tiers varies by character tier (<=count, duke, king, emperor)
+				
+				# If the character is not a ruler but their parents are, they are treated as if they were
+				# the tier of the parent with the highest-tier.  If the character is not a ruler and their
+				# parents aren't either, then they fall into the <=count tier.
 
 				# Base case (<=count) splits the 4 ed. tiers into 15%/30%/30%/25% (somewhat of a bell curve)
+				# It's assumed historical characters are, on average, better educated than randomly-generated
+				# characters (as they obviously were more affluent), hence the skew away from the lowest tier.
 
 				# As ruler tier increases, percentage chance is shifted upward by 10% each ruler tier step
 				# and skewed. E.g., duke distribution is 10%/25%/30%/35%, king is 5%/20%/30%/45%, and
@@ -391,6 +570,127 @@ character_event = {
 				
 				if = {
 					limit = {
+						NOT = { has_character_flag = ed_select_tmp }
+						OR = {
+							tier = emperor
+							AND = {
+								is_ruler = no
+								OR = {
+									father_even_if_dead = { tier = emperor }
+									mother_even_if_dead = { tier = emperor }
+								}
+							}
+						}
+					}
+					# % pb_rr.pl --codegen=ed_select_3
+					random_list = {
+						12 = { add_trait = flamboyant_schemer }
+						24 = { add_trait = intricate_webweaver }
+						44 = { add_trait = elusive_shadow }
+						12 = { add_trait = underhanded_rogue }
+						24 = { add_trait = charismatic_negotiator }
+						44 = { add_trait = grey_eminence }
+						12 = { add_trait = thrifty_clerk }
+						24 = { add_trait = fortune_builder }
+						44 = { add_trait = midas_touched }
+						12 = { add_trait = tough_soldier }
+						24 = { add_trait = skilled_tactician }
+						44 = { add_trait = brilliant_strategist }
+						3 = { add_trait = martial_cleric }
+						6 = { add_trait = scholarly_theologian }
+						11 = { add_trait = mastermind_theologian }
+					}
+					
+					# In the case of multiple parents of a non-ruler being rulers of
+					# different tier, we need to guard against multiple education
+					# trait selection (let alone including the results of the lower-tier
+					# parent):
+					set_character_flag = ed_select_tmp
+				}
+				
+				if = {
+					limit = {
+						NOT = { has_character_flag = ed_select_tmp }
+						OR = {
+							tier = king
+							AND = {
+								is_ruler = no
+								OR = {
+									father_even_if_dead = { tier = king }
+									mother_even_if_dead = { tier = king }
+								}
+							}
+						}
+					}
+					# % pb_rr.pl --codegen=ed_select_2
+					random_list = {
+						4 = { add_trait = amateurish_plotter }
+						16 = { add_trait = flamboyant_schemer }
+						24 = { add_trait = intricate_webweaver }
+						36 = { add_trait = elusive_shadow }
+						4 = { add_trait = naive_appeaser }
+						16 = { add_trait = underhanded_rogue }
+						24 = { add_trait = charismatic_negotiator }
+						36 = { add_trait = grey_eminence }
+						4 = { add_trait = indulgent_wastrel }
+						16 = { add_trait = thrifty_clerk }
+						24 = { add_trait = fortune_builder }
+						36 = { add_trait = midas_touched }
+						4 = { add_trait = misguided_warrior }
+						16 = { add_trait = tough_soldier }
+						24 = { add_trait = skilled_tactician }
+						36 = { add_trait = brilliant_strategist }
+						1 = { add_trait = detached_priest }
+						4 = { add_trait = martial_cleric }
+						6 = { add_trait = scholarly_theologian }
+						9 = { add_trait = mastermind_theologian }
+					}
+					set_character_flag = ed_select_tmp
+				}
+				
+				if = {
+					limit = {
+						NOT = { has_character_flag = ed_select_tmp }
+						OR = {
+							tier = duke
+							AND = {
+								is_ruler = no
+								OR = {
+									father_even_if_dead = { tier = duke }
+									mother_even_if_dead = { tier = duke }
+								}
+							}
+						}
+					}
+					# % pb_rr.pl --codegen=ed_select_1
+					random_list = {
+						8 = { add_trait = amateurish_plotter }
+						20 = { add_trait = flamboyant_schemer }
+						24 = { add_trait = intricate_webweaver }
+						28 = { add_trait = elusive_shadow }
+						8 = { add_trait = naive_appeaser }
+						20 = { add_trait = underhanded_rogue }
+						24 = { add_trait = charismatic_negotiator }
+						28 = { add_trait = grey_eminence }
+						8 = { add_trait = indulgent_wastrel }
+						20 = { add_trait = thrifty_clerk }
+						24 = { add_trait = fortune_builder }
+						28 = { add_trait = midas_touched }
+						8 = { add_trait = misguided_warrior }
+						20 = { add_trait = tough_soldier }
+						24 = { add_trait = skilled_tactician }
+						28 = { add_trait = brilliant_strategist }
+						2 = { add_trait = detached_priest }
+						5 = { add_trait = martial_cleric }
+						6 = { add_trait = scholarly_theologian }
+						7 = { add_trait = mastermind_theologian }
+					}
+					set_character_flag = ed_select_tmp
+				}
+				
+				if = {
+					limit = {
+						NOT = { has_character_flag = ed_select_tmp }
 						OR = {
 							is_ruler = no
 							lower_tier_than = duke
@@ -419,89 +719,38 @@ character_event = {
 						6 = { add_trait = scholarly_theologian }
 						5 = { add_trait = mastermind_theologian }
 					}
+					set_character_flag = ed_select_tmp
 				}
 				
-				if = {
-					limit = { tier = duke }
-					# % pb_rr.pl --codegen=ed_select_1
-					random_list = {
-						8 = { add_trait = amateurish_plotter }
-						20 = { add_trait = flamboyant_schemer }
-						24 = { add_trait = intricate_webweaver }
-						28 = { add_trait = elusive_shadow }
-						8 = { add_trait = naive_appeaser }
-						20 = { add_trait = underhanded_rogue }
-						24 = { add_trait = charismatic_negotiator }
-						28 = { add_trait = grey_eminence }
-						8 = { add_trait = indulgent_wastrel }
-						20 = { add_trait = thrifty_clerk }
-						24 = { add_trait = fortune_builder }
-						28 = { add_trait = midas_touched }
-						8 = { add_trait = misguided_warrior }
-						20 = { add_trait = tough_soldier }
-						24 = { add_trait = skilled_tactician }
-						28 = { add_trait = brilliant_strategist }
-						2 = { add_trait = detached_priest }
-						5 = { add_trait = martial_cleric }
-						6 = { add_trait = scholarly_theologian }
-						7 = { add_trait = mastermind_theologian }
-					}
-				}
-				
-				if = {
-					limit = { tier = king }
-					# % pb_rr.pl --codegen=ed_select_2
-					random_list = {
-						4 = { add_trait = amateurish_plotter }
-						16 = { add_trait = flamboyant_schemer }
-						24 = { add_trait = intricate_webweaver }
-						36 = { add_trait = elusive_shadow }
-						4 = { add_trait = naive_appeaser }
-						16 = { add_trait = underhanded_rogue }
-						24 = { add_trait = charismatic_negotiator }
-						36 = { add_trait = grey_eminence }
-						4 = { add_trait = indulgent_wastrel }
-						16 = { add_trait = thrifty_clerk }
-						24 = { add_trait = fortune_builder }
-						36 = { add_trait = midas_touched }
-						4 = { add_trait = misguided_warrior }
-						16 = { add_trait = tough_soldier }
-						24 = { add_trait = skilled_tactician }
-						36 = { add_trait = brilliant_strategist }
-						1 = { add_trait = detached_priest }
-						4 = { add_trait = martial_cleric }
-						6 = { add_trait = scholarly_theologian }
-						9 = { add_trait = mastermind_theologian }
-					}
-				}
-				
-				if = {
-					limit = { tier = emperor }
-					# % pb_rr.pl --codegen=ed_select_3
-					random_list = {
-						12 = { add_trait = flamboyant_schemer }
-						24 = { add_trait = intricate_webweaver }
-						44 = { add_trait = elusive_shadow }
-						12 = { add_trait = underhanded_rogue }
-						24 = { add_trait = charismatic_negotiator }
-						44 = { add_trait = grey_eminence }
-						12 = { add_trait = thrifty_clerk }
-						24 = { add_trait = fortune_builder }
-						44 = { add_trait = midas_touched }
-						12 = { add_trait = tough_soldier }
-						24 = { add_trait = skilled_tactician }
-						44 = { add_trait = brilliant_strategist }
-						3 = { add_trait = martial_cleric }
-						6 = { add_trait = scholarly_theologian }
-						11 = { add_trait = mastermind_theologian }
-					}
-				}
+				clr_character_flag = ed_select_tmp
 			}
 			
 			clr_character_flag = specialist_tmp
 			
 			# If we selected brilliant_strategist, we need to assign a
-			# leadership trait as well.
+			# leadership trait as well. Either way, first clear all
+			# preexisting leadership traits.
+			
+			# Remove leadership traits
+			# % pb_rr.pl --codegen=rm_leaders
+			remove_trait = light_foot_leader
+			remove_trait = heavy_infantry_leader
+			remove_trait = cavalry_leader
+			remove_trait = inspiring_leader
+			remove_trait = trickster
+			remove_trait = organizer
+			remove_trait = defensive_leader
+			remove_trait = experimenter
+			remove_trait = flanker
+			remove_trait = aggressive_leader
+			remove_trait = siege_leader
+			remove_trait = flat_terrain_leader
+			remove_trait = rough_terrain_leader
+			remove_trait = mountain_terrain_leader
+			remove_trait = desert_terrain_leader
+			remove_trait = holy_warrior
+			remove_trait = unyielding_leader
+			remove_trait = narrow_flank_leader
 			
 			if = {
 				limit = { trait = brilliant_strategist }
@@ -581,19 +830,22 @@ character_event = {
 		# potential clauses for some traits (e.g., chaste is not available to muslims), some traits
 		# will be less likely on average-- e.g., kind.
 		
+		# % pb_rr.pl --codegen=persona_select
 		if = {
 			limit = {
 				age = 6
 				NOT = { age = 8 }
 			}
-			# % pb_rr.pl --codegen=persona_select_1
 
 			# Roll a new personality trait: ROUND 1 OF 1
 			random_list = {
 				10 = {
 					if = {
 						limit = {
-							NOT = { trait = chaste }
+							NOT = {
+								trait = chaste
+								trait = celibate
+							}
 						}
 						add_trait = lustful
 					}
@@ -604,6 +856,7 @@ character_event = {
 							NOT = {
 								religion_group = muslim
 								trait = lustful
+								trait = hedonist
 							}
 						}
 						add_trait = chaste
@@ -671,6 +924,7 @@ character_event = {
 							NOT = {
 								trait = envious
 								trait = cruel
+								trait = impaler
 							}
 						}
 						add_trait = kind
@@ -836,20 +1090,22 @@ character_event = {
 					}
 				}
 			}
-		} # END: Age 6-8
+		}
 		if = {
 			limit = {
 				age = 8
 				NOT = { age = 10 }
 			}
-			# % pb_rr.pl --codegen=persona_select_2
 
 			# Roll a new personality trait: ROUND 1 OF 2
 			random_list = {
 				10 = {
 					if = {
 						limit = {
-							NOT = { trait = chaste }
+							NOT = {
+								trait = chaste
+								trait = celibate
+							}
 						}
 						add_trait = lustful
 					}
@@ -860,6 +1116,7 @@ character_event = {
 							NOT = {
 								religion_group = muslim
 								trait = lustful
+								trait = hedonist
 							}
 						}
 						add_trait = chaste
@@ -927,6 +1184,7 @@ character_event = {
 							NOT = {
 								trait = envious
 								trait = cruel
+								trait = impaler
 							}
 						}
 						add_trait = kind
@@ -1097,7 +1355,10 @@ character_event = {
 				10 = {
 					if = {
 						limit = {
-							NOT = { trait = chaste }
+							NOT = {
+								trait = chaste
+								trait = celibate
+							}
 						}
 						add_trait = lustful
 					}
@@ -1108,6 +1369,7 @@ character_event = {
 							NOT = {
 								religion_group = muslim
 								trait = lustful
+								trait = hedonist
 							}
 						}
 						add_trait = chaste
@@ -1175,6 +1437,7 @@ character_event = {
 							NOT = {
 								trait = envious
 								trait = cruel
+								trait = impaler
 							}
 						}
 						add_trait = kind
@@ -1340,20 +1603,22 @@ character_event = {
 					}
 				}
 			}
-		} # END: Age 8-10
+		}
 		if = {
 			limit = {
 				age = 10
 				NOT = { age = 12 }
 			}
-			# % pb_rr.pl --codegen=persona_select_3
 
 			# Roll a new personality trait: ROUND 1 OF 3
 			random_list = {
 				10 = {
 					if = {
 						limit = {
-							NOT = { trait = chaste }
+							NOT = {
+								trait = chaste
+								trait = celibate
+							}
 						}
 						add_trait = lustful
 					}
@@ -1364,6 +1629,7 @@ character_event = {
 							NOT = {
 								religion_group = muslim
 								trait = lustful
+								trait = hedonist
 							}
 						}
 						add_trait = chaste
@@ -1431,6 +1697,7 @@ character_event = {
 							NOT = {
 								trait = envious
 								trait = cruel
+								trait = impaler
 							}
 						}
 						add_trait = kind
@@ -1601,7 +1868,10 @@ character_event = {
 				10 = {
 					if = {
 						limit = {
-							NOT = { trait = chaste }
+							NOT = {
+								trait = chaste
+								trait = celibate
+							}
 						}
 						add_trait = lustful
 					}
@@ -1612,6 +1882,7 @@ character_event = {
 							NOT = {
 								religion_group = muslim
 								trait = lustful
+								trait = hedonist
 							}
 						}
 						add_trait = chaste
@@ -1679,6 +1950,7 @@ character_event = {
 							NOT = {
 								trait = envious
 								trait = cruel
+								trait = impaler
 							}
 						}
 						add_trait = kind
@@ -1849,7 +2121,10 @@ character_event = {
 				10 = {
 					if = {
 						limit = {
-							NOT = { trait = chaste }
+							NOT = {
+								trait = chaste
+								trait = celibate
+							}
 						}
 						add_trait = lustful
 					}
@@ -1860,6 +2135,7 @@ character_event = {
 							NOT = {
 								religion_group = muslim
 								trait = lustful
+								trait = hedonist
 							}
 						}
 						add_trait = chaste
@@ -1927,6 +2203,7 @@ character_event = {
 							NOT = {
 								trait = envious
 								trait = cruel
+								trait = impaler
 							}
 						}
 						add_trait = kind
@@ -2092,20 +2369,22 @@ character_event = {
 					}
 				}
 			}
-		} # END: Age 10-12
+		}
 		if = {
 			limit = {
 				age = 12
 				NOT = { age = 14 }
 			}
-			# % pb_rr.pl --codegen=persona_select_4
 
 			# Roll a new personality trait: ROUND 1 OF 4
 			random_list = {
 				10 = {
 					if = {
 						limit = {
-							NOT = { trait = chaste }
+							NOT = {
+								trait = chaste
+								trait = celibate
+							}
 						}
 						add_trait = lustful
 					}
@@ -2116,6 +2395,7 @@ character_event = {
 							NOT = {
 								religion_group = muslim
 								trait = lustful
+								trait = hedonist
 							}
 						}
 						add_trait = chaste
@@ -2183,6 +2463,7 @@ character_event = {
 							NOT = {
 								trait = envious
 								trait = cruel
+								trait = impaler
 							}
 						}
 						add_trait = kind
@@ -2353,7 +2634,10 @@ character_event = {
 				10 = {
 					if = {
 						limit = {
-							NOT = { trait = chaste }
+							NOT = {
+								trait = chaste
+								trait = celibate
+							}
 						}
 						add_trait = lustful
 					}
@@ -2364,6 +2648,7 @@ character_event = {
 							NOT = {
 								religion_group = muslim
 								trait = lustful
+								trait = hedonist
 							}
 						}
 						add_trait = chaste
@@ -2431,6 +2716,7 @@ character_event = {
 							NOT = {
 								trait = envious
 								trait = cruel
+								trait = impaler
 							}
 						}
 						add_trait = kind
@@ -2601,7 +2887,10 @@ character_event = {
 				10 = {
 					if = {
 						limit = {
-							NOT = { trait = chaste }
+							NOT = {
+								trait = chaste
+								trait = celibate
+							}
 						}
 						add_trait = lustful
 					}
@@ -2612,6 +2901,7 @@ character_event = {
 							NOT = {
 								religion_group = muslim
 								trait = lustful
+								trait = hedonist
 							}
 						}
 						add_trait = chaste
@@ -2679,6 +2969,7 @@ character_event = {
 							NOT = {
 								trait = envious
 								trait = cruel
+								trait = impaler
 							}
 						}
 						add_trait = kind
@@ -2849,7 +3140,10 @@ character_event = {
 				10 = {
 					if = {
 						limit = {
-							NOT = { trait = chaste }
+							NOT = {
+								trait = chaste
+								trait = celibate
+							}
 						}
 						add_trait = lustful
 					}
@@ -2860,6 +3154,7 @@ character_event = {
 							NOT = {
 								religion_group = muslim
 								trait = lustful
+								trait = hedonist
 							}
 						}
 						add_trait = chaste
@@ -2927,6 +3222,7 @@ character_event = {
 							NOT = {
 								trait = envious
 								trait = cruel
+								trait = impaler
 							}
 						}
 						add_trait = kind
@@ -3092,19 +3388,21 @@ character_event = {
 					}
 				}
 			}
-		} # END: Age 12-14
+		}
 		if = {
 			limit = {
 				age = 14
 			}
-			# % pb_rr.pl --codegen=persona_select_5
 
 			# Roll a new personality trait: ROUND 1 OF 5
 			random_list = {
 				10 = {
 					if = {
 						limit = {
-							NOT = { trait = chaste }
+							NOT = {
+								trait = chaste
+								trait = celibate
+							}
 						}
 						add_trait = lustful
 					}
@@ -3115,6 +3413,7 @@ character_event = {
 							NOT = {
 								religion_group = muslim
 								trait = lustful
+								trait = hedonist
 							}
 						}
 						add_trait = chaste
@@ -3182,6 +3481,7 @@ character_event = {
 							NOT = {
 								trait = envious
 								trait = cruel
+								trait = impaler
 							}
 						}
 						add_trait = kind
@@ -3352,7 +3652,10 @@ character_event = {
 				10 = {
 					if = {
 						limit = {
-							NOT = { trait = chaste }
+							NOT = {
+								trait = chaste
+								trait = celibate
+							}
 						}
 						add_trait = lustful
 					}
@@ -3363,6 +3666,7 @@ character_event = {
 							NOT = {
 								religion_group = muslim
 								trait = lustful
+								trait = hedonist
 							}
 						}
 						add_trait = chaste
@@ -3430,6 +3734,7 @@ character_event = {
 							NOT = {
 								trait = envious
 								trait = cruel
+								trait = impaler
 							}
 						}
 						add_trait = kind
@@ -3600,7 +3905,10 @@ character_event = {
 				10 = {
 					if = {
 						limit = {
-							NOT = { trait = chaste }
+							NOT = {
+								trait = chaste
+								trait = celibate
+							}
 						}
 						add_trait = lustful
 					}
@@ -3611,6 +3919,7 @@ character_event = {
 							NOT = {
 								religion_group = muslim
 								trait = lustful
+								trait = hedonist
 							}
 						}
 						add_trait = chaste
@@ -3678,6 +3987,7 @@ character_event = {
 							NOT = {
 								trait = envious
 								trait = cruel
+								trait = impaler
 							}
 						}
 						add_trait = kind
@@ -3848,7 +4158,10 @@ character_event = {
 				10 = {
 					if = {
 						limit = {
-							NOT = { trait = chaste }
+							NOT = {
+								trait = chaste
+								trait = celibate
+							}
 						}
 						add_trait = lustful
 					}
@@ -3859,6 +4172,7 @@ character_event = {
 							NOT = {
 								religion_group = muslim
 								trait = lustful
+								trait = hedonist
 							}
 						}
 						add_trait = chaste
@@ -3926,6 +4240,7 @@ character_event = {
 							NOT = {
 								trait = envious
 								trait = cruel
+								trait = impaler
 							}
 						}
 						add_trait = kind
@@ -4096,7 +4411,10 @@ character_event = {
 				10 = {
 					if = {
 						limit = {
-							NOT = { trait = chaste }
+							NOT = {
+								trait = chaste
+								trait = celibate
+							}
 						}
 						add_trait = lustful
 					}
@@ -4107,6 +4425,7 @@ character_event = {
 							NOT = {
 								religion_group = muslim
 								trait = lustful
+								trait = hedonist
 							}
 						}
 						add_trait = chaste
@@ -4174,6 +4493,7 @@ character_event = {
 							NOT = {
 								trait = envious
 								trait = cruel
+								trait = impaler
 							}
 						}
 						add_trait = kind
@@ -4339,7 +4659,7 @@ character_event = {
 					}
 				}
 			}
-		} # END: Age >= 14
+		}
 		
 		# Phew.
 		
@@ -4392,118 +4712,125 @@ character_event = {
 		# independent gene selection stage.  Inheritance is afterward and overrides
 		# independent gene selection.
 
-		# % pb_rr.pl --codegen=gene_select
+		# As the code-generation option below suggests, I've chosen to amplify the
+		# chance of all birth traits by +100% (i.e., if it was a chance of 0.5% in
+		# the trait definition, it becomes a chance of 1% for the randomizer) in
+		# order to emphasize the genetic diversity for startup characters.  This
+		# provides a more interesting selection as well as a seed for future
+		# generations (which will inherit at the normal probability).
+		
+		# % pb_rr.pl --codegen=gene_select:chance_mult=2
 
 		# Genotype: AbsentmindedPerceptive
 		random_list = {
-			100 = { add_trait = perceptive }
-			100 = { add_trait = absentminded }
-			9800 = { }
+			200 = { add_trait = perceptive }
+			200 = { add_trait = absentminded }
+			9600 = { }
 		}
 
 		# Genotype: Agile
 		random_list = {
-			100 = { add_trait = agile }
-			9900 = { }
+			200 = { add_trait = agile }
+			9800 = { }
 		}
 
 		# Genotype: AmbidextrousLefthanded
 		random_list = {
-			50 = { add_trait = ambidextrous }
-			250 = { add_trait = lefthanded }
-			9700 = { }
+			100 = { add_trait = ambidextrous }
+			500 = { add_trait = lefthanded }
+			9400 = { }
 		}
 
 		# Genotype: CalmVoiceMelodiousVoicePowerfulVoice
 		random_list = {
-			100 = { add_trait = melodious_voice }
-			100 = { add_trait = powerful_voice }
-			100 = { add_trait = calm_voice }
-			9700 = { }
+			200 = { add_trait = melodious_voice }
+			200 = { add_trait = powerful_voice }
+			200 = { add_trait = calm_voice }
+			9400 = { }
 		}
 
 		# Genotype: Clubfooted
 		random_list = {
-			100 = { add_trait = clubfooted }
-			9900 = { }
+			200 = { add_trait = clubfooted }
+			9800 = { }
 		}
 
 		# Genotype: Deaf
 		random_list = {
-			50 = { add_trait = deaf }
-			9950 = { }
+			100 = { add_trait = deaf }
+			9900 = { }
 		}
 
 		# Genotype: DwarfTall
 		random_list = {
-			50 = { add_trait = dwarf }
-			150 = { add_trait = tall }
-			9800 = { }
+			100 = { add_trait = dwarf }
+			300 = { add_trait = tall }
+			9600 = { }
 		}
 
 		# Genotype: FairUgly
 		random_list = {
-			200 = { add_trait = fair }
-			200 = { add_trait = ugly }
-			9600 = { }
+			400 = { add_trait = fair }
+			400 = { add_trait = ugly }
+			9200 = { }
 		}
 
 		# Genotype: Fertile
 		random_list = {
-			100 = { add_trait = fertile }
-			9900 = { }
+			200 = { add_trait = fertile }
+			9800 = { }
 		}
 
 		# Genotype: GeniusImbecileQuickSlow
 		random_list = {
-			100 = { add_trait = genius }
-			100 = { add_trait = imbecile }
-			200 = { add_trait = slow }
-			200 = { add_trait = quick }
-			9400 = { }
+			200 = { add_trait = genius }
+			200 = { add_trait = imbecile }
+			400 = { add_trait = slow }
+			400 = { add_trait = quick }
+			8800 = { }
 		}
 
 		# Genotype: Harelip
 		random_list = {
-			100 = { add_trait = harelip }
-			9900 = { }
+			200 = { add_trait = harelip }
+			9800 = { }
 		}
 
 		# Genotype: Hunchback
 		random_list = {
-			100 = { add_trait = hunchback }
-			9900 = { }
+			200 = { add_trait = hunchback }
+			9800 = { }
 		}
 
 		# Genotype: Imposing
 		random_list = {
-			50 = { add_trait = imposing }
-			9950 = { }
+			100 = { add_trait = imposing }
+			9900 = { }
 		}
 
 		# Genotype: Lisp
 		random_list = {
-			100 = { add_trait = lisp }
-			9900 = { }
+			200 = { add_trait = lisp }
+			9800 = { }
 		}
 
 		# Genotype: StrongWeak
 		random_list = {
-			200 = { add_trait = strong }
-			200 = { add_trait = weak }
-			9600 = { }
+			400 = { add_trait = strong }
+			400 = { add_trait = weak }
+			9200 = { }
 		}
 
 		# Genotype: Stutter
 		random_list = {
-			100 = { add_trait = stutter }
-			9900 = { }
+			200 = { add_trait = stutter }
+			9800 = { }
 		}
 
 		# Genotype: Wrymouth
 		random_list = {
-			50 = { add_trait = wrymouth }
-			9950 = { }
+			100 = { add_trait = wrymouth }
+			9900 = { }
 		}
 
 		##### GENETICS INHERITANCE ######
@@ -4520,557 +4847,532 @@ character_event = {
 		# over blonde) for any given genotype, though an inherent bias from the
 		# trait evaluation ordering cannot be avoided this way.
 		
-		# % pb_rr.pl --codegen=gene_inherit
+		# As the code generation option below implies (chance_offset=20), I've
+		# chosen to increase the inheritance chance of every inheritable birth
+		# trait by 20 percentage points, relative to normal.  Like the option
+		# chance_mult for gene_inherit, this allows me to emphasize family trait
+		# coherency in the startup characters affected by the randomizer.  A
+		# multiplier instead of offset could be argued to avoid additive
+		# distortion, but since it's conditional on the parent having the trait,
+		# it's somewhat of a different question.  The goal is to emphasize
+		# observed inheritance coherency, as though plenty of cases of this exist,
+		# it is not very easy to notice throughout the world.
+		
+		# % pb_rr.pl --codegen=gene_inherit:chance_offset=20
 
 		# Inherit mother's traits...
-		if = {
-			limit = {
-				mother_even_if_dead = { trait = clubfooted }
+		mother_even_if_dead = {
+			if = { #AbsentmindedPerceptive
+				limit = { trait = perceptive }
+				random = {
+					chance = 45
+					ROOT = {
+						remove_trait = absentminded
+						add_trait = perceptive
+					}
+				}
 			}
-			random = {
-				chance = 15
-				add_trait = clubfooted
+			if = { #AbsentmindedPerceptive
+				limit = { trait = absentminded }
+				random = {
+					chance = 40
+					ROOT = {
+						remove_trait = perceptive
+						add_trait = absentminded
+					}
+				}
 			}
-		}
-		if = {
-			limit = {
-				mother_even_if_dead = { trait = harelip }
+			if = { #Agile
+				limit = { trait = agile }
+				random = {
+					chance = 40
+					ROOT = { add_trait = agile }
+				}
 			}
-			random = {
-				chance = 15
-				add_trait = harelip
+			if = { #AmbidextrousLefthanded
+				limit = { trait = ambidextrous }
+				random = {
+					chance = 35
+					ROOT = {
+						remove_trait = lefthanded
+						add_trait = ambidextrous
+					}
+				}
 			}
-		}
-		if = {
-			limit = {
-				mother_even_if_dead = { trait = hunchback }
+			if = { #AmbidextrousLefthanded
+				limit = { trait = lefthanded }
+				random = {
+					chance = 35
+					ROOT = {
+						remove_trait = ambidextrous
+						add_trait = lefthanded
+					}
+				}
 			}
-			random = {
-				chance = 15
-				add_trait = hunchback
+			if = { #CalmVoiceMelodiousVoicePowerfulVoice
+				limit = { trait = melodious_voice }
+				random = {
+					chance = 40
+					ROOT = {
+						remove_trait = powerful_voice
+						remove_trait = calm_voice
+						add_trait = melodious_voice
+					}
+				}
 			}
-		}
-		if = {
-			limit = {
-				mother_even_if_dead = { trait = lisp }
+			if = { #CalmVoiceMelodiousVoicePowerfulVoice
+				limit = { trait = powerful_voice }
+				random = {
+					chance = 40
+					ROOT = {
+						remove_trait = melodious_voice
+						remove_trait = calm_voice
+						add_trait = powerful_voice
+					}
+				}
 			}
-			random = {
-				chance = 15
-				add_trait = lisp
+			if = { #CalmVoiceMelodiousVoicePowerfulVoice
+				limit = { trait = calm_voice }
+				random = {
+					chance = 45
+					ROOT = {
+						remove_trait = melodious_voice
+						remove_trait = powerful_voice
+						add_trait = calm_voice
+					}
+				}
 			}
-		}
-		if = {
-			limit = {
-				mother_even_if_dead = { trait = stutter }
+			if = { #Clubfooted
+				limit = { trait = clubfooted }
+				random = {
+					chance = 35
+					ROOT = { add_trait = clubfooted }
+				}
 			}
-			random = {
-				chance = 15
-				add_trait = stutter
+			if = { #Deaf
+				limit = { trait = deaf }
+				random = {
+					chance = 30
+					ROOT = { add_trait = deaf }
+				}
 			}
-		}
-		if = {
-			limit = {
-				mother_even_if_dead = { trait = fair } #FairUgly
+			if = { #DwarfTall
+				limit = { trait = dwarf }
+				random = {
+					chance = 70
+					ROOT = {
+						remove_trait = tall
+						add_trait = dwarf
+					}
+				}
 			}
-			random = {
-				chance = 15
-				remove_trait = ugly
-				add_trait = fair
+			if = { #DwarfTall
+				limit = { trait = tall }
+				random = {
+					chance = 55
+					ROOT = {
+						remove_trait = dwarf
+						add_trait = tall
+					}
+				}
 			}
-		}
-		if = {
-			limit = {
-				mother_even_if_dead = { trait = ugly } #FairUgly
+			if = { #FairUgly
+				limit = { trait = fair }
+				random = {
+					chance = 35
+					ROOT = {
+						remove_trait = ugly
+						add_trait = fair
+					}
+				}
 			}
-			random = {
-				chance = 15
-				remove_trait = fair
-				add_trait = ugly
+			if = { #FairUgly
+				limit = { trait = ugly }
+				random = {
+					chance = 35
+					ROOT = {
+						remove_trait = fair
+						add_trait = ugly
+					}
+				}
 			}
-		}
-		if = {
-			limit = {
-				mother_even_if_dead = { trait = dwarf } #DwarfTall
+			if = { #Fertile
+				limit = { trait = fertile }
+				random = {
+					chance = 45
+					ROOT = { add_trait = fertile }
+				}
 			}
-			random = {
-				chance = 50
-				remove_trait = tall
-				add_trait = dwarf
+			if = { #GeniusImbecileQuickSlow
+				limit = { trait = genius }
+				random = {
+					chance = 35
+					ROOT = {
+						remove_trait = imbecile
+						remove_trait = slow
+						remove_trait = quick
+						add_trait = genius
+					}
+				}
 			}
-		}
-		if = {
-			limit = {
-				mother_even_if_dead = { trait = genius } #GeniusImbecileQuickSlow
+			if = { #GeniusImbecileQuickSlow
+				limit = { trait = quick }
+				random = {
+					chance = 35
+					ROOT = {
+						remove_trait = genius
+						remove_trait = imbecile
+						remove_trait = slow
+						add_trait = quick
+					}
+				}
 			}
-			random = {
-				chance = 15
-				remove_trait = imbecile
-				remove_trait = slow
-				remove_trait = quick
-				add_trait = genius
+			if = { #GeniusImbecileQuickSlow
+				limit = { trait = slow }
+				random = {
+					chance = 35
+					ROOT = {
+						remove_trait = genius
+						remove_trait = imbecile
+						remove_trait = quick
+						add_trait = slow
+					}
+				}
 			}
-		}
-		if = {
-			limit = {
-				mother_even_if_dead = { trait = quick } #GeniusImbecileQuickSlow
+			if = { #GeniusImbecileQuickSlow
+				limit = { trait = imbecile }
+				random = {
+					chance = 35
+					ROOT = {
+						remove_trait = genius
+						remove_trait = slow
+						remove_trait = quick
+						add_trait = imbecile
+					}
+				}
 			}
-			random = {
-				chance = 15
-				remove_trait = genius
-				remove_trait = imbecile
-				remove_trait = slow
-				add_trait = quick
+			if = { #Harelip
+				limit = { trait = harelip }
+				random = {
+					chance = 35
+					ROOT = { add_trait = harelip }
+				}
 			}
-		}
-		if = {
-			limit = {
-				mother_even_if_dead = { trait = slow } #GeniusImbecileQuickSlow
+			if = { #Hunchback
+				limit = { trait = hunchback }
+				random = {
+					chance = 35
+					ROOT = { add_trait = hunchback }
+				}
 			}
-			random = {
-				chance = 15
-				remove_trait = genius
-				remove_trait = imbecile
-				remove_trait = quick
-				add_trait = slow
+			if = { #Imposing
+				limit = { trait = imposing }
+				random = {
+					chance = 45
+					ROOT = { add_trait = imposing }
+				}
 			}
-		}
-		if = {
-			limit = {
-				mother_even_if_dead = { trait = imbecile } #GeniusImbecileQuickSlow
+			if = { #Lisp
+				limit = { trait = lisp }
+				random = {
+					chance = 35
+					ROOT = { add_trait = lisp }
+				}
 			}
-			random = {
-				chance = 15
-				remove_trait = genius
-				remove_trait = slow
-				remove_trait = quick
-				add_trait = imbecile
+			if = { #StrongWeak
+				limit = { trait = strong }
+				random = {
+					chance = 35
+					ROOT = {
+						remove_trait = weak
+						add_trait = strong
+					}
+				}
 			}
-		}
-		if = {
-			limit = {
-				mother_even_if_dead = { trait = strong } #StrongWeak
+			if = { #StrongWeak
+				limit = { trait = weak }
+				random = {
+					chance = 35
+					ROOT = {
+						remove_trait = strong
+						add_trait = weak
+					}
+				}
 			}
-			random = {
-				chance = 15
-				remove_trait = weak
-				add_trait = strong
+			if = { #Stutter
+				limit = { trait = stutter }
+				random = {
+					chance = 35
+					ROOT = { add_trait = stutter }
+				}
 			}
-		}
-		if = {
-			limit = {
-				mother_even_if_dead = { trait = weak } #StrongWeak
-			}
-			random = {
-				chance = 15
-				remove_trait = strong
-				add_trait = weak
-			}
-		}
-		if = {
-			limit = {
-				mother_even_if_dead = { trait = tall } #DwarfTall
-			}
-			random = {
-				chance = 35
-				remove_trait = dwarf
-				add_trait = tall
-			}
-		}
-		if = {
-			limit = {
-				mother_even_if_dead = { trait = agile }
-			}
-			random = {
-				chance = 20
-				add_trait = agile
-			}
-		}
-		if = {
-			limit = {
-				mother_even_if_dead = { trait = perceptive } #AbsentmindedPerceptive
-			}
-			random = {
-				chance = 25
-				remove_trait = absentminded
-				add_trait = perceptive
-			}
-		}
-		if = {
-			limit = {
-				mother_even_if_dead = { trait = melodious_voice } #CalmVoiceMelodiousVoicePowerfulVoice
-			}
-			random = {
-				chance = 20
-				remove_trait = powerful_voice
-				remove_trait = calm_voice
-				add_trait = melodious_voice
-			}
-		}
-		if = {
-			limit = {
-				mother_even_if_dead = { trait = powerful_voice } #CalmVoiceMelodiousVoicePowerfulVoice
-			}
-			random = {
-				chance = 20
-				remove_trait = melodious_voice
-				remove_trait = calm_voice
-				add_trait = powerful_voice
-			}
-		}
-		if = {
-			limit = {
-				mother_even_if_dead = { trait = ambidextrous } #AmbidextrousLefthanded
-			}
-			random = {
-				chance = 15
-				remove_trait = lefthanded
-				add_trait = ambidextrous
-			}
-		}
-		if = {
-			limit = {
-				mother_even_if_dead = { trait = lefthanded } #AmbidextrousLefthanded
-			}
-			random = {
-				chance = 15
-				remove_trait = ambidextrous
-				add_trait = lefthanded
-			}
-		}
-		if = {
-			limit = {
-				mother_even_if_dead = { trait = wrymouth }
-			}
-			random = {
-				chance = 20
-				add_trait = wrymouth
-			}
-		}
-		if = {
-			limit = {
-				mother_even_if_dead = { trait = deaf }
-			}
-			random = {
-				chance = 10
-				add_trait = deaf
-			}
-		}
-		if = {
-			limit = {
-				mother_even_if_dead = { trait = absentminded } #AbsentmindedPerceptive
-			}
-			random = {
-				chance = 20
-				remove_trait = perceptive
-				add_trait = absentminded
-			}
-		}
-		if = {
-			limit = {
-				mother_even_if_dead = { trait = calm_voice } #CalmVoiceMelodiousVoicePowerfulVoice
-			}
-			random = {
-				chance = 25
-				remove_trait = melodious_voice
-				remove_trait = powerful_voice
-				add_trait = calm_voice
-			}
-		}
-		if = {
-			limit = {
-				mother_even_if_dead = { trait = fertile }
-			}
-			random = {
-				chance = 25
-				add_trait = fertile
-			}
-		}
-		if = {
-			limit = {
-				mother_even_if_dead = { trait = imposing }
-			}
-			random = {
-				chance = 25
-				add_trait = imposing
+			if = { #Wrymouth
+				limit = { trait = wrymouth }
+				random = {
+					chance = 40
+					ROOT = { add_trait = wrymouth }
+				}
 			}
 		}
 
 		# Inherit father's traits...
-		if = {
-			limit = {
-				father_even_if_dead = { trait = clubfooted }
+		father_even_if_dead = {
+			if = { #AbsentmindedPerceptive
+				limit = { trait = perceptive }
+				random = {
+					chance = 45
+					ROOT = {
+						remove_trait = absentminded
+						add_trait = perceptive
+					}
+				}
 			}
-			random = {
-				chance = 15
-				add_trait = clubfooted
+			if = { #AbsentmindedPerceptive
+				limit = { trait = absentminded }
+				random = {
+					chance = 40
+					ROOT = {
+						remove_trait = perceptive
+						add_trait = absentminded
+					}
+				}
 			}
-		}
-		if = {
-			limit = {
-				father_even_if_dead = { trait = harelip }
+			if = { #Agile
+				limit = { trait = agile }
+				random = {
+					chance = 40
+					ROOT = { add_trait = agile }
+				}
 			}
-			random = {
-				chance = 15
-				add_trait = harelip
+			if = { #AmbidextrousLefthanded
+				limit = { trait = ambidextrous }
+				random = {
+					chance = 35
+					ROOT = {
+						remove_trait = lefthanded
+						add_trait = ambidextrous
+					}
+				}
 			}
-		}
-		if = {
-			limit = {
-				father_even_if_dead = { trait = hunchback }
+			if = { #AmbidextrousLefthanded
+				limit = { trait = lefthanded }
+				random = {
+					chance = 35
+					ROOT = {
+						remove_trait = ambidextrous
+						add_trait = lefthanded
+					}
+				}
 			}
-			random = {
-				chance = 15
-				add_trait = hunchback
+			if = { #CalmVoiceMelodiousVoicePowerfulVoice
+				limit = { trait = melodious_voice }
+				random = {
+					chance = 40
+					ROOT = {
+						remove_trait = powerful_voice
+						remove_trait = calm_voice
+						add_trait = melodious_voice
+					}
+				}
 			}
-		}
-		if = {
-			limit = {
-				father_even_if_dead = { trait = lisp }
+			if = { #CalmVoiceMelodiousVoicePowerfulVoice
+				limit = { trait = powerful_voice }
+				random = {
+					chance = 40
+					ROOT = {
+						remove_trait = melodious_voice
+						remove_trait = calm_voice
+						add_trait = powerful_voice
+					}
+				}
 			}
-			random = {
-				chance = 15
-				add_trait = lisp
+			if = { #CalmVoiceMelodiousVoicePowerfulVoice
+				limit = { trait = calm_voice }
+				random = {
+					chance = 45
+					ROOT = {
+						remove_trait = melodious_voice
+						remove_trait = powerful_voice
+						add_trait = calm_voice
+					}
+				}
 			}
-		}
-		if = {
-			limit = {
-				father_even_if_dead = { trait = stutter }
+			if = { #Clubfooted
+				limit = { trait = clubfooted }
+				random = {
+					chance = 35
+					ROOT = { add_trait = clubfooted }
+				}
 			}
-			random = {
-				chance = 15
-				add_trait = stutter
+			if = { #Deaf
+				limit = { trait = deaf }
+				random = {
+					chance = 30
+					ROOT = { add_trait = deaf }
+				}
 			}
-		}
-		if = {
-			limit = {
-				father_even_if_dead = { trait = fair } #FairUgly
+			if = { #DwarfTall
+				limit = { trait = dwarf }
+				random = {
+					chance = 70
+					ROOT = {
+						remove_trait = tall
+						add_trait = dwarf
+					}
+				}
 			}
-			random = {
-				chance = 15
-				remove_trait = ugly
-				add_trait = fair
+			if = { #DwarfTall
+				limit = { trait = tall }
+				random = {
+					chance = 55
+					ROOT = {
+						remove_trait = dwarf
+						add_trait = tall
+					}
+				}
 			}
-		}
-		if = {
-			limit = {
-				father_even_if_dead = { trait = ugly } #FairUgly
+			if = { #FairUgly
+				limit = { trait = fair }
+				random = {
+					chance = 35
+					ROOT = {
+						remove_trait = ugly
+						add_trait = fair
+					}
+				}
 			}
-			random = {
-				chance = 15
-				remove_trait = fair
-				add_trait = ugly
+			if = { #FairUgly
+				limit = { trait = ugly }
+				random = {
+					chance = 35
+					ROOT = {
+						remove_trait = fair
+						add_trait = ugly
+					}
+				}
 			}
-		}
-		if = {
-			limit = {
-				father_even_if_dead = { trait = dwarf } #DwarfTall
+			if = { #Fertile
+				limit = { trait = fertile }
+				random = {
+					chance = 45
+					ROOT = { add_trait = fertile }
+				}
 			}
-			random = {
-				chance = 50
-				remove_trait = tall
-				add_trait = dwarf
+			if = { #GeniusImbecileQuickSlow
+				limit = { trait = genius }
+				random = {
+					chance = 35
+					ROOT = {
+						remove_trait = imbecile
+						remove_trait = slow
+						remove_trait = quick
+						add_trait = genius
+					}
+				}
 			}
-		}
-		if = {
-			limit = {
-				father_even_if_dead = { trait = genius } #GeniusImbecileQuickSlow
+			if = { #GeniusImbecileQuickSlow
+				limit = { trait = quick }
+				random = {
+					chance = 35
+					ROOT = {
+						remove_trait = genius
+						remove_trait = imbecile
+						remove_trait = slow
+						add_trait = quick
+					}
+				}
 			}
-			random = {
-				chance = 15
-				remove_trait = imbecile
-				remove_trait = slow
-				remove_trait = quick
-				add_trait = genius
+			if = { #GeniusImbecileQuickSlow
+				limit = { trait = slow }
+				random = {
+					chance = 35
+					ROOT = {
+						remove_trait = genius
+						remove_trait = imbecile
+						remove_trait = quick
+						add_trait = slow
+					}
+				}
 			}
-		}
-		if = {
-			limit = {
-				father_even_if_dead = { trait = quick } #GeniusImbecileQuickSlow
+			if = { #GeniusImbecileQuickSlow
+				limit = { trait = imbecile }
+				random = {
+					chance = 35
+					ROOT = {
+						remove_trait = genius
+						remove_trait = slow
+						remove_trait = quick
+						add_trait = imbecile
+					}
+				}
 			}
-			random = {
-				chance = 15
-				remove_trait = genius
-				remove_trait = imbecile
-				remove_trait = slow
-				add_trait = quick
+			if = { #Harelip
+				limit = { trait = harelip }
+				random = {
+					chance = 35
+					ROOT = { add_trait = harelip }
+				}
 			}
-		}
-		if = {
-			limit = {
-				father_even_if_dead = { trait = slow } #GeniusImbecileQuickSlow
+			if = { #Hunchback
+				limit = { trait = hunchback }
+				random = {
+					chance = 35
+					ROOT = { add_trait = hunchback }
+				}
 			}
-			random = {
-				chance = 15
-				remove_trait = genius
-				remove_trait = imbecile
-				remove_trait = quick
-				add_trait = slow
+			if = { #Imposing
+				limit = { trait = imposing }
+				random = {
+					chance = 45
+					ROOT = { add_trait = imposing }
+				}
 			}
-		}
-		if = {
-			limit = {
-				father_even_if_dead = { trait = imbecile } #GeniusImbecileQuickSlow
+			if = { #Lisp
+				limit = { trait = lisp }
+				random = {
+					chance = 35
+					ROOT = { add_trait = lisp }
+				}
 			}
-			random = {
-				chance = 15
-				remove_trait = genius
-				remove_trait = slow
-				remove_trait = quick
-				add_trait = imbecile
+			if = { #StrongWeak
+				limit = { trait = strong }
+				random = {
+					chance = 35
+					ROOT = {
+						remove_trait = weak
+						add_trait = strong
+					}
+				}
 			}
-		}
-		if = {
-			limit = {
-				father_even_if_dead = { trait = strong } #StrongWeak
+			if = { #StrongWeak
+				limit = { trait = weak }
+				random = {
+					chance = 35
+					ROOT = {
+						remove_trait = strong
+						add_trait = weak
+					}
+				}
 			}
-			random = {
-				chance = 15
-				remove_trait = weak
-				add_trait = strong
+			if = { #Stutter
+				limit = { trait = stutter }
+				random = {
+					chance = 35
+					ROOT = { add_trait = stutter }
+				}
 			}
-		}
-		if = {
-			limit = {
-				father_even_if_dead = { trait = weak } #StrongWeak
-			}
-			random = {
-				chance = 15
-				remove_trait = strong
-				add_trait = weak
-			}
-		}
-		if = {
-			limit = {
-				father_even_if_dead = { trait = tall } #DwarfTall
-			}
-			random = {
-				chance = 35
-				remove_trait = dwarf
-				add_trait = tall
-			}
-		}
-		if = {
-			limit = {
-				father_even_if_dead = { trait = agile }
-			}
-			random = {
-				chance = 20
-				add_trait = agile
-			}
-		}
-		if = {
-			limit = {
-				father_even_if_dead = { trait = perceptive } #AbsentmindedPerceptive
-			}
-			random = {
-				chance = 25
-				remove_trait = absentminded
-				add_trait = perceptive
-			}
-		}
-		if = {
-			limit = {
-				father_even_if_dead = { trait = melodious_voice } #CalmVoiceMelodiousVoicePowerfulVoice
-			}
-			random = {
-				chance = 20
-				remove_trait = powerful_voice
-				remove_trait = calm_voice
-				add_trait = melodious_voice
-			}
-		}
-		if = {
-			limit = {
-				father_even_if_dead = { trait = powerful_voice } #CalmVoiceMelodiousVoicePowerfulVoice
-			}
-			random = {
-				chance = 20
-				remove_trait = melodious_voice
-				remove_trait = calm_voice
-				add_trait = powerful_voice
-			}
-		}
-		if = {
-			limit = {
-				father_even_if_dead = { trait = ambidextrous } #AmbidextrousLefthanded
-			}
-			random = {
-				chance = 15
-				remove_trait = lefthanded
-				add_trait = ambidextrous
-			}
-		}
-		if = {
-			limit = {
-				father_even_if_dead = { trait = lefthanded } #AmbidextrousLefthanded
-			}
-			random = {
-				chance = 15
-				remove_trait = ambidextrous
-				add_trait = lefthanded
-			}
-		}
-		if = {
-			limit = {
-				father_even_if_dead = { trait = wrymouth }
-			}
-			random = {
-				chance = 20
-				add_trait = wrymouth
-			}
-		}
-		if = {
-			limit = {
-				father_even_if_dead = { trait = deaf }
-			}
-			random = {
-				chance = 10
-				add_trait = deaf
-			}
-		}
-		if = {
-			limit = {
-				father_even_if_dead = { trait = absentminded } #AbsentmindedPerceptive
-			}
-			random = {
-				chance = 20
-				remove_trait = perceptive
-				add_trait = absentminded
-			}
-		}
-		if = {
-			limit = {
-				father_even_if_dead = { trait = calm_voice } #CalmVoiceMelodiousVoicePowerfulVoice
-			}
-			random = {
-				chance = 25
-				remove_trait = melodious_voice
-				remove_trait = powerful_voice
-				add_trait = calm_voice
-			}
-		}
-		if = {
-			limit = {
-				father_even_if_dead = { trait = fertile }
-			}
-			random = {
-				chance = 25
-				add_trait = fertile
-			}
-		}
-		if = {
-			limit = {
-				father_even_if_dead = { trait = imposing }
-			}
-			random = {
-				chance = 25
-				add_trait = imposing
+			if = { #Wrymouth
+				limit = { trait = wrymouth }
+				random = {
+					chance = 40
+					ROOT = { add_trait = wrymouth }
+				}
 			}
 		}
 		
 		##### DONE WITH GENETICS #####
 		
-		##### DEFAULT COMBAT TRAIT CALCULATION #####
+		##### COMBAT TRAIT CALCULATION #####
 		
 		# Normally, we only calculate default combat traits for adults. Here, instead,
 		# we allow historical children to use the same calculation method for determining
@@ -5103,6 +5405,7 @@ character_event = {
 				NOT = {
 					trait = blinded
 					trait = incapable
+					trait = infirm
 					age = 65
 				}
 			}
@@ -5110,7 +5413,7 @@ character_event = {
 			# Martial education
 			if = {
 				limit = { trait = misguided_warrior }
-				change_variable = { which = "combat_skill" value = 1.5 }
+				change_variable = { which = "combat_skill" value = 1 }
 			}
 			if = {
 				limit = { trait = tough_soldier }
@@ -5118,14 +5421,14 @@ character_event = {
 			}
 			if = {
 				limit = { trait = skilled_tactician }
-				change_variable = { which = "combat_skill" value = 5.5 }
+				change_variable = { which = "combat_skill" value = 5 }
 			}
 			if = {
 				limit = { trait = brilliant_strategist }
-				change_variable = { which = "combat_skill" value = 8 }
+				change_variable = { which = "combat_skill" value = 7 }
 			}
 			# Demographics
-			if = { # General norse (religion) inclination to combat
+			if = { # General Norse religion inclination to combat
 				limit = {
 					OR = {
 						is_female = no
@@ -5144,6 +5447,13 @@ character_event = {
 					NOT = { has_global_flag = gender_equality }
 				}
 				change_variable = { which = "combat_skill" value = -3.5 }
+			}
+			if = { # Women still get a [smaller] malus with GE enabled (modern plausibility)
+				limit = {
+					is_female = yes
+					has_global_flag = gender_equality
+				}
+				change_variable = { which = "combat_skill" value = -1 }
 			}
 			if = { # In a holy order / mercenary company
 				limit = {
@@ -5164,15 +5474,11 @@ character_event = {
 			}
 			# Growing older
 			if = {
-				limit = {
-					age = 55
-				}
+				limit = { age = 55 }
 				change_variable = { which = "combat_skill" value = -1 }
 			}
 			if = {
-				limit = {
-					age = 45
-				}
+				limit = { age = 45 }
 				change_variable = { which = "combat_skill" value = -0.5 }
 			}
 			# Personality traits
@@ -5238,7 +5544,7 @@ character_event = {
 			}
 			if = {
 				limit = { trait = strong }
-				change_variable = { which = "combat_skill" value = 1.5 }
+				change_variable = { which = "combat_skill" value = 2 }
 			}
 			if = {
 				limit = { trait = weak }
@@ -5297,13 +5603,13 @@ character_event = {
 					change_variable = { which = "combat_skill" value = -2.5 }
 				}
 			}
-			# Aristocratic traditions / rulers
+			# Aristocratic martial traditions
 			if = {
-				limit = {
+				limit = { # >= duke
 					OR = {
-						father = { higher_tier_than = duke }
-						mother = { higher_tier_than = duke }
-						higher_tier_than = duke
+						higher_tier_than = count
+						father_even_if_dead = { higher_tier_than = count }
+						mother_even_if_dead = { higher_tier_than = count }
 					}
 				}
 				change_variable = { which = "combat_skill" value = 1 }
@@ -5311,26 +5617,24 @@ character_event = {
 			if = {
 				limit = {
 					OR = {
-						father = { tier = count }
-						mother = { tier = count }
-						AND = {
+						AND = { # <= count (but a ruler / ruler-family)
 							is_ruler = yes
 							is_patrician = no
 							lower_tier_than = duke
 						}
+						father_even_if_dead = { tier = count }
+						mother_even_if_dead = { tier = count }
 					}
 				}
 				change_variable = { which = "combat_skill" value = 0.5 }
 			}
 			if = {
 				limit = {
-					NOT = {
+					NOT = { # Neither a special courtier nor a ruler / ruler-family
+						martial = 12
+						is_ruler = yes
 						father = { is_ruler = yes }
 						mother = { is_ruler = yes }
-						is_ruler = yes
-						trait = brilliant_strategist
-						trait = skilled_tactician
-						martial = 12
 					}
 				}
 				change_variable = { which = "combat_skill" value = -1.5 }
@@ -5356,7 +5660,7 @@ character_event = {
 			# ENOUGH factors already, award the trait
 			if = {
 				limit = {
-					check_variable = { which = "combat_skill" value = 9 }
+					check_variable = { which = "combat_skill" value = 8.5 }
 				}
 				add_trait = master_warrior
 			}
@@ -5370,21 +5674,27 @@ character_event = {
 			if = {
 				limit = {
 					check_variable = { which = "combat_skill" value = 4 }
-					NOT = { trait = master_warrior }
-					NOT = { trait = skilled_warrior }
+					NOT = {
+						trait = master_warrior
+						trait = skilled_warrior
+					}
 				}
 				add_trait = trained_warrior
 			}
 			if = {
 				limit = {
 					check_variable = { which = "combat_skill" value = 1.5 }
-					NOT = { trait = master_warrior }
-					NOT = { trait = skilled_warrior }
-					NOT = { trait = trained_warrior }
+					NOT = {
+						trait = master_warrior
+						trait = skilled_warrior
+						trait = trained_warrior
+					}
 				}
 				add_trait = poor_warrior
 			}
-			set_variable = { which = "combat_skill" value = 0 }
-		}
+			set_variable = { which = "combat_skill" value = 0 } # Don't need this anymore
+		} # Done with combat trait selection
+		
+		# All done with randomization of this character.
 	}
 }
