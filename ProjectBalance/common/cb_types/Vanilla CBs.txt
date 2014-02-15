@@ -7841,7 +7841,10 @@ muslim_county_conquest = {
 	can_use_gui = {
 		ROOT = {
 			piety = 50
-			NOT = { has_character_modifier = holy_war_cooldown }
+			OR = {
+				NOT = { has_character_modifier = holy_war_cooldown }
+				FROM = { religion_group = ROOT }
+			}
 			NOT = { FROM = { religion_group = pagan_group } }
 			OR = {
 				NOT = { trait = content }
