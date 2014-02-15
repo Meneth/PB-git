@@ -10,8 +10,8 @@ meneth.1.b;Do nothing;;;;;;;;;;;;;x
 meneth.100.desc;It's dangerous to go alone! Take this piety!;;;;;;;;;;;;;x
 meneth.100.a;Free piety! Thanks;;;;;;;;;;;;;x
 meneth.101.desc;EVTDESC60013;The great [Root.GetTitledName] and all [Root.GetHerHis] vassals have converted and embraced the Shiite faith!;;;;;;;;;;;;;x
-meneth.200.name;Welcome;;;;;;;;;;;;;x
-meneth.200.desc;Welcome to Project Balance. This event is here to set up the campaign and to give you a brief introduction to Project Balance. \nProject Balance is much more minimalist than most major mods. Instead of trying to remake the game I've made tweaks in order to make the game both more enjoyable and more historically plausible.\nMake sure to check the "is war possible?" decision to see if you meet the restrictions, and check out the decisions only available on day 0. \nIf you encounter any issues or have any questions or feedback you can contact me in Project Balance's thread on the Paradoxplaza forums. Alternatively you can send me a PM on Paradoxplaza or on reddit. \nI hope you'll enjoy the mod, \n- Meneth;;;;;;;;;;;;;x
+meneth.200.name;Project Balance;;;;;;;;;;;;;x
+meneth.200.desc;Thank you for choosing Project Balance. PB is a minimalist mod with maximum impact. We aim for consistency with vanilla mechanics and fix, improve, or extend them rather than replace them. We make CKII more enjoyable, challenging, and historically plausible.\n\nOptionally, choose a scenario customization decision at the top of the intrigue menu (before unpausing!). Check the "Is war possible?" decisions to see if you meet the requirements for different wars.\n\nCheck our forum at ParadoxPlaza to report bugs or offer feedback. Enjoy,\nMeneth - Creator and CEO (pb <at> meneth.com)\nZijistark - Co-Developer and VP (azrinon <at> gmail.com)\n;;;;;;;;;;;;;x
 meneth.200.a;OK;;;;;;;;;;;;;x
 meneth.201.desc;Sudden Death;;;;;;;;;;;;;x
 meneth.201.a;Seems I am no longer needed in this cruel world.;;;;;;;;;;;;;x

@@ -11,6 +11,20 @@ viking_invasion = {
 	check_de_jure_tier = KING # this scans all de jure kingdoms for the counties which are held by or vassals(or below) of selected character. Only valid if is_permanent = yes
 	apply_short_occ_mod = no # Do not apply the 'recently_conquered' modifier to Holdings
 
+	# The following comment is adapted from the 'invasion' CB, but the same logic applies
+	# to all invasion CBs which gain all occupied titles, including this one:
+	
+	# PB doubles BATTLE_WARSCORE_MULT, so this reduces it to Vanilla levels for Invasion
+	# so that, e.g., an AI William the Conqueror at Stamford Bridge start will have enough
+	# time / be required to occupy a few provinces (thus gaining a more stable demesne in
+	# England upon success) before the warscore reaches 100% and the war ends early.
+	# This is also consistent with the concept of an invasion; actual occupation of something
+	# is generally required before the foreign kingdom will surrender, even if they lose it
+	# all at, e.g., the Battle of Hastings and have little hope. The PB Stamford Bridge start
+	# should now be much more stable in favoring a historical outcome.
+	
+	battle_warscore_mult = 0.5
+	
 	can_use = {
 		ROOT = {
 			has_opinion_modifier = { who = FROM modifier = preparing_to_invade }
