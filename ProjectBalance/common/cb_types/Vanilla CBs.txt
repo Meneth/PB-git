@@ -3948,9 +3948,14 @@ religious = {
 	
 	on_add = {
 		ROOT = {
-			add_character_modifier = {
-				name = holy_war_cooldown
-				duration = 1825
+			custom_tooltip = {
+				text = holy_war_cooldown_ctt
+				hidden_tooltip = {
+					add_character_modifier = {
+						name = holy_war_cooldown
+						duration = 1825
+					}
+				}
 			}
 			if = {
 				limit = { religion_group = pagan_group }
@@ -4007,7 +4012,7 @@ religious = {
 			hidden_tooltip = {
 				ROOT = {
 					FROM = {
-						any_realm_character = { set_character_flag = holy_war_target }
+						any_realm_character = { set_character_flag = holy_war_target } #Z: TODO
 					}
 					if = {
 						limit = {
@@ -7922,9 +7927,14 @@ muslim_county_conquest = {
 				}
 			}
 			ROOT = {
-				add_character_modifier = {
-					name = holy_war_cooldown
-					duration = 1825
+				custom_tooltip = {
+					text = holy_war_cooldown_ctt
+					hidden_tooltip = {
+						add_character_modifier = {
+							name = holy_war_cooldown
+							duration = 1825
+						}
+					}
 				}
 			}
 		}
@@ -8325,9 +8335,14 @@ muslim_invasion = {
 			if = { limit = { FROM = { NOT = { religion_group = muslim } } }
 				piety = -500 #Vanilla (always)
 			}
-			add_character_modifier = {
-				name = holy_war_cooldown
-				duration = 1825
+			custom_tooltip = {
+				text = holy_war_cooldown_ctt
+				hidden_tooltip = {
+					add_character_modifier = {
+						name = holy_war_cooldown
+						duration = 1825
+					}
+				}
 			}
 		}
 	}
