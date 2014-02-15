@@ -8,18 +8,17 @@
 ###################################
 
 namespace = meneth
-#Gives out combat traits
-narrative_event = {
-	id = meneth.600
-	title = "meneth.200"
-	desc = "meneth.200.desc"
+narrative_event = { # NOTE: not currently an event that is ever shown to a player
+	id =    meneth.600
+	title = meneth.200.name
+	desc =  meneth.200.desc
 	
 	is_triggered_only = yes
 	
-	picture = "GFX_evt_battle"
-	
 	immediate = {
-		set_global_flag = project_balance
+		set_global_flag = project_balance #Should already be set to this date
+		
+		# Give out combat traits
 		any_playable_ruler = {
 			limit = {
 				NOT = { # only assign a combat trait to characters that don't already have one
@@ -29,7 +28,6 @@ narrative_event = {
 					trait = master_warrior
 				}
 			}
-			set_variable = { which = "combat_skill" value = 0 }
 			if = {
 				limit = { trait = misguided_warrior }
 				change_variable = { which = "combat_skill" value = 2 }
@@ -128,8 +126,10 @@ narrative_event = {
 				}
 				add_trait = poor_warrior
 			}
-			set_variable = { which = "combat_skill" value = 0 } # free memory (per character)
+			set_variable = { which = "combat_skill" value = 0 }
 		}
+		
+		# No direct vassals of the Byzantine Empire are content after 1066
 		if = {
 			limit = { year = 1066 }
 			e_byzantium = {
@@ -141,12 +141,16 @@ narrative_event = {
 				}
 			}
 		}
+		
+		# Ensure the Persian Emperor doesn't hold the kingdom title too
 		if = {
 			limit = { e_persia = { holder_scope = { has_landed_title = k_persia } } }
 			k_persia = {
 				destroy_landed_title = THIS
 			}
 		}
+		
+		# Ensure Egypt has no holder from 1066 until 1171
 		if = {
 			limit = {
 				k_egypt = { has_holder = yes }
@@ -155,6 +159,10 @@ narrative_event = {
 			}
 			k_egypt = { destroy_landed_title = THIS }
 		}
+		
+		# Dynamically setup worldwide Centers of Trade
+		# They also give an economic boost, but their primary purpose here is to influence
+		# technology spread, as the buildings are a direct source of tech points.
 		b_dublin = { add_building = ct_trade_post_1 }
 		b_gandia = { add_building = ct_trade_post_1 }
 		b_newport = { add_building = ct_trade_post_1 }

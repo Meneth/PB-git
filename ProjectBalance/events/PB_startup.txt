@@ -8,20 +8,21 @@
 ###################################
 
 namespace = meneth
-#Make sure all the provinces are correct religion again
+
 narrative_event = {
-	id = meneth.200
-	title = "meneth.200.name"
-	desc = "meneth.200.desc"
+	id =      meneth.200
+	title =   meneth.200.name
+	desc =    meneth.200.desc
+	picture = GFX_evt_battle
+	border =  GFX_event_narrative_frame_war
+	
 	major = yes
 	hide_new = yes
 	hide_from = yes
 	is_triggered_only = yes
 	
-	picture = "GFX_evt_battle"
-	
 	immediate = {
-		#set_global_flag = pb_setup
+		# Make sure all the provinces are correct religion again
 		336 = { culture = italian }
 		336 = { religion = catholic }
 		344 = { culture = italian }
@@ -67,6 +68,8 @@ narrative_event = {
 		955 = { religion = pagan }
 		956 = { religion = miaphysite }
 		957 = { religion = miaphysite }
+		
+		# Miaphysites in Asia Minor prior to the Alexiad start
 		if = {
 			limit = { NOT = { year = 1080 } }
 			794 = { religion = miaphysite }
@@ -74,6 +77,8 @@ narrative_event = {
 			797 = { religion = miaphysite }
 			802 = { religion = miaphysite }
 		}
+		
+		# Saxony should be titular in ToG starts, its vassal titles transferred to Germany
 		if = {
 			limit = { NOT = { year = 1066 } }
 			k_saxony = {
