@@ -1,3 +1,17 @@
+3.4.6
+	Reduced the size of Robert of Apulia's starting forces somewhat
+
+3.4.5
+	Added a set of tiered conquest checks for the Imperial Reconquest CB under the "Is war possible?" menu. Now works for both PB and PB+SWMH (only the latter in the previous release)
+	Flawed bankruptcy triggered modifier from previous release removed. No extra land_morale hit when bankrupt now, but most importantly, no rapidly-toggling "Lack of Funds" notification in your High Priority Messages tab
+	(Gender Equality) Fixed a case where certain characters could be upset at rulers due to their startup succession law change to True Cognatic
+	Day-1 scenario customization decisions prioritized to top of intrigue menu. Some "high-priority" decisions that can't actually be executed on day 1 anyway will now only show up after the first game day (e.g., Hold a Grand Tournament). Later saves will always be after day 1 (and the scenario customization options disappear by then), so those decisions are all still available before unpausing in the normal case of loading a game
+	(No Ahistorical Empires) The Bulgarian Empire is now properly removed upon enacting the scenario customization decision in the 867 start date
+	Vanilla trait AI weighting tweaks. AI behavior due to traits should be slightly more ambitious and willing to take risks but generally more accurately reflect trait semantics.
+	Bugfix for issue that prevented the autonomy faction from ever actually succeeding at commending their liege when in a happy mood despite a successful vote in favor. Faction leader was hogging the glory and commending himself without even checking the vote results, as it turns out.
+	Introduction of the new Day-1 (or, D-Day, alternately) scenario customization decison 'Randomize Rulers,' which assigns a new, random face to all historical rulers and their courtiers worldwide.  They will receive a new, highly realistic, and coherent set of random personality, education, leadership, and genetic traits. New family traits which arise will also potentially be inherited by all living descendants. Project Balance features a significantly extended trait set, so startup characters can now benefit from all of them. Will fundamentally alter the political landscape for a fresh experience that leaves the worldwide balance of power and other expectations of your selected scenario fully intact. Icon by AnaxXiphos
+	Added new Immortal trait icon [AnaxXiphos]
+
 3.4.4
 	(PB+VIET) Fixed some trait icons being missing when VIET Immersion is active
 	Fixed an issue with pushing the claims of vassals/courtiers

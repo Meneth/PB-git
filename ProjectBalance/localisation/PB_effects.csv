@@ -1,4 +1,17 @@
 #CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+TECH_CASTLES;Infrastructure;;;;;;;;;;;;;x
+TECH_CASTLES_DESC;Improved infrastructure makes supplying armies easier.;;;;;;;;;;;;;x
+immortal;Immortal;;;;;;;;;;;;;x
+immortal_desc;Immortals will never succumb to old age, but they can still die from other causes.;;;;;;;;;;;;;x
+formation_of_rum;Newly Formed Realm;;;;;;;;;;;;;x
+war_torn;War-torn;;;;;;;;;;;;;x
+bulgarian_unrest;Bulgarian Unrest;;;;;;;;;;;;;x
+bulgarian_unrest_2;Bulgarian Unrest;;;;;;;;;;;;;x
+culture_clash;Culture Clash;;;;;;;;;;;;;x
+baqt;Baqt;;;;;;;;;;;;;x
+sahara;Sahara;;;;;;;;;;;;;x
+rum;Ignore the man behind the curtain;;;;;;;;;;;;;x
+#TRIGGERED MODIFIERS;;;;;;;;;;;;;;x
 religious_defense;Religious Defense;Religious Defense;Religious Defense;;Religious Defense;;;;;;;;;x
 desc_religious_defense;We're defending against a holy war. Everyone is doing what they can to fend off the invaders.;We're defending against a holy war. Everyone is doing what they can to fend of the invaders.;We're defending against a holy war. Everyone is doing what they can to fend of the invaders.;;We're defending against a holy war. Everyone is doing what they can to fend of the invaders.;;;;;;;;;x
 disorganized;Disorganized;Disorganized;Disorganized;;Disorganized;;;;;;;;;x
@@ -10,31 +23,22 @@ desc_low_decadence;Our decadence is low, making everyone like us more.;;;;;;;;;;
 medium_decadence;Decadent;;;;;;;;;;;;;x
 desc_medium_decadence;We are decadent and many are therefore questioning our legitimate rule;;;;;;;;;;;;;x
 high_decadence;Highly Decadent;;;;;;;;;;;;;x
-desc_high_decadence;We are highly decadent and many are therefore questioning our legitimate rule;;;;;;;;;;;;;x
-TECH_CASTLES;Infrastructure;;;;;;;;;;;;;x
-TECH_CASTLES_DESC;Improved infrastructure makes supplying armies easier.;;;;;;;;;;;;;x
-immortal;Immortal;;;;;;;;;;;;;x
-immortal_desc;Immortals will never succumb to old age, but they can still die from other causes.;;;;;;;;;;;;;x
-formation_of_rum;Newly Formed Realm;;;;;;;;;;;;;x
-war_torn;War-torn;;;;;;;;;;;;;x
-bulgarian_unrest;Bulgarian Unrest;;;;;;;;;;;;;x
-bulgarian_unrest_2;Bulgarian Unrest;;;;;;;;;;;;;x
-culture_clash;Culture Clash;;;;;;;;;;;;;x
 decentralized_hre;Decentralized HRE;;;;;;;;;;;;;x
 theme_system;Decayed Theme System;;;;;;;;;;;;;x
 theme_system_2;Intact Theme System;;;;;;;;;;;;;x
+desc_high_decadence;We are highly decadent and many are therefore questioning our legitimate rule;;;;;;;;;;;;;x
+#COOLDOWNS;;;;;;;;;;;;;;x
 launched_subjugation;Subjugation Cooldown;;;;;;;;;;;;;x
-baqt;Baqt;;;;;;;;;;;;;x
-sahara;Sahara;;;;;;;;;;;;;x
-af_mil_cooperation_t1;Military cooperation;;;;;;;;;;;;;x
-af_eco_cooperation_t1;Economic cooperation;;;;;;;;;;;;;x
-autonomy_commended;Commended by vassals;;;;;;;;;;;;;x
 ca_revoke_cooldown;Crown law revocation cooldown;;;;;;;;;;;;;x
 ca_revoke_cooldown_desc;Crown authority laws were recently revoked due to a faction ultimatum or revolt. It will take time before the realm's nobles are willing to support the revocation of their remaining laws.;;;;;;;;;;;;;x
 ca_revoke_cooldown_ctt;§Y[This.GetTitledFirstName]§!'s realm enters a crown law revocation cooldown period.\n;;;;;;;;;;;;;x
-rum;Ignore the man behind the curtain;;;;;;;;;;;;;x
+holy_war_cooldown_ctt;§Y[This.GetBestName]§! won't be able to declare holy war for another §Y5 years§!.\n;;;;;;;;;;;;;x
+#AUTONOMY FACTION;;;;;;;;;;;;;;x
 opinion_refused_ultimatum;Refused ultimatum;;;;;;;;;;;;;x
 opinion_recently_refused_ultimatum;Recently refused ultimatum;;;;;;;;;;;;;x
 opinion_accepted_ultimatum;Accepted ultimatum;;;;;;;;;;;;;x
-reduced_obligations;Reduced obligations;;;;;;;;;;;;;x
 opinion_betrayed_autonomy_faction;Betrayed faction;;;;;;;;;;;;;x
+reduced_obligations;Reduced obligations;;;;;;;;;;;;;x
+af_mil_cooperation_t1;Military cooperation;;;;;;;;;;;;;x
+af_eco_cooperation_t1;Economic cooperation;;;;;;;;;;;;;x
+autonomy_commended;Commended by vassals;;;;;;;;;;;;;x

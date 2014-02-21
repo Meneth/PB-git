@@ -6,17 +6,13 @@ title = c_tyrnovo
 # Settlements
 max_settlements = 6
 
-b_tyrnovo = castle
-b_dorosturum = city
-b_kilifarevski = temple
-b_rusi = city
+b_tarnovo = castle
+b_oryahovo = castle
+b_nikopol = castle
+b_lovech = city
+#b_kilifarevo = temple
+#b_transfiguration_monestary_tarnovo = temple
 
-#b_shumen = temple
-#b_borovo = castle
-#b_slivopole = castle
-#b_byaladve = castle
-#b_tsenovo = castle
-#b_samuil = castle
 
 # Misc
 culture = bulgarian
@@ -25,4 +21,4 @@ religion = orthodox
 # History
 950.1.1 = { religion = bogomilist }
  
-1187.1.1 = { b_slivopole = castle }  
+1187.1.1 = { b_kilifarevo = temple }  

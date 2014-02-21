@@ -6,14 +6,13 @@ title = c_vidin
 # Settlements
 max_settlements = 4
 
-b_vidin = castle
-b_viseslav = temple
-#b_kula = city
-b_srvljig = city
-#b_pirot = castle
-#b_zajecar = castle
-#b_bolvan = castle
-#b_kucevo = castle
+b_svrljig = castle
+b_vidin = city
+#b_kozal = castle
+#b_klisurski = temple
+#b_belogradchik = castle
+b_archar = temple
+
 
 # Misc
 culture = bulgarian

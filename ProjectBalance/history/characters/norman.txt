@@ -456,7 +456,7 @@
 				earmark = norman_byzantine_war
 				leader = ROOT
 				match_character = ROOT
-				match_mult = 0.4
+				match_mult = 0.25
 				attrition = 1.0
 			}
 			spawn_unit = {
@@ -466,7 +466,7 @@
 				earmark = norman_byzantine_war
 				leader = 1132
 				match_character = ROOT
-				match_mult = 0.4
+				match_mult = 0.25
 				attrition = 1.0
 			}
 			spawn_unit = {
@@ -476,7 +476,7 @@
 				earmark = norman_byzantine_war
 				leader = 1127
 				match_character = ROOT
-				match_mult = 0.4
+				match_mult = 0.25
 				attrition = 1.0
 			}
 			spawn_unit = {

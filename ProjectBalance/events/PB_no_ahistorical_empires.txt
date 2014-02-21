@@ -97,5 +97,12 @@ narrative_event = {
 			k_vladimir = { de_jure_liege = 0 }
 			k_wallachia = { de_jure_liege = 0 }
 		}
+		if = {
+			limit = { NOT = { year = 1066 } }
+			
+			#Double-reset required to escape transfer to Byz for unknown reasons.
+			k_bulgaria = { de_jure_liege = 0 }
+			k_bulgaria = { de_jure_liege = 0 }
+		}
 	}
 }
