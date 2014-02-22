@@ -1,6 +1,8 @@
 3.4.6
 	Reduced the size of Robert of Apulia's starting forces somewhat
 	(No Ahistorical Empires) Fixed Adal and Maghreb being part of dejure empires in SWMH
+	Battlefield duels now work properly again: reverted the integrated New Duel Engine to its previous version (pre-3.4.1 PB). Kept the new-style combat trait icons originally from AnaxXiphos
+	Until the code can be analysed in-depth and cleared for take-off, "Hold a Grand Tournament" is now disabled (related to NDE revert) due primarily to potentially critical side effects with the do_not_disturb character flag
 
 3.4.5
 	Added a set of tiered conquest checks for the Imperial Reconquest CB under the "Is war possible?" menu. Now works for both PB and PB+SWMH (only the latter in the previous release)
