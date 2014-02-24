@@ -52,6 +52,6 @@ e_germany = {
 	name_tier = king
 	short_name = yes
 	allow = {
-		is_titular = no
+		FROM = { is_titular = no }
 	}
 }
