@@ -4156,9 +4156,9 @@ religious = {
 	
 	# ai importance placed on this CB: scope is the targeted title, ROOT is the attacking character, FROM is the defending character
 	ai_will_do = { 
-		factor = 1
+		factor = 2
 		modifier = {
-			factor = 0.1
+			factor = 0.05
 			NOT = { de_jure_liege_or_above = k_france }
 			NOT = { de_jure_liege_or_above = k_aquitaine }
 			OR = {
@@ -4167,7 +4167,7 @@ religious = {
 			}
 		}
 		modifier = {
-			factor = 0.1
+			factor = 0.05
 			NOT = { de_jure_liege_or_above = k_pomerania }
 			NOT = { de_jure_liege_or_above = e_hre }
 			OR = {
@@ -4176,7 +4176,7 @@ religious = {
 			}
 		}
 		modifier = {
-			factor = 0.1
+			factor = 0.05
 			NOT = { de_jure_liege_or_above = k_armenia }
 			NOT = { de_jure_liege_or_above = k_cilicia }
 			NOT = { de_jure_liege_or_above = k_rum }
