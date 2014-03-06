@@ -33,6 +33,8 @@ ca_revoke_cooldown;Crown law revocation cooldown;;;;;;;;;;;;;x
 ca_revoke_cooldown_desc;Crown authority laws were recently revoked due to a faction ultimatum or revolt. It will take time before the realm's nobles are willing to support the revocation of their remaining laws.;;;;;;;;;;;;;x
 ca_revoke_cooldown_ctt;§Y[This.GetTitledFirstName]§!'s realm enters a crown law revocation cooldown period.\n;;;;;;;;;;;;;x
 holy_war_cooldown_ctt;§Y[This.GetBestName]§! won't be able to declare holy war for another §Y5 years§!.\n;;;;;;;;;;;;;x
+#CB CUSTOM TOOLTIPS;;;;;;;;;;;;;;x
+vassalize_or_take_under_title_ctt;§Y[Root.GetTitledFirstName]§! takes or vassalizes all titles in the §Y[This.GetFullBaseName]§! belonging to §Y[From.GetTitledFirstName]§!.\n;§Y[Root.GetTitledFirstName]§! capture tous les territoires occupés.\n§Y[Root.GetTitledFirstName]§! prend ou vassalise tous les titres du §Y[This.GetFullBaseName]§! appartenant à §Y[From.GetTitledFirstName]§!.\n;§Y[Root.GetTitledFirstName]§! nimmt alles besetzte Land in Besitz.\n§Y[Root.GetTitledFirstName]§! übernimmt oder vasallisiert alle Titel in §Y[This.GetFullBaseName]§!, die zu §Y[From.GetTitledFirstName]§! gehören.\n;;§Y[Root.GetTitledFirstName]§! toma todos los territorios ocupados.\n§Y[Root.GetTitledFirstName]§! toma o avasalla todos los títulos de §Y[This.GetFullBaseName]§! que pertenecen a §Y[From.GetTitledFirstName]§!.\n;;;;;;;;;x
 #AUTONOMY FACTION;;;;;;;;;;;;;;x
 opinion_refused_ultimatum;Refused ultimatum;;;;;;;;;;;;;x
 opinion_recently_refused_ultimatum;Recently refused ultimatum;;;;;;;;;;;;;x
