@@ -12,6 +12,7 @@
 	Made the AI more hesitant to marrying below their rank
 	Fix to long-time, heavily misleading success effect tooltip for Imperial Reconquest CB
 	Fix and clarification of success effect tooltip for Invasion CB
+	Special invasion CBs which use vanilla BATTLE_WARSCORE_WORTH as a special-case for improved stability of plausible outcomes updated to reflect the -16.7% reduction in global BATTLE_WARSCORE_WORTH
 
 3.4.5
 	Added a set of tiered conquest checks for the Imperial Reconquest CB under the "Is war possible?" menu. Now works for both PB and PB+SWMH (only the latter in the previous release)
