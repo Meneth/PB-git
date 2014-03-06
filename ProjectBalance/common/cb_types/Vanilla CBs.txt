@@ -2721,7 +2721,7 @@ invasion = {
 
 	on_success_title = {
 		custom_tooltip = {
-			text = tribal_invasion_succ_tip
+			text = invasion_succ_cb_ctt
 		
 			hidden_tooltip = {
 				usurp_title_plus_barony_if_unlanded = ROOT
