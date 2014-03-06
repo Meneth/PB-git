@@ -973,6 +973,8 @@ duchy_adventure = {
 			hidden_tooltip = {
 				clr_character_flag = duchy_adventurer
 				give_nickname = nick_the_conqueror
+				occupy_minors_of_occupied_settlements = FROM
+				gain_all_occupied_titles = FROM
 			}
 		}
 		FROM = {
