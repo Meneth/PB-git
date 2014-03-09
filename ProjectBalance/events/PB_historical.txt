@@ -2028,7 +2028,7 @@ character_event = {
 		has_global_flag = SWMH
 		has_landed_title = k_portugal
 		OR = {
-			k_al_andalus = { has_holder = no }
+			k_andalusia = { has_holder = no }
 			completely_controls = d_beja
 		}
 		NOT = { has_global_flag = expansion_of_portugal }
@@ -2064,7 +2064,7 @@ character_event = {
 		has_global_flag = SWMH
 		has_landed_title = k_leon
 		OR = {
-			k_al_andalus = { has_holder = no }
+			k_andalusia = { has_holder = no }
 			completely_controls = d_badajoz
 		}
 		NOT = { has_global_flag = expansion_of_leon }
@@ -2203,7 +2203,7 @@ character_event = {
 		NOT = { has_global_flag = expansion_of_aragon_valencia }
 		completely_controls = k_aragon
 		OR = {
-			k_al_andalus = { has_holder = no }
+			k_andalusia = { has_holder = no }
 			completely_controls = d_valencia
 		}
 	}

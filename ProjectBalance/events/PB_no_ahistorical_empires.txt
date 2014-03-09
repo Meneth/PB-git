@@ -81,9 +81,11 @@ narrative_event = {
 		}
 		if = {
 			limit = { has_global_flag = SWMH }
+			k_adal = { de_jure_liege = 0 }
 			k_ellan_vannin = { de_jure_liege = 0 }
 			k_galicia = { de_jure_liege = 0 }
 			k_geats = { de_jure_liege = 0 }
+			k_maghreb = { de_jure_liege = 0 }
 			k_maikelebahr = { de_jure_liege = 0 }
 			k_mali = { de_jure_liege = 0 }
 			k_moldau = { de_jure_liege = 0 }

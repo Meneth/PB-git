@@ -1,5 +1,20 @@
 3.4.6
 	Reduced the size of Robert of Apulia's starting forces somewhat
+	(No Ahistorical Empires) Fixed Adal and Maghreb being part of dejure empires in SWMH
+	Battlefield duels now work properly again: reverted the integrated New Duel Engine to its previous version (pre-3.4.1 PB). Kept the new-style combat trait icons originally from AnaxXiphos
+	Until the code can be analysed in-depth and cleared for take-off, "Hold a Grand Tournament" is now disabled (related to NDE revert) due primarily to potentially critical side effects with the do_not_disturb character flag
+	Lowered warscore from battles by 1/6th
+	The slowed down spread of culture in the HRE and Byzantine Empire now specifically target German/Greek culture
+	Slowed down the spread of German culture in the decentralized HRE further (3 times as long as normal, up from 2.5)
+	Made the AI more likely to use the holy war CB if it meets the requirements
+	(PB+SWMH) Fixed a few Iberian events not firing when they should
+	Increased the penalties for marrying below your rank to 125 (from 100)
+	Made the AI more hesitant to marrying below their rank
+	Fix to long-time, heavily misleading success effect tooltip for Imperial Reconquest CB
+	Fix and clarification of success effect tooltip for Invasion CB
+	Special invasion CBs which use vanilla BATTLE_WARSCORE_WORTH as a special-case for improved stability of plausible outcomes updated to reflect the -16.7% reduction in global BATTLE_WARSCORE_WORTH
+	Much more complete success effect tooltip for Viking Invasion CB
+	Duchy Adventurers now gain any occupied target titles upon their [rare] success, consistent with the rest of the CB's mechanics, tooltips, and purpose
 
 3.4.5
 	Added a set of tiered conquest checks for the Imperial Reconquest CB under the "Is war possible?" menu. Now works for both PB and PB+SWMH (only the latter in the previous release)

@@ -2647,16 +2647,21 @@ invasion = {
 	can_ask_to_join_war = no
 	apply_short_occ_mod = no # Do not apply the 'recently_conquered' modifier to Holdings
 	
-	# PB doubles BATTLE_WARSCORE_MULT, so this reduces it to Vanilla levels for Invasion
+	# PB increases BATTLE_WARSCORE_MULT, so this reduces it to Vanilla levels for Invasion
 	# so that, e.g., an AI William the Conqueror at Stamford Bridge start will have enough
 	# time / be required to occupy a few provinces (thus gaining a more stable demesne in
 	# England upon success) before the warscore reaches 100% and the war ends early.
-	# This is also consistent with the concept of an invasion; actual occupation of something
-	# is generally required before the foreign kingdom will surrender, even if they lose it
-	# all at, e.g., the Battle of Hastings and have little hope. The PB Stamford Bridge start
-	# should now be much more stable in favoring a historical outcome.
+	#
+	# This is also consistent with the concept of an invasion; partial occupation is at least
+	# necessary as follow-up to decisive battles before an entire kingdom is going to swear
+	# fealty to a foreign conqueror. If the conqueror simply walks away from a couple decisive
+	# battles victorious and sues for peace without establishing the legitimacy of his legal
+	# claim to a de facto kingdom or implicit claim to a de jure kingdom by right of conquest
+	# by proceeding to immediately sue for peace without any de facto occupation is entirely
+	# implausible. The PB Stamford Bridge start should now be much more stable in favoring a
+	# plausible outcome, ceteris paribus.
 	
-	battle_warscore_mult = 0.5
+	battle_warscore_mult = 0.6
 	
 	can_use_title = {
 		OR = {
@@ -2721,7 +2726,7 @@ invasion = {
 
 	on_success_title = {
 		custom_tooltip = {
-			text = tribal_invasion_succ_tip
+			text = cb_invasion_succ_ctt
 		
 			hidden_tooltip = {
 				usurp_title_plus_barony_if_unlanded = ROOT
@@ -2841,19 +2846,11 @@ tribal_invasion = {
 	can_ask_to_join_war = yes
 	check_de_jure_tier = KING # this scans all de jure kingdoms for the counties which are held by or vassals(or below) of selected character. Only valid if is_permanent = yes
 	
-	# The following comment is adapted from the 'invasion' CB, but the same logic applies
-	# to all invasion CBs which gain all occupied titles, including this one:
+	# For invasion CBs which rely upon gaining all occupied titles, PB uses the
+	# vanilla BATTLE_WARSCORE_WORTH value.  A comment detailing the reasoning
+	# behind this can be found in the basic 'invasion' CB.
 	
-	# PB doubles BATTLE_WARSCORE_MULT, so this reduces it to Vanilla levels for Invasion
-	# so that, e.g., an AI William the Conqueror at Stamford Bridge start will have enough
-	# time / be required to occupy a few provinces (thus gaining a more stable demesne in
-	# England upon success) before the warscore reaches 100% and the war ends early.
-	# This is also consistent with the concept of an invasion; actual occupation of something
-	# is generally required before the foreign kingdom will surrender, even if they lose it
-	# all at, e.g., the Battle of Hastings and have little hope. The PB Stamford Bridge start
-	# should now be much more stable in favoring a historical outcome.
-	
-	battle_warscore_mult = 0.5
+	battle_warscore_mult = 0.6
 	
 	can_use_gui = {
 		FROM = {
@@ -4156,9 +4153,9 @@ religious = {
 	
 	# ai importance placed on this CB: scope is the targeted title, ROOT is the attacking character, FROM is the defending character
 	ai_will_do = { 
-		factor = 1
+		factor = 2
 		modifier = {
-			factor = 0.1
+			factor = 0.05
 			NOT = { de_jure_liege_or_above = k_france }
 			NOT = { de_jure_liege_or_above = k_aquitaine }
 			OR = {
@@ -4167,7 +4164,7 @@ religious = {
 			}
 		}
 		modifier = {
-			factor = 0.1
+			factor = 0.05
 			NOT = { de_jure_liege_or_above = k_pomerania }
 			NOT = { de_jure_liege_or_above = e_hre }
 			OR = {
@@ -4176,7 +4173,7 @@ religious = {
 			}
 		}
 		modifier = {
-			factor = 0.1
+			factor = 0.05
 			NOT = { de_jure_liege_or_above = k_armenia }
 			NOT = { de_jure_liege_or_above = k_cilicia }
 			NOT = { de_jure_liege_or_above = k_rum }

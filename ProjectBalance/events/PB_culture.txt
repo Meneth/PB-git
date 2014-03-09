@@ -168,12 +168,12 @@ province_event = {
 		}
 		#Decentralized HRE
 		modifier = {
-			factor = 2.5
+			factor = 3
 			NOT = { culture = pommeranian }
 			NOT = { culture_group = baltic }
 			owner = {
+				culture = german
 				top_liege = {
-					culture = PREV
 					primary_title = { has_law = hre_law_0 }
 				}
 			}
@@ -182,8 +182,8 @@ province_event = {
 		modifier = {
 			factor = 3
 			owner = {
+				culture = greek
 				top_liege = {
-					culture = PREV
 					primary_title = { has_law = themes_0 }
 				}
 			}
@@ -192,9 +192,9 @@ province_event = {
 		modifier = {
 			factor = 2
 			owner = {
+				culture = greek
 				top_liege = {
-					culture = PREV
-					primary_title = { has_law = themes_1 }
+					primary_title = { has_law = themes_0 }
 				}
 			}
 		}
@@ -311,12 +311,12 @@ province_event = {
 		}
 		#Decentralized HRE
 		modifier = {
-			factor = 2.5
+			factor = 3
 			NOT = { culture = pommeranian }
 			NOT = { culture_group = baltic }
 			owner = {
+				culture = german
 				top_liege = {
-					culture = PREV
 					primary_title = { has_law = hre_law_0 }
 				}
 			}
@@ -325,8 +325,8 @@ province_event = {
 		modifier = {
 			factor = 3
 			owner = {
+				culture = greek
 				top_liege = {
-					culture = PREV
 					primary_title = { has_law = themes_0 }
 				}
 			}
@@ -335,9 +335,9 @@ province_event = {
 		modifier = {
 			factor = 2
 			owner = {
+				culture = greek
 				top_liege = {
-					culture = PREV
-					primary_title = { has_law = themes_1 }
+					primary_title = { has_law = themes_0 }
 				}
 			}
 		}
