@@ -15,6 +15,7 @@
 	Special invasion CBs which use vanilla BATTLE_WARSCORE_WORTH as a special-case for improved stability of plausible outcomes updated to reflect the -16.7% reduction in global BATTLE_WARSCORE_WORTH
 	Much more complete success effect tooltip for Viking Invasion CB
 	Duchy Adventurers now gain any occupied target titles upon their [rare] success, consistent with the rest of the CB's mechanics, tooltips, and purpose
+	Imperial Reconquest CB now also vassalizes or takes under the target duchy any bishropics that are de facto vassals of the Papacy; counteracts a side-effect of an SoA event which transfers a number of AI Catholic rulers' bishops' vassalage directly to the Pope, preventing potential decades of repeated wars with the Papacy for one bishropic at a time
 
 3.4.5
 	Added a set of tiered conquest checks for the Imperial Reconquest CB under the "Is war possible?" menu. Now works for both PB and PB+SWMH (only the latter in the previous release)

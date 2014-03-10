@@ -237,6 +237,37 @@ imperial_reconquest = {
 						enemy = FROM
 					}
 				}
+				
+				# Special case effect to counteract the new patch 2.0 event in which the Pope [frequently] asks
+				# rulers to prove their loyalty to the Catholic Church by transferring a random vassal bishop
+				# of the ruler to the Pope:
+				#
+				# Prevents decades of stalled Imperial Reconquest progress due only to waiting-out truces between
+				# wars against the Papacy using [other_]dejure_barony_claim to fight for a single Papal bishropic
+				# at a time when, in some areas, there are often multiple such bishropics per duchy, yet the duchy's
+				# already been conquered. Totally Lame.
+				#
+				# Instead, we simply turn the same [intricate] vassalize_or_take_under_title logic upon the Pope,
+				# as if ROOT had been at implicit, simultaneous war with the Papacy for the the de jure target duchy
+				# as well (essentially the union of enemy = FROM and enemy = POPE in one vassalize_or_take_under).
+				#
+				# This is the cleanest way to emulate the Lame (for IR) event which transferred bishops' vassalage
+				# to the Pope never having occurred in the first place, but it has one caveat: if for some reason
+				# the Papacy is overlord of a castle or a city in the de jure target duchy (not a bishropic), those
+				# titles would be vassalized too.  However, this essentially cannot happen unless FROM is actually
+				# the Pope himself, in which case we already did the right thing, and this step will have no effect. 
+			
+				k_papal_state = {
+					holder_scope = {
+						ROOT = {
+							vassalize_or_take_under_title = {
+								title = PREVPREVPREV #Target duchy
+								enemy = PREV #Pope
+								is_crusade = yes #Even if the title holder is not participating in the war...
+							}
+						}
+					}
+				}
 			}
 		}
 		if = {
