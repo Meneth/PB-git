@@ -125,12 +125,6 @@ categories =  {
 
 		supply_limit = 2
 		bottleneck_chance = 5
-	}	
-	
-	suez_ocean = {
-		movement_cost = 60.0
-		is_water = yes
-		color = { 12 12 12 }
 	}
 }
 
@@ -149,7 +143,7 @@ text_9	= { type = mountain color = { 	9	 } priority = 	9	 }
 text_10	= { type = mountain color = { 	10	 } priority = 	10	 }
 text_11	= { type = mountain color = { 	11	 } priority = 	11	 }
 
-text_12	= { type = suez_ocean color = { 	12	 } priority = 	12	 }
+text_12	= { type = coastal_desert color = { 	12	 } priority = 	12	 }
 text_13	= { type = coastal_desert color = { 	13	 } priority = 	13	 }
 text_14	= { type = coastal_desert color = { 	14	 } priority = 	14	 }
 text_15	= { type = coastal_desert color = { 	15	 } priority = 	15	 }
