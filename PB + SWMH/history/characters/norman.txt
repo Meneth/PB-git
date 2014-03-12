@@ -1167,7 +1167,8 @@
 				earmark = williams_invasion_fleet
 				troops =
 				{
-					galleys = { 70 70 }
+					# Rebalanced starting fleet to match unsplittable regiment sizes
+					galleys = { 115 115 }
 				}
 			}
 		}
