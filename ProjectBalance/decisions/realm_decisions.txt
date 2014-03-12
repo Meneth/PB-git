@@ -335,7 +335,7 @@ decisions = {
 		}
 		effect = {
 			set_global_flag = rome_restored
-			narrative_event = { id = meneth.202 tooltip = EVTTOOLTIPLoR.20 }
+			narrative_event = { id = pb_various.2 tooltip = EVTTOOLTIPLoR.20 }
 		}
 		ai_will_do = {
 			factor = 1
