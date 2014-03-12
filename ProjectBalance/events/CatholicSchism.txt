@@ -1,11 +1,10 @@
 namespace = CathSchism
 
 narrative_event = {
-	id=CathSchism.100
+	id = CathSchism.100
 	title = EVTNAMECathSchism.100
 	desc = EVTDESCCathSchism.100
-
-	picture = GFX_evt_icon
+	picture = GFX_evt_cathedral
 	
 	is_triggered_only = yes
 	
@@ -30,8 +29,7 @@ narrative_event = {
 	id = CathSchism.101
 	title = EVTNAMECathSchism.100
 	desc = EVTDESCCathSchism.100
-	
-	picture = GFX_evt_icon
+	picture = GFX_evt_cathedral
 	
 	is_triggered_only = yes
 	
@@ -57,17 +55,21 @@ narrative_event = {
 character_event = {
 	id = CathScism.102
 	desc = EVTDESCCathSchism.102
-	picture = GFX_evt_bishop_byzantine
+	picture = GFX_evt_bishop
 	
 	trigger = {
 		has_dlc = "Legacy of Rome"
 		religion = catholic
 		OR = {
-				has_landed_title = k_papal_state
-				num_of_emperor_titles = 1
-			}
+			has_landed_title = k_papal_state
+			num_of_emperor_titles = 1
+		}
 		NOT = { has_global_flag = pat_antioch_catholic }
 		completely_controls = c_antiocheia
+	}
+	
+	mean_time_to_happen = {
+		days = 1
 	}
 	
 	option = {
@@ -81,17 +83,21 @@ character_event = {
 character_event = {
 	id = CathScism.103
 	desc = EVTDESCCathSchism.103
-	picture = GFX_evt_bishop_byzantine
+	picture = GFX_evt_bishop
 	
 	trigger = {
 		has_dlc = "Legacy of Rome"
 		religion = catholic
 		OR = {
-				has_landed_title = k_papal_state
-				num_of_emperor_titles = 1
-			}
+			has_landed_title = k_papal_state
+			num_of_emperor_titles = 1
+		}
 		NOT = { has_global_flag = pat_jerusalem_catholic }
 		completely_controls = c_jerusalem
+	}
+	
+	mean_time_to_happen = {
+		days = 1
 	}
 	
 	option = {
@@ -105,17 +111,21 @@ character_event = {
 character_event = {
 	id = CathScism.104
 	desc = EVTDESCCathSchism.104
-	picture = GFX_evt_bishop_byzantine
+	picture = GFX_evt_bishop
 	
 	trigger = {
 		has_dlc = "Legacy of Rome"
 		religion = catholic
 		OR = {
-				has_landed_title = k_papal_state
-				num_of_emperor_titles = 1
-			}
+			has_landed_title = k_papal_state
+			num_of_emperor_titles = 1
+		}
 		NOT = { has_global_flag = pat_alexandria_catholic }
 		completely_controls = c_alexandria
+	}
+	
+	mean_time_to_happen = {
+		days = 1
 	}
 	
 	option = {
@@ -129,17 +139,21 @@ character_event = {
 character_event = {
 	id = CathScism.105
 	desc = EVTDESCCathSchism.105
-	picture = GFX_evt_bishop_byzantine
+	picture = GFX_evt_bishop
 	
 	trigger = {
 		has_dlc = "Legacy of Rome"
 		religion = catholic
 		OR = {
-				has_landed_title = k_papal_state
-				num_of_emperor_titles = 1
-			}
+			has_landed_title = k_papal_state
+			num_of_emperor_titles = 1
+		}
 		NOT = { has_global_flag = pat_byzantion_catholic }
 		completely_controls = c_byzantion
+	}
+	
+	mean_time_to_happen = {
+		days = 1
 	}
 	
 	option = {
