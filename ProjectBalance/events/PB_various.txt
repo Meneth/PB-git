@@ -804,6 +804,28 @@ character_event = {
 	}
 }
 
+
+# Character flag cleanup for clearly-errant do_not_disturb cases
+character_event = {
+	id = pb_various.14
+	desc = OK
+	hide_window = yes
+	
+	only_rulers = yes
+	
+	trigger = {
+		has_character_flag = do_not_disturb
+		had_character_flag = { flag = do_not_disturb days = 60 }
+	}
+	
+	immediate = {
+		clr_character_flag = do_not_disturb
+	}
+	
+	option = { name = OK }
+}
+
+
 #Interest on loans [was meneth.203]
 character_event = {
 	id = pb_various.15

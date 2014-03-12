@@ -1,5 +1,6 @@
 3.4.7 [BETA]
 	Base chance of gaining combat trait advancement XP increased by 25% (return to original weight)
+	Global cleanup event added to auto-remove do_not_disturb flag on characters that have had it set, due to some errant event chain logic (seemingly vanilla at present) that never clears it after setting it, for at least 60 consecutive days
 
 3.4.6
 	Reduced the size of Robert of Apulia's starting forces somewhat
