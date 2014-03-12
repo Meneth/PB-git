@@ -1,3 +1,6 @@
+3.4.7 [BETA]
+	Base chance of gaining combat trait advancement XP increased by 25% (return to original weight)
+
 3.4.6
 	Reduced the size of Robert of Apulia's starting forces somewhat
 	(No Ahistorical Empires) Fixed Adal and Maghreb being part of dejure empires in SWMH
