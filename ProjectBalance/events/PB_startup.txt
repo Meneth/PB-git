@@ -60,14 +60,6 @@ narrative_event = {
 		884 = { religion = jewish }
 		885 = { religion = miaphysite }
 		919 = { religion = sunni }
-		948 = { religion = miaphysite }
-		949 = { religion = miaphysite }
-		950 = { religion = miaphysite }
-		951 = { religion = miaphysite }
-		952 = { religion = miaphysite }
-		955 = { religion = pagan }
-		956 = { religion = miaphysite }
-		957 = { religion = miaphysite }
 		
 		# Miaphysites in Asia Minor prior to the Alexiad start
 		if = {

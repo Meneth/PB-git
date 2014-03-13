@@ -694,7 +694,7 @@ e_spain = {
 			}
 		}
 	}
-	#Duchy of Galicia moved here. New province in Galicia, Lugo
+	#Duchy of Galicia moved here
 	k_asturias = {
 		color={ 233 158 51 }
 		color2={ 255 255 255 }
@@ -937,52 +937,47 @@ e_spain = {
 			
 			capital = 156 # Coruna
 			
-			c_lugo = {
-				color = { 243 158 51 }
-				color2={ 255 255 255 }
-				
-				b_lugo = {
-				}
-				b_viveiro = {
-				}
-				b_monforte = {
-				}
-				b_burela = {
-				}
-				b_mondonedo = {
-				}
-				b_villalba = {
-				}
-				b_triacastela = {
-				}
-			}
 			c_coruna = {
 				color = { 183 118 51 }
 				color2={ 255 255 255 }
 				
 				b_corunna = {
 				}
-				b_santiago = {
-					holy_site = catholic
+				b_mondonedo = {
 				}
-				b_vedra = {
-				}
-				b_estrada = {
+				b_lugo = {
 				}
 				b_ferrol = {
 				}
+				b_villalba = {
+				}
+				b_viveiro = {
+				}
+				b_burela = {
+				}
+				b_triacastela = {
+				}
 			}
-			c_pontevedra = {
-				color = { 220 160 30 }
-				color2 = { 255 255 255 }
+			c_santiago = {
+				color = { 243 158 51}
+				color2={ 255 255 255 }
 				
+				b_santiago = {
+					holy_site = catholic
+				}
+				b_vigo = {
+				}
 				b_pontevedra = {
 				}
-				b_ribadavia = {
+				b_tuy = {
+				}
+				b_ourense = {
 				}
 				b_verin = {
 				}
-				b_ourense = {
+				b_padron = {
+				}
+				b_vilagarcia = {
 				}
 			}
 		}

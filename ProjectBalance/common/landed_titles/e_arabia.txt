@@ -7,7 +7,7 @@ e_arabia = {
 	culture = bedouin_arabic
 	short_name = yes
 	
-	#Algerian provinces moved into own kingdom. New west African provinces
+	#Algerian provinces moved into own kingdom
 	k_mauretania = {
 		color={ 58 188 41 }
 		color2={ 255 255 255 }
@@ -295,42 +295,18 @@ e_arabia = {
 				b_boudnib = {
 				}
 			}
-		}
-		#ALL THE WAY TO TIMBUKTU MOD - WESTERN SAHARA
-		d_laayoune = { #North
-			color={ 106 198 75 }
-			color2={ 255 255 255 }
-			c_el_aaiun = { #NorthV
-				color={ 90 218 75 }
+			c_sijilmasa = {
+				color={ 72 214 60 }
 				color2={ 255 255 255 }
-				b_el_aaiun = {
-				}
-				b_el_ruin = {
-				}
-			}
-			c_boujdour = { #SouthV
-				color={ 71 168 15 }
-				color2={ 255 255 255 }
-				b_boujdour = {
-				}
-				b_najdour = {
-				}
-			}
-			c_dakhla = { #NorthV
-				color={ 81 188 35 }
-				color2={ 255 255 255 }
-				b_dakhla = {
-				}
-				b_aargub = {
-				}
-			}
-			c_bir_gandlus = { #SouthV
-				color={ 121 218 5 }
-				color2={ 255 255 255 }
-				b_bir_gandlus = {
-				}
-				b_diaca = {
-				}
+			
+				b_sijilmasa = {}
+				b_merzouga = {}
+				b_tanamouste= {}
+				b_ertoud = {}
+				b_merzane = {}
+				b_hannabou = {}
+				b_tadaout = {}
+				b_tisserdmine = {}
 			}
 		}
 	}
