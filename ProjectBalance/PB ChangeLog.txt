@@ -1,4 +1,5 @@
-3.4.7 [BETA]
+3.5.0
+	Dropped all provinces PB adds. The map will from now on have the exact same provinces as vanilla, though borders may be tweaked. Breaks non-SWMH saves
 	Base chance of gaining combat trait advancement XP increased by 25% (return to original weight)
 	Global cleanup event added to auto-remove do_not_disturb flag on characters that have had it set, due to some errant event chain logic (seemingly vanilla at present) that never clears it after setting it, for at least 60 consecutive days
 	Improved flavor for Catholics mending the schism [AnaxXiphos]
