@@ -18,3 +18,4 @@ RETINUE_EXPL_DEL;Your Retinue is a standing army consisting of §Y250-man§! regim
 gluttonous_death;of gluttony;;;;;;;;;;;;;x
 is_not_allied;Target is not an ally\n;;;;;;;;;;;;;x
 religious_enemy;Target is a religious enemy\n;;;;;;;;;;;;;x
+baqt_active;Unaffected by Baqt;;;;;;;;;;;;;x
