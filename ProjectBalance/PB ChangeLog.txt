@@ -1,7 +1,7 @@
 3.5.1 [BETA]
 	Fixed the duchy of Aktobe being a vassal of Cumania rather than the Kipchaks
 	(PB+SWMH) Eased the requirements for the events for Castille expanding dejure. Now they'll expand dejure into Toledo once they control all their starting dejure territory, and into La Mancha once they completely control Toledo. Previously complete control of Toledo/La Mancha was required for each event to fire
-	Made the holy war requirements clearer by simplifying how the Baqt is represented in the requirements
+	Made the holy war requirements clearer by simplifying how the requirements are displayed. The requirements remain the same, but it should now be more obvious what's preventing holy war
 
 3.5.0
 	Dropped all provinces PB adds. The map will from now on have the exact same provinces as vanilla, though borders may be tweaked. Breaks non-SWMH saves

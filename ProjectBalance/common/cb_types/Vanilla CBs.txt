@@ -3608,29 +3608,17 @@ religious = {
 				has_law = revokation_2
 			}
 			OR = {
-				NOT = { trait = content }
+				AND = {
+					NOT = { trait = content }
+					NOT = { trait = craven }
+					NOT = { trait = stressed }
+				}
 				trait = brave
-				trait = wroth
-				trait = zealous
-				trait = lunatic
-				trait = possessed
-			}
-			OR = {
-				NOT = { trait = craven }
 				trait = wroth
 				trait = ambitious
 				trait = zealous
 				trait = lunatic
 				trait = possessed
-			}
-			OR = {
-				NOT = { trait = stressed }
-				trait = wroth
-				trait = ambitious
-				trait = brave
-				trait = lunatic
-				trait = possessed
-				trait = zealous
 			}
 			OR = {
 				trait = lunatic
@@ -3687,7 +3675,6 @@ religious = {
 								}
 							}
 						}
-						has_global_flag = rapid_conquest
 						has_global_flag = violated_baqt
 					}
 				}
@@ -7854,29 +7841,17 @@ muslim_county_conquest = {
 			}
 			NOT = { FROM = { religion_group = pagan_group } }
 			OR = {
-				NOT = { trait = content }
+				AND = {
+					NOT = { trait = content }
+					NOT = { trait = craven }
+					NOT = { trait = stressed }
+				}
 				trait = brave
-				trait = wroth
-				trait = zealous
-				trait = lunatic
-				trait = possessed
-			}
-			OR = {
-				NOT = { trait = craven }
 				trait = wroth
 				trait = ambitious
 				trait = zealous
 				trait = lunatic
 				trait = possessed
-			}
-			OR = {
-				NOT = { trait = stressed }
-				trait = wroth
-				trait = ambitious
-				trait = brave
-				trait = lunatic
-				trait = possessed
-				trait = zealous
 			}
 			OR = {
 				trait = lunatic
@@ -8321,17 +8296,22 @@ muslim_invasion = {
 		#Muslims cannot invade pagans with this CB; zoroastrians and jews (and hindus) are fine
 		FROM = { NOT = { religion_group = pagan_group } }
 		
-		OR = { #Enforce the Baqt
-			NOT = {
-				FROM = {
-					OR = {
-						religion = miaphysite
-						religion = orthodox
+		custom_toolip = {
+			text = baqt_active
+			hidden_tooltip = {
+				OR = { #Enforce the Baqt
+					NOT = {
+						FROM = {
+							OR = {
+								religion = miaphysite
+								religion = orthodox
+							}
+							culture_group = east_african
+						}
 					}
-					culture_group = east_african
+					has_global_flag = violated_baqt
 				}
 			}
-			has_global_flag = violated_baqt
 		}
 		OR = { #Avoid mongol-on-mongol crime before 1350
 			NOT = {

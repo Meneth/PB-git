@@ -22,6 +22,7 @@ narrative_event = {
 		set_global_flag = shattered_balance
 		set_global_flag = theme_system_reformed
 		set_global_flag = theme_system_reformed_2
+		set_global_flag = violated_baqt
 		any_independent_ruler = {
 			limit = {
 				is_merchant_republic = no
