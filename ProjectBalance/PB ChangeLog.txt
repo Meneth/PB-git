@@ -1,3 +1,6 @@
+3.5.1 [BETA]
+	Fixed the duchy of Aktobe being a vassal of Cumania rather than the Kipchaks
+
 3.5.0
 	Dropped all provinces PB adds. The map will from now on have the exact same provinces as vanilla, though borders may be tweaked. Breaks non-SWMH saves
 	Base chance of gaining combat trait advancement XP increased by 25% (return to original weight)
