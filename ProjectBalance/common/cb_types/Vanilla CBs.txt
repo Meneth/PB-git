@@ -3222,7 +3222,7 @@ crusade = {
 				NOT = { FROM = { religion_group = pagan_group } }
 			}
 		}
-		custom_toolip = {
+		custom_tooltip = {
 			text = baqt_active
 			hidden_tooltip = {
 				OR = {
@@ -3645,7 +3645,7 @@ religious = {
 				}
 			}
 			piety = 100
-			custom_toolip = {
+			custom_tooltip = {
 				text = baqt_active
 				hidden_tooltip = {
 					OR = {
@@ -7877,7 +7877,7 @@ muslim_county_conquest = {
 					}
 				}
 			}
-			custom_toolip = {
+			custom_tooltip = {
 				text = baqt_active
 				hidden_tooltip = {
 					OR = {
@@ -8296,7 +8296,7 @@ muslim_invasion = {
 		#Muslims cannot invade pagans with this CB; zoroastrians and jews (and hindus) are fine
 		FROM = { NOT = { religion_group = pagan_group } }
 		
-		custom_toolip = {
+		custom_tooltip = {
 			text = baqt_active
 			hidden_tooltip = {
 				OR = { #Enforce the Baqt
