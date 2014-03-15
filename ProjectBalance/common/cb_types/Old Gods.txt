@@ -59,7 +59,7 @@ viking_invasion = {
 	
 	on_success_title = {
 		custom_tooltip = { 
-			text = cb_viking_invasion_ctt
+			text = cb_viking_invasion_succ_ctt
 			hidden_tooltip = {
 				FROM = {
 					random_realm_province = {
