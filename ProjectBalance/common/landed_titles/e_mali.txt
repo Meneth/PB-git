@@ -1,305 +1,235 @@
-#Massively changed from vanilla
+# Allow section changed from vanilla
 e_mali = {
-	color={ 251 133 78 }
-	color2={ 185 48 15 }
+	color={ 138 148 55 }
+	color2={ 255 255 255 }
 	
-	short_name = yes
+	capital = 911 # Timbuktu
 	
-	k_jolof = { #West (Senegal, Gambia)
-		color={ 251 163 38 }
-		color2={ 185 48 15 }
-		muslim = 10 # Crusade target weight
-
-		d_takrur = {#North
-			color={ 251 173 138 }
-			color2={ 155 58 55 }
-			c_morfil = { #West
-				color={ 201 103 58 }
-				color2={ 185 98 15 }
-				b_morfil = {
-				}
-				b_takrur = {
-				}
-			}
-			c_matam = { #East, dubious name
-				color={ 221 163 8 }
-				color2={ 145 68 35 }
-				b_matam = {
-				}
-				b_samba = {
-				}
-				b_bamako = {
-					holy_site = west_african_pagan
-					holy_site = west_african_pagan_reformed
-				}
-			}
-			c_tabacounda = { #east
-				color={ 219 178 93 }
-				color2={ 148 71 36 }
-				b_tabacounda = {
-				}
-				b_batou = {
-				}
-			}
-		}
-		d_jolof = { #Mesopotamish - note, divided into states of much later Jolof Empire
-			color={ 230 140 23 }
-			color2={ 130 75 36 }
-			c_waalo = { #North
-				color={ 190 170 31 }
-				color2={ 110 125 16 }
-				b_ndiangue = {
-				}
-				b_waalo = {
-				}
-			}
-			c_cayor = { #West
-				color={ 198 94 21 }
-				color2={ 160 150 36 }
-				b_mboul = {
-				}
-				b_cayor = {
-				}
-			}
-			c_linguere = { #Northeast
-				color={ 216 103 93 }
-				color2={ 70 105 10 }
-				b_linguere = {
-				}
-				b_nguith = {
-				}
-			}
-			c_saloum = { #Orange
-				color={ 231 193 78 }
-				color2={ 100 65 36 }
-				b_kahone = {
-				}
-				b_saloum = {
-				}
-			}
-			c_baol = { #South
-				color={ 210 172 98 }
-				color2={ 100 16 3 }
-				b_jurbel = {
-				}
-				b_baol = {
-				}
-			}
-			c_gambia = { #Southmost
-				color={ 151 53 8 }
-				color2={ 215 98 95 }
-				b_ziguincha = {
-				}
-				b_kounkane = {
-				}
-			}
-		}
-	}
-	k_ghana = { #central
-		color={ 199 103 13 }
-		color2={ 65 130 36 }
-		muslim = 10 # Crusade target weight
-		d_susu = { #East
-			color={ 213 94 26 }
-			color2={ 68 164 51 }
-			c_taghaza = { #West
-				color={ 186 120 54 }
-				color2={ 50 75 10 }
-				b_taghaza = {
-				}
-				b_tassakant = {
-				}				
-			}
-			c_kirina = { #East
-				color={ 161 90 21 }
-				color2={ 50 75 10 }
-				b_kirina = {
-				}
-				b_nanga = {
-				}
-			}
-			c_araouane = { #South
-				color={ 189 104 12 }
-				color2={ 30 85 10 }
-				b_araouane = {
-				}
-				b_kalandjabi = {
-				}
-			}
-		}
-		d_diafanu = { #West
-				color={ 146 106 54 }
-				color2={ 51 66 10 }
-			c_aoudagast = { #West
-				color={ 192 155 83 }
-				color2={ 54 75 23 }
-				b_aoudagast = {
-				}
-				b_guellaba = {
-				}
-			}
-			c_oualata = { #East
-				color={ 162 118 74 }
-				color2={ 50 72 32 }
-				b_oualata = {
-				}
-				b_kourouma = {
-				}
-			}
-			c_koumbi_saleh = { #South
-				color={ 156 90 64 }
-				color2={ 50 75 10 }
-				b_koumbi_saleh = {
-				}
-				b_gharba = {
-					holy_site = pagan
-				}
-				b_magali = {
-				}
-			}
-		}
-		d_jeno = { #Southeast
-			color={ 198 165 24 }
-			color2={ 61 75 10 }
-			c_djenne = {
-				color={ 162 136 54 }
-				color2={ 50 75 10 }
-				b_djenne = { #North
-				}
-				b_koyende = {
-				}
-				b_sankore = {
-				}
-				b_algasba = {
-				}
-			}
-			c_sama = {
-				color={ 175 90 54 }
-				color2={ 50 75 10 }
-				b_sama = { #South
-				}
-				b_yoboukaina = {
-				}
-			}
-			c_sikasso = { #East
-				color={ 179 80 54 }
-				color2={ 50 75 10 }
-				b_sikasso = {
-				}
-				b_bougoula = {
-				}
-			}
-		}
-		d_kangaba = {
-				color={ 198 159 54 }
-				color2={ 50 75 10 }
-			c_yaresna = { #North
-				color={ 186 176 66 }
-				color2={ 50 75 10 }
-				b_yaresna = {
-				}
-				b_nirouana = {
-				}
-			}
-			c_ghiryu = { #South
-				color={ 215 186 54 }
-				color2={ 50 75 10 }
-				b_ghiryu = {
-				}
-				b_kampiasso = {
-				}
-			}
-			c_niani = { #West
-				color={ 216 115 15 }
-				color2={ 50 75 10 }
-				b_niani = {
-				}
-				b_misirikoro = {
-				}
-				b_zerila = {
-				}
-				b_banankoni = {
-				}
-			}
-		}
-	}
-	k_songhai = {#Northeast
-		color={ 186 120 74 }
-		color2={ 75 50 10 }
-		muslim = 10 # Crusade target weight
-		d_songhai = {
-			color={ 136 90 74 }
-			color2={ 75 50 10 }
-			c_gao = { #East
-				color={ 190 120 110 }
-				color2={ 50 75 10 }
-				b_gao = {
-				}
-				b_tadmekka = {
-				}
-			}
-			c_timbuktu = { #West
-				color={ 90 60 54 }
-				color2={ 50 75 10 }
-				b_timbuktu = {
-				}
-				b_sarekeina = {
-				}
-				b_kabara = {
-				}
+	culture = manden
+	
+	west_african_pagan_reformed = 500
+	
+	k_mali = {
+		color={ 158 188 61 }
+		color2={ 255 255 255 }
+		
+		capital = 911 # Timbuktu
+		
+		culture = manden
+	
+		d_timbuktu = {
+			color={ 130 180 61 }
+			color2={ 255 255 255 }
+	
+			capital = 911 # Timbuktu			
+		
+			c_timbuktu = {
+				color={ 130 180 61 }
+				color2={ 255 255 255 }
+			
+				b_timbuktu = {}
+				b_alafia = {}
 				b_salam = {
 					holy_site = west_african_pagan
 					holy_site = west_african_pagan_reformed			
 				}
+				b_lafia = {}
+				b_ber = {}
+				b_boureminaly = {}
+				b_toya = {}
+				b_aglal = {}
+			}
+			c_oualata = {
+				color={ 130 180 61 }
+				color2={ 255 255 255 }
+			
+				b_oualata = {}
+				b_tiguiguil = {}
+				b_neiguiat = {}
+				b_konou = {}
+				b_birnsara = {}
+				b_tizert = {}
+				b_tarhalet = {}
+				b_fassekra = {}
+			}
+			c_araouane = {
+				color={ 130 180 61 }
+				color2={ 255 255 255 }
+			
+				b_araouane = {}
+				b_tessalit = {}
+				b_aguelhok = {}
+				b_abalessa = {}
+				b_tinzaouten = {}
+				b_guezzam = {}
+				b_tamanrasset = {}
+				b_tazrouk = {}
+			}
+			c_taghaza = {
+				color={ 130 180 61 }
+				color2={ 255 255 255 }
+			
+				b_taghaza = {}
+				b_kerzaz = {}
+				b_metarta = {}
+				b_reggane = {}
+				b_adrar = {}
+				b_aougrout = {}
+				b_charouine = {}
+				b_alouarta = {}
 			}
 		}
-		d_wagadou = { #Modern-day Burkina Faso (included in Songha to make the kingdom less small)
-			color={ 112 75 13 }
-			color2={ 50 75 10 }
-			c_wagadou = { #North
-				color={ 148 92 13 }
-				color2={ 50 75 10 }
-				b_wagadou = {
+		
+		d_ghana = {
+			color={ 90 130 30 }
+			color2={ 255 255 255 }
+	
+			capital = 913 # Ghana
+		
+			c_ghana = {
+				color={ 130 180 61 }
+				color2={ 255 255 255 }
+				
+				b_el_ghaba = {}
+				b_koumbi_saleh = {}
+				b_silla = {
+					holy_site = pagan
 				}
-				b_kakondji = {
-				}
+				b_singhanah = {}
+				b_samakanda = {}
+				b_ras_elma = {}
+				b_tirka = {}
+				b_kughah = {}
 			}
-			c_tenkodogo = { #East
-				color={ 222 151 54 }
-				color2={ 50 75 10 }
-				b_tenkodogo = {
-				}
-				b_torhayt = {
-				}
+			c_aoudaghost = {
+				color={ 130 180 61 }
+				color2={ 255 255 255 }
+			
+				b_aoudaghost = {}
+				b_tichitt  = {}
+				b_moudjeria  = {}
+				b_ksarelbarka = {}
+				
 			}
-			c_koudougu = { #West
-				color={ 249 93 14 }
-				color2={ 50 75 10 }
-				b_koudougu = {
+			c_ouadane = {
+				color={ 130 180 61 }
+				color2={ 255 255 255 }
+			
+				b_ouadane = {}
+				b_wadan = {}
+				b_azuggi = {}
+				b_ksaralkiali = {}
+			}
+			c_idjil = {
+				color={ 130 180 61 }
+				color2={ 255 255 255 }
+			
+				b_idjil = {}
+				b_zouerat = {}
+				b_tazadit = {}
+				b_rouessa = {}
+				b_fderick = {}
+			}
+		}
+		
+		d_mali = {
+			color={ 80 120 70 }
+			color2={ 255 255 255 }
+	
+			capital = 925 # Mali
+		
+			c_mali = {
+				color={ 130 180 61 }
+				color2={ 255 255 255 }
+				
+				b_boure = {}
+				b_niani = {}
+				b_bamako = {
+					holy_site = west_african_pagan
+					holy_site = west_african_pagan_reformed
 				}
-				b_batanho = {
-				}
+				b_safo = {}
+				b_baguineda = {}
+				b_dialakoro = {}
+				b_bougouni = {}
+				b_soussa = {}
+			}
+			c_bambuk = {
+				color={ 130 180 61 }
+				color2={ 255 255 255 }
+			
+				b_bambuk = {}
+				b_kiffa = {}
+				b_kankossa = {}
+				b_boumdeid = {}
+				b_guerou = {}
+				b_aftout = {}
+			}
+			c_djenne = {
+				color={ 130 180 61 }
+				color2={ 255 255 255 }
+			
+				b_djenne = {}
+				b_macina = {}
+				b_fakala = {}
+				b_kewa = {}
+				b_ouroali = {}
+				b_pondori = {}
+				b_femaye = {}
+				b_derary = {}
+			}
+			c_gurma = {
+				color={ 130 180 61 }
+				color2={ 255 255 255 }
+				
+				b_gurma = {}
+				b_zorgho = {}
+				b_hounde = {}
+			}
+		}
+		d_songhay = {
+			color={ 80 120 70 }
+			color2={ 255 255 255 }
+	
+			capital = 914 # Gao
+		
+			c_gao = {
+				color={ 130 180 61 }
+				color2={ 255 255 255 }
+				
+				b_gao = {}
+				b_sarnah = {}
+				b_gaosaney = {}
+				b_bourem = {}
+				b_ansongo = {}
+				b_menaka = {}
+				b_gabero = {}
+				b_anchawadi = {}
+			}
+			c_tadmekka = {
+				color={ 130 180 61 }
+				color2={ 255 255 255 }
+			
+				b_tadmekka = {}
+				b_agades = {}
+				b_takedda = {}
+				b_essako = {}
+				b_kidal = {}
+			}
+			c_zarma = {
+				color={ 130 180 61 }
+				color2={ 255 255 255 }
+				b_bura = {}
+				b_ouallam = {}
+				b_tera = {}
 			}
 		}
 	}
 	
 	allow = {
 		culture_group = west_african
-		OR = {
-			has_landed_title = k_jolof
-			completely_controls = k_jolof
-			k_jolof = { is_titular = yes }
-		}
-		OR = {
-			has_landed_title = k_ghana
-			completely_controls = k_ghana
-			k_ghana = { is_titular = yes }
-		}
-		OR = {
-			has_landed_title = k_songhai
-			completely_controls = k_songhai
-			k_songhai = { is_titular = yes }
-		}
+		has_landed_title = k_mali
+		completely_controls = k_mali
 		war = no
 		ruled_years = 5
 		is_adult = yes

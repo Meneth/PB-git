@@ -18,76 +18,29 @@ e_hre = {
 		capital = 80 #Holland
 		
 		allow = {
-			OR = {
-				culture = dutch
-				culture = frisian
+			hidden_tooltip = {
+				OR = {
+					ai = no
+					culture = dutch
+				}
 			}
 		}
 		
 		catholic = 700 # Crusade target weight
+		norse_pagan_reformed = 200 # Crusade target weight
 		
-		d_frisia = {
-			color={ 240 120 20 }
-			color2={ 240 125 10 }
-
-			capital = 84 #Frisia
-
-			culture = frisian
-			c_ostfriesland = {
-				color={ 162 162 162 }
-				color2={ 255 255 255 }
-
-				b_emden = {
-				}
-				b_aurich = {
-				}
-				b_borkum = {
-				}
-				b_norden = {
-				}
-				b_norderney = {
-				}
-				b_leer = {
-				}
-				b_wittmund = {
-				}
-				b_esens = {
-				}
-			}
-			c_frisia = {
-				color={ 160 160 160 }
-				color2={ 255 255 255 }
-
-				b_groningen = {
-				}
-				b_leeuwarden = {
-				}
-				b_stavoren = {
-				}
-				b_bolsward = {
-				}
-				b_franeker = {
-				}
-				b_dokkum = {
-				}
-				b_assen = {
-				}
-				b_harlingen = {
-				}
-			}
-		}
 		d_holland = {
-			color={ 250 150 20 }
-			color2={ 240 140 10 }
-
+			color={ 235 80 30 }
+			color2={ 255 255 255 }
+		
 			capital = 80 #Holland
-
+			
 			culture = dutch
-
+			
 			c_holland = {
 				color={ 168 168 168 }
 				color2={ 255 255 255 }
-
+			
 				b_haarlem = {
 				}
 				b_amsterdam = {
@@ -108,7 +61,7 @@ e_hre = {
 			c_sticht = {
 				color={ 156 156 156 }
 				color2={ 255 255 255 }
-
+			
 				b_woerden = {
 				}
 				b_utrecht = {
@@ -127,9 +80,9 @@ e_hre = {
 				}
 			}
 			c_westfriesland = {
-				color={ 40 40 40 }
+				color={ 65 65 65 }
 				color2={ 255 255 255 }
-
+			
 				b_alkmaar = {
 				}
 				b_hoorn = {
@@ -150,7 +103,7 @@ e_hre = {
 			c_zeeland = {
 				color={ 165 165 165 }
 				color2={ 255 255 255 }
-
+			
 				b_middelburg = {
 				}
 				b_tholen = {
@@ -172,71 +125,96 @@ e_hre = {
 			}
 		}
 		d_gelre = {
-			color={ 250 125 20 }
-			color2={ 240 125 10 }
-
+			color={ 200 100 25 }
+			color2={ 255 255 255 }
+			
 			capital = 83 #Gelre
-
+			
 			culture = dutch
-
+			
 			c_gelre = {
 				color={ 159 159 159 }
 				color2={ 255 255 255 }
-
+			
 				b_nijmegen = {
 				}
-
+				b_zutphen = {
+				}
+				b_deventer = {
+				}
 				b_arnhem = {
+				}
+				b_zwolle = {
+				}
+				b_kampen = {
 				}
 				b_bergh = {
 				}
 				b_bronckhorst = {
 				}
-			}
-			c_zutphen = {
-				color={ 159 159 159 }
+			}			
+			c_ostfriesland = {
+				color={ 162 162 162 }
 				color2={ 255 255 255 }
-
-				b_zutphen = {
+			
+				b_emden = {
 				}
-				b_steenderen = {
+				b_aurich = {
 				}
-				b_eerbeek = {
+				b_borkum = {
 				}
-				b_leuvenheim = {
+				b_norden = {
+				}
+				b_norderney = {
+				}
+				b_leer = {
+				}
+				b_wittmund = {
+				}
+				b_esens = {
 				}
 			}
-			c_oversticht = {
-				color={ 159 160 161 }
+			c_frisia = {
+				color={ 160 160 160 }
 				color2={ 255 255 255 }
-
-				b_deventer = {
+			
+				b_groningen = {
 				}
-				b_kampen = {
+				b_leeuwarden = {
 				}
-				b_zwolle = {
+				b_stavoren = {
 				}
-				b_coevorden = {
+				b_bolsward = {
+				}
+				b_franeker = {
+				}
+				b_dokkum = {
+				}
+				b_assen = {
+				}
+				b_harlingen = {
 				}
 			}
 		}
 		d_brabant = {
-			color={ 250 204 20 }
-			color2={ 240 204 10 }
-
+			color={ 200 100 60 }
+			color2={ 255 255 255 }
+			
 			capital = 117 #Brabant
-
+			
 			culture = dutch
-
+		
 			c_brabant = {
 				color={ 153 153 153 }
 				color2={ 255 255 255 }
-
+			
 				b_leuven = {
 				}
 				b_mechelen = {
 				}
 				b_brussel = {
+				}
+				b_antwerpen = {
 				}
 				b_aarschot = {
 				}
@@ -250,7 +228,7 @@ e_hre = {
 			c_hainaut = {
 				color={ 151 152 153 }
 				color2={ 255 255 255 }
-
+			
 				b_valenciennes = {
 				}
 				b_cambrai = {
@@ -271,24 +249,22 @@ e_hre = {
 			c_breda = {
 				color={ 150 150 150 }
 				color2={ 255 255 255 }
-
+			
 				b_breda = {
 				}
-				b_antwerpen = {
+				b_shertogenbosch = {
 				}
 				b_tilburg = {
 				}
+				b_willemstad = {
+				}
 				b_bergenopzoom = {
+				}
+				b_cuijck = {
 				}
 				b_ravenstein = {
 				}
 				b_horn = {
-				}
-				b_eindhoven = {
-				}
-				b_hoogstraten = {
-				}
-				b_turnhout = {
 				}
 			}
 		}
@@ -296,103 +272,29 @@ e_hre = {
 	
 	k_lotharingia = {
 		color={ 250 150 20 }
-		color2={ 240 140 10 }
-		culture = frankish
-
-		capital = 117 #Brabant
-		dignity = 10
+		color2={ 220 220 20 }
 		
-		d_limburg = {
-			color={ 250 51 0 }
-			color2={ 240 51 0 }
-
-			capital = 912 #Limburg
-
-			culture = dutch
-
-			c_limburg = {
-				color={ 149 150 153 }
-				color2={ 255 255 255 }
-
-				b_limburg = {
-				}
-				b_valkenburg = {
-				}
-				b_maastricht = {
-				}
-				b_wassenberg = {
-				}
-				b_eupen = {
-				}
-			}
-		}
-		d_liege = {
-			color={ 250 79 0 }
-			color2={ 240 79 0 }
-
-			capital = 116 #Liege
-
-			culture = frankish
-
-			c_liege = {
-				color={ 144 144 144 }
-				color2={ 255 255 255 }
-
-				b_liege = {
-				}
-				b_huy = {
-				}
-				b_fexhe = {
-				}
-				b_aulne = {
-				}
-				b_bouillon = {
-				}
-				b_stavelot = {
-				}
-				b_malmedy = {
-				}
-			}
-			c_loon = {
-				color={ 147 146 154 }
-				color2={ 255 255 255 }
-
-				b_loon = {
-				}
-				b_hasselt = {
-				}
-				b_heinsberg = {
-				}
-				b_hesbaie = {
-				}
-				b_tongeren = {
-				}
-			}
-			c_namur = {
-				color={ 154 152 153 }
-				color2={ 255 255 255 }
-
-				b_namur = {
-				}
-				b_andenne = {
-				}
-				b_dinant = {
-				}
-			}
-		}
+		culture = frankish
+		
+		capital = 115 #Luxemburg
+		
+		catholic = 5000 # Crusade target weight
+		
+		dignity = 17 # One more than Burgundy
+		
 		d_luxembourg = {
-			color={ 214 150 0 }
-			color2={ 214 140 0 }
-
+			color={ 102 97 97 }
+			color2={ 255 255 255 }
+			
 			capital = 115 #Luxembourg
-
+			
 			c_luxembourg = {
 				color={ 147 147 147 }
 				color2={ 255 255 255 }
-
+			
 				b_luxembourg = {
 				}
-				b_echternach = {
+				b_bouillon = {
 				}
 				b_saintvith = {
 				}
@@ -407,126 +309,79 @@ e_hre = {
 				b_ettelbruck = {
 				}
 			}
-			c_laroche = {
-				color={ 145 145 145 }
+			c_liege = {
+				color={ 144 144 144 }
 				color2={ 255 255 255 }
-
-				b_laroche = {
-				}
-				b_clervaux = {
+			
+				b_liege = {
 				}
 				b_bastogne = {
 				}
-				b_houffalize = {
+				b_namur = {
+				}
+				b_huy = {
+				}
+				b_laroche = {
+				}
+				b_cine = {
+				}
+				b_salm = {
+				}
+				b_stavelot = {
 				}
 			}
-			c_chiny = {
-				color={ 146 146 146 }
+			c_julich = {
+				color={ 138 138 138 }
 				color2={ 255 255 255 }
-
-				b_chiny = {
+			
+				b_julich = {
 				}
-				b_orval = {
+				b_aachen = {
+				}
+				b_prum = {
+				}
+				b_geldern = {
+				}
+				b_roermond = {
+				}
+				b_duren = {
+				}
+				b_moers = {
+				}
+				b_monschau = {
 				}
 			}
-		}
-		d_lower_lorraine = {
-			color={ 255 204 20 }
-			color2={ 255 204 0 }
-
-			capital = 118 # Trier
-			c_pfalz = {
-				color={ 117 117 117 }
+			c_loon = {
+				color={ 147 146 140 }
 				color2={ 255 255 255 }
-
-				b_kaiserslautern = {
+			
+				b_loon = {
 				}
-				b_worms = {
+				b_maastricht = {
 				}
-				b_hagenau = {
+				b_hasselt = {
 				}
-				b_stahleck = {
+				b_valkenburg = {
 				}
-				b_trifels = {
+				b_heinsberg = {
 				}
-				b_speyer = {
+				b_hesbaie = {
 				}
-				b_zweibrucken = {
+				b_wassenberg = {
 				}
-				b_saarbrucken = {
-				}
-			}
-			c_trier = {
-				color={ 135 135 135 }
-				color2={ 255 255 255 }
-
-				b_andernach = {
-				}
-				b_trier = {
-				}
-				b_coblenz = {
-				}
-				b_sponheim = {
-				}
-				b_wittlich = {
-				}
-				b_gerolstein = {
-				}
-				b_laach = {
-				}
-				b_bitburg = {
-				}
-			}
-			c_metz = {
-				color={ 114 114 114 }
-				color2={ 255 255 255 }
-
-				b_metz = {
-				}
-				b_thionville = {
-				}
-				b_saintjulien = {
-				}
-				b_marslatour = {
-				}
-				b_bouzonville = {
-				}
-				b_briey = {
-				}
-				b_joudreville = {
-				}
-				b_audunleroman = {
+				b_tongeren = {
 				}
 			}
 		}
 		d_upper_lorraine = {
-			color={ 255 166 0 }
-			color2={ 255 166 0 }
-
-			capital = 127 #Lorraine
-			c_verdun = {
-				color={ 111 111 111 }
-				color2={ 255 255 255 }
+			color={ 190 187 187 }
+			color2={ 255 255 255 }
 			
-				b_verdun = {
-				}
-				b_grandpre = {
-				}
-				b_barlecomte = {
-				}
-				b_longuyon = {
-				}
-				b_doaumont = {
-				}
-				b_stenay = {
-				}
-				b_etain = {
-				}
-			}
+			capital = 127 #Lorraine		
 			c_lorraine = {
 				color={ 108 108 108 }
 				color2={ 255 255 255 }
-
+			
 				b_nancy = {
 				}
 				b_toul = {
@@ -547,7 +402,7 @@ e_hre = {
 			c_saintois = {
 				color={ 105 105 105 }
 				color2={ 255 255 255 }
-
+		
 				b_saintois = {
 				}
 				b_vaudemont = {
@@ -583,16 +438,104 @@ e_hre = {
 				}
 			}
 		}
-		d_alsace = {
-			color={ 204 102 0 }
-			color2={ 200 106 0 }
-
+		d_lower_lorraine = {
+			color={ 166 157 157 }
+			color2={ 255 255 255 }
+			
+			capital = 118 # Trier
+			c_pfalz = {
+				color={ 117 117 117 }
+				color2={ 255 255 255 }
+			
+				b_kaiserslautern = {
+				}
+				b_worms = {
+				}
+				b_hagenau = {
+				}
+				b_stahleck = {
+				}
+				b_trifels = {
+				}
+				b_speyer = {
+				}
+				b_zweibrucken = {
+				}
+				b_saarbrucken = {
+				}
+			}
+			c_trier = {
+				color={ 135 135 135 }
+				color2={ 255 255 255 }
+			
+				b_andernach = {
+				}
+				b_trier = {
+				}
+				b_coblenz = {
+				}
+				b_sponheim = {
+				}
+				b_wittlich = {
+				}
+				b_gerolstein = {
+				}
+				b_laach = {
+				}
+				b_bitburg = {
+				}
+			}
+			c_metz = {	
+				color={ 114 114 114 }
+				color2={ 255 255 255 }
+			
+				b_metz = {
+				}
+				b_thionville = {
+				}
+				b_saintjulien = {
+				}
+				b_marslatour = {
+				}
+				b_bouzonville = {
+				}
+				b_briey = {
+				}
+				b_joudreville = {
+				}
+				b_audunleroman = {
+				}
+			}
+			c_verdun = {
+				color={ 111 111 111 }
+				color2={ 255 255 255 }
+			
+				b_verdun = {
+				}
+				b_grandpre = {
+				}
+				b_barlecomte = {
+				}
+				b_longuyon = {
+				}
+				b_doaumont = {
+				}
+				b_stenay = {
+				}
+				b_etain = {
+				}
+			}
+		}
+		d_alsace = { 
+			color={ 137 130 130 }
+			color2={ 255 255 255 }
+			
 			capital = 134 #Sundgau
-
+		
 			c_nordgau = {
 				color={ 96 96 96 }
 				color2={ 255 255 255 }
-
+			
 				b_egisheim = {
 				}
 				b_strassburg = {
@@ -613,7 +556,7 @@ e_hre = {
 			c_sundgau = {
 				color={ 93 93 93 }
 				color2={ 255 255 255 }
-
+			
 				b_ensisheim = {
 				}
 				b_kolmar = {
@@ -632,7 +575,6 @@ e_hre = {
 				}
 			}
 		}
-
 		# Creation/usurpation trigger
 		# MUST BE PUT AT THE BOTTOM! DO NOT BRING TO TOP!
 		allow = {
@@ -1058,27 +1000,6 @@ e_hre = {
 				b_hochstaden = {
 				}
 				b_brauweiler = {
-				}
-			}
-			c_julich = {
-				color={ 138 138 138 }
-				color2={ 255 255 255 }
-
-				b_julich = {
-				}
-				b_aachen = {
-				}
-				b_prum = {
-				}
-				b_geldern = {
-				}
-				b_roermond = {
-				}
-				b_duren = {
-				}
-				b_moers = {
-				}
-				b_monschau = {
 				}
 			}
 

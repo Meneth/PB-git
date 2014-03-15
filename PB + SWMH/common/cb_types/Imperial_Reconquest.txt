@@ -206,8 +206,6 @@ imperial_reconquest = {
 					completely_controls = k_jerusalem
 				}
 			}
-			
-			#Z: WTF happened to Tier 7? Pretty big hole here.
 		}
 	}
 	
@@ -247,7 +245,7 @@ imperial_reconquest = {
 				# Attempt to vassalize all of the target title's direct de jure vassal title holders.				
 				# Vassalization will fail when a given ruler holds other landed titles outside of the
 				# de jure target title (LESS LIKELY BUT NEEDS CONFIRM: or has vassals who hold titles
-				# outside of the de jure target title).
+				# outside of the de jure target title, as they can auto-revoke their titles to escape).
 				#
 				# When vassalization fails, ROOT directly gains all titles held by the ruler
 				# within the de jure target title and (recursively) attempts vassalization in the
@@ -262,6 +260,37 @@ imperial_reconquest = {
 					vassalize_or_take_under_title = {
 						title = PREV
 						enemy = FROM
+					}
+				}
+				
+				# Special case effect to counteract the new patch 2.0 event in which the Pope [frequently] asks
+				# rulers to prove their loyalty to the Catholic Church by transferring a random vassal bishop
+				# of the ruler to the Pope:
+				#
+				# Prevents decades of stalled Imperial Reconquest progress due only to waiting-out truces between
+				# wars against the Papacy using [other_]dejure_barony_claim to fight for a single Papal bishropic
+				# at a time when, in some areas, there are often multiple such bishropics per duchy, yet the duchy's
+				# already been conquered. Totally Lame.
+				#
+				# Instead, we simply turn the same [intricate] vassalize_or_take_under_title logic upon the Pope,
+				# as if ROOT had been at implicit, simultaneous war with the Papacy for the the de jure target duchy
+				# as well (essentially the union of enemy = FROM and enemy = POPE in one vassalize_or_take_under).
+				#
+				# This is the cleanest way to emulate the Lame (for IR) event which transferred bishops' vassalage
+				# to the Pope never having occurred in the first place, but it has one caveat: if for some reason
+				# the Papacy is overlord of a castle or a city in the de jure target duchy (not a bishropic), those
+				# titles would be vassalized too.  However, this essentially cannot happen unless FROM is actually
+				# the Pope himself, in which case we already did the right thing, and this step will have no effect. 
+			
+				k_papal_state = {
+					holder_scope = {
+						ROOT = {
+							vassalize_or_take_under_title = {
+								title = PREVPREVPREV #Target duchy
+								enemy = PREV #Pope
+								is_crusade = yes #Even if the title holder is not participating in the war...
+							}
+						}
 					}
 				}
 			}
