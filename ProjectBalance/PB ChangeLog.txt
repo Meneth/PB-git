@@ -3,7 +3,7 @@
 	(PB+SWMH) Eased the requirements for the events for Castille expanding dejure. Now they'll expand dejure into Toledo once they control all their starting dejure territory, and into La Mancha once they completely control Toledo. Previously complete control of Toledo/La Mancha was required for each event to fire
 	Made the holy war requirements clearer by simplifying how the requirements are displayed. The requirements remain the same, but it should now be more obvious what's preventing holy war
 	Fixed the Greek-Sicilian melting pot in Sicily not working if No Ahistorical Empires was enabled
-	Fixed a number of issues in Ethiopia introduced by the map change in 3.5.0
+	Fixed a number of issues in Ethiopia, and some issues in the Low Lands and Iberian, introduced by the map change in 3.5.0
 	Added impassable mountains around Cilicia to make it more resilient to foreign conquerors
 
 3.5.0
