@@ -5,6 +5,7 @@
 	Fixed the Greek-Sicilian melting pot in Sicily not working if No Ahistorical Empires was enabled
 	Fixed a number of issues in Ethiopia, and some issues in the Low Lands and Iberian, introduced by the map change in 3.5.0
 	Added impassable mountains around Cilicia to make it more resilient to foreign conquerors
+	Fixed Burgundy not being eligible for Imperial Reconquest
 
 3.5.0
 	Dropped all provinces PB adds. The map will from now on have the exact same provinces as vanilla, though borders may be tweaked. Breaks non-SWMH saves

@@ -185,12 +185,14 @@ decisions = {
 			OR = {
 				NOT = { completely_controls = k_france }
 				NOT = { completely_controls = k_aquitaine }
+				NOT = { completely_controls = k_burgundy }
 				NOT = { completely_controls = k_brittany }
 			}
 		}
 		allow = {
 			completely_controls = k_france
 			completely_controls = k_aquitaine
+			completely_controls = k_burgundy
 			completely_controls = k_brittany
 		}
 		effect = {
