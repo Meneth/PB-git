@@ -53,6 +53,7 @@ imperial_reconquest = {
 
 	can_use_title = {
 		OR = {
+			de_jure_liege_or_above = e_byzantium
 			de_jure_liege_or_above = k_byzantium
 			de_jure_liege_or_above = k_anatolia
 			de_jure_liege_or_above = k_nikaea
@@ -143,6 +144,7 @@ imperial_reconquest = {
 				OR = {
 					de_jure_liege_or_above = k_france
 					de_jure_liege_or_above = k_aquitaine
+					de_jure_liege_or_above = k_burgundy
 					de_jure_liege_or_above = k_brittany
 				}
 				ROOT = { # Tier 5
@@ -184,6 +186,7 @@ imperial_reconquest = {
 					completely_controls = e_byzantium
 					completely_controls = k_france
 					completely_controls = k_aquitaine
+					completely_controls = k_burgundy
 					completely_controls = k_brittany
 					completely_controls = k_leon
 					completely_controls = k_castille

@@ -577,7 +577,10 @@ character_event = {
 						culture = langobardisch
 						AND = {
 							culture = greek
-							empire = { title = e_italy }
+							OR = {
+								kingdom = { title = k_sicily }
+								empire = { title = e_italy }
+							}
 						}
 					}
 				}
@@ -739,7 +742,10 @@ character_event = {
 						culture = langobardisch
 						AND = {
 							culture = greek
-							empire = { title = e_italy }
+							OR = {
+								kingdom = { title = k_sicily }
+								empire = { title = e_italy }
+							}
 						}
 					}
 				}
@@ -1234,7 +1240,10 @@ province_event = {
 			culture = langobardisch
 			AND = {
 				culture = greek
-				empire = { title = e_italy }
+				OR = {
+					kingdom = { title = k_sicily }
+					empire = { title = e_italy }
+				}
 			}
 		}
 		owner = {
@@ -1365,7 +1374,10 @@ province_event = {
 			culture = langobardisch
 			AND = {
 				culture = greek
-				empire = { title = e_italy }
+				OR = {
+					kingdom = { title = k_sicily }
+					empire = { title = e_italy }
+				}
 			}
 		}
 		owner = {
@@ -1461,7 +1473,10 @@ character_event = {
 				culture = langobardisch
 				AND = {
 					culture = greek
-					empire = { title = e_italy }
+					OR = {
+						kingdom = { title = k_sicily }
+						empire = { title = e_italy }
+					}
 				}
 			}
 			religion = ROOT
@@ -1584,7 +1599,10 @@ character_event = {
 				culture = langobardisch
 				AND = {
 					culture = greek
-					empire = { title = e_italy }
+					OR = {
+						kingdom = { title = k_sicily }
+						empire = { title = e_italy }
+					}
 				}
 			}
 			religion = ROOT

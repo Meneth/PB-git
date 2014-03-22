@@ -3222,17 +3222,22 @@ crusade = {
 				NOT = { FROM = { religion_group = pagan_group } }
 			}
 		}
-		OR = {
-			FROM = {
-				NOT = { religion = miaphysite }
-				NOT = {
-					AND = {
-						religion = orthodox
-						culture_group = east_african
+		custom_tooltip = {
+			text = baqt_active
+			hidden_tooltip = {
+				OR = {
+					FROM = {
+						NOT = { religion = miaphysite }
+						NOT = {
+							AND = {
+								religion = orthodox
+								culture_group = east_african
+							}
+						}
 					}
+					has_global_flag = violated_baqt
 				}
 			}
-			has_global_flag = violated_baqt
 		}
 	}
 	can_use = {
@@ -3603,29 +3608,17 @@ religious = {
 				has_law = revokation_2
 			}
 			OR = {
-				NOT = { trait = content }
+				AND = {
+					NOT = { trait = content }
+					NOT = { trait = craven }
+					NOT = { trait = stressed }
+				}
 				trait = brave
-				trait = wroth
-				trait = zealous
-				trait = lunatic
-				trait = possessed
-			}
-			OR = {
-				NOT = { trait = craven }
 				trait = wroth
 				trait = ambitious
 				trait = zealous
 				trait = lunatic
 				trait = possessed
-			}
-			OR = {
-				NOT = { trait = stressed }
-				trait = wroth
-				trait = ambitious
-				trait = brave
-				trait = lunatic
-				trait = possessed
-				trait = zealous
 			}
 			OR = {
 				trait = lunatic
@@ -3652,35 +3645,39 @@ religious = {
 				}
 			}
 			piety = 100
-			OR = {
-				NOT = {
+			custom_tooltip = {
+				text = baqt_active
+				hidden_tooltip = {
 					OR = {
-						AND = {
+						NOT = {
 							OR = {
-								religion = miaphysite
-								religion = orthodox
-							}
-							culture_group = east_african
-							FROM = {
-								religion_group = muslim
-							}
-						}
-						AND = {
-							FROM = {
-								OR = {
-									religion = miaphysite
-									religion = orthodox
+								AND = {
+									OR = {
+										religion = miaphysite
+										religion = orthodox
+									}
+									culture_group = east_african
+									FROM = {
+										religion_group = muslim
+									}
 								}
-								culture_group = east_african
-							}
-							ROOT = {
-								religion_group = muslim
+								AND = {
+									FROM = {
+										OR = {
+											religion = miaphysite
+											religion = orthodox
+										}
+										culture_group = east_african
+									}
+									ROOT = {
+										religion_group = muslim
+									}
+								}
 							}
 						}
+						has_global_flag = violated_baqt
 					}
 				}
-				has_global_flag = rapid_conquest
-				has_global_flag = violated_baqt
 			}
 		}
 		
@@ -7844,29 +7841,17 @@ muslim_county_conquest = {
 			}
 			NOT = { FROM = { religion_group = pagan_group } }
 			OR = {
-				NOT = { trait = content }
+				AND = {
+					NOT = { trait = content }
+					NOT = { trait = craven }
+					NOT = { trait = stressed }
+				}
 				trait = brave
-				trait = wroth
-				trait = zealous
-				trait = lunatic
-				trait = possessed
-			}
-			OR = {
-				NOT = { trait = craven }
 				trait = wroth
 				trait = ambitious
 				trait = zealous
 				trait = lunatic
 				trait = possessed
-			}
-			OR = {
-				NOT = { trait = stressed }
-				trait = wroth
-				trait = ambitious
-				trait = brave
-				trait = lunatic
-				trait = possessed
-				trait = zealous
 			}
 			OR = {
 				trait = lunatic
@@ -7892,25 +7877,30 @@ muslim_county_conquest = {
 					}
 				}
 			}
-			OR = {
-				NOT = {
-					FROM = {
-						OR = {
-							religion = miaphysite
-							religion = orthodox
+			custom_tooltip = {
+				text = baqt_active
+				hidden_tooltip = {
+					OR = {
+						NOT = {
+							FROM = {
+								OR = {
+									religion = miaphysite
+									religion = orthodox
+								}
+								culture_group = east_african
+							}
 						}
-						culture_group = east_african
+						has_global_flag = violated_baqt
 					}
-				}
-				has_global_flag = violated_baqt
-			}
-			OR = {
-				religion_group = FROM
-				AND = {
-					NOT = { has_law = emperor_peace_0 }
-					NOT = { trait = content }
-					NOT = { trait = craven }
-					NOT = { trait = stressed }
+					OR = {
+						religion_group = FROM
+						AND = {
+							NOT = { has_law = emperor_peace_0 }
+							NOT = { trait = content }
+							NOT = { trait = craven }
+							NOT = { trait = stressed }
+						}
+					}
 				}
 			}
 		}
@@ -8306,17 +8296,22 @@ muslim_invasion = {
 		#Muslims cannot invade pagans with this CB; zoroastrians and jews (and hindus) are fine
 		FROM = { NOT = { religion_group = pagan_group } }
 		
-		OR = { #Enforce the Baqt
-			NOT = {
-				FROM = {
-					OR = {
-						religion = miaphysite
-						religion = orthodox
+		custom_tooltip = {
+			text = baqt_active
+			hidden_tooltip = {
+				OR = { #Enforce the Baqt
+					NOT = {
+						FROM = {
+							OR = {
+								religion = miaphysite
+								religion = orthodox
+							}
+							culture_group = east_african
+						}
 					}
-					culture_group = east_african
+					has_global_flag = violated_baqt
 				}
 			}
-			has_global_flag = violated_baqt
 		}
 		OR = { #Avoid mongol-on-mongol crime before 1350
 			NOT = {

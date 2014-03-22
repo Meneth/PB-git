@@ -2097,8 +2097,12 @@ character_event = {
 		has_global_flag = SWMH
 		has_landed_title = k_castille
 		NOT = { has_global_flag = expansion_of_castille_la_mancha }
+		has_global_flag = expansion_of_castille_toledo
 		completely_controls = k_castille
-		completely_controls = d_la_mancha
+		OR = {
+			k_andalusia = { has_holder = no }
+			completely_controls = d_la_mancha
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -2128,7 +2132,10 @@ character_event = {
 		has_landed_title = k_castille
 		NOT = { has_global_flag = expansion_of_castille_toledo }
 		completely_controls = k_castille
-		completely_controls = d_toledo
+		OR = {
+			k_andalusia = { has_holder = no }
+			completely_controls = d_toledo
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -2162,6 +2169,7 @@ character_event = {
 		}
 		NOT = { has_global_flag = expansion_of_castille_murcia }
 		NOT = { has_global_flag = expansion_of_aragon_murcia }
+		has_global_flag = expansion_of_castille_la_mancha
 		completely_controls = k_castille
 		completely_controls = d_murcia
 	}
