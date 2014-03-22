@@ -1,6 +1,7 @@
-3.5.2 [BETA]
+3.5.2 [BETA - Breaks non-beta saves!]
 	Fixed Mandé culture not existing
 	Fixed some missing localisation
+	Fixed a few errors in Ethiopia and Egypt
 
 3.5.1
 	Fixed the duchy of Aktobe being a vassal of Cumania rather than the Kipchaks
