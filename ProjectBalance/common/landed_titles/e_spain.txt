@@ -237,7 +237,6 @@ e_spain = {
 			}
 		}
 	}
-	#New province of Tudela
 	k_navarra = {
 		color = { 150 120 5 }
 		color2={ 255 255 255 }
@@ -312,19 +311,6 @@ e_spain = {
 				b_alfara = {
 				}
 				b_santodomingodelacalzada = {
-				}
-			}
-			c_tudela = {
-				color = { 142 222 45 }
-				color2 = { 255 255 255 }
-				
-				b_tudela = {
-				}
-				b_tafalla = {
-				}
-				b_olite = {
-				}
-				b_carcastillo = {
 				}
 			}
 		}
@@ -1398,19 +1384,6 @@ e_spain = {
 				b_calmarza = {
 				}
 				b_cimballa = {
-				}
-			}
-			c_huesca = {
-				color = { 255 216 7 }
-				color2={ 255 255 255 }
-				
-				b_huesca = {
-				}
-				b_barbastro = {
-				}
-				b_almudevar = {
-				}
-				b_alcampell = {
 				}
 			}
 		}

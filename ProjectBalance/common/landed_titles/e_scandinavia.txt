@@ -1059,19 +1059,6 @@ e_scandinavia = {
 				b_goddalir = {
 				}
 			}
-			c_sudisland = {
-				color={ 245 225 255 }
-				color2={ 220 220 220 }
-				
-				swedish = "Söderisland"
-				norwegian = "Sørisland"
-				danish = "Sørisland"
-				
-				b_kirkjubaer = {
-				}
-				b_valpjotstadur = {
-				}
-			}
 		}
 	}
 	#Viken moved to Norway. Pagan CoA

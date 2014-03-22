@@ -39,6 +39,10 @@ k_iceland_adj;Icelandic;Islandaise;Isländischer;;Islandesa;;;;;;;;;x
 k_cilicia;Cilicia;;;;;;;;;;;;;x
 k_cilicia_adj;Cilician;;;;;;;;;;;;;x
 k_anatolia;Iconium;;;;;;;;;;;;;x
+k_oman;Oman;;;;;;;;;;;;;x
+k_algeria;Algeria;;;;;;;;;;;;;x
+k_tunisia;Tunisia;;;;;;;;;;;;;x
+k_coptic;Coptic Papacy;;;;;;;;;;;;;x
 d_bulgaria;Bulgaria;;;;;;;;;;;;;x
 d_bulgaria_adj;Bulgarian;;;;;;;;;;;;;x
 d_belgorod;Belgorod;Belgorod;Belgorod;;Belgorod;;;;;;;;;x
@@ -52,6 +56,8 @@ d_romuva_adj;Mercenary;mercenaire;Söldner;;Mercenario;;;;;;;;;x
 d_piemonte;Piemonte;Piemont;Piemont;;Piemonte;;;;;;;;;x
 d_piemonte_adj;Piemontian;piedmontais;Piemonter;;Piamontés;;;;;;;;;x
 d_ostlandet;Østlandet;Ostlandet;Ostlandet;;Austlandet;;;;;;;;;x
+d_atlas;Atlas;;;;;;;;;;;;;x
+d_kairwan;Kairwan;;;;;;;;;;;;;x
 c_viken;Ranrike;;;;;;;;;x
 b_teruel;Teruel;Teruel;Teruel;;Teruel;;;;;;;;;x
 b_calanda;Calanda;Calanda;Calanda;;Calanda;;;;;;;;;x
