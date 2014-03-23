@@ -1,71 +1,23 @@
 #WESTAFRICAMOD
 1000011000 = {
 	name="Keita"
-	culture = mande
+	culture = manden
 }
 1000011002 = {
 	name="Za"
-	culture = mande
+	culture = manden
 }
 1000011003 = {
 	name="Sonni"
-	culture = mande
+	culture = manden
 }
 1000011005 = {
 	name="Bory"
-	culture = mande
+	culture = manden
 }
 1000011006 = {
 	name = "Denanke"
-	culture = mande
-}
-1000011100 = {
-	name="Kante"
-	culture = sosso
-}
-1000011101 = {
-	name="Cisse"
-	culture = sosso
-}
-1000011102 = {
-	name="Akba"
-	culture = sosso
-}
-1000011103 = {
-	name="Soumare"
-	culture = sosso
-}
-1000011104 = {
-	name="Soukhounou"
-	culture = sosso
-}
-1000011200 = {
-	name="Joof"
-	culture = jolof
-}
-1000011201 = {
-	name="Gelwar"
-	culture = jolof
-}
-1000011202 = {
-	name="Jaabi"
-	culture = jolof
-}
-1000011203 = {
-	name="Fak"
-	culture = jolof
-}
-1000011204 = {
-	name="N'Diaye"
-	culture = jolof
-}
-1000011205 = {
-	name="Kaabu"
-	culture = jolof
-}
-1000011206 = {
-	name="Fulani"
-	culture = jolof
+	culture = manden
 }
 #New Ethiopian Area Dynasties
 1000032049 = {
