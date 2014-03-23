@@ -3045,7 +3045,7 @@ d_ghanan_band = {
 	# Parent Religion 
 	religion = west_african_pagan
 	
-	culture = mande
+	culture = manden
 	
 	mercenary = yes
 

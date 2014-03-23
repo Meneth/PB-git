@@ -971,7 +971,6 @@ e_spain = {
 	#No longer exists dejure
 	k_spanish_galicia = {
 		color={ 255 224 94 }
-		capital = 961 # Santiago
 		
 		culture = portuguese
 		
