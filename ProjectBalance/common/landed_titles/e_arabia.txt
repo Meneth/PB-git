@@ -1281,6 +1281,8 @@ e_arabia = {
 				}
 				b_elefantina = {
 				}
+				b_faras = {
+				}
 				b_qasribrim = {
 				}
 				b_veset = {
