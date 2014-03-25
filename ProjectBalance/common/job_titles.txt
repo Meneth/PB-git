@@ -126,11 +126,18 @@ job_marshal = {
 			}
 		}
 		OR = {
-			is_adult = yes
+			AND = {
+				OR = {
+					NOT = { religion = hindu }
+					trait = kshatriya
+				}
+				is_adult = yes
+			}
 			has_character_flag = special_marshal
 		}
 		prisoner = no
 		NOT = { trait = incapable }
+		NOT = { has_character_flag = guru }
 	}
 	
 	gain_effect = {
@@ -219,6 +226,7 @@ job_treasurer = {
 		}
 		prisoner = no
 		NOT = { trait = incapable }
+		NOT = { has_character_flag = guru }
 	}
 	gain_effect = {
 		if = {
@@ -280,6 +288,7 @@ job_spymaster = {
 		is_adult = yes
 		prisoner = no
 		NOT = { trait = incapable }
+		NOT = { has_character_flag = guru }
 	}
 	gain_effect = {
 		if = {
@@ -346,7 +355,13 @@ job_spiritual = {
 		}
 		
 		OR = {
-			is_female = no
+			AND = {
+				is_female = no
+				OR = {
+					NOT = { religion = hindu }
+					trait = brahmin
+				}
+			}
 			AND = {
 				religion_group = pagan_group
 				NOT = { religion = aztec }
