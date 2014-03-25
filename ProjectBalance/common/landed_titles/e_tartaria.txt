@@ -22,12 +22,7 @@ e_tartaria = {
 		
 		# Creation/Usurp Trigger
 		allow = {
-			hidden_tooltip = {
-				OR = {
-					ai = no
-					culture = cuman
-				}
-			}
+			always = no
 		}
 		
 		slavic_pagan_reformed = 50 # Crusade target weight
