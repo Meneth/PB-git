@@ -8,15 +8,6 @@ e_arabia = {
 	
 	culture = bedouin_arabic
 	
-	allow = {
-		hidden_tooltip = {
-			OR = {
-				ai = no
-				culture_group = arabic
-			}
-		}
-	}
-	
 	short_name = yes
 
 	k_arabia = {
@@ -2580,19 +2571,9 @@ e_arabia = {
 			k_mauretania = { is_titular = yes }
 		}
 		OR = {
-			has_landed_title = k_algeria
-			completely_controls = k_algeria
-			k_algeria = { is_titular = yes }
-		}
-		OR = {
 			has_landed_title = k_africa
 			completely_controls = k_africa
 			k_africa = { is_titular = yes }
-		}
-		OR = {
-			has_landed_title = k_tunisia
-			completely_controls = k_tunisia
-			k_tunisia = { is_titular = yes }
 		}
 		OR = {
 			has_landed_title = k_egypt
@@ -2603,11 +2584,6 @@ e_arabia = {
 			has_landed_title = k_arabia
 			completely_controls = k_arabia
 			k_arabia = { is_titular = yes }
-		}
-		OR = {
-			has_landed_title = k_oman
-			completely_controls = k_oman
-			k_oman = { is_titular = yes }
 		}
 		OR = {
 			has_landed_title = k_jerusalem
