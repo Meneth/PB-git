@@ -16,6 +16,7 @@ b_elpedregal = temple
 
 culture = andalusian_arabic
 religion = sunni
+terrain = hills
 
 # History
 1144.1.1 = { culture = castillan }

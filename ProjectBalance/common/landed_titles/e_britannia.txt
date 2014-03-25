@@ -419,9 +419,11 @@ e_britannia = {
 			
 				b_westminster = {
 					used_for_dynasty_names = no
+					norse=Vestmystur
 				}
 				b_london = {
 					used_for_dynasty_names = no
+					norse=Lundúnir
 				}
 				b_st_pauls = {
 					holy_site = aztec
@@ -809,7 +811,12 @@ e_britannia = {
 		catholic = 300 # Crusade target weight
 		
 		allow = {
-			culture_group = celtic
+			hidden_tooltip = {
+				OR = {
+					ai = no
+					culture_group = celtic
+				}
+			}
 		}
 		
 		d_gwynedd = {
@@ -1103,7 +1110,7 @@ e_britannia = {
 		}
 		d_western_isles = {
 			color = { 6 42 127 }
-			
+			color2 = { 255 255 255 }
 			capital = 35 # Inse Gall
 			
 			norwegian = "Søreyar"
@@ -1211,13 +1218,13 @@ e_britannia = {
 			}
 		}
 		d_lothian = {
-			color={ 10 164 243 }
+			color = { 16 62 157 }
 			color2={ 255 255 255 }
 			
 			capital = 48 # Lothian
 			
 			c_lothian = {
-				color={ 20 170 245 }
+				color = { 16 62 160 }
 				color2={ 255 255 255 }
 	
 				b_edinburgh = {
@@ -1238,7 +1245,7 @@ e_britannia = {
 				}
 			}
 			c_dunbar = {
-				color={ 15 165 245 }
+				color = { 30 69 172 }
 				color2={ 255 255 255 }
 	
 				b_dunbar = {
@@ -1259,7 +1266,7 @@ e_britannia = {
 				}
 			}
 			c_teviotdale = {
-				color={ 25 90 243 }
+				color = { 11 51 145 }
 				color2={ 255 255 255 }
 				
 				b_jedburgh = {
@@ -1281,13 +1288,13 @@ e_britannia = {
 			}
 		}
 		d_albany = {
-			color={ 10 209 243 }
+			color={ 25 85 160 }
 			color2={ 255 255 255 }
 			
 			capital = 43 # Gowrie
 			
 			c_gowrie = {
-				color={ 35 222 250 }
+				color={ 23 87 162 }
 				color2={ 255 255 255 }
 				
 				b_scone = {
@@ -1308,7 +1315,7 @@ e_britannia = {
 				}
 			}
 			c_fife = {
-				color={ 20 210 250 }
+				color={ 20 80 152 }
 				color2={ 255 255 255 }
 				
 				b_dunfermline = {
@@ -1329,7 +1336,7 @@ e_britannia = {
 				}
 			}
 			c_strathearn = {
-				color={ 15 210 245 }
+				color={ 15 66 145 }
 				color2={ 255 255 255 }
 				
 				b_crieff = {
@@ -1350,7 +1357,7 @@ e_britannia = {
 				}
 			}
 			c_atholl = {
-				color={ 30 215 250 }
+				color={ 30 95 172 }
 				color2={ 255 255 255 }
 				
 				b_blair_atholl = {
@@ -1668,7 +1675,7 @@ e_britannia = {
 			norwegian = Dublin
 			danish = Dublin
 			swedish = Dublin
-			norse = Dyflin
+			norse = Dyflinn
 			irish = Tara
 			
 			pagan_coa = {

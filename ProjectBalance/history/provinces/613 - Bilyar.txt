@@ -17,10 +17,10 @@ b_tukhchin = temple
 # Misc
 culture = bolghar
 religion = tengri_pagan
+terrain = steppe
 
 # History
 #Mongol invasion
 1236.1.1 = { remove_settlement = b_bilyar }
 1236.1.1 = { b_cukataw = castle }
-
 1337.1.1 = { b_bilyar = castle }

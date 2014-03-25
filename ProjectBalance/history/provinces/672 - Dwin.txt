@@ -5,10 +5,9 @@ title = c_dwin
 
 # Settlements
 max_settlements = 3
-b_lori = castle
-b_dvin = city
+b_dvin = castle
+b_erebuni = city
 b_etchmiadzin = temple
-#b_erebuni = castle
 #b_alaverdi = castle
 #b_matsnaberd = castle
 #b_khorvirap = temple

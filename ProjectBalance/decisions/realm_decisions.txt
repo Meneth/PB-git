@@ -38,6 +38,7 @@ decisions = {
 			set_character_flag = epic_tournament
 			set_character_flag = do_not_disturb
 			clr_character_flag = tournament_has_ended
+			hidden_tooltip = { character_event = { id = 70999 days = 150 } } # Safety catch flag clearing
 			wealth = -200
 			prestige = 100
 			character_event = { id = 70033 tooltip = "tournament_invite" }
@@ -259,6 +260,7 @@ decisions = {
 		effect = {
 			set_character_flag = epic_tournament_furusiyya
 			clr_character_flag = tournament_has_ended_furusiyya
+			hidden_tooltip = { character_event = { id = 88999 days = 150 } } # Safety catch flag clearing
 			wealth = -200
 			prestige = 100
 			decadence = -5
@@ -363,6 +365,11 @@ decisions = {
 			}
 			is_heretic = no
 			NOT = { has_global_flag = schism_mended }
+			k_papal_state = {
+				holder_scope = {
+					is_heretic = no # If the Pope (and thus Catholicism) is heretical, mending the schism is no longer possible
+				}
+			}
 		}
 		allow = {
 			piety = 2000
@@ -1046,11 +1053,11 @@ decisions = {
 				text = jews_are_expelled
 			}
 			hidden_tooltip = {
-				character_event = { id = SoA.105 } # in theory, this would now default all loans in the realm.
-				add_character_modifier = {         # however, it is probably best left as it is.  the jewish
-					name = expelled_jews_timer     # merchants can just keep collecting yearly interest on
-					duration = 7300                # the rest of the realm via the Jewish Underground Mafia
-					hidden = yes                   # or something similarly persuasive.
+				character_event = { id = SoA.105 }
+				add_character_modifier = {
+					name = expelled_jews_timer
+					duration = 7300
+					hidden = yes
 				}
 			}
 		}
@@ -1145,7 +1152,7 @@ decisions = {
 		}
 	}
 	embrace_ashari = {
-		potential = {
+		potential = {	
 			has_dlc = "Sons of Abraham"
 			religion = sunni
 			NOT = { 
@@ -1202,6 +1209,63 @@ decisions = {
 			modifier = {
 				factor = 0.005 # Slow it down
 			}
+		}
+	}
+	
+	become_samrat_chakravartin = {
+		is_high_prio = yes
+		potential = {
+			has_dlc = "Rajas of India"
+			is_playable = yes
+			is_feudal = yes
+			religion_group = indian_group
+			primary_title = {
+				OR = {
+					title = e_rajastan
+					title = e_bengal
+					title = e_deccan
+					AND = {
+						tier = KING
+						OR = {
+							empire = { title = e_rajastan }
+							empire = { title = e_bengal }
+							empire = { title = e_deccan }
+						}
+					}
+				}
+			}
+			e_india = {
+				has_holder = no
+			}
+		}
+		allow = {
+			is_adult = yes
+			prisoner = no
+			NOT = {	trait = incapable }
+			war = no
+			has_landed_title = e_rajastan
+			has_landed_title = e_bengal
+			has_landed_title = e_deccan
+			prestige = 1000
+			wealth = 500
+		}
+		effect = {
+			wealth = -500
+			prestige = 500
+			primary_title = {
+				e_india = {
+					grant_title = ROOT
+					copy_title_laws = PREV
+				}
+			}
+			hidden_tooltip = { e_india = { make_primary_title = yes } }
+			set_character_flag = achievement_my_very_own_subcontinent
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
 		}
 	}
 }

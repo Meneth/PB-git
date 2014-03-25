@@ -26,7 +26,7 @@ amateurish_plotter = {
 	ai_rationality = -5
 	ai_ambition = 5
 }
-flamboyant_schemer = {	
+flamboyant_schemer = {
 	education = yes
 	
 	intrigue = 3
@@ -880,6 +880,10 @@ mystic = {
 impaler = {
 	lifestyle = yes
 	
+	potential = {
+		NOT = { religion = jain }
+	}
+	
 	martial = 1
 	intrigue = 1
 
@@ -914,7 +918,11 @@ duelist = {
 }
 hunter = {
 	lifestyle = yes
-
+	
+	potential = {
+		NOT = { religion = jain }
+	}
+	
 	health = 0.2
 	
 	martial = 2
@@ -937,6 +945,10 @@ poet = {
 }
 falconer = {
 	lifestyle = yes
+	
+	potential = {
+		NOT = { religion = jain }
+	}
 
 	health = 0.2
 	
@@ -1055,6 +1067,7 @@ charitable = {
 	
 	ai_rationality = -5
 	ai_honor = 10
+	ai_ambition = -15
 	ai_greed = -100
 	
 	ai_zeal = 10
@@ -1455,6 +1468,7 @@ zealous = {
 		sympathy_pagans
 		sympathy_zoroastrianism
 		sympathy_judaism
+		sympathy_indian
 	}
 	
 	martial = 2

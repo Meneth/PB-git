@@ -1,4 +1,5 @@
 3.5.2 [BETA - Breaks non-beta saves!]
+	Updated for 2.1
 	Fixed Mandé culture not existing
 	Fixed some missing localisation
 	Fixed a few errors in Ethiopia and Egypt

@@ -20,6 +20,7 @@ b_lycksele = castle
 # Misc
 culture = lappish
 religion = norse_pagan
+terrain = forest
 
 # History
 1100.1.1 = { religion = catholic }

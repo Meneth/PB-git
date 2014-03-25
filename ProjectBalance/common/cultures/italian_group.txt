@@ -1,4 +1,0 @@
-italian_group = {
-	graphical_culture = westerngfx
-	#This is here to ensure checks for "italian_group" don't cause issues
-}
