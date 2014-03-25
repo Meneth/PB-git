@@ -7,7 +7,6 @@ faction_autonomy = {
 	# Plotter scope
 	potential = {
 		prisoner = no
-		prisoner = no
 		is_adult = yes
 		is_ruler = yes
 		independent = no
