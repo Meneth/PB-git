@@ -2,8 +2,11 @@
 faction_autonomy = {
 	type = character
 	
+	warning_level = 0.7 # At this level of faction power we give player an alert. Set to 0 for no alerts.
+	
 	# Plotter scope
 	potential = {
+		prisoner = no
 		prisoner = no
 		is_adult = yes
 		is_ruler = yes
@@ -18,6 +21,23 @@ faction_autonomy = {
 				tier = king
 				tier = emperor
 			}
+			NOT = {
+				any_demesne_title = {
+					temporary = yes
+				}
+			}
+		}
+	}
+	
+	# Faction member scope (ROOT = joiner, FROM = target)
+	allow_join = {
+		ROOT = {
+			is_ruler = yes
+			independent = no
+			is_landed = yes
+			is_adult = yes
+			NOT = { trait = incapable }
+			prisoner = no
 		}
 	}
 	
