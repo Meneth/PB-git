@@ -1398,7 +1398,7 @@ e_arabia = {
 			}
 		}
 		d_jerusalem = {
-			color2={ 202 202 190 }
+			color={ 202 202 190 }
 			color2={ 255 255 255 }
 			
 			capital = 774 # Jerusalem
@@ -1407,7 +1407,7 @@ e_arabia = {
 			muslim = 250 # Crusade target weight
 		
 			c_jerusalem = {
-				color2={ 250 250 230 }
+				color={ 250 250 230 }
 				color2={ 255 255 255 }
 				
 				christian = 250 # Crusade target weight
@@ -1444,7 +1444,7 @@ e_arabia = {
 				}
 			}
 			c_acre = {
-				color2={ 230 190 154 }
+				color={ 230 190 154 }
 				color2={ 255 255 255 }
 		
 				b_acre = {
@@ -1465,7 +1465,7 @@ e_arabia = {
 				}
 			}
 			c_hebron = {
-				color2={ 200 210 160 }
+				color={ 200 210 160 }
 				color2={ 255 255 255 }
 		
 				b_hebron = {
@@ -1487,13 +1487,13 @@ e_arabia = {
 			}
 		}
 		d_galilee = {
-			color2={ 225 200 160 }
+			color={ 225 200 160 }
 			color2={ 255 255 255 }
 			
 			capital = 771 # Tyrus
 		
 			c_tiberias = {
-				color2={ 225 220 160 }
+				color={ 225 220 160 }
 				color2={ 255 255 255 }
 			
 				b_tiberias = {
@@ -1514,7 +1514,7 @@ e_arabia = {
 				}
 			}
 			c_tyrus = {
-				color2={ 245 245 200 }
+				color={ 245 245 200 }
 				color2={ 255 255 255 }
 				
 				bedouin_arabic = "Sur"
@@ -1546,7 +1546,7 @@ e_arabia = {
 				}
 			}
 			c_beirut = {
-				color2={ 255 245 190 }
+				color={ 255 245 190 }
 				color2={ 255 255 255 }
 			
 				b_beirut = {
@@ -1567,7 +1567,7 @@ e_arabia = {
 				}
 			}
 			c_safed = {
-				color2={ 230 250 190 }
+				color={ 230 250 190 }
 				color2={ 255 255 255 }
 			
 				b_safed = {
