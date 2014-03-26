@@ -75,9 +75,10 @@ faction_succ_seniority = {
 			crownlaw_title = {
 				NOT = {
 					OR = {
-						has_law = centralization_2
-						has_law = centralization_3
-						has_law = centralization_4
+						has_law = king_peace_1
+						has_law = king_peace_2
+						has_law = emperor_peace_1
+						has_law = emperor_peace_2
 					}
 				}
 			}
@@ -675,9 +676,10 @@ faction_succ_primogeniture = {
 			crownlaw_title = {
 				NOT = {
 					OR = {
-						has_law = centralization_2
-						has_law = centralization_3
-						has_law = centralization_4
+						has_law = king_peace_1
+						has_law = king_peace_2
+						has_law = emperor_peace_1
+						has_law = emperor_peace_2
 					}
 				}
 			}
@@ -1267,9 +1269,10 @@ faction_succ_gavelkind = {
 			crownlaw_title = {
 				NOT = {
 					OR = {
-						has_law = centralization_2
-						has_law = centralization_3
-						has_law = centralization_4
+						has_law = king_peace_1
+						has_law = king_peace_2
+						has_law = emperor_peace_1
+						has_law = emperor_peace_2
 					}
 				}
 			}
