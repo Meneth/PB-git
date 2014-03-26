@@ -26,11 +26,6 @@ narrative_event = {
 		336 = { religion = catholic }
 		344 = { culture = southern_italian }
 		344 = { religion = catholic }
-		609 = { religion = sunni }
-		610 = { religion = sunni }
-		613 = { religion = sunni }
-		614 = { religion = sunni }
-		615 = { religion = sunni }
 		695 = { religion = nestorian }
 		696 = { religion = nestorian }
 		700 = { religion = orthodox }
