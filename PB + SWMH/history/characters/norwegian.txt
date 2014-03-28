@@ -248,6 +248,7 @@
 	}
 }
 
+
 102532 = {
 	name="Magnus"
 	dynasty=499

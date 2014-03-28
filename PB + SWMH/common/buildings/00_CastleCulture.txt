@@ -882,14 +882,14 @@ castle = {
 		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
 		build_cost = 100
 		build_time = 365
-		light_cavalry = 70
+		camel_cavalry = 70
 		pikemen = -10
 		light_infantry = -30
 		heavy_infantry = -10
 		archers = -20
 		horse_archers = -10
-		light_cavalry_offensive = 0.05
-		light_cavalry_defensive = 0.05
+		camel_cavalry_offensive = 0.05
+		camel_cavalry_defensive = 0.05
 		retinuesize = 20
 		tax_income = -0.1
 		ai_creation_factor = 102
@@ -911,8 +911,8 @@ castle = {
 		heavy_infantry = -10
 		archers = -20
 		horse_archers = -10
-		light_cavalry_offensive = 0.05
-		light_cavalry_defensive = 0.05
+		camel_cavalry_offensive = 0.05
+		camel_cavalry_defensive = 0.05
 		retinuesize = 20
 		tax_income = -0.15
 		ai_creation_factor = 101
@@ -932,14 +932,14 @@ castle = {
 		upgrades_from = ca_culture_group_arabic_1
 		build_cost = 300
 		build_time = 1095
-		light_cavalry = 110
+		camel_cavalry = 110
 		pikemen = -10
 		light_infantry = -30
 		heavy_infantry = -10
 		archers = -20
 		horse_archers = -10
-		light_cavalry_offensive = 0.05
-		light_cavalry_defensive = 0.05
+		camel_cavalry_offensive = 0.05
+		camel_cavalry_defensive = 0.05
 		retinuesize = 20
 		tax_income = -0.2
 		ai_creation_factor = 100
@@ -965,8 +965,8 @@ castle = {
 		heavy_infantry = -10
 		archers = -20
 		horse_archers = -10
-		light_cavalry_offensive = 0.05
-		light_cavalry_defensive = 0.05
+		camel_cavalry_offensive = 0.05
+		camel_cavalry_defensive = 0.05
 		retinuesize = 20
 		tax_income = -0.25
 		ai_creation_factor = 99
@@ -992,8 +992,8 @@ castle = {
 		heavy_infantry = -10
 		archers = -20
 		horse_archers = -10
-		light_cavalry_offensive = 0.05
-		light_cavalry_defensive = 0.05
+		camel_cavalry_offensive = 0.05
+		camel_cavalry_defensive = 0.05
 		retinuesize = 20
 		tax_income = -0.3
 		ai_creation_factor = 98
@@ -1019,8 +1019,8 @@ castle = {
 		heavy_infantry = -10
 		archers = -20
 		horse_archers = -10
-		light_cavalry_offensive = 0.05
-		light_cavalry_defensive = 0.05
+		camel_cavalry_offensive = 0.05
+		camel_cavalry_defensive = 0.05
 		retinuesize = 20
 		tax_income = -0.35
 		ai_creation_factor = 97
@@ -2347,9 +2347,10 @@ castle = {
 		extra_tech_building_start = 1.0
 	}
 	
-	#Italian Pike formations
+	#Italian Mounted Crossbowmen (Balestrieri a Cavallo)
+	# -> Cavalleria Training Ground
 	ca_culture_italian_0 = {
-		desc = ca_culture_italian_1_desc
+		desc = ca_culture_italian_cavalry_desc
 		potential = {
 			OR = {
 				culture = italian
@@ -2376,7 +2377,7 @@ castle = {
 		extra_tech_building_start = 0.0
 	}
 	ca_culture_italian_1 = {
-		desc = ca_culture_italian_1_desc
+		desc = ca_culture_italian_cavalry_desc
 		potential = {
 			OR = {
 				culture = italian
@@ -2404,7 +2405,7 @@ castle = {
 		extra_tech_building_start = 1.0
 	}
 	ca_culture_italian_2 = {
-		desc = ca_culture_italian_1_desc
+		desc = ca_culture_italian_cavalry_desc
 		potential = {
 			FROM = { culture_group = ROOT }
 			OR = {
@@ -2436,7 +2437,7 @@ castle = {
 		extra_tech_building_start = 1.0
 	}
 	ca_culture_italian_3 = {
-		desc = ca_culture_italian_1_desc
+		desc = ca_culture_italian_cavalry_desc
 		potential = {
 			FROM = { culture_group = ROOT }
 			OR = {
@@ -2468,7 +2469,7 @@ castle = {
 		extra_tech_building_start = 1.0
 	}
 	ca_culture_italian_4 = {
-		desc = ca_culture_italian_1_desc
+		desc = ca_culture_italian_cavalry_desc
 		potential = {
 			FROM = { culture = ROOT }
 			OR = {
@@ -2500,7 +2501,7 @@ castle = {
 		extra_tech_building_start = 1.0
 	}
 	ca_culture_italian_5 = {
-		desc = ca_culture_italian_1_desc
+		desc = ca_culture_italian_cavalry_desc
 		potential = {
 			FROM = { culture = ROOT }
 			OR = {
@@ -3018,5 +3019,90 @@ castle = {
 		ai_creation_factor = 97
 		
 		extra_tech_building_start = 1.0
-	}	
+	}
+	# TODO: Rewrite for PB's system
+	# Indian war elephant pens
+	ca_culture_indian_1 = {
+		desc = ca_culture_indian_1_desc
+		potential = {
+			FROM = {
+				OR = {
+					culture_group = indo_aryan_group
+					culture_group = dravidian_group
+				}
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		prerequisites = { ca_wall_2 }
+		build_cost = 200
+		build_time = 730
+		war_elephants = 6
+		war_elephants_offensive = 0.15
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_indian_2 = {
+		desc = ca_culture_indian_2_desc
+		potential = {
+			FROM = {
+				OR = {
+					culture_group = indo_aryan_group
+					culture_group = dravidian_group
+				}
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		upgrades_from = ca_culture_indian_1
+		build_cost = 300
+		build_time = 1095
+		war_elephants = 10
+		war_elephants_offensive = 0.05
+		war_elephants_defensive = 0.10
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_indian_3 = {
+		desc = ca_culture_indian_3_desc
+		potential = {
+			FROM = {
+				OR = {
+					culture_group = indo_aryan_group
+					culture_group = dravidian_group
+				}
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
+		upgrades_from = ca_culture_indian_2
+		build_cost = 400
+		build_time = 2190
+		war_elephants = 22
+		war_elephants_offensive = 0.05
+		war_elephants_defensive = 0.10
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_indian_4 = {
+		desc = ca_culture_indian_4_desc
+		potential = {
+			FROM = {
+				OR = {
+					culture_group = indo_aryan_group
+					culture_group = dravidian_group
+				}
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 4 }
+		upgrades_from = ca_culture_indian_3
+		build_cost = 500
+		build_time = 2190
+		war_elephants = 22
+		war_elephants_offensive = 0.05
+		war_elephants_defensive = 0.10
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
 }

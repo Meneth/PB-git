@@ -472,6 +472,8 @@ RETTYPE_CUL_BYZ =
 	second_type = 6
 	second_amount = 100
 
+	special_troops = horse_archers
+	
 	potential = {
 		OR = {
 			culture = alan
@@ -545,6 +547,8 @@ RETTYPE_CUL_ALTAIC =
 	second_type = 3
 	second_amount = 120
 	
+	special_troops = horse_archers
+	
 	potential = {
 		OR = {
 			culture = cuman
@@ -598,8 +602,10 @@ RETTYPE_CUL_TURKISH =
 ########################
 RETTYPE_CUL_ARAB = 
 {
-	first_type = 3
+	first_type = 6
 	first_amount = 250
+	
+	special_troops = camel_cavalry
 	
 	potential = { culture_group = arabic }
 	

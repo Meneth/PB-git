@@ -1,4 +1,4 @@
-3.5.2 [BETA - Breaks non-beta saves!]
+3.5.2
 	Updated for 2.1
 	Fixed Mandé culture not existing
 	Fixed some missing localisation
