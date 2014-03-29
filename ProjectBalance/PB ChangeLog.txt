@@ -1,3 +1,6 @@
+3.5.3 [BETA]
+	Fixed the Norman Company not having any soldiers
+
 3.5.2
 	Updated for 2.1
 	Fixed Mandé culture not existing
