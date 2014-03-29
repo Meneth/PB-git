@@ -18,6 +18,7 @@ b_dornoch = temple
 # Misc
 culture = scottish
 religion = catholic
+terrain = hills
 
 # History
 1030.1.1= { culture = norse }

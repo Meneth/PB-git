@@ -40,7 +40,7 @@ religion = norse_pagan
 }
 
 1097.1.1 = { trade_post = -1 }
-1097.1.2= { capital = b_visborg }
+1097.1.1= { capital = b_visborg }
 
 1187.1.1 = { b_slite = city }
 

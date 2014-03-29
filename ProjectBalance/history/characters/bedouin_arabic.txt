@@ -7,10 +7,10 @@
 	trait="tough_soldier"
 	father=163128
 	830.1.1={
-		birth="830.1.1"
+		birth=yes
 	}
 	884.1.6={
-		death="884.1.6"
+		death=yes
 	}
 }
 
@@ -1444,6 +1444,7 @@
 	religion="shiite"
 	culture="bedouin_arabic"
 	trait="sayyid"
+	add_claim = k_shiite
 	father=159422
 	1000.1.1={
 		birth="1000.1.1"
@@ -1463,10 +1464,10 @@
 	religion="shiite"
 	culture="bedouin_arabic"
 	trait="sayyid"
+	add_claim = k_shiite
 	father=45048
 	1040.1.1={
 		birth="1040.1.1"
-		add_claim = k_shiite
 	}
 	1068.1.1={
 		death="1068.1.1"
@@ -1483,10 +1484,10 @@
 	religion="shiite"
 	culture="bedouin_arabic"
 	trait="sayyid"
+	add_claim = k_shiite
 	father=45048
 	1045.1.1={
 		birth="1045.1.1"
-		add_claim = k_shiite
 	}
 	1099.1.1={
 		death="1099.1.1"
@@ -1576,12 +1577,10 @@
 	religion="shiite"
 	culture="bedouin_arabic"
 	trait="sayyid"
+	add_claim = k_shiite
 	father=45050
 	1080.1.1={
 		birth="1080.1.1"
-	}
-	1099.1.1={
-		add_claim = k_shiite
 	}
 	1137.1.1={
 		death="1137.1.1"
@@ -1598,12 +1597,10 @@
 	religion="shiite"
 	culture="bedouin_arabic"
 	trait="sayyid"
+	add_claim = k_shiite
 	father=45050
 	1075.1.1={
 		birth="1075.1.1"
-	}
-	1099.1.1={
-		add_claim = k_shiite
 	}
 	1115.1.1={
 		death="1115.1.1"
@@ -1620,12 +1617,10 @@
 	religion="shiite"
 	culture="bedouin_arabic"
 	trait="sayyid"
+	add_claim = k_shiite
 	father=45050
 	1076.1.1={
 		birth="1076.1.1"
-	}
-	1099.1.1={
-		add_claim = k_shiite
 	}
 	1115.1.1={
 		death="1115.1.1"
@@ -1643,12 +1638,10 @@
 	religion="shiite"
 	culture="bedouin_arabic"
 	trait="sayyid"
+	add_claim = k_shiite
 	father=45056
 	1100.1.1={
 		birth="1100.1.1"
-	}
-	1115.1.1={
-		add_claim = k_shiite
 	}
 	1138.1.1={
 		death="1138.1.1"
@@ -1665,12 +1658,10 @@
 	religion="shiite"
 	culture="bedouin_arabic"
 	trait="sayyid"
+	add_claim = k_shiite
 	father=45057
 	1110.1.1={
 		birth="1110.1.1"
-	}
-	1115.1.1={
-		add_claim = k_shiite
 	}
 	1171.1.1={
 		death="1171.1.1"
@@ -7415,10 +7406,10 @@
 	religion="shiite"
 	culture="bedouin_arabic"
 	trait="sayyid"
+	add_claim = k_shiite
 	father=159418
 	1045.1.1={
 		birth="1045.1.1" #Unknown
-		add_claim = k_shiite
 	}
 	1100.1.1={
 		death="1100.1.1"
@@ -7430,10 +7421,10 @@
 	religion="shiite"
 	culture="bedouin_arabic"
 	trait="sayyid"
+	add_claim = k_shiite
 	father=159419
 	1100.1.1={
 		birth="1100.1.1" #Unknown
-		add_claim = k_shiite
 	}
 	1171.1.1={
 		death="1171.1.1"
@@ -9822,5 +9813,324 @@
 	}
 	900.10.3={
 		death="900.10.3"
+	}
+}
+
+145596 = { 
+	name="Hnanisho" 
+	dynasty=1022234
+	religion="nestorian"
+	culture="bedouin_arabic"
+	father=145598
+	1288.1.1={
+		birth="1288.1.1"
+	}
+	1338.10.22={
+		death="1338.10.22"
+	}
+}
+
+145597 = { 
+	name="Maremmeh" 
+	dynasty=1022234
+	religion="nestorian"
+	culture="bedouin_arabic"
+	father=145598
+	1291.1.1={
+		birth="1291.1.1"
+	}
+	1335.7.28={
+		death="1335.7.28"
+	}
+}
+
+145598 = { 
+	name="Theodosis"
+	dynasty=1022234
+	religion="nestorian"
+	culture="bedouin_arabic"
+	father=145603
+	1268.1.1={
+		birth="1268.1.1"
+	}
+	1331.12.19={
+		death="1331.12.19"
+	}
+}
+
+145599 = { 
+	name="Denha"
+	dynasty=1022234
+	religion="nestorian"
+	culture="bedouin_arabic"
+	father=145597
+	1310.1.1={
+		birth="1310.1.1"
+	}
+	1338.10.22={
+		death="1338.10.22"
+	}
+}
+
+145600 = { 
+	name="Yohannan"
+	dynasty=1022234
+	religion="nestorian"
+	culture="bedouin_arabic"
+	father=145598
+	1293.1.1={
+		birth="1293.1.1"
+	}
+	1349.9.28={
+		death="1349.9.28"
+	}
+}
+
+145601 = { 
+	name="Theodosis"
+	dynasty=1022234
+	religion="nestorian"
+	culture="bedouin_arabic"
+	father=145596
+	1310.1.1={
+		birth="1310.1.1"
+	}
+	1362.1.8={
+		death="1362.1.8"
+	}
+}
+
+145602 = { 
+	name="Surin"
+	dynasty=1022234
+	religion="nestorian"
+	culture="bedouin_arabic"
+	father=145601
+	1333.1.1={
+		birth="1333.1.1"
+	}
+	1398.4.10={
+		death="1398.4.10"
+	}
+}
+
+145603 = { 
+	name="Pethion"
+	dynasty=1022234
+	religion="nestorian"
+	culture="bedouin_arabic"
+	father=145605
+	1250.1.1={
+		birth="1250.1.1"
+	}
+	1302.7.4={
+		death="1302.7.4"
+	}
+}
+
+145604 = { 
+	name="Giwargis"
+	dynasty=1022234
+	religion="nestorian"
+	culture="bedouin_arabic"
+	father=145605
+	1247.1.1={
+		birth="1247.1.1"
+	}
+	1296.1.18={
+		death="1296.1.18"
+	}
+}
+
+145605 = { 
+	name="Pethion"
+	dynasty=1022234
+	religion="nestorian"
+	culture="bedouin_arabic"
+	father=145606
+	1228.1.1={
+		birth="1228.1.1"
+	}
+	1289.1.30={
+		death="1289.1.30"
+	}
+}
+
+145606 = { 
+	name="Theodosis"
+	dynasty=1022234
+	religion="nestorian"
+	culture="bedouin_arabic"
+	father=145607
+	1210.1.1={
+		birth="1210.1.1"
+	}
+	1273.7.15={
+		death="1273.7.15"
+	}
+}
+
+145607 = { 
+	name="Nikolas"
+	dynasty=1022234
+	religion="nestorian"
+	culture="bedouin_arabic"
+	1190.1.1={
+		birth="1190.1.1"
+	}
+	1261.12.29={
+		death="1261.12.29"
+	}
+}
+
+145608 = { 
+	name="Abraham"
+	dynasty=1022235
+	religion="nestorian"
+	culture="bedouin_arabic"
+	father=145609
+	1220.1.1={
+		birth="1220.1.1"
+	}
+	1276.8.2={
+		death="1276.8.2"
+	}
+}
+
+145609 = { 
+	name="Gregoris"
+	dynasty=1022235
+	religion="nestorian"
+	culture="bedouin_arabic"
+	father=145610
+	1170.1.1={
+		birth="1170.1.1"
+	}
+	1228.3.1={
+		death="1228.3.1"
+	}
+}
+
+145610 = { 
+	name="Eliya"
+	dynasty=1022235
+	religion="nestorian"
+	culture="bedouin_arabic"
+	father=145611
+	1141.1.1={
+		birth="1141.1.1"
+	}
+	1199.10.3={
+		death="1199.10.3"
+	}
+}
+
+145611 = { 
+	name="Aba"
+	dynasty=1022235
+	religion="nestorian"
+	culture="bedouin_arabic"
+	father=145612
+	1124.1.1={
+		birth="1124.1.1"
+	}
+	1181.11.4={
+		death="1181.11.4"
+	}
+}
+
+145612 = { 
+	name="Abraham"
+	dynasty=1022235
+	religion="nestorian"
+	culture="bedouin_arabic"
+	father=145613
+	1105.1.1={
+		birth="1105.1.1"
+	}
+	1164.1.12={
+		death="1164.1.12"
+	}
+}
+
+145613 = { 
+	name="Maremmeh"
+	dynasty=1022235
+	religion="nestorian"
+	culture="bedouin_arabic"
+	father=145614
+	1083.1.1={
+		birth="1083.1.1"
+	}
+	1141.1.4={
+		death="1141.1.4"
+	}
+}
+
+145614 = { 
+	name="Eliya"
+	dynasty=1022235
+	religion="nestorian"
+	culture="bedouin_arabic"
+	father=145615
+	1060.1.1={
+		birth="1060.1.1"
+	}
+	1103.10.18={
+		death="1103.10.18"
+	}
+}
+
+145615 = { 
+	name="Abraham"
+	dynasty=1022235
+	religion="nestorian"
+	culture="bedouin_arabic"
+	1038.1.1={
+		birth="1038.1.1"
+	}
+	1076.7.6={
+		death="1076.7.6"
+	}
+}
+
+145616 = { 
+	name="Nikolas"
+	dynasty=1022236
+	religion="nestorian"
+	culture="bedouin_arabic"
+	father=145617
+	862.1.1={
+		birth="862.1.1"
+	}
+	928.1.2={
+		death="928.1.2"
+	}
+}
+
+145617 = { 
+	name="Abraham"
+	dynasty=1022236
+	religion="nestorian"
+	culture="bedouin_arabic"
+	father=145618
+	845.1.1={
+		birth="845.1.1"
+	}
+	897.6.3={
+		death="897.6.3"
+	}
+}
+
+145618 = { 
+	name="Denha"
+	dynasty=1022236
+	religion="nestorian"
+	culture="bedouin_arabic"
+	825.1.1={
+		birth="825.1.1"
+	}
+	872.3.20={
+		death="872.3.20"
 	}
 }

@@ -401,6 +401,8 @@ character_event = {
 	border = GFX_event_normal_frame_war
 
 	is_triggered_only = yes
+	
+	notification = yes
 
 	trigger = {
 		siege = {
@@ -1678,6 +1680,10 @@ character_event = {
 		
 		OR = {
 			is_ruler = yes
+			AND = {
+				is_female = yes
+				NOT = { age = 40 }
+			}
 			
 			host = {
 				OR = {

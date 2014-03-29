@@ -193,6 +193,7 @@ character_event = {
 					owner = ROOT
 					match_character = ROOT
 					match_mult = 0.1
+					match_min = 7
 					earmark = prepared_invasion
 					cannot_inherit = yes
 				}
@@ -321,6 +322,7 @@ character_event = {
 			owner = ROOT
 			match_character = ROOT
 			match_mult = 0.15
+			match_min = 10
 			earmark = prepared_invasion
 			cannot_inherit = yes
 		}
@@ -427,6 +429,7 @@ character_event = {
 					owner = ROOT
 					match_character = ROOT
 					match_mult = 0.075
+					match_min = 5
 					earmark = prepared_invasion
 					cannot_inherit = yes
 				}
@@ -788,6 +791,11 @@ narrative_event = {
 					de_jure_liege = k_hungary
 				}
 			}
+		}
+		k_hungary = {
+			grant_title = ROOT
+			copy_title_laws = k_magyar
+			copy_title_history = k_magyar
 		}
 		k_magyar = {
 			destroy_landed_title = THIS

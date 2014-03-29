@@ -128,12 +128,24 @@ character_event = {
 			learning = 13
 		}
 		modifier = {
+			factor = 3.0
+			NOT = { religion_authority = 0.1 }
+		}
+		modifier = {
 			factor = 2.0
+			NOT = { religion_authority = 0.2 }
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { religion_authority = 0.3 }
+		}
+		modifier = {
+			factor = 1.5
 			NOT = { religion_authority = 0.4 }
 		}
 		modifier = {
-			factor = 4.0
-			NOT = { religion_authority = 0.2 }
+			factor = 1.5
+			NOT = { religion_authority = 0.5 }
 		}
 		modifier = {
 			factor = 0.75
@@ -141,8 +153,37 @@ character_event = {
 		}
 		modifier = {
 			factor = 0.75
+			religion_authority = 0.7
+		}
+		modifier = {
+			factor = 0.75
 			religion_authority = 0.8
 		}
+		modifier = {
+			factor = 0.75
+			religion_authority = 0.9
+		}
+		
+		# Hindus and Buddhists have a hard time converting other Indian religions
+		modifier = {
+			factor = 3.0
+			OR = {
+				religion = hindu
+				religion = buddhist
+			}
+			location = {
+				religion_group = indian_group
+			}
+		}
+		# Jains have a hard time converting ALL non-pagans
+		modifier = {
+			factor = 3.0
+			religion = jain
+			location = {
+				NOT = { religion_group = pagan_group }
+			}
+		}
+		
 		modifier = {
 			factor = 3.0
 			religion_group = pagan_group
@@ -163,7 +204,7 @@ character_event = {
 			has_province_modifier = force_converting
 		}
 		modifier = {
-			factor = 2.0
+			factor = 3.0
 			has_province_modifier = heretic_stronghold
 		}
 		modifier = {
@@ -757,6 +798,7 @@ character_event = {
 	trigger = {
 		has_job_action = action_inquisition
 		NOT = { religion_group = pagan_group }
+		NOT = { religion_group = indian_group }
 		location = {
 			any_province_lord = {
 				NOT = { is_liege_of = ROOT }
@@ -1864,6 +1906,7 @@ character_event = {
 	
 	trigger = {
 		has_job_action = action_improve_rel_relations
+		NOT = { religion_group = indian_group }
 		location = { 
 			any_province_lord = {
 				is_priest = yes
@@ -2168,27 +2211,20 @@ character_event = {
 	
 	trigger = {
 		has_job_action = action_advance_cul_tech
+		NOT = { religion_group = indian_group }
 		is_heretic = no
-		liege = { 
-			is_heretic = no
-			NOT = {
-				religion = norse_pagan
-				religion = tengri_pagan
-				religion = baltic_pagan
-				religion = finnish_pagan
-				religion = aztec
-				religion = slavic_pagan
-				religion = west_african_pagan
-			}
+		OR = {
+			religion_group = christian
+			religion_group = muslim
+			religion_group = jewish_group
 		}
-		NOT = {
-			religion = norse_pagan
-			religion = tengri_pagan
-			religion = baltic_pagan
-			religion = finnish_pagan
-			religion = aztec
-			religion = slavic_pagan
-			religion = west_african_pagan
+		liege = {
+			is_heretic = no
+			OR = {
+				religion_group = christian
+				religion_group = muslim
+				religion_group = jewish_group
+			}
 		}
 	}
 	
@@ -2305,7 +2341,7 @@ letter_event = {
 	option = {
 		name = "EVTOPTA20270"
 		ai_chance = { factor = 100 }
-		FROM = { imprison = yes } # chaplains who hate their lieges are, in this case, more likely to end up in prison and consequently hate the liege forever
+		FROM = { imprison = yes }
 	}
 	option = {
 		name = "EVTOPTB20270"

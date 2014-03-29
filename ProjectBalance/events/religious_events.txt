@@ -21,7 +21,7 @@ province_event = {
 	
 	trigger = {
 		is_heretic = no
-		NOT = { religion_group = pagan_group }
+		has_heresies = yes
 		NOT = { province_id = 333 } # Rome
 		NOT = { province_id = 497 } # Thrace
 		NOT = { province_id = 719 } # Mecca
@@ -596,6 +596,7 @@ province_event = {
 	
 	trigger = {
 		is_heretic = no
+		has_heresies = yes
 		owner = { is_heretic = no }
 		NOT = { province_id = 333 } # Rome
 		NOT = { province_id = 497 } # Thrace
@@ -4177,7 +4178,7 @@ narrative_event = {
 	id = 39640
 	title = EVTNAME39640
 	desc = EVTDESC39640
-	picture = GFX_evt_bishop_muslim
+	picture = GFX_evt_bishop
 	border = GFX_event_narrative_frame_religion
 	
 	major = yes
@@ -4790,7 +4791,7 @@ narrative_event = {
 	id = 39670
 	title = EVTNAME39670
 	desc = EVTDESC39670
-	picture = GFX_evt_bishop_muslim
+	picture = GFX_evt_bishop
 	border = GFX_event_narrative_frame_religion
 	
 	major = yes
@@ -5153,6 +5154,12 @@ character_event = {
 			factor = 100
 		}
 		religion = FROMFROM
+		if = {
+			limit = {
+				religion_group = indian_group
+			}
+			character_event = { id = RoI.120 } # Assign Indian religion branch
+		}
 	}
 	
 	option = { # Sympathy for the old religion
@@ -5203,6 +5210,12 @@ character_event = {
 		}
 		
 		religion = FROMFROM
+		if = {
+			limit = {
+				religion_group = indian_group
+			}
+			character_event = { id = RoI.120 } # Assign Indian religion branch
+		}
 	}
 }
 

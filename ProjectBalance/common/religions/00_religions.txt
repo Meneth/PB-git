@@ -3,13 +3,16 @@ christian = {
 	graphical_culture = westerngfx
 	crusade_cb = crusade
 	playable = yes
-	pacifist = yes # Will make Hordes lose their super aggressiveness
+	ai_peaceful = yes # Will make Hordes lose their super aggressiveness
+	
+	ai_convert_same_group = 2 # always try to convert
+	ai_convert_other_group = 2 # always try to convert
 	
 	# Names given only to Christian characters (base names)
 	male_names = {
 		Andrew Antoninus Bartolomeus Benedict Christian Christopher Clement Constantine David Demetrius Eustace George Gregory 
 		Hans Isaac Joakim Jacob John Jordan Joseph Laurence Magnus Marcus Martin Matthew Michael Nicholas Patrick Paul Peter Philip 
-		Salvador Samuel Sebastian Simon Stephen Thomas
+		Salvador Samuel Sebastian Simon Stephen Thomas Abraham, Alexander, Daniel, Jesus, Job, Joshua, Cyrus, Luke, Joseph, Zachariah
 	}
 	female_names = {
 		Anna Beatrice Benedicta Brigid Catherine Cecilia Christina Clementia Constance Dorothy Elisabeth Joan Judith Juliana Helen 
@@ -62,6 +65,7 @@ christian = {
 
 		can_retire_to_monastery = yes
 		female_temple_holders = yes
+		feminist = yes      # Nullifies the negative opinion modifier that vassals normally get if ruler is female or has female heir
 		
 		religious_clothing_head = 0
 		religious_clothing_priest = 1
@@ -229,30 +233,7 @@ christian = {
 
 		can_retire_to_monastery = yes
 		female_temple_holders = yes
-		
-		religious_clothing_head = 2
-		religious_clothing_priest = 2
-	}
-	
-	nestorian = {
-		graphical_culture = westerngfx
-
-		icon = 2
-		heresy_icon = 7
-		
-		color = { 0.8 0.3 0.5 }
-		parent = orthodox
-		
-		crusade_name = CRUSADE
-
-		autocephaly = yes
-		can_excommunicate = yes
-		can_grant_divorce = yes
-		can_grant_invasion_cb = invasion
-		can_grant_claim = yes
-		can_call_crusade = no
-		can_retire_to_monastery = yes
-		priests_can_inherit = no
+		feminist = yes      # Nullifies the negative opinion modifier that vassals normally get if ruler is female or has female heir
 		
 		religious_clothing_head = 2
 		religious_clothing_priest = 2
@@ -306,6 +287,101 @@ christian = {
 		religious_clothing_priest = 2
 	}
 	
+	paulician = {
+		graphical_culture = westerngfx
+
+		icon = 2
+		heresy_icon = 7
+		
+		color = { 0.5 0 0.3 }
+		
+		parent = orthodox
+		
+		crusade_name = CRUSADE
+		
+		evil_god_names = {
+			SATAN LUCIFER THE_DEVIL THE_DEMIURGE
+		}
+
+		autocephaly = yes
+		can_excommunicate = yes
+		can_grant_divorce = yes
+		can_grant_invasion_cb = invasion
+		can_grant_claim = yes
+		can_call_crusade = no
+		can_retire_to_monastery = yes
+		priests_can_inherit = no
+		
+		religious_clothing_head = 2
+		religious_clothing_priest = 2
+	}
+	
+	nestorian = {
+		graphical_culture = westerngfx
+
+		icon = 46
+		heresy_icon = 47
+		
+		color = { 0.8 0.3 0.5 }
+		
+		crusade_name = CRUSADE
+		scripture_name = THE_BIBLE
+		priest_title = PRIEST
+		
+		god_names = {
+			GOD_GOD GOD_THE_LORD GOD_JESUS GOD_THE_BLESSED_VIRGIN
+		}
+		
+		evil_god_names = {
+			SATAN LUCIFER THE_DEVIL
+		}
+		
+		autocephaly = yes
+		can_excommunicate = yes
+		can_grant_divorce = yes
+		can_grant_invasion_cb = invasion
+		can_grant_claim = yes
+		can_call_crusade = no
+		priests_can_inherit = no
+		
+		can_retire_to_monastery = yes
+		
+		religious_clothing_head = 2
+		religious_clothing_priest = 2
+	}
+	
+	messalian = {
+		graphical_culture = westerngfx
+
+		icon = 46
+		heresy_icon = 47
+		
+		color = { 0.6 0.1 0.4 }
+		parent = nestorian
+		
+		crusade_name = CRUSADE
+		scripture_name = THE_ASCETICUS
+		
+		god_names = {
+			GOD_GOD THE_PANTOKRATOR GOD_JESUS LUCIFER
+		}
+		
+		evil_god_names = {
+			THE_DEMIURGE
+		}
+
+		can_retire_to_monastery = yes
+		female_temple_holders = yes
+		feminist = yes      # Nullifies the negative opinion modifier that vassals normally get if ruler is female or has female heir
+		
+		divine_blood = yes # Sacred close-kin marriage mechanics
+		pc_marriage = yes
+		bs_marriage = yes
+		
+		religious_clothing_head = 2
+		religious_clothing_priest = 2
+	}
+	
 }
 
 muslim = {
@@ -313,6 +389,9 @@ muslim = {
 	graphical_culture = muslimgfx
 	crusade_cb = crusade
 	playable = yes
+	
+	ai_convert_same_group = 2 # always try to convert
+	ai_convert_other_group = 1 # try to convert if ai_zeal is high
 	
 	# Names given only to Muslim characters (base names)
 	male_names = {
@@ -474,6 +553,9 @@ pagan_group = {
 	graphical_culture = westerngfx
 	playable = yes
 	
+	ai_convert_same_group = 2 # always try to convert
+	ai_convert_other_group = 0	# never try to convert
+	
 	# Names given only to Pagan characters (base names)
 	male_names = {
 		Anund Asbjörn Aslak Audun Bagge Balder Brage Egil Emund Frej Gnupa Gorm Gudmund Gudröd Hardeknud Helge Odd Orm 
@@ -511,9 +593,12 @@ pagan_group = {
 	
 	norse_pagan_reformed = {
 		graphical_culture = norsegfx
+		secondary_event_pictures = norse_pagan
 
 		icon = 20
 		heresy_icon = 21
+		
+		ai_convert_other_group = 2 # always try to convert
 		
 		color = { 90 145 205 }
 		god_names = {
@@ -604,9 +689,13 @@ pagan_group = {
 	
 	tengri_pagan_reformed = { # Mongols
 		graphical_culture = mongolgfx
+		
+		secondary_event_pictures = tengri_pagan
 
 		icon = 29
 		heresy_icon = 30
+		
+		ai_convert_other_group = 2 # always try to convert
 		
 		color = { 0.1 0.3 0.85 }
 		god_names = {
@@ -680,9 +769,13 @@ pagan_group = {
 	
 	baltic_pagan_reformed = {
 		graphical_culture = norsegfx
+		
+		secondary_event_pictures = baltic_pagan
 
 		icon = 32
 		heresy_icon = 33
+		
+		ai_convert_other_group = 2 # always try to convert
 		
 		color = { 0.75 0.5 0.35 }
 		crusade_name = GREAT_HOLY_WAR
@@ -754,9 +847,13 @@ pagan_group = {
 	
 	finnish_pagan_reformed = {
 		graphical_culture = norsegfx
+		
+		secondary_event_pictures = finnish_pagan
 
 		icon = 26
 		heresy_icon = 27
+		
+		ai_convert_other_group = 2 # always try to convert
 		
 		color = { 0.65 0.65 0.1 }
 		crusade_name = GREAT_HOLY_WAR
@@ -831,7 +928,13 @@ pagan_group = {
 	
 	aztec_reformed = {
 		graphical_culture = mesoamericangfx
+		
+		secondary_event_pictures = aztec_pagan
+		
 		icon = 17
+		
+		ai_convert_other_group = 2 # always try to convert
+		
 		color = { 0.95 0.3 0.3 }
 		god_names = {
 			GOD_HUITZILOPOCHTLI GOD_XIPE_TOTEC GOD_TEZCATLIPOCA GOD_QUETZALCOATL GOD_TLALOC
@@ -896,9 +999,13 @@ pagan_group = {
 
 	slavic_pagan_reformed = {
 		graphical_culture = norsegfx
+		
+		secondary_event_pictures = slavic_pagan
 
 		icon = 23
 		heresy_icon = 24
+		
+		ai_convert_other_group = 2 # always try to convert
 		
 		color = { 0.55 0.75 0.55 }
 		crusade_name = GREAT_HOLY_WAR
@@ -986,9 +1093,13 @@ pagan_group = {
 	
 	west_african_pagan_reformed = {
 		graphical_culture = africangfx
+		
+		secondary_event_pictures = west_african_pagan
 
 		icon = 35
 		heresy_icon = 36
+		
+		ai_convert_other_group = 2 # always try to convert
 		
 		color = { 1.0 0.45 0.0 }
 		crusade_name = GREAT_HOLY_WAR
@@ -1096,6 +1207,9 @@ zoroastrian_group = {
 	graphical_culture = muslimgfx
 	playable = yes
 	
+	ai_convert_same_group = 2 # always try to convert
+	ai_convert_other_group = 2	# always try to convert
+	
 	# Names given only to Zoroastrian characters (base names)
 	male_names = {
 		Hormazd Maziar Shapur Vandad Zartosht
@@ -1103,6 +1217,7 @@ zoroastrian_group = {
 
 	zoroastrian = {
 		graphical_culture = persiangfx
+		secondary_event_pictures = sunni
 		
 		icon = 10
 		heresy_icon = 12
@@ -1136,6 +1251,8 @@ zoroastrian_group = {
 	mazdaki = {
 		graphical_culture = persiangfx
 		
+		secondary_event_pictures = sunni
+		
 		icon = 10
 		heresy_icon = 12
 		
@@ -1161,6 +1278,8 @@ zoroastrian_group = {
 	manichean = {
 		graphical_culture = persiangfx
 		
+		secondary_event_pictures = sunni
+		
 		icon = 10
 		heresy_icon = 12
 		
@@ -1185,7 +1304,10 @@ jewish_group = {
 	graphical_culture = jewishgfx
 	crusade_cb = crusade
 	playable = yes
-	pacifist = yes # Will make Hordes lose their super aggressiveness
+	ai_peaceful = yes # Will make Hordes lose their super aggressiveness
+	
+	ai_convert_same_group = 2 # always try to convert
+	ai_convert_other_group = 1	# try to convert if ai_zeal is high
 	
 	# Names given only to Jewish characters (base names)
 	male_names = {
@@ -1266,5 +1388,138 @@ jewish_group = {
 		religious_clothing_priest = 7
 		
 		expel_modifier = expelled_jewish
+	}
+}
+
+indian_group = {
+	has_coa_on_barony_only = no
+	graphical_culture = indiangfx
+	playable = yes
+	ai_peaceful = yes # Will make Hordes lose their super aggressiveness
+	
+	ai_convert_same_group = 1 # try to convert if ai_zeal is high
+	ai_convert_other_group = 2	# always try to convert
+	
+	# Names given only to Indian characters (base names)
+	male_names = {
+	}
+	female_names = {
+	}
+	
+	hindu = {
+		graphical_culture = hindugfx
+		secondary_event_pictures = sunni
+
+		icon = 44
+		heresy_icon = 45
+		
+		color = { 1.0 0.0 0.0 }
+		
+		god_names = {
+			GOD_SHIVA GOD_THE_LORD GOD_THE_SUPREME
+		}
+		
+		evil_god_names = {
+			THE_VINAYAKAS
+		}
+		
+		can_grant_divorce = yes
+		priests_can_inherit = no
+		priests_can_marry = yes
+		allow_looting = yes
+		max_consorts = 3
+		
+		unit_modifier = {
+			land_morale = 0.3
+
+			key = "OFF_RELIGION"
+		}
+		
+		religious_clothing_head = 8
+		religious_clothing_priest = 8
+
+		scripture_name = THE_MAHABHARATA
+		priest_title = PUJARI
+		piety_name = KARMA
+		
+		intermarry = jain
+		intermarry = buddhist
+	}
+	buddhist = {
+		graphical_culture = buddhistgfx
+		secondary_event_pictures = sunni
+
+		icon = 40
+		heresy_icon = 41
+		
+		color = { 0.8 0.4 0.0 }
+		
+		god_names = {
+			GOD_THE_BUDDHA GOD_THE_ARHAT GOD_THE_PERFECTED_ONES
+		}
+		
+		evil_god_names = {
+			MARA
+		}
+		
+		character_modifier = {
+			learning = 4
+		}
+		
+		has_heir_designation = yes
+		can_grant_divorce = yes
+		priests_can_inherit = no
+		feminist = yes # Nullifies the negative opinion modifier that vassals normally get if ruler is female or has female heir
+		female_temple_holders = yes
+		max_consorts = 3
+
+		short_reign_opinion_year_mult = 0 # No short reign penalty
+		
+		religious_clothing_head = 10
+		religious_clothing_priest = 10
+
+		scripture_name = THE_BUDDHACAVANA
+		priest_title = BHIKKHU
+		piety_name = KARMA
+		
+		intermarry = jain
+		intermarry = hindu
+	}
+	jain = {
+		graphical_culture = jaingfx
+		secondary_event_pictures = sunni
+		
+		pacifist = yes # Makes the AI less likely to start wars, plots and factions
+
+		icon = 42
+		heresy_icon = 43
+		
+		color = { 1.0 1.0 0.4 }
+		
+		god_names = {
+			GOD_THE_TIRTHANKARAS GOD_RISHABH GOD_AJINATH GOD_SAMBHAVANATH  # Add more Tirthankaras
+		}
+		
+		evil_god_names = {
+			THE_PUNISHERS
+		}
+
+		has_heir_designation = yes
+		can_grant_divorce = yes
+		priests_can_inherit = no
+		peace_piety_gain = 1.0 # Gains 1 piety each month while at peace
+		max_consorts = 3
+
+		short_reign_opinion_year_mult = 0 # No short reign penalty
+		
+		religious_clothing_head = 9
+		religious_clothing_priest = 9
+
+		scripture_name = THE_MAHABHARATA
+		priest_title = NIRGRANTHA
+		piety_name = PURITY
+		
+		intermarry = buddhist
+		intermarry = hindu
 	}
 }

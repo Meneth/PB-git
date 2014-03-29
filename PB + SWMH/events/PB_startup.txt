@@ -8,17 +8,18 @@
 ###################################
 
 namespace = meneth
-#Make sure all the provinces are correct religion again
+
 narrative_event = {
-	id = meneth.200
-	title = "meneth.200.name"
-	desc = "meneth.200.desc"
+	id =      meneth.200
+	title =   meneth.200.name
+	desc =    meneth.200.desc
+	picture = GFX_evt_battle
+	border =  GFX_event_narrative_frame_war
+	
 	major = yes
 	hide_new = yes
 	hide_from = yes
 	is_triggered_only = yes
-	
-	picture = "GFX_evt_battle"
 	
 	immediate = {
 		set_global_flag = SWMH
@@ -26,11 +27,6 @@ narrative_event = {
 		336 = { religion = catholic }
 		344 = { culture = southern_italian }
 		344 = { religion = catholic }
-		609 = { religion = sunni }
-		610 = { religion = sunni }
-		613 = { religion = sunni }
-		614 = { religion = sunni }
-		615 = { religion = sunni }
 		695 = { religion = nestorian }
 		696 = { religion = nestorian }
 		700 = { religion = orthodox }

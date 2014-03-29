@@ -13,7 +13,7 @@ namespace = meneth
 province_event = {
 	id = 55000
 	desc = "EVTDESC55000"
-	picture = GFX_evt_throne_room
+	picture = GFX_evt_stone_church
 	
 	trigger = {
 		owner = {
@@ -53,6 +53,7 @@ province_event = {
 				OR = {
 					culture = italian
 					culture = greek
+					culture = saxon
 				}
 				owner = { culture = norman }
 			}
@@ -60,7 +61,7 @@ province_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 1800
+		months = 3000
 
 		modifier = {
 			factor = 0.75
@@ -89,19 +90,19 @@ province_event = {
 			owner = { NOT = { stewardship = 5 }}
 		}
 		modifier = {
-			factor = 0.75
+			factor = 0.84
 			owner = { stewardship = 10 }
 		}
 		modifier = {
-			factor = 0.75
+			factor = 0.84
 			owner = { stewardship = 11 }
 		}
 		modifier = {
-			factor = 0.75
+			factor = 0.84
 			owner = { stewardship = 12 }
 		}
 		modifier = {
-			factor = 0.75
+			factor = 0.84
 			owner = { stewardship = 13 }
 		}
 		modifier = {
@@ -150,11 +151,12 @@ province_event = {
 		}
 		#Turkish culture didn't spread to coasts much
 		modifier = {
-			factor = 2
+			factor = 3
 			port = yes
 			owner = {
 				culture = turkish
 			}
+			NOT = { has_global_flag = failed_to_retake_the_coast }
 		}
 		#Turkish culture spread quickly inland
 		modifier = {
@@ -206,11 +208,11 @@ province_event = {
 	}
 }
 
-# Bring in some settlers
+# Culture spread via port
 province_event = {
 	id = 55001
 	desc = "EVTDESC55001"
-	picture = GFX_evt_carriage
+	picture = GFX_evt_busy_trading_dock_republic
 	
 	trigger = {
 		owner = {
@@ -265,6 +267,7 @@ province_event = {
 				OR = {
 					culture = italian
 					culture = greek
+					culture = saxon
 				}
 				owner = { culture = norman }
 			}
@@ -354,7 +357,7 @@ province_event = {
 province_event = {
 	id = 55002
 	desc = "EVTDESC55002"
-	picture = GFX_evt_throne_room
+	picture = GFX_evt_stone_church
 	
 	trigger = {
 		year = 1100
@@ -406,7 +409,7 @@ province_event = {
 province_event = {
 	id = 55003
 	desc = "EVTDESC55003"
-	picture = GFX_evt_throne_room
+	picture = GFX_evt_stone_church
 	
 	trigger = {
 		year = 1100
@@ -575,6 +578,7 @@ character_event = {
 						culture = central_italian
 						culture = southern_italian
 						culture = langobardisch
+						culture = saxon
 						AND = {
 							culture = greek
 							OR = {
@@ -740,6 +744,7 @@ character_event = {
 						culture = central_italian
 						culture = southern_italian
 						culture = langobardisch
+						culture = saxon
 						AND = {
 							culture = greek
 							OR = {
@@ -823,7 +828,7 @@ character_event = {
 			factor = 2
 			OR = {
 				is_patrician = yes
-				father_even_if_dead = {
+				father = {
 					is_patrician = yes
 				}
 				mother = {
@@ -1045,7 +1050,7 @@ character_event = {
 province_event = {
 	id = meneth.4
 	desc = "EVTDESC55000"
-	picture = GFX_evt_throne_room
+	picture = GFX_evt_carriage
 	
 	trigger = {
 		culture_group = celtic
@@ -1157,7 +1162,7 @@ province_event = {
 province_event = {
 	id = meneth.5
 	desc = "EVTDESC55001"
-	picture = GFX_evt_carriage
+	picture = GFX_evt_busy_trading_dock_republic
 	
 	trigger = {
 		culture_group = celtic
@@ -1231,7 +1236,7 @@ province_event = {
 province_event = {
 	id = meneth.6
 	desc = "EVTDESC55000"
-	picture = GFX_evt_throne_room
+	picture = GFX_evt_carriage
 	
 	trigger = {
 		OR = {
@@ -1365,7 +1370,7 @@ province_event = {
 province_event = {
 	id = meneth.7
 	desc = "EVTDESC55001"
-	picture = GFX_evt_carriage
+	picture = GFX_evt_busy_trading_dock_republic
 	
 	trigger = {
 		OR = {

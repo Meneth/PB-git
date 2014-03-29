@@ -87,6 +87,7 @@ succession_laws = {
 				}
 				
 				NOT = { religion_group = muslim }
+				NOT = { religion_group = indian_group }
 				is_merchant_republic = no
 				
 				OR = {
@@ -104,6 +105,7 @@ succession_laws = {
 			OR = {
 				is_landless_type_title = no
 				is_tribal_type_title = yes
+				temporary = yes
 			}
 			OR = {
 				AND = {
@@ -208,6 +210,7 @@ succession_laws = {
 			OR = {
 				is_landless_type_title = no
 				is_tribal_type_title = yes
+				temporary = yes
 			}
 			is_primary_type_title = no
 			OR = {
@@ -282,6 +285,7 @@ succession_laws = {
 					}
 				}
 				NOT = { religion_group = muslim }
+				NOT = { religion_group = indian_group }
 				is_merchant_republic = no
 				is_patrician = no
 				
@@ -294,6 +298,7 @@ succession_laws = {
 			OR = {
 				is_landless_type_title = no
 				is_tribal_type_title = yes
+				temporary = yes
 			}
 			is_primary_type_title = no
 			NOT = { tier = baron }
@@ -372,6 +377,7 @@ succession_laws = {
 			OR = {
 				is_landless_type_title = no
 				is_tribal_type_title = yes
+				temporary = yes
 			}
 			is_primary_type_title = no
 			NOT = { tier = baron }
@@ -407,14 +413,10 @@ succession_laws = {
 					culture_group = celtic
 					AND = {
 						ai = no
-						NOT = {
-							OR = {
-								trait = content
-								trait = craven
-								trait = slothful
-								trait = stressed
-							}
-						}
+						NOT = { trait = content }
+						NOT = { trait = craven }
+						NOT = { trait = slothful }
+						NOT = { trait = stressed }
 						OR = {
 							trait = ambitious
 							trait = brave
@@ -462,6 +464,7 @@ succession_laws = {
 			OR = {
 				is_landless_type_title = no
 				is_tribal_type_title = yes
+				temporary = yes
 			}
 			is_primary_type_title = no
 			OR = {
@@ -532,6 +535,7 @@ succession_laws = {
 			OR = {
 				is_landless_type_title = no
 				is_tribal_type_title = yes
+				temporary = yes
 			}
 			holder_scope = {
 				OR = {
@@ -592,6 +596,7 @@ succession_laws = {
 	succ_open_elective = {
 		potential = {
 			NOT = { title = k_papal_state }
+			temporary = no
 			OR = {
 				is_primary_type_title = yes
 				AND = {
@@ -844,7 +849,7 @@ gender_laws = {
 				AND = {
 					holder_scope = {
 						custom_tooltip = {
-							text = gender_equality
+							text = gender_equality_enabled
 							has_global_flag = gender_equality
 						}
 					}
@@ -944,7 +949,7 @@ gender_laws = {
 				AND = {
 					holder_scope = {
 						custom_tooltip = {
-							text = gender_equality
+							text = gender_equality_enabled
 							has_global_flag = gender_equality
 						}
 					}
@@ -1039,7 +1044,7 @@ gender_laws = {
 				holder_scope = {
 					prestige = 500
 					custom_tooltip = {
-						text = gender_equality
+						text = gender_equality_enabled
 						has_global_flag = gender_equality
 					}
 				}

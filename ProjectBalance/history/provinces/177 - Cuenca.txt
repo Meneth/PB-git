@@ -17,6 +17,7 @@ b_guadalajara = city
 
 culture = andalusian_arabic
 religion = sunni
+terrain = hills
 
 # History
 1193.1.1 = { culture = castillan }

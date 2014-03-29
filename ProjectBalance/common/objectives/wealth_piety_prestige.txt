@@ -271,6 +271,7 @@ obj_publicly_pious = {
 		NOT = { has_character_flag = achievement_become_paragon_of_virtue }
 		NOT = { has_character_flag = publicly_pious }
 		NOT = { has_character_flag = known_for_virtue }
+		NOT = { religion_group = indian_group }
 	}
 	chance = {
 		factor = 50
@@ -343,7 +344,8 @@ obj_known_for_virtue = {
 		NOT = { trait = impaler }
 		NOT = { trait = incapable }
 		NOT = { has_character_flag = achievement_become_paragon_of_virtue }
-		NOT = { has_character_flag = known_virtue  }
+		NOT = { has_character_flag = known_virtue }
+		NOT = { religion_group = indian_group }
 	}
 	chance = {
 		factor = 50
@@ -445,6 +447,7 @@ obj_become_paragon_of_virtue = {
 		NOT = { trait = impaler }
 		NOT = { trait = incapable }
 		NOT = { has_character_flag = achievement_become_paragon_of_virtue }
+		NOT = { religion_group = indian_group }
 	}
 	chance = {
 		factor = 50

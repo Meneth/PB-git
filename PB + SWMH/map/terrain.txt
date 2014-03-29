@@ -29,6 +29,7 @@ categories =  {
 
 	farmlands = {
 		movement_cost = 0.7
+		max_attrition = -0.01
 		color = { 137 104 165  }
 		
 		supply_limit = 5
@@ -56,6 +57,7 @@ categories =  {
 
 	woods = {
 		movement_cost = 0.75
+		max_attrition = 0.025
 		color = { 165 205 108 }
 		supply_limit = 3
 		bottleneck_chance = 10
@@ -77,6 +79,7 @@ categories =  {
 
 	steppe = {
 		movement_cost = 0.7
+		max_attrition = 0.05
 		color = { 211 201 184 }
 		supply_limit = 4
 		bottleneck_chance = 5
@@ -92,8 +95,8 @@ categories =  {
 
 	jungle = {
 		movement_cost = 2.4
-		defence = 2
-		max_attrition = 0.05
+		defence = 1.5
+		max_attrition = 0.1
 		color = { 40 180 149 }
 		supply_limit = 2
 		bottleneck_chance = 25
@@ -125,7 +128,7 @@ categories =  {
 
 		supply_limit = 2
 		bottleneck_chance = 5
-	}
+	}	
 }
 
 text_0	= { type = plains    color = { 	 0	 } priority = 	0	 }
@@ -143,7 +146,7 @@ text_9	= { type = mountain color = { 	9	 } priority = 	9	 }
 text_10	= { type = mountain color = { 	10	 } priority = 	10	 }
 text_11	= { type = mountain color = { 	11	 } priority = 	11	 }
 
-text_12	= { type = coastal_desert color = { 	12	 } priority = 	12	 }
+text_12	= { type = jungle color = { 	12	 } priority = 	12	 }
 text_13	= { type = coastal_desert color = { 	13	 } priority = 	13	 }
 text_14	= { type = coastal_desert color = { 	14	 } priority = 	14	 }
 text_15	= { type = coastal_desert color = { 	15	 } priority = 	15	 }

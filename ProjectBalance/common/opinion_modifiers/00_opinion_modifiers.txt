@@ -19,7 +19,7 @@
 ##############
 
 same_dynasty = {
-	opinion = 10
+	opinion = 5
 }
 
 opinion_ally = {
@@ -56,6 +56,10 @@ de_jure_liege = {
 
 de_jure_liege_hog = {
 	opinion = -20
+}
+
+opinion_imprisoned = {
+	opinion = -50
 }
 
 # Not applied under Feudal Elective
@@ -140,6 +144,12 @@ opinion_repented_sins = {
 
 opinion_lover = {
 	opinion = 75
+	months = 2400
+}
+
+# Ex-lover
+opinion_former_lover = {
+	opinion = -15
 	months = 2400
 }
 
@@ -231,6 +241,17 @@ opinion_heir_guardian_my_culture = {
 
 # Heir Educated with Foreign Culture
 opinion_heir_guardian_foreign_culture = {
+	opinion = -25
+}
+
+# Revoked Honorary Title with positive opinion mod
+opinion_revoked_honorary_title = {
+	opinion = -25
+	months = 1200
+}
+
+# Kings don't like being vassals
+opinion_vassal_king = {
 	opinion = -25
 }
 
@@ -609,6 +630,13 @@ preparing_to_invade_me = {
 opinion_failed_invasion = {
 	opinion = -25
 	months = 60
+}
+
+# You have been warned that an adventurer is targeting you
+opinion_targeted_by_adventurer = {
+	opinion = -100
+	months = 24
+	preparing_adventure_against_me = yes
 }
 
 ###########
@@ -1374,7 +1402,7 @@ opinion_spouse_slayer = {
 }
 
 opinion_murder_attempt = {
-	opinion = -50
+	opinion = -200
 	#months = 240
 	prison_reason = yes # This one gives righteous cause to imprison a character
 }
@@ -2388,4 +2416,50 @@ opinion_creator_of_rel_heal = {
 opinion_deposed_antipope = {
 	opinion = 100
 	months = 240
+}
+
+opinion_married_wrong_caste = {
+	opinion = -30
+}
+
+opinion_changed_caste = {
+	opinion = -30
+}
+
+opinion_ruler_wrong_caste_hindu = {
+	opinion = -30
+}
+
+opinion_ruler_wrong_caste_non_hindu = {
+	opinion = -15
+}
+
+opinion_low_caste = {
+	opinion = -15
+}
+
+opinion_sacrilege = {
+	opinion = -20
+}
+
+opinion_takfir = {
+	opinion = -40
+	prison_reason = yes
+	execute_reason = yes
+}
+
+opinion_straightened_up = {
+	opinion = 30
+}
+
+opinion_rebel_leader = {
+	opinion = 1000
+}
+
+opinion_fellow_rebel = {
+	opinion = 50
+}
+
+opinion_enlightened = {
+	opinion = 30
 }

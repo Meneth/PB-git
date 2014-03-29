@@ -516,6 +516,8 @@ obj_become_spiritual = {
 				has_global_flag = gender_equality
 				NOT = { liege = { religion_group = muslim } }
 			}
+			religion = cathar
+			religion = bogomilist
 		}
 		learning = 10
 		
@@ -718,8 +720,11 @@ obj_get_married = {
 				is_ruler = no
 				age = 40
 			}
+			has_landed_title = k_papal_state
 			trait = celibate
 			trait = incapable
+			trait = eunuch
+			trait = homosexual
 		}
 	}
 	abort_effect = {
@@ -975,7 +980,10 @@ obj_wants_landed_title = {
 			is_close_relative = ROOT
 			num_of_extra_landed_titles = 1
 			OR = {
-				NOT = { is_father = ROOT }
+				AND = {
+					NOT = { is_father = ROOT }
+					NOT = { is_mother = ROOT }
+				}
 				NOT = {
 					current_heir = {
 						character = ROOT
@@ -1020,6 +1028,13 @@ obj_wants_landed_title = {
 		modifier = {
 			factor = 3.0
 			trait = ambitious
+		}
+		modifier = {
+			factor = 2.0
+			religion_group = muslim
+			liege = {
+				dynasty = ROOT
+			}
 		}
 	}
 	success = {
@@ -1116,6 +1131,7 @@ obj_become_heir = {
 		is_primary_heir = yes
 	}
 	abort = {
+		trait = incapable
 	}
 	abort_effect = {
 	}
@@ -1173,7 +1189,10 @@ obj_improve_martial = {
 		martial = 8
 	}
 	abort = {
-		trait = incapable
+		OR = {
+			trait = incapable
+			trait = infirm
+		}
 	}
 	abort_effect = {
 		clr_character_flag = improve_martial_success
@@ -1238,7 +1257,10 @@ obj_improve_stewardship = {
 		stewardship = 8
 	}
 	abort = {
-		trait = incapable
+		OR = {
+			trait = incapable
+			trait = infirm
+		}
 	}
 	abort_effect = {
 		clr_character_flag = 10_salt
@@ -1305,7 +1327,10 @@ obj_improve_learning = {
 		learning = 8
 	}
 	abort = {
-		trait = incapable
+		OR = {
+			trait = incapable
+			trait = infirm
+		}
 	}
 	abort_effect = {
 		clr_character_flag = flying_machine
@@ -1368,7 +1393,10 @@ obj_improve_diplomacy = {
 		diplomacy = 8
 	}
 	abort = {
-		trait = incapable
+		OR = {
+			trait = incapable
+			trait = infirm
+		}
 	}
 	abort_effect = {
 		clr_character_flag = the_feud
@@ -1431,7 +1459,10 @@ obj_improve_intrigue = {
 		intrigue = 8
 	}
 	abort = {
-		trait = incapable
+		OR = {
+			trait = incapable
+			trait = infirm
+		}
 	}
 	abort_effect = {
 		clr_character_flag = the_necklace
@@ -1640,4 +1671,506 @@ obj_become_king = {
 		prestige = 1000
 	}
 	
+}
+
+
+### Buddhist ambitions ###
+
+obj_buddhist_stop_drinking = {
+	type = character
+	
+	allow = {
+		is_adult = yes
+		religion = buddhist
+		trait = drunkard
+		NOT = { trait = incapable }
+		NOT = { trait = infirm }
+	}
+	chance = {
+		factor = 100
+		
+		modifier = {
+			factor = 2
+			trait = zealous
+		}
+		modifier = {
+			factor = 1.5
+			trait = ambitious
+		}
+		modifier = {
+			factor = 0.01
+			trait = slothful
+		}
+	}
+	success = {
+		NOT = { trait = drunkard }
+	}
+	abort = {
+		NOT = { religion = buddhist }
+	}
+	abort_effect = {
+		clr_character_flag = guru_helped_ambition
+	}
+	effect = {
+		piety = 100
+		clr_character_flag = guru_helped_ambition
+	}
+}
+
+obj_buddhist_reject_empty_pleasures = {
+	type = character
+	
+	allow = {
+		is_adult = yes
+		religion = buddhist
+		trait = hedonist
+		NOT = { trait = incapable }
+		NOT = { trait = infirm }
+	}
+	chance = {
+		factor = 100
+		
+		modifier = {
+			factor = 2
+			trait = zealous
+		}
+		modifier = {
+			factor = 1.5
+			trait = ambitious
+		}
+		modifier = {
+			factor = 0.01
+			trait = slothful
+		}
+	}
+	success = {
+		NOT = { trait = hedonist }
+	}
+	abort = {
+		NOT = { religion = buddhist }
+	}
+	abort_effect = {
+		clr_character_flag = guru_helped_ambition
+	}
+	effect = {
+		piety = 100
+		clr_character_flag = guru_helped_ambition
+	}
+}
+
+obj_buddhist_abstain_sexual_excess = {
+	type = character
+	
+	allow = {
+		is_adult = yes
+		religion = buddhist
+		trait = lustful
+		NOT = { trait = incapable }
+		NOT = { trait = infirm }
+	}
+	chance = {
+		factor = 100
+		
+		modifier = {
+			factor = 2
+			trait = zealous
+		}
+		modifier = {
+			factor = 1.5
+			trait = ambitious
+		}
+		modifier = {
+			factor = 0.01
+			trait = slothful
+		}
+	}
+	success = {
+		NOT = { trait = lustful }
+	}
+	abort = {
+		NOT = { religion = buddhist }
+	}
+	abort_effect = {
+		clr_character_flag = guru_helped_ambition
+	}
+	effect = {
+		piety = 100
+		clr_character_flag = guru_helped_ambition
+	}
+}
+
+obj_buddhist_reject_cruelty = {
+	type = character
+	
+	allow = {
+		is_adult = yes
+		religion = buddhist
+		OR = {
+			trait = impaler
+			trait = cruel
+		}
+		NOT = { trait = incapable }
+		NOT = { trait = infirm }
+	}
+	chance = {
+		factor = 100
+		
+		modifier = {
+			factor = 2
+			trait = zealous
+		}
+		modifier = {
+			factor = 1.5
+			trait = ambitious
+		}
+		modifier = {
+			factor = 0.01
+			trait = slothful
+		}
+	}
+	success = {
+		NOT = { trait = impaler }
+		NOT = { trait = cruel }
+	}
+	abort = {
+		NOT = { religion = buddhist }
+	}
+	abort_effect = {
+		clr_character_flag = guru_helped_ambition
+	}
+	effect = {
+		piety = 100
+		clr_character_flag = guru_helped_ambition
+	}
+}
+
+obj_buddhist_temperance_food = {
+	type = character
+	
+	allow = {
+		is_adult = yes
+		religion = buddhist
+		trait = gluttonous
+		NOT = { trait = incapable }
+		NOT = { trait = infirm }
+	}
+	chance = {
+		factor = 100
+		
+		modifier = {
+			factor = 2
+			trait = zealous
+		}
+		modifier = {
+			factor = 1.5
+			trait = ambitious
+		}
+		modifier = {
+			factor = 0.01
+			trait = slothful
+		}
+	}
+	success = {
+		NOT = { trait = gluttonous }
+	}
+	abort = {
+		NOT = { religion = buddhist }
+	}
+	abort_effect = {
+		clr_character_flag = guru_helped_ambition
+	}
+	effect = {
+		piety = 100
+		clr_character_flag = guru_helped_ambition
+	}
+}
+
+obj_buddhist_reject_greed = {
+	type = character
+	
+	allow = {
+		is_adult = yes
+		religion = buddhist
+		trait = greedy
+		NOT = { trait = incapable }
+		NOT = { trait = infirm }
+	}
+	chance = {
+		factor = 100
+		
+		modifier = {
+			factor = 2
+			trait = zealous
+		}
+		modifier = {
+			factor = 1.5
+			trait = ambitious
+		}
+		modifier = {
+			factor = 0.01
+			trait = slothful
+		}
+	}
+	success = {
+		NOT = { trait = greedy }
+	}
+	abort = {
+		NOT = { religion = buddhist }
+	}
+	abort_effect = {
+		clr_character_flag = guru_helped_ambition
+	}
+	effect = {
+		piety = 100
+		clr_character_flag = guru_helped_ambition
+	}
+}
+
+obj_buddhist_reject_envy = {
+	type = character
+	
+	allow = {
+		is_adult = yes
+		religion = buddhist
+		trait = envious
+		NOT = { trait = incapable }
+		NOT = { trait = infirm }
+	}
+	chance = {
+		factor = 100
+		
+		modifier = {
+			factor = 2
+			trait = zealous
+		}
+		modifier = {
+			factor = 1.5
+			trait = ambitious
+		}
+		modifier = {
+			factor = 0.01
+			trait = slothful
+		}
+	}
+	success = {
+		NOT = { trait = envious }
+	}
+	abort = {
+		NOT = { religion = buddhist }
+	}
+	abort_effect = {
+		clr_character_flag = guru_helped_ambition
+	}
+	effect = {
+		piety = 100
+		clr_character_flag = guru_helped_ambition
+	}
+}
+
+obj_buddhist_reject_hate = {
+	type = character
+	
+	allow = {
+		is_adult = yes
+		religion = buddhist
+		trait = wroth
+		NOT = { trait = incapable }
+		NOT = { trait = infirm }
+	}
+	chance = {
+		factor = 100
+		
+		modifier = {
+			factor = 2
+			trait = zealous
+		}
+		modifier = {
+			factor = 1.5
+			trait = ambitious
+		}
+		modifier = {
+			factor = 0.01
+			trait = slothful
+		}
+	}
+	success = {
+		NOT = { trait = wroth }
+	}
+	abort = {
+		NOT = { religion = buddhist }
+	}
+	abort_effect = {
+		clr_character_flag = guru_helped_ambition
+	}
+	effect = {
+		piety = 100
+		clr_character_flag = guru_helped_ambition
+	}
+}
+
+obj_buddhist_reject_pride = {
+	type = character
+	
+	allow = {
+		is_adult = yes
+		religion = buddhist
+		trait = proud
+		NOT = { trait = incapable }
+		NOT = { trait = infirm }
+	}
+	chance = {
+		factor = 100
+		
+		modifier = {
+			factor = 2
+			trait = zealous
+		}
+		modifier = {
+			factor = 1.5
+			trait = ambitious
+		}
+		modifier = {
+			factor = 0.01
+			trait = slothful
+		}
+	}
+	success = {
+		NOT = { trait = proud }
+	}
+	abort = {
+		NOT = { religion = buddhist }
+	}
+	abort_effect = {
+		clr_character_flag = guru_helped_ambition
+	}
+	effect = {
+		piety = 100
+		clr_character_flag = guru_helped_ambition
+	}
+}
+
+obj_buddhist_defeat_fear = {
+	type = character
+	
+	allow = {
+		is_adult = yes
+		religion = buddhist
+		OR = {
+			trait = paranoid
+			trait = craven
+		}
+		NOT = { trait = incapable }
+		NOT = { trait = infirm }
+	}
+	chance = {
+		factor = 100
+		
+		modifier = {
+			factor = 2
+			trait = zealous
+		}
+		modifier = {
+			factor = 1.5
+			trait = ambitious
+		}
+		modifier = {
+			factor = 0.01
+			trait = slothful
+		}
+	}
+	success = {
+		NOT = { trait = paranoid }
+		NOT = { trait = craven }
+	}
+	abort = {
+		NOT = { religion = buddhist }
+	}
+	abort_effect = {
+		clr_character_flag = guru_helped_ambition
+	}
+	effect = {
+		piety = 100
+		clr_character_flag = guru_helped_ambition
+	}
+}
+
+obj_become_paragon_of_enlightenment = {
+	type = character
+	
+	allow = {
+		is_adult = yes
+		NOT = { piety = 100 }
+		is_ruler = yes
+		religion_group = indian_group
+		NOT = { trait = slow }
+		NOT = { trait = imbecile }
+		NOT = { trait = inbred }
+		NOT = { trait = lunatic }
+	}
+	chance = {
+		factor = 50
+		
+		modifier = {
+			factor = 1.25
+			trait = patient
+		}
+		modifier = {
+			factor = 0.01
+			NOT = { tier = king }
+			NOT = { tier = emperor }
+		}
+		modifier = {
+			factor = 10.0
+			OR = {
+				trait = detached_priest
+				trait = martial_cleric
+				trait = scholarly_theologian
+				trait = mastermind_theologian
+			}
+		}
+		modifier = {
+			factor = 10.0
+			trait = zealous
+		}
+		modifier = {
+			factor = 0.01
+			trait = cynical
+		}
+	}
+	success = {
+		piety = 500
+	}
+	abort = {
+		OR = {
+			trait = incapable
+			trait = lunatic
+		}
+	}
+	abort_effect = {
+	}
+	effect = {
+		change_learning = 1
+		piety = 100
+		if = {
+			limit = {
+				has_nickname = no
+			}
+			give_nickname = nick_the_wise
+		}
+		religion_authority = {
+			modifier = paragon_of_enlightenment
+			years = 20
+		}
+		any_vassal = {
+			limit = {
+				is_theocracy = yes
+				religion = ROOT
+			}
+			opinion = {
+				who = ROOT
+				modifier = opinion_enlightened
+				months = 1200
+			}
+		}
+	}
 }
