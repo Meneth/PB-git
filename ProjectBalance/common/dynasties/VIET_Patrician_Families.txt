@@ -1,195 +1,195 @@
-#Gujarati Last Names/Castes/Clans/Tribes
+#Gujurati Last Names/Castes/Clans/Tribes
 1000061300 = {
 	name="Thakkur"
-	culture = gujarati
+	culture = gujurati
 }
 1000061301 = {
 	name="Patel"
-	culture = gujarati
+	culture = gujurati
 }
 1000061302 = {
 	name="Modi"
-	culture = gujarati
+	culture = gujurati
 }	
 1000061303 = {
 	name="Parikh"
-	culture = gujarati
+	culture = gujurati
 }
 1000061304 = {
 	name="Porwal"
-	culture = gujarati
+	culture = gujurati
 }
 1000061305 = {
 	name="Gupta"
-	culture = gujarati
+	culture = gujurati
 }
 1000061306 = {
 	name="Vaish"
-	culture = gujarati
+	culture = gujurati
 }
 1000061307 = {
 	name="Lohana"
-	culture = gujarati
+	culture = gujurati
 }
 1000061308 = {
 	name="Vanijiya"
-	culture = gujarati
+	culture = gujurati
 }
 1000061309 = {
 	name="Vora"
-	culture = gujarati
+	culture = gujurati
 }
 1000061310 = {
 	name="Khadayati"
-	culture = gujarati
+	culture = gujurati
 }
 1000061311 = {
 	name="Modh"
-	culture = gujarati
+	culture = gujurati
 }
 1000061312 = {
 	name="Gandhi"
-	culture = gujarati
+	culture = gujurati
 }	
 1000061313 = {
 	name="Bhadala"
-	culture = gujarati
+	culture = gujurati
 }
 1000061314 = {
 	name="Jethwa"
-	culture = gujarati
+	culture = gujurati
 }
 1000061315 = {
 	name="Ambani"
-	culture = gujarati
+	culture = gujurati
 }
 1000061316 = {
 	name="Jhaveri"
-	culture = gujarati
+	culture = gujurati
 }
 1000061317 = {
 	name="Sanghani"
-	culture = gujarati
+	culture = gujurati
 }
 1000061318 = {
 	name="Parekh"
-	culture = gujarati
+	culture = gujurati
 }
 1000061319 = {
 	name="Bhanushali"
-	culture = gujarati
+	culture = gujurati
 }
 1000061320 = {
 	name="Damania"
-	culture = gujarati
+	culture = gujurati
 }
 1000061321 = {
 	name="Ruparelia"
-	culture = gujarati
+	culture = gujurati
 }
 1000061322 = {
 	name="Rao"
-	culture = gujarati
+	culture = gujurati
 }	
 1000061323 = {
 	name="Shah"
-	culture = gujarati
+	culture = gujurati
 }
 1000061324 = {
 	name="Rami"
-	culture = gujarati
+	culture = gujurati
 }
 1000061325 = {
 	name="Pala"
-	culture = gujarati
+	culture = gujurati
 }
 1000061326 = {
 	name="Patadiya"
-	culture = gujarati
+	culture = gujurati
 }
 1000061327 = {
 	name="Raninga"
-	culture = gujarati
+	culture = gujurati
 }
 1000061328 = {
 	name="Khera"
-	culture = gujarati
+	culture = gujurati
 }
 1000061329 = {
 	name="Changhada"
-	culture = gujarati
+	culture = gujurati
 }
 1000061330 = {
 	name="Hanj"
-	culture = gujarati
+	culture = gujurati
 }
 1000061331 = {
 	name="Didani"
-	culture = gujarati
+	culture = gujurati
 }
 1000061332 = {
 	name="Rathigara"
-	culture = gujarati
+	culture = gujurati
 }	
 1000061333 = {
 	name="Dholakia"
-	culture = gujarati
+	culture = gujurati
 }
 1000061334 = {
 	name="Chedia"
-	culture = gujarati
+	culture = gujurati
 }
 1000061335 = {
 	name="Kadecha"
-	culture = gujarati
+	culture = gujurati
 }
 1000061336 = {
 	name="Solanki"
-	culture = gujarati
+	culture = gujurati
 }
 1000061337 = {
 	name="Srimali"
-	culture = gujarati
+	culture = gujurati
 }
 1000061338 = {
 	name="Doshi"
-	culture = gujarati
+	culture = gujurati
 }
 1000061339 = {
 	name="Sahu"
-	culture = gujarati
+	culture = gujurati
 }
 1000061340 = {
 	name="Desai"
-	culture = gujarati
+	culture = gujurati
 }
 1000061341 = {
 	name="Raizada"
-	culture = gujarati
+	culture = gujurati
 }
 1000061342 = {
 	name="Chudasama"
-	culture = gujarati
+	culture = gujurati
 }	
 1000061343 = {
 	name="Jani"
-	culture = gujarati
+	culture = gujurati
 }
 1000061344 = {
 	name="Soni"
-	culture = gujarati
+	culture = gujurati
 }
 1000061345 = {
 	name="Bhakta"
-	culture = gujarati
+	culture = gujurati
 }
 1000061346 = {
 	name="Hirachand"
-	culture = gujarati
+	culture = gujurati
 }
 1000061347 = {
 	name="Morarjee"
-	culture = gujarati
+	culture = gujurati
 }
 
 #Other Patrician Families
