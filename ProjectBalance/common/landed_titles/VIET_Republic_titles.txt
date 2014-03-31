@@ -35,7 +35,7 @@ d_hormuz_republic = {
 
 #Hormuz
 b_thakkur = {
-	culture = gujarati
+	culture = gujurati
 	religion = sunni
 }
 b_abdullid = {
