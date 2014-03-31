@@ -37,6 +37,12 @@ faction_autonomy = {
 			is_adult = yes
 			NOT = { trait = incapable }
 			prisoner = no
+			NOT = {
+				AND = {
+					has_character_flag = left_autonomy_faction
+					NOT = { had_character_flag = { flag = left_autonomy_faction days = 30 } }
+				}
+			}
 		}
 	}
 	

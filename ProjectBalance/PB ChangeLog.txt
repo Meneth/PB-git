@@ -2,6 +2,7 @@
 	Fixed the Norman Company not having any soldiers
 	The Shia Caliphate can no longer gain dejure territory via assimilation
 	Fixed Gujurati culture references broken due to spelling change [AnaxXiphos]
+	The player should now be forced out of the Autonomy faction if they decide to stay loyal to their liege instead of revolting
 
 3.5.2
 	Updated for 2.1
