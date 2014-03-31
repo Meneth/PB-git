@@ -717,6 +717,7 @@ k_shiite = {
 	
 	# Controls a religion
 	controls_religion = shiite
+	assimilate = no
 	
 	allow = {
 		OR = {
