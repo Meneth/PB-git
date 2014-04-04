@@ -132,7 +132,9 @@ RETTYPE_CUL_ROMANIAN =
 	second_amount = 50
 	
 	potential = { culture = romanian }
-
+	
+	special_troops = horse_archers
+	
 	modifier = {
 		light_cavalry_offensive = 0.6
 	}
@@ -147,6 +149,8 @@ RETTYPE_CUL_HUNG =
 	
 	second_type = 3
 	second_amount = 100
+	
+	special_troops = horse_archers
 	
 	potential = { culture = hungarian }
 	
@@ -165,6 +169,8 @@ RETTYPE_CUL_RUS =
 	
 	second_type = 6
 	second_amount = 100
+	
+	special_troops = horse_archers
 	
 	potential = { culture = russian }
 	modifier = {
@@ -494,6 +500,8 @@ RETTYPE_CUL_ARMENIAN =
 	
 	second_type = 6
 	second_amount = 100
+	
+	special_troops = horse_archers
 
 	potential = { culture = armenian }
 
@@ -525,8 +533,11 @@ RETTYPE_CUL_IRANIAN =
 	first_type = 6
 	first_amount = 130
 	
+	
 	second_type = 3
 	second_amount = 120
+	
+	special_troops = horse_archers
 	
 	potential = { culture_group = iranian }
 	
@@ -571,6 +582,8 @@ RETTYPE_CUL_AVAR =
 	second_type = 6
 	second_amount = 100
 	
+	special_troops = horse_archers
+	
 	potential = {
 		OR = {
 			culture = cuman
@@ -591,7 +604,9 @@ RETTYPE_CUL_TURKISH =
 	second_amount = 120
 	
 	potential = { culture = turkish }
-
+	
+	special_troops = horse_archers
+	
 	modifier = {
 		horse_archers_offensive = 0.4
 		horse_archers_morale = 0.2

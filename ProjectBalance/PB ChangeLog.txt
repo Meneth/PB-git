@@ -4,6 +4,7 @@
 	Fixed Gujurati culture references broken due to spelling change [AnaxXiphos]
 	The player should now be forced out of the Autonomy faction if they decide to stay loyal to their liege instead of revolting
 	Finally fixed the pathologically unstable English (Anglo-Saxon vs. Norman vs. Norwegian) AI outcome at the Stamford Bridge start.  The AI now efficiently ferries William's troops across the Channel instead of killing them off one regiment at a time and skipping Hastings (still may need troop balancing)
+	Fixed some retinues with horse arches not actually having horse archers
 
 3.5.2
 	Updated for 2.1
