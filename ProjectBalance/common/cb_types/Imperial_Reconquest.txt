@@ -83,7 +83,6 @@ imperial_reconquest = {
 					de_jure_liege_or_above = k_jerusalem
 					de_jure_liege_or_above = k_egypt
 					de_jure_liege_or_above = k_africa
-					de_jure_liege_or_above = k_tunisia
 				}
 				ROOT = { # Tier 3
 					completely_controls = e_byzantium
@@ -94,7 +93,6 @@ imperial_reconquest = {
 			}
 			AND = {
 				OR = {
-					de_jure_liege_or_above = k_algeria
 					de_jure_liege_or_above = k_mauretania
 					de_jure_liege_or_above = k_leon
 					de_jure_liege_or_above = k_castille
@@ -115,7 +113,6 @@ imperial_reconquest = {
 					completely_controls = k_jerusalem
 					completely_controls = k_egypt
 					completely_controls = k_africa
-					completely_controls = k_tunisia
 				}
 			}
 			AND = {
@@ -143,8 +140,6 @@ imperial_reconquest = {
 					completely_controls = k_jerusalem
 					completely_controls = k_egypt
 					completely_controls = k_africa
-					completely_controls = k_tunisia
-					completely_controls = k_algeria
 					completely_controls = k_mauretania
 				}
 			}
@@ -177,8 +172,6 @@ imperial_reconquest = {
 					completely_controls = k_jerusalem
 					completely_controls = k_egypt
 					completely_controls = k_africa
-					completely_controls = k_tunisia
-					completely_controls = k_algeria
 					completely_controls = k_mauretania
 					completely_controls = k_brittany
 				}

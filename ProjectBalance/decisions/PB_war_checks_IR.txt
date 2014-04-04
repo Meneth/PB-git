@@ -86,7 +86,6 @@ decisions = {
 				NOT = { completely_controls = k_jerusalem }
 				NOT = { completely_controls = k_egypt }
 				NOT = { completely_controls = k_africa }
-				NOT = { completely_controls = k_tunisia }
 			}
 		}
 		allow = {
@@ -125,7 +124,6 @@ decisions = {
 			completely_controls = k_africa
 			completely_controls = k_tunisia
 			OR = {
-				NOT = { completely_controls = k_algeria }
 				NOT = { completely_controls = k_mauretania }
 				NOT = { completely_controls = k_leon }
 				NOT = { completely_controls = k_castille }
@@ -137,7 +135,6 @@ decisions = {
 			}
 		}
 		allow = {
-			completely_controls = k_algeria
 			completely_controls = k_mauretania
 			completely_controls = k_leon
 			completely_controls = k_castille
@@ -172,8 +169,6 @@ decisions = {
 			completely_controls = k_jerusalem
 			completely_controls = k_egypt
 			completely_controls = k_africa
-			completely_controls = k_tunisia
-			completely_controls = k_algeria
 			completely_controls = k_mauretania
 			completely_controls = k_leon
 			completely_controls = k_castille
