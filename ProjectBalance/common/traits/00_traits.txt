@@ -289,8 +289,6 @@ lunatic = {
 	
 	ai_rationality = -50
 	
-	cost = -10
-	
 	command_modifier = {
 		random = 0.03
 	}
@@ -542,8 +540,6 @@ homosexual = {
 	vassal_opinion = -10
 	
 	fertility = -0.15
-	
-	cost = -10
 }
 
 #####################

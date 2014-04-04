@@ -790,11 +790,11 @@ e_france = {
 				color={ 62 18 251 }
 				color2={ 255 255 255 }
 				
+				b_agen = {
+				}
 				b_penne = {
 				}
 				b_cahors = {
-				}
-				b_agen = {
 				}
 				b_luzech = {
 				}

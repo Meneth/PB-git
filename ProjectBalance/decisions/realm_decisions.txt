@@ -8,6 +8,7 @@ decisions = {
 			had_global_flag = { flag = project_balance days = 1 }
 			NOT = {
 				has_character_flag = epic_tournament
+				has_character_flag = do_not_disturb
 			}
 			NOT = {
 				religion_group = muslim
@@ -1243,22 +1244,72 @@ decisions = {
 			prisoner = no
 			NOT = {	trait = incapable }
 			war = no
-			has_landed_title = e_rajastan
-			has_landed_title = e_bengal
-			has_landed_title = e_deccan
+			OR = {
+				has_landed_title = e_rajastan
+				NOT = { is_title_active = e_rajastan }
+			}
+			OR = {
+				has_landed_title = e_bengal
+				NOT = { is_title_active = e_bengal }
+			}
+			OR = {
+				has_landed_title = e_deccan
+				NOT = { is_title_active = e_deccan }
+			}
+			completely_controls = k_sindh
+			completely_controls = k_punjab
+			completely_controls = k_delhi
+			completely_controls = k_rajputana
+			completely_controls = k_gujarat
+			completely_controls = k_malwa
+			completely_controls = k_kosala
+			completely_controls = k_bihar
+			completely_controls = k_bengal
+			completely_controls = k_kamarupa
+			completely_controls = k_gondwana
+			completely_controls = k_maharastra
+			completely_controls = k_telingana
+			completely_controls = k_karnata
+			completely_controls = k_andhra
+			completely_controls = k_tamilakam
+			completely_controls = k_lanka
 			prestige = 1000
 			wealth = 500
 		}
 		effect = {
 			wealth = -500
 			prestige = 500
+			hidden_tooltip = {
+				primary_title = {
+					any_direct_de_jure_vassal_title = {
+						de_jure_liege = e_india
+					}
+				}
+			}
 			primary_title = {
 				e_india = {
 					grant_title = ROOT
 					copy_title_laws = PREV
+					copy_title_history = PREV
 				}
 			}
 			hidden_tooltip = { e_india = { make_primary_title = yes } }
+			if = {
+				limit = { has_landed_title = e_rajastan }
+				activate_title = { title = e_rajastan status = no }
+			}
+			if = {
+				limit = { has_landed_title = e_bengal }
+				activate_title = { title = e_bengal status = no }
+			}
+			if = {
+				limit = { has_landed_title = e_deccan }
+				activate_title = { title = e_deccan status = no }
+			}
+			if = {
+				limit = { has_nickname = no }
+				give_nickname = nick_the_magnificent
+			}
 			set_character_flag = achievement_my_very_own_subcontinent
 		}
 		revoke_allowed = {

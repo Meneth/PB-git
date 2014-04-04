@@ -374,6 +374,7 @@ job_spiritual = {
 				NOT = { liege = { religion_group = muslim } }
 			}
 			religion = cathar
+			religion = bogomilist
 			has_character_flag = special_spiritual
 		}
 		

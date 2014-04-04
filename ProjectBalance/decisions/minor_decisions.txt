@@ -97,6 +97,13 @@ decisions = {
 			num_of_vassals = 1
 			NOT = { has_character_flag = do_not_disturb }
 			NOT = { has_character_flag = upcoming_fair }
+			OR = {
+				NOT = { has_character_flag = recent_summer_fair }
+				had_character_flag = {
+					flag = recent_summer_fair
+					days = 60
+				}
+			}
 		}
 		allow = {
 			war = no

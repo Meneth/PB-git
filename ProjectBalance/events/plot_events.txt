@@ -3624,7 +3624,7 @@ character_event = {
 				}
 			}
 			death = {
-				death_reason = death_murder
+				death_reason = death_murder_unknown
 				killer = FROMFROMFROM
 			}
 		}
@@ -3633,7 +3633,7 @@ character_event = {
 				is_alive = yes
 			}
 			death = {
-				death_reason = death_murder
+				death_reason = death_murder_unknown
 				killer = FROMFROM
 			}
 		}
@@ -4828,7 +4828,7 @@ character_event = {
 				}
 			}
 			death = {
-				death_reason = death_murder
+				death_reason = death_murder_unknown
 				killer = FROMFROMFROM
 			}
 		}
@@ -4837,7 +4837,7 @@ character_event = {
 				is_alive = yes
 			}
 			death = {
-				death_reason = death_murder
+				death_reason = death_murder_unknown
 				killer = FROMFROM
 			}
 		}
@@ -6510,7 +6510,7 @@ character_event = {
 				}
 			}
 			death = {
-				death_reason = death_murder
+				death_reason = death_murder_unknown
 				killer = FROMFROMFROM
 			}
 		}
@@ -6519,7 +6519,7 @@ character_event = {
 				is_alive = yes
 			}
 			death = {
-				death_reason = death_murder
+				death_reason = death_murder_unknown
 				killer = FROMFROM
 			}
 		}
@@ -7675,7 +7675,7 @@ character_event = {
 				}
 			}
 			death = {
-				death_reason = death_murder
+				death_reason = death_murder_unknown
 				killer = FROMFROMFROM
 			}
 		}
@@ -7684,7 +7684,7 @@ character_event = {
 				is_alive = yes
 			}
 			death = {
-				death_reason = death_murder
+				death_reason = death_murder_unknown
 				killer = FROMFROM
 			}
 		}
@@ -8836,7 +8836,7 @@ character_event = {
 				}
 			}
 			death = {
-				death_reason = death_murder
+				death_reason = death_murder_unknown
 				killer = FROMFROMFROM
 			}
 		}
@@ -8845,7 +8845,7 @@ character_event = {
 				is_alive = yes
 			}
 			death = {
-				death_reason = death_murder
+				death_reason = death_murder_unknown
 				killer = FROMFROM
 			}
 		}
@@ -10000,7 +10000,7 @@ character_event = {
 				}
 			}
 			death = {
-				death_reason = death_murder
+				death_reason = death_murder_unknown
 				killer = FROMFROMFROM
 			}
 		}
@@ -10009,7 +10009,7 @@ character_event = {
 				is_alive = yes
 			}
 			death = {
-				death_reason = death_murder
+				death_reason = death_murder_unknown
 				killer = FROMFROM
 			}
 		}
@@ -11165,7 +11165,7 @@ character_event = {
 				}
 			}
 			death = {
-				death_reason = death_murder
+				death_reason = death_murder_unknown
 				killer = FROMFROMFROM
 			}
 		}
@@ -11174,7 +11174,7 @@ character_event = {
 				is_alive = yes
 			}
 			death = {
-				death_reason = death_murder
+				death_reason = death_murder_unknown
 				killer = FROMFROM
 			}
 		}
@@ -12301,7 +12301,7 @@ character_event = {
 				}
 			}
 			death = {
-				death_reason = death_murder
+				death_reason = death_murder_unknown
 				killer = FROMFROMFROM
 			}
 		}
@@ -12310,7 +12310,7 @@ character_event = {
 				is_alive = yes
 			}
 			death = {
-				death_reason = death_murder
+				death_reason = death_murder_unknown
 				killer = FROMFROM
 			}
 		}
@@ -13466,7 +13466,7 @@ character_event = {
 				}
 			}
 			death = {
-				death_reason = death_murder
+				death_reason = death_murder_unknown
 				killer = FROMFROMFROM
 			}
 		}
@@ -13475,7 +13475,7 @@ character_event = {
 				is_alive = yes
 			}
 			death = {
-				death_reason = death_murder
+				death_reason = death_murder_unknown
 				killer = FROMFROM
 			}
 		}
@@ -14631,7 +14631,7 @@ character_event = {
 				}
 			}
 			death = {
-				death_reason = death_murder
+				death_reason = death_murder_unknown
 				killer = FROMFROMFROM
 			}
 		}
@@ -14640,7 +14640,7 @@ character_event = {
 				is_alive = yes
 			}
 			death = {
-				death_reason = death_murder
+				death_reason = death_murder_unknown
 				killer = FROMFROM
 			}
 		}
@@ -15798,7 +15798,7 @@ character_event = {
 				}
 			}
 			death = {
-				death_reason = death_murder
+				death_reason = death_murder_unknown
 				killer = FROMFROMFROM
 			}
 		}
@@ -15807,7 +15807,7 @@ character_event = {
 				is_alive = yes
 			}
 			death = {
-				death_reason = death_murder
+				death_reason = death_murder_unknown
 				killer = FROMFROM
 			}
 		}
@@ -16964,7 +16964,7 @@ character_event = {
 				}
 			}
 			death = {
-				death_reason = death_murder
+				death_reason = death_murder_unknown
 				killer = FROMFROMFROM
 			}
 		}
@@ -16973,7 +16973,7 @@ character_event = {
 				is_alive = yes
 			}
 			death = {
-				death_reason = death_murder
+				death_reason = death_murder_unknown
 				killer = FROMFROM
 			}
 		}
@@ -18130,7 +18130,7 @@ character_event = {
 				}
 			}
 			death = {
-				death_reason = death_murder
+				death_reason = death_murder_unknown
 				killer = FROMFROMFROM
 			}
 		}
@@ -18139,7 +18139,7 @@ character_event = {
 				is_alive = yes
 			}
 			death = {
-				death_reason = death_murder
+				death_reason = death_murder_unknown
 				killer = FROMFROM
 			}
 		}
