@@ -887,7 +887,7 @@ character_event = {
 # Restore the cash which was taken away from the Pope on crusade creation.
 #
 # First invoked as a delayed-offset event from pb_crusades.6, then recursively
-# keeps calling itself until the Pope's piety debt counter reaches even.
+# keeps calling itself until the Pope's debt counter reaches even.
 #
 # ROOT = religious head
 character_event = {
