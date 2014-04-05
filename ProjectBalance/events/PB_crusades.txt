@@ -754,3 +754,157 @@ character_event = {
 	option = { name = OK }
 }
 
+
+# pb_crusades.6
+# Temporarily cripple ability of Pope to quickly hire all the holy orders right
+# after Christian Crusade creation. [Now applies to mercenaries too.]
+#
+# Called by on_crusade_creation on_action.
+#
+# NOTE: Modified to also subtract any huge chunks of change the Pope might have
+# for hiring a ton of mercs until restoring it along with the piety 4 months
+# after crusade creation so that it can be used.
+#
+# ROOT = religious head
+# FROM = target kingdom title
+# new_character = targetted enemy
+#
+# NOTE: the other on_crusade_creation events seem to have a weird default scope
+# (though I think this is just because they're major = yes narrative events),
+# so I'm just going to code this CB-style and make no assumptions about scopes.
+character_event = {
+	id = pb_crusades.6
+	desc = OK
+	hide_window = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		can_call_crusade = yes
+		ROOT = { religion_group = christian }
+	}
+	
+	immediate = {
+		ROOT = {
+			# Recursively subtract chunks of piety until the Pope has < 50 points.  Keep
+			# track of how much was taken so that it can be faithfully restored in full.
+			character_event = { id = pb_crusades.7 }
+			
+			# Do the same for cash.
+			character_event = { id = pb_crusades.9 }
+		
+			# Restore the Pope's piety (and thus ability to hire holy orders) in 4 months,
+			# which should be long enough to give other rulers a chance to join the crusade,
+			# hire them potentially, and mobilize, while not outright preventing the Pope's
+			# piety from being used to help win the war.
+			character_event = { id = pb_crusades.8 days = 120 }
+			
+			# Do the same for cash, but return it in only 2 months (don't want to get in the
+			# way of Catholic rulers asking for money)
+			character_event = { id = pb_crusades.10 days = 60 }
+		}
+	}
+	
+	option = { name = OK }
+}
+
+
+# pb_crusades.7
+# Recursively subtract piety from ROOT and save it in a karmic debt counter.
+#
+# Invoked by pb_crusades.6
+character_event = {
+	id = pb_crusades.7
+	desc = OK
+	hide_window = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		piety = 50
+	}
+	
+	option = {
+		name = OK
+		
+		piety = -50
+		change_variable = { which = crusade_karma value = 1 }
+		character_event = { id = pb_crusades.7 }
+	}
+}
+
+
+# pb_crusades.8
+# Restore the piety which was taken away from the Pope on crusade creation.
+#
+# First invoked as a delayed-offset event from pb_crusades.6, then recursively
+# keeps calling itself until the Pope's piety debt counter reaches even.
+#
+# ROOT = religious head
+character_event = {
+	id = pb_crusades.8
+	desc = OK
+	hide_window = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		check_variable = { which = crusade_karma value = 1 }
+	}
+	
+	option = {
+		name = OK
+		
+		piety = 50
+		change_variable = { which = crusade_karma value = -1 }
+		character_event = { id = pb_crusades.8 }
+	}
+}
+
+
+# pb_crusades.9
+# Recursively subtract cash from ROOT and save it in a debt counter.
+#
+# Invoked by pb_crusades.6
+character_event = {
+	id = pb_crusades.9
+	desc = OK
+	hide_window = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		wealth = 200
+	}
+	
+	option = {
+		name = OK
+		
+		wealth = -200
+		change_variable = { which = crusade_cash value = 1 }
+		character_event = { id = pb_crusades.9 }
+	}
+}
+
+
+# pb_crusades.10
+# Restore the cash which was taken away from the Pope on crusade creation.
+#
+# First invoked as a delayed-offset event from pb_crusades.6, then recursively
+# keeps calling itself until the Pope's debt counter reaches even.
+#
+# ROOT = religious head
+character_event = {
+	id = pb_crusades.10
+	desc = OK
+	hide_window = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		check_variable = { which = crusade_cash value = 1 }
+	}
+	
+	option = {
+		name = OK
+		
+		wealth = 200
+		change_variable = { which = crusade_cash value = -1 }
+		character_event = { id = pb_crusades.10 }
+	}
+}
