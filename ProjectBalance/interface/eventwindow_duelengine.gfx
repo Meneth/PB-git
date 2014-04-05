@@ -35,7 +35,7 @@ spriteTypes =
 		
 	spriteType = {
 		name = "GFX_evt_duel5"
-		texturefile = "gfx\\event_pictures\duel5.tga"
+		texturefile = "gfx\\event_pictures\duel3.tga"
 		allwaystransparent = yes
 	}
 }
