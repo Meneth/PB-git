@@ -9,6 +9,7 @@
 	Fixed Imperial Reconquest referring to a couple of titles that no longer exist in PB
 	Upon Christian Crusade creation, the Pope now loses all his excess piety and cash until it's returned to him 4 and 2 months into the Crusade, respectively. The Pope will no longer snap up all the holy orders right away, and in general, will be much less likely to be the Crusade winner instead of a proper Catholic ruler
 	Removed PB's penalty to Muslim merchant republics' income, as it is no longer needed now that the Indian Ocean is a separate ocean
+	Moved the useless courtier maintenance event to on_actions for improved performance [AnaxXiphos]
 
 3.5.2
 	Updated for 2.1

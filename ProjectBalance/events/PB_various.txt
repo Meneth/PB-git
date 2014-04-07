@@ -23,6 +23,7 @@ character_event = {
 	desc = meneth.201.desc
 	
 	hide_window = yes
+	is_triggered_only = yes
 	
 	trigger = {
 		is_ruler = no
@@ -56,10 +57,6 @@ character_event = {
 				higher_tier_than = baron #Don't want the relatives of important people dying
 			}
 		}
-	}
-	
-	mean_time_to_happen = {
-		days = 1
 	}
 	
 	option = {
