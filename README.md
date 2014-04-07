@@ -10,7 +10,7 @@
 
 ## Information:
 
-- This mod is created, owned, and maintained by **Meneth**. If you want to include it in any publicly released mod you need my permission.
+- This mod is created, owned, and maintained by **Meneth** and **ziji**. If you want to include it, or any part of it, in any publicly released mod you need Meneth's permission.
 
 #### Bugs and Suggestions:
 
@@ -18,7 +18,7 @@
 - Or use the Project Balance thread on the [Paradox Forums](http://forum.paradoxplaza.com/forum/showthread.php?594436)
 - Do note that you have to register your copy of Crusader Kings II in order to view the thread.
 
-#### Other places I can be contacted:
+#### Other places Meneth can be contacted:
 - [Paradox Forums](http://forum.paradoxplaza.com/forum/private.php?do=newpm&u=265499)
 - [E-mail](mailto:pb@meneth.com)
 - [Reddit](http://www.reddit.com/message/compose/?to=Meneth)
