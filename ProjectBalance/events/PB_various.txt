@@ -16,57 +16,56 @@
 
 namespace = pb_various
 
-#Event to kill off useless courtiers [was meneth.201]
-#NOTE: This is probably the most expensive maintenance event in PB
+#Event to kill off useless courtiers
 character_event = {
 	id = pb_various.1
-	desc = meneth.201.desc
-	
+	desc = OK
 	hide_window = yes
 	is_triggered_only = yes
 	
+	only_playable = yes
+	
 	trigger = {
-		is_ruler = no
-		is_councillor = no
-		is_married = no
-		is_adult = yes
-		OR = {
-			AND = {
-				age = 40 #5 years of fertility isn't much use
-				is_female = yes
-			}
-			trait = incapable #No reason to keep incapable characters around
-			has_character_modifier = old_age
-			NOT = {
+		higher_tier_than = baron
+	}
+	
+	immediate = {
+		any_courtier = {
+			limit = {
+				is_ruler = no
+				is_councillor = no
+				is_married = no
+				is_adult = yes
+				NOT = { #Don't want the relatives of important people dying
+					any_dynasty_member = {
+						higher_tier_than = baron
+					}
+				}
+				NOT = { #Bastards are always interesting
+					trait = bastard
+					trait = legit_bastard
+				}
 				OR = {
-					martial = 5
-					diplomacy = 5
-					intrigue = 5
-					stewardship = 5
-					learning = 5
+					AND = {
+						age = 40 #5 years of fertility isn't much use
+						is_female = yes
+					}
+					NOT = {
+						martial = 5
+						diplomacy = 5
+						intrigue = 5
+						stewardship = 5
+						learning = 5
+					}
+					trait = incapable #No reason to keep incapable characters around
 				}
 			}
-		}
-		NOT = {
-			any_dynasty_member = {
-				higher_tier_than = baron #Don't want the relatives of important people dying
-			}
-		}
-		NOT = {
-			any_child = {
-				higher_tier_than = baron #Don't want the relatives of important people dying
-			}
+			death = { death_reason = death_poor_health }
 		}
 	}
 	
 	option = {
-		name = meneth.201.a
-		random_list = {
-			50 = { death = { death_reason = death_poor_health } }
-			28 = { death = { death_reason = death_natural } }
-			20 = { death = { death_reason = death_accident } }
-			2 = { death = { death_reason = death_suicide } }
-		}
+		name = OK
 	}
 }
 
