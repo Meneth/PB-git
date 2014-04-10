@@ -16,6 +16,7 @@ character_event = {
 	only_rulers = yes
 	
 	trigger = {
+		always = no
 		NOT = { has_character_flag = desires_autonomy }
 		ai = yes
 		independent = no
@@ -302,18 +303,22 @@ character_event = {
 	trigger = {
 		liege = {
 			NOT = {
+				#Could be a way to just put a stay on vassal kings' AFs until the top-level AF revolt ends.
+				any_demesne_title = { temporary = yes }
 
+				in_revolt = yes # should not be possible
+			
 				# TODO: autonomy_faction_revolt state should be obsoleted or kept in
 				# a hidden, inherited character modifier for robustness against liege
 				# changes.
 				
 				has_character_flag = autonomy_faction_revolt
-
+				
 				any_war = {
-					# electing to not use the weird single-PREV usage of vanilla in, e.g., faction_decisions.
-					# apparently, it works either way from my testing, so might as well go with the logical
-					# option (the `character' trigger is otherwise given a war scope target-- weird, right?)
-					defender = { character = PREVPREV }
+					OR = {
+						defender = { character = PREVPREV }
+						attacker = { character = PREVPREV }
+					}
 					OR = {
 						# the liege's revolt flag should cover these [most], so long as the liege didn't change.
 						# explicitly checking can only help, though.
@@ -404,7 +409,7 @@ character_event = {
 			factor = 10 # not too much delay as time passes, never getting past the normal 7 year threshold
 			liege = {
 				any_war = {
-					attacker = { character = PREVPREV }
+					attacker = { character = PREV } # Weird scope.
 					
 					OR = {
 						# likewise logic (can't help the liege, shouldn't hurt the liege) for the following:
@@ -608,8 +613,12 @@ character_event = {
 							holder_scope = { character = ROOT }
 						}
 					}
-					any_claim = {
-						holder_scope = { any_vassal = { character = ROOT } }
+					liege = {
+						ROOT = {
+							any_claim = {
+								holder = PREVPREV
+							}
+						}
 					}
 				}
 			}
