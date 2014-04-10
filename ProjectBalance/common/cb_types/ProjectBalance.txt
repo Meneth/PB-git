@@ -879,13 +879,15 @@ retake_religious_lands = {
 	can_use_gui = {
 		ROOT = {
 			NOT = { has_character_modifier = holy_war_cooldown }
-			is_patrician = no
 			is_merchant_republic = no
+			NOT = { any_liege = { is_merchant_republic = yes } }
 		}
 		NOT = { # The Rum Sultanate often needs a bit of help stabilizing
 			FROM = {
 				has_character_modifier = formation_of_rum
 			}
+			FROM = { has_landed_title = k_rum } #Need help surviving
+			FROM = { has_landed_title = k_pechenegs }  #Need help surviving
 		}
 		ROOT = {
 			OR = {
@@ -922,6 +924,16 @@ retake_religious_lands = {
 	
 	can_use = {
 		NOT = { has_global_flag = rapid_conquest }
+		# Muslim reconquest does not make much sense
+		NOT = {
+			AND = {
+				FROM = { religion_group = muslim }
+				ROOT = { religion_group = muslim }
+			}
+		}
+		NOT = {
+			ROOT = { is_reformed_religion = FROM }
+		}
 		ROOT = {
 			OR = {
 				NOT = { religion_group = FROM }
@@ -966,32 +978,18 @@ retake_religious_lands = {
 	can_use_title = {
 		NOT = { 
 			any_direct_de_jure_vassal_title = {
+				limit = { has_owner = yes }
 				location = { continent = region_sahara }
 			}
 		}
 		#Target must have at least one province of declarer's religion
 		any_direct_de_jure_vassal_title = {
-			NOT = {
-				FROM = { has_landed_title = k_rum } #Need help surviving
-			}
-			NOT = {
-				FROM = { has_landed_title = k_pechenegs }  #Need help surviving
-			}
-			# Muslim reconquest does not make much sense
-			NOT = {
-				AND = {
-					FROM = { religion_group = muslim }
-					ROOT = { religion_group = muslim }
-				}
-			}
-			holder_scope = {
+			limit = { has_owner = yes }
+			owner = {
 				OR = {
 					character = FROM
 					is_liege_or_above = FROM
 				}
-			}
-			NOT = {
-				ROOT = { is_reformed_religion = FROM }
 			}
 			location = {
 				ROOT = {
@@ -1082,9 +1080,14 @@ retake_religious_lands = {
 	
 	on_add = {
 		ROOT = {
-			add_character_modifier = {
-				name = holy_war_cooldown
-				duration = 1825
+			custom_tooltip = {
+				text = holy_war_cooldown_ctt
+				hidden_tooltip = {
+					add_character_modifier = {
+						name = holy_war_cooldown
+						duration = 1825
+					}
+				}
 			}
 		}
 	}
@@ -1141,10 +1144,6 @@ retake_religious_lands = {
 						enemy = FROM
 						same_religion = yes # Only vassalize rulers of my religion
 					}
-#					gain_settlements_under_title = {
-#						title = PREV
-#						enemy = FROM
-#					}
 				}
 			}
 		}
