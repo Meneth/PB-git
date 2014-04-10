@@ -22,7 +22,7 @@ remove_internal_peace = {
 			}
 		}
 		ROOT = {
-			vassal_of = FROM
+			de_facto_liege = FROM
 			has_character_flag = faction_autonomy_no_internal_peace
 		}
 	}
@@ -45,7 +45,7 @@ remove_internal_peace = {
 		}
 		hidden_tooltip = {
 			any_attacker = {
-				limit = { liege = { character = FROM } }
+				limit = { de_facto_liege = FROM } }
 				disband_event_forces = faction_revolters
 			}
 		}
@@ -89,7 +89,7 @@ remove_internal_peace = {
 		}
 		hidden_tooltip = {
 			any_attacker = {
-				limit = { liege = { character = FROM } }
+				limit = { de_facto_liege = FROM }
 				disband_event_forces = faction_revolters
 			}
 		}
@@ -112,8 +112,7 @@ remove_internal_peace = {
 		}
 		hidden_tooltip = {
 			any_attacker = {
-				limit = { liege = { character = FROM } }
-				prisoner = FROM
+				limit = { de_facto_liege = FROM }
 				disband_event_forces = faction_revolters
 			}
 		}
@@ -159,7 +158,7 @@ remove_revokation = {
 			}
 		}
 		ROOT = {
-			vassal_of = FROM
+			de_facto_liege = FROM
 			has_character_flag = faction_autonomy_no_revocation
 		}
 	}
@@ -182,7 +181,7 @@ remove_revokation = {
 		}
 		hidden_tooltip = {
 			any_attacker = {
-				limit = { liege = { character = FROM } }
+				limit = { de_facto_liege = FROM }
 				disband_event_forces = faction_revolters
 			}
 		}
@@ -225,7 +224,7 @@ remove_revokation = {
 		}
 		hidden_tooltip = {
 			any_attacker = {
-				limit = { liege = { character = FROM } }
+				limit = { de_facto_liege = FROM }
 				disband_event_forces = faction_revolters
 			}
 		}
@@ -248,8 +247,7 @@ remove_revokation = {
 		}
 		hidden_tooltip = {
 			any_attacker = {
-				limit = { liege = { character = FROM } }
-				prisoner = FROM
+				limit = { de_facto_liege = FROM }
 				disband_event_forces = faction_revolters
 			}
 		}
@@ -290,7 +288,7 @@ remove_inheritance = {
 			any_demesne_title = { has_law = inheritance_1 }
 		}
 		ROOT = {
-			vassal_of = FROM
+			de_facto_liege = FROM
 			has_character_flag = faction_autonomy_external_inheritance
 		}
 	}
@@ -313,7 +311,7 @@ remove_inheritance = {
 		}
 		hidden_tooltip = {
 			any_attacker = {
-				limit = { liege = { character = FROM } }
+				limit = { de_facto_liege = FROM }
 				disband_event_forces = faction_revolters
 			}
 		}
@@ -351,7 +349,7 @@ remove_inheritance = {
 		}
 		hidden_tooltip = {
 			any_attacker = {
-				limit = { liege = { character = FROM } }
+				limit = { de_facto_liege = FROM }
 				disband_event_forces = faction_revolters
 			}
 		}
@@ -374,8 +372,7 @@ remove_inheritance = {
 		}
 		hidden_tooltip = {
 			any_attacker = {
-				limit = { liege = { character = FROM } }
-				prisoner = FROM
+				limit = { de_facto_liege = FROM }
 				disband_event_forces = faction_revolters
 			}
 		}
@@ -413,7 +410,7 @@ reduce_crown_levies = {
 	
 	can_use = {
 		ROOT = {
-			vassal_of = FROM
+			de_facto_liege = FROM
 		}
 	}
 
@@ -435,7 +432,7 @@ reduce_crown_levies = {
 		}
 		hidden_tooltip = {
 			any_attacker = {
-				limit = { liege = { character = FROM } }
+				limit = { de_facto_liege = FROM }
 				disband_event_forces = faction_revolters
 			}
 		}
@@ -483,28 +480,32 @@ reduce_crown_levies = {
 				}
 			}
 				
-			if = {
-				limit = { has_law = feudal_obligations_1 }
-				primary_title = { add_law = feudal_obligations_0 }
+			primary_title = {
+				if = {
+					limit = { has_law = feudal_obligations_1 }
+					add_law = feudal_obligations_0
+				}
+				if = {
+					limit = { has_law = feudal_obligations_2 }
+					add_law = feudal_obligations_1
+				}
+				if = {
+					limit = { has_law = feudal_obligations_3 }
+					add_law = feudal_obligations_2
+				}
+				if = {
+					limit = { has_law = feudal_obligations_4 }
+					add_law = feudal_obligations_3
+				}
 			}
-			if = {
-				limit = { has_law = feudal_obligations_2 }
-				primary_title = { add_law = feudal_obligations_1 }
-			}
-			if = {
-				limit = { has_law = feudal_obligations_3 }
-				primary_title = { add_law = feudal_obligations_2 }
-			}
-			if = {
-				limit = { has_law = feudal_obligations_4 }
-				primary_title = { add_law = feudal_obligations_3 }
-			}
+			
 			add_character_modifier = {
 				name = reduced_obligations
 				duration = 3650
 			}
+			
+			clr_character_flag = autonomy_faction_revolt
 		}
-		FROM = { clr_character_flag = autonomy_faction_revolt }
 	}
 
 	on_fail = {
@@ -521,7 +522,7 @@ reduce_crown_levies = {
 		}
 		hidden_tooltip = {
 			any_attacker = {
-				limit = { liege = { character = FROM } }
+				limit = { de_facto_liege = FROM }
 				disband_event_forces = faction_revolters
 			}
 		}
@@ -544,8 +545,7 @@ reduce_crown_levies = {
 		}
 		hidden_tooltip = {
 			any_attacker = {
-				limit = { liege = { character = FROM } }
-				prisoner = FROM
+				limit = { de_facto_liege = FROM }
 				disband_event_forces = faction_revolters
 			}
 		}
@@ -588,8 +588,10 @@ retake_the_coast = {
 	}
 	
 	on_success = {
-		d_cibyrrhaeot = {
-			de_jure_liege = k_nikaea
+		k_nikaea = {
+			d_cibyrrhaeot = {
+				de_jure_liege = PREV
+			}
 		}
 		ROOT = {
 			prestige = 100
@@ -606,9 +608,7 @@ retake_the_coast = {
 						holder_scope = {
 							OR = {
 								character = FROM
-								any_liege = { character = FROM }
-								liege_before_war = { character = FROM }
-								any_liege = { liege_before_war = { character = FROM } }
+								is_liege_or_above = FROM
 							}
 						}
 					}
