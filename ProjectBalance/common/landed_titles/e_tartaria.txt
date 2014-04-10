@@ -68,13 +68,13 @@ e_tartaria = {
 				}
 				b_zhanakush = {
 				}
-				b_birlik = {
-				}
 				b_karabatyr = {
 				}
 				b_mantyube = {
 				}
 				b_besikty = {
+				}
+				b_arlik = {
 				}
 			}
 			c_pecheneg = {
@@ -1379,10 +1379,10 @@ e_tartaria = {
 				b_sarkand = {}
 				b_taldykorgan = {}
 				b_karatal = {}
-				b_aksu = {}
 				b_kapchagai = {}
 				b_koksu = {}
 				b_matay = {}
+				b_kargal = {}
 			}
 			c_karluk = {
 				color= { 180 165 15 }
@@ -1663,7 +1663,7 @@ e_tartaria = {
 				b_narim = {}
 				b_kolta = {}
 				b_yag = {}
-				b_abakan = {}
+				b_askiz = {}
 			}
 			
 		}

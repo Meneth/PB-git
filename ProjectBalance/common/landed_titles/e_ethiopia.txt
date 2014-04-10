@@ -51,8 +51,6 @@ e_abyssinia = {
 				}
 				b_maydh = {
 				}
-				b_amud = {
-				}
 				b_gabiley = {
 				}
 				b_burco = {

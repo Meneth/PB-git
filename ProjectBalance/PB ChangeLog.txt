@@ -16,6 +16,7 @@
 		NOTE: realm_size is the number of holdings in a ruler's [sub]realm, their demesne's holdings plus all direct and indirect vassals' holdings
 		Restriction _only affects AI_, as the AI otherwise spams useless, do-nothing retinue units literally all over the map
 	Removed previous retinue disabler system [building and maintenance-event based] in favor of 2.1's retinue hire triggers. Further improves performance from the heightened AI restrictions and also perfects consistency / immediate correctness
+	Fixed a few duplicate title IDs
 
 3.5.2
 	Updated for 2.1

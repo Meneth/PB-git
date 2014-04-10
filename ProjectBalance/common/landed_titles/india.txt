@@ -141,7 +141,7 @@ e_rajastan = {
 				}
 				b_kalari = {
 				}
-				b_atri = {
+				b_sialkot = {
 				}
 				b_shikarpur = {
 				}
@@ -525,8 +525,6 @@ e_rajastan = {
 				}
 				b_shankaracharya = {
 				}
-				b_jayapura = {
-				}
 				b_parihasapura = {
 				}
 				b_padmapura = {
@@ -830,8 +828,6 @@ e_rajastan = {
 				}
 				b_modhera = {
 				}
-				b_idar = {
-				}
 				b_kheralu = {
 				}
 				b_shertha = {
@@ -894,9 +890,9 @@ e_rajastan = {
 				}
 				b_lakhota = {
 				}
-				b_halvad = {
-				}
 				b_khasta = {
+				}
+				b_dhrol = {
 				}
 			}
 			c_dvaraka = {
@@ -1221,7 +1217,7 @@ e_rajastan = {
 				}
 				b_jaisalmer = {
 				}
-				b_pali = {
+				b_ranakpur = {
 				}
 			}
 			c_vijnot = {
@@ -1304,8 +1300,6 @@ e_rajastan = {
 				b_ramgarh = {
 				}
 				b_bundi = {
-				}
-				b_taragarh = {
 				}
 			}
 		}
@@ -1879,6 +1873,8 @@ e_bengal = {
 	
 	capital = 1151 # Laksmanavati
 
+	short_name = yes
+	
 	k_gondwana = {
 		color = { 32 128 55 }
 		color2={ 255 255 255 }
@@ -2156,11 +2152,11 @@ e_bengal = {
 				}
 				b_malda = {
 				}
-				b_rampur_boalia = {
+				b_pankak = {
 				}
-				b_pandua = {
+				b_banan = {
 				}
-				b_tanda = {
+				b_shukla = {
 				}
 				b_puthia = {
 				}
@@ -3007,6 +3003,8 @@ e_deccan = {
 	
 	capital = 1210 # Manyaketha
 
+	short_name = yes
+	
 	k_maharastra = {
 		color={ 150 0 20 }
 		color2={ 255 255 255 }
@@ -3468,8 +3466,6 @@ e_deccan = {
 				b_talikota = {
 				}
 				b_sorapur = {
-				}
-				b_bagalkot = {
 				}
 			}
 		}
@@ -3983,8 +3979,6 @@ e_deccan = {
 				}
 				b_tirupati = {
 				}
-				b_kalahasti = {
-				}
 				b_melpadi = {
 				}
 				b_virincipuram = {
@@ -4063,15 +4057,11 @@ e_deccan = {
 				
 				b_rajamahendravaram = {
 				}
-				b_bhadrachalam = {
-				}
 				b_kuwakonda = {
-				}
-				b_dantewada = {
 				}
 				b_kirandul = {
 				}
-				b_barsoor = {
+				b_pattiseema = {
 				}
 			}
 		}
@@ -4225,8 +4215,6 @@ e_deccan = {
 				}
 				b_indur = {
 				}
-				b_ramgarh = {
-				}
 				b_potali = {
 				}
 			}
@@ -4295,8 +4283,6 @@ e_deccan = {
 				b_charakonda = {
 				}
 				b_mutudugu = {
-				}
-				b_ghanpur = {
 				}
 			}
 			c_medak = {
@@ -4447,217 +4433,4 @@ e_deccan = {
 			}
 		}
 	}
-}
-
-
-# INDIAN MERCS
-
-d_tamil_band = {
-	color = { 110 60 30 }
-	color2 = { 255 255 255 }
-
-	capital = 1120 # Tagadur
-	
-	# Parent Religion 
-	religion = hindu
-	
-	culture = tamil
-	
-	mercenary = yes
-
-	title = "CAPTAIN"
-	foa = "CAPTAIN_FOA"
-
-	# Always exists
-	landless = yes
-	
-	# Cannot be held as a secondary title
-	primary = yes
-	
-	# Cannot be vassalized
-	independent = yes
-	
-	strength_growth_per_century = 1.0
-	
-	mercenary_type = tamil_band_composition
-}
-
-d_marathi_company = {
-	color = { 150 80 40 }
-	color2 = { 255 255 255 }
-
-	capital = 1254 # Vairagara
-	
-	# Parent Religion
-	religion = hindu
-	
-	culture = marathi
-	
-	mercenary = yes
-
-	title = "CAPTAIN"
-	foa = "CAPTAIN_FOA"
-
-	# Always exists
-	landless = yes
-	
-	# Cannot be held as a secondary title
-	primary = yes
-	
-	# Cannot be vassalized
-	independent = yes
-	
-	strength_growth_per_century = 1.0
-	
-	mercenary_type = marathi_company_composition
-}
-
-d_marathi_band = {
-	color = { 180 80 40 }
-	color2 = { 255 255 255 }
-
-	capital = 1254 # Vairagara
-	
-	# Parent Religion
-	religion = hindu
-	
-	culture = marathi
-	
-	mercenary = yes
-
-	title = "CAPTAIN"
-	foa = "CAPTAIN_FOA"
-
-	# Always exists
-	landless = yes
-	
-	# Cannot be held as a secondary title
-	primary = yes
-	
-	# Cannot be vassalized
-	independent = yes
-	
-	strength_growth_per_century = 1.0
-	
-	mercenary_type = marathi_band_composition
-}
-
-d_bengal_company = {
-	color = { 30 150 50 }
-	color2 = { 255 255 255 }
-
-	capital = 1236 # Candradvipa
-	
-	# Parent Religion
-	religion = hindu
-	
-	culture = bengali
-	
-	mercenary = yes
-
-	title = "CAPTAIN"
-	foa = "CAPTAIN_FOA"
-
-	# Always exists
-	landless = yes
-	
-	# Cannot be held as a secondary title
-	primary = yes
-	
-	# Cannot be vassalized
-	independent = yes
-	
-	strength_growth_per_century = 1.0
-	
-	mercenary_type = bengal_company_composition
-}
-
-d_bengal_band = {
-	color = { 30 170 50 }
-	color2 = { 255 255 255 }
-
-	capital = 1236 # Candradvipa
-	
-	# Parent Religion
-	religion = hindu
-	
-	culture = bengali
-	
-	mercenary = yes
-
-	title = "CAPTAIN"
-	foa = "CAPTAIN_FOA"
-
-	# Always exists
-	landless = yes
-	
-	# Cannot be held as a secondary title
-	primary = yes
-	
-	# Cannot be vassalized
-	independent = yes
-	
-	strength_growth_per_century = 1.0
-	
-	mercenary_type = bengal_band_composition
-}
-
-d_rajput_company = {
-	color = { 180 65 0 }
-	color2 = { 255 255 255 }
-
-	capital = 1130 # Mandavyapura
-	
-	# Parent Religion
-	religion = hindu
-	
-	culture = rajput
-	
-	mercenary = yes
-
-	title = "CAPTAIN"
-	foa = "CAPTAIN_FOA"
-
-	# Always exists
-	landless = yes
-	
-	# Cannot be held as a secondary title
-	primary = yes
-	
-	# Cannot be vassalized
-	independent = yes
-	
-	strength_growth_per_century = 1.0
-	
-	mercenary_type = rajput_company_composition
-}
-
-d_rajput_band = {
-	color = { 170 50 0 }
-	color2 = { 255 255 255 }
-
-	capital = 1130 # Mandavyapura
-	
-	# Parent Religion
-	religion = hindu
-	
-	culture = rajput
-	
-	mercenary = yes
-
-	title = "CAPTAIN"
-	foa = "CAPTAIN_FOA"
-
-	# Always exists
-	landless = yes
-	
-	# Cannot be held as a secondary title
-	primary = yes
-	
-	# Cannot be vassalized
-	independent = yes
-	
-	strength_growth_per_century = 1.0
-	
-	mercenary_type = rajput_band_composition
 }
