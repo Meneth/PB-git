@@ -11,6 +11,11 @@
 	Removed PB's penalty to Muslim merchant republics' income, as it is no longer needed now that the Indian Ocean is a separate ocean
 	Moved the useless courtier maintenance event to on_actions for improved performance [AnaxXiphos]
 	Further performance improvements to useless courtier mass-murder
+	Added a proper AI retinue spam filter to PB with the following requirement for hiring a retinue:
+		tier >= duke and { tier >= king OR { independent AND realm_size >= 15 } OR realm_size >= 21 }
+		NOTE: realm_size is the number of holdings in a ruler's [sub]realm, their demesne's holdings plus all direct and indirect vassals' holdings
+		Restriction _only affects AI_, as the AI otherwise spams useless, do-nothing retinue units literally all over the map
+	Removed previous retinue disabler system [building and maintenance-event based] in favor of 2.1's retinue hire triggers. Further improves performance from the heightened AI restrictions and also perfects consistency / immediate correctness
 
 3.5.2
 	Updated for 2.1

@@ -18,6 +18,24 @@ RETTYPE_INF1 =
 	second_type = 5
 	second_amount = 50
 	
+	potential = {
+		# PB's retinue spam filter
+		OR = {
+			ai = no
+			AND = {
+				higher_real_tier_than = count
+				OR = {
+					higher_real_tier_than = duke
+					AND = {
+						independent = yes
+						realm_size = 15
+					}
+					realm_size = 21
+				}
+			}
+		}
+	}
+	
 	modifier = {
 		archers_offensive = 0.4
 		heavy_infantry_defensive = 0.2
@@ -30,6 +48,24 @@ RETTYPE_INF2 =
 	first_amount = 150
 	second_type = 5
 	second_amount = 100
+	
+	potential = {
+		# PB's retinue spam filter
+		OR = {
+			ai = no
+			AND = {
+				higher_real_tier_than = count
+				OR = {
+					higher_real_tier_than = duke
+					AND = {
+						independent = yes
+						realm_size = 15
+					}
+					realm_size = 21
+				}
+			}
+		}
+	}
 	
 	modifier = {
 		archers_defensive = 0.4
@@ -44,6 +80,24 @@ RETTYPE_CAV1 =
 	second_type = 3
 	second_amount = 200
 	
+	potential = {
+		# PB's retinue spam filter
+		OR = {
+			ai = no
+			AND = {
+				higher_real_tier_than = count
+				OR = {
+					higher_real_tier_than = duke
+					AND = {
+						independent = yes
+						realm_size = 15
+					}
+					realm_size = 21
+				}
+			}
+		}
+	}
+	
 	modifier = {
 		knights_offensive = 0.3
 		light_cavalry_offensive = 0.3
@@ -56,6 +110,24 @@ RETTYPE_SKIR1 =
 	first_amount = 200
 	second_type = 1
 	second_amount = 50
+	
+	potential = {
+		# PB's retinue spam filter
+		OR = {
+			ai = no
+			AND = {
+				higher_real_tier_than = count
+				OR = {
+					higher_real_tier_than = duke
+					AND = {
+						independent = yes
+						realm_size = 15
+					}
+					realm_size = 21
+				}
+			}
+		}
+	}
 	
 	modifier = {
 		archers_offensive = 0.6

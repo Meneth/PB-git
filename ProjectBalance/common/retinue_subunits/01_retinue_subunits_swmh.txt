@@ -6,7 +6,25 @@ RETTYPE_CUL_ESTONIAN =
 	second_type = 0
 	second_amount = 100 
 	
-	potential = { culture = ugricbaltic }
+	potential = {
+		culture = ugricbaltic
+		
+		# PB's retinue spam filter
+		OR = {
+			ai = no
+			AND = {
+				higher_real_tier_than = count
+				OR = {
+					higher_real_tier_than = duke
+					AND = {
+						independent = yes
+						realm_size = 15
+					}
+					realm_size = 21
+				}
+			}
+		}
+	}
 	
 	modifier = {
 		heavy_infantry_offensive = 0.3
@@ -19,7 +37,25 @@ RETTYPE_CUL_NORSEGAELIC =
 	first_type = 1
 	first_amount = 250
 	
-	potential = { culture = norsegael }
+	potential = {
+		culture = norsegael
+		
+		# PB's retinue spam filter
+		OR = {
+			ai = no
+			AND = {
+				higher_real_tier_than = count
+				OR = {
+					higher_real_tier_than = duke
+					AND = {
+						independent = yes
+						realm_size = 15
+					}
+					realm_size = 21
+				}
+			}
+		}
+	}
 	
 	modifier = {
 		heavy_infantry_offensive = 0.6
@@ -34,7 +70,25 @@ RETTYPE_CUL_KARANTANCI =
 	second_type = 3
 	second_amount = 100
 	
-	potential = { culture = slovene }
+	potential = {
+		culture = slovene
+		
+		# PB's retinue spam filter
+		OR = {
+			ai = no
+			AND = {
+				higher_real_tier_than = count
+				OR = {
+					higher_real_tier_than = duke
+					AND = {
+						independent = yes
+						realm_size = 15
+					}
+					realm_size = 21
+				}
+			}
+		}
+	}
 	
 	modifier = {
 		knights_defensive = 0.3
