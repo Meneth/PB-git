@@ -997,7 +997,7 @@ retake_religious_lands = {
 				}
 			}
 		}
-		# The attacker needs at least one county in the target kingdom, or a border, or be only two sea zones away from one of your counties
+		# The attacker needs at least one county in the target duchy, or a border, or be only two sea zones away from one of your counties
 		any_direct_de_jure_vassal_title = {
 			OR = {
 				holder_scope = {
@@ -1233,8 +1233,8 @@ special_holy_war = {
 	can_use_gui = {
 		ROOT = {
 			NOT = { has_character_modifier = holy_war_cooldown }
-			is_patrician = no
 			is_merchant_republic = no
+			NOT = { any_liege = { is_merchant_republic = yes } }
 		}
 		NOT = {
 			FROM = {
@@ -1289,6 +1289,7 @@ special_holy_war = {
 	can_use_title = {
 		NOT = { 
 			any_direct_de_jure_vassal_title = {
+				limit = { has_owner = yes }
 				location = { continent = region_sahara }
 			}
 		}
@@ -1310,7 +1311,7 @@ special_holy_war = {
 				FROM = { religion_group = muslim }
 			}
 		}
-		# The attacker needs at least one county in the target kingdom, or a border, or be only two sea zones away from one of your counties
+		# The attacker needs at least one county in the target duchy, or a border, or be only two sea zones away from one of your counties
 		any_direct_de_jure_vassal_title = {
 			OR = {
 				holder_scope = {
@@ -1452,10 +1453,6 @@ special_holy_war = {
 						enemy = FROM
 						same_religion = yes # Only vassalize rulers of my religion
 					}
-#					gain_settlements_under_title = {
-#						title = PREV
-#						enemy = FROM
-#					}
 				}
 			}
 		}
