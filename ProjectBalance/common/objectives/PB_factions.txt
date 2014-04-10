@@ -6,24 +6,27 @@ faction_autonomy = {
 	
 	# Plotter scope
 	potential = {
-		prisoner = no
+		higher_tier_than = baron
 		is_adult = yes
-		is_ruler = yes
 		independent = no
-		is_landed = yes
-		liege = { is_feudal = yes }
-		primary_title = { higher_tier_than = BARON }
+		prisoner = no
 		NOT = { trait = incapable }
-		NOT = { trait = imbecile }
 		liege = {
-			OR = {
-				tier = king
-				tier = emperor
+			independent = yes #Requirement of current AF implementation (will change)
+			higher_real_tier_than = duke
+			is_feudal = yes
+			any_vassal = { #No lone wolf AFs...
+				NOT = { character = PREV }
+				higher_tier_than = baron
+				is_adult = yes
+				independent = no
+				prisoner = no
+				NOT = { trait = incapable }
 			}
 			NOT = {
-				any_demesne_title = {
-					temporary = yes
-				}
+				# Will break when vassal king AFs revolt, and thus for this and other mounting
+				# reasons, vassal king AFs are now disabled.
+				any_demesne_title = { temporary = yes }
 			}
 		}
 	}
@@ -31,12 +34,17 @@ faction_autonomy = {
 	# Faction member scope (ROOT = joiner, FROM = target)
 	allow_join = {
 		ROOT = {
-			is_ruler = yes
-			independent = no
-			is_landed = yes
+			higher_tier_than = baron
 			is_adult = yes
-			NOT = { trait = incapable }
+			independent = no
 			prisoner = no
+			NOT = { trait = incapable }
+			liege = {
+				independent = yes
+				higher_real_tier_than = duke
+				is_feudal = yes
+				NOT = { any_demesne_title = { temporary = yes } }
+			}
 			NOT = {
 				AND = {
 					has_character_flag = left_autonomy_faction
@@ -53,6 +61,7 @@ faction_autonomy = {
 			factor = 0
 			any_spouse = { character = FROM }
 		}
+		
 		modifier = {
 			factor = 0
 			current_heir = {
@@ -63,12 +72,6 @@ faction_autonomy = {
 			factor = 0
 			current_heir = {
 				any_spouse = { character = FROM }
-			}
-		}
-		modifier = {
-			factor = 0
-			FROM = {
-				NOT = { has_character_flag = desires_autonomy }
 			}
 		}
 		modifier = {
@@ -85,25 +88,24 @@ faction_autonomy = {
 			}
 		}
 		modifier = {
-			factor = 0
-			FROM = {
-				primary_title = { is_primary_type_title = yes } # Mercs, the Pope, Holy Orders, etc
-			}
+			factor = 0 # Not for the leader at least
+			primary_title = { is_primary_type_title = yes } # Mercs, the Pope, Holy Orders, etc
 		}
 	}
 	
 	# AI membership weight: ROOT is the prospective member. FROM is the faction leader. FROMFROM is the target title or character.
 	membership = {
-		factor = 100
+		factor = 1000
 		
 		modifier = {
 			factor = 0
 			OR = {
+				lower_tier_than = count
+				is_ruler = no
+				is_adult = no
+				independent = yes # ?
 				prisoner = yes
 				trait = incapable
-				NOT = { age = 16 }
-				is_landed = no
-				NOT = { has_character_flag = desires_autonomy }
 			}
 		}
 		modifier = {
@@ -116,7 +118,14 @@ faction_autonomy = {
 		}
 		modifier = {
 			factor = 0
-			primary_title = { is_primary_type_title = yes } # Mercs, the Pope, Holy Orders, etc
+			FROM = {
+				primary_title = {
+					mercenary = yes
+					# The Pope / vassalized religious leader may want autonomy.  Hell, even the holy orders probably do.
+					# They historically were quite a problem for Jerusalem's Kings. Vassal mercenary bands, however, are
+					# not looking for autonomy (e.g., the Varangians).
+				}
+			}
 		}
 		modifier = {
 			factor = 0
