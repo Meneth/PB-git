@@ -687,11 +687,9 @@ conquest_of_the_balkans = {
 	on_success_title = {
 		any_de_jure_vassal_title = {
 			limit = {
-				NOT = { tier = baron }
+				higher_tier_than = baron
 				OR = {
-					de_jure_liege_or_above = d_dyrrachion
 					de_jure_liege_or_above = d_epirus
-					title = d_dyrrachion
 					title = d_epirus
 				}
 			}
@@ -701,10 +699,7 @@ conquest_of_the_balkans = {
 	
 	is_valid = {
 		ROOT = {
-			OR = {
-				has_strong_claim = d_dyrrachion
-				has_strong_claim = d_epirus
-			}
+			has_strong_claim = d_epirus
 		}
 	}
 	
@@ -720,7 +715,6 @@ conquest_of_the_balkans = {
 	on_reverse_demand = {
 		ROOT = {
 			prestige = -100
-			remove_claim = d_dyrrachion
 			remove_claim = d_epirus
 		}
 		FROM = {

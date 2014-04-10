@@ -440,7 +440,6 @@
 	#War with Byzantium
 	1066.1.1 = {
 		add_claim = d_epirus
-		add_claim = d_dyrrachion
 		raise_levies = {
 			location=345 # Lecce
 			force_mult=1.5
@@ -477,6 +476,7 @@
 				leader = 1127
 				match_character = ROOT
 				match_mult = 0.25
+				merge = yes  # Merge all units in Lecce into one army (as we do w/ William the Conqueror)
 				attrition = 1.0
 			}
 			spawn_unit = {
