@@ -752,36 +752,60 @@ bulgarian_uprising = {
 	check_de_jure_tier = EMPEROR # this scans all de jure kingdoms for the counties which are held by or vassals(or below) of selected character. Only valid if is_permanent = yes
 	
 	can_use = {
+		FROM = {
+			NOT = { culture = ROOT }
+			has_landed_title = e_byzantium
+		}
 		ROOT = {
 			has_character_flag = bulgarian_uprising
+			culture = bulgarian
 		}
 	}
 	
 	on_success_title = {
-		gain_title = ROOT
+		
 		hidden_tooltip = {
-			any_de_jure_vassal_title = {
-				limit = {
-					NOT = { tier = baron }
-					holder_scope = { NOT = { culture = bulgarian } }
-					holder_scope = { NOT = { any_liege = { culture = bulgarian } } }
-					holder_scope = { top_liege = { has_landed_title = e_byzantium } }
-				}
-				usurp_title = ROOT
-			}
-			any_de_jure_vassal_title = {
-				limit = {
-					NOT = { tier = baron }
-					holder_scope = { NOT = { any_liege = { culture = bulgarian } } }
-					holder_scope = { top_liege = { has_landed_title = e_byzantium } }
-					holder_scope = { NOT = { character = ROOT } }
-				}
-				holder_scope = { set_defacto_liege = ROOT }
-			}
+			#Init laws before the empire is held so that we don't have to erase the pass_effect
+			# opinion modifiers that setting any laws would give.
 			add_law = crown_levies_1
 			add_law = emperor_peace_0
 			add_law = inheritance_0
 			add_law = revokation_0
+		
+			#Correctly preserve vassal-liege structure
+			ROOT = {
+				vassalize_or_take_under_title = {
+					title = PREV
+					enemy = FROM
+					is_crusade = yes
+				}
+			}
+			
+			#Take the empire title
+			gain_title = ROOT
+			
+			#Usurp tier >= count titles that are held by non-Bulgars and
+			# not the subject of one of my [new] Bulgar dukes or kings.
+			any_de_jure_vassal = {
+				limit = {
+					higher_tier_than = baron
+					is_liege_or_above = ROOT #Now our vassal if he qualifies
+					NOT = {
+						culture = ROOT
+						any_liege = {
+							culture = ROOT
+							NOT = { character = ROOT }
+						}
+					}
+				}
+				any_demesne_title = {
+					limit = {
+						higher_tier_than = baron
+						de_jure_liege_or_above = PREVPREV
+					}
+					usurp_title = ROOT
+				}
+			}
 		}
 	}
 	
@@ -815,8 +839,8 @@ bulgarian_uprising = {
 			prestige = 200
 		}
 		set_global_flag = bulgarian_unrest_ends
-		k_bulgaria = { de_jure_liege = e_byzantium }
-		k_serbia = { de_jure_liege = e_byzantium }
+		e_byzantium = { k_bulgaria = { de_jure_liege = PREV } }
+		e_byzantium = { k_serbia = { de_jure_liege = PREV } }
 	}
 	
 	on_add = {
