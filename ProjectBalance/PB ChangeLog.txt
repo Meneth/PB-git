@@ -17,6 +17,9 @@
 		Restriction _only affects AI_, as the AI otherwise spams useless, do-nothing retinue units literally all over the map
 	Removed previous retinue disabler system [building and maintenance-event based] in favor of 2.1's retinue hire triggers. Further improves performance from the heightened AI restrictions and also perfects consistency / immediate correctness
 	Fixed a few duplicate title IDs
+	Fixed some references to nonexistent titles in CBs and history
+	Updated the AF to workaround some of the complications of the 2.1 faction changes; one big change: AFs of vassal kings (who are themselves in an AF) are no longer permitted
+	Added a number of 2.1 sanity checks to the codebase as a result of a major bug sweep
 
 3.5.2
 	Updated for 2.1
