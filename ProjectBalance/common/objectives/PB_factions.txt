@@ -16,7 +16,7 @@ faction_autonomy = {
 			higher_real_tier_than = duke
 			is_feudal = yes
 			any_vassal = { #No lone wolf AFs...
-				NOT = { character = PREV }
+				NOT = { character = PREVPREV }
 				higher_tier_than = baron
 				is_adult = yes
 				independent = no
