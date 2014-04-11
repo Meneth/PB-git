@@ -1,5 +1,5 @@
 3.5.3 [BETA]
-	Updated to comply with the 2.1.2.1 beta
+	Updated to comply with 2.1.3
 	Fixed the Norman Company not having any soldiers
 	The Shia Caliphate can no longer gain dejure territory via assimilation
 	Fixed Gujurati culture references broken due to spelling change [AnaxXiphos]
