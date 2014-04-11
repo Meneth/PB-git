@@ -503,8 +503,9 @@ reduce_crown_levies = {
 				name = reduced_obligations
 				duration = 3650
 			}
+			
+			clr_character_flag = autonomy_faction_revolt
 		}
-		FROM = { clr_character_flag = autonomy_faction_revolt }
 	}
 
 	on_fail = {
@@ -762,8 +763,13 @@ bulgarian_uprising = {
 	check_de_jure_tier = EMPEROR # this scans all de jure kingdoms for the counties which are held by or vassals(or below) of selected character. Only valid if is_permanent = yes
 	
 	can_use = {
+		FROM = {
+			NOT = { culture = ROOT }
+			has_landed_title = e_byzantium
+		}
 		ROOT = {
 			has_character_flag = bulgarian_uprising
+			culture = bulgarian
 		}
 	}
 	
@@ -992,6 +998,7 @@ retake_religious_lands = {
 	can_use_title = {
 		NOT = { 
 			any_direct_de_jure_vassal_title = {
+				limit = { has_owner = yes }
 				location = { continent = region_sahara }
 			}
 		}
