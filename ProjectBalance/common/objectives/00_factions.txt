@@ -3621,8 +3621,10 @@ faction_claimant = {
 			new_character = {
 				FROM = {
 					liege = {
-						NOT = { is_father = PREVPREV }
-						NOT = { is_mother = PREVPREV }
+						OR = {
+							is_father = PREVPREV
+							is_mother = PREVPREV
+						}
 					}
 				}
 			}
