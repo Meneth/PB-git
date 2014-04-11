@@ -45,7 +45,7 @@ remove_internal_peace = {
 		}
 		hidden_tooltip = {
 			any_attacker = {
-				limit = { de_facto_liege = FROM } }
+				limit = { de_facto_liege = FROM }
 				disband_event_forces = faction_revolters
 			}
 		}
@@ -503,9 +503,8 @@ reduce_crown_levies = {
 				name = reduced_obligations
 				duration = 3650
 			}
-			
-			clr_character_flag = autonomy_faction_revolt
 		}
+		FROM = { clr_character_flag = autonomy_faction_revolt }
 	}
 
 	on_fail = {
@@ -603,12 +602,24 @@ retake_the_coast = {
 			e_byzantium = {
 				any_de_jure_vassal_title = {
 					limit = {
+						has_holder = yes
 						tier = count
 						location = { port = yes }
 						holder_scope = {
 							OR = {
 								character = FROM
 								is_liege_or_above = FROM
+								AND = {
+									in_revolt = yes
+									liege_before_war = { OR = { character = FROM is_liege_or_above = FROM } }
+								}
+								AND = {
+									in_revolt = no
+									liege = {
+										in_revolt = yes
+										liege_before_war = { OR = { character = FROM is_liege_or_above = FROM } }
+									}
+								}
 							}
 						}
 					}
@@ -685,15 +696,14 @@ conquest_of_the_balkans = {
 	}
 	
 	on_success_title = {
-		any_de_jure_vassal_title = {
-			limit = {
-				higher_tier_than = baron
-				OR = {
-					de_jure_liege_or_above = d_epirus
-					title = d_epirus
-				}
-			}
+		# There is no d_dyrrachion... This is much more direct.
+		d_epirus = {
 			usurp_title = ROOT
+			
+			any_de_jure_vassal_title = { #Don't use any_direct_* due to poor tooltip support
+				limit = { tier = count }
+				usurp_title = ROOT
+			}
 		}
 	}
 	
@@ -752,20 +762,15 @@ bulgarian_uprising = {
 	check_de_jure_tier = EMPEROR # this scans all de jure kingdoms for the counties which are held by or vassals(or below) of selected character. Only valid if is_permanent = yes
 	
 	can_use = {
-		FROM = {
-			NOT = { culture = ROOT }
-			has_landed_title = e_byzantium
-		}
 		ROOT = {
 			has_character_flag = bulgarian_uprising
-			culture = bulgarian
 		}
 	}
 	
 	on_success_title = {
 		
 		hidden_tooltip = {
-			#Init laws before the empire is held so that we don't have to erase the pass_effect
+			# Init laws before the empire is held so that we don't have to erase the pass_effect
 			# opinion modifiers that setting any laws would give.
 			add_law = crown_levies_1
 			add_law = emperor_peace_0
@@ -784,7 +789,7 @@ bulgarian_uprising = {
 			#Take the empire title
 			gain_title = ROOT
 			
-			#Usurp tier >= count titles that are held by non-Bulgars and
+			# Usurp tier >= count titles that are held by non-Bulgars and
 			# not the subject of one of my [new] Bulgar dukes or kings.
 			any_de_jure_vassal = {
 				limit = {
@@ -819,7 +824,6 @@ bulgarian_uprising = {
 	}
 	
 	on_fail = {
-		k_bulgaria = { destroy_landed_title = THIS }
 		ROOT = {
 			prestige = -50
 			set_defacto_liege = FROM
@@ -827,10 +831,14 @@ bulgarian_uprising = {
 		FROM = {
 			prestige = 100
 		}
+		
+		# Destroy Bulgaria after vassalizing so as not to risk making a mess.
+		k_bulgaria = {
+			destroy_landed_title = THIS
+		}
 	}
 	
 	on_reverse_demand = {
-		k_bulgaria = { destroy_landed_title = THIS }
 		ROOT = {
 			prestige = -100
 			set_defacto_liege = FROM
@@ -838,6 +846,12 @@ bulgarian_uprising = {
 		FROM = {
 			prestige = 200
 		}
+		
+		# Destroy Bulgaria after vassalizing so as not to risk making a mess.
+		k_bulgaria = {
+			destroy_landed_title = THIS
+		}
+		
 		set_global_flag = bulgarian_unrest_ends
 		e_byzantium = { k_bulgaria = { de_jure_liege = PREV } }
 		e_byzantium = { k_serbia = { de_jure_liege = PREV } }
@@ -978,13 +992,11 @@ retake_religious_lands = {
 	can_use_title = {
 		NOT = { 
 			any_direct_de_jure_vassal_title = {
-				limit = { has_owner = yes }
 				location = { continent = region_sahara }
 			}
 		}
 		#Target must have at least one province of declarer's religion
 		any_direct_de_jure_vassal_title = {
-			limit = { has_owner = yes }
 			owner = {
 				OR = {
 					character = FROM
@@ -1286,10 +1298,11 @@ special_holy_war = {
 			}
 		}
 	}
+	
 	can_use_title = {
 		NOT = { 
 			any_direct_de_jure_vassal_title = {
-				limit = { has_owner = yes }
+				has_holder = yes
 				location = { continent = region_sahara }
 			}
 		}
@@ -1394,9 +1407,14 @@ special_holy_war = {
 	
 	on_add = {
 		ROOT = {
-			add_character_modifier = {
-				name = holy_war_cooldown
-				duration = 1825
+			custom_tooltip = {
+				text = holy_war_cooldown_ctt
+				hidden_tooltip = {
+					add_character_modifier = {
+						name = holy_war_cooldown
+						duration = 1825
+					}
+				}
 			}
 		}
 	}
