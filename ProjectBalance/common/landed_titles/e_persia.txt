@@ -103,8 +103,6 @@ e_persia = {
 				}
 				b_gonabad = {
 				}
-				b_kalat = {
-				}
 				b_torbatjam = {
 				}
 				b_bardaskan = {
@@ -112,6 +110,8 @@ e_persia = {
 				b_mahvalat = {
 				}
 				b_fariman = {
+				}
+				b_dasu = {
 				}
 			}
 			c_lut = {
@@ -642,7 +642,7 @@ e_persia = {
 				}
 				b_masouleh = {
 				}
-				b_rudbar = {
+				b_masal = {
 				}
 			}
 			c_tabriz = {
@@ -840,13 +840,13 @@ e_persia = {
 				}
 				b_dozz_aap = {
 				}
-				b_zabol = {
-				}
 				b_shahresukhteh = {
 				}
 				b_esfandak = {
 				}
 				b_dehak = {
+				}
+				b_adar = {
 				}
 			}
 			c_zahedan = {
@@ -902,8 +902,6 @@ e_persia = {
 				b_tis = {
 				}
 				b_chabahar = {
-				}
-				b_konarak = {
 				}
 				b_pozm_machchan = {
 				}
@@ -982,8 +980,6 @@ e_persia = {
 				b_zakhak = {
 				}
 				b_shibar = {
-				}
-				b_chak = {
 				}
 			}
 			c_kunduz = {
@@ -1112,7 +1108,7 @@ e_persia = {
 			}
 		}
 	}
-		
+	
 	k_khiva = {
 		color = { 79 138 51 }
 		color2={ 255 255 255 }
@@ -1207,8 +1203,6 @@ e_persia = {
 				b_chardjul = {
 				}
 				b_kogon = {
-				}
-				b_agar = {
 				}
 				b_ayrybaba = {
 				}
@@ -2124,7 +2118,7 @@ e_persia = {
 				}
 				b_matsnaberd = {
 				}
-				b_sanahin = {
+				b_tumanyan = {
 				}
 			}
 			c_ani = {

@@ -289,8 +289,6 @@ lunatic = {
 	
 	ai_rationality = -50
 	
-	cost = -10
-	
 	command_modifier = {
 		random = 0.03
 	}
@@ -527,6 +525,9 @@ pregnant = {
 excommunicated = {
 	diplomacy = -5
 	same_religion_opinion = -30
+	
+	religious = yes
+	customizer = no
 }
 kinslayer = {
 	potential = {
@@ -542,8 +543,6 @@ homosexual = {
 	vassal_opinion = -10
 	
 	fertility = -0.15
-	
-	cost = -10
 }
 
 #####################

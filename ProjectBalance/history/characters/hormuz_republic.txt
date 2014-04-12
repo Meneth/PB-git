@@ -1,12 +1,12 @@
 #Hormuz Republic - all fictional
 #1000158034 -
 
-#Thakkur (sunni Gujarati)
+#Thakkur (sunni Gujurati)
 1000158034 = {
 	name="Amol"
 	dynasty=1000061300 #Thakkur
 	religion="sunni"
-	culture="gujarati"
+	culture="gujurati"
 	trait="honest"
 	trait="zealous"
 	trait="genius"
@@ -21,7 +21,7 @@
 	name="Amol"
 	dynasty=1000061300 #Thakkur
 	religion="sunni"
-	culture="gujarati"
+	culture="gujurati"
 	trait="quick"
 	trait="cynical"
 	trait="kind"
@@ -38,7 +38,7 @@
 	name="Devapala"
 	dynasty=1000061300 #Thakkur
 	religion="sunni"
-	culture="gujarati"
+	culture="gujurati"
 	trait="quick"
 	trait="shy"
 	trait="kind"
@@ -55,7 +55,7 @@
 	name="Rajapala"
 	dynasty=1000061300 #Thakkur
 	religion="sunni"
-	culture="gujarati"
+	culture="gujurati"
 	trait="gregarious"
 	trait="kind"
 	trait="humble"
@@ -71,7 +71,7 @@
 	name="Rajyapala"
 	dynasty=1000061300 #Thakkur
 	religion="sunni"
-	culture="gujarati"
+	culture="gujurati"
 	trait="honest"
 	trait="charitable"
 	father=1000158037
@@ -86,7 +86,7 @@
 	name="Mattat"
 	dynasty=1000061300 #Thakkur
 	religion="sunni"
-	culture="gujarati"
+	culture="gujurati"
 	trait="temperate"
 	trait="proud"
 	father=1000158038
@@ -101,7 +101,7 @@
 	name="Amol"
 	dynasty=1000061300 #Thakkur
 	religion="sunni"
-	culture="gujarati"
+	culture="gujurati"
 	trait="zealous"
 	trait="greedy"
 	father=1000158036
@@ -116,7 +116,7 @@
 	name="Bhoo-Chand"
 	dynasty=1000061300 #Thakkur
 	religion="sunni"
-	culture="gujarati"
+	culture="gujurati"
 	trait="shy"
 	trait="temperate"
 	father=1000158040
@@ -131,7 +131,7 @@
 	name="Kalbhoj"
 	dynasty=1000061300 #Thakkur
 	religion="sunni"
-	culture="gujarati"
+	culture="gujurati"
 	trait="deceitful"
 	trait="lustful"
 	father=1000158041
@@ -146,7 +146,7 @@
 	name="Prithvipal"
 	dynasty=1000061300 #Thakkur
 	religion="sunni"
-	culture="gujarati"
+	culture="gujurati"
 	trait="diligent"
 	trait="kind"
 	father=1000158042
@@ -161,7 +161,7 @@
 	name="Amol"
 	dynasty=1000061300 #Thakkur
 	religion="sunni"
-	culture="gujarati"
+	culture="gujurati"
 	trait="quick"
 	trait="kind"
 	trait="patient"
@@ -177,7 +177,7 @@
 	name="Samant-Singh"
 	dynasty=1000061300 #Thakkur
 	religion="sunni"
-	culture="gujarati"
+	culture="gujurati"
 	trait="cynical"
 	trait="ambitious"
 	father=1000158044
@@ -192,7 +192,7 @@
 	name="Vindhyavarman"
 	dynasty=1000061300 #Thakkur
 	religion="sunni"
-	culture="gujarati"
+	culture="gujurati"
 	trait="gregarious"
 	trait="kind"
 	trait="gluttonous"
@@ -208,7 +208,7 @@
 	name="Sinhad-Deo"
 	dynasty=1000061300 #Thakkur
 	religion="sunni"
-	culture="gujarati"
+	culture="gujurati"
 	trait="patient"
 	trait="diligent"
 	father=1000158046
@@ -223,7 +223,7 @@
 	name="Ajairaja"
 	dynasty=1000061300 #Thakkur
 	religion="sunni"
-	culture="gujarati"
+	culture="gujurati"
 	trait="paranoid"
 	trait="cruel"
 	father=1000158047
@@ -238,7 +238,7 @@
 	name="Amol"
 	dynasty=1000061300 #Thakkur
 	religion="sunni"
-	culture="gujarati"
+	culture="gujurati"
 	trait="quick"
 	trait="kind"
 	trait="shy"
@@ -256,7 +256,7 @@
 	name="Amol"
 	dynasty=1000061300 #Thakkur
 	religion="sunni"
-	culture="gujarati"
+	culture="gujurati"
 	trait="quick"
 	trait="charitable"
 	trait="gregarious"
@@ -272,7 +272,7 @@
 	name="Devapala"
 	dynasty=1000061300 #Thakkur
 	religion="sunni"
-	culture="gujarati"
+	culture="gujurati"
 	trait="ambitious"
 	trait="kind"
 	trait="slothful"

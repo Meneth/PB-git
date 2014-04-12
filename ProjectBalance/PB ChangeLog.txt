@@ -1,3 +1,30 @@
+3.5.3
+	Updated to comply with 2.1.3
+	Fixed the Norman Company not having any soldiers
+	The Shia Caliphate can no longer gain dejure territory via assimilation
+	Fixed Gujurati culture references broken due to spelling change [AnaxXiphos]
+	The player should now be forced out of the Autonomy faction if they decide to stay loyal to their liege instead of revolting
+	Finally fixed the pathologically unstable English (Anglo-Saxon vs. Norman vs. Norwegian) AI outcome at the Stamford Bridge start.  The AI now efficiently ferries William's troops across the Channel instead of killing them off one regiment at a time and skipping Hastings (still may need troop balancing)
+	Fixed some retinues with horse arches not actually having horse archers
+	Fixed Imperial Reconquest referring to a couple of titles that no longer exist in PB
+	Upon Christian Crusade creation, the Pope now loses all his excess piety and cash until it's returned to him 2 and 1 months into the Crusade, respectively. The Pope will no longer snap up all the holy orders right away, and in general, will be much less likely to be the Crusade winner instead of a proper Catholic ruler
+	Removed PB's penalty to Muslim merchant republics' income, as it is no longer needed now that the Indian Ocean is a separate ocean
+	Moved the useless courtier maintenance event to on_actions for improved performance [AnaxXiphos]
+	Further performance improvements to useless courtier mass-murder
+	Added a proper AI retinue spam filter to PB with the following requirement for hiring a retinue:
+		tier >= duke and { tier >= king OR { independent AND realm_size >= 15 } OR realm_size >= 21 }
+		NOTE: realm_size is the number of holdings in a ruler's [sub]realm, their demesne's holdings plus all direct and indirect vassals' holdings
+		Restriction _only affects AI_, as the AI otherwise spams useless, do-nothing retinue units literally all over the map
+	Removed previous retinue disabler system [building and maintenance-event based] in favor of 2.1's retinue hire triggers. Further improves performance from the heightened AI restrictions and also perfects consistency / immediate correctness
+	Fixed a few duplicate title IDs
+	Fixed some references to nonexistent titles in CBs and history
+	Updated the AF to workaround some of the complications of the 2.1 faction changes; one big change: AFs of vassal kings (who are themselves in an AF) are no longer permitted
+	Added a number of 2.1 sanity checks to the codebase as a result of a major bug sweep
+	Added some additional 2.1.2 changes [AnaxXiphos]
+	Crusade kingdom give-away event series now properly executes for Fraticelli Popes that have called a successful Crusade
+	Upon Crusade success, deserting soldiers that decide to settle in the target kingdom immediately refill the kingdom's holding levies. Will improve early survival of Crusader States.
+	Tweaked decisions for vassalization of the Knights Templar and/or Knights Hospitalier as the King of Jerusalem 
+
 3.5.2
 	Updated for 2.1
 	Fixed Mandé culture not existing

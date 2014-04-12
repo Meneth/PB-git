@@ -141,7 +141,7 @@ e_rajastan = {
 				}
 				b_kalari = {
 				}
-				b_atri = {
+				b_sialkot = {
 				}
 				b_shikarpur = {
 				}
@@ -525,8 +525,6 @@ e_rajastan = {
 				}
 				b_shankaracharya = {
 				}
-				b_jayapura = {
-				}
 				b_parihasapura = {
 				}
 				b_padmapura = {
@@ -539,7 +537,7 @@ e_rajastan = {
 				}
 			}
 			c_bannu = {
-				color={ 265 150 51 }
+				color={ 255 150 51 }
 				color2={ 255 255 255 }
 				
 				b_bannu = {
@@ -830,8 +828,6 @@ e_rajastan = {
 				}
 				b_modhera = {
 				}
-				b_idar = {
-				}
 				b_kheralu = {
 				}
 				b_shertha = {
@@ -894,9 +890,9 @@ e_rajastan = {
 				}
 				b_lakhota = {
 				}
-				b_halvad = {
-				}
 				b_khasta = {
+				}
+				b_dhrol = {
 				}
 			}
 			c_dvaraka = {
@@ -956,7 +952,7 @@ e_rajastan = {
 				}
 			}
 			c_somnath = {
-				color={ 220 800 50 }
+				color={ 220 80 50 }
 				color2={ 255 255 255 }
 				
 				b_vejalkot = {
@@ -1221,7 +1217,7 @@ e_rajastan = {
 				}
 				b_jaisalmer = {
 				}
-				b_pali = {
+				b_ranakpur = {
 				}
 			}
 			c_vijnot = {
@@ -1304,8 +1300,6 @@ e_rajastan = {
 				b_ramgarh = {
 				}
 				b_bundi = {
-				}
-				b_taragarh = {
 				}
 			}
 		}
@@ -1879,6 +1873,8 @@ e_bengal = {
 	
 	capital = 1151 # Laksmanavati
 
+	short_name = yes
+	
 	k_gondwana = {
 		color = { 32 128 55 }
 		color2={ 255 255 255 }
@@ -2156,11 +2152,11 @@ e_bengal = {
 				}
 				b_malda = {
 				}
-				b_rampur_boalia = {
+				b_pankak = {
 				}
-				b_pandua = {
+				b_banan = {
 				}
-				b_tanda = {
+				b_shukla = {
 				}
 				b_puthia = {
 				}
@@ -3007,6 +3003,8 @@ e_deccan = {
 	
 	capital = 1210 # Manyaketha
 
+	short_name = yes
+	
 	k_maharastra = {
 		color={ 150 0 20 }
 		color2={ 255 255 255 }
@@ -3468,8 +3466,6 @@ e_deccan = {
 				b_talikota = {
 				}
 				b_sorapur = {
-				}
-				b_bagalkot = {
 				}
 			}
 		}
@@ -3983,8 +3979,6 @@ e_deccan = {
 				}
 				b_tirupati = {
 				}
-				b_kalahasti = {
-				}
 				b_melpadi = {
 				}
 				b_virincipuram = {
@@ -4063,15 +4057,11 @@ e_deccan = {
 				
 				b_rajamahendravaram = {
 				}
-				b_bhadrachalam = {
-				}
 				b_kuwakonda = {
-				}
-				b_dantewada = {
 				}
 				b_kirandul = {
 				}
-				b_barsoor = {
+				b_pattiseema = {
 				}
 			}
 		}
@@ -4225,8 +4215,6 @@ e_deccan = {
 				}
 				b_indur = {
 				}
-				b_ramgarh = {
-				}
 				b_potali = {
 				}
 			}
@@ -4295,8 +4283,6 @@ e_deccan = {
 				b_charakonda = {
 				}
 				b_mutudugu = {
-				}
-				b_ghanpur = {
 				}
 			}
 			c_medak = {

@@ -72,23 +72,6 @@ disorganized = {
 	land_organisation = -0.2
 }
 
-#Muslim Merchant Republic
-muslim_merchant_republic = {
-	potential = {
-		is_ruler = yes
-	}
-	
-	trigger = {
-		religion_group = muslim
-		OR = {
-			is_patrician = yes
-			is_merchant_republic = yes
-		}
-	}
-	
-	global_tax_modifier = -0.4
-}
-
 #Low decandence
 low_decadence = {
 	potential = {

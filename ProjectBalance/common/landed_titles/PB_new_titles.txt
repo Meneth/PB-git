@@ -26,7 +26,7 @@ d_norman_company = {
 	
 	strength_growth_per_century = 1.0
 
-	modifier = d_norman_company_modifier
+	mercenary_type = norman_company
 }
 
 e_hre_french = {

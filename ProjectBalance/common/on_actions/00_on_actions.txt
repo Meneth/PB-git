@@ -3,6 +3,7 @@ on_yearly_pulse = {
 	events = {
 		pb_various.15 #Interest on loans
 		meneth.211 #Factions
+		pb_various.1 #Killing useless courtiers
 	}
 	random_events = {
 		
@@ -213,13 +214,12 @@ on_yearly_pulse = {
 		500 = RoI.500
 		
 		# Indian low religious authority events
-		100 = RoI.3500
-		100 = RoI.3506
-		100 = RoI.3510
-		100 = RoI.3516
+		50 = RoI.3500
+		50 = RoI.3506
+		50 = RoI.3510
+		50 = RoI.3516
 		10 = RoI.3520
-		100 = RoI.3530
-		100 = RoI.3536
+		50 = RoI.3530
 		
 		# Religious tolerance events
 		100 = RoI.400
@@ -381,7 +381,6 @@ on_bi_yearly_pulse = {
 		10 = 3495	
 		10 = 3280
 		10 = 3282
-		10 = 3283
 		10 = 3286
 		10 = 3710
 		10 = 3715
@@ -907,6 +906,7 @@ on_crusade_creation = {
  		324 # Pagan Holy War against Christians
  		325 # Pagan Holy War against Muslims
  		326 # Pagan Holy War against other Pagans
+		pb_crusades.6 # Prevent Pope from snatching up all the holy orders in Christian Crusades
  	}
 }
 

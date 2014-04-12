@@ -24,8 +24,8 @@ religion = norse_pagan
 	b_iveland = ca_shipyard_1
 	b_hylestad = tp_shipyard_1
 }
+1000.1.1 = { trade_post = b_hetvelt }
 1066.1.1 = {
 	culture = norwegian
 	religion = catholic
 }
-1000.1.1 = { trade_post = b_hetvelt }

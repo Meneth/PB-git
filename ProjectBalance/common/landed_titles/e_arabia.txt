@@ -775,27 +775,6 @@ e_arabia = {
 				b_ziwaelbahari = {
 				}
 			}
-			c_buhairya = {
-				color={ 108 227 142 }
-				color2={ 255 255 255 }
-			
-				b_buhairya = {
-				}
-				b_mut = {
-				}
-				b_qasrfarfra = {
-				}
-				b_elkharga = {
-				}
-				b_baris = {
-				}
-				b_budhkula = {
-				}
-				b_abuminqar = {
-				}
-				b_ismant = {
-				}
-			}
 			c_gizeh = {
 				color={ 110 229 144 }
 				color2={ 255 255 255 }

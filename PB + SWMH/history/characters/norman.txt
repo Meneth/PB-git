@@ -1159,6 +1159,7 @@
 				#Rebalanced starting forces
 				match_mult = 0.65
 				attrition = 1.0
+				merge = yes # Auto-merge all regiments in same province into one unit
 			}
 			spawn_unit = {
 				province = 97 # Rouen
@@ -1167,7 +1168,8 @@
 				earmark = williams_invasion_fleet
 				troops =
 				{
-					galleys = { 70 70 }
+					# Rebalanced starting fleet to always be sufficient
+					galleys = { 115 115 }
 				}
 			}
 		}

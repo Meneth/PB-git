@@ -219,6 +219,7 @@ e_byzantium = {
 				b_serres = {
 				}
 				b_mntathos = {
+					holy_site = orthodox
 				}
 				b_philippi = {
 				}
@@ -338,7 +339,6 @@ e_byzantium = {
 				b_athens = {
 				}
 				b_piraeaus = {
-					holy_site = orthodox
 					holy_site = hellenic_pagan
 				}
 				b_megara = {

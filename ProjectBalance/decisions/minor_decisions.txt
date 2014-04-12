@@ -45,7 +45,7 @@ decisions = {
 			set_character_flag = upcoming_feast
 			
 			hidden_tooltip = {
-				letter_event = { 
+				character_event = {
 					id = 72109  
 				}
 			}
@@ -97,6 +97,13 @@ decisions = {
 			num_of_vassals = 1
 			NOT = { has_character_flag = do_not_disturb }
 			NOT = { has_character_flag = upcoming_fair }
+			OR = {
+				NOT = { has_character_flag = recent_summer_fair }
+				had_character_flag = {
+					flag = recent_summer_fair
+					days = 60
+				}
+			}
 		}
 		allow = {
 			war = no
@@ -1025,90 +1032,90 @@ decisions = {
 		}
 	}	
 	
-	borrow_money_jews = {
-		potential = {
-			OR = {
-				religion_group = christian
-				religion_group = muslim
-				religion_group = zoroastrian_group
-			}	
-			NOT = { 
-				religion_group = jewish_group
-				has_character_modifier = expelled_jewish
-				top_liege = { has_character_modifier = expelled_jewish }
-			}
-			NOT = { has_character_modifier = borrowed_from_jews }
-			has_dlc = "Sons of Abraham"
-			is_playable = yes
-			prisoner = no
-		}
+	# borrow_money_jews = {
+		# potential = {
+			# OR = {
+				# religion_group = christian
+				# religion_group = muslim
+				# religion_group = zoroastrian_group
+			# }	
+			# NOT = { 
+				# religion_group = jewish_group
+				# has_character_modifier = expelled_jewish
+				# top_liege = { has_character_modifier = expelled_jewish }
+			# }
+			# NOT = { has_character_modifier = borrowed_from_jews }
+			# has_dlc = "Sons of Abraham"
+			# is_playable = yes
+			# prisoner = no
+		# }
 		
-		allow = {
-		}
+		# allow = {
+		# }
 		
-		effect = {
-			add_character_modifier = {
-				name = borrowed_from_jews
-				duration = -1
-				inherit = yes
-			}
-			wealth = 300
-		}
+		# effect = {
+			# add_character_modifier = {
+				# name = borrowed_from_jews
+				# duration = -1
+				# inherit = yes
+			# }
+			# wealth = 300
+		# }
 		
-		revoke_allowed = {
-			always = no
-		}
+		# revoke_allowed = {
+			# always = no
+		# }
 		
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				wealth = 0
-				war = no
-			}
-			modifier = {
-				factor = 0
-				wealth = 200
-				war = yes
-			}			
-			modifier = {
-				factor = 0.01 # Slow it down
-			}
-		}
-	}
-	repay_money_jews = {
-		potential = {	
-			NOT = { 
-				has_character_modifier = expelled_jewish
-			}
-			has_character_modifier = borrowed_from_jews
-			has_dlc = "Sons of Abraham"
-		}
+		# ai_will_do = {
+			# factor = 1
+			# modifier = {
+				# factor = 0
+				# wealth = 0
+				# war = no
+			# }
+			# modifier = {
+				# factor = 0
+				# wealth = 200
+				# war = yes
+			# }			
+			# modifier = {
+				# factor = 0.01 # Slow it down
+			# }
+		# }
+	# }
+	# repay_money_jews = {
+		# potential = {	
+			# NOT = { 
+				# has_character_modifier = expelled_jewish
+			# }
+			# has_character_modifier = borrowed_from_jews
+			# has_dlc = "Sons of Abraham"
+		# }
 		
-		allow = {
-			wealth = 350
-		}
+		# allow = {
+			# wealth = 350
+		# }
 		
-		effect = {
-			remove_character_modifier = borrowed_from_jews
-			wealth = -350
-		}
+		# effect = {
+			# remove_character_modifier = borrowed_from_jews
+			# wealth = -350
+		# }
 		
-		revoke_allowed = {
-			always = no
-		}
+		# revoke_allowed = {
+			# always = no
+		# }
 		
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				NOT = { wealth = 450 }
-			}
-			modifier = {
-				factor = 0.1 # Slow it down
-			}
-		}
-	}
+		# ai_will_do = {
+			# factor = 1
+			# modifier = {
+				# factor = 0
+				# NOT = { wealth = 450 }
+			# }
+			# modifier = {
+				# factor = 0.1 # Slow it down
+			# }
+		# }
+	# }
 
 	become_kshatriya = {
 		is_high_prio = yes
@@ -1460,7 +1467,7 @@ decisions = {
 			NOT = { trait = incapable }
 			OR = {
 				has_character_modifier = patron_kali
-				county = { de_jure_liege = e_bengal	}
+				capital_scope = { county = { de_jure_liege_or_above = e_bengal } }
 			}
 			NOT = {
 				has_character_modifier = holding_diwali_feast

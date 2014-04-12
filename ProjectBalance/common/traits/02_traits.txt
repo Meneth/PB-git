@@ -332,6 +332,8 @@ sympathy_christendom = {
 	}
 
 	tolerates_christian = yes		# Tolerates and is tolerated by Christians
+	
+	same_opinion_if_same_religion = 10
 
 	customizer = no
 	random = no
@@ -349,6 +351,8 @@ sympathy_islam = {
 
 	tolerates_muslim = yes		# Tolerates and is tolerated by Muslims
 
+	same_opinion_if_same_religion = 10
+
 	customizer = no
 	random = no
 }
@@ -364,6 +368,8 @@ sympathy_pagans = {
 	}
 
 	tolerates_pagan_group = yes		# Tolerates and is tolerated by Pagans
+
+	same_opinion_if_same_religion = 10
 
 	customizer = no
 	random = no
@@ -381,6 +387,8 @@ sympathy_zoroastrianism = {
 
 	tolerates_zoroastrian_group = yes		# Tolerates and is tolerated by Zoroastrians
 
+	same_opinion_if_same_religion = 10
+
 	customizer = no
 	random = no
 }
@@ -396,6 +404,8 @@ sympathy_judaism = {
 	}
 
 	tolerates_jewish_group = yes		# Tolerates and is tolerated by Jews
+
+	same_opinion_if_same_religion = 10
 
 	customizer = no
 	random = no
@@ -413,6 +423,7 @@ bad_priest_christian = {
 	}
 
 	church_opinion = -20
+	same_opinion_if_same_religion = 50
 
 	monthly_character_piety = -1
 
@@ -434,6 +445,7 @@ bad_priest_muslim = {
 	}
 	
 	church_opinion = -20
+	same_opinion_if_same_religion = 50
 
 	monthly_character_piety = -1
 
@@ -454,6 +466,7 @@ bad_priest_norse = {
 	}
 	
 	church_opinion = -20
+	same_opinion_if_same_religion = 50
 
 	monthly_character_piety = -1
 
@@ -473,6 +486,7 @@ bad_priest_tengri = {
 	}
 	
 	church_opinion = -20
+	same_opinion_if_same_religion = 50
 
 	monthly_character_piety = -1
 
@@ -492,6 +506,7 @@ bad_priest_zoroastrian = {
 	}
 
 	church_opinion = -20
+	same_opinion_if_same_religion = 50
 
 	monthly_character_piety = -1
 
@@ -511,6 +526,7 @@ bad_priest_aztec = {
 	}
 
 	church_opinion = -20
+	same_opinion_if_same_religion = 50
 
 	monthly_character_piety = -1
 
@@ -550,6 +566,7 @@ kshatriya = {
 
 	monthly_character_prestige = 0.1
 
+	customizer = no
 	random = no
 }
 
@@ -578,6 +595,8 @@ sympathy_indian = {
 
 	tolerates_indian_group = yes		# Tolerates and is tolerated by Indian religions
 
+	same_opinion_if_same_religion = 10
+
 	customizer = no
 	random = no
 }
@@ -597,6 +616,7 @@ shaivist_hindu = {
 	religious_branch = hindu
 	random = no
 	religious = yes
+	ruler_designer_cost = 0
 }
 
 vaishnavist_hindu = {
@@ -614,6 +634,7 @@ vaishnavist_hindu = {
 	religious_branch = hindu
 	random = no
 	religious = yes
+	ruler_designer_cost = 0
 }
 
 shaktist_hindu = {
@@ -631,6 +652,7 @@ shaktist_hindu = {
 	religious_branch = hindu
 	random = no
 	religious = yes
+	ruler_designer_cost = 0
 }
 
 smartist_hindu = {
@@ -648,6 +670,7 @@ smartist_hindu = {
 	religious_branch = hindu
 	random = no
 	religious = yes
+	ruler_designer_cost = 0
 }
 
 mahayana_buddhist = {
@@ -664,6 +687,7 @@ mahayana_buddhist = {
 	religious_branch = buddhist
 	random = no
 	religious = yes
+	ruler_designer_cost = 0
 }
 
 vajrayana_buddhist = {
@@ -680,6 +704,7 @@ vajrayana_buddhist = {
 	religious_branch = buddhist
 	random = no
 	religious = yes
+	ruler_designer_cost = 0
 }
 
 theravada_buddhist = {
@@ -696,6 +721,7 @@ theravada_buddhist = {
 	religious_branch = buddhist
 	random = no
 	religious = yes
+	ruler_designer_cost = 0
 }
 
 digambara_jain = {
@@ -711,6 +737,7 @@ digambara_jain = {
 	religious_branch = jain
 	random = no
 	religious = yes
+	ruler_designer_cost = 0
 }
 
 svetambara_jain = {
@@ -726,6 +753,7 @@ svetambara_jain = {
 	religious_branch = jain
 	random = no
 	religious = yes
+	ruler_designer_cost = 0
 }
 
 # Controls Muslim decadence gain

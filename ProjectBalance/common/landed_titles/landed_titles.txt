@@ -717,6 +717,7 @@ k_shiite = {
 	
 	# Controls a religion
 	controls_religion = shiite
+	assimilate = no
 	
 	allow = {
 		OR = {
@@ -5651,11 +5652,6 @@ d_dyrrachion = {
 
 d_vidin = {
 	color={ 122 103 58 }
-	color2={ 255 255 255 }
-}
-
-d_jazira = {
-	color={ 95 180 35 }
 	color2={ 255 255 255 }
 }
 

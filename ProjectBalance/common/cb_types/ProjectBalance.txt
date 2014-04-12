@@ -22,7 +22,7 @@ remove_internal_peace = {
 			}
 		}
 		ROOT = {
-			vassal_of = FROM
+			de_facto_liege = FROM
 			has_character_flag = faction_autonomy_no_internal_peace
 		}
 	}
@@ -45,7 +45,7 @@ remove_internal_peace = {
 		}
 		hidden_tooltip = {
 			any_attacker = {
-				limit = { liege = { character = FROM } }
+				limit = { de_facto_liege = FROM }
 				disband_event_forces = faction_revolters
 			}
 		}
@@ -89,7 +89,7 @@ remove_internal_peace = {
 		}
 		hidden_tooltip = {
 			any_attacker = {
-				limit = { liege = { character = FROM } }
+				limit = { de_facto_liege = FROM }
 				disband_event_forces = faction_revolters
 			}
 		}
@@ -112,8 +112,7 @@ remove_internal_peace = {
 		}
 		hidden_tooltip = {
 			any_attacker = {
-				limit = { liege = { character = FROM } }
-				prisoner = FROM
+				limit = { de_facto_liege = FROM }
 				disband_event_forces = faction_revolters
 			}
 		}
@@ -159,7 +158,7 @@ remove_revokation = {
 			}
 		}
 		ROOT = {
-			vassal_of = FROM
+			de_facto_liege = FROM
 			has_character_flag = faction_autonomy_no_revocation
 		}
 	}
@@ -182,7 +181,7 @@ remove_revokation = {
 		}
 		hidden_tooltip = {
 			any_attacker = {
-				limit = { liege = { character = FROM } }
+				limit = { de_facto_liege = FROM }
 				disband_event_forces = faction_revolters
 			}
 		}
@@ -225,7 +224,7 @@ remove_revokation = {
 		}
 		hidden_tooltip = {
 			any_attacker = {
-				limit = { liege = { character = FROM } }
+				limit = { de_facto_liege = FROM }
 				disband_event_forces = faction_revolters
 			}
 		}
@@ -248,8 +247,7 @@ remove_revokation = {
 		}
 		hidden_tooltip = {
 			any_attacker = {
-				limit = { liege = { character = FROM } }
-				prisoner = FROM
+				limit = { de_facto_liege = FROM }
 				disband_event_forces = faction_revolters
 			}
 		}
@@ -290,7 +288,7 @@ remove_inheritance = {
 			any_demesne_title = { has_law = inheritance_1 }
 		}
 		ROOT = {
-			vassal_of = FROM
+			de_facto_liege = FROM
 			has_character_flag = faction_autonomy_external_inheritance
 		}
 	}
@@ -313,7 +311,7 @@ remove_inheritance = {
 		}
 		hidden_tooltip = {
 			any_attacker = {
-				limit = { liege = { character = FROM } }
+				limit = { de_facto_liege = FROM }
 				disband_event_forces = faction_revolters
 			}
 		}
@@ -351,7 +349,7 @@ remove_inheritance = {
 		}
 		hidden_tooltip = {
 			any_attacker = {
-				limit = { liege = { character = FROM } }
+				limit = { de_facto_liege = FROM }
 				disband_event_forces = faction_revolters
 			}
 		}
@@ -374,8 +372,7 @@ remove_inheritance = {
 		}
 		hidden_tooltip = {
 			any_attacker = {
-				limit = { liege = { character = FROM } }
-				prisoner = FROM
+				limit = { de_facto_liege = FROM }
 				disband_event_forces = faction_revolters
 			}
 		}
@@ -413,7 +410,7 @@ reduce_crown_levies = {
 	
 	can_use = {
 		ROOT = {
-			vassal_of = FROM
+			de_facto_liege = FROM
 		}
 	}
 
@@ -435,7 +432,7 @@ reduce_crown_levies = {
 		}
 		hidden_tooltip = {
 			any_attacker = {
-				limit = { liege = { character = FROM } }
+				limit = { de_facto_liege = FROM }
 				disband_event_forces = faction_revolters
 			}
 		}
@@ -483,28 +480,32 @@ reduce_crown_levies = {
 				}
 			}
 				
-			if = {
-				limit = { has_law = feudal_obligations_1 }
-				primary_title = { add_law = feudal_obligations_0 }
+			primary_title = {
+				if = {
+					limit = { has_law = feudal_obligations_1 }
+					add_law = feudal_obligations_0
+				}
+				if = {
+					limit = { has_law = feudal_obligations_2 }
+					add_law = feudal_obligations_1
+				}
+				if = {
+					limit = { has_law = feudal_obligations_3 }
+					add_law = feudal_obligations_2
+				}
+				if = {
+					limit = { has_law = feudal_obligations_4 }
+					add_law = feudal_obligations_3
+				}
 			}
-			if = {
-				limit = { has_law = feudal_obligations_2 }
-				primary_title = { add_law = feudal_obligations_1 }
-			}
-			if = {
-				limit = { has_law = feudal_obligations_3 }
-				primary_title = { add_law = feudal_obligations_2 }
-			}
-			if = {
-				limit = { has_law = feudal_obligations_4 }
-				primary_title = { add_law = feudal_obligations_3 }
-			}
+			
 			add_character_modifier = {
 				name = reduced_obligations
 				duration = 3650
 			}
+			
+			clr_character_flag = autonomy_faction_revolt
 		}
-		FROM = { clr_character_flag = autonomy_faction_revolt }
 	}
 
 	on_fail = {
@@ -521,7 +522,7 @@ reduce_crown_levies = {
 		}
 		hidden_tooltip = {
 			any_attacker = {
-				limit = { liege = { character = FROM } }
+				limit = { de_facto_liege = FROM }
 				disband_event_forces = faction_revolters
 			}
 		}
@@ -544,8 +545,7 @@ reduce_crown_levies = {
 		}
 		hidden_tooltip = {
 			any_attacker = {
-				limit = { liege = { character = FROM } }
-				prisoner = FROM
+				limit = { de_facto_liege = FROM }
 				disband_event_forces = faction_revolters
 			}
 		}
@@ -588,8 +588,10 @@ retake_the_coast = {
 	}
 	
 	on_success = {
-		d_cibyrrhaeot = {
-			de_jure_liege = k_nikaea
+		k_nikaea = {
+			d_cibyrrhaeot = {
+				de_jure_liege = PREV
+			}
 		}
 		ROOT = {
 			prestige = 100
@@ -601,14 +603,24 @@ retake_the_coast = {
 			e_byzantium = {
 				any_de_jure_vassal_title = {
 					limit = {
+						has_holder = yes
 						tier = count
 						location = { port = yes }
 						holder_scope = {
 							OR = {
 								character = FROM
-								any_liege = { character = FROM }
-								liege_before_war = { character = FROM }
-								any_liege = { liege_before_war = { character = FROM } }
+								is_liege_or_above = FROM
+								AND = {
+									in_revolt = yes
+									liege_before_war = { OR = { character = FROM is_liege_or_above = FROM } }
+								}
+								AND = {
+									in_revolt = no
+									liege = {
+										in_revolt = yes
+										liege_before_war = { OR = { character = FROM is_liege_or_above = FROM } }
+									}
+								}
 							}
 						}
 					}
@@ -685,26 +697,20 @@ conquest_of_the_balkans = {
 	}
 	
 	on_success_title = {
-		any_de_jure_vassal_title = {
-			limit = {
-				NOT = { tier = baron }
-				OR = {
-					de_jure_liege_or_above = d_dyrrachion
-					de_jure_liege_or_above = d_epirus
-					title = d_dyrrachion
-					title = d_epirus
-				}
-			}
+		# There is no d_dyrrachion... This is much more direct.
+		d_epirus = {
 			usurp_title = ROOT
+			
+			any_de_jure_vassal_title = { #Don't use any_direct_* due to poor tooltip support
+				limit = { tier = count }
+				usurp_title = ROOT
+			}
 		}
 	}
 	
 	is_valid = {
 		ROOT = {
-			OR = {
-				has_strong_claim = d_dyrrachion
-				has_strong_claim = d_epirus
-			}
+			has_strong_claim = d_epirus
 		}
 	}
 	
@@ -720,7 +726,6 @@ conquest_of_the_balkans = {
 	on_reverse_demand = {
 		ROOT = {
 			prestige = -100
-			remove_claim = d_dyrrachion
 			remove_claim = d_epirus
 		}
 		FROM = {
@@ -758,36 +763,60 @@ bulgarian_uprising = {
 	check_de_jure_tier = EMPEROR # this scans all de jure kingdoms for the counties which are held by or vassals(or below) of selected character. Only valid if is_permanent = yes
 	
 	can_use = {
+		FROM = {
+			NOT = { culture = ROOT }
+			has_landed_title = e_byzantium
+		}
 		ROOT = {
 			has_character_flag = bulgarian_uprising
+			culture = bulgarian
 		}
 	}
 	
 	on_success_title = {
-		gain_title = ROOT
+		
 		hidden_tooltip = {
-			any_de_jure_vassal_title = {
-				limit = {
-					NOT = { tier = baron }
-					holder_scope = { NOT = { culture = bulgarian } }
-					holder_scope = { NOT = { any_liege = { culture = bulgarian } } }
-					holder_scope = { top_liege = { has_landed_title = e_byzantium } }
-				}
-				usurp_title = ROOT
-			}
-			any_de_jure_vassal_title = {
-				limit = {
-					NOT = { tier = baron }
-					holder_scope = { NOT = { any_liege = { culture = bulgarian } } }
-					holder_scope = { top_liege = { has_landed_title = e_byzantium } }
-					holder_scope = { NOT = { character = ROOT } }
-				}
-				holder_scope = { set_defacto_liege = ROOT }
-			}
+			# Init laws before the empire is held so that we don't have to erase the pass_effect
+			# opinion modifiers that setting any laws would give.
 			add_law = crown_levies_1
 			add_law = emperor_peace_0
 			add_law = inheritance_0
 			add_law = revokation_0
+		
+			#Correctly preserve vassal-liege structure
+			ROOT = {
+				vassalize_or_take_under_title = {
+					title = PREV
+					enemy = FROM
+					is_crusade = yes
+				}
+			}
+			
+			#Take the empire title
+			gain_title = ROOT
+			
+			# Usurp tier >= count titles that are held by non-Bulgars and
+			# not the subject of one of my [new] Bulgar dukes or kings.
+			any_de_jure_vassal = {
+				limit = {
+					higher_tier_than = baron
+					is_liege_or_above = ROOT #Now our vassal if he qualifies
+					NOT = {
+						culture = ROOT
+						any_liege = {
+							culture = ROOT
+							NOT = { character = ROOT }
+						}
+					}
+				}
+				any_demesne_title = {
+					limit = {
+						higher_tier_than = baron
+						de_jure_liege_or_above = PREVPREV
+					}
+					usurp_title = ROOT
+				}
+			}
 		}
 	}
 	
@@ -801,7 +830,6 @@ bulgarian_uprising = {
 	}
 	
 	on_fail = {
-		k_bulgaria = { destroy_landed_title = THIS }
 		ROOT = {
 			prestige = -50
 			set_defacto_liege = FROM
@@ -809,10 +837,14 @@ bulgarian_uprising = {
 		FROM = {
 			prestige = 100
 		}
+		
+		# Destroy Bulgaria after vassalizing so as not to risk making a mess.
+		k_bulgaria = {
+			destroy_landed_title = THIS
+		}
 	}
 	
 	on_reverse_demand = {
-		k_bulgaria = { destroy_landed_title = THIS }
 		ROOT = {
 			prestige = -100
 			set_defacto_liege = FROM
@@ -820,9 +852,15 @@ bulgarian_uprising = {
 		FROM = {
 			prestige = 200
 		}
+		
+		# Destroy Bulgaria after vassalizing so as not to risk making a mess.
+		k_bulgaria = {
+			destroy_landed_title = THIS
+		}
+		
 		set_global_flag = bulgarian_unrest_ends
-		k_bulgaria = { de_jure_liege = e_byzantium }
-		k_serbia = { de_jure_liege = e_byzantium }
+		e_byzantium = { k_bulgaria = { de_jure_liege = PREV } }
+		e_byzantium = { k_serbia = { de_jure_liege = PREV } }
 	}
 	
 	on_add = {
@@ -861,13 +899,15 @@ retake_religious_lands = {
 	can_use_gui = {
 		ROOT = {
 			NOT = { has_character_modifier = holy_war_cooldown }
-			is_patrician = no
 			is_merchant_republic = no
+			NOT = { any_liege = { is_merchant_republic = yes } }
 		}
 		NOT = { # The Rum Sultanate often needs a bit of help stabilizing
 			FROM = {
 				has_character_modifier = formation_of_rum
 			}
+			FROM = { has_landed_title = k_rum } #Need help surviving
+			FROM = { has_landed_title = k_pechenegs }  #Need help surviving
 		}
 		ROOT = {
 			OR = {
@@ -904,6 +944,16 @@ retake_religious_lands = {
 	
 	can_use = {
 		NOT = { has_global_flag = rapid_conquest }
+		# Muslim reconquest does not make much sense
+		NOT = {
+			AND = {
+				FROM = { religion_group = muslim }
+				ROOT = { religion_group = muslim }
+			}
+		}
+		NOT = {
+			ROOT = { is_reformed_religion = FROM }
+		}
 		ROOT = {
 			OR = {
 				NOT = { religion_group = FROM }
@@ -948,32 +998,17 @@ retake_religious_lands = {
 	can_use_title = {
 		NOT = { 
 			any_direct_de_jure_vassal_title = {
+				has_holder = yes
 				location = { continent = region_sahara }
 			}
 		}
 		#Target must have at least one province of declarer's religion
 		any_direct_de_jure_vassal_title = {
-			NOT = {
-				FROM = { has_landed_title = k_rum } #Need help surviving
-			}
-			NOT = {
-				FROM = { has_landed_title = k_pechenegs }  #Need help surviving
-			}
-			# Muslim reconquest does not make much sense
-			NOT = {
-				AND = {
-					FROM = { religion_group = muslim }
-					ROOT = { religion_group = muslim }
-				}
-			}
-			holder_scope = {
+			owner = {
 				OR = {
 					character = FROM
 					is_liege_or_above = FROM
 				}
-			}
-			NOT = {
-				ROOT = { is_reformed_religion = FROM }
 			}
 			location = {
 				ROOT = {
@@ -981,7 +1016,7 @@ retake_religious_lands = {
 				}
 			}
 		}
-		# The attacker needs at least one county in the target kingdom, or a border, or be only two sea zones away from one of your counties
+		# The attacker needs at least one county in the target duchy, or a border, or be only two sea zones away from one of your counties
 		any_direct_de_jure_vassal_title = {
 			OR = {
 				holder_scope = {
@@ -1064,9 +1099,14 @@ retake_religious_lands = {
 	
 	on_add = {
 		ROOT = {
-			add_character_modifier = {
-				name = holy_war_cooldown
-				duration = 1825
+			custom_tooltip = {
+				text = holy_war_cooldown_ctt
+				hidden_tooltip = {
+					add_character_modifier = {
+						name = holy_war_cooldown
+						duration = 1825
+					}
+				}
 			}
 		}
 	}
@@ -1123,10 +1163,6 @@ retake_religious_lands = {
 						enemy = FROM
 						same_religion = yes # Only vassalize rulers of my religion
 					}
-#					gain_settlements_under_title = {
-#						title = PREV
-#						enemy = FROM
-#					}
 				}
 			}
 		}
@@ -1216,8 +1252,8 @@ special_holy_war = {
 	can_use_gui = {
 		ROOT = {
 			NOT = { has_character_modifier = holy_war_cooldown }
-			is_patrician = no
 			is_merchant_republic = no
+			NOT = { any_liege = { is_merchant_republic = yes } }
 		}
 		NOT = {
 			FROM = {
@@ -1269,9 +1305,11 @@ special_holy_war = {
 			}
 		}
 	}
+	
 	can_use_title = {
 		NOT = { 
 			any_direct_de_jure_vassal_title = {
+				has_holder = yes
 				location = { continent = region_sahara }
 			}
 		}
@@ -1293,7 +1331,7 @@ special_holy_war = {
 				FROM = { religion_group = muslim }
 			}
 		}
-		# The attacker needs at least one county in the target kingdom, or a border, or be only two sea zones away from one of your counties
+		# The attacker needs at least one county in the target duchy, or a border, or be only two sea zones away from one of your counties
 		any_direct_de_jure_vassal_title = {
 			OR = {
 				holder_scope = {
@@ -1376,9 +1414,14 @@ special_holy_war = {
 	
 	on_add = {
 		ROOT = {
-			add_character_modifier = {
-				name = holy_war_cooldown
-				duration = 1825
+			custom_tooltip = {
+				text = holy_war_cooldown_ctt
+				hidden_tooltip = {
+					add_character_modifier = {
+						name = holy_war_cooldown
+						duration = 1825
+					}
+				}
 			}
 		}
 	}
@@ -1435,10 +1478,6 @@ special_holy_war = {
 						enemy = FROM
 						same_religion = yes # Only vassalize rulers of my religion
 					}
-#					gain_settlements_under_title = {
-#						title = PREV
-#						enemy = FROM
-#					}
 				}
 			}
 		}

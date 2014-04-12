@@ -374,6 +374,7 @@ job_spiritual = {
 				NOT = { liege = { religion_group = muslim } }
 			}
 			religion = cathar
+			religion = bogomilist
 			has_character_flag = special_spiritual
 		}
 		
@@ -384,10 +385,7 @@ job_spiritual = {
 			liege = { religion_group = muslim }
 			AND = {
 				is_ruler = no
-				NOT = { religion = orthodox }
-				NOT = { is_heresy_of = orthodox }
-				NOT = { religion = miaphysite }
-				NOT = { is_heresy_of = miaphysite }
+				has_autocephaly = no
 			}
 		}
 		

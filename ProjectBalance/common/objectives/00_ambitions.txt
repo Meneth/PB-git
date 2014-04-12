@@ -659,7 +659,6 @@ obj_get_married = {
 		NOT = { trait = celibate }
 		NOT = { trait = incapable }
 		NOT = { trait = eunuch }
-		NOT = { trait = homosexual }
 		OR = {
 			is_female = no
 			NOT = { age = 40 }
@@ -673,8 +672,8 @@ obj_get_married = {
 		factor = 100
 		
 		modifier = {
-			factor = 0.1
-			trait = chaste
+			factor = 0.2
+			trait = homosexual
 		}
 		modifier = {
 			factor = 0.5
@@ -776,10 +775,6 @@ obj_marry_ruler = {
 	chance = {
 		factor = 100
 		
-		modifier = {
-			factor = 0.1
-			trait = chaste
-		}
 		modifier = {
 			factor = 1.5
 			trait = midas_touched
@@ -975,6 +970,7 @@ obj_wants_landed_title = {
 		is_ruler = no
 		NOT = { trait = incapable }
 		NOT = { trait = eunuch }
+		NOT = { has_minor_title = title_guru }
 		liege = {
 			is_feudal = yes
 			is_close_relative = ROOT
@@ -1657,9 +1653,15 @@ obj_become_king = {
 			trait = depressed
 			is_playable = no
 			is_landed = no
-			higher_tier_than = DUKE
+			AND = {
+				higher_tier_than = DUKE
+				primary_title = {
+					temporary = no
+				}
+			}
 			any_heir_title = {
 				higher_tier_than = DUKE
+				temporary = no
 			}
 		}
 	}

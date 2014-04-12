@@ -790,6 +790,7 @@ gender_laws = {
 					OR = {
 						holder_scope = { culture = basque }
 						holder_scope = { religion = cathar }
+						holder_scope = { religion = messalian }
 						holder_scope = {
 							is_female = yes
 							NOT = { trait = content }
