@@ -1,5 +1,5 @@
 861.1.1={
-	liege="d_birjand"
+	liege="d_kerman"
 }
 861.1.1={
 	holder = 163101

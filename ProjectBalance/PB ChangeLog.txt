@@ -7,7 +7,7 @@
 	Finally fixed the pathologically unstable English (Anglo-Saxon vs. Norman vs. Norwegian) AI outcome at the Stamford Bridge start.  The AI now efficiently ferries William's troops across the Channel instead of killing them off one regiment at a time and skipping Hastings (still may need troop balancing)
 	Fixed some retinues with horse arches not actually having horse archers
 	Fixed Imperial Reconquest referring to a couple of titles that no longer exist in PB
-	Upon Christian Crusade creation, the Pope now loses all his excess piety and cash until it's returned to him 4 and 2 months into the Crusade, respectively. The Pope will no longer snap up all the holy orders right away, and in general, will be much less likely to be the Crusade winner instead of a proper Catholic ruler
+	Upon Christian Crusade creation, the Pope now loses all his excess piety and cash until it's returned to him 2 and 1 months into the Crusade, respectively. The Pope will no longer snap up all the holy orders right away, and in general, will be much less likely to be the Crusade winner instead of a proper Catholic ruler
 	Removed PB's penalty to Muslim merchant republics' income, as it is no longer needed now that the Indian Ocean is a separate ocean
 	Moved the useless courtier maintenance event to on_actions for improved performance [AnaxXiphos]
 	Further performance improvements to useless courtier mass-murder
@@ -21,6 +21,9 @@
 	Updated the AF to workaround some of the complications of the 2.1 faction changes; one big change: AFs of vassal kings (who are themselves in an AF) are no longer permitted
 	Added a number of 2.1 sanity checks to the codebase as a result of a major bug sweep
 	Added some additional 2.1.2 changes [AnaxXiphos]
+	Crusade kingdom give-away event series now properly executes for Fraticelli Popes that have called a successful Crusade
+	Upon Crusade success, deserting soldiers that decide to settle in the target kingdom immediately refill the kingdom's holding levies. Will improve early survival of Crusader States.
+	Tweaked decisions for vassalization of the Knights Templar and/or Knights Hospitalier as the King of Jerusalem 
 
 3.5.2
 	Updated for 2.1

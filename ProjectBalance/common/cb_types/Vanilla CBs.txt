@@ -3197,7 +3197,8 @@ crusade = {
 	is_holy_war = yes
 	battle_warscore_mult = 0.5
 	check_de_jure_tier = KING # this scans all de jure kingdoms for the counties which are held by or vassals(or below) of selected character. Only valid if is_permanent = yes
-
+	apply_short_occ_mod = no
+	
 	can_use_gui = {
 		NOT = { has_global_flag = shattered_balance }
 			
@@ -3292,6 +3293,12 @@ crusade = {
 			
 			independent = yes # Don't declare Crusades on revolters - chances are high the war will invalidate
 			
+			NOT = {
+				any_demesne_title = {
+					temporary = yes
+				}
+			}
+			
 			OR = {
 				num_of_realm_counties = {
 					value = 6
@@ -3302,9 +3309,15 @@ crusade = {
 		}
 		OR = {
 			NOT = { ROOT = { religion_group = muslim } }
-			FROM = {
-				any_realm_province = {
-					de_jure_liege_or_above = PREVPREV
+			any_de_jure_vassal_title = {
+				tier = count
+				holder_scope = {
+					OR = {
+						character = FROM
+						is_liege_or_above = FROM
+					}
+				}
+				location = {
 					any_neighbor_province = {
 						owner = {
 							top_liege = {
@@ -3314,22 +3327,6 @@ crusade = {
 					}
 				}
 			}
-		}
-		OR = {
-			title = k_jerusalem
-			ROOT = { NOT = { religion_group = christian } }
-			FROM = {
-				any_realm_province = {
-					de_jure_liege_or_above = PREVPREV
-					religion = ROOT
-				}
-			}
-		}
-		OR = {
-			has_holder = no
-			NOT = { ROOT = { religion = catholic } }
-			FROM = { has_landed_title = PREV }
-			holder_scope = { religion = catholic }
 		}
 	}
 
@@ -3398,7 +3395,20 @@ crusade = {
 					enemy = FROM
 				}
 				usurp_title = PREV
+				
 				hidden_tooltip = {
+					# What happens to the soldiers that survive but never
+					# do return from the successful Crusade? ... This.
+					PREV = {
+						any_de_jure_vassal_title = {
+							limit = {
+								tier = baron
+							}
+							remove_holding_modifier = recently_conquered
+							remove_holding_modifier = new_administration
+							refill_holding_levy = yes
+						}
+					}
 					if = {
 						limit = {
 							NOT = { culture = PREV }
@@ -3412,7 +3422,7 @@ crusade = {
 					if = {
 						limit = {
 							OR = {
-								ROOT = { religion = catholic } #A catholic crusade
+								ROOT = { religion_group = christian } #A christian crusade
 								primary_title = { holy_order = yes } #Also want to give away the kingdom if a holy order won it
 								primary_title = { mercenary = yes } #Also want to give away the kingdom if a mercenary won it
 							}
@@ -3423,7 +3433,7 @@ crusade = {
 					if = {
 						limit = {
 							NOT = {
-								ROOT = { religion = catholic }
+								ROOT = { religion_group = christian } #A christian crusade
 								primary_title = { holy_order = yes }
 								primary_title = { mercenary = yes }
 							}

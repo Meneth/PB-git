@@ -5655,11 +5655,6 @@ d_vidin = {
 	color2={ 255 255 255 }
 }
 
-d_jazira = {
-	color={ 95 180 35 }
-	color2={ 255 255 255 }
-}
-
 k_germany = {
 	color={ 160 160 160 }
 	color2={ 220 220 20 }

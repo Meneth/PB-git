@@ -746,12 +746,10 @@ decisions = {
 			has_landed_title = e_persia
 			completely_controls = d_tabriz
 			completely_controls = d_khorasan
-			completely_controls = d_hormuz
 			completely_controls = d_fars
+			completely_controls = d_kerman
 			completely_controls = d_khiva
-			completely_controls = d_bukhara
 			completely_controls = d_merv
-			completely_controls = d_birjand
 			completely_controls = d_esfahan
 			completely_controls = d_hamadan
 			completely_controls = d_mazandaran
@@ -797,7 +795,7 @@ decisions = {
 			completely_controls = d_asturias
 		}
 		effect = {
-			narrative_event = { id = 62920 tooltip = EVTTOOLTIP62920 }
+			character_event = { id = 62920 tooltip = EVTTOOLTIP62920 }
 			if = {
 				limit = { has_nickname = no }
 				give_nickname = nick_the_great

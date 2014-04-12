@@ -2438,6 +2438,8 @@ narrative_event = {
 	}
 }
 
+#NOTE: This event is SWMH-only and yet does not live in PB+SWMH
+#It should presumably be moved to SWMH Logic?
 #Beneveto returned to Sicily
 character_event = {
 	id = meneth.436
