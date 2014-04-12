@@ -2438,6 +2438,8 @@ narrative_event = {
 	}
 }
 
+#NOTE: This event is SWMH-only and yet does not live in PB+SWMH
+#It should presumably be moved to SWMH Logic?
 #Beneveto returned to Sicily
 character_event = {
 	id = meneth.436
@@ -2471,7 +2473,7 @@ character_event = {
 		c_benevento = { grant_title = ROOT }
 		d_benevento = { grant_title = ROOT }
 		rightful_religious_head_scope = {
-			b_ascoli = {
+			b_apice = {
 				holder_scope = { set_defacto_liege = PREVPREV }
 			}
 		}
