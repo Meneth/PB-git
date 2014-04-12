@@ -3412,7 +3412,7 @@ crusade = {
 					if = {
 						limit = {
 							OR = {
-								ROOT = { religion = catholic } #A catholic crusade
+								ROOT = { religion_group = christian } #A christian crusade
 								primary_title = { holy_order = yes } #Also want to give away the kingdom if a holy order won it
 								primary_title = { mercenary = yes } #Also want to give away the kingdom if a mercenary won it
 							}
@@ -3423,7 +3423,7 @@ crusade = {
 					if = {
 						limit = {
 							NOT = {
-								ROOT = { religion = catholic }
+								ROOT = { religion_group = christian } #A christian crusade
 								primary_title = { holy_order = yes }
 								primary_title = { mercenary = yes }
 							}
@@ -3598,6 +3598,13 @@ crusade = {
 	
 	defender_ai_defeat_worth = {
 		factor = 100
+	}
+	
+	ai_will_do = {
+		factor = 1
+		
+		modifier = {
+			factor = 
 	}
 }
 # This CB is far more restricted in PB than in vanilla. Primarily this is achieved by adding trait requirements
