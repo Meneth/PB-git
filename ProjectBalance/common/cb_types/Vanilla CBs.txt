@@ -3293,6 +3293,12 @@ crusade = {
 			
 			independent = yes # Don't declare Crusades on revolters - chances are high the war will invalidate
 			
+			NOT = {
+				any_demesne_title = {
+					temporary = yes
+				}
+			}
+			
 			OR = {
 				num_of_realm_counties = {
 					value = 6
@@ -3303,9 +3309,15 @@ crusade = {
 		}
 		OR = {
 			NOT = { ROOT = { religion_group = muslim } }
-			FROM = {
-				any_realm_province = {
-					de_jure_liege_or_above = PREVPREV
+			any_de_jure_vassal_title = {
+				tier = count
+				holder_scope = {
+					OR = {
+						character = FROM
+						is_liege_or_above = FROM
+					}
+				}
+				location = {
 					any_neighbor_province = {
 						owner = {
 							top_liege = {
@@ -3315,22 +3327,6 @@ crusade = {
 					}
 				}
 			}
-		}
-		OR = {
-			title = k_jerusalem
-			ROOT = { NOT = { religion_group = christian } }
-			FROM = {
-				any_realm_province = {
-					de_jure_liege_or_above = PREVPREV #Z
-					religion = ROOT
-				}
-			}
-		}
-		OR = {
-			has_holder = no
-			NOT = { ROOT = { religion = catholic } }
-			FROM = { has_landed_title = PREV }
-			holder_scope = { religion = catholic }
 		}
 	}
 
