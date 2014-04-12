@@ -1467,7 +1467,7 @@ decisions = {
 			NOT = { trait = incapable }
 			OR = {
 				has_character_modifier = patron_kali
-				county = { de_jure_liege = e_bengal	}
+				capital_scope = { county = { de_jure_liege_or_above = e_bengal } }
 			}
 			NOT = {
 				has_character_modifier = holding_diwali_feast
