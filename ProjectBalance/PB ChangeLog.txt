@@ -23,6 +23,7 @@
 	Added some additional 2.1.2 changes [AnaxXiphos]
 	Crusade kingdom give-away event series now properly executes for Fraticelli Popes that have called a successful Crusade
 	Upon Crusade success, deserting soldiers that decide to settle in the target kingdom immediately refill the kingdom's holding levies. Will improve early survival of Crusader States.
+	Tweaked decisions for vassalization of the Knights Templar and/or Knights Hospitalier as the King of Jerusalem 
 
 3.5.2
 	Updated for 2.1
