@@ -998,7 +998,7 @@ retake_religious_lands = {
 	can_use_title = {
 		NOT = { 
 			any_direct_de_jure_vassal_title = {
-				limit = { has_owner = yes }
+				has_holder = yes
 				location = { continent = region_sahara }
 			}
 		}

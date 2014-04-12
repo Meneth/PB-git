@@ -3321,7 +3321,7 @@ crusade = {
 			ROOT = { NOT = { religion_group = christian } }
 			FROM = {
 				any_realm_province = {
-					de_jure_liege_or_above = PREVPREV
+					de_jure_liege_or_above = PREVPREV #Z
 					religion = ROOT
 				}
 			}
@@ -3413,7 +3413,6 @@ crusade = {
 							refill_holding_levy = yes
 						}
 					}
-				
 					if = {
 						limit = {
 							NOT = { culture = PREV }
@@ -3613,13 +3612,6 @@ crusade = {
 	
 	defender_ai_defeat_worth = {
 		factor = 100
-	}
-	
-	ai_will_do = {
-		factor = 1
-		
-		modifier = {
-			factor = 
 	}
 }
 # This CB is far more restricted in PB than in vanilla. Primarily this is achieved by adding trait requirements
