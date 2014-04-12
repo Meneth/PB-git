@@ -797,7 +797,7 @@ decisions = {
 			completely_controls = d_asturias
 		}
 		effect = {
-			narrative_event = { id = 62920 tooltip = EVTTOOLTIP62920 }
+			character_event = { id = 62920 tooltip = EVTTOOLTIP62920 }
 			if = {
 				limit = { has_nickname = no }
 				give_nickname = nick_the_great
