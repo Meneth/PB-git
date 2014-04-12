@@ -21,8 +21,8 @@
 	Updated the AF to workaround some of the complications of the 2.1 faction changes; one big change: AFs of vassal kings (who are themselves in an AF) are no longer permitted
 	Added a number of 2.1 sanity checks to the codebase as a result of a major bug sweep
 	Added some additional 2.1.2 changes [AnaxXiphos]
-	Crusade kingdom give-away event series now properly executes for Fraticelli Popes that have called crusades
-	Fraticelli Popes now properly run the give-away-crusader-state event
+	Crusade kingdom give-away event series now properly executes for Fraticelli Popes that have called a successful Crusade
+	Upon Crusade success, deserting soldiers that decide to settle in the target kingdom immediately refill the kingdom's holding levies. Will improve early survival of Crusader States.
 
 3.5.2
 	Updated for 2.1
