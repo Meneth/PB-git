@@ -2471,7 +2471,7 @@ character_event = {
 		c_benevento = { grant_title = ROOT }
 		d_benevento = { grant_title = ROOT }
 		rightful_religious_head_scope = {
-			b_apice = {
+			b_ascoli = {
 				holder_scope = { set_defacto_liege = PREVPREV }
 			}
 		}
