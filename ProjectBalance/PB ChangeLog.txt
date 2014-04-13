@@ -1,5 +1,6 @@
 3.5.4 [BETA]
 	Fixed a few kingdoms incorrectly remaining parts of dejure empires when No Ahistorical Empires is enabled
+	[PB+SWMH] Fixed bookmarks after 1215 crashing the game
 
 3.5.3
 	Updated to comply with 2.1.3

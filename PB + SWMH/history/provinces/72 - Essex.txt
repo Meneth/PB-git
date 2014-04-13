@@ -27,6 +27,6 @@ religion = catholic
 1086.1.1 = { b_hedingham = castle }
 1086.1.1 = { b_rayleigh = castle }
 1100.11.11 = { culture = english }
-1215.1.1 = { remove_settlement = b_whitby } # seat moved to Hadliegh
+1215.1.1 = { remove_settlement = b_rayleigh } # seat moved to Hadliegh
 1215.1.1 = { b_hadleigh = castle }
 1305.1.1 = { trade_post = b_vorrade }
