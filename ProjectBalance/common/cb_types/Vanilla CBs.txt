@@ -2887,7 +2887,7 @@ tribal_invasion = {
 				ROOT = { # Magyars bypass all requirements
 					primary_title = { title = k_magyar }
 				}
-				ROOT = { # Special bypass flag (vanilla) bypasses all requirements
+				ROOT = { # Special bypass flag (vanilla) bypasses all requirements (for non-Mongols)
 					has_character_flag = tribal_inv_requirements_bypass
 				}
 			}
@@ -2931,9 +2931,9 @@ tribal_invasion = {
 						num_of_titles = 2
 					}
 				}
-				ROOT = {
-					has_character_flag = tribal_inv_requirements_bypass
-				}
+				
+				# Blank check
+				has_character_flag = tribal_inv_requirements_bypass
 			}
 		}
 		
@@ -3082,12 +3082,18 @@ tribal_invasion = {
 									character = FROM
 								}
 							}
+							NOT = {
+								any_demesne_title = {
+									temporary = yes
+								}
+							}
 						}
 					}
 					holder_scope = {
 						set_defacto_liege = ROOT
 					}
 				}
+				# Scripted case where this war is invoked by meneth.400
 				if = {
 					limit = {
 						title = k_anatolia
