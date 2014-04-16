@@ -35,13 +35,7 @@ religious_defense = {
 				character = ROOT
 			}
 		}
-		NOT = {
-			any_war = {
-				attacker = {
-					character = ROOT
-				}
-			}
-		}
+		is_primary_war_attacker = no
 	}
 	
 	icon = 16
@@ -79,7 +73,6 @@ low_decadence = {
 	}
 	
 	trigger = {
-		is_ruler = yes
 		religion_group = muslim
 		NOT = { decadence = 10 }
 	}
@@ -99,7 +92,6 @@ medium_decadence = {
 	}
 	
 	trigger = {
-		is_ruler = yes
 		religion_group = muslim
 		decadence = 50
 		NOT = { decadence = 75 }
@@ -117,7 +109,6 @@ high_decadence = {
 	}
 	
 	trigger = {
-		is_ruler = yes
 		religion_group = muslim
 		decadence = 75
 	}

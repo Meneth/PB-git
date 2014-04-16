@@ -16,54 +16,19 @@ character_event = {
 	picture = GFX_evt_battle
 	border = GFX_event_normal_frame_war
 	
-	min_age = 16
+	only_playable = yes
 	only_men = yes
-	only_rulers = yes
+	min_age = 16
 	capable_only = yes
 	
 	trigger = {
-		war = no
-		NOT = { has_global_flag = attempted_creation_of_rum }
+		# We are the right guys at the right time...
+		NOT = { year = 1100 }
 		has_landed_title = e_persia
-		any_realm_title = {
-			de_jure_liege_or_above = k_armenia
-		}
-		k_armenia = {
-			NOT = {
-				any_direct_de_jure_vassal_title = {
-					holder_scope = {
-						top_liege = {
-							has_landed_title = e_byzantium
-						}
-					}
-				}
-			}
-		}
-		k_anatolia = {
-			any_direct_de_jure_vassal_title = {
-				holder_scope = {
-					top_liege = {
-						has_landed_title = e_byzantium
-					}
-				}
-			}
-		}
-		k_rum = {
-			has_holder = no
-		}
 		culture = turkish
 		religion = sunni
-		NOT = { year = 1100 }
+		war = no
 		NOT = { decadence = 50 }
-		any_realm_province = {
-			any_neighbor_province = {
-				owner = {
-					top_liege = {
-						has_landed_title = e_byzantium
-					}
-				}
-			}
-		}
 		OR = {
 			trait = strong
 			trait = brave
@@ -74,6 +39,52 @@ character_event = {
 			trait = brilliant_strategist
 			trait = skilled_tactician
 		}
+		
+		# Rum doesn't exist, nor have we tried to make it.
+		NOT = { has_global_flag = attempted_creation_of_rum }
+		k_rum = {
+			has_holder = no
+		}
+		
+		# Our titles are all in the right configuration...
+		any_realm_title = { # Persia's made headway into k_armenia
+			de_jure_liege_or_above = k_armenia
+		}
+		k_armenia = { # No held duchies in k_armenia are vassal to Byz
+			NOT = {
+				any_direct_de_jure_vassal_title = {
+					holder_scope = {
+						top_liege = {
+							has_landed_title = e_byzantium
+						}
+					}
+				}
+			}
+		}
+		k_anatolia = { # Byz is in k_anatolia
+			any_direct_de_jure_vassal_title = { # Duchies may not be held, but...
+				any_direct_de_jure_vassal_title = { # Counties always are.
+					holder_scope = {
+						top_liege = {
+							has_landed_title = e_byzantium
+						}
+					}
+				}
+			}
+		}
+		
+		# We do actually border realms with Byz
+		any_realm_province = {
+			any_neighbor_province = {
+				owner = {
+					top_liege = {
+						has_landed_title = e_byzantium
+					}
+				}
+			}
+		}
+		
+		# Truce-breaking is below the Turks, right?
 		e_byzantium = {
 			holder_scope = {
 				NOT = { reverse_has_truce = ROOT }
@@ -88,7 +99,9 @@ character_event = {
 		set_global_flag = attempted_creation_of_rum
 		wealth = 500
 		decadence = -5
-		set_character_flag = tribal_inv_requirements_bypass
+		
+		# The Seljuk invasion of Anatolia begins...
+		set_character_flag = tribal_inv_requirements_bypass # Blanket tribal_invasion CB can_use
 		k_anatolia = {
 			ROOT = {
 				war = {
@@ -98,17 +111,35 @@ character_event = {
 				}
 			}
 		}
-		clr_character_flag = tribal_inv_requirements_bypass
-		spawn_unit = {
-			province = 703 # Karin
-			disband_on_peace = yes
-			troops =
-			{
-				light_cavalry = { 3500 3500 }
-				light_infantry = { 1500 1500 }
-				heavy_infantry = { 1500 1500 }
-				knights = { 500 500 }
-				archers = { 1000 1000 }
+		clr_character_flag = tribal_inv_requirements_bypass # Only need for initiation of CB
+		
+		random_realm_province = {
+			limit = {
+				any_neighbor_province = {
+					owner = {
+						top_liege = {
+							has_landed_title = e_byzantium
+						}
+					}
+				}
+			}
+			ROOT = {
+				spawn_unit = {
+					province = PREV
+					home = PREV
+					owner = ROOT
+					cannot_inherit = no
+					disband_on_peace = yes
+					troops =
+					{
+						light_cavalry = { 3500 3500 }
+						light_infantry = { 1500 1500 }
+						heavy_infantry = { 1500 1500 }
+						pikemen = { 1000 1000 }
+						knights = { 500 500 }
+						archers = { 1000 1000 }
+					}
+				}
 			}
 		}
 	}
@@ -120,7 +151,8 @@ character_event = {
 		set_global_flag = attempted_creation_of_rum
 	}
 }
-#Formation of Rum
+
+#Formation of Rum (triggered by tribal_invasion CB on_success)
 character_event = {
 	id = meneth.401
 	desc = meneth.401.desc
@@ -173,7 +205,7 @@ character_event = {
 							}
 						}
 					}
-					c_nikaea = { grant_title = ROOT }
+					c_nikaea = { grant_title_no_opinion = ROOT }
 				}
 			}
 		}
@@ -197,7 +229,7 @@ character_event = {
 							}
 						}
 					}
-					e_byzantium = { holder_scope = { c_rhodos = { grant_title = PREV } } }
+					e_byzantium = { holder_scope = { c_rhodos = { grant_title_no_opinion = PREV } } }
 				}
 			}
 		}
@@ -484,7 +516,7 @@ narrative_event = {
 				limit = {
 					holder_scope = { character = FROM }
 				}
-				grant_title = ROOT
+				grant_title_no_opinion = ROOT
 			}
 			any_de_jure_vassal_title = {
 				limit = {
@@ -505,7 +537,7 @@ narrative_event = {
 				limit = {
 					holder_scope = { character = FROM }
 				}
-				grant_title = ROOT
+				grant_title_no_opinion = ROOT
 			}
 			any_de_jure_vassal_title = {
 				limit = {
@@ -522,28 +554,32 @@ narrative_event = {
 			}
 		}
 		c_ikonion = {
-			grant_title = ROOT
+			grant_title_no_opinion = ROOT
 		}
 		b_ikonion = {
-			ROOT = {
-				capital = PREV
-				spawn_unit = {
-					province = 759
-					troops =
-					{
-						light_infantry = { 3000 3000 }
-						archers = { 2000 2000 }
-						light_cavalry = { 1000 1000 }
-						heavy_infantry = { 1500 1500 }
-						knights = { 500 500 }
+			location = {
+				ROOT = {
+					capital = PREVPREV
+					spawn_unit = {
+						province = PREV
+						home = PREV
+						owner = ROOT
+						cannot_inherit = no
+						troops =
+						{
+							light_infantry = { 3000 3000 }
+							archers = { 2000 2000 }
+							light_cavalry = { 1000 1000 }
+							heavy_infantry = { 1500 1500 }
+							knights = { 500 500 }
+						}
 					}
 				}
-			}
-			location = {
 				religion = ROOT
 				culture = ROOT
 			}
 		}
+		
 		#Ensure some decent councilors and someone to marry
 		create_random_priest = {
 			random_traits = yes
@@ -594,6 +630,7 @@ narrative_event = {
 			religion = ROOT
 			culture = ROOT
 		}
+		
 		d_ghilman = {
 			holder_scope = {
 				set_defacto_liege = ROOT
@@ -602,19 +639,6 @@ narrative_event = {
 		c_tarsos = {
 			kingdom = {
 				de_jure_liege = 0
-			}
-		}
-		k_rum = {
-			de_jure_liege = e_byzantium
-			add_law = revokation_1
-			add_law = crown_levies_1
-			add_law = king_peace_0
-			add_law = inheritance_1
-		}
-		any_vassal = {
-			remove_opinion = {
-				modifier = opinion_increased_authority
-				who = liege
 			}
 		}
 		k_anatolia = {
@@ -630,6 +654,7 @@ narrative_event = {
 			}
 			religion = ROOT
 		}
+		
 		#Ensures Rum doesn't have enclaves in Persia
 		e_persia = {
 			holder_scope = {
@@ -645,6 +670,46 @@ narrative_event = {
 						grant_title = PREVPREV
 					}
 				}
+			}
+		}
+		
+		# Laws, laws, and more laws...
+		k_rum = {
+			de_jure_liege = e_byzantium
+			add_law = revokation_1
+			add_law = crown_levies_1
+			add_law = king_peace_0
+			add_law = inheritance_1
+		}
+		any_realm_lord = {
+			remove_opinion = {
+				modifier = opinion_increased_authority
+				who = ROOT
+			}
+			remove_opinion = {
+				modifier = opinion_increased_authority
+				who = ROOT
+			}
+			remove_opinion = {
+				modifier = opinion_increased_crown_levies
+				who = ROOT
+			}
+		}
+		
+		# Refill Rum's holding levies and clear those pesky occupation modifiers.
+		# The Turks are here to stay.
+		any_demesne_title = {
+			limit = { tier = baron }
+			remove_holding_modifier = recently_conquered
+			remove_holding_modifier = new_administration
+			refill_holding_levy = yes
+		}
+		any_realm_lord = {
+			any_demesne_title = {
+				limit = { tier = baron }
+				remove_holding_modifier = recently_conquered
+				remove_holding_modifier = new_administration
+				refill_holding_levy = yes
 			}
 		}
 	}

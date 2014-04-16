@@ -2887,7 +2887,7 @@ tribal_invasion = {
 				ROOT = { # Magyars bypass all requirements
 					primary_title = { title = k_magyar }
 				}
-				ROOT = { # Special bypass flag (vanilla) bypasses all requirements
+				ROOT = { # Special bypass flag (vanilla) bypasses all requirements (for non-Mongols)
 					has_character_flag = tribal_inv_requirements_bypass
 				}
 			}
@@ -2931,9 +2931,9 @@ tribal_invasion = {
 						num_of_titles = 2
 					}
 				}
-				ROOT = {
-					has_character_flag = tribal_inv_requirements_bypass
-				}
+				
+				# Blank check
+				has_character_flag = tribal_inv_requirements_bypass
 			}
 		}
 		
@@ -3082,12 +3082,18 @@ tribal_invasion = {
 									character = FROM
 								}
 							}
+							NOT = {
+								any_demesne_title = {
+									temporary = yes
+								}
+							}
 						}
 					}
 					holder_scope = {
 						set_defacto_liege = ROOT
 					}
 				}
+				# Scripted case where this war is invoked by meneth.400
 				if = {
 					limit = {
 						title = k_anatolia
@@ -3195,7 +3201,7 @@ crusade = {
 	truce_days = 3650
 	is_permanent = yes
 	is_holy_war = yes
-	battle_warscore_mult = 0.5
+	battle_warscore_mult = 0.3
 	check_de_jure_tier = KING # this scans all de jure kingdoms for the counties which are held by or vassals(or below) of selected character. Only valid if is_permanent = yes
 	apply_short_occ_mod = no
 	
@@ -3254,6 +3260,7 @@ crusade = {
 			}
 		}
 	}
+	
 	can_use = {
 		ROOT = {
 			can_call_crusade = yes
@@ -3281,24 +3288,11 @@ crusade = {
 	}
 
 	can_use_title = {
-		NOT = {
-			any_war = { # when used in title scope, checks all wars for that title
-				using_cb = crusade
-			}
-		}
 		FROM = {
 			any_realm_title = {
 				de_jure_liege_or_above = PREVPREV
 			}
-			
 			independent = yes # Don't declare Crusades on revolters - chances are high the war will invalidate
-			
-			NOT = {
-				any_demesne_title = {
-					temporary = yes
-				}
-			}
-			
 			OR = {
 				num_of_realm_counties = {
 					value = 6
@@ -3309,20 +3303,12 @@ crusade = {
 		}
 		OR = {
 			NOT = { ROOT = { religion_group = muslim } }
-			any_de_jure_vassal_title = {
-				tier = count
-				holder_scope = {
-					OR = {
-						character = FROM
-						is_liege_or_above = FROM
-					}
-				}
-				location = {
+			FROM = {
+				any_realm_province = {
+					de_jure_liege_or_above = PREVPREV
 					any_neighbor_province = {
 						owner = {
-							top_liege = {
-								religion = ROOT
-							}
+							top_liege = { religion = ROOT }
 						}
 					}
 				}
@@ -3356,6 +3342,11 @@ crusade = {
 	}
 
 	on_success_title = {
+		hidden_tooltip = {
+			add_law = the_crusade_target #Flag the title (terrible hack-- thanks, Paradox!)
+		}
+		
+		# Already-held by same-religion holder case (give land to them)
 		if = {
 			limit = {
 				has_holder = yes
@@ -3371,12 +3362,11 @@ crusade = {
 				}
 			}
 			hidden_tooltip = {
-				add_law = the_crusade_target
 				holder_scope = { character_event = { id = pb_crusades.0 } } #Handle revolters [immediately]
-				revoke_law = the_crusade_target #Remove targeting law when not exported to interactive event
 			}
 		}
 		
+		# Not-held or different-religion holder case (give land to... someone)
 		if = {
 			limit = {
 				OR = {
@@ -3394,29 +3384,10 @@ crusade = {
 					title = PREV
 					enemy = FROM
 				}
-				usurp_title = PREV
+				
+				usurp_title = PREV # Usurp or create, whichever.
 				
 				hidden_tooltip = {
-					# What happens to the soldiers that survive but never
-					# do return from the successful Crusade? ... This.
-					PREV = {
-						any_de_jure_vassal_title = {
-							limit = {
-								tier = baron
-							}
-							remove_holding_modifier = recently_conquered
-							remove_holding_modifier = new_administration
-							refill_holding_levy = yes
-						}
-					}
-					if = {
-						limit = {
-							NOT = { culture = PREV }
-						}
-						PREV = { conquest_culture = THIS }
-					}
-				
-					PREV = { add_law = the_crusade_target }
 					character_event = { id = pb_crusades.0 } #Handle revolters [immediately]
 
 					if = {
@@ -3427,31 +3398,28 @@ crusade = {
 								primary_title = { mercenary = yes } #Also want to give away the kingdom if a mercenary won it
 							}
 						}
-						character_event = { id = pb_crusades.1 } #Give away the kingdom [potentially]
+						character_event = { id = pb_crusades.1 } # Chance to give away the kingdom
 					}
-					
-					if = {
-						limit = {
-							NOT = {
-								ROOT = { religion_group = christian } #A christian crusade
-								primary_title = { holy_order = yes }
-								primary_title = { mercenary = yes }
-							}
-						}
-						PREV = { revoke_law = the_crusade_target } #Remove targeting law when not exported to interactive event
+				}
+			}
+			
+			hidden_tooltip = {
+				# What happens to the soldiers that survive but never
+				# do return from the successful Crusade? ... This.
+				
+				any_de_jure_vassal_title = {
+					limit = {
+						tier = baron
 					}
+					remove_holding_modifier = recently_conquered
+					remove_holding_modifier = new_administration
+					refill_holding_levy = yes
 				}
 			}
 		}
 		
 		hidden_tooltip = {
-			# Z: this should clearly no longer be possible, but it can't hurt, so I'm leaving it.
-			if = {
-				limit = {
-					holder_scope = { character = FROM }
-				}
-				destroy_landed_title = THIS
-			}
+			revoke_law = the_crusade_target # Remove our "title flag"
 		}
 		
 		any_attacker = {
@@ -3610,6 +3578,8 @@ crusade = {
 		factor = 100
 	}
 }
+
+
 # This CB is far more restricted in PB than in vanilla. Primarily this is achieved by adding trait requirements
 # Many of the requirements are waived base
 religious = {
@@ -8808,10 +8778,8 @@ indian_subjugation = {
 			culture_group = ROOT
 			NOT = {
 				any_war = {
-					AND = {
-						defender = { character = FROM }
-						using_cb = indian_subjugation
-					}
+					defender = { character = FROM }
+					using_cb = indian_subjugation
 				}
 			}
 		}
