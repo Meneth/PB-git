@@ -3288,24 +3288,11 @@ crusade = {
 	}
 
 	can_use_title = {
-		NOT = {
-			any_war = { # when used in title scope, checks all wars for that title
-				using_cb = crusade
-			}
-		}
 		FROM = {
 			any_realm_title = {
 				de_jure_liege_or_above = PREVPREV
 			}
-			
 			independent = yes # Don't declare Crusades on revolters - chances are high the war will invalidate
-			
-			NOT = {
-				any_demesne_title = {
-					temporary = yes
-				}
-			}
-			
 			OR = {
 				num_of_realm_counties = {
 					value = 6
@@ -3316,20 +3303,12 @@ crusade = {
 		}
 		OR = {
 			NOT = { ROOT = { religion_group = muslim } }
-			any_de_jure_vassal_title = {
-				tier = count
-				holder_scope = {
-					OR = {
-						character = FROM
-						is_liege_or_above = FROM
-					}
-				}
-				location = {
+			FROM = {
+				any_realm_province = {
+					de_jure_liege_or_above = PREVPREV
 					any_neighbor_province = {
 						owner = {
-							top_liege = {
-								religion = ROOT
-							}
+							top_liege = { religion = ROOT }
 						}
 					}
 				}
