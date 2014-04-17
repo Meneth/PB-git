@@ -56,13 +56,16 @@ disorganized = {
 
 	trigger = {
 		has_landed_title = e_byzantium
-		NOT = { year = 1075 }
+		NOT = { year = 1081 }
 		NOT = { has_global_flag = 867_start }
 	}
 	
 	icon = 34
 	
-	land_morale = -0.2
+	castle_vassal_max_levy = -0.1
+	temple_vassal_max_levy = -0.1
+	city_vassal_max_levy = -0.1
+	land_morale = -0.25
 	land_organisation = -0.2
 }
 
