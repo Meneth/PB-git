@@ -791,16 +791,18 @@ character_event = {
 
 
 # Character flag cleanup for clearly-errant do_not_disturb cases
+# Called from yearly on_action to cut down on evaluation overhead
 character_event = {
 	id = pb_various.14
 	desc = OK
 	hide_window = yes
+	is_triggered_only = yes
 	
 	only_rulers = yes
 	
 	trigger = {
 		has_character_flag = do_not_disturb
-		had_character_flag = { flag = do_not_disturb days = 60 }
+		had_character_flag = { flag = do_not_disturb days = 150 }
 	}
 	
 	immediate = {
