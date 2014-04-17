@@ -2,6 +2,10 @@
 	Fixed a few kingdoms incorrectly remaining parts of dejure empires when No Ahistorical Empires is enabled
 	[PB+SWMH] Fixed bookmarks after 1215 crashing the game
 	Tweaks to strengthen event chain leading to / incl. Formation of Rum
+	Major bugfix: Crusades now transfer titles appropriately after success. Some reported holy war issues may also have been caused by the same bug and may be resolved now
+	Random-courtier-killing maintenance event is now a little less overzealous
+	Some minor performance tweaks
+	AI requirements for creating retinues slightly hightened: their realm_sizes must now be just a bit bigger (18 if independent, 24 if a vassal-- +3 holdings to each)
 
 3.5.3
 	Updated to comply with 2.1.3
