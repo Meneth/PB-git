@@ -10,6 +10,7 @@
 	New crusader states now properly refill de jure holding levies upon success; only part of the job was getting done
 	Fixed bug where a Catholic Byzantine/Roman Emperor that has vassalized the Pope would occasionally lose the Pope as a vassal as a result of Imperial Reconquest
 	Fixed bug wherein Immortal trait would be lost upon reloading a save or converting to a different religion (at the least)
+	Loosened the restrictions upon vassalizing the Knights Templar or Knights Hospitaler as a holder of the Kingdom of Jerusalem; made decision immune to temporary revolt titles
 	
 3.5.3
 	Updated to comply with 2.1.3
