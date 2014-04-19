@@ -254,11 +254,16 @@ imperial_reconquest = {
 			
 				k_papal_state = {
 					holder_scope = {
-						ROOT = {
-							vassalize_or_take_under_title = {
-								title = PREVPREVPREV #Target duchy
-								enemy = PREV #Pope
-								is_crusade = yes #Even if the title holder is not participating in the war...
+						if = {
+							limit = {
+								NOT = { is_liege_or_above = ROOT }
+							}
+							ROOT = {
+								vassalize_or_take_under_title = {
+									title = PREVPREVPREV #Target duchy
+									enemy = PREV #Pope
+									is_crusade = yes #Even if the title holder is not participating in the war...
+								}
 							}
 						}
 					}

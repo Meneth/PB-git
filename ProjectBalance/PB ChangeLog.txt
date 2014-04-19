@@ -1,3 +1,17 @@
+3.5.4
+	Fixed a few kingdoms incorrectly remaining parts of dejure empires when No Ahistorical Empires is enabled
+	[PB+SWMH] Fixed bookmarks after 1215 crashing the game
+	Tweaks to strengthen event chain leading to / incl. Formation of Rum
+	Major bugfix: Crusades now transfer titles appropriately after success. Some reported holy war issues may also have been caused by the same bug and may be resolved now
+	Random-courtier-killing maintenance event is now a little less overzealous
+	Some minor performance tweaks
+	AI requirements for creating retinues slightly hightened: their realm_sizes must now be just a bit bigger (18 if independent, 24 if a vassal-- +3 holdings to each)
+	Disabled vanilla RoI's somewhat excessive conversion of rulers to local province culture by AI decision [issue only affected those with RoI enabled]
+	New crusader states now properly refill de jure holding levies upon success; only part of the job was getting done
+	Fixed bug where a Catholic Byzantine/Roman Emperor that has vassalized the Pope would occasionally lose the Pope as a vassal as a result of Imperial Reconquest
+	Fixed bug wherein Immortal trait would be lost upon reloading a save or converting to a different religion (at the least)
+	Loosened the restrictions upon vassalizing the Knights Templar or Knights Hospitaler as a holder of the Kingdom of Jerusalem; made decision immune to temporary revolt titles
+	
 3.5.3
 	Updated to comply with 2.1.3
 	Fixed the Norman Company not having any soldiers

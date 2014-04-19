@@ -6,8 +6,6 @@ rum = {
 }
 
 immortal = {
-	potential = { always = no }
-	random = no
 	immortal = yes
 	same_opinion = -30
 	fertility = -50.0
@@ -17,4 +15,5 @@ immortal = {
 	stewardship = 6
 	martial = 6
 	learning = 6
+	random = no
 }

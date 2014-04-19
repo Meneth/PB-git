@@ -4,6 +4,7 @@ on_yearly_pulse = {
 		pb_various.15 #Interest on loans
 		meneth.211 #Factions
 		pb_various.1 #Killing useless courtiers
+		pb_various.14 #Errant flag cleanup (do_not_disturb)
 	}
 	random_events = {
 		

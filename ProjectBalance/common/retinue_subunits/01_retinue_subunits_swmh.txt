@@ -18,9 +18,9 @@ RETTYPE_CUL_ESTONIAN =
 					higher_real_tier_than = duke
 					AND = {
 						independent = yes
-						realm_size = 15
+						realm_size = 18
 					}
-					realm_size = 21
+					realm_size = 24
 				}
 			}
 		}
@@ -49,9 +49,9 @@ RETTYPE_CUL_NORSEGAELIC =
 					higher_real_tier_than = duke
 					AND = {
 						independent = yes
-						realm_size = 15
+						realm_size = 18
 					}
-					realm_size = 21
+					realm_size = 24
 				}
 			}
 		}
@@ -82,9 +82,9 @@ RETTYPE_CUL_KARANTANCI =
 					higher_real_tier_than = duke
 					AND = {
 						independent = yes
-						realm_size = 15
+						realm_size = 18
 					}
-					realm_size = 21
+					realm_size = 24
 				}
 			}
 		}
