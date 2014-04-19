@@ -8,6 +8,7 @@
 	AI requirements for creating retinues slightly hightened: their realm_sizes must now be just a bit bigger (18 if independent, 24 if a vassal-- +3 holdings to each)
 	Disabled vanilla RoI's somewhat excessive conversion of rulers to local province culture by AI decision [issue only affected those with RoI enabled]
 	New crusader states now properly refill de jure holding levies upon success; only part of the job was getting done
+	Fixed bug where a Catholic Byzantine/Roman Emperor that has vassalized the Pope would occasionally lose the Pope as a vassal as a result of Imperial Reconquest
 
 3.5.3
 	Updated to comply with 2.1.3
