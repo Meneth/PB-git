@@ -1,4 +1,4 @@
-3.5.4 [BETA]
+3.5.4
 	Fixed a few kingdoms incorrectly remaining parts of dejure empires when No Ahistorical Empires is enabled
 	[PB+SWMH] Fixed bookmarks after 1215 crashing the game
 	Tweaks to strengthen event chain leading to / incl. Formation of Rum
