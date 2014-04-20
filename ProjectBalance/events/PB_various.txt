@@ -613,7 +613,7 @@ character_event = {
 		days = 1
 	}
 	option = {
-		name = meneth.209.a
+		name = meneth.210.a
 		add_trait = excommunicated
 	}
 }
@@ -648,7 +648,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = OK
+		name = meneth.213.a
 		trigger = {
 			FROMFROM = {
 				any_courtier = {
@@ -696,7 +696,7 @@ character_event = {
 		}
 	}
 	option = {
-		name = meneth.400.b
+		name = meneth.213.b
 		trigger = {
 			OR = {
 				ai = no
@@ -727,7 +727,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = OK
+		name = EXCELLENT
 	}
 }
 
@@ -742,7 +742,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = OK
+		name = CURSES
 	}
 }
 

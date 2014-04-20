@@ -28,11 +28,14 @@ meneth.205.desc;Feeling little loyalty to their far off ruler, the peasant rebel
 meneth.206.desc;The pious are rewarded for their efforts.;;;;;;;;;;;;;x
 meneth.206.a;OK;;;;;;;;;;;;;x
 meneth.208.desc;For whatever reason, you hold a kingdom or empire that has no Internal Peace law. Perhaps you recently formed an empire, and the game thus didn't give you Emperor's Peace, or perhaps you're an emperor who formed a kingdom. Either way, this event should fix that for you.;;;;;;;;;;;;;x
-meneth.209.desc;It appears that refusing the Pope wasn't a good idea. He has decided to excommunicate us.;;;;;;;;;;;;;x
+meneth.209.desc;It appears that refusing the Pope's request was a questionable decision. He has retaliated by excommunicating me.;;;;;;;;;;;;;x
 meneth.209.a;We are excommunicated;;;;;;;;;;;;;x
-meneth.210.desc;We have been excommunicated due to our war against the Papacy.;;;;;;;;;;;;;x
+meneth.210.desc;I have been excommunicated due to my war against the Papacy.;;;;;;;;;;;;;x
+meneth.210.a;So be it.;;;;;;;;;;;;;x
 meneth.212.desc;You usually shouldn't be seeing this event, but for whatever reason the game thinks you're still at a tournament despite it being over already. This event fixes that, so you can hold tournaments.;;;;;;;;;;;;;x
-meneth.213.desc;[FromFrom.GetTitledFirstName] has requested an exchange of prisoners. [FromFrom.GetSubjectPronoun] wants [From.GetTitledFirstName] released, and will in exchange release one member of our dynasty from their dungeons.;;;;;;;;;;;;;x
+meneth.213.desc;[FromFrom.GetTitledFirstName] has requested an exchange of prisoners. [FromFrom.GetSubjectPronoun] wants [From.GetTitledFirstName] released, and will in exchange release one member of my dynasty from their dungeons.;;;;;;;;;;;;;x
+meneth.213.a;I accept the offer.;;;;;;;;;;;;;x
+meneth.213.b;I refuse.;;;;;;;;;;;;;x
 meneth.214.desc;[From.GetTitledFirstName] has agreed to release [FromFrom.GetTitledFirstName], and we've in turn released one of their dynasty members.;;;;;;;;;;;;;x
 meneth.215.desc;[From.GetTitledFirstName] has not agreed to release [FromFrom.GetTitledFirstName].;;;;;;;;;;;;;x
 meneth.217.desc;The laws of your realm prevent you from instituting anything but minimal obligations from your vassals. Your demesne laws have therefore been returned to minimum.;;;;;;;;;;;;;x
