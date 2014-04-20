@@ -35,12 +35,13 @@ decisions = {
 						}
 					}
 					completely_controls = c_roma
+					b_hagiasophia = { holder_scope = { religion = catholic } }
 				}
 			}
 			OR = {
 				AND = {
-				completely_controls = c_roma
-				b_roma = { holder_scope = { religion = catholic } }
+					completely_controls = c_roma
+					b_roma = { holder_scope = { religion = catholic } }
 				}
 				c_roma = {
 					holder_scope = {
