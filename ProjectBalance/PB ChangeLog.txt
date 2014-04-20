@@ -1,5 +1,6 @@
 3.5.5 [BETA]
 	Mending the schism as a catholic now always requires a catholic to hold the Hagia Sophia, even if there's no Orthodox empire in existence. This should make mending the schism considerably rarer
+	Properly localised Novgorod events
 
 3.5.4
 	Fixed a few kingdoms incorrectly remaining parts of dejure empires when No Ahistorical Empires is enabled
