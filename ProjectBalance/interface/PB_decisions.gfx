@@ -208,6 +208,6 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_toggle_employment"
-		texturefile = "gfx\\interface\\decision_icon_employment.tga"
+		texturefile = "gfx\\interface\\decision_icon_toggle_employment.tga"
 	}
 }
