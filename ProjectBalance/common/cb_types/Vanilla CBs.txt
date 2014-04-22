@@ -3384,8 +3384,9 @@ crusade = {
 				}
 
 				usurp_title = PREV # Usurp or create, whichever.
-
+				
 				hidden_tooltip = {
+					character_event = { id = pb_crusades.12 } #Free holy orders from vassalage
 					character_event = { id = pb_crusades.0 } #Handle revolters [immediately]
 					
 					if = {

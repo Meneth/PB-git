@@ -948,3 +948,29 @@ character_event = {
 		name = OK
 	}
 }
+
+# pb_crusades.12
+# Free holy orders of wrong religion from target kingdom title vassalage (CB supplement)
+#
+# FROMFROM is CB giver (loser in this case), ROOT is the winner, and
+# FROM is the Pope (or Caliph or whoever was the primary attacker).
+character_event = {
+	id = pb_crusades.12
+	desc = OK
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		any_realm_lord = {
+			limit = {
+				NOT = { religion = ROOT }
+				primary_title = { holy_order = yes }
+			}
+			set_defacto_liege = THIS
+		}
+	}
+	
+	option = {
+		name = OK
+	}
+}
