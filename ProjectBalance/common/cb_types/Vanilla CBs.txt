@@ -3340,7 +3340,7 @@ crusade = {
 		hidden_tooltip = {
 			add_law = the_crusade_target #Flag the title (terrible hack-- thanks, Paradox!)
 		}
-		
+
 		# Already-held by same-religion holder case (give land to them)
 		if = {
 			limit = {
@@ -3358,9 +3358,12 @@ crusade = {
 			}
 			hidden_tooltip = {
 				holder_scope = { character_event = { id = pb_crusades.0 } } #Handle revolters [immediately]
+				
+				# Refill all the levies, remove the conquest modifiers, and revoke the target law in 1 day
+				character_event = { id = pb_crusades.11 days = 1 }
 			}
 		}
-		
+
 		# Not-held or different-religion holder case (give land to... someone)
 		if = {
 			limit = {
@@ -3373,27 +3376,17 @@ crusade = {
 					}
 				}
 			}
-			
+
 			most_participating_attacker = {
 				gain_settlements_under_title = {
 					title = PREV
 					enemy = FROM
 				}
-				
+
 				usurp_title = PREV # Usurp or create, whichever.
-								
+
 				hidden_tooltip = {
 					character_event = { id = pb_crusades.0 } #Handle revolters [immediately]
-
-					any_demesne_title = {
-						limit = {
-							de_jure_liege_or_above = PREVPREV
-							tier = baron
-						}
-						remove_holding_modifier = recently_conquered
-						remove_holding_modifier = new_administration
-						refill_holding_levy = yes
-					}
 					
 					if = {
 						limit = {
@@ -3407,10 +3400,6 @@ crusade = {
 					}
 				}
 			}
-		}
-		
-		hidden_tooltip = {
-			revoke_law = the_crusade_target # Remove our title "flag"
 		}
 		
 		any_attacker = {
