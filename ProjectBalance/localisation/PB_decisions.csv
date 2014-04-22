@@ -57,3 +57,5 @@ imperial_reconquest_t3_desc;Hovering over this decision will tell you what terri
 imperial_reconquest_t4_desc;Hovering over this decision will tell you what territory you need to control to advance to the next Imperial Reconquest tier.;;;;;;;;;;;;;x
 imperial_reconquest_t5_desc;Hovering over this decision will tell you what territory you need to control to advance to the next Imperial Reconquest tier.;;;;;;;;;;;;;x
 imperial_reconquest_t6_desc;Hovering over this decision will tell you what territory you need to control to advance to the next Imperial Reconquest tier.;;;;;;;;;;;;;x
+toggle_employment;Toggle employment decisions;;;;;;;;;;;;;x
+toggle_employment_desc;Toggles decisions to invite various courtiers.;;;;;;;;;;;;;x

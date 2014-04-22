@@ -206,4 +206,8 @@ spriteTypes = {
 		name = "GFX_random_rulers"
 		texturefile = "gfx\\interface\\decision_icon_random_rulers.tga"
 	}
+	spriteType = {
+		name = "GFX_toggle_employment"
+		texturefile = "gfx\\interface\\decision_icon_employment.tga"
+	}
 }
