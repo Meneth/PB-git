@@ -3,6 +3,7 @@
 	Properly localised Novgorod events and made some other localisation flavor adjustments
 	Holy war no longer vassalizes anyone not of your religion; they're once more conquered outright. Note that Pagans have a decision from vanilla that makes them convert and invalidates holy war
 	Removed some coats of arms that already exist in vanilla
+	Free any vassalized landless holy order titles of wrong religion upon success of a crusade/jihad/GHW. Previously, they'd be stuck (unable to be hired nor interact with their own religion normally anymore) essentially forever under, e.g., the winning Caliph of a Jihad if they were vassals to Jerusalem beforehand.
 
 3.5.4
 	Fixed a few kingdoms incorrectly remaining parts of dejure empires when No Ahistorical Empires is enabled
