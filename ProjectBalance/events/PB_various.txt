@@ -115,19 +115,23 @@ narrative_event = {
 			e_hre = {
 				set_name="Germania"
 			}
+			
+					
 			e_hre_french = {
-				limit = { has_holder = yes }
-				any_direct_de_jure_vassal_title = {
-					de_jure_liege = e_france
-				}
-				holder_scope = {
-					e_france = {
-						grant_title = PREV
-						copy_title_laws = e_hre_french
-						copy_title_history = e_hre_french
+				if = {
+					limit = { has_holder = yes }
+					any_direct_de_jure_vassal_title = {
+						de_jure_liege = e_france
 					}
+					holder_scope = {
+						e_france = {
+							grant_title = PREV
+							copy_title_laws = e_hre_french
+							copy_title_history = e_hre_french
+						}
+					}
+					destroy_landed_title = THIS
 				}
-				destroy_landed_title = THIS
 			}
 		}
 		e_roman_empire = {
