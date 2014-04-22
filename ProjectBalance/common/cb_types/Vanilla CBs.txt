@@ -3997,73 +3997,10 @@ religious = {
 			text = religious_cb_succ_tip
 			hidden_tooltip = {
 				ROOT = {
-					FROM = {
-						any_realm_character = { set_character_flag = holy_war_target } #Z: TODO
-					}
-					if = {
-						limit = {
-							FROM = {
-								OR = {
-									religion_group = pagan_group
-									is_heresy_of = ROOT
-									is_parent_religion = ROOT
-								}
-							}
-						}
-						vassalize_or_take_under_title = {
-							title = PREV
-							enemy = FROM
-						}
-					}
-					if = {
-						limit = {
-							NOT = {
-								FROM = {
-									OR = {
-										religion_group = pagan_group
-										is_heresy_of = ROOT
-										is_parent_religion = ROOT
-									}
-								}
-							}
-						}
-						vassalize_or_take_under_title = {
-							title = PREV
-							enemy = FROM
-							same_religion = yes # Only vassalize rulers of my religion
-						}
-					}
-	#				gain_settlements_under_title = {
-	#					title = PREV
-	#					enemy = FROM
-	#				}
-					any_realm_character = {
-						limit = {
-							has_character_flag = holy_war_target
-							NOT = { religion = ROOT }
-							OR = {
-								religion_group = pagan_group
-								is_heresy_of = ROOT
-								is_parent_religion = ROOT
-							}
-							NOT = { religion_group = muslim }
-						}
-						religion = ROOT
-						opinion = {
-							who = ROOT
-							years = 10
-							modifier = opinion_demanded_conversion
-						}
-					}
-					any_realm_character = {
-						limit = { has_character_flag = holy_war_target }
-						clr_character_flag = holy_war_target
-					}
-				}
-				FROM = {
-					any_realm_character = {
-						limit = { has_character_flag = holy_war_target }
-						clr_character_flag = holy_war_target
+					vassalize_or_take_under_title = {
+						title = PREV
+						enemy = FROM
+						same_religion = yes # Only vassalize rulers of my religion
 					}
 				}
 			}
