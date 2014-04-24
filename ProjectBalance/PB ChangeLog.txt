@@ -7,6 +7,7 @@
 	Rewrote the Catholic schism mending event for efficiency and brevity; other rulers will now be notified as is appropriate for such a momentous occasion
 	The employment decisions are now hidden by default, with a toggle decision to show them
 	Unlike other military buildings, the cultural buildings no longer reduce tax income
+	Updated PB's culture buildings to correspond with current maintenance values
 
 3.5.4
 	Fixed a few kingdoms incorrectly remaining parts of dejure empires when No Ahistorical Empires is enabled
