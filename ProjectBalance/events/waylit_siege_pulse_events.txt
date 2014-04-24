@@ -1,18 +1,16 @@
 #on_siege_pulse events
 
-#on start of siege, give option to send family away or flee entirely
 namespace = waylit
 
-#Gives event to holder
+# On start of siege, give option to send family away or flee entirely
 character_event = {
 	id = waylit.0
 	desc = "EVTDESCWAYsiegepulseflee"
 	title = "EVTNAMEWAYsiegepulseflee"
-	picture = "GFX_evt_Council_Around_Table"
-	border = "GFX_event_normal_frame_war"
+	picture = GFX_evt_council
+	border = GFX_event_normal_frame_war
 
 	is_triggered_only = yes
-	
 	hide_window = yes
 
 	trigger = {
@@ -98,12 +96,13 @@ character_event = {
 		name = OK
 	}
 }
+
 character_event = {
 	id = waylit.1
 	desc = "EVTDESCWAYsiegepulseflee"
 	title = "EVTNAMEWAYsiegepulseflee"
-	picture = "GFX_evt_Council_Around_Table"
-	border = "GFX_event_normal_frame_war"
+	picture = GFX_evt_council
+	border = GFX_event_normal_frame_war
 
 	is_triggered_only = yes
 	
@@ -392,13 +391,14 @@ character_event = {
 		clr_character_flag = religious_enemy_sieging
 	}
 }
-#Escape from a siege where you have not hidden						
+
+# Escape from a siege where you have not hidden						
 character_event = {
-	id = 1100099992
+	id = waylit.2
 	desc = "EVTDESCWAYsiegeescape"
 	title = "EVTNAMEWAYnotifyofoutcome"
-	picture = "GFX_evt_siege"
-	border = "GFX_event_normal_frame_war"
+	picture = GFX_evt_siege
+	border = GFX_event_normal_frame_war
 
 	is_triggered_only = yes
 	only_rulers = yes
@@ -412,15 +412,16 @@ character_event = {
 		
 		OR = {
 			AND = {
-				tier = baron is_patrician = no
+				tier = baron 
+				is_patrician = no
 				num_of_baron_titles = 1
-				NOT = {num_of_baron_titles = 2}
+				NOT = { num_of_baron_titles = 2 }
 			}
 			AND = {
 				num_of_count_titles = 1
-				NOT = {num_of_count_titles = 2}
+				NOT = { num_of_count_titles = 2 }
 			}
-			any_courtier = {at_location = FROM}
+			any_courtier = { at_location = FROM }
 		}
 		
 		siege = {
@@ -432,6 +433,11 @@ character_event = {
 			}
 		}
 	}
+	
+	weight_multiplier = {
+		days = 1
+	}
+	
 	option = {
 		name = "EVTOPTWAYsiegesescapeattempt01"
 		ai_chance = {
@@ -499,7 +505,7 @@ character_event = {
 				custom_tooltip = {
 					text = EVTTOOLTIPsiegeescaped
 					hidden_tooltip = {
-						character_event = { id = 1100099994 }
+						character_event = { id = waylit.4 }
 					}
 				}
 			}
@@ -507,11 +513,11 @@ character_event = {
 				custom_tooltip = {
 					text = EVTTOOLTIPsiegecapturedenemy
 					hidden_tooltip = {
-						ROOT = { character_event = { id = 1100099993 } }
+						ROOT = { character_event = { id = waylit.3 } }
 						ROOT = {
 							set_character_flag = captured
 						}
-						siege = { enemy = { leader = { character_event = { id = 1100099997 } } } }
+						siege = { enemy = { leader = { character_event = { id = waylit.7 } } } }
 					}
 				}
 			}	
@@ -652,11 +658,11 @@ character_event = {
 				custom_tooltip = {
 					text = EVTTOOLTIPsiegecapturedenemy
 					hidden_tooltip = {
-						ROOT = { character_event = { id = 1100099993 } }
+						ROOT = { character_event = { id = waylit.3 } }
 						ROOT = {
 							set_character_flag = captured
 						}
-						siege = { enemy = { leader = { character_event = { id = 1100099997 } } } }
+						siege = { enemy = { leader = { character_event = { id = waylit.7 } } } }
 					}
 				}
 			}
@@ -759,7 +765,7 @@ character_event = {
 				custom_tooltip = {
 					text = EVTTOOLTIPsiegeescaped
 					hidden_tooltip = {
-						character_event = { id = 1100099996 }
+						character_event = { id = waylit.6 }
 					}
 				}
 			}
@@ -767,11 +773,11 @@ character_event = {
 				custom_tooltip = {
 					text = EVTTOOLTIPsiegecapturedenemy
 					hidden_tooltip = {
-						ROOT = { character_event = { id = 1100099993 } }
+						ROOT = { character_event = { id = waylit.3 } }
 						ROOT = {
 							set_character_flag = captured
 						}
-						siege = { enemy = { leader = { character_event = { id = 1100099997 } } } }
+						siege = { enemy = { leader = { character_event = { id = waylit.7 } } } }
 					}
 				}
 			}
@@ -832,15 +838,18 @@ character_event = {
 			add_trait = paranoid
 		}
 	}
-}#captured by the enemy
+}
 
+# Captured by the enemy
 character_event = {
-	id = 1100099993
+	id = waylit.3
 	desc = "EVTDESCRWAYnotifyofcapture1"
 	title = "EVTNAMEWAYnotifyofoutcome"
-	picture = "GFX_evt_Bloody_man"
-	border = "GFX_event_normal_frame_war"
+	picture = GFX_evt_bloody_man
+	border = GFX_event_normal_frame_war
+
 	is_triggered_only = yes
+
 	option = {
 		name = "EVTOPWAYsiegecapture02"
 		remove_character_modifier = stalwart_defender
@@ -848,14 +857,18 @@ character_event = {
 			custom_tooltip = { text = EVTTOOLWAYfamilyhatesyou }
 		}		
 	}
-}#escape by postern
+}
+
+# Escape by postern
 character_event = {
-	id = 1100099994
+	id = waylit.4
 	desc = "EVTDESCRWAYnotifyofescape01"
 	title = "EVTNAMEWAYnotifyofoutcome"
-	picture = "GFX_evt_Courier_Riding"
-	border = "GFX_event_normal_frame_war"
+	picture = GFX_evt_courier
+	border = GFX_event_normal_frame_war
+
 	is_triggered_only = yes
+
 	trigger = { is_alive = yes }
 
 	option = {
@@ -887,14 +900,18 @@ character_event = {
 			}
 		}
 	}
-}#escape by sewer
+}
+
+# Escape by sewer
 character_event = {
-	id = 1100099995
+	id = waylit.5
 	desc = "EVTDESCRWAYnotifyofescape02"
 	title = "EVTNAMEWAYnotifyofoutcome"
-	picture = "GFX_evt_Courier_Riding"
-	border = "GFX_event_normal_frame_war"
+	picture = GFX_evt_courier
+	border = GFX_event_normal_frame_war
+
 	is_triggered_only = yes
+
 	trigger = { is_alive = yes }
 
 	option = {
@@ -924,13 +941,15 @@ character_event = {
 			}
 		}
 	}
-}#escape by wall
+}
+
+# Escape by wall
 character_event = {
-	id = 1100099996
+	id = waylit.6
 	desc = "EVTDESCRWAYnotifyofescape03"
 	title = "EVTNAMEWAYnotifyofoutcome"
-	picture = "GFX_evt_Courier_Riding"
-	border = "GFX_event_normal_frame_war"
+	picture = GFX_evt_courier
+	border = GFX_event_normal_frame_war
 	is_triggered_only = yes
 	trigger = { is_alive = yes }
 
@@ -960,14 +979,18 @@ character_event = {
 			}
 		}
 	}
-}#capture event
+}
+
+# Capture event
 character_event = {
-	id = 1100099997
+	id = waylit.7
 	desc = "EVTDESCRWAYnotifyofcapture2"
 	title = "EVTNAMEWAYnotifyofoutcome"
-	picture = "GFX_evt_Thrown_into_dungeon"
-	border = "GFX_event_normal_frame_war"
+	picture = GFX_evt_into_the_dungeon
+	border = GFX_event_normal_frame_war
+
 	is_triggered_only = yes
+
 	option = {
 		name = "EVTOPWAYsiegecapture01"
 		siege = {

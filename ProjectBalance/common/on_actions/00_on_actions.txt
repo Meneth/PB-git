@@ -713,7 +713,7 @@ on_siege_pulse = {
 		15 = 62011	
 		15 = 62012
 		15 = 62013
-		7500 = 1100099992 #waylit siegeescape
+		7500 = waylit.2 #Waylit
 	}
 }
 
@@ -774,10 +774,7 @@ on_siege_won_leader = {
 		60120 # Mongols sack Cairo
 		60121 # Mongols sack Mecca
 		88005 # Mongols sack city near the Hashshashin
-		#110009990 #Waylit +1 prestige for leader upon winning siege (hidden)
-		110009991 #waylit, imprison any_char at siege loc
-		#110009992 #Waylit same as above, but if owner isnt home
-		#110009993 #waylit Release prisoners at location
+		waylit.8 #Waylit
 	}
 	random_events = {
 		300 = 0
