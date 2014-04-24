@@ -16,9 +16,11 @@
 
 ##################################
 
+namespace = duel_cte
+
 #5550100 - Learning the sword from your guardian
 character_event = {
-	id = 5550100
+	id = duel_cte.0
 	desc = "EVTDESC550100"
 	picture = GFX_evt_child_sword
 	
@@ -146,14 +148,14 @@ character_event = {
 
 	option = {
 		name = "EVTOPTA5550100" # Stick 'em with the pointy end!
-		hidden_tooltip = { guardian = { character_event = {id = 5550105} } } #Guardian Notification.
+		hidden_tooltip = { guardian = { character_event = { id = duel_cte.4 } } } #Guardian Notification.
 		add_trait = poor_warrior 
 	}
 }
 
 #5550101 - Learning the sword from your guardian. (lvl-2)
 character_event = {
-	id = 5550101
+	id = duel_cte.1
 	desc = "EVTDESC550101" # You show a promising talent for swordplay.
 	picture = GFX_evt_child_sword
 	
@@ -278,7 +280,7 @@ character_event = {
 
 	option = {
 		name = "EVTOPTA5550100"
-		hidden_tooltip = { guardian = { character_event = {id = 5550105} } } #Guardian Notification.
+		hidden_tooltip = { guardian = { character_event = { id = duel_cte.4 } } } #Guardian Notification.
 		remove_trait = poor_warrior 
 		add_trait = trained_warrior
 	}
@@ -286,7 +288,7 @@ character_event = {
 
 #5550102 - Learning the sword from your guardian. (lvl-3)
 character_event = {
-	id = 5550102
+	id = duel_cte.2
 	desc = "EVTDESC550101"
 	picture = GFX_evt_child_sword
 	
@@ -401,7 +403,7 @@ character_event = {
 	}
 	option = {
 		name = "EVTOPTA5550100"
-		hidden_tooltip = { guardian = { character_event = {id = 5550105} } } #Guardian Notification.
+		hidden_tooltip = { guardian = { character_event = { id = duel_cte.4 } } } #Guardian Notification.
 		remove_trait = trained_warrior 
 		add_trait = skilled_warrior
 	}
@@ -409,7 +411,7 @@ character_event = {
 
 #5550103 - Learning the sword from your guardian. (lvl-3)
 character_event = {
-	id = 5550103
+	id = duel_cte.3
 	desc = "EVTDESC550103" # You have truly mastered the art of combat.
 	picture = GFX_evt_child_sword
 	
@@ -513,7 +515,7 @@ character_event = {
 	}
 	option = {
 		name = "EVTOPTA5550100"
-		hidden_tooltip = { guardian = { character_event = {id = 5550105} } } #Guardian Notification.
+		hidden_tooltip = { guardian = { character_event = { id = duel_cte.4 } } } #Guardian Notification.
 		remove_trait = skilled_warrior
 		add_trait = master_warrior
 	}
@@ -522,7 +524,7 @@ character_event = {
 
 #5550105 - Guardian Notification. (For all lvls)
 character_event = {
-	id = 5550105
+	id = duel_cte.4
 	desc = "EVTDESC5550105" #I have increased my ward's fighting skills.
 	picture = "GFX_evt_child_sword"
 	
@@ -558,7 +560,7 @@ character_event = {
 ###Demotions###
 #5550112 - Getting old.
 character_event = {
-	id = 5550112
+	id = duel_cte.5
 	desc = "EVTDESC5550112"
 	picture = GFX_evt_illness
 	
@@ -619,6 +621,7 @@ character_event = {
 			limit = { trait = trained_warrior }
 			remove_trait = trained_warrior
 			add_trait = poor_warrior
+			set_character_flag = demoted
 		}
 		if = {
 			limit = { trait = skilled_warrior }

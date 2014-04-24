@@ -1,15 +1,15 @@
 #on_siege_won_leader events
-#110009991
+
+namespace = waylit
 
 #Triggers all the decision events
 character_event = {
-	id = 110009991
+	id = waylit.8
 	desc = "EVTDESCsiegewin01"
-	picture = "GFX_evt_siege"
+	picture = GFX_evt_siege
 	border = GFX_event_normal_frame_war
 
 	is_triggered_only = yes
-	
 	hide_window = yes
 
 	trigger = {
@@ -32,7 +32,7 @@ character_event = {
 							NOT = { has_character_modifier = modifier_hidden }
 						}
 						ROOT = {
-							liege = { character_event = { id = 110009994 } }
+							liege = { character_event = { id = waylit.9 } }
 						}
 					}
 					if = {
@@ -62,7 +62,7 @@ character_event = {
 							}
 						}
 						ROOT = {
-							liege = { character_event = { id = 110009995 } }
+							liege = { character_event = { id = waylit.10 } }
 						}
 					}
 					if = {
@@ -73,7 +73,7 @@ character_event = {
 							}
 						}
 						ROOT = {
-							liege = { character_event = { id = 110009996 } }
+							liege = { character_event = { id = waylit.11 } }
 						}
 					}
 				}
@@ -94,7 +94,7 @@ character_event = {
 							at_location = ROOT
 							NOT = { has_character_modifier = modifier_hidden }
 						}
-						ROOT = { character_event = { id = 110009994 } }
+						ROOT = { character_event = { id = waylit.9 } }
 					}
 					if = {
 						limit = {
@@ -122,7 +122,7 @@ character_event = {
 								}
 							}
 						}
-						ROOT = { character_event = { id = 110009995 } }
+						ROOT = { character_event = { id = waylit.10 } }
 					}
 					if = {
 						limit = {
@@ -131,7 +131,7 @@ character_event = {
 								at_location = ROOT
 							}
 						}
-						ROOT = { character_event = { id = 110009996 } }
+						ROOT = { character_event = { id = waylit.11 } }
 					}
 				}
 			}
@@ -144,10 +144,9 @@ character_event = {
 }
 
 character_event = {
-
-	id = 110009994
+	id = waylit.9
 	desc = "EVTDESCsiegewin01"
-	picture = "GFX_evt_siege"
+	picture = GFX_evt_siege
 	border = GFX_event_normal_frame_war
 
 	hide_from = yes
@@ -479,7 +478,7 @@ character_event = {
 						at_location = FROMFROM
 						NOT = { has_character_modifier = modifier_hidden }
 					}
-					death = {death_reason = death_battle killer = ROOT}
+					death = { death_reason = death_battle killer = ROOT }
 					hidden_tooltip = {
 						any_dynasty_member = {
 							limit = {
@@ -537,7 +536,7 @@ character_event = {
 						NOT = {
 							has_character_modifier = modifier_hidden }
 					}
-					death = {death_reason = death_battle killer = ROOT}
+					death = { death_reason = death_battle killer = ROOT }
 					hidden_tooltip = {
 						any_dynasty_member = {
 							limit = {
@@ -705,14 +704,14 @@ character_event = {
 }
 
 character_event = {
-	id = 110009995
+	id = waylit.10
 	desc = "EVTDESCsiegenoenemy"
-	picture = "GFX_evt_siege"
+	picture = GFX_evt_siege
 	border = GFX_event_normal_frame_war
 
 	hide_from = yes
-
 	is_triggered_only = yes
+
 	option = {
 		name = "EVTOPTAnoenemy2"
 		trigger = {
@@ -1194,14 +1193,12 @@ character_event = {
 }
 
 character_event = {
-
-	id = 110009996
+	id = waylit.11
 	desc = "EVTDESCWAYsearchdungeons"
-	picture = "GFX_evt_siege"
+	picture = GFX_evt_siege
 	border = GFX_event_normal_frame_war
 	
 	hide_from = yes
-	
 	is_triggered_only = yes
 	
 	option = {
