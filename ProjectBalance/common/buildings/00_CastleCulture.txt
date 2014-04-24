@@ -30,7 +30,6 @@ castle = {
 		light_infantry_offensive = 0.05
 		pikemen_offensive = 0.05
 		retinuesize = 20
-		tax_income = -0.1
 		ai_creation_factor = 102
 		
 		extra_tech_building_start = 0.0
@@ -56,7 +55,6 @@ castle = {
 		light_infantry_offensive = 0.05
 		pikemen_offensive = 0.05
 		retinuesize = 20
-		tax_income = -0.15
 		ai_creation_factor = 101
 		
 		extra_tech_building_start = 1.0
@@ -92,7 +90,6 @@ castle = {
 		light_infantry_offensive = 0.05
 		pikemen_offensive = 0.05
 		retinuesize = 20
-		tax_income = -0.2
 		ai_creation_factor = 100
 		
 		extra_tech_building_start = 1.0
@@ -122,7 +119,6 @@ castle = {
 		light_infantry_offensive = 0.05
 		pikemen_offensive = 0.05
 		retinuesize = 20
-		tax_income = -0.25
 		ai_creation_factor = 99
 		
 		extra_tech_building_start = 1.0
@@ -152,7 +148,6 @@ castle = {
 		light_infantry_offensive = 0.05
 		pikemen_offensive = 0.05
 		retinuesize = 20
-		tax_income = -0.3
 		ai_creation_factor = 98
 		
 		extra_tech_building_start = 1.0
@@ -182,7 +177,6 @@ castle = {
 		light_infantry_offensive = 0.05
 		pikemen_offensive = 0.05
 		retinuesize = 20
-		tax_income = -0.35
 		ai_creation_factor = 97
 		
 		extra_tech_building_start = 1.0
@@ -205,7 +199,6 @@ castle = {
 		horse_archers = -10
 		light_infantry_morale = 0.1
 		retinuesize = 20
-		tax_income = -0.1
 		ai_creation_factor = 102
 		
 		extra_tech_building_start = 0.0
@@ -222,7 +215,6 @@ castle = {
 		light_infantry = 120
 		light_infantry_morale = 0.1
 		retinuesize = 20
-		tax_income = -0.15
 		ai_creation_factor = 101
 		
 		extra_tech_building_start = 1.0
@@ -248,7 +240,6 @@ castle = {
 		horse_archers = -10
 		light_infantry_morale = 0.1
 		retinuesize = 20
-		tax_income = -0.2
 		ai_creation_factor = 100
 		
 		extra_tech_building_start = 1.0
@@ -274,7 +265,6 @@ castle = {
 		horse_archers = -10
 		light_infantry_morale = 0.1
 		retinuesize = 20
-		tax_income = -0.25
 		ai_creation_factor = 99
 		
 		extra_tech_building_start = 1.0
@@ -300,7 +290,6 @@ castle = {
 		horse_archers = -10
 		light_infantry_morale = 0.1
 		retinuesize = 20
-		tax_income = -0.3
 		ai_creation_factor = 98
 		
 		extra_tech_building_start = 1.0
@@ -326,7 +315,6 @@ castle = {
 		horse_archers = -10
 		light_infantry_morale = 0.1
 		retinuesize = 20
-		tax_income = -0.35
 		ai_creation_factor = 97
 		
 		extra_tech_building_start = 1.0
@@ -350,7 +338,6 @@ castle = {
 		light_infantry_offensive = 0.05
 		archers_offensive = 0.05
 		retinuesize = 20
-		tax_income = -0.1
 		ai_creation_factor = 102
 		
 		extra_tech_building_start = 0.0
@@ -373,7 +360,6 @@ castle = {
 		light_infantry_offensive = 0.05
 		archers_offensive = 0.05
 		retinuesize = 20
-		tax_income = -0.15
 		ai_creation_factor = 101
 		
 		extra_tech_building_start = 1.0
@@ -400,7 +386,6 @@ castle = {
 		light_infantry_offensive = 0.05
 		archers_offensive = 0.05
 		retinuesize = 20
-		tax_income = -0.2
 		ai_creation_factor = 100
 		
 		extra_tech_building_start = 1.0
@@ -427,7 +412,6 @@ castle = {
 		light_infantry_offensive = 0.05
 		archers_offensive = 0.05
 		retinuesize = 20
-		tax_income = -0.25
 		ai_creation_factor = 99
 		
 		extra_tech_building_start = 1.0
@@ -454,7 +438,6 @@ castle = {
 		light_infantry_offensive = 0.05
 		archers_offensive = 0.05
 		retinuesize = 20
-		tax_income = -0.3
 		ai_creation_factor = 98
 		
 		extra_tech_building_start = 1.0
@@ -481,7 +464,6 @@ castle = {
 		light_infantry_offensive = 0.05
 		archers_offensive = 0.05
 		retinuesize = 20
-		tax_income = -0.35
 		ai_creation_factor = 97
 		
 		extra_tech_building_start = 1.0
@@ -511,7 +493,6 @@ castle = {
 		horse_archers = -10
 		knights_offensive = 0.1
 		retinuesize = 20
-		tax_income = -0.1
 		ai_creation_factor = 102
 		
 		extra_tech_building_start = 0.0
@@ -540,7 +521,6 @@ castle = {
 		horse_archers = -10
 		knights_offensive = 0.1
 		retinuesize = 20
-		tax_income = -0.15
 		ai_creation_factor = 101
 		
 		extra_tech_building_start = 1.0
@@ -575,7 +555,6 @@ castle = {
 		horse_archers = -10
 		knights_offensive = 0.1
 		retinuesize = 20
-		tax_income = -0.2
 		ai_creation_factor = 100
 		
 		extra_tech_building_start = 1.0
@@ -610,7 +589,6 @@ castle = {
 		horse_archers = -10
 		knights_offensive = 0.1
 		retinuesize = 20
-		tax_income = -0.25
 		ai_creation_factor = 99
 		
 		extra_tech_building_start = 1.0
@@ -645,7 +623,6 @@ castle = {
 		horse_archers = -10
 		knights_offensive = 0.1
 		retinuesize = 20
-		tax_income = -0.3
 		ai_creation_factor = 98
 		
 		extra_tech_building_start = 1.0
@@ -680,7 +657,6 @@ castle = {
 		horse_archers = -10
 		knights_offensive = 0.1
 		retinuesize = 20
-		tax_income = -0.35
 		ai_creation_factor = 97
 		
 		extra_tech_building_start = 1.0
@@ -708,7 +684,6 @@ castle = {
 		horse_archers_offensive = 0.05
 		horse_archers_morale = 0.05
 		retinuesize = 20
-		tax_income = -0.1
 		ai_creation_factor = 102
 		
 		extra_tech_building_start = 0.0
@@ -735,7 +710,6 @@ castle = {
 		horse_archers_offensive = 0.05
 		horse_archers_morale = 0.05
 		retinuesize = 20
-		tax_income = -0.15
 		ai_creation_factor = 101
 		
 		extra_tech_building_start = 1.0
@@ -768,7 +742,6 @@ castle = {
 		horse_archers_offensive = 0.05
 		horse_archers_morale = 0.05
 		retinuesize = 20
-		tax_income = -0.2
 		ai_creation_factor = 100
 		
 		extra_tech_building_start = 1.0
@@ -801,7 +774,6 @@ castle = {
 		horse_archers_offensive = 0.05
 		horse_archers_morale = 0.05
 		retinuesize = 20
-		tax_income = -0.25
 		ai_creation_factor = 99
 		
 		extra_tech_building_start = 1.0
@@ -834,7 +806,6 @@ castle = {
 		horse_archers_offensive = 0.05
 		horse_archers_morale = 0.05
 		retinuesize = 20
-		tax_income = -0.3
 		ai_creation_factor = 98
 		
 		extra_tech_building_start = 1.0
@@ -867,7 +838,6 @@ castle = {
 		horse_archers_offensive = 0.05
 		horse_archers_morale = 0.05
 		retinuesize = 20
-		tax_income = -0.35
 		ai_creation_factor = 97
 		
 		extra_tech_building_start = 1.0
@@ -891,7 +861,6 @@ castle = {
 		camel_cavalry_offensive = 0.05
 		camel_cavalry_defensive = 0.05
 		retinuesize = 20
-		tax_income = -0.1
 		ai_creation_factor = 102
 		
 		extra_tech_building_start = 0.0
@@ -914,7 +883,6 @@ castle = {
 		camel_cavalry_offensive = 0.05
 		camel_cavalry_defensive = 0.05
 		retinuesize = 20
-		tax_income = -0.15
 		ai_creation_factor = 101
 		
 		extra_tech_building_start = 1.0
@@ -941,7 +909,6 @@ castle = {
 		camel_cavalry_offensive = 0.05
 		camel_cavalry_defensive = 0.05
 		retinuesize = 20
-		tax_income = -0.2
 		ai_creation_factor = 100
 		
 		extra_tech_building_start = 1.0
@@ -968,7 +935,6 @@ castle = {
 		camel_cavalry_offensive = 0.05
 		camel_cavalry_defensive = 0.05
 		retinuesize = 20
-		tax_income = -0.25
 		ai_creation_factor = 99
 		
 		extra_tech_building_start = 1.0
@@ -995,7 +961,6 @@ castle = {
 		camel_cavalry_offensive = 0.05
 		camel_cavalry_defensive = 0.05
 		retinuesize = 20
-		tax_income = -0.3
 		ai_creation_factor = 98
 		
 		extra_tech_building_start = 1.0
@@ -1022,7 +987,6 @@ castle = {
 		camel_cavalry_offensive = 0.05
 		camel_cavalry_defensive = 0.05
 		retinuesize = 20
-		tax_income = -0.35
 		ai_creation_factor = 97
 		
 		extra_tech_building_start = 1.0
@@ -1049,7 +1013,6 @@ castle = {
 		heavy_infantry_offensive = 0.05
 		heavy_infantry_defensive = 0.05
 		retinuesize = 20
-		tax_income = -0.1
 		ai_creation_factor = 102
 
 		extra_tech_building_start = 0.0
@@ -1075,7 +1038,6 @@ castle = {
 		heavy_infantry_offensive = 0.05
 		heavy_infantry_defensive = 0.05
 		retinuesize = 20
-		tax_income = -0.15
 		ai_creation_factor = 101
 
 		extra_tech_building_start = 1.0
@@ -1107,7 +1069,6 @@ castle = {
 		heavy_infantry_offensive = 0.05
 		heavy_infantry_defensive = 0.05
 		retinuesize = 20
-		tax_income = -0.2
 		ai_creation_factor = 100
 		
 		extra_tech_building_start = 1.0
@@ -1139,7 +1100,6 @@ castle = {
 		heavy_infantry_offensive = 0.05
 		heavy_infantry_defensive = 0.05
 		retinuesize = 20
-		tax_income = -0.25
 		ai_creation_factor = 99
 		
 		extra_tech_building_start = 1.0
@@ -1171,7 +1131,6 @@ castle = {
 		heavy_infantry_offensive = 0.05
 		heavy_infantry_defensive = 0.05
 		retinuesize = 20
-		tax_income = -0.3
 		ai_creation_factor = 98
 		
 		extra_tech_building_start = 1.0
@@ -1203,7 +1162,6 @@ castle = {
 		heavy_infantry_offensive = 0.05
 		heavy_infantry_defensive = 0.05
 		retinuesize = 20
-		tax_income = -0.35
 		ai_creation_factor = 97
 		
 		extra_tech_building_start = 1.0
@@ -1228,7 +1186,6 @@ castle = {
 		knights_offensive = 0.05
 		horse_archers_offensive = 0.05
 		retinuesize = 20
-		tax_income = -0.1
 		ai_creation_factor = 102
 		
 		extra_tech_building_start = 0.0
@@ -1252,7 +1209,6 @@ castle = {
 		knights_offensive = 0.05
 		horse_archers_offensive = 0.05
 		retinuesize = 20
-		tax_income = -0.15
 		ai_creation_factor = 101
 		
 		extra_tech_building_start = 1.0
@@ -1280,7 +1236,6 @@ castle = {
 		knights_offensive = 0.05
 		horse_archers_offensive = 0.05
 		retinuesize = 20
-		tax_income = -0.2
 		ai_creation_factor = 100
 		
 		extra_tech_building_start = 1.0
@@ -1308,7 +1263,6 @@ castle = {
 		knights_offensive = 0.05
 		horse_archers_offensive = 0.05
 		retinuesize = 20
-		tax_income = -0.25
 		ai_creation_factor = 99
 		
 		extra_tech_building_start = 1.0
@@ -1336,7 +1290,6 @@ castle = {
 		knights_offensive = 0.05
 		horse_archers_offensive = 0.05
 		retinuesize = 20
-		tax_income = -0.3
 		ai_creation_factor = 98
 		
 		extra_tech_building_start = 1.0
@@ -1364,7 +1317,6 @@ castle = {
 		knights_offensive = 0.05
 		horse_archers_offensive = 0.05
 		retinuesize = 20
-		tax_income = -0.35
 		ai_creation_factor = 97
 		
 		extra_tech_building_start = 1.0
@@ -1389,7 +1341,6 @@ castle = {
 		horse_archers = -10
 		light_cavalry_offensive = 0.1
 		retinuesize = 20
-		tax_income = -0.1
 		ai_creation_factor = 102
 		
 		extra_tech_building_start = 0.0
@@ -1413,7 +1364,6 @@ castle = {
 		horse_archers = -10
 		light_cavalry_offensive = 0.1
 		retinuesize = 20
-		tax_income = -0.15
 		ai_creation_factor = 101
 		
 		extra_tech_building_start = 1.0
@@ -1441,7 +1391,6 @@ castle = {
 		horse_archers = -10
 		light_cavalry_offensive = 0.1
 		retinuesize = 20
-		tax_income = -0.2
 		ai_creation_factor = 100
 		
 		extra_tech_building_start = 1.0
@@ -1469,7 +1418,6 @@ castle = {
 		horse_archers = -10
 		light_cavalry_offensive = 0.1
 		retinuesize = 20
-		tax_income = -0.25
 		ai_creation_factor = 99
 		
 		extra_tech_building_start = 1.0
@@ -1497,7 +1445,6 @@ castle = {
 		horse_archers = -10
 		light_cavalry_offensive = 0.1
 		retinuesize = 20
-		tax_income = -0.3
 		ai_creation_factor = 98
 		
 		extra_tech_building_start = 1.0
@@ -1525,7 +1472,6 @@ castle = {
 		horse_archers = -10
 		light_cavalry_offensive = 0.1
 		retinuesize = 20
-		tax_income = -0.35
 		ai_creation_factor = 97
 		
 		extra_tech_building_start = 1.0
@@ -1548,7 +1494,6 @@ castle = {
 		horse_archers = -10
 		heavy_infantry_offensive = 0.1
 		retinuesize = 20
-		tax_income = -0.1
 		ai_creation_factor = 102
 		
 		extra_tech_building_start = 0.0
@@ -1570,7 +1515,6 @@ castle = {
 		horse_archers = -10
 		heavy_infantry_offensive = 0.1
 		retinuesize = 20
-		tax_income = -0.15
 		ai_creation_factor = 101
 		
 		extra_tech_building_start = 1.0
@@ -1596,7 +1540,6 @@ castle = {
 		horse_archers = -10
 		heavy_infantry_offensive = 0.1
 		retinuesize = 20
-		tax_income = -0.2
 		ai_creation_factor = 100
 		
 		extra_tech_building_start = 1.0
@@ -1622,7 +1565,6 @@ castle = {
 		horse_archers = -10
 		heavy_infantry_offensive = 0.1
 		retinuesize = 20
-		tax_income = -0.25
 		ai_creation_factor = 99
 		
 		extra_tech_building_start = 1.0
@@ -1648,7 +1590,6 @@ castle = {
 		horse_archers = -10
 		heavy_infantry_offensive = 0.1
 		retinuesize = 20
-		tax_income = -0.3
 		ai_creation_factor = 98
 		
 		extra_tech_building_start = 1.0
@@ -1674,7 +1615,6 @@ castle = {
 		horse_archers = -10
 		heavy_infantry_offensive = 0.1
 		retinuesize = 20
-		tax_income = -0.35
 		ai_creation_factor = 97
 		
 		extra_tech_building_start = 1.0
@@ -1700,7 +1640,6 @@ castle = {
 		horse_archers = -10
 		heavy_infantry_offensive = 0.1
 		retinuesize = 20
-		tax_income = -0.1
 		ai_creation_factor = 102
 		
 		extra_tech_building_start = 0.0
@@ -1725,7 +1664,6 @@ castle = {
 		horse_archers = -10
 		heavy_infantry_offensive = 0.1
 		retinuesize = 20
-		tax_income = -0.15
 		ai_creation_factor = 101
 		
 		extra_tech_building_start = 1.0
@@ -1756,7 +1694,6 @@ castle = {
 		horse_archers = -10
 		heavy_infantry_offensive = 0.1
 		retinuesize = 20
-		tax_income = -0.2
 		ai_creation_factor = 100
 		
 		extra_tech_building_start = 1.0
@@ -1788,7 +1725,6 @@ castle = {
 		horse_archers = -10
 		heavy_infantry_offensive = 0.1
 		retinuesize = 20
-		tax_income = -0.25
 		ai_creation_factor = 99
 		
 		extra_tech_building_start = 1.0
@@ -1819,7 +1755,6 @@ castle = {
 		horse_archers = -10
 		heavy_infantry_offensive = 0.1
 		retinuesize = 20
-		tax_income = -0.3
 		ai_creation_factor = 98
 		
 		extra_tech_building_start = 1.0
@@ -1850,7 +1785,6 @@ castle = {
 		horse_archers = -10
 		heavy_infantry_offensive = 0.1
 		retinuesize = 20
-		tax_income = -0.35
 		ai_creation_factor = 97
 		
 		extra_tech_building_start = 1.0
@@ -1875,7 +1809,6 @@ castle = {
 		light_cavalry_defensive = 0.05
 		knights_defensive = 0.05
 		retinuesize = 20
-		tax_income = -0.1
 		ai_creation_factor = 102
 		
 		extra_tech_building_start = 0.0
@@ -1899,7 +1832,6 @@ castle = {
 		light_cavalry_defensive = 0.05
 		knights_defensive = 0.05
 		retinuesize = 20
-		tax_income = -0.15
 		ai_creation_factor = 101
 		
 		extra_tech_building_start = 1.0
@@ -1927,7 +1859,6 @@ castle = {
 		light_cavalry_defensive = 0.05
 		knights_defensive = 0.05
 		retinuesize = 20
-		tax_income = -0.2
 		ai_creation_factor = 100
 		
 		extra_tech_building_start = 1.0
@@ -1955,7 +1886,6 @@ castle = {
 		light_cavalry_defensive = 0.05
 		knights_defensive = 0.05
 		retinuesize = 20
-		tax_income = -0.25
 		ai_creation_factor = 99
 		
 		extra_tech_building_start = 1.0
@@ -1983,7 +1913,6 @@ castle = {
 		light_cavalry_defensive = 0.05
 		knights_defensive = 0.05
 		retinuesize = 20
-		tax_income = -0.3
 		ai_creation_factor = 98
 		
 		extra_tech_building_start = 1.0
@@ -2011,7 +1940,6 @@ castle = {
 		light_cavalry_defensive = 0.05
 		knights_defensive = 0.05
 		retinuesize = 20
-		tax_income = -0.35
 		ai_creation_factor = 97
 		
 		extra_tech_building_start = 1.0
@@ -2038,7 +1966,6 @@ castle = {
 		light_cavalry_defensive = 0.05
 		light_cavalry_morale = 0.05
 		retinuesize = 20
-		tax_income = -0.1
 		ai_creation_factor = 102
 		
 		extra_tech_building_start = 0.0
@@ -2064,7 +1991,6 @@ castle = {
 		light_cavalry_defensive = 0.05
 		light_cavalry_morale = 0.05
 		retinuesize = 20
-		tax_income = -0.15
 		ai_creation_factor = 101
 		
 		extra_tech_building_start = 1.0
@@ -2096,7 +2022,6 @@ castle = {
 		light_cavalry_defensive = 0.05
 		light_cavalry_morale = 0.05
 		retinuesize = 20
-		tax_income = -0.2
 		ai_creation_factor = 100
 		
 		extra_tech_building_start = 1.0
@@ -2128,7 +2053,6 @@ castle = {
 		light_cavalry_defensive = 0.05
 		light_cavalry_morale = 0.05
 		retinuesize = 20
-		tax_income = -0.25
 		ai_creation_factor = 99
 		
 		extra_tech_building_start = 1.0
@@ -2160,7 +2084,6 @@ castle = {
 		light_cavalry_defensive = 0.05
 		light_cavalry_morale = 0.05
 		retinuesize = 20
-		tax_income = -0.3
 		ai_creation_factor = 98
 		
 		extra_tech_building_start = 1.0
@@ -2192,7 +2115,6 @@ castle = {
 		light_cavalry_defensive = 0.05
 		light_cavalry_morale = 0.05
 		retinuesize = 20
-		tax_income = -0.35
 		ai_creation_factor = 97
 		
 		extra_tech_building_start = 1.0
@@ -2215,7 +2137,6 @@ castle = {
 		horse_archers = -10
 		heavy_infantry_defensive = 0.1
 		retinuesize = 20
-		tax_income = -0.1
 		ai_creation_factor = 102
 		
 		extra_tech_building_start = 0.0
@@ -2237,7 +2158,6 @@ castle = {
 		horse_archers = -10
 		heavy_infantry_defensive = 0.1
 		retinuesize = 20
-		tax_income = -0.15
 		ai_creation_factor = 101
 		
 		extra_tech_building_start = 1.0
@@ -2263,7 +2183,6 @@ castle = {
 		horse_archers = -10
 		heavy_infantry_defensive = 0.1
 		retinuesize = 20
-		tax_income = -0.2
 		ai_creation_factor = 100
 		
 		extra_tech_building_start = 1.0
@@ -2289,7 +2208,6 @@ castle = {
 		horse_archers = -10
 		heavy_infantry_defensive = 0.1
 		retinuesize = 20
-		tax_income = -0.25
 		ai_creation_factor = 99
 		
 		extra_tech_building_start = 1.0
@@ -2315,7 +2233,6 @@ castle = {
 		horse_archers = -10
 		heavy_infantry_defensive = 0.1
 		retinuesize = 20
-		tax_income = -0.3
 		ai_creation_factor = 98
 		
 		extra_tech_building_start = 1.0
@@ -2341,7 +2258,6 @@ castle = {
 		horse_archers = -10
 		heavy_infantry_defensive = 0.1
 		retinuesize = 20
-		tax_income = -0.35
 		ai_creation_factor = 97
 		
 		extra_tech_building_start = 1.0
@@ -2371,7 +2287,6 @@ castle = {
 		light_cavalry_defensive = 0.05
 		knights_defensive = 0.05
 		retinuesize = 20
-		tax_income = -0.1
 		ai_creation_factor = 102
 		
 		extra_tech_building_start = 0.0
@@ -2399,7 +2314,6 @@ castle = {
 		light_cavalry_defensive = 0.05
 		knights_defensive = 0.05
 		retinuesize = 20
-		tax_income = -0.15
 		ai_creation_factor = 101
 		
 		extra_tech_building_start = 1.0
@@ -2431,7 +2345,6 @@ castle = {
 		light_cavalry_defensive = 0.05
 		knights_defensive = 0.05
 		retinuesize = 20
-		tax_income = -0.2
 		ai_creation_factor = 100
 		
 		extra_tech_building_start = 1.0
@@ -2463,7 +2376,6 @@ castle = {
 		light_cavalry_defensive = 0.05
 		knights_defensive = 0.05
 		retinuesize = 20
-		tax_income = -0.25
 		ai_creation_factor = 99
 		
 		extra_tech_building_start = 1.0
@@ -2495,7 +2407,6 @@ castle = {
 		light_cavalry_defensive = 0.05
 		knights_defensive = 0.05
 		retinuesize = 20
-		tax_income = -0.3
 		ai_creation_factor = 98
 		
 		extra_tech_building_start = 1.0
@@ -2527,7 +2438,6 @@ castle = {
 		light_cavalry_defensive = 0.05
 		knights_defensive = 0.05
 		retinuesize = 20
-		tax_income = -0.35
 		ai_creation_factor = 98
 		
 		extra_tech_building_start = 1.0
@@ -2551,7 +2461,6 @@ castle = {
 		heavy_infantry_defensive = 0.05
 		heavy_infantry_morale = 0.05
 		retinuesize = 20
-		tax_income = -0.1
 		ai_creation_factor = 102
 		
 		extra_tech_building_start = 0.0
@@ -2574,7 +2483,6 @@ castle = {
 		heavy_infantry_defensive = 0.05
 		heavy_infantry_morale = 0.05
 		retinuesize = 20
-		tax_income = -0.15
 		ai_creation_factor = 101
 		
 		start = {			year = 1110
@@ -2602,7 +2510,6 @@ castle = {
 		heavy_infantry_defensive = 0.05
 		heavy_infantry_morale = 0.05
 		retinuesize = 20
-		tax_income = -0.2
 		ai_creation_factor = 100
 		
 		extra_tech_building_start = 1.0
@@ -2629,7 +2536,6 @@ castle = {
 		heavy_infantry_defensive = 0.05
 		heavy_infantry_morale = 0.05
 		retinuesize = 20
-		tax_income = -0.25
 		ai_creation_factor = 99
 		
 		extra_tech_building_start = 1.0
@@ -2656,7 +2562,6 @@ castle = {
 		heavy_infantry_defensive = 0.05
 		heavy_infantry_morale = 0.05
 		retinuesize = 20
-		tax_income = -0.3
 		ai_creation_factor = 98
 		
 		extra_tech_building_start = 1.0
@@ -2683,7 +2588,6 @@ castle = {
 		heavy_infantry_defensive = 0.05
 		heavy_infantry_morale = 0.05
 		retinuesize = 20
-		tax_income = -0.35
 		ai_creation_factor = 97
 		
 		extra_tech_building_start = 1.0
@@ -2709,7 +2613,6 @@ castle = {
 		horse_archers = -10
 		archers_offensive = 0.1
 		retinuesize = 20
-		tax_income = -0.1
 		ai_creation_factor = 102
 		
 		extra_tech_building_start = 0.0
@@ -2734,7 +2637,6 @@ castle = {
 		horse_archers = -10
 		archers_offensive = 0.1
 		retinuesize = 20
-		tax_income = -0.15
 		ai_creation_factor = 101
 		
 		extra_tech_building_start = 1.0
@@ -2765,7 +2667,6 @@ castle = {
 		horse_archers = -10
 		archers_offensive = 0.1
 		retinuesize = 20
-		tax_income = -0.2
 		ai_creation_factor = 100
 		
 		extra_tech_building_start = 1.0
@@ -2794,7 +2695,6 @@ castle = {
 		horse_archers = -10
 		archers_offensive = 0.1
 		retinuesize = 20
-		tax_income = -0.25
 		ai_creation_factor = 99
 		
 		extra_tech_building_start = 1.0
@@ -2823,7 +2723,6 @@ castle = {
 		horse_archers = -10
 		archers_offensive = 0.1
 		retinuesize = 20
-		tax_income = -0.3
 		ai_creation_factor = 98
 		
 		extra_tech_building_start = 1.0
@@ -2852,7 +2751,6 @@ castle = {
 		horse_archers = -10
 		archers_offensive = 0.1
 		retinuesize = 20
-		tax_income = -0.35
 		ai_creation_factor = 97
 		
 		extra_tech_building_start = 1.0
@@ -2876,7 +2774,6 @@ castle = {
 		pikemen_offensive = 0.05
 		pikemen_defensive = 0.05
 		retinuesize = 20
-		tax_income = -0.1
 		ai_creation_factor = 102
 		
 		extra_tech_building_start = 0.0
@@ -2899,7 +2796,6 @@ castle = {
 		pikemen_offensive = 0.05
 		pikemen_defensive = 0.05
 		retinuesize = 20
-		tax_income = -0.15
 		ai_creation_factor = 101
 		
 		extra_tech_building_start = 1.0
@@ -2928,7 +2824,6 @@ castle = {
 		pikemen_offensive = 0.05
 		pikemen_defensive = 0.05
 		retinuesize = 20
-		tax_income = -0.2
 		ai_creation_factor = 100
 		
 		extra_tech_building_start = 1.0
@@ -2957,7 +2852,6 @@ castle = {
 		pikemen_offensive = 0.05
 		pikemen_defensive = 0.05
 		retinuesize = 20
-		tax_income = -0.25
 		ai_creation_factor = 99
 		
 		extra_tech_building_start = 1.0
@@ -2986,7 +2880,6 @@ castle = {
 		pikemen_offensive = 0.05
 		pikemen_defensive = 0.05
 		retinuesize = 20
-		tax_income = -0.3
 		ai_creation_factor = 98
 		
 		extra_tech_building_start = 1.0
@@ -3015,7 +2908,6 @@ castle = {
 		pikemen_offensive = 0.05
 		pikemen_defensive = 0.05
 		retinuesize = 20
-		tax_income = -0.35
 		ai_creation_factor = 97
 		
 		extra_tech_building_start = 1.0

@@ -5,6 +5,8 @@
 	Removed some coats of arms that already exist in vanilla
 	Upon crusade/jihad/GHW success, free any vassalized holy orders which do not match the winner's religion. Previously, they'd essentially become stuck forever under, e.g., the winner of a Jihad, if they were vassals of Jerusalem beforehand (unable to be hired by any religion and possibly giving a Caliphate vassal baronies randomly located throughout Catholic Europe)
 	Rewrote the Catholic schism mending event for efficiency and brevity; other rulers will now be notified as is appropriate for such a momentous occasion
+	The employment decisions are now hidden by default, with a toggle decision to show them
+	Unlike other military buildings, the cultural buildings no longer reduce tax income
 
 3.5.4
 	Fixed a few kingdoms incorrectly remaining parts of dejure empires when No Ahistorical Empires is enabled
