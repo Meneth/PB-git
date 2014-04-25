@@ -13,11 +13,11 @@ narrative_event = {
 	show_ROOT = yes
 	
 	major_trigger = {
-		only_playable = yes
+		is_playable = yes
 	}
 	
 	# Notify other rulers
-	# Pointless options come first so AI has a failsafe option
+	# Pointless options come first so AI has a failsafe
 	option = {
 		trigger = {
 			religion = catholic
