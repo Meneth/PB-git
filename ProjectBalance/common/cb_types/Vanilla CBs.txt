@@ -3202,7 +3202,7 @@ crusade = {
 	
 	can_use_gui = {
 		NOT = { has_global_flag = shattered_balance }
-			
+		
 		ROOT = {
 			has_called_crusade = no
 			religion_authority = 0.05
@@ -3249,6 +3249,9 @@ crusade = {
 								culture_group = east_african
 							}
 						}
+					}
+					NOT = { 
+						ROOT = { religion_group = muslim }
 					}
 					has_global_flag = violated_baqt
 				}
