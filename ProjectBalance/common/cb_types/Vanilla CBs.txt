@@ -3274,13 +3274,15 @@ crusade = {
 				}
 			}
 		}
-		NOT = { # Not if the Schism has been mended
-			AND = {
-				OR = {
-					religion = catholic
-					religion = fraticelli
+		ROOT = {
+			NOT = { # Not if the Schism has been mended
+				AND = {
+					OR = {
+						religion = catholic
+						religion = fraticelli
+					}
+					has_global_flag = schism_mended
 				}
-				has_global_flag = schism_mended
 			}
 		}
 	}
