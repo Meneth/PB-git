@@ -1796,7 +1796,7 @@ e_tartaria = {
 		OR = {
 			has_landed_title = k_turkestan
 			completely_controls = k_turkestan
-			k_alania = { is_titular = yes }
+			k_turkestan = { is_titular = yes }
 		}
 		war = no
 		ruled_years = 5
