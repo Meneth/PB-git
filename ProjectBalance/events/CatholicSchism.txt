@@ -11,10 +11,13 @@ narrative_event = {
 	is_triggered_only = yes
 	major = yes
 	show_ROOT = yes
-	only_rulers = yes
+	
+	major_trigger = {
+		is_playable = yes
+	}
 	
 	# Notify other rulers
-	# These options come first so the AI has something harmless to choose as a fallback
+	# Pointless options come first so AI has a failsafe
 	option = {
 		trigger = {
 			religion = catholic
@@ -48,11 +51,10 @@ narrative_event = {
 		name = EVTOPTALoR.200
 		set_parent_religion = { religion = orthodox parent = catholic }
 		set_global_flag = schism_mended
-		set_global_flag = cath_schism_mended # For eventual use with ziji's adjusted Crusades
+		set_global_flag = cath_schism_mended
 		ROOT = { give_nickname = nick_the_saint }
 	}
 	# Orthodox rulers choose whether to convert
-	# There should probably be some modifiers added to the ai_chance here
 	option = { # Yes
 		trigger = {
 			religion = orthodox
@@ -67,7 +69,13 @@ narrative_event = {
 		capital_scope = {
 			religion = catholic
 		}
-		ai_chance = { factor = 75 }
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 0
+				trait = zealous
+			}
+		}
 	}
 	option = { # No
 		trigger = {
@@ -75,7 +83,13 @@ narrative_event = {
 			controls_religion = no
 		}
 		name = EVTOPTBCathSchism.101
-		ai_chance = { factor = 25 }
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0
+				trait = cynical
+			}
+		}
 	}
 }
 

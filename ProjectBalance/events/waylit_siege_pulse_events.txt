@@ -5,13 +5,9 @@ namespace = waylit
 # On start of siege, give option to send family away or flee entirely
 character_event = {
 	id = waylit.0
-	desc = "EVTDESCWAYsiegepulseflee"
-	title = "EVTNAMEWAYsiegepulseflee"
-	picture = GFX_evt_council
-	border = GFX_event_normal_frame_war
-
-	is_triggered_only = yes
+	
 	hide_window = yes
+	is_triggered_only = yes
 
 	trigger = {
 		location = {
@@ -25,12 +21,10 @@ character_event = {
 				at_location = ROOT
 			}
 		}
-		
-		siege = {
-			is_attacker = yes
-		}
+		siege = { is_attacker = yes }
 		primary_title = { rebel = no }
 	}
+
 	immediate = {
 		if = {
 			limit = {
@@ -99,18 +93,16 @@ character_event = {
 
 character_event = {
 	id = waylit.1
-	desc = "EVTDESCWAYsiegepulseflee"
-	title = "EVTNAMEWAYsiegepulseflee"
+	desc = EVTDESCWAYsiegepulseflee
+	title = EVTNAMEWAYsiegepulseflee
 	picture = GFX_evt_council
 	border = GFX_event_normal_frame_war
 
 	is_triggered_only = yes
 	
 	option = {
-		trigger = {
-			at_location = FROM
-		}
-		name = "EVTOPTWAYsiegepulseflee01"
+		trigger = { at_location = FROM }
+		name = EVTOPTWAYsiegepulseflee01
 		
 		ai_chance = {
 			factor = 0.5
@@ -158,7 +150,9 @@ character_event = {
 						NOT = { trait = humble }
 					}
 					add_trait = proud
-					hidden_tooltip = { character_event = { id = 38261 } }
+					hidden_tooltip = {
+						character_event = { id = 38261 }
+					}
 				}
 				if = {
 					limit = { trait = humble }
@@ -172,12 +166,16 @@ character_event = {
 						NOT = { trait = craven }
 					}
 					add_trait = brave
-					hidden_tooltip = { character_event = { id = 38270 } }
+					hidden_tooltip = {
+						character_event = { id = 38270 }
+					}
 				}
 				if = {
 					limit = { trait = craven }
 					remove_trait = craven
-					hidden_tooltip = { character_event = { id = 38296 } }
+					hidden_tooltip = {
+						character_event = { id = 38296 }
+					}
 				}
 			}
 			80 = { }
@@ -197,9 +195,7 @@ character_event = {
 		}
 		
 		any_spouse = {								
-			limit = {
-				at_location = ROOT
-			}
+			limit = { at_location = ROOT }
 			add_character_modifier = {
 				name = left_at_siege
 				duration = 180
@@ -211,7 +207,7 @@ character_event = {
 	}
 
 	option = {
-		name = "EVTOPTWAYsiegepulseflee02"
+		name = EVTOPTWAYsiegepulseflee02
 		trigger = {
 			any_dynasty_member = {
 				at_location = ROOT
@@ -245,7 +241,9 @@ character_event = {
 				if = {
 					limit = { trait = proud }
 					remove_trait = proud
-					hidden_tooltip = { character_event = { id = 38300 } }
+					hidden_tooltip = {
+						character_event = { id = 38300 }
+					}
 				}
 			}
 			10 = {
@@ -255,12 +253,16 @@ character_event = {
 						NOT = { trait = diligent }
 					}
 					add_trait = diligent
-					hidden_tooltip = { character_event = { id = 38256 } }
+					hidden_tooltip = {
+						character_event = { id = 38256 }
+					}
 				}
 				if = {
 					limit = { trait = slothful }
 					remove_trait = slothful
-					hidden_tooltip = { character_event = { id = 38298 } }
+					hidden_tooltip = {
+						character_event = { id = 38298 }
+					}
 				}
 			}
 			80 = { }
@@ -279,9 +281,7 @@ character_event = {
 			remove_character_modifier = stalwart_defender
 		}	
 		any_spouse = {								
-			limit = {
-				at_location = ROOT
-			}
+			limit = { at_location = ROOT }
 			add_character_modifier = {
 				name = modifier_hidden
 				duration = 730
@@ -292,7 +292,7 @@ character_event = {
 		clr_character_flag = religious_enemy_sieging
 	}
 	option = {
-		name = "EVTOPTWAYsiegepulseflee03"
+		name = EVTOPTWAYsiegepulseflee03
 		ai_chance = {
 			factor = 0.5
 			modifier = {
@@ -331,7 +331,9 @@ character_event = {
 						NOT = { trait = brave }
 					}
 					add_trait = craven
-					hidden_tooltip = { character_event = { id = 38257 } }
+					hidden_tooltip = {
+						character_event = { id = 38257 }
+					}
 				}
 				if = {
 					limit = { trait = brave }
@@ -342,7 +344,9 @@ character_event = {
 				if = {
 					limit = { trait = proud }
 					remove_trait = proud
-					hidden_tooltip = { character_event = { id = 38300 } }
+					hidden_tooltip = {
+						character_event = { id = 38300 }
+					}
 				}
 			}
 			5 = {
@@ -352,12 +356,16 @@ character_event = {
 						NOT = { trait = diligent }
 					}
 					add_trait = diligent
-					hidden_tooltip = { character_event = { id = 38256 } }
+					hidden_tooltip = {
+						character_event = { id = 38256 }
+					}
 				}
 				if = {
 					limit = { trait = slothful }
 					remove_trait = slothful
-					hidden_tooltip = { character_event = { id = 38298 } }
+					hidden_tooltip = {
+						character_event = { id = 38298 }
+					}
 				}
 			}
 			75 = { }
@@ -378,9 +386,7 @@ character_event = {
 			remove_character_modifier = stalwart_defender
 		}
 		any_spouse = {								
-			limit = {
-				at_location = ROOT
-			}
+			limit = { at_location = ROOT }
 			add_character_modifier = {
 				name = modifier_hidden
 				duration = 730
@@ -395,8 +401,8 @@ character_event = {
 # Escape from a siege where you have not hidden						
 character_event = {
 	id = waylit.2
-	desc = "EVTDESCWAYsiegeescape"
-	title = "EVTNAMEWAYnotifyofoutcome"
+	desc = EVTDESCWAYsiegeescape
+	title = EVTNAMEWAYnotifyofoutcome
 	picture = GFX_evt_siege
 	border = GFX_event_normal_frame_war
 
@@ -409,7 +415,6 @@ character_event = {
 
 	trigger = {
 		NOT = { has_character_modifier = modifier_hidden }
-		
 		OR = {
 			AND = {
 				tier = baron 
@@ -423,7 +428,6 @@ character_event = {
 			}
 			any_courtier = { at_location = FROM }
 		}
-		
 		siege = {
 			is_attacker = no
 			enemy = {
@@ -439,7 +443,7 @@ character_event = {
 	}
 	
 	option = {
-		name = "EVTOPTWAYsiegesescapeattempt01"
+		name = EVTOPTWAYsiegesescapeattempt01
 		ai_chance = {
 			factor = 0.75
 			modifier = {
@@ -468,7 +472,9 @@ character_event = {
 						NOT = { trait = brave }
 					}
 					add_trait = craven
-					hidden_tooltip = { character_event = { id = 38257 } }
+					hidden_tooltip = {
+						character_event = { id = 38257 }
+					}
 				}
 				if = {
 					limit = { trait = brave }
@@ -479,7 +485,9 @@ character_event = {
 				if = {
 					limit = { trait = proud }
 					remove_trait = proud
-					hidden_tooltip = { character_event = { id = 38300 } }
+					hidden_tooltip = {
+						character_event = { id = 38300 }
+					}
 				}
 			}
 			5 = {
@@ -489,12 +497,16 @@ character_event = {
 						NOT = { trait = diligent }
 					}
 					add_trait = diligent
-					hidden_tooltip = { character_event = { id = 38256 } }
+					hidden_tooltip = {
+						character_event = { id = 38256 }
+					}
 				}
 				if = {
 					limit = { trait = slothful }
 					remove_trait = slothful
-					hidden_tooltip = { character_event = { id = 38298 } }
+					hidden_tooltip = {
+						character_event = { id = 38298 }
+					}
 				}
 			}
 			75 = { }
@@ -513,11 +525,19 @@ character_event = {
 				custom_tooltip = {
 					text = EVTTOOLTIPsiegecapturedenemy
 					hidden_tooltip = {
-						ROOT = { character_event = { id = waylit.3 } }
+						ROOT = {
+							character_event = { id = waylit.3 }
+						}
 						ROOT = {
 							set_character_flag = captured
 						}
-						siege = { enemy = { leader = { character_event = { id = waylit.7 } } } }
+						siege = {
+							enemy = {
+								leader = {
+									character_event = { id = waylit.7 }
+								}
+							}
+						}
 					}
 				}
 			}	
@@ -525,7 +545,7 @@ character_event = {
 	}
 
 	option = {
-		name = "EVTOPTWAYsiegesescapeattempt02"
+		name = EVTOPTWAYsiegesescapeattempt02
 		ai_chance = {
 			factor = 0.5
 			modifier = {
@@ -559,7 +579,9 @@ character_event = {
 						NOT = { trait = brave }
 					}
 					add_trait = craven
-					hidden_tooltip = { character_event = { id = 38257 } }
+					hidden_tooltip = {
+						character_event = { id = 38257 }
+					}
 				}
 				if = {
 					limit = { trait = brave }
@@ -570,7 +592,9 @@ character_event = {
 				if = {
 					limit = { trait = proud }
 					remove_trait = proud
-					hidden_tooltip = { character_event = { id = 38300 } }
+					hidden_tooltip = {
+						character_event = { id = 38300 }
+					}
 				}
 			}
 			5 = {
@@ -580,12 +604,16 @@ character_event = {
 						NOT = { trait = diligent }
 					}
 					add_trait = diligent
-					hidden_tooltip = { character_event = { id = 38256 } }
+					hidden_tooltip = {
+						character_event = { id = 38256 }
+					}
 				}
 				if = {
 					limit = { trait = slothful }
 					remove_trait = slothful
-					hidden_tooltip = { character_event = { id = 38298 } }
+					hidden_tooltip = {
+						character_event = { id = 38298 }
+					}
 				}
 			}
 			75 = { }
@@ -650,7 +678,7 @@ character_event = {
 				custom_tooltip = {
 					text = EVTTOOLTIPsiegeescaped
 					hidden_tooltip = {
-						character_event = { id = 1100099995 }
+						character_event = { id = waylit.5 }
 					}
 				}
 			}
@@ -658,11 +686,19 @@ character_event = {
 				custom_tooltip = {
 					text = EVTTOOLTIPsiegecapturedenemy
 					hidden_tooltip = {
-						ROOT = { character_event = { id = waylit.3 } }
+						ROOT = {
+							character_event = { id = waylit.3 }
+						}
 						ROOT = {
 							set_character_flag = captured
 						}
-						siege = { enemy = { leader = { character_event = { id = waylit.7 } } } }
+						siege = {
+							enemy = {
+								leader = {
+									character_event = { id = waylit.7 }
+								}
+							}
+						}
 					}
 				}
 			}
@@ -670,7 +706,7 @@ character_event = {
 	}
 
 	option = {
-		name = "EVTOPTWAYsiegesescapeattempt03"
+		name = EVTOPTWAYsiegesescapeattempt03
 		ai_chance = {
 			factor = 0.1
 			modifier = {
@@ -711,7 +747,9 @@ character_event = {
 						NOT = { trait = brave }
 					}
 					add_trait = craven
-					hidden_tooltip = { character_event = { id = 38257 } }
+					hidden_tooltip = {
+						character_event = { id = 38257 }
+					}
 				}
 				if = {
 					limit = { trait = brave }
@@ -722,7 +760,9 @@ character_event = {
 				if = {
 					limit = { trait = proud }
 					remove_trait = proud
-					hidden_tooltip = { character_event = { id = 38300 } }
+					hidden_tooltip = {
+						character_event = { id = 38300 }
+					}
 				}
 			}
 			5 = {
@@ -732,12 +772,16 @@ character_event = {
 						NOT = { trait = diligent }
 					}
 					add_trait = diligent
-					hidden_tooltip = { character_event = { id = 38256 } }
+					hidden_tooltip = {
+						character_event = { id = 38256 }
+					}
 				}
 				if = {
 					limit = { trait = slothful }
 					remove_trait = slothful
-					hidden_tooltip = { character_event = { id = 38298 } }
+					hidden_tooltip = {
+						character_event = { id = 38298 }
+					}
 				}
 			}
 			75 = { }
@@ -773,22 +817,32 @@ character_event = {
 				custom_tooltip = {
 					text = EVTTOOLTIPsiegecapturedenemy
 					hidden_tooltip = {
-						ROOT = { character_event = { id = waylit.3 } }
+						ROOT = {
+							character_event = { id = waylit.3 }
+						}
 						ROOT = {
 							set_character_flag = captured
 						}
-						siege = { enemy = { leader = { character_event = { id = waylit.7 } } } }
+						siege = {
+							enemy = {
+								leader = {
+									character_event = { id = waylit.7 }
+								}
+							}
+						}
 					}
 				}
 			}
 			10 = {
-				ROOT = { death = { death_reason = death_battle_no_killer } }
+				ROOT = {
+					death = { death_reason = death_battle_no_killer }
+				}
 			}
 		}
 	}
 
 	option = {
-		name = "EVTOPTWAYsiegesescapeattempt04"
+		name = EVTOPTWAYsiegesescapeattempt04
 		ai_chance = {
 			factor = 5
 			modifier = {
@@ -843,15 +897,15 @@ character_event = {
 # Captured by the enemy
 character_event = {
 	id = waylit.3
-	desc = "EVTDESCRWAYnotifyofcapture1"
-	title = "EVTNAMEWAYnotifyofoutcome"
+	desc = EVTDESCRWAYnotifyofcapture1
+	title = EVTNAMEWAYnotifyofoutcome
 	picture = GFX_evt_bloody_man
 	border = GFX_event_normal_frame_war
 
 	is_triggered_only = yes
 
 	option = {
-		name = "EVTOPWAYsiegecapture02"
+		name = EVTOPWAYsiegecapture02
 		remove_character_modifier = stalwart_defender
 		ROOT = {
 			custom_tooltip = { text = EVTTOOLWAYfamilyhatesyou }
@@ -862,8 +916,8 @@ character_event = {
 # Escape by postern
 character_event = {
 	id = waylit.4
-	desc = "EVTDESCRWAYnotifyofescape01"
-	title = "EVTNAMEWAYnotifyofoutcome"
+	desc = EVTDESCRWAYnotifyofescape01
+	title = EVTNAMEWAYnotifyofoutcome
 	picture = GFX_evt_courier
 	border = GFX_event_normal_frame_war
 
@@ -872,7 +926,7 @@ character_event = {
 	trigger = { is_alive = yes }
 
 	option = {
-		name = "EVTTOOLTIPsiegeescaped"
+		name = EVTTOOLTIPsiegeescaped
 
 		add_character_modifier = {
 			name = modifier_hidden
@@ -905,8 +959,8 @@ character_event = {
 # Escape by sewer
 character_event = {
 	id = waylit.5
-	desc = "EVTDESCRWAYnotifyofescape02"
-	title = "EVTNAMEWAYnotifyofoutcome"
+	desc = EVTDESCRWAYnotifyofescape02
+	title = EVTNAMEWAYnotifyofoutcome
 	picture = GFX_evt_courier
 	border = GFX_event_normal_frame_war
 
@@ -915,7 +969,7 @@ character_event = {
 	trigger = { is_alive = yes }
 
 	option = {
-		name = "EVTTOOLTIPsiegeescaped"
+		name = EVTTOOLTIPsiegeescaped
 		remove_character_modifier = stalwart_defender
 		add_character_modifier = {
 			name = modifier_hidden
@@ -946,15 +1000,15 @@ character_event = {
 # Escape by wall
 character_event = {
 	id = waylit.6
-	desc = "EVTDESCRWAYnotifyofescape03"
-	title = "EVTNAMEWAYnotifyofoutcome"
+	desc = EVTDESCRWAYnotifyofescape03
+	title = EVTNAMEWAYnotifyofoutcome
 	picture = GFX_evt_courier
 	border = GFX_event_normal_frame_war
 	is_triggered_only = yes
 	trigger = { is_alive = yes }
 
 	option = {
-		name = "EVTTOOLTIPsiegeescaped"
+		name = EVTTOOLTIPsiegeescaped
 		remove_character_modifier = stalwart_defender
 		add_character_modifier = {
 			name = modifier_hidden
@@ -984,15 +1038,15 @@ character_event = {
 # Capture event
 character_event = {
 	id = waylit.7
-	desc = "EVTDESCRWAYnotifyofcapture2"
-	title = "EVTNAMEWAYnotifyofoutcome"
+	desc = EVTDESCRWAYnotifyofcapture2
+	title = EVTNAMEWAYnotifyofoutcome
 	picture = GFX_evt_into_the_dungeon
 	border = GFX_event_normal_frame_war
 
 	is_triggered_only = yes
 
 	option = {
-		name = "EVTOPWAYsiegecapture01"
+		name = EVTOPWAYsiegecapture01
 		siege = {
 			enemy = {
 				leader = {
@@ -1004,9 +1058,7 @@ character_event = {
 					clr_character_flag = captured
 					hidden_tooltip = {
 						any_dynasty_member = {
-							limit = {
-								at_location = ROOT
-							}
+							limit = { at_location = ROOT }
 							opinion = {
 								modifier = left_behind
 								who = FROM
@@ -1014,9 +1066,7 @@ character_event = {
 							}
 						}	
 						any_spouse = {								
-							limit = {
-								at_location = ROOT
-							}
+							limit = { at_location = ROOT }
 							opinion = {
 								modifier = left_behind
 								who = FROM
