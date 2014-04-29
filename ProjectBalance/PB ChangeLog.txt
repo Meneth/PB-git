@@ -10,6 +10,7 @@
 	Updated PB's culture buildings to correspond with current maintenance values
 	[PB+SWMH] Fixed the French HRE displaying as e_hre_french rather than Holy Roman Empire
 	Fixed an error in the requirements for forming Tartaria
+	Reduced the maintenance cost for retinues by 20%
 
 3.5.4
 	Fixed a few kingdoms incorrectly remaining parts of dejure empires when No Ahistorical Empires is enabled
