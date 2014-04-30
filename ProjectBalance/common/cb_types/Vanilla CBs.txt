@@ -3368,7 +3368,6 @@ crusade = {
 					# Refill all the levies, remove the conquest modifiers, and revoke the
 					# target law in 1 day
 					character_event = { id = pb_crusades.11 days = 1 }
-					
 				}
 			}
 		}
