@@ -92,11 +92,7 @@ character_event = {
 		trigger = {
 			ai = no
 		}
-		hidden_tooltip = {
-			# No title transfer necessary...
-			# Refill all the levies, remove the conquest modifiers, and revoke the target law in 1 day
-			character_event = { id = pb_crusades.11 days = 1 }
-		}
+		# No title transfer necessary...
 		ai_chance = {
 			factor = 0
 		}
@@ -372,10 +368,7 @@ character_event = {
 				grant_title = ROOT
 			}
 		} # Title transfer complete
-		
-		# Refill all the levies, remove the conquest modifiers, and revoke the target law in 1 day
-		character_event = { id = pb_crusades.11 days = 1 }
-		
+
 		set_defacto_liege = THIS
 		character_event = { id = pb_crusades.5 } # Ensure desirable succession laws now that independent
 
@@ -413,7 +406,7 @@ character_event = {
 			duration = 9125
 		}
 		
-		wealth = 500 #Z: was 250, but some characters were starting slightly in the red
+		wealth = 500
 		prestige = 200
 		piety = 100
 		
@@ -912,59 +905,8 @@ character_event = {
 }
 
 
-# pb_crusades.11
-# Remove conquest modifiers and refill levies of holdings on_success (CB supplement)
-#
-# Also happens to be the last event to use the_crusage_target title law, so it must
-# take care of revoking it.
-#
-# FROMFROM is CB giver (loser in this case), ROOT is the winner, and
-# FROM is the Pope (or Caliph or whoever was the primary attacker).
-character_event = {
-	id = pb_crusades.11
-	desc = OK
-	hide_window = yes
-	is_triggered_only = yes
-	
-	immediate = {		
-		random_demesne_title = {
-			limit = {
-				has_law = the_crusade_target
-			}
-			
-			root = {
-				any_demesne_title = { # This is getting silly.  I don't understand why the refill logic isn't working. Or is it?
-					limit = {
-						tier = baron
-						de_jure_liege_or_above = PREVPREV
-					}
-					remove_holding_modifier = recently_conquered
-					remove_holding_modifier = new_administration
-					refill_holding_levy = yes
-				}
-				
-				any_realm_lord = {
-					limit = { is_liege_or_above = ROOT }
-					any_demesne_title = { # Even sillier.
-						limit = {
-							tier = baron
-							de_jure_liege_or_above = PREVPREVPREV
-						}
-						remove_holding_modifier = recently_conquered
-						remove_holding_modifier = new_administration
-						refill_holding_levy = yes
-					}
-				}
-			}
-			
-			revoke_law = the_crusade_target
-		}
-	}
-	
-	option = { 
-		name = OK
-	}
-}
+# pb_crusades.11 => FREE
+
 
 # pb_crusades.12
 # Free holy orders of wrong religion from target kingdom title vassalage (CB supplement)
