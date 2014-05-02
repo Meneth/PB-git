@@ -1,8 +1,9 @@
-d_arabia_felix;Aden;Aden;Aden;;Aden;;;;;;;;;x
-d_arabia_felix_adj;Adenian;Adenian;Adenian;;Adenian;;;;;;;;;x
-d_arabia_felix_republic;Aden;Aden;Aden;;Aden;;;;;;;;;x
-d_arabia_felix_republic_adj;Adenian;Adenian;Adenian;;Adenian;;;;;;;;;x
-d_hormuz_republic;Hormuz;Hormuz;Hormuz;;Hormuz;;;;;;;;;x
-d_hormuz_republic_adj;Hormuz;Hormuz;Hormuz;;Hormuz;;;;;;;;;x
-d_hormuz;Sistan;Sistan;Sistan;;Sistan;;;;;;;;;x
-d_hormuz_adj;Sistan;Sistan;Sistan;;Sistan;;;;;;;;;x
+#CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+d_arabia_felix;Aden;Aden;Aden;;Adén;;;;;;;;;x
+d_arabia_felix_adj;Adenian;Adenian;Adenian;;Adeniense;;;;;;;;;x
+d_arabia_felix_republic;Aden;Aden;Aden;;República de Adén;;;;;;;;;x
+d_arabia_felix_republic_adj;Adenian;Adenian;Adenian;;Adeniense;;;;;;;;;x
+d_hormuz_republic;Hormuz;Hormuz;Hormuz;;Ormuz;;;;;;;;;x
+d_hormuz_republic_adj;Hormuz;Hormuz;Hormuz;;Ormuz;;;;;;;;;x
+d_hormuz;Sistan;Sistan;Sistan;;Sistán;;;;;;;;;x
+d_hormuz_adj;Sistan;Sistan;Sistan;;Sistaní;;;;;;;;;x
