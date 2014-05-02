@@ -11,6 +11,8 @@
 	[PB+SWMH] Fixed the French HRE displaying as e_hre_french rather than Holy Roman Empire
 	Fixed an error in the requirements for forming Tartaria
 	Reduced the maintenance cost for retinues by 20%
+	Various localisation fixes
+	Complete, native Spanish translation of PB [many thanks and credit to tu_79]
 
 3.5.4
 	Fixed a few kingdoms incorrectly remaining parts of dejure empires when No Ahistorical Empires is enabled
