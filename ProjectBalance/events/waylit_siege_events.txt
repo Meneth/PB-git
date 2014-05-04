@@ -238,11 +238,13 @@ character_event = {
 		
 		FROMFROM = {
 			holder_scope = {
-				limit = {
-					at_location = FROMFROM
-					NOT = { has_character_modifier = modifier_hidden }
+				if = {
+					limit = {
+						at_location = FROMFROM
+						NOT = { has_character_modifier = modifier_hidden }
+					}
+					imprison = ROOT
 				}
-				imprison = ROOT
 			}
 		}
 		
