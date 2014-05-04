@@ -1050,30 +1050,32 @@ character_event = {
 		siege = {
 			enemy = {
 				leader = {
-					limit = {
-						has_character_flag = captured
-						NOT = { has_character_modifier = modifier_hidden }
-					}
-					imprison = ROOT
-					clr_character_flag = captured
-					hidden_tooltip = {
-						any_dynasty_member = {
-							limit = { at_location = ROOT }
-							opinion = {
-								modifier = left_behind
-								who = FROM
-								months = 12
-							}
-						}	
-						any_spouse = {								
-							limit = { at_location = ROOT }
-							opinion = {
-								modifier = left_behind
-								who = FROM
-								months = 12
+					if = {
+						limit = {
+							has_character_flag = captured
+							NOT = { has_character_modifier = modifier_hidden }
+						}
+						imprison = ROOT
+						clr_character_flag = captured
+						hidden_tooltip = {
+							any_dynasty_member = {
+								limit = { at_location = ROOT }
+								opinion = {
+									modifier = left_behind
+									who = FROM
+									months = 12
+								}
+							}	
+							any_spouse = {								
+								limit = { at_location = ROOT }
+								opinion = {
+									modifier = left_behind
+									who = FROM
+									months = 12
+								}
 							}
 						}
-					}	
+					}
 				}
 			}
 		}	
