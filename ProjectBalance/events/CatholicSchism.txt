@@ -96,7 +96,7 @@ narrative_event = {
 #patriarch events
 # Patriarchate of Antioch
 character_event = {
-	id = CathScism.102
+	id = CathSchism.102
 	desc = EVTDESCCathSchism.102
 	picture = GFX_evt_bishop
 	
@@ -124,7 +124,7 @@ character_event = {
 
 # Patriarchate of Jerusalem
 character_event = {
-	id = CathScism.103
+	id = CathSchism.103
 	desc = EVTDESCCathSchism.103
 	picture = GFX_evt_bishop
 	
@@ -152,7 +152,7 @@ character_event = {
 
 # Patriarchate of Alexandria
 character_event = {
-	id = CathScism.104
+	id = CathSchism.104
 	desc = EVTDESCCathSchism.104
 	picture = GFX_evt_bishop
 	
@@ -180,7 +180,7 @@ character_event = {
 
 # Patriarchate of Constantinople
 character_event = {
-	id = CathScism.105
+	id = CathSchism.105
 	desc = EVTDESCCathSchism.105
 	picture = GFX_evt_bishop
 	
