@@ -3231,7 +3231,7 @@ d_ghilman = {
 	
 	strength_growth_per_century = 1.0
 	
-	mercenary_type = naval_merc_composition
+	mercenary_type = ghilman_composition
 }
 
 d_ghanan_band = {
@@ -3266,7 +3266,7 @@ d_ghanan_band = {
 	
 	strength_growth_per_century = 1.0
 	
-	mercenary_type = naval_merc_composition
+	mercenary_type = ghanan_band_composition
 }
 
 k_pomerania = {
