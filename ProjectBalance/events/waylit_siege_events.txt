@@ -1387,7 +1387,7 @@ character_event = {
 						at_location = FROMFROM
 						prisoner = yes
 					}
-					imprison = no
+					prisoner = no
 				}
 			}
 		}
