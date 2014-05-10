@@ -1,4 +1,4 @@
-3.5.5 [BETA]
+3.5.5
 	Mending the schism as a catholic now always requires a catholic to hold the Hagia Sophia, even if there's no Orthodox empire in existence. This should make mending the schism considerably rarer
 	Properly localised Novgorod events and made some other localisation flavor adjustments
 	Holy war no longer vassalizes anyone not of your religion; they're once more conquered outright. Note that Pagans have a decision from vanilla that makes them convert and invalidates holy war
