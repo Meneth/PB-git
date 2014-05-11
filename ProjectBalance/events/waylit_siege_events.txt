@@ -12,7 +12,10 @@ character_event = {
 	trigger = {
 		primary_title = { rebel = no }
 		FROM = {
-			holder_scope = { war_with = ROOT } 
+			holder_scope = {
+				war_with = ROOT
+				NOT = { character = ROOT } # Make sure nothing silly happens
+			}
 		}
 	}
 	
