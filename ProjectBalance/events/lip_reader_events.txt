@@ -6,9 +6,11 @@
 #
 ##############################################
 
+namespace = lipread
+
 #Character tries to learn lip-reading in childhood
 character_event = {
-	id = 1000109212
+	id = lipread.0
 	desc = EVTDESC1000109212
 	picture = GFX_evt_whispers
 
@@ -133,7 +135,7 @@ character_event = {
 
 #Character tries to learn lip-reading in adulthood
 character_event = {
-	id = 1000109046
+	id = lipread.1
 	desc = EVTDESC1000109046
 	picture = GFX_evt_whispers
 
@@ -260,7 +262,7 @@ character_event = {
 
 #Character is blinded rendering lipreading useless
 character_event = {
-	id = 1000109041
+	id = lipread.2
 	desc = EVTDESC1000109041
 	picture = GFX_evt_whispers
 

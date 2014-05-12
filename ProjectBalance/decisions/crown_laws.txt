@@ -10,7 +10,6 @@ de_jure_laws = {
 		default = yes
 		
 		potential = {
-			holder_scope = { is_republic = no }
 			NOT = { title = e_byzantium }
 		}
 		allow = {
@@ -53,7 +52,6 @@ de_jure_laws = {
 		temple_opinion = -3
 		
 		potential = {
-			holder_scope = { is_republic = no }
 			NOT = { title = e_byzantium }
 		}
 		allow = {
@@ -1019,7 +1017,7 @@ de_jure_laws = {
 		group = revokation
 		
 		potential = {
-			holder_scope = { is_republic = no }
+			always = yes
 		}
 		allow = {
 			has_law = revokation_1
@@ -1052,7 +1050,7 @@ de_jure_laws = {
 		feudal_opinion = -5
 		
 		potential = {
-			holder_scope = { is_republic = no }
+			always = yes
 		}
 		allow = {
 			OR = {

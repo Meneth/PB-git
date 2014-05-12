@@ -3202,7 +3202,7 @@ crusade = {
 	
 	can_use_gui = {
 		NOT = { has_global_flag = shattered_balance }
-			
+		
 		ROOT = {
 			has_called_crusade = no
 			religion_authority = 0.05
@@ -3250,6 +3250,9 @@ crusade = {
 							}
 						}
 					}
+					NOT = { 
+						ROOT = { religion_group = muslim }
+					}
 					has_global_flag = violated_baqt
 				}
 			}
@@ -3271,13 +3274,15 @@ crusade = {
 				}
 			}
 		}
-		NOT = { # Not if the Schism has been mended
-			AND = {
-				OR = {
-					religion = catholic
-					religion = fraticelli
+		ROOT = {
+			NOT = { # Not if the Schism has been mended
+				AND = {
+					OR = {
+						religion = catholic
+						religion = fraticelli
+					}
+					has_global_flag = schism_mended
 				}
-				has_global_flag = schism_mended
 			}
 		}
 	}
@@ -3337,11 +3342,8 @@ crusade = {
 	}
 
 	on_success_title = {
-		hidden_tooltip = {
-			add_law = the_crusade_target #Flag the title (terrible hack-- thanks, Paradox!)
-		}
-		
-		# Already-held by same-religion holder case (give land to them)
+
+		# Already-held & same-religion case (give land to them)
 		if = {
 			limit = {
 				has_holder = yes
@@ -3353,15 +3355,19 @@ crusade = {
 				gain_settlements_under_title = {
 					title = PREV
 					enemy = FROM
-					is_crusade = yes # Even if the title holder is not participating in the war, gain holdings occupied by all Crusade participants
+					is_crusade = yes
 				}
 			}
 			hidden_tooltip = {
-				holder_scope = { character_event = { id = pb_crusades.0 } } #Handle revolters [immediately]
+				add_law = the_crusade_target
+				
+				holder_scope = {
+					character_event = { id = pb_crusades.0 } #Handle revolters [immediately]
+				}
 			}
 		}
-		
-		# Not-held or different-religion holder case (give land to... someone)
+
+		# Not-held or different-religion case (give to most participating attacker, then to... someone)
 		if = {
 			limit = {
 				OR = {
@@ -3373,27 +3379,32 @@ crusade = {
 					}
 				}
 			}
-			
+
 			most_participating_attacker = {
 				gain_settlements_under_title = {
 					title = PREV
 					enemy = FROM
 				}
-				
-				usurp_title = PREV # Usurp or create, whichever.
-								
-				hidden_tooltip = {
-					character_event = { id = pb_crusades.0 } #Handle revolters [immediately]
 
+				usurp_title = PREV # Usurp or create, whichever.
+				
+				hidden_tooltip = {
+					# Need to do this after usurpation/creation due to law potential of 'always = no'
+					PREV = { add_law = the_crusade_target }
+					
+					# Refill levies of conquered holdings within target kingdom
 					any_demesne_title = {
 						limit = {
-							de_jure_liege_or_above = PREVPREV
 							tier = baron
+							de_jure_liege_or_above = PREVPREV
 						}
 						remove_holding_modifier = recently_conquered
 						remove_holding_modifier = new_administration
 						refill_holding_levy = yes
 					}
+					
+					character_event = { id = pb_crusades.12 } #Free holy orders from vassalage
+					character_event = { id = pb_crusades.0 } #Handle revolters [immediately]
 					
 					if = {
 						limit = {
@@ -3409,9 +3420,7 @@ crusade = {
 			}
 		}
 		
-		hidden_tooltip = {
-			revoke_law = the_crusade_target # Remove our title "flag"
-		}
+		hidden_tooltip = { revoke_law = the_crusade_target }
 		
 		any_attacker = {
 			limit = { character = ROOT }
@@ -3997,73 +4006,10 @@ religious = {
 			text = religious_cb_succ_tip
 			hidden_tooltip = {
 				ROOT = {
-					FROM = {
-						any_realm_character = { set_character_flag = holy_war_target } #Z: TODO
-					}
-					if = {
-						limit = {
-							FROM = {
-								OR = {
-									religion_group = pagan_group
-									is_heresy_of = ROOT
-									is_parent_religion = ROOT
-								}
-							}
-						}
-						vassalize_or_take_under_title = {
-							title = PREV
-							enemy = FROM
-						}
-					}
-					if = {
-						limit = {
-							NOT = {
-								FROM = {
-									OR = {
-										religion_group = pagan_group
-										is_heresy_of = ROOT
-										is_parent_religion = ROOT
-									}
-								}
-							}
-						}
-						vassalize_or_take_under_title = {
-							title = PREV
-							enemy = FROM
-							same_religion = yes # Only vassalize rulers of my religion
-						}
-					}
-	#				gain_settlements_under_title = {
-	#					title = PREV
-	#					enemy = FROM
-	#				}
-					any_realm_character = {
-						limit = {
-							has_character_flag = holy_war_target
-							NOT = { religion = ROOT }
-							OR = {
-								religion_group = pagan_group
-								is_heresy_of = ROOT
-								is_parent_religion = ROOT
-							}
-							NOT = { religion_group = muslim }
-						}
-						religion = ROOT
-						opinion = {
-							who = ROOT
-							years = 10
-							modifier = opinion_demanded_conversion
-						}
-					}
-					any_realm_character = {
-						limit = { has_character_flag = holy_war_target }
-						clr_character_flag = holy_war_target
-					}
-				}
-				FROM = {
-					any_realm_character = {
-						limit = { has_character_flag = holy_war_target }
-						clr_character_flag = holy_war_target
+					vassalize_or_take_under_title = {
+						title = PREV
+						enemy = FROM
+						same_religion = yes # Only vassalize rulers of my religion
 					}
 				}
 			}

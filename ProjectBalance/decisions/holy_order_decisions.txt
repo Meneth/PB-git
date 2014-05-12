@@ -1247,7 +1247,6 @@ decisions = {
 			NOT = { has_character_modifier = expelled_d_knights_hospitaler }
 			
 			d_knights_hospitaler = {
-				wealth = 500
 				holder_scope = {
 					NOT = { de_facto_liege = ROOT }
 					NOT = { num_of_count_titles = 5 }

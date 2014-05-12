@@ -11,8 +11,10 @@
 # 5556101	(End Duel) Victor Takes Opponent Hostage
 # 5556102	Opponent Imprisoned
 
+namespace = duel_be
+
 character_event = { # Battlefield Duel Start
-    id = 5556000
+    id = duel_be.0
     desc = "EVTDESC5556000"
     border = "GFX_event_normal_frame_war"
     picture = GFX_evt_battle
@@ -175,11 +177,11 @@ character_event = { # Battlefield Duel Start
             liege = {
                 random_realm_character = {
                     limit = { has_opinion_modifier = { who = ROOT modifier = opinion_battle_duel_target } }
-					hidden_tooltip = { character_event = { id = 5556001 } }
+					hidden_tooltip = { character_event = { id = duel_be.1 } }
                 }
                 if = {
                     limit = { has_opinion_modifier = { who = ROOT modifier = opinion_battle_duel_target } }
-                    hidden_tooltip = { character_event = { id = 5556001 } }
+                    hidden_tooltip = { character_event = { id = duel_be.1 } }
                 }
             }
         }
@@ -187,7 +189,7 @@ character_event = { # Battlefield Duel Start
 }
 
 character_event = {
-	id = 5556001
+	id = duel_be.1
 	desc = "EVTDESC5556001"
 	picture = GFX_evt_battle
 	border = "GFX_event_normal_frame_war"
@@ -201,7 +203,7 @@ character_event = {
 	
 	option = {
 		name = "EVTOPTA5556001"
-		FROM = { character_event = { id = 5556002 tooltip = "EVTTOOLTIP5556002" } }
+		FROM = { character_event = { id = duel_be.2 tooltip = "EVTTOOLTIP5556002" } }
 		ai_chance = {
 			factor = 100
 			modifier = {
@@ -245,7 +247,7 @@ character_event = {
 	
 	option = {
 		name = "EVTOPTB5556001"
-		hidden_tooltip = { FROM = { character_event = { id = 5556003 } } }
+		hidden_tooltip = { FROM = { character_event = { id = duel_be.3 } } }
 		if = {
 			limit = {
 				FROM = {
@@ -389,7 +391,7 @@ character_event = {
 }
 
 character_event = {
-	id = 5556002
+	id = duel_be.2
 	desc = "EVTDESC5556002"
 	picture = GFX_evt_battle
 	border = "GFX_event_normal_frame_war"
@@ -448,7 +450,7 @@ character_event = {
 	
 	option = {
 		name = "EVTOPTB5556002"
-		hidden_tooltip = { FROM = { character_event = { id = 5556004 } } }
+		hidden_tooltip = { FROM = { character_event = { id = duel_be.4 } } }
 		if = {
 			limit = {
 				FROM = {
@@ -592,7 +594,7 @@ character_event = {
 }
 
 character_event = {
-	id = 5556003
+	id = duel_be.3
 	desc = "EVTDESC5556003"
 	picture = GFX_evt_battle
 	border = "GFX_event_normal_frame_war"
@@ -605,7 +607,7 @@ character_event = {
 }
 
 character_event = {
-	id = 5556004
+	id = duel_be.4
 	desc = "EVTDESC5556004"
 	picture = GFX_evt_battle
 	border = "GFX_event_normal_frame_war"
@@ -619,7 +621,7 @@ character_event = {
 
 # Battlefield duel end
 character_event = {
-	id = 5556100
+	id = duel_be.100
 	desc = "EVTDESC5556100"
 	picture = GFX_evt_battle
 	border = "GFX_event_normal_frame_war"
@@ -635,7 +637,7 @@ character_event = {
 }
 
 character_event = {
-	id = 5556101
+	id = duel_be.101
 	desc = "EVTDESC5556101"
 	picture = GFX_evt_battle
 	border = "GFX_event_normal_frame_war"
@@ -644,13 +646,13 @@ character_event = {
 	option = {
 		name = "EVTOPTA5556101"
 		hidden_tooltip = {
-			FROMFROM = { character_event = { id = 5556102 } }
+			FROMFROM = { character_event = { id = duel_be.102 } }
 		}
 	}
 }
 
 character_event = {
-	id = 5556102
+	id = duel_be.102
 	desc = "EVTDESC5556102"
 	picture = GFX_evt_battle
 	border = "GFX_event_normal_frame_war"

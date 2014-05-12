@@ -1,27 +1,28 @@
 #on_siege_won_leader events
-#110009991
+
+namespace = waylit
 
 #Triggers all the decision events
 character_event = {
-	id = 110009991
-	desc = "EVTDESCsiegewin01"
-	picture = "GFX_evt_siege"
-	border = GFX_event_normal_frame_war
-
-	is_triggered_only = yes
+	id = waylit.8
 	
 	hide_window = yes
+	is_triggered_only = yes
 
 	trigger = {
 		primary_title = { rebel = no }
-		FROM = { holder_scope = { war_with = ROOT } }
+		FROM = {
+			holder_scope = { war_with = ROOT } 
+		}
 	}
 	
 	immediate = {
 		if = {
 			limit = {
 				liege = {
-					FROM = { holder_scope = { war_with = PREVPREV } }
+					FROM = {
+						holder_scope = { war_with = PREVPREV }
+					}
 				}
 			}
 			FROM = {
@@ -32,7 +33,9 @@ character_event = {
 							NOT = { has_character_modifier = modifier_hidden }
 						}
 						ROOT = {
-							liege = { character_event = { id = 110009994 } }
+							liege = {
+								character_event = { id = waylit.9 }
+							}
 						}
 					}
 					if = {
@@ -53,7 +56,6 @@ character_event = {
 									NOT = { character = PREV }
 									NOT = { has_character_modifier = modifier_hidden }
 								}
-								
 								any_spouse = {
 									host = { character = PREVPREV }
 									at_location = ROOT
@@ -62,7 +64,9 @@ character_event = {
 							}
 						}
 						ROOT = {
-							liege = { character_event = { id = 110009995 } }
+							liege = {
+								character_event = { id = waylit.10 }
+							}
 						}
 					}
 					if = {
@@ -73,7 +77,9 @@ character_event = {
 							}
 						}
 						ROOT = {
-							liege = { character_event = { id = 110009996 } }
+							liege = {
+								character_event = { id = waylit.11 }
+							}
 						}
 					}
 				}
@@ -83,7 +89,9 @@ character_event = {
 			limit = {
 				NOT = {
 					liege = {
-						FROM = { holder_scope = { war_with = PREVPREV } }
+						FROM = {
+							holder_scope = { war_with = PREVPREV }
+						}
 					}
 				}
 			}
@@ -94,7 +102,9 @@ character_event = {
 							at_location = ROOT
 							NOT = { has_character_modifier = modifier_hidden }
 						}
-						ROOT = { character_event = { id = 110009994 } }
+						ROOT = {
+							character_event = { id = waylit.9 }
+						}
 					}
 					if = {
 						limit = {
@@ -114,7 +124,6 @@ character_event = {
 									NOT = { character = PREV }
 									NOT = { has_character_modifier = modifier_hidden }
 								}
-								
 								any_spouse = {
 									host = { character = PREVPREV }
 									at_location = ROOT
@@ -122,7 +131,9 @@ character_event = {
 								}
 							}
 						}
-						ROOT = { character_event = { id = 110009995 } }
+						ROOT = {
+							character_event = { id = waylit.10 }
+						}
 					}
 					if = {
 						limit = {
@@ -131,7 +142,9 @@ character_event = {
 								at_location = ROOT
 							}
 						}
-						ROOT = { character_event = { id = 110009996 } }
+						ROOT = {
+							character_event = { id = waylit.11 }
+						}
 					}
 				}
 			}
@@ -144,31 +157,36 @@ character_event = {
 }
 
 character_event = {
-
-	id = 110009994
-	desc = "EVTDESCsiegewin01"
-	picture = "GFX_evt_siege"
+	id = waylit.9
+	desc = EVTDESCsiegewin01
+	picture = GFX_evt_siege
 	border = GFX_event_normal_frame_war
 
 	hide_from = yes
 	is_triggered_only = yes
 
 	option = {
-		name = "EVTOPTAsiegewin1"
+		name = EVTOPTAsiegewin1
 		
 		ai_chance = {
 			factor = 10
 			modifier = {
 				factor = 50
-				FROMFROM = { holder_scope = { higher_tier_than = COUNT } }
+				FROMFROM = {
+					holder_scope = { higher_tier_than = COUNT }
+				}
 			}
 			modifier = {
 				factor = 100
-				FROMFROM = { holder_scope = { higher_tier_than = DUKE } }
+				FROMFROM = {
+					holder_scope = { higher_tier_than = DUKE }
+				}
 			}
 			modifier = {
 				factor = 0.25
-				FROMFROM = { holder_scope = { lower_tier_than = COUNT } }
+				FROMFROM = {
+					holder_scope = { lower_tier_than = COUNT }
+				}
 			}
 			modifier = {
 				factor = 2
@@ -200,7 +218,9 @@ character_event = {
 						NOT = { trait = arbitrary }
 					}
 					add_trait = just
-					hidden_tooltip = { character_event = { id = 38267 } }
+					hidden_tooltip = {
+						character_event = { id = 38267 }
+					}
 				}
 				if = {
 					limit = { trait = arbitrary }
@@ -218,17 +238,19 @@ character_event = {
 		
 		FROMFROM = {
 			holder_scope = {
-				limit = {
-					at_location = FROMFROM
-					NOT = { has_character_modifier = modifier_hidden }
+				if = {
+					limit = {
+						at_location = FROMFROM
+						NOT = { has_character_modifier = modifier_hidden }
+					}
+					imprison = ROOT
 				}
-				imprison = ROOT
 			}
 		}
 		
 	}
 	option = {
-		name = "EVTOPTAsiegewin2"
+		name = EVTOPTAsiegewin2
 		trigger = {
 			FROMFROM = {
 				holder_scope = {
@@ -253,15 +275,25 @@ character_event = {
 			factor = 0.5
 			modifier = {
 				factor = 0.01
-				FROMFROM = { holder_scope = { lower_tier_than = COUNT } }
+				FROMFROM = {
+					holder_scope = { lower_tier_than = COUNT }
+				}
 			}
 			modifier = {
 				factor = 40
-				FROMFROM = { holder_scope = { any_dynasty_member = { higher_tier_than = COUNT } } }
+				FROMFROM = {
+					holder_scope = {
+						any_dynasty_member = { higher_tier_than = COUNT }
+					}
+				}
 			}
 			modifier = {
 				factor = 100
-				FROMFROM = { holder_scope = { any_dynasty_member = { higher_tier_than = DUKE } } }
+				FROMFROM = {
+					holder_scope = {
+						any_dynasty_member = { higher_tier_than = DUKE }
+					}
+				}
 			}
 			modifier = {
 				factor = 3
@@ -289,7 +321,9 @@ character_event = {
 						NOT = { trait = charitable }
 					}
 					add_trait = greedy
-					hidden_tooltip = { character_event = { id = 38252 } }
+					hidden_tooltip = {
+						character_event = { id = 38252 }
+					}
 				}
 				if = {
 					limit = { trait = charitable }
@@ -303,12 +337,16 @@ character_event = {
 						NOT = { trait = content }
 					}
 					add_trait = ambitious
-					hidden_tooltip = { character_event = { id = 38278 } }
+					hidden_tooltip = {
+						character_event = { id = 38278 }
+					}
 				}
 				if = {
 					limit = { trait = content }
 					remove_trait = content
-					hidden_tooltip = { character_event = { id = 38299 } }
+					hidden_tooltip = {
+						character_event = { id = 38299 }
+					}
 				}
 			}
 			5 = {
@@ -318,12 +356,16 @@ character_event = {
 						NOT = { trait = slothful }
 					}
 					add_trait = diligent
-					hidden_tooltip = { character_event = { id = 38256 } }
+					hidden_tooltip = {
+						character_event = { id = 38256 }
+					}
 				}
 				if = {
 					limit = { trait = slothful }
 					remove_trait = slothful
-					hidden_tooltip = { character_event = { id = 38298 } }
+					hidden_tooltip = {
+						character_event = { id = 38298 }
+					}
 				}
 			}
 			3 = {
@@ -333,7 +375,9 @@ character_event = {
 						NOT = { trait = kind }
 					}
 					add_trait = cruel
-					hidden_tooltip = { character_event = { id = 38259 } }
+					hidden_tooltip = {
+						character_event = { id = 38259 }
+					}
 				}
 				if = {
 					limit = { trait = kind }
@@ -375,8 +419,7 @@ character_event = {
 					limit = {
 						host = { character = PREVPREV }
 						at_location = FROMFROM
-						NOT = {
-							has_character_modifier = modifier_hidden }
+						NOT = { has_character_modifier = modifier_hidden }
 					}
 					imprison = ROOT
 				}
@@ -384,7 +427,7 @@ character_event = {
 		}
 	}
 	option = {
-		name = "EVTOPTAsiegewin6"
+		name = EVTOPTAsiegewin6
 		trigger = {
 			FROMFROM = {
 				holder_scope = {
@@ -394,7 +437,6 @@ character_event = {
 							at_location = FROMFROM
 							NOT = { has_character_modifier = modifier_hidden }
 						}
-						
 						any_spouse = {
 							host = { character = PREVPREV }
 							at_location = FROMFROM
@@ -438,7 +480,9 @@ character_event = {
 		}
 
 		if = {
-			limit = { NOT = { lifestyle_traits = 1 } }
+			limit = {
+				NOT = { lifestyle_traits = 1 }
+			}
 			add_trait = impaler
 		}
 		
@@ -456,16 +500,24 @@ character_event = {
 		random_list = {
 			25 = {
 				if = {
-					limit = { NOT = { trait = cruel } }
+					limit = {
+						NOT = { trait = cruel }
+					}
 					add_trait = cruel
-					hidden_tooltip = { character_event = { id = 38259 } }
+					hidden_tooltip = {
+						character_event = { id = 38259 }
+					}
 				}
 			}
 			15 = {
 				if = {
-					limit = { NOT = { trait = arbitrary } }
+					limit = {
+						NOT = { trait = arbitrary }
+					}
 					add_trait = arbitrary
-					hidden_tooltip = { character_event = { id = 38266 } }
+					hidden_tooltip = {
+						character_event = { id = 38266 }
+					}
 				}
 			}
 			60 = { }
@@ -479,7 +531,7 @@ character_event = {
 						at_location = FROMFROM
 						NOT = { has_character_modifier = modifier_hidden }
 					}
-					death = {death_reason = death_battle killer = ROOT}
+					death = { death_reason = death_battle killer = ROOT }
 					hidden_tooltip = {
 						any_dynasty_member = {
 							limit = {
@@ -534,10 +586,9 @@ character_event = {
 					limit = {
 						host = { character = PREVPREV }
 						at_location = FROMFROM
-						NOT = {
-							has_character_modifier = modifier_hidden }
+						NOT = { has_character_modifier = modifier_hidden }
 					}
-					death = {death_reason = death_battle killer = ROOT}
+					death = { death_reason = death_battle killer = ROOT }
 					hidden_tooltip = {
 						any_dynasty_member = {
 							limit = {
@@ -591,11 +642,13 @@ character_event = {
 		}
 	}
 	option = {
-		name = "EVTOPTAsiegewin3"
+		name = EVTOPTAsiegewin3
 		
 
 		trigger = {
-			FROMFROM = { holder_scope = { war_with = ROOT } }
+			FROMFROM = {
+				holder_scope = { war_with = ROOT }
+			}
 		}
 		
 		ai_chance = {
@@ -630,7 +683,9 @@ character_event = {
 						NOT = { trait = cruel }
 					}
 					add_trait = kind
-					hidden_tooltip = { character_event = { id = 38268 } }
+					hidden_tooltip = {
+						character_event = { id = 38268 }
+					}
 				}
 				if = {
 					limit = { trait = cruel }
@@ -644,7 +699,9 @@ character_event = {
 						NOT = { trait = arbitrary }
 					}
 					add_trait = just
-					hidden_tooltip = { character_event = { id = 38267 } }
+					hidden_tooltip = {
+						character_event = { id = 38267 }
+					}
 				}
 				if = {
 					limit = { trait = arbitrary }
@@ -658,7 +715,9 @@ character_event = {
 						NOT = { trait = greedy }
 					}
 					add_trait = charitable
-					hidden_tooltip = { character_event = { id = 38273 } }
+					hidden_tooltip = {
+						character_event = { id = 38273 }
+					}
 				}
 				if = {
 					limit = { trait = greedy }
@@ -705,16 +764,16 @@ character_event = {
 }
 
 character_event = {
-	id = 110009995
-	desc = "EVTDESCsiegenoenemy"
-	picture = "GFX_evt_siege"
+	id = waylit.10
+	desc = EVTDESCsiegenoenemy
+	picture = GFX_evt_siege
 	border = GFX_event_normal_frame_war
 
 	hide_from = yes
-
 	is_triggered_only = yes
+
 	option = {
-		name = "EVTOPTAnoenemy2"
+		name = EVTOPTAnoenemy2
 		trigger = {
 			FROMFROM = {
 				holder_scope = {
@@ -726,13 +785,11 @@ character_event = {
 							NOT = { character = PREV }
 							NOT = { has_character_modifier = modifier_hidden }
 						}
-						
 						any_spouse = {
 							host = { character = PREVPREV }
 							at_location = FROMFROM
 							NOT = { has_character_modifier = modifier_hidden }
 						}
-						
 					}
 				}
 			}
@@ -742,15 +799,25 @@ character_event = {
 			factor = 0.5
 			modifier = {
 				factor = 0.01
-				FROMFROM = { holder_scope = { lower_tier_than = COUNT } }
+				FROMFROM = {
+					holder_scope = { lower_tier_than = COUNT }
+				}
 			}
 			modifier = {
 				factor = 40
-				FROMFROM = { holder_scope = { any_dynasty_member = { higher_tier_than = COUNT } } }
+				FROMFROM = {
+					holder_scope = {
+						any_dynasty_member = { higher_tier_than = COUNT }
+					}
+				}
 			}
 			modifier = {
 				factor = 100
-				FROMFROM = { holder_scope = { any_dynasty_member = { higher_tier_than = DUKE } } }
+				FROMFROM = {
+					holder_scope = {
+						any_dynasty_member = { higher_tier_than = DUKE }
+					}
+				}
 			}
 			modifier = {
 				factor = 3
@@ -778,7 +845,9 @@ character_event = {
 						NOT = { trait = charitable }
 					}
 					add_trait = greedy
-					hidden_tooltip = { character_event = { id = 38252 } }
+					hidden_tooltip = {
+						character_event = { id = 38252 }
+					}
 				}
 				if = {
 					limit = { trait = charitable }
@@ -792,12 +861,16 @@ character_event = {
 						NOT = { trait = content }
 					}
 					add_trait = ambitious
-					hidden_tooltip = { character_event = { id = 38278 } }
+					hidden_tooltip = {
+						character_event = { id = 38278 }
+					}
 				}
 				if = {
 					limit = { trait = content }
 					remove_trait = content
-					hidden_tooltip = { character_event = { id = 38299 } }
+					hidden_tooltip = {
+						character_event = { id = 38299 }
+					}
 				}
 			}
 			5 = {
@@ -807,12 +880,16 @@ character_event = {
 						NOT = { trait = slothful }
 					}
 					add_trait = diligent
-					hidden_tooltip = { character_event = { id = 38256 } }
+					hidden_tooltip = {
+						character_event = { id = 38256 }
+					}
 				}
 				if = {
 					limit = { trait = slothful }
 					remove_trait = slothful
-					hidden_tooltip = { character_event = { id = 38298 } }
+					hidden_tooltip = {
+						character_event = { id = 38298 }
+					}
 				}
 			}
 			3 = {
@@ -822,7 +899,9 @@ character_event = {
 						NOT = { trait = kind }
 					}
 					add_trait = cruel
-					hidden_tooltip = { character_event = { id = 38259 } }
+					hidden_tooltip = {
+						character_event = { id = 38259 }
+					}
 				}
 				if = {
 					limit = { trait = kind }
@@ -863,8 +942,7 @@ character_event = {
 					limit = {
 						host = { character = PREVPREV }
 						at_location = FROMFROM
-						NOT = {
-							has_character_modifier = modifier_hidden }
+						NOT = { has_character_modifier = modifier_hidden }
 					}
 					imprison = ROOT
 				}
@@ -872,7 +950,7 @@ character_event = {
 		}
 	}
 	option = {
-		name = "EVTOPTAnoenemy3"
+		name = EVTOPTAnoenemy3
 		trigger = {
 			FROMFROM = {
 				holder_scope = {
@@ -883,13 +961,11 @@ character_event = {
 							at_location = FROMFROM
 							NOT = { has_character_modifier = modifier_hidden }
 						}
-						
 						any_spouse = {
 							host = { character = PREVPREV }
 							at_location = FROMFROM
 							NOT = { has_character_modifier = modifier_hidden }
 						}
-						
 					}
 				}
 			}
@@ -929,7 +1005,9 @@ character_event = {
 		}
 
 		if = {
-			limit = { NOT = { lifestyle_traits = 1 } }
+			limit = {
+				NOT = { lifestyle_traits = 1 }
+			}
 			add_trait = impaler
 		}
 		
@@ -948,14 +1026,18 @@ character_event = {
 				if = {
 					limit = { NOT = { trait = cruel } }
 					add_trait = cruel
-					hidden_tooltip = { character_event = { id = 38266 } }
+					hidden_tooltip = {
+						character_event = { id = 38266 }
+					}
 				}
 			}
 			15 = {
 				if = {
 					limit = { NOT = { trait = arbitrary } }
 					add_trait = arbitrary
-					hidden_tooltip = { character_event = { id = 38259 } }
+					hidden_tooltip = {
+						character_event = { id = 38259 }
+					}
 				}
 			}
 			60 = { }
@@ -969,7 +1051,7 @@ character_event = {
 						at_location = FROMFROM
 						NOT = { has_character_modifier = modifier_hidden }
 					}
-					death = {death_reason = death_battle killer = ROOT}
+					death = { death_reason = death_battle killer = ROOT }
 					hidden_tooltip = {
 						any_dynasty_member = {
 							limit = {
@@ -1024,10 +1106,9 @@ character_event = {
 					limit = {
 						host = { character = PREVPREV }
 						at_location = FROMFROM
-						NOT = {
-							has_character_modifier = modifier_hidden }
+						NOT = { has_character_modifier = modifier_hidden }
 					}
-					death = {death_reason = death_battle killer = ROOT}
+					death = { death_reason = death_battle killer = ROOT }
 					hidden_tooltip = {
 						any_dynasty_member = {
 							limit = {
@@ -1081,10 +1162,12 @@ character_event = {
 		}
 	}
 	option = {
-		name = "EVTOPTAnoenemy1"
+		name = EVTOPTAnoenemy1
 
 		trigger = {
-			FROMFROM = { holder_scope = { war_with = ROOT } }
+			FROMFROM = {
+				holder_scope = { war_with = ROOT }
+			}
 		}
 		
 		ai_chance = {
@@ -1119,7 +1202,9 @@ character_event = {
 						NOT = { trait = cruel }
 					}
 					add_trait = kind
-					hidden_tooltip = { character_event = { id = 38268 } }
+					hidden_tooltip = {
+						character_event = { id = 38268 }
+					}
 				}
 				if = {
 					limit = { trait = cruel }
@@ -1133,7 +1218,9 @@ character_event = {
 						NOT = { trait = arbitrary }
 					}
 					add_trait = just
-					hidden_tooltip = { character_event = { id = 38267 } }
+					hidden_tooltip = {
+						character_event = { id = 38267 }
+					}
 				}
 				if = {
 					limit = { trait = arbitrary }
@@ -1147,7 +1234,9 @@ character_event = {
 						NOT = { trait = greedy }
 					}
 					add_trait = charitable
-					hidden_tooltip = { character_event = { id = 38273 } }
+					hidden_tooltip = {
+						character_event = { id = 38273 }
+					}
 				}
 				if = {
 					limit = { trait = greedy }
@@ -1194,18 +1283,16 @@ character_event = {
 }
 
 character_event = {
-
-	id = 110009996
-	desc = "EVTDESCWAYsearchdungeons"
-	picture = "GFX_evt_siege"
+	id = waylit.11
+	desc = EVTDESCWAYsearchdungeons
+	picture = GFX_evt_siege
 	border = GFX_event_normal_frame_war
 	
 	hide_from = yes
-	
 	is_triggered_only = yes
 	
 	option = {
-		name = "EVTOPWAYprisonrelease01"
+		name = EVTOPWAYprisonrelease01
 		trigger = {
 			FROMFROM = {
 				holder_scope = {
@@ -1250,7 +1337,9 @@ character_event = {
 						NOT = { trait = cruel }
 					}
 					add_trait = kind
-					hidden_tooltip = { character_event = { id = 38268 } }
+					hidden_tooltip = {
+						character_event = { id = 38268 }
+					}
 				}
 				if = {
 					limit = { trait = cruel }
@@ -1264,7 +1353,9 @@ character_event = {
 						NOT = { trait = arbitrary }
 					}
 					add_trait = just
-					hidden_tooltip = { character_event = { id = 38267 } }
+					hidden_tooltip = {
+						character_event = { id = 38267 }
+					}
 				}
 				if = {
 					limit = { trait = arbitrary }
@@ -1278,7 +1369,9 @@ character_event = {
 						NOT = { trait = greedy }
 					}
 					add_trait = charitable
-					hidden_tooltip = { character_event = { id = 38273 } }
+					hidden_tooltip = {
+						character_event = { id = 38273 }
+					}
 				}
 				if = {
 					limit = { trait = greedy }
@@ -1294,13 +1387,13 @@ character_event = {
 						at_location = FROMFROM
 						prisoner = yes
 					}
-					imprison = no
+					prisoner = no
 				}
 			}
 		}
 	}
 	option = {
-		name = "EVTOPWAYprisonrelease02"
+		name = EVTOPWAYprisonrelease02
 
 		trigger = {
 			FROMFROM = {
@@ -1351,7 +1444,9 @@ character_event = {
 						NOT = { trait = cruel }
 					}
 					add_trait = kind
-					hidden_tooltip = { character_event = { id = 38268 } }
+					hidden_tooltip = {
+						character_event = { id = 38268 }
+					}
 				}
 				if = {
 					limit = { trait = cruel }
@@ -1365,7 +1460,9 @@ character_event = {
 						NOT = { trait = arbitrary }
 					}
 					add_trait = just
-					hidden_tooltip = { character_event = { id = 38267 } }
+					hidden_tooltip = {
+						character_event = { id = 38267 }
+					}
 				}
 				if = {
 					limit = { trait = arbitrary }
@@ -1379,7 +1476,9 @@ character_event = {
 						NOT = { trait = greedy }
 					}
 					add_trait = charitable
-					hidden_tooltip = { character_event = { id = 38273 } }
+					hidden_tooltip = {
+						character_event = { id = 38273 }
+					}
 				}
 				if = {
 					limit = { trait = greedy }
@@ -1402,7 +1501,7 @@ character_event = {
 		}
 	}
 	option = {
-		name = "EVTOPWAYprisonrelease03"
+		name = EVTOPWAYprisonrelease03
 		
 		trigger = {
 			FROMFROM = {
@@ -1456,7 +1555,9 @@ character_event = {
 						NOT = { trait = trusting }
 					}
 					add_trait = paranoid
-					hidden_tooltip = { character_event = { id = 38275 } }
+					hidden_tooltip = {
+						character_event = { id = 38275 }
+					}
 				}
 				if = {
 					limit = { trait = trusting }
@@ -1470,7 +1571,9 @@ character_event = {
 						NOT = { trait = just }
 					}
 					add_trait = arbitrary
-					hidden_tooltip = { character_event = { id = 38266 } }
+					hidden_tooltip = {
+						character_event = { id = 38266 }
+					}
 				}
 				if = {
 					limit = { trait = just }
@@ -1512,7 +1615,7 @@ character_event = {
 		}
 	}
 	option = {
-		name = "EVTOPWAYprisonrelease04"
+		name = EVTOPWAYprisonrelease04
 		
 		trigger = {
 			FROMFROM = {
@@ -1555,7 +1658,9 @@ character_event = {
 						NOT = { trait = trusting }
 					}
 					add_trait = paranoid
-					hidden_tooltip = { character_event = { id = 38275 } }
+					hidden_tooltip = {
+						character_event = { id = 38275 }
+					}
 				}
 				if = {
 					limit = { trait = trusting }
@@ -1569,7 +1674,9 @@ character_event = {
 						NOT = { trait = just }
 					}
 					add_trait = arbitrary
-					hidden_tooltip = { character_event = { id = 38266 } }
+					hidden_tooltip = {
+						character_event = { id = 38266 }
+					}
 				}
 				if = {
 					limit = { trait = just }

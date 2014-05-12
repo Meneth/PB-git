@@ -687,7 +687,7 @@ narrative_event = {
 				who = ROOT
 			}
 			remove_opinion = {
-				modifier = opinion_increased_authority
+				modifier = opinion_protected_inheritance
 				who = ROOT
 			}
 			remove_opinion = {
@@ -834,7 +834,7 @@ letter_event = {
 		}
 	}
 	option = {
-		name = meneth.400.b
+		name = meneth.403.b
 		trigger = {
 			OR = {
 				ai = no

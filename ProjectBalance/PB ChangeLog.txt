@@ -1,3 +1,20 @@
+3.5.5
+	Mending the schism as a catholic now always requires a catholic to hold the Hagia Sophia, even if there's no Orthodox empire in existence. This should make mending the schism considerably rarer
+	Properly localised Novgorod events and made some other localisation flavor adjustments
+	Holy war no longer vassalizes anyone not of your religion; they're once more conquered outright. Note that Pagans have a decision from vanilla that makes them convert and invalidates holy war
+	Removed some coats of arms that already exist in vanilla
+	Upon crusade/jihad/GHW success, free any vassalized holy orders which do not match the winner's religion. Previously, they'd essentially become stuck forever under, e.g., the winner of a Jihad, if they were vassals of Jerusalem beforehand (unable to be hired by any religion and possibly giving a Caliphate vassal baronies randomly located throughout Catholic Europe)
+	The Catholic schism mending event is now more efficient and will notify other rulers as is appropriate for such a momentous occasion; in addition, zealous Orthodox rulers will now always refuse conversion and cynical rulers will always convert
+	The employment decisions are now hidden by default, with a toggle decision to show them
+	Unlike other military buildings, the cultural buildings no longer reduce tax income
+	Updated PB's culture buildings to correspond with current maintenance values
+	[PB+SWMH] Fixed the French HRE displaying as e_hre_french rather than Holy Roman Empire
+	Fixed an error in the requirements for forming Tartaria
+	Reduced the maintenance cost for retinues by 20%
+	Various localisation fixes
+	Complete, native Spanish translation of PB [many thanks and credit to tu_79]
+	Fixed several small bugs in Waylit siege events
+
 3.5.4
 	Fixed a few kingdoms incorrectly remaining parts of dejure empires when No Ahistorical Empires is enabled
 	[PB+SWMH] Fixed bookmarks after 1215 crashing the game

@@ -92,9 +92,7 @@ character_event = {
 		trigger = {
 			ai = no
 		}
-		hidden_tooltip = {
-			revoke_law = the_crusade_target
-		}
+		# No title transfer necessary...
 		ai_chance = {
 			factor = 0
 		}
@@ -328,8 +326,6 @@ character_event = {
 # pb_crusades.2
 # Crusader State Granted to New Ruler [immediate]
 #
-# Moved from meneth.207 (out of PB_various.txt)
-#
 # ROOT = non-ruler (ergo, AI)
 # FROM = giver of crusade target kingdom
 # FROMFROM = initiator of crusade
@@ -370,10 +366,9 @@ character_event = {
 				}
 				
 				grant_title = ROOT
-				revoke_law = the_crusade_target # No need to track the crusade target any longer
 			}
 		} # Title transfer complete
-		
+
 		set_defacto_liege = THIS
 		character_event = { id = pb_crusades.5 } # Ensure desirable succession laws now that independent
 
@@ -411,7 +406,7 @@ character_event = {
 			duration = 9125
 		}
 		
-		wealth = 500 #Z: was 250, but some characters were starting slightly in the red
+		wealth = 500
 		prestige = 200
 		piety = 100
 		
@@ -906,5 +901,35 @@ character_event = {
 		wealth = 200
 		change_variable = { which = crusade_cash value = -1 }
 		character_event = { id = pb_crusades.10 }
+	}
+}
+
+
+# pb_crusades.11 => FREE
+
+
+# pb_crusades.12
+# Free holy orders of wrong religion from target kingdom title vassalage (CB supplement)
+#
+# FROMFROM is CB giver (loser in this case), ROOT is the winner, and
+# FROM is the Pope (or Caliph or whoever was the primary attacker).
+character_event = {
+	id = pb_crusades.12
+	desc = OK
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		any_realm_lord = {
+			limit = {
+				NOT = { religion = ROOT }
+				primary_title = { holy_order = yes }
+			}
+			set_defacto_liege = THIS
+		}
+	}
+	
+	option = {
+		name = OK
 	}
 }

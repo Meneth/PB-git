@@ -248,7 +248,7 @@ narrative_event = {
 	}	
 	
 	option = {
-		name = "Interesting news"
+		name = EVTOPTA_NOV_4
 		trigger = {
 			OR = {
 				NOT = { is_merchant_republic = yes }
@@ -258,7 +258,7 @@ narrative_event = {
 		}
 	}
 	option = {
-		name = "More competition..."
+		name = EVTOPTB_NOV_4
 		trigger = {
 			OR = {
 				is_merchant_republic = yes
@@ -458,7 +458,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "Ingrates"
+		name = EVTOPTA_NOV_10
 		tooltip = {
 			394 = { 
 				seize_trade_post = FROM
@@ -476,7 +476,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "Ingrates"
+		name = EVTOPTA_NOV_10
 		tooltip = {
 			395 = { 
 				seize_trade_post = FROM
@@ -494,7 +494,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "Ingrates"
+		name = EVTOPTA_NOV_10
 		tooltip = {
 			396 = { 
 				seize_trade_post = FROM
@@ -512,7 +512,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "Ingrates"
+		name = EVTOPTA_NOV_10
 		tooltip = {
 			397 = { 
 				seize_trade_post = FROM

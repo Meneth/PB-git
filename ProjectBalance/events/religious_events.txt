@@ -4270,9 +4270,8 @@ narrative_event = {
 		
 		decadence = -30 # Do not want to be hit with a decadence revolt as well!
 		
-		random_realm_title = {
+		random_realm_province = {
 			limit = {
-				tier = count
 				kingdom = {
 					OR = {
 						has_holder = no
@@ -4286,237 +4285,234 @@ narrative_event = {
 					}
 				}
 			}
-			location = {
-				ROOT = {
-					create_character = {
-						dynasty = random
-						religion = shiite
+			ROOT = {
+				create_character = {
+					dynasty = random
+					religion = shiite
+					culture = ROOT
+					female = no
+					age = 3
+					health = 6.5
+					fertility = 0.6
+					trait = sayyid
+					trait = quick
+					trait = fair
+					attributes = {
+						learning = 1
+						diplomacy = 2
+						martial = 1
+						stewardship = 1
+						intrigue = 1
+					}
+				}
+				
+				new_character = {
+					set_character_flag = shia_caliphate_pretender
+					create_title = {
+						tier = DUKE
+						landless = yes
+						temporary = yes
 						culture = ROOT
+						name = SHIA_CALIPHATE_REVOLT
+						holder = THIS
+					}
+					create_character = {
+						random_traits = yes
+						dynasty = none
+						religion = THIS
+						culture = THIS
 						female = no
-						age = 3
-						health = 6.5
-						fertility = 0.6
-						trait = sayyid
-						trait = quick
-						trait = fair
-						attributes = {
-							learning = 1
-							diplomacy = 2
-							martial = 1
-							stewardship = 1
-							intrigue = 1
+						age = 30
+						trait = brilliant_strategist
+					}
+					new_character = {
+						spawn_unit = {
+							province = PREVPREVPREV
+							home = PREVPREVPREV
+							owner = PREV
+							leader = THIS
+							match_character = PREVPREV
+							match_mult = 0.075
+							attrition = 0.5
+							cannot_inherit = yes
 						}
 					}
-					
-					
+					create_character = {
+						random_traits = yes
+						dynasty = none
+						religion = THIS
+						culture = THIS
+						female = no
+						age = 27
+						trait = brilliant_strategist
+					}
 					new_character = {
-						set_character_flag = shia_caliphate_pretender
-						create_title = {
-							tier = DUKE
-							landless = yes
-							temporary = yes
-							culture = ROOT
-							name = SHIA_CALIPHATE_REVOLT
-							holder = THIS
+						spawn_unit = {
+							province = PREVPREVPREV
+							home = PREVPREVPREV
+							owner = PREV
+							leader = THIS
+							match_character = PREVPREV
+							match_mult = 0.075
+							attrition = 0.5
+							cannot_inherit = yes
 						}
-						create_character = {
-							random_traits = yes
-							dynasty = none
-							religion = THIS
-							culture = THIS
-							female = no
-							age = 30
-							trait = brilliant_strategist
+					}
+					create_character = {
+						random_traits = yes
+						dynasty = none
+						religion = THIS
+						culture = THIS
+						female = no
+						age = 25
+						trait = skilled_tactician
+					}
+					new_character = {
+						spawn_unit = {
+							province = PREVPREVPREV
+							home = PREVPREVPREV
+							owner = PREV
+							leader = THIS
+							match_character = PREVPREV
+							match_mult = 0.075
+							attrition = 0.5
+							cannot_inherit = yes
 						}
-						new_character = {
-							spawn_unit = {
-								province = PREVPREVPREVPREV
-								home = PREVPREVPREVPREV
-								owner = PREV
-								leader = THIS
-								match_character = PREVPREV
-								match_mult = 0.075
-								attrition = 0.5
-								cannot_inherit = yes
-							}
+					}
+					create_character = {
+						random_traits = yes
+						dynasty = none
+						religion = THIS
+						culture = THIS
+						female = no
+						age = 23
+						trait = skilled_tactician
+					}
+					new_character = {
+						spawn_unit = {
+							province = PREVPREVPREV
+							home = PREVPREVPREV
+							owner = PREV
+							leader = THIS
+							match_character = PREVPREV
+							match_mult = 0.075
+							attrition = 0.5
+							cannot_inherit = yes
 						}
-						create_character = {
-							random_traits = yes
-							dynasty = none
-							religion = THIS
-							culture = THIS
-							female = no
-							age = 27
-							trait = brilliant_strategist
+					}
+					create_character = {
+						random_traits = yes
+						dynasty = none
+						religion = THIS
+						culture = THIS
+						female = no
+						age = 27
+						trait = skilled_tactician
+					}
+					new_character = {
+						spawn_unit = {
+							province = PREVPREVPREV
+							home = PREVPREVPREV
+							owner = PREV
+							leader = THIS
+							match_character = PREVPREV
+							match_mult = 0.075
+							attrition = 0.5
+							cannot_inherit = yes
 						}
-						new_character = {
-							spawn_unit = {
-								province = PREVPREVPREVPREV
-								home = PREVPREVPREVPREV
-								owner = PREV
-								leader = THIS
-								match_character = PREVPREV
-								match_mult = 0.075
-								attrition = 0.5
-								cannot_inherit = yes
-							}
+					}
+					create_character = {
+						random_traits = yes
+						dynasty = none
+						religion = THIS
+						culture = THIS
+						female = no
+						age = 24
+						trait = skilled_tactician
+					}
+					new_character = {
+						spawn_unit = {
+							province = PREVPREVPREV
+							home = PREVPREVPREV
+							owner = PREV
+							leader = THIS
+							match_character = PREVPREV
+							match_mult = 0.075
+							attrition = 0.5
+							cannot_inherit = yes
 						}
-						create_character = {
-							random_traits = yes
-							dynasty = none
-							religion = THIS
-							culture = THIS
-							female = no
-							age = 25
-							trait = skilled_tactician
+					}
+					create_character = {
+						random_traits = yes
+						dynasty = none
+						religion = THIS
+						culture = THIS
+						female = no
+						age = 32
+						trait = brilliant_strategist
+					}
+					new_character = {
+						spawn_unit = {
+							province = PREVPREVPREV
+							home = PREVPREVPREV
+							owner = PREV
+							leader = THIS
+							match_character = PREVPREV
+							match_mult = 0.15
+							attrition = 0.0
+							cannot_inherit = yes
+							disband_on_peace = yes
 						}
-						new_character = {
-							spawn_unit = {
-								province = PREVPREVPREVPREV
-								home = PREVPREVPREVPREV
-								owner = PREV
-								leader = THIS
-								match_character = PREVPREV
-								match_mult = 0.075
-								attrition = 0.5
-								cannot_inherit = yes
-							}
+					}
+					create_character = {
+						random_traits = yes
+						dynasty = none
+						religion = THIS
+						culture = THIS
+						female = no
+						age = 25
+						trait = skilled_tactician
+					}
+					new_character = {
+						spawn_unit = {
+							province = PREVPREVPREV
+							home = PREVPREVPREV
+							owner = PREV
+							leader = THIS
+							match_character = PREVPREV
+							match_mult = 0.15
+							attrition = 0.0
+							cannot_inherit = yes
+							disband_on_peace = yes
 						}
-						create_character = {
-							random_traits = yes
-							dynasty = none
-							religion = THIS
-							culture = THIS
-							female = no
-							age = 23
-							trait = skilled_tactician
+					}
+					create_character = {
+						random_traits = yes
+						dynasty = none
+						religion = THIS
+						culture = THIS
+						female = no
+						age = 28
+						trait = skilled_tactician
+					}
+					new_character = {
+						spawn_unit = {
+							province = PREVPREVPREV
+							home = PREVPREVPREV
+							owner = PREV
+							leader = THIS
+							match_character = PREVPREV
+							match_mult = 0.15
+							attrition = 0.0
+							cannot_inherit = yes
+							disband_on_peace = yes
 						}
-						new_character = {
-							spawn_unit = {
-								province = PREVPREVPREVPREV
-								home = PREVPREVPREVPREV
-								owner = PREV
-								leader = THIS
-								match_character = PREVPREV
-								match_mult = 0.075
-								attrition = 0.5
-								cannot_inherit = yes
-							}
-						}
-						create_character = {
-							random_traits = yes
-							dynasty = none
-							religion = THIS
-							culture = THIS
-							female = no
-							age = 27
-							trait = skilled_tactician
-						}
-						new_character = {
-							spawn_unit = {
-								province = PREVPREVPREVPREV
-								home = PREVPREVPREVPREV
-								owner = PREV
-								leader = THIS
-								match_character = PREVPREV
-								match_mult = 0.075
-								attrition = 0.5
-								cannot_inherit = yes
-							}
-						}
-						create_character = {
-							random_traits = yes
-							dynasty = none
-							religion = THIS
-							culture = THIS
-							female = no
-							age = 24
-							trait = skilled_tactician
-						}
-						new_character = {
-							spawn_unit = {
-								province = PREVPREVPREVPREV
-								home = PREVPREVPREVPREV
-								owner = PREV
-								leader = THIS
-								match_character = PREVPREV
-								match_mult = 0.075
-								attrition = 0.5
-								cannot_inherit = yes
-							}
-						}
-						create_character = {
-							random_traits = yes
-							dynasty = none
-							religion = THIS
-							culture = THIS
-							female = no
-							age = 32
-							trait = brilliant_strategist
-						}
-						new_character = {
-							spawn_unit = {
-								province = PREVPREVPREVPREV
-								home = PREVPREVPREVPREV
-								owner = PREV
-								leader = THIS
-								match_character = PREVPREV
-								match_mult = 0.15
-								attrition = 0.0
-								cannot_inherit = yes
-								disband_on_peace = yes
-							}
-						}
-						create_character = {
-							random_traits = yes
-							dynasty = none
-							religion = THIS
-							culture = THIS
-							female = no
-							age = 25
-							trait = skilled_tactician
-						}
-						new_character = {
-							spawn_unit = {
-								province = PREVPREVPREVPREV
-								home = PREVPREVPREVPREV
-								owner = PREV
-								leader = THIS
-								match_character = PREVPREV
-								match_mult = 0.15
-								attrition = 0.0
-								cannot_inherit = yes
-								disband_on_peace = yes
-							}
-						}
-						create_character = {
-							random_traits = yes
-							dynasty = none
-							religion = THIS
-							culture = THIS
-							female = no
-							age = 28
-							trait = skilled_tactician
-						}
-						new_character = {
-							spawn_unit = {
-								province = PREVPREVPREVPREV
-								home = PREVPREVPREVPREV
-								owner = PREV
-								leader = THIS
-								match_character = PREVPREV
-								match_mult = 0.15
-								attrition = 0.0
-								cannot_inherit = yes
-								disband_on_peace = yes
-							}
-						}
-						war = {
-							target = ROOT
-							casus_belli = shia_caliphate_rising
-							thirdparty_title = PREVPREVPREV
-							tier = KING
-						}
+					}
+					war = {
+						target = ROOT
+						casus_belli = shia_caliphate_rising
+						thirdparty_title = PREVPREV
+						tier = KING
 					}
 				}
 			}
