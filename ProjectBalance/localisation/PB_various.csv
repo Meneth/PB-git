@@ -2,6 +2,7 @@
 slovene;Slovene;;;;Esloveno;;;;;;;;;x
 norsegael;Norse-Gael;;;;Nórdico-gaélico;;;;;;;;;x
 sicilian;Sicilian;;;;Siciliano;;;;;;;;;x
+frisian;Frisian;;;;;;;;;;;;;x
 CHARACTER_TOOLTIP_DELAYED;[GetStatusInfo]\nID: §Y[GetID]§!\nDynasty: §Y[GetOnlyDynastyName]§!\nReligion: §Y[Religion.GetName]§!\nCulture: §Y[Culture.GetName]\n;;;;[GetStatusInfo]\nID: §Y[GetID]§!\nDinastía: §Y[GetOnlyDynastyName]§!\nReligión: §Y[Religion.GetName]§!\nCultura: §Y[Culture.GetName]\n;;;;;;;;;x
 holy_war_cooldown;Holy War Cooldown;;;;Espera para otra Guerra santa;;;;;;;;;x
 coastal_republic_cooldown;Seize Coast Cooldown;;;;Espera para otro Apoderarse de la costa;;;;;;;;;x
