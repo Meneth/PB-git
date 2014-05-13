@@ -839,17 +839,17 @@ obj_have_a_daughter = {
 			}
 		}
 		OR = {
-			NOT = { age = 45 }
-			is_female = no
-		}
-		OR = { 
 			ai = no
 			is_female = yes
+			num_of_children = 2
+		}
+		NOT = {
 			AND = {
-				num_of_children = 2
-				NOT = { age = 45 }
+				age = 45
+				is_female = yes
 			}
 		}
+		NOT = { age = 75 }
 		NOT = { trait = celibate }
 		NOT = { trait = incapable }
 	}
@@ -880,6 +880,7 @@ obj_have_a_daughter = {
 				age = 45
 				is_female = yes
 			}
+			age = 75
 			trait = celibate
 			trait = incapable
 		}
@@ -900,8 +901,10 @@ obj_have_a_son = {
 	allow = {
 		prisoner = no
 		is_marriage_adult = yes
-		is_female = no
-		is_married = yes
+		OR = {
+			is_married = yes
+			is_consort = yes
+		}
 		NOT = {
 			any_child = {
 				is_female = no
@@ -909,6 +912,7 @@ obj_have_a_son = {
 		}
 		OR = {
 			ai = no
+			is_female = no
 			# Have at least two daughters
 			any_child = {
 				is_female = yes
@@ -918,6 +922,12 @@ obj_have_a_son = {
 						NOT = { character = PREVPREV }
 					}
 				}
+			}
+		}
+		NOT = {
+			AND = {
+				age = 45
+				is_female = yes
 			}
 		}
 		NOT = { age = 75 }
@@ -947,6 +957,10 @@ obj_have_a_son = {
 	}
 	abort = {
 		OR = {
+			AND = {
+				age = 45
+				is_female = yes
+			}
 			age = 75
 			trait = celibate
 			trait = incapable
