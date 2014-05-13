@@ -1,5 +1,7 @@
 3.5.6 [BETA]
 	Standard demesne laws now locked-out for temporary titles (e.g., revolt, liberation, or duchy adventurer titles)
+	MARRIAGE_TIER_DIFF_PRESTIGE_MULT dropped to 75 from 125 (-40% change, -25% from vanilla)
+		AI reasoning factor MARRIAGE_AI_PRESTIGE_VALUE remains at significantly emphasised value of 0.75 (+127% from vanilla's 0.33)
 
 3.5.5
 	Mending the schism as a catholic now always requires a catholic to hold the Hagia Sophia, even if there's no Orthodox empire in existence. This should make mending the schism considerably rarer
