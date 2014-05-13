@@ -1266,7 +1266,7 @@ character_event = {
 	
 	trigger = {
 		has_character_flag = holding_grand_hunt
-	}	
+	}
 	
 	immediate = {
 		clr_character_flag = holding_grand_hunt
