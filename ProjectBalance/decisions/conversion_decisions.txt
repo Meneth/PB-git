@@ -164,22 +164,6 @@ decisions = {
 			
 			has_dlc = "Rajas of India"
 		}
-		allow = {
-			OR = {
-				AND = {
-					piety = 500
-					capital_scope = {
-						religion_group = ROOT
-					}
-				}
-				AND = {
-					piety = 1000
-					capital_scope = {
-						NOT = { religion_group = ROOT }
-					}
-				}
-			}
-		}
 		effect = {
 			if = {
 				limit = {
