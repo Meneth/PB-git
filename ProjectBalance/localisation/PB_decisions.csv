@@ -6,6 +6,7 @@ employ_spy;Invite Spy to Court;;;;Invita a un espía a la corte;;;;;x
 employ_spy_desc;Invite a promising spy to court, to aid with matters of intrigue.;;;;Invita a un espía prometedor a la corte para ayudar con asuntos de intriga;;;;;x
 employ_diplomat;Invite Diplomat to Court;;;;Invita a un diplomático a la corte;;;;;x
 employ_diplomat_desc;Invite a promising diplomat to court, to aid with diplomatic matters.;;;;Invita a un diplomático prometedor a la corte para ayudar en cuestiones diplomáticas.;;;;;x
+toggle_employment;Toggle Employment Decisions;;;;;;;;;;;;;x
 toggle_marriage_decisions;Toggle Marriage Decisions;;;;Muestra Decisiones maritales;;;;;x
 toggle_marriage_decisions_desc;Toggle the arranged marriage decisions, which will allow you to arrange marriages for your courtiers.;;;;Activa las decisiones maritales, lo que te permitirá disponer matrimonios entre tus cortesanos.;;;;;x
 marry_courtiers;Arrange Courtier Marriages;;;;Disponer matrimonios de cortesanos;;;;;x

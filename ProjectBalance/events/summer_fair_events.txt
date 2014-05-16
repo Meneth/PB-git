@@ -1261,6 +1261,7 @@ character_event = {
 	}
 	immediate = {
 		clr_character_flag = upcoming_fair
+		set_character_flag = summer_fair_begin
 		add_character_modifier = {
 			name = holding_summer_fair
 			duration = 60

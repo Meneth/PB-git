@@ -1,6 +1,10 @@
 spriteTypes = {
 	#Employment
 	spriteType = {
+		name = "GFX_toggle_employment"
+		texturefile = "gfx\\interface\\decision_icon_toggle_employment.tga"
+	}
+	spriteType = {
 		name = "GFX_employ_soldier"
 		texturefile = "gfx\\interface\\decision_icon_employ_soldier.tga"
 	}
@@ -205,9 +209,5 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_random_rulers"
 		texturefile = "gfx\\interface\\decision_icon_random_rulers.tga"
-	}
-	spriteType = {
-		name = "GFX_toggle_employment"
-		texturefile = "gfx\\interface\\decision_icon_toggle_employment.tga"
 	}
 }
