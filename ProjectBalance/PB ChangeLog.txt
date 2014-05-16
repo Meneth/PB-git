@@ -1,4 +1,4 @@
-3.5.6 [BETA]
+3.5.6
 	Standard demesne laws now locked-out for temporary titles (e.g., revolt, liberation, or duchy adventurer titles)
 	MARRIAGE_TIER_DIFF_PRESTIGE_MULT dropped to 75 from 125 (-40% change, -25% from vanilla)
 		AI reasoning factor MARRIAGE_AI_PRESTIGE_VALUE remains at significantly emphasised value of 0.75 (+127% from vanilla's 0.33)
