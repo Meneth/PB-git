@@ -52,6 +52,8 @@ ca_culture_basque_3;Kuartela;;;;Kuartela;;;;;;;;;x
 ca_culture_basque_4;Kuartela;;;;Kuartela;;;;;;;;;x
 ca_culture_basque_5;Kuartela;;;;Kuartela;;;;;;;;;x
 ca_culture_basque_1_desc;The Basque were renowned for their powerful heavy infantry.;;;;Los vascos eran famosos por su poderosa infantería pesada.;;;;;;;;;x
+ca_culture_jewish_0;Jewish Heavy Infantry Barracks;Caserne d’infanterie lourde juive;Übungsplatz für jüdische Schwere Infanterie;;Barracas de Infantería Pesada judia;;;;;;;;;x
+ca_culture_jewish_5;Jewish Heavy Infantry Barracks;Caserne d’infanterie lourde juive;Übungsplatz für jüdische Schwere Infanterie;;Barracas de Infantería Pesada judia;;;;;;;;;x
 retinue_disabler;This building prevents barons and vassalized single-province counts from having retinues. If you're seeing it in a count or above's holding, please report it as a bug if it persists for more than a month.;;;;Este edificio evita que los barones y los condes con un solo condado no independiente puedan tener séquitos. Si aparece en otro caso, por favor, informa del fallo.;;;;;;;;;x
 ca_retinues;Retinue Disabler;;;;Inhabilitador de séquitos;;;;;;;;;x
 ct_retinues;Retinue Disabler;;;;Inhabilitador de séquitos;;;;;;;;;x

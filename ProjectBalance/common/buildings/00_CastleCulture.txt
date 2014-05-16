@@ -2827,6 +2827,149 @@ castle = {
 		
 		extra_tech_building_start = 1.0
 	}
+	
+	# Jewish Heavy Infantry
+	ca_culture_jewish_0 = {
+		desc = ca_culture_jewish_1_desc
+		potential = {
+			culture_group = israelite
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		build_cost = 100
+		build_time = 365
+		heavy_infantry = 90
+		pikemen = -15
+		light_infantry = -30
+		light_cavalry = -15
+		archers = -20
+		heavy_infantry_offensive = 0.05
+		heavy_infantry_defensive = 0.05
+		retinuesize = 20
+		ai_creation_factor = 102
+
+		extra_tech_building_start = 0.0
+	}
+	ca_culture_jewish_1 = {
+		desc = ca_culture_jewish_1_desc
+		potential = {
+			culture_group = israelite
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		upgrades_from = ca_culture_jewish_0
+		build_cost = 200
+		build_time = 730
+		heavy_infantry = 120
+		pikemen = -15
+		light_infantry = -30
+		light_cavalry = -15
+		archers = -20
+		heavy_infantry_offensive = 0.05
+		heavy_infantry_defensive = 0.05
+		retinuesize = 20
+		ai_creation_factor = 101
+
+		extra_tech_building_start = 1.0
+	}
+	ca_culture_jewish_2 = {
+		desc = ca_culture_jewish_1_desc
+		potential = {
+			FROM = { culture_group = ROOT }
+			culture_group = israelite
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 2
+			FROM = { culture_group = ROOT }
+		}
+		upgrades_from = ca_culture_jewish_1
+		build_cost = 300
+		build_time = 1095
+		heavy_infantry = 150
+		pikemen = -15
+		light_infantry = -30
+		light_cavalry = -15
+		archers = -20
+		heavy_infantry_offensive = 0.05
+		heavy_infantry_defensive = 0.05
+		retinuesize = 20
+		ai_creation_factor = 100
+
+		extra_tech_building_start = 1.0
+	}
+	ca_culture_jewish_3 = {
+		desc = ca_culture_jewish_1_desc
+		potential = {
+			FROM = { culture_group = ROOT }
+			culture_group = israelite
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 3
+			FROM = { culture_group = ROOT }
+		}
+		upgrades_from = ca_culture_jewish_2
+		build_cost = 400
+		build_time = 1460
+		heavy_infantry = 180
+		pikemen = -15
+		light_infantry = -30
+		light_cavalry = -15
+		archers = -20
+		heavy_infantry_offensive = 0.05
+		heavy_infantry_defensive = 0.05
+		retinuesize = 20
+		ai_creation_factor = 99
+
+		extra_tech_building_start = 1.0
+	}
+	ca_culture_jewish_4 = {
+		desc = ca_culture_jewish_1_desc
+		potential = {
+			FROM = { culture = ROOT }
+			culture_group = israelite
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 4
+			FROM = { culture = ROOT }
+		}
+		upgrades_from = ca_culture_jewish_3
+		build_cost = 500
+		build_time = 1825
+		heavy_infantry = 210
+		pikemen = -15
+		light_infantry = -30
+		light_cavalry = -15
+		archers = -20
+		heavy_infantry_offensive = 0.05
+		heavy_infantry_defensive = 0.05
+		retinuesize = 20
+		ai_creation_factor = 98
+
+		extra_tech_building_start = 1.0
+	}
+	ca_culture_jewish_5 = {
+		desc = ca_culture_jewish_1_desc
+		potential = {
+			FROM = { culture = ROOT }
+			culture_group = israelite
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 6
+			FROM = { culture = ROOT }
+		}
+		upgrades_from = ca_culture_jewish_4
+		build_cost = 600
+		build_time = 2190
+		heavy_infantry = 240
+		pikemen = -15
+		light_infantry = -30
+		light_cavalry = -15
+		archers = -20
+		heavy_infantry_offensive = 0.05
+		heavy_infantry_defensive = 0.05
+		retinuesize = 20
+		ai_creation_factor = 97
+
+		extra_tech_building_start = 1.0
+	}
 	# TODO: Rewrite for PB's system
 	# Indian war elephant pens
 	ca_culture_indian_1 = {
