@@ -38,27 +38,32 @@ succession_laws = {
 			is_primary_type_title = no
 		}
 		allow = {
-			holder_scope = {
-				OR = {
-					AND = {
-						tier = count
-						prestige = 100
+			OR = {
+				is_recent_grant = yes
+				AND = {
+					holder_scope = {
+						OR = {
+							AND = {
+								tier = count
+								prestige = 100
+							}
+							AND = {
+								tier = duke
+								prestige = 250
+							}
+							AND = {
+								tier = king
+								prestige = 500
+							}
+							AND = {
+								tier = emperor
+								prestige = 1000
+							}
+						}
 					}
-					AND = {
-						tier = duke
-						prestige = 250
-					}
-					AND = {
-						tier = king
-						prestige = 500
-					}
-					AND = {
-						tier = emperor
-						prestige = 1000
-					}
+					NOT = { has_law = hre_law_0 }
 				}
 			}
-			NOT = { has_law = hre_law_0 }
 		}
 		effect = {
 			succession = gavelkind
@@ -124,48 +129,53 @@ succession_laws = {
 		
 		allow = {
 			OR = {
-				hidden_tooltip = {
-					has_crown_law_title = no
-				}
-				holder_scope = { is_patrician = yes }
-				lower_tier_than = king
-				crownlaw_title = {
+				is_recent_grant = yes
+				AND = {
 					OR = {
-						has_law = king_peace_1
-						has_law = king_peace_2
-						has_law = emperor_peace_1
-						has_law = emperor_peace_2
-						has_law = revokation_1
-						has_law = revokation_2
-						has_law = inheritance_1
-						has_law = crown_levies_2
-						has_law = crown_levies_3
-						has_law = crown_levies_4
+						hidden_tooltip = {
+							has_crown_law_title = no
+						}
+						holder_scope = { is_patrician = yes }
+						lower_tier_than = king
+						crownlaw_title = {
+							OR = {
+								has_law = king_peace_1
+								has_law = king_peace_2
+								has_law = emperor_peace_1
+								has_law = emperor_peace_2
+								has_law = revokation_1
+								has_law = revokation_2
+								has_law = inheritance_1
+								has_law = crown_levies_2
+								has_law = crown_levies_3
+								has_law = crown_levies_4
+							}
+						}
 					}
+					holder_scope = {
+						OR = {
+							is_patrician = yes
+							AND = {
+								tier = count
+								prestige = 100
+							}
+							AND = {
+								tier = duke
+								prestige = 250
+							}
+							AND = {
+								tier = king
+								prestige = 500
+							}
+							AND = {
+								tier = emperor
+								prestige = 1000
+							}
+						}
+					}
+					NOT = { has_law = hre_law_0 }
 				}
 			}
-			holder_scope = {
-				OR = {
-					is_patrician = yes
-					AND = {
-						tier = count
-						prestige = 100
-					}
-					AND = {
-						tier = duke
-						prestige = 250
-					}
-					AND = {
-						tier = king
-						prestige = 500
-					}
-					AND = {
-						tier = emperor
-						prestige = 1000
-					}
-				}
-			}
-			NOT = { has_law = hre_law_0 }
 		}
 		
 		effect = {
@@ -217,42 +227,47 @@ succession_laws = {
 		}
 		allow = {
 			OR = {
-				lower_tier_than = king
-				hidden_tooltip = {
-					has_crown_law_title = no
-				}
-				crownlaw_title = {
+				is_recent_grant = yes
+				AND = {
 					OR = {
-						has_law = king_peace_1
-						has_law = king_peace_2
-						has_law = emperor_peace_1
-						has_law = emperor_peace_2
-						has_law = revokation_1
-						has_law = revokation_2
+						lower_tier_than = king
+						hidden_tooltip = {
+							has_crown_law_title = no
+						}
+						crownlaw_title = {
+							OR = {
+								has_law = king_peace_1
+								has_law = king_peace_2
+								has_law = emperor_peace_1
+								has_law = emperor_peace_2
+								has_law = revokation_1
+								has_law = revokation_2
+							}
+						}
 					}
+					holder_scope = {
+						OR = {
+							AND = {
+								tier = count
+								prestige = 200
+							}
+							AND = {
+								tier = duke
+								prestige = 500
+							}
+							AND = {
+								tier = king
+								prestige = 1000
+							}
+							AND = {
+								tier = emperor
+								prestige = 2000
+							}
+						}
+					}
+					NOT = { has_law = hre_law_0 }
 				}
 			}
-			holder_scope = {
-				OR = {
-					AND = {
-						tier = count
-						prestige = 200
-					}
-					AND = {
-						tier = duke
-						prestige = 500
-					}
-					AND = {
-						tier = king
-						prestige = 1000
-					}
-					AND = {
-						tier = emperor
-						prestige = 2000
-					}
-				}
-			}
-			NOT = { has_law = hre_law_0 }
 		}
 		
 		effect = {
@@ -305,29 +320,34 @@ succession_laws = {
 			}
 		}
 		allow = {
-			NOT = { has_law = revokation_2 }
-			NOT = { has_law = king_peace_2 }
-			NOT = { has_law = emperor_peace_2 }
-			NOT = { has_law = inheritance_1 }
-			NOT = { has_law = crown_levies_3 }
-			NOT = { has_law = crown_levies_4 }
-			holder_scope = {
-				OR = {
-					AND = {
-						tier = count
-						prestige = 100
-					}
-					AND = {
-						tier = duke
-						prestige = 250
-					}
-					AND = {
-						tier = king
-						prestige = 500
-					}
-					AND = {
-						tier = emperor
-						prestige = 1000
+			OR = {
+				is_recent_grant = yes
+				AND = {
+					NOT = { has_law = revokation_2 }
+					NOT = { has_law = king_peace_2 }
+					NOT = { has_law = emperor_peace_2 }
+					NOT = { has_law = inheritance_1 }
+					NOT = { has_law = crown_levies_3 }
+					NOT = { has_law = crown_levies_4 }
+					holder_scope = {
+						OR = {
+							AND = {
+								tier = count
+								prestige = 100
+							}
+							AND = {
+								tier = duke
+								prestige = 250
+							}
+							AND = {
+								tier = king
+								prestige = 500
+							}
+							AND = {
+								tier = emperor
+								prestige = 1000
+							}
+						}
 					}
 				}
 			}
@@ -379,42 +399,36 @@ succession_laws = {
 			}
 		}
 		allow = {
-			holder_scope = {
-				OR = {
-					AND = {
-						tier = count
-						prestige = 100
-					}
-					AND = {
-						tier = duke
-						prestige = 250
-					}
-					AND = {
-						tier = king
-						prestige = 500
-					}
-					AND = {
-						tier = emperor
-						prestige = 1000
-					}
-				}
-				OR = {
-					culture_group = celtic
-					AND = {
-						ai = no
-						NOT = { trait = content }
-						NOT = { trait = craven }
-						NOT = { trait = slothful }
-						NOT = { trait = stressed }
+			OR = {
+				is_recent_grant = yes
+				AND = {
+					holder_scope = {
 						OR = {
-							trait = ambitious
-							trait = brave
-							trait = diligent
+							AND = {
+								tier = count
+								prestige = 100
+							}
+							AND = {
+								tier = duke
+								prestige = 250
+							}
+							AND = {
+								tier = king
+								prestige = 500
+							}
+							AND = {
+								tier = emperor
+								prestige = 1000
+							}
+						}
+						OR = {
+							culture_group = celtic
+							ai = no
 						}
 					}
+					NOT = { has_law = hre_law_0 }
 				}
 			}
-			NOT = { has_law = hre_law_0 }
 		}
 		effect = {
 			succession = tanistry
@@ -466,46 +480,51 @@ succession_laws = {
 		}
 		allow = {
 			OR = {
-				hidden_tooltip = {
-					has_crown_law_title = no
-				}
-				lower_tier_than = king
-				crownlaw_title = {
+				is_recent_grant = yes
+				AND = {
 					OR = {
-						has_law = king_peace_1
-						has_law = king_peace_2
-						has_law = emperor_peace_1
-						has_law = emperor_peace_2
-						has_law = revokation_1
-						has_law = revokation_2
-						has_law = inheritance_1
-						has_law = crown_levies_2
-						has_law = crown_levies_3
-						has_law = crown_levies_4
+						hidden_tooltip = {
+							has_crown_law_title = no
+						}
+						lower_tier_than = king
+						crownlaw_title = {
+							OR = {
+								has_law = king_peace_1
+								has_law = king_peace_2
+								has_law = emperor_peace_1
+								has_law = emperor_peace_2
+								has_law = revokation_1
+								has_law = revokation_2
+								has_law = inheritance_1
+								has_law = crown_levies_2
+								has_law = crown_levies_3
+								has_law = crown_levies_4
+							}
+						}
 					}
+					holder_scope = {
+						OR = {
+							AND = {
+								tier = count
+								prestige = 100
+							}
+							AND = {
+								tier = duke
+								prestige = 250
+							}
+							AND = {
+								tier = king
+								prestige = 500
+							}
+							AND = {
+								tier = emperor
+								prestige = 1000
+							}
+						}
+					}
+					NOT = { has_law = hre_law_0 }
 				}
 			}
-			holder_scope = {
-				OR = {
-					AND = {
-						tier = count
-						prestige = 100
-					}
-					AND = {
-						tier = duke
-						prestige = 250
-					}
-					AND = {
-						tier = king
-						prestige = 500
-					}
-					AND = {
-						tier = emperor
-						prestige = 1000
-					}
-				}
-			}
-			NOT = { has_law = hre_law_0 }
 		}
 		
 		effect = {
