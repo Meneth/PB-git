@@ -6,6 +6,7 @@
 	Converting to your capital's religion no longer requires you to be pious, but still reduces your piety
 	Added Jewish and Nahuatl cultural buildings
 	(PB+SWMH) Updated cultural buildings
+	Restored vanilla tournaments (at least until the New Duel Engine version is fixed)
 
 3.5.5
 	Mending the schism as a catholic now always requires a catholic to hold the Hagia Sophia, even if there's no Orthodox empire in existence. This should make mending the schism considerably rarer
