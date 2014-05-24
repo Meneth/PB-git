@@ -771,8 +771,10 @@ RETTYPE_CUL_ANDALUSIAN =
 ########################
 RETTYPE_CUL_NORSE = 
 {
-	first_type = 1
+	first_type = 6
 	first_amount = 250
+	
+	special_troops = berserkers
 	
 	potential = {
 		OR = {
@@ -804,8 +806,10 @@ RETTYPE_CUL_NORSE =
 }
 RETTYPE_CUL_NORWEGIAN = 
 {
-	first_type = 1
+	first_type = 6
 	first_amount = 250
+	
+	special_troops = berserkers
 	
 	potential = {
 		culture = norwegian
@@ -1413,7 +1417,7 @@ RETTYPE_CUL_INDIAN =
 	second_type = 6
 	second_amount = 15
 	
-	special_troops = war_elephants
+	special_troops = berserkers
 	
 	potential = {
 		OR = {

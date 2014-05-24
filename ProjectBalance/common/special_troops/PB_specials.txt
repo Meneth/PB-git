@@ -1,0 +1,11 @@
+berserkers = {
+	morale = 5
+	maintenance = 2
+	phase_skirmish_attack = 0.5 # 0.25 better than heavy inf
+	phase_melee_attack = 7 # 1 better than heavy inf
+	phase_pursue_attack = 2
+	phase_skirmish_defense = 5
+	phase_melee_defense = 4
+	phase_pursue_defense = 2
+	base_type = heavy_infantry
+}
