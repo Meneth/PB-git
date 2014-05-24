@@ -3,22 +3,19 @@ decisions = {
 	hold_a_epic_tournament  = {
 		is_high_prio = yes
 		potential = {
-			always = no
 			has_global_flag = project_balance
 			had_global_flag = { flag = project_balance days = 1 }
 			NOT = {
 				has_character_flag = epic_tournament
 				has_character_flag = do_not_disturb
 			}
-			NOT = {
-				religion_group = muslim
-				religion_group = pagan_group
+			OR = {
+				religion_group = christian
+				religion_group = jewish_group
+				religion_group = zoroastrian_group
 			}
 			independent = yes
-			OR = {
-				is_female = no
-				trait = strong
-			}
+			NOT = { is_female = yes	}
 			OR = {
 				tier = king
 				tier = emperor 

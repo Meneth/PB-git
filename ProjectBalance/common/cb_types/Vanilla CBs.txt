@@ -246,7 +246,7 @@ other_claim = {
 	sprite = 2
 	truce_days = 1825
 	hostile_against_others = yes
-	can_ask_to_join_war = yes
+	can_ask_to_join_war = no
 
 	press_claim = yes
 	
@@ -1276,7 +1276,7 @@ other_claim_on_liege = {
 	sprite = 4
 	truce_days = 1825
 	hostile_against_others = yes
-	can_ask_to_join_war = yes
+	can_ask_to_join_war = no
 
 	press_claim = yes
 	can_call_vassals = no
