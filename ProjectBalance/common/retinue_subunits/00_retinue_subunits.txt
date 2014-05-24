@@ -1417,7 +1417,7 @@ RETTYPE_CUL_INDIAN =
 	second_type = 6
 	second_amount = 15
 	
-	special_troops = berserkers
+	special_troops = war_elephants
 	
 	potential = {
 		OR = {
