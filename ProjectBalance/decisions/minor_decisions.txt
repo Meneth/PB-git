@@ -241,6 +241,7 @@ decisions = {
 					empire = { title = e_rajastan }
 					empire = { title = e_bengal }
 					empire = { title = e_deccan }
+					empire = { title = e_india }
 				}
 			}
 			NOT = { has_character_flag = do_not_disturb }
