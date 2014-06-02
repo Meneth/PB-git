@@ -3003,6 +3003,18 @@ tribal_invasion = {
 				has_character_flag = tribal_inv_requirements_bypass
 			}
 		}
+		OR = {
+			# AI il-Khan shall not expand too far North into the Golden Horde's conquest path
+			# Currently only verified titles against PB+SWMH, but this couldn't hurt plain PB,
+			# so we enforce this condition for both cases anyway.
+#			NOT = { has_global_flag = SWMH }
+			ai = no
+			ROOT = { primary_title = { NOT = { title = e_il-khanate } } }
+			NOT = {
+				title = k_khazaria
+				title = k_georgia
+			}
+		}
 	}
 	
 	is_valid = {
