@@ -3272,6 +3272,7 @@ crusade = {
 	}
 	
 	can_use = {
+		has_global_flag = pb_crusades_unlocked
 		ROOT = {
 			can_call_crusade = yes
 		}

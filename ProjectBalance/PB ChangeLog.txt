@@ -1,6 +1,7 @@
 3.5.8 [BETA]
 	The il-Khanate AI shall no longer expand North into the Golden Horde's historical conquest trajectory
 	Removed 'Randomize Rulers' scenario customization decison due to report of a crash
+	Crusades will no longer almost instantly start after the scenario but require ~10-20 years before firing at later start dates [post-1103]
 
 3.5.7
 	Added Jewish and Nahuatl cultural buildings
