@@ -57,20 +57,4 @@ decisions = {
 			}
 		}
 	}
-	#Random Rulers
-	random_rulers = {
-		potential = {
-			NOT = { had_global_flag = { flag = project_balance days = 1 } } #Only on day 0
-			ai = no
-			NOT = { has_global_flag = random_rulers }
-		}
-		effect = {
-			custom_tooltip = {
-				text = random_rulers_ctt
-			}
-			hidden_tooltip = {
-				narrative_event = { id = pb_rr.0 }
-			}
-		}
-	}
 }
