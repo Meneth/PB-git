@@ -5,6 +5,7 @@
 	Catholic Crusades and Muslim Jihad will no longer be called almost at the same instant for later start dates when Crusades are already unlocked
 		Instead, their respective activations will be randomly staggered
 	Halved the moral authority gained from the religious head's piety
+	Halved the moral authority gained from holding holy sites
 
 3.5.7
 	Added Jewish and Nahuatl cultural buildings
