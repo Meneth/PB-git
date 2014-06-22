@@ -3311,6 +3311,7 @@ crusade = {
 						religion = fraticelli
 					}
 					has_global_flag = schism_mended
+					NOT = { has_global_flag = cath_schism_mended }
 				}
 			}
 		}
