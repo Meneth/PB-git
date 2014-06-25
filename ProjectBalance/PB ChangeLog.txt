@@ -6,6 +6,7 @@
 		Instead, their respective activations will be randomly staggered
 	Halved the moral authority gained from the religious head's piety
 	Halved the moral authority gained from holding holy sites
+	Made the Pope ask for Papal Investiture less often
 
 3.5.7
 	Added Jewish and Nahuatl cultural buildings
