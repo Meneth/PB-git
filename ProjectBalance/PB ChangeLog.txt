@@ -7,6 +7,7 @@
 	Halved the moral authority gained from the religious head's piety
 	Halved the moral authority gained from holding holy sites
 	Made the Pope ask for Papal Investiture less often
+	Maintenance for heavy cavalry is no longer so disproportionally high
 
 3.5.7
 	Added Jewish and Nahuatl cultural buildings
