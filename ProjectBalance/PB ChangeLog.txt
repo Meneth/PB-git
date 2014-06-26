@@ -8,7 +8,7 @@
 	Halved the moral authority gained from holding holy sites
 	Catholics mending the schism will no longer block them from starting Crusades [bnormoyle]
 	Made the Pope ask for Papal Investiture less often
-	Maintenance for heavy cavalry is no longer so dis proportionally high
+	Maintenance for heavy cavalry is no longer so disproportionately high
 
 3.5.7
 	Added Jewish and Nahuatl cultural buildings

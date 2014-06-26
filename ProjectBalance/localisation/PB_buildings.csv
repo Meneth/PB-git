@@ -56,6 +56,8 @@ ca_culture_jewish_0;Jewish Heavy Infantry Barracks;Caserne d’infanterie lourde j
 ca_culture_jewish_5;Jewish Heavy Infantry Barracks;Caserne d’infanterie lourde juive;Übungsplatz für jüdische Schwere Infanterie;;Barracas de Infantería Pesada judia;;;;;;;;;x
 ca_culture_nahuatl_0;Jaguar Warrior Lodge;Hutte de guerrier jaguar;Jaguarkriegerhütte;;Campamento de Guerreros Jaguar;;;;;;;;;x
 ca_culture_nahuatl_5;Jaguar Warrior Lodge;Hutte de guerrier jaguar;Jaguarkriegerhütte;;Campamento de Guerreros Jaguar;;;;;;;;;x
+ca_culture_nubian_0;Nubian Warrior Barracks;Caserne des guerriers nubiens;Nubische Kriegerbaracken;;Barracas de Guerreros Nubios;;;;;;;;;x
+ca_culture_nubian_5;Nubian Warrior Barracks;Caserne des guerriers nubiens;Nubische Kriegerbaracken;;Barracas de Guerreros Nubios;;;;;;;;;x
 retinue_disabler;This building prevents barons and vassalized single-province counts from having retinues. If you're seeing it in a count or above's holding, please report it as a bug if it persists for more than a month.;;;;Este edificio evita que los barones y los condes con un solo condado no independiente puedan tener séquitos. Si aparece en otro caso, por favor, informa del fallo.;;;;;;;;;x
 ca_retinues;Retinue Disabler;;;;Inhabilitador de séquitos;;;;;;;;;x
 ct_retinues;Retinue Disabler;;;;Inhabilitador de séquitos;;;;;;;;;x
