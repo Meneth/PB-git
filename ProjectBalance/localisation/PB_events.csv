@@ -195,3 +195,5 @@ pb_rr.0.opt.cancel;No thanks. I'll stick to the usual suspects for now...;;;;No 
 pb_rr.0.opt.ai_only.ctt;All players' traits will remain the same, but AI characters' will be randomized.\n;;;;Los rasgos de tu personaje permanecerán igual, los personajes de la IA serán aleatorios.\n;;;;;;;;;x;
 pb_rr.0.opt.all.ctt;The traits of all players and AI characters alike will be randomized.\n;;;;Tanto los rasgos de tu personaje como los de la IA serán aleatorios.\n;;;;;;;;;x;
 pb_rr.0.opt.cancel.ctt;Nothing new and interesting will ever happen in your games-- never, ever again.\n;;;;Nada nuevo e interesante ocurrirá en tus juegos... nunca jamás.\n;;;;;;;;;x;
+PB_specialization.0.desc;You asked [Root.Guardian.GetTitledFirstName] to teach you about how to act at court.;;;;;;;;;;;;;x
+PB_specialization.1.desc;Under my guidance, my young [GetFromRelation], [From.GetFirstName], is slowly mastering the art of diplomacy.;;;;;;;;;;;;;x

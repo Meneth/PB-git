@@ -137,7 +137,7 @@ character_event = {
 	}
 
 	option = {
-		name = PB_specialization.0.A
+		name = "OK"
 		hidden_tooltip = { guardian = { character_event = { id = PB_specialization.1 } } } #Guardian Notification.
 		if = {
 			limit = { has_trait = skilled_diplomat }
