@@ -206,8 +206,4 @@ spriteTypes = {
 		name = "GFX_gender_equality"
 		texturefile = "gfx\\interface\\decision_icon_gender_equality.tga"
 	}
-	spriteType = {
-		name = "GFX_random_rulers"
-		texturefile = "gfx\\interface\\decision_icon_random_rulers.tga"
-	}
 }

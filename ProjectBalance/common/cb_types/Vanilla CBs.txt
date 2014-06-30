@@ -3003,6 +3003,18 @@ tribal_invasion = {
 				has_character_flag = tribal_inv_requirements_bypass
 			}
 		}
+		OR = {
+			# AI il-Khan shall not expand too far North into the Golden Horde's conquest path
+			# Currently only verified titles against PB+SWMH, but this couldn't hurt plain PB,
+			# so we enforce this condition for both cases anyway.
+#			NOT = { has_global_flag = SWMH }
+			ai = no
+			ROOT = { primary_title = { NOT = { title = e_il-khanate } } }
+			NOT = {
+				title = k_khazaria
+				title = k_georgia
+			}
+		}
 	}
 	
 	is_valid = {
@@ -3260,6 +3272,23 @@ crusade = {
 	}
 	
 	can_use = {
+		has_global_flag = pb_crusades_unlocked
+		ROOT = {
+			OR = {
+				NOT = {
+					religion_group = christian
+					religion_group = muslim
+				}
+				AND = {
+					religion_group = christian
+					has_global_flag = pb_cath_crusades_unlocked
+				}
+				AND = {
+					religion_group = muslim
+					has_global_flag = pb_mus_crusades_unlocked
+				}
+			}
+		}
 		ROOT = {
 			can_call_crusade = yes
 		}
@@ -3282,6 +3311,7 @@ crusade = {
 						religion = fraticelli
 					}
 					has_global_flag = schism_mended
+					NOT = { has_global_flag = cath_schism_mended }
 				}
 			}
 		}

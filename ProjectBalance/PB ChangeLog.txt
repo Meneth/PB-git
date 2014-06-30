@@ -1,7 +1,22 @@
+3.5.8
+	The il-Khanate AI shall no longer expand North into the Golden Horde's historical conquest trajectory
+	Removed 'Randomize Rulers' scenario customization decision due to report of a crash
+	Crusades will no longer almost instantly start after the scenario but require ~10-20 years before firing at later start dates [post-1103]
+	Catholic Crusades and Muslim Jihad will no longer be called almost at the same instant for later start dates when Crusades are already unlocked
+		Instead, their respective activations will be randomly staggered
+	Halved the moral authority gained from the religious head's piety
+	Halved the moral authority gained from holding holy sites
+	Catholics mending the schism will no longer block them from starting Crusades [bnormoyle]
+	Made the Pope ask for Papal Investiture less often
+	Maintenance for heavy cavalry is no longer so disproportionately high
+	Added four diplomacy traits similar to the fighter traits. These can be gained in childhood and provide a boost to diplomacy
+
 3.5.7
 	Added Jewish and Nahuatl cultural buildings
 	(PB+SWMH) Updated cultural buildings
 	Restored vanilla tournaments (at least until the New Duel Engine version is fixed)
+	[Major Fix] Upon title grant, the succession laws of the grantee are now properly applied to the granted title
+	Gavelkind succession law now instantly takes effect for barony-tier titles. Previously there was game-time delay before hard-code enforced it
 
 3.5.6
 	Standard demesne laws now locked-out for temporary titles (e.g., revolt, liberation, or duchy adventurer titles)

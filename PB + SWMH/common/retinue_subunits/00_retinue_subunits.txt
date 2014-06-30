@@ -333,8 +333,8 @@ RETTYPE_CUL_HUNG =
 	}
 	
 	modifier = {
-		knights_offensive = 0.3
-		knights_defensive = 0.3
+		horse_archers_offensive = 0.3
+		horse_archers_defensive = 0.3
 	}
 }
 ########################
@@ -1164,43 +1164,7 @@ RETTYPE_CUL_ALTAIC =
 		horse_archers_morale = 0.2
 	}
 }
-RETTYPE_CUL_AVAR = 
-{
-	first_type = 3
-	first_amount = 150
-	
-	second_type = 6
-	second_amount = 100
-	
-	special_troops = horse_archers
-	
-	potential = {
-		OR = {
-			culture = cuman
-			culture = pecheneg
-		}
 
-		# PB's retinue spam filter
-		OR = {
-			ai = no
-			AND = {
-				higher_real_tier_than = count
-				OR = {
-					higher_real_tier_than = duke
-					AND = {
-						independent = yes
-						realm_size = 15
-					}
-					realm_size = 21
-				}
-			}
-		}
-	}
-	modifier = {
-		knights_defensive = 0.6
-		horse_archers_offensive = 0.3
-	}
-}
 RETTYPE_CUL_TURKISH = 
 {
 	first_type = 6
@@ -1267,7 +1231,7 @@ RETTYPE_CUL_ARAB =
 	}
 	
 	modifier = {
-		light_cavalry_offensive = 0.6
+		camel_cavalry_offensive = 0.6
 	}
 }
 

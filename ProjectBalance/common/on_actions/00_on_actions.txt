@@ -221,6 +221,7 @@ on_yearly_pulse = {
 		50 = RoI.3516
 		10 = RoI.3520
 		50 = RoI.3530
+		50 = RoI.3536
 		
 		# Religious tolerance events
 		100 = RoI.400
@@ -382,6 +383,7 @@ on_bi_yearly_pulse = {
 		10 = 3495	
 		10 = 3280
 		10 = 3282
+		10 = 3283
 		10 = 3286
 		10 = 3710
 		10 = 3715
@@ -1566,4 +1568,28 @@ on_rel_head_chosen = {
 	events = {
 		704
 	}
+}
+
+# ROOT is the looter, FROM is the settlement title
+on_settlement_looted = {
+}
+
+# ROOT is the navy's owner, FROM is the province
+on_navy_returns_with_loot = {
+}
+
+# ROOT is the creating character, FROM is the title
+on_create_title = {
+}
+
+# ROOT is the character, FROM is the title, FROMFROM is the old holder
+on_new_holder = {
+}
+
+# ROOT is the character, FROM is the title, FROMFROM is the old holder
+on_new_holder_inheritance = {
+}
+
+# ROOT is the character, FROM is the title, FROMFROM is the old holder
+on_new_holder_usurpation = {
 }

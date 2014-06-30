@@ -905,9 +905,6 @@ character_event = {
 }
 
 
-# pb_crusades.11 => FREE
-
-
 # pb_crusades.12
 # Free holy orders of wrong religion from target kingdom title vassalage (CB supplement)
 #
@@ -932,4 +929,59 @@ character_event = {
 	option = {
 		name = OK
 	}
+}
+
+
+# pb_crusades.14
+# Unlock crusades for the scenario: Catholics (MTTH event).
+#
+# This starts its random countdown along with the Muslim version once
+# pb_crusades.13 fires.
+character_event = {
+	id = pb_crusades.14
+	desc = OK
+	hide_window = yes
+	
+	trigger = {
+		has_global_flag = pb_crusades_unlocked
+		not = { has_global_flag = pb_cath_crusades_unlocked }
+		has_landed_title = k_papal_state
+	}
+	
+	mean_time_to_happen = {
+		years = 5
+	}
+	
+	immediate = {
+		set_global_flag = pb_cath_crusades_unlocked
+	}
+	
+	option = { name = OK }
+}
+
+# pb_crusades.15
+# Unlock crusades for the scenario: Muslims (MTTH event).
+#
+# This starts its random countdown along with the Muslim version once
+# pb_crusades.13 fires.
+character_event = {
+	id = pb_crusades.15
+	desc = OK
+	hide_window = yes
+	
+	trigger = {
+		has_global_flag = pb_crusades_unlocked
+		not = { has_global_flag = pb_mus_crusades_unlocked }
+		has_landed_title = k_papal_state
+	}
+	
+	mean_time_to_happen = {
+		years = 5
+	}
+	
+	immediate = {
+		set_global_flag = pb_mus_crusades_unlocked
+	}
+	
+	option = { name = OK }
 }

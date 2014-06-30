@@ -241,6 +241,7 @@ decisions = {
 					empire = { title = e_rajastan }
 					empire = { title = e_bengal }
 					empire = { title = e_deccan }
+					empire = { title = e_india }
 				}
 			}
 			NOT = { has_character_flag = do_not_disturb }
@@ -334,7 +335,7 @@ decisions = {
 		}
 	}
 	
-	catholic_pilgrimage = {
+	catholic_pilgrimage = {        # For all Christians
 		potential = {
 			has_dlc = "Sons of Abraham"
 			is_ruler = yes
@@ -381,10 +382,10 @@ decisions = {
 			always = no
 		}
 		ai_will_do = {
-			factor = 0.001             # Only a small minority of Christians ever go on a pilgrimage
+			factor = 1
+			
 			modifier = {
-				factor = 0
-				NOT = { age = 25 }
+				factor = 0.001             # Only a small minority of Christians ever go on a pilgrimage
 			}
 			modifier = {
 				factor = 3
@@ -1468,7 +1469,10 @@ decisions = {
 			NOT = { trait = incapable }
 			OR = {
 				has_character_modifier = patron_kali
-				county = { de_jure_liege = e_bengal	}
+				capital_scope = { kingdom = { title = k_bengal } }
+				capital_scope = { kingdom = { title = k_kamarupa } }
+				capital_scope = { kingdom = { title = k_orissa } }
+				capital_scope = { kingdom = { title = k_bihar } }
 			}
 			NOT = {
 				has_character_modifier = holding_diwali_feast
