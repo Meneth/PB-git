@@ -3192,4 +3192,142 @@ castle = {
 		
 		extra_tech_building_start = 0.8
 	}
+
+	# Nubian warrior barracks
+	ca_culture_nubian_0 = {
+		desc = ca_culture_nubian_1_desc
+		potential = {
+			culture = nubian
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		build_cost = 100
+		build_time = 365
+		heavy_infantry = 15
+		light_infantry = 30
+		archers = 40
+		pikemen = -15
+		light_cavalry = -15
+		archers_defensive = 0.1
+		retinuesize = 20
+		ai_creation_factor = 102
+
+		extra_tech_building_start = 0.0
+	}
+	ca_culture_nubian_1 = {
+		desc = ca_culture_nubian_1_desc
+		potential = {
+			culture = nubian
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		upgrades_from = ca_culture_nubian_0
+		build_cost = 200
+		build_time = 730
+		heavy_infantry = 20
+		light_infantry = 50
+		archers = 60
+		pikemen = -15
+		light_cavalry = -15
+		archers_defensive = 0.1
+		retinuesize = 20
+		ai_creation_factor = 101
+
+		extra_tech_building_start = 1.0
+	}
+	ca_culture_nubian_2 = {
+		desc = ca_culture_nubian_1_desc
+		potential = {
+			FROM = { culture_group = ROOT }
+			culture = nubian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 2
+			FROM = { culture_group = ROOT }
+		}
+		upgrades_from = ca_culture_nubian_1
+		build_cost = 300
+		build_time = 1095
+		heavy_infantry = 25
+		light_infantry = 70
+		archers = 80
+		pikemen = -15
+		light_cavalry = -15
+		archers_defensive = 0.1
+		retinuesize = 20
+		ai_creation_factor = 100
+
+		extra_tech_building_start = 1.0
+	}
+	ca_culture_nubian_3 = {
+		desc = ca_culture_nubian_1_desc
+		potential = {
+			FROM = { culture_group = ROOT }
+			culture = nubian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 3
+			FROM = { culture_group = ROOT }
+		}
+		upgrades_from = ca_culture_nubian_2
+		build_cost = 400
+		build_time = 1460
+		heavy_infantry = 30
+		light_infantry = 90
+		archers = 100
+		pikemen = -15
+		light_cavalry = -15
+		archers_defensive = 0.1
+		retinuesize = 20
+		ai_creation_factor = 99
+		
+		extra_tech_building_start = 1.0
+	}
+	ca_culture_nubian_4 = {
+		desc = ca_culture_nubian_1_desc
+		potential = {
+			FROM = { culture = ROOT }
+			culture = nubian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 4
+			FROM = { culture = ROOT }
+		}
+		upgrades_from = ca_culture_nubian_3
+		build_cost = 500
+		build_time = 1825
+		heavy_infantry = 35
+		light_infantry = 110
+		archers = 120
+		pikemen = -15
+		light_cavalry = -15
+		archers_defensive = 0.1
+		retinuesize = 20
+		ai_creation_factor = 98
+		
+		extra_tech_building_start = 1.0
+	}
+	ca_culture_nubian_5 = {
+		desc = ca_culture_nubian_1_desc
+		potential = {
+			FROM = { culture = ROOT }
+			culture = nubian
+		}
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 6
+			FROM = { culture = ROOT }
+		}
+		upgrades_from = ca_culture_nubian_4
+		build_cost = 600
+		build_time = 2190
+		heavy_infantry = 40
+		light_infantry = 130
+		archers = 140
+		pikemen = -15
+		light_cavalry = -15
+		archers_defensive = 0.1
+		retinuesize = 20
+		ai_creation_factor = 97
+		
+		extra_tech_building_start = 1.0
+	}
+
 }

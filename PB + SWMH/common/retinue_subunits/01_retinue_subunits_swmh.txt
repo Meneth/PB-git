@@ -27,9 +27,9 @@ RETTYPE_CUL_SARDINIAN =
 					higher_real_tier_than = duke
 					AND = {
 						independent = yes
-						realm_size = 15
+						realm_size = 18
 					}
-					realm_size = 21
+					realm_size = 24
 				}
 			}
 		}
@@ -59,9 +59,9 @@ RETTYPE_CUL_CORSICAN =
 					higher_real_tier_than = duke
 					AND = {
 						independent = yes
-						realm_size = 15
+						realm_size = 18
 					}
-					realm_size = 21
+					realm_size = 24
 				}
 			}
 		}
@@ -91,9 +91,9 @@ RETTYPE_CUL_CENTRAL_ITALIAN =
 					higher_real_tier_than = duke
 					AND = {
 						independent = yes
-						realm_size = 15
+						realm_size = 18
 					}
-					realm_size = 21
+					realm_size = 24
 				}
 			}
 		}
@@ -123,9 +123,9 @@ RETTYPE_CUL_SOUTHER_ITALIAN =
 					higher_real_tier_than = duke
 					AND = {
 						independent = yes
-						realm_size = 15
+						realm_size = 18
 					}
-					realm_size = 21
+					realm_size = 24
 				}
 			}
 		}
@@ -156,9 +156,9 @@ RETTYPE_CUL_NEAPOLITAN =
 					higher_real_tier_than = duke
 					AND = {
 						independent = yes
-						realm_size = 15
+						realm_size = 18
 					}
-					realm_size = 21
+					realm_size = 24
 				}
 			}
 		}
@@ -188,9 +188,9 @@ RETTYPE_CUL_TUSCAN =
 					higher_real_tier_than = duke
 					AND = {
 						independent = yes
-						realm_size = 15
+						realm_size = 18
 					}
-					realm_size = 21
+					realm_size = 24
 				}
 			}
 		}
@@ -217,9 +217,9 @@ RETTYPE_CUL_LIGURIAN =
 					higher_real_tier_than = duke
 					AND = {
 						independent = yes
-						realm_size = 15
+						realm_size = 18
 					}
-					realm_size = 21
+					realm_size = 24
 				}
 			}
 		}
@@ -247,9 +247,9 @@ RETTYPE_CUL_VENETIAN =
 					higher_real_tier_than = duke
 					AND = {
 						independent = yes
-						realm_size = 15
+						realm_size = 18
 					}
-					realm_size = 21
+					realm_size = 24
 				}
 			}
 		}
@@ -276,9 +276,9 @@ RETTYPE_CUL_LANGOBARDISCH =
 					higher_real_tier_than = duke
 					AND = {
 						independent = yes
-						realm_size = 15
+						realm_size = 18
 					}
-					realm_size = 21
+					realm_size = 24
 				}
 			}
 		}
@@ -309,9 +309,9 @@ RETTYPE_CUL_KARANTANCI =
 					higher_real_tier_than = duke
 					AND = {
 						independent = yes
-						realm_size = 15
+						realm_size = 18
 					}
-					realm_size = 21
+					realm_size = 24
 				}
 			}
 		}
@@ -342,9 +342,9 @@ RETTYPE_CUL_MORAVIAN =
 					higher_real_tier_than = duke
 					AND = {
 						independent = yes
-						realm_size = 15
+						realm_size = 18
 					}
-					realm_size = 21
+					realm_size = 24
 				}
 			}
 		}
@@ -375,9 +375,9 @@ RETTYPE_CUL_BOSNIAN =
 					higher_real_tier_than = duke
 					AND = {
 						independent = yes
-						realm_size = 15
+						realm_size = 18
 					}
-					realm_size = 21
+					realm_size = 24
 				}
 			}
 		}
@@ -409,9 +409,9 @@ RETTYPE_CUL_ESTONIAN =
 					higher_real_tier_than = duke
 					AND = {
 						independent = yes
-						realm_size = 15
+						realm_size = 18
 					}
-					realm_size = 21
+					realm_size = 24
 				}
 			}
 		}
@@ -443,9 +443,9 @@ RETTYPE_CUL_CORNISH =
 					higher_real_tier_than = duke
 					AND = {
 						independent = yes
-						realm_size = 15
+						realm_size = 18
 					}
-					realm_size = 21
+					realm_size = 24
 				}
 			}
 		}
@@ -473,9 +473,9 @@ RETTYPE_CUL_NORSEGAELIC =
 					higher_real_tier_than = duke
 					AND = {
 						independent = yes
-						realm_size = 15
+						realm_size = 18
 					}
-					realm_size = 21
+					realm_size = 24
 				}
 			}
 		}
@@ -506,9 +506,9 @@ RETTYPE_CUL_ARPITAN =
 					higher_real_tier_than = duke
 					AND = {
 						independent = yes
-						realm_size = 15
+						realm_size = 18
 					}
-					realm_size = 21
+					realm_size = 24
 				}
 			}
 		}
@@ -537,9 +537,9 @@ RETTYPE_CUL_ARAGONESE =
 					higher_real_tier_than = duke
 					AND = {
 						independent = yes
-						realm_size = 15
+						realm_size = 18
 					}
-					realm_size = 21
+					realm_size = 24
 				}
 			}
 		}
@@ -566,9 +566,9 @@ RETTYPE_CUL_GALICIAN =
 					higher_real_tier_than = duke
 					AND = {
 						independent = yes
-						realm_size = 15
+						realm_size = 18
 					}
-					realm_size = 21
+					realm_size = 24
 				}
 			}
 		}
@@ -595,9 +595,9 @@ RETTYPE_CUL_LEONESE =
 					higher_real_tier_than = duke
 					AND = {
 						independent = yes
-						realm_size = 15
+						realm_size = 18
 					}
-					realm_size = 21
+					realm_size = 24
 				}
 			}
 		}
@@ -625,9 +625,9 @@ RETTYPE_CUL_GOTHIC =
 					higher_real_tier_than = duke
 					AND = {
 						independent = yes
-						realm_size = 15
+						realm_size = 18
 					}
-					realm_size = 21
+					realm_size = 24
 				}
 			}
 		}
@@ -655,9 +655,9 @@ RETTYPE_CUL_ANGLONORSE =
 					higher_real_tier_than = duke
 					AND = {
 						independent = yes
-						realm_size = 15
+						realm_size = 18
 					}
-					realm_size = 21
+					realm_size = 24
 				}
 			}
 		}
@@ -685,9 +685,9 @@ RETTYPE_CUL_ALBANIAN =
 					higher_real_tier_than = duke
 					AND = {
 						independent = yes
-						realm_size = 15
+						realm_size = 18
 					}
-					realm_size = 21
+					realm_size = 24
 				}
 			}
 		}
@@ -715,9 +715,9 @@ RETTYPE_CUL_N_AFR =
 					higher_real_tier_than = duke
 					AND = {
 						independent = yes
-						realm_size = 15
+						realm_size = 18
 					}
-					realm_size = 21
+					realm_size = 24
 				}
 			}
 		}
@@ -758,9 +758,9 @@ RETTYPE_CUL_BEDOUIN_NOMAD =
 					higher_real_tier_than = duke
 					AND = {
 						independent = yes
-						realm_size = 15
+						realm_size = 18
 					}
-					realm_size = 21
+					realm_size = 24
 				}
 			}
 		}
