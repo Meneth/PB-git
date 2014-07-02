@@ -41,9 +41,6 @@ character_event = {
 				has_job_title = job_marshal
 			}
 		}
-		NOT = { trait = poor_warrior }
-		NOT = { trait = trained_warrior }
-		NOT = { trait = skilled_warrior }
 		NOT = { trait = master_warrior }
 	}
 
