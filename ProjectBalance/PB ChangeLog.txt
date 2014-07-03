@@ -1,5 +1,5 @@
 3.5.9
-	Fixed it being impossible to gain anything beyond the first level of fighter trait during childhood
+	Fixed it being impossible to gain the fighter and diplomat traits
 
 3.5.8
 	The il-Khanate AI shall no longer expand North into the Golden Horde's historical conquest trajectory
