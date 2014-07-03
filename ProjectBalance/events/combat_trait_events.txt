@@ -41,9 +41,6 @@ character_event = {
 				has_job_title = job_marshal
 			}
 		}
-		NOT = { trait = poor_warrior }
-		NOT = { trait = trained_warrior }
-		NOT = { trait = skilled_warrior }
 		NOT = { trait = master_warrior }
 	}
 
@@ -53,17 +50,17 @@ character_event = {
 		# Advancement slows down based on current level
 		modifier = {
 			factor = 2
-			has_trait = poor_warrior
+			trait = poor_warrior
 		}
 		
 		modifier = {
 			factor = 4
-			has_trait = trained_warrior
+			trait = trained_warrior
 		}
 		
 		modifier = {
 			factor = 6
-			has_trait = skilled_warrior
+			trait = skilled_warrior
 		}
 		
 		# Mentor Effects
@@ -161,26 +158,26 @@ character_event = {
 		name = "EVTOPTA5550100" # Stick 'em with the pointy end!
 		hidden_tooltip = { guardian = { character_event = { id = duel_cte.1 } } } #Guardian Notification.
 		if = {
-			limit = { has_trait = skilled_warrior }
+			limit = { trait = skilled_warrior }
 			remove_trait = skilled_warrior
 			add_trait = master_warrior
 		}
 		if = {
-			limit = { has_trait = trained_warrior }
+			limit = { trait = trained_warrior }
 			remove_trait = trained_warrior
 			add_trait = skilled_warrior
 		}
 		if = {
-			limit = { has_trait = poor_warrior }
+			limit = { trait = poor_warrior }
 			remove_trait = poor_warrior
 			add_trait = trained_warrior
 		}
 		if = {
 			limit = {
 				NOT = {
-					has_trait = trained_warrior
-					has_trait = skilled_warrior
-					has_trait = master_warrior
+					trait = trained_warrior
+					trait = skilled_warrior
+					trait = master_warrior
 				}
 			}
 			add_trait = poor_warrior

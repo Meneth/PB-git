@@ -1,3 +1,6 @@
+3.5.9
+	Fixed it being impossible to gain the fighter and diplomat traits
+
 3.5.8
 	The il-Khanate AI shall no longer expand North into the Golden Horde's historical conquest trajectory
 	Removed 'Randomize Rulers' scenario customization decision due to report of a crash
