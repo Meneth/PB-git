@@ -917,6 +917,21 @@ claim_on_liege = {
 	defender_ai_defeat_worth = {
 		factor = 100
 	}
+	
+	is_valid = {
+		ROOT = {
+			OR = {
+				liege = {
+					character = PREV # either independent
+				}
+				liege = { 
+					FROM = { 
+						is_liege_or_above = PREV # or have shared liege
+					}
+				}
+			}
+		}
+	}
 }
 
 
@@ -1167,6 +1182,21 @@ claim_on_liege_plot = {
 	
 	defender_ai_defeat_worth = {
 		factor = 100
+	}
+	
+	is_valid = {
+		ROOT = {
+			OR = {
+				liege = {
+					character = PREV # either independent
+				}
+				liege = { 
+					FROM = { 
+						is_liege_or_above = PREV # or have shared liege
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -1682,6 +1712,21 @@ other_claim_on_liege = {
 	defender_ai_defeat_worth = {
 		factor = 100
 	}
+	
+	is_valid = {
+		ROOT = {
+			OR = {
+				liege = {
+					character = PREV # either independent
+				}
+				liege = { 
+					FROM = { 
+						is_liege_or_above = PREV # or have shared liege
+					}
+				}
+			}
+		}
+	}
 }
 
 
@@ -2158,6 +2203,21 @@ change_seniority_succession_law = {
 	defender_ai_defeat_worth = {
 		factor = 100
 	}
+	
+	is_valid = {
+		ROOT = {
+			OR = {
+				liege = {
+					character = PREV # either independent
+				}
+				liege = { 
+					FROM = { 
+						is_liege_or_above = PREV # or have shared liege
+					}
+				}
+			}
+		}
+	}
 }
 
 
@@ -2404,6 +2464,21 @@ change_primogeniture_succession_law = {
 	defender_ai_defeat_worth = {
 		factor = 100
 	}
+	
+	is_valid = {
+		ROOT = {
+			OR = {
+				liege = {
+					character = PREV # either independent
+				}
+				liege = { 
+					FROM = { 
+						is_liege_or_above = PREV # or have shared liege
+					}
+				}
+			}
+		}
+	}
 }
 
 change_feudal_elective_succession_law = {
@@ -2647,6 +2722,21 @@ change_feudal_elective_succession_law = {
 	
 	defender_ai_defeat_worth = {
 		factor = 100
+	}
+	
+	is_valid = {
+		ROOT = {
+			OR = {
+				liege = {
+					character = PREV # either independent
+				}
+				liege = { 
+					FROM = { 
+						is_liege_or_above = PREV # or have shared liege
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -6373,6 +6463,21 @@ change_gavelkind_succession_law = {
 	defender_ai_defeat_worth = {
 		factor = 100
 	}
+	
+	is_valid = {
+		ROOT = {
+			OR = {
+				liege = {
+					character = PREV # either independent
+				}
+				liege = { 
+					FROM = { 
+						is_liege_or_above = PREV # or have shared liege
+					}
+				}
+			}
+		}
+	}
 }
 
 coastal_republic = {
@@ -8709,6 +8814,21 @@ cb_install_antiking = {
 	
 	defender_ai_defeat_worth = {
 		factor = 100
+	}
+	
+	is_valid = {
+		ROOT = {
+			OR = {
+				liege = {
+					character = PREV # either independent
+				}
+				liege = { 
+					FROM = { 
+						is_liege_or_above = PREV # or have shared liege
+					}
+				}
+			}
+		}
 	}
 }
 
