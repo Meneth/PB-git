@@ -26,6 +26,21 @@ remove_internal_peace = {
 			has_character_flag = faction_autonomy_no_internal_peace
 		}
 	}
+	
+	is_valid = {
+		ROOT = {
+			OR = {
+				liege = {
+					character = PREV # either independent
+				}
+				liege = { 
+					FROM = { 
+						is_liege_or_above = PREV # or have shared liege
+					}
+				}
+			}
+		}
+	}
 
 	on_success = {
 		ROOT = {
@@ -163,6 +178,21 @@ remove_revokation = {
 		}
 	}
 	
+	is_valid = {
+		ROOT = {
+			OR = {
+				liege = {
+					character = PREV # either independent
+				}
+				liege = { 
+					FROM = { 
+						is_liege_or_above = PREV # or have shared liege
+					}
+				}
+			}
+		}
+	}
+	
 	on_success = {
 		ROOT = {
 			opinion = {
@@ -292,6 +322,21 @@ remove_inheritance = {
 			has_character_flag = faction_autonomy_external_inheritance
 		}
 	}
+	
+	is_valid = {
+		ROOT = {
+			OR = {
+				liege = {
+					character = PREV # either independent
+				}
+				liege = { 
+					FROM = { 
+						is_liege_or_above = PREV # or have shared liege
+					}
+				}
+			}
+		}
+	}
 
 	on_success = {
 		ROOT = {
@@ -411,6 +456,21 @@ reduce_crown_levies = {
 	can_use = {
 		ROOT = {
 			de_facto_liege = FROM
+		}
+	}
+	
+	is_valid = {
+		ROOT = {
+			OR = {
+				liege = {
+					character = PREV # either independent
+				}
+				liege = { 
+					FROM = { 
+						is_liege_or_above = PREV # or have shared liege
+					}
+				}
+			}
 		}
 	}
 
