@@ -1714,15 +1714,13 @@ other_claim_on_liege = {
 	}
 	
 	is_valid = {
-		ROOT = {
-			OR = {
-				liege = {
-					character = PREV # either independent
-				}
-				liege = { 
-					FROM = { 
-						is_liege_or_above = PREV # or have shared liege
-					}
+		OR = {
+			liege = {
+				character = PREV # either independent
+			}
+			liege = { 
+				FROM = { 
+					is_liege_or_above = PREV # or have shared liege
 				}
 			}
 		}
@@ -8694,11 +8692,30 @@ cb_install_antiking = {
 	}
 	
 	is_valid = {
+		NOT = { 
+			holder_scope = { 
+				character = ROOT 
+			} 
+		}	
+	
 		ROOT = {
 			religion = FROM
 			OR = {
 				religion = catholic
 				religion = fraticelli
+			}
+		}
+		
+		ROOT = {
+			OR = {
+				liege = {
+					character = PREV # either independent
+				}
+				liege = { 
+					FROM = { 
+						is_liege_or_above = PREV # or have shared liege
+					}
+				}
 			}
 		}
 	}
@@ -8814,21 +8831,6 @@ cb_install_antiking = {
 	
 	defender_ai_defeat_worth = {
 		factor = 100
-	}
-	
-	is_valid = {
-		ROOT = {
-			OR = {
-				liege = {
-					character = PREV # either independent
-				}
-				liege = { 
-					FROM = { 
-						is_liege_or_above = PREV # or have shared liege
-					}
-				}
-			}
-		}
 	}
 }
 
