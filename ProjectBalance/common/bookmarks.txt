@@ -39,16 +39,6 @@ bookmark =
 
 bookmark =
 {
-	name = "BM_TWO_ERIKS"
-	desc = "BM_TWO_ERIKS_DESC"
-	date = 1066.9.25
-
-	character = 100546
-	character = 100525
-}
-
-bookmark =
-{
 	name = "BM_CASTILLE"
 	desc = "BM_CASTILLE_DESC"
 	date = 1072.1.12
