@@ -1,3 +1,9 @@
+3.5.11
+	Due to a vanilla bug with tradeposts, bookmarks are now in chronological order
+		NOTE: The vanilla bug is still present. Do not "go backward in time" in the lobby before starting your final game, and you can avoid the vanilla bug.
+	(PB+SWMH) Fixed a parse error in realm_decisions.txt due to the lack of India
+	Claimant faction wars no longer invalidate immediately after starting (introduced by 3.5.10)
+
 3.5.10
 	Fixed Crusade "showdown" timer event chain: Crusades properly unlock (takes no more than 10 years from the "Crusader Kings" event, if starting before the First Crusade)
 	Patch 2.1.6 compatibility for major_revolt CBs (those involving a revolt title)
