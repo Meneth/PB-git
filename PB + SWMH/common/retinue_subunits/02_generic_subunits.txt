@@ -37,8 +37,8 @@ RETTYPE_INF1 =
 	}
 	
 	modifier = {
-		archers_offensive = 0.4
-		heavy_infantry_defensive = 0.2
+		archers_offensive = 0.6
+		heavy_infantry_defensive = 0.6
 	}
 }
 
@@ -68,8 +68,8 @@ RETTYPE_INF2 =
 	}
 	
 	modifier = {
-		archers_defensive = 0.4
-		pikemen_defensive = 0.2
+		archers_defensive = 0.6
+		pikemen_defensive = 0.6
 	}
 }
 
@@ -99,8 +99,8 @@ RETTYPE_CAV1 =
 	}
 	
 	modifier = {
-		knights_offensive = 0.3
-		light_cavalry_offensive = 0.3
+		knights_offensive = 0.6
+		light_cavalry_offensive = 0.6
 	}
 }
 
@@ -131,5 +131,6 @@ RETTYPE_SKIR1 =
 	
 	modifier = {
 		archers_offensive = 0.6
+		heavy_infantry_offensive = 0.6
 	}
 }

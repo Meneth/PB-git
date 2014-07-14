@@ -37,6 +37,7 @@ RETTYPE_CUL_SARDINIAN =
 	
 	modifier = {
 		knights_defensive = 0.6
+		light_cavalry_defensive = 0.6
 	}
 }
 RETTYPE_CUL_CORSICAN = 
@@ -69,6 +70,7 @@ RETTYPE_CUL_CORSICAN =
 	
 	modifier = {
 		knights_defensive = 0.6
+		light_cavalry_defensive = 0.6
 	}
 }
 RETTYPE_CUL_CENTRAL_ITALIAN = 
@@ -101,6 +103,7 @@ RETTYPE_CUL_CENTRAL_ITALIAN =
 	
 	modifier = {
 		knights_defensive = 0.6
+		light_cavalry_defensive = 0.6
 	}
 }
 RETTYPE_CUL_SOUTHER_ITALIAN = 
@@ -133,6 +136,7 @@ RETTYPE_CUL_SOUTHER_ITALIAN =
 	
 	modifier = {
 		knights_defensive = 0.6
+		light_cavalry_defensive = 0.6
 	}
 }
 RETTYPE_CUL_NEAPOLITAN = 
@@ -166,6 +170,7 @@ RETTYPE_CUL_NEAPOLITAN =
 	
 	modifier = {
 		knights_defensive = 0.6
+		light_cavalry_defensive = 0.6
 	}
 }
 RETTYPE_CUL_TUSCAN = 
@@ -198,6 +203,7 @@ RETTYPE_CUL_TUSCAN =
 	
 	modifier = {
 		knights_defensive = 0.6
+		light_cavalry_defensive = 0.6
 	}
 }
 RETTYPE_CUL_LIGURIAN = 
@@ -318,8 +324,8 @@ RETTYPE_CUL_KARANTANCI =
 	}
 	
 	modifier = {
-		knights_defensive = 0.3
-		light_cavalry_defensive = 0.3
+		knights_defensive = 0.6
+		light_cavalry_defensive = 0.6
 	}
 }
 RETTYPE_CUL_MORAVIAN = 
@@ -352,6 +358,7 @@ RETTYPE_CUL_MORAVIAN =
 	
 	modifier = {
 		knights_offensive = 0.6
+		light_cavalry_offensive = 0.6
 	}
 }
 
@@ -384,8 +391,8 @@ RETTYPE_CUL_BOSNIAN =
 	}
 	
 	modifier = {
-		knights_offensive = 0.3
-		light_cavalry_offensive = 0.3
+		knights_offensive = 0.6
+		light_cavalry_offensive = 0.6
 	}
 }
 
@@ -453,6 +460,7 @@ RETTYPE_CUL_CORNISH =
 	
 	modifier = {
 		knights_offensive = 0.6
+		light_cavalry_offensive = 0.6
 	}
 }
 
@@ -517,6 +525,8 @@ RETTYPE_CUL_ARPITAN =
 	modifier = {
 		knights_offensive = 0.3
 		knights_defensive = 0.3
+		light_cavalry_offensive = 0.3
+		light_cavalry_defensive = 0.3
 	}
 }
 
