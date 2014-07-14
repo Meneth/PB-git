@@ -1,16 +1,5 @@
 bookmark =
 {
-	name = "BM_NORMAN_CONQUEST"
-	desc = "BM_NORMAN_CONQUEST_DESC"
-	date = 1066.12.26
-	
-	character = 140 # William the Conqueror
-	character = 101515 # Svend Estridsen, King of Denmark
-	character = 20663 # Isaac of Khazaria
-}
-
-bookmark =
-{
 	name = "BM_THE_OLD_GODS"
 	desc = "BM_THE_OLD_GODS_DESC"
 	date = 867.1.1
@@ -34,6 +23,17 @@ bookmark =
 	character = 140 # William the Conqueror
 	character = 122 # Harold Godwinson
 	character = 102531 # Harald Hårdråde
+	character = 20663 # Isaac of Khazaria
+}
+
+bookmark =
+{
+	name = "BM_NORMAN_CONQUEST"
+	desc = "BM_NORMAN_CONQUEST_DESC"
+	date = 1066.12.26
+	
+	character = 140 # William the Conqueror
+	character = 101515 # Svend Estridsen, King of Denmark
 	character = 20663 # Isaac of Khazaria
 }
 
