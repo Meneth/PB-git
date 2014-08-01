@@ -477,6 +477,8 @@ castle = {
 				culture = norman
 				culture = german
 				culture = breton
+				culture = cornish
+				culture = arpitan
 			}
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
@@ -503,6 +505,8 @@ castle = {
 				culture = norman
 				culture = german
 				culture = breton
+				culture = cornish
+				culture = arpitan
 			}
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
@@ -533,6 +537,8 @@ castle = {
 				culture = norman
 				culture = german
 				culture = breton
+				culture = cornish
+				culture = arpitan
 			}
 		}
 		trigger = { 
@@ -566,6 +572,8 @@ castle = {
 				culture = norman
 				culture = german
 				culture = breton
+				culture = cornish
+				culture = arpitan
 			}
 		}
 		trigger = { 
@@ -599,6 +607,8 @@ castle = {
 				culture = norman
 				culture = german
 				culture = breton
+				culture = cornish
+				culture = arpitan
 			}
 		}
 		trigger = { 
@@ -632,6 +642,8 @@ castle = {
 				culture = norman
 				culture = german
 				culture = breton
+				culture = cornish
+				culture = arpitan
 			}
 		}
 		trigger = { 
@@ -1620,6 +1632,8 @@ castle = {
 				culture_group = north_germanic
 				culture = saxon
 				culture = pommeranian
+				culture = norsegaelic
+				culture = anglonorse
 			}
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
@@ -1643,6 +1657,7 @@ castle = {
 				culture_group = north_germanic
 				culture = saxon
 				culture = pommeranian
+				culture = anglonorse
 			}
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
@@ -1670,6 +1685,7 @@ castle = {
 				culture_group = north_germanic
 				culture = saxon
 				culture = pommeranian
+				culture = anglonorse
 			}
 		}
 		trigger = { 
@@ -1700,6 +1716,7 @@ castle = {
 				culture_group = north_germanic
 				culture = saxon
 				culture = pommeranian
+				culture = anglonorse
 				
 			}
 		}
@@ -1731,6 +1748,7 @@ castle = {
 				culture_group = north_germanic
 				culture = saxon
 				culture = pommeranian
+				culture = anglonorse
 			}
 		}
 		trigger = { 
@@ -1761,6 +1779,7 @@ castle = {
 				culture_group = north_germanic
 				culture = saxon
 				culture = pommeranian
+				culture = anglonorse
 			}
 		}
 		trigger = { 
@@ -1929,8 +1948,13 @@ castle = {
 	ca_culture_group_south_slavic_0 = {
 		desc = ca_culture_group_south_slavic_1_desc
 		potential = {
-			culture = serbian
-			culture = bulgarian
+			OR = {
+				culture = serbian
+				culture = bulgarian
+				culture = karantanci
+				culture = bosnian
+				culture = arberian
+			}
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
 		build_cost = 100
@@ -1951,8 +1975,13 @@ castle = {
 	ca_culture_group_south_slavic_1 = {
 		desc = ca_culture_group_south_slavic_1_desc
 		potential = {
-			culture = serbian
-			culture = bulgarian
+			OR = {
+				culture = serbian
+				culture = bulgarian
+				culture = karantanci
+				culture = bosnian
+				culture = arberian
+			}
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
 		upgrades_from = ca_culture_group_south_slavic_0
@@ -1975,8 +2004,13 @@ castle = {
 		desc = ca_culture_group_south_slavic_1_desc
 		potential = {
 			FROM = { culture_group = ROOT }
-			culture = serbian
-			culture = bulgarian
+			OR = {
+				culture = serbian
+				culture = bulgarian
+				culture = karantanci
+				culture = bosnian
+				culture = arberian
+			}
 		}
 		trigger = {
 			TECH_CASTLE_CONSTRUCTION = 2
@@ -2002,8 +2036,13 @@ castle = {
 		desc = ca_culture_group_south_slavic_1_desc
 		potential = {
 			FROM = { culture_group = ROOT }
-			culture = serbian
-			culture = bulgarian
+			OR = {
+				culture = serbian
+				culture = bulgarian
+				culture = karantanci
+				culture = bosnian
+				culture = arberian
+			}
 		}
 		trigger = {
 			TECH_CASTLE_CONSTRUCTION = 3
@@ -2029,8 +2068,13 @@ castle = {
 		desc = ca_culture_group_south_slavic_1_desc
 		potential = {
 			FROM = { culture = ROOT }
-			culture = serbian
-			culture = bulgarian
+			OR = {
+				culture = serbian
+				culture = bulgarian
+				culture = karantanci
+				culture = bosnian
+				culture = arberian
+			}
 		}
 		trigger = {
 			TECH_CASTLE_CONSTRUCTION = 4
@@ -2056,8 +2100,13 @@ castle = {
 		desc = ca_culture_group_south_slavic_1_desc
 		potential = {
 			FROM = { culture = ROOT }
-			culture = serbian
-			culture = bulgarian
+			OR = {
+				culture = serbian
+				culture = bulgarian
+				culture = karantanci
+				culture = bosnian
+				culture = arberian
+			}
 		}
 		trigger = {
 			TECH_CASTLE_CONSTRUCTION = 6
@@ -2087,6 +2136,7 @@ castle = {
 			OR = {
 				culture = polish
 				culture = bohemian
+				culture = moravian
 			}
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
@@ -2113,6 +2163,7 @@ castle = {
 			OR = {
 				culture = polish
 				culture = bohemian
+				culture = moravian
 			}
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
@@ -2127,6 +2178,8 @@ castle = {
 		archers = -20
 		light_cavalry_defensive = 0.05
 		light_cavalry_morale = 0.05
+		knights_defensive = 0.05
+		knights_cavalry_morale = 0.05
 		retinuesize = 20
 		ai_creation_factor = 101
 		
@@ -2141,6 +2194,7 @@ castle = {
 			OR = {
 				culture = polish
 				culture = bohemian
+				culture = moravian
 			}
 		}
 		trigger = {
@@ -2158,6 +2212,8 @@ castle = {
 		archers = -20
 		light_cavalry_defensive = 0.05
 		light_cavalry_morale = 0.05
+		knights_defensive = 0.05
+		knights_cavalry_morale = 0.05
 		retinuesize = 20
 		ai_creation_factor = 100
 		
@@ -2172,6 +2228,7 @@ castle = {
 			OR = {
 				culture = polish
 				culture = bohemian
+				culture = moravian
 			}
 		}
 		trigger = {
@@ -2189,6 +2246,8 @@ castle = {
 		archers = -20
 		light_cavalry_defensive = 0.05
 		light_cavalry_morale = 0.05
+		knights_defensive = 0.05
+		knights_cavalry_morale = 0.05
 		retinuesize = 20
 		ai_creation_factor = 99
 		
@@ -2203,6 +2262,7 @@ castle = {
 			OR = {
 				culture = polish
 				culture = bohemian
+				culture = moravian
 			}
 		}
 		trigger = {
@@ -2220,6 +2280,8 @@ castle = {
 		archers = -20
 		light_cavalry_defensive = 0.05
 		light_cavalry_morale = 0.05
+		knights_defensive = 0.05
+		knights_cavalry_morale = 0.05
 		retinuesize = 20
 		ai_creation_factor = 98
 		
@@ -2234,6 +2296,7 @@ castle = {
 			OR = {
 				culture = polish
 				culture = bohemian
+				culture = moravian
 			}
 		}
 		trigger = {
@@ -2251,6 +2314,8 @@ castle = {
 		archers = -20
 		light_cavalry_defensive = 0.05
 		light_cavalry_morale = 0.05
+		knights_defensive = 0.05
+		knights_cavalry_morale = 0.05
 		retinuesize = 20
 		ai_creation_factor = 97
 		
