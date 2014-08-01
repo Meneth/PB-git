@@ -1805,8 +1805,10 @@ castle = {
 	ca_culture_croatia_0 = {
 		desc = ca_culture_croatia_1_desc
 		potential = {
-			culture = croatia
-			culture = bulgarian
+			OR = {
+				culture = croatia
+				culture = bulgarian
+			}
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
 		build_cost = 100
@@ -1825,8 +1827,10 @@ castle = {
 	ca_culture_croatia_1 = {
 		desc = ca_culture_croatia_1_desc
 		potential = {
-			culture = croatia
-			culture = bulgarian
+			OR = {
+				culture = croatia
+				culture = bulgarian
+			}
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
 		upgrades_from = ca_culture_basque_0
@@ -1847,8 +1851,10 @@ castle = {
 		desc = ca_culture_croatia_1_desc
 		potential = {
 			FROM = { culture_group = ROOT }
-			culture = croatia
-			culture = bulgarian
+			OR = {
+				culture = croatia
+				culture = bulgarian
+			}
 		}
 		trigger = { 
 			TECH_CASTLE_CONSTRUCTION = 2
@@ -1872,8 +1878,10 @@ castle = {
 		desc = ca_culture_croatia_1_desc
 		potential = {
 			FROM = { culture_group = ROOT }
-			culture = croatia
-			culture = bulgarian
+			OR = {
+				culture = croatia
+				culture = bulgarian
+			}
 		}
 		trigger = { 
 			TECH_CASTLE_CONSTRUCTION = 3
@@ -1897,8 +1905,10 @@ castle = {
 		desc = ca_culture_croatia_1_desc
 		potential = {
 			FROM = { culture = ROOT }
-			culture = croatia
-			culture = bulgarian
+			OR = {
+				culture = croatia
+				culture = bulgarian
+			}
 		}
 		trigger = { 
 			TECH_CASTLE_CONSTRUCTION = 4
@@ -1922,8 +1932,10 @@ castle = {
 		desc = ca_culture_croatia_1_desc
 		potential = {
 			FROM = { culture = ROOT }
-			culture = croatia
-			culture = bulgarian
+			OR = {
+				culture = croatia
+				culture = bulgarian
+			}
 		}
 		trigger = { 
 			TECH_CASTLE_CONSTRUCTION = 6

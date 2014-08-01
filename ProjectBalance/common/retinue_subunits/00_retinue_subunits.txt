@@ -1229,7 +1229,10 @@ RETTYPE_CUL_ARAB =
 	special_troops = camel_cavalry
 	
 	potential = {
-		culture_group = arabic
+		OR = {
+			culture_group = arabic
+			culture_group = north_african
+		}
 		
 		# PB's retinue spam filter
 		OR = {
