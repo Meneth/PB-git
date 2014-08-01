@@ -386,6 +386,9 @@ plot_gain_vassal_title = {
 				character = FROM
 			}
 		}
+		holder_scope = {
+			NOT = { reverse_has_truce = FROM }
+		}
 	}
 	
 	chance = {
@@ -591,7 +594,6 @@ plot_gain_vassal_title = {
 					NOT = { character = FROM }
 				}
 			}
-			
 		}
 	}
 	abort_effect = {

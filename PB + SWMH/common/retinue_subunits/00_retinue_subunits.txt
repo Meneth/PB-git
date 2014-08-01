@@ -17,7 +17,7 @@ RETTYPE_CUL_ROMAN =
 	
 	potential = {
 		culture = roman
-
+		
 		# PB's retinue spam filter
 		OR = {
 			ai = no
@@ -27,9 +27,9 @@ RETTYPE_CUL_ROMAN =
 					higher_real_tier_than = duke
 					AND = {
 						independent = yes
-						realm_size = 15
+						realm_size = 18
 					}
-					realm_size = 21
+					realm_size = 24
 				}
 			}
 		}
@@ -52,7 +52,7 @@ RETTYPE_CUL_ITA =
 			culture = italian
 			culture = sicilian
 		}
-
+		
 		# PB's retinue spam filter
 		OR = {
 			ai = no
@@ -62,9 +62,9 @@ RETTYPE_CUL_ITA =
 					higher_real_tier_than = duke
 					AND = {
 						independent = yes
-						realm_size = 15
+						realm_size = 18
 					}
-					realm_size = 21
+					realm_size = 24
 				}
 			}
 		}
@@ -88,7 +88,7 @@ RETTYPE_CUL_BOHEMIAN =
 	
 	potential = {
 		culture = bohemian
-
+		
 		# PB's retinue spam filter
 		OR = {
 			ai = no
@@ -98,9 +98,9 @@ RETTYPE_CUL_BOHEMIAN =
 					higher_real_tier_than = duke
 					AND = {
 						independent = yes
-						realm_size = 15
+						realm_size = 18
 					}
-					realm_size = 21
+					realm_size = 24
 				}
 			}
 		}
@@ -121,7 +121,7 @@ RETTYPE_CUL_POLISH =
 	
 	potential = {
 		culture = polish
-
+		
 		# PB's retinue spam filter
 		OR = {
 			ai = no
@@ -131,9 +131,9 @@ RETTYPE_CUL_POLISH =
 					higher_real_tier_than = duke
 					AND = {
 						independent = yes
-						realm_size = 15
+						realm_size = 18
 					}
-					realm_size = 21
+					realm_size = 24
 				}
 			}
 		}
@@ -151,7 +151,7 @@ RETTYPE_CUL_POMMERANIAN =
 	
 	potential = {
 		culture = pommeranian
-
+		
 		# PB's retinue spam filter
 		OR = {
 			ai = no
@@ -161,9 +161,9 @@ RETTYPE_CUL_POMMERANIAN =
 					higher_real_tier_than = duke
 					AND = {
 						independent = yes
-						realm_size = 15
+						realm_size = 18
 					}
-					realm_size = 21
+					realm_size = 24
 				}
 			}
 		}
@@ -184,7 +184,7 @@ RETTYPE_CUL_CROATIAN =
 	
 	potential = {
 		culture = croatian
-
+		
 		# PB's retinue spam filter
 		OR = {
 			ai = no
@@ -194,9 +194,9 @@ RETTYPE_CUL_CROATIAN =
 					higher_real_tier_than = duke
 					AND = {
 						independent = yes
-						realm_size = 15
+						realm_size = 18
 					}
-					realm_size = 21
+					realm_size = 24
 				}
 			}
 		}
@@ -216,7 +216,7 @@ RETTYPE_CUL_SERBIAN =
 	
 	potential = {
 		culture = serbian
-
+		
 		# PB's retinue spam filter
 		OR = {
 			ai = no
@@ -226,9 +226,9 @@ RETTYPE_CUL_SERBIAN =
 					higher_real_tier_than = duke
 					AND = {
 						independent = yes
-						realm_size = 15
+						realm_size = 18
 					}
-					realm_size = 21
+					realm_size = 24
 				}
 			}
 		}
@@ -246,7 +246,7 @@ RETTYPE_CUL_BULGARIAN =
 	
 	potential = {
 		culture = bulgarian
-
+		
 		# PB's retinue spam filter
 		OR = {
 			ai = no
@@ -256,9 +256,9 @@ RETTYPE_CUL_BULGARIAN =
 					higher_real_tier_than = duke
 					AND = {
 						independent = yes
-						realm_size = 15
+						realm_size = 18
 					}
-					realm_size = 21
+					realm_size = 24
 				}
 			}
 		}
@@ -278,7 +278,7 @@ RETTYPE_CUL_ROMANIAN =
 	
 	potential = {
 		culture = romanian
-
+		
 		# PB's retinue spam filter
 		OR = {
 			ai = no
@@ -288,9 +288,9 @@ RETTYPE_CUL_ROMANIAN =
 					higher_real_tier_than = duke
 					AND = {
 						independent = yes
-						realm_size = 15
+						realm_size = 18
 					}
-					realm_size = 21
+					realm_size = 24
 				}
 			}
 		}
@@ -318,7 +318,7 @@ RETTYPE_CUL_HUNG =
 	
 	potential = {
 		culture = hungarian
-
+		
 		# PB's retinue spam filter
 		OR = {
 			ai = no
@@ -328,9 +328,9 @@ RETTYPE_CUL_HUNG =
 					higher_real_tier_than = duke
 					AND = {
 						independent = yes
-						realm_size = 15
+						realm_size = 18
 					}
-					realm_size = 21
+					realm_size = 24
 				}
 			}
 		}
@@ -358,7 +358,7 @@ RETTYPE_CUL_RUS =
 	
 	potential = {
 		culture = russian
-
+		
 		# PB's retinue spam filter
 		OR = {
 			ai = no
@@ -368,9 +368,9 @@ RETTYPE_CUL_RUS =
 					higher_real_tier_than = duke
 					AND = {
 						independent = yes
-						realm_size = 15
+						realm_size = 18
 					}
-					realm_size = 21
+					realm_size = 24
 				}
 			}
 		}
@@ -393,11 +393,8 @@ RETTYPE_CUL_BALT =
 	second_amount = 100
 	
 	potential = {
-		OR = {
-			culture = lettigallish
-			culture = livonian
-		}
-
+		culture = lettigallish
+		
 		# PB's retinue spam filter
 		OR = {
 			ai = no
@@ -407,9 +404,9 @@ RETTYPE_CUL_BALT =
 					higher_real_tier_than = duke
 					AND = {
 						independent = yes
-						realm_size = 15
+						realm_size = 18
 					}
-					realm_size = 21
+					realm_size = 24
 				}
 			}
 		}
@@ -430,7 +427,7 @@ RETTYPE_CUL_LITHUANIAN =
 			culture = lithuanian
 			culture = prussian
 		}
-
+		
 		# PB's retinue spam filter
 		OR = {
 			ai = no
@@ -440,9 +437,9 @@ RETTYPE_CUL_LITHUANIAN =
 					higher_real_tier_than = duke
 					AND = {
 						independent = yes
-						realm_size = 15
+						realm_size = 18
 					}
-					realm_size = 21
+					realm_size = 24
 				}
 			}
 		}
@@ -468,7 +465,7 @@ RETTYPE_CUL_FINNO_UGRIC =
 			culture = mordvin
 			culture = samoyed
 		}
-
+		
 		# PB's retinue spam filter
 		OR = {
 			ai = no
@@ -478,9 +475,9 @@ RETTYPE_CUL_FINNO_UGRIC =
 					higher_real_tier_than = duke
 					AND = {
 						independent = yes
-						realm_size = 15
+						realm_size = 18
 					}
-					realm_size = 21
+					realm_size = 24
 				}
 			}
 		}
@@ -501,7 +498,7 @@ RETTYPE_CUL_IRISH =
 	
 	potential = {
 		culture = irish
-
+		
 		# PB's retinue spam filter
 		OR = {
 			ai = no
@@ -511,9 +508,9 @@ RETTYPE_CUL_IRISH =
 					higher_real_tier_than = duke
 					AND = {
 						independent = yes
-						realm_size = 15
+						realm_size = 18
 					}
-					realm_size = 21
+					realm_size = 24
 				}
 			}
 		}
@@ -530,7 +527,7 @@ RETTYPE_CUL_SCOT =
 	
 	potential = {
 		culture = scottish
-
+		
 		# PB's retinue spam filter
 		OR = {
 			ai = no
@@ -540,9 +537,9 @@ RETTYPE_CUL_SCOT =
 					higher_real_tier_than = duke
 					AND = {
 						independent = yes
-						realm_size = 15
+						realm_size = 18
 					}
-					realm_size = 21
+					realm_size = 24
 				}
 			}
 		}
@@ -568,7 +565,7 @@ RETTYPE_CUL_FRANKISH =
 			culture = frankish
 			culture = occitan
 		}
-
+		
 		# PB's retinue spam filter
 		OR = {
 			ai = no
@@ -578,9 +575,9 @@ RETTYPE_CUL_FRANKISH =
 					higher_real_tier_than = duke
 					AND = {
 						independent = yes
-						realm_size = 15
+						realm_size = 18
 					}
-					realm_size = 21
+					realm_size = 24
 				}
 			}
 		}
@@ -606,7 +603,7 @@ RETTYPE_CUL_NORMAN =
 			culture = norman
 			culture = breton
 		}
-
+		
 		# PB's retinue spam filter
 		OR = {
 			ai = no
@@ -616,9 +613,9 @@ RETTYPE_CUL_NORMAN =
 					higher_real_tier_than = duke
 					AND = {
 						independent = yes
-						realm_size = 15
+						realm_size = 18
 					}
-					realm_size = 21
+					realm_size = 24
 				}
 			}
 		}
@@ -639,7 +636,7 @@ RETTYPE_CUL_PORTUGESE =
 	
 	potential = {
 		culture = portuguese
-
+		
 		# PB's retinue spam filter
 		OR = {
 			ai = no
@@ -649,9 +646,9 @@ RETTYPE_CUL_PORTUGESE =
 					higher_real_tier_than = duke
 					AND = {
 						independent = yes
-						realm_size = 15
+						realm_size = 18
 					}
-					realm_size = 21
+					realm_size = 24
 				}
 			}
 		}
@@ -668,7 +665,7 @@ RETTYPE_CUL_BASQUE =
 	
 	potential = {
 		culture = basque
-
+		
 		# PB's retinue spam filter
 		OR = {
 			ai = no
@@ -678,9 +675,9 @@ RETTYPE_CUL_BASQUE =
 					higher_real_tier_than = duke
 					AND = {
 						independent = yes
-						realm_size = 15
+						realm_size = 18
 					}
-					realm_size = 21
+					realm_size = 24
 				}
 			}
 		}
@@ -698,7 +695,7 @@ RETTYPE_CUL_CASTILLIAN =
 	
 	potential = {
 		culture = castillan
-
+		
 		# PB's retinue spam filter
 		OR = {
 			ai = no
@@ -708,9 +705,9 @@ RETTYPE_CUL_CASTILLIAN =
 					higher_real_tier_than = duke
 					AND = {
 						independent = yes
-						realm_size = 15
+						realm_size = 18
 					}
-					realm_size = 21
+					realm_size = 24
 				}
 			}
 		}
@@ -727,7 +724,7 @@ RETTYPE_CUL_CATALAN =
 	
 	potential = {
 		culture = catalan
-
+		
 		# PB's retinue spam filter
 		OR = {
 			ai = no
@@ -737,9 +734,9 @@ RETTYPE_CUL_CATALAN =
 					higher_real_tier_than = duke
 					AND = {
 						independent = yes
-						realm_size = 15
+						realm_size = 18
 					}
-					realm_size = 21
+					realm_size = 24
 				}
 			}
 		}
@@ -757,7 +754,7 @@ RETTYPE_CUL_ANDALUSIAN =
 	
 	potential = {
 		culture = andalusian_arabic
-
+		
 		# PB's retinue spam filter
 		OR = {
 			ai = no
@@ -767,9 +764,9 @@ RETTYPE_CUL_ANDALUSIAN =
 					higher_real_tier_than = duke
 					AND = {
 						independent = yes
-						realm_size = 15
+						realm_size = 18
 					}
-					realm_size = 21
+					realm_size = 24
 				}
 			}
 		}
@@ -793,7 +790,7 @@ RETTYPE_CUL_NORSE =
 			culture = danish
 			culture = swedish
 		}
-
+		
 		# PB's retinue spam filter
 		OR = {
 			ai = no
@@ -803,9 +800,9 @@ RETTYPE_CUL_NORSE =
 					higher_real_tier_than = duke
 					AND = {
 						independent = yes
-						realm_size = 15
+						realm_size = 18
 					}
-					realm_size = 21
+					realm_size = 24
 				}
 			}
 		}
@@ -822,7 +819,7 @@ RETTYPE_CUL_NORWEGIAN =
 	
 	potential = {
 		culture = norwegian
-
+		
 		# PB's retinue spam filter
 		OR = {
 			ai = no
@@ -832,9 +829,9 @@ RETTYPE_CUL_NORWEGIAN =
 					higher_real_tier_than = duke
 					AND = {
 						independent = yes
-						realm_size = 15
+						realm_size = 18
 					}
-					realm_size = 21
+					realm_size = 24
 				}
 			}
 		}
@@ -857,7 +854,7 @@ RETTYPE_CUL_ENG =
 			culture = english
 			culture = welsh
 		}
-
+		
 		# PB's retinue spam filter
 		OR = {
 			ai = no
@@ -867,9 +864,9 @@ RETTYPE_CUL_ENG =
 					higher_real_tier_than = duke
 					AND = {
 						independent = yes
-						realm_size = 15
+						realm_size = 18
 					}
-					realm_size = 21
+					realm_size = 24
 				}
 			}
 		}
@@ -886,7 +883,7 @@ RETTYPE_CUL_SAXON =
 	
 	potential = {
 		culture = saxon
-
+		
 		# PB's retinue spam filter
 		OR = {
 			ai = no
@@ -896,9 +893,9 @@ RETTYPE_CUL_SAXON =
 					higher_real_tier_than = duke
 					AND = {
 						independent = yes
-						realm_size = 15
+						realm_size = 18
 					}
-					realm_size = 21
+					realm_size = 24
 				}
 			}
 		}
@@ -926,7 +923,7 @@ RETTYPE_CUL_DUTCH =
 			culture = dutch
 			culture = frisian
 		}
-
+		
 		# PB's retinue spam filter
 		OR = {
 			ai = no
@@ -936,9 +933,9 @@ RETTYPE_CUL_DUTCH =
 					higher_real_tier_than = duke
 					AND = {
 						independent = yes
-						realm_size = 15
+						realm_size = 18
 					}
-					realm_size = 21
+					realm_size = 24
 				}
 			}
 		}
@@ -969,9 +966,9 @@ RETTYPE_CUL_GERMAN =
 					higher_real_tier_than = duke
 					AND = {
 						independent = yes
-						realm_size = 15
+						realm_size = 18
 					}
-					realm_size = 21
+					realm_size = 24
 				}
 			}
 		}
@@ -999,9 +996,8 @@ RETTYPE_CUL_BYZ =
 		OR = {
 			culture = alan
 			culture = greek
-			culture = sicilian_greek
 		}
-
+		
 		# PB's retinue spam filter
 		OR = {
 			ai = no
@@ -1011,9 +1007,9 @@ RETTYPE_CUL_BYZ =
 					higher_real_tier_than = duke
 					AND = {
 						independent = yes
-						realm_size = 15
+						realm_size = 18
 					}
-					realm_size = 21
+					realm_size = 24
 				}
 			}
 		}
@@ -1036,7 +1032,7 @@ RETTYPE_CUL_ARMENIAN =
 
 	potential = {
 		culture = armenian
-
+		
 		# PB's retinue spam filter
 		OR = {
 			ai = no
@@ -1046,9 +1042,9 @@ RETTYPE_CUL_ARMENIAN =
 					higher_real_tier_than = duke
 					AND = {
 						independent = yes
-						realm_size = 15
+						realm_size = 18
 					}
-					realm_size = 21
+					realm_size = 24
 				}
 			}
 		}
@@ -1069,7 +1065,7 @@ RETTYPE_CUL_GEORGIAN =
 	
 	potential = {
 		culture = georgian
-
+		
 		# PB's retinue spam filter
 		OR = {
 			ai = no
@@ -1079,9 +1075,9 @@ RETTYPE_CUL_GEORGIAN =
 					higher_real_tier_than = duke
 					AND = {
 						independent = yes
-						realm_size = 15
+						realm_size = 18
 					}
-					realm_size = 21
+					realm_size = 24
 				}
 			}
 		}
@@ -1109,7 +1105,7 @@ RETTYPE_CUL_IRANIAN =
 	
 	potential = {
 		culture_group = iranian
-
+		
 		# PB's retinue spam filter
 		OR = {
 			ai = no
@@ -1119,9 +1115,9 @@ RETTYPE_CUL_IRANIAN =
 					higher_real_tier_than = duke
 					AND = {
 						independent = yes
-						realm_size = 15
+						realm_size = 18
 					}
-					realm_size = 21
+					realm_size = 24
 				}
 			}
 		}
@@ -1155,7 +1151,7 @@ RETTYPE_CUL_ALTAIC =
 			culture = pecheneg
 			culture = mongol
 		}
-
+		
 		# PB's retinue spam filter
 		OR = {
 			ai = no
@@ -1165,9 +1161,9 @@ RETTYPE_CUL_ALTAIC =
 					higher_real_tier_than = duke
 					AND = {
 						independent = yes
-						realm_size = 15
+						realm_size = 18
 					}
-					realm_size = 21
+					realm_size = 24
 				}
 			}
 		}
@@ -1191,7 +1187,7 @@ RETTYPE_CUL_TURKISH =
 	
 	potential = {
 		culture = turkish
-
+		
 		# PB's retinue spam filter
 		OR = {
 			ai = no
@@ -1201,9 +1197,9 @@ RETTYPE_CUL_TURKISH =
 					higher_real_tier_than = duke
 					AND = {
 						independent = yes
-						realm_size = 15
+						realm_size = 18
 					}
-					realm_size = 21
+					realm_size = 24
 				}
 			}
 		}
@@ -1230,7 +1226,7 @@ RETTYPE_CUL_ARAB =
 	
 	potential = {
 		culture_group = arabic
-
+		
 		# PB's retinue spam filter
 		OR = {
 			ai = no
@@ -1240,9 +1236,9 @@ RETTYPE_CUL_ARAB =
 					higher_real_tier_than = duke
 					AND = {
 						independent = yes
-						realm_size = 15
+						realm_size = 18
 					}
-					realm_size = 21
+					realm_size = 24
 				}
 			}
 		}
@@ -1266,7 +1262,7 @@ RETTYPE_CUL_W_AFR =
 	
 	potential = {
 		culture_group = west_african
-
+		
 		# PB's retinue spam filter
 		OR = {
 			ai = no
@@ -1276,9 +1272,9 @@ RETTYPE_CUL_W_AFR =
 					higher_real_tier_than = duke
 					AND = {
 						independent = yes
-						realm_size = 15
+						realm_size = 18
 					}
-					realm_size = 21
+					realm_size = 24
 				}
 			}
 		}
@@ -1303,7 +1299,7 @@ RETTYPE_CUL_E_AFR =
 	
 	potential = {
 		culture_group = east_african
-
+		
 		# PB's retinue spam filter
 		OR = {
 			ai = no
@@ -1313,9 +1309,9 @@ RETTYPE_CUL_E_AFR =
 					higher_real_tier_than = duke
 					AND = {
 						independent = yes
-						realm_size = 15
+						realm_size = 18
 					}
-					realm_size = 21
+					realm_size = 24
 				}
 			}
 		}
@@ -1340,7 +1336,7 @@ RETTYPE_CUL_NAHUA =
 	
 	potential = {
 		culture = nahuatl
-
+		
 		# PB's retinue spam filter
 		OR = {
 			ai = no
@@ -1350,9 +1346,9 @@ RETTYPE_CUL_NAHUA =
 					higher_real_tier_than = duke
 					AND = {
 						independent = yes
-						realm_size = 15
+						realm_size = 18
 					}
-					realm_size = 21
+					realm_size = 24
 				}
 			}
 		}
@@ -1371,6 +1367,73 @@ RETTYPE_CUL_JEWISH =
 	
 	potential = {
 		culture_group = israelite
+		
+		# PB's retinue spam filter
+		OR = {
+			ai = no
+			AND = {
+				higher_real_tier_than = count
+				OR = {
+					higher_real_tier_than = duke
+					AND = {
+						independent = yes
+						realm_size = 18
+					}
+					realm_size = 24
+				}
+			}
+		}
+	}
+	
+	modifier = {
+		heavy_infantry_defensive = 0.6
+	}
+}
+
+RETTYPE_CUL_INDIAN = 
+{
+	first_type = 5
+	first_amount = 235
+	second_type = 6
+	second_amount = 15
+	
+	special_troops = war_elephants
+	
+	potential = {
+		OR = {
+			culture_group = indo_aryan_group
+			culture_group = dravidian_group
+		}
+		
+		# PB's retinue spam filter
+		OR = {
+			ai = no
+			AND = {
+				higher_real_tier_than = count
+				OR = {
+					higher_real_tier_than = duke
+					AND = {
+						independent = yes
+						realm_size = 18
+					}
+					realm_size = 24
+				}
+			}
+		}
+	}
+	
+	modifier = {
+		archers_offensive = 0.6
+	}
+}
+
+RETTYPE_CUL_NUBIAN = 
+{
+	first_type = 5
+	first_amount = 250
+
+	potential = {
+		culture = nubian
 
 		# PB's retinue spam filter
 		OR = {
@@ -1381,15 +1444,16 @@ RETTYPE_CUL_JEWISH =
 					higher_real_tier_than = duke
 					AND = {
 						independent = yes
-						realm_size = 15
+						realm_size = 18
 					}
-					realm_size = 21
+					realm_size = 24
 				}
 			}
 		}
 	}
 	
 	modifier = {
-		heavy_infantry_defensive = 0.6
+		archers_offensive = 0.6
 	}
 }
+

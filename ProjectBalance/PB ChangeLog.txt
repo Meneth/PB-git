@@ -1,11 +1,34 @@
-3.5.8 [BETA]
+3.5.12
+	Tweaks to Religious Authority defines to better balance Sunnis, Shia, and prevent pathological Catholic downward spirals sparked by the inevitable antipope:
+		AUTHORITY_FROM_ANTIPOPE = -0.2 (from -0.3)
+		AUTHORITY_FROM_RELHEAD_HOLY_SITE = 0 (from 0.05)
+		AUTHORITY_FROM_ORG_RELIGION = 0.3 (from 0.2, most balanced way to account for the loss due to PB's halved controlled-holy-sites bonus)
+
+3.5.11
+	Due to a vanilla bug with tradeposts, bookmarks are now in chronological order
+		NOTE: The vanilla bug is still present. Do not "go backward in time" in the lobby before starting your final game, and you can avoid the vanilla bug.
+	(PB+SWMH) Fixed a parse error in realm_decisions.txt due to the lack of India
+	Claimant faction wars no longer invalidate immediately after starting (introduced by 3.5.10)
+
+3.5.10
+	Fixed Crusade "showdown" timer event chain: Crusades properly unlock (takes no more than 10 years from the "Crusader Kings" event, if starting before the First Crusade)
+	Patch 2.1.6 compatibility for major_revolt CBs (those involving a revolt title)
+
+3.5.9
+	Fixed it being impossible to gain the fighter and diplomat traits
+
+3.5.8
 	The il-Khanate AI shall no longer expand North into the Golden Horde's historical conquest trajectory
-	Removed 'Randomize Rulers' scenario customization decison due to report of a crash
+	Removed 'Randomize Rulers' scenario customization decision due to report of a crash
 	Crusades will no longer almost instantly start after the scenario but require ~10-20 years before firing at later start dates [post-1103]
 	Catholic Crusades and Muslim Jihad will no longer be called almost at the same instant for later start dates when Crusades are already unlocked
 		Instead, their respective activations will be randomly staggered
 	Halved the moral authority gained from the religious head's piety
 	Halved the moral authority gained from holding holy sites
+	Catholics mending the schism will no longer block them from starting Crusades [bnormoyle]
+	Made the Pope ask for Papal Investiture less often
+	Maintenance for heavy cavalry is no longer so disproportionately high
+	Added four diplomacy traits similar to the fighter traits. These can be gained in childhood and provide a boost to diplomacy
 
 3.5.7
 	Added Jewish and Nahuatl cultural buildings

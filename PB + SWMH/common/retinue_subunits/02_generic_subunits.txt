@@ -28,9 +28,9 @@ RETTYPE_INF1 =
 					higher_real_tier_than = duke
 					AND = {
 						independent = yes
-						realm_size = 15
+						realm_size = 18
 					}
-					realm_size = 21
+					realm_size = 24
 				}
 			}
 		}
@@ -59,9 +59,9 @@ RETTYPE_INF2 =
 					higher_real_tier_than = duke
 					AND = {
 						independent = yes
-						realm_size = 15
+						realm_size = 18
 					}
-					realm_size = 21
+					realm_size = 24
 				}
 			}
 		}
@@ -90,9 +90,9 @@ RETTYPE_CAV1 =
 					higher_real_tier_than = duke
 					AND = {
 						independent = yes
-						realm_size = 15
+						realm_size = 18
 					}
-					realm_size = 21
+					realm_size = 24
 				}
 			}
 		}
@@ -121,9 +121,9 @@ RETTYPE_SKIR1 =
 					higher_real_tier_than = duke
 					AND = {
 						independent = yes
-						realm_size = 15
+						realm_size = 18
 					}
-					realm_size = 21
+					realm_size = 24
 				}
 			}
 		}

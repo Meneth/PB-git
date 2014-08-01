@@ -44,3 +44,11 @@ reduced_obligations;Reduced obligations;;;;Obligaciones reducidas;;;;;;;;;x;;;
 af_mil_cooperation_t1;Military cooperation;;;;Cooperación militar;;;;;;;;;x;;;
 af_eco_cooperation_t1;Economic cooperation;;;;Cooperación económica;;;;;;;;;x;;;
 autonomy_commended;Commended by vassals;;;;Elogiado por vasallos;;;;;;;;;x;;;
+novice_diplomat;Novice Diplomat;;;;;;;;;;;;;x
+novice_diplomat_desc;This character has minor training in the art of diplomacy.;;;;;;;;;;;;;x
+trained_diplomat;Trained Diplomat;;;;;;;;;;;;;x
+trained_diplomat_desc;This character has robust training in the art of diplomacy.;;;;;;;;;;;;;x
+skilled_diplomat;Skilled Diplomat;;;;;;;;;;;;;x
+skilled_diplomat_desc;This character has significant training in the art of diplomacy.;;;;;;;;;;;;;x
+master_diplomat;Master Diplomat;;;;;;;;;;;;;x
+master_diplomat_desc;This character has mastered the art of diplomacy.;;;;;;;;;;;;;x

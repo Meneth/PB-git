@@ -39,10 +39,18 @@ character_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 50
+		years = 25
 		modifier = {
-			factor = 0.25
+			factor = 0.5
 			trait = zealous
+		}
+		modifier = {
+			factor = 0.75
+			trait = diligent
+		}
+		modifier = {
+			factor = 2
+			trait = slothful
 		}
 	}
 
