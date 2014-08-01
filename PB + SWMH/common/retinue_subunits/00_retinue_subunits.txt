@@ -1431,33 +1431,4 @@ RETTYPE_CUL_INDIAN =
 	}
 }
 
-RETTYPE_CUL_NUBIAN = 
-{
-	first_type = 5
-	first_amount = 250
-
-	potential = {
-		culture = nubian
-
-		# PB's retinue spam filter
-		OR = {
-			ai = no
-			AND = {
-				higher_real_tier_than = count
-				OR = {
-					higher_real_tier_than = duke
-					AND = {
-						independent = yes
-						realm_size = 18
-					}
-					realm_size = 24
-				}
-			}
-		}
-	}
-	
-	modifier = {
-		archers_offensive = 0.6
-	}
-}
 
