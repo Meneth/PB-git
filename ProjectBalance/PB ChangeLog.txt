@@ -3,7 +3,24 @@
 		AUTHORITY_FROM_ANTIPOPE = -0.2 (from -0.3)
 		AUTHORITY_FROM_RELHEAD_HOLY_SITE = 0 (from 0.05)
 		AUTHORITY_FROM_ORG_RELIGION = 0.3 (from 0.2, most balanced way to account for the loss due to PB's halved controlled-holy-sites bonus)
-	Massive retinue + levy + cultural building rebalancing, largely centered around fixing Paradox's error of thinking buffing 2 troops of 250 guys each 30% is the same as buffing 1 troop of 500 guys 60%
+	Massive retinue + levy + cultural building rebalancing. Changes below that reference a SWMH culture are SWMH only.
+		Many bonuses changed, centered around fixing Paradox's error of thinking buffing 2 troops of 250 guys each 30% is the same as buffing 1 troop of 500 guys 60%.
+			Every mixed retinue has been significantly buffed as a result
+		Pommeranians have North Germanic cultural building
+		Hungarians and Romanians have Altaic cultural building
+		Ethiopian cultural building gives archers
+		North African and Bedouin unique retinues removed and merged with Arabic retinue; was causing overlap where many cultures got multiple cultural retinues
+		Buildings that grant knights or horse archers updated to reflect new unnerfed maintenance cost
+		Breton, Cornish, and Arpitan cultures now have a cultural building that produces knights
+		North African cultures now have a cultural building
+		Baltic and Finno-Ugric cultural building now grants large amounts of light infantry
+		Finnish retinue is now light infantry instead of archers
+		Norse-Gaelic and Anglo-Norse now get the Norse cultural building
+		Croatians get unique cultural building for heavy infantry
+		Karantanci, Bosnian, and Albanian cultures get the South Slavic cultural building
+		Moravia gets the West Slavic cultural building
+		Russian cultural building now produces knights and horse archers
+		
 
 3.5.11
 	Due to a vanilla bug with tradeposts, bookmarks are now in chronological order
