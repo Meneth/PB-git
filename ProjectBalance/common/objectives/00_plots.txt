@@ -962,12 +962,12 @@ plot_kill_character = {
 		}
 		#Christian Iberians were rather fond of killing one antoher
 		modifier = {
-			factor = 5
+			factor = 100
 			any_heir_title = {
 				holder = ROOT
 			}
-			culture = castillan
-			FROM = { culture = castillan }
+			FROM = { dynasty = 442 }
+			NOT = { year = 1100 }
 			NOT = { any_child = { character = FROM } }
 		}
 	}
