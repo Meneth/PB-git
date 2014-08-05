@@ -962,7 +962,7 @@ plot_kill_character = {
 		}
 		#Christian Iberians were rather fond of killing one antoher
 		modifier = {
-			factor = 10000
+			factor = 5
 			any_heir_title = {
 				holder = ROOT
 			}
