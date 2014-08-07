@@ -38,48 +38,7 @@ religious = {
 				has_law = revokation_1
 				has_law = revokation_2
 			}
-			hidden_tooltip = {
-				OR = {
-					ai = no
-					AND = {
-						NOT = { trait = content }
-						NOT = { trait = craven }
-						NOT = { trait = stressed }
-					}
-					trait = brave
-					trait = wroth
-					trait = ambitious
-					trait = zealous
-					trait = lunatic
-					trait = possessed
-				}
-				OR = {
-					ai = no
-					trait = lunatic
-					trait = possessed
-					AND = {
-						NOT = { trait = depressed }
-						NOT = { trait = infirm }
-						NOT = { trait = incapable }
-						NOT = {
-							OR = {
-								AND = {
-									trait = content
-									OR = {
-										trait = craven
-										trait = stressed
-									}
-								}
-								AND = {
-									trait = craven
-									trait = stressed
-								}
-							}
-						}
-					}
-				}
-			}
-			piety = 100
+			piety = 300
 			custom_tooltip = {
 				text = baqt_active
 				hidden_tooltip = {
@@ -394,17 +353,14 @@ religious = {
 					}
 				}
 			}
-			if = {
-				limit = { religion_group = pagan_group }
-				piety = -100
-			}
+			piety = -300
 		}
 	}
 	
 	on_success = {
 		any_attacker = {
 			limit = { character = ROOT }
-			participation_scaled_piety = 100
+			participation_scaled_piety = 50
 			participation_scaled_prestige = 50
 			if = {
 				limit = {
@@ -476,7 +432,7 @@ religious = {
 		}
 		any_defender = {
 			limit = { character = FROM }
-			participation_scaled_piety = 200
+			participation_scaled_piety = 100
 			participation_scaled_prestige = 100
 			if = {
 				limit = {
@@ -488,7 +444,7 @@ religious = {
 		any_defender = {
 			limit = { NOT = { character = FROM } }
 			hidden_tooltip = { 
-				participation_scaled_piety = 200
+				participation_scaled_piety = 100
 				participation_scaled_prestige = 100
 				if = {
 					limit = {
