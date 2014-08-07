@@ -20,6 +20,7 @@
 		Karantanci, Bosnian, and Albanian cultures get the South Slavic cultural building
 		Moravia gets the West Slavic cultural building
 		Russian cultural building now produces knights and horse archers
+	Iberian tendency to murder now restricted to Jimenas only, from 1066 to 1100, and reduced in severity to prevent Jimenas killing off their entire dynasty.
 		
 
 3.5.11
@@ -122,7 +123,7 @@
 
 3.5.2
 	Updated for 2.1
-	Fixed Mandé culture not existing
+	Fixed MandÃ© culture not existing
 	Fixed some missing localisation
 	Fixed a few errors in Ethiopia and Egypt
 
@@ -329,7 +330,7 @@
 	Updated for CKII 2.0
 
 3.2.29
-	(No Ahistorical Empires) Fixed the kingdom of Mün in SWMH being a dejure part of the British empire
+	(No Ahistorical Empires) Fixed the kingdom of MÃ¼n in SWMH being a dejure part of the British empire
 	Set Carpathia to localize as a kingdom like most other empires
 	Fixed some issues with the triggers for holy wars
 	Lowered the warscore from battles moderately (from a multiplier of 175 to 150)
@@ -432,7 +433,7 @@ Fixes:
 	Increased the reinforcement rate by 50% (to a base level of 3%/year) since the rounding error is fixed in 1.103b. Reinforcement while levy is raised remains at approximately the same level as before
 	(867 start) The Content trait will no longer be removed from Byzantine vassals
 	Made dejure vassals even less likely to join independence factions
-	Fixed some positioning issues with Napoli and Värend
+	Fixed some positioning issues with Napoli and VÃ¤rend
 	Merged the sea zones of Iceland and Faroya
 	Fixed an issue with coastal county wars ending inconclusively in certain cases
 	Fixed the Muslim Invasion CB not applying a cooldown
@@ -708,7 +709,7 @@ Fixes:
 	Ensured that Lotharingia and East Francia are generally kept as primary titles
 	Vassalized mercenaries, holy orders, and religious rulers' (E.G., ecumenical patriarch) opinion of you can no longer prevent you from imposing laws
 	The province of Viken is now named Ranrike (historical name) when not under Norse rule
-	(867 start) The county of Ranrike is now independent, as there is no reliable evidence it was under Danish rule at the time; Harald Hårfagre was able to invade it without reprisal
+	(867 start) The county of Ranrike is now independent, as there is no reliable evidence it was under Danish rule at the time; Harald HÃ¥rfagre was able to invade it without reprisal
 	(867 start) Reduced the size of Bagsecg's scripted army some
 	(867 start) Fixed Venice having two family palaces
 	(867 start) The Byzantines now start with a partially reformed theme system
@@ -1184,8 +1185,8 @@ Sultanate of Rum:
 	Halved the size of the mercenary galleys
 	Halved the number of galleys William the Bastard starts with
 	Reduced the size of William the Bastard's starting forces
-	Harald Hardråde now starts with galleys off of the coast of York
-	Harald Hardråde's forces are now slightly larger
+	Harald HardrÃ¥de now starts with galleys off of the coast of York
+	Harald HardrÃ¥de's forces are now slightly larger
 	The AI will now be quicker to white peace in stalemates
 	Fixed: "Characters are now twice as likely to join the Independence faction if they only border members of the faction"
 	Characters are now 50% more likely to join the Independence faction if they border another member of the faction
@@ -1205,7 +1206,7 @@ Sultanate of Rum:
 		Ambitions can now be changed every 2 years rather than 3
 		Muslim Invasions and Coastal County CB cannot be declared by rulers with the content, slothful, imbecile, or craven traits
 		Pagans can have up to three wives
-		New Bookmarks: Kingdom of Jerusalem (15 July 1099), The Khitan (1 Nov 1141), Scourge of God (2 Dec 1227), Osman’s Dream (1 Jan 1307)
+		New Bookmarks: Kingdom of Jerusalem (15 July 1099), The Khitan (1 Nov 1141), Scourge of God (2 Dec 1227), OsmanÂ’s Dream (1 Jan 1307)
 
 	Affects PB + SWMH only:
 		The Christian Iberians now start with the second level of their cultural building rather than the first
@@ -1323,7 +1324,7 @@ Sultanate of Rum:
 	Sicilians now have the same graphical culture as Italians, rather than Normans
 	The Persian Empire is now formable by people of Turkish, Iranian, and Persian cultures. All kingdom-tier titles within it have to be either be held by the ruler, or have no dejure territory
 	Fixed some mercenary companies having no soldiers
-	The Byzantine Empire is now called Rhomanía if ruled by Greeks
+	The Byzantine Empire is now called RhomanÃ­a if ruled by Greeks
 	Fixed Patricians not getting their fancy portrait border
 	Fixed Patricians (except the top leaders) having the wrong succession type
 	Patricians are now half as likely to take on the culture of their capital
@@ -1385,7 +1386,7 @@ Sultanate of Rum:
 	Fixed the county of Sarqihya not becoming Miaphysite on day 2
 	Fixed the Jewish religion having the wrong icon
 	Made almost all of the Shia Fatimid provinces Sunni
-	Harald Hardråde's claim on England is now weak
+	Harald HardrÃ¥de's claim on England is now weak
 	To change succession law one must have sufficient prestige. Counts need 100, dukes 250, kings 500, and emperors 1000
 	Fixed the county of Aprutium appearing to belong to Apulia before starting the campaign
 	The Scheme mission will now properly coerce characters to join your faction (previously it was not possible to get anyone who was in any faction to join)
@@ -1486,10 +1487,10 @@ Sultanate of Rum:
 		The Nordics:
 			Iceland is now a dejure, unformed kingdom so as to make annexation by Norway less likely
 			Changed the color of Iceland to blue
-			Added a 3rd province to Iceland; Suðisland
+			Added a 3rd province to Iceland; SuÃ°island
 			Updated the coats of arms in Iceland
-			Renamed Ostlandet to Østlandet
-			Moved Viken from Västergötland to Østlandet
+			Renamed Ostlandet to Ã˜stlandet
+			Moved Viken from VÃ¤stergÃ¶tland to Ã˜stlandet
 			Added impassable mountains between Norway and Finland, between Lappland and Finland, and between Kemi and Kola
 		Iberia:
 			Valladolid is now a vassal of Castille in 1066
@@ -1645,8 +1646,8 @@ Tech overhaul:
 
 Tier 1:
 	Dublin
-	Sjælland
-	Trøndelag
+	SjÃ¦lland
+	TrÃ¸ndelag
 	Uppland
 	Novgorod
 	Esztergom
@@ -1779,21 +1780,21 @@ Flavor changes:
 Name linking:
 	Linked up a bunch of names, so they'll change appropriately if culture changes, and will count as the same for regnal numbers (E.G, Harold the 1st, then Harald the 2nd)
 	Linked Harold and Harald
-	Æthelthryth is now female rather than male
+	Ã†thelthryth is now female rather than male
 	Linked Lothar, Hlothere, Lothaire, and Clotaire
 	Linked Alan and Alain
 	Linked Antoon to everything linked to Antoninus
 	Linked Walram, Waelram, Raleran, and Valeran
 	Linked Otokar and Otakar
-	Linked Æthelthryth to Adeltrudis
+	Linked Ã†thelthryth to Adeltrudis
 	Linked Gytha and Gyda
 	Linked Timotei, Tagd, and Timotheos
 	Linked Barbara and Gormflaith
 	Linked Lochland, Roland, Ragnvald, Reginald, Rhainallt, and Rolando
-	Linked Æthelmær, Ademar, and Adémar
+	Linked Ã†thelmÃ¦r, Ademar, and AdÃ©mar
 	Linked Ingram and Enguerrand
 	Linked Ragnailt and Ragnhild
-	Linked Alwin, Ælfwin, and Æthelwine
+	Linked Alwin, Ã†lfwin, and Ã†thelwine
 	Linked Rutger to Roger
 	Linked Emryr, Ambroos, and Ambrus
 	Linked Ifor and Ivar
@@ -1801,15 +1802,15 @@ Name linking:
 	Linked Denis and Denise
 	Linked Adrien, Adriano, Adrianos, and Adrian
 	Linked Antonia and Antonija
-	Linked to Hoël and Hywel
+	Linked to HoÃ«l and Hywel
 	Linked Boris, Bogoris, and Borisz
 	Linked Kazimierz and Casimir
-	Linked Bran and Brân
-	Linked Seonaid and Siobàn to everyting linked to Joan
+	Linked Bran and BrÃ¢n
+	Linked Seonaid and SiobÃ n to everyting linked to Joan
 	Linked Frigyes to everything linked to Frederick
 	Linked Turquetil and Thurcytel to everything linked to Torkel
 	Linked Jacob to everything linked to James
-	Linked Fölop to everything that's linked to Philip
+	Linked FÃ¶lop to everything that's linked to Philip
 	Linked Gijsbrecht and IJsbrecht to everything linked to Gilbert
 	Linked Daffyd to everything linked to David
 	Linked Gerallt to everything linked to Gerald
@@ -1827,7 +1828,7 @@ Name linking:
 	Linked Mallt to everything linked to Matilda
 	Linked Mair and Marja to evetything linked to Maria
 	Listed Nest and Nesta to everything linked to Agnes
-	Linked Siân and Siwan to everything linked to Joan
+	Linked SiÃ¢n and Siwan to everything linked to Joan
 	Linked Ysbail to everything linked to Elisabeth
 	Linked Iago to everything linked to Jacob
 	Linked Dawit to everything linked to David
@@ -1838,7 +1839,7 @@ Name linking:
 	Linked Alisander to everything linked to Alexander
 	Linked Rudolf to everything linked to Ralph
 	Linked Tapani to everything linked to Stephen
-	Linked Niccolò, Nicola, and Nicolaie to everything linked to Nicholas
+	Linked NiccolÃ², Nicola, and Nicolaie to everything linked to Nicholas
 	Linked Douwe to everything linked to Dominic
 	Linked Taddeo and Teodoro to everything linked to Theodore
 
@@ -1921,7 +1922,7 @@ Various changes:
 	Fix various small issues
 	Commander martial contributes two-thirds more to combat
 	Made sieges 25% shorter
-	Made the Norwegian force at campaign start slightly stronger, and increased Harald Hardråde's Martial skill a little
+	Made the Norwegian force at campaign start slightly stronger, and increased Harald HardrÃ¥de's Martial skill a little
 	Made the Norman force at campaign start slightly stronger
 	Rulers will now become independent from white peace in independence wars as long as they're not a de jure vassal of their liege regardless of what tier their liege is at
 
