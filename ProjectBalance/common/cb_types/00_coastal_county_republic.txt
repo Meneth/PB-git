@@ -31,10 +31,17 @@ coastal_county_republic = {
 		ROOT = {
 			NOT = { religion_group = muslim }
 			NOT = { has_character_modifier = coastal_republic_cooldown }
-			NOT = { trait = content }
-			NOT = { trait = slothful }
-			NOT = { trait = imbecile }
-			NOT = { trait = craven }
+			hide_tooltip = {
+				OR = {
+					AND = {
+						NOT = { trait = content }
+						NOT = { trait = slothful }
+						NOT = { trait = imbecile }
+						NOT = { trait = craven }
+					}
+					ai = no
+				}
+			}
 		}
 	}
 	
