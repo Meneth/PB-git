@@ -32,11 +32,16 @@ pagan_subjugation = {
 	can_use_gui = {
 		ROOT = {
 			prestige = 100
-			NOT = { trait = content }
-			NOT = { trait = slothful }
-			NOT = { trait = craven }
-			NOT = { trait = stressed }
-			NOT = { trait = depressed }
+			OR = {
+				AND = {
+					NOT = { trait = content }
+					NOT = { trait = slothful }
+					NOT = { trait = craven }
+					NOT = { trait = stressed }
+					NOT = { trait = depressed }
+				}
+				ai = no
+			}
 		}
 	}
 	
