@@ -38,41 +38,45 @@ muslim_county_conquest = {
 				FROM = { religion_group = ROOT }
 			}
 			NOT = { FROM = { religion_group = pagan_group } }
-			OR = {
-				AND = {
-					NOT = { trait = content }
-					NOT = { trait = craven }
-					NOT = { trait = stressed }
+			hidden_tooltip = {
+				OR = {
+					AND = {
+						NOT = { trait = content }
+						NOT = { trait = craven }
+						NOT = { trait = stressed }
+					}
+					trait = brave
+					trait = wroth
+					trait = ambitious
+					trait = zealous
+					trait = lunatic
+					trait = possessed
+					ai = no
 				}
-				trait = brave
-				trait = wroth
-				trait = ambitious
-				trait = zealous
-				trait = lunatic
-				trait = possessed
-			}
-			OR = {
-				trait = lunatic
-				trait = possessed
-				AND = {
-					NOT = { trait = depressed }
-					NOT = { trait = infirm }
-					NOT = { trait = incapable }
-					NOT = {
-						OR = {
-							AND = {
-								trait = content
-								OR = {
+				OR = {
+					trait = lunatic
+					trait = possessed
+					AND = {
+						NOT = { trait = depressed }
+						NOT = { trait = infirm }
+						NOT = { trait = incapable }
+						NOT = {
+							OR = {
+								AND = {
+									trait = content
+									OR = {
+										trait = craven
+										trait = stressed
+									}
+								}
+								AND = {
 									trait = craven
 									trait = stressed
 								}
 							}
-							AND = {
-								trait = craven
-								trait = stressed
-							}
 						}
 					}
+					ai = no
 				}
 			}
 			custom_tooltip = {
