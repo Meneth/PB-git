@@ -21,7 +21,7 @@
 		Moravia gets the West Slavic cultural building
 		Russian cultural building now produces knights and horse archers
 	Iberian tendency to murder now restricted to Jimenas only, from 1066 to 1100, and reduced in severity to prevent Jimenas killing off their entire dynasty.
-		
+	Enabled all CBs for players, ignoring trait restrictions.	
 
 3.5.11
 	Due to a vanilla bug with tradeposts, bookmarks are now in chronological order
