@@ -432,7 +432,7 @@ religious = {
 		}
 		any_defender = {
 			limit = { character = FROM }
-			participation_scaled_piety = 100
+			participation_scaled_piety = 200
 			participation_scaled_prestige = 100
 			if = {
 				limit = {
@@ -444,7 +444,7 @@ religious = {
 		any_defender = {
 			limit = { NOT = { character = FROM } }
 			hidden_tooltip = { 
-				participation_scaled_piety = 100
+				participation_scaled_piety = 200
 				participation_scaled_prestige = 100
 				if = {
 					limit = {
