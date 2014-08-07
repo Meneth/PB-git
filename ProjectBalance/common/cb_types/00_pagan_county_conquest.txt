@@ -36,12 +36,15 @@ pagan_county_conquest = {
 	
 	can_use_gui = {
 		ROOT = {
-			OR = {
-				trait = ambitious
-				trait = diligent
-				trait = zealous
-				trait = wroth
-				trait = brave
+			hidden_tooltip = {
+				OR = {
+					trait = ambitious
+					trait = diligent
+					trait = zealous
+					trait = wroth
+					trait = brave
+					ai = no
+				}
 			}
 			NOT = { has_character_modifier = holy_war_cooldown }
 		}
