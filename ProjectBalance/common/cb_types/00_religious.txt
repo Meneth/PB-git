@@ -38,38 +38,42 @@ religious = {
 				has_law = revokation_1
 				has_law = revokation_2
 			}
-			OR = {
-				AND = {
-					NOT = { trait = content }
-					NOT = { trait = craven }
-					NOT = { trait = stressed }
+			hidden_tooltip = {
+				OR = {
+					ai = no
+					AND = {
+						NOT = { trait = content }
+						NOT = { trait = craven }
+						NOT = { trait = stressed }
+					}
+					trait = brave
+					trait = wroth
+					trait = ambitious
+					trait = zealous
+					trait = lunatic
+					trait = possessed
 				}
-				trait = brave
-				trait = wroth
-				trait = ambitious
-				trait = zealous
-				trait = lunatic
-				trait = possessed
-			}
-			OR = {
-				trait = lunatic
-				trait = possessed
-				AND = {
-					NOT = { trait = depressed }
-					NOT = { trait = infirm }
-					NOT = { trait = incapable }
-					NOT = {
-						OR = {
-							AND = {
-								trait = content
-								OR = {
+				OR = {
+					ai = no
+					trait = lunatic
+					trait = possessed
+					AND = {
+						NOT = { trait = depressed }
+						NOT = { trait = infirm }
+						NOT = { trait = incapable }
+						NOT = {
+							OR = {
+								AND = {
+									trait = content
+									OR = {
+										trait = craven
+										trait = stressed
+									}
+								}
+								AND = {
 									trait = craven
 									trait = stressed
 								}
-							}
-							AND = {
-								trait = craven
-								trait = stressed
 							}
 						}
 					}
