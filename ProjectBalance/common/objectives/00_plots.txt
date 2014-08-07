@@ -967,6 +967,7 @@ plot_kill_character = {
 				holder = ROOT
 			}
 			FROM = { dynasty = 442 }
+			year = 1066
 			NOT = { year = 1100 }
 			NOT = { any_child = { character = FROM } }
 		}
