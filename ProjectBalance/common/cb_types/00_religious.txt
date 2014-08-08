@@ -162,6 +162,7 @@ religious = {
 							}
 							trait = possessed
 							trait = lunatic
+							ai = no
 						}
 						OR = {
 							trait = wroth
@@ -170,6 +171,7 @@ religious = {
 							trait = lunatic
 							trait = possessed
 							trait = zealous
+							ai = no
 						}
 					}
 				}
