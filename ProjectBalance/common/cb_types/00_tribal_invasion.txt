@@ -92,6 +92,9 @@ tribal_invasion = {
 					OR = {
 						has_horde_culture = yes
 						has_character_flag = horde_invader
+						FROM = {
+							NOT = { religion_group = pagan_group } # Should subjugate these instead
+						}
 					}
 				}
 				AND = {
