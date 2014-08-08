@@ -1,4 +1,4 @@
-3.5.12
+﻿3.5.12
 	Tweaks to Religious Authority defines to better balance Sunnis, Shia, and prevent pathological Catholic downward spirals sparked by the inevitable antipope:
 		AUTHORITY_FROM_ANTIPOPE = -0.2 (from -0.3)
 		AUTHORITY_FROM_RELHEAD_HOLY_SITE = 0 (from 0.05)
@@ -25,6 +25,7 @@
 	Holy War now costs 300 piety to use, and rewards 1/2 the original piety
 	Donating to holy orders generates 1/4 the original piety
 	Winning battles against other religions generates 1/2 piety
+	Opinion modifier for 'wrong government type' for count and higher vassals of different type (feudal/republic/theocracy) removed	
 
 3.5.11
 	Due to a vanilla bug with tradeposts, bookmarks are now in chronological order
