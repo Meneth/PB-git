@@ -27,6 +27,9 @@
 	Donating to holy orders generates 1/4 the original piety
 	Winning battles against other religions generates 1/2 piety
 	Opinion modifier for 'wrong government type' for count and higher vassals of different type (feudal/republic/theocracy) removed	
+	Tribal invasion fixed (was unusable due to a bug), and put on the holy war cooldown timer
+	Pagan reformation Religious Authority minimum reduced to account for other religious authority changes
+	
 
 3.5.11
 	Due to a vanilla bug with tradeposts, bookmarks are now in chronological order
