@@ -127,6 +127,7 @@ pagan_subjugation = {
 						trait = ambitious
 						trait = diligent
 						trait = brave
+						ai = no
 						capital_scope = {
 							kingdom = {
 								title = PREVPREVPREV
