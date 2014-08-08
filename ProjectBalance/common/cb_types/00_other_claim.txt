@@ -55,21 +55,25 @@ other_claim = {
 					}
 				}
 			}
-			FROMFROM = {
-				OR = {
-					trait = ambitious
-					trait = wroth
-					trait = envious
-					trait = arbitrary
-				}
-				OR = {
-					trait = possessed
-					trait = lunatic
-					AND = {
-						NOT = { trait = craven }
-						NOT = { trait = content }
-						NOT = { trait = just }
-						NOT = { trait = kind }
+			hidden_tooltip = {
+				FROMFROM = {
+					OR = {
+						trait = ambitious
+						trait = wroth
+						trait = envious
+						trait = arbitrary
+						ai = no
+					}
+					OR = {
+						trait = possessed
+						trait = lunatic
+						AND = {
+							NOT = { trait = craven }
+							NOT = { trait = content }
+							NOT = { trait = just }
+							NOT = { trait = kind }
+						}
+						ai = no
 					}
 				}
 			}

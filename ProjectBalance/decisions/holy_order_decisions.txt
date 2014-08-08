@@ -3,7 +3,7 @@
 # Holy Order Decisions for Sons of Abraham
 #
 ###########################################
-# Written by Henrik Fåhraeus
+# Written by Henrik FÃ¥hraeus
 ###########################################
 
 # Holy Order Decisions are listed for each existing holy order of the right religion
@@ -497,7 +497,7 @@ decisions = {
 			}
 			
 			wealth = -300
-			piety = 300
+			piety = 75
 		}
 		
 		revoke_allowed = {
@@ -600,7 +600,7 @@ decisions = {
 			}
 			
 			wealth = -300
-			piety = 300
+			piety = 75
 		}
 		
 		revoke_allowed = {
@@ -676,7 +676,7 @@ decisions = {
 		}
 		
 		allow = {
-			wealth = 300
+			wealth = 75
 		}
 		
 		effect = {
@@ -777,7 +777,7 @@ decisions = {
 			}
 			
 			wealth = -300
-			piety = 300
+			piety = 75
 		}
 		
 		revoke_allowed = {
@@ -906,7 +906,7 @@ decisions = {
 			}
 			
 			wealth = -300
-			piety = 300
+			piety = 75
 		}
 
 		revoke_allowed = {
@@ -1034,7 +1034,7 @@ decisions = {
 			}
 			
 			wealth = -300
-			piety = 300
+			piety = 75
 		}
 
 		revoke_allowed = {
@@ -1400,7 +1400,7 @@ decisions = {
 			}
 			
 			wealth = -300
-			piety = 300
+			piety = 75
 		}
 		
 		revoke_allowed = {
@@ -1544,7 +1544,7 @@ decisions = {
 			}
 			
 			wealth = -300
-			piety = 300
+			piety = 75
 		}
 		
 		revoke_allowed = {
@@ -1685,7 +1685,7 @@ decisions = {
 			}
 			
 			wealth = -300
-			piety = 300
+			piety = 75
 		}
 		
 		revoke_allowed = {
@@ -1828,7 +1828,7 @@ decisions = {
 			}
 			
 			wealth = -300
-			piety = 300
+			piety = 75
 		}
 		
 		revoke_allowed = {
@@ -1962,7 +1962,7 @@ decisions = {
 			}
 			
 			wealth = -300
-			piety = 300
+			piety = 75
 		}
 		
 		revoke_allowed = {
@@ -2092,7 +2092,7 @@ decisions = {
 			}
 			
 			wealth = -300
-			piety = 300
+			piety = 75
 		}
 		
 		revoke_allowed = {
@@ -2222,7 +2222,7 @@ decisions = {
 			}
 			
 			wealth = -300
-			piety = 300
+			piety = 75
 		}
 		
 		revoke_allowed = {
@@ -2352,7 +2352,7 @@ decisions = {
 			}
 			
 			wealth = -300
-			piety = 300
+			piety = 75
 		}
 		
 		revoke_allowed = {
@@ -2482,7 +2482,7 @@ decisions = {
 			}
 			
 			wealth = -300
-			piety = 300
+			piety = 75
 		}
 		
 		revoke_allowed = {
@@ -2612,7 +2612,7 @@ decisions = {
 			}
 			
 			wealth = -300
-			piety = 300
+			piety = 75
 		}
 		
 		revoke_allowed = {
@@ -2777,7 +2777,7 @@ decisions = {
 			}
 			
 			wealth = -300
-			piety = 300
+			piety = 75
 		}
 		
 		revoke_allowed = {
@@ -2946,7 +2946,7 @@ decisions = {
 			}
 			
 			wealth = -300
-			piety = 300
+			piety = 75
 		}
 		
 		revoke_allowed = {
@@ -3089,7 +3089,7 @@ decisions = {
 			}
 			
 			wealth = -300
-			piety = 300
+			piety = 75
 		}
 		
 		revoke_allowed = {

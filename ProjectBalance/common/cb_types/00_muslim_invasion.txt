@@ -34,10 +34,33 @@ muslim_invasion = {
 			NOT = { has_character_modifier = holy_war_cooldown }
 			NOT = { decadence = 50 } # Helps curb decadence growth anyway: no titles in this CB are usurped
 			
-			NOT = { trait = content }
-			NOT = { trait = slothful }
-			NOT = { trait = imbecile }
-			NOT = { trait = craven }
+			hidden_tooltip = {
+				OR = {
+					AND = {
+						NOT = { trait = content }
+						NOT = { trait = slothful }
+						NOT = { trait = imbecile }
+						NOT = { trait = craven }
+						OR = { 
+							NOT = { FROM = { religion_group = muslim } }
+							OR = { # More serious trait requirements than usual (possibly too strict)
+								AND = {
+									trait = zealous # Deal-breaker
+									OR = {
+										FROM = { trait = zealous } # Zeal v. zeal crime (hostile Muslims)
+										trait = brave
+										trait = wroth
+										trait = ambitious
+									}
+								}
+								trait = lunatic
+								trait = possessed
+							}
+						}
+					}
+					ai = no
+				}
+			}
 			
 			is_republic = no
 			is_patrician = no
@@ -53,20 +76,6 @@ muslim_invasion = {
 					FROM = { religion_group = muslim }
 					piety = 800 # Costs 60% more piety; no piety cycle in this CB (also DoW cost and monthly cost)
 					prestige = 800 # Not a cost, but prestige must be built before MvM invasion is enabled
-					
-					OR = { # More serious trait requirements than usual (possibly too strict)
-						AND = {
-							trait = zealous # Deal-breaker
-							OR = {
-								FROM = { trait = zealous } # Zeal v. zeal crime (hostile Muslims)
-								trait = brave
-								trait = wroth
-								trait = ambitious
-							}
-						}
-						trait = lunatic
-						trait = possessed
-					}
 				}
 			}
 		}

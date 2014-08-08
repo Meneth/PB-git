@@ -1,4 +1,4 @@
-3.5.12
+﻿3.5.12
 	Tweaks to Religious Authority defines to better balance Sunnis, Shia, and prevent pathological Catholic downward spirals sparked by the inevitable antipope:
 		AUTHORITY_FROM_ANTIPOPE = -0.2 (from -0.3)
 		AUTHORITY_FROM_RELHEAD_HOLY_SITE = 0 (from 0.05)
@@ -21,6 +21,10 @@
 		Moravia gets the West Slavic cultural building
 		Russian cultural building now produces knights and horse archers
 	Iberian tendency to murder now restricted to Jimenas only, from 1066 to 1100, and reduced in severity to prevent Jimenas killing off their entire dynasty.
+	Enabled all CBs for players, ignoring trait restrictions.
+	Holy War now costs 300 piety to use, and rewards 1/2 the original piety
+	Donating to holy orders generates 1/4 the original piety
+	Winning battles against other religions generates 1/2 piety
 	Opinion modifier for 'wrong government type' for count and higher vassals of different type (feudal/republic/theocracy) removed	
 
 3.5.11
