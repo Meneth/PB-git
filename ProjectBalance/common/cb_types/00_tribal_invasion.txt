@@ -206,7 +206,7 @@ tribal_invasion = {
 	on_add = {
 		ROOT = {
 			if = {
-				limit = { has_horde_culture = yes }
+				limit = { has_horde_culture = no }
 				custom_tooltip = {
 					text = holy_war_cooldown_ctt
 					hidden_tooltip = {
