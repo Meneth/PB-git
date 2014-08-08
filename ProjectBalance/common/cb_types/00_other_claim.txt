@@ -28,7 +28,7 @@ other_claim = {
 
 	press_claim = yes
 	
-	can_use_gui = {
+	can_use = {
 		OR = {
 			custom_tooltip = {
 				text = is_not_allied
