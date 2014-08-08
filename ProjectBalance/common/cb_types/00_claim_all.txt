@@ -26,9 +26,9 @@ claim_all = {
 	is_permanent = yes
 	can_ask_to_join_war = no
 	is_claim_all = yes
-
-	can_use_gui = {
-		OR = {
+	
+	can_use = {
+	OR = {
 			custom_tooltip = {
 				text = is_not_allied
 				hidden_tooltip = {
@@ -80,9 +80,6 @@ claim_all = {
 				ROOT = { dynasty = 25061 } #Karlings
 			}
 		}
-	}
-	
-	can_use = {
 		ROOT = {
 			total_claims = {
 				who = FROM

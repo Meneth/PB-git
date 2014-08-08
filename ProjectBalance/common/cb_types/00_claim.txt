@@ -28,7 +28,7 @@ claim = {
 
 	press_claim = yes
 	
-	can_use_gui = {
+	can_use = {
 		OR = {
 			custom_tooltip = {
 				text = is_not_allied
@@ -81,8 +81,6 @@ claim = {
 				ROOT = { dynasty = 25061 } #Karlings
 			}
 		}
-	}
-	can_use = {
 		OR = {
 			ROOT = { is_female = no }
 			NOT = { ROOT = { religion_group = muslim } }
