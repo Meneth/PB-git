@@ -28,7 +28,7 @@ claim_all = {
 	is_claim_all = yes
 	
 	can_use = {
-	OR = {
+		OR = {
 			custom_tooltip = {
 				text = is_not_allied
 				hidden_tooltip = {
