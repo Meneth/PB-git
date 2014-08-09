@@ -1,4 +1,5 @@
 ﻿3.5.12
+	Plot events and faction decisions updated, should allow antiking faction to function properly
 	Reformed Tengri can now donate to and expel their holy order (vanilla bug fix)
 	Tweaks to Religious Authority defines to better balance Sunnis, Shia, and prevent pathological Catholic downward spirals sparked by the inevitable antipope:
 		AUTHORITY_FROM_ANTIPOPE = -0.2 (from -0.3)
