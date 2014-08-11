@@ -1006,6 +1006,9 @@ obj_wants_landed_title = {
 				}
 			}
 		}
+		# PB: Additional restrictions to block folks who have no business wanting titles
+		NOT = { trait = monk }
+		NOT = { trait = nun }
 	}
 	
 	chance = {
