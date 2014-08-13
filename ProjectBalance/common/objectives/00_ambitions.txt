@@ -13,17 +13,21 @@ obj_become_chancellor = {
 	expectation_of_liege = yes
 
 	allow = {
-		prisoner = no
-		is_adult = yes
-		is_councillor = no
-		liege = {
-			NOT = { character = ROOT }
-		}
+		# PB: Restrictions imported from PB's job_titles.txt
 		OR = {
 			is_female = no
+			AND = {
+				religion = cathar
+				liege = { religion = cathar }
+			}
+			has_character_flag = special_chancellor
 			liege = {
 				primary_title = {
-					has_law = true_cognatic_succession
+					OR = {
+						has_law = true_cognatic_succession
+						has_law = enatic_cognatic_succession
+						has_law = enatic_succession
+					}
 				}
 			}
 			AND = {
@@ -31,7 +35,15 @@ obj_become_chancellor = {
 				NOT = { liege = { religion_group = muslim } }
 			}
 		}
+		OR = {
+			is_adult = yes
+			has_character_flag = special_chancellor
+		}
+		prisoner = no
 		NOT = { trait = incapable }
+		# PB: End new restrictions
+		is_councillor = no
+		independent = no
 		diplomacy = 10
 	}
 	chance = {
@@ -136,18 +148,43 @@ obj_become_marshal = {
 	type = character
 	
 	allow = {
-		prisoner = no
-		is_adult = yes
-		is_councillor = no
-		independent = no
 		OR = {
+			# PB: Restrictions imported from PB's job_titles.txt
 			is_female = no
+			AND = {
+				religion = cathar
+				liege = { religion = cathar }
+			}
+			liege = {
+				primary_title = {
+					OR = {
+						has_law = enatic_cognatic_succession
+						has_law = enatic_succession
+					}
+				}
+			}
+			has_character_flag = special_marshal
 			AND = {
 				has_global_flag = gender_equality
 				NOT = { liege = { religion_group = muslim } }
 			}
 		}
+		OR = {
+			AND = {
+				OR = {
+					NOT = { religion = hindu }
+					trait = kshatriya
+				}
+				is_adult = yes
+			}
+			has_character_flag = special_marshal
+		}
+		prisoner = no
 		NOT = { trait = incapable }
+		NOT = { has_character_flag = guru }
+		# PB: End new restrictions
+		is_councillor = no
+		independent = no
 		martial = 10
 	}
 	chance = {
@@ -252,12 +289,14 @@ obj_become_treasurer = {
 	type = character
 	
 	allow = {
-		prisoner = no
-		is_adult = yes
-		is_councillor = no
-		independent = no
+		# PB: Restrictions imported from PB's job_titles.txt
 		OR = {
 			is_female = no
+			AND = {
+				religion = cathar
+				liege = { religion = cathar }
+			}
+			has_character_flag = special_treasurer
 			liege = {
 				primary_title = {
 					NOT = {
@@ -270,7 +309,20 @@ obj_become_treasurer = {
 				NOT = { liege = { religion_group = muslim } }
 			}
 		}
+		OR = {
+			is_female = no
+			NOT = { liege = { religion_group = muslim } }
+		}
+		OR = {
+			is_adult = yes
+			has_character_flag = special_treasurer
+		}
+		prisoner = no
 		NOT = { trait = incapable }
+		NOT = { has_character_flag = guru }
+		# PB: End new restrictions
+		is_councillor = no
+		independent = no
 		stewardship = 10
 	}
 	chance = {
@@ -382,11 +434,11 @@ obj_become_treasurer = {
 obj_become_spymaster = {
 	type = character
 	allow = {
-		prisoner = no
-		is_adult = yes
+		# PB: Restrictions imported from PB's job_titles.txt
+		NOT = { has_character_flag = guru }
+		# PB: End new restrictions
 		is_councillor = no
 		independent = no
-		NOT = { trait = incapable }
 		intrigue = 10
 	}
 	chance = {
@@ -499,18 +551,27 @@ obj_become_spiritual = {
 	type = character
 	
 	allow = {
-		prisoner = no
+		# PB: Restrictions imported from PB's job_titles.txt
 		is_adult = yes
-		is_councillor = no
-		independent = no
+		prisoner = no
+		liege = {
+			religion = ROOT
+		}
+		
 		OR = {
-			is_female = no
+			AND = {
+				is_female = no
+				OR = {
+					NOT = { religion = hindu }
+					trait = brahmin
+				}
+			}
 			AND = {
 				religion_group = pagan_group
 				NOT = { religion = aztec }
-				NOT = { religion = aztec_reformed}
+				NOT = { religion = aztec_reformed }
 				NOT = { religion = tengri_pagan }
-				NOT = { religion = tengri_pagan_reformed}
+				NOT = { religion = tengri_pagan_reformed }
 			}
 			AND = {
 				has_global_flag = gender_equality
@@ -518,40 +579,32 @@ obj_become_spiritual = {
 			}
 			religion = cathar
 			religion = bogomilist
+			has_character_flag = special_spiritual
 		}
-		learning = 10
 		
-		OR = {
-			NOT = { religion_group = muslim }
-			trait = detached_priest
-			trait = martial_cleric
-			trait = scholarly_theologian
-			trait = mastermind_theologian
-			NOT = { liege = { religion_group = muslim } }
-		}
+		NOT = { trait = incapable }
 		
 		OR = {
 			is_theocracy = yes
 			liege = { religion_group = muslim }
-#			liege = { lower_tier_than = KING }
 			AND = {
 				is_ruler = no
-				NOT = { religion = orthodox }
-				NOT = { is_heresy_of = orthodox }
-				NOT = { religion = miaphysite }
-				NOT = { is_heresy_of = miaphysite }
+				has_autocephaly = no
 			}
 		}
 		
-		liege = {
-			religion = ROOT
-		}
-		
 		OR = {
-			is_ruler = no
-			is_theocracy = yes
+			NOT = { religion_group = muslim }
+			NOT = { liege = { religion_group = muslim } }
+			trait = detached_priest
+			trait = martial_cleric
+			trait = scholarly_theologian
+			trait = mastermind_theologian
 		}
-		NOT = { trait = incapable }
+		# PB: End new restrictions
+		is_councillor = no
+		independent = no
+		learning = 10
 	}
 	chance = {
 		factor = 100
@@ -1009,6 +1062,7 @@ obj_wants_landed_title = {
 		# PB: Additional restrictions to block folks who have no business wanting titles
 		NOT = { trait = monk }
 		NOT = { trait = nun }
+		NOT = { trait = celibate }
 	}
 	
 	chance = {
