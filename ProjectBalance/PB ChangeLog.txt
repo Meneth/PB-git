@@ -1,4 +1,6 @@
 ﻿3.5.12
+	Succession law opinions should now be properly applied to a ruler's family (this issue was also caused by a vanilla bug)
+	Gender Equality module now properly removes crippling negative opinions (this issue was caused by a vanilla bug)
 	Job ambitions now have the same restrictions as found in job_titles.txt
 	Monks, Nuns, and the Celibate are now blocked from Wants Landed Title ambition
 	Plot events and faction decisions updated, should allow antiking faction to function properly
