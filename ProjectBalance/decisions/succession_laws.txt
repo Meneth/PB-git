@@ -39,7 +39,7 @@ succession_laws = {
 		}
 		allow = {
 			OR = {
-				is_ruler = no # Black magic fix until vanilla gets its act together
+				hidden_tooltip = { is_ruler = no } # Black magic fix until vanilla gets its act together
 				is_recent_grant = yes
 				AND = {
 					holder_scope = {
@@ -130,7 +130,7 @@ succession_laws = {
 		
 		allow = {
 			OR = {
-				is_ruler = no # Black magic fix until vanilla gets its act together
+				hidden_tooltip = { is_ruler = no } # Black magic fix until vanilla gets its act together
 				is_recent_grant = yes
 				AND = {
 					OR = {
@@ -229,7 +229,7 @@ succession_laws = {
 		}
 		allow = {
 			OR = {
-				is_ruler = no # Black magic fix until vanilla gets its act together
+				hidden_tooltip = { is_ruler = no } # Black magic fix until vanilla gets its act together
 				is_recent_grant = yes
 				AND = {
 					OR = {
@@ -324,7 +324,7 @@ succession_laws = {
 		}
 		allow = {
 			OR = {
-				is_ruler = no # Black magic fix until vanilla gets its act together
+				hidden_tooltip = { is_ruler = no } # Black magic fix until vanilla gets its act together
 				is_recent_grant = yes
 				AND = {
 					NOT = { has_law = revokation_2 }
@@ -404,7 +404,7 @@ succession_laws = {
 		}
 		allow = {
 			OR = {
-				is_ruler = no # Black magic fix until vanilla gets its act together
+				hidden_tooltip = { is_ruler = no } # Black magic fix until vanilla gets its act together
 				is_recent_grant = yes
 				AND = {
 					holder_scope = {
@@ -485,7 +485,7 @@ succession_laws = {
 		}
 		allow = {
 			OR = {
-				is_ruler = no # Black magic fix until vanilla gets its act together
+				hidden_tooltip = { is_ruler = no } # Black magic fix until vanilla gets its act together
 				is_recent_grant = yes
 				AND = {
 					OR = {
