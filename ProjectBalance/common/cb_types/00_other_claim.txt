@@ -30,6 +30,7 @@ other_claim = {
 	
 	can_use = {
 		OR = {
+			ai = no
 			custom_tooltip = {
 				text = is_not_allied
 				hidden_tooltip = {
@@ -62,7 +63,6 @@ other_claim = {
 						trait = wroth
 						trait = envious
 						trait = arbitrary
-						ai = no
 					}
 					OR = {
 						trait = possessed
@@ -73,7 +73,6 @@ other_claim = {
 							NOT = { trait = just }
 							NOT = { trait = kind }
 						}
-						ai = no
 					}
 				}
 			}
@@ -131,6 +130,9 @@ other_claim = {
 				}
 			}
 		}
+		
+		# Cannot press others' claims for holy orders
+		holy_order = no
 	}
 	
 	is_valid_title = {

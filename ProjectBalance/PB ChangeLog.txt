@@ -1,4 +1,5 @@
 ﻿3.5.12
+	It is no longer possible to press a third-party's claim on a holy order (vanilla succession bug generates random HO claims when it should generate none)
 	Succession law opinions should now be properly applied to a ruler's family (this issue was also caused by a vanilla bug)
 	Gender Equality module now properly removes crippling negative opinions (this issue was caused by a vanilla bug)
 	Job ambitions now have the same restrictions as found in job_titles.txt
