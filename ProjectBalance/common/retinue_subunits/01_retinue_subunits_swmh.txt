@@ -29,6 +29,8 @@ RETTYPE_CUL_ESTONIAN =
 	modifier = {
 		heavy_infantry_offensive = 0.3
 		heavy_infantry_defensive = 0.3
+		light_infantry_offensive = 0.3
+		light_infantry_defensive = 0.3
 	}
 }
 
@@ -91,7 +93,7 @@ RETTYPE_CUL_KARANTANCI =
 	}
 	
 	modifier = {
-		knights_defensive = 0.3
-		light_cavalry_defensive = 0.3
+		knights_defensive = 0.6
+		light_cavalry_defensive = 0.6
 	}
 }

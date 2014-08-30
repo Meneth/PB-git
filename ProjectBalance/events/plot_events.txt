@@ -534,6 +534,10 @@ letter_event = {
 		ai_chance = {
 			factor = 10
 			modifier = {
+				factor = 0
+				FROM = { NOT = { plot_power = 1.0 } }
+			}				
+			modifier = {
 				factor = 1.25
 				trait = weak
 			}
@@ -560,7 +564,7 @@ letter_event = {
 			modifier = {
 				factor = 1.25
 				trait = content
-			}
+			}		
 		}
 		hidden_tooltip = {
 			FROM = {
@@ -613,13 +617,17 @@ letter_event = {
 				FROM = { plot_power = 1.5 }
 			}
 			modifier = {
-				factor = 0.75
-				FROM = { plot_power = 1.75 }
-			}
-			modifier = {
-				factor = 0.0
+				factor = 0.5
 				FROM = { plot_power = 2.0 }
 			}
+			modifier = {
+				factor = 0.5
+				FROM = { plot_power = 3.0 }
+			}
+			modifier = {
+				factor = 0.5
+				FROM = { plot_power = 4.0 }
+			}			
 		}
 		FROM = {
 			letter_event = { id = 8100 days = 3 tooltip = "EVTTOOLTIP8100" }
@@ -655,7 +663,19 @@ letter_event = {
 	option = {
 		name = "EVTOPTA8000"
 		ai_chance = {
-			factor = 10
+			factor = 20
+			modifier = {
+				factor = 0			
+				NOT = {
+					FROM = {
+						faction_power = 
+						{
+							faction = faction_succ_seniority
+							power = 0.5
+						}
+					}
+				}
+			}
 			modifier = {
 				factor = 1.25
 				trait = weak
@@ -683,18 +703,6 @@ letter_event = {
 			modifier = {
 				factor = 1.25
 				trait = content
-			}
-			modifier = {
-				factor = 0.001
-				FROM = {
-					NOT = {
-						faction_power = 
-						{
-							faction = faction_succ_seniority
-							power = 0.25
-						}
-					}
-				}
 			}
 		}
 		
@@ -725,7 +733,7 @@ letter_event = {
 	option = {
 		name = "EVTOPTB8005"
 		ai_chance = {
-			factor = 90
+			factor = 80
 			modifier = {
 				factor = 1.25
 				trait = strong
@@ -755,22 +763,12 @@ letter_event = {
 				trait = ambitious
 			}
 			modifier = {
-				factor = 0
-				FROM = {
-					faction_power = 
-					{
-						faction = faction_succ_seniority
-						power = 2.0
-					}
-				}
-			}
-			modifier = {
 				factor = 0.75
 				FROM = {
 					faction_power = 
 					{
 						faction = faction_succ_seniority
-						power = 0.8
+						power = 1.5
 					}
 				}
 			}
@@ -784,6 +782,36 @@ letter_event = {
 					}
 				}
 			}
+			modifier = {
+				factor = 0.5
+				FROM = {
+					faction_power = 
+					{
+						faction = faction_succ_seniority
+						power = 2.0
+					}
+				}
+			}
+			modifier = {
+				factor = 0.5
+				FROM = {
+					faction_power = 
+					{
+						faction = faction_succ_seniority
+						power = 3.0
+					}
+				}
+			}	
+			modifier = {
+				factor = 0.5
+				FROM = {
+					faction_power = 
+					{
+						faction = faction_succ_seniority
+						power = 4.0
+					}
+				}
+			}				
 		}
 		hidden_tooltip = {
 			if = {
@@ -864,7 +892,19 @@ letter_event = {
 	option = {
 		name = "EVTOPTA8000"
 		ai_chance = {
-			factor = 10
+			factor = 20
+			modifier = {
+				factor = 0			
+				NOT = {
+					FROM = {
+						faction_power = 
+						{
+							faction = faction_succ_primogeniture
+							power = 0.5
+						}
+					}
+				}
+			}
 			modifier = {
 				factor = 1.25
 				trait = weak
@@ -892,18 +932,6 @@ letter_event = {
 			modifier = {
 				factor = 1.25
 				trait = content
-			}
-			modifier = {
-				factor = 0.001
-				FROM = {
-					NOT = {
-						faction_power = 
-						{
-							faction = faction_succ_primogeniture
-							power = 0.25
-						}
-					}
-				}
 			}
 		}
 		hidden_tooltip = {
@@ -933,7 +961,7 @@ letter_event = {
 	option = {
 		name = "EVTOPTB8000"
 		ai_chance = {
-			factor = 90
+			factor = 80
 			modifier = {
 				factor = 1.25
 				trait = strong
@@ -962,24 +990,13 @@ letter_event = {
 				factor = 1.25
 				trait = ambitious
 			}
-			
-			modifier = {
-				factor = 0
-				FROM = {
-					faction_power = 
-					{
-						faction = faction_succ_primogeniture
-						power = 2.0
-					}
-				}
-			}
 			modifier = {
 				factor = 0.75
 				FROM = {
 					faction_power = 
 					{
 						faction = faction_succ_primogeniture
-						power = 0.8
+						power = 1.5
 					}
 				}
 			}
@@ -993,6 +1010,36 @@ letter_event = {
 					}
 				}
 			}
+			modifier = {
+				factor = 0.5
+				FROM = {
+					faction_power = 
+					{
+						faction = faction_succ_primogeniture
+						power = 2.0
+					}
+				}
+			}
+			modifier = {
+				factor = 0.5
+				FROM = {
+					faction_power = 
+					{
+						faction = faction_succ_primogeniture
+						power = 3.0
+					}
+				}
+			}	
+			modifier = {
+				factor = 0.5
+				FROM = {
+					faction_power = 
+					{
+						faction = faction_succ_primogeniture
+						power = 4.0
+					}
+				}
+			}	
 		}
 		hidden_tooltip = {
 			if = {
@@ -1073,7 +1120,19 @@ letter_event = {
 	option = {
 		name = "EVTOPTA8000"
 		ai_chance = {
-			factor = 10
+			factor = 20
+			modifier = {
+				factor = 0			
+				NOT = {
+					FROM = {
+						faction_power = 
+						{
+							faction = faction_succ_feudal_elective
+							power = 0.5
+						}
+					}
+				}
+			}
 			modifier = {
 				factor = 1.25
 				trait = weak
@@ -1101,18 +1160,6 @@ letter_event = {
 			modifier = {
 				factor = 1.25
 				trait = content
-			}
-			modifier = {
-				factor = 0.001
-				FROM = {
-					NOT = {
-						faction_power = 
-						{
-							faction = faction_succ_feudal_elective
-							power = 0.25
-						}
-					}
-				}
 			}
 		}
 		
@@ -1143,7 +1190,7 @@ letter_event = {
 	option = {
 		name = "EVTOPTB8000"
 		ai_chance = {
-			factor = 90
+			factor = 80
 			modifier = {
 				factor = 1.25
 				trait = strong
@@ -1171,25 +1218,14 @@ letter_event = {
 			modifier = {
 				factor = 1.25
 				trait = ambitious
-			}
-			
-			modifier = {
-				factor = 0
-				FROM = {
-					faction_power = 
-					{
-						faction = faction_succ_feudal_elective
-						power = 2.0
-					}
-				}
-			}
+			}		
 			modifier = {
 				factor = 0.75
 				FROM = {
 					faction_power = 
 					{
 						faction = faction_succ_feudal_elective
-						power = 0.8
+						power = 1.5
 					}
 				}
 			}
@@ -1203,6 +1239,36 @@ letter_event = {
 					}
 				}
 			}
+			modifier = {
+				factor = 0.5
+				FROM = {
+					faction_power = 
+					{
+						faction = faction_succ_feudal_elective
+						power = 2.0
+					}
+				}
+			}
+			modifier = {
+				factor = 0.5
+				FROM = {
+					faction_power = 
+					{
+						faction = faction_succ_feudal_elective
+						power = 3.0
+					}
+				}
+			}	
+			modifier = {
+				factor = 0.5
+				FROM = {
+					faction_power = 
+					{
+						faction = faction_succ_feudal_elective
+						power = 4.0
+					}
+				}
+			}	
 		}
 		hidden_tooltip = {
 			if = {
@@ -1284,7 +1350,19 @@ letter_event = {
 	option = {
 		name = "EVTOPTA8000"
 		ai_chance = {
-			factor = 10
+			factor = 20
+			modifier = {
+				factor = 0			
+				NOT = {
+					FROM = {
+						faction_power = 
+						{
+							faction = faction_succ_gavelkind
+							power = 0.5
+						}
+					}
+				}
+			}
 			modifier = {
 				factor = 1.25
 				trait = weak
@@ -1312,18 +1390,6 @@ letter_event = {
 			modifier = {
 				factor = 1.25
 				trait = content
-			}
-			modifier = {
-				factor = 0.001
-				FROM = {
-					NOT = {
-						faction_power = 
-						{
-							faction = faction_succ_gavelkind
-							power = 0.25
-						}
-					}
-				}
 			}
 		}
 		
@@ -1355,7 +1421,7 @@ letter_event = {
 	option = {
 		name = "EVTOPTB8000"
 		ai_chance = {
-			factor = 90
+			factor = 80
 			modifier = {
 				factor = 1.25
 				trait = strong
@@ -1384,24 +1450,13 @@ letter_event = {
 				factor = 1.25
 				trait = ambitious
 			}
-			
-			modifier = {
-				factor = 0
-				FROM = {
-					faction_power = 
-					{
-						faction = faction_succ_gavelkind
-						power = 2.0
-					}
-				}
-			}
 			modifier = {
 				factor = 0.75
 				FROM = {
 					faction_power = 
 					{
 						faction = faction_succ_gavelkind
-						power = 0.8
+						power = 1.5
 					}
 				}
 			}
@@ -1415,6 +1470,36 @@ letter_event = {
 					}
 				}
 			}
+			modifier = {
+				factor = 0.5
+				FROM = {
+					faction_power = 
+					{
+						faction = faction_succ_gavelkind
+						power = 2.0
+					}
+				}
+			}
+			modifier = {
+				factor = 0.5
+				FROM = {
+					faction_power = 
+					{
+						faction = faction_succ_gavelkind
+						power = 3.0
+					}
+				}
+			}	
+			modifier = {
+				factor = 0.5
+				FROM = {
+					faction_power = 
+					{
+						faction = faction_succ_gavelkind
+						power = 4.0
+					}
+				}
+			}	
 		}
 		hidden_tooltip = {
 			if = {
@@ -1482,6 +1567,10 @@ letter_event = {
 		name = EVTOPTA8000
 		ai_chance = {
 			factor = 10
+			modifier = {
+				factor = 0
+				FROM = { NOT = { plot_power = 1.0 } }
+			}
 			modifier = {
 				factor = 1.25
 				trait = weak
@@ -1562,13 +1651,17 @@ letter_event = {
 				FROM = { plot_power = 1.5 }
 			}
 			modifier = {
-				factor = 0.75
-				FROM = { plot_power = 1.75 }
-			}
-			modifier = {
-				factor = 0.0
+				factor = 0.5
 				FROM = { plot_power = 2.0 }
 			}
+			modifier = {
+				factor = 0.5
+				FROM = { plot_power = 3.0 }
+			}
+			modifier = {
+				factor = 0.5
+				FROM = { plot_power = 4.0 }
+			}	
 		}
 		FROM = {
 			letter_event = { id = 8118 days = 3 tooltip = EVTTOOLTIP8100 }
@@ -1600,7 +1693,19 @@ letter_event = {
 	option = {
 		name = "EVTOPTA8000" # Fold to demand
 		ai_chance = {
-			factor = 10
+			factor = 5
+			modifier = {
+				factor = 0			
+				NOT = {
+					FROM = {
+						faction_power = 
+						{
+							faction = faction_independence
+							power = 1.0
+						}
+					}
+				}
+			}
 			modifier = {
 				factor = 1.25
 				trait = weak
@@ -1695,7 +1800,7 @@ letter_event = {
 		name = "EVTOPTB8000" # War!
 		
 		ai_chance = {
-			factor = 90
+			factor = 95
 			modifier = {
 				factor = 1.25
 				trait = strong
@@ -1724,24 +1829,13 @@ letter_event = {
 				factor = 1.25
 				trait = ambitious
 			}
-			
-			modifier = {
-				factor = 0
-				FROM = {
-					faction_power = 
-					{
-						faction = faction_independence
-						power = 2.0
-					}
-				}
-			}
 			modifier = {
 				factor = 0.75
 				FROM = {
 					faction_power = 
 					{
 						faction = faction_independence
-						power = 0.8
+						power = 1.5
 					}
 				}
 			}
@@ -1752,6 +1846,36 @@ letter_event = {
 					{
 						faction = faction_independence
 						power = 1.0
+					}
+				}
+			}
+			modifier = {
+				factor = 0.5
+				FROM = {
+					faction_power = 
+					{
+						faction = faction_independence
+						power = 2.0
+					}
+				}
+			}
+			modifier = {
+				factor = 0.5
+				FROM = {
+					faction_power = 
+					{
+						faction = faction_independence
+						power = 3.0
+					}
+				}
+			}	
+			modifier = {
+				factor = 0.5
+				FROM = {
+					faction_power = 
+					{
+						faction = faction_independence
+						power = 4.0
 					}
 				}
 			}
@@ -1837,7 +1961,19 @@ letter_event = {
 	option = {
 		name = "EVTOPTA8000"
 		ai_chance = {
-			factor = 8
+			factor = 5
+			modifier = {
+				factor = 0			
+				NOT = {
+					FROM = {
+						faction_power = 
+						{
+							faction = faction_claimant
+							power = 1.0
+						}
+					}
+				}
+			}			
 			modifier = {
 				factor = 0.001
 				has_nickname = nick_the_conqueror
@@ -1870,18 +2006,6 @@ letter_event = {
 				factor = 1.25
 				trait = content
 			}
-			modifier = {
-				factor = 0.001
-				FROM = {
-					NOT = {
-						faction_power = 
-						{
-							faction = faction_claimant
-							power = 0.25
-						}
-					}
-				}
-			}
 		}
 		
 		hidden_tooltip = {
@@ -1906,7 +2030,7 @@ letter_event = {
 	option = {
 		name = "EVTOPTB8000"
 		ai_chance = {
-			factor = 90
+			factor = 95
 			modifier = {
 				factor = 1.25
 				trait = strong
@@ -1935,7 +2059,26 @@ letter_event = {
 				factor = 1.25
 				trait = ambitious
 			}
-			
+			modifier = {
+				factor = 0.75
+				FROM = {
+					faction_power = 
+					{
+						faction = faction_claimant
+						power = 1.5
+					}
+				}
+			}
+			modifier = {
+				factor = 0.5
+				FROM = {
+					faction_power = 
+					{
+						faction = faction_claimant
+						power = 1.0
+					}
+				}
+			}
 			modifier = {
 				factor = 0.5
 				FROM = {
@@ -1947,22 +2090,22 @@ letter_event = {
 				}
 			}
 			modifier = {
-				factor = 0.9
+				factor = 0.5
 				FROM = {
 					faction_power = 
 					{
 						faction = faction_claimant
-						power = 0.8
+						power = 3.0
 					}
 				}
-			}
+			}	
 			modifier = {
-				factor = 0.8
+				factor = 0.5
 				FROM = {
 					faction_power = 
 					{
 						faction = faction_claimant
-						power = 1.0
+						power = 4.0
 					}
 				}
 			}
@@ -3624,7 +3767,7 @@ character_event = {
 				}
 			}
 			death = {
-				death_reason = death_murder_unknown
+				death_reason = death_murder
 				killer = FROMFROMFROM
 			}
 		}
@@ -3633,7 +3776,7 @@ character_event = {
 				is_alive = yes
 			}
 			death = {
-				death_reason = death_murder_unknown
+				death_reason = death_murder
 				killer = FROMFROM
 			}
 		}
@@ -3667,7 +3810,7 @@ character_event = {
 				}
 			}
 			death = {
-				death_reason = death_murder
+				death_reason = death_murder_unknown
 				killer = FROMFROMFROM
 			}
 		}
@@ -3676,7 +3819,7 @@ character_event = {
 				is_alive = yes
 			}
 			death = {
-				death_reason = death_murder
+				death_reason = death_murder_unknown
 				killer = FROMFROM
 			}
 		}
@@ -18481,6 +18624,366 @@ character_event = {
 				}
 			}
 			clr_character_flag = murder_in_motion
+		}
+	}
+}
+
+
+
+# Ultimatum - antiking
+letter_event = {
+	id = 8200
+	desc = EVTDESC8200
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		FROM = { in_faction = faction_antiking }
+	}
+	
+	immediate = {
+		FROM = {
+			diplomatic_immunity = yes 
+			any_faction_backer = {
+				faction = faction_antiking
+				diplomatic_immunity = yes
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTA8000
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 0
+				NOT = {
+					FROM = {
+						faction_power = 
+						{
+							faction = faction_antiking
+							power = 1.0
+						}
+					}
+				}
+			}
+			modifier = {
+				factor = 1.25
+				trait = weak
+			}
+			modifier = {
+				factor = 1.25
+				trait = craven
+			}
+			modifier = {
+				factor = 1.25
+				trait = humble
+			}
+			modifier = {
+				factor = 1.25
+				trait = kind
+			}
+			modifier = {
+				factor = 1.25
+				trait = charitable
+			}
+			modifier = {
+				factor = 1.25
+				trait = patient
+			}
+			modifier = {
+				factor = 1.25
+				trait = content
+			}
+		}
+		
+		hidden_tooltip = {
+			any_vassal = {
+				limit = {
+					ai = no
+					NOT = { in_faction = faction_antiking }
+				}
+				character_event = { id = 8202 }
+			}
+			FROM = {
+				letter_event = { id = 8203 }
+				any_faction_backer = {
+					faction = faction_antiking
+					letter_event = { id = 8201 }
+					diplomatic_immunity = no
+				}
+				diplomatic_immunity = no
+			}
+		}
+		FROM = {
+			religion_authority = {
+				modifier = deposed_antipope
+				years = 50
+			}
+			faction_antiking = { # The target (title) of the faction
+				if = {
+					limit = { has_law = investiture_law_1 }
+					add_law_w_cooldown = investiture_law_0
+				}
+			}
+			hidden_tooltip = {
+				if = {
+					limit = {
+						religion = catholic
+					}
+					k_papal_state = {
+						holder_scope = {
+							opinion = {
+								who = PREVPREV
+								modifier = opinion_deposed_antipope
+							}
+						}
+					}
+				}
+				if = {
+					limit = {
+						religion = fraticelli
+					}
+					d_fraticelli = {
+						holder_scope = {
+							opinion = {
+								who = PREVPREV
+								modifier = opinion_deposed_antipope
+							}
+						}
+					}
+				}
+			}
+		}
+		hidden_tooltip = {
+			rightful_religious_head_scope = {
+				remove_claim = k_papal_state
+				remove_claim = d_fraticelli
+			}
+		}
+		
+		primary_title = {
+			usurp_title = FROM
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB8000"
+		ai_chance = {
+			factor = 90
+			modifier = {
+				factor = 1.25
+				trait = strong
+			}
+			modifier = {
+				factor = 1.25
+				trait = brave
+			}
+			modifier = {
+				factor = 1.25
+				trait = proud
+			}
+			modifier = {
+				factor = 1.25
+				trait = envious
+			}
+			modifier = {
+				factor = 1.25
+				trait = greedy
+			}
+			modifier = {
+				factor = 1.25
+				trait = wroth
+			}
+			modifier = {
+				factor = 1.25
+				trait = ambitious
+			}
+			modifier = {
+				factor = 0.75
+				FROM = {
+					faction_power = 
+					{
+						faction = faction_antiking
+						power = 1.5
+					}
+				}
+			}
+			modifier = {
+				factor = 0.5
+				FROM = {
+					faction_power = 
+					{
+						faction = faction_antiking
+						power = 1.0
+					}
+				}
+			}
+			modifier = {
+				factor = 0.5
+				FROM = {
+					faction_power = 
+					{
+						faction = faction_antiking
+						power = 2.0
+					}
+				}
+			}
+			modifier = {
+				factor = 0.5
+				FROM = {
+					faction_power = 
+					{
+						faction = faction_antiking
+						power = 3.0
+					}
+				}
+			}	
+			modifier = {
+				factor = 0.5
+				FROM = {
+					faction_power = 
+					{
+						faction = faction_antiking
+						power = 4.0
+					}
+				}
+			}
+		}
+		hidden_tooltip = {
+			if = {
+				limit = {
+					FROM = { faction_power = { faction = faction_antiking power = 1.0 } }
+				}
+				random = {
+					chance = 25
+					character_event = { id = 45002 days = 120 } # Loyalists flock to the liege's banner
+				}
+			}
+		}
+		FROM = {
+			letter_event = { id = 8204 days = 3 tooltip = "EVTTOOLTIP8100" }
+			tooltip = {
+				any_faction_backer = {
+					faction = faction_antiking
+				}
+			}
+			hidden_tooltip = {
+				if = {
+					limit = {
+						NOT = { faction_power = { faction = faction_antiking power = 0.75 } }
+					}
+					random_list = {
+						50 = {
+						}
+						30 = {
+							character_event = { id = 45000 days = 17 } # A great number of rebels flock to the revolter's banner
+						}
+						20 = {
+							character_event = { id = 45004 days = 17 } # Rebels flock to the revolter's banner
+						}
+					}
+				}
+				if = {
+					limit = {
+						faction_power = { faction = faction_antiking power = 0.75 }
+						NOT = { faction_power = { faction = faction_antiking power = 1.5 } }
+					}
+					random_list = {
+						75 = {
+						}
+						5 = {
+							character_event = { id = 45000 days = 17 } # A great number of rebels flock to the revolter's banner
+						}
+						20 = {
+							character_event = { id = 45004 days = 17 } # Rebels flock to the revolter's banner
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+# Inform faction backer - antiking
+letter_event = {
+	id = 8201
+	desc = EVTDESC8201
+	
+	show_from_from = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "GOOD"
+		reverse_opinion = {
+			modifier = opinion_grateful
+			who = FROMFROM
+			years = 5
+		}
+		
+		add_character_modifier = {
+			name = faction_antiking_ultimatum_timer
+			hidden = yes
+			duration = 3650
+		}
+	}
+}
+
+# Inform other vassals - antiking
+character_event = {
+	id = 8202
+	desc = EVTDESC8202
+	
+	picture = GFX_evt_council
+	border = GFX_event_normal_frame_intrigue
+	
+	show_from_from = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "I_SEE"
+	}
+}
+
+# Demand accepted - antiking
+letter_event = {
+	id = 8203
+	desc = EVTDESC8203
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EXCELLENT"
+		clr_character_flag = faction_install_antiking_ultimatum_taken
+		
+		add_character_modifier = {
+			name = faction_antiking_ultimatum_timer
+			hidden = yes
+			duration = 3650
+		}
+	}
+}
+
+# Demand rejected - antiking
+letter_event = {
+	id = 8204
+	desc = EVTDESC8100
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA8100
+		
+		clr_character_flag = faction_install_antiking_ultimatum_taken
+		
+		faction_antiking = { # The target (title) of the faction
+			reverse_war = {
+				target = ROOT
+				casus_belli = cb_install_antiking
+				faction = faction_antiking
+			}
 		}
 	}
 }

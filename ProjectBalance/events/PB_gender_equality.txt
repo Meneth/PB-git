@@ -48,29 +48,29 @@ narrative_event = {
 				any_vassal = {
 					remove_opinion = {
 						modifier = good_succ_law_change
-						who = liege
+						who = PREV
 					}
 					remove_opinion = {
 						modifier = bad_succ_law_change
-						who = liege
+						who = PREV
 					}
 					remove_opinion = {
 						modifier = succ_law_change
-						who = liege
+						who = PREV
 					}
 				}
 				any_courtier = {
 					remove_opinion = {
 						modifier = good_succ_law_change
-						who = liege
+						who = PREV
 					}
 					remove_opinion = {
 						modifier = bad_succ_law_change
-						who = liege
+						who = PREV
 					}
 					remove_opinion = {
 						modifier = succ_law_change
-						who = liege
+						who = PREV
 					}
 				}
 			}
@@ -102,29 +102,29 @@ narrative_event = {
 				any_vassal = {
 					remove_opinion = {
 						modifier = good_succ_law_change
-						who = liege
+						who = PREV
 					}
 					remove_opinion = {
 						modifier = bad_succ_law_change
-						who = liege
+						who = PREV
 					}
 					remove_opinion = {
 						modifier = succ_law_change
-						who = liege
+						who = PREV
 					}
 				}
 				any_courtier = {
 					remove_opinion = {
 						modifier = good_succ_law_change
-						who = liege
+						who = PREV
 					}
 					remove_opinion = {
 						modifier = bad_succ_law_change
-						who = liege
+						who = PREV
 					}
 					remove_opinion = {
 						modifier = succ_law_change
-						who = liege
+						who = PREV
 					}
 				}
 			}

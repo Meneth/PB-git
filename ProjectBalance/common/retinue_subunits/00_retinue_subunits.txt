@@ -72,6 +72,7 @@ RETTYPE_CUL_ITA =
 	
 	modifier = {
 		knights_defensive = 0.6
+		light_cavalry_defensive = 0.6
 	}
 }
 ########################
@@ -107,6 +108,7 @@ RETTYPE_CUL_BOHEMIAN =
 	
 	modifier = {
 		knights_offensive = 0.6
+		light_cavalry_offensive = 0.6
 	}
 }
 RETTYPE_CUL_POLISH = 
@@ -138,8 +140,8 @@ RETTYPE_CUL_POLISH =
 	}
 	
 	modifier = {
-		knights_defensive = 0.3
-		light_cavalry_defensive = 0.3
+		knights_defensive = 0.6
+		light_cavalry_defensive = 0.6
 	}
 }
 RETTYPE_CUL_POMMERANIAN = 
@@ -234,12 +236,16 @@ RETTYPE_CUL_SERBIAN =
 	
 	modifier = {
 		knights_offensive = 0.6
+		light_cavalry_offensive = 0.6
 	}
 }
 RETTYPE_CUL_BULGARIAN = 
 {
-	first_type = 1
-	first_amount = 250	
+	first_type = 4
+	first_amount = 150
+	
+	second_type = 3
+	second_amount = 100
 	
 	potential = {
 		culture = bulgarian
@@ -262,7 +268,8 @@ RETTYPE_CUL_BULGARIAN =
 	}
 	
 	modifier = {
-		heavy_infantry_defensive = 0.6
+		knights_offensive = 0.6
+		light_cavalry_offensive = 0.6
 	}
 }
 RETTYPE_CUL_ROMANIAN = 
@@ -297,6 +304,7 @@ RETTYPE_CUL_ROMANIAN =
 	
 	modifier = {
 		light_cavalry_offensive = 0.6
+		horse_archers_offensive = 0.6
 	}
 }
 ########################
@@ -335,6 +343,8 @@ RETTYPE_CUL_HUNG =
 	modifier = {
 		horse_archers_offensive = 0.3
 		horse_archers_defensive = 0.3
+		light_cavalry_offensive = 0.3
+		light_cavalry_defensive = 0.3
 	}
 }
 ########################
@@ -370,8 +380,8 @@ RETTYPE_CUL_RUS =
 		}
 	}
 	modifier = {
-		knights_offensive = 0.3
-		horse_archers_offensive = 0.3
+		knights_offensive = 0.6
+		horse_archers_offensive = 0.6
 	}
 }
 ########################
@@ -408,6 +418,7 @@ RETTYPE_CUL_BALT =
 	
 	modifier = {
 		heavy_infantry_offensive = 0.6
+		light_infantry_offensive = 0.6
 	}
 }
 RETTYPE_CUL_LITHUANIAN = 
@@ -447,7 +458,7 @@ RETTYPE_CUL_LITHUANIAN =
 ########################
 RETTYPE_CUL_FINNO_UGRIC = 
 {
-	first_type = 5
+	first_type = 0
 	first_amount = 250
 	
 	potential = {
@@ -477,8 +488,8 @@ RETTYPE_CUL_FINNO_UGRIC =
 	}
 	
 	modifier = {
-		archers_offensive = 0.3
-		archers_defensive = 0.3
+		light_infantry_offensive = 0.3
+		light_infantry_defensive = 0.3
 	}
 }
 ########################
@@ -579,6 +590,8 @@ RETTYPE_CUL_FRANKISH =
 	modifier = {
 		knights_offensive = 0.3
 		knights_defensive = 0.3
+		light_cavalry_offensive = 0.3
+		light_cavalry_defensive = 0.3
 	}
 }
 RETTYPE_CUL_NORMAN = 
@@ -614,6 +627,7 @@ RETTYPE_CUL_NORMAN =
 	
 	modifier = {
 		knights_offensive = 0.6
+		light_cavalry_offensive = 0.6
 	}
 }
 ########################
@@ -932,8 +946,8 @@ RETTYPE_CUL_DUTCH =
 	}
 	
 	modifier = {
-		light_infantry_offensive = 0.3
-		pikemen_offensive = 0.3
+		light_infantry_offensive = 0.6
+		pikemen_offensive = 0.6
 	}
 }
 RETTYPE_CUL_GERMAN = 
@@ -966,6 +980,7 @@ RETTYPE_CUL_GERMAN =
 	
 	modifier = {
 		knights_offensive = 0.6
+		light_cavalry_offensive = 0.6
 	}
 }
 ########################
@@ -1005,8 +1020,8 @@ RETTYPE_CUL_BYZ =
 	}
 
 	modifier = {
-		knights_offensive = 0.3
-		horse_archers_offensive = 0.3
+		knights_offensive = 0.6
+		horse_archers_offensive = 0.6
 	}
 }
 RETTYPE_CUL_ARMENIAN = 
@@ -1040,8 +1055,8 @@ RETTYPE_CUL_ARMENIAN =
 	}
 
 	modifier = {
-		knights_offensive = 0.3
-		horse_archers_offensive = 0.3
+		knights_offensive = 0.6
+		horse_archers_offensive = 0.6
 	}
 }
 RETTYPE_CUL_GEORGIAN = 
@@ -1074,6 +1089,7 @@ RETTYPE_CUL_GEORGIAN =
 	
 	modifier = {
 		knights_offensive = 0.6
+		light_cavalry_offensive = 0.6
 	}
 }
 
@@ -1114,6 +1130,8 @@ RETTYPE_CUL_IRANIAN =
 	modifier = {
 		horse_archers_offensive = 0.4
 		horse_archers_morale = 0.2
+		light_cavalry_offensive = 0.4
+		light_cavalry_morale = 0.2
 	}
 }
 
@@ -1158,6 +1176,8 @@ RETTYPE_CUL_ALTAIC =
 	modifier = {
 		horse_archers_offensive = 0.4
 		horse_archers_morale = 0.2
+		light_cavalry_offensive = 0.4
+		light_cavalry_morale = 0.2
 	}
 }
 
@@ -1194,6 +1214,8 @@ RETTYPE_CUL_TURKISH =
 	modifier = {
 		horse_archers_offensive = 0.4
 		horse_archers_morale = 0.2
+		light_cavalry_offensive = 0.4
+		light_cavalry_morale = 0.2
 	}
 }
 ########################
@@ -1207,7 +1229,10 @@ RETTYPE_CUL_ARAB =
 	special_troops = camel_cavalry
 	
 	potential = {
-		culture_group = arabic
+		OR = {
+			culture_group = arabic
+			culture_group = north_african
+		}
 		
 		# PB's retinue spam filter
 		OR = {
@@ -1264,6 +1289,7 @@ RETTYPE_CUL_W_AFR =
 	
 	modifier = {
 		light_infantry_offensive = 0.6
+		archers_offensive = 0.6
 	}
 }
 
@@ -1300,6 +1326,7 @@ RETTYPE_CUL_E_AFR =
 	
 	modifier = {
 		light_infantry_offensive = 0.6
+		archers_offensive = 0.6
 	}
 }
 
@@ -1335,8 +1362,8 @@ RETTYPE_CUL_NAHUA =
 	}
 	
 	modifier = {
-		light_infantry_offensive = 0.3
-		heavy_infantry_offensive = 0.3
+		light_infantry_offensive = 0.6
+		heavy_infantry_offensive = 0.6
 	}
 }
 
@@ -1404,6 +1431,7 @@ RETTYPE_CUL_INDIAN =
 	
 	modifier = {
 		archers_offensive = 0.6
+		war_elephants_offensive = 0.6
 	}
 }
 
