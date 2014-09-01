@@ -1,4 +1,11 @@
 ﻿3.5.12
+	It is no longer possible to press a third-party's claim on a holy order (vanilla succession bug generates random HO claims when it should generate none)
+	Succession law opinions should now be properly applied to a ruler's family (this issue was also caused by a vanilla bug)
+	Gender Equality module now properly removes crippling negative opinions (this issue was caused by a vanilla bug)
+	Job ambitions now have the same restrictions as found in job_titles.txt
+	Monks, Nuns, and the Celibate are now blocked from Wants Landed Title ambition
+	Plot events and faction decisions updated, should allow antiking faction to function properly
+	Reformed Tengri can now donate to and expel their holy order (vanilla bug fix)
 	Tweaks to Religious Authority defines to better balance Sunnis, Shia, and prevent pathological Catholic downward spirals sparked by the inevitable antipope:
 		AUTHORITY_FROM_ANTIPOPE = -0.2 (from -0.3)
 		AUTHORITY_FROM_RELHEAD_HOLY_SITE = 0 (from 0.05)

@@ -1858,7 +1858,7 @@ decisions = {
 	expel_sky_lords = {
 		potential = {
 			ai = no
-			religion = tengri_pagan #tengri_pagan_reformed
+			religion = tengri_pagan_reformed #tengri_pagan_reformed
 			higher_tier_than = DUKE
 			independent = yes
 			is_title_active = d_sky_lords
@@ -1919,7 +1919,7 @@ decisions = {
 	
 	donate_money_to_sky_lords = {
 		potential = {
-			religion = tengri_pagan #tengri_pagan_reformed
+			religion = tengri_pagan_reformed #tengri_pagan_reformed
 			
 			is_title_active = d_sky_lords
 			
