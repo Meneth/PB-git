@@ -1,4 +1,7 @@
-﻿3.5.12
+﻿3.5.13
+	No Ahistorical Empires scenario customization decision has been removed due to a vanilla bug to avoid confusion; manually invoking meneth.512 still works
+
+3.5.12
 	It is no longer possible to press a third-party's claim on a holy order (vanilla succession bug generates random HO claims when it should generate none)
 	Succession law opinions should now be properly applied to a ruler's family (this issue was also caused by a vanilla bug)
 	Gender Equality module now properly removes crippling negative opinions (this issue was caused by a vanilla bug)
