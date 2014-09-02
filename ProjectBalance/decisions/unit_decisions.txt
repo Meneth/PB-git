@@ -3,6 +3,7 @@ decisions = {
 	conscript_merchant_ships = {
 		is_high_prio = yes
 		potential = {
+			had_global_flag = { flag = project_balance days = 1 }
 			NOT = {
 				has_earmarked_regiments = conscripted_merchant_ships
 			}
