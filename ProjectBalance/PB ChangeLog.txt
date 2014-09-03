@@ -1,5 +1,6 @@
 ﻿3.5.13
 	No Ahistorical Empires scenario customization decision has been removed due to a vanilla bug to avoid confusion; manually invoking meneth.512 still works
+	A ruler's first holy war now costs only 200 piety and then 300 piety thereafter
 
 3.5.12
 	It is no longer possible to press a third-party's claim on a holy order (vanilla succession bug generates random HO claims when it should generate none)
