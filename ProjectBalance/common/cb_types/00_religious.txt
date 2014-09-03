@@ -38,34 +38,43 @@ religious = {
 				has_law = revokation_1
 				has_law = revokation_2
 			}
-			piety = 300
+			custom_tooltip = {
+				text = holy_war_piety_cost_ctt
+				hidden_tooltip = {
+					OR = {
+						piety = 300
+						AND = {
+							NOT = { has_character_flag = holy_warred }
+							piety = 200
+						}
+					}
+				}
+			}
 			custom_tooltip = {
 				text = baqt_active
 				hidden_tooltip = {
 					OR = {
 						NOT = {
-							OR = {
-								AND = {
+							AND = {
+								OR = {
+									religion = miaphysite
+									religion = orthodox
+								}
+								culture_group = east_african
+								FROM = {
+									religion_group = muslim
+								}
+							}
+							AND = {
+								FROM = {
 									OR = {
 										religion = miaphysite
 										religion = orthodox
 									}
 									culture_group = east_african
-									FROM = {
-										religion_group = muslim
-									}
 								}
-								AND = {
-									FROM = {
-										OR = {
-											religion = miaphysite
-											religion = orthodox
-										}
-										culture_group = east_african
-									}
-									ROOT = {
-										religion_group = muslim
-									}
+								ROOT = {
+									religion_group = muslim
 								}
 							}
 						}
@@ -346,6 +355,15 @@ religious = {
 	
 	on_add = {
 		ROOT = {
+			if = {
+				limit = { NOT = { has_character_flag = holy_warred } }
+				piety = -200
+				set_character_flag = holy_warred
+			}
+			if = {
+				limit = { has_character_flag = holy_warred }
+				piety = -300
+			}
 			custom_tooltip = {
 				text = holy_war_cooldown_ctt
 				hidden_tooltip = {
@@ -355,7 +373,6 @@ religious = {
 					}
 				}
 			}
-			piety = -300
 		}
 	}
 	
