@@ -1829,7 +1829,7 @@ castle = {
 		desc = ca_culture_croatia_1_desc
 		potential = {
 			OR = {
-				culture = croatia
+				culture = croatian
 			}
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
@@ -1850,7 +1850,7 @@ castle = {
 		desc = ca_culture_croatia_1_desc
 		potential = {
 			OR = {
-				culture = croatia
+				culture = croatian
 			}
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
@@ -1873,7 +1873,7 @@ castle = {
 		potential = {
 			FROM = { culture_group = ROOT }
 			OR = {
-				culture = croatia
+				culture = croatian
 			}
 		}
 		trigger = { 
@@ -1899,7 +1899,7 @@ castle = {
 		potential = {
 			FROM = { culture_group = ROOT }
 			OR = {
-				culture = croatia
+				culture = croatian
 			}
 		}
 		trigger = { 
@@ -1925,7 +1925,7 @@ castle = {
 		potential = {
 			FROM = { culture = ROOT }
 			OR = {
-				culture = croatia
+				culture = croatian
 			}
 		}
 		trigger = { 
@@ -1951,7 +1951,7 @@ castle = {
 		potential = {
 			FROM = { culture = ROOT }
 			OR = {
-				culture = croatia
+				culture = croatian
 			}
 		}
 		trigger = { 
