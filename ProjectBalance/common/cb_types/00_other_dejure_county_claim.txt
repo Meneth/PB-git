@@ -35,8 +35,8 @@ other_dejure_county_claim = {
 				holy_order = no
 				NOT = { religion = ROOT }
 				NOT = { has_dlc = "Sons of Abraham" }
-				ROOT = { has_landed_title = e_byzantium }
-				ROOT = { has_landed_title = e_roman_empire }
+				FROMFROM = { has_landed_title = e_byzantium }
+				FROMFROM = { has_landed_title = e_roman_empire }
 			}
 		}
 	}
