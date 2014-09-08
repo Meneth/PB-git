@@ -1,4 +1,5 @@
 ﻿3.5.13
+	De jure county/barony claims against holy orders of the same religion are now allowed for the Byzantine / Roman Empire
 	Religious Reconquest is no longer available to unreformed pagans
 	Decommissioned religious_defense modifier, as it was not very effective (took effect after levies were raised) and was triggering for all wars
 	Piety rewards/losses for winning/losing against a religious or heretic revolt reduced by 1/4 (50 piety for crushing the rebels)
