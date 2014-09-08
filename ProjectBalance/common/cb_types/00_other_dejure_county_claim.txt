@@ -29,6 +29,18 @@ other_dejure_county_claim = {
 	press_claim = yes
 	can_ask_to_join_war = no
 
+	can_use_gui = {
+		FROM = {
+			OR = {
+				holy_order = no
+				NOT = { religion = ROOT }
+				NOT = { has_dlc = "Sons of Abraham" }
+				ROOT = { has_landed_title = e_byzantium }
+				ROOT = { has_landed_title = e_roman_empire }
+			}
+		}
+	}
+	
 	can_use = {
 		ROOT = {
 			NOT = { character = PREV }
@@ -48,13 +60,6 @@ other_dejure_county_claim = {
 					religion = FROMFROM
 					primary_title = { tier = count }
 				}
-			}
-		}
-		FROM = {
-			OR = {
-				holy_order = no
-				NOT = { religion = ROOT }
-				NOT = { has_dlc = "Sons of Abraham" }
 			}
 		}
 	}
