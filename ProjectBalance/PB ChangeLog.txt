@@ -1,4 +1,5 @@
 ﻿3.5.13
+	Various Waylit siege event improvements: Should more carefully check to make sure you're actually at war with the person doing the sieging, deaths are now executions instead of dying in battle, siege winners should no longer execute folks they're trying to install as claimants, and siege hide/escape events should no longer fire unless it's your capital being sieged
 	De jure county/barony claims against holy orders of the same religion are now allowed for the Byzantine / Roman Empire
 	Religious Reconquest is no longer available to unreformed pagans
 	Decommissioned religious_defense modifier, as it was not very effective (took effect after levies were raised) and was triggering for all wars
