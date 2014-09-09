@@ -16,7 +16,7 @@ character_event = {
 				NOT = { has_character_modifier = modifier_hidden }
 				OR = {
 					location = { is_capital = yes }
-					any_courtier = { at_location = ROOT }
+					# any_courtier = { at_location = ROOT }
 				}
 				at_location = ROOT
 				war_with = ROOT
@@ -50,7 +50,7 @@ character_event = {
 						NOT = { has_character_modifier = modifier_hidden }
 						OR = {
 							location = { is_capital = yes }
-							any_courtier = { at_location = ROOT }
+							# any_courtier = { at_location = ROOT }
 						}
 						OR = {
 							at_location = ROOT
@@ -79,7 +79,7 @@ character_event = {
 					NOT = { has_character_modifier = modifier_hidden }
 					OR = {
 						location = { is_capital = yes }
-						any_courtier = { at_location = ROOT }
+						# any_courtier = { at_location = ROOT }
 					}
 					at_location = ROOT
 				}
@@ -438,6 +438,7 @@ character_event = {
 				}
 			}
 		}
+		location = { is_capital = yes }
 	}
 	
 	weight_multiplier = {
