@@ -19,6 +19,7 @@ character_event = {
 					any_courtier = { at_location = ROOT }
 				}
 				at_location = ROOT
+				war_with = ROOT
 			}
 		}
 		siege = { is_attacker = yes }
@@ -433,6 +434,7 @@ character_event = {
 			enemy = {
 				leader = {
 					primary_title = { rebel = no }
+					war_with = ROOT
 				}
 			}
 		}
