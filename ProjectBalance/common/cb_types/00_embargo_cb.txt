@@ -67,12 +67,6 @@ embargo_cb = {
 	on_success = {
 		ROOT = {
 			embargo = FROM
-			if = {
-				limit = {
-					NOT = { religion = FROM }
-				}
-				piety = 200
-			}
 		}
 	}
 
