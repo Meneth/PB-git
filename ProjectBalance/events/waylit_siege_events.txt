@@ -480,6 +480,28 @@ character_event = {
 				factor = 0.1
 				trait = just
 			}
+			modifier = {
+				factor = 0
+				in_faction = faction_claimant
+				FROMFROM = {
+					holder_scope = {
+						any_dynasty_member = {
+							ROOT = {
+								supported_claimant = {
+									character = PREVPREV
+								}
+							}
+						}
+						any_spouse = {
+							ROOT = {
+								supported_claimant = {
+									character = PREVPREV
+								}
+							}
+						}
+					}
+				}
+			}
 		}
 
 		if = {
