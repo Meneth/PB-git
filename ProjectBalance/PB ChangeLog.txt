@@ -1,4 +1,6 @@
 ﻿3.5.13
+	FIX: Mongol generals won't spawn for the Khagan holding a Nerge unless he too is of Mongol culture
+	FIX: Nerges can only be called by _independent_ characters [of Tengri religion and Altaic culture group] (vanilla bug) 
 	FIX: Holy War CB properly enforces the Crown Authority restrictions for non-neighboring wars
 	Embargo CBs have a proper description (vanilla bug)
 	Embargo wars against a different-religion defender no longer award piety upon success

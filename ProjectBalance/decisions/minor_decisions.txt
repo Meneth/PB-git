@@ -601,6 +601,7 @@ decisions = {
 			has_global_flag = project_balance
 			had_global_flag = { flag = project_balance days = 1 }
 			has_dlc = "The Old Gods"
+			independent = yes
 			is_ruler = yes
 			age = 16
 			is_female = no
