@@ -1,11 +1,11 @@
 ﻿3.5.14
 	Fixed the Imperial Reconquest war checks being impossible to toggle
-
-3.5.13
 	Tribal Invasion CB usage by non-Hordes limited to one usage per lifetime; Pagan Subjugation CB tied to same lifetime block (one or the other)
 	FIX: Mongol generals won't spawn for the Khagan holding a Nerge unless he too is of Mongol culture
 	FIX: Nerges can only be called by _independent_ characters [of Tengri religion and Altaic culture group] (vanilla bug) 
 	FIX: Holy War CB properly enforces the Crown Authority restrictions for non-neighboring wars
+
+3.5.13
 	Embargo CBs have a proper description (vanilla bug)
 	Embargo wars against a different-religion defender no longer award piety upon success
 	Various Waylit siege event improvements: Should more carefully check to make sure you're actually at war with the person doing the sieging, deaths are now executions instead of dying in battle, siege winners should no longer execute folks they're trying to install as claimants, and siege hide/escape events should no longer fire unless it's your capital being sieged
