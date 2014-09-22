@@ -1,4 +1,7 @@
-﻿3.5.14
+﻿3.5.15
+	FIX: Mending the Great Schism (Orthodox or Catholic) now requires only 75% religious authority (consistent with nerf to controlled-holy-sites bonus)
+
+3.5.14
 	Fixed the Imperial Reconquest war checks being impossible to toggle
 	Tribal Invasion CB usage by non-Hordes limited to one usage per lifetime; Pagan Subjugation CB tied to same lifetime block (one or the other)
 	FIX: Mongol generals won't spawn for the Khagan holding a Nerge unless he too is of Mongol culture
