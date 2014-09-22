@@ -4,6 +4,11 @@ decisions = {
 		potential = {
 			ai = no
 			NOT = { has_character_flag = holy_war_check }
+			OR = {
+				has_landed_title = e_byzantium
+				has_landed_title = e_roman_empire
+			}
+			religion_group = christian
 		}
 		effect = {
 			hidden_tooltip = {
