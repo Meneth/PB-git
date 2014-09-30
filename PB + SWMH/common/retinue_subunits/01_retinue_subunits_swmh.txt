@@ -655,6 +655,7 @@ RETTYPE_CUL_ANGLONORSE =
 	
 	potential = {
 		culture = anglonorse
+		culture = cumbric
 
 		# PB's retinue spam filter
 		OR = {
