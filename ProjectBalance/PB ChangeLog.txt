@@ -1,4 +1,25 @@
-﻿3.5.13
+﻿3.5.15
+	FIX: Russian castle cultural buildings level 4 and 5 no longer give -150 heavy infantry when they should give -15
+	FIX: "Is War Possible?" menu is now only available for Byzantines, because the answer is now, "Yes," to everyone else (no empty menu for non-Byzantines)
+	FIX: Mending the Great Schism (Orthodox or Catholic) now requires only 75% religious authority (consistent with nerf to controlled-holy-sites bonus)
+
+3.5.14
+	Fixed the Imperial Reconquest war checks being impossible to toggle
+	Tribal Invasion CB usage by non-Hordes limited to one usage per lifetime; Pagan Subjugation CB tied to same lifetime block (one or the other)
+	FIX: Mongol generals won't spawn for the Khagan holding a Nerge unless he too is of Mongol culture
+	FIX: Nerges can only be called by _independent_ characters [of Tengri religion and Altaic culture group] (vanilla bug) 
+	FIX: Holy War CB properly enforces the Crown Authority restrictions for non-neighboring wars
+
+3.5.13
+	Embargo CBs have a proper description (vanilla bug)
+	Embargo wars against a different-religion defender no longer award piety upon success
+	Various Waylit siege event improvements: Should more carefully check to make sure you're actually at war with the person doing the sieging, deaths are now executions instead of dying in battle, siege winners should no longer execute folks they're trying to install as claimants, and siege hide/escape events should no longer fire unless it's your capital being sieged
+	De jure county/barony claims against holy orders of the same religion are now allowed for the Byzantine / Roman Empire
+	Religious Reconquest is no longer available to unreformed pagans
+	Decommissioned religious_defense modifier, as it was not very effective (took effect after levies were raised) and was triggering for all wars
+	Piety rewards/losses for winning/losing against a religious or heretic revolt reduced by 1/4 (50 piety for crushing the rebels)
+	Croatian castle cultural building fixed
+	All altaic cultures now have the turkish retinue (previously, they had none)
 	No Ahistorical Empires scenario customization decision has been removed due to a vanilla bug to avoid confusion; manually invoking meneth.512 still works
 	A ruler's first holy war now costs only 200 piety and then 300 piety thereafter
 
