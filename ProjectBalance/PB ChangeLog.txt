@@ -1,4 +1,7 @@
 ﻿3.5.15
+	Baltic + finno-ugric cultural buildings now give heavy infantry and light infantry
+	Cumbric cultural retinue and building added
+	Several cultural building entries corrected for consistency errors
 	FIX: Russian castle cultural buildings level 4 and 5 no longer give -150 heavy infantry when they should give -15
 	FIX: "Is War Possible?" menu is now only available for Byzantines, because the answer is now, "Yes," to everyone else (no empty menu for non-Byzantines)
 	FIX: Mending the Great Schism (Orthodox or Catholic) now requires only 75% religious authority (consistent with nerf to controlled-holy-sites bonus)
