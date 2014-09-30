@@ -1045,9 +1045,9 @@ castle = {
 		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
 		build_cost = 100
 		build_time = 365
-		heavy_infantry = -15
+		heavy_infantry = 40
 		pikemen = -15
-		light_infantry = 180
+		light_infantry = 80
 		light_cavalry = -15
 		archers = -20
 		light_infantry_offensive = 0.05
@@ -1069,9 +1069,9 @@ castle = {
 		upgrades_from = ca_culture_group_baltic_0
 		build_cost = 200
 		build_time = 730
-		heavy_infantry = -15
+		heavy_infantry = 40
 		pikemen = -15
-		light_infantry = 240
+		light_infantry = 130
 		light_cavalry = -15
 		archers = -20
 		light_infantry_offensive = 0.05
@@ -1099,9 +1099,9 @@ castle = {
 		upgrades_from = ca_culture_group_baltic_1
 		build_cost = 300
 		build_time = 1095
-		heavy_infantry = -15
+		heavy_infantry = 50
 		pikemen = -15
-		light_infantry = 300
+		light_infantry = 170
 		light_cavalry = -15
 		archers = -20
 		light_infantry_offensive = 0.05
@@ -1129,9 +1129,9 @@ castle = {
 		upgrades_from = ca_culture_group_baltic_2
 		build_cost = 400
 		build_time = 1460
-		heavy_infantry = -15
+		heavy_infantry = 70
 		pikemen = -15
-		light_infantry = 360
+		light_infantry = 190
 		light_cavalry = -15
 		archers = -20
 		light_infantry_offensive = 0.05
@@ -1159,9 +1159,9 @@ castle = {
 		upgrades_from = ca_culture_group_baltic_3
 		build_cost = 500
 		build_time = 1825
-		heavy_infantry = -15
+		heavy_infantry = 90
 		pikemen = -15
-		light_infantry = 420
+		light_infantry = 210
 		light_cavalry = -15
 		archers = -20
 		light_infantry_offensive = 0.05
@@ -1189,9 +1189,9 @@ castle = {
 		upgrades_from = ca_culture_group_baltic_4
 		build_cost = 600
 		build_time = 2190
-		heavy_infantry = -15
+		heavy_infantry = 110
 		pikemen = -15
-		light_infantry = 480
+		light_infantry = 230
 		light_cavalry = -15
 		archers = -20
 		light_infantry_offensive = 0.05
@@ -1653,6 +1653,7 @@ castle = {
 				culture = pommeranian
 				culture = norsegaelic
 				culture = anglonorse
+				culture = cumbric
 			}
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
@@ -1678,6 +1679,7 @@ castle = {
 				culture = pommeranian
 				culture = norsegaelic
 				culture = anglonorse
+				culture = cumbric
 			}
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
@@ -1707,6 +1709,7 @@ castle = {
 				culture = pommeranian
 				culture = norsegaelic
 				culture = anglonorse
+				culture = cumbric
 			}
 		}
 		trigger = { 
@@ -1739,6 +1742,7 @@ castle = {
 				culture = pommeranian
 				culture = norsegaelic
 				culture = anglonorse
+				culture = cumbric
 				
 			}
 		}
@@ -1772,6 +1776,7 @@ castle = {
 				culture = pommeranian
 				culture = norsegaelic
 				culture = anglonorse
+				culture = cumbric
 			}
 		}
 		trigger = { 
@@ -1804,6 +1809,7 @@ castle = {
 				culture = pommeranian
 				culture = norsegaelic
 				culture = anglonorse
+				culture = cumbric
 			}
 		}
 		trigger = { 
