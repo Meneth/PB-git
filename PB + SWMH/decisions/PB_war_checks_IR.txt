@@ -1,4 +1,39 @@
 decisions = {
+	#Enable check CBs
+	holy_war_cb = {
+		potential = {
+			ai = no
+			NOT = { has_character_flag = holy_war_check }
+			OR = {
+				has_landed_title = e_byzantium
+				has_landed_title = e_roman_empire
+			}
+			religion_group = christian
+		}
+		effect = {
+			hidden_tooltip = {
+				set_character_flag = holy_war_check
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	#Dismiss checks
+	holy_war_clear = {
+		potential = {
+			ai = no
+			has_character_flag = holy_war_check
+		}
+		effect = {
+			hidden_tooltip = {
+				clr_character_flag = holy_war_check
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
 	imperial_reconquest_t1 = {
 		potential = {
 			ai = no

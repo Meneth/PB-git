@@ -22,31 +22,31 @@ negative_money = {
 }
 
 #Defending Against Holy War
-religious_defense = {
-	potential = {
-		is_ruler = yes
-	}
+# religious_defense = {
+	# potential = {
+		# is_ruler = yes
+	# }
 	
-	trigger = {
-		any_war = {
-			using_cb = religious
+	# trigger = {
+		# any_war = {
+			# using_cb = religious
 			
-			defender = {
-				character = ROOT
-			}
-		}
-		is_primary_war_attacker = no
-	}
+			# defender = {
+				# character = ROOT
+			# }
+		# }
+		# is_primary_war_attacker = no
+	# }
 	
-	icon = 16
+	# icon = 16
 	
-	city_vassal_min_levy = 0.1
-	city_vassal_max_levy = 0.1
-	castle_vassal_min_levy = 0.1
-	castle_vassal_max_levy = 0.1
-	temple_vassal_min_levy = 0.1
-	temple_vassal_max_levy = 0.1
-}
+	# city_vassal_min_levy = 0.1
+	# city_vassal_max_levy = 0.1
+	# castle_vassal_min_levy = 0.1
+	# castle_vassal_max_levy = 0.1
+	# temple_vassal_min_levy = 0.1
+	# temple_vassal_max_levy = 0.1
+# }
 
 #Disorganized
 disorganized = {

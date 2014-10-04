@@ -371,7 +371,7 @@ decisions = {
 		}
 		allow = {
 			piety = 2000
-			religion_authority = 0.9
+			religion_authority = 0.75 #Consistent with nerf to controlled holy sites bonus to religious authority
 			completely_controls = c_byzantion
 			b_hagiasophia = {
 				holder_scope = {

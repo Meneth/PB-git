@@ -38,34 +38,43 @@ religious = {
 				has_law = revokation_1
 				has_law = revokation_2
 			}
-			piety = 300
+			custom_tooltip = {
+				text = holy_war_piety_cost_ctt
+				hidden_tooltip = {
+					OR = {
+						piety = 300
+						AND = {
+							NOT = { has_character_flag = holy_warred }
+							piety = 200
+						}
+					}
+				}
+			}
 			custom_tooltip = {
 				text = baqt_active
 				hidden_tooltip = {
 					OR = {
 						NOT = {
-							OR = {
-								AND = {
+							AND = {
+								OR = {
+									religion = miaphysite
+									religion = orthodox
+								}
+								culture_group = east_african
+								FROM = {
+									religion_group = muslim
+								}
+							}
+							AND = {
+								FROM = {
 									OR = {
 										religion = miaphysite
 										religion = orthodox
 									}
 									culture_group = east_african
-									FROM = {
-										religion_group = muslim
-									}
 								}
-								AND = {
-									FROM = {
-										OR = {
-											religion = miaphysite
-											religion = orthodox
-										}
-										culture_group = east_african
-									}
-									ROOT = {
-										religion_group = muslim
-									}
+								ROOT = {
+									religion_group = muslim
 								}
 							}
 						}
@@ -155,23 +164,26 @@ religious = {
 					empire = { holder = ROOT }
 					ROOT = {
 						OR = {
+							ai = no
 							AND = {
-								NOT = { trait = content }
-								NOT = { trait = craven }
-								NOT = { trait = stressed }
+								OR = {
+									AND = {
+										NOT = { trait = content }
+										NOT = { trait = craven }
+										NOT = { trait = stressed }
+									}
+									trait = possessed
+									trait = lunatic
+								}
+								OR = {
+									trait = wroth
+									trait = ambitious
+									trait = brave
+									trait = lunatic
+									trait = possessed
+									trait = zealous
+								}
 							}
-							trait = possessed
-							trait = lunatic
-							ai = no
-						}
-						OR = {
-							trait = wroth
-							trait = ambitious
-							trait = brave
-							trait = lunatic
-							trait = possessed
-							trait = zealous
-							ai = no
 						}
 					}
 				}
@@ -196,7 +208,16 @@ religious = {
 						}
 					}
 					ROOT = {
-						NOT = { has_law = king_peace_0 }
+						OR = {
+							AND = {
+								tier = king
+								NOT = { has_law = king_peace_0 }
+							}
+							AND = {
+								tier = emperor
+								NOT = { has_law = emperor_peace_0 }
+							}
+						}
 						NOT = { has_law = crown_levies_0 }
 					}
 				}
@@ -229,7 +250,7 @@ religious = {
 		#Prevents duplicate CBs
 		OR = {
 			NOT = {
-				any_direct_de_jure_vassal_title = {
+				AND = {
 					NOT = {
 						FROM = { has_landed_title = k_rum } #Need help surviving
 					}
@@ -243,18 +264,20 @@ religious = {
 							ROOT = { religion_group = muslim }
 						}
 					}
-					holder_scope = {
-						OR = {
-							character = FROM
-							is_liege_or_above = FROM
-						}
-					}
 					NOT = {
 						ROOT = { is_reformed_religion = FROM }
 					}
-					location = {
-						ROOT = {
-							religion = PREV
+					any_direct_de_jure_vassal_title = {
+						holder_scope = {
+							OR = {
+								character = FROM
+								is_liege_or_above = FROM
+							}
+						}
+						location = {
+							ROOT = {
+								religion = PREV
+							}
 						}
 					}
 				}
@@ -346,6 +369,15 @@ religious = {
 	
 	on_add = {
 		ROOT = {
+			if = {
+				limit = { NOT = { has_character_flag = holy_warred } }
+				piety = -200
+				set_character_flag = holy_warred
+			}
+			if = {
+				limit = { has_character_flag = holy_warred }
+				piety = -300
+			}
 			custom_tooltip = {
 				text = holy_war_cooldown_ctt
 				hidden_tooltip = {
@@ -355,7 +387,6 @@ religious = {
 					}
 				}
 			}
-			piety = -300
 		}
 	}
 	
