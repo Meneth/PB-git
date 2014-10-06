@@ -716,7 +716,6 @@ e_arabia = {
 					holy_site = miaphysite
 					holy_site = monophysite
 					holy_site = hellenic_pagan
-					holy_site = nestorian
 				}
 				b_abukir = {
 				}
