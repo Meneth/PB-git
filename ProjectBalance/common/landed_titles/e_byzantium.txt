@@ -586,7 +586,6 @@ e_byzantium = {
 				}
 				b_lebedos = {
 					holy_site = orthodox
-					holy_site = nestorian
 				}
 				b_miletos = {
 				}
