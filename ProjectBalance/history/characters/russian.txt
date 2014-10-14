@@ -3901,6 +3901,9 @@
 	1195.1.2={
 	capital="c_novgorod"
 	}
+	1240.1.1 = {
+		capital="c_novgorod"
+	}
 	1243.1.2={
 		death="1243.1.2"
 	}
@@ -3946,7 +3949,7 @@
 	1215.1.2={
 		birth="1215.1.2"
 	}
-	1215.1.2={
+	1240.1.2={
 	capital="c_novgorod"
 	}
 	1258.1.2={
@@ -11806,6 +11809,19 @@
 		birth = yes
 	}
 	822.1.1 = {
+		death = yes
+	}
+}
+194177 = {
+	name="Ivan"
+	dynasty=11107
+	religion="orthodox"
+	culture="russian"
+	father=125244
+	1217.1.2={
+		birth = yes
+	}
+	1258.1.2={
 		death = yes
 	}
 }

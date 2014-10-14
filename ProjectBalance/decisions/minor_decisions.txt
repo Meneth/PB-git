@@ -40,6 +40,7 @@ decisions = {
 				is_occupied = no
 			}
 			prisoner = no
+			NOT = { trait = in_hiding }
 			scaled_wealth = 0.20
 			prestige = 100
 		}
@@ -115,6 +116,7 @@ decisions = {
 			}
 			scaled_wealth = 0.25
 			prisoner = no
+			NOT = { trait = in_hiding }
 		}
 		effect = {
 			scaled_wealth = -0.25
@@ -189,6 +191,7 @@ decisions = {
 			scaled_wealth = 0.20
 			NOT = {	health_traits = 1 }
 			prisoner = no
+			NOT = { trait = in_hiding }
 		}
 		effect = {
 			scaled_wealth = -0.20
@@ -259,6 +262,7 @@ decisions = {
 			NOT = { month = 10 }
 			wealth = 25
 			NOT = {	trait = incapable }
+			NOT = { trait = in_hiding }
 			prisoner = no
 			NOT = { religion = jain }
 		}
@@ -353,6 +357,7 @@ decisions = {
 				is_occupied = no
 			}
 			prisoner = no
+			NOT = { trait = in_hiding }
 			scaled_wealth = 0.2
 			age = 16
 			custom_tooltip = {
@@ -427,6 +432,7 @@ decisions = {
 				is_occupied = no
 			}
 			prisoner = no
+			NOT = { trait = in_hiding }
 			scaled_wealth = 0.2
 			age = 16
 			custom_tooltip = {
@@ -515,6 +521,7 @@ decisions = {
 		allow = {
 			war = no
 			prisoner = no
+			NOT = { trait = in_hiding }
 			wealth = 100
 		}
 		effect = {
@@ -623,6 +630,7 @@ decisions = {
 			scaled_wealth = 0.20
 			NOT = { month = 10 }
 			prisoner = no
+			NOT = { trait = in_hiding }
 		}
 		effect = {
 			scaled_wealth = -0.20
@@ -698,6 +706,7 @@ decisions = {
 			}
 			scaled_wealth = 0.20
 			prisoner = no
+			NOT = { trait = in_hiding }
 		}
 		effect = {
 			scaled_wealth = -0.20
@@ -770,6 +779,7 @@ decisions = {
 			}
 			scaled_wealth = 0.20
 			prisoner = no
+			NOT = { trait = in_hiding }
 		}
 		effect = {
 			scaled_wealth = -0.20
@@ -842,6 +852,7 @@ decisions = {
 			}
 			scaled_wealth = 0.20
 			prisoner = no
+			NOT = { trait = in_hiding }
 		}
 		effect = {
 			scaled_wealth = -0.20
@@ -914,6 +925,7 @@ decisions = {
 			}
 			scaled_wealth = 0.20
 			prisoner = no
+			NOT = { trait = in_hiding }
 		}
 		effect = {
 			scaled_wealth = -0.20
@@ -986,6 +998,7 @@ decisions = {
 			}
 			scaled_wealth = 0.20
 			prisoner = no
+			NOT = { trait = in_hiding }
 		}
 		effect = {
 			scaled_wealth = -0.20
@@ -1243,6 +1256,7 @@ decisions = {
 				is_occupied = no
 			}
 			prisoner = no
+			NOT = { trait = in_hiding }
 			scaled_wealth = 0.2
 			month = 9
 			prestige = 100
@@ -1334,6 +1348,7 @@ decisions = {
 				is_occupied = no
 			}
 			prisoner = no
+			NOT = { trait = in_hiding }
 			scaled_wealth = 0.2
 			month = 9
 			prestige = 100
@@ -1427,6 +1442,7 @@ decisions = {
 				is_occupied = no
 			}
 			prisoner = no
+			NOT = { trait = in_hiding }
 			scaled_wealth = 0.2
 			month = 9
 			prestige = 100
@@ -1527,6 +1543,7 @@ decisions = {
 				is_occupied = no
 			}
 			prisoner = no
+			NOT = { trait = in_hiding }
 			scaled_wealth = 0.2
 			month = 9
 			prestige = 100
@@ -1667,6 +1684,7 @@ decisions = {
 				is_occupied = no
 			}
 			prisoner = no
+			NOT = { trait = in_hiding }
 			scaled_wealth = 0.2
 			month = 3
 			NOT = { month = 9 }
@@ -2325,3 +2343,4 @@ decisions = {
 		}
 	}
 }
+	

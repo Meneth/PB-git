@@ -1,9 +1,11 @@
 330.1.1={
 	liege="e_byzantium"
+	vice_royalty = yes
 }
 637.1.1={
 	holder=0
 	liege=0
+	vice_royalty = no
 }
 786.1.1={
 	liege="e_arabia"
@@ -23,6 +25,7 @@
 }
 962.1.1={
 	liege="e_byzantium"
+	vice_royalty = yes
 }
 1060.1.1={
 	holder=20559
@@ -32,6 +35,7 @@
 }
 1071.8.26={
 	liege=0
+	vice_royalty = no
 }
 1080.1.1={
 	holder=232561 #Roupen I Rubenid
@@ -50,6 +54,7 @@
 }
 1137.1.1={
 	liege="e_byzantium"
+	vice_royalty = yes
 }
 1140.2.14={
 	holder=223010 #Stepané I Rubenid
@@ -62,6 +67,7 @@
 }
 1151.1.1={
 	liege=0
+	vice_royalty = no
 }
 1170.1.1={
 	holder=232571 #Mleh Rubenid
