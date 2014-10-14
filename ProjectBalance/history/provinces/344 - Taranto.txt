@@ -24,5 +24,5 @@ terrain = hills
 867.1.1 = { culture = lombard religion = catholic }
 #950.1.1 = { trade_post = b_urso }
 1086.1.1 = { culture = italian }
-1078.1.1 = { trade_post = b_ziani }
 1130.12.25 = { culture = sicilian }
+1078.1.1 = { trade_post = b_ziani }
