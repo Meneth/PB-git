@@ -3,6 +3,7 @@
 	law = revokation_2
 	law = inheritance_1
 	law = themes_1
+	law = imperial_administration
 	law = succ_primogeniture
 } # this way Jan 27 BC is displayed in his date, only backwards!
 24.8.19={
