@@ -27,6 +27,10 @@ bid_for_independence = {
 	is_permanent = yes
 	is_independence = yes
 	
+	can_use_gui = {
+		ROOT = { NOT = { has_character_modifier = emf_peace_pledge } }
+	}
+	
 	can_use = {
 		ROOT = {
 			de_facto_liege = FROM
@@ -35,18 +39,23 @@ bid_for_independence = {
 			OR = {
 				ai = yes
 				is_feudal = yes
+				is_tribal = yes
 				higher_tier_than = COUNT
 			}
 			OR = {
 				NOT = { de_jure_liege_or_above = FROM }
+				ai = no
+				FROM = { ai = no }
 				trait = ambitious
 				trait = wroth
 				trait = arbitrary
 				trait = possessed
 				trait = lunatic
-				ai = no
 				primary_title = {
-					tier = KING
+					OR = {
+						tier = KING
+						is_vice_royalty = yes
+					}
 				}
 			}
 		}
@@ -88,6 +97,8 @@ bid_for_independence = {
 	}
 
 	on_success = {
+		hidden_tooltip = { ROOT = { add_character_modifier = { name = emf_victory_timer duration = 7 hidden = yes } } }
+	
 		if = {
 			limit = {
 				FROM = {
@@ -130,8 +141,14 @@ bid_for_independence = {
 		}
 		
 		hidden_tooltip = {
+			# EMF: Adjust dynlevy law of prior liege due to lost realm_size
+			FROM = { character_event = { id = emf_dynlevy.20 } }
+			
 			ROOT = {
 				prestige = 100
+				any_demesne_title = {
+					add_pressed_claim = FROM
+				}
 			}
 		}
 		
@@ -142,17 +159,6 @@ bid_for_independence = {
 		any_attacker = {
 			limit = { NOT = { character = ROOT } }
 			hidden_tooltip = { participation_scaled_prestige = 100 }
-		}
-		any_attacker = {
-			limit = {
-				NOT = { character = ROOT }
-				liege = { character = PREV }
-				OR = {
-					trait = ambitious
-					NOT = { FROM = { de_jure_vassal_or_below = PREV } }
-				}
-			}
-			set_defacto_liege = THIS
 		}
 
 		FROM = {
@@ -294,6 +300,8 @@ bid_for_independence = {
 	}
 
 	on_reverse_demand = {
+		hidden_tooltip = { FROM = { add_character_modifier = { name = emf_victory_timer duration = 7 hidden = yes } } }
+		
 		ROOT = {
 			prestige = -100
 			prisoner = FROM

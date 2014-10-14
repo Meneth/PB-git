@@ -17,9 +17,10 @@ b_qutuf = temple
 
 # Misc
 culture = bedouin_arabic
-religion = shiite
+religion = ibadi
 
 # History
+850.1.1 = { religion = shiite }
 1066.1.1 = { 
 	trade_post = b_thakkur
 }

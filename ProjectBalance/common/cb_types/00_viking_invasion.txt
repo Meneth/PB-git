@@ -31,11 +31,11 @@ viking_invasion = {
 	check_de_jure_tier = KING # this scans all de jure kingdoms for the counties which are held by or vassals(or below) of selected character. Only valid if is_permanent = yes
 	apply_short_occ_mod = no # Do not apply the 'recently_conquered' modifier to Holdings
 
-	# For invasion CBs which rely upon gaining all occupied titles, PB uses the
-	# vanilla BATTLE_WARSCORE_WORTH value.  A comment detailing the reasoning
-	# behind this can be found in the basic 'invasion' CB.
+	battle_warscore_mult = 0.75
 	
-	battle_warscore_mult = 0.6
+	can_use_gui = {
+		ROOT = { NOT = { has_character_modifier = emf_peace_pledge } }
+	}
 	
 	can_use = {
 		ROOT = {
@@ -57,6 +57,8 @@ viking_invasion = {
 	}
 
 	on_success = {
+		hidden_tooltip = { ROOT = { add_character_modifier = { name = emf_victory_timer duration = 7 hidden = yes } } }
+		hidden_tooltip = { ROOT = { add_character_modifier = { name = emf_holy_victory_timer duration = 7 hidden = yes } } }
 		ROOT = {
 			prestige = 500
 			piety = 250
@@ -146,6 +148,8 @@ viking_invasion = {
 	}
 
 	on_reverse_demand = {
+		hidden_tooltip = { FROM = { add_character_modifier = { name = emf_victory_timer duration = 7 hidden = yes } } }
+		hidden_tooltip = { FROM = { add_character_modifier = { name = emf_holy_victory_timer duration = 7 hidden = yes } } }
 		ROOT = {
 			prestige = -500
 			piety = -250

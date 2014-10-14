@@ -42,7 +42,17 @@ remove_internal_peace = {
 		}
 	}
 
+	on_add = {
+		# Adjust dynlevy laws due to realm fracture
+		hidden_tooltip = { ROOT = { character_event = { id = emf_dynlevy.4 } } }
+	}
+	
 	on_success = {
+		hidden_tooltip = { ROOT = { add_character_modifier = { name = emf_victory_timer duration = 7 hidden = yes } } }
+		
+		# Adjust dynlevy laws due to realm fracture
+		hidden_tooltip = { ROOT = { character_event = { id = emf_dynlevy.4 } } }
+		
 		ROOT = {
 			opinion = {
 				modifier = opinion_lowered_crown_authority
@@ -90,7 +100,15 @@ remove_internal_peace = {
 		FROM = { clr_character_flag = autonomy_faction_revolt }
 	}
 
+	on_add = {
+		# Adjust dynlevy laws due to realm fracture
+		hidden_tooltip = { ROOT = { character_event = { id = emf_dynlevy.4 } } }
+	}
+	
 	on_fail = {
+		# Adjust dynlevy laws due to realm fracture
+		hidden_tooltip = { ROOT = { character_event = { id = emf_dynlevy.4 } } }
+		
 		ROOT = {
 			prestige = -100
 		}
@@ -112,7 +130,17 @@ remove_internal_peace = {
 		FROM = { clr_character_flag = autonomy_faction_revolt }
 	}
 
+	on_add = {
+		# Adjust dynlevy laws due to realm fracture
+		hidden_tooltip = { ROOT = { character_event = { id = emf_dynlevy.4 } } }
+	}
+	
 	on_reverse_demand = {
+		hidden_tooltip = { FROM = { add_character_modifier = { name = emf_victory_timer duration = 7 hidden = yes } } }
+		
+		# Adjust dynlevy laws due to realm fracture
+		hidden_tooltip = { ROOT = { character_event = { id = emf_dynlevy.4 } } }
+		
 		ROOT = {
 			prestige = -200
 			imprison = FROM
@@ -193,7 +221,17 @@ remove_revokation = {
 		}
 	}
 	
+	on_add = {
+		# Adjust dynlevy laws due to realm fracture
+		hidden_tooltip = { ROOT = { character_event = { id = emf_dynlevy.4 } } }
+	}
+	
 	on_success = {
+		hidden_tooltip = { ROOT = { add_character_modifier = { name = emf_victory_timer duration = 7 hidden = yes } } }
+		
+		# Adjust dynlevy laws due to realm fracture
+		hidden_tooltip = { ROOT = { character_event = { id = emf_dynlevy.4 } } }
+		
 		ROOT = {
 			opinion = {
 				modifier = opinion_lowered_crown_authority
@@ -241,6 +279,9 @@ remove_revokation = {
 	}
 
 	on_fail = {
+		# Adjust dynlevy laws due to realm fracture
+		hidden_tooltip = { ROOT = { character_event = { id = emf_dynlevy.4 } } }
+		
 		ROOT = {
 			prestige = -100
 		}
@@ -263,6 +304,11 @@ remove_revokation = {
 	}
 
 	on_reverse_demand = {
+		hidden_tooltip = { FROM = { add_character_modifier = { name = emf_victory_timer duration = 7 hidden = yes } } }
+		
+		# Adjust dynlevy laws due to realm fracture
+		hidden_tooltip = { ROOT = { character_event = { id = emf_dynlevy.4 } } }
+		
 		ROOT = {
 			prestige = -200
 			imprison = FROM
@@ -338,7 +384,17 @@ remove_inheritance = {
 		}
 	}
 
+	on_add = {
+		# Adjust dynlevy laws due to realm fracture
+		hidden_tooltip = { ROOT = { character_event = { id = emf_dynlevy.4 } } }
+	}
+	
 	on_success = {
+		hidden_tooltip = { ROOT = { add_character_modifier = { name = emf_victory_timer duration = 7 hidden = yes } } }
+		
+		# Adjust dynlevy laws due to realm fracture
+		hidden_tooltip = { ROOT = { character_event = { id = emf_dynlevy.4 } } }
+		
 		ROOT = {
 			opinion = {
 				modifier = opinion_lowered_crown_authority
@@ -381,6 +437,9 @@ remove_inheritance = {
 	}
 
 	on_fail = {
+		# Adjust dynlevy laws due to realm fracture
+		hidden_tooltip = { ROOT = { character_event = { id = emf_dynlevy.4 } } }
+		
 		ROOT = {
 			prestige = -100
 		}
@@ -403,6 +462,11 @@ remove_inheritance = {
 	}
 
 	on_reverse_demand = {
+		hidden_tooltip = { FROM = { add_character_modifier = { name = emf_victory_timer duration = 7 hidden = yes } } }
+		
+		# Adjust dynlevy laws due to realm fracture
+		hidden_tooltip = { ROOT = { character_event = { id = emf_dynlevy.4 } } }
+		
 		ROOT = {
 			prestige = -200
 			imprison = FROM
@@ -474,7 +538,17 @@ reduce_crown_levies = {
 		}
 	}
 
+	on_add = {
+		# Adjust dynlevy laws due to realm fracture
+		hidden_tooltip = { ROOT = { character_event = { id = emf_dynlevy.4 } } }
+	}
+	
 	on_success = {
+		hidden_tooltip = { ROOT = { add_character_modifier = { name = emf_victory_timer duration = 7 hidden = yes } } }
+		
+		# Adjust dynlevy laws due to realm fracture
+		hidden_tooltip = { ROOT = { character_event = { id = emf_dynlevy.4 } } }
+		
 		ROOT = {
 			opinion = {
 				modifier = opinion_lowered_crown_authority
@@ -569,6 +643,9 @@ reduce_crown_levies = {
 	}
 
 	on_fail = {
+		# Adjust dynlevy laws due to realm fracture
+		hidden_tooltip = { ROOT = { character_event = { id = emf_dynlevy.4 } } }
+		
 		ROOT = {
 			prestige = -100
 		}
@@ -591,6 +668,11 @@ reduce_crown_levies = {
 	}
 
 	on_reverse_demand = {
+		hidden_tooltip = { FROM = { add_character_modifier = { name = emf_victory_timer duration = 7 hidden = yes } } }
+		
+		# Adjust dynlevy laws due to realm fracture
+		hidden_tooltip = { ROOT = { character_event = { id = emf_dynlevy.4 } } }
+		
 		ROOT = {
 			prestige = -200
 			imprison = FROM

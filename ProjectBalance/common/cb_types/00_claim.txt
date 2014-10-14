@@ -28,8 +28,32 @@ claim = {
 
 	press_claim = yes
 	
+	can_use_gui = {
+		ROOT = { NOT = { has_character_modifier = emf_peace_pledge } }
+	}
+	
 	can_use = {
 		OR = {
+			FROM = { ai = no }
+			ROOT = { ai = no }
+			ROOT = {
+				OR = {
+					trait = ambitious
+					trait = wroth
+					trait = envious
+					trait = arbitrary
+				}
+				OR = {
+					trait = possessed
+					trait = lunatic
+					NOT = {
+						trait = craven
+						trait = content
+						trait = just
+						trait = kind
+					}
+				}
+			}
 			custom_tooltip = {
 				text = is_not_allied
 				hidden_tooltip = {
@@ -52,28 +76,6 @@ claim = {
 							is_parent_religion = FROM
 							FROM = { excommunicated_for = ROOT }
 						}
-					}
-				}
-			}
-			hidden_tooltip = {
-				ROOT = {
-					OR = {
-						trait = ambitious
-						trait = wroth
-						trait = envious
-						trait = arbitrary
-						ai = no
-					}
-					OR = {
-						trait = possessed
-						trait = lunatic
-						AND = {
-							NOT = { trait = craven }
-							NOT = { trait = content }
-							NOT = { trait = just }
-							NOT = { trait = kind }
-						}
-						ai = no
 					}
 				}
 			}
@@ -127,7 +129,9 @@ claim = {
 	}
 
 	on_success_title = {
-		usurp_title_plus_barony_if_unlanded = ROOT
+		hidden_tooltip = { ROOT = { add_character_modifier = { name = emf_victory_timer duration = 7 hidden = yes } } }
+		
+		usurp_title_plus_barony_if_unlanded = { target = ROOT type = claim }
 		
 		if = {
 			limit = {
@@ -176,6 +180,7 @@ claim = {
 	}
 
 	on_reverse_demand = {
+		hidden_tooltip = { FROM = { add_character_modifier = { name = emf_victory_timer duration = 7 hidden = yes } } }
 		ROOT = {
 			prestige = -150
 			transfer_scaled_wealth = {
@@ -238,5 +243,15 @@ claim = {
 	
 	defender_ai_defeat_worth = {
 		factor = 100
+	}
+	
+	# ai importance placed on this CB: scope is the targeted title, ROOT is the attacking character, FROM is the defending character
+	ai_will_do = { 
+		factor = 1
+		
+		modifier = {
+			factor = 10
+			FROM = { ai = no }
+		}
 	}
 }

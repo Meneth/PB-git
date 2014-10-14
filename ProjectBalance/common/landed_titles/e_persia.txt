@@ -953,6 +953,8 @@ e_persia = {
 				color2={ 255 255 255 }
 				
 				b_kabul = {
+					holy_site = zun_pagan
+					holy_site = zun_pagan_reformed
 				}
 				b_adinapur = {
 				}
@@ -1032,6 +1034,8 @@ e_persia = {
 				b_kandahar = {
 				}
 				b_zamindawar = {
+					holy_site = zun_pagan
+					holy_site = zun_pagan_reformed
 				}
 				b_sangin = {
 				}
@@ -1784,6 +1788,8 @@ e_persia = {
 				b_bagdad = {
 					holy_site = sunni
 					holy_site = nestorian
+					holy_site = zun_pagan
+					holy_site = zun_pagan_reformed
 				}
 				b_hillah = {
 				}

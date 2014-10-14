@@ -31,12 +31,9 @@ caliphal_subjugation = {
 	
 	can_use_gui = {
 		ROOT = {
+			NOT = { has_character_modifier = emf_peace_pledge }
 			piety = 200
 		}
-	}
-	
-	on_add = {
-		ROOT = { piety = -200 }
 	}
 
 	can_use = {
@@ -47,6 +44,7 @@ caliphal_subjugation = {
 				has_landed_title = k_shiite
 				has_landed_title = d_yazidi
 				has_landed_title = d_ibadi
+				has_landed_title = d_kharijite
 			}
 			has_horde_culture = no # Should use tribal invasion instead
 			NOT = { has_character_modifier = launched_subjugation }
@@ -72,8 +70,9 @@ caliphal_subjugation = {
 		}
 	}
 	
-	on_add_title = {
+	on_add = {
 		ROOT = {
+			piety = -200
 			add_character_modifier = { 
 				name = launched_subjugation
 				days = 3650
@@ -83,6 +82,7 @@ caliphal_subjugation = {
 	}
 
 	on_success = {
+		hidden_tooltip = { ROOT = { add_character_modifier = { name = emf_victory_timer duration = 7 hidden = yes } } }
 		ROOT = {
 			prestige = 100
 			decadence = -5
@@ -132,6 +132,7 @@ caliphal_subjugation = {
 	}
 
 	on_reverse_demand = {
+		hidden_tooltip = { FROM = { add_character_modifier = { name = emf_victory_timer duration = 7 hidden = yes } } }
 		ROOT = {
 			prestige = -200
 			transfer_scaled_wealth = {
@@ -179,5 +180,15 @@ caliphal_subjugation = {
 	
 	defender_ai_defeat_worth = {
 		factor = 100
+	}
+	
+	# ai importance placed on this CB: scope is the targeted title, ROOT is the attacking character, FROM is the defending character
+	ai_will_do = { 
+		factor = 1
+		
+		modifier = {
+			factor = 10
+			FROM = { ai = no }
+		}
 	}
 }

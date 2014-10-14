@@ -10,6 +10,10 @@ minor_conquest = {
 	can_call_allies = no
 	#check_de_jure_tier = COUNT # this scans all dejure duchies for the counties which are held by or vassals(or below) of selected character. Only valid if is_permanent = yes
 	
+	can_use_gui = {
+		ROOT = { NOT = { has_character_modifier = emf_peace_pledge } }
+	}
+	
 	can_use = {
 		has_global_flag = rapid_conquest
 		ROOT = {
@@ -61,6 +65,7 @@ minor_conquest = {
 	}
 	
 	on_success = {
+		hidden_tooltip = { ROOT = { add_character_modifier = { name = emf_victory_timer duration = 7 hidden = yes } } }
 		ROOT = {
 			prestige = 100
 		}
@@ -68,11 +73,11 @@ minor_conquest = {
 			prestige = -100
 			any_demesne_title = {
 				limit = { tier = count }
-				usurp_title = ROOT
+				usurp_title = { target = ROOT type = invasion }
 			}
 			any_realm_title = {
 				limit = { tier = count }
-				usurp_title = ROOT
+				usurp_title = { target = ROOT type = invasion }
 			}
 		}
 	}
@@ -84,6 +89,7 @@ minor_conquest = {
 	}
 	
 	on_reverse_demand = {
+		hidden_tooltip = { FROM = { add_character_modifier = { name = emf_victory_timer duration = 7 hidden = yes } } }
 		ROOT = {
 			prestige = -50
 			transfer_scaled_wealth = {
@@ -125,6 +131,10 @@ subjugation = {
 	can_call_allies = no
 	#check_de_jure_tier = COUNT # this scans all dejure duchies for the counties which are held by or vassals(or below) of selected character. Only valid if is_permanent = yes
 	
+	can_use_gui = {
+		ROOT = { NOT = { has_character_modifier = emf_peace_pledge } }
+	}
+	
 	can_use = {
 		has_global_flag = rapid_conquest
 		ROOT = {
@@ -149,6 +159,7 @@ subjugation = {
 	}
 	
 	on_success = {
+		hidden_tooltip = { ROOT = { add_character_modifier = { name = emf_victory_timer duration = 7 hidden = yes } } }
 		ROOT = {
 			prestige = 100
 		}
@@ -158,7 +169,7 @@ subjugation = {
 				limit = { NOT = { tier = count } }
 				any_demesne_title = {
 					limit = { higher_tier_than = count }
-					usurp_title = ROOT
+					usurp_title = { target = ROOT type = invasion }
 				}
 			}
 			set_defacto_liege = ROOT
@@ -172,6 +183,7 @@ subjugation = {
 	}
 	
 	on_reverse_demand = {
+		hidden_tooltip = { FROM = { add_character_modifier = { name = emf_victory_timer duration = 7 hidden = yes } } }
 		ROOT = {
 			prestige = -50
 			transfer_scaled_wealth = {
@@ -213,6 +225,10 @@ subjugation_duke = {
 	can_call_allies = no
 	#check_de_jure_tier = COUNT # this scans all dejure duchies for the counties which are held by or vassals(or below) of selected character. Only valid if is_permanent = yes
 	
+	can_use_gui = {
+		ROOT = { NOT = { has_character_modifier = emf_peace_pledge } }
+	}
+	
 	can_use = {
 		has_global_flag = rapid_conquest
 		ROOT = {
@@ -235,6 +251,7 @@ subjugation_duke = {
 	}
 	
 	on_success = {
+		hidden_tooltip = { ROOT = { add_character_modifier = { name = emf_victory_timer duration = 7 hidden = yes } } }
 		ROOT = {
 			prestige = 100
 		}
@@ -251,6 +268,7 @@ subjugation_duke = {
 	}
 	
 	on_reverse_demand = {
+		hidden_tooltip = { FROM = { add_character_modifier = { name = emf_victory_timer duration = 7 hidden = yes } } }
 		ROOT = {
 			prestige = -50
 			transfer_scaled_wealth = {

@@ -39,7 +39,7 @@ e_spain = {
 		color2={ 200 80 10 }
 		dignity = 2 # Counted as having 2 more counties than it does
 		
-		capital = 199 # Burgos
+		capital = 197 # Toledo
 		
 		culture = castillan
 		

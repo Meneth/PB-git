@@ -32,6 +32,8 @@ e_tartaria = {
 			color2={ 255 255 255 }
 			
 			capital = 620 # Itil
+			
+			pecheneg = "Pecheneg"
 		
 			c_itil = {
 				color={ 155 122 34 }
@@ -344,6 +346,8 @@ e_tartaria = {
 			color2={ 255 255 255 }
 			
 			capital = 1430 # Kipchak
+			
+			pecheneg = "Pecheneg"
 			
 			c_kipchak = {
 				color={ 151 94 60 }

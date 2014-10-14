@@ -4,7 +4,7 @@ castle = {
 		desc = shipyard_desc
 		port = yes
 		trigger = { TECH_NAVAL = 3 }
-		build_cost = 50
+		gold_cost = 50
 		build_time = 365
 		galleys = 2
 		tax_income = -0.05
@@ -18,7 +18,7 @@ castle = {
 		port = yes
 		trigger = { TECH_NAVAL = 5 }
 		upgrades_from = ca_shipyard_1
-		build_cost = 50
+		gold_cost = 50
 		build_time = 365
 		galleys = 2
 		tax_income = -0.1

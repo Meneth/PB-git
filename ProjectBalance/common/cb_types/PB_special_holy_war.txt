@@ -32,20 +32,17 @@ special_holy_war = {
 	
 	can_use_gui = {
 		ROOT = {
+			NOT = { has_character_modifier = emf_peace_pledge }
 			NOT = { has_character_modifier = holy_war_cooldown }
 			is_merchant_republic = no
 			NOT = { any_liege = { is_merchant_republic = yes } }
-		}
-		NOT = {
-			FROM = {
-				has_character_modifier = formation_of_rum
-			}
 		}
 	}
 	
 	can_use = {
 		NOT = { has_global_flag = rapid_conquest }
 		ROOT = {
+			NOT = { religion_group = pagan_group }
 			OR = {
 				NOT = { religion_group = FROM }
 				is_heresy_of = FROM
@@ -63,10 +60,6 @@ special_holy_war = {
 						}
 					}
 				}
-				AND = {
-					religion_group = pagan_group
-					NOT = { religion = FROM }
-				}
 				NOT = { same_realm = FROM }
 			}
 			top_liege = {
@@ -78,10 +71,6 @@ special_holy_war = {
 						is_heretic = no
 						ROOT = { is_heretic = no }
 					}
-				}
-				OR = {
-					NOT = { religion_group = pagan_group }
-					religion = ROOT
 				}
 			}
 		}
@@ -208,9 +197,12 @@ special_holy_war = {
 	}
 	
 	on_success = {
+		hidden_tooltip = { ROOT = { add_character_modifier = { name = emf_victory_timer duration = 7 hidden = yes } } }
+		hidden_tooltip = { ROOT = { add_character_modifier = { name = emf_holy_victory_timer duration = 7 hidden = yes } } }
+		
 		any_attacker = {
 			limit = { character = ROOT }
-			participation_scaled_piety = 100
+			participation_scaled_piety = 50
 			participation_scaled_prestige = 50
 			if = {
 				limit = {
@@ -258,6 +250,7 @@ special_holy_war = {
 						title = PREV
 						enemy = FROM
 						same_religion = yes # Only vassalize rulers of my religion
+						is_religious = yes
 					}
 				}
 			}
@@ -272,6 +265,9 @@ special_holy_war = {
 	}
 
 	on_reverse_demand = {
+		hidden_tooltip = { FROM = { add_character_modifier = { name = emf_victory_timer duration = 7 hidden = yes } } }
+		hidden_tooltip = { FROM = { add_character_modifier = { name = emf_holy_victory_timer duration = 7 hidden = yes } } }
+		
 		ROOT = {
 			transfer_scaled_wealth = {
 				to = FROM
@@ -282,7 +278,7 @@ special_holy_war = {
 		}
 		any_defender = {
 			limit = { character = FROM }
-			participation_scaled_piety = 200
+			participation_scaled_piety = 100
 			participation_scaled_prestige = 100
 			if = {
 				limit = {
@@ -332,5 +328,15 @@ special_holy_war = {
 	
 	defender_ai_defeat_worth = {
 		factor = 100
+	}
+	
+	# ai importance placed on this CB: scope is the targeted title, ROOT is the attacking character, FROM is the defending character
+	ai_will_do = { 
+		factor = 1
+		
+		modifier = {
+			factor = 10
+			FROM = { ai = no }
+		}
 	}
 }

@@ -79,6 +79,7 @@ e_byzantium = {
 				
 				b_gallipoli = {
 					turkish = "Gelibolu"
+					greek = "Kallipolis"
 				}
 				b_heraclea = {
 				}
@@ -508,6 +509,7 @@ e_byzantium = {
 				b_palodes = {
 				}
 				b_adapazari = {
+					greek = "Mesonesion"
 				}
 				b_malagina = {
 				}
@@ -832,6 +834,8 @@ e_byzantium = {
 				color2={ 255 255 20 }
 				
 				italian = "Durazzo"
+				serbian = "Ohrid"
+				bulgarian = "Ohrid"
 				
 				b_durazzo = {
 					greek = "Dyrrhachion"
@@ -991,8 +995,11 @@ e_byzantium = {
 				color={ 182 15 124 }
 				color2={ 255 255 20 }
 				
+				greek = Gortyn
+				italian = Gortyn
+				
 				b_iraklio = {
-					greek = "Megalokastron"
+					greek = "Gortyn"
 					italian = "Candia"
 					turkish = "Kandiye"
 					maghreb_arabic = "Khandaq"

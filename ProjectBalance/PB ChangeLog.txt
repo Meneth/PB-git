@@ -1,4 +1,7 @@
-﻿3.5.16
+﻿3.6.0
+	Updated for 2.2/Charlemagne
+
+3.5.16
 	FIX: Nestorian and Messalian players will no longer experience a CTD upon clicking the Religion tab (vanilla map only)
 
 3.5.15

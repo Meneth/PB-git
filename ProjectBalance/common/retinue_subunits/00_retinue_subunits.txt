@@ -1461,3 +1461,61 @@ RETTYPE_CUL_NUBIAN =
 	}
 }
 
+RETTYPE_CUL_FRA = 
+{
+	first_type = 1
+	first_amount = 250
+	
+	potential = {
+		culture = old_frankish
+	}
+	
+	modifier = {
+		heavy_infantry_offensive = 0.6
+	}
+}
+
+RETTYPE_CUL_LOM = 
+{
+	first_type = 1
+	first_amount = 250
+	
+	potential = {
+		culture = lombard
+	}
+	
+	modifier = {
+		heavy_infantry_morale = 0.6
+	}
+}
+
+RETTYPE_CUL_SUEBI = 
+{
+	first_type = 1
+	first_amount = 250
+	
+	potential = {
+		culture = suebi
+	}
+	
+	modifier = {
+		heavy_infantry_defensive = 0.6
+	}
+}
+
+RETTYPE_CUL_PICTISH = 
+{
+	first_type = 0
+	first_amount = 180
+	second_type = 5
+	second_amount = 70
+	
+	potential = {
+		culture = pictish
+	}
+	
+	modifier = {
+		light_infantry_offensive = 0.6
+		archers_offensive = 0.6
+	}
+}

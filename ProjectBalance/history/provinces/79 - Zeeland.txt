@@ -17,8 +17,9 @@ b_tholen = temple # Norse Pagan Holy Site
 #b_zierikzee = city
 
 # Misc
-culture = dutch
+culture = frisian
 religion = catholic
 
 # History
+790.1.1 = { culture = dutch }
 1216.1.1 = { trade_post = b_miles }

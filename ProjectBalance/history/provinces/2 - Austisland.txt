@@ -5,8 +5,9 @@ title = c_austisland
 
 # Settlements
 max_settlements = 2
-b_hrisey = city
-#b_husavik = city
+b_husavik = tribal
+
+#b_hrisey = city
 #b_holar = temple
 
 #b_glaumbaer = castle
@@ -21,10 +22,11 @@ religion = norse_pagan
 
 # History
 867.1.1 = {
-	b_husavik = ca_shipyard_1
+	b_husavik = tb_shipyard_1
 }
 1000.1.1 = {
 	culture = norwegian
 	religion = catholic
+	b_husavik = city
 }
 1066.1.1 = { trade_post = b_haukdaelur }

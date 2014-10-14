@@ -17,9 +17,10 @@ b_qana = city
 
 # Misc
 culture = bedouin_arabic
-religion = sunni
+religion = ibadi
 
 # History
+850.1.1 = { religion = sunni }
 1066.1.1 = { capital = b_qana }
 1171.1.1 = { capital = b_shabwa }
 1229.1.1 = { capital = b_qana }

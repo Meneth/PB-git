@@ -15,10 +15,12 @@ b_guadalajara = city
 #b_tarancon = city
 #b_sisante
 
-culture = andalusian_arabic
-religion = sunni
+culture = visigothic
+religion = catholic
 terrain = hills
 
 # History
+867.1.1 = { culture = andalusian_arabic }
+867.1.1 = { religion = sunni }
 1193.1.1 = { culture = castillan }
 1193.1.1 = { religion = catholic }

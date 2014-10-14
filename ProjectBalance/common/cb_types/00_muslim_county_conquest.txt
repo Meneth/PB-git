@@ -31,8 +31,13 @@ muslim_county_conquest = {
 	
 	can_use_gui = {
 		ROOT = {
+			NOT = { has_character_modifier = emf_peace_pledge }
 			piety = 50
 		}
+	}
+	
+	on_add = {
+		ROOT = { piety = -50 }
 	}
 	
 	can_use = {
@@ -92,12 +97,9 @@ muslim_county_conquest = {
 			}
 		}
 	}
-	
-	on_add = {
-		ROOT = { piety = -50 }
-	}
-	
+
 	on_success_title = {
+		hidden_tooltip = { ROOT = { add_character_modifier = { name = emf_victory_timer duration = 7 hidden = yes } } }
 		if = {
 			limit = {
 				holder_scope = {
@@ -123,7 +125,7 @@ muslim_county_conquest = {
 				}
 			}
 
-			usurp_title_plus_barony_if_unlanded = ROOT
+			usurp_title_plus_barony_if_unlanded = { target = ROOT type = invasion }
 			any_de_jure_vassal_title = { # take all baronies under the one we're fighting for
 				limit = {
 					has_holder = yes
@@ -138,7 +140,7 @@ muslim_county_conquest = {
 					}
 				}
 
-				usurp_title_plus_barony_if_unlanded = ROOT
+				usurp_title_plus_barony_if_unlanded = { target = ROOT type = invasion }
 			}
 		}
 		any_attacker = {
@@ -166,6 +168,7 @@ muslim_county_conquest = {
 	}
 
 	on_reverse_demand = {
+		hidden_tooltip = { FROM = { add_character_modifier = { name = emf_victory_timer duration = 7 hidden = yes } } }
 		ROOT = {
 			prestige = -200
 			transfer_scaled_wealth = {
@@ -197,5 +200,15 @@ muslim_county_conquest = {
 	
 	defender_ai_defeat_worth = {
 		factor = 100
+	}
+	
+	# ai importance placed on this CB: scope is the targeted title, ROOT is the attacking character, FROM is the defending character
+	ai_will_do = { 
+		factor = 1
+		
+		modifier = {
+			factor = 10
+			FROM = { ai = no }
+		}
 	}
 }

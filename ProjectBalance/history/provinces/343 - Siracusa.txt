@@ -21,9 +21,10 @@ religion = orthodox
 terrain = hills
 
 # History
-1089.1.1 = { trade_post = b_ziani }
-1116.1.1={ culture = italian }
-1116.1.1={ religion = catholic }
-1130.12.25 = { culture = sicilian }
+904.1.1={ culture = maghreb_arabic religion = sunni }
 
+1101.1.1 = { trade_post = b_ziani }
+
+1116.1.1={ culture = italian religion = catholic }
+1130.12.25 = { culture = sicilian }
 1232.1.1 = { b_catania = city }

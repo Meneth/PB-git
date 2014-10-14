@@ -89,8 +89,18 @@ claim_on_liege = {
 			ROOT = { has_claim = PREV }
 		}
 	}
-
+	
+	on_add = {
+		# EMF: Adjust dynlevy laws due to realm fracture
+		hidden_tooltip = { ROOT = { character_event = { id = emf_dynlevy.4 } } }
+	}
+	
 	on_success = {
+		hidden_tooltip = { ROOT = { add_character_modifier = { name = emf_victory_timer duration = 7 hidden = yes } } }
+		
+		# EMF: Adjust dynlevy laws due to realm fracture
+		hidden_tooltip = { ROOT = { character_event = { id = emf_dynlevy.4 } } }
+		
 		any_attacker = {
 			limit = { character = ROOT }
 			participation_scaled_prestige = 100
@@ -234,7 +244,7 @@ claim_on_liege = {
 			FROM = { imprison = ROOT }
 		}
 		
-		usurp_title_plus_barony_if_unlanded_and_vassals = ROOT
+		usurp_title_plus_barony_if_unlanded_and_vassals = { target = ROOT type = claim }
 		
 		if = {
 			limit = {
@@ -246,6 +256,9 @@ claim_on_liege = {
 	}
 
 	on_fail = {
+		# EMF: Adjust dynlevy laws due to realm fracture
+		hidden_tooltip = { ROOT = { character_event = { id = emf_dynlevy.4 } } }
+		
 		ROOT = {
 			prestige = -100
 		}
@@ -257,6 +270,7 @@ claim_on_liege = {
 			limit = { NOT = { character = FROM } }
 			hidden_tooltip = { participation_scaled_prestige = 50 }
 		}
+		
 		hidden_tooltip = {
 			any_attacker = {
 				limit = { liege = { character = FROM } }
@@ -268,6 +282,11 @@ claim_on_liege = {
 	}
 
 	on_reverse_demand = {
+		hidden_tooltip = { FROM = { add_character_modifier = { name = emf_victory_timer duration = 7 hidden = yes } } }
+		
+		# EMF: Adjust dynlevy laws due to realm fracture
+		hidden_tooltip = { ROOT = { character_event = { id = emf_dynlevy.4 } } }
+		
 		ROOT = {
 			prestige = -150
 		}
@@ -280,6 +299,7 @@ claim_on_liege = {
 			limit = { NOT = { character = FROM } }
 			hidden_tooltip = { participation_scaled_prestige = 100 }
 		}
+		
 		hidden_tooltip = {
 			any_attacker = {
 				limit = { liege = { character = FROM } }
@@ -300,6 +320,9 @@ claim_on_liege = {
 			}
 		}
 		end_war = invalid
+		
+		# EMF: Adjust dynlevy laws due to realm fracture
+		hidden_tooltip = { ROOT = { character_event = { id = emf_dynlevy.4 } } }
 	}
 	
 	attacker_ai_victory_worth = {
@@ -330,6 +353,16 @@ claim_on_liege = {
 					}
 				}
 			}
+		}
+	}
+	
+	# ai importance placed on this CB: scope is the targeted title, ROOT is the attacking character, FROM is the defending character
+	ai_will_do = { 
+		factor = 1
+		
+		modifier = {
+			factor = 10
+			FROM = { ai = no }
 		}
 	}
 }

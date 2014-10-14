@@ -46,6 +46,7 @@ job_chancellor = {
 		}
 		prisoner = no
 		NOT = { trait = incapable }
+		NOT = { trait = in_hiding }
 	}
 	gain_effect = {
 		if = {
@@ -137,6 +138,7 @@ job_marshal = {
 		}
 		prisoner = no
 		NOT = { trait = incapable }
+		NOT = { trait = in_hiding }
 		NOT = { has_character_flag = guru }
 	}
 	
@@ -183,6 +185,7 @@ job_marshal = {
 	action = action_assist_arrest
 	action = action_train_troops
 	action = action_advance_mil_tech
+	action = action_organize_raid # Replaces action_advance_mil_tech for Tribes
 
 	lift_fow = yes
 }
@@ -226,6 +229,7 @@ job_treasurer = {
 		}
 		prisoner = no
 		NOT = { trait = incapable }
+		NOT = { trait = in_hiding }
 		NOT = { has_character_flag = guru }
 	}
 	gain_effect = {
@@ -269,8 +273,10 @@ job_treasurer = {
 	}
 	
 	action = action_squeeze_peasants
+	action = action_settle_tribe # Replaces action_squeeze_peasants for Tribes
 	action = action_oversee_construction
 	action = action_advance_eco_tech
+	action = action_build_legend # Replaces action_advance_eco_tech for Tribes
 
 	lift_fow = yes
 }
@@ -288,6 +294,7 @@ job_spymaster = {
 		is_adult = yes
 		prisoner = no
 		NOT = { trait = incapable }
+		NOT = { trait = in_hiding }
 		NOT = { has_character_flag = guru }
 	}
 	gain_effect = {
@@ -350,6 +357,8 @@ job_spiritual = {
 	allow = {
 		is_adult = yes
 		prisoner = no
+		NOT = { trait = incapable }
+		NOT = { trait = in_hiding }
 		liege = {
 			religion = ROOT
 		}
@@ -378,10 +387,12 @@ job_spiritual = {
 			has_character_flag = special_spiritual
 		}
 		
-		NOT = { trait = incapable }
-		
 		OR = {
 			is_theocracy = yes
+			AND = {
+				liege = { is_tribal = yes }
+				is_ruler = no
+			}
 			liege = { religion_group = muslim }
 			AND = {
 				is_ruler = no
@@ -445,6 +456,7 @@ job_spiritual = {
 	action = action_advance_cul_tech
 	action = action_improve_rel_relations
 	action = action_charity
+	action = action_build_zeal # Tribal replacement for 'action_advance_cul_tech'
 
 	lift_fow = yes
 }

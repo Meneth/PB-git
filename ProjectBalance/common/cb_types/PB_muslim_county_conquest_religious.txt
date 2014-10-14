@@ -31,6 +31,7 @@ muslim_county_conquest_religious = {
 	can_ask_to_join_war = no
 	
 	can_use_gui = {
+		ROOT = { NOT = { has_character_modifier = emf_peace_pledge } }
 		FROM = { NOT = { religion_group = pagan_group } }
 		ROOT = {
 			piety = 50
@@ -50,10 +51,6 @@ muslim_county_conquest_religious = {
 						}
 						has_global_flag = violated_baqt
 					}
-					NOT = { has_law = emperor_peace_0 }
-					NOT = { trait = content }
-					NOT = { trait = craven }
-					NOT = { trait = stressed }
 				}
 			}
 		}
@@ -66,12 +63,13 @@ muslim_county_conquest_religious = {
 			NOT = { is_liege_or_above = FROM }
 			OR = {
 				ai = no
+				FROM = { ai = no }
 				AND = {
 					OR = {
-						AND = {
-							NOT = { trait = content }
-							NOT = { trait = craven }
-							NOT = { trait = stressed }
+						NOT = {
+							trait = content
+							trait = craven
+							trait = stressed
 						}
 						trait = brave
 						trait = wroth
@@ -88,18 +86,16 @@ muslim_county_conquest_religious = {
 							NOT = { trait = infirm }
 							NOT = { trait = incapable }
 							NOT = {
-								OR = {
-									AND = {
-										trait = content
-										OR = {
-											trait = craven
-											trait = stressed
-										}
-									}
-									AND = {
+								AND = {
+									trait = content
+									OR = {
 										trait = craven
 										trait = stressed
 									}
+								}
+								AND = {
+									trait = craven
+									trait = stressed
 								}
 							}
 						}
@@ -175,6 +171,8 @@ muslim_county_conquest_religious = {
 	}
 	
 	on_success_title = {
+		hidden_tooltip = { ROOT = { add_character_modifier = { name = emf_victory_timer duration = 7 hidden = yes } } }
+		hidden_tooltip = { ROOT = { add_character_modifier = { name = emf_holy_victory_timer duration = 7 hidden = yes } } }
 		if = {
 			limit = {
 				holder_scope = {
@@ -200,7 +198,7 @@ muslim_county_conquest_religious = {
 				}
 			}
 
-			usurp_title_plus_barony_if_unlanded = ROOT
+			usurp_title_plus_barony_if_unlanded = { target = ROOT type = invasion }
 			any_de_jure_vassal_title = { # take all baronies under the one we're fighting for
 				limit = {
 					has_holder = yes
@@ -215,7 +213,7 @@ muslim_county_conquest_religious = {
 					}
 				}
 
-				usurp_title_plus_barony_if_unlanded = ROOT
+				usurp_title_plus_barony_if_unlanded = { target = ROOT type = invasion }
 			}
 		}
 		any_attacker = {
@@ -243,6 +241,8 @@ muslim_county_conquest_religious = {
 	}
 
 	on_reverse_demand = {
+		hidden_tooltip = { FROM = { add_character_modifier = { name = emf_victory_timer duration = 7 hidden = yes } } }
+		hidden_tooltip = { FROM = { add_character_modifier = { name = emf_holy_victory_timer duration = 7 hidden = yes } } }
 		ROOT = {
 			prestige = -200
 			transfer_scaled_wealth = {
@@ -274,5 +274,15 @@ muslim_county_conquest_religious = {
 	
 	defender_ai_defeat_worth = {
 		factor = 100
+	}
+	
+	# ai importance placed on this CB: scope is the targeted title, ROOT is the attacking character, FROM is the defending character
+	ai_will_do = { 
+		factor = 1
+		
+		modifier = {
+			factor = 10
+			FROM = { ai = no }
+		}
 	}
 }

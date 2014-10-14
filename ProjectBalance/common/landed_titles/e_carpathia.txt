@@ -1013,6 +1013,8 @@ e_carpathia = {
 			color2={ 255 255 255 }
 			
 			capital = 545 # Torki
+			
+			pecheneg = "Pecheneg"
 		
 			c_peresechen = {
 				color={ 225 204 147 }

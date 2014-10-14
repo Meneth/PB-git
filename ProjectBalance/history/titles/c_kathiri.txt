@@ -1,14 +1,22 @@
 # c_kathiri
 
-840.1.1={
+630.1.1={
 	liege="d_sanaa"
 }
-840.1.1={
-	holder=159397
+
+765.1.1={
+	holder = 188732 # Yufirids
 }
-851.1.1={
-	holder=159398
+800.1.1={
+	holder = 188733 # Yufirids
 }
+825.1.1={
+	holder = 188734 # Abd ar-Rahman Yufirid
+}
+847.1.1={
+	holder = 188735 # Yu'fir Yufirid
+}
+
 881.1.1={
 	holder=159399
 }
@@ -30,11 +38,14 @@
 1066.1.1 = {
 	liege="d_arabia_felix_republic"
 }
-1066.1.1 = {
-	holder=191120
+1070.1.1={
+	holder = 45036
+}
+1084.1.1={
+	holder=45050
 }
 1099.1.1 = {
-	holder = 45051
+	holder=45051
 }
 1109.1.1 = {
 	holder=45052
@@ -42,8 +53,17 @@
 1111.1.1 = {
 	holder=45053
 }
-1116.1.1={
-	holder=191129
+1116.1.1 = {
+	holder=45054
+}
+1117.1.1 = {
+	holder=45055
+}
+1137.1.1 = {
+	holder=45058
+}
+1138.1.1 = {
+	holder=45059
 }
 1171.1.1={
 	liege = "d_sanaa"
@@ -55,19 +75,25 @@
 1197.1.1={
 	holder = 144092
 }
-1200.1.1={
-	holder = 191130
+1202.1.1={
+	holder = 144093
+}
+1203.1.1={
+	holder = 32929
 }
 1229.1.1={
 	liege = "d_arabia_felix_republic"
 	holder = 144094
 }
-1240.1.1={
-	holder = 191131
+1250.1.1={
+	holder = 144095
 }
-1280.1.1={
-	holder = 191132
+1295.1.1={
+	holder = 144096
 }
-1320.1.1={
-	holder = 191133
+1296.1.1={
+	holder = 144097
 }
+1322.1.1={
+	holder = 144098
+}	

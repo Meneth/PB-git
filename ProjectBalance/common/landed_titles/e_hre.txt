@@ -674,6 +674,8 @@ e_hre = {
 			color2={ 255 255 255 }
 			
 			capital = 365 #Brandenburg
+			
+			pommeranian = "Sorbia" # Brennaburg
 		
 			c_altmark = {
 				color={ 189 189 189 }

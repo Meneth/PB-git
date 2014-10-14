@@ -31,6 +31,7 @@ indian_subjugation = {
 	
 	can_use_gui = {
 		ROOT = {
+			NOT = { has_character_modifier = emf_peace_pledge }
 			piety = 500
 		}
 	}
@@ -51,8 +52,10 @@ indian_subjugation = {
 			culture_group = ROOT
 			NOT = {
 				any_war = {
-					defender = { character = FROM }
-					using_cb = indian_subjugation
+					AND = {
+						defender = { character = FROM }
+						using_cb = indian_subjugation
+					}
 				}
 			}
 		}
@@ -111,6 +114,7 @@ indian_subjugation = {
 	}
 
 	on_success = {
+		hidden_tooltip = { ROOT = { add_character_modifier = { name = emf_victory_timer duration = 7 hidden = yes } } }
 		any_attacker = {
 			limit = { character = ROOT }
 			participation_scaled_prestige = 200
@@ -133,7 +137,7 @@ indian_subjugation = {
 				}
 				NOT = { ROOT = { tier = EMPEROR } }
 			}
-			ROOT = { usurp_title = PREV }
+			ROOT = { usurp_title = { target = PREV type = invasion } }
 		}
 		
 		if = {
@@ -152,7 +156,7 @@ indian_subjugation = {
 							de_jure_liege_or_above = PREVPREV
 						}
 					}
-					ROOT = { usurp_title = PREV }
+					ROOT = { usurp_title = { target = PREV type = invasion } }
 				}
 			}
 		}
@@ -198,6 +202,7 @@ indian_subjugation = {
 	}
 
 	on_reverse_demand = {
+		hidden_tooltip = { FROM = { add_character_modifier = { name = emf_victory_timer duration = 7 hidden = yes } } }
 		ROOT = {
 			prestige = -200
 			transfer_scaled_wealth = {
@@ -229,5 +234,15 @@ indian_subjugation = {
 	
 	defender_ai_defeat_worth = {
 		factor = 100
+	}
+	
+	# ai importance placed on this CB: scope is the targeted title, ROOT is the attacking character, FROM is the defending character
+	ai_will_do = { 
+		factor = 1
+		
+		modifier = {
+			factor = 10
+			FROM = { ai = no }
+		}
 	}
 }

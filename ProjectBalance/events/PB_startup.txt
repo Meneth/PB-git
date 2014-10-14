@@ -23,10 +23,6 @@ narrative_event = {
 	
 	immediate = {
 		# Make sure all the provinces are correct religion again
-		336 = { culture = italian }
-		336 = { religion = catholic }
-		344 = { culture = italian }
-		344 = { religion = catholic }
 		695 = { religion = nestorian }
 		696 = { religion = nestorian }
 		700 = { religion = orthodox }

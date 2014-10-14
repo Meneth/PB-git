@@ -103,7 +103,19 @@ decadence_invasion = {
 		}
 		
 		hidden_tooltip = {
-			ROOT = { disband_event_forces = decadence_revolters }
+			ROOT = { 
+				disband_event_forces = decadence_revolters
+				
+				# Powerful vassals can choose independence
+				any_vassal = {
+					limit = {
+						NOT = { character = FROM }
+						higher_tier_than = COUNT
+						prisoner = no
+					}
+					character_event = { id = 91240 }
+				}
+			}
 		}
 	}
 
@@ -128,6 +140,7 @@ decadence_invasion = {
 	}
 
 	on_reverse_demand = {
+		hidden_tooltip = { FROM = { add_character_modifier = { name = emf_victory_timer duration = 7 hidden = yes } } }
 		ROOT = { set_defacto_liege = FROM }
 		ROOT = {
 			prestige = -200
@@ -142,6 +155,15 @@ decadence_invasion = {
 		ROOT = { 
 			imprison = FROM
 			disband_event_forces = decadence_revolters
+		}
+		if = {
+			limit = {
+				FROM = {
+					ai = no
+					NOT = { has_character_flag = achievement_decadent_warrior }
+				}
+			}
+			FROM = { set_character_flag = achievement_decadent_warrior }
 		}
 	}
 

@@ -6,11 +6,12 @@ title = c_oleshye
 # Settlements
 max_settlements = 6
 
-b_ochakiv = castle
-b_kocibey = castle
+b_ochakiv = tribal
 
 b_odessa = city #Needed for trade post
-b_bohopol = temple
+
+#b_kocibey = castle
+#b_bohopol = temple
 
 
 #b_balta = castle

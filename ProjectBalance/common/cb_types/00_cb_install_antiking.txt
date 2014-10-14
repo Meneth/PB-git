@@ -41,6 +41,11 @@ cb_install_antiking = {
 		}
 	}
 	
+	on_add = {
+		# EMF: Adjust dynlevy laws due to realm fracture
+		hidden_tooltip = { ROOT = { character_event = { id = emf_dynlevy.4 } } }
+	}
+	
 	is_valid = {
 		NOT = { 
 			holder_scope = { 
@@ -71,6 +76,11 @@ cb_install_antiking = {
 	}
 	
 	on_success = {
+		hidden_tooltip = { ROOT = { add_character_modifier = { name = emf_victory_timer duration = 7 hidden = yes } } }
+		
+		# EMF: Adjust dynlevy laws due to realm fracture
+		hidden_tooltip = { ROOT = { character_event = { id = emf_dynlevy.4 } } }
+		
 		any_attacker = {
 			limit = { character = ROOT }
 			participation_scaled_piety = 500
@@ -130,7 +140,7 @@ cb_install_antiking = {
 			}
 			
 			primary_title = {
-				usurp_title = ROOT
+				usurp_title = { target = ROOT type = revolt }
 			}
 		}
 		if = {
@@ -140,9 +150,13 @@ cb_install_antiking = {
 	}
 
 	on_fail = {
+		# EMF: Adjust dynlevy laws due to realm fracture
+		hidden_tooltip = { ROOT = { character_event = { id = emf_dynlevy.4 } } }
+		
 		ROOT = { 
 			piety = -250
 			prestige = -125
+			cancel_plot = plot_gain_title
 		}
 		FROM = { 
 			piety = 100
@@ -151,6 +165,11 @@ cb_install_antiking = {
 	}
 
 	on_reverse_demand = {
+		hidden_tooltip = { FROM = { add_character_modifier = { name = emf_victory_timer duration = 7 hidden = yes } } }
+		
+		# EMF: Adjust dynlevy laws due to realm fracture
+		hidden_tooltip = { ROOT = { character_event = { id = emf_dynlevy.4 } } }
+		
 		ROOT = {
 			transfer_scaled_wealth = {
 				to = FROM
@@ -159,6 +178,7 @@ cb_install_antiking = {
 			piety = -500
 			prestige = -250
 			prisoner = FROM
+			cancel_plot = plot_gain_title
 		}
 		
 		FROM = { 

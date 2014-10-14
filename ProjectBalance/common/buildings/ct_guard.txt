@@ -2,7 +2,7 @@
 city = {
 	ct_guard_1 = {
 		trigger = { TECH_CITY_CONSTRUCTION = 0 }
-		build_cost = 100
+		gold_cost = 100
 		build_time = 365
 		pikemen = 45
 		retinuesize = 20
@@ -15,7 +15,7 @@ city = {
 		trigger = { TECH_CITY_CONSTRUCTION = 2 }
 		prerequisites = { ct_wall_1 }
 		upgrades_from = ct_guard_1
-		build_cost = 120
+		gold_cost = 120
 		build_time = 547
 		pikemen = 55
 		retinuesize = 20
@@ -28,7 +28,7 @@ city = {
 		trigger = { TECH_CITY_CONSTRUCTION = 4 }
 		prerequisites = { ct_wall_2 }
 		upgrades_from = ct_guard_2
-		build_cost = 200
+		gold_cost = 200
 		build_time = 730
 		pikemen = 65
 		retinuesize = 20
@@ -40,7 +40,7 @@ city = {
 	ct_guard_4 = {
 		trigger = { TECH_CITY_CONSTRUCTION = 6 }
 		upgrades_from = ct_guard_3
-		build_cost = 300
+		gold_cost = 300
 		build_time = 1095
 		pikemen = 75
 		retinuesize = 20
@@ -52,7 +52,7 @@ city = {
 	ct_guard_5 = {
 		trigger = { TECH_CITY_CONSTRUCTION = 8 }
 		upgrades_from = ct_guard_4
-		build_cost = 400
+		gold_cost = 400
 		build_time = 2190
 		pikemen = 85
 		retinuesize = 20

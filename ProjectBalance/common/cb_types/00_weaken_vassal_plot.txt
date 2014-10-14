@@ -52,12 +52,11 @@ weaken_vassal_plot = {
 	}
 
 	on_success = {
+		hidden_tooltip = { ROOT = { add_character_modifier = { name = emf_victory_timer duration = 7 hidden = yes } } }
 		any_attacker = {
 			participation_scaled_prestige = 100
 		}
 		FROM = {
-			hidden_tooltip = { disband_event_forces = faction_loyalists }
-			
 			if = {
 				limit = {
 					NOT = { has_character_modifier = ca_revoke_cooldown }
@@ -77,17 +76,6 @@ weaken_vassal_plot = {
 				
 				any_demesne_title = { # All titles
 					limit = { higher_tier_than = duke }
-					
-					# NOTE: as the effect of this scope was not terribly obvious in its
-					# ability to answer the question "is a CA reduction always guaranteed?"
-					# I did formally verify it in combination with the limit trigger,
-					# and, indeed, 89 of the 90 possible law combinations (combining king's
-					# and emperor's peace) must change at least one law, and 90th case is
-					# just zero CA.  it's reused as boilerplate extensively, so I modified
-					# the effect to take account of the 90th case and moved the trigger to
-					# the outer limit where it determines whether it's a valid case to add
-					# the CA revocation cooldown, most importantly not using any temp. flags
-					# so that a custom tooltip can be used for the cooldown.
 					
 					if = {
 						limit = {
@@ -216,6 +204,7 @@ weaken_vassal_plot = {
 	on_fail = {
 		ROOT = {
 			prestige = -100
+			cancel_plot = plot_weaken_fellow_vassal
 		}
 		any_defender = {
 			limit = { character = FROM }
@@ -228,9 +217,11 @@ weaken_vassal_plot = {
 	}
 
 	on_reverse_demand = {
+		hidden_tooltip = { FROM = { add_character_modifier = { name = emf_victory_timer duration = 7 hidden = yes } } }
 		ROOT = {
 			prestige = -200
 			imprison = FROM
+			cancel_plot = plot_weaken_fellow_vassal
 		}
 		any_defender = {
 			limit = { character = FROM }

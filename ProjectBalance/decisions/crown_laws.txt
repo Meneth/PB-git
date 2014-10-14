@@ -11,6 +11,9 @@ de_jure_laws = {
 		
 		potential = {
 			NOT = { title = e_byzantium }
+			holder_scope = {
+				is_tribal = no
+			}
 		}
 		allow = {
 			has_law = crown_levies_1
@@ -53,6 +56,9 @@ de_jure_laws = {
 		
 		potential = {
 			NOT = { title = e_byzantium }
+			holder_scope = {
+				is_tribal = no
+			}
 		}
 		allow = {
 			OR = {
@@ -156,6 +162,9 @@ de_jure_laws = {
 		potential = {
 			holder_scope = { is_republic = no }
 			NOT = { title = e_byzantium }
+			holder_scope = {
+				is_tribal = no
+			}
 		}
 		allow = {
 			OR = {
@@ -280,6 +289,9 @@ de_jure_laws = {
 		potential = {
 			holder_scope = { is_republic = no }
 			NOT = { title = e_byzantium }
+			holder_scope = {
+				is_tribal = no
+			}
 		}
 		allow = {
 			NOT = { has_law = succ_feudal_elective }
@@ -405,6 +417,9 @@ de_jure_laws = {
 		potential = {
 			holder_scope = { is_republic = no }
 			NOT = { title = e_byzantium }
+			holder_scope = {
+				is_tribal = no
+			}
 		}
 		allow = {
 			NOT = { has_law = succ_feudal_elective }
@@ -514,6 +529,9 @@ de_jure_laws = {
 		potential = {
 			tier = king
 			holder_scope = { is_republic = no }
+			holder_scope = {
+				is_tribal = no
+			}
 		}
 		allow = {
 			has_law = king_peace_1
@@ -553,6 +571,9 @@ de_jure_laws = {
 		potential = {
 			tier = king
 			holder_scope = { is_republic = no }
+			holder_scope = {
+				is_tribal = no
+			}
 		}
 		allow = {
 			OR = {
@@ -663,6 +684,9 @@ de_jure_laws = {
 		potential = {
 			tier = king
 			holder_scope = { is_republic = no }
+			holder_scope = {
+				is_tribal = no
+			}
 		}
 		allow = {
 			NOT = { has_law = succ_feudal_elective }
@@ -767,6 +791,9 @@ de_jure_laws = {
 		potential = {
 			tier = emperor
 			holder_scope = { is_republic = no }
+			holder_scope = {
+				is_tribal = no
+			}
 		}
 		allow = {
 			has_law = emperor_peace_1
@@ -805,6 +832,9 @@ de_jure_laws = {
 		potential = {
 			tier = emperor
 			holder_scope = { is_republic = no }
+			holder_scope = {
+				is_tribal = no
+			}
 		}
 		allow = {
 			OR = {
@@ -915,6 +945,9 @@ de_jure_laws = {
 		potential = {
 			tier = emperor
 			holder_scope = { is_republic = no }
+			holder_scope = {
+				is_tribal = no
+			}
 		}
 		allow = {
 			NOT = { has_law = succ_feudal_elective }
@@ -1017,7 +1050,9 @@ de_jure_laws = {
 		group = revokation
 		
 		potential = {
-			always = yes
+			holder_scope = {
+				is_tribal = no
+			}
 		}
 		allow = {
 			has_law = revokation_1
@@ -1050,7 +1085,9 @@ de_jure_laws = {
 		feudal_opinion = -5
 		
 		potential = {
-			always = yes
+			holder_scope = {
+				is_tribal = no
+			}
 		}
 		allow = {
 			OR = {
@@ -1145,6 +1182,9 @@ de_jure_laws = {
 		
 		potential = {
 			holder_scope = { is_republic = no }
+			holder_scope = {
+				is_tribal = no
+			}
 		}
 		allow = {
 			NOT = { has_law = succ_feudal_elective }
@@ -1255,6 +1295,9 @@ de_jure_laws = {
 		
 		potential = {
 			holder_scope = { is_republic = no }
+			holder_scope = {
+				is_tribal = no
+			}
 		}
 		revoke_allowed = {
 			always = no
@@ -1283,6 +1326,9 @@ de_jure_laws = {
 		
 		potential = {
 			holder_scope = { is_republic = no }
+			holder_scope = {
+				is_tribal = no
+			}
 		}
 		allow = {
 			NOT = { has_law = succ_feudal_elective }
@@ -1385,6 +1431,7 @@ de_jure_laws = {
 		group = themes
 		default = yes
 		
+		vassal_limit = 25
 		feudal_opinion = -5
 		city_opinion = -5
 		temple_opinion = -5
@@ -1408,6 +1455,7 @@ de_jure_laws = {
 				revoke_law = themes_1
 				revoke_law = themes_2
 			}
+			add_law = vice_royalty_2
 		}
 		city_vassal_min_levy = 0.10
 		castle_vassal_min_levy = 0.10
@@ -1418,6 +1466,7 @@ de_jure_laws = {
 		show_as_title = yes
 		group = themes
 		
+		vassal_limit = 25
 		feudal_opinion = -10
 		city_opinion = -10
 		temple_opinion = -10
@@ -1481,6 +1530,7 @@ de_jure_laws = {
 				revoke_law = themes_1
 				revoke_law = themes_2
 			}
+			add_law = vice_royalty_2
 		}
 		city_vassal_min_levy = 0.15
 		castle_vassal_min_levy = 0.15
@@ -1491,6 +1541,7 @@ de_jure_laws = {
 		show_as_title = yes
 		group = themes
 		
+		vassal_limit = 25
 		feudal_opinion = -15
 		city_opinion = -15
 		temple_opinion = -15
@@ -1557,6 +1608,7 @@ de_jure_laws = {
 				revoke_law = themes_1
 				revoke_law = themes_2
 			}
+			add_law = vice_royalty_2
 		}
 		city_vassal_min_levy = 0.2
 		castle_vassal_min_levy = 0.2
@@ -1679,6 +1731,7 @@ de_jure_laws = {
 					religion = catholic
 					religion = fraticelli
 				}
+				is_tribal = no
 			}
 		}
 		allow = {
@@ -1715,6 +1768,7 @@ de_jure_laws = {
 					religion = catholic
 					religion = fraticelli
 				}
+				is_tribal = no
 			}
 		}
 		revoke_allowed = {
