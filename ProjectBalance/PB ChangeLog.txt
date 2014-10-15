@@ -1,4 +1,4 @@
-﻿3.6.0
+﻿4.0
 	Updated for 2.2/Charlemagne
 
 3.5.16
