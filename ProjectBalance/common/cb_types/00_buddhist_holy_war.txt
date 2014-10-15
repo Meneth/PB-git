@@ -33,7 +33,6 @@ buddhist_holy_war = {
 	
 	can_use_gui = {
 		ROOT = {
-			NOT = { has_character_modifier = emf_peace_pledge }
 			NOT = { has_character_modifier = holy_war_cooldown }
 			piety = 100
 		}

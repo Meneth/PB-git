@@ -29,7 +29,6 @@ pagan_holy_war = {
 	
 	can_use_gui = {
 		ROOT = {
-			NOT = { has_character_modifier = emf_peace_pledge }
 			NOT = { has_character_modifier = holy_war_cooldown }
 			custom_tooltip = {
 				text = holy_war_piety_cost_ctt

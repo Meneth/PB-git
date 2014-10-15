@@ -33,10 +33,6 @@ viking_invasion = {
 
 	battle_warscore_mult = 0.75
 	
-	can_use_gui = {
-		ROOT = { NOT = { has_character_modifier = emf_peace_pledge } }
-	}
-	
 	can_use = {
 		ROOT = {
 			has_opinion_modifier = { who = FROM modifier = preparing_to_invade }
