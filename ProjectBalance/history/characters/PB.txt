@@ -10,7 +10,7 @@
 	
 	1.1.1={
 		birth="1.1.1"
-		set_global_flag = project_balance
+		effect = { set_global_flag = project_balance }
 	}
 	800.1.1={
 		effect = {
