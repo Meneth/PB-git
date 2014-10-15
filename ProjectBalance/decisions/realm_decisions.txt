@@ -1397,8 +1397,6 @@ decisions = {
 			factor = 1
 		}
 	}
-
-}
 	form_new_kingdom = {
 		is_high_prio = yes
 		potential = {
@@ -1741,4 +1739,4 @@ decisions = {
 		}
 	}
 }
-
+}
