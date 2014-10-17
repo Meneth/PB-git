@@ -106,7 +106,6 @@ decisions = {
 	
 	convert_to_local_culture = {
 		potential = {
-			ai = no
 			is_playable = yes
 			capital_scope = {
 				NOT = { culture = ROOT }
@@ -133,7 +132,68 @@ decisions = {
 			always = no
 		}
 		ai_will_do = {
-			factor = 0
+			factor = 1
+			modifier = {
+				factor = 0.01
+			}
+			modifier = {
+				factor = 0
+				primary_title = {
+					is_conquered = yes
+					conquest_culture = ROOT
+				}
+			}
+			modifier = {
+				factor = 0
+				any_vassal = {
+					culture = ROOT
+					OR = {
+						tier = duke
+						tier = king
+						AND = {
+							tier = count
+							ROOT = { tier = duke }
+						}
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				capital_scope = {
+					OR = {
+						AND = {
+							culture = norse
+							NOT = {	has_global_flag = norse_culture_flipping }
+							ROOT = {
+								OR = {
+									culture = swedish 
+									culture = norwegian
+									culture = danish
+									culture = norman
+								}
+							}
+						}
+						AND = {
+							culture = saxon
+							ROOT = {
+								OR = {
+									culture = norman 
+									culture = english
+								}
+							}
+						}
+						AND = {
+							culture = english
+							ROOT = {
+								OR = {
+									culture = norman 
+									culture = saxon
+								}
+							}
+						}
+					}
+				}
+			}
 		}
 	}
 	
@@ -163,6 +223,30 @@ decisions = {
 			holy_order = no
 			
 			has_dlc = "Rajas of India"
+			
+			NOT = {
+				has_dlc = "Charlemagne"
+				has_landed_title = e_byzantium  # May instead renounce iconoclasm
+				has_landed_title = c_byzantion
+				religion = iconoclast
+				capital_scope = { religion = orthodox }
+			}
+		}
+		allow = {
+			OR = {
+				AND = {
+					piety = 500
+					capital_scope = {
+						religion_group = ROOT
+					}
+				}
+				AND = {
+					piety = 1000
+					capital_scope = {
+						NOT = { religion_group = ROOT }
+					}
+				}
+			}
 		}
 		effect = {
 			if = {
@@ -207,6 +291,13 @@ decisions = {
 			is_playable = yes
 			independent = yes
 			is_heretic = yes
+			NOT = {
+				has_dlc = "Charlemagne"
+				has_landed_title = e_byzantium  # May instead renounce iconoclasm
+				has_landed_title = c_byzantion
+				religion = iconoclast
+				is_heresy_of = orthodox
+			}
 		}
 		allow = {
 			NOT = { trait = zealous }

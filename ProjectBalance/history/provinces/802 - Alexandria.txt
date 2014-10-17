@@ -17,7 +17,7 @@ b_hammam = castle
 
 # Misc
 culture = egyptian_arabic
-religion = druze
+religion = miaphysite
 
 # History
 
