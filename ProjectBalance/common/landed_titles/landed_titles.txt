@@ -5428,27 +5428,10 @@ k_al-murabitids = {
 k_aydin = {
 	color = { 238 43 172 }
 }
-k_cyprus = {
-	color = { 85 138 236 }
-	capital = 757 # Famagusta
-	allow = {
-		OR = {
-			religion = catholic
-			is_heresy_of = catholic
-		}
-	}
-}
 k_beni_helal = {
 	color = { 128 163 56 }
 }
-k_candar = {
-	color = { 238 79 182 }
-	culture = turkish
-}
 
-k_eretnid = {
-	color = { 253 182 182 }
-}
 k_fatimids = {
 	# OBSOLETE
 	color={ 10 140 4 }
@@ -5460,36 +5443,14 @@ k_fatimids = {
 		always = no
 	}
 }
-k_germiyan = {
-	color = { 255 180 180 }
-}
 k_hammadid = {
 	color = { 149 180 17 }
 }
 k_kafsid = {
 	color = { 109 130 20 }
 }
-k_karaman = {
-	color = { 120 41 92 }
-	culture = turkish
-}
-k_magyar = {
-	color={ 187 70 70 }
-#	tribe = yes
-	culture = hungarian
-	
-	capital = 522 # Pest
-	
-	allow = {
-		always = no
-	}
-}
 k_marinid = {
 	color = { 46 255 5 }
-}
-k_mentese = {
-	color = { 60 130 20 }
-	culture = turkish
 }
 k_moravia = {
 	color={ 158 102 36 }
@@ -5502,33 +5463,9 @@ k_moravia = {
 		always = no
 	}
 }
-k_naples = {
-	color = { 218 217 242 }
-	capital = 334 # Napoli
-	
-	allow = {
-		always = no
-	}
-	
-	culture = italian
-}
 k_bosnia = {
 	color = { 16 125 74 }
 	culture = serbian
-}
-
-k_ottoman = {
-	color = { 247 145 30 }
-	culture = turkish
-}
-k_rum = {
-	color = { 144 182 161 }
-	culture = turkish
-	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
-}
-k_saruhan = {
-	color = { 144 171 225 }
-	culture = turkish
 }
 k_seljuk_turks = { # Seljuk Turks
 	color={ 99 168 74 }
@@ -5545,46 +5482,6 @@ k_seljuk_turks = { # Seljuk Turks
 		always = no
 	}
 }
-k_tekke = {
-	color={ 244 153 189 }
-}
-k_trinacria = {
-	color={ 249 232 247 }
-#	capital = 340 #	Palermo
-	
-	allow = {
-		OR = {
-			religion = catholic
-			is_heresy_of = catholic
-		}
-	}
-}
-
-k_genoa = {
-	color={ 234 131 110 }
-	capital = 233 # Genoa
-	culture = italian
-	
-	dignity = 200 # Never want the Republic of Genoa to change primary title
-	
-	allow = {
-		is_republic = yes
-	}
-}
-
-k_pisa = {
-	color={ 196 192 140 }
-	color2={ 255 255 255 }
-	
-	capital = 327 # Pisa
-	culture = italian
-	
-	dignity = 200 # Never want the Republic of Pisa to change primary title
-	
-	allow = {
-		is_republic = yes
-	}
-}
 
 k_zenata = {
 	color = { 0 71 189 }
@@ -5594,19 +5491,6 @@ k_zirid = {
 }
 k_ziyanids = {
 	color = { 5 76 194 }
-}
-
-k_israel = {
-	color = { 20 138 255 }
-
-	title = "KING"
-	title_female = "QUEEN"
-
-	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
-	
-	allow = {
-		always = no # Only created through special event
-	}
 }
 k_avaria = {
 	color={ 250 120 90 }
@@ -5695,20 +5579,6 @@ e_latin_empire = {
 #	
 #	dignity = 10
 #}
-
-k_hansa = {
-	color={ 142 142 142 }
-	color2={ 255 255 255 }
-	
-	capital = 262 # Lübeck
-	
-	dignity = 200 # Never want the Hanseatic League to change primary title
-	
-	allow = {
-		always = no
-		is_republic = yes
-	}
-}	
 
 d_gotland = {
 	color={ 0 45 110 }

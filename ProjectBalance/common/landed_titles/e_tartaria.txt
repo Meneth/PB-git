@@ -9,6 +9,18 @@ e_tartaria = {
 	
 	capital = 594 #	Sarkel
 	
+	k_magyar = {
+		color={ 187 70 70 }
+	#	tribe = yes
+		culture = hungarian
+		
+		capital = 522 # Pest
+		
+		allow = {
+			always = no
+		}
+	}
+
 	k_khazaria = {
 		color = { 231 192 88 }
 		color2={ 255 255 255 }

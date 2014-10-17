@@ -47,6 +47,62 @@ e_byzantium = {
 		NOT = { tier = emperor }
 	}
 	
+	k_cyprus = {
+		color = { 85 138 236 }
+		capital = 757 # Famagusta
+		allow = {
+			OR = {
+				religion = catholic
+				is_heresy_of = catholic
+			}
+		}
+	}
+	k_ottoman = {
+		color = { 247 145 30 }
+		culture = turkish
+	}
+	k_rum = {
+		color = { 144 182 161 }
+		culture = turkish
+		dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+	}
+	k_saruhan = {
+		color = { 144 171 225 }
+		culture = turkish
+	}
+	k_tekke = {
+		color={ 244 153 189 }
+	}
+	k_trinacria = {
+		color={ 249 232 247 }
+	#	capital = 340 #	Palermo
+		
+		allow = {
+			OR = {
+				religion = catholic
+				is_heresy_of = catholic
+			}
+		}
+	}
+	k_mentese = {
+		color = { 60 130 20 }
+		culture = turkish
+	}
+	k_karaman = {
+		color = { 120 41 92 }
+		culture = turkish
+	}
+	k_germiyan = {
+		color = { 255 180 180 }
+	}
+	k_candar = {
+		color = { 238 79 182 }
+		culture = turkish
+	}
+	k_eretnid = {
+		color = { 253 182 182 }
+	}
+	
 	k_thessalonika = {
 		color={ 165 11 111 }
 		color2={ 255 255 23 }

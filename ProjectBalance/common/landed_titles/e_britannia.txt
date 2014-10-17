@@ -7,6 +7,7 @@ e_britannia = {
 	welsh = Prydain
 	irish = Alba
 	scottish = Alba
+	pictish = Alba
 	breton = Prydain
 	
 	name_tier = king
@@ -37,6 +38,8 @@ e_britannia = {
 		culture = saxon
 
 		welsh = Lloegyr
+		pictish = Lloegyr
+		breton = Lloegyr
 		irish = Sasana
 		
 		d_northumberland = {
@@ -776,6 +779,7 @@ e_britannia = {
 		catholic = 300 # Crusade target weight
 		
 		welsh = "Brythoniaid"
+		pictish = "Brythoniaid"
 		breton = "Kembre"
 		irish = "Bhreatain Bheag"
 

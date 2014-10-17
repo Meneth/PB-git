@@ -1746,6 +1746,7 @@ on_chronicle_start = {
 on_character_convert_religion = {
 	events = {
 		CM.10026
+		671 #set rival conversion flag if eligible
 	}
 }
 
@@ -1796,3 +1797,4 @@ on_war_ended_defeat = {
 		CM.10041
 	}
 }
+

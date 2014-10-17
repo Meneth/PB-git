@@ -3568,7 +3568,7 @@
 	give_nickname = nick_snake_in_the_eye
 	
 	840.1.1={
-		birth="840.1.1"
+		birth=yes
 	}
 	
 	856.1.1 = {
@@ -3583,7 +3583,7 @@
 #	}
 	
 	917.1.1={
-		death="917.1.1"
+		death=yes
 	}
 }
 
@@ -3614,7 +3614,7 @@
 	}
 	#Various nerfs
 	866.11.2={
-		wealth = 50
+		wealth = 500
 		
 		raise_levies = {
 			location=57 # York
@@ -3628,7 +3628,7 @@
 				leader = ROOT
 				disband_on_peace = yes
 				match_character = ROOT
-				match_mult = 0.8
+				match_mult = 0.4
 				attrition = 0.5
 			}
 			create_character = {
@@ -3649,7 +3649,7 @@
 					owner = PREV
 					disband_on_peace = yes
 					match_character = ROOT
-					match_mult = 0.8
+					match_mult = 0.4
 					attrition = 0.5
 				}
 			}
@@ -3671,7 +3671,7 @@
 					owner = PREV
 					disband_on_peace = yes
 					match_character = ROOT
-					match_mult = 0.8
+					match_mult = 0.4
 					attrition = 0.5
 				}
 			}
@@ -3753,13 +3753,13 @@
 		birth=yes
 	}
 	866.11.2={
-		wealth = 50
+		wealth = 500
 		
 		raise_levies = {
 			location=57 # York
 			force_mult=2.0
 		}
-		#Various nerfs
+		
 		effect = {
 			spawn_unit = {
 				province = 57 # York
@@ -3767,7 +3767,7 @@
 				disband_on_peace = yes
 				leader = ROOT
 				match_character = ROOT
-				match_mult = 1.75
+				match_mult = 0.875
 				attrition = 0.5
 			}
 			c_163119 = { # Ubbe
@@ -3775,7 +3775,7 @@
 					province = 57 # York
 					owner = PREV
 					match_character = ROOT
-					match_mult = 1.75
+					match_mult = 0.875
 					attrition = 0.5
 					disband_on_peace = yes
 				}
@@ -3797,7 +3797,7 @@
 					province = 57 # York
 					owner = PREV
 					match_character = ROOT
-					match_mult = 1.75
+					match_mult = 0.875
 					attrition = 0.5
 					disband_on_peace = yes
 				}

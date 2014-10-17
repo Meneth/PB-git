@@ -37,7 +37,7 @@ TECH_GROUP_MILITARY = {
 	}
 	TECH_NAVAL = {
 		modifier = {
-			GALLEYS_PERC = 0.4
+			GALLEYS_PERC = 0.8
 		}
 		1 = {
 			add_building = ct_shipyard_1
@@ -253,6 +253,7 @@ TECH_GROUP_ECONOMY = {
 			TRADEVALUE_MULT = 0.6
 		}
 		1 = {
+			add_decision = adopt_republicanism
 		}
 		2 = {
 		}
@@ -277,6 +278,9 @@ TECH_GROUP_CULTURE = {
 	TECH_NOBLE_CUSTOMS = {
 		modifier = {
 			CASTLE_OPINION = 8
+		}
+		1 = {
+			add_decision = adopt_feudalism
 		}
 	}
 	TECH_POPULAR_CUSTOMS = {

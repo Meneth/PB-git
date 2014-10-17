@@ -26,7 +26,7 @@ faction_succ_seniority = {
 		is_landed = yes
 		is_adult = yes
 		NOT = { trait = incapable }
-		liege = { 
+		liege = {
 			is_feudal = yes 
 			OR = {
 				year = 1350
@@ -35,6 +35,7 @@ faction_succ_seniority = {
 				NOT = { religion = ROOT }
 			}
 			NOT = { religion_group = indian_group }
+			NOT = { religion_group = muslim }
 			OR = {
 				NOT = { religion_group = pagan_group }
 				is_reformed_religion = yes
@@ -85,7 +86,6 @@ faction_succ_seniority = {
 		}
 		
 		NOT = { has_character_modifier = faction_succ_seniority_ultimatum_timer }
-		is_vice_royalty = no
 	}
 	
 	# Target scope
@@ -111,6 +111,7 @@ faction_succ_seniority = {
 				}
 			}
 		}
+		is_vice_royalty = no
 	}
 	
 	# Faction member scope (ROOT = joiner, FROM = target)
@@ -637,6 +638,7 @@ faction_succ_primogeniture = {
 				NOT = { culture = ROOT }
 				NOT = { religion = ROOT }
 			}
+			NOT = { religion_group = muslim }
 			OR = {
 				NOT = { religion_group = pagan_group }
 				is_reformed_religion = yes
@@ -1219,6 +1221,7 @@ faction_succ_gavelkind = {
 		NOT = { trait = incapable }
 		liege = { 
 			is_feudal = yes 
+			NOT = { religion_group = muslim }
 			OR = {
 				year = 1350
 				primary_title = { is_tribal_type_title = no }
@@ -1826,6 +1829,7 @@ faction_succ_feudal_elective = {
 				is_reformed_religion = yes
 			}
 			NOT = { religion_group = indian_group }
+			NOT = { religion_group = muslim }
 			NOT = {
 				any_demesne_title = {
 					temporary = yes
@@ -1944,11 +1948,6 @@ faction_succ_feudal_elective = {
 		modifier = {
 			factor = 0
 			FROM = { prisoner = yes }
-		}
-		
-		modifier = {
-			factor = 0
-			FROM = { has_regent = yes }
 		}
 		
 		modifier = {

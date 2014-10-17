@@ -21,18 +21,20 @@ culture = irish
 religion = catholic
 
 # History
-867.1.1 = {
+850.1.1 = {
+	culture = norse
+	religion = norse_pagan
+}
+1000.1.1 = {
 	b_ath_cliath = castle
 	b_dublin = city
 
-	culture = norse
-	religion = norse_pagan
 	b_ath_cliath = ca_keep_1
 	b_ath_cliath = ca_militia_barracks_1
 	b_ath_cliath = ca_wall_1
 	b_dublin = ct_marketplace_1
 }
-1000.1.1 = { religion = catholic } 
+1000.1.1 = { religion = catholic }
 1028.1.1 = {
 	remove_settlement = b_mellifont
 	b_christ_church = temple 

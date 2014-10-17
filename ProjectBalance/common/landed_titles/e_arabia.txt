@@ -9,7 +9,20 @@ e_arabia = {
 	culture = bedouin_arabic
 	
 	short_name = yes
+	
+	k_israel = {
+		color = { 20 138 255 }
 
+		title = "KING"
+		title_female = "QUEEN"
+
+		dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+		
+		allow = {
+			always = no # Only created through special event
+		}
+	}
+	
 	k_arabia = {
 		color={ 124 199 50 }
 		color2={ 255 255 255 }
