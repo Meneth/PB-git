@@ -28,6 +28,7 @@ decisions = {
 			war = no
 			prisoner = no
 			in_command = no
+			NOT = { trait = in_hiding }
 			age = 16
 			prestige = 500
 			wealth = 200
@@ -254,6 +255,7 @@ decisions = {
 			war = no
 			in_command = no
 			prisoner = no
+			NOT = { trait = in_hiding }
 			is_adult = yes
 			prestige = 500
 			wealth = 200
@@ -708,7 +710,8 @@ decisions = {
 	create_hungary = {
 		is_high_prio = yes
 		potential = {
-			#Z: No day 1 restriction because it could be executed on day 1
+			has_global_flag = project_balance
+			had_global_flag = { flag = project_balance days = 1 }
 			has_landed_title = k_magyar
 			culture = hungarian
 			k_hungary = {
@@ -729,6 +732,7 @@ decisions = {
 				text = EVTOPTA62910_CUSTOM
 			}
 			k_hungary = {
+				reset_coa = THIS
 				grant_title = ROOT
 				copy_title_laws = k_magyar
 				copy_title_history = k_magyar
@@ -800,7 +804,8 @@ decisions = {
 	create_leon = {
 		is_high_prio = yes
 		potential = {
-			#Z: No day 1 restriction because it could be executed on day 1
+			has_global_flag = project_balance
+			had_global_flag = { flag = project_balance days = 1 }
 			has_landed_title = k_asturias
 			k_leon = {
 				has_holder = no
