@@ -3,6 +3,7 @@
 	Fixed certain duchies having no technology
 	Added vanilla's duchy of Pskov
 	Made the Pechenegs tribal
+	Fixed Bohemia being dejure Germania in 769
 
 4.0
 	Updated for 2.2/Charlemagne
