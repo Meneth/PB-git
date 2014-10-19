@@ -24,11 +24,6 @@ religion = slavic_pagan
 # History
 867.1.1 = {
 	culture = russian
-
-	b_cernauti = castle
-	b_torki = castle
-	b_suceava = city
-	b_bogdana = temple
 }
 988.1.1 = { religion = orthodox }
 988.1.1 = { culture = romanian }
