@@ -1024,6 +1024,36 @@ e_russia = {
 				b_luga = {
 				}
 			}
+			c_toropets = {
+				color={ 157 173 113 }
+				color2={ 255 255 255 }
+						
+				b_staryarussa = {
+				}
+				b_valday = {
+				}
+				b_toropets = {
+				}
+				b_demyansk = {
+				}
+				b_shimsk = {
+				}
+				b_dno = {
+				}
+				b_lychkovo = {
+				}
+				b_kresttsy = {
+				}
+			}
+		}
+		d_pskov = {
+			color={ 140 130 62 }
+			color2={ 255 255 255 }
+			
+			capital = 413 # Pskov
+			
+			german = "Pleskau"
+
 			c_pskov = {
 				color={ 151 167 107 }
 				color2={ 255 255 255 }
@@ -1066,27 +1096,6 @@ e_russia = {
 				b_loknya = {
 				}
 				b_staryatoropa = {
-				}
-			}
-			c_toropets = {
-				color={ 157 173 113 }
-				color2={ 255 255 255 }
-						
-				b_staryarussa = {
-				}
-				b_valday = {
-				}
-				b_toropets = {
-				}
-				b_demyansk = {
-				}
-				b_shimsk = {
-				}
-				b_dno = {
-				}
-				b_lychkovo = {
-				}
-				b_kresttsy = {
 				}
 			}
 		}
