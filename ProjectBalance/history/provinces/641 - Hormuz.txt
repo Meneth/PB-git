@@ -17,9 +17,10 @@ b_jiroth = temple
 
 # Misc
 culture = persian
-religion = sunni
+religion = zoroastrian
 
 # History
+790.1.1 = { religion = sunni }
 1066.1.1 = {
 	capital = b_abarkawan
 	trade_post = b_motamedi

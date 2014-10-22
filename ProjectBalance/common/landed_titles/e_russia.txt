@@ -40,6 +40,8 @@ e_russia = {
 			
 			capital = 417 # Vitebsk
 			
+			ilmenian = Kryvia
+			
 			c_minsk = {
 				color={ 174 43 43 }
 				color2={ 255 255 255 }
@@ -110,6 +112,8 @@ e_russia = {
 			color2={ 255 255 255 }
 			
 			capital = 552 # Turov
+			
+			ilmenian = "Dregovichia"
 			
 			c_turov = {
 				color={ 166 89 91 }
@@ -188,6 +192,8 @@ e_russia = {
 			color2={ 255 255 255 }
 			
 			capital = 580 # Ryazan
+			
+			mordvin = Meshchera
 			
 			c_pronsk = {
 				color={ 22 131 80 }
@@ -289,6 +295,9 @@ e_russia = {
 			
 			capital = 568 # Smolensk
 			
+			severian = "Radimichia"
+			ilmenian = "Radimichia"
+			
 			c_smolensk = {
 				color={ 229 244 185 }
 				color2={ 255 255 255 }
@@ -354,6 +363,10 @@ e_russia = {
 			
 			capital = 554 # Chernigov
 			dignity = 3
+			
+			severian = "Severia"
+			ilmenian = "Severia"
+			mordvin = "Severia"
 			
 			c_lyubech = {
 				color={ 238 253 194 }
@@ -895,6 +908,15 @@ e_russia = {
 			norse = "Holmgarðr"
 			danish = "Holmgård"
 			norwegian = "Holmgård"
+			ilmenian = "Ilmen"
+			severian = "Ilmen"
+			mordvin = "Ilmen"
+			samoyed = "Ilmen"
+			finnish = "Ilmen"
+			lappish = "Ilmen"
+			ugricbaltic = "Ilmen"
+			komi = "Ilmen"
+			khanty = "Ilmen"
 			
 			pagan_coa = {
 				template = 0
@@ -1002,6 +1024,36 @@ e_russia = {
 				b_luga = {
 				}
 			}
+			c_toropets = {
+				color={ 157 173 113 }
+				color2={ 255 255 255 }
+						
+				b_staryarussa = {
+				}
+				b_valday = {
+				}
+				b_toropets = {
+				}
+				b_demyansk = {
+				}
+				b_shimsk = {
+				}
+				b_dno = {
+				}
+				b_lychkovo = {
+				}
+				b_kresttsy = {
+				}
+			}
+		}
+		d_pskov = {
+			color={ 140 130 62 }
+			color2={ 255 255 255 }
+			
+			capital = 413 # Pskov
+			
+			german = "Pleskau"
+
 			c_pskov = {
 				color={ 151 167 107 }
 				color2={ 255 255 255 }
@@ -1044,27 +1096,6 @@ e_russia = {
 				b_loknya = {
 				}
 				b_staryatoropa = {
-				}
-			}
-			c_toropets = {
-				color={ 157 173 113 }
-				color2={ 255 255 255 }
-						
-				b_staryarussa = {
-				}
-				b_valday = {
-				}
-				b_toropets = {
-				}
-				b_demyansk = {
-				}
-				b_shimsk = {
-				}
-				b_dno = {
-				}
-				b_lychkovo = {
-				}
-				b_kresttsy = {
 				}
 			}
 		}
@@ -1151,6 +1182,9 @@ e_russia = {
 			
 			capital = 570 # Tver
 			
+			ilmenian = "Vyatich"
+			severian = "Vyatich"
+			
 			c_tver = {
 				color={ 172 186 128 }
 				color2={ 255 255 255 }
@@ -1200,6 +1234,13 @@ e_russia = {
 			
 			capital = 572 # Yaroslavl
 			
+			finnish = Merya
+			lappish = Merya
+			ugricbaltic = Merya
+			komi = Merya
+			samoyed = Merya
+			mordvin = Merya
+			
 			c_kostroma = {
 				color={ 181 195 137 }
 				color2={ 255 255 255 }
@@ -1248,6 +1289,9 @@ e_russia = {
 			color2={ 255 255 255 }
 			
 			capital = 582 # Vladimir
+			
+			mordvin = "Murom"
+			samoyed = "Murom"
 
 			c_galich_mersky = {
 				color={ 190 204 146 }
@@ -1368,6 +1412,8 @@ e_russia = {
 			
 			capital = 575 # Moskva
 			
+			mordvin = Mochkava
+			
 			c_mozhaysk = {
 				color={ 228 168 7 }
 				color2={ 255 255 255 }
@@ -1393,7 +1439,10 @@ e_russia = {
 				color={ 220 235 176 }
 				color2={ 255 255 255 }
 				
+				mordvin = Mochkava
+				
 				b_moskva = {
+					mordvin = Mochkava
 				}
 				b_rogozhi = {
 				}

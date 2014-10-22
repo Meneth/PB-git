@@ -9,6 +9,43 @@ e_italy = {
 	name_tier = king
 	short_name = yes
 	
+	k_genoa = {
+		color={ 234 131 110 }
+		capital = 233 # Genoa
+		culture = italian
+		
+		dignity = 200 # Never want the Republic of Genoa to change primary title
+		
+		allow = {
+			is_republic = yes
+		}
+	}
+
+	k_pisa = {
+		color={ 196 192 140 }
+		color2={ 255 255 255 }
+		
+		capital = 327 # Pisa
+		culture = italian
+		
+		dignity = 200 # Never want the Republic of Pisa to change primary title
+		
+		allow = {
+			is_republic = yes
+		}
+	}
+	
+	k_naples = {
+		color = { 218 217 242 }
+		capital = 334 # Napoli
+		
+		allow = {
+			always = no
+		}
+		
+		culture = italian
+	}
+	
 	#Moved Nice here. Bit of dignity for Tuscany
 	k_italy = {
 		color={ 244 227 160 }

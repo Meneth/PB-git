@@ -56,6 +56,26 @@ province_event = {
 			name = religious_unrest
 			duration = 730
 		}
+		owner = {
+			if = {
+				limit = { ai = no }
+				chronicle = {
+					entry = CHRONICLE_HERESY_SPREAD
+					picture = GFX_evt_heretic
+				}
+			}
+		}
+		owner = {
+			any_liege = {
+				if = {
+					limit = { ai = no }
+					chronicle = {
+						entry = CHRONICLE_HERESY_SPREAD
+						picture = GFX_evt_heretic
+					}
+				}
+			}
+		}
 	}
 	
 	option = {
@@ -696,6 +716,7 @@ character_event = {
 		}
 		
 		can_change_religion = yes
+		NOT = { trait = in_hiding }
 	}
 	
 	mean_time_to_happen = {
@@ -2449,7 +2470,7 @@ character_event = {
 				years = 5
 			}
 		}
-		clr_character_flag  = ask_for_indulgence	
+#		clr_character_flag  = ask_for_indulgence	
 	}
 	option = {
 		name = "EVTOPTA39251"
@@ -2491,7 +2512,7 @@ character_event = {
 				years = 5
 			}
 		}
-		clr_character_flag  = ask_for_indulgence	
+#		clr_character_flag  = ask_for_indulgence	
 	}
 	option = {
 		name = "EVTOPTA39251"
@@ -2534,7 +2555,7 @@ character_event = {
 				years = 5
 			}
 		}
-		clr_character_flag  = ask_for_indulgence	
+#		clr_character_flag  = ask_for_indulgence	
 	}
 	option = {
 		name = "EVTOPTA39251"
@@ -2576,7 +2597,7 @@ character_event = {
 				years = 5
 			}
 		}
-		clr_character_flag  = ask_for_indulgence	
+#		clr_character_flag  = ask_for_indulgence	
 	}
 	option = {
 		name = "EVTOPTB39251"
@@ -2753,7 +2774,10 @@ character_event = {
 			independent = yes
 			religion = catholic
 			rightful_religious_head = ROOT
-			is_feudal = yes
+			OR = {
+				is_feudal = yes
+				is_tribal = yes
+			}
 			any_vassal = {
 				is_theocracy = yes
 				religion = catholic
@@ -2778,7 +2802,10 @@ character_event = {
 			limit = {
 				religion = catholic
 				rightful_religious_head = ROOT
-				is_feudal = yes
+				OR = {
+					is_feudal = yes
+					is_tribal = yes
+				}
 				any_vassal = {
 					is_theocracy = yes
 					religion = catholic
@@ -4332,7 +4359,7 @@ narrative_event = {
 							owner = PREV
 							leader = THIS
 							match_character = PREVPREV
-							match_mult = 0.075
+							match_mult = 0.038
 							attrition = 0.5
 							cannot_inherit = yes
 						}
@@ -4353,7 +4380,7 @@ narrative_event = {
 							owner = PREV
 							leader = THIS
 							match_character = PREVPREV
-							match_mult = 0.075
+							match_mult = 0.038
 							attrition = 0.5
 							cannot_inherit = yes
 						}
@@ -4374,7 +4401,7 @@ narrative_event = {
 							owner = PREV
 							leader = THIS
 							match_character = PREVPREV
-							match_mult = 0.075
+							match_mult = 0.038
 							attrition = 0.5
 							cannot_inherit = yes
 						}
@@ -4395,7 +4422,7 @@ narrative_event = {
 							owner = PREV
 							leader = THIS
 							match_character = PREVPREV
-							match_mult = 0.075
+							match_mult = 0.038
 							attrition = 0.5
 							cannot_inherit = yes
 						}
@@ -4416,7 +4443,7 @@ narrative_event = {
 							owner = PREV
 							leader = THIS
 							match_character = PREVPREV
-							match_mult = 0.075
+							match_mult = 0.038
 							attrition = 0.5
 							cannot_inherit = yes
 						}
@@ -4437,7 +4464,7 @@ narrative_event = {
 							owner = PREV
 							leader = THIS
 							match_character = PREVPREV
-							match_mult = 0.075
+							match_mult = 0.038
 							attrition = 0.5
 							cannot_inherit = yes
 						}
@@ -4458,7 +4485,7 @@ narrative_event = {
 							owner = PREV
 							leader = THIS
 							match_character = PREVPREV
-							match_mult = 0.15
+							match_mult = 0.075
 							attrition = 0.0
 							cannot_inherit = yes
 							disband_on_peace = yes
@@ -4480,7 +4507,7 @@ narrative_event = {
 							owner = PREV
 							leader = THIS
 							match_character = PREVPREV
-							match_mult = 0.15
+							match_mult = 0.075
 							attrition = 0.0
 							cannot_inherit = yes
 							disband_on_peace = yes
@@ -4502,7 +4529,7 @@ narrative_event = {
 							owner = PREV
 							leader = THIS
 							match_character = PREVPREV
-							match_mult = 0.15
+							match_mult = 0.075
 							attrition = 0.0
 							cannot_inherit = yes
 							disband_on_peace = yes
@@ -4633,6 +4660,9 @@ narrative_event = {
 			496 = { # Constantinople
 				NOT = { owner = { religion_group = christian } }
 			}
+			753 = { # Ancyra
+				NOT = { owner = { religion_group = christian } }
+			}
 			AND = {
 				482 = { # Athens
 					NOT = { owner = { religion_group = christian } }
@@ -4754,11 +4784,19 @@ narrative_event = {
 			112 = { # Paris
 				NOT = { owner = { religion_group = christian } }
 			}
-			119 = { # Cologne
-				NOT = { owner = { religion_group = christian } }
+			AND = {
+				year = 850
+				119 = { # Cologne
+					religion_group = christian
+					NOT = { owner = { religion_group = christian } }
+				}
 			}
-			257 = { # Braunschweig
-				NOT = { owner = { religion_group = christian } }
+			AND = {
+				year = 850
+				257 = { # Braunschweig
+					religion_group = christian
+					NOT = { owner = { religion_group = christian } }
+				}
 			}
 		}
 	}
@@ -5061,7 +5099,6 @@ narrative_event = {
 	
 	only_playable = yes
 	min_age = 16
-	only_men = yes
 	
 	trigger = {
 		religion_group = pagan_group

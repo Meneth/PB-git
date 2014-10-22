@@ -5,7 +5,7 @@ title = c_bjarmia
 
 # Settlements
 max_settlements = 2
-b_okladnikowa = castle
+b_okladnikowa = tribal
 #b_kusnezowa = city
 #b_okulovsky = temple
 
@@ -20,6 +20,6 @@ culture = samoyed
 religion = finnish_pagan
 
 # History
-1136.1.2 = { trade_post = b_miroslavich culture = russian religion = orthodox }
 1136.1.2 = { b_kamenka = city }
+1136.1.2 = { trade_post = b_miroslavich culture = russian religion = orthodox }
 1136.1.2 = { capital = b_kamenka }

@@ -17,9 +17,10 @@ b_evaz = temple
 
 # Misc
 culture = persian
-religion = sunni
+religion = zoroastrian
 
 # History
+800.1.1 = { religion = sunni }
 1066.1.1 = { 
 	trade_post = b_suren
 }

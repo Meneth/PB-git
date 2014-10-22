@@ -9,6 +9,18 @@ e_tartaria = {
 	
 	capital = 594 #	Sarkel
 	
+	k_magyar = {
+		color={ 187 70 70 }
+	#	tribe = yes
+		culture = hungarian
+		
+		capital = 522 # Pest
+		
+		allow = {
+			always = no
+		}
+	}
+
 	k_khazaria = {
 		color = { 231 192 88 }
 		color2={ 255 255 255 }
@@ -32,6 +44,8 @@ e_tartaria = {
 			color2={ 255 255 255 }
 			
 			capital = 620 # Itil
+			
+			pecheneg = "Pecheneg"
 		
 			c_itil = {
 				color={ 155 122 34 }
@@ -344,6 +358,8 @@ e_tartaria = {
 			color2={ 255 255 255 }
 			
 			capital = 1430 # Kipchak
+			
+			pecheneg = "Pecheneg"
 			
 			c_kipchak = {
 				color={ 151 94 60 }

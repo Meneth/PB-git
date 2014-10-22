@@ -464,6 +464,17 @@ character_event = {
 	option = {
 		name = EVTOPTA_TOG_101
 		custom_tooltip = { text = nerge_assemble }
+		if = {
+			limit = { trait = in_hiding	}
+			remove_trait = in_hiding
+			clr_character_flag = do_not_disturb
+			add_character_modifier = {
+				name = went_out_of_hiding_timer
+				duration = 180
+				hidden = yes
+			}
+			hidden_tooltip = { character_event = { id = CM.6400 } } # Notify plotters and family
+		}
 	}
 }
 
@@ -486,6 +497,13 @@ character_event = {
 			hidden_tooltip = {
 				character_event = { id = TOG.150 days = 60 random = 10 }
 			}	
+		}
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_HELD_NERGE
+				picture = GFX_evt_tengri_throneroom_oldgods
+			}
 		}
 	}
 }

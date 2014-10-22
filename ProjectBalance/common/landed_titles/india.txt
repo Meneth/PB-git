@@ -231,6 +231,8 @@ e_rajastan = {
 				color2={ 255 255 255 }
 				
 				b_multan = {
+					holy_site = zun_pagan
+					holy_site = zun_pagan_reformed
 				}
 				b_mulasthana = {
 				}
@@ -1108,6 +1110,8 @@ e_rajastan = {
 				}
 				b_ghaneraov = {
 				}
+				b_naddula = {
+				}
 			}
 			c_medantaka = {
 				color={ 194 67 30 }
@@ -1136,8 +1140,6 @@ e_rajastan = {
 				b_barodiya = {
 				}
 				b_achalgarh = {
-				}
-				b_naddula = {
 				}
 				b_khudala = {
 				}

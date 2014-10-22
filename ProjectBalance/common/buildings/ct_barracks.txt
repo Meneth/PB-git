@@ -2,7 +2,7 @@
 city = {
 	ct_barracks_1 = {
 		trigger = { TECH_CITY_CONSTRUCTION = 0 }
-		build_cost = 100
+		gold_cost = 100
 		build_time = 365
 		light_infantry = 60
 		archers = 30
@@ -16,7 +16,7 @@ city = {
 		trigger = { TECH_CITY_CONSTRUCTION = 1 }
 		prerequisites = { ct_wall_1 }
 		upgrades_from = ct_barracks_1
-		build_cost = 120
+		gold_cost = 120
 		build_time = 547
 		light_infantry = 40
 		archers = 70
@@ -30,7 +30,7 @@ city = {
 		trigger = { TECH_CITY_CONSTRUCTION = 2 }
 		prerequisites = { ct_wall_2 }
 		upgrades_from = ct_barracks_2
-		build_cost = 200
+		gold_cost = 200
 		build_time = 730
 		light_infantry = 80
 		archers = 50
@@ -43,7 +43,7 @@ city = {
 	ct_barracks_4 = {
 		trigger = { TECH_CITY_CONSTRUCTION = 4 }
 		upgrades_from = ct_barracks_3
-		build_cost = 300
+		gold_cost = 300
 		build_time = 1095
 		light_infantry = 60
 		archers = 90
@@ -56,7 +56,7 @@ city = {
 	ct_barracks_5 = {
 		trigger = { TECH_CITY_CONSTRUCTION = 6 }
 		upgrades_from = ct_barracks_4
-		build_cost = 400
+		gold_cost = 400
 		build_time = 2160
 		light_infantry = 100
 		archers = 70
@@ -69,7 +69,7 @@ city = {
 	ct_barracks_6 = {
 		trigger = { TECH_CITY_CONSTRUCTION = 8 }
 		upgrades_from = ct_barracks_5
-		build_cost = 500
+		gold_cost = 500
 		build_time = 2190
 		light_infantry = 80
 		archers = 110

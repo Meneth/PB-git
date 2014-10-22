@@ -61,6 +61,7 @@ minor_conquest = {
 	}
 	
 	on_success = {
+		hidden_tooltip = { ROOT = { add_character_modifier = { name = emf_victory_timer duration = 7 hidden = yes } } }
 		ROOT = {
 			prestige = 100
 		}
@@ -68,11 +69,11 @@ minor_conquest = {
 			prestige = -100
 			any_demesne_title = {
 				limit = { tier = count }
-				usurp_title = ROOT
+				usurp_title = { target = ROOT type = invasion }
 			}
 			any_realm_title = {
 				limit = { tier = count }
-				usurp_title = ROOT
+				usurp_title = { target = ROOT type = invasion }
 			}
 		}
 	}
@@ -84,6 +85,7 @@ minor_conquest = {
 	}
 	
 	on_reverse_demand = {
+		hidden_tooltip = { FROM = { add_character_modifier = { name = emf_victory_timer duration = 7 hidden = yes } } }
 		ROOT = {
 			prestige = -50
 			transfer_scaled_wealth = {
@@ -149,6 +151,7 @@ subjugation = {
 	}
 	
 	on_success = {
+		hidden_tooltip = { ROOT = { add_character_modifier = { name = emf_victory_timer duration = 7 hidden = yes } } }
 		ROOT = {
 			prestige = 100
 		}
@@ -158,7 +161,7 @@ subjugation = {
 				limit = { NOT = { tier = count } }
 				any_demesne_title = {
 					limit = { higher_tier_than = count }
-					usurp_title = ROOT
+					usurp_title = { target = ROOT type = invasion }
 				}
 			}
 			set_defacto_liege = ROOT
@@ -172,6 +175,7 @@ subjugation = {
 	}
 	
 	on_reverse_demand = {
+		hidden_tooltip = { FROM = { add_character_modifier = { name = emf_victory_timer duration = 7 hidden = yes } } }
 		ROOT = {
 			prestige = -50
 			transfer_scaled_wealth = {
@@ -235,6 +239,7 @@ subjugation_duke = {
 	}
 	
 	on_success = {
+		hidden_tooltip = { ROOT = { add_character_modifier = { name = emf_victory_timer duration = 7 hidden = yes } } }
 		ROOT = {
 			prestige = 100
 		}
@@ -251,6 +256,7 @@ subjugation_duke = {
 	}
 	
 	on_reverse_demand = {
+		hidden_tooltip = { FROM = { add_character_modifier = { name = emf_victory_timer duration = 7 hidden = yes } } }
 		ROOT = {
 			prestige = -50
 			transfer_scaled_wealth = {

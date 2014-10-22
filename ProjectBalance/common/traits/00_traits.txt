@@ -762,6 +762,7 @@ strong = {
 	
 	sex_appeal_opinion = 10
 	vassal_opinion = 5
+	tribal_opinion = 10
 	
 	command_modifier = {
 		damage = 0.02
@@ -783,6 +784,7 @@ weak = {
 	
 	sex_appeal_opinion = -10
 	vassal_opinion = -10
+	tribal_opinion = -20
 	
 	command_modifier = {
 		morale_defence = -0.01

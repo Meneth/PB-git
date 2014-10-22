@@ -2,7 +2,7 @@
 temple = {
 	tp_elite_barracks_1 = {
 		trigger = { TECH_TEMPLE_CONSTRUCTION = 0 }
-		build_cost = 100
+		gold_cost = 100
 		build_time = 365
 		heavy_infantry = 45
 		retinuesize = 20
@@ -15,7 +15,7 @@ temple = {
 		trigger = { TECH_TEMPLE_CONSTRUCTION = 1 }
 		prerequisites = { tp_wall_1 }
 		upgrades_from = tp_elite_barracks_1
-		build_cost = 120
+		gold_cost = 120
 		build_time = 730
 		heavy_infantry = 55
 		retinuesize = 20
@@ -28,7 +28,7 @@ temple = {
 		trigger = { TECH_TEMPLE_CONSTRUCTION = 2 }
 		prerequisites = { tp_wall_2 }
 		upgrades_from = tp_elite_barracks_2
-		build_cost = 200
+		gold_cost = 200
 		build_time = 730
 		heavy_infantry = 65
 		retinuesize = 20
@@ -40,7 +40,7 @@ temple = {
 	tp_elite_barracks_4 = {
 		trigger = { TECH_TEMPLE_CONSTRUCTION = 4 }
 		upgrades_from = tp_elite_barracks_3
-		build_cost = 300
+		gold_cost = 300
 		build_time = 1095
 		heavy_infantry = 75
 		retinuesize = 20
@@ -52,7 +52,7 @@ temple = {
 	tp_elite_barracks_5 = {
 		trigger = { TECH_TEMPLE_CONSTRUCTION = 6 }
 		upgrades_from = tp_elite_barracks_4
-		build_cost = 400
+		gold_cost = 400
 		build_time = 2190
 		heavy_infantry = 85
 		retinuesize = 20
@@ -64,7 +64,7 @@ temple = {
 	tp_elite_barracks_6 = {
 		trigger = { TECH_TEMPLE_CONSTRUCTION = 8 }
 		upgrades_from = tp_elite_barracks_5
-		build_cost = 500
+		gold_cost = 500
 		build_time = 2190
 		heavy_infantry = 95
 		retinuesize = 20

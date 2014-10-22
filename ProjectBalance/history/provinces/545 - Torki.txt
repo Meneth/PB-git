@@ -6,9 +6,10 @@ title = c_torki
 # Settlements
 max_settlements = 4
 
-b_torki = castle
-b_suceava = city
-b_bogdana = temple
+b_torki = tribal
+
+#b_suceava = city
+#b_bogdana = temple
 
 #b_cernauti = castle
 #b_hotin = castle
@@ -17,10 +18,12 @@ b_bogdana = temple
 #b_siret = castle
 
 # Misc
-culture = hungarian
-religion = tengri_pagan
+culture = volhynian
+religion = slavic_pagan
 
 # History
+867.1.1 = {
+	culture = russian
+}
 988.1.1 = { religion = orthodox }
 988.1.1 = { culture = romanian }
-1187.1.1 = { b_cernauti = castle } 

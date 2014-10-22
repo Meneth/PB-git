@@ -37,31 +37,9 @@ imperial_reconquest = {
 	can_use_gui = {
 		ROOT = {
 			prestige = 500
-			hidden_tooltip = {
-				OR = {
-					AND = {
-						NOT = { trait = content }
-						NOT = { trait = craven }
-						NOT = { trait = slothful }
-						NOT = { trait = stressed }
-						NOT = { trait = depressed }
-						NOT = { trait = infirm }
-						NOT = { trait = incapable }
-						NOT = { trait = blinded }
-						OR = {
-							trait = ambitious
-							trait = brave
-							trait = lunatic
-							trait = possessed
-							trait = wroth
-							trait = diligent
-						}
-					}
-					ai = no
-				}
-			}
 		}
 	}
+	
 	can_use = {
 		ROOT = {
 			OR = {
@@ -71,10 +49,30 @@ imperial_reconquest = {
 			independent = yes
 			religion_group = christian
 			NOT = { same_realm = FROM }
-		}
-		OR = {
-			NOT = { has_global_flag = rum_formed }
-			had_global_flag = { flag = rum_formed days = 5475 }
+			OR = {
+				ai = no
+				FROM = { ai = no }
+				AND = {
+					NOT = {
+						trait = content
+						trait = craven
+						trait = slothful
+						trait = stressed
+						trait = depressed
+						trait = infirm
+						trait = incapable
+						trait = blinded
+					}
+					OR = {
+						trait = ambitious
+						trait = brave
+						trait = lunatic
+						trait = possessed
+						trait = wroth
+						trait = diligent
+					}
+				}
+			}
 		}
 	}
 
@@ -219,6 +217,7 @@ imperial_reconquest = {
 	}
 	
 	on_success = {
+		hidden_tooltip = { ROOT = { add_character_modifier = { name = emf_victory_timer duration = 7 hidden = yes } } }
 		any_attacker = {
 			limit = { character = ROOT }
 			participation_scaled_prestige = 100
@@ -234,25 +233,9 @@ imperial_reconquest = {
 	}
 
 	on_success_title = {
-		custom_tooltip = {
-			text = vassalize_or_take_under_title_ctt
+		custom_tooltip = { 
+			text = other_invasion_succ_tip
 			hidden_tooltip = {
-				# vassalize_or_take_under_title:
-				#
-				# Attempt to vassalize all of the target title's direct de jure vassal title holders.				
-				# Vassalization will fail when a given ruler holds other landed titles outside of the
-				# de jure target title (LESS LIKELY BUT NEEDS CONFIRM: or has vassals who hold titles
-				# outside of the de jure target title).
-				#
-				# When vassalization fails, ROOT directly gains all titles held by the ruler
-				# within the de jure target title and (recursively) attempts vassalization in the
-				# same manner to all rulers holding titles that are de jure (or possibly de facto)
-				# vassal titles to each directly gained title. As mentioned, this is done recursively
-				# until all the entire de jure target title is either seized or vassalized. The de
-				# jure target title itself is untouched, as with, e.g., gain_settlements_under_title.
-				#
-				# -Z
-				
 				ROOT = {
 					vassalize_or_take_under_title = {
 						title = PREV
@@ -310,6 +293,7 @@ imperial_reconquest = {
 	}
 
 	on_reverse_demand = {
+		hidden_tooltip = { FROM = { add_character_modifier = { name = emf_victory_timer duration = 7 hidden = yes } } }
 		ROOT = {
 			transfer_scaled_wealth = {
 				to = FROM
@@ -357,5 +341,15 @@ imperial_reconquest = {
 	
 	defender_ai_defeat_worth = {
 		factor = 100
+	}
+	
+	# ai importance placed on this CB: scope is the targeted title, ROOT is the attacking character, FROM is the defending character
+	ai_will_do = { 
+		factor = 1
+		
+		modifier = {
+			factor = 10
+			FROM = { ai = no }
+		}
 	}
 }

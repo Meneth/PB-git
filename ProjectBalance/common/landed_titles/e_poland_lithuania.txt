@@ -522,7 +522,7 @@ e_poland_lithuania = {
 			color={ 110 50 50 }
 			color2={ 255 255 255 }
 			
-			capital = 377 # Liivimaa
+			capital = 375 # Liivimaa
 			
 			pagan_coa = {
 				template = 0
@@ -541,47 +541,22 @@ e_poland_lithuania = {
 				color={ 125 50 50 }
 				color2={ 255 255 255 }
 				
-				swedish = "Lettgallen"
-				norse = "Lettgallen"
-				danish = "Lettgallen"
-				norwegian = "Lettgallen"
-				german = "Lettgallen"
-			
-				b_jersika = {
-				}
-				b_erle = {
-				}
-				b_kreuzburg = {
-				}
-				b_kokenhusen = {
-				}
-				b_dungada = {
-				}
-				b_dignaja = {
-				}
-				b_linewerd = {
-				}
-				b_landau = {
-				}
-			}
-			c_livs = {
-				color={ 170 50 50 }
-				color2={ 255 255 255 }
-				
 				swedish = "Livland"
 				norse = "Livland"
 				danish = "Livland"
 				norwegian = "Livland"
 				german = "Livland"
 
-				b_wenden = {
+				b_gaujiena = {
+					ugricbaltic = Atsela
+					german = Adsel
+					lithuanian = Atzeles
 				}
-				b_lemisele = {
-					swedish = "Lemsal"
-					norse = "Lemsal"
-					danish = "Lemsal"
-					norwegian = "Lemsal"
-					german = "Lemsal"
+				b_kokenois = {
+					ugricbaltic = Koknese
+					german = Kokenhusen
+					polish = Koknese
+					lithuanian = Koknese
 				}
 				b_uxkull = { # Ikskila
 					swedish = "Yxkull"
@@ -589,16 +564,68 @@ e_poland_lithuania = {
 					danish = "Yxkull"
 					norwegian = "Yxkull"
 					german = "Üxküll"
+					ugricbaltic = Ikškila
+					polish = Ikškile
+					lithuanian = Ikškile
 				}
-				b_cesis = {
-				}
-				b_salaspils = {
-				}
-				b_kokenois = {
-				}
-				b_seswegen = {
+				b_wenden = {
+					ugricbaltic = Võnnu
+					polish = Kies
+					lithuanian = Cesys
 				}
 				b_wolmer = {
+					ugricbaltic = Valmiera
+					german = Wolmar
+					polish = Valmiera
+					lithuanian = Valmiera
+				}
+				b_lemisele = {
+					swedish = "Lemsal"
+					norse = "Lemsal"
+					danish = "Lemsal"
+					norwegian = "Lemsal"
+					german = "Lemsal"
+					ugricbaltic = Lemsalu
+					german = Lemsal
+					polish = Limbaži
+					lithuanian = Limbažiai
+				}
+				b_seswegen = {
+					ugricbaltic = Cesvaine
+					german = Sesswegen
+					polish = Cesvaine
+					lithuanian = Cesvaine
+				}
+			}
+			c_livs = {
+				color={ 170 50 50 }
+				color2={ 255 255 255 }
+				
+				swedish = Lääne
+				danish = Lääne
+				
+				b_salaspils = {
+				}
+				b_haapsalu = {
+				}
+				b_lihula = {
+					german = Leal
+				}
+				b_parnu = {
+					ugricbaltic = Pärnu
+					german = Pernau
+					polish = Parnawa
+					lithuanian = Pernu
+				}
+				b_martna = {
+				}
+				b_kullamaa = {
+				}
+				b_karuse = {
+				}
+				b_pooravere = {
+				}
+				b_piirsalu = {
 				}
 			}
 			c_dorpat = {
@@ -728,13 +755,22 @@ e_poland_lithuania = {
 				color={ 125 18 18 }
 				color2={ 255 255 255 }
 				
-				german = "Düna"
-				swedish = "Dyna"
-				norse = "Dyna"
-				danish = "Dyna"
-				norwegian = "Dyna"
-				russian = "Dvina"
+				swedish = "Lettgallen"
+				norse = "Lettgallen"
+				danish = "Lettgallen"
+				norwegian = "Lettgallen"
+				german = "Lettgallen"
 			
+				b_erle = {
+				}
+				b_jersika = {
+					german = Gerzika
+				}
+				b_kreuzburg = {
+					ugricbaltic = Krustpilsi
+					polish = Krzyzbork
+					lithuanian = Krustpils
+				}
 				b_daugavpils = {
 					german = "Dünaburg"
 					swedish = "Dynaborg"
@@ -743,20 +779,28 @@ e_poland_lithuania = {
 					norwegian = "Dynaborg"
 					finnish = "Väinänlinna"
 					russian = "Dvinsk"
+					ugricbaltic = Väinalinn
+					polish = Dyneburg
+					lithuanian = Daugpilis
 				}
 				b_balvi = {
+					lithuanian = Balvai
 				}
 				b_rezekne = {
+					polish = Rzezyca
 				}
 				b_kraslava = {
+					polish = Kraslaw
 				}
 				b_vilaka = {
+					lithuanian = Viliaka
 				}
 				b_varakjani = {
+					ugricbaltic = Varaklani
+					german = Varaklani
 				}
 				b_ludza = {
-				}
-				b_vilani = {
+					polish = Lucyn
 				}
 			}
 		}
@@ -900,6 +944,9 @@ e_poland_lithuania = {
 			norse = "Kurland"
 			danish = "Kurland"
 			norwegian = "Kurland"
+			lettigallish = Curonia
+			lithuanian = Curonia
+			prussian = Curonia
 			
 			c_zemigalians = {
 				color={ 182 20 20 }
@@ -955,6 +1002,8 @@ e_poland_lithuania = {
 				b_bandava = {
 				}
 				b_ceklis = {
+				}
+				b_dungada = {
 				}
 			}
 		}
@@ -1036,6 +1085,10 @@ e_poland_lithuania = {
 			color2={ 255 255 255 }
 			
 			capital = 370 # Marienburg
+			
+			prussian = "Pruthenia"
+			lithuanian = "Pruthenia"
+			lettigallish = "Pruthenia"
 			
 			c_marienburg = {
 				color={ 185 90 90 }

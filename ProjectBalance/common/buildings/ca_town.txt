@@ -3,7 +3,7 @@ castle = {
 	#Castle town, gives income
 	ca_town_1 = {
 		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
-		build_cost = 100
+		gold_cost = 100
 		build_time = 365
 		tax_income = 1.5
 		tech_growth_modifier = 0.01
@@ -16,7 +16,7 @@ castle = {
 		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
 		prerequisites = { ca_wall_1 }
 		upgrades_from = ca_town_1
-		build_cost = 120
+		gold_cost = 120
 		build_time = 547
 		tax_income = 2
 		tech_growth_modifier = 0.01
@@ -29,7 +29,7 @@ castle = {
 		trigger = { TECH_CASTLE_CONSTRUCTION = 3 }
 		prerequisites = { ca_wall_2 }
 		upgrades_from = ca_town_2
-		build_cost = 200
+		gold_cost = 200
 		build_time = 730
 		tax_income = 2.5
 		tech_growth_modifier = 0.01
@@ -41,7 +41,7 @@ castle = {
 	ca_town_4 = {
 		trigger = { TECH_CASTLE_CONSTRUCTION = 5 }
 		upgrades_from = ca_town_3
-		build_cost = 300
+		gold_cost = 300
 		build_time = 1095
 		tax_income = 3
 		tech_growth_modifier = 0.01
@@ -53,7 +53,7 @@ castle = {
 	ca_town_5 = {
 		trigger = { TECH_CASTLE_CONSTRUCTION = 7 }
 		upgrades_from = ca_town_4
-		build_cost = 400
+		gold_cost = 400
 		build_time = 2160
 		tax_income = 3.5
 		tech_growth_modifier = 0.01

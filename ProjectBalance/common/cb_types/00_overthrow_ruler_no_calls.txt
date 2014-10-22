@@ -53,6 +53,7 @@ overthrow_ruler_no_calls = {
 	}
 
 	on_success = {
+		hidden_tooltip = { ROOT = { add_character_modifier = { name = emf_victory_timer duration = 7 hidden = yes } } }
 		ROOT = {
 			prestige = 200
 			primary_title = {
@@ -214,6 +215,7 @@ overthrow_ruler_no_calls = {
 	}
 
 	on_reverse_demand = {
+		hidden_tooltip = { FROM = { add_character_modifier = { name = emf_victory_timer duration = 7 hidden = yes } } }
 		ROOT = {
 			prestige = -200
 			prisoner = FROM
@@ -222,24 +224,13 @@ overthrow_ruler_no_calls = {
 			prestige = 50
 		}
 	}
-	
-	on_defender_leader_death = {
-		hidden_tooltip = {
-			any_attacker = {
-				letter_event = {
-					id = 252
-				}
-			}
-		}
-		end_war = invalid
-	}
 
 	attacker_ai_victory_worth = {
 		factor = -1 # always accept
 	}
 	
 	attacker_ai_defeat_worth = {
-		factor = 150
+		factor = 100
 	}
 
 	defender_ai_victory_worth = {
@@ -248,5 +239,15 @@ overthrow_ruler_no_calls = {
 	
 	defender_ai_defeat_worth = {
 		factor = 100
+	}
+	
+	# ai importance placed on this CB: scope is the targeted title, ROOT is the attacking character, FROM is the defending character
+	ai_will_do = { 
+		factor = 1
+		
+		modifier = {
+			factor = 10
+			FROM = { ai = no }
+		}
 	}
 }

@@ -2393,7 +2393,7 @@ character_event = {
 	
 	option = {
 		name = EVTOPTA6228
-		remove_trait = chaste
+		add_trait = lustful
 	}
 }
 
@@ -3006,6 +3006,7 @@ character_event = {
 			religion = finnish_pagan_reformed
 		}
 		NOT = { has_character_flag = the_old_ones_are_waking }
+		NOT = { trait = in_hiding }
 	}
 	
 	immediate = {
@@ -3058,6 +3059,7 @@ character_event = {
 			religion = finnish_pagan_reformed
 		}
 		NOT = { has_character_flag = the_old_ones_are_waking }
+		NOT = { trait = in_hiding }
 	}
 	
 	immediate = {
@@ -3110,6 +3112,7 @@ character_event = {
 			religion = finnish_pagan_reformed
 		}
 		NOT = { has_character_flag = the_old_ones_are_waking }
+		NOT = { trait = in_hiding }
 	}
 	
 	immediate = {
@@ -3162,6 +3165,7 @@ character_event = {
 			religion = finnish_pagan_reformed
 		}
 		NOT = { has_character_flag = the_old_ones_are_waking }
+		NOT = { trait = in_hiding }
 	}
 	
 	immediate = {

@@ -1,5 +1,12 @@
+644.1.1={
+	liege=d_kerman
+}
+765.1.1={
+	holder=188664
+}
+
 861.1.1={
-	liege="d_kerman"
+	liege="d_zabulistan"
 }
 861.1.1={
 	holder = 163101

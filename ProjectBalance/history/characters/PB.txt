@@ -10,15 +10,19 @@
 	
 	1.1.1={
 		birth="1.1.1"
-		set_global_flag = project_balance
-	}
-	800.1.1={
 		effect = {
+			set_global_flag = project_balance
+			set_global_flag = charlemagne_start
+			set_global_flag = theme_system_reformed	
 			narrative_event = { id = meneth.200 }
 			narrative_event = { id = meneth.600 }
 			narrative_event = { id = meneth.601 }
-			set_global_flag = 867_start			
-			set_global_flag = theme_system_reformed			
+		}
+	}
+	800.1.1={
+		effect = {
+			set_global_flag = 867_start
+			clr_global_flag = charlemagne_start		
 		}
 	}
 	1066.1.1={

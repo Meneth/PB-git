@@ -2,6 +2,7 @@ decisions = {
 	#Prepare save for converter
 	prepare_for_converter = {
 		potential = {
+			always = no # Disabled for now until it is figured out whether crown_authority or centralization is what counts
 			ai = no
 			NOT = { has_global_flag = SWMH }
 		}

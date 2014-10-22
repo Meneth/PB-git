@@ -32,18 +32,6 @@ pagan_subjugation = {
 	can_use_gui = {
 		ROOT = {
 			prestige = 100
-			hidden_tooltip = {
-				OR = {
-					AND = {
-						NOT = { trait = content }
-						NOT = { trait = slothful }
-						NOT = { trait = craven }
-						NOT = { trait = stressed }
-						NOT = { trait = depressed }
-					}
-					ai = no
-				}
-			}
 		}
 	}
 	
@@ -59,7 +47,6 @@ pagan_subjugation = {
 			NOT = { same_realm = FROM }
 			NOT = { is_liege_or_above = FROM }
 			has_horde_culture = no # Should use tribal invasion instead
-			
 		}
 		FROM = {
 			religion_group = pagan_group
@@ -69,17 +56,30 @@ pagan_subjugation = {
 			}
 			NOT = {
 				any_war = {
-					defender = { character = FROM }
-					using_cb = pagan_subjugation
+					AND = {
+						defender = { character = FROM }
+						using_cb = pagan_subjugation
+					}
 				}
 			}
+		}
+		ROOT = {
+			OR = {
+				ai = no
+				FROM = { ai = no }
+				NOT = {
+					trait = content
+					trait = slothful
+					trait = craven
+					trait = stressed
+					trait = depressed
+				}
+			}
+			NOT = { has_character_modifier = launched_subjugation }
 		}
 	}
 	
 	can_use_title = {
-		ROOT = {
-			NOT = { has_character_modifier = launched_subjugation }
-		}
 
 		FROM = {
 			any_realm_title = {
@@ -114,12 +114,12 @@ pagan_subjugation = {
 		ROOT = {
 			OR = {
 				AND = {
+					has_ambition = obj_become_king
 					capital_scope = {
 						kingdom = {
 							title = PREVPREVPREV
 						}
 					}
-					has_ambition = obj_become_king
 				}
 				AND = {
 					NOT = { has_character_flag = subjugation_done }
@@ -127,7 +127,9 @@ pagan_subjugation = {
 						trait = ambitious
 						trait = diligent
 						trait = brave
+						trait = wroth
 						ai = no
+						FROM = { ai = no }
 						capital_scope = {
 							kingdom = {
 								title = PREVPREVPREV
@@ -170,6 +172,7 @@ pagan_subjugation = {
 	}
 
 	on_success = {
+		hidden_tooltip = { ROOT = { add_character_modifier = { name = emf_victory_timer duration = 7 hidden = yes } } }
 		ROOT = {
 			piety = 50
 		}
@@ -204,7 +207,7 @@ pagan_subjugation = {
 				}
 				NOT = { ROOT = { tier = EMPEROR } }
 			}
-			ROOT = { usurp_title = PREV }
+			ROOT = { usurp_title = { target = PREV type = invasion } }
 		}
 		
 		if = {
@@ -223,7 +226,7 @@ pagan_subjugation = {
 							de_jure_liege_or_above = PREVPREV
 						}
 					}
-					ROOT = { usurp_title = PREV }
+					ROOT = { usurp_title = { target = PREV type = invasion } }
 				}
 			}
 		}
@@ -272,6 +275,7 @@ pagan_subjugation = {
 	}
 
 	on_reverse_demand = {
+		hidden_tooltip = { FROM = { add_character_modifier = { name = emf_victory_timer duration = 7 hidden = yes } } }
 		ROOT = {
 			piety = -200
 			transfer_scaled_wealth = {
@@ -325,12 +329,80 @@ pagan_subjugation = {
 		factor = 1
 		modifier = {
 			factor = 0
+			FROM = { ai = yes }
 			ROOT = {
 				NOT = { religion = norse_pagan }
 				NOT = { religion = norse_pagan_reformed }
 				NOT = { religion = tengri_pagan_reformed }
 				NOT = { religion = tengri_pagan }
 				NOT = { trait = ambitious }
+				NOT = { trait = brave }
+				NOT = { trait = diligent }
+			}
+		}
+		modifier = {
+			factor = 10
+			FROM = { ai = no }
+		}
+		# Try to guide the Hordes in the right direction
+		modifier = {
+			factor = 0.1
+			ROOT = {
+				OR = {
+					dynasty = 613 # Seljuks
+					dynasty = 800 # Timurids
+					primary_title = { title = e_il-khanate }
+				}
+			}
+			OR = {
+				empire = {
+					NOT = {
+						title = e_persia
+						title = e_byzantium
+						title = e_arabia
+					}
+				}
+				FROM = {
+					primary_title = { title = e_golden_horde }
+					NOT = { year = 1300 }
+				}
+			}
+		}
+		modifier = {
+			factor = 0.1
+			ROOT = {
+				primary_title = { title = e_golden_horde }
+			}
+			OR = {
+				empire = {
+					OR = {
+						title = e_persia
+						title = e_byzantium
+						title = e_arabia
+					}
+				}
+				FROM = {
+					primary_title = { title = e_il-khanate }
+					NOT = { year = 1300 }
+				}
+			}
+		}
+		modifier = {
+			factor = 0.1
+			ROOT = {
+				culture = hungarian
+				primary_title = {
+					OR = {
+						title = k_hungary
+						title = e_carpathia
+					}
+				}
+			}
+			empire = {
+				OR = {
+					title = e_tartaria
+					title = e_russia
+				}
 			}
 		}
 	}

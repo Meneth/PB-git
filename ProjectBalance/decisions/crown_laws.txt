@@ -11,6 +11,9 @@ de_jure_laws = {
 		
 		potential = {
 			NOT = { title = e_byzantium }
+			holder_scope = {
+				is_tribal = no
+			}
 		}
 		allow = {
 			has_law = crown_levies_1
@@ -53,6 +56,9 @@ de_jure_laws = {
 		
 		potential = {
 			NOT = { title = e_byzantium }
+			holder_scope = {
+				is_tribal = no
+			}
 		}
 		allow = {
 			OR = {
@@ -156,6 +162,9 @@ de_jure_laws = {
 		potential = {
 			holder_scope = { is_republic = no }
 			NOT = { title = e_byzantium }
+			holder_scope = {
+				is_tribal = no
+			}
 		}
 		allow = {
 			OR = {
@@ -280,6 +289,9 @@ de_jure_laws = {
 		potential = {
 			holder_scope = { is_republic = no }
 			NOT = { title = e_byzantium }
+			holder_scope = {
+				is_tribal = no
+			}
 		}
 		allow = {
 			NOT = { has_law = succ_feudal_elective }
@@ -405,6 +417,9 @@ de_jure_laws = {
 		potential = {
 			holder_scope = { is_republic = no }
 			NOT = { title = e_byzantium }
+			holder_scope = {
+				is_tribal = no
+			}
 		}
 		allow = {
 			NOT = { has_law = succ_feudal_elective }
@@ -514,6 +529,9 @@ de_jure_laws = {
 		potential = {
 			tier = king
 			holder_scope = { is_republic = no }
+			holder_scope = {
+				is_tribal = no
+			}
 		}
 		allow = {
 			has_law = king_peace_1
@@ -553,6 +571,9 @@ de_jure_laws = {
 		potential = {
 			tier = king
 			holder_scope = { is_republic = no }
+			holder_scope = {
+				is_tribal = no
+			}
 		}
 		allow = {
 			OR = {
@@ -663,6 +684,9 @@ de_jure_laws = {
 		potential = {
 			tier = king
 			holder_scope = { is_republic = no }
+			holder_scope = {
+				is_tribal = no
+			}
 		}
 		allow = {
 			NOT = { has_law = succ_feudal_elective }
@@ -767,6 +791,9 @@ de_jure_laws = {
 		potential = {
 			tier = emperor
 			holder_scope = { is_republic = no }
+			holder_scope = {
+				is_tribal = no
+			}
 		}
 		allow = {
 			has_law = emperor_peace_1
@@ -805,6 +832,9 @@ de_jure_laws = {
 		potential = {
 			tier = emperor
 			holder_scope = { is_republic = no }
+			holder_scope = {
+				is_tribal = no
+			}
 		}
 		allow = {
 			OR = {
@@ -915,6 +945,9 @@ de_jure_laws = {
 		potential = {
 			tier = emperor
 			holder_scope = { is_republic = no }
+			holder_scope = {
+				is_tribal = no
+			}
 		}
 		allow = {
 			NOT = { has_law = succ_feudal_elective }
@@ -1017,7 +1050,9 @@ de_jure_laws = {
 		group = revokation
 		
 		potential = {
-			always = yes
+			holder_scope = {
+				is_tribal = no
+			}
 		}
 		allow = {
 			has_law = revokation_1
@@ -1050,7 +1085,9 @@ de_jure_laws = {
 		feudal_opinion = -5
 		
 		potential = {
-			always = yes
+			holder_scope = {
+				is_tribal = no
+			}
 		}
 		allow = {
 			OR = {
@@ -1145,6 +1182,9 @@ de_jure_laws = {
 		
 		potential = {
 			holder_scope = { is_republic = no }
+			holder_scope = {
+				is_tribal = no
+			}
 		}
 		allow = {
 			NOT = { has_law = succ_feudal_elective }
@@ -1255,6 +1295,9 @@ de_jure_laws = {
 		
 		potential = {
 			holder_scope = { is_republic = no }
+			holder_scope = {
+				is_tribal = no
+			}
 		}
 		revoke_allowed = {
 			always = no
@@ -1283,6 +1326,9 @@ de_jure_laws = {
 		
 		potential = {
 			holder_scope = { is_republic = no }
+			holder_scope = {
+				is_tribal = no
+			}
 		}
 		allow = {
 			NOT = { has_law = succ_feudal_elective }
@@ -1379,294 +1425,6 @@ de_jure_laws = {
 		}
 	}
 
-# BYZANTINE EMPIRE
-	themes_0 = {
-		show_as_title = yes
-		group = themes
-		default = yes
-		
-		feudal_opinion = -5
-		city_opinion = -5
-		temple_opinion = -5
-		
-		potential = {
-			title = e_byzantium
-			NOT = { has_global_flag = shattered_balance }
-		}
-		revoke_allowed = {
-			always = no
-		}
-		ai_will_do = {
-			factor = 0
-		}
-		ai_will_revoke = {
-			factor = 0
-		}
-		effect = {
-			hidden_tooltip = {
-				revoke_law = themes_0
-				revoke_law = themes_1
-				revoke_law = themes_2
-			}
-		}
-		city_vassal_min_levy = 0.10
-		castle_vassal_min_levy = 0.10
-		temple_vassal_min_levy = 0.10
-	}
-	
-	themes_1 = {
-		show_as_title = yes
-		group = themes
-		
-		feudal_opinion = -10
-		city_opinion = -10
-		temple_opinion = -10
-		
-		potential = {
-			title = e_byzantium
-			NOT = { has_global_flag = shattered_balance }
-		}
-		allow = {
-			holder_scope = {
-				OR = {
-					trait = diligent
-					trait = ambitious
-				}
-				prestige = 1000
-				custom_tooltip = {
-					text = pb_vassal_opinion_neg_25
-					hidden_tooltip = {
-						NOT = {
-							any_vassal = {
-								higher_tier_than = count
-								NOT = { opinion = { who = liege value = -25 } }
-								primary_title = { is_primary_type_title = no } # Mercs, the Pope, Holy Orders, etc
-								prisoner = no
-							}
-						}
-					}
-				}
-			}
-			NOT = { has_law = themes_2 }
-		}
-		revoke_allowed = {
-			always = no
-		}
-		ai_will_do = {
-			factor = 1
-		}
-		ai_will_revoke = {
-			factor = 0
-		}
-		pass_effect = {
-			hidden_tooltip = {
-				set_global_flag = theme_system_reformed
-				holder_scope = {
-					any_vassal = {
-						limit = {
-							crownlaw_title = { title = ROOT }
-						}
-						opinion = {
-							who = ROOT
-							modifier = opinion_increased_authority
-							months = 300
-						}
-					}
-				}
-			}
-		}
-		effect = {
-			hidden_tooltip = {
-				revoke_law = themes_0
-				revoke_law = themes_1
-				revoke_law = themes_2
-			}
-		}
-		city_vassal_min_levy = 0.15
-		castle_vassal_min_levy = 0.15
-		temple_vassal_min_levy = 0.15
-	}
-	
-	themes_2 = {
-		show_as_title = yes
-		group = themes
-		
-		feudal_opinion = -15
-		city_opinion = -15
-		temple_opinion = -15
-		
-		potential = {
-			title = e_byzantium
-			NOT = { has_global_flag = shattered_balance }
-		}
-		allow = {
-			has_law = themes_1
-			holder_scope = {
-				OR = {
-					trait = diligent
-					trait = ambitious
-				}
-				NOT = { trait = content }
-				NOT = { trait = slothful }
-				NOT = { trait = craven }
-				prestige = 2000
-				custom_tooltip = {
-					text = pb_vassal_opinion_neg_10
-					hidden_tooltip = {
-						NOT = {
-							any_vassal = {
-								higher_tier_than = count
-								NOT = { opinion = { who = liege value = -10 } }
-								primary_title = { is_primary_type_title = no } # Mercs, the Pope, Holy Orders, etc
-								prisoner = no
-							}
-						}
-					}
-				}
-			}
-		}
-		revoke_allowed = {
-			always = no
-		}
-		ai_will_do = {
-			factor = 0
-		}
-		ai_will_revoke = {
-			factor = 0
-		}
-		pass_effect = {
-			hidden_tooltip = {
-				set_global_flag = theme_system_reformed_2
-				holder_scope = {
-					any_vassal = {
-						limit = {
-							crownlaw_title = { title = ROOT }
-						}
-						opinion = {
-							who = ROOT
-							modifier = opinion_increased_authority
-							months = 300
-						}
-					}
-				}
-			}
-		}
-		effect = {
-			hidden_tooltip = {
-				revoke_law = themes_0
-				revoke_law = themes_1
-				revoke_law = themes_2
-			}
-		}
-		city_vassal_min_levy = 0.2
-		castle_vassal_min_levy = 0.2
-		temple_vassal_min_levy = 0.2
-	}
-	
-	# HOLY ROMAN EMPIRE
-	hre_law_0 = {
-		show_as_title = yes
-		group = hre_law
-		default = yes
-		
-		potential = {
-			OR = {
-				title = e_hre
-				title = e_hre_french
-				title = e_germany
-			}
-			NOT = { has_global_flag = shattered_balance }
-		}
-		revoke_allowed = {
-			always = no
-		}
-		ai_will_do = {
-			factor = 0
-		}
-		ai_will_revoke = {
-			factor = 0
-		}
-		effect = {
-			hidden_tooltip = {
-				revoke_law = hre_law_0
-				revoke_law = hre_law_1
-			}
-		}
-		
-	}
-	
-	hre_law_1 = {
-		show_as_title = yes
-		group = hre_law
-		
-		feudal_opinion = -15
-		city_opinion = -10
-		temple_opinion = -10
-		
-		potential = {
-			OR = {
-				title = e_hre
-				title = e_hre_french
-				title = e_germany
-			}
-			NOT = { has_global_flag = shattered_balance }
-		}
-		allow = {
-			holder_scope = {
-				OR = {
-					trait = diligent
-					trait = ambitious
-				}
-				prestige = 1000
-				custom_tooltip = {
-					text = pb_vassal_opinion_neg_25
-					hidden_tooltip = {
-						NOT = {
-							any_vassal = {
-								higher_tier_than = count
-								NOT = { opinion = { who = liege value = -25 } }
-								primary_title = { is_primary_type_title = no } # Mercs, the Pope, Holy Orders, etc
-								prisoner = no
-							}
-						}
-					}
-				}
-			}
-		}
-		revoke_allowed = {
-			always = no
-		}
-		ai_will_do = {
-			factor = 0
-		}
-		ai_will_revoke = {
-			factor = 0
-		}
-		pass_effect = {
-			hidden_tooltip = {
-				set_global_flag = hre_centralized
-				holder_scope = {
-					any_vassal = {
-						limit = {
-							crownlaw_title = { title = ROOT }
-						}
-						opinion = {
-							who = ROOT
-							modifier = opinion_increased_authority
-							months = 300
-						}
-					}
-				}
-			}
-		}
-		effect = {
-			hidden_tooltip = {
-				revoke_law = hre_law_0
-				revoke_law = hre_law_1
-			}
-		}
-	}
-
 # INVESTITURE
 
 	investiture_law_0 = {
@@ -1679,6 +1437,7 @@ de_jure_laws = {
 					religion = catholic
 					religion = fraticelli
 				}
+				is_tribal = no
 			}
 		}
 		allow = {
@@ -1715,6 +1474,7 @@ de_jure_laws = {
 					religion = catholic
 					religion = fraticelli
 				}
+				is_tribal = no
 			}
 		}
 		revoke_allowed = {
@@ -1766,87 +1526,6 @@ de_jure_laws = {
 			factor = 0
 		}
 		effect = {
-		}
-	}
-
-#Centralization; needed for the converter to work
-	centralization_0 = {
-		show_as_title = yes
-		group = centralization
-		
-		potential = { always = no }
-		revoke_allowed = {
-			always = no
-		}
-		ai_will_do = {
-			factor = 0
-		}
-		ai_will_revoke = {
-			factor = 0
-		}
-	}
-	
-	centralization_1 = {
-		show_as_title = yes
-		group = centralization
-		
-		potential = { always = no }
-		revoke_allowed = {
-			always = no
-		}
-		ai_will_do = {
-			factor = 0
-		}
-		ai_will_revoke = {
-			factor = 0
-		}
-	}
-	
-	centralization_2 = {
-		show_as_title = yes
-		group = centralization
-		
-		potential = { always = no }
-		revoke_allowed = {
-			always = no
-		}
-		ai_will_do = {
-			factor = 0
-		}
-		ai_will_revoke = {
-			factor = 0
-		}
-	}
-	
-	centralization_3 = {
-		show_as_title = yes
-		group = centralization
-		
-		potential = { always = no }
-		revoke_allowed = {
-			always = no
-		}
-		ai_will_do = {
-			factor = 0
-		}
-		ai_will_revoke = {
-			factor = 0
-		}
-	}
-	
-	centralization_4 = {
-		show_as_title = yes
-		group = centralization
-		
-		potential = { always = no }
-		revoke_allowed = {
-			always = no
-		}
-		ai_will_do = {
-			factor = 0
-		}
-		ai_will_revoke = {
-			factor = 0
 		}
 	}
 }

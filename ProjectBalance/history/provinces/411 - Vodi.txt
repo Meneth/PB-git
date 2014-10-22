@@ -5,8 +5,8 @@ title = c_vodi
 
 # Settlements
 max_settlements = 3
-b_noteborg = castle
-b_nyen = city
+b_noteborg = tribal
+#b_nyen = city
 #b_valaam = temple
 
 #b_ivanovskaya = castle
@@ -16,19 +16,17 @@ b_nyen = city
 #b_khotchino = city
 
 # Misc
-culture = finnish
+culture = ugricbaltic
 religion = finnish_pagan
 
 # History
-867.1.1 = {
-	b_noteborg = ca_shipyard_1
-	b_noteborg = ca_shipyard_2
-	b_nyen = ct_shipyard_1
-	b_nyen = ct_shipyard_2
-}
+1136.1.2 = { b_nyen = city }
 1136.1.2 = { capital = b_nyen }
 1136.1.2 = { trade_post = b_mikulinich }
 1136.1.2 = { culture = russian religion = orthodox }
 1150.1.1 = { religion = orthodox }
-1299.1.1 = { b_ivanovskaya = castle } #Swedish fortress
+1150.1.1 = {
+	b_noteborg = castle
+	b_ivanovskaya = castle  #Swedish fortress
+}
 1313.1.1= { trade_post = b_wittenborg }

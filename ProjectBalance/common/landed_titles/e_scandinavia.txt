@@ -499,6 +499,9 @@ e_scandinavia = {
 			capital = 36 # Orkney
 			
 			norse = "Norðreyjar"
+			pictish = "Insee Galeth"
+			welsh = "Ynysoedd Gogledd"
+			irish = "Innse Tuath"
 			
 			pagan_coa = {
 				template = 0
@@ -514,89 +517,170 @@ e_scandinavia = {
 			}
 			
 			c_faereyar = {
-				color={ 5 20 255 }
+				color={ 116 145 239 }
 				color2={ 255 255 255 }
 				
 				swedish = "Färöarna"
+				pictish = "Caliu"
+				welsh = "Ynysoedd Ceiliau"
+				irish = "Innse Caora"
 				
 				b_skansin = {
+					pictish = "Lam"
+					welsh = "Llam"
+					irish = "Leum"
 				}
 				b_torshavn = {
+					pictish = "Pirth Taran"
+					welsh = "Porth Taran"
+					irish = "Port Turenn"
 				}
 				b_kirkjubour = {
+					pictish = "Tathinauu"
+					welsh = "Tyddynaueglwys"
+					irish = "Tuathanaseaglais"
 				}
 				b_funningur = {
+					pictish = "Uenaeth"
+					welsh = "Gwynaidd"
+					irish = "Fionnach"
 				}
 				b_kvivik = {
+					pictish = "Culbachuu"
+					welsh = "Culbachwy"
+					irish = "Caolbati"
 				}
 				b_sandur = {
+					pictish = "Insee Tret"
+					welsh = "Ynys Traeth"
+					irish = "Eilean Tràigh"
 				}
 				b_klaksvik = {
+					pictish = "Insee Uun"
+					welsh = "Ynys Edn"
+					irish = "Innis Eun"
 				}
 				b_hov = {
+					pictish = "Icluasc"
+					welsh = "Eglwys"
+					irish = "Eaglais"
 				}
 			}
 			c_shetland = {
-				color={ 15 25 255 }
+				color={ 96 130 220 }
 				color2={ 255 255 255 }
 				
 				norwegian = "Hjaltland"
 				danish = "Hjaltland"
 				swedish = "Hjaltland"
 				norse = "Hjaltland"
+				pictish = "Insee Cait"
+				welsh = "Ynysoedd Cait"
+				irish = "Innse Catt"
 				
 				b_scalloway = {
+					pictish = "Bachuuon Maurt"
+					welsh = "Bachwyon Mawrty"
+					irish = "Batin Môrtaigh"
 				}
 				b_muness = {
+					pictish = "Muunis"
+					welsh = "Mwynis"
+					irish = "Mùnis"
 				}
 				b_tingwall = {
+					pictish = "Camanfalioth"
+					welsh = "Cymanfalleoedd"
+					irish = "Coinneamhionad"
 				}
 				b_cunningsburgh = {
 					norwegian = "Konungsborg"
 					danish = "Konungsborg"
 					swedish = "Konungsborg"
 					norse = "Konungsborg"
+					pictish = "Caer Rui"
+					welsh = "Caer Rhi"
+					irish = "Rìghdùn"
 				}
 				b_sumburgh = {
+					pictish = "Taranupin"
+					welsh = "Taranupenn"
+					irish = "Tàirneanachceann"
 				}
 				b_northmavine = {
+					pictish = "Goglethculder"
+					welsh = "Gogleddculdir"
+					irish = "Tuathcuing"
 				}
 				b_sound = {
+					pictish = "Cliaubae"
+					welsh = "Cleiaubae"
+					irish = "Crèadhbati"
 				}
 				b_yell = {
+					pictish = "Insee Uuan"
+					welsh = "Ynys Gwyn"
+					irish = "Innis Fionn"
 				}
 			}
 			c_orkney = {
-				color={ 30 25 255 }
+				color={ 106 140 235 }
 				color2={ 255 255 255 }
 				
 				swedish = "Orknö"
 				danish = "Orknø"
 				norse = "Orknö"
+				pictish = "Insee Orc"
+				welsh = "Ynysoedd Orc"
+				irish = "Innse Orc"
 				
 				b_kirkwall = {
 					norwegian = "Kirkuvåg"
 					danish = "Kyrkovik"
 					swedish = "Kyrkovik"
 					norse = "Kyrkovik"
+					pictish = "Icluasctreh"
+					welsh = "Eglwystref"
+					irish = "Baile na h-Eaglais"
 				}
 				b_birsay = {
 					norwegian = "Birgishærad"
 					danish = "Birgishærad"
 					swedish = "Birgishärad"
 					norse = "Birgishærad"
+					pictish = "Brideclauet"
+					welsh = "Ffraidclywed"
+					irish = "Brìghdechuala"
 				}
 				b_orphir = {
+					pictish = "Aerfur"
+					welsh = "Aerfwr"
+					irish = "Ayrfir"
 				}
 				b_westray = {
+					pictish = "Driduana"
+					welsh = "Driduana"
+					irish = "Triduana"
 				}
 				b_wyre = {
+					pictish = "Insee Ware"
+					welsh = "Ynys Wyre"
+					irish = "Innis Weir"
 				}
 				b_egilsay = {
+					pictish = "Insee Icluasc"
+					welsh = "Ynys Eglwys"
+					irish = "Innis Eaglais"
 				}
 				b_sanday = {
+					pictish = "Insee Tiuod"
+					welsh = "Ynys Tywod"
+					irish = "Innis Tràigh"
 				}
 				b_ronaldsay = {
+					pictish = "Insee Ninian"
+					welsh = "Ynys Ninian"
+					irish = "Innis Ronan"
 				}
 			}
 		}
@@ -1444,6 +1528,9 @@ e_scandinavia = {
 			color={ 0 50 155 }
 			color2={ 255 255 255 }
 			capital = 285 # Hälsingland
+			
+			finnish=Lappi
+			lappish=Sápmi
 			
 			c_lappland = {
 				color = { 115 76 12 }

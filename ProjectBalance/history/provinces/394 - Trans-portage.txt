@@ -5,7 +5,7 @@ title = c_trans-portage
 
 # Settlements
 max_settlements = 3
-b_kargopol = castle
+b_kargopol = tribal
 #b_shenkursk = city
 #b_solovetsky = temple
 
@@ -16,11 +16,10 @@ b_kargopol = castle
 #b_obozerskiy = castle
 
 # Misc
-culture = komi
+culture = finnish
 religion = finnish_pagan
 
 # History
 1136.1.2 = { b_shenkursk = city culture = russian religion = orthodox }
 1136.1.2 = { capital = b_shenkursk }
 1136.1.2 = { trade_post = b_tverdiatich }
-1315.1.1 = { b_shenkursk = city } #trading outpost purchased by Novgorod

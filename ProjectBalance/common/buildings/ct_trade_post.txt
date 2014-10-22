@@ -12,7 +12,7 @@ city = {
 			TECH_TRADE_PRACTICES = 1
 			TECH_FORTIFICATIONS_CONSTRUCTION = 1
 		}
-		build_cost = 750
+		gold_cost = 750
 		build_time = 730
 		tax_income = 2
 		galleys = 3
@@ -39,7 +39,7 @@ city = {
 			TECH_FORTIFICATIONS_CONSTRUCTION = 3
 		}
 		upgrades_from = ct_trade_post_1
-		build_cost = 1000
+		gold_cost = 1000
 		build_time = 1095
 		tax_income = 3
 		galleys = 3
@@ -66,7 +66,7 @@ city = {
 			TECH_FORTIFICATIONS_CONSTRUCTION = 5
 		}
 		upgrades_from = ct_trade_post_2
-		build_cost = 1500
+		gold_cost = 1500
 		build_time = 1460
 		tax_income = 4
 		galleys = 3
@@ -93,7 +93,7 @@ city = {
 			TECH_FORTIFICATIONS_CONSTRUCTION = 7
 		}
 		upgrades_from = ct_trade_post_3
-		build_cost = 2000
+		gold_cost = 2000
 		build_time = 1825
 		tax_income = 5
 		galleys = 3
@@ -120,7 +120,7 @@ city = {
 			TECH_FORTIFICATIONS_CONSTRUCTION = 8
 		}
 		upgrades_from = ct_trade_post_4
-		build_cost = 3000
+		gold_cost = 3000
 		build_time = 2180
 		tax_income = 5
 		galleys = 3

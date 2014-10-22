@@ -2,7 +2,7 @@
 temple = {
 	tp_town_1 = {
 		trigger = { TECH_TEMPLE_CONSTRUCTION = 0 }
-		build_cost = 100
+		gold_cost = 100
 		build_time = 365
 		tax_income = 1.5
 		tech_growth_modifier_military = 0.01
@@ -16,7 +16,7 @@ temple = {
 		trigger = { TECH_TEMPLE_CONSTRUCTION = 0 }
 		prerequisites = { tp_wall_1 }
 		upgrades_from = tp_town_1
-		build_cost = 120
+		gold_cost = 120
 		build_time = 547
 		tax_income = 2
 		tech_growth_modifier_military = 0.01
@@ -30,7 +30,7 @@ temple = {
 		trigger = { TECH_TEMPLE_CONSTRUCTION = 1 }
 		prerequisites = { tp_wall_2 }
 		upgrades_from = tp_town_2
-		build_cost = 200
+		gold_cost = 200
 		build_time = 730
 		tax_income = 2.5
 		tech_growth_modifier_military = 0.01
@@ -43,7 +43,7 @@ temple = {
 	tp_town_4 = {
 		trigger = { TECH_TEMPLE_CONSTRUCTION = 3 }
 		upgrades_from = tp_town_3
-		build_cost = 300
+		gold_cost = 300
 		build_time = 1095
 		tax_income = 3
 		tech_growth_modifier_military = 0.01
@@ -56,7 +56,7 @@ temple = {
 	tp_town_5 = {
 		trigger = { TECH_TEMPLE_CONSTRUCTION = 5 }
 		upgrades_from = tp_town_4
-		build_cost = 400
+		gold_cost = 400
 		build_time = 2190
 		tax_income = 3.5
 		tech_growth_modifier_military = 0.01
@@ -70,7 +70,7 @@ temple = {
 		desc = tp_town_5_desc
 		trigger = { TECH_TEMPLE_CONSTRUCTION = 7 }
 		upgrades_from = tp_town_5
-		build_cost = 500
+		gold_cost = 500
 		build_time = 2190
 		tax_income = 4
 		tech_growth_modifier_military = 0.01
