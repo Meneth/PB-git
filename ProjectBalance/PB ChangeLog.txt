@@ -5,6 +5,7 @@
 	Made the Pechenegs tribal
 	Fixed Bohemia being dejure Germania in 769
 	Fixed the marriage decisions potentially allowing people who should be unable to marry to marry
+	Readded the "prepare for conversion" decision
 
 4.0
 	Updated for 2.2/Charlemagne
