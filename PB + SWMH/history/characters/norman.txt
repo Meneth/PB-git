@@ -456,7 +456,7 @@
 				earmark = norman_byzantine_war
 				leader = ROOT
 				match_character = ROOT
-				match_mult = 0.25
+				match_mult = 0.0625
 				attrition = 1.0
 			}
 			spawn_unit = {
@@ -466,7 +466,7 @@
 				earmark = norman_byzantine_war
 				leader = 1132
 				match_character = ROOT
-				match_mult = 0.25
+				match_mult = 0.0625
 				attrition = 1.0
 			}
 			spawn_unit = {
@@ -476,8 +476,9 @@
 				earmark = norman_byzantine_war
 				leader = 1127
 				match_character = ROOT
-				match_mult = 0.25
+				match_mult = 0.0625
 				attrition = 1.0
+				merge = yes
 			}
 			spawn_unit = {
 				province = 345 # Lecce
@@ -1124,7 +1125,7 @@
 				leader = ROOT
 				match_character = ROOT
 				#Rebalanced starting forces
-				match_mult = 0.65
+				match_mult = 0.15
 				attrition = 1.0
 			}
 			spawn_unit = {
@@ -1135,7 +1136,7 @@
 				leader = 148 # Odo of Bayeux
 				match_character = ROOT
 				#Rebalanced starting forces
-				match_mult = 0.65
+				match_mult = 0.16
 				attrition = 1.0
 			}
 			spawn_unit = {
@@ -1146,7 +1147,7 @@
 				leader = 6818 # William of Eu
 				match_character = ROOT
 				#Rebalanced starting forces
-				match_mult = 0.65
+				match_mult = 0.16
 				attrition = 1.0
 			}
 			spawn_unit = {
@@ -1157,7 +1158,7 @@
 				leader = 150 # Robert of Mortain
 				match_character = ROOT
 				#Rebalanced starting forces
-				match_mult = 0.65
+				match_mult = 0.16
 				attrition = 1.0
 				merge = yes # Auto-merge all regiments in same province into one unit
 			}

@@ -543,7 +543,7 @@
 				leader = ROOT
 				match_character = ROOT
 				#Rebalanced starting forces
-				match_mult = 0.3
+				match_mult = 0.06
 				attrition = 1.0
 			}
 			spawn_unit = {
@@ -554,7 +554,7 @@
 				leader = 130 # Leofwine
 				match_character = ROOT
 				#Rebalanced starting forces
-				match_mult = 0.3
+				match_mult = 0.06
 				attrition = 1.0
 			}
 			spawn_unit = {
@@ -565,8 +565,9 @@
 				leader = 132 # Gyrth
 				match_character = ROOT
 				#Rebalanced starting forces
-				match_mult = 0.3
+				match_mult = 0.06
 				attrition = 1.0
+				merge = yes
 			}
 		}
 	}
