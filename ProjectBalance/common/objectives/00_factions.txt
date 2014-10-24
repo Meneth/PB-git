@@ -3060,6 +3060,7 @@ faction_independence = {
 		higher_tier_than = BARON
 		
 		liege = {
+			in_revolt = no
 			independent = yes
 			NOT = {
 				primary_title = {
