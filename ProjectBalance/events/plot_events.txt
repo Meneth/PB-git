@@ -1991,12 +1991,12 @@ letter_event = {
 # Regent is in on the plot - Tribal Organization
 letter_event = {
 	id = 8031
-	desc = EVTDESC8031
+	desc = EVTDESC8026
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTA8031
+		name = EVTOPTA8026
 		hidden_tooltip = {
 			FROM = {
 				letter_event = { id = 8071 }

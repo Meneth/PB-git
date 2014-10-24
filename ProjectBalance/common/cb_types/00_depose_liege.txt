@@ -29,6 +29,7 @@ depose_liege = {
 	major_revolt = no
 	
 	can_use = {
+		always = no # v2.21 - Disabled - not working well
 		ROOT = {
 			de_facto_liege = FROM
 		}

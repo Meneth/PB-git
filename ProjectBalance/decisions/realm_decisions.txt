@@ -1289,6 +1289,7 @@ decisions = {
 					culture = ROOT
 					holder = ROOT
 					base_title = THIS
+					copy_title_laws = yes
 				}
 
 				hidden_tooltip = {
@@ -1403,6 +1404,7 @@ decisions = {
 					culture = ROOT
 					holder = ROOT
 					base_title = THIS
+					copy_title_laws = yes
 				}
 
 				hidden_tooltip = {

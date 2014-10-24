@@ -7,6 +7,7 @@
 	Fixed the marriage decisions potentially allowing people who should be unable to marry to marry
 	Readded the "prepare for conversion" decision
 	Made sieges 20% shorter
+	Updated for 2.2.0.2
 
 4.0
 	Updated for 2.2/Charlemagne

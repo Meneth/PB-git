@@ -9,7 +9,6 @@ e_roman_empire = {
 	title = "Emperor"
 	title_female = "Empress"
 	
-	duchy_revokation = yes
 	purple_born_heirs = yes
 	
 	culture = italian
@@ -30,8 +29,6 @@ e_byzantium = {
 	
 	culture = greek
 	religion = orthodox
-	
-	duchy_revokation=yes # The Emperor can revoke duchies at no prestige cost and no opinion penalty with other vassals
 	
 	has_top_de_jure_capital = yes
 	
