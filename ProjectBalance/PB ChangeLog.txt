@@ -1,4 +1,14 @@
-﻿4.01
+﻿4.02
+	VANILLA FIX: Workaround for all laws/decisions enabled by technology not being usable regardless of tech level
+		'Adopt Republicanism' requires Trade Practices level 1
+		'Adopt Feudalism' requires Noble Customs level 1
+		'King Viceroys' requires Legalism level 4
+		'Duke Viceroys' requires Legalism level 8 (unless playing the ERE or 'Imperial Administration' has been enacted)
+		Centralization slider levels 2, 3, 4, and 5 require Legalism levels 1, 2, 3, and 5, respectively
+		'Imperial Administration' requires Majesty level 5
+	Fixed the Imperial Administration law not requiring restrictive crown laws 
+
+4.01
 	Fixed various title issues in the British Isles
 	Fixed certain duchies having no technology
 	Added vanilla's duchy of Pskov

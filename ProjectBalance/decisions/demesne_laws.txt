@@ -80,6 +80,11 @@ laws = {
 		group = centralization
 		
 		allow = {
+			holder_scope = {
+				capital_scope = {
+					TECH_LEGALISM = 1
+				}
+			}
 			OR = { 
 				has_law = centralization_0
 				has_law = centralization_2
@@ -156,6 +161,11 @@ laws = {
 		group = centralization
 		
 		allow = {
+			holder_scope = {
+				capital_scope = {
+					TECH_LEGALISM = 2
+				}
+			}
 			OR = { 
 				has_law = centralization_1
 				has_law = centralization_3
@@ -228,6 +238,11 @@ laws = {
 		group = centralization
 		
 		allow = {
+			holder_scope = {
+				capital_scope = {
+					TECH_LEGALISM = 3
+				}
+			}
 			OR = { 
 				has_law = centralization_2
 				has_law = centralization_4
@@ -302,6 +317,11 @@ laws = {
 		group = centralization
 		
 		allow = {
+			holder_scope = {
+				capital_scope = {
+					TECH_LEGALISM = 5
+				}
+			}
 			has_law = centralization_3
 			OR = {
 				OR = {
@@ -1125,6 +1145,13 @@ laws = {
 				is_feudal = yes
 			}
 		}
+		allow = {
+			holder_scope = {
+				capital_scope = {
+					TECH_LEGALISM = 4
+				}
+			}
+		}
 		revoke_allowed = {
 			always = no
 		}			
@@ -1165,6 +1192,13 @@ laws = {
 			holder_scope = {
 				independent = yes
 				is_feudal = yes
+			}
+		}
+		allow = {
+			holder_scope = {
+				capital_scope = {
+					TECH_LEGALISM = 8
+				}
 			}
 		}
 		revoke_allowed = {
@@ -1237,7 +1271,15 @@ laws = {
 		group = administration
 		
 		allow = {
-			has_law = crown_authority_4
+			has_law = emperor_peace_2
+			NOT = { has_law = revokation_0 }
+			NOT = { has_law = crown_levies_0 }
+			NOT = { has_law = hre_law_0 }
+			holder_scope = {
+				capital_scope = {
+					TECH_LEGALISM = 4
+				}
+			}
 		}
 		
 		potential = {
