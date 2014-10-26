@@ -1,5 +1,8 @@
+764.1.1={
+	holder = 170338
+}
 860.1.1={
-	liege = d_novgorod
+	liege = "d_novgorod"
 	holder = 6830
 }
 1066.1.1={

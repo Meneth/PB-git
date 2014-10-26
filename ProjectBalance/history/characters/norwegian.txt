@@ -12,10 +12,10 @@
 	father=101543
 	mother=101544
 	1030.1.2={
-		birth="1030.1.2"
+		birth=yes
 	}
 	1085.1.2={
-		death="1085.1.2"
+		death=yes
 	}
 }
 
@@ -35,10 +35,10 @@
 	father=102504
 	mother=102503
 	1024.1.2={
-		birth="1024.1.2"
+		birth=yes
 	}
 	1087.1.2={
-		death="1087.1.2"
+		death=yes
 	}
 }
 
@@ -56,13 +56,13 @@
 	trait="tough_soldier"
 	father=102522
 	1026.1.2={
-		birth="1026.1.2"
+		birth=yes
 	}
 	1062.1.2= {
 		add_spouse = 102530
 	}
 	1081.1.2={
-		death="1081.1.2"
+		death=yes
 	}
 }
 
@@ -81,10 +81,10 @@
 	father=102523
 	mother=102530
 	1056.1.2={
-		birth="1056.1.2"
+		birth=yes
 	}
 	1106.1.2={
-		death="1106.1.2"
+		death=yes
 	}
 }
 
@@ -103,10 +103,10 @@
 	father=102523
 	mother=102530
 	1060.1.2={
-		birth="1060.1.2"
+		birth=yes
 	}
 	1110.1.2={
-		death="1110.1.2"
+		death=yes
 	}
 }
 
@@ -126,10 +126,10 @@
 	father=102527
 	mother=100512
 	1023.1.2={
-		birth="1023.1.2"
+		birth=yes
 	}
 	1071.5.24={
-		death="1071.5.24"
+		death=yes
 	}
 }
 
@@ -147,10 +147,10 @@
 	trait="flamboyant_schemer"
 	father=102529
 	1040.1.2={
-		birth="1040.1.2"
+		birth=yes
 	}
 	1090.1.2={
-		death="1090.1.2"
+		death=yes
 	}
 }
 
@@ -354,10 +354,10 @@
 	father=102531
 	mother=633
 	1045.1.4={
-		birth="1045.1.4"
+		birth=yes
 	}
 	1100.1.4={
-		death="1100.1.4"
+		death=yes
 	}
 }
 
@@ -377,13 +377,13 @@
 	father=102537
 	mother=102505
 	1043.1.1={
-		birth="1043.1.1"
+		birth=yes
 	}
 	1076.1.1={
 		add_spouse=220035
 	}
 	1098.1.1={
-		death="1098.1.1"
+		death=yes
 	}
 }
 
@@ -403,13 +403,13 @@
 	father=102537
 	mother=102505
 	1043.1.1={
-		birth="1043.1.1"
+		birth=yes
 	}
 	1058.1.1={
 		add_spouse=161327
 	}
 	1099.1.1={
-		death="1099.1.1"
+		death=yes
 	}
 }
 
@@ -425,10 +425,10 @@
 	culture="norwegian"
 	trait="scholarly_theologian"
 	1038.1.2={
-		birth="1038.1.2"
+		birth=yes
 	}
 	1088.1.2={
-		death="1088.1.2"
+		death=yes
 	}
 }
 
@@ -448,13 +448,13 @@
 	father=102546
 	mother=102513
 	1019.1.2={
-		birth="1019.1.2"
+		birth=yes
 	}
 	1040.1.1={
 		add_spouse=102506
 	}
 	1055.1.2={
-		death="1055.1.2"
+		death=yes
 	}
 }
 
@@ -473,10 +473,10 @@
 	father=102550
 	mother=102566
 	1017.1.2={
-		birth="1017.1.2"
+		birth=yes
 	}
 	1067.1.2={
-		death="1067.1.2"
+		death=yes
 	}
 }
 
@@ -494,13 +494,13 @@
 	trait="martial_cleric"
 	father=102552
 	1040.1.2={
-		birth="1040.1.2"
+		birth=yes
 	}
 	1060.1.27={
 		add_spouse = 102557
 	}
 	1103.1.2={
-		death="1103.1.2"
+		death=yes
 	}
 }
 
@@ -519,10 +519,10 @@
 	father=102556
 	mother=102555
 	1029.1.27={
-		birth="1029.1.27"
+		birth=yes
 	}
 	1079.1.27={
-		death="1079.1.27"
+		death=yes
 	}
 }
 
@@ -540,10 +540,10 @@
 	father=102553
 	mother=102557
 	1064.1.2={
-		birth="1064.1.2"
+		birth=yes
 	}
 	1114.1.2={
-		death="1114.1.2"
+		death=yes
 	}
 }
 
@@ -562,10 +562,10 @@
 	trait="scholarly_theologian"
 	father=102561
 	1026.1.2={
-		birth="1026.1.2"
+		birth=yes
 	}
 	1076.1.2={
-		death="1076.1.2"
+		death=yes
 	}
 }
 
@@ -582,10 +582,10 @@
 	trait="skilled_tactician"
 	father=102560
 	1021.1.2={
-		birth="1021.1.2"
+		birth=yes
 	}
 	1081.1.1={
-		death="1081.1.1"
+		death=yes
 	}
 }
 
@@ -603,13 +603,13 @@
 	trait="tough_soldier"
 	father=102563
 	1055.1.1={
-		birth="1055.1.1"
+		birth=yes
 	}
 	1093.1.1={
 		add_spouse=101516
 	}
 	1105.1.2={
-		death="1105.1.2"
+		death=yes
 	}
 }
 
@@ -627,13 +627,13 @@
 	father=102567
 	mother=102515
 	1025.1.2={
-		birth="1025.1.2"
+		birth=yes
 	}
 	1061.1.2={
 		add_spouse = 101522
 	}
 	1090.1.1={
-		death="1090.1.1"
+		death=yes
 	}
 }
 
@@ -654,10 +654,10 @@
 	father=102567
 	mother=102515
 	1030.1.2={
-		birth="1030.1.2"
+		birth=yes
 	}
 	1080.1.2={
-		death="1080.1.2"
+		death=yes
 	}
 }
 
@@ -676,10 +676,10 @@
 	father=102567
 	mother=102515
 	1034.1.2={
-		birth="1034.1.2"
+		birth=yes
 	}
 	1084.1.2={
-		death="1084.1.2"
+		death=yes
 	}
 }
 
@@ -695,10 +695,10 @@
 	father=102568
 	mother=101522
 	1065.1.2={
-		birth="1065.1.2"
+		birth=yes
 	}
 	1115.1.2={
-		death="1115.1.2"
+		death=yes
 	}
 }
 
@@ -715,10 +715,10 @@
 	trait="amateurish_plotter"
 	father=102573
 	1017.1.2={
-		birth="1017.1.2"
+		birth=yes
 	}
 	1067.1.1={
-		death="1067.1.1"
+		death=yes
 	}
 }
 
@@ -734,10 +734,10 @@
 	trait="patient"
 	trait="flamboyant_schemer"
 	1020.1.2={
-		birth="1020.1.2"
+		birth=yes
 	}
 	1070.1.2={
-		death="1070.1.2"
+		death=yes
 	}
 }
 
@@ -755,10 +755,10 @@
 	trait="tough_soldier"
 	father=102575
 	1052.1.2={
-		birth="1052.1.2"
+		birth=yes
 	}
 	1102.1.2={
-		death="1102.1.2"
+		death=yes
 	}
 }
 
@@ -776,10 +776,10 @@
 	trait="thrifty_clerk"
 	father=102532 # Magnus Haraldson
 	1069.1.1={
-		birth="1069.1.1"
+		birth=yes
 	}
 	1094.6.6={
-		death="1094.6.6"
+		death=yes
 	}
 }
 
@@ -791,10 +791,10 @@
 	father=102547
 	mother=102506
 	1050.1.1={
-		birth="1050.1.1"
+		birth=yes
 	}
 	1120.1.1={
-		death="1120.1.1"
+		death=yes
 	}
 }
 
@@ -805,10 +805,10 @@
 	culture="norwegian"
 	father=202021
 	1215.1.1={
-		birth="1215.1.1"
+		birth=yes
 	}
 	1274.1.1={
-		death="1274.1.1"
+		death=yes
 	}
 }
 

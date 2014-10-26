@@ -40,18 +40,3 @@ e_hre_french = {
 	
 	allow = { always = no }
 }
-
-e_germany = {
-	color={ 155 155 155 }
-	color2={ 220 220 20 }
-	
-	capital = 90 # Jülich / Aachen
-	
-	religion=catholic
-	culture = german
-	name_tier = king
-	short_name = yes
-	allow = {
-		FROM = { is_titular = no }
-	}
-}

@@ -425,6 +425,8 @@ muslim = {
 		psc_marriage = no # Disallow uncle-nice and aunt-nephew marriages
 		max_wives = 4
 		matrilineal_marriages = no
+		
+		landed_kin_prestige_bonus = yes
 	}
 	zikri = {
 		graphical_culture = muslimgfx
@@ -442,6 +444,8 @@ muslim = {
 		psc_marriage = no
 		max_wives = 4
 		matrilineal_marriages = no
+		
+		landed_kin_prestige_bonus = yes
 	}
 	yazidi = {
 		graphical_culture = muslimgfx
@@ -468,17 +472,27 @@ muslim = {
 		can_excommunicate = yes
 		max_wives = 4
 		matrilineal_marriages = no
+		
+		landed_kin_prestige_bonus = yes
 	}
 	ibadi = {
 		graphical_culture = muslimgfx
 
-		icon = 3
-		heresy_icon = 8
+		icon = 51
+		heresy_icon = 52
 		
 		crusade_name = JIHAD
+		scripture_name = THE_KORAN
+		priest_title = IMAM_PRIEST
+		god_names = {
+			GOD_ALLAH GOD_THE_GREATEST
+		}
+		
+		evil_god_names = {
+			IBLIS SHAYTAN
+		}
 
 		color = { 0.3 0.6 0.3 }
-		parent = sunni
 		can_grant_claim = yes
 		can_call_crusade = yes
 		priests_can_marry = yes
@@ -486,6 +500,28 @@ muslim = {
 		psc_marriage = no # Disallow uncle-nice and aunt-nephew marriages
 		max_wives = 4
 		matrilineal_marriages = no
+		
+		landed_kin_prestige_bonus = yes
+	}
+	kharijite = {
+		graphical_culture = muslimgfx
+
+		icon = 51
+		heresy_icon = 52
+		
+		crusade_name = JIHAD
+
+		color = { 0.4 0.8 0.6 }
+		parent = ibadi
+		can_grant_claim = yes
+		can_call_crusade = yes
+		priests_can_marry = yes
+		can_hold_temples = yes
+		psc_marriage = no # Disallow uncle-nice and aunt-nephew marriages
+		max_wives = 4
+		matrilineal_marriages = no
+		
+		landed_kin_prestige_bonus = yes
 	}
 	shiite = {
 		graphical_culture = muslimgfx
@@ -512,6 +548,8 @@ muslim = {
 		psc_marriage = no
 		max_wives = 4
 		matrilineal_marriages = no
+		
+		landed_kin_prestige_bonus = yes
 	}
 	druze = {
 		graphical_culture = muslimgfx
@@ -529,6 +567,8 @@ muslim = {
 		psc_marriage = no
 		max_wives = 4
 		matrilineal_marriages = no
+		
+		landed_kin_prestige_bonus = yes
 	}
 	hurufi = {
 		graphical_culture = muslimgfx
@@ -546,6 +586,8 @@ muslim = {
 		psc_marriage = no
 		max_wives = 4
 		matrilineal_marriages = no
+		
+		landed_kin_prestige_bonus = yes
 	}
 }
 
@@ -591,6 +633,10 @@ pagan_group = {
 		
 		religious_clothing_head = 3
 		religious_clothing_priest = 3
+		
+		allow_in_ruler_designer = no
+		
+		dislike_tribal_organization = yes
 	}
 	
 	norse_pagan_reformed = {
@@ -639,6 +685,8 @@ pagan_group = {
 		religious_clothing_priest = 3
 		
 		intermarry = norse_pagan
+		
+		allow_in_ruler_designer = no
 	}		
 	
 	norse_pagan = {
@@ -687,6 +735,8 @@ pagan_group = {
 		religious_clothing_priest = 3
 		
 		intermarry = norse_pagan_reformed
+		
+		dislike_tribal_organization = yes
 	}	
 	
 	tengri_pagan_reformed = { # Mongols
@@ -726,6 +776,8 @@ pagan_group = {
 		
 		religious_clothing_head = 6
 		religious_clothing_priest = 4
+		
+		allow_in_ruler_designer = no
 	}		
 	
 	tengri_pagan = { #Mongols
@@ -767,6 +819,8 @@ pagan_group = {
 		
 		religious_clothing_head = 6
 		religious_clothing_priest = 4
+		
+		dislike_tribal_organization = yes
 	}
 	
 	baltic_pagan_reformed = {
@@ -806,6 +860,8 @@ pagan_group = {
 		
 		religious_clothing_head = 3
 		religious_clothing_priest = 3
+		
+		allow_in_ruler_designer = no
 	}		
 	
 	baltic_pagan = {
@@ -845,6 +901,8 @@ pagan_group = {
 		
 		religious_clothing_head = 3
 		religious_clothing_priest = 3
+		
+		dislike_tribal_organization = yes
 	}	
 	
 	finnish_pagan_reformed = {
@@ -886,6 +944,8 @@ pagan_group = {
 		
 		religious_clothing_head = 3
 		religious_clothing_priest = 3
+		
+		allow_in_ruler_designer = no
 	}	
 	
 	finnish_pagan = {
@@ -926,6 +986,8 @@ pagan_group = {
 		
 		religious_clothing_head = 3
 		religious_clothing_priest = 3
+		
+		dislike_tribal_organization = yes
 	}
 	
 	aztec_reformed = {
@@ -963,6 +1025,8 @@ pagan_group = {
 		
 		religious_clothing_head = 3
 		religious_clothing_priest = 3
+		
+		allow_in_ruler_designer = no
 	}	
 	
 	aztec = {
@@ -997,6 +1061,8 @@ pagan_group = {
 		
 		religious_clothing_head = 3
 		religious_clothing_priest = 3
+		
+		dislike_tribal_organization = yes
 	}
 
 	slavic_pagan_reformed = {
@@ -1050,6 +1116,8 @@ pagan_group = {
 		
 		religious_clothing_head = 3
 		religious_clothing_priest = 3
+		
+		allow_in_ruler_designer = no
 	}		
 	
 	slavic_pagan = {
@@ -1091,6 +1159,8 @@ pagan_group = {
 		
 		religious_clothing_head = 3
 		religious_clothing_priest = 3
+		
+		dislike_tribal_organization = yes
 	}
 	
 	west_african_pagan_reformed = {
@@ -1134,6 +1204,8 @@ pagan_group = {
 		
 		religious_clothing_head = 3
 		religious_clothing_priest = 3
+		
+		allow_in_ruler_designer = no
 	}
 	
 	west_african_pagan = {
@@ -1163,6 +1235,7 @@ pagan_group = {
 		
 		priests_can_marry = yes
 		female_temple_holders = yes
+		defensive_attrition = yes
 		allow_looting = yes
 		
 		max_consorts = 3
@@ -1174,6 +1247,88 @@ pagan_group = {
 		
 		religious_clothing_head = 3
 		religious_clothing_priest = 3
+		
+		dislike_tribal_organization = yes
+	}
+
+	zun_pagan_reformed = {
+		graphical_culture = muslimgfx
+
+		icon = 49
+		heresy_icon = 50
+
+		ai_convert_other_group = 2 # always try to convert
+		
+		color = { 0.9 1.0 0.0 }
+		god_names = {
+			GOD_ZUN GOD_THE_SUN GOD_THE_GIVER_OF_JUSTICE
+		}
+		evil_god_names = {
+			THE_DARKNESS
+		}
+
+		unit_modifier = {
+			heavy_infantry_offensive = 0.2
+			heavy_infantry_defensive = 0.2
+			
+			key = "OFF_RELIGION"
+		}
+		
+		crusade_name = GREAT_HOLY_WAR
+		scripture_name = THE_LEGENDS
+		priest_title = PRIEST
+
+		priests_can_marry = yes
+		can_call_crusade = yes
+		defensive_attrition = yes
+		max_consorts = 3
+		
+		religious_clothing_head = 6
+		religious_clothing_priest = 4
+
+		intermarry = indian_group
+		intermarry = zoroastrian_group
+		
+		allow_in_ruler_designer = no
+	}
+	
+	zun_pagan = {
+		graphical_culture = muslimgfx
+
+		icon = 48
+		heresy_icon = 50
+		
+		color = { 0.9 1.0 0.0 }
+		god_names = {
+			GOD_ZUN GOD_THE_SUN GOD_THE_GIVER_OF_JUSTICE
+		}
+		evil_god_names = {
+			THE_DARKNESS
+		}
+
+		unit_modifier = {
+			heavy_infantry_offensive = 0.2
+			heavy_infantry_defensive = 0.2
+			
+			key = "OFF_RELIGION"
+		}
+
+		crusade_name = GREAT_HOLY_WAR
+		scripture_name = THE_LEGENDS
+		priest_title = PRIEST
+
+		priests_can_marry = yes
+		defensive_attrition = yes
+		max_consorts = 3
+		reformed = zun_pagan_reformed
+		
+		religious_clothing_head = 6
+		religious_clothing_priest = 4
+
+		intermarry = indian_group
+		intermarry = zoroastrian_group
+		
+		dislike_tribal_organization = yes
 	}
 	
 	hellenic_pagan = {

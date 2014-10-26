@@ -11,7 +11,7 @@ city = {
 		}
 		trigger = { TECH_CITY_CONSTRUCTION = 0 }
 		desc = ct_rep_arsenal_1_desc
-		build_cost = 200
+		gold_cost = 200
 		build_time = 1460
 		fort_level = 1.0
 		garrison_size = 0.25
@@ -34,7 +34,7 @@ city = {
 		trigger = { TECH_CITY_CONSTRUCTION = 4 }
 		upgrades_from = ct_rep_arsenal_1
 		desc = ct_rep_arsenal_2_desc
-		build_cost = 400
+		gold_cost = 400
 		build_time = 1460
 		fort_level = 1.5
 		garrison_size = 0.2
@@ -57,7 +57,7 @@ city = {
 		upgrades_from = ct_rep_arsenal_2
 		trigger = { TECH_CITY_CONSTRUCTION = 7 }
 		desc = ct_rep_arsenal_3_desc
-		build_cost = 600
+		gold_cost = 600
 		build_time = 2190
 		fort_level = 2.0
 		garrison_size = 0.25

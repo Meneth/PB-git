@@ -18,7 +18,7 @@ city = {
 			NOT = { culture_group = west_african }
 			NOT = { has_global_flag = shattered_balance }
 		}
-		build_cost = 10
+		gold_cost = 10
 		build_time = 60
 		light_infantry = 50
 		heavy_infantry = 50

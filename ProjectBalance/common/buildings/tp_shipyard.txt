@@ -4,7 +4,7 @@ temple = {
 		desc = shipyard_desc
 		port = yes
 		trigger = { TECH_NAVAL = 2 }
-		build_cost = 50
+		gold_cost = 50
 		build_time = 365
 		galleys = 2
 		tax_income = -0.05
@@ -18,7 +18,7 @@ temple = {
 		port = yes
 		trigger = { TECH_NAVAL = 4 }
 		upgrades_from = tp_shipyard_1
-		build_cost = 50
+		gold_cost = 50
 		build_time = 365
 		galleys = 2
 		tax_income = -0.1

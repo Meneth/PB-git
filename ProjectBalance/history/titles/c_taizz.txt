@@ -1,43 +1,65 @@
 # c_taizz
-
-840.1.1={
+630.1.1={
 	liege="d_sanaa"
 }
-840.1.1={
-	holder=159397
+
+768.1.1={
+	holder = 188742
 }
-851.1.1={
-	holder=159398
+
+818.1.1={
+	liege=0
+	holder = 188736 # Muhammad Ziyadid
 }
-881.1.1={
-	holder=159399
+859.1.1={
+	holder = 188737 # Ibrahim
+}
+896.1.1={
+	holder = 188738 # Ziyad
 }
 911.1.1={
-	holder=159400
+	holder = 188739 # Ishaq
 }
-922.1.1={
-	holder=159401
+981.1.1={
+	holder = 188740 # Abdallah
 }
-968.1.1={
-	holder=159405
+1012.1.1={
+	holder = 188741 # Ibrahim
 }
-998.1.1={
-	holder=159409
+1018.1.1={
+	liege = d_sanaa
 }
-1010.1.1={
-	holder=159410
-}
+
 1066.1.1 = {
-liege="d_arabia_felix_republic"
+	liege="d_arabia_felix_republic"
+	holder=45035
 }
-1066.1.1 = {
-	holder=191121
+1070.1.1={
+	holder=45036
 }
-1100.1.1 = {
-	holder = 45054
+1084.1.1={
+	holder=45050
 }
-1124.1.1={
-	holder = 191134
+1099.1.1 = {
+	holder=45051
+}
+1109.1.1 = {
+	holder=45052
+}
+1111.1.1 = {
+	holder=45053
+}
+1116.1.1 = {
+	holder=45054
+}
+1117.1.1 = {
+	holder=45055
+}
+1137.1.1 = {
+	holder=45058
+}
+1138.1.1 = {
+	holder=45059
 }
 1171.1.1={
 	liege = "d_sanaa"
@@ -60,8 +82,14 @@ liege="d_arabia_felix_republic"
 	holder = 144094
 }
 1250.1.1={
-	holder = 191136
+	holder = 144095
 }
-1310.1.1={
-	holder = 191137
+1295.1.1={
+	holder = 144096
 }
+1296.1.1={
+	holder = 144097
+}
+1322.1.1={
+	holder = 144098
+}	

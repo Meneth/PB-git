@@ -4,7 +4,7 @@ city = {
 		desc = ct_port_1_desc
 		trigger = { TECH_TRADE_PRACTICES = 8 }
 		potential = { always = no }
-		build_cost = 9999
+		gold_cost = 9999
 		build_time = 365
 		ai_creation_factor = 1
 		
@@ -17,7 +17,7 @@ city = {
 		potential = { always = no }
 		prerequisites = { ct_wall_1 }
 		upgrades_from = ct_port_1
-		build_cost = 9999
+		gold_cost = 9999
 		build_time = 547
 		ai_creation_factor = 1
 
@@ -30,7 +30,7 @@ city = {
 		potential = { always = no }
 		prerequisites = { ct_wall_2 }
 		upgrades_from = ct_port_2
-		build_cost = 9999
+		gold_cost = 9999
 		build_time = 730
 		ai_creation_factor = 1
 
@@ -42,7 +42,7 @@ city = {
 		trigger = { TECH_TRADE_PRACTICES = 8 }
 		potential = { always = no }
 		upgrades_from = ct_port_3
-		build_cost = 9999
+		gold_cost = 9999
 		build_time = 1095
 		ai_creation_factor = 1
 
@@ -54,7 +54,7 @@ city = {
 		trigger = { TECH_TRADE_PRACTICES = 8 }
 		potential = { always = no }
 		upgrades_from = ct_port_4
-		build_cost = 9999
+		gold_cost = 9999
 		build_time = 2190
 		tax_income = 3
 		ai_creation_factor = 1

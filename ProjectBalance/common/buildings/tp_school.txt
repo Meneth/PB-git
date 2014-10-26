@@ -3,7 +3,7 @@ temple = {
 	tp_school_1 = {
 		trigger = { TECH_TEMPLE_CONSTRUCTION = 3 }
 		prerequisites = { tp_wall_1 }
-		build_cost = 120
+		gold_cost = 120
 		build_time = 547
 		tech_growth_modifier = 0.1
 		culture_techpoints = 0.04
@@ -18,7 +18,7 @@ temple = {
 		trigger = { TECH_TEMPLE_CONSTRUCTION = 6 }
 		prerequisites = { tp_wall_2 }
 		upgrades_from = tp_school_1
-		build_cost = 120
+		gold_cost = 120
 		build_time = 547
 		tech_growth_modifier = 0.2
 		culture_techpoints = 0.04

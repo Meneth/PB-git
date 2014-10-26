@@ -16,10 +16,13 @@ b_mottola = temple
 #b_gravina = city
 
 # Misc
-culture = greek #actually Italian
-religion = orthodox #actually Catholic
+culture = greek
+religion = orthodox
 terrain = hills
 
 # History
-1078.1.1 = { trade_post = b_ziani }
+867.1.1 = { culture = lombard religion = catholic }
+#950.1.1 = { trade_post = b_urso }
+1086.1.1 = { culture = italian }
 1130.12.25 = { culture = sicilian }
+1078.1.1 = { trade_post = b_ziani }

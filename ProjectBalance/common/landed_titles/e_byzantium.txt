@@ -9,7 +9,6 @@ e_roman_empire = {
 	title = "Emperor"
 	title_female = "Empress"
 	
-	duchy_revokation = yes
 	purple_born_heirs = yes
 	
 	culture = italian
@@ -31,8 +30,6 @@ e_byzantium = {
 	culture = greek
 	religion = orthodox
 	
-	duchy_revokation=yes # The Emperor can revoke duchies at no prestige cost and no opinion penalty with other vassals
-	
 	has_top_de_jure_capital = yes
 	
 	purple_born_heirs = yes
@@ -45,6 +42,62 @@ e_byzantium = {
 		ruled_years = 5
 		is_adult = yes
 		NOT = { tier = emperor }
+	}
+	
+	k_cyprus = {
+		color = { 85 138 236 }
+		capital = 757 # Famagusta
+		allow = {
+			OR = {
+				religion = catholic
+				is_heresy_of = catholic
+			}
+		}
+	}
+	k_ottoman = {
+		color = { 247 145 30 }
+		culture = turkish
+	}
+	k_rum = {
+		color = { 144 182 161 }
+		culture = turkish
+		dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+	}
+	k_saruhan = {
+		color = { 144 171 225 }
+		culture = turkish
+	}
+	k_tekke = {
+		color={ 244 153 189 }
+	}
+	k_trinacria = {
+		color={ 249 232 247 }
+	#	capital = 340 #	Palermo
+		
+		allow = {
+			OR = {
+				religion = catholic
+				is_heresy_of = catholic
+			}
+		}
+	}
+	k_mentese = {
+		color = { 60 130 20 }
+		culture = turkish
+	}
+	k_karaman = {
+		color = { 120 41 92 }
+		culture = turkish
+	}
+	k_germiyan = {
+		color = { 255 180 180 }
+	}
+	k_candar = {
+		color = { 238 79 182 }
+		culture = turkish
+	}
+	k_eretnid = {
+		color = { 253 182 182 }
 	}
 	
 	k_thessalonika = {
@@ -79,6 +132,7 @@ e_byzantium = {
 				
 				b_gallipoli = {
 					turkish = "Gelibolu"
+					greek = "Kallipolis"
 				}
 				b_heraclea = {
 				}
@@ -508,6 +562,7 @@ e_byzantium = {
 				b_palodes = {
 				}
 				b_adapazari = {
+					greek = "Mesonesion"
 				}
 				b_malagina = {
 				}
@@ -586,7 +641,6 @@ e_byzantium = {
 				}
 				b_lebedos = {
 					holy_site = orthodox
-					holy_site = nestorian
 				}
 				b_miletos = {
 				}
@@ -833,6 +887,8 @@ e_byzantium = {
 				color2={ 255 255 20 }
 				
 				italian = "Durazzo"
+				serbian = "Ohrid"
+				bulgarian = "Ohrid"
 				
 				b_durazzo = {
 					greek = "Dyrrhachion"
@@ -992,8 +1048,11 @@ e_byzantium = {
 				color={ 182 15 124 }
 				color2={ 255 255 20 }
 				
+				greek = Gortyn
+				italian = Gortyn
+				
 				b_iraklio = {
-					greek = "Megalokastron"
+					greek = "Gortyn"
 					italian = "Candia"
 					turkish = "Kandiye"
 					maghreb_arabic = "Khandaq"

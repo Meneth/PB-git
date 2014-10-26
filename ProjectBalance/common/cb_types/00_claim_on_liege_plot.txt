@@ -52,7 +52,17 @@ claim_on_liege_plot = {
 		}
 	}
 
+	on_add = {
+		# EMF: Adjust dynlevy laws due to realm fracture
+		hidden_tooltip = { ROOT = { character_event = { id = emf_dynlevy.4 } } }
+	}
+	
 	on_success = {
+		hidden_tooltip = { ROOT = { add_character_modifier = { name = emf_victory_timer duration = 7 hidden = yes } } }
+		
+		# EMF: Adjust dynlevy laws due to realm fracture
+		hidden_tooltip = { ROOT = { character_event = { id = emf_dynlevy.4 } } }
+		
 		any_attacker = {
 			limit = { character = ROOT }
 			participation_scaled_prestige = 100
@@ -181,7 +191,7 @@ claim_on_liege_plot = {
 	}
 	
 	on_success_title = {
-		usurp_title_plus_barony_if_unlanded = ROOT
+		usurp_title_plus_barony_if_unlanded = { target = ROOT type = claim }
 		
 		if = {
 			limit = {
@@ -196,6 +206,9 @@ claim_on_liege_plot = {
 	}
 
 	on_fail = {
+		# EMF: Adjust dynlevy laws due to realm fracture
+		hidden_tooltip = { ROOT = { character_event = { id = emf_dynlevy.4 } } }
+		
 		ROOT = {
 			prestige = -100
 		}
@@ -218,6 +231,11 @@ claim_on_liege_plot = {
 	}
 
 	on_reverse_demand = {
+		hidden_tooltip = { FROM = { add_character_modifier = { name = emf_victory_timer duration = 7 hidden = yes } } }
+		
+		# EMF: Adjust dynlevy laws due to realm fracture
+		hidden_tooltip = { ROOT = { character_event = { id = emf_dynlevy.4 } } }
+		
 		ROOT = {
 			prestige = -200
 			imprison = FROM
@@ -249,6 +267,9 @@ claim_on_liege_plot = {
 			}
 		}
 		end_war = invalid
+
+		# EMF: Adjust dynlevy laws due to realm fracture
+		hidden_tooltip = { ROOT = { character_event = { id = emf_dynlevy.4 } } }
 	}
 	
 	attacker_ai_victory_worth = {

@@ -6,9 +6,10 @@ decisions = {
 			NOT = { has_global_flag = SWMH }
 		}
 		effect = {
+			set_global_flag = prepare_for_conversion
 			hidden_tooltip = {
 				primary_title = {
-					add_law = centralization_1
+					add_law = crown_authority_1
 					if = {
 						limit = {
 							OR = {
@@ -30,8 +31,8 @@ decisions = {
 								}
 							}
 						}
-						add_law = centralization_0
-						revoke_law = centralization_1
+						add_law = crown_authority_0
+						revoke_law = crown_authority_1
 					}
 					if = {
 						limit = {
@@ -56,9 +57,9 @@ decisions = {
 							title = e_hre
 							NOT = { has_law = hre_law_0 }
 						}
-						add_law = centralization_4
-						revoke_law = centralization_0
-						revoke_law = centralization_1
+						add_law = crown_authority_4
+						revoke_law = crown_authority_0
+						revoke_law = crown_authority_1
 					}
 				}
 				any_independent_ruler = {
@@ -66,7 +67,7 @@ decisions = {
 						higher_tier_than = duke
 					}
 					primary_title = {
-						add_law = centralization_1
+						add_law = crown_authority_1
 						if = {
 							limit = {
 								OR = {
@@ -88,8 +89,8 @@ decisions = {
 									}
 								}
 							}
-							add_law = centralization_0
-							revoke_law = centralization_1
+							add_law = crown_authority_0
+							revoke_law = crown_authority_1
 						}
 						if = {
 							limit = {
@@ -114,9 +115,9 @@ decisions = {
 								title = e_hre
 								NOT = { has_law = hre_law_0 }
 							}
-							add_law = centralization_4
-							revoke_law = centralization_0
-							revoke_law = centralization_1
+							add_law = crown_authority_4
+							revoke_law = crown_authority_0
+							revoke_law = crown_authority_1
 						}
 					}
 				}

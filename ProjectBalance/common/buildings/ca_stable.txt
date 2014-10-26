@@ -3,7 +3,7 @@ castle = {
 	#Stable, gives light cavalry and some heavy cavalry
 	ca_stable_1 = {
 		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
-		build_cost = 100
+		gold_cost = 100
 		build_time = 365
 		light_cavalry = 45
 		retinuesize = 20
@@ -16,7 +16,7 @@ castle = {
 		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
 		prerequisites = { ca_wall_1 }
 		upgrades_from = ca_stable_1
-		build_cost = 120
+		gold_cost = 120
 		build_time = 547
 		light_cavalry = 55
 		retinuesize = 20
@@ -29,7 +29,7 @@ castle = {
 		trigger = { TECH_CASTLE_CONSTRUCTION = 3 }
 		prerequisites = { ca_wall_2 }
 		upgrades_from = ca_stable_2
-		build_cost = 200
+		gold_cost = 200
 		build_time = 730
 		light_cavalry = 55
 		knights = 5
@@ -42,7 +42,7 @@ castle = {
 	ca_stable_4 = {
 		trigger = { TECH_CASTLE_CONSTRUCTION = 5 }
 		upgrades_from = ca_stable_3
-		build_cost = 300
+		gold_cost = 300
 		build_time = 1095
 		light_cavalry = 55
 		knights = 10
@@ -55,7 +55,7 @@ castle = {
 	ca_stable_5 = {
 		trigger = { TECH_CASTLE_CONSTRUCTION = 7 }
 		upgrades_from = ca_stable_4
-		build_cost = 400
+		gold_cost = 400
 		build_time = 2190
 		light_cavalry = 55
 		knights = 20

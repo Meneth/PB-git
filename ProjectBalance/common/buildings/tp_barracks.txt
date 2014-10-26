@@ -2,7 +2,7 @@
 temple = {
 	tp_barracks_1 = {
 		trigger = { TECH_TEMPLE_CONSTRUCTION = 0 }
-		build_cost = 100
+		gold_cost = 100
 		build_time = 365
 		light_infantry = 60
 		archers = 30
@@ -16,7 +16,7 @@ temple = {
 		trigger = { TECH_TEMPLE_CONSTRUCTION = 1 }
 		prerequisites = { tp_wall_1 }
 		upgrades_from = tp_barracks_1
-		build_cost = 120
+		gold_cost = 120
 		build_time = 547
 		light_infantry = 65
 		archers = 45
@@ -30,7 +30,7 @@ temple = {
 		trigger = { TECH_TEMPLE_CONSTRUCTION = 2 }
 		prerequisites = { tp_wall_2 }
 		upgrades_from = tp_barracks_2
-		build_cost = 200
+		gold_cost = 200
 		build_time = 730
 		light_infantry = 70
 		archers = 60
@@ -43,7 +43,7 @@ temple = {
 	tp_barracks_4 = {
 		trigger = { TECH_TEMPLE_CONSTRUCTION = 4 }
 		upgrades_from = tp_barracks_3
-		build_cost = 300
+		gold_cost = 300
 		build_time = 1095
 		light_infantry = 75
 		archers = 75
@@ -56,7 +56,7 @@ temple = {
 	tp_barracks_5 = {
 		trigger = { TECH_TEMPLE_CONSTRUCTION = 6 }
 		upgrades_from = tp_barracks_4
-		build_cost = 400
+		gold_cost = 400
 		build_time = 2190
 		light_infantry = 85
 		archers = 85
@@ -69,7 +69,7 @@ temple = {
 	tp_barracks_6 = {
 		trigger = { TECH_TEMPLE_CONSTRUCTION = 8 }
 		upgrades_from = tp_barracks_5
-		build_cost = 500
+		gold_cost = 500
 		build_time = 2190
 		light_infantry = 95
 		archers = 95

@@ -2,7 +2,7 @@
 city = {
 	ct_university_1 = {
 		trigger = { TECH_CITY_CONSTRUCTION = 3 }
-		build_cost = 600
+		gold_cost = 600
 		build_time = 1095
 		tech_growth_modifier = 0.2
 		economy_techpoints = 0.05
@@ -13,7 +13,7 @@ city = {
 	ct_university_2 = {
 		trigger = { TECH_CITY_CONSTRUCTION = 5 }
 		upgrades_from = ct_university_1
-		build_cost = 800
+		gold_cost = 800
 		build_time = 2190
 		tech_growth_modifier = 0.3
 		economy_techpoints = 0.05
@@ -24,7 +24,7 @@ city = {
 	ct_university_3 = {
 		trigger = { TECH_CITY_CONSTRUCTION = 7 }
 		upgrades_from = ct_university_2
-		build_cost = 800
+		gold_cost = 800
 		build_time = 2190
 		tech_growth_modifier = 0.3
 		economy_techpoints = 0.05

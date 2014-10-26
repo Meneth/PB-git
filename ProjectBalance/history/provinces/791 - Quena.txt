@@ -16,7 +16,7 @@ b_qift = city
 
 # Misc
 culture = egyptian_arabic
-religion = sunni
+religion = miaphysite
 
 # History
 1066.1.1 = { 

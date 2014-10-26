@@ -3901,6 +3901,9 @@
 	1195.1.2={
 	capital="c_novgorod"
 	}
+	1240.1.1 = {
+		capital="c_novgorod"
+	}
 	1243.1.2={
 		death="1243.1.2"
 	}
@@ -3946,7 +3949,7 @@
 	1215.1.2={
 		birth="1215.1.2"
 	}
-	1215.1.2={
+	1240.1.2={
 	capital="c_novgorod"
 	}
 	1258.1.2={
@@ -10717,6 +10720,7 @@
 	religion="slavic_pagan"
 	culture="russian"
 	dynasty=1029167
+	father = 194138
 	830.1.1={
 		birth="830.1.1"
 	}
@@ -10761,6 +10765,7 @@
 	religion="slavic_pagan"
 	culture="russian"
 	dynasty=1029138
+	father = 194144
 	822.1.1={
 		birth="822.1.1"
 	}
@@ -10886,6 +10891,7 @@
 	religion="slavic_pagan"
 	culture="russian"
 	dynasty=1029116
+	father = 194133
 	780.1.1={
 		birth="780.1.1"
 	}
@@ -10962,7 +10968,7 @@
 160055 = {
 	name="Ljuboslav"
 	religion="slavic_pagan"
-	culture="russian"
+	culture="ilmenian"
 	dynasty=1029136
 	father=160057
 	780.1.1={
@@ -10975,7 +10981,7 @@
 160056 = {
 	name="Krasimir"
 	religion="slavic_pagan"
-	culture="russian"
+	culture="ilmenian"
 	dynasty=1029136
 	father=160057
 	785.1.1={
@@ -10988,13 +10994,14 @@
 160057 = {
 	name="Zbignev"
 	religion="slavic_pagan"
-	culture="russian"
+	culture="ilmenian"
 	dynasty=1029136
+	father = 194131
 	750.1.1={
 		birth="750.1.1"
 	}
-	800.1.1={
-		death="800.1.1"
+	812.1.1={
+		death = yes
 	}
 }
 160058 = {
@@ -11067,6 +11074,7 @@
 	religion="slavic_pagan"
 	culture="russian"
 	dynasty=1029118
+	father = 194146
 	816.1.1={
 		birth="816.1.1"
 	}
@@ -11079,6 +11087,7 @@
 	religion="slavic_pagan"
 	culture="russian"
 	dynasty=1029117
+	father = 194135
 	816.1.1={
 		birth="816.1.1"
 	}
@@ -11485,6 +11494,7 @@
 	religion="slavic_pagan"
 	culture=russian
 	dynasty=1029137
+	father = 194141
 	810.1.1={
 		birth=yes
 	}
@@ -11599,5 +11609,219 @@
 	}	
 	1178.1.2={
 		death="1178.1.2"
+	}
+}
+194131 = {
+	name="Vysheslav"
+	religion="slavic_pagan"
+	culture="ilmenian"
+	dynasty=1029136
+	720.1.1={
+		birth = yes
+	}
+	760.1.1={
+		death = yes
+	}
+}
+194132 = {
+	name="Rodislav"
+	religion="slavic_pagan"
+	culture="ilmenian"
+	dynasty=1029136
+	father = 194131
+	743.1.1={
+		birth = yes
+	}
+	800.1.1={
+		death = yes
+	}
+}
+194133 = {
+	name="Svetozar"
+	religion="slavic_pagan"
+	culture="ilmenian"
+	dynasty=1029116
+	750.1.1={
+		birth = yes
+	}
+	799.1.1={
+		death = yes
+	}
+}
+194134 = {
+	name="Igor"
+	religion="slavic_pagan"
+	culture="ilmenian"
+	dynasty=1029117
+	738.1.1={
+		birth = yes
+	}
+	799.1.1={
+		death = yes
+	}
+}
+194135 = {
+	name="Igor"
+	religion="slavic_pagan"
+	culture="ilmenian"
+	dynasty=1029117
+	father = 194134
+	764.1.1={
+		birth = yes
+	}
+	822.1.1={
+		death = yes
+	}
+}
+194136 = {
+	name = "Briachislav"
+	dynasty = 1029167
+	religion = slavic_pagan
+	culture = volhynian
+	733.1.1 = {
+		birth = yes
+	}
+	799.1.1 = {
+		death = yes
+	}
+}
+194137 = {
+	name = "Svetozar"
+	dynasty = 1029167
+	religion = slavic_pagan
+	culture = volhynian
+	father = 194136
+	770.1.1 = {
+		birth = yes
+	}
+	822.1.1 = {
+		death = yes
+	}
+}
+194138 = {
+	name = "Gleb"
+	dynasty = 1029167
+	religion = slavic_pagan
+	culture = russian
+	father = 194137
+	810.1.1 = {
+		birth = yes
+	}
+	890.1.1 = {
+		death = yes
+	}
+}
+194139 = {
+	name = "Dobrava"
+	female = yes
+	dynasty = 1045024
+	religion = slavic_pagan
+	culture = volhynian
+	750.1.1 = {
+		birth = yes
+	}
+	799.1.1 = {
+		death = yes
+	}
+}
+194140 = {
+	name = "Stanislav"
+	dynasty = 1029137
+	religion = slavic_pagan
+	culture = severian
+	733.1.1 = {
+		birth = yes
+	}
+	799.1.1 = {
+		death = yes
+	}
+}
+194141 = {
+	name = "Igor"
+	dynasty = 1029137
+	religion = slavic_pagan
+	culture = severian
+	father = 194140
+	770.1.1 = {
+		birth = yes
+	}
+	822.1.1 = {
+		death = yes
+	}
+}
+194142 = {
+	name = "Sviatoslav"
+	dynasty = 1029138
+	religion = slavic_pagan
+	culture = severian
+	733.1.1 = {
+		birth = yes
+	}
+	799.1.1 = {
+		death = yes
+	}
+}
+194143 = {
+	name = "Volodar"
+	dynasty = 1029138
+	religion = slavic_pagan
+	culture = severian
+	father = 194140
+	770.1.1 = {
+		birth = yes
+	}
+	822.1.1 = {
+		death = yes
+	}
+}
+194144 = {
+	name = "Svetozar"
+	dynasty = 1029138
+	religion = slavic_pagan
+	culture = ilmenian
+	father = 194137
+	810.1.1 = {
+		birth = yes
+	}
+	866.1.1 = {
+		death = yes
+	}
+}
+194145 = {
+	name = "Volodar"
+	dynasty = 1029118
+	religion = slavic_pagan
+	culture = ilmenian
+	733.1.1 = {
+		birth = yes
+	}
+	799.1.1 = {
+		death = yes
+	}
+}
+194146 = {
+	name = "Iliya"
+	dynasty = 1029118
+	religion = slavic_pagan
+	culture = ilmenian
+	father = 194145
+	770.1.1 = {
+		birth = yes
+	}
+	822.1.1 = {
+		death = yes
+	}
+}
+194177 = {
+	name="Ivan"
+	dynasty=11107
+	religion="orthodox"
+	culture="russian"
+	father=125244
+	1217.1.2={
+		birth = yes
+	}
+	1258.1.2={
+		death = yes
 	}
 }

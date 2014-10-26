@@ -1131,7 +1131,7 @@ RETTYPE_CUL_IRANIAN =
 		horse_archers_offensive = 0.4
 		horse_archers_morale = 0.2
 		light_cavalry_offensive = 0.4
-		light_cavalry_defensive = 0.2
+		light_cavalry_morale = 0.2
 	}
 }
 
@@ -1427,6 +1427,7 @@ RETTYPE_CUL_INDIAN =
 	
 	modifier = {
 		archers_offensive = 0.6
+		war_elephants_offensive = 0.6
 	}
 }
 

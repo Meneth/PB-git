@@ -1,5 +1,12 @@
-765.1.1={
-	holder = 33250
+700.1.1 = {
+	liege = k_saxony
+	de_jure_liege = k_saxony
+}
+740.1.1={
+	holder = 190455 #Theoderic
+}
+781.1.1={
+	holder = 0
 }
 844.1.1={
 	liege=k_germany

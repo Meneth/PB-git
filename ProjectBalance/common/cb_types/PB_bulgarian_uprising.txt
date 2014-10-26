@@ -44,6 +44,7 @@ bulgarian_uprising = {
 	}
 	
 	on_success_title = {
+		hidden_tooltip = { ROOT = { add_character_modifier = { name = emf_victory_timer duration = 7 hidden = yes } } }
 		
 		hidden_tooltip = {
 			# Init laws before the empire is held so that we don't have to erase the pass_effect
@@ -59,11 +60,12 @@ bulgarian_uprising = {
 					title = PREV
 					enemy = FROM
 					is_crusade = yes
+					is_revolt = yes
 				}
 			}
 			
 			#Take the empire title
-			gain_title = ROOT
+			usurp_title = { target = ROOT type = revolt }
 			
 			# Usurp tier >= count titles that are held by non-Bulgars and
 			# not the subject of one of my [new] Bulgar dukes or kings.
@@ -84,7 +86,7 @@ bulgarian_uprising = {
 						higher_tier_than = baron
 						de_jure_liege_or_above = PREVPREV
 					}
-					usurp_title = ROOT
+					usurp_title = { target = ROOT type = revolt }
 				}
 			}
 		}
@@ -115,6 +117,7 @@ bulgarian_uprising = {
 	}
 	
 	on_reverse_demand = {
+		hidden_tooltip = { FROM = { add_character_modifier = { name = emf_victory_timer duration = 7 hidden = yes } } }
 		ROOT = {
 			prestige = -100
 			set_defacto_liege = FROM

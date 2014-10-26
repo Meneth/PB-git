@@ -1,4 +1,19 @@
 #Massively changed from vanilla
+e_germany = {
+	color={ 155 155 155 }
+	color2={ 220 220 20 }
+	
+	capital = 90 # Jülich / Aachen
+	
+	religion=catholic
+	culture = german
+	name_tier = king
+	short_name = yes
+	allow = {
+		FROM = { is_titular = no }
+	}
+}
+
 e_hre = {
 	color={ 155 155 155 }
 	color2={ 220 220 20 }
@@ -8,7 +23,20 @@ e_hre = {
 	religion=catholic
 	culture = german
 	short_name = yes
-
+	
+	k_hansa = {
+		color={ 142 142 142 }
+		color2={ 255 255 255 }
+		
+		capital = 262 # Lübeck
+		
+		dignity = 200 # Never want the Hanseatic League to change primary title
+		
+		allow = {
+			always = no
+			is_republic = yes
+		}
+	}
 	k_frisia = {
 		color={ 245 100 20 }
 		color2={ 220 220 20 }
@@ -674,6 +702,8 @@ e_hre = {
 			color2={ 255 255 255 }
 			
 			capital = 365 #Brandenburg
+			
+			pommeranian = "Sorbia" # Brennaburg
 		
 			c_altmark = {
 				color={ 189 189 189 }

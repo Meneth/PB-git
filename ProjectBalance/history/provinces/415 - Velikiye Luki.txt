@@ -5,8 +5,8 @@ title = c_velikiye_luki
 
 # Settlements
 max_settlements = 4
-b_velikiyeluki = castle
-b_nevel = city
+b_velikiyeluki = tribal
+#b_nevel = city
 
 #b_sebezh = temple
 #b_opochka = castle
@@ -16,13 +16,20 @@ b_nevel = city
 #b_staryatoropa = castle
 
 # Misc
-culture = russian
+culture = ilmenian
 religion = slavic_pagan
 
 # History
+867.1.1 = {
+	culture = russian
+}
 988.1.1 = {
 	religion = orthodox 
 	b_sebezh = temple
 }
-1136.1.2 = { capital = b_nevel }
 
+1136.1.2 = { b_nevel = city }
+1136.1.2 = { capital = b_nevel }
+1200.1.1 = {
+	b_velikiyeluki = castle
+}
