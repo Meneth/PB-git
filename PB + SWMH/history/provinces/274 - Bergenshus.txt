@@ -6,9 +6,7 @@ title = c_bergenshus
 # Settlements
 max_settlements = 6
 
-b_ask = castle # Askr
-b_aarstad = castle # Álreksstaðir
-b_stoele = castle # Stuðla
+b_ask = tribal # Askr
 #b_seim = castle # Sæheimr
 #b_bergenhus = castle # Hákonarhella
 #b_bergen = city # Bjørgvín
@@ -27,15 +25,18 @@ culture = norse
 religion = norse_pagan
 
 # History
-867.1.1 = {
+900.1.1 = {
+	b_aarstad = castle
 	b_aarstad = ca_shipyard_1
+	b_stoele = castle # Stuðla
 }
 900.1.1 = { remove_settlement = b_ask }
 900.1.1 = { capital = b_aarstad }
 900.1.1 = { b_seim = castle }
 1024.1.1 = { religion = catholic }
 1047.10.25 = { culture = norwegian } 
-1050.1.1 = { b_bergen = city 
+1050.1.1 = {
+	b_bergen = city 
 	b_bergen = ct_wall_1
 	b_bergen = ct_port_1
         b_bergen = ct_port_2

@@ -6,8 +6,8 @@ title = c_southisland
 # Settlements
 max_settlements = 4
 
-b_alftanes = castle
-b_reykjavik = city
+b_alftanes = tribal
+#b_reykjavik = city
 b_skalholt = temple
 #b_pingvellir = castle
 #b_kjalarnes = castle
@@ -22,7 +22,11 @@ religion = norse_pagan
 
 # History
 867.1.1 = {
-	b_reykjavik = ct_shipyard_1
+	b_alftanes = tb_shipyard_1
+}
+1000.1.1 = {
+	b_alftanes = castle
+	b_reykjavik = city
 }
 1000.1.1 = { religion = catholic } 
 1047.10.25 = { culture = norwegian } 

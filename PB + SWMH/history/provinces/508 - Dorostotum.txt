@@ -10,7 +10,7 @@ b_pliska = castle
 b_preslav = castle
 b_silistra = temple
 #b_shumen = city
-#b_cherven = castle
+#b_cherven_bulgaria = castle
 #b_ivanovo = temple
 
 

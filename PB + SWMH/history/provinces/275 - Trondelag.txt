@@ -6,9 +6,8 @@ title = c_trondelag
 # Settlements
 max_settlements = 5
 
-b_lade = castle # Hlaðir
+b_lade = tribal # Hlaðir
 b_trondheim = temple # Niðaróss
-b_longtun = city # Lagatýn
 #b_leksvik = castle # Ljoxa
 #b_frosta = city # Frosta
 #b_vaernes = castle # Varnes
@@ -22,6 +21,10 @@ culture = norse
 religion = norse_pagan
 
 # History
+1000.1.1 = {
+	b_lade = castle
+	b_longtun = city # Lagatýn
+}
 1030.1.1 = { religion = catholic } 
 1047.10.25 = { culture = norwegian } 
 1066.1.1 = { trade_post = b_svinfellingar }

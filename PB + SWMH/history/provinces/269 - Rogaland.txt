@@ -6,9 +6,9 @@ title = c_rogaland
 # Settlements
 max_settlements = 4
 
-b_avaldsnes = castle # Aagvaldnes
-b_haugesund = city # Haugar
-b_sola = castle # Sóli
+b_avaldsnes = tribal # Aagvaldnes
+#b_haugesund = city # Haugar
+#b_sola = castle # Sóli
 #b_utstein = temple # Útsteinn
 #b_aanestad = castle # Oprustaðir
 #b_kleppe = temple # Kleppr
@@ -19,6 +19,11 @@ culture = norse
 religion = norse_pagan
 
 # History
+1000.1.1 = {
+	b_avaldsnes = castle # Aagvaldnes
+	b_haugesund = city # Haugar
+	b_sola = castle # Sóli
+}
 1024.1.1 = { religion = catholic }
 1047.10.25 = { culture = norwegian } 
 1166.1.1 = { trade_post = b_hetvelt }

@@ -6,7 +6,7 @@ title = c_vestisland
 # Settlements
 max_settlements = 2
 
-b_husavik = city
+b_husavik = tribal
 #b_borgarnes = city
 
 # Misc
@@ -15,9 +15,13 @@ religion = norse_pagan
 
 # History
 867.1.1 = {
-	b_husavik = ct_shipyard_1
+	b_husavik = tb_shipyard_1
 }
-1000.1.1 = { religion = catholic } 
+1000.1.1 = { 
+	religion = catholic
+	b_husavik = city
+	b_husavik = ct_shipyard_1
+} 
 1047.10.25 = { culture = norwegian } 
 
 1066.1.1 = { trade_post = b_oddaverjar }

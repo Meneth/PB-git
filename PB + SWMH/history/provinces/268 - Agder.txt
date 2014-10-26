@@ -6,9 +6,9 @@ title = c_agder
 # Settlements
 max_settlements = 4
 
-b_tromoey = castle # Þruma
-b_oddernes = city # Otrunes
-b_liknes = castle # Hvinir
+b_tromoey = tribal # Þruma
+#b_oddernes = city # Otrunes
+#b_liknes = castle # Hvinir
 #b_spangereid = city # Spangareið
 #b_hylestad = temple # Hyljastaðir
 #b_holt = city
@@ -19,7 +19,14 @@ culture = norse
 religion = norse_pagan
 
 # History
-1000.1.1 = { trade_post = b_hetvelt }
+1000.1.1 = {
+	trade_post = b_hetvelt
+	b_tromoey = castle
+	b_oddernes = city
+	b_liknes = castle
+}
 1015.1.1 = { religion = catholic } 
 1047.10.25 = { culture = norwegian } 
+
+# History
 1282.1.1 = { trade_post = b_vorrade }

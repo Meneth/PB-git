@@ -17,7 +17,7 @@ b_marabout = city
 
 # Misc
 culture = egyptian_arabic
-religion = druze
+religion = miaphysite
 
 # History
 
