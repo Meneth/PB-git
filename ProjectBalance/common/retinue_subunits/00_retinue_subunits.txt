@@ -51,6 +51,7 @@ RETTYPE_CUL_ITA =
 		OR = {
 			culture = italian
 			culture = sicilian
+			culture = lombard
 		}
 		
 		# PB's retinue spam filter
