@@ -1364,6 +1364,8 @@ decisions = {
 				holder_scope = {
 					NOT = { de_facto_liege = ROOT }
 					NOT = { num_of_count_titles = 5 }
+					independent = yes
+					primary_title = { title = d_knights_templar }
 				}
 			}
 		}
@@ -1442,6 +1444,8 @@ decisions = {
 				holder_scope = {
 					NOT = { de_facto_liege = ROOT }
 					NOT = { num_of_count_titles = 5 }
+					independent = yes
+					primary_title = { title = d_knights_hospitaler }
 				}
 			}
 		}
