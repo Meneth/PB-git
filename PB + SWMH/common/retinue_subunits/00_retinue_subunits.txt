@@ -721,6 +721,35 @@ RETTYPE_CUL_CASTILLIAN =
 		light_cavalry_offensive = 0.6
 	}
 }
+RETTYPE_CUL_VISIGOTHIC = 
+{
+	first_type = 3
+	first_amount = 250
+	
+	potential = {
+		culture = visigothic
+		
+		# PB's retinue spam filter
+		OR = {
+			ai = no
+			AND = {
+				higher_real_tier_than = count
+				OR = {
+					higher_real_tier_than = duke
+					AND = {
+						independent = yes
+						realm_size = 18
+					}
+					realm_size = 24
+				}
+			}
+		}
+	}
+	
+	modifier = {
+		light_cavalry_offensive = 0.6
+	}
+}
 RETTYPE_CUL_CATALAN = 
 {
 	first_type = 0
