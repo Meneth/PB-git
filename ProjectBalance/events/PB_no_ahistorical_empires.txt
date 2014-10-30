@@ -11,68 +11,80 @@ namespace = meneth
 #Remove ahistorical dejure titles
 narrative_event = {
 	id = meneth.512
-	title = "meneth.200.name"
-	desc = "meneth.200.desc"
+	desc = AI_EVENT
+	hide_window = yes
 	is_triggered_only = yes
 	
-	picture = "GFX_evt_battle"
 	option = {
 		name = OK
 		e_abyssinia = {
 			any_direct_de_jure_vassal_title = { de_jure_liege = 0 }
+			activate_title = { title = THIS status = no }
 		}
 		e_arabia = {
 			any_direct_de_jure_vassal_title = { de_jure_liege = 0 }
+			activate_title = { title = THIS status = no }
 		}
 		e_britannia = {
 			any_direct_de_jure_vassal_title = { de_jure_liege = 0 }
+			activate_title = { title = THIS status = no }
 		}
 		e_bulgaria = {
 			any_direct_de_jure_vassal_title = { de_jure_liege = 0 }
+			activate_title = { title = THIS status = no }
 		}
 		e_france = {
 			any_direct_de_jure_vassal_title = { de_jure_liege = 0 }
+			activate_title = { title = THIS status = no }
 		}
 		e_italy = {
 			any_direct_de_jure_vassal_title = { de_jure_liege = 0 }
+			activate_title = { title = THIS status = no }
 		}
 		e_mali = {
 			any_direct_de_jure_vassal_title = { de_jure_liege = 0 }
+			activate_title = { title = THIS status = no }
 		}
 		e_russia = {
 			any_direct_de_jure_vassal_title = { de_jure_liege = 0 }
+			activate_title = { title = THIS status = no }
 		}
 		e_scandinavia = {
 			any_direct_de_jure_vassal_title = { de_jure_liege = 0 }
+			activate_title = { title = THIS status = no }
+		}
+		e_spain = {
+			any_direct_de_jure_vassal_title = { de_jure_liege = 0 }
+			activate_title = { title = THIS status = no }
 		}
 		if = {
 			limit = { NOT = { has_global_flag = SWMH } }
 			e_carpathia = {
 				any_direct_de_jure_vassal_title = { de_jure_liege = 0 }
+				activate_title = { title = THIS status = no }
 			}
 			e_poland_lithuania = {
 				any_direct_de_jure_vassal_title = { de_jure_liege = 0 }
-			}
-			e_spain = {
-				any_direct_de_jure_vassal_title = { de_jure_liege = 0 }
+				activate_title = { title = THIS status = no }
 			}
 			e_tartaria = {
 				any_direct_de_jure_vassal_title = { de_jure_liege = 0 }
+				activate_title = { title = THIS status = no }
 			}
 		}
 		if = {
 			limit = { has_global_flag = SWMH }
 			e_hungary = {
 				any_direct_de_jure_vassal_title = { de_jure_liege = 0 }
+				activate_title = { title = THIS status = no }
 			}
 			e_poland = {
 				any_direct_de_jure_vassal_title = { de_jure_liege = 0 }
-			}
-			e_iberia = {
-				any_direct_de_jure_vassal_title = { de_jure_liege = 0 }
+				activate_title = { title = THIS status = no }
 			}
 			e_africa = {
 				any_direct_de_jure_vassal_title = { de_jure_liege = 0 }
+				activate_title = { title = THIS status = no }
 			}
 		}
 		if = {

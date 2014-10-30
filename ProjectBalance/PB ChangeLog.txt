@@ -1,6 +1,7 @@
 ﻿4.03
 	PB+SWMH: Fixed a number of provinces not being tribal
 	Updated for 2.2.0.3
+	Restored and improved the 'Remove Ahistorical Empires' scenario customization decision (NAE)
 
 4.02
 	VANILLA FIX: Workaround for all laws/decisions enabled by technology not being usable regardless of tech level
