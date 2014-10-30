@@ -11,34 +11,33 @@ decisions = {
 				text = shattered_balance
 			}
 			hidden_tooltip = {
-				random_realm_character = {
-					limit = { is_landed = no }
-					narrative_event = { id = meneth.501 }
-				}
+				e_hip = { owner = { narrative_event = { id = meneth.501 } } }
 			}
+		}
+		ai_will_do = {
+			factor = 0
 		}
 	}
 	#No Ahistorical Empires
-	# Commented-out due to vanilla de_jure_liege effect being broken for now
-	# no_ahistorical_empires = {
-		# potential = {
-			# NOT = { had_global_flag = { flag = project_balance days = 1 } } #Only on day 0
-			# ai = no
-			# NOT = { has_global_flag = no_ahistorical_empires }
-		# }
-		# effect = {
-			# custom_tooltip = {
-				# text = no_ahistorical_empires
-			# }
-			# hidden_tooltip = {
-				# set_global_flag = no_ahistorical_empires
-				# random_realm_character = {
-					# limit = { is_landed = no }
-					# narrative_event = { id = meneth.512 }
-				# }
-			# }
-		# }
-	# }
+	no_ahistorical_empires = {
+		potential = {
+			NOT = { had_global_flag = { flag = project_balance days = 1 } } #Only on day 0
+			ai = no
+			NOT = { has_global_flag = no_ahistorical_empires }
+		}
+		effect = {
+			custom_tooltip = {
+				text = no_ahistorical_empires
+			}
+			hidden_tooltip = {
+				set_global_flag = no_ahistorical_empires
+				e_hip = { owner = { narrative_event = { id = meneth.512 } } }
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
 	#Gender Equality
 	gender_equality = {
 		potential = {
@@ -51,11 +50,11 @@ decisions = {
 				text = gender_equality_enabled
 			}
 			hidden_tooltip = {
-				random_realm_character = {
-					limit = { is_landed = no }
-					narrative_event = { id = meneth.500 }
-				}
+				e_hip = { owner = { narrative_event = { id = meneth.500 } } }
 			}
+		}
+		ai_will_do = {
+			factor = 0
 		}
 	}
 }
