@@ -5467,7 +5467,7 @@ k_bosnia = {
 	color = { 16 125 74 }
 	culture = serbian
 }
-k_seljuk_turks = { # Seljuk Turks
+e_seljuk_turks = { # Seljuk Turks
 	color={ 99 168 74 }
 	capital = 646 # Esfahan
 	culture = turkish

@@ -1,4 +1,7 @@
-﻿4.03
+﻿4.04
+	FIX: Flag-shifting issue related to e_seljuk_turks
+
+4.03
 	PB+SWMH: Fixed a number of provinces not being tribal
 	Updated for 2.2.0.3
 	Restored and improved the 'Remove Ahistorical Empires' scenario customization decision (NAE)
