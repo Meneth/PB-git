@@ -41,9 +41,9 @@ NDiplomacy = {
 	VASSAL_LIMIT_KING_MULT = 20.0, 				-- Extra Vassal Limit from the ruler's rank
 	VASSAL_LIMIT_EMPEROR_MULT = 30.0, 			-- Extra Vassal Limit from the ruler's rank
 	VASSAL_LIMIT_GREAT_DUKE_BONUS = 5.0, 		-- Extra Vassal Limit for Dukes with more than one Duchy
-	VASSAL_LIMIT_FAMILY_PRESTIGE_BONUS = 0.002,	-- Extra Vassal Limit from family prestige
 	VASSAL_LIMIT_DIPLOMACY_MULT = 0.3,			-- Extra Vasal Limit from ruler and spouse diplomacy
 	VASSAL_LIMIT_TRIBAL_BONUS = -10,			-- All rulers with tribal holdings as their capital have smaller demesnes
+	VASSAL_LIMIT_DECADENCE_MULTIPLIER = 0.25,	-- Negative modifier, multiplied with the current decadence.
 	VASSAL_LIMIT_LEVY_MULTIPLIER = 1,			-- Used for levy penalty calculation for being over vassal limit.
 	VASSAL_LIMIT_LEVY_BASE = 4,					-- Used for levy penalty calculation for being over vassal limit.
 	VASSAL_LIMIT_TAX_MULTIPLIER = 1,			-- Used for tax penalty calculation for being over vassal limit.
@@ -1025,43 +1025,7 @@ NTechnology = {
 	IDEAL_YEAR_AHEAD_PENALTY = -0.2,			-- UNUSED
 	IDEAL_YEAR_AHEAD_PENALTY_INVEST = 0.25,		-- Percent increase in cost pre level ahead of ideal date
 	
-	PAGAN_HOME_ATTRITION_REMOVAL_LEVEL = 2.0,
-	
-	-- Used to determine tech levels when starting a new game
-	
-	START_MIL_CATHOLIC  = 0.5,
-	START_ECO_CATHOLIC  = 1.0,
-	START_CUL_CATHOLIC  = 1.0,
-	END_MIL_CATHOLIC    = 5.0,
-	END_ECO_CATHOLIC    = 5.0,
-	END_CUL_CATHOLIC    = 5.0,
-	END_REN_CLOSE       = 7.0, -- Tech level at the center of the renaissance
-	END_REN_FAR         = 6.0, -- Tech level on the fringe of the renaissance
-	REN_PROVINCE        = 328, -- Province where the Renaissance is centered
-	START_MIL_MUSLIM    = 0.5,
-	START_ECO_MUSLIM    = 1.5,
-	START_CUL_MUSLIM    = 1.5,
-	END_MIL_MUSLIM      = 4.5,
-	END_ECO_MUSLIM      = 4.5,
-	END_CUL_MUSLIM      = 4.5,
-	START_MIL_INDIAN    = 0.5,
-	START_ECO_INDIAN    = 1.0,
-	START_CUL_INDIAN    = 1.0,
-	END_MIL_INDIAN   	= 4.0,
-	END_ECO_INDIAN    	= 4.0,
-	END_CUL_INDIAN    	= 4.0,
-	START_MIL_OTHER     = 0.5,
-	START_ECO_OTHER     = 1.0,
-	START_CUL_OTHER     = 1.0,
-	END_MIL_OTHER       = 3.5,
-	END_ECO_OTHER       = 3.5,
-	END_CUL_OTHER       = 3.5,
-	START_MIL_BYZANTIUM = 1.0,
-	START_ECO_BYZANTIUM = 1.5,
-	START_CUL_BYZANTIUM = 1.5,
-	END_MIL_BYZANTIUM   = 4.0,
-	END_ECO_BYZANTIUM   = 4.5,
-	END_CUL_BYZANTIUM   = 4.5
+	PAGAN_HOME_ATTRITION_REMOVAL_LEVEL = 4.0,
 },  
 
 NDisease = {
@@ -1285,7 +1249,6 @@ NLearningScenario =
 	COMBAT_EVENT = 107202,
 	AFTER_REVOLT_EVENT = 107250,
 	FABRICATE_CLAIM_EVENT = 913,
-	FABRICATE_CLAIM_CHARACTER = 20842,
 	HAS_CLAIM_EVENT = 107300,
 	WAR_EVENT = 107301,
 	SIEGE_EVENT = 107306,

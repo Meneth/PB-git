@@ -7883,8 +7883,11 @@
 				province = 900 # Kyzylorda
 				owner = ROOT
 				leader = ROOT
-				match_character = ROOT
-				match_mult = 0.15
+				troops = {
+					light_infantry = { 298 298 }
+					heavy_infantry = { 36 36 }
+					archers = { 67 67 }
+				}
 				attrition = 0.5
 			}
 			create_character = {
@@ -7904,8 +7907,11 @@
 					province = 900 # Kyzylorda
 					owner = ROOT
 					leader = THIS
-					match_character = ROOT
-					match_mult = 0.15
+					troops = {
+						light_infantry = { 298 298 }
+						heavy_infantry = { 36 36 }
+						archers = { 67 67 }
+					}
 					attrition = 0.5
 				}
 			}
@@ -7926,8 +7932,11 @@
 					province = 900 # Kyzylorda
 					owner = ROOT
 					leader = THIS
-					match_character = ROOT
-					match_mult = 0.15
+					troops = {
+						light_infantry = { 298 298 }
+						heavy_infantry = { 36 36 }
+						archers = { 67 67 }
+					}
 					attrition = 0.5
 				}
 			}

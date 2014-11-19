@@ -1112,8 +1112,7 @@
 		
 		raise_levies = {
 			location=97 # Rouen
-			#Rebalanced starting forces
-			force_mult=1.5
+			force_mult=1.0
 		}
 		
 		effect = {
@@ -1121,45 +1120,57 @@
 			spawn_unit = {
 				province = 97 # Rouen
 				owner = ROOT
-				disband_on_peace = yes
-				earmark = williams_invasion_fleet
 				leader = ROOT
-				match_character = ROOT
-				#Rebalanced starting forces
-				match_mult = 0.75
+				troops = {
+					light_infantry = { 767 767 }
+					heavy_infantry = { 566 566 }
+					pikemen = { 152 152 }
+					light_cavalry = { 285 285 }
+					knights = { 114 114 }
+					archers = { 439 439 }
+				}
 				attrition = 1.0
 			}
 			spawn_unit = {
 				province = 97 # Rouen
 				owner = ROOT
-				disband_on_peace = yes
-				earmark = williams_invasion_fleet
 				leader = 148 # Odo of Bayeux
-				match_character = ROOT
-				#Rebalanced starting forces
-				match_mult = 0.75
+				troops = {
+					light_infantry = { 767 767 }
+					heavy_infantry = { 566 566 }
+					pikemen = { 152 152 }
+					light_cavalry = { 285 285 }
+					knights = { 114 114 }
+					archers = { 439 439 }
+				}
 				attrition = 1.0
 			}
 			spawn_unit = {
 				province = 97 # Rouen
 				owner = ROOT
-				disband_on_peace = yes
-				earmark = williams_invasion_fleet
 				leader = 6818 # William of Eu
-				match_character = ROOT
-				#Rebalanced starting forces
-				match_mult = 0.75
+				troops = {
+					light_infantry = { 767 767 }
+					heavy_infantry = { 566 566 }
+					pikemen = { 152 152 }
+					light_cavalry = { 285 285 }
+					knights = { 114 114 }
+					archers = { 439 439 }
+				}
 				attrition = 1.0
 			}
 			spawn_unit = {
 				province = 97 # Rouen
 				owner = ROOT
-				disband_on_peace = yes
-				earmark = williams_invasion_fleet
 				leader = 150 # Robert of Mortain
-				match_character = ROOT
-				#Rebalanced starting forces
-				match_mult = 0.65
+				troops = {
+					light_infantry = { 767 767 }
+					heavy_infantry = { 566 566 }
+					pikemen = { 152 152 }
+					light_cavalry = { 285 285 }
+					knights = { 114 114 }
+					archers = { 439 439 }
+				}
 				attrition = 1.0
 				merge = yes # Merge all armies in this province
 			}
@@ -1170,8 +1181,7 @@
 				disband_on_peace = yes
 				troops =
 				{
-					# Rebalanced starting fleet to always be sufficient
-					galleys = { 115 115 }
+					galleys = { 180 180 }
 				}
 			}
 		}

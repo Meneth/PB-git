@@ -4647,6 +4647,7 @@ narrative_event = {
 	only_men = yes
 	
 	trigger = {
+		year = 900
 		religion = catholic
 		controls_religion = yes
 		NOT = { has_global_flag = christian_crusades_unlocked }
@@ -4715,6 +4716,7 @@ narrative_event = {
 	only_men = yes
 	
 	trigger = {
+		year = 900
 		religion = catholic
 		controls_religion = yes
 		NOT = { has_global_flag = christian_crusades_unlocked }
@@ -4770,6 +4772,7 @@ narrative_event = {
 	only_men = yes
 	
 	trigger = {
+		year = 900
 		religion = catholic
 		controls_religion = yes
 		NOT = { has_global_flag = christian_crusades_unlocked }
@@ -4785,14 +4788,12 @@ narrative_event = {
 				NOT = { owner = { religion_group = christian } }
 			}
 			AND = {
-				year = 850
 				119 = { # Cologne
 					religion_group = christian
 					NOT = { owner = { religion_group = christian } }
 				}
 			}
 			AND = {
-				year = 850
 				257 = { # Braunschweig
 					religion_group = christian
 					NOT = { owner = { religion_group = christian } }
@@ -4890,6 +4891,7 @@ narrative_event = {
 	only_men = yes
 	
 	trigger = {
+		year = 900
 		religion_group = muslim
 		controls_religion = yes
 		NOT = { has_global_flag = muslim_jihads_unlocked }
@@ -4939,6 +4941,7 @@ narrative_event = {
 	only_men = yes
 	
 	trigger = {
+		year = 900
 		religion_group = muslim
 		controls_religion = yes
 		NOT = { has_global_flag = muslim_jihads_unlocked }
@@ -4988,6 +4991,7 @@ narrative_event = {
 	only_men = yes
 	
 	trigger = {
+		year = 900
 		religion_group = muslim
 		controls_religion = yes
 		NOT = { has_global_flag = muslim_jihads_unlocked }
@@ -5045,6 +5049,7 @@ narrative_event = {
 	only_men = yes
 	
 	trigger = {
+		year = 1000
 		religion_group = muslim
 		controls_religion = yes
 		NOT = { has_global_flag = muslim_jihads_unlocked }

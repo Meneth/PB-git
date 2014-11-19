@@ -1448,9 +1448,8 @@ decisions = {
 						}
 					}
 				}
-
 			}
-			wealth -1000
+			wealth = -1000
 			custom_tooltip = { text = form_new_empire_tooltip }
 			chronicle = {
 				entry = CHRONICLE_FOUNDED_NEW_KINGDOM_OR_EMPIRE
@@ -1504,6 +1503,16 @@ decisions = {
 				chronicle = {
 					entry = CHRONICLE_ADOPTED_FEUDALISM
 					picture = GFX_evt_castle_construction
+				}
+			}
+			hidden_tooltip = {
+				any_demesne_title = {
+					if = {
+						limit = {
+							is_crown_law_title = yes
+						}
+						add_law = crown_authority_0
+					}
 				}
 			}
 		}
@@ -1611,9 +1620,6 @@ decisions = {
 					}
 				}
 				create_family_palace = yes
-				primary_title = {
-					add_law = succ_patrician_elective
-				}
 				any_unique_dynasty_vassal = { # gives random vassals a family palace
 					count = 4
 					limit = {
@@ -1648,6 +1654,16 @@ decisions = {
 				chronicle = {
 					entry = CHRONICLE_FOUNDED_MERCHANT_REPUBLIC
 					picture = GFX_evt_busy_trading_dock_republic
+				}
+			}
+			hidden_tooltip = {
+				any_demesne_title = {
+					if = {
+						limit = {
+							is_crown_law_title = yes
+						}
+						add_law = crown_authority_0
+					}
 				}
 			}
 		}
