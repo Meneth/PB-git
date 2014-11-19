@@ -3884,6 +3884,7 @@ decisions = {
 			NOT = {
 				culture = andalusian_arabic
 			}
+		}
 		effect = {
 			culture = andalusian_arabic
 			any_courtier = {
