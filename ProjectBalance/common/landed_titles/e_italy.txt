@@ -40,7 +40,11 @@ e_italy = {
 		capital = 334 # Napoli
 		
 		allow = {
-			always = no
+			FROM = {
+				any_previous_holder = {
+					always = yes # The title has existed before
+				}
+			}
 		}
 		
 		culture = italian

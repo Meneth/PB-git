@@ -51,6 +51,7 @@ decisions = {
 		is_mercenary = yes
 		potential = {
 			had_global_flag = { flag = project_balance days = 1 }
+			ai = no
 			is_tribal = yes
 		}
 		allow = {

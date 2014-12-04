@@ -1061,6 +1061,79 @@ e_britannia = {
 		breton = Alba
 		pictish = Pictland
 		
+		d_the_isles = {
+			color={ 10 48 243 }
+			color2={ 255 255 255 }
+			
+			welsh = Manaw
+			norwegian = "Mann"
+			danish = "Mann"
+			swedish = "Mann"
+			norse = "Mann"
+			pictish = "Manu"
+			irish = "Mhannin"
+			
+			c_isle_of_man = {
+				color={ 25 65 243 }
+				color2={ 255 255 255 }
+				
+				norwegian = "Mann"
+				danish = "Mann"
+				swedish = "Mann"
+				norse = "Mann"
+				pictish = "Insee Manu"
+				welsh = "Ynys Manaw"
+				irish = "Ellan Mhannin"
+				
+				b_peel = {
+					norwegian = "Pålø"
+					danish = "Pålø"
+					swedish = "Pålø"
+					norse = "Pålø"
+					pictish = "Pirtinsee"
+					welsh = "Porth Ynys"
+					irish = "Purt ny h-Inshey"
+				}
+				b_rushen = {
+					pictish = "Resan"
+					welsh = "Resyn"
+					irish = "Rosien"
+				}
+				b_maughold = {
+					pictish = "Mauugan"
+					welsh = "Mawgan Sant"
+					irish = "Macaille"
+				}
+				b_douglas = {
+					pictish = "Duunglasc"
+					welsh = "Duonglassafon"
+					irish = "Duboglassio"
+				}
+				b_kirk_michael = {
+					pictish = "Icluasc Mihagal"
+					welsh = "Eglwys Mihangel"
+					irish = "Cill Micheál"
+				}
+				b_sulby = {
+					pictish = "Drauuglan"
+					welsh = "Drywglyn"
+					irish = "Druígleann"
+					norwegian = "Sõlabyr"
+					danish = "Sõlabyr"
+					swedish = "Sõlabyr"
+				}
+				b_inis_patraic = {
+					pictish = "Inees Pedric"
+					welsh = "Ynys Padric"
+					irish = "Inis Pátraic"
+				}
+				b_laxey = {
+					pictish = "Ahonugad"
+					welsh = "Afoneogiaid"
+					irish = "Uisge Bradán"
+				}
+			}
+		}
 		d_galloway = {
 			color={ 77 116 208 }
 			color2={ 255 255 255 }
@@ -1306,66 +1379,6 @@ e_britannia = {
 					pictish = "Dun Galiuu"
 					welsh = "Din Galïau"
 					irish = "Dùn Naomhaig"
-				}
-			}
-			c_isle_of_man = {
-				color={ 25 65 243 }
-				color2={ 255 255 255 }
-				
-				norwegian = "Mann"
-				danish = "Mann"
-				swedish = "Mann"
-				norse = "Mann"
-				pictish = "Insee Manu"
-				welsh = "Ynys Manaw"
-				irish = "Ellan Mhannin"
-				
-				b_peel = {
-					norwegian = "Pålø"
-					danish = "Pålø"
-					swedish = "Pålø"
-					norse = "Pålø"
-					pictish = "Pirtinsee"
-					welsh = "Porth Ynys"
-					irish = "Purt ny h-Inshey"
-				}
-				b_rushen = {
-					pictish = "Resan"
-					welsh = "Resyn"
-					irish = "Rosien"
-				}
-				b_maughold = {
-					pictish = "Mauugan"
-					welsh = "Mawgan Sant"
-					irish = "Macaille"
-				}
-				b_douglas = {
-					pictish = "Duunglasc"
-					welsh = "Duonglassafon"
-					irish = "Duboglassio"
-				}
-				b_kirk_michael = {
-					pictish = "Icluasc Mihagal"
-					welsh = "Eglwys Mihangel"
-					irish = "Cill Micheál"
-				}
-				b_sulby = {
-					pictish = "Drauuglan"
-					welsh = "Drywglyn"
-					irish = "Druígleann"
-					norwegian = "Sõlabyr"
-					danish = "Sõlabyr"
-					swedish = "Sõlabyr"
-				}
-				b_inis_patraic = {
-					pictish = "Inees Pedric"
-					welsh = "Ynys Padric"
-					irish = "Inis Pátraic"
-				}
-				b_laxey = {
-					pictish = "Ahonugad"
-					welsh = "Afoneogiaid"
-					irish = "Uisge Bradán"
 				}
 			}
 			c_argyll = {

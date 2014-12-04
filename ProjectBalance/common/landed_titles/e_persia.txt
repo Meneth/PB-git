@@ -7,6 +7,8 @@ e_persia = {
 	
 	culture = persian
 	
+	zun_pagan_reformed = 500 # Crusade target weight
+	
 	short_name = yes	
 
 	k_persia = {
@@ -19,6 +21,7 @@ e_persia = {
 		
 		muslim = 400 # Crusade target weight
 		zoroastrian_group = 1000 # Crusade target weight
+		zun_pagan_reformed = 500 # Crusade target weight
 		
 		d_khorasan = {
 			color={ 99 150 9 }
@@ -942,11 +945,15 @@ e_persia = {
 		
 		culture = afghan
 		
+		zun_pagan_reformed = 1000 # Crusade target weight
+		
 		d_kabul = {
 			color={ 125 68 23 }
 			color2={ 255 255 255 }
 			
 			capital = 1185 # Kabul
+			
+			zun_pagan_reformed = 300 # Crusade target weight
 			
 			c_kabul = {
 				color={ 135 90 30 }
@@ -1024,6 +1031,8 @@ e_persia = {
 			color2={ 255 255 255 }
 			
 			capital = 1183 # Bost / Kandahar
+			
+			zun_pagan_reformed = 300 # Crusade target weight
 			
 			c_bost = {
 				color={ 189 110 60 }
@@ -1477,6 +1486,7 @@ e_persia = {
 		
 		muslim = 400 # Crusade target weight
 		zoroastrian_group = 500 # Crusade target weight
+		zun_pagan_reformed = 300 # Crusade target weight
 		
 		d_kermanshah = { # Luristan
 			color={ 55 144 95 }
@@ -1757,6 +1767,7 @@ e_persia = {
 			color2={ 255 255 255 }
 			
 			capital = 693 # Baghdad
+			zun_pagan_reformed = 200 # Crusade target weight
 			
 			c_karbala = {
 				color={ 16 110 12 }

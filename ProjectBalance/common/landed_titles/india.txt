@@ -219,7 +219,9 @@ e_rajastan = {
 		color2={ 255 255 255 }
 		
 		capital = 1362 # Lahur
-	
+		
+		zun_pagan_reformed = 150 # Crusade target weight
+		
 		d_multan = {
 			color={ 234 100 21 }
 			color2={ 255 255 255 }

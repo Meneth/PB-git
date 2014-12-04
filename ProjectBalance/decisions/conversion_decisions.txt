@@ -2999,6 +2999,7 @@ decisions = {
 
 	convert_to_hinduism = {
 		potential = {
+			ai = no
 			is_playable = yes
 			religion_group = indian_group
 			NOT = { religion = hindu }
@@ -3205,6 +3206,7 @@ decisions = {
 
 	convert_to_jainism = {
 		potential = {
+			ai = no
 			is_playable = yes
 			religion_group = indian_group
 			NOT = { religion = jain }
@@ -3954,7 +3956,7 @@ decisions = {
 		}
 	}
 
-	# Visigothic character may convert to castillan
+	# Visigothic character may convert to Castillan
 	convert_to_castillan = {
 		potential = {
 			is_ruler = yes

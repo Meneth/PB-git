@@ -1220,6 +1220,7 @@ obj_improve_martial = {
 	potential = {
 		is_adult = yes
 		is_ruler = yes
+		NOT = { has_dlc = "Way of Life" }
 	}
 	
 	allow = {
@@ -1287,6 +1288,7 @@ obj_improve_stewardship = {
 	potential = {
 		is_adult = yes
 		is_ruler = yes
+		NOT = { has_dlc = "Way of Life" }
 	}
 	
 	allow = {
@@ -1358,6 +1360,7 @@ obj_improve_learning = {
 	potential = {
 		is_adult = yes
 		is_ruler = yes
+		NOT = { has_dlc = "Way of Life" }
 	}
 	
 	allow = {
@@ -1424,6 +1427,7 @@ obj_improve_diplomacy = {
 	potential = {
 		is_adult = yes
 		is_ruler = yes
+		NOT = { has_dlc = "Way of Life" }
 	}
 	
 	allow = {
@@ -1490,6 +1494,7 @@ obj_improve_intrigue = {
 	potential = {
 		is_adult = yes
 		is_ruler = yes
+		NOT = { has_dlc = "Way of Life" }
 	}
 	
 	allow = {

@@ -11,7 +11,6 @@ NDiplomacy = {
 	ATTACKER_CALL_DECLINE_COST = 75, 			-- Prestige cost for refusing to join an offensive war
 	DEFENDER_CALL_DECLINE_COST = 150, 			-- Prestige cost for refusing to join a defensive war
 	TRIBAL_VASSAL_CALL_DECLINE_COST_FACTOR = 3.0, -- Prestige cost multiplier for tribal vassals
-	CALL_TO_WAR_DELAY = 60, 					-- Months between attempts to call someone into war
 	PAPAL_INVEST_PIETY_COST_MULT = 0.5, 		-- The effect of Papal investiture on the piety cost of the special Papal actions
 	SHORT_REIGN_YEARS_END = 8,
 	LONG_REIGN_YEARS_START = 20,
@@ -562,6 +561,8 @@ NCharacter = {
 	TRIBAL_EMPTY_HOLDING_LEVY_MULTIPLIER = 0.5,
 	TRIBAL_EMPTY_HOLDING_GARRISON_MULTIPLIER = 0.5,
 	TRIBAL_EMPTY_HOLDING_TAX_MULTIPLIER = 0.5,
+	MALE_ATTRACTION_CUTOFF = 65,					-- After this age, the sex appeal of traits no longer have any effect
+	FEMALE_ATTRACTION_CUTOFF = 45					-- After this age, the sex appeal of traits no longer have any effect
 },
 
 NTitle = {
@@ -645,6 +646,7 @@ NTitle = {
 	CLAIM_VASSAL_TITLE_COST_MOD = 0.75,
 	CLAIM_DE_JURE_TITLE_COST_MOD = 0.5,
 	NORMAL_LAW_CHANGE_MONTHS = 60,
+	MAX_CROWN_LAW_CHANGES = 5,
 	TITLE_USURP_COOLDOWN_MONTHS = 60,
 	DE_JURE_ASSIMILATION_YEARS = 100,			-- Duchies a under the de facto control of another kingdom will change de jure liege after this many years
 	EMPIRE_DE_JURE_ASSIMILATION_YEARS = 100,	-- Kingdoms under the de facto control of another empire will change de jure liege after this many years
@@ -711,8 +713,8 @@ NEconomy = {
 	REPUBLIC_CITY_TAX_BONUS = 0.15,					-- Republics (at least Count tier) receive a tax bonus for all cities in their realm
 	REPUBLIC_COASTAL_CITY_TAX_BONUS = 0.25,			-- Republics (at least Count tier) receive a tax bonus for all coastal cities in their realm
 	REPUBLIC_CAPITAL_CITY_TAX_BONUS = 1.0,			-- Duke or above tier Republics receive a tax bonus for their capital city
-	BISHOP_TAX_TO_POPE_FACTOR = 0.4,				-- Bishops only pay half the tax to the Pope if they are loyal to him
-	BISHOP_TAX_TO_ANTI_POPE_FACTOR = 0.20,			-- Bishops only pay a quarter taxes to an Anti-Pope if they are loyal to him	
+	BISHOP_TAX_TO_POPE_FACTOR = 0.1,				-- Bishops only pay half the tax to the Pope if they are loyal to him
+	BISHOP_TAX_TO_ANTI_POPE_FACTOR = 0.05,			-- Bishops only pay a quarter taxes to an Anti-Pope if they are loyal to him	
 	DECADENCE_MODIFIER = 0.2,						-- Maximum effect of decadence, positive for low dec, negative for high
 	DECADENCE_PER_WEEK_OF_COMBAT = -0.05,			-- Decadence lost per 7 days of combat, for each participant in the combat
 	DECADENCE_PER_WEEK_OF_SIEGE = -0.01,			-- Decadence lost per 7 days of siege, for each participant in the siege
@@ -754,13 +756,13 @@ NEconomy = {
 },
 
 NDecadence = {
-	BASE_EMPEROR_GAIN = 0.32,
-	BASE_KING_GAIN = 0.24,
-	BASE_DUKE_GAIN = 0.16,
-	BASE_COUNT_GAIN = 0.08,
-	BASE_BARON_GAIN = 0.04,
-	BASE_UNLANDED_GAIN = 0.02,
-	REALM_SIZE_MULTIPLIER = 0.004,
+	BASE_EMPEROR_GAIN = 0.45,
+	BASE_KING_GAIN = 0.36,
+	BASE_DUKE_GAIN = 0.24,
+	BASE_COUNT_GAIN = 0.18,
+	BASE_BARON_GAIN = 0.09,
+	BASE_UNLANDED_GAIN = 0.045,
+	REALM_SIZE_MULTIPLIER = 0.005,
 	DEMESNE_FRACTION_MULT_POS = 0.5,
 	DEMESNE_FRACTION_MULT_NEG = -0.8,
 }, 

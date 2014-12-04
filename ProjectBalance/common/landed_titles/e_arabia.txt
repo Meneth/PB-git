@@ -716,6 +716,7 @@ e_arabia = {
 		orthodox = 20 # Crusade target weight
 		muslim = 400 # Crusade target weight
 		zoroastrian_group = 150 # Crusade target weight
+		zun_pagan_reformed = 100 # Crusade target weight
 		
 		d_alexandria = {
 			color={ 100 219 134 }
@@ -908,7 +909,9 @@ e_arabia = {
 			color2={ 255 255 255 }
 			
 			capital = 796 # Cairo
-		
+			
+			zun_pagan_reformed = 50 # Crusade target weight
+			
 			c_cairo = {
 				color={ 24 236 119 }
 				color2={ 255 255 255 }
