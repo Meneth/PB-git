@@ -28,7 +28,7 @@ muslim_county_conquest_religious = {
 	is_holy_war = yes
 	check_all_titles = yes # if permanent, setting this to true will check against all of someones titles, including vassal held titles
 	press_claim = yes
-	can_ask_to_join_war = no
+	can_ask_to_join_war = yes
 	
 	can_use_gui = {
 		FROM = { NOT = { religion_group = pagan_group } }
@@ -197,7 +197,7 @@ muslim_county_conquest_religious = {
 				}
 			}
 
-			usurp_title_plus_barony_if_unlanded = { target = ROOT type = invasion }
+			usurp_title_plus_barony_if_unlanded = { target = ROOT type = holy_war }
 			any_de_jure_vassal_title = { # take all baronies under the one we're fighting for
 				limit = {
 					has_holder = yes
@@ -212,7 +212,7 @@ muslim_county_conquest_religious = {
 					}
 				}
 
-				usurp_title_plus_barony_if_unlanded = { target = ROOT type = invasion }
+				usurp_title_plus_barony_if_unlanded = { target = ROOT type = holy_war }
 			}
 		}
 		any_attacker = {
@@ -279,6 +279,9 @@ muslim_county_conquest_religious = {
 	ai_will_do = { 
 		factor = 1
 		
+		modifier = {
+			factor = 0.9 # Prefer using CB's without on_add costs
+		}
 		modifier = {
 			factor = 10
 			FROM = { ai = no }
