@@ -79,6 +79,7 @@ religious = {
 			is_merchant_republic = no
 		}
 	}
+	
 	can_use = {
 		ROOT = {
 			NOT = { religion_group = pagan_group }
@@ -294,7 +295,15 @@ religious = {
 				}
 			}
 			top_liege = {
+				religion_group = ROOT
 				NOT = { religion = FROM }
+				OR = {
+					religion = ROOT
+					AND = {
+						is_heretic = no
+						ROOT = { is_heretic = no }
+					}
+				}
 			}
 		}
 	}
@@ -302,13 +311,13 @@ religious = {
 	on_add = {
 		ROOT = {
 			if = {
+				limit = { has_character_flag = holy_warred }
+				piety = -300
+			}
+			if = {
 				limit = { NOT = { has_character_flag = holy_warred } }
 				piety = -200
 				set_character_flag = holy_warred
-			}
-			if = {
-				limit = { has_character_flag = holy_warred }
-				piety = -300
 			}
 			custom_tooltip = {
 				text = holy_war_cooldown_ctt
@@ -376,6 +385,7 @@ religious = {
 						enemy = FROM
 						same_religion = yes # Only vassalize rulers of my religion
 						is_religious = yes
+						type = holy_war
 					}
 				}
 			}
