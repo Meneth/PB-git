@@ -24,6 +24,14 @@ e_hre = {
 	culture = german
 	short_name = yes
 	
+	k_germany = {
+		color={ 160 160 160 }
+		color2={ 220 220 20 }
+		
+		dignity = 30 # Counted as having this many more counties than it does
+		
+		culture = german
+	}
 	k_hansa = {
 		color={ 142 142 142 }
 		color2={ 255 255 255 }
