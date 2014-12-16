@@ -189,6 +189,7 @@ berserker = {
 	}
 	martial = 4
 	diplomacy = -2
+	combat_rating = 3
 	
 	same_opinion = 20
 	
@@ -807,6 +808,10 @@ svetambara_jain = {
 decadent = {
 	opposites = {
 		zealous
+	}
+
+	potential = {
+		religion_group = muslim
 	}
 	
 	customizer = no

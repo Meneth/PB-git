@@ -31,6 +31,9 @@ christian = {
 		crusade_name = CRUSADE
 		scripture_name = THE_BIBLE
 		priest_title = PRIEST
+		
+		high_god_name = GOD_GOD
+		
 		god_names = {
 			GOD_GOD GOD_THE_LORD GOD_JESUS GOD_THE_BLESSED_VIRGIN
 		}
@@ -141,6 +144,8 @@ christian = {
 		scripture_name = THE_BIBLE
 		priest_title = PRIEST
 		
+		high_god_name = GOD_GOD
+		
 		god_names = {
 			GOD_GOD GOD_THE_LORD GOD_JESUS GOD_THE_BLESSED_VIRGIN
 		}
@@ -174,6 +179,8 @@ christian = {
 		crusade_name = CRUSADE
 		scripture_name = THE_BIBLE
 		priest_title = PRIEST
+		
+		high_god_name = GOD_GOD
 		
 		god_names = {
 			GOD_GOD GOD_THE_LORD GOD_JESUS GOD_THE_BLESSED_VIRGIN
@@ -328,6 +335,8 @@ christian = {
 		scripture_name = THE_BIBLE
 		priest_title = PRIEST
 		
+		high_god_name = GOD_GOD
+		
 		god_names = {
 			GOD_GOD GOD_THE_LORD GOD_JESUS GOD_THE_BLESSED_VIRGIN
 		}
@@ -410,6 +419,9 @@ muslim = {
 		crusade_name = JIHAD
 		scripture_name = THE_KORAN
 		priest_title = IMAM_PRIEST
+		
+		high_god_name = GOD_ALLAH
+		
 		god_names = {
 			GOD_ALLAH GOD_THE_GREATEST
 		}
@@ -458,6 +470,9 @@ muslim = {
 		crusade_name = GREAT_HOLY_WAR
 		scripture_name = THE_BOOK_OF_ILLUMINATION
 		priest_title = SHEIKH_PRIEST
+		
+		high_god_name = GOD_SHAYTAN
+		
 		god_names = {
 			GOD_THE_PEACOCK_ANGEL GOD_TAWUSE_MELEK GOD_SHAYTAN
 		}
@@ -484,6 +499,9 @@ muslim = {
 		crusade_name = JIHAD
 		scripture_name = THE_KORAN
 		priest_title = IMAM_PRIEST
+		
+		high_god_name = GOD_ALLAH
+		
 		god_names = {
 			GOD_ALLAH GOD_THE_GREATEST
 		}
@@ -534,6 +552,9 @@ muslim = {
 		crusade_name = JIHAD
 		scripture_name = THE_KORAN
 		priest_title = MULLAH
+		
+		high_god_name = GOD_ALLAH
+		
 		god_names = {
 			GOD_ALLAH GOD_THE_GREATEST
 		}
@@ -616,6 +637,9 @@ pagan_group = {
 		icon = 5
 		
 		color = { 0.6 0.0 0.0 }
+		
+		high_god_name = GOD_THE_CREATOR
+		
 		god_names = {
 			GOD_THE_SPIRITS GOD_THE_ANCESTORS
 		}
@@ -649,8 +673,11 @@ pagan_group = {
 		ai_convert_other_group = 2 # always try to convert
 		
 		color = { 90 145 205 }
+		
+		high_god_name = GOD_ODIN
+		
 		god_names = {
-			GOD_THOR GOD_THE_THUNDERER GOD_THE_ALLFATHER GOD_THE_ODIN GOD_FREY GOD_TYR
+			GOD_THOR GOD_THE_THUNDERER GOD_THE_ALLFATHER GOD_ODIN GOD_FREY GOD_TYR
 		}
 		evil_god_names = {
 			LOKI HEL FENRIR JORMUNGANDR
@@ -670,10 +697,10 @@ pagan_group = {
 		
 		can_call_crusade = yes
 		
-		allow_viking_invasion = yes # Allows the "Prepare Invasion" diplo action
 		allow_looting = yes
 		allow_rivermovement = yes
 		female_temple_holders = yes
+		allow_viking_invasion = yes
 		
 		short_reign_opinion_year_mult = 3 # The default is 2
 		
@@ -696,8 +723,11 @@ pagan_group = {
 		heresy_icon = 21
 		
 		color = { 60 120 180 }
+		
+		high_god_name = GOD_ODIN
+		
 		god_names = {
-			GOD_THOR GOD_THE_THUNDERER GOD_THE_ALLFATHER GOD_THE_ODIN GOD_FREY GOD_TYR
+			GOD_THOR GOD_THE_THUNDERER GOD_THE_ALLFATHER GOD_ODIN GOD_FREY GOD_TYR
 		}
 		evil_god_names = {
 			LOKI HEL FENRIR JORMUNGANDR
@@ -715,12 +745,12 @@ pagan_group = {
 		priest_title = GODI
 		
 		priests_can_marry = yes
-		allow_viking_invasion = yes # Allows the "Prepare Invasion" diplo action
 		allow_looting = yes
 		allow_rivermovement = yes
 		female_temple_holders = yes
 		defensive_attrition = yes
 		peace_prestige_loss = yes # Lose Prestige while at peace
+		allow_viking_invasion = yes
 		raised_vassal_opinion_loss = no
 		max_consorts = 3
 		independence_war_score_bonus = 30 # Overrides define CONTESTED_TITLE_OCCUPIED_WARSCORE_BONUS_INDEP
@@ -750,6 +780,9 @@ pagan_group = {
 		ai_convert_other_group = 2 # always try to convert
 		
 		color = { 0.1 0.3 0.85 }
+		
+		high_god_name = GOD_TENGRI
+		
 		god_names = {
 			GOD_TENGRI GOD_ERLIK_KHAN GOD_TUNG-AK
 		}
@@ -787,6 +820,9 @@ pagan_group = {
 		heresy_icon = 30
 		
 		color = { 0.0 0.2 0.8 }
+		
+		high_god_name = GOD_TENGRI
+		
 		god_names = {
 			GOD_TENGRI GOD_ERLIK_KHAN GOD_TUNG-AK
 		}
@@ -839,6 +875,8 @@ pagan_group = {
 		scripture_name = THE_LEGENDS
 		priest_title = VOLHV
 		
+		high_god_name = GOD_DIEVAS
+		
 		god_names = {
 			GOD_DIEVAS GOD_GABIJA GOD_PERKUNAS GOD_LAIMA 
 		}
@@ -875,6 +913,8 @@ pagan_group = {
 		crusade_name = GREAT_HOLY_WAR
 		scripture_name = THE_LEGENDS
 		priest_title = VOLHV
+		
+		high_god_name = GOD_DIEVAS
 		
 		god_names = {
 			GOD_DIEVAS GOD_GABIJA GOD_PERKUNAS GOD_LAIMA
@@ -921,6 +961,8 @@ pagan_group = {
 		scripture_name = THE_LEGENDS
 		priest_title = SHAMAN
 		
+		high_god_name = GOD_UKKO
+		
 		god_names = {
 			GOD_UKKO GOD_PERKELE GOD_JUMI GOD_THE_GREAT_BEAR GOD_KUU GOD_TAPIO GOD_TAARA GOD_OMOL GOD_MASTOR_AVA
 		}
@@ -959,6 +1001,9 @@ pagan_group = {
 		crusade_name = GREAT_HOLY_WAR
 		scripture_name = THE_LEGENDS
 		priest_title = SHAMAN
+		
+		high_god_name = GOD_UKKO
+		
 		god_names = {
 			GOD_UKKO GOD_PERKELE GOD_JUMI GOD_THE_GREAT_BEAR GOD_KUU GOD_TAPIO GOD_TAARA GOD_OMOL GOD_MASTOR_AVA
 		}
@@ -1001,6 +1046,9 @@ pagan_group = {
 		ai_convert_other_group = 2 # always try to convert
 		
 		color = { 0.95 0.3 0.3 }
+		
+		high_god_name = GOD_HUITZILOPOCHTLI
+		
 		god_names = {
 			GOD_HUITZILOPOCHTLI GOD_XIPE_TOTEC GOD_TEZCATLIPOCA GOD_QUETZALCOATL GOD_TLALOC
 		}
@@ -1034,6 +1082,9 @@ pagan_group = {
 		graphical_culture = mesoamericangfx
 		icon = 15
 		color = { 0.8 0.2 0.2 }
+		
+		high_god_name = GOD_HUITZILOPOCHTLI
+		
 		god_names = {
 			GOD_HUITZILOPOCHTLI GOD_XIPE_TOTEC GOD_TEZCATLIPOCA GOD_QUETZALCOATL GOD_TLALOC
 		}
@@ -1080,6 +1131,8 @@ pagan_group = {
 		crusade_name = GREAT_HOLY_WAR
 		scripture_name = THE_LEGENDS
 		priest_title = VOLHV
+		
+		high_god_name = GOD_PERUN
 		
 		god_names = {
 			GOD_PERUN GOD_JARILO GOD_SVAROG GOD_TRIGLAV GOD_RADEGAST
@@ -1132,6 +1185,8 @@ pagan_group = {
 		scripture_name = THE_LEGENDS
 		priest_title = VOLHV
 		
+		high_god_name = GOD_PERUN
+		
 		god_names = {
 			GOD_PERUN GOD_JARILO GOD_SVAROG GOD_TRIGLAV GOD_RADEGAST
 		}
@@ -1179,6 +1234,8 @@ pagan_group = {
 		scripture_name = THE_LEGENDS
 		priest_title = SHAMAN
 		
+		high_god_name = GOD_THE_CREATOR
+		
 		god_names = {
 			GOD_THE_SPIRITS GOD_THE_ANCESTORS
 		}
@@ -1219,6 +1276,8 @@ pagan_group = {
 		crusade_name = GREAT_HOLY_WAR
 		scripture_name = THE_LEGENDS
 		priest_title = SHAMAN
+		
+		high_god_name = GOD_THE_CREATOR
 		
 		god_names = {
 			GOD_THE_SPIRITS GOD_THE_ANCESTORS
@@ -1261,6 +1320,9 @@ pagan_group = {
 		ai_convert_other_group = 2 # always try to convert
 		
 		color = { 0.9 1.0 0.0 }
+		
+		high_god_name = GOD_ZUN
+		
 		god_names = {
 			GOD_ZUN GOD_THE_SUN GOD_THE_GIVER_OF_JUSTICE
 		}
@@ -1299,6 +1361,9 @@ pagan_group = {
 		heresy_icon = 50
 		
 		color = { 0.9 1.0 0.0 }
+		
+		high_god_name = GOD_ZUN
+		
 		god_names = {
 			GOD_ZUN GOD_THE_SUN GOD_THE_GIVER_OF_JUSTICE
 		}
@@ -1339,6 +1404,9 @@ pagan_group = {
 		icon = 37
 		
 		color = { 0.6 0.1 0.1 }
+		
+		high_god_name = GOD_SATURN
+		
 		god_names = {
 			GOD_JUPITER GOD_MERCURY GOD_MARS GOD_VENUS GOD_MINERVA GOD_VESTA
 		}
@@ -1384,6 +1452,8 @@ zoroastrian_group = {
 		scripture_name = THE_GATHAS
 		priest_title = HERBAD
 		
+		high_god_name = GOD_AHURA_MAZDA
+		
 		god_names = {
 			GOD_AHURA_MAZDA GOD_ZURVAN GOD_OHRMAZD GOD_MANAH PROPHET_ZOROASTER
 		}
@@ -1418,6 +1488,8 @@ zoroastrian_group = {
 		crusade_name = GREAT_HOLY_WAR
 		scripture_name = THE_GREAT_SECRET
 		
+		high_god_name = GOD_AHURA_MAZDA
+		
 		god_names = {
 			GOD_ZURVAN GOD_AHURA_MAZDA GOD_MANAH PROPHET_MAZDAK
 		}
@@ -1442,6 +1514,9 @@ zoroastrian_group = {
 		
 		color = { 0.7 0.7 0.4 }
 		crusade_name = GREAT_HOLY_WAR
+		
+		high_god_name = GOD_ZURVAN
+		
 		god_names = {
 			GOD_ZURVAN GOD_OHRMAZD PROPHET_MANI GOD_MIHRYAZD
 		}
@@ -1481,6 +1556,8 @@ jewish_group = {
 		crusade_name = GREAT_HOLY_WAR
 		scripture_name = THE_TORAH
 		priest_title = RABBI
+		
+		high_god_name = GOD_GOD
 		
 		god_names = {
 			GOD_GOD GOD_THE_LORD ADONAI
@@ -1573,8 +1650,10 @@ indian_group = {
 		
 		color = { 1.0 0.0 0.0 }
 		
+		high_god_name = GOD_BRAHMA
+		
 		god_names = {
-			GOD_SHIVA GOD_THE_LORD GOD_THE_SUPREME
+			GOD_SHIVA GOD_THE_LORD GOD_THE_SUPREME GOD_BRAHMA
 		}
 		
 		evil_god_names = {
@@ -1611,6 +1690,8 @@ indian_group = {
 		heresy_icon = 41
 		
 		color = { 0.8 0.4 0.0 }
+		
+		high_god_name = GOD_BRAHMA
 		
 		god_names = {
 			GOD_THE_BUDDHA GOD_THE_ARHAT GOD_THE_PERFECTED_ONES
@@ -1653,6 +1734,8 @@ indian_group = {
 		heresy_icon = 43
 		
 		color = { 1.0 1.0 0.4 }
+		
+		high_god_name = GOD_THE_TIRTHANKARAS
 		
 		god_names = {
 			GOD_THE_TIRTHANKARAS GOD_RISHABH GOD_AJINATH GOD_SAMBHAVANATH  # Add more Tirthankaras
