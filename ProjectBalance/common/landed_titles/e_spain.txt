@@ -287,17 +287,23 @@ e_spain = {
 				}
 				b_leyre = {
 				}
+				b_tudela = {
+				} 
+				b_tafalla = {
+				}
+				b_olite = {
+				}
+				b_carcastillo = {
+				}
 				b_sanguesa = {
 				}
 				b_estella = {
-				}
-				b_zizurmayor = {
 				}
 			}
 			c_najera = {
 				color = { 255 202 3 }
 				color2={ 255 255 255 }
-	
+
 				b_haro = {
 				}
 				b_logrone = {
@@ -309,6 +315,8 @@ e_spain = {
 				b_arnedo = {
 				}
 				b_alfara = {
+				}
+				b_zizurmayor = {
 				}
 				b_santodomingodelacalzada = {
 				}
@@ -1318,14 +1326,20 @@ e_spain = {
 				}
 			}
 			c_alto_aragon = {
-				color = { 255 216 6 }
+				color = { 186 70 72 }
 				color2={ 255 255 255 }
 				
 				b_jaca = {
 				}
+				b_huesca = {
+				}
+				b_barbastro = {
+				}
 				b_loarre = {
 				}
 				b_ayerbe = {
+				}
+				b_almudevar = {
 				}
 				b_uncastillo = {
 				}
