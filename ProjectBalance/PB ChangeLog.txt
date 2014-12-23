@@ -1,4 +1,7 @@
-﻿5.0
+﻿5.01
+	FIX: Culture conversion events 55000 and 55001 updated to have effects equivalent to vanilla (reverse_culture apparently no longer works)
+
+5.0
 	Updated for 2.3
 
 4.04
