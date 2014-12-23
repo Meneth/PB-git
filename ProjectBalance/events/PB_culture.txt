@@ -203,7 +203,9 @@ province_event = {
 	option = {
 		name = "EVTOPTA55000"
 		owner = {
-			reverse_culture = ROOT
+			ROOT = {
+				culture = PREV
+			}
 		}
 	}
 }
@@ -348,6 +350,12 @@ province_event = {
 		owner = {
 			ROOT = {
 				culture = PREV
+				if = {
+					limit = {
+						NOT = { religion = PREV }
+					}
+					religion = PREV
+				}
 			}
 		}
 	}
