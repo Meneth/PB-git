@@ -1,15 +1,15 @@
 north_germanic = {
 	graphical_culture = westerngfx
 	
-	norsegael = { #Gall-Gh√†idheil
+	norsegael = { #Gall-Gh‡idheil
 		graphical_culture = norsegfx
 		color = { 0.2 0.65 0.8 }
 		
 		male_names = {
-			Albdan Aldfrid Aldwulf Alexander_Alexander Alv Amhlaibh Amla√≠b Aonghus Arailt Aralt Archibald Armhlaibh Arne Arnfinn Arnkjell Arnmod Arnvid Art Artgal_Artal Art√∫r_Arthur Asgaill Askjell Aslak Audun Bhr√≠ghde Bjarne Bj√∏rn Blacaire Br√≥en B√°et√°n B√•rd Canute Cathal√°n Causant√≠n Choluim Cin√°ed Ciomhair Coitir Colb√°n Colm√°n Corcadail Crimthann Demm√°n Diarmaid Donnchadh Dubgall Dubhghall D√∫nchad D√∫ngal Eanfrid Echmarcach Egfrid Eigil Eilif Einar Eirik_Erik Erlend Erling Escoib Eystein Eysteinn E√≥gan E√≥ghan Fearghus Finn Geirr Giolla Gofraid_Godfrey Gofraidh_Godfrey Goraidh_Godfrey Grim Grimur Grim√≥lf Gudbrand Gudleik Gudmund Gudr√∏d Gunnar Guttorm Haldor Halfdan Halkjell Harald_Harold Hardacnut H√•kon H√•vard Iacob_Jacob Ingjald Irminric Jon_John Kolbein K√•re Lagmann Le√≤id Lochlann Lodin Lorc√°n Madadh Maghnus_Magnus Magn√∫s_Magnus Malcolm Matud√°n Muircheartach Muiredach Murchadh M√°ire Ogmund Olaf_Olaf Orm Ossor Oswyn Ottar P√•l Raghnall Ragnall Ragnvald Rolf Ruaraidh Runolf R√≥en Seo√°n Se√°n Shitrig Sigfred Sigtryg Sigurd Skjalg Skofte Skule Somairle Somerled Somhairle Suain Suibhne Svein Sverre Thorstein Thrydwulf Torcall Torcuil Tore Torfinn Torgeir Torgils Torkjell Tormod Torstein Trond Tryggve T√∫athal Ualtar Uhtred Uillam Ulv Vigleik Wuffa √Åed√°n √âamonn_Edmund √âicnech√°n √ânri √åomhar √çomhar √ìengus √ìlchobar √òlver_Oliver
+			Albdan Aldfrid Aldwulf Alexander_Alexander Alv Amhlaibh AmlaÌb Aonghus Arailt Aralt Archibald Armhlaibh Arne Arnfinn Arnkjell Arnmod Arnvid Art Artgal_Artal Art˙r_Arthur Asgaill Askjell Aslak Audun BhrÌghde Bjarne Bj¯rn Blacaire BrÛen B·et·n BÂrd Canute Cathal·n CausantÌn Choluim Cin·ed Ciomhair Coitir Colb·n Colm·n Corcadail Crimthann Demm·n Diarmaid Donnchadh Dubgall Dubhghall D˙nchad D˙ngal Eanfrid Echmarcach Egfrid Eigil Eilif Einar Eirik_Erik Erlend Erling Escoib Eystein Eysteinn EÛgan EÛghan Fearghus Finn Geirr Giolla Gofraid_Godfrey Gofraidh_Godfrey Goraidh_Godfrey Grim Grimur GrimÛlf Gudbrand Gudleik Gudmund Gudr¯d Gunnar Guttorm Haldor Halfdan Halkjell Harald_Harold Hardacnut HÂkon HÂvard Iacob_Jacob Ingjald Irminric Jon_John Kolbein KÂre Lagmann LeÚid Lochlann Lodin Lorc·n Madadh Maghnus_Magnus Magn˙s_Magnus Malcolm Matud·n Muircheartach Muiredach Murchadh M·ire Ogmund Olaf_Olaf Orm Ossor Oswyn Ottar PÂl Raghnall Ragnall Ragnvald Rolf Ruaraidh Runolf RÛen Seo·n Se·n Shitrig Sigfred Sigtryg Sigurd Skjalg Skofte Skule Somairle Somerled Somhairle Suain Suibhne Svein Sverre Thorstein Thrydwulf Torcall Torcuil Tore Torfinn Torgeir Torgils Torkjell Tormod Torstein Trond Tryggve T˙athal Ualtar Uhtred Uillam Ulv Vigleik Wuffa ¡ed·n …amonn_Edmund …icnech·n …nri Ãomhar Õomhar ”engus ”lchobar ÿlver_Oliver
 		}
 		female_names = {
-			Affraic Aibil√≠n Aife Aignes_Agnes Ailbhe Alis_Alice Ann√°bla Arnkatla Astrid_Astrid A√≠binn Bl√°thmin Breguswid Brigida_Brigid Cacht Caiss√©ne Caitil√≠n_Catherine Cath√°n_Catherine Catr√≠ona_Catherine Cecilia_Cecilia Cond√°l Cynwise Dearbhorgaill Deirdre Derborgaill Derb√°il Dervorgilla Eilionora_Eleanor Eldrid Fine Finnguala Fionnghuala Gjertrud Gormflaith_Gormflaith Gormlaith_Gormflaith Gru√≥ch Gr√°in Gudrid Gudrun Gunnhild_Gunhild Guthr√∫n Gyda Gyrid Haldora Hallbera Helga Hextild Hilda Homlaug Ingebj√∏rg Ingibjorg Ingjerd Ingrid Jorunn J√≥ra Kristina_Christina Lasairf√≠ona Lerthan Lucia_Lucia Margrete_Margaret Maria_Maria Mauda_Matilda M√°ire_Maria M√°iread_Maria M√°irgred_Margaret Nuala Ragna Ragnailt Ragnhild Ragnhilda Rannveig R√≥is Sadb Sc√°thach Seonaid Sigrid Siob√°n Sisuile Sl√°√≠ne Sn√∏frid Sunniva Svanhild S√©bdann Thora_Thora Thorborg Th√≥rd√≠s Th√≥runn √Åine_Agnes √Öshild √Östa √âua_Eva √ìrlaith √öna
+			Affraic AibilÌn Aife Aignes_Agnes Ailbhe Alis_Alice Ann·bla Arnkatla Astrid_Astrid AÌbinn Bl·thmin Breguswid Brigida_Brigid Cacht CaissÈne CaitilÌn_Catherine Cath·n_Catherine CatrÌona_Catherine Cecilia_Cecilia Cond·l Cynwise Dearbhorgaill Deirdre Derborgaill Derb·il Dervorgilla Eilionora_Eleanor Eldrid Fine Finnguala Fionnghuala Gjertrud Gormflaith_Gormflaith Gormlaith_Gormflaith GruÛch Gr·in Gudrid Gudrun Gunnhild_Gunhild Guthr˙n Gyda Gyrid Haldora Hallbera Helga Hextild Hilda Homlaug Ingebj¯rg Ingibjorg Ingjerd Ingrid Jorunn JÛra Kristina_Christina LasairfÌona Lerthan Lucia_Lucia Margrete_Margaret Maria_Maria Mauda_Matilda M·ire_Maria M·iread_Maria M·irgred_Margaret Nuala Ragna Ragnailt Ragnhild Ragnhilda Rannveig RÛis Sadb Sc·thach Seonaid Sigrid Siob·n Sisuile Sl·Ìne Sn¯frid Sunniva Svanhild SÈbdann Thora_Thora Thorborg ThÛrdÌs ThÛrunn ¡ine_Agnes ≈shild ≈sta …ua_Eva ”rlaith ⁄na
 		}
 		
 		from_dynasty_prefix = "de "
@@ -61,16 +61,16 @@ latin = {
 			Abbondanzio Abbondio Abelardo Abelino Achille Adalberto_Albert Adelmio Adelmo Adolfo Adriano Agapito Agostino Aimone Alamanno 
 			Albano Alberico Alberto_Albert Albino Alboino Alcide Aldobrandino Aleardo Aleramo Alessandro_Alexander Alessio Alighiero Alvise Ambrogio Amedeo Anastasio  Andrea_Andrew Angelo_Angel Annibale Anselmo Antonin Antonino_Antoninus Antonio_Antoninus Antoniotto Arcibaldo Arderico Armando Arnolfo  Arrigo Arsenio Artemio Ascanio Astorre
 			Atenolfo Attilio Augusto Aurelio_Aurelius Ausilio Ausonio Averado Azzo Azzone Baldassarre Baldovino_Baldwin Barnaba Bartolomeo_Bartolomeus Basilio_Basil Bassiano Basso
-			Battista Beltrano Benedetto_Benedict Benvenuto Berardo Bernab√≤_Bernard Bernardo_Bernard Berto Bertoldo Biagio Bonaventura Bonifacio_Bonifacius Borso Bruno Bruto Buonconte
+			Battista Beltrano Benedetto_Benedict Benvenuto Berardo BernabÚ_Bernard Bernardo_Bernard Berto Bertoldo Biagio Bonaventura Bonifacio_Bonifacius Borso Bruno Bruto Buonconte
 			Buoso Callisto Camillo_Camillus Candido Cangrande Calogero Carlo Cassio Castore Cataldo Catone Cecco Cesare Chiaffredo Chiano Ciro Ciuccio Claudio Clemente_Clement
-			Comita Conone Cornelio_Cornelius Corradino Corrado_Konrad Cosimo Cosma Costante Costantino Costanzo Cristoforo_Christopher Damiano_Damian Daniele Davide_David Demetrio_Demetrius Dion Dioniso_Dionysus Dom√©nico_Dominic
+			Comita Conone Cornelio_Cornelius Corradino Corrado_Konrad Cosimo Cosma Costante Costantino Costanzo Cristoforo_Christopher Damiano_Damian Daniele Davide_David Demetrio_Demetrius Dion Dioniso_Dionysus DomÈnico_Dominic
 			Durante Eduardo_Edward Elio Emmanuele_Manuel Ennio Enrico_Henry Enzio Enzo Ercole Eriprando Ermenegildo Ernesto Ettore Eugenio_Eugene Ezio Ezzelino Fabio Fabrizio Fausto Federigo_Frederick
 			Felice_Felix Ferdinando_Ferdinand Ferruccio Filippo_Philip Fiorello Flavio Folco_Folke Fortunato Fosco Francesco_Francis Fresco Gabriele Gabrino Gaetano Galasso Galeazzo
 			Galeotto Gaspare Gastone_Gaston Gelasio Gennaro Gentile Geraldo_Gerald Gerardo_Gerard Germano Gerolamo Gherardo Giacinto Giacomo Gian Gianfranco Gianleone Giano
 			Giberto Gilberto_Gilbert Giolio Giordano Giorgio_George Georgios Giovanni Giulio Giuseppe Goffredo_Godfrey Gregorio_Gregory Gualtiero Guarnito Guerrino Guglielmo Guido_Guy Guidone_Guy
 			Guigliadore Iacopo Igino Innocenzo Ippolito Isnardo Jacopo_Jacob Lamberto_Lambert Landolfo Landone Lanfranco Lattanzio Lazzarino Lazzaro
 			Lealdo Leonardo Leone_Leo Leonello Leopoldo Libero Lionello Livio Lodovico Lorenzo Luca Luchino Lucio_Lucius Luigi Maio Malacresta Manfredo Manuele_Manuel
-			Marco_Marcus Mariano_Marius Marino Mario_Marius Marsiglio  Martino_Martin Massimo Mastino Matteo_Matthew Merigo Michelangelo Michele_Michael  Napoleone Nazareno Nestore Niccol√≤ Nicola
+			Marco_Marcus Mariano_Marius Marino Mario_Marius Marsiglio  Martino_Martin Massimo Mastino Matteo_Matthew Merigo Michelangelo Michele_Michael  Napoleone Nazareno Nestore NiccolÚ Nicola
 			Nino Nolfo Oberto Obizzino Obizzo Oddone Omero Onorio Oreste Orlando Ottavio Ottobono Ottone_Otto Pagano Pancrazio Pandolfo Paolo Pasquale_Pascal
 			Patrizio_Patrick Peppino Pericle Piersanti Pietro_Peter Pio Prospero Rafaello Radul Raimondo_Raymond Rainero Raniero Renato Riccardo_Richard Rinaldo_Reinhold Rino Rizzardo Roberto_Robert Rodolfo Rolando
 			Rosso Ruggiero Salinguerra Salvatore Salvestro Sante_Sancho Saverio Sciarra Sebastiano_Sebastian Secondotto Serafino Sergio Sesto Settimio Severino Severo
@@ -100,5 +100,40 @@ latin = {
 		pat_grm_name_chance = 20
 		mat_grm_name_chance = 40
 		mother_name_chance = 5
+	}
+}
+
+west_germanic = {
+	graphical_culture = westerngfx
+	
+	frisian = {
+		graphical_culture = germangfx
+		
+		color = { 0.8 0.3 0.2 }
+		
+		male_names = {
+			Avin Bavo Bernhard Blekulf Blithulf Boio Eelbern Eelulf Egildag Eilbern Eilherd Elhard Engilbald Folkbern Frethirik_Frederick Frethold Geldulf Gerbald Gerbrand Helibad Hobern Hoitet Hroward
+			Lubbiko Meginbraht Meginhard Menbold Menhard Menold Miginward Raeddeg Reinbern Reginhard Renward Salaco Sibraht Osno Thancward Thiadbold Thiaderd Thiedold Wening Wibad Wibraht Wigbald
+		}
+		female_names = {
+			Aafke Athgardis ∆lidis Brundonis Gertruid Godeweris Hadewidis Hildeburgis Liudburgis Meynseth Siwa Suaneka Wendelmodis
+		}
+		from_dynasty_prefix = "fan "
+		
+		male_patronym = "ssoan"
+		female_patronym = "sdochter"
+		prefix = no
+
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 30
+		mat_grf_name_chance = 10
+		father_name_chance = 25
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 20
+		mat_grm_name_chance = 40
+		mother_name_chance = 5
+
+		modifier = default_culture_modifier
 	}
 }
