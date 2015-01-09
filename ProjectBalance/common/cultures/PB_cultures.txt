@@ -102,38 +102,3 @@ latin = {
 		mother_name_chance = 5
 	}
 }
-
-west_germanic = {
-	graphical_culture = westerngfx
-	
-	frisian = {
-		graphical_culture = germangfx
-		
-		color = { 0.8 0.3 0.2 }
-		
-		male_names = {
-			Avin Bavo Bernhard Blekulf Blithulf Boio Eðelbern Eðelulf Egildag Eilbern Eilherd Elhard Engilbald Folkbern Frethirik_Frederick Frethold Geldulf Gerbald Gerbrand Helibad Hobern Hoitet Hroðward
-			Lubbiko Meginbraht Meginhard Menbold Menhard Menold Miginward Raeddeg Reinbern Reginhard Renward Salaco Sibraht Osnoð Thancward Thiadbold Thiaderd Thiedold Wening Wibad Wibraht Wigbald
-		}
-		female_names = {
-			Aafke Athgardis Ælidis Brundonis Gertruid Godeweris Hadewidis Hildeburgis Liudburgis Meynseth Siwa Suaneka Wendelmodis
-		}
-		from_dynasty_prefix = "fan "
-		
-		male_patronym = "ssoan"
-		female_patronym = "sdochter"
-		prefix = no
-
-		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
-		pat_grf_name_chance = 30
-		mat_grf_name_chance = 10
-		father_name_chance = 25
-		
-		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
-		pat_grm_name_chance = 20
-		mat_grm_name_chance = 40
-		mother_name_chance = 5
-
-		modifier = default_culture_modifier
-	}
-}
