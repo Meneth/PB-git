@@ -237,7 +237,7 @@ character_event = {
 narrative_event = {
 	id = NOV.4
 	title = EVTNAME_NOV_4
-	desc = EVTDESC_NOV_4
+	desc = EVTDESC_NOV_4
 	major = yes
 	picture = GFX_evt_busy_trading_dock_republic
 	
@@ -452,7 +452,7 @@ character_event = {
 # Former Trade Post Owner Informed 394
 character_event = {
 	id = NOV.10
-	desc = EVTDESC_NOV_10
+	desc = EVTDESC_NOV_10
 	picture = GFX_evt_trade_post_republic
 	
 	is_triggered_only = yes
@@ -470,7 +470,7 @@ character_event = {
 # Former Trade Post Owner Informed 395
 character_event = {
 	id = NOV.11
-	desc = EVTDESC_NOV_10
+	desc = EVTDESC_NOV_10
 	picture = GFX_evt_trade_post_republic
 	
 	is_triggered_only = yes
@@ -488,7 +488,7 @@ character_event = {
 # Former Trade Post Owner Informed 396
 character_event = {
 	id = NOV.12
-	desc = EVTDESC_NOV_10
+	desc = EVTDESC_NOV_10
 	picture = GFX_evt_trade_post_republic
 	
 	is_triggered_only = yes
@@ -506,7 +506,7 @@ character_event = {
 # Former Trade Post Owner Informed 397
 character_event = {
 	id = NOV.13
-	desc = EVTDESC_NOV_10
+	desc = EVTDESC_NOV_10
 	picture = GFX_evt_trade_post_republic
 	
 	is_triggered_only = yes
