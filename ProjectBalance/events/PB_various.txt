@@ -1333,6 +1333,7 @@ character_event = {
 	mean_time_to_happen = {
 		days = 1
 	}
+
 	immediate = {
 		add_character_modifier = {
 			name = holding_large_feast
@@ -1345,6 +1346,7 @@ character_event = {
 		letter_event = { id = 72109 }
 		clr_character_flag = upcoming_feast
 	}
+
 	option = {
 		name = OK
 	}
@@ -1367,6 +1369,7 @@ character_event = {
 	mean_time_to_happen = {
 		days = 1
 	}
+
 	immediate = {
 		add_character_modifier = {
 			name = holding_summer_fair
@@ -1378,6 +1381,7 @@ character_event = {
 		character_event = { id = 74050 }
 		clr_character_flag = upcoming_fair
 	}
+
 	option = {
 		name = OK	
 	}
@@ -1400,6 +1404,7 @@ character_event = {
 	mean_time_to_happen = {
 		days = 1
 	}
+
 	immediate = {
 		add_character_modifier = {
 			name = holding_grand_hunt
@@ -1412,6 +1417,7 @@ character_event = {
 		letter_event = { id = 36080  }
 		clr_character_flag = upcoming_hunt
 	}
+
 	option = {
 		name = OK
 	}
