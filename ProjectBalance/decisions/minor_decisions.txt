@@ -32,6 +32,7 @@ decisions = {
 			}			
 			num_of_vassals = 1
 			NOT = { has_character_flag = do_not_disturb }
+			not = { has_character_flag = upcoming_feast } # EMF
 		}
 		allow = {
 			war = no
@@ -41,29 +42,42 @@ decisions = {
 			prisoner = no
 			NOT = { trait = in_hiding }
 			scaled_wealth = 0.2 # EMF: Don't use vanilla flat rate
-			month = 10
+			hidden_tooltip = { # EMF: Players can trigger decision at any time of year
+				or = {
+					month = 10
+					ai = no
+				}
+			}
 			prestige = 100
 		}
 		effect = {
 			scaled_wealth = -0.2 # EMF
-			add_character_modifier = {
-				name = holding_large_feast
-				duration = -1
-			}
-			set_character_flag = recent_minor_decision
-			set_character_flag = do_not_disturb
-			hidden_tooltip = { character_event = { id = 72999 days = 150 } } # Safety catch flag clearing
-			
-			hidden_tooltip = {
-				character_event = {
-					id = 72003
-					days = 25
-					random = 10
+			if = { # EMF: Works normally for AI
+				limit = { ai = yes }
+				add_character_modifier = {
+					name = holding_large_feast
+					duration = -1
 				}
+				set_character_flag = recent_minor_decision
+				set_character_flag = do_not_disturb
+				hidden_tooltip = { character_event = { id = 72999 days = 150 } } # Safety catch flag clearing
 				
-				letter_event = { 
-					id = 72109  
+				hidden_tooltip = {
+					character_event = {
+						id = 72003
+						days = 25
+						random = 10
+					}
+					
+					letter_event = { 
+						id = 72109  
+					}
 				}
+			}
+			if = { # EMF: Players use a different mechanic
+				limit = { ai = no }
+				set_character_flag = upcoming_feast
+				custom_tooltip = { text = emf_dec_feast_tt }
 			}
 		}
 		revoke_allowed = {

@@ -1316,3 +1316,88 @@ character_event = {
 		}
 	}
 }
+
+# Custom Feast trigger for players
+character_event = {
+	id = pb_various.18
+	desc = HIDE_EVENT
+	hide_window = yes
+
+	ai = no
+	only_playable = yes
+	
+	trigger = {
+		has_character_flag = upcoming_feast
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	immediate = {
+		add_character_modifier = {
+			name = holding_large_feast
+			duration = -1
+		}
+		set_character_flag = recent_minor_decision
+		set_character_flag = do_not_disturb
+		hidden_tooltip = { character_event = { id = 72999 days = 150 } } # Safety catch flag clearing
+		
+		hidden_tooltip = {
+			character_event = {
+				id = 72003
+				days = 25
+				random = 10
+			}
+			
+			letter_event = { 
+				id = 72109
+			}
+		}
+	}
+	option = {
+		name = OK
+	}
+}
+
+# Custom Summer Fair trigger for players
+character_event = {
+	id = pb_various.19
+	desc = HIDE_EVENT
+	hide_window = yes
+
+	ai = no
+	only_playable = yes
+	
+	trigger = {
+		
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = OK
+
+		
+	}
+}
+
+# Custom Hunt trigger for players
+character_event = {
+	id = pb_various.20
+	desc = HIDE_EVENT
+	hide_window = yes
+
+	ai = no
+	only_playable = yes
+	
+	trigger = {
+		
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = OK
+
+		
+	}
+}
