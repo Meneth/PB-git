@@ -133,6 +133,7 @@ decisions = {
 					days = 60
 				}
 			}
+			not = { has_character_flag = upcoming_fair } # EMF
 		}
 		allow = {
 			war = no
@@ -142,25 +143,40 @@ decisions = {
 			scaled_wealth = 0.25 # EMF
 			prisoner = no
 			NOT = { trait = in_hiding }
-			month = 4
-			NOT = {
-				month = 7
+			hidden_tooltip = { # EMF: Players can trigger decision at any time of year
+				or = {
+					and = {
+						month = 4
+						NOT = {
+							month = 7
+						}
+					}
+					ai = no
+				}
 			}
 		}
 		effect = {
 			scaled_wealth = -0.25 # EMF
-			add_character_modifier = {
-				name = holding_summer_fair
-				duration = -1
-			}
-			set_character_flag = recent_minor_decision
-			set_character_flag = do_not_disturb
-			hidden_tooltip = {
-				character_event = {
-					id = 74047
-					days = 60
+			if = { # EMF: Works normally for AI
+				limit = { ai = yes }
+				add_character_modifier = {
+					name = holding_summer_fair
+					duration = -1
 				}
-				character_event = { id = 74050  }
+				set_character_flag = recent_minor_decision
+				set_character_flag = do_not_disturb
+				hidden_tooltip = {
+					character_event = {
+						id = 74047
+						days = 60
+					}
+					character_event = { id = 74050  }
+				}
+			}
+			if = { # EMF: Players use a different mechanic
+				limit = { ai = no }
+				set_character_flag = upcoming_fair
+				custom_tooltip = { text = emf_dec_fair_tt }
 			}
 		}
 		revoke_allowed = {
